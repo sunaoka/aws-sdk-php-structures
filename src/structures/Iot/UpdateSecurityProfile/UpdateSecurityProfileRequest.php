@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $deleteAlertTargets
  * @property bool|null $deleteAdditionalMetricsToRetain
  * @property int|null $expectedVersion
+ * @property Shapes\MetricsExportConfig|null $metricsExportConfig
+ * @property bool|null $deleteMetricsExportConfig
  */
 class UpdateSecurityProfileRequest extends Request
 {
@@ -29,7 +31,9 @@ class UpdateSecurityProfileRequest extends Request
      *     deleteBehaviors?: bool|null,
      *     deleteAlertTargets?: bool|null,
      *     deleteAdditionalMetricsToRetain?: bool|null,
-     *     expectedVersion?: int|null
+     *     expectedVersion?: int|null,
+     *     metricsExportConfig?: Shapes\MetricsExportConfig|null,
+     *     deleteMetricsExportConfig?: bool|null
      * } $args
      */
     public function __construct(array $args)

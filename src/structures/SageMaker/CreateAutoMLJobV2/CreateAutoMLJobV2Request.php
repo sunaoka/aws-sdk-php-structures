@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AutoMLJobObjective|null $AutoMLJobObjective
  * @property Shapes\ModelDeployConfig|null $ModelDeployConfig
  * @property Shapes\AutoMLDataSplitConfig|null $DataSplitConfig
+ * @property Shapes\AutoMLComputeConfig|null $AutoMLComputeConfig
  */
 class CreateAutoMLJobV2Request extends Request
 {
@@ -29,7 +30,8 @@ class CreateAutoMLJobV2Request extends Request
      *     SecurityConfig?: Shapes\AutoMLSecurityConfig|null,
      *     AutoMLJobObjective?: Shapes\AutoMLJobObjective|null,
      *     ModelDeployConfig?: Shapes\ModelDeployConfig|null,
-     *     DataSplitConfig?: Shapes\AutoMLDataSplitConfig|null
+     *     DataSplitConfig?: Shapes\AutoMLDataSplitConfig|null,
+     *     AutoMLComputeConfig?: Shapes\AutoMLComputeConfig|null
      * } $args
      */
     public function __construct(array $args)

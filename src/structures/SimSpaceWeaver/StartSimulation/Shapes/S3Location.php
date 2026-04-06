@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\SimSpaceWeaver\StartSimulation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $BucketName
- * @property string|null $ObjectKey
+ * @property string $BucketName
+ * @property string $ObjectKey
  */
 class S3Location extends Shape
 {
     /**
      * @param array{
-     *     BucketName?: string|null,
-     *     ObjectKey?: string|null
+     *     BucketName: string,
+     *     ObjectKey: string
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

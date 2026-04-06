@@ -14,6 +14,7 @@ class KmsClient extends \Aws\Kms\KmsClient
     use DeleteAlias\DeleteAliasTrait;
     use DeleteCustomKeyStore\DeleteCustomKeyStoreTrait;
     use DeleteImportedKeyMaterial\DeleteImportedKeyMaterialTrait;
+    use DeriveSharedSecret\DeriveSharedSecretTrait;
     use DescribeCustomKeyStores\DescribeCustomKeyStoresTrait;
     use DescribeKey\DescribeKeyTrait;
     use DisableKey\DisableKeyTrait;
@@ -36,6 +37,7 @@ class KmsClient extends \Aws\Kms\KmsClient
     use ListAliases\ListAliasesTrait;
     use ListGrants\ListGrantsTrait;
     use ListKeyPolicies\ListKeyPoliciesTrait;
+    use ListKeyRotations\ListKeyRotationsTrait;
     use ListKeys\ListKeysTrait;
     use ListResourceTags\ListResourceTagsTrait;
     use ListRetirableGrants\ListRetirableGrantsTrait;
@@ -44,6 +46,7 @@ class KmsClient extends \Aws\Kms\KmsClient
     use ReplicateKey\ReplicateKeyTrait;
     use RetireGrant\RetireGrantTrait;
     use RevokeGrant\RevokeGrantTrait;
+    use RotateKeyOnDemand\RotateKeyOnDemandTrait;
     use ScheduleKeyDeletion\ScheduleKeyDeletionTrait;
     use Sign\SignTrait;
     use TagResource\TagResourceTrait;

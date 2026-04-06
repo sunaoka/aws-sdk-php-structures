@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\FinSpaceData\GetProgrammaticAccessCredentials;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<60, 720>|null $durationInMinutes
+ * @property int<1, 60>|null $durationInMinutes
  * @property string $environmentId
  */
 class GetProgrammaticAccessCredentialsRequest extends Request
 {
     /**
      * @param array{
-     *     durationInMinutes?: int<60, 720>|null,
+     *     durationInMinutes?: int<1, 60>|null,
      *     environmentId: string
      * } $args
      */

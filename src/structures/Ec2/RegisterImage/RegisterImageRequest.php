@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'v2.0'|null $TpmSupport
  * @property string|null $UefiData
  * @property 'v2.0'|null $ImdsSupport
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class RegisterImageRequest extends Request
 {
@@ -43,7 +44,8 @@ class RegisterImageRequest extends Request
      *     BootMode?: 'legacy-bios'|'uefi'|'uefi-preferred'|null,
      *     TpmSupport?: 'v2.0'|null,
      *     UefiData?: string|null,
-     *     ImdsSupport?: 'v2.0'|null
+     *     ImdsSupport?: 'v2.0'|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args)

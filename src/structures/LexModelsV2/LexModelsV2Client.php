@@ -11,6 +11,7 @@ class LexModelsV2Client extends \Aws\LexModelsV2\LexModelsV2Client
     use CreateBot\CreateBotTrait;
     use CreateBotAlias\CreateBotAliasTrait;
     use CreateBotLocale\CreateBotLocaleTrait;
+    use CreateBotReplica\CreateBotReplicaTrait;
     use CreateBotVersion\CreateBotVersionTrait;
     use CreateExport\CreateExportTrait;
     use CreateIntent\CreateIntentTrait;
@@ -23,6 +24,7 @@ class LexModelsV2Client extends \Aws\LexModelsV2\LexModelsV2Client
     use DeleteBot\DeleteBotTrait;
     use DeleteBotAlias\DeleteBotAliasTrait;
     use DeleteBotLocale\DeleteBotLocaleTrait;
+    use DeleteBotReplica\DeleteBotReplicaTrait;
     use DeleteBotVersion\DeleteBotVersionTrait;
     use DeleteCustomVocabulary\DeleteCustomVocabularyTrait;
     use DeleteExport\DeleteExportTrait;
@@ -38,6 +40,8 @@ class LexModelsV2Client extends \Aws\LexModelsV2\LexModelsV2Client
     use DescribeBotAlias\DescribeBotAliasTrait;
     use DescribeBotLocale\DescribeBotLocaleTrait;
     use DescribeBotRecommendation\DescribeBotRecommendationTrait;
+    use DescribeBotReplica\DescribeBotReplicaTrait;
+    use DescribeBotResourceGeneration\DescribeBotResourceGenerationTrait;
     use DescribeBotVersion\DescribeBotVersionTrait;
     use DescribeCustomVocabularyMetadata\DescribeCustomVocabularyMetadataTrait;
     use DescribeExport\DescribeExportTrait;
@@ -50,11 +54,16 @@ class LexModelsV2Client extends \Aws\LexModelsV2\LexModelsV2Client
     use DescribeTestSet\DescribeTestSetTrait;
     use DescribeTestSetDiscrepancyReport\DescribeTestSetDiscrepancyReportTrait;
     use DescribeTestSetGeneration\DescribeTestSetGenerationTrait;
+    use GenerateBotElement\GenerateBotElementTrait;
     use GetTestExecutionArtifactsUrl\GetTestExecutionArtifactsUrlTrait;
     use ListAggregatedUtterances\ListAggregatedUtterancesTrait;
+    use ListBotAliasReplicas\ListBotAliasReplicasTrait;
     use ListBotAliases\ListBotAliasesTrait;
     use ListBotLocales\ListBotLocalesTrait;
     use ListBotRecommendations\ListBotRecommendationsTrait;
+    use ListBotReplicas\ListBotReplicasTrait;
+    use ListBotResourceGenerations\ListBotResourceGenerationsTrait;
+    use ListBotVersionReplicas\ListBotVersionReplicasTrait;
     use ListBotVersions\ListBotVersionsTrait;
     use ListBots\ListBotsTrait;
     use ListBuiltInIntents\ListBuiltInIntentsTrait;
@@ -80,6 +89,7 @@ class LexModelsV2Client extends \Aws\LexModelsV2\LexModelsV2Client
     use ListUtteranceMetrics\ListUtteranceMetricsTrait;
     use SearchAssociatedTranscripts\SearchAssociatedTranscriptsTrait;
     use StartBotRecommendation\StartBotRecommendationTrait;
+    use StartBotResourceGeneration\StartBotResourceGenerationTrait;
     use StartImport\StartImportTrait;
     use StartTestExecution\StartTestExecutionTrait;
     use StartTestSetGeneration\StartTestSetGenerationTrait;

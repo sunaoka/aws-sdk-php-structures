@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateWorkteam\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Groups
+ * @property list<string>|null $Groups
  */
 class OidcMemberDefinition extends Shape
 {
     /**
-     * @param array{Groups: list<string>} $args
+     * @param array{Groups?: list<string>|null} $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

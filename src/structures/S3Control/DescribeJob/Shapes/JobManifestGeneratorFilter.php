@@ -9,6 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreatedAfter
  * @property \Aws\Api\DateTimeResult|null $CreatedBefore
  * @property list<'COMPLETED'|'FAILED'|'REPLICA'|'NONE'>|null $ObjectReplicationStatuses
+ * @property KeyNameConstraint|null $KeyNameConstraint
+ * @property int|null $ObjectSizeGreaterThanBytes
+ * @property int|null $ObjectSizeLessThanBytes
+ * @property list<'STANDARD'|'STANDARD_IA'|'ONEZONE_IA'|'GLACIER'|'INTELLIGENT_TIERING'|'DEEP_ARCHIVE'|'GLACIER_IR'>|null $MatchAnyStorageClass
  */
 class JobManifestGeneratorFilter extends Shape
 {
@@ -17,7 +21,11 @@ class JobManifestGeneratorFilter extends Shape
      *     EligibleForReplication?: bool|null,
      *     CreatedAfter?: \Aws\Api\DateTimeResult|null,
      *     CreatedBefore?: \Aws\Api\DateTimeResult|null,
-     *     ObjectReplicationStatuses?: list<'COMPLETED'|'FAILED'|'REPLICA'|'NONE'>|null
+     *     ObjectReplicationStatuses?: list<'COMPLETED'|'FAILED'|'REPLICA'|'NONE'>|null,
+     *     KeyNameConstraint?: KeyNameConstraint|null,
+     *     ObjectSizeGreaterThanBytes?: int|null,
+     *     ObjectSizeLessThanBytes?: int|null,
+     *     MatchAnyStorageClass?: list<'STANDARD'|'STANDARD_IA'|'ONEZONE_IA'|'GLACIER'|'INTELLIGENT_TIERING'|'DEEP_ARCHIVE'|'GLACIER_IR'>|null
      * } $args
      */
     public function __construct(array $args = [])

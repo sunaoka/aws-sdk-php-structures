@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\SesV2;
 class SesV2Client extends \Aws\SesV2\SesV2Client
 {
     use BatchGetMetricData\BatchGetMetricDataTrait;
+    use CancelExportJob\CancelExportJobTrait;
     use CreateConfigurationSet\CreateConfigurationSetTrait;
     use CreateConfigurationSetEventDestination\CreateConfigurationSetEventDestinationTrait;
     use CreateContact\CreateContactTrait;
@@ -15,6 +16,7 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use CreateEmailIdentity\CreateEmailIdentityTrait;
     use CreateEmailIdentityPolicy\CreateEmailIdentityPolicyTrait;
     use CreateEmailTemplate\CreateEmailTemplateTrait;
+    use CreateExportJob\CreateExportJobTrait;
     use CreateImportJob\CreateImportJobTrait;
     use DeleteConfigurationSet\DeleteConfigurationSetTrait;
     use DeleteConfigurationSetEventDestination\DeleteConfigurationSetEventDestinationTrait;
@@ -43,7 +45,9 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use GetEmailIdentity\GetEmailIdentityTrait;
     use GetEmailIdentityPolicies\GetEmailIdentityPoliciesTrait;
     use GetEmailTemplate\GetEmailTemplateTrait;
+    use GetExportJob\GetExportJobTrait;
     use GetImportJob\GetImportJobTrait;
+    use GetMessageInsights\GetMessageInsightsTrait;
     use GetSuppressedDestination\GetSuppressedDestinationTrait;
     use ListConfigurationSets\ListConfigurationSetsTrait;
     use ListContactLists\ListContactListsTrait;
@@ -54,6 +58,7 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use ListDomainDeliverabilityCampaigns\ListDomainDeliverabilityCampaignsTrait;
     use ListEmailIdentities\ListEmailIdentitiesTrait;
     use ListEmailTemplates\ListEmailTemplatesTrait;
+    use ListExportJobs\ListExportJobsTrait;
     use ListImportJobs\ListImportJobsTrait;
     use ListRecommendations\ListRecommendationsTrait;
     use ListSuppressedDestinations\ListSuppressedDestinationsTrait;

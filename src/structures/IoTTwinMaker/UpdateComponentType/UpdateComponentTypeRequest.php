@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, Shapes\FunctionRequest>|null $functions
  * @property array<string, Shapes\PropertyGroupRequest>|null $propertyGroups
  * @property string|null $componentTypeName
+ * @property array<string, Shapes\CompositeComponentTypeRequest>|null $compositeComponentTypes
  */
 class UpdateComponentTypeRequest extends Request
 {
@@ -27,7 +28,8 @@ class UpdateComponentTypeRequest extends Request
      *     extendsFrom?: list<string>|null,
      *     functions?: array<string, Shapes\FunctionRequest>|null,
      *     propertyGroups?: array<string, Shapes\PropertyGroupRequest>|null,
-     *     componentTypeName?: string|null
+     *     componentTypeName?: string|null,
+     *     compositeComponentTypes?: array<string, Shapes\CompositeComponentTypeRequest>|null
      * } $args
      */
     public function __construct(array $args)

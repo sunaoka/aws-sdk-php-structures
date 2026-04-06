@@ -5,7 +5,8 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\ListDataSetImportHistory
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Creating'|'Running'|'Completed' $status
+ * @property 'Creating'|'Running'|'Completed'|'Failed' $status
+ * @property string|null $statusReason
  * @property DataSetImportSummary $summary
  * @property string $taskId
  */
@@ -13,7 +14,8 @@ class DataSetImportTask extends Shape
 {
     /**
      * @param array{
-     *     status: 'Creating'|'Running'|'Completed',
+     *     status: 'Creating'|'Running'|'Completed'|'Failed',
+     *     statusReason?: string|null,
      *     summary: DataSetImportSummary,
      *     taskId: string
      * } $args

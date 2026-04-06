@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CalculatorName
- * @property Shapes\CalculateRouteCarModeOptions|null $CarModeOptions
- * @property bool|null $DepartNow
  * @property list<list<double>> $DeparturePositions
- * @property \Aws\Api\DateTimeResult|null $DepartureTime
  * @property list<list<double>> $DestinationPositions
- * @property 'Kilometers'|'Miles'|null $DistanceUnit
- * @property string|null $Key
  * @property 'Car'|'Truck'|'Walking'|'Bicycle'|'Motorcycle'|null $TravelMode
+ * @property \Aws\Api\DateTimeResult|null $DepartureTime
+ * @property bool|null $DepartNow
+ * @property 'Kilometers'|'Miles'|null $DistanceUnit
+ * @property Shapes\CalculateRouteCarModeOptions|null $CarModeOptions
  * @property Shapes\CalculateRouteTruckModeOptions|null $TruckModeOptions
+ * @property string|null $Key
  */
 class CalculateRouteMatrixRequest extends Request
 {
     /**
      * @param array{
      *     CalculatorName: string,
-     *     CarModeOptions?: Shapes\CalculateRouteCarModeOptions|null,
-     *     DepartNow?: bool|null,
      *     DeparturePositions: list<list<double>>,
-     *     DepartureTime?: \Aws\Api\DateTimeResult|null,
      *     DestinationPositions: list<list<double>>,
-     *     DistanceUnit?: 'Kilometers'|'Miles'|null,
-     *     Key?: string|null,
      *     TravelMode?: 'Car'|'Truck'|'Walking'|'Bicycle'|'Motorcycle'|null,
-     *     TruckModeOptions?: Shapes\CalculateRouteTruckModeOptions|null
+     *     DepartureTime?: \Aws\Api\DateTimeResult|null,
+     *     DepartNow?: bool|null,
+     *     DistanceUnit?: 'Kilometers'|'Miles'|null,
+     *     CarModeOptions?: Shapes\CalculateRouteCarModeOptions|null,
+     *     TruckModeOptions?: Shapes\CalculateRouteTruckModeOptions|null,
+     *     Key?: string|null
      * } $args
      */
     public function __construct(array $args)

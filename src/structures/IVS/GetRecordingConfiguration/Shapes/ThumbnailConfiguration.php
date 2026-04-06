@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'DISABLED'|'INTERVAL'|null $recordingMode
- * @property 'FULL_HD'|'HD'|'SD'|'LOWEST_RESOLUTION'|null $resolution
- * @property list<'SEQUENTIAL'|'LATEST'>|null $storage
  * @property int<1, 60>|null $targetIntervalSeconds
+ * @property 'SD'|'HD'|'FULL_HD'|'LOWEST_RESOLUTION'|null $resolution
+ * @property list<'SEQUENTIAL'|'LATEST'>|null $storage
  */
 class ThumbnailConfiguration extends Shape
 {
     /**
      * @param array{
      *     recordingMode?: 'DISABLED'|'INTERVAL'|null,
-     *     resolution?: 'FULL_HD'|'HD'|'SD'|'LOWEST_RESOLUTION'|null,
-     *     storage?: list<'SEQUENTIAL'|'LATEST'>|null,
-     *     targetIntervalSeconds?: int<1, 60>|null
+     *     targetIntervalSeconds?: int<1, 60>|null,
+     *     resolution?: 'SD'|'HD'|'FULL_HD'|'LOWEST_RESOLUTION'|null,
+     *     storage?: list<'SEQUENTIAL'|'LATEST'>|null
      * } $args
      */
     public function __construct(array $args = [])

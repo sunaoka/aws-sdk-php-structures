@@ -14,9 +14,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ConditionStepMetadata|null $Condition
  * @property CallbackStepMetadata|null $Callback
  * @property LambdaStepMetadata|null $Lambda
+ * @property EMRStepMetadata|null $EMR
  * @property QualityCheckStepMetadata|null $QualityCheck
  * @property ClarifyCheckStepMetadata|null $ClarifyCheck
- * @property EMRStepMetadata|null $EMR
  * @property FailStepMetadata|null $Fail
  * @property AutoMLJobStepMetadata|null $AutoMLJob
  */
@@ -33,9 +33,9 @@ class PipelineExecutionStepMetadata extends Shape
      *     Condition?: ConditionStepMetadata|null,
      *     Callback?: CallbackStepMetadata|null,
      *     Lambda?: LambdaStepMetadata|null,
+     *     EMR?: EMRStepMetadata|null,
      *     QualityCheck?: QualityCheckStepMetadata|null,
      *     ClarifyCheck?: ClarifyCheckStepMetadata|null,
-     *     EMR?: EMRStepMetadata|null,
      *     Fail?: FailStepMetadata|null,
      *     AutoMLJob?: AutoMLJobStepMetadata|null
      * } $args

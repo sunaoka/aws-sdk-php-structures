@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $assessmentArn
  * @property string|null $assessmentName
  * @property 'Pending'|'InProgress'|'Failed'|'Success' $assessmentStatus
- * @property 'PolicyBreached'|'PolicyMet'|null $complianceStatus
+ * @property 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy'|null $complianceStatus
  * @property Cost|null $cost
  * @property 'NotChecked'|'NotDetected'|'Detected'|null $driftStatus
  * @property \Aws\Api\DateTimeResult|null $endTime
@@ -29,7 +29,7 @@ class AppAssessmentSummary extends Shape
      *     assessmentArn: string,
      *     assessmentName?: string|null,
      *     assessmentStatus: 'Pending'|'InProgress'|'Failed'|'Success',
-     *     complianceStatus?: 'PolicyBreached'|'PolicyMet'|null,
+     *     complianceStatus?: 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy'|null,
      *     cost?: Cost|null,
      *     driftStatus?: 'NotChecked'|'NotDetected'|'Detected'|null,
      *     endTime?: \Aws\Api\DateTimeResult|null,

@@ -7,6 +7,7 @@ class TimestreamQueryClient extends \Aws\TimestreamQuery\TimestreamQueryClient
     use CancelQuery\CancelQueryTrait;
     use CreateScheduledQuery\CreateScheduledQueryTrait;
     use DeleteScheduledQuery\DeleteScheduledQueryTrait;
+    use DescribeAccountSettings\DescribeAccountSettingsTrait;
     use DescribeEndpoints\DescribeEndpointsTrait;
     use DescribeScheduledQuery\DescribeScheduledQueryTrait;
     use ExecuteScheduledQuery\ExecuteScheduledQueryTrait;
@@ -16,5 +17,6 @@ class TimestreamQueryClient extends \Aws\TimestreamQuery\TimestreamQueryClient
     use Query\QueryTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateAccountSettings\UpdateAccountSettingsTrait;
     use UpdateScheduledQuery\UpdateScheduledQueryTrait;
 }

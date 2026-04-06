@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $username
  * @property string $token
- * @property 'GITHUB'|'BITBUCKET'|'GITHUB_ENTERPRISE' $serverType
- * @property 'OAUTH'|'BASIC_AUTH'|'PERSONAL_ACCESS_TOKEN' $authType
+ * @property 'GITHUB'|'BITBUCKET'|'GITHUB_ENTERPRISE'|'GITLAB'|'GITLAB_SELF_MANAGED' $serverType
+ * @property 'OAUTH'|'BASIC_AUTH'|'PERSONAL_ACCESS_TOKEN'|'CODECONNECTIONS' $authType
  * @property bool|null $shouldOverwrite
  */
 class ImportSourceCredentialsRequest extends Request
@@ -17,8 +17,8 @@ class ImportSourceCredentialsRequest extends Request
      * @param array{
      *     username?: string|null,
      *     token: string,
-     *     serverType: 'GITHUB'|'BITBUCKET'|'GITHUB_ENTERPRISE',
-     *     authType: 'OAUTH'|'BASIC_AUTH'|'PERSONAL_ACCESS_TOKEN',
+     *     serverType: 'GITHUB'|'BITBUCKET'|'GITHUB_ENTERPRISE'|'GITLAB'|'GITLAB_SELF_MANAGED',
+     *     authType: 'OAUTH'|'BASIC_AUTH'|'PERSONAL_ACCESS_TOKEN'|'CODECONNECTIONS',
      *     shouldOverwrite?: bool|null
      * } $args
      */

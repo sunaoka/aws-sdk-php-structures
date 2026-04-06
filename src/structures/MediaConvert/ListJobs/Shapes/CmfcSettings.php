@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION'|null $AudioDuration
  * @property string|null $AudioGroupId
  * @property string|null $AudioRenditionSets
- * @property 'ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT'|'ALTERNATE_AUDIO_AUTO_SELECT'|'ALTERNATE_AUDIO_NOT_AUTO_SELECT'|null $AudioTrackType
+ * @property 'ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT'|'ALTERNATE_AUDIO_AUTO_SELECT'|'ALTERNATE_AUDIO_NOT_AUTO_SELECT'|'AUDIO_ONLY_VARIANT_STREAM'|null $AudioTrackType
  * @property 'DONT_FLAG'|'FLAG'|null $DescriptiveVideoServiceFlag
  * @property 'INCLUDE'|'EXCLUDE'|null $IFrameOnlyManifest
  * @property 'PASSTHROUGH'|'NONE'|null $KlvMetadata
@@ -27,7 +27,7 @@ class CmfcSettings extends Shape
      *     AudioDuration?: 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION'|null,
      *     AudioGroupId?: string|null,
      *     AudioRenditionSets?: string|null,
-     *     AudioTrackType?: 'ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT'|'ALTERNATE_AUDIO_AUTO_SELECT'|'ALTERNATE_AUDIO_NOT_AUTO_SELECT'|null,
+     *     AudioTrackType?: 'ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT'|'ALTERNATE_AUDIO_AUTO_SELECT'|'ALTERNATE_AUDIO_NOT_AUTO_SELECT'|'AUDIO_ONLY_VARIANT_STREAM'|null,
      *     DescriptiveVideoServiceFlag?: 'DONT_FLAG'|'FLAG'|null,
      *     IFrameOnlyManifest?: 'INCLUDE'|'EXCLUDE'|null,
      *     KlvMetadata?: 'PASSTHROUGH'|'NONE'|null,

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $CopyTagsToBackups
  * @property bool|null $CopyTagsToVolumes
  * @property string|null $DailyAutomaticBackupStartTime
- * @property 'SINGLE_AZ_1'|'SINGLE_AZ_2'|'MULTI_AZ_1' $DeploymentType
+ * @property 'SINGLE_AZ_1'|'SINGLE_AZ_2'|'SINGLE_AZ_HA_1'|'SINGLE_AZ_HA_2'|'MULTI_AZ_1' $DeploymentType
  * @property int<8, 100000> $ThroughputCapacity
  * @property string|null $WeeklyMaintenanceStartTime
  * @property DiskIopsConfiguration|null $DiskIopsConfiguration
@@ -26,7 +26,7 @@ class CreateFileSystemOpenZFSConfiguration extends Shape
      *     CopyTagsToBackups?: bool|null,
      *     CopyTagsToVolumes?: bool|null,
      *     DailyAutomaticBackupStartTime?: string|null,
-     *     DeploymentType: 'SINGLE_AZ_1'|'SINGLE_AZ_2'|'MULTI_AZ_1',
+     *     DeploymentType: 'SINGLE_AZ_1'|'SINGLE_AZ_2'|'SINGLE_AZ_HA_1'|'SINGLE_AZ_HA_2'|'MULTI_AZ_1',
      *     ThroughputCapacity: int<8, 100000>,
      *     WeeklyMaintenanceStartTime?: string|null,
      *     DiskIopsConfiguration?: DiskIopsConfiguration|null,

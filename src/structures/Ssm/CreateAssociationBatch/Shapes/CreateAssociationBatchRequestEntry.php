@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $CalendarNames
  * @property list<TargetLocation>|null $TargetLocations
  * @property int<1, 6>|null $ScheduleOffset
+ * @property int<1, 24>|null $Duration
  * @property list<array<string, list<string>>>|null $TargetMaps
  * @property AlarmConfiguration|null $AlarmConfiguration
  */
@@ -46,6 +47,7 @@ class CreateAssociationBatchRequestEntry extends Shape
      *     CalendarNames?: list<string>|null,
      *     TargetLocations?: list<TargetLocation>|null,
      *     ScheduleOffset?: int<1, 6>|null,
+     *     Duration?: int<1, 24>|null,
      *     TargetMaps?: list<array<string, list<string>>>|null,
      *     AlarmConfiguration?: AlarmConfiguration|null
      * } $args

@@ -10,9 +10,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Chrome'|null $browserType
  * @property \Aws\Api\DateTimeResult|null $creationDate
  * @property string|null $displayName
+ * @property 'standard.regular'|'standard.large'|'standard.xlarge'|null $instanceType
  * @property string|null $ipAccessSettingsArn
+ * @property int<1, 5000>|null $maxConcurrentSessions
  * @property string|null $networkSettingsArn
- * @property string|null $portalArn
+ * @property string $portalArn
  * @property string|null $portalEndpoint
  * @property 'Incomplete'|'Pending'|'Active'|null $portalStatus
  * @property 'AppStream'|null $rendererType
@@ -29,9 +31,11 @@ class PortalSummary extends Shape
      *     browserType?: 'Chrome'|null,
      *     creationDate?: \Aws\Api\DateTimeResult|null,
      *     displayName?: string|null,
+     *     instanceType?: 'standard.regular'|'standard.large'|'standard.xlarge'|null,
      *     ipAccessSettingsArn?: string|null,
+     *     maxConcurrentSessions?: int<1, 5000>|null,
      *     networkSettingsArn?: string|null,
-     *     portalArn?: string|null,
+     *     portalArn: string,
      *     portalEndpoint?: string|null,
      *     portalStatus?: 'Incomplete'|'Pending'|'Active'|null,
      *     rendererType?: 'AppStream'|null,
@@ -40,7 +44,7 @@ class PortalSummary extends Shape
      *     userSettingsArn?: string|null
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

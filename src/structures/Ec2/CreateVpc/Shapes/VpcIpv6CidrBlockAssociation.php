@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VpcCidrBlockState|null $Ipv6CidrBlockState
  * @property string|null $NetworkBorderGroup
  * @property string|null $Ipv6Pool
+ * @property 'public'|'private'|null $Ipv6AddressAttribute
+ * @property 'amazon'|'byoip'|'none'|null $IpSource
  */
 class VpcIpv6CidrBlockAssociation extends Shape
 {
@@ -19,7 +21,9 @@ class VpcIpv6CidrBlockAssociation extends Shape
      *     Ipv6CidrBlock?: string|null,
      *     Ipv6CidrBlockState?: VpcCidrBlockState|null,
      *     NetworkBorderGroup?: string|null,
-     *     Ipv6Pool?: string|null
+     *     Ipv6Pool?: string|null,
+     *     Ipv6AddressAttribute?: 'public'|'private'|null,
+     *     IpSource?: 'amazon'|'byoip'|'none'|null
      * } $args
      */
     public function __construct(array $args = [])

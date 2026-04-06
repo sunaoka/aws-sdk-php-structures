@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\ListStages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $activeSessionId
  * @property string $arn
  * @property string|null $name
+ * @property string|null $activeSessionId
  * @property array<string, string>|null $tags
  */
 class StageSummary extends Shape
 {
     /**
      * @param array{
-     *     activeSessionId?: string|null,
      *     arn: string,
      *     name?: string|null,
+     *     activeSessionId?: string|null,
      *     tags?: array<string, string>|null
      * } $args
      */

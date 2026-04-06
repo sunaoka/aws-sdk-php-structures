@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<VolumeRecommendationOption>|null $volumeRecommendationOptions
  * @property \Aws\Api\DateTimeResult|null $lastRefreshTimestamp
  * @property 'VeryLow'|'Low'|'Medium'|'High'|null $currentPerformanceRisk
+ * @property EBSEffectiveRecommendationPreferences|null $effectiveRecommendationPreferences
  * @property list<Tag>|null $tags
  */
 class VolumeRecommendation extends Shape
@@ -29,6 +30,7 @@ class VolumeRecommendation extends Shape
      *     volumeRecommendationOptions?: list<VolumeRecommendationOption>|null,
      *     lastRefreshTimestamp?: \Aws\Api\DateTimeResult|null,
      *     currentPerformanceRisk?: 'VeryLow'|'Low'|'Medium'|'High'|null,
+     *     effectiveRecommendationPreferences?: EBSEffectiveRecommendationPreferences|null,
      *     tags?: list<Tag>|null
      * } $args
      */

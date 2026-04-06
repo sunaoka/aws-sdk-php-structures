@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PlacementType|null $Placement
  * @property bool|null $KeepJobFlowAliveWhenNoSteps
  * @property bool|null $TerminationProtected
+ * @property bool|null $UnhealthyNodeReplacement
  * @property string|null $HadoopVersion
  */
 class JobFlowInstancesDetail extends Shape
@@ -35,6 +36,7 @@ class JobFlowInstancesDetail extends Shape
      *     Placement?: PlacementType|null,
      *     KeepJobFlowAliveWhenNoSteps?: bool|null,
      *     TerminationProtected?: bool|null,
+     *     UnhealthyNodeReplacement?: bool|null,
      *     HadoopVersion?: string|null
      * } $args
      */

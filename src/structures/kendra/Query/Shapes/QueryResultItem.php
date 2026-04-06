@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ScoreAttributes|null $ScoreAttributes
  * @property string|null $FeedbackToken
  * @property TableExcerpt|null $TableExcerpt
+ * @property CollapsedResultDetail|null $CollapsedResultDetail
  */
 class QueryResultItem extends Shape
 {
@@ -33,7 +34,8 @@ class QueryResultItem extends Shape
      *     DocumentAttributes?: list<DocumentAttribute>|null,
      *     ScoreAttributes?: ScoreAttributes|null,
      *     FeedbackToken?: string|null,
-     *     TableExcerpt?: TableExcerpt|null
+     *     TableExcerpt?: TableExcerpt|null,
+     *     CollapsedResultDetail?: CollapsedResultDetail|null
      * } $args
      */
     public function __construct(array $args = [])

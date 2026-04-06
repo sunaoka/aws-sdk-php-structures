@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MediaLiveConnectorPipeline|null $MediaLiveConnectorPipeline
  * @property MediaConcatenationPipeline|null $MediaConcatenationPipeline
  * @property MediaInsightsPipeline|null $MediaInsightsPipeline
+ * @property MediaStreamPipeline|null $MediaStreamPipeline
  */
 class MediaPipeline extends Shape
 {
@@ -17,7 +18,8 @@ class MediaPipeline extends Shape
      *     MediaCapturePipeline?: MediaCapturePipeline|null,
      *     MediaLiveConnectorPipeline?: MediaLiveConnectorPipeline|null,
      *     MediaConcatenationPipeline?: MediaConcatenationPipeline|null,
-     *     MediaInsightsPipeline?: MediaInsightsPipeline|null
+     *     MediaInsightsPipeline?: MediaInsightsPipeline|null,
+     *     MediaStreamPipeline?: MediaStreamPipeline|null
      * } $args
      */
     public function __construct(array $args = [])

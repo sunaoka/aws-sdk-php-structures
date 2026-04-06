@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CREATING'|'CREATING_FAILED'|'DELETING'|'DELETING_FAILED'|'ACTIVE' $DeliveryStreamStatus
  * @property FailureDescription|null $FailureDescription
  * @property DeliveryStreamEncryptionConfiguration|null $DeliveryStreamEncryptionConfiguration
- * @property 'DirectPut'|'KinesisStreamAsSource' $DeliveryStreamType
+ * @property 'DirectPut'|'KinesisStreamAsSource'|'MSKAsSource' $DeliveryStreamType
  * @property string $VersionId
  * @property \Aws\Api\DateTimeResult|null $CreateTimestamp
  * @property \Aws\Api\DateTimeResult|null $LastUpdateTimestamp
@@ -27,7 +27,7 @@ class DeliveryStreamDescription extends Shape
      *     DeliveryStreamStatus: 'CREATING'|'CREATING_FAILED'|'DELETING'|'DELETING_FAILED'|'ACTIVE',
      *     FailureDescription?: FailureDescription|null,
      *     DeliveryStreamEncryptionConfiguration?: DeliveryStreamEncryptionConfiguration|null,
-     *     DeliveryStreamType: 'DirectPut'|'KinesisStreamAsSource',
+     *     DeliveryStreamType: 'DirectPut'|'KinesisStreamAsSource'|'MSKAsSource',
      *     VersionId: string,
      *     CreateTimestamp?: \Aws\Api\DateTimeResult|null,
      *     LastUpdateTimestamp?: \Aws\Api\DateTimeResult|null,

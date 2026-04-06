@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $PoolId
  * @property bool|null $TwoWayEnabled
  * @property string|null $TwoWayChannelArn
+ * @property string|null $TwoWayChannelRole
  * @property bool|null $SelfManagedOptOutsEnabled
  * @property string|null $OptOutListName
  * @property bool|null $SharedRoutesEnabled
@@ -20,6 +21,7 @@ class UpdatePoolRequest extends Request
      *     PoolId: string,
      *     TwoWayEnabled?: bool|null,
      *     TwoWayChannelArn?: string|null,
+     *     TwoWayChannelRole?: string|null,
      *     SelfManagedOptOutsEnabled?: bool|null,
      *     OptOutListName?: string|null,
      *     SharedRoutesEnabled?: bool|null,

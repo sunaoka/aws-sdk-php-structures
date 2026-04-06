@@ -13,7 +13,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AmazonopensearchserviceDestinationDescription|null $AmazonopensearchserviceDestinationDescription
  * @property SplunkDestinationDescription|null $SplunkDestinationDescription
  * @property HttpEndpointDestinationDescription|null $HttpEndpointDestinationDescription
+ * @property SnowflakeDestinationDescription|null $SnowflakeDestinationDescription
  * @property AmazonOpenSearchServerlessDestinationDescription|null $AmazonOpenSearchServerlessDestinationDescription
+ * @property IcebergDestinationDescription|null $IcebergDestinationDescription
  */
 class DestinationDescription extends Shape
 {
@@ -27,7 +29,9 @@ class DestinationDescription extends Shape
      *     AmazonopensearchserviceDestinationDescription?: AmazonopensearchserviceDestinationDescription|null,
      *     SplunkDestinationDescription?: SplunkDestinationDescription|null,
      *     HttpEndpointDestinationDescription?: HttpEndpointDestinationDescription|null,
-     *     AmazonOpenSearchServerlessDestinationDescription?: AmazonOpenSearchServerlessDestinationDescription|null
+     *     SnowflakeDestinationDescription?: SnowflakeDestinationDescription|null,
+     *     AmazonOpenSearchServerlessDestinationDescription?: AmazonOpenSearchServerlessDestinationDescription|null,
+     *     IcebergDestinationDescription?: IcebergDestinationDescription|null
      * } $args
      */
     public function __construct(array $args)

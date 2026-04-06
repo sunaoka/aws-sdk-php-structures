@@ -28,6 +28,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ParentJobId
  * @property bool|null $IsParent
  * @property string|null $ResourceName
+ * @property \Aws\Api\DateTimeResult|null $InitiationDate
+ * @property string|null $MessageCategory
  */
 class BackupJob extends Shape
 {
@@ -55,7 +57,9 @@ class BackupJob extends Shape
      *     BackupType?: string|null,
      *     ParentJobId?: string|null,
      *     IsParent?: bool|null,
-     *     ResourceName?: string|null
+     *     ResourceName?: string|null,
+     *     InitiationDate?: \Aws\Api\DateTimeResult|null,
+     *     MessageCategory?: string|null
      * } $args
      */
     public function __construct(array $args = [])

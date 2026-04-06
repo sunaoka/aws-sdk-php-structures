@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $IndexName
  * @property ProvisionedThroughputOverride|null $ProvisionedThroughputOverride
+ * @property OnDemandThroughputOverride|null $OnDemandThroughputOverride
  */
 class ReplicaGlobalSecondaryIndexDescription extends Shape
 {
     /**
      * @param array{
      *     IndexName?: string|null,
-     *     ProvisionedThroughputOverride?: ProvisionedThroughputOverride|null
+     *     ProvisionedThroughputOverride?: ProvisionedThroughputOverride|null,
+     *     OnDemandThroughputOverride?: OnDemandThroughputOverride|null
      * } $args
      */
     public function __construct(array $args = [])

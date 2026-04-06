@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $lagDuration
  * @property list<RecoveryInstanceDataReplicationInfoReplicatedDisk>|null $replicatedDisks
  * @property string|null $stagingAvailabilityZone
+ * @property string|null $stagingOutpostArn
  */
 class RecoveryInstanceDataReplicationInfo extends Shape
 {
@@ -23,7 +24,8 @@ class RecoveryInstanceDataReplicationInfo extends Shape
      *     etaDateTime?: string|null,
      *     lagDuration?: string|null,
      *     replicatedDisks?: list<RecoveryInstanceDataReplicationInfoReplicatedDisk>|null,
-     *     stagingAvailabilityZone?: string|null
+     *     stagingAvailabilityZone?: string|null,
+     *     stagingOutpostArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

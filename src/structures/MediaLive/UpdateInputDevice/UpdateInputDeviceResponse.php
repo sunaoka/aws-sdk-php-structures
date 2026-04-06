@@ -19,6 +19,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\InputDeviceUhdSettings|null $UhdDeviceSettings
  * @property array<string, string>|null $Tags
  * @property string|null $AvailabilityZone
+ * @property list<string>|null $MedialiveInputArns
+ * @property 'NONE'|'MEDIALIVE_INPUT'|'MEDIACONNECT_FLOW'|null $OutputType
  */
 class UpdateInputDeviceResponse extends Response
 {

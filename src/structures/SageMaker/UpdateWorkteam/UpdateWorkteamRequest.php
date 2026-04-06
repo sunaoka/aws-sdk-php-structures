@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\MemberDefinition>|null $MemberDefinitions
  * @property string|null $Description
  * @property Shapes\NotificationConfiguration|null $NotificationConfiguration
+ * @property Shapes\WorkerAccessConfiguration|null $WorkerAccessConfiguration
  */
 class UpdateWorkteamRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateWorkteamRequest extends Request
      *     WorkteamName: string,
      *     MemberDefinitions?: list<Shapes\MemberDefinition>|null,
      *     Description?: string|null,
-     *     NotificationConfiguration?: Shapes\NotificationConfiguration|null
+     *     NotificationConfiguration?: Shapes\NotificationConfiguration|null,
+     *     WorkerAccessConfiguration?: Shapes\WorkerAccessConfiguration|null
      * } $args
      */
     public function __construct(array $args)

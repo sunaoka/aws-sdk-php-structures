@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $GroupName
  * @property string|null $HostId
  * @property string $InstanceId
- * @property 'dedicated'|'host'|null $Tenancy
+ * @property 'default'|'dedicated'|'host'|null $Tenancy
  * @property int|null $PartitionNumber
  * @property string|null $HostResourceGroupArn
  * @property string|null $GroupId
@@ -22,7 +22,7 @@ class ModifyInstancePlacementRequest extends Request
      *     GroupName?: string|null,
      *     HostId?: string|null,
      *     InstanceId: string,
-     *     Tenancy?: 'dedicated'|'host'|null,
+     *     Tenancy?: 'default'|'dedicated'|'host'|null,
      *     PartitionNumber?: int|null,
      *     HostResourceGroupArn?: string|null,
      *     GroupId?: string|null

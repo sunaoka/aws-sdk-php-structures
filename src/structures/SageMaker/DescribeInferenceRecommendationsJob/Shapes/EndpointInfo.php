@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeInferenceRecommendationsJob\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EndpointName
+ * @property string|null $EndpointName
  */
 class EndpointInfo extends Shape
 {
     /**
-     * @param array{EndpointName: string} $args
+     * @param array{EndpointName?: string|null} $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

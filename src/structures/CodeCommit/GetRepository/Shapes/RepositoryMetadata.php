@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $cloneUrlHttp
  * @property string|null $cloneUrlSsh
  * @property string|null $Arn
+ * @property string|null $kmsKeyId
  */
 class RepositoryMetadata extends Shape
 {
@@ -29,7 +30,8 @@ class RepositoryMetadata extends Shape
      *     creationDate?: \Aws\Api\DateTimeResult|null,
      *     cloneUrlHttp?: string|null,
      *     cloneUrlSsh?: string|null,
-     *     Arn?: string|null
+     *     Arn?: string|null,
+     *     kmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

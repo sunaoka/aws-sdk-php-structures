@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\UpdateLoggingConfiguration\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ALERT'|'FLOW' $LogType
+ * @property 'ALERT'|'FLOW'|'TLS' $LogType
  * @property 'S3'|'CloudWatchLogs'|'KinesisDataFirehose' $LogDestinationType
  * @property array<string, string> $LogDestination
  */
@@ -13,7 +13,7 @@ class LogDestinationConfig extends Shape
 {
     /**
      * @param array{
-     *     LogType: 'ALERT'|'FLOW',
+     *     LogType: 'ALERT'|'FLOW'|'TLS',
      *     LogDestinationType: 'S3'|'CloudWatchLogs'|'KinesisDataFirehose',
      *     LogDestination: array<string, string>
      * } $args

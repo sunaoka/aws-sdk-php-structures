@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $type
- * @property int<1200, 33600> $size
+ * @property int $size
  */
 class KxCacheStorageConfiguration extends Shape
 {
     /**
      * @param array{
      *     type: string,
-     *     size: int<1200, 33600>
+     *     size: int
      * } $args
      */
     public function __construct(array $args)

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FlinkApplicationConfigurationUpdate|null $FlinkApplicationConfigurationUpdate
  * @property EnvironmentPropertyUpdates|null $EnvironmentPropertyUpdates
  * @property ApplicationSnapshotConfigurationUpdate|null $ApplicationSnapshotConfigurationUpdate
+ * @property ApplicationSystemRollbackConfigurationUpdate|null $ApplicationSystemRollbackConfigurationUpdate
  * @property list<VpcConfigurationUpdate>|null $VpcConfigurationUpdates
  * @property ZeppelinApplicationConfigurationUpdate|null $ZeppelinApplicationConfigurationUpdate
  */
@@ -22,6 +23,7 @@ class ApplicationConfigurationUpdate extends Shape
      *     FlinkApplicationConfigurationUpdate?: FlinkApplicationConfigurationUpdate|null,
      *     EnvironmentPropertyUpdates?: EnvironmentPropertyUpdates|null,
      *     ApplicationSnapshotConfigurationUpdate?: ApplicationSnapshotConfigurationUpdate|null,
+     *     ApplicationSystemRollbackConfigurationUpdate?: ApplicationSystemRollbackConfigurationUpdate|null,
      *     VpcConfigurationUpdates?: list<VpcConfigurationUpdate>|null,
      *     ZeppelinApplicationConfigurationUpdate?: ZeppelinApplicationConfigurationUpdate|null
      * } $args

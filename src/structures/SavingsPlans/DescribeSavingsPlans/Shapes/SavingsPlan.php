@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $description
  * @property string|null $start
  * @property string|null $end
- * @property 'payment-pending'|'payment-failed'|'active'|'retired'|'queued'|'queued-deleted'|null $state
+ * @property 'payment-pending'|'payment-failed'|'active'|'retired'|'queued'|'queued-deleted'|'pending-return'|'returned'|null $state
  * @property string|null $region
  * @property string|null $ec2InstanceFamily
  * @property 'Compute'|'EC2Instance'|'SageMaker'|null $savingsPlanType
@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $recurringPaymentAmount
  * @property int|null $termDurationInSeconds
  * @property array<string, string>|null $tags
+ * @property string|null $returnableUntil
  */
 class SavingsPlan extends Shape
 {
@@ -34,7 +35,7 @@ class SavingsPlan extends Shape
      *     description?: string|null,
      *     start?: string|null,
      *     end?: string|null,
-     *     state?: 'payment-pending'|'payment-failed'|'active'|'retired'|'queued'|'queued-deleted'|null,
+     *     state?: 'payment-pending'|'payment-failed'|'active'|'retired'|'queued'|'queued-deleted'|'pending-return'|'returned'|null,
      *     region?: string|null,
      *     ec2InstanceFamily?: string|null,
      *     savingsPlanType?: 'Compute'|'EC2Instance'|'SageMaker'|null,
@@ -45,7 +46,8 @@ class SavingsPlan extends Shape
      *     upfrontPaymentAmount?: string|null,
      *     recurringPaymentAmount?: string|null,
      *     termDurationInSeconds?: int|null,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     returnableUntil?: string|null
      * } $args
      */
     public function __construct(array $args = [])

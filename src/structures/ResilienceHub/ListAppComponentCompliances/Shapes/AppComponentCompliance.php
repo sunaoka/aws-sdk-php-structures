@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Cost|null $cost
  * @property string|null $message
  * @property ResiliencyScore|null $resiliencyScore
- * @property 'PolicyBreached'|'PolicyMet'|null $status
+ * @property 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy'|null $status
  */
 class AppComponentCompliance extends Shape
 {
@@ -21,7 +21,7 @@ class AppComponentCompliance extends Shape
      *     cost?: Cost|null,
      *     message?: string|null,
      *     resiliencyScore?: ResiliencyScore|null,
-     *     status?: 'PolicyBreached'|'PolicyMet'|null
+     *     status?: 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy'|null
      * } $args
      */
     public function __construct(array $args = [])

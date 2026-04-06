@@ -6,11 +6,13 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PipelineName
- * @property int<1, 96> $MinUnits
- * @property int<1, 96> $MaxUnits
+ * @property int<1, max> $MinUnits
+ * @property int<1, max> $MaxUnits
  * @property string $PipelineConfigurationBody
  * @property Shapes\LogPublishingOptions|null $LogPublishingOptions
  * @property Shapes\VpcOptions|null $VpcOptions
+ * @property Shapes\BufferOptions|null $BufferOptions
+ * @property Shapes\EncryptionAtRestOptions|null $EncryptionAtRestOptions
  * @property list<Shapes\Tag>|null $Tags
  */
 class CreatePipelineRequest extends Request
@@ -18,11 +20,13 @@ class CreatePipelineRequest extends Request
     /**
      * @param array{
      *     PipelineName: string,
-     *     MinUnits: int<1, 96>,
-     *     MaxUnits: int<1, 96>,
+     *     MinUnits: int<1, max>,
+     *     MaxUnits: int<1, max>,
      *     PipelineConfigurationBody: string,
      *     LogPublishingOptions?: Shapes\LogPublishingOptions|null,
      *     VpcOptions?: Shapes\VpcOptions|null,
+     *     BufferOptions?: Shapes\BufferOptions|null,
+     *     EncryptionAtRestOptions?: Shapes\EncryptionAtRestOptions|null,
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */

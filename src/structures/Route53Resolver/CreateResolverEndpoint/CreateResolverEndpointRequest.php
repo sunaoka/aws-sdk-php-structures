@@ -10,10 +10,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $SecurityGroupIds
  * @property 'INBOUND'|'OUTBOUND' $Direction
  * @property list<Shapes\IpAddressRequest> $IpAddresses
- * @property list<Shapes\Tag>|null $Tags
- * @property 'IPV6'|'IPV4'|'DUALSTACK'|null $ResolverEndpointType
  * @property string|null $OutpostArn
  * @property string|null $PreferredInstanceType
+ * @property list<Shapes\Tag>|null $Tags
+ * @property 'IPV6'|'IPV4'|'DUALSTACK'|null $ResolverEndpointType
+ * @property list<'DoH'|'Do53'|'DoH-FIPS'>|null $Protocols
  */
 class CreateResolverEndpointRequest extends Request
 {
@@ -24,10 +25,11 @@ class CreateResolverEndpointRequest extends Request
      *     SecurityGroupIds: list<string>,
      *     Direction: 'INBOUND'|'OUTBOUND',
      *     IpAddresses: list<Shapes\IpAddressRequest>,
+     *     OutpostArn?: string|null,
+     *     PreferredInstanceType?: string|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     ResolverEndpointType?: 'IPV6'|'IPV4'|'DUALSTACK'|null,
-     *     OutpostArn?: string|null,
-     *     PreferredInstanceType?: string|null
+     *     Protocols?: list<'DoH'|'Do53'|'DoH-FIPS'>|null
      * } $args
      */
     public function __construct(array $args)

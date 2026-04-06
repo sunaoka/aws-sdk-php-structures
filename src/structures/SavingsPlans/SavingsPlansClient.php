@@ -11,6 +11,7 @@ class SavingsPlansClient extends \Aws\SavingsPlans\SavingsPlansClient
     use DescribeSavingsPlansOfferingRates\DescribeSavingsPlansOfferingRatesTrait;
     use DescribeSavingsPlansOfferings\DescribeSavingsPlansOfferingsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use ReturnSavingsPlan\ReturnSavingsPlanTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
 }

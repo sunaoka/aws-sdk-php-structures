@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property Shapes\KernelGatewayImageConfig|null $KernelGatewayImageConfig
+ * @property Shapes\JupyterLabAppImageConfig|null $JupyterLabAppImageConfig
+ * @property Shapes\CodeEditorAppImageConfig|null $CodeEditorAppImageConfig
  */
 class DescribeAppImageConfigResponse extends Response
 {

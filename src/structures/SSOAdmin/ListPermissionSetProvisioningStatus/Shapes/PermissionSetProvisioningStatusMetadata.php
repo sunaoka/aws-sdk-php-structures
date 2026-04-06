@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListPermissionSetProvisioningStatus\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|null $Status
- * @property string|null $RequestId
  * @property \Aws\Api\DateTimeResult|null $CreatedDate
+ * @property string|null $RequestId
+ * @property 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|null $Status
  */
 class PermissionSetProvisioningStatusMetadata extends Shape
 {
     /**
      * @param array{
-     *     Status?: 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|null,
+     *     CreatedDate?: \Aws\Api\DateTimeResult|null,
      *     RequestId?: string|null,
-     *     CreatedDate?: \Aws\Api\DateTimeResult|null
+     *     Status?: 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|null
      * } $args
      */
     public function __construct(array $args = [])

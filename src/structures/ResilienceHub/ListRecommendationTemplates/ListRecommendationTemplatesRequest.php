@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\ListRecommendationTemplates;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $assessmentArn
+ * @property string|null $assessmentArn
  * @property int<1, 100>|null $maxResults
  * @property string|null $name
  * @property string|null $nextToken
@@ -17,7 +17,7 @@ class ListRecommendationTemplatesRequest extends Request
 {
     /**
      * @param array{
-     *     assessmentArn: string,
+     *     assessmentArn?: string|null,
      *     maxResults?: int<1, 100>|null,
      *     name?: string|null,
      *     nextToken?: string|null,
@@ -26,7 +26,7 @@ class ListRecommendationTemplatesRequest extends Request
      *     status?: list<'Pending'|'InProgress'|'Failed'|'Success'>|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

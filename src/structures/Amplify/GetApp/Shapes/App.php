@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $autoBranchCreationPatterns
  * @property AutoBranchCreationConfig|null $autoBranchCreationConfig
  * @property 'SSH'|'TOKEN'|'SIGV4'|null $repositoryCloneMethod
+ * @property CacheConfig|null $cacheConfig
  */
 class App extends Shape
 {
@@ -57,7 +58,8 @@ class App extends Shape
      *     enableAutoBranchCreation?: bool|null,
      *     autoBranchCreationPatterns?: list<string>|null,
      *     autoBranchCreationConfig?: AutoBranchCreationConfig|null,
-     *     repositoryCloneMethod?: 'SSH'|'TOKEN'|'SIGV4'|null
+     *     repositoryCloneMethod?: 'SSH'|'TOKEN'|'SIGV4'|null,
+     *     cacheConfig?: CacheConfig|null
      * } $args
      */
     public function __construct(array $args)

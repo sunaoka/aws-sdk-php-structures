@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $membershipIdentifier
  * @property 'ENABLED'|'DISABLED'|null $queryLogStatus
+ * @property Shapes\MembershipProtectedQueryResultConfiguration|null $defaultResultConfiguration
  */
 class UpdateMembershipRequest extends Request
 {
     /**
      * @param array{
      *     membershipIdentifier: string,
-     *     queryLogStatus?: 'ENABLED'|'DISABLED'|null
+     *     queryLogStatus?: 'ENABLED'|'DISABLED'|null,
+     *     defaultResultConfiguration?: Shapes\MembershipProtectedQueryResultConfiguration|null
      * } $args
      */
     public function __construct(array $args)

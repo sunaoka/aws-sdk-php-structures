@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListManagedPoliciesInPermissionSet\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $Name
  * @property string|null $Arn
+ * @property string|null $Name
  */
 class AttachedManagedPolicy extends Shape
 {
     /**
      * @param array{
-     *     Name?: string|null,
-     *     Arn?: string|null
+     *     Arn?: string|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

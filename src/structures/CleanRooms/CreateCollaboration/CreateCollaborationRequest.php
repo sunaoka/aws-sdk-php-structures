@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\DataEncryptionMetadata|null $dataEncryptionMetadata
  * @property 'ENABLED'|'DISABLED' $queryLogStatus
  * @property array<string, string>|null $tags
+ * @property Shapes\PaymentConfiguration|null $creatorPaymentConfiguration
  */
 class CreateCollaborationRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateCollaborationRequest extends Request
      *     creatorDisplayName: string,
      *     dataEncryptionMetadata?: Shapes\DataEncryptionMetadata|null,
      *     queryLogStatus: 'ENABLED'|'DISABLED',
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     creatorPaymentConfiguration?: Shapes\PaymentConfiguration|null
      * } $args
      */
     public function __construct(array $args)

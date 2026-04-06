@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $datastoreId
  * @property string $inputS3Uri
  * @property string $outputS3Uri
+ * @property string|null $inputOwnerAccountId
  */
 class StartDICOMImportJobRequest extends Request
 {
@@ -21,7 +22,8 @@ class StartDICOMImportJobRequest extends Request
      *     clientToken: string,
      *     datastoreId: string,
      *     inputS3Uri: string,
-     *     outputS3Uri: string
+     *     outputS3Uri: string,
+     *     inputOwnerAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

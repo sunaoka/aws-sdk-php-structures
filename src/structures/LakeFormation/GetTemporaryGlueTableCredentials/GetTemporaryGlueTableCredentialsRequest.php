@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<900, 43200>|null $DurationSeconds
  * @property Shapes\AuditContext|null $AuditContext
  * @property list<'COLUMN_PERMISSION'|'CELL_FILTER_PERMISSION'|'NESTED_PERMISSION'|'NESTED_CELL_PERMISSION'>|null $SupportedPermissionTypes
+ * @property string|null $S3Path
+ * @property Shapes\QuerySessionContext|null $QuerySessionContext
  */
 class GetTemporaryGlueTableCredentialsRequest extends Request
 {
@@ -19,7 +21,9 @@ class GetTemporaryGlueTableCredentialsRequest extends Request
      *     Permissions?: list<'ALL'|'SELECT'|'ALTER'|'DROP'|'DELETE'|'INSERT'|'DESCRIBE'|'CREATE_DATABASE'|'CREATE_TABLE'|'DATA_LOCATION_ACCESS'|'CREATE_LF_TAG'|'ASSOCIATE'|'GRANT_WITH_LF_TAG_EXPRESSION'>|null,
      *     DurationSeconds?: int<900, 43200>|null,
      *     AuditContext?: Shapes\AuditContext|null,
-     *     SupportedPermissionTypes?: list<'COLUMN_PERMISSION'|'CELL_FILTER_PERMISSION'|'NESTED_PERMISSION'|'NESTED_CELL_PERMISSION'>|null
+     *     SupportedPermissionTypes?: list<'COLUMN_PERMISSION'|'CELL_FILTER_PERMISSION'|'NESTED_PERMISSION'|'NESTED_CELL_PERMISSION'>|null,
+     *     S3Path?: string|null,
+     *     QuerySessionContext?: Shapes\QuerySessionContext|null
      * } $args
      */
     public function __construct(array $args)

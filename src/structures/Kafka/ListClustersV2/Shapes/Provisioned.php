@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ZookeeperConnectString
  * @property string|null $ZookeeperConnectStringTls
  * @property 'LOCAL'|'TIERED'|null $StorageMode
+ * @property 'CRITICAL_ACTION_REQUIRED'|'ACTION_RECOMMENDED'|'NONE'|null $CustomerActionStatus
  */
 class Provisioned extends Shape
 {
@@ -31,7 +32,8 @@ class Provisioned extends Shape
      *     NumberOfBrokerNodes: int<1, 15>,
      *     ZookeeperConnectString?: string|null,
      *     ZookeeperConnectStringTls?: string|null,
-     *     StorageMode?: 'LOCAL'|'TIERED'|null
+     *     StorageMode?: 'LOCAL'|'TIERED'|null,
+     *     CustomerActionStatus?: 'CRITICAL_ACTION_REQUIRED'|'ACTION_RECOMMENDED'|'NONE'|null
      * } $args
      */
     public function __construct(array $args)

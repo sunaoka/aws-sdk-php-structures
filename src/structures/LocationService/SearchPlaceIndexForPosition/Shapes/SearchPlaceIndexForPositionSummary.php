@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LocationService\SearchPlaceIndexForPosition\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property list<double> $Position
+ * @property int<1, 50>|null $MaxResults
  * @property string $DataSource
  * @property string|null $Language
- * @property int<1, 50>|null $MaxResults
- * @property list<double> $Position
  */
 class SearchPlaceIndexForPositionSummary extends Shape
 {
     /**
      * @param array{
-     *     DataSource: string,
-     *     Language?: string|null,
+     *     Position: list<double>,
      *     MaxResults?: int<1, 50>|null,
-     *     Position: list<double>
+     *     DataSource: string,
+     *     Language?: string|null
      * } $args
      */
     public function __construct(array $args)

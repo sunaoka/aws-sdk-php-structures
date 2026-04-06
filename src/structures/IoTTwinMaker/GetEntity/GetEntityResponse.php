@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $creationDateTime
  * @property \Aws\Api\DateTimeResult $updateDateTime
  * @property string|null $syncSource
+ * @property bool|null $areAllComponentsReturned
  */
 class GetEntityResponse extends Response
 {

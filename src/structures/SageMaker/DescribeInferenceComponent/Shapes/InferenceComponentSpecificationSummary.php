@@ -1,0 +1,27 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\SageMaker\DescribeInferenceComponent\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string|null $ModelName
+ * @property InferenceComponentContainerSpecificationSummary|null $Container
+ * @property InferenceComponentStartupParameters|null $StartupParameters
+ * @property InferenceComponentComputeResourceRequirements|null $ComputeResourceRequirements
+ */
+class InferenceComponentSpecificationSummary extends Shape
+{
+    /**
+     * @param array{
+     *     ModelName?: string|null,
+     *     Container?: InferenceComponentContainerSpecificationSummary|null,
+     *     StartupParameters?: InferenceComponentStartupParameters|null,
+     *     ComputeResourceRequirements?: InferenceComponentComputeResourceRequirements|null
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

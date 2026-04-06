@@ -33,6 +33,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<DBInstanceAutomatedBackupsReplication>|null $DBInstanceAutomatedBackupsReplications
  * @property string|null $BackupTarget
  * @property int|null $StorageThroughput
+ * @property string|null $AwsBackupRecoveryPointArn
+ * @property bool|null $DedicatedLogVolume
+ * @property bool|null $MultiTenant
  */
 class DBInstanceAutomatedBackup extends Shape
 {
@@ -65,7 +68,10 @@ class DBInstanceAutomatedBackup extends Shape
      *     DBInstanceAutomatedBackupsArn?: string|null,
      *     DBInstanceAutomatedBackupsReplications?: list<DBInstanceAutomatedBackupsReplication>|null,
      *     BackupTarget?: string|null,
-     *     StorageThroughput?: int|null
+     *     StorageThroughput?: int|null,
+     *     AwsBackupRecoveryPointArn?: string|null,
+     *     DedicatedLogVolume?: bool|null,
+     *     MultiTenant?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

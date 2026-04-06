@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\mgn\GetLaunchConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'LEGACY_BIOS'|'UEFI'|null $bootMode
+ * @property 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE'|null $bootMode
  * @property bool|null $copyPrivateIp
  * @property bool|null $copyTags
  * @property string|null $ec2LaunchTemplateID

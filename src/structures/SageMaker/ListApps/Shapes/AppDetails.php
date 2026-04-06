@@ -7,11 +7,12 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $DomainId
  * @property string|null $UserProfileName
- * @property 'JupyterServer'|'KernelGateway'|'TensorBoard'|'RStudioServerPro'|'RSessionGateway'|null $AppType
+ * @property string|null $SpaceName
+ * @property 'JupyterServer'|'KernelGateway'|'DetailedProfiler'|'TensorBoard'|'CodeEditor'|'JupyterLab'|'RStudioServerPro'|'RSessionGateway'|'Canvas'|null $AppType
  * @property string|null $AppName
  * @property 'Deleted'|'Deleting'|'Failed'|'InService'|'Pending'|null $Status
  * @property \Aws\Api\DateTimeResult|null $CreationTime
- * @property string|null $SpaceName
+ * @property ResourceSpec|null $ResourceSpec
  */
 class AppDetails extends Shape
 {
@@ -19,11 +20,12 @@ class AppDetails extends Shape
      * @param array{
      *     DomainId?: string|null,
      *     UserProfileName?: string|null,
-     *     AppType?: 'JupyterServer'|'KernelGateway'|'TensorBoard'|'RStudioServerPro'|'RSessionGateway'|null,
+     *     SpaceName?: string|null,
+     *     AppType?: 'JupyterServer'|'KernelGateway'|'DetailedProfiler'|'TensorBoard'|'CodeEditor'|'JupyterLab'|'RStudioServerPro'|'RSessionGateway'|'Canvas'|null,
      *     AppName?: string|null,
      *     Status?: 'Deleted'|'Deleting'|'Failed'|'InService'|'Pending'|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
-     *     SpaceName?: string|null
+     *     ResourceSpec?: ResourceSpec|null
      * } $args
      */
     public function __construct(array $args = [])

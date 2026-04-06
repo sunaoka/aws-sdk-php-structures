@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Psr\Http\Message\StreamInterface $Content
  * @property string|null $ContentType
  * @property string|null $VersionLabel
+ * @property string|null $KmsKeyArn
  */
 class GetHostedConfigurationVersionResponse extends Response
 {

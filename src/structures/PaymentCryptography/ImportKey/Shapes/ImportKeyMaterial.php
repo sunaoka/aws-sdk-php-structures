@@ -6,18 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property RootCertificatePublicKey|null $RootCertificatePublicKey
+ * @property TrustedCertificatePublicKey|null $TrustedCertificatePublicKey
  * @property ImportTr31KeyBlock|null $Tr31KeyBlock
  * @property ImportTr34KeyBlock|null $Tr34KeyBlock
- * @property TrustedCertificatePublicKey|null $TrustedCertificatePublicKey
+ * @property ImportKeyCryptogram|null $KeyCryptogram
  */
 class ImportKeyMaterial extends Shape
 {
     /**
      * @param array{
      *     RootCertificatePublicKey?: RootCertificatePublicKey|null,
+     *     TrustedCertificatePublicKey?: TrustedCertificatePublicKey|null,
      *     Tr31KeyBlock?: ImportTr31KeyBlock|null,
      *     Tr34KeyBlock?: ImportTr34KeyBlock|null,
-     *     TrustedCertificatePublicKey?: TrustedCertificatePublicKey|null
+     *     KeyCryptogram?: ImportKeyCryptogram|null
      * } $args
      */
     public function __construct(array $args = [])

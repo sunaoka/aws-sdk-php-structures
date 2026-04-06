@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $componentName
+ * @property string|null $componentPath
  * @property string|null $componentTypeId
  * @property string|null $entityId
  * @property list<string> $selectedProperties
@@ -20,6 +21,7 @@ class GetPropertyValueRequest extends Request
     /**
      * @param array{
      *     componentName?: string|null,
+     *     componentPath?: string|null,
      *     componentTypeId?: string|null,
      *     entityId?: string|null,
      *     selectedProperties: list<string>,

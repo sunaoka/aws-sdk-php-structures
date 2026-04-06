@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Arn
  * @property string|null $Name
  * @property 'USER'|'QUEUE'|'PHONE_NUMBER'|null $QuickConnectType
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $LastModifiedRegion
  */
 class QuickConnectSummary extends Shape
 {
@@ -17,7 +19,9 @@ class QuickConnectSummary extends Shape
      *     Id?: string|null,
      *     Arn?: string|null,
      *     Name?: string|null,
-     *     QuickConnectType?: 'USER'|'QUEUE'|'PHONE_NUMBER'|null
+     *     QuickConnectType?: 'USER'|'QUEUE'|'PHONE_NUMBER'|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $desiredCapacity
  * @property string|null $engineVersion
  * @property string $environmentId
+ * @property bool|null $forceUpdate
  * @property string|null $instanceType
  * @property string|null $preferredMaintenanceWindow
  */
@@ -20,6 +21,7 @@ class UpdateEnvironmentRequest extends Request
      *     desiredCapacity?: int|null,
      *     engineVersion?: string|null,
      *     environmentId: string,
+     *     forceUpdate?: bool|null,
      *     instanceType?: string|null,
      *     preferredMaintenanceWindow?: string|null
      * } $args

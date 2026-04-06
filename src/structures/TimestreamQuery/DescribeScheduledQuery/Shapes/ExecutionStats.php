@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $ExecutionTimeInMillis
  * @property int|null $DataWrites
  * @property int|null $BytesMetered
+ * @property int|null $CumulativeBytesScanned
  * @property int|null $RecordsIngested
  * @property int|null $QueryResultRows
  */
@@ -18,6 +19,7 @@ class ExecutionStats extends Shape
      *     ExecutionTimeInMillis?: int|null,
      *     DataWrites?: int|null,
      *     BytesMetered?: int|null,
+     *     CumulativeBytesScanned?: int|null,
      *     RecordsIngested?: int|null,
      *     QueryResultRows?: int|null
      * } $args

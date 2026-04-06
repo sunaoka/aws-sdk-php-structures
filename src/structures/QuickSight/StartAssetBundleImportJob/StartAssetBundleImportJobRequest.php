@@ -10,6 +10,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AssetBundleImportSource $AssetBundleImportSource
  * @property Shapes\AssetBundleImportJobOverrideParameters|null $OverrideParameters
  * @property 'DO_NOTHING'|'ROLLBACK'|null $FailureAction
+ * @property Shapes\AssetBundleImportJobOverridePermissions|null $OverridePermissions
+ * @property Shapes\AssetBundleImportJobOverrideTags|null $OverrideTags
+ * @property Shapes\AssetBundleImportJobOverrideValidationStrategy|null $OverrideValidationStrategy
  */
 class StartAssetBundleImportJobRequest extends Request
 {
@@ -19,7 +22,10 @@ class StartAssetBundleImportJobRequest extends Request
      *     AssetBundleImportJobId: string,
      *     AssetBundleImportSource: Shapes\AssetBundleImportSource,
      *     OverrideParameters?: Shapes\AssetBundleImportJobOverrideParameters|null,
-     *     FailureAction?: 'DO_NOTHING'|'ROLLBACK'|null
+     *     FailureAction?: 'DO_NOTHING'|'ROLLBACK'|null,
+     *     OverridePermissions?: Shapes\AssetBundleImportJobOverridePermissions|null,
+     *     OverrideTags?: Shapes\AssetBundleImportJobOverrideTags|null,
+     *     OverrideValidationStrategy?: Shapes\AssetBundleImportJobOverrideValidationStrategy|null
      * } $args
      */
     public function __construct(array $args)

@@ -1,0 +1,27 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\QuickSight\StartAssetBundleImportJob\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $Host
+ * @property int<1, 65535> $Port
+ * @property string $Catalog
+ * @property 'GALAXY'|'ENTERPRISE'|null $ProductType
+ */
+class StarburstParameters extends Shape
+{
+    /**
+     * @param array{
+     *     Host: string,
+     *     Port: int<1, 65535>,
+     *     Catalog: string,
+     *     ProductType?: 'GALAXY'|'ENTERPRISE'|null
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

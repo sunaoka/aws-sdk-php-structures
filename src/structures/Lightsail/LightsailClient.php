@@ -127,6 +127,7 @@ class LightsailClient extends \Aws\Lightsail\LightsailClient
     use GetRelationalDatabaseSnapshot\GetRelationalDatabaseSnapshotTrait;
     use GetRelationalDatabaseSnapshots\GetRelationalDatabaseSnapshotsTrait;
     use GetRelationalDatabases\GetRelationalDatabasesTrait;
+    use GetSetupHistory\GetSetupHistoryTrait;
     use GetStaticIp\GetStaticIpTrait;
     use GetStaticIps\GetStaticIpsTrait;
     use ImportKeyPair\ImportKeyPairTrait;
@@ -143,6 +144,7 @@ class LightsailClient extends \Aws\Lightsail\LightsailClient
     use SendContactMethodVerification\SendContactMethodVerificationTrait;
     use SetIpAddressType\SetIpAddressTypeTrait;
     use SetResourceAccessForBucket\SetResourceAccessForBucketTrait;
+    use SetupInstanceHttps\SetupInstanceHttpsTrait;
     use StartGUISession\StartGUISessionTrait;
     use StartInstance\StartInstanceTrait;
     use StartRelationalDatabase\StartRelationalDatabaseTrait;

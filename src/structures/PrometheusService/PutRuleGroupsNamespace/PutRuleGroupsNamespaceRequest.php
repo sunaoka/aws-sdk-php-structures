@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\PrometheusService\PutRuleGroupsNamespace;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $workspaceId
- * @property string $name
- * @property string|resource|\Psr\Http\Message\StreamInterface $data
  * @property string|null $clientToken
+ * @property string|resource|\Psr\Http\Message\StreamInterface $data
+ * @property string $name
+ * @property string $workspaceId
  */
 class PutRuleGroupsNamespaceRequest extends Request
 {
     /**
      * @param array{
-     *     workspaceId: string,
-     *     name: string,
+     *     clientToken?: string|null,
      *     data: string|resource|\Psr\Http\Message\StreamInterface,
-     *     clientToken?: string|null
+     *     name: string,
+     *     workspaceId: string
      * } $args
      */
     public function __construct(array $args)

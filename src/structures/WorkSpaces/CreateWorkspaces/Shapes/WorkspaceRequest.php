@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $RootVolumeEncryptionEnabled
  * @property WorkspaceProperties|null $WorkspaceProperties
  * @property list<Tag>|null $Tags
+ * @property string|null $WorkspaceName
  */
 class WorkspaceRequest extends Shape
 {
@@ -25,7 +26,8 @@ class WorkspaceRequest extends Shape
      *     UserVolumeEncryptionEnabled?: bool|null,
      *     RootVolumeEncryptionEnabled?: bool|null,
      *     WorkspaceProperties?: WorkspaceProperties|null,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     WorkspaceName?: string|null
      * } $args
      */
     public function __construct(array $args)

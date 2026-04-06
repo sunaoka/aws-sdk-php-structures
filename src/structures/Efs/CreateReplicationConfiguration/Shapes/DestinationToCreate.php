@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Region
  * @property string|null $AvailabilityZoneName
  * @property string|null $KmsKeyId
+ * @property string|null $FileSystemId
  */
 class DestinationToCreate extends Shape
 {
@@ -15,7 +16,8 @@ class DestinationToCreate extends Shape
      * @param array{
      *     Region?: string|null,
      *     AvailabilityZoneName?: string|null,
-     *     KmsKeyId?: string|null
+     *     KmsKeyId?: string|null,
+     *     FileSystemId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

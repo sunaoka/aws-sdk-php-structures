@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property S3StorageConfig $S3StorageConfig
  * @property bool|null $DisableGlueTableCreation
  * @property DataCatalogConfig|null $DataCatalogConfig
- * @property 'Glue'|'Iceberg'|null $TableFormat
+ * @property 'Default'|'Glue'|'Iceberg'|null $TableFormat
  */
 class OfflineStoreConfig extends Shape
 {
@@ -17,7 +17,7 @@ class OfflineStoreConfig extends Shape
      *     S3StorageConfig: S3StorageConfig,
      *     DisableGlueTableCreation?: bool|null,
      *     DataCatalogConfig?: DataCatalogConfig|null,
-     *     TableFormat?: 'Glue'|'Iceberg'|null
+     *     TableFormat?: 'Default'|'Glue'|'Iceberg'|null
      * } $args
      */
     public function __construct(array $args)

@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\WorkflowDetails|null $WorkflowDetails
  * @property list<string>|null $StructuredLogDestinations
+ * @property Shapes\S3StorageOptions|null $S3StorageOptions
  */
 class CreateServerRequest extends Request
 {
@@ -41,7 +42,8 @@ class CreateServerRequest extends Request
      *     SecurityPolicyName?: string|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     WorkflowDetails?: Shapes\WorkflowDetails|null,
-     *     StructuredLogDestinations?: list<string>|null
+     *     StructuredLogDestinations?: list<string>|null,
+     *     S3StorageOptions?: Shapes\S3StorageOptions|null
      * } $args
      */
     public function __construct(array $args = [])

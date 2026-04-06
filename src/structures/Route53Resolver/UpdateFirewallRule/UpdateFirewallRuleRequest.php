@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CNAME'|null $BlockOverrideDnsType
  * @property int<0, 604800>|null $BlockOverrideTtl
  * @property string|null $Name
+ * @property 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN'|null $FirewallDomainRedirectionAction
+ * @property string|null $Qtype
  */
 class UpdateFirewallRuleRequest extends Request
 {
@@ -27,7 +29,9 @@ class UpdateFirewallRuleRequest extends Request
      *     BlockOverrideDomain?: string|null,
      *     BlockOverrideDnsType?: 'CNAME'|null,
      *     BlockOverrideTtl?: int<0, 604800>|null,
-     *     Name?: string|null
+     *     Name?: string|null,
+     *     FirewallDomainRedirectionAction?: 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN'|null,
+     *     Qtype?: string|null
      * } $args
      */
     public function __construct(array $args)

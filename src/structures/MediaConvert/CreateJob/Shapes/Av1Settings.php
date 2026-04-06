@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'OFF'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX'|null $AdaptiveQuantization
  * @property 'BIT_8'|'BIT_10'|null $BitDepth
+ * @property 'DISABLED'|'ENABLED'|null $FilmGrainSynthesis
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $FramerateControl
  * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null $FramerateConversionAlgorithm
  * @property int<1, 2147483647>|null $FramerateDenominator
@@ -25,6 +26,7 @@ class Av1Settings extends Shape
      * @param array{
      *     AdaptiveQuantization?: 'OFF'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX'|null,
      *     BitDepth?: 'BIT_8'|'BIT_10'|null,
+     *     FilmGrainSynthesis?: 'DISABLED'|'ENABLED'|null,
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
      *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null,
      *     FramerateDenominator?: int<1, 2147483647>|null,

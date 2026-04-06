@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property SourceFiles $sourceFiles
- * @property 'FASTQ'|'BAM'|'CRAM' $sourceFileType
+ * @property 'FASTQ'|'BAM'|'CRAM'|'UBAM' $sourceFileType
  * @property 'NOT_STARTED'|'IN_PROGRESS'|'FINISHED'|'FAILED' $status
  * @property string|null $statusMessage
  * @property string $subjectId
@@ -22,7 +22,7 @@ class ImportReadSetSourceItem extends Shape
     /**
      * @param array{
      *     sourceFiles: SourceFiles,
-     *     sourceFileType: 'FASTQ'|'BAM'|'CRAM',
+     *     sourceFileType: 'FASTQ'|'BAM'|'CRAM'|'UBAM',
      *     status: 'NOT_STARTED'|'IN_PROGRESS'|'FINISHED'|'FAILED',
      *     statusMessage?: string|null,
      *     subjectId: string,

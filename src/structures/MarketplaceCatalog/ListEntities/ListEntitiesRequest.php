@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $NextToken
  * @property int<1, 50>|null $MaxResults
  * @property 'SELF'|'SHARED'|null $OwnershipType
+ * @property Shapes\EntityTypeFilters|null $EntityTypeFilters
+ * @property Shapes\EntityTypeSort|null $EntityTypeSort
  */
 class ListEntitiesRequest extends Request
 {
@@ -23,7 +25,9 @@ class ListEntitiesRequest extends Request
      *     Sort?: Shapes\Sort|null,
      *     NextToken?: string|null,
      *     MaxResults?: int<1, 50>|null,
-     *     OwnershipType?: 'SELF'|'SHARED'|null
+     *     OwnershipType?: 'SELF'|'SHARED'|null,
+     *     EntityTypeFilters?: Shapes\EntityTypeFilters|null,
+     *     EntityTypeSort?: Shapes\EntityTypeSort|null
      * } $args
      */
     public function __construct(array $args)

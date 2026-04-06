@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property RecommendationMetrics|null $Metrics
+ * @property InferenceMetrics|null $EndpointMetrics
  * @property EndpointOutputConfiguration|null $EndpointConfiguration
  * @property ModelConfiguration $ModelConfiguration
  * @property string|null $FailureReason
- * @property InferenceMetrics|null $EndpointMetrics
  * @property \Aws\Api\DateTimeResult|null $InvocationEndTime
  * @property \Aws\Api\DateTimeResult|null $InvocationStartTime
  */
@@ -18,10 +18,10 @@ class RecommendationJobInferenceBenchmark extends Shape
     /**
      * @param array{
      *     Metrics?: RecommendationMetrics|null,
+     *     EndpointMetrics?: InferenceMetrics|null,
      *     EndpointConfiguration?: EndpointOutputConfiguration|null,
      *     ModelConfiguration: ModelConfiguration,
      *     FailureReason?: string|null,
-     *     EndpointMetrics?: InferenceMetrics|null,
      *     InvocationEndTime?: \Aws\Api\DateTimeResult|null,
      *     InvocationStartTime?: \Aws\Api\DateTimeResult|null
      * } $args

@@ -4,6 +4,8 @@ namespace Sunaoka\Aws\Structures\QuickSight;
 
 class QuickSightClient extends \Aws\QuickSight\QuickSightClient
 {
+    use BatchCreateTopicReviewedAnswer\BatchCreateTopicReviewedAnswerTrait;
+    use BatchDeleteTopicReviewedAnswer\BatchDeleteTopicReviewedAnswerTrait;
     use CancelIngestion\CancelIngestionTrait;
     use CreateAccountCustomization\CreateAccountCustomizationTrait;
     use CreateAccountSubscription\CreateAccountSubscriptionTrait;
@@ -19,6 +21,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use CreateIngestion\CreateIngestionTrait;
     use CreateNamespace\CreateNamespaceTrait;
     use CreateRefreshSchedule\CreateRefreshScheduleTrait;
+    use CreateRoleMembership\CreateRoleMembershipTrait;
     use CreateTemplate\CreateTemplateTrait;
     use CreateTemplateAlias\CreateTemplateAliasTrait;
     use CreateTheme\CreateThemeTrait;
@@ -38,8 +41,11 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DeleteGroup\DeleteGroupTrait;
     use DeleteGroupMembership\DeleteGroupMembershipTrait;
     use DeleteIAMPolicyAssignment\DeleteIAMPolicyAssignmentTrait;
+    use DeleteIdentityPropagationConfig\DeleteIdentityPropagationConfigTrait;
     use DeleteNamespace\DeleteNamespaceTrait;
     use DeleteRefreshSchedule\DeleteRefreshScheduleTrait;
+    use DeleteRoleCustomPermission\DeleteRoleCustomPermissionTrait;
+    use DeleteRoleMembership\DeleteRoleMembershipTrait;
     use DeleteTemplate\DeleteTemplateTrait;
     use DeleteTemplateAlias\DeleteTemplateAliasTrait;
     use DeleteTheme\DeleteThemeTrait;
@@ -75,8 +81,10 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DescribeIAMPolicyAssignment\DescribeIAMPolicyAssignmentTrait;
     use DescribeIngestion\DescribeIngestionTrait;
     use DescribeIpRestriction\DescribeIpRestrictionTrait;
+    use DescribeKeyRegistration\DescribeKeyRegistrationTrait;
     use DescribeNamespace\DescribeNamespaceTrait;
     use DescribeRefreshSchedule\DescribeRefreshScheduleTrait;
+    use DescribeRoleCustomPermission\DescribeRoleCustomPermissionTrait;
     use DescribeTemplate\DescribeTemplateTrait;
     use DescribeTemplateAlias\DescribeTemplateAliasTrait;
     use DescribeTemplateDefinition\DescribeTemplateDefinitionTrait;
@@ -107,9 +115,11 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use ListGroups\ListGroupsTrait;
     use ListIAMPolicyAssignments\ListIAMPolicyAssignmentsTrait;
     use ListIAMPolicyAssignmentsForUser\ListIAMPolicyAssignmentsForUserTrait;
+    use ListIdentityPropagationConfigs\ListIdentityPropagationConfigsTrait;
     use ListIngestions\ListIngestionsTrait;
     use ListNamespaces\ListNamespacesTrait;
     use ListRefreshSchedules\ListRefreshSchedulesTrait;
+    use ListRoleMemberships\ListRoleMembershipsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTemplateAliases\ListTemplateAliasesTrait;
     use ListTemplateVersions\ListTemplateVersionsTrait;
@@ -118,6 +128,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use ListThemeVersions\ListThemeVersionsTrait;
     use ListThemes\ListThemesTrait;
     use ListTopicRefreshSchedules\ListTopicRefreshSchedulesTrait;
+    use ListTopicReviewedAnswers\ListTopicReviewedAnswersTrait;
     use ListTopics\ListTopicsTrait;
     use ListUserGroups\ListUserGroupsTrait;
     use ListUsers\ListUsersTrait;
@@ -141,6 +152,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateAnalysis\UpdateAnalysisTrait;
     use UpdateAnalysisPermissions\UpdateAnalysisPermissionsTrait;
     use UpdateDashboard\UpdateDashboardTrait;
+    use UpdateDashboardLinks\UpdateDashboardLinksTrait;
     use UpdateDashboardPermissions\UpdateDashboardPermissionsTrait;
     use UpdateDashboardPublishedVersion\UpdateDashboardPublishedVersionTrait;
     use UpdateDataSet\UpdateDataSetTrait;
@@ -151,9 +163,13 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateFolderPermissions\UpdateFolderPermissionsTrait;
     use UpdateGroup\UpdateGroupTrait;
     use UpdateIAMPolicyAssignment\UpdateIAMPolicyAssignmentTrait;
+    use UpdateIdentityPropagationConfig\UpdateIdentityPropagationConfigTrait;
     use UpdateIpRestriction\UpdateIpRestrictionTrait;
+    use UpdateKeyRegistration\UpdateKeyRegistrationTrait;
     use UpdatePublicSharingSettings\UpdatePublicSharingSettingsTrait;
     use UpdateRefreshSchedule\UpdateRefreshScheduleTrait;
+    use UpdateRoleCustomPermission\UpdateRoleCustomPermissionTrait;
+    use UpdateSPICECapacityConfiguration\UpdateSPICECapacityConfigurationTrait;
     use UpdateTemplate\UpdateTemplateTrait;
     use UpdateTemplateAlias\UpdateTemplateAliasTrait;
     use UpdateTemplatePermissions\UpdateTemplatePermissionsTrait;

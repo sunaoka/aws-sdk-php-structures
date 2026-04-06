@@ -6,6 +6,7 @@ class Macie2Client extends \Aws\Macie2\Macie2Client
 {
     use AcceptInvitation\AcceptInvitationTrait;
     use BatchGetCustomDataIdentifiers\BatchGetCustomDataIdentifiersTrait;
+    use BatchUpdateAutomatedDiscoveryAccounts\BatchUpdateAutomatedDiscoveryAccountsTrait;
     use CreateAllowList\CreateAllowListTrait;
     use CreateClassificationJob\CreateClassificationJobTrait;
     use CreateCustomDataIdentifier\CreateCustomDataIdentifierTrait;
@@ -52,6 +53,7 @@ class Macie2Client extends \Aws\Macie2\Macie2Client
     use GetUsageStatistics\GetUsageStatisticsTrait;
     use GetUsageTotals\GetUsageTotalsTrait;
     use ListAllowLists\ListAllowListsTrait;
+    use ListAutomatedDiscoveryAccounts\ListAutomatedDiscoveryAccountsTrait;
     use ListClassificationJobs\ListClassificationJobsTrait;
     use ListClassificationScopes\ListClassificationScopesTrait;
     use ListCustomDataIdentifiers\ListCustomDataIdentifiersTrait;

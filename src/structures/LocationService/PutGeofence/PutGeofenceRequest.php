@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CollectionName
  * @property string $GeofenceId
- * @property array<string, string>|null $GeofenceProperties
  * @property Shapes\GeofenceGeometry $Geometry
+ * @property array<string, string>|null $GeofenceProperties
  */
 class PutGeofenceRequest extends Request
 {
@@ -16,8 +16,8 @@ class PutGeofenceRequest extends Request
      * @param array{
      *     CollectionName: string,
      *     GeofenceId: string,
-     *     GeofenceProperties?: array<string, string>|null,
-     *     Geometry: Shapes\GeofenceGeometry
+     *     Geometry: Shapes\GeofenceGeometry,
+     *     GeofenceProperties?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -11,13 +11,16 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $Created
  * @property bool|null $Deleted
  * @property string|null $Endpoint
+ * @property string|null $EndpointV2
  * @property array<string, string>|null $Endpoints
+ * @property string|null $DomainEndpointV2HostedZoneId
  * @property bool|null $Processing
  * @property bool|null $UpgradeProcessing
  * @property string|null $EngineVersion
  * @property ClusterConfig $ClusterConfig
  * @property EBSOptions|null $EBSOptions
  * @property string|null $AccessPolicies
+ * @property 'ipv4'|'dualstack'|null $IPAddressType
  * @property SnapshotOptions|null $SnapshotOptions
  * @property VPCDerivedInfo|null $VPCOptions
  * @property CognitoOptions|null $CognitoOptions
@@ -32,6 +35,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ChangeProgressDetails|null $ChangeProgressDetails
  * @property OffPeakWindowOptions|null $OffPeakWindowOptions
  * @property SoftwareUpdateOptions|null $SoftwareUpdateOptions
+ * @property 'Creating'|'Active'|'Modifying'|'UpgradingEngineVersion'|'UpdatingServiceSoftware'|'Isolated'|'Deleting'|null $DomainProcessingStatus
+ * @property list<ModifyingProperties>|null $ModifyingProperties
+ * @property AIMLOptionsOutput|null $AIMLOptions
  */
 class DomainStatus extends Shape
 {
@@ -43,13 +49,16 @@ class DomainStatus extends Shape
      *     Created?: bool|null,
      *     Deleted?: bool|null,
      *     Endpoint?: string|null,
+     *     EndpointV2?: string|null,
      *     Endpoints?: array<string, string>|null,
+     *     DomainEndpointV2HostedZoneId?: string|null,
      *     Processing?: bool|null,
      *     UpgradeProcessing?: bool|null,
      *     EngineVersion?: string|null,
      *     ClusterConfig: ClusterConfig,
      *     EBSOptions?: EBSOptions|null,
      *     AccessPolicies?: string|null,
+     *     IPAddressType?: 'ipv4'|'dualstack'|null,
      *     SnapshotOptions?: SnapshotOptions|null,
      *     VPCOptions?: VPCDerivedInfo|null,
      *     CognitoOptions?: CognitoOptions|null,
@@ -63,7 +72,10 @@ class DomainStatus extends Shape
      *     AutoTuneOptions?: AutoTuneOptionsOutput|null,
      *     ChangeProgressDetails?: ChangeProgressDetails|null,
      *     OffPeakWindowOptions?: OffPeakWindowOptions|null,
-     *     SoftwareUpdateOptions?: SoftwareUpdateOptions|null
+     *     SoftwareUpdateOptions?: SoftwareUpdateOptions|null,
+     *     DomainProcessingStatus?: 'Creating'|'Active'|'Modifying'|'UpgradingEngineVersion'|'UpdatingServiceSoftware'|'Isolated'|'Deleting'|null,
+     *     ModifyingProperties?: list<ModifyingProperties>|null,
+     *     AIMLOptions?: AIMLOptionsOutput|null
      * } $args
      */
     public function __construct(array $args)

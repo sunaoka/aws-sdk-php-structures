@@ -5,6 +5,8 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\UpdateProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property bool|null $acceptRoleSessionName
+ * @property list<AttributeMapping>|null $attributeMappings
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $createdBy
  * @property int|null $durationSeconds
@@ -22,6 +24,8 @@ class ProfileDetail extends Shape
 {
     /**
      * @param array{
+     *     acceptRoleSessionName?: bool|null,
+     *     attributeMappings?: list<AttributeMapping>|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     createdBy?: string|null,
      *     durationSeconds?: int|null,

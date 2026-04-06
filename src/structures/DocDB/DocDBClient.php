@@ -57,4 +57,5 @@ class DocDBClient extends \Aws\DocDB\DocDBClient
     use RestoreDBClusterToPointInTime\RestoreDBClusterToPointInTimeTrait;
     use StartDBCluster\StartDBClusterTrait;
     use StopDBCluster\StopDBClusterTrait;
+    use SwitchoverGlobalCluster\SwitchoverGlobalClusterTrait;
 }

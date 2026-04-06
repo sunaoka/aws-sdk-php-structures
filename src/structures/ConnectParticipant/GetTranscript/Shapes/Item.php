@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'TYPING'|'PARTICIPANT_JOINED'|'PARTICIPANT_LEFT'|'CHAT_ENDED'|'TRANSFER_SUCCEEDED'|'TRANSFER_FAILED'|'MESSAGE'|'EVENT'|'ATTACHMENT'|'CONNECTION_ACK'|'MESSAGE_DELIVERED'|'MESSAGE_READ'|null $Type
  * @property string|null $ParticipantId
  * @property string|null $DisplayName
- * @property 'AGENT'|'CUSTOMER'|'SYSTEM'|null $ParticipantRole
+ * @property 'AGENT'|'CUSTOMER'|'SYSTEM'|'CUSTOM_BOT'|'SUPERVISOR'|null $ParticipantRole
  * @property list<AttachmentItem>|null $Attachments
  * @property MessageMetadata|null $MessageMetadata
  * @property string|null $RelatedContactId
@@ -29,7 +29,7 @@ class Item extends Shape
      *     Type?: 'TYPING'|'PARTICIPANT_JOINED'|'PARTICIPANT_LEFT'|'CHAT_ENDED'|'TRANSFER_SUCCEEDED'|'TRANSFER_FAILED'|'MESSAGE'|'EVENT'|'ATTACHMENT'|'CONNECTION_ACK'|'MESSAGE_DELIVERED'|'MESSAGE_READ'|null,
      *     ParticipantId?: string|null,
      *     DisplayName?: string|null,
-     *     ParticipantRole?: 'AGENT'|'CUSTOMER'|'SYSTEM'|null,
+     *     ParticipantRole?: 'AGENT'|'CUSTOMER'|'SYSTEM'|'CUSTOM_BOT'|'SUPERVISOR'|null,
      *     Attachments?: list<AttachmentItem>|null,
      *     MessageMetadata?: MessageMetadata|null,
      *     RelatedContactId?: string|null,

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DeviceName
  * @property string|null $IpAddress
  * @property bool|null $DryRun
+ * @property int|null $BgpAsnExtended
  */
 class CreateCustomerGatewayRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateCustomerGatewayRequest extends Request
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     DeviceName?: string|null,
      *     IpAddress?: string|null,
-     *     DryRun?: bool|null
+     *     DryRun?: bool|null,
+     *     BgpAsnExtended?: int|null
      * } $args
      */
     public function __construct(array $args)

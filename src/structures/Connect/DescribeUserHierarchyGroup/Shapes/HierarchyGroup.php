@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LevelId
  * @property HierarchyPath|null $HierarchyPath
  * @property array<string, string>|null $Tags
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $LastModifiedRegion
  */
 class HierarchyGroup extends Shape
 {
@@ -21,7 +23,9 @@ class HierarchyGroup extends Shape
      *     Name?: string|null,
      *     LevelId?: string|null,
      *     HierarchyPath?: HierarchyPath|null,
-     *     Tags?: array<string, string>|null
+     *     Tags?: array<string, string>|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

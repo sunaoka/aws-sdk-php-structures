@@ -6,6 +6,9 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\LayoutContent $content
+ * @property \Aws\Api\DateTimeResult|null $createdTime
+ * @property bool|null $deleted
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
  * @property string $layoutArn
  * @property string $layoutId
  * @property string $name

@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<60, 1209600>|null $StartoverWindowSeconds
  * @property list<Shapes\CreateHlsManifestConfiguration>|null $HlsManifests
  * @property list<Shapes\CreateLowLatencyHlsManifestConfiguration>|null $LowLatencyHlsManifests
+ * @property list<Shapes\CreateDashManifestConfiguration>|null $DashManifests
+ * @property Shapes\ForceEndpointErrorConfiguration|null $ForceEndpointErrorConfiguration
  * @property array<string, string>|null $Tags
  */
 class CreateOriginEndpointRequest extends Request
@@ -31,6 +33,8 @@ class CreateOriginEndpointRequest extends Request
      *     StartoverWindowSeconds?: int<60, 1209600>|null,
      *     HlsManifests?: list<Shapes\CreateHlsManifestConfiguration>|null,
      *     LowLatencyHlsManifests?: list<Shapes\CreateLowLatencyHlsManifestConfiguration>|null,
+     *     DashManifests?: list<Shapes\CreateDashManifestConfiguration>|null,
+     *     ForceEndpointErrorConfiguration?: Shapes\ForceEndpointErrorConfiguration|null,
      *     Tags?: array<string, string>|null
      * } $args
      */

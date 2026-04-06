@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $tags
  * @property string|null $clientToken
  * @property string|null $fallbackLocation
+ * @property 'MD5up'|'SHA256up'|'SHA512up'|null $eTagAlgorithmFamily
  */
 class CreateSequenceStoreRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateSequenceStoreRequest extends Request
      *     sseConfig?: Shapes\SseConfig|null,
      *     tags?: array<string, string>|null,
      *     clientToken?: string|null,
-     *     fallbackLocation?: string|null
+     *     fallbackLocation?: string|null,
+     *     eTagAlgorithmFamily?: 'MD5up'|'SHA256up'|'SHA512up'|null
      * } $args
      */
     public function __construct(array $args)

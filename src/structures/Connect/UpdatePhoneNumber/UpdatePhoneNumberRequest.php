@@ -6,7 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PhoneNumberId
- * @property string $TargetArn
+ * @property string|null $TargetArn
+ * @property string|null $InstanceId
  * @property string|null $ClientToken
  */
 class UpdatePhoneNumberRequest extends Request
@@ -14,7 +15,8 @@ class UpdatePhoneNumberRequest extends Request
     /**
      * @param array{
      *     PhoneNumberId: string,
-     *     TargetArn: string,
+     *     TargetArn?: string|null,
+     *     InstanceId?: string|null,
      *     ClientToken?: string|null
      * } $args
      */

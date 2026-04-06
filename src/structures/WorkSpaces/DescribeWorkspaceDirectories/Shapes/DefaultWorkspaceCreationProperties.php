@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CustomSecurityGroupId
  * @property bool|null $UserEnabledAsLocalAdministrator
  * @property bool|null $EnableMaintenanceMode
+ * @property string|null $InstanceIamRoleArn
  */
 class DefaultWorkspaceCreationProperties extends Shape
 {
@@ -21,7 +22,8 @@ class DefaultWorkspaceCreationProperties extends Shape
      *     DefaultOu?: string|null,
      *     CustomSecurityGroupId?: string|null,
      *     UserEnabledAsLocalAdministrator?: bool|null,
-     *     EnableMaintenanceMode?: bool|null
+     *     EnableMaintenanceMode?: bool|null,
+     *     InstanceIamRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

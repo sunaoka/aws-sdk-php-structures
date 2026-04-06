@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'pending'|'available'|null $Status
  * @property Shapes\LockConfiguration|null $LockConfiguration
  * @property 'locked'|'pending_unlock'|'unlocked'|null $LockState
+ * @property string|null $RuleArn
  */
 class LockRuleResponse extends Response
 {

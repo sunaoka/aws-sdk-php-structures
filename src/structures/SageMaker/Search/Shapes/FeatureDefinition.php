@@ -5,18 +5,22 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $FeatureName
- * @property 'Integral'|'Fractional'|'String'|null $FeatureType
+ * @property string $FeatureName
+ * @property 'Integral'|'Fractional'|'String' $FeatureType
+ * @property 'List'|'Set'|'Vector'|null $CollectionType
+ * @property CollectionConfig|null $CollectionConfig
  */
 class FeatureDefinition extends Shape
 {
     /**
      * @param array{
-     *     FeatureName?: string|null,
-     *     FeatureType?: 'Integral'|'Fractional'|'String'|null
+     *     FeatureName: string,
+     *     FeatureType: 'Integral'|'Fractional'|'String',
+     *     CollectionType?: 'List'|'Set'|'Vector'|null,
+     *     CollectionConfig?: CollectionConfig|null
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

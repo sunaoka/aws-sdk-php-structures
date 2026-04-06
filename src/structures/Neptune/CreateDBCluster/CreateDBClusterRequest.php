@@ -32,6 +32,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DeletionProtection
  * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
  * @property string|null $GlobalClusterIdentifier
+ * @property string|null $StorageType
  */
 class CreateDBClusterRequest extends Request
 {
@@ -63,7 +64,8 @@ class CreateDBClusterRequest extends Request
      *     EnableCloudwatchLogsExports?: list<string>|null,
      *     DeletionProtection?: bool|null,
      *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
-     *     GlobalClusterIdentifier?: string|null
+     *     GlobalClusterIdentifier?: string|null,
+     *     StorageType?: string|null
      * } $args
      */
     public function __construct(array $args)

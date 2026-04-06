@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Sensor|null $sensor
  * @property Actuator|null $actuator
  * @property Attribute|null $attribute
+ * @property CustomStruct|null $struct
+ * @property CustomProperty|null $property
  */
 class Node extends Shape
 {
@@ -17,7 +19,9 @@ class Node extends Shape
      *     branch?: Branch|null,
      *     sensor?: Sensor|null,
      *     actuator?: Actuator|null,
-     *     attribute?: Attribute|null
+     *     attribute?: Attribute|null,
+     *     struct?: CustomStruct|null,
+     *     property?: CustomProperty|null
      * } $args
      */
     public function __construct(array $args = [])

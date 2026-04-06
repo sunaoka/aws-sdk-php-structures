@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\WorkerConfigurationRevisionDescription|null $latestRevision
  * @property string|null $name
  * @property string|null $workerConfigurationArn
+ * @property 'ACTIVE'|'DELETING'|null $workerConfigurationState
  */
 class DescribeWorkerConfigurationResponse extends Response
 {

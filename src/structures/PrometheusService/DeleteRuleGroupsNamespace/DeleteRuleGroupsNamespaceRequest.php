@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\PrometheusService\DeleteRuleGroupsNamespace;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $workspaceId
- * @property string $name
  * @property string|null $clientToken
+ * @property string $name
+ * @property string $workspaceId
  */
 class DeleteRuleGroupsNamespaceRequest extends Request
 {
     /**
      * @param array{
-     *     workspaceId: string,
+     *     clientToken?: string|null,
      *     name: string,
-     *     clientToken?: string|null
+     *     workspaceId: string
      * } $args
      */
     public function __construct(array $args)

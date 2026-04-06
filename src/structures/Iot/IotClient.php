@@ -24,6 +24,7 @@ class IotClient extends \Aws\Iot\IotClient
     use CreateAuthorizer\CreateAuthorizerTrait;
     use CreateBillingGroup\CreateBillingGroupTrait;
     use CreateCertificateFromCsr\CreateCertificateFromCsrTrait;
+    use CreateCertificateProvider\CreateCertificateProviderTrait;
     use CreateCustomMetric\CreateCustomMetricTrait;
     use CreateDimension\CreateDimensionTrait;
     use CreateDomainConfiguration\CreateDomainConfigurationTrait;
@@ -56,6 +57,7 @@ class IotClient extends \Aws\Iot\IotClient
     use DeleteBillingGroup\DeleteBillingGroupTrait;
     use DeleteCACertificate\DeleteCACertificateTrait;
     use DeleteCertificate\DeleteCertificateTrait;
+    use DeleteCertificateProvider\DeleteCertificateProviderTrait;
     use DeleteCustomMetric\DeleteCustomMetricTrait;
     use DeleteDimension\DeleteDimensionTrait;
     use DeleteDomainConfiguration\DeleteDomainConfigurationTrait;
@@ -93,6 +95,7 @@ class IotClient extends \Aws\Iot\IotClient
     use DescribeBillingGroup\DescribeBillingGroupTrait;
     use DescribeCACertificate\DescribeCACertificateTrait;
     use DescribeCertificate\DescribeCertificateTrait;
+    use DescribeCertificateProvider\DescribeCertificateProviderTrait;
     use DescribeCustomMetric\DescribeCustomMetricTrait;
     use DescribeDefaultAuthorizer\DescribeDefaultAuthorizerTrait;
     use DescribeDetectMitigationActionsTask\DescribeDetectMitigationActionsTaskTrait;
@@ -152,6 +155,7 @@ class IotClient extends \Aws\Iot\IotClient
     use ListAuthorizers\ListAuthorizersTrait;
     use ListBillingGroups\ListBillingGroupsTrait;
     use ListCACertificates\ListCACertificatesTrait;
+    use ListCertificateProviders\ListCertificateProvidersTrait;
     use ListCertificates\ListCertificatesTrait;
     use ListCertificatesByCA\ListCertificatesByCATrait;
     use ListCustomMetrics\ListCustomMetricsTrait;
@@ -232,6 +236,7 @@ class IotClient extends \Aws\Iot\IotClient
     use UpdateBillingGroup\UpdateBillingGroupTrait;
     use UpdateCACertificate\UpdateCACertificateTrait;
     use UpdateCertificate\UpdateCertificateTrait;
+    use UpdateCertificateProvider\UpdateCertificateProviderTrait;
     use UpdateCustomMetric\UpdateCustomMetricTrait;
     use UpdateDimension\UpdateDimensionTrait;
     use UpdateDomainConfiguration\UpdateDomainConfigurationTrait;

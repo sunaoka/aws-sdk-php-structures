@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'HOURS'|null $IntervalUnit
  * @property list<string>|null $Times
  * @property string|null $CronExpression
+ * @property list<Script>|null $Scripts
  */
 class CreateRule extends Shape
 {
@@ -19,7 +20,8 @@ class CreateRule extends Shape
      *     Interval?: int<1, max>|null,
      *     IntervalUnit?: 'HOURS'|null,
      *     Times?: list<string>|null,
-     *     CronExpression?: string|null
+     *     CronExpression?: string|null,
+     *     Scripts?: list<Script>|null
      * } $args
      */
     public function __construct(array $args = [])

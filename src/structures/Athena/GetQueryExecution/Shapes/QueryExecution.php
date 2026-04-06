@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EngineVersion|null $EngineVersion
  * @property list<string>|null $ExecutionParameters
  * @property string|null $SubstatementType
+ * @property QueryResultsS3AccessGrantsConfiguration|null $QueryResultsS3AccessGrantsConfiguration
  */
 class QueryExecution extends Shape
 {
@@ -33,7 +34,8 @@ class QueryExecution extends Shape
      *     WorkGroup?: string|null,
      *     EngineVersion?: EngineVersion|null,
      *     ExecutionParameters?: list<string>|null,
-     *     SubstatementType?: string|null
+     *     SubstatementType?: string|null,
+     *     QueryResultsS3AccessGrantsConfiguration?: QueryResultsS3AccessGrantsConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

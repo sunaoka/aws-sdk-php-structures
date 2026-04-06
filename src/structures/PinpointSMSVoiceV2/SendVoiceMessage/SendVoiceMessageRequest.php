@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<5, 259200>|null $TimeToLive
  * @property array<string, string>|null $Context
  * @property bool|null $DryRun
+ * @property string|null $ProtectConfigurationId
  */
 class SendVoiceMessageRequest extends Request
 {
@@ -29,7 +30,8 @@ class SendVoiceMessageRequest extends Request
      *     MaxPricePerMinute?: string|null,
      *     TimeToLive?: int<5, 259200>|null,
      *     Context?: array<string, string>|null,
-     *     DryRun?: bool|null
+     *     DryRun?: bool|null,
+     *     ProtectConfigurationId?: string|null
      * } $args
      */
     public function __construct(array $args)

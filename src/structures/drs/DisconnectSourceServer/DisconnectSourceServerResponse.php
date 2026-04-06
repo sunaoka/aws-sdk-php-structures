@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\drs\DisconnectSourceServer;
 use Sunaoka\Aws\Structures\Response;
 
 /**
+ * @property string|null $agentVersion
  * @property string|null $arn
  * @property Shapes\DataReplicationInfo|null $dataReplicationInfo
  * @property 'NOT_STARTED'|'PENDING'|'SUCCEEDED'|'FAILED'|null $lastLaunchResult

@@ -24,8 +24,11 @@ class CodePipelineClient extends \Aws\CodePipeline\CodePipelineClient
     use ListActionTypes\ListActionTypesTrait;
     use ListPipelineExecutions\ListPipelineExecutionsTrait;
     use ListPipelines\ListPipelinesTrait;
+    use ListRuleExecutions\ListRuleExecutionsTrait;
+    use ListRuleTypes\ListRuleTypesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListWebhooks\ListWebhooksTrait;
+    use OverrideStageCondition\OverrideStageConditionTrait;
     use PollForJobs\PollForJobsTrait;
     use PollForThirdPartyJobs\PollForThirdPartyJobsTrait;
     use PutActionRevision\PutActionRevisionTrait;
@@ -37,6 +40,7 @@ class CodePipelineClient extends \Aws\CodePipeline\CodePipelineClient
     use PutWebhook\PutWebhookTrait;
     use RegisterWebhookWithThirdParty\RegisterWebhookWithThirdPartyTrait;
     use RetryStageExecution\RetryStageExecutionTrait;
+    use RollbackStage\RollbackStageTrait;
     use StartPipelineExecution\StartPipelineExecutionTrait;
     use StopPipelineExecution\StopPipelineExecutionTrait;
     use TagResource\TagResourceTrait;

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $IndexSizeBytes
  * @property int|null $ItemCount
  * @property string|null $IndexArn
+ * @property OnDemandThroughput|null $OnDemandThroughput
  */
 class GlobalSecondaryIndexDescription extends Shape
 {
@@ -27,7 +28,8 @@ class GlobalSecondaryIndexDescription extends Shape
      *     ProvisionedThroughput?: ProvisionedThroughputDescription|null,
      *     IndexSizeBytes?: int|null,
      *     ItemCount?: int|null,
-     *     IndexArn?: string|null
+     *     IndexArn?: string|null,
+     *     OnDemandThroughput?: OnDemandThroughput|null
      * } $args
      */
     public function __construct(array $args = [])

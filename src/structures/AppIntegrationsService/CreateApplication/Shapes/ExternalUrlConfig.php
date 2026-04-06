@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\AppIntegrationsService\CreateApplication\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $AccessUrl
+ * @property list<string>|null $ApprovedOrigins
+ */
+class ExternalUrlConfig extends Shape
+{
+    /**
+     * @param array{
+     *     AccessUrl: string,
+     *     ApprovedOrigins?: list<string>|null
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

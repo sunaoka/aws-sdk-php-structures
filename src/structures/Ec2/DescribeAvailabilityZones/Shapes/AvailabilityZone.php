@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeAvailabilityZones\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'available'|'information'|'impaired'|'unavailable'|null $State
+ * @property 'available'|'information'|'impaired'|'unavailable'|'constrained'|null $State
  * @property 'opt-in-not-required'|'opted-in'|'not-opted-in'|null $OptInStatus
  * @property list<AvailabilityZoneMessage>|null $Messages
  * @property string|null $RegionName
@@ -21,7 +21,7 @@ class AvailabilityZone extends Shape
 {
     /**
      * @param array{
-     *     State?: 'available'|'information'|'impaired'|'unavailable'|null,
+     *     State?: 'available'|'information'|'impaired'|'unavailable'|'constrained'|null,
      *     OptInStatus?: 'opt-in-not-required'|'opted-in'|'not-opted-in'|null,
      *     Messages?: list<AvailabilityZoneMessage>|null,
      *     RegionName?: string|null,

@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\ResilienceHub;
 
 class ResilienceHubClient extends \Aws\ResilienceHub\ResilienceHubClient
 {
+    use AcceptResourceGroupingRecommendations\AcceptResourceGroupingRecommendationsTrait;
     use AddDraftAppVersionResourceMappings\AddDraftAppVersionResourceMappingsTrait;
     use BatchUpdateRecommendationStatus\BatchUpdateRecommendationStatusTrait;
     use CreateApp\CreateAppTrait;
@@ -27,9 +28,11 @@ class ResilienceHubClient extends \Aws\ResilienceHub\ResilienceHubClient
     use DescribeAppVersionTemplate\DescribeAppVersionTemplateTrait;
     use DescribeDraftAppVersionResourcesImportStatus\DescribeDraftAppVersionResourcesImportStatusTrait;
     use DescribeResiliencyPolicy\DescribeResiliencyPolicyTrait;
+    use DescribeResourceGroupingRecommendationTask\DescribeResourceGroupingRecommendationTaskTrait;
     use ImportResourcesToDraftAppVersion\ImportResourcesToDraftAppVersionTrait;
     use ListAlarmRecommendations\ListAlarmRecommendationsTrait;
     use ListAppAssessmentComplianceDrifts\ListAppAssessmentComplianceDriftsTrait;
+    use ListAppAssessmentResourceDrifts\ListAppAssessmentResourceDriftsTrait;
     use ListAppAssessments\ListAppAssessmentsTrait;
     use ListAppComponentCompliances\ListAppComponentCompliancesTrait;
     use ListAppComponentRecommendations\ListAppComponentRecommendationsTrait;
@@ -41,6 +44,7 @@ class ResilienceHubClient extends \Aws\ResilienceHub\ResilienceHubClient
     use ListApps\ListAppsTrait;
     use ListRecommendationTemplates\ListRecommendationTemplatesTrait;
     use ListResiliencyPolicies\ListResiliencyPoliciesTrait;
+    use ListResourceGroupingRecommendations\ListResourceGroupingRecommendationsTrait;
     use ListSopRecommendations\ListSopRecommendationsTrait;
     use ListSuggestedResiliencyPolicies\ListSuggestedResiliencyPoliciesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
@@ -48,9 +52,11 @@ class ResilienceHubClient extends \Aws\ResilienceHub\ResilienceHubClient
     use ListUnsupportedAppVersionResources\ListUnsupportedAppVersionResourcesTrait;
     use PublishAppVersion\PublishAppVersionTrait;
     use PutDraftAppVersionTemplate\PutDraftAppVersionTemplateTrait;
+    use RejectResourceGroupingRecommendations\RejectResourceGroupingRecommendationsTrait;
     use RemoveDraftAppVersionResourceMappings\RemoveDraftAppVersionResourceMappingsTrait;
     use ResolveAppVersionResources\ResolveAppVersionResourcesTrait;
     use StartAppAssessment\StartAppAssessmentTrait;
+    use StartResourceGroupingRecommendationTask\StartResourceGroupingRecommendationTaskTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateApp\UpdateAppTrait;

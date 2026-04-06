@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\DescribeAccountAttributes\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ACCOUNT_TIER' $Name
+ * @property 'ACCOUNT_TIER'|'DEFAULT_PROTECT_CONFIGURATION_ID' $Name
  * @property string $Value
  */
 class AccountAttribute extends Shape
 {
     /**
      * @param array{
-     *     Name: 'ACCOUNT_TIER',
+     *     Name: 'ACCOUNT_TIER'|'DEFAULT_PROTECT_CONFIGURATION_ID',
      *     Value: string
      * } $args
      */

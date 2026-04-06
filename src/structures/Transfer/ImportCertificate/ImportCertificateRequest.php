@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Transfer\ImportCertificate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'SIGNING'|'ENCRYPTION' $Usage
+ * @property 'SIGNING'|'ENCRYPTION'|'TLS' $Usage
  * @property string $Certificate
  * @property string|null $CertificateChain
  * @property string|null $PrivateKey
@@ -18,7 +18,7 @@ class ImportCertificateRequest extends Request
 {
     /**
      * @param array{
-     *     Usage: 'SIGNING'|'ENCRYPTION',
+     *     Usage: 'SIGNING'|'ENCRYPTION'|'TLS',
      *     Certificate: string,
      *     CertificateChain?: string|null,
      *     PrivateKey?: string|null,

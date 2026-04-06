@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $Value
  * @property string|null $ParameterName
  * @property 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null $TimeGranularity
+ * @property RollingDateConfiguration|null $RollingDate
+ * @property DefaultFilterControlConfiguration|null $DefaultFilterControlConfiguration
  */
 class TimeEqualityFilter extends Shape
 {
@@ -19,7 +21,9 @@ class TimeEqualityFilter extends Shape
      *     Column: ColumnIdentifier,
      *     Value?: \Aws\Api\DateTimeResult|null,
      *     ParameterName?: string|null,
-     *     TimeGranularity?: 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null
+     *     TimeGranularity?: 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null,
+     *     RollingDate?: RollingDateConfiguration|null,
+     *     DefaultFilterControlConfiguration?: DefaultFilterControlConfiguration|null
      * } $args
      */
     public function __construct(array $args)

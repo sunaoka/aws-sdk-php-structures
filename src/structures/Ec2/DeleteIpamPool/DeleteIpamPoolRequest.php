@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property bool|null $DryRun
  * @property string $IpamPoolId
+ * @property bool|null $Cascade
  */
 class DeleteIpamPoolRequest extends Request
 {
     /**
      * @param array{
      *     DryRun?: bool|null,
-     *     IpamPoolId: string
+     *     IpamPoolId: string,
+     *     Cascade?: bool|null
      * } $args
      */
     public function __construct(array $args)

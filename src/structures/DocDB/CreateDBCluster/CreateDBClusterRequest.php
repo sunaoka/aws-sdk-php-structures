@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $EnableCloudwatchLogsExports
  * @property bool|null $DeletionProtection
  * @property string|null $GlobalClusterIdentifier
+ * @property string|null $StorageType
  */
 class CreateDBClusterRequest extends Request
 {
@@ -49,7 +50,8 @@ class CreateDBClusterRequest extends Request
      *     PreSignedUrl?: string|null,
      *     EnableCloudwatchLogsExports?: list<string>|null,
      *     DeletionProtection?: bool|null,
-     *     GlobalClusterIdentifier?: string|null
+     *     GlobalClusterIdentifier?: string|null,
+     *     StorageType?: string|null
      * } $args
      */
     public function __construct(array $args)

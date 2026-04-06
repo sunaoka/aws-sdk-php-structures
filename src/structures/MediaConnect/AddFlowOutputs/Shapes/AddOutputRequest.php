@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $SmoothingLatency
  * @property string|null $StreamId
  * @property VpcInterfaceAttachment|null $VpcInterfaceAttachment
+ * @property 'ENABLED'|'DISABLED'|null $OutputStatus
  */
 class AddOutputRequest extends Shape
 {
@@ -39,7 +40,8 @@ class AddOutputRequest extends Shape
      *     SenderControlPort?: int|null,
      *     SmoothingLatency?: int|null,
      *     StreamId?: string|null,
-     *     VpcInterfaceAttachment?: VpcInterfaceAttachment|null
+     *     VpcInterfaceAttachment?: VpcInterfaceAttachment|null,
+     *     OutputStatus?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

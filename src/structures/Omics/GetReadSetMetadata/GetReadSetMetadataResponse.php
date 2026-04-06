@@ -13,13 +13,14 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'ARCHIVED'|'ACTIVATING'|'ACTIVE'|'DELETING'|'DELETED'|'PROCESSING_UPLOAD'|'UPLOAD_FAILED' $status
  * @property string|null $name
  * @property string|null $description
- * @property 'FASTQ'|'BAM'|'CRAM' $fileType
+ * @property 'FASTQ'|'BAM'|'CRAM'|'UBAM' $fileType
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property Shapes\SequenceInformation|null $sequenceInformation
  * @property string|null $referenceArn
  * @property Shapes\ReadSetFiles|null $files
  * @property string|null $statusMessage
  * @property 'IMPORT'|'UPLOAD'|null $creationType
+ * @property Shapes\ETag|null $etag
  */
 class GetReadSetMetadataResponse extends Response
 {

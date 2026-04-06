@@ -10,6 +10,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use BatchDisableStandards\BatchDisableStandardsTrait;
     use BatchEnableStandards\BatchEnableStandardsTrait;
     use BatchGetAutomationRules\BatchGetAutomationRulesTrait;
+    use BatchGetConfigurationPolicyAssociations\BatchGetConfigurationPolicyAssociationsTrait;
     use BatchGetSecurityControls\BatchGetSecurityControlsTrait;
     use BatchGetStandardsControlAssociations\BatchGetStandardsControlAssociationsTrait;
     use BatchImportFindings\BatchImportFindingsTrait;
@@ -18,11 +19,13 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use BatchUpdateStandardsControlAssociations\BatchUpdateStandardsControlAssociationsTrait;
     use CreateActionTarget\CreateActionTargetTrait;
     use CreateAutomationRule\CreateAutomationRuleTrait;
+    use CreateConfigurationPolicy\CreateConfigurationPolicyTrait;
     use CreateFindingAggregator\CreateFindingAggregatorTrait;
     use CreateInsight\CreateInsightTrait;
     use CreateMembers\CreateMembersTrait;
     use DeclineInvitations\DeclineInvitationsTrait;
     use DeleteActionTarget\DeleteActionTargetTrait;
+    use DeleteConfigurationPolicy\DeleteConfigurationPolicyTrait;
     use DeleteFindingAggregator\DeleteFindingAggregatorTrait;
     use DeleteInsight\DeleteInsightTrait;
     use DeleteInvitations\DeleteInvitationsTrait;
@@ -43,6 +46,8 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use EnableOrganizationAdminAccount\EnableOrganizationAdminAccountTrait;
     use EnableSecurityHub\EnableSecurityHubTrait;
     use GetAdministratorAccount\GetAdministratorAccountTrait;
+    use GetConfigurationPolicy\GetConfigurationPolicyTrait;
+    use GetConfigurationPolicyAssociation\GetConfigurationPolicyAssociationTrait;
     use GetEnabledStandards\GetEnabledStandardsTrait;
     use GetFindingAggregator\GetFindingAggregatorTrait;
     use GetFindingHistory\GetFindingHistoryTrait;
@@ -52,8 +57,11 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use GetInvitationsCount\GetInvitationsCountTrait;
     use GetMasterAccount\GetMasterAccountTrait;
     use GetMembers\GetMembersTrait;
+    use GetSecurityControlDefinition\GetSecurityControlDefinitionTrait;
     use InviteMembers\InviteMembersTrait;
     use ListAutomationRules\ListAutomationRulesTrait;
+    use ListConfigurationPolicies\ListConfigurationPoliciesTrait;
+    use ListConfigurationPolicyAssociations\ListConfigurationPolicyAssociationsTrait;
     use ListEnabledProductsForImport\ListEnabledProductsForImportTrait;
     use ListFindingAggregators\ListFindingAggregatorsTrait;
     use ListInvitations\ListInvitationsTrait;
@@ -62,13 +70,17 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use ListSecurityControlDefinitions\ListSecurityControlDefinitionsTrait;
     use ListStandardsControlAssociations\ListStandardsControlAssociationsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use StartConfigurationPolicyAssociation\StartConfigurationPolicyAssociationTrait;
+    use StartConfigurationPolicyDisassociation\StartConfigurationPolicyDisassociationTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateActionTarget\UpdateActionTargetTrait;
+    use UpdateConfigurationPolicy\UpdateConfigurationPolicyTrait;
     use UpdateFindingAggregator\UpdateFindingAggregatorTrait;
     use UpdateFindings\UpdateFindingsTrait;
     use UpdateInsight\UpdateInsightTrait;
     use UpdateOrganizationConfiguration\UpdateOrganizationConfigurationTrait;
+    use UpdateSecurityControl\UpdateSecurityControlTrait;
     use UpdateSecurityHubConfiguration\UpdateSecurityHubConfigurationTrait;
     use UpdateStandardsControl\UpdateStandardsControlTrait;
 }

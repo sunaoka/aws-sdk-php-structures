@@ -18,6 +18,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ARM64'|'X86_64'|null $architecture
  * @property Shapes\ImageConfigurationInput|null $imageConfiguration
  * @property array<string, Shapes\WorkerTypeSpecificationInput>|null $workerTypeSpecifications
+ * @property list<Shapes\Configuration>|null $runtimeConfiguration
+ * @property Shapes\MonitoringConfiguration|null $monitoringConfiguration
+ * @property Shapes\InteractiveConfiguration|null $interactiveConfiguration
  */
 class CreateApplicationRequest extends Request
 {
@@ -35,7 +38,10 @@ class CreateApplicationRequest extends Request
      *     networkConfiguration?: Shapes\NetworkConfiguration|null,
      *     architecture?: 'ARM64'|'X86_64'|null,
      *     imageConfiguration?: Shapes\ImageConfigurationInput|null,
-     *     workerTypeSpecifications?: array<string, Shapes\WorkerTypeSpecificationInput>|null
+     *     workerTypeSpecifications?: array<string, Shapes\WorkerTypeSpecificationInput>|null,
+     *     runtimeConfiguration?: list<Shapes\Configuration>|null,
+     *     monitoringConfiguration?: Shapes\MonitoringConfiguration|null,
+     *     interactiveConfiguration?: Shapes\InteractiveConfiguration|null
      * } $args
      */
     public function __construct(array $args)

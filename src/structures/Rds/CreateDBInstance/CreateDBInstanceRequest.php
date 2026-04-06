@@ -65,6 +65,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $MasterUserSecretKmsKeyId
  * @property string|null $CACertificateIdentifier
  * @property string|null $DBSystemId
+ * @property bool|null $DedicatedLogVolume
+ * @property bool|null $MultiTenant
+ * @property string|null $EngineLifecycleSupport
  */
 class CreateDBInstanceRequest extends Request
 {
@@ -129,7 +132,10 @@ class CreateDBInstanceRequest extends Request
      *     ManageMasterUserPassword?: bool|null,
      *     MasterUserSecretKmsKeyId?: string|null,
      *     CACertificateIdentifier?: string|null,
-     *     DBSystemId?: string|null
+     *     DBSystemId?: string|null,
+     *     DedicatedLogVolume?: bool|null,
+     *     MultiTenant?: bool|null,
+     *     EngineLifecycleSupport?: string|null
      * } $args
      */
     public function __construct(array $args)

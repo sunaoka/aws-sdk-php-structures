@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, array<string, string>>|null $ConfigurationAliases
  * @property DashConfiguration|null $DashConfiguration
  * @property HlsConfiguration|null $HlsConfiguration
+ * @property 'STITCHED_ONLY'|'PLAYER_SELECT'|null $InsertionMode
  * @property LivePreRollConfiguration|null $LivePreRollConfiguration
  * @property LogConfiguration|null $LogConfiguration
  * @property ManifestProcessingRules|null $ManifestProcessingRules
@@ -36,6 +37,7 @@ class PlaybackConfiguration extends Shape
      *     ConfigurationAliases?: array<string, array<string, string>>|null,
      *     DashConfiguration?: DashConfiguration|null,
      *     HlsConfiguration?: HlsConfiguration|null,
+     *     InsertionMode?: 'STITCHED_ONLY'|'PLAYER_SELECT'|null,
      *     LivePreRollConfiguration?: LivePreRollConfiguration|null,
      *     LogConfiguration?: LogConfiguration|null,
      *     ManifestProcessingRules?: ManifestProcessingRules|null,

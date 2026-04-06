@@ -10,10 +10,12 @@ class mgnClient extends \Aws\mgn\mgnClient
     use AssociateSourceServers\AssociateSourceServersTrait;
     use ChangeServerLifeCycleState\ChangeServerLifeCycleStateTrait;
     use CreateApplication\CreateApplicationTrait;
+    use CreateConnector\CreateConnectorTrait;
     use CreateLaunchConfigurationTemplate\CreateLaunchConfigurationTemplateTrait;
     use CreateReplicationConfigurationTemplate\CreateReplicationConfigurationTemplateTrait;
     use CreateWave\CreateWaveTrait;
     use DeleteApplication\DeleteApplicationTrait;
+    use DeleteConnector\DeleteConnectorTrait;
     use DeleteJob\DeleteJobTrait;
     use DeleteLaunchConfigurationTemplate\DeleteLaunchConfigurationTemplateTrait;
     use DeleteReplicationConfigurationTemplate\DeleteReplicationConfigurationTemplateTrait;
@@ -34,6 +36,7 @@ class mgnClient extends \Aws\mgn\mgnClient
     use GetReplicationConfiguration\GetReplicationConfigurationTrait;
     use InitializeService\InitializeServiceTrait;
     use ListApplications\ListApplicationsTrait;
+    use ListConnectors\ListConnectorsTrait;
     use ListExportErrors\ListExportErrorsTrait;
     use ListExports\ListExportsTrait;
     use ListImportErrors\ListImportErrorsTrait;
@@ -63,10 +66,12 @@ class mgnClient extends \Aws\mgn\mgnClient
     use UnarchiveWave\UnarchiveWaveTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateApplication\UpdateApplicationTrait;
+    use UpdateConnector\UpdateConnectorTrait;
     use UpdateLaunchConfiguration\UpdateLaunchConfigurationTrait;
     use UpdateLaunchConfigurationTemplate\UpdateLaunchConfigurationTemplateTrait;
     use UpdateReplicationConfiguration\UpdateReplicationConfigurationTrait;
     use UpdateReplicationConfigurationTemplate\UpdateReplicationConfigurationTemplateTrait;
+    use UpdateSourceServer\UpdateSourceServerTrait;
     use UpdateSourceServerReplicationType\UpdateSourceServerReplicationTypeTrait;
     use UpdateWave\UpdateWaveTrait;
 }

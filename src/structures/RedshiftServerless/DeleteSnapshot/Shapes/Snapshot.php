@@ -8,6 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $accountsWithProvisionedRestoreAccess
  * @property list<string>|null $accountsWithRestoreAccess
  * @property double|null $actualIncrementalBackupSizeInMegaBytes
+ * @property string|null $adminPasswordSecretArn
+ * @property string|null $adminPasswordSecretKmsKeyId
  * @property string|null $adminUsername
  * @property double|null $backupProgressInMegaBytes
  * @property double|null $currentBackupRateInMegaBytesPerSecond
@@ -33,6 +35,8 @@ class Snapshot extends Shape
      *     accountsWithProvisionedRestoreAccess?: list<string>|null,
      *     accountsWithRestoreAccess?: list<string>|null,
      *     actualIncrementalBackupSizeInMegaBytes?: double|null,
+     *     adminPasswordSecretArn?: string|null,
+     *     adminPasswordSecretKmsKeyId?: string|null,
      *     adminUsername?: string|null,
      *     backupProgressInMegaBytes?: double|null,
      *     currentBackupRateInMegaBytesPerSecond?: double|null,

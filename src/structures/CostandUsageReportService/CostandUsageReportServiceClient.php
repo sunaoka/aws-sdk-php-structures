@@ -6,6 +6,9 @@ class CostandUsageReportServiceClient extends \Aws\CostandUsageReportService\Cos
 {
     use DeleteReportDefinition\DeleteReportDefinitionTrait;
     use DescribeReportDefinitions\DescribeReportDefinitionsTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
     use ModifyReportDefinition\ModifyReportDefinitionTrait;
     use PutReportDefinition\PutReportDefinitionTrait;
+    use TagResource\TagResourceTrait;
+    use UntagResource\UntagResourceTrait;
 }

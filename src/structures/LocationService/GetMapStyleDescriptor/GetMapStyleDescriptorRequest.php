@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LocationService\GetMapStyleDescriptor;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $Key
  * @property string $MapName
+ * @property string|null $Key
  */
 class GetMapStyleDescriptorRequest extends Request
 {
     /**
      * @param array{
-     *     Key?: string|null,
-     *     MapName: string
+     *     MapName: string,
+     *     Key?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -21,7 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<InstanceHealthSummary>|null $instanceHealthSummary
  * @property list<LoadBalancerTlsCertificateSummary>|null $tlsCertificateSummaries
  * @property array<'HealthCheckPath'|'SessionStickinessEnabled'|'SessionStickiness_LB_CookieDurationSeconds'|'HttpsRedirectionEnabled'|'TlsPolicyName', string>|null $configurationOptions
- * @property 'dualstack'|'ipv4'|null $ipAddressType
+ * @property 'dualstack'|'ipv4'|'ipv6'|null $ipAddressType
  * @property bool|null $httpsRedirectionEnabled
  * @property string|null $tlsPolicyName
  */
@@ -45,7 +45,7 @@ class LoadBalancer extends Shape
      *     instanceHealthSummary?: list<InstanceHealthSummary>|null,
      *     tlsCertificateSummaries?: list<LoadBalancerTlsCertificateSummary>|null,
      *     configurationOptions?: array<'HealthCheckPath'|'SessionStickinessEnabled'|'SessionStickiness_LB_CookieDurationSeconds'|'HttpsRedirectionEnabled'|'TlsPolicyName', string>|null,
-     *     ipAddressType?: 'dualstack'|'ipv4'|null,
+     *     ipAddressType?: 'dualstack'|'ipv4'|'ipv6'|null,
      *     httpsRedirectionEnabled?: bool|null,
      *     tlsPolicyName?: string|null
      * } $args

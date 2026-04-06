@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'VSE'|'JES2'|'JES3'|null $jobType
  * @property string|null $returnCode
  * @property \Aws\Api\DateTimeResult $startTime
- * @property 'Submitting'|'Holding'|'Dispatching'|'Running'|'Cancelling'|'Cancelled'|'Succeeded'|'Failed'|'Succeeded With Warning' $status
+ * @property 'Submitting'|'Holding'|'Dispatching'|'Running'|'Cancelling'|'Cancelled'|'Succeeded'|'Failed'|'Purged'|'Succeeded With Warning' $status
  */
 class BatchJobExecutionSummary extends Shape
 {
@@ -29,7 +29,7 @@ class BatchJobExecutionSummary extends Shape
      *     jobType?: 'VSE'|'JES2'|'JES3'|null,
      *     returnCode?: string|null,
      *     startTime: \Aws\Api\DateTimeResult,
-     *     status: 'Submitting'|'Holding'|'Dispatching'|'Running'|'Cancelling'|'Cancelled'|'Succeeded'|'Failed'|'Succeeded With Warning'
+     *     status: 'Submitting'|'Holding'|'Dispatching'|'Running'|'Cancelling'|'Cancelled'|'Succeeded'|'Failed'|'Purged'|'Succeeded With Warning'
      * } $args
      */
     public function __construct(array $args)

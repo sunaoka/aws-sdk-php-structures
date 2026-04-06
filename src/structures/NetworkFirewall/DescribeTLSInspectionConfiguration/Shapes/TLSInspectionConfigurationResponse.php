@@ -8,13 +8,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TLSInspectionConfigurationArn
  * @property string $TLSInspectionConfigurationName
  * @property string $TLSInspectionConfigurationId
- * @property 'ACTIVE'|'DELETING'|null $TLSInspectionConfigurationStatus
+ * @property 'ACTIVE'|'DELETING'|'ERROR'|null $TLSInspectionConfigurationStatus
  * @property string|null $Description
  * @property list<Tag>|null $Tags
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property int|null $NumberOfAssociations
  * @property EncryptionConfiguration|null $EncryptionConfiguration
  * @property list<TlsCertificateData>|null $Certificates
+ * @property TlsCertificateData|null $CertificateAuthority
  */
 class TLSInspectionConfigurationResponse extends Shape
 {
@@ -23,13 +24,14 @@ class TLSInspectionConfigurationResponse extends Shape
      *     TLSInspectionConfigurationArn: string,
      *     TLSInspectionConfigurationName: string,
      *     TLSInspectionConfigurationId: string,
-     *     TLSInspectionConfigurationStatus?: 'ACTIVE'|'DELETING'|null,
+     *     TLSInspectionConfigurationStatus?: 'ACTIVE'|'DELETING'|'ERROR'|null,
      *     Description?: string|null,
      *     Tags?: list<Tag>|null,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
      *     NumberOfAssociations?: int|null,
      *     EncryptionConfiguration?: EncryptionConfiguration|null,
-     *     Certificates?: list<TlsCertificateData>|null
+     *     Certificates?: list<TlsCertificateData>|null,
+     *     CertificateAuthority?: TlsCertificateData|null
      * } $args
      */
     public function __construct(array $args)

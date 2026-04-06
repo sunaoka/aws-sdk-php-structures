@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property HttpDataSourceConfig|null $httpConfig
  * @property RelationalDatabaseDataSourceConfig|null $relationalDatabaseConfig
  * @property EventBridgeDataSourceConfig|null $eventBridgeConfig
+ * @property 'ENABLED'|'DISABLED'|null $metricsConfig
  */
 class DataSource extends Shape
 {
@@ -33,7 +34,8 @@ class DataSource extends Shape
      *     openSearchServiceConfig?: OpenSearchServiceDataSourceConfig|null,
      *     httpConfig?: HttpDataSourceConfig|null,
      *     relationalDatabaseConfig?: RelationalDatabaseDataSourceConfig|null,
-     *     eventBridgeConfig?: EventBridgeDataSourceConfig|null
+     *     eventBridgeConfig?: EventBridgeDataSourceConfig|null,
+     *     metricsConfig?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

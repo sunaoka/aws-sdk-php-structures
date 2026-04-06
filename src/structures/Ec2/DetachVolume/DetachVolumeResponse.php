@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'attaching'|'attached'|'detaching'|'detached'|'busy'|null $State
  * @property string|null $VolumeId
  * @property bool|null $DeleteOnTermination
+ * @property string|null $AssociatedResource
+ * @property string|null $InstanceOwningService
  */
 class DetachVolumeResponse extends Response
 {

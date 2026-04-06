@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Pipes\UpdatePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED'|null $AssignPublicIp
- * @property list<string>|null $SecurityGroups
  * @property list<string> $Subnets
+ * @property list<string>|null $SecurityGroups
+ * @property 'ENABLED'|'DISABLED'|null $AssignPublicIp
  */
 class AwsVpcConfiguration extends Shape
 {
     /**
      * @param array{
-     *     AssignPublicIp?: 'ENABLED'|'DISABLED'|null,
+     *     Subnets: list<string>,
      *     SecurityGroups?: list<string>|null,
-     *     Subnets: list<string>
+     *     AssignPublicIp?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

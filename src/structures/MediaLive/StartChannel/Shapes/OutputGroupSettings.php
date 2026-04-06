@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MultiplexGroupSettings|null $MultiplexGroupSettings
  * @property RtmpGroupSettings|null $RtmpGroupSettings
  * @property UdpGroupSettings|null $UdpGroupSettings
+ * @property CmafIngestGroupSettings|null $CmafIngestGroupSettings
  */
 class OutputGroupSettings extends Shape
 {
@@ -25,7 +26,8 @@ class OutputGroupSettings extends Shape
      *     MsSmoothGroupSettings?: MsSmoothGroupSettings|null,
      *     MultiplexGroupSettings?: MultiplexGroupSettings|null,
      *     RtmpGroupSettings?: RtmpGroupSettings|null,
-     *     UdpGroupSettings?: UdpGroupSettings|null
+     *     UdpGroupSettings?: UdpGroupSettings|null,
+     *     CmafIngestGroupSettings?: CmafIngestGroupSettings|null
      * } $args
      */
     public function __construct(array $args = [])

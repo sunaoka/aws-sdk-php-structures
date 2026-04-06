@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $arn
- * @property DestinationConfiguration $destinationConfiguration
  * @property string|null $name
- * @property int<0, 300>|null $recordingReconnectWindowSeconds
- * @property RenditionConfiguration|null $renditionConfiguration
+ * @property DestinationConfiguration $destinationConfiguration
  * @property 'CREATING'|'CREATE_FAILED'|'ACTIVE' $state
  * @property array<string, string>|null $tags
  * @property ThumbnailConfiguration|null $thumbnailConfiguration
+ * @property int<0, 300>|null $recordingReconnectWindowSeconds
+ * @property RenditionConfiguration|null $renditionConfiguration
  */
 class RecordingConfiguration extends Shape
 {
     /**
      * @param array{
      *     arn: string,
-     *     destinationConfiguration: DestinationConfiguration,
      *     name?: string|null,
-     *     recordingReconnectWindowSeconds?: int<0, 300>|null,
-     *     renditionConfiguration?: RenditionConfiguration|null,
+     *     destinationConfiguration: DestinationConfiguration,
      *     state: 'CREATING'|'CREATE_FAILED'|'ACTIVE',
      *     tags?: array<string, string>|null,
-     *     thumbnailConfiguration?: ThumbnailConfiguration|null
+     *     thumbnailConfiguration?: ThumbnailConfiguration|null,
+     *     recordingReconnectWindowSeconds?: int<0, 300>|null,
+     *     renditionConfiguration?: RenditionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 65535>|null $Port
  * @property string $Database
  * @property string|null $ClusterId
+ * @property RedshiftIAMParameters|null $IAMParameters
+ * @property IdentityCenterConfiguration|null $IdentityCenterConfiguration
  */
 class RedshiftParameters extends Shape
 {
@@ -17,7 +19,9 @@ class RedshiftParameters extends Shape
      *     Host?: string|null,
      *     Port?: int<0, 65535>|null,
      *     Database: string,
-     *     ClusterId?: string|null
+     *     ClusterId?: string|null,
+     *     IAMParameters?: RedshiftIAMParameters|null,
+     *     IdentityCenterConfiguration?: IdentityCenterConfiguration|null
      * } $args
      */
     public function __construct(array $args)

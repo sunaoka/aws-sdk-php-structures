@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ChartAxisLabelOptions|null $PrimaryYAxisLabelOptions
  * @property LineSeriesAxisDisplayOptions|null $SecondaryYAxisDisplayOptions
  * @property ChartAxisLabelOptions|null $SecondaryYAxisLabelOptions
+ * @property SingleAxisOptions|null $SingleAxisOptions
  * @property LineChartDefaultSeriesSettings|null $DefaultSeriesSettings
  * @property list<SeriesItem>|null $Series
  * @property LegendOptions|null $Legend
@@ -24,6 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TooltipOptions|null $Tooltip
  * @property list<ContributionAnalysisDefault>|null $ContributionAnalysisDefaults
  * @property VisualPalette|null $VisualPalette
+ * @property VisualInteractionOptions|null $Interactions
  */
 class LineChartConfiguration extends Shape
 {
@@ -40,6 +42,7 @@ class LineChartConfiguration extends Shape
      *     PrimaryYAxisLabelOptions?: ChartAxisLabelOptions|null,
      *     SecondaryYAxisDisplayOptions?: LineSeriesAxisDisplayOptions|null,
      *     SecondaryYAxisLabelOptions?: ChartAxisLabelOptions|null,
+     *     SingleAxisOptions?: SingleAxisOptions|null,
      *     DefaultSeriesSettings?: LineChartDefaultSeriesSettings|null,
      *     Series?: list<SeriesItem>|null,
      *     Legend?: LegendOptions|null,
@@ -47,7 +50,8 @@ class LineChartConfiguration extends Shape
      *     ReferenceLines?: list<ReferenceLine>|null,
      *     Tooltip?: TooltipOptions|null,
      *     ContributionAnalysisDefaults?: list<ContributionAnalysisDefault>|null,
-     *     VisualPalette?: VisualPalette|null
+     *     VisualPalette?: VisualPalette|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

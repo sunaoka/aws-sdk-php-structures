@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Pipes\UpdatePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BatchArrayProperties|null $ArrayProperties
- * @property BatchContainerOverrides|null $ContainerOverrides
- * @property list<BatchJobDependency>|null $DependsOn
  * @property string $JobDefinition
  * @property string $JobName
- * @property array<string, string>|null $Parameters
+ * @property BatchArrayProperties|null $ArrayProperties
  * @property BatchRetryStrategy|null $RetryStrategy
+ * @property BatchContainerOverrides|null $ContainerOverrides
+ * @property list<BatchJobDependency>|null $DependsOn
+ * @property array<string, string>|null $Parameters
  */
 class PipeTargetBatchJobParameters extends Shape
 {
     /**
      * @param array{
-     *     ArrayProperties?: BatchArrayProperties|null,
-     *     ContainerOverrides?: BatchContainerOverrides|null,
-     *     DependsOn?: list<BatchJobDependency>|null,
      *     JobDefinition: string,
      *     JobName: string,
-     *     Parameters?: array<string, string>|null,
-     *     RetryStrategy?: BatchRetryStrategy|null
+     *     ArrayProperties?: BatchArrayProperties|null,
+     *     RetryStrategy?: BatchRetryStrategy|null,
+     *     ContainerOverrides?: BatchContainerOverrides|null,
+     *     DependsOn?: list<BatchJobDependency>|null,
+     *     Parameters?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

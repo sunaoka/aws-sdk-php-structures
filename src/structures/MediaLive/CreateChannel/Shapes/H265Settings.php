@@ -35,6 +35,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'HIGH'|'MAIN'|null $Tier
  * @property 'DISABLED'|'PIC_TIMING_SEI'|null $TimecodeInsertion
  * @property TimecodeBurninSettings|null $TimecodeBurninSettings
+ * @property 'DISABLED'|'ENABLED'|null $MvOverPictureBoundaries
+ * @property 'DISABLED'|'ENABLED'|null $MvTemporalPredictor
+ * @property int<64, 2160>|null $TileHeight
+ * @property 'NONE'|'PADDED'|null $TilePadding
+ * @property int<256, 3840>|null $TileWidth
+ * @property 'AUTO'|'TREE_SIZE_32X32'|null $TreeblockSize
  */
 class H265Settings extends Shape
 {
@@ -69,7 +75,13 @@ class H265Settings extends Shape
      *     Slices?: int<1, 16>|null,
      *     Tier?: 'HIGH'|'MAIN'|null,
      *     TimecodeInsertion?: 'DISABLED'|'PIC_TIMING_SEI'|null,
-     *     TimecodeBurninSettings?: TimecodeBurninSettings|null
+     *     TimecodeBurninSettings?: TimecodeBurninSettings|null,
+     *     MvOverPictureBoundaries?: 'DISABLED'|'ENABLED'|null,
+     *     MvTemporalPredictor?: 'DISABLED'|'ENABLED'|null,
+     *     TileHeight?: int<64, 2160>|null,
+     *     TilePadding?: 'NONE'|'PADDED'|null,
+     *     TileWidth?: int<256, 3840>|null,
+     *     TreeblockSize?: 'AUTO'|'TREE_SIZE_32X32'|null
      * } $args
      */
     public function __construct(array $args)

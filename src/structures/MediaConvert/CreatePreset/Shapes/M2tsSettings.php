@@ -32,8 +32,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<32, 8182>|null $PcrPid
  * @property int<0, 1000>|null $PmtInterval
  * @property int<32, 8182>|null $PmtPid
+ * @property 'DISABLED'|'ENABLED'|null $PreventBufferUnderflow
  * @property int<32, 8182>|null $PrivateMetadataPid
  * @property int<0, 65535>|null $ProgramNumber
+ * @property int<0, 3600>|null $PtsOffset
+ * @property 'AUTO'|'SECONDS'|null $PtsOffsetMode
  * @property 'VBR'|'CBR'|null $RateMode
  * @property M2tsScte35Esam|null $Scte35Esam
  * @property int<32, 8182>|null $Scte35Pid
@@ -76,8 +79,11 @@ class M2tsSettings extends Shape
      *     PcrPid?: int<32, 8182>|null,
      *     PmtInterval?: int<0, 1000>|null,
      *     PmtPid?: int<32, 8182>|null,
+     *     PreventBufferUnderflow?: 'DISABLED'|'ENABLED'|null,
      *     PrivateMetadataPid?: int<32, 8182>|null,
      *     ProgramNumber?: int<0, 65535>|null,
+     *     PtsOffset?: int<0, 3600>|null,
+     *     PtsOffsetMode?: 'AUTO'|'SECONDS'|null,
      *     RateMode?: 'VBR'|'CBR'|null,
      *     Scte35Esam?: M2tsScte35Esam|null,
      *     Scte35Pid?: int<32, 8182>|null,

@@ -11,6 +11,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $CustomerMetadataProperties
  * @property list<string>|null $CustomerMetadataPropertiesToRemove
  * @property list<Shapes\AdditionalInferenceSpecificationDefinition>|null $AdditionalInferenceSpecificationsToAdd
+ * @property Shapes\InferenceSpecification|null $InferenceSpecification
+ * @property string|null $SourceUri
+ * @property Shapes\ModelPackageModelCard|null $ModelCard
  */
 class UpdateModelPackageRequest extends Request
 {
@@ -21,7 +24,10 @@ class UpdateModelPackageRequest extends Request
      *     ApprovalDescription?: string|null,
      *     CustomerMetadataProperties?: array<string, string>|null,
      *     CustomerMetadataPropertiesToRemove?: list<string>|null,
-     *     AdditionalInferenceSpecificationsToAdd?: list<Shapes\AdditionalInferenceSpecificationDefinition>|null
+     *     AdditionalInferenceSpecificationsToAdd?: list<Shapes\AdditionalInferenceSpecificationDefinition>|null,
+     *     InferenceSpecification?: Shapes\InferenceSpecification|null,
+     *     SourceUri?: string|null,
+     *     ModelCard?: Shapes\ModelPackageModelCard|null
      * } $args
      */
     public function __construct(array $args)

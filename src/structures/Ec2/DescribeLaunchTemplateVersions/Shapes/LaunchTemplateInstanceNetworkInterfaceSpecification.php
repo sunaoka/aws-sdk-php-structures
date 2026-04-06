@@ -25,6 +25,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Ipv6PrefixSpecificationResponse>|null $Ipv6Prefixes
  * @property int|null $Ipv6PrefixCount
  * @property bool|null $PrimaryIpv6
+ * @property LaunchTemplateEnaSrdSpecification|null $EnaSrdSpecification
+ * @property ConnectionTrackingSpecification|null $ConnectionTrackingSpecification
  */
 class LaunchTemplateInstanceNetworkInterfaceSpecification extends Shape
 {
@@ -49,7 +51,9 @@ class LaunchTemplateInstanceNetworkInterfaceSpecification extends Shape
      *     Ipv4PrefixCount?: int|null,
      *     Ipv6Prefixes?: list<Ipv6PrefixSpecificationResponse>|null,
      *     Ipv6PrefixCount?: int|null,
-     *     PrimaryIpv6?: bool|null
+     *     PrimaryIpv6?: bool|null,
+     *     EnaSrdSpecification?: LaunchTemplateEnaSrdSpecification|null,
+     *     ConnectionTrackingSpecification?: ConnectionTrackingSpecification|null
      * } $args
      */
     public function __construct(array $args = [])

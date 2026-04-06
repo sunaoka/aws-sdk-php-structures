@@ -63,6 +63,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $RotateMasterUserPassword
  * @property string|null $MasterUserSecretKmsKeyId
  * @property string|null $Engine
+ * @property bool|null $DedicatedLogVolume
+ * @property bool|null $MultiTenant
  */
 class ModifyDBInstanceRequest extends Request
 {
@@ -125,7 +127,9 @@ class ModifyDBInstanceRequest extends Request
      *     ManageMasterUserPassword?: bool|null,
      *     RotateMasterUserPassword?: bool|null,
      *     MasterUserSecretKmsKeyId?: string|null,
-     *     Engine?: string|null
+     *     Engine?: string|null,
+     *     DedicatedLogVolume?: bool|null,
+     *     MultiTenant?: bool|null
      * } $args
      */
     public function __construct(array $args)

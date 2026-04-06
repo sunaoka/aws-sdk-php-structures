@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $PipelineDefinition
  * @property string|null $PipelineDescription
  * @property string|null $RoleArn
- * @property 'Active'|null $PipelineStatus
+ * @property 'Active'|'Deleting'|null $PipelineStatus
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property \Aws\Api\DateTimeResult|null $LastRunTime

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Label
  * @property 'HIDDEN'|'VISIBLE'|null $Visibility
  * @property AggregationFunction|null $Aggregation
+ * @property 'BOTH'|'BAR'|'LINE'|null $TooltipTarget
  */
 class ColumnTooltipItem extends Shape
 {
@@ -17,7 +18,8 @@ class ColumnTooltipItem extends Shape
      *     Column: ColumnIdentifier,
      *     Label?: string|null,
      *     Visibility?: 'HIDDEN'|'VISIBLE'|null,
-     *     Aggregation?: AggregationFunction|null
+     *     Aggregation?: AggregationFunction|null,
+     *     TooltipTarget?: 'BOTH'|'BAR'|'LINE'|null
      * } $args
      */
     public function __construct(array $args)

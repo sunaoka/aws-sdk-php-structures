@@ -15,6 +15,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $tags
  * @property list<Shapes\EncryptionConfig>|null $encryptionConfig
  * @property Shapes\OutpostConfigRequest|null $outpostConfig
+ * @property Shapes\CreateAccessConfigRequest|null $accessConfig
+ * @property bool|null $bootstrapSelfManagedAddons
+ * @property Shapes\UpgradePolicyRequest|null $upgradePolicy
  */
 class CreateClusterRequest extends Request
 {
@@ -29,7 +32,10 @@ class CreateClusterRequest extends Request
      *     clientRequestToken?: string|null,
      *     tags?: array<string, string>|null,
      *     encryptionConfig?: list<Shapes\EncryptionConfig>|null,
-     *     outpostConfig?: Shapes\OutpostConfigRequest|null
+     *     outpostConfig?: Shapes\OutpostConfigRequest|null,
+     *     accessConfig?: Shapes\CreateAccessConfigRequest|null,
+     *     bootstrapSelfManagedAddons?: bool|null,
+     *     upgradePolicy?: Shapes\UpgradePolicyRequest|null
      * } $args
      */
     public function __construct(array $args)

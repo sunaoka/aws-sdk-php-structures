@@ -29,6 +29,13 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $statusMessage
  * @property array<string, string>|null $tags
  * @property 'GPU'|null $accelerators
+ * @property 'RETAIN'|'REMOVE'|null $retentionMode
+ * @property string|null $failureReason
+ * @property Shapes\RunLogLocation|null $logLocation
+ * @property string|null $uuid
+ * @property string|null $runOutputUri
+ * @property 'STATIC'|'DYNAMIC'|null $storageType
+ * @property string|null $workflowOwnerId
  */
 class GetRunResponse extends Response
 {

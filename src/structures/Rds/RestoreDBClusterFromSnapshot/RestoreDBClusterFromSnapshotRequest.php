@@ -33,6 +33,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $PubliclyAccessible
  * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
  * @property string|null $NetworkType
+ * @property Shapes\RdsCustomClusterConfiguration|null $RdsCustomClusterConfiguration
+ * @property string|null $EngineLifecycleSupport
  */
 class RestoreDBClusterFromSnapshotRequest extends Request
 {
@@ -65,7 +67,9 @@ class RestoreDBClusterFromSnapshotRequest extends Request
      *     Iops?: int|null,
      *     PubliclyAccessible?: bool|null,
      *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
-     *     NetworkType?: string|null
+     *     NetworkType?: string|null,
+     *     RdsCustomClusterConfiguration?: Shapes\RdsCustomClusterConfiguration|null,
+     *     EngineLifecycleSupport?: string|null
      * } $args
      */
     public function __construct(array $args)

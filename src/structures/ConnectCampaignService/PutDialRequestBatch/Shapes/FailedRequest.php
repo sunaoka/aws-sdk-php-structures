@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $clientToken
- * @property 'InvalidInput'|'RequestThrottled'|'UnknownError'|null $failureCode
  * @property string|null $id
+ * @property 'InvalidInput'|'RequestThrottled'|'UnknownError'|null $failureCode
  */
 class FailedRequest extends Shape
 {
     /**
      * @param array{
      *     clientToken?: string|null,
-     *     failureCode?: 'InvalidInput'|'RequestThrottled'|'UnknownError'|null,
-     *     id?: string|null
+     *     id?: string|null,
+     *     failureCode?: 'InvalidInput'|'RequestThrottled'|'UnknownError'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\GenerateCardValidationD
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\CardGenerationAttributes $GenerationAttributes
  * @property string $KeyIdentifier
  * @property string $PrimaryAccountNumber
+ * @property Shapes\CardGenerationAttributes $GenerationAttributes
  * @property int<3, 5>|null $ValidationDataLength
  */
 class GenerateCardValidationDataRequest extends Request
 {
     /**
      * @param array{
-     *     GenerationAttributes: Shapes\CardGenerationAttributes,
      *     KeyIdentifier: string,
      *     PrimaryAccountNumber: string,
+     *     GenerationAttributes: Shapes\CardGenerationAttributes,
      *     ValidationDataLength?: int<3, 5>|null
      * } $args
      */

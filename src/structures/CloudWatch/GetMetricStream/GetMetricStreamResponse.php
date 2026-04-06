@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $State
  * @property \Aws\Api\DateTimeResult|null $CreationDate
  * @property \Aws\Api\DateTimeResult|null $LastUpdateDate
- * @property 'json'|'opentelemetry0.7'|null $OutputFormat
+ * @property 'json'|'opentelemetry0.7'|'opentelemetry1.0'|null $OutputFormat
  * @property list<Shapes\MetricStreamStatisticsConfiguration>|null $StatisticsConfigurations
  * @property bool|null $IncludeLinkedAccountsMetrics
  */

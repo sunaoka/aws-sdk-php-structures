@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $JobDescription
  * @property 'Default'|'Advanced' $JobType
  * @property string $JobArn
- * @property 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED' $Status
+ * @property 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'DELETED' $Status
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult|null $CompletionTime
  * @property string $RoleArn
@@ -27,7 +27,7 @@ class InferenceRecommendationsJob extends Shape
      *     JobDescription: string,
      *     JobType: 'Default'|'Advanced',
      *     JobArn: string,
-     *     Status: 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED',
+     *     Status: 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'DELETED',
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     CompletionTime?: \Aws\Api\DateTimeResult|null,
      *     RoleArn: string,

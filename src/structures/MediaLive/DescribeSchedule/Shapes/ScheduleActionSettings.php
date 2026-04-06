@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Scte35TimeSignalScheduleActionSettings|null $Scte35TimeSignalSettings
  * @property StaticImageActivateScheduleActionSettings|null $StaticImageActivateSettings
  * @property StaticImageDeactivateScheduleActionSettings|null $StaticImageDeactivateSettings
+ * @property StaticImageOutputActivateScheduleActionSettings|null $StaticImageOutputActivateSettings
+ * @property StaticImageOutputDeactivateScheduleActionSettings|null $StaticImageOutputDeactivateSettings
  */
 class ScheduleActionSettings extends Shape
 {
@@ -35,7 +37,9 @@ class ScheduleActionSettings extends Shape
      *     Scte35SpliceInsertSettings?: Scte35SpliceInsertScheduleActionSettings|null,
      *     Scte35TimeSignalSettings?: Scte35TimeSignalScheduleActionSettings|null,
      *     StaticImageActivateSettings?: StaticImageActivateScheduleActionSettings|null,
-     *     StaticImageDeactivateSettings?: StaticImageDeactivateScheduleActionSettings|null
+     *     StaticImageDeactivateSettings?: StaticImageDeactivateScheduleActionSettings|null,
+     *     StaticImageOutputActivateSettings?: StaticImageOutputActivateScheduleActionSettings|null,
+     *     StaticImageOutputDeactivateSettings?: StaticImageOutputDeactivateScheduleActionSettings|null
      * } $args
      */
     public function __construct(array $args = [])

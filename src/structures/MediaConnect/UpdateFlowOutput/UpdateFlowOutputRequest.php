@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $SmoothingLatency
  * @property string|null $StreamId
  * @property Shapes\VpcInterfaceAttachment|null $VpcInterfaceAttachment
+ * @property 'ENABLED'|'DISABLED'|null $OutputStatus
  */
 class UpdateFlowOutputRequest extends Request
 {
@@ -43,7 +44,8 @@ class UpdateFlowOutputRequest extends Request
      *     SenderIpAddress?: string|null,
      *     SmoothingLatency?: int|null,
      *     StreamId?: string|null,
-     *     VpcInterfaceAttachment?: Shapes\VpcInterfaceAttachment|null
+     *     VpcInterfaceAttachment?: Shapes\VpcInterfaceAttachment|null,
+     *     OutputStatus?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

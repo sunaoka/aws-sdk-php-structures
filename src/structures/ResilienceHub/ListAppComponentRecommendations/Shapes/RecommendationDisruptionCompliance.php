@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\ListAppComponentRecommendations\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PolicyBreached'|'PolicyMet' $expectedComplianceStatus
+ * @property 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy' $expectedComplianceStatus
  * @property string|null $expectedRpoDescription
  * @property int<0, max>|null $expectedRpoInSecs
  * @property string|null $expectedRtoDescription
@@ -15,7 +15,7 @@ class RecommendationDisruptionCompliance extends Shape
 {
     /**
      * @param array{
-     *     expectedComplianceStatus: 'PolicyBreached'|'PolicyMet',
+     *     expectedComplianceStatus: 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy',
      *     expectedRpoDescription?: string|null,
      *     expectedRpoInSecs?: int<0, max>|null,
      *     expectedRtoDescription?: string|null,

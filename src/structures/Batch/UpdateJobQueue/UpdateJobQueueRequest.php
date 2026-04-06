@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $schedulingPolicyArn
  * @property int|null $priority
  * @property list<Shapes\ComputeEnvironmentOrder>|null $computeEnvironmentOrder
+ * @property list<Shapes\JobStateTimeLimitAction>|null $jobStateTimeLimitActions
  */
 class UpdateJobQueueRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateJobQueueRequest extends Request
      *     state?: 'ENABLED'|'DISABLED'|null,
      *     schedulingPolicyArn?: string|null,
      *     priority?: int|null,
-     *     computeEnvironmentOrder?: list<Shapes\ComputeEnvironmentOrder>|null
+     *     computeEnvironmentOrder?: list<Shapes\ComputeEnvironmentOrder>|null,
+     *     jobStateTimeLimitActions?: list<Shapes\JobStateTimeLimitAction>|null
      * } $args
      */
     public function __construct(array $args)

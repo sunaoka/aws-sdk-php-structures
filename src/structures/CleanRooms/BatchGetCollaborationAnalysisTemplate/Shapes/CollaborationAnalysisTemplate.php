@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'SQL' $format
  * @property AnalysisSource $source
  * @property list<AnalysisParameter>|null $analysisParameters
+ * @property list<AnalysisTemplateValidationStatusDetail>|null $validations
  */
 class CollaborationAnalysisTemplate extends Shape
 {
@@ -35,7 +36,8 @@ class CollaborationAnalysisTemplate extends Shape
      *     schema: AnalysisSchema,
      *     format: 'SQL',
      *     source: AnalysisSource,
-     *     analysisParameters?: list<AnalysisParameter>|null
+     *     analysisParameters?: list<AnalysisParameter>|null,
+     *     validations?: list<AnalysisTemplateValidationStatusDetail>|null
      * } $args
      */
     public function __construct(array $args)

@@ -32,9 +32,11 @@ class AppSyncClient extends \Aws\AppSync\AppSyncClient
     use GetApiAssociation\GetApiAssociationTrait;
     use GetApiCache\GetApiCacheTrait;
     use GetDataSource\GetDataSourceTrait;
+    use GetDataSourceIntrospection\GetDataSourceIntrospectionTrait;
     use GetDomainName\GetDomainNameTrait;
     use GetFunction\GetFunctionTrait;
     use GetGraphqlApi\GetGraphqlApiTrait;
+    use GetGraphqlApiEnvironmentVariables\GetGraphqlApiEnvironmentVariablesTrait;
     use GetIntrospectionSchema\GetIntrospectionSchemaTrait;
     use GetResolver\GetResolverTrait;
     use GetSchemaCreationStatus\GetSchemaCreationStatusTrait;
@@ -51,6 +53,8 @@ class AppSyncClient extends \Aws\AppSync\AppSyncClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTypes\ListTypesTrait;
     use ListTypesByAssociation\ListTypesByAssociationTrait;
+    use PutGraphqlApiEnvironmentVariables\PutGraphqlApiEnvironmentVariablesTrait;
+    use StartDataSourceIntrospection\StartDataSourceIntrospectionTrait;
     use StartSchemaCreation\StartSchemaCreationTrait;
     use StartSchemaMerge\StartSchemaMergeTrait;
     use TagResource\TagResourceTrait;

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Name
  * @property string|null $Owner
  * @property string|null $ShortDescription
- * @property 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD'|null $Type
+ * @property 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD'|'EXTERNAL'|null $Type
  * @property string|null $Distributor
  * @property bool|null $HasDefaultPath
  * @property string|null $SupportEmail
@@ -26,7 +26,7 @@ class ProductViewSummary extends Shape
      *     Name?: string|null,
      *     Owner?: string|null,
      *     ShortDescription?: string|null,
-     *     Type?: 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD'|null,
+     *     Type?: 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD'|'EXTERNAL'|null,
      *     Distributor?: string|null,
      *     HasDefaultPath?: bool|null,
      *     SupportEmail?: string|null,

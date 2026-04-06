@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $MinimumEngineVersion
  * @property Shapes\UserGroupPendingChanges|null $PendingChanges
  * @property list<string>|null $ReplicationGroups
+ * @property list<string>|null $ServerlessCaches
  * @property string|null $ARN
  */
 class DeleteUserGroupResponse extends Response

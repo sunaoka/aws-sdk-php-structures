@@ -19,6 +19,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $FeatureName
  * @property EbsVolumeScanDetails|null $EbsVolumeScanDetails
  * @property RuntimeDetails|null $RuntimeDetails
+ * @property Detection|null $Detection
+ * @property MalwareScanDetails|null $MalwareScanDetails
  */
 class Service extends Shape
 {
@@ -37,7 +39,9 @@ class Service extends Shape
      *     AdditionalInfo?: ServiceAdditionalInfo|null,
      *     FeatureName?: string|null,
      *     EbsVolumeScanDetails?: EbsVolumeScanDetails|null,
-     *     RuntimeDetails?: RuntimeDetails|null
+     *     RuntimeDetails?: RuntimeDetails|null,
+     *     Detection?: Detection|null,
+     *     MalwareScanDetails?: MalwareScanDetails|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $LastModifiedDate
  * @property string|null $RecommenderId
  * @property string|null $Subject
+ * @property list<MessageHeader>|null $Headers
  * @property array<string, string>|null $tags
  * @property string|null $TemplateDescription
  * @property string $TemplateName
@@ -30,6 +31,7 @@ class EmailTemplateResponse extends Shape
      *     LastModifiedDate: string,
      *     RecommenderId?: string|null,
      *     Subject?: string|null,
+     *     Headers?: list<MessageHeader>|null,
      *     tags?: array<string, string>|null,
      *     TemplateDescription?: string|null,
      *     TemplateName: string,

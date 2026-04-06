@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Tag>|null $Tags
  * @property 'ec2'|null $AwsService
  * @property 'amazon'|'byoip'|null $PublicIpSource
+ * @property IpamPoolSourceResource|null $SourceResource
  */
 class IpamPool extends Shape
 {
@@ -55,7 +56,8 @@ class IpamPool extends Shape
      *     AllocationResourceTags?: list<IpamResourceTag>|null,
      *     Tags?: list<Tag>|null,
      *     AwsService?: 'ec2'|null,
-     *     PublicIpSource?: 'amazon'|'byoip'|null
+     *     PublicIpSource?: 'amazon'|'byoip'|null,
+     *     SourceResource?: IpamPoolSourceResource|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -20,7 +20,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<InputSource>|null $Sources
  * @property 'CREATING'|'DETACHED'|'ATTACHED'|'DELETING'|'DELETED'|null $State
  * @property array<string, string>|null $Tags
- * @property 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|null $Type
+ * @property 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|null $Type
+ * @property SrtSettings|null $SrtSettings
  */
 class Input extends Shape
 {
@@ -41,7 +42,8 @@ class Input extends Shape
      *     Sources?: list<InputSource>|null,
      *     State?: 'CREATING'|'DETACHED'|'ATTACHED'|'DELETING'|'DELETED'|null,
      *     Tags?: array<string, string>|null,
-     *     Type?: 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|null
+     *     Type?: 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|null,
+     *     SrtSettings?: SrtSettings|null
      * } $args
      */
     public function __construct(array $args = [])

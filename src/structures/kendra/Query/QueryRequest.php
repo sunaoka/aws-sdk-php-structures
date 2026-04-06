@@ -15,9 +15,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $PageNumber
  * @property int|null $PageSize
  * @property Shapes\SortingConfiguration|null $SortingConfiguration
+ * @property list<Shapes\SortingConfiguration>|null $SortingConfigurations
  * @property Shapes\UserContext|null $UserContext
  * @property string|null $VisitorId
  * @property Shapes\SpellCorrectionConfiguration|null $SpellCorrectionConfiguration
+ * @property Shapes\CollapseConfiguration|null $CollapseConfiguration
  */
 class QueryRequest extends Request
 {
@@ -33,9 +35,11 @@ class QueryRequest extends Request
      *     PageNumber?: int|null,
      *     PageSize?: int|null,
      *     SortingConfiguration?: Shapes\SortingConfiguration|null,
+     *     SortingConfigurations?: list<Shapes\SortingConfiguration>|null,
      *     UserContext?: Shapes\UserContext|null,
      *     VisitorId?: string|null,
-     *     SpellCorrectionConfiguration?: Shapes\SpellCorrectionConfiguration|null
+     *     SpellCorrectionConfiguration?: Shapes\SpellCorrectionConfiguration|null,
+     *     CollapseConfiguration?: Shapes\CollapseConfiguration|null
      * } $args
      */
     public function __construct(array $args)

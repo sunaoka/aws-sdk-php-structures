@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\Batch\SubmitJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $name
  * @property string|null $image
  * @property list<string>|null $command
  * @property list<string>|null $args
@@ -15,6 +16,7 @@ class EksContainerOverride extends Shape
 {
     /**
      * @param array{
+     *     name?: string|null,
      *     image?: string|null,
      *     command?: list<string>|null,
      *     args?: list<string>|null,

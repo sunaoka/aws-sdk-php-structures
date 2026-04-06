@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DryRun
  * @property list<Shapes\TagSpecification>|null $PoolTagSpecifications
  * @property bool|null $MultiRegion
+ * @property string|null $NetworkBorderGroup
  */
 class ProvisionByoipCidrRequest extends Request
 {
@@ -23,7 +24,8 @@ class ProvisionByoipCidrRequest extends Request
      *     Description?: string|null,
      *     DryRun?: bool|null,
      *     PoolTagSpecifications?: list<Shapes\TagSpecification>|null,
-     *     MultiRegion?: bool|null
+     *     MultiRegion?: bool|null,
+     *     NetworkBorderGroup?: string|null
      * } $args
      */
     public function __construct(array $args)

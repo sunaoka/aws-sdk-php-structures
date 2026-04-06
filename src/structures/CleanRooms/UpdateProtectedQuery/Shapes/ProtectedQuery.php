@@ -9,12 +9,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $membershipId
  * @property string $membershipArn
  * @property \Aws\Api\DateTimeResult $createTime
- * @property ProtectedQuerySQLParameters $sqlParameters
+ * @property ProtectedQuerySQLParameters|null $sqlParameters
  * @property 'SUBMITTED'|'STARTED'|'CANCELLED'|'CANCELLING'|'FAILED'|'SUCCESS'|'TIMED_OUT' $status
- * @property ProtectedQueryResultConfiguration $resultConfiguration
+ * @property ProtectedQueryResultConfiguration|null $resultConfiguration
  * @property ProtectedQueryStatistics|null $statistics
  * @property ProtectedQueryResult|null $result
  * @property ProtectedQueryError|null $error
+ * @property DifferentialPrivacyParameters|null $differentialPrivacy
  */
 class ProtectedQuery extends Shape
 {
@@ -24,12 +25,13 @@ class ProtectedQuery extends Shape
      *     membershipId: string,
      *     membershipArn: string,
      *     createTime: \Aws\Api\DateTimeResult,
-     *     sqlParameters: ProtectedQuerySQLParameters,
+     *     sqlParameters?: ProtectedQuerySQLParameters|null,
      *     status: 'SUBMITTED'|'STARTED'|'CANCELLED'|'CANCELLING'|'FAILED'|'SUCCESS'|'TIMED_OUT',
-     *     resultConfiguration: ProtectedQueryResultConfiguration,
+     *     resultConfiguration?: ProtectedQueryResultConfiguration|null,
      *     statistics?: ProtectedQueryStatistics|null,
      *     result?: ProtectedQueryResult|null,
-     *     error?: ProtectedQueryError|null
+     *     error?: ProtectedQueryError|null,
+     *     differentialPrivacy?: DifferentialPrivacyParameters|null
      * } $args
      */
     public function __construct(array $args)

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Certificate>|null $Certificates
  * @property list<Shapes\Action>|null $DefaultActions
  * @property list<string>|null $AlpnPolicy
+ * @property Shapes\MutualAuthenticationAttributes|null $MutualAuthentication
  */
 class ModifyListenerRequest extends Request
 {
@@ -23,7 +24,8 @@ class ModifyListenerRequest extends Request
      *     SslPolicy?: string|null,
      *     Certificates?: list<Shapes\Certificate>|null,
      *     DefaultActions?: list<Shapes\Action>|null,
-     *     AlpnPolicy?: list<string>|null
+     *     AlpnPolicy?: list<string>|null,
+     *     MutualAuthentication?: Shapes\MutualAuthenticationAttributes|null
      * } $args
      */
     public function __construct(array $args)

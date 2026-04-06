@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'internet-facing'|'internal'|null $Scheme
  * @property list<Shapes\Tag>|null $Tags
  * @property 'application'|'network'|'gateway'|null $Type
- * @property 'ipv4'|'dualstack'|null $IpAddressType
+ * @property 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null $IpAddressType
  * @property string|null $CustomerOwnedIpv4Pool
  */
 class CreateLoadBalancerRequest extends Request
@@ -26,7 +26,7 @@ class CreateLoadBalancerRequest extends Request
      *     Scheme?: 'internet-facing'|'internal'|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     Type?: 'application'|'network'|'gateway'|null,
-     *     IpAddressType?: 'ipv4'|'dualstack'|null,
+     *     IpAddressType?: 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null,
      *     CustomerOwnedIpv4Pool?: string|null
      * } $args
      */

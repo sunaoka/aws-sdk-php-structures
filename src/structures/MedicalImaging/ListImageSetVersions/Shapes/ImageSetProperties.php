@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property \Aws\Api\DateTimeResult|null $deletedAt
  * @property string|null $message
+ * @property Overrides|null $overrides
  */
 class ImageSetProperties extends Shape
 {
@@ -25,7 +26,8 @@ class ImageSetProperties extends Shape
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
      *     deletedAt?: \Aws\Api\DateTimeResult|null,
-     *     message?: string|null
+     *     message?: string|null,
+     *     overrides?: Overrides|null
      * } $args
      */
     public function __construct(array $args)

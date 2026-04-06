@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\AssetModelHierarchy>|null $assetModelHierarchies
  * @property list<Shapes\AssetModelCompositeModel>|null $assetModelCompositeModels
  * @property string|null $clientToken
+ * @property string|null $assetModelExternalId
  */
 class UpdateAssetModelRequest extends Request
 {
@@ -23,7 +24,8 @@ class UpdateAssetModelRequest extends Request
      *     assetModelProperties?: list<Shapes\AssetModelProperty>|null,
      *     assetModelHierarchies?: list<Shapes\AssetModelHierarchy>|null,
      *     assetModelCompositeModels?: list<Shapes\AssetModelCompositeModel>|null,
-     *     clientToken?: string|null
+     *     clientToken?: string|null,
+     *     assetModelExternalId?: string|null
      * } $args
      */
     public function __construct(array $args)

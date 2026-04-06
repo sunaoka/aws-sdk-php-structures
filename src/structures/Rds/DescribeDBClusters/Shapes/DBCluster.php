@@ -31,6 +31,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PreferredMaintenanceWindow
  * @property string|null $ReplicationSourceIdentifier
  * @property list<string>|null $ReadReplicaIdentifiers
+ * @property list<DBClusterStatusInfo>|null $StatusInfos
  * @property list<DBClusterMember>|null $DBClusterMembers
  * @property list<VpcSecurityGroupMembership>|null $VpcSecurityGroups
  * @property string|null $HostedZoneId
@@ -49,6 +50,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $Capacity
  * @property string|null $EngineMode
  * @property ScalingConfigurationInfo|null $ScalingConfigurationInfo
+ * @property RdsCustomClusterConfiguration|null $RdsCustomClusterConfiguration
  * @property bool|null $DeletionProtection
  * @property bool|null $HttpEndpointEnabled
  * @property 'sync'|'async'|null $ActivityStreamMode
@@ -78,6 +80,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MasterUserSecret|null $MasterUserSecret
  * @property \Aws\Api\DateTimeResult|null $IOOptimizedNextAllowedModificationTime
  * @property 'enabled'|'disabled'|'enabling'|'disabling'|'requested'|null $LocalWriteForwardingStatus
+ * @property string|null $AwsBackupRecoveryPointArn
+ * @property LimitlessDatabase|null $LimitlessDatabase
+ * @property int|null $StorageThroughput
+ * @property CertificateDetails|null $CertificateDetails
+ * @property string|null $EngineLifecycleSupport
  */
 class DBCluster extends Shape
 {
@@ -109,6 +116,7 @@ class DBCluster extends Shape
      *     PreferredMaintenanceWindow?: string|null,
      *     ReplicationSourceIdentifier?: string|null,
      *     ReadReplicaIdentifiers?: list<string>|null,
+     *     StatusInfos?: list<DBClusterStatusInfo>|null,
      *     DBClusterMembers?: list<DBClusterMember>|null,
      *     VpcSecurityGroups?: list<VpcSecurityGroupMembership>|null,
      *     HostedZoneId?: string|null,
@@ -127,6 +135,7 @@ class DBCluster extends Shape
      *     Capacity?: int|null,
      *     EngineMode?: string|null,
      *     ScalingConfigurationInfo?: ScalingConfigurationInfo|null,
+     *     RdsCustomClusterConfiguration?: RdsCustomClusterConfiguration|null,
      *     DeletionProtection?: bool|null,
      *     HttpEndpointEnabled?: bool|null,
      *     ActivityStreamMode?: 'sync'|'async'|null,
@@ -155,7 +164,12 @@ class DBCluster extends Shape
      *     DBSystemId?: string|null,
      *     MasterUserSecret?: MasterUserSecret|null,
      *     IOOptimizedNextAllowedModificationTime?: \Aws\Api\DateTimeResult|null,
-     *     LocalWriteForwardingStatus?: 'enabled'|'disabled'|'enabling'|'disabling'|'requested'|null
+     *     LocalWriteForwardingStatus?: 'enabled'|'disabled'|'enabling'|'disabling'|'requested'|null,
+     *     AwsBackupRecoveryPointArn?: string|null,
+     *     LimitlessDatabase?: LimitlessDatabase|null,
+     *     StorageThroughput?: int|null,
+     *     CertificateDetails?: CertificateDetails|null,
+     *     EngineLifecycleSupport?: string|null
      * } $args
      */
     public function __construct(array $args = [])

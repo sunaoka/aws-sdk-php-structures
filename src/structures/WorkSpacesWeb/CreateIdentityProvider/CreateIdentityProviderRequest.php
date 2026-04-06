@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $identityProviderName
  * @property 'SAML'|'Facebook'|'Google'|'LoginWithAmazon'|'SignInWithApple'|'OIDC' $identityProviderType
  * @property string $portalArn
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateIdentityProviderRequest extends Request
 {
@@ -19,7 +20,8 @@ class CreateIdentityProviderRequest extends Request
      *     identityProviderDetails: array<string, string>,
      *     identityProviderName: string,
      *     identityProviderType: 'SAML'|'Facebook'|'Google'|'LoginWithAmazon'|'SignInWithApple'|'OIDC',
-     *     portalArn: string
+     *     portalArn: string,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

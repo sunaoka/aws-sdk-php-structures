@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $tags
  * @property bool|null $propagateTags
  * @property list<'EC2'|'FARGATE'>|null $platformCapabilities
+ * @property EcsProperties|null $ecsProperties
  * @property EksProperties|null $eksProperties
  * @property 'ECS'|'EKS'|null $containerOrchestrationType
  */
@@ -40,6 +41,7 @@ class JobDefinition extends Shape
      *     tags?: array<string, string>|null,
      *     propagateTags?: bool|null,
      *     platformCapabilities?: list<'EC2'|'FARGATE'>|null,
+     *     ecsProperties?: EcsProperties|null,
      *     eksProperties?: EksProperties|null,
      *     containerOrchestrationType?: 'ECS'|'EKS'|null
      * } $args

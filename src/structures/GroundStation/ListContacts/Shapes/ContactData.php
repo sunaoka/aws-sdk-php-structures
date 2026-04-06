@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $satelliteArn
  * @property \Aws\Api\DateTimeResult|null $startTime
  * @property array<string, string>|null $tags
+ * @property \Aws\Api\DateTimeResult|null $visibilityEndTime
+ * @property \Aws\Api\DateTimeResult|null $visibilityStartTime
  */
 class ContactData extends Shape
 {
@@ -35,7 +37,9 @@ class ContactData extends Shape
      *     region?: string|null,
      *     satelliteArn?: string|null,
      *     startTime?: \Aws\Api\DateTimeResult|null,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     visibilityEndTime?: \Aws\Api\DateTimeResult|null,
+     *     visibilityStartTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

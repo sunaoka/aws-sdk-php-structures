@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $amiId
- * @property 'WINDOWS'|'LINUX'|'UNKNOWN'|null $platform
+ * @property 'WINDOWS'|'LINUX'|'UNKNOWN'|'MACOS'|null $platform
  * @property array<string, string>|null $tags
  */
 class Ec2Metadata extends Shape
@@ -14,7 +14,7 @@ class Ec2Metadata extends Shape
     /**
      * @param array{
      *     amiId?: string|null,
-     *     platform?: 'WINDOWS'|'LINUX'|'UNKNOWN'|null,
+     *     platform?: 'WINDOWS'|'LINUX'|'UNKNOWN'|'MACOS'|null,
      *     tags?: array<string, string>|null
      * } $args
      */

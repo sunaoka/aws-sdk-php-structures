@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $HubName
- * @property 'Model'|'Notebook' $HubContentType
+ * @property 'Model'|'Notebook'|'ModelReference' $HubContentType
  * @property string|null $NameContains
  * @property string|null $MaxSchemaVersion
  * @property \Aws\Api\DateTimeResult|null $CreationTimeBefore
@@ -21,7 +21,7 @@ class ListHubContentsRequest extends Request
     /**
      * @param array{
      *     HubName: string,
-     *     HubContentType: 'Model'|'Notebook',
+     *     HubContentType: 'Model'|'Notebook'|'ModelReference',
      *     NameContains?: string|null,
      *     MaxSchemaVersion?: string|null,
      *     CreationTimeBefore?: \Aws\Api\DateTimeResult|null,

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property string|null $ContentType
  * @property string|null $VersionLabel
+ * @property string|null $KmsKeyArn
  */
 class HostedConfigurationVersionSummary extends Shape
 {
@@ -21,7 +22,8 @@ class HostedConfigurationVersionSummary extends Shape
      *     VersionNumber?: int|null,
      *     Description?: string|null,
      *     ContentType?: string|null,
-     *     VersionLabel?: string|null
+     *     VersionLabel?: string|null,
+     *     KmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

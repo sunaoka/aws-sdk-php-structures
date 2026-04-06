@@ -13,9 +13,11 @@ class Inspector2Client extends \Aws\Inspector2\Inspector2Client
     use BatchUpdateMemberEc2DeepInspectionStatus\BatchUpdateMemberEc2DeepInspectionStatusTrait;
     use CancelFindingsReport\CancelFindingsReportTrait;
     use CancelSbomExport\CancelSbomExportTrait;
+    use CreateCisScanConfiguration\CreateCisScanConfigurationTrait;
     use CreateFilter\CreateFilterTrait;
     use CreateFindingsReport\CreateFindingsReportTrait;
     use CreateSbomExport\CreateSbomExportTrait;
+    use DeleteCisScanConfiguration\DeleteCisScanConfigurationTrait;
     use DeleteFilter\DeleteFilterTrait;
     use DescribeOrganizationConfiguration\DescribeOrganizationConfigurationTrait;
     use Disable\DisableTrait;
@@ -23,6 +25,8 @@ class Inspector2Client extends \Aws\Inspector2\Inspector2Client
     use DisassociateMember\DisassociateMemberTrait;
     use Enable\EnableTrait;
     use EnableDelegatedAdminAccount\EnableDelegatedAdminAccountTrait;
+    use GetCisScanReport\GetCisScanReportTrait;
+    use GetCisScanResultDetails\GetCisScanResultDetailsTrait;
     use GetConfiguration\GetConfigurationTrait;
     use GetDelegatedAdminAccount\GetDelegatedAdminAccountTrait;
     use GetEc2DeepInspectionConfiguration\GetEc2DeepInspectionConfigurationTrait;
@@ -31,6 +35,10 @@ class Inspector2Client extends \Aws\Inspector2\Inspector2Client
     use GetMember\GetMemberTrait;
     use GetSbomExport\GetSbomExportTrait;
     use ListAccountPermissions\ListAccountPermissionsTrait;
+    use ListCisScanConfigurations\ListCisScanConfigurationsTrait;
+    use ListCisScanResultsAggregatedByChecks\ListCisScanResultsAggregatedByChecksTrait;
+    use ListCisScanResultsAggregatedByTargetResource\ListCisScanResultsAggregatedByTargetResourceTrait;
+    use ListCisScans\ListCisScansTrait;
     use ListCoverage\ListCoverageTrait;
     use ListCoverageStatistics\ListCoverageStatisticsTrait;
     use ListDelegatedAdminAccounts\ListDelegatedAdminAccountsTrait;
@@ -42,8 +50,13 @@ class Inspector2Client extends \Aws\Inspector2\Inspector2Client
     use ListUsageTotals\ListUsageTotalsTrait;
     use ResetEncryptionKey\ResetEncryptionKeyTrait;
     use SearchVulnerabilities\SearchVulnerabilitiesTrait;
+    use SendCisSessionHealth\SendCisSessionHealthTrait;
+    use SendCisSessionTelemetry\SendCisSessionTelemetryTrait;
+    use StartCisSession\StartCisSessionTrait;
+    use StopCisSession\StopCisSessionTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateCisScanConfiguration\UpdateCisScanConfigurationTrait;
     use UpdateConfiguration\UpdateConfigurationTrait;
     use UpdateEc2DeepInspectionConfiguration\UpdateEc2DeepInspectionConfigurationTrait;
     use UpdateEncryptionKey\UpdateEncryptionKeyTrait;

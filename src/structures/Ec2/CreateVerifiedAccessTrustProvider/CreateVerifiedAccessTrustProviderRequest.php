@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'user'|'device' $TrustProviderType
  * @property 'iam-identity-center'|'oidc'|null $UserTrustProviderType
- * @property 'jamf'|'crowdstrike'|null $DeviceTrustProviderType
+ * @property 'jamf'|'crowdstrike'|'jumpcloud'|null $DeviceTrustProviderType
  * @property Shapes\CreateVerifiedAccessTrustProviderOidcOptions|null $OidcOptions
  * @property Shapes\CreateVerifiedAccessTrustProviderDeviceOptions|null $DeviceOptions
  * @property string $PolicyReferenceName
@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property string|null $ClientToken
  * @property bool|null $DryRun
+ * @property Shapes\VerifiedAccessSseSpecificationRequest|null $SseSpecification
  */
 class CreateVerifiedAccessTrustProviderRequest extends Request
 {
@@ -22,14 +23,15 @@ class CreateVerifiedAccessTrustProviderRequest extends Request
      * @param array{
      *     TrustProviderType: 'user'|'device',
      *     UserTrustProviderType?: 'iam-identity-center'|'oidc'|null,
-     *     DeviceTrustProviderType?: 'jamf'|'crowdstrike'|null,
+     *     DeviceTrustProviderType?: 'jamf'|'crowdstrike'|'jumpcloud'|null,
      *     OidcOptions?: Shapes\CreateVerifiedAccessTrustProviderOidcOptions|null,
      *     DeviceOptions?: Shapes\CreateVerifiedAccessTrustProviderDeviceOptions|null,
      *     PolicyReferenceName: string,
      *     Description?: string|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     ClientToken?: string|null,
-     *     DryRun?: bool|null
+     *     DryRun?: bool|null,
+     *     SseSpecification?: Shapes\VerifiedAccessSseSpecificationRequest|null
      * } $args
      */
     public function __construct(array $args)

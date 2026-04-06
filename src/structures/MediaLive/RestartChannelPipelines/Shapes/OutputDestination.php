@@ -1,0 +1,27 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\MediaLive\RestartChannelPipelines\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string|null $Id
+ * @property list<MediaPackageOutputDestinationSettings>|null $MediaPackageSettings
+ * @property MultiplexProgramChannelDestinationSettings|null $MultiplexSettings
+ * @property list<OutputDestinationSettings>|null $Settings
+ */
+class OutputDestination extends Shape
+{
+    /**
+     * @param array{
+     *     Id?: string|null,
+     *     MediaPackageSettings?: list<MediaPackageOutputDestinationSettings>|null,
+     *     MultiplexSettings?: MultiplexProgramChannelDestinationSettings|null,
+     *     Settings?: list<OutputDestinationSettings>|null
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DestinationOutpostArn
  * @property bool|null $DryRun
  * @property bool|null $CopyImageTags
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class CopyImageRequest extends Request
 {
@@ -29,7 +30,8 @@ class CopyImageRequest extends Request
      *     SourceRegion: string,
      *     DestinationOutpostArn?: string|null,
      *     DryRun?: bool|null,
-     *     CopyImageTags?: bool|null
+     *     CopyImageTags?: bool|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args)

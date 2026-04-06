@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\MetricStreamFilter>|null $ExcludeFilters
  * @property string $FirehoseArn
  * @property string $RoleArn
- * @property 'json'|'opentelemetry0.7' $OutputFormat
+ * @property 'json'|'opentelemetry0.7'|'opentelemetry1.0' $OutputFormat
  * @property list<Shapes\Tag>|null $Tags
  * @property list<Shapes\MetricStreamStatisticsConfiguration>|null $StatisticsConfigurations
  * @property bool|null $IncludeLinkedAccountsMetrics
@@ -24,7 +24,7 @@ class PutMetricStreamRequest extends Request
      *     ExcludeFilters?: list<Shapes\MetricStreamFilter>|null,
      *     FirehoseArn: string,
      *     RoleArn: string,
-     *     OutputFormat: 'json'|'opentelemetry0.7',
+     *     OutputFormat: 'json'|'opentelemetry0.7'|'opentelemetry1.0',
      *     Tags?: list<Shapes\Tag>|null,
      *     StatisticsConfigurations?: list<Shapes\MetricStreamStatisticsConfiguration>|null,
      *     IncludeLinkedAccountsMetrics?: bool|null

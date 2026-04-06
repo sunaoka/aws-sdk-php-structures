@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $AdminPrivacy
  * @property bool|null $RegistrantPrivacy
  * @property bool|null $TechPrivacy
+ * @property bool|null $BillingPrivacy
  */
 class UpdateDomainContactPrivacyRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateDomainContactPrivacyRequest extends Request
      *     DomainName: string,
      *     AdminPrivacy?: bool|null,
      *     RegistrantPrivacy?: bool|null,
-     *     TechPrivacy?: bool|null
+     *     TechPrivacy?: bool|null,
+     *     BillingPrivacy?: bool|null
      * } $args
      */
     public function __construct(array $args)

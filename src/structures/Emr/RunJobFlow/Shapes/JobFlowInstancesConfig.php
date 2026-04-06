@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PlacementType|null $Placement
  * @property bool|null $KeepJobFlowAliveWhenNoSteps
  * @property bool|null $TerminationProtected
+ * @property bool|null $UnhealthyNodeReplacement
  * @property string|null $HadoopVersion
  * @property string|null $Ec2SubnetId
  * @property list<string>|null $Ec2SubnetIds
@@ -36,6 +37,7 @@ class JobFlowInstancesConfig extends Shape
      *     Placement?: PlacementType|null,
      *     KeepJobFlowAliveWhenNoSteps?: bool|null,
      *     TerminationProtected?: bool|null,
+     *     UnhealthyNodeReplacement?: bool|null,
      *     HadoopVersion?: string|null,
      *     Ec2SubnetId?: string|null,
      *     Ec2SubnetIds?: list<string>|null,

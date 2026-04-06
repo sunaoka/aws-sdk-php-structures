@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PipelineDisplayName
  * @property string|null $PipelineDescription
  * @property string|null $RoleArn
- * @property 'Active'|null $PipelineStatus
+ * @property 'Active'|'Deleting'|null $PipelineStatus
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property \Aws\Api\DateTimeResult|null $LastRunTime
@@ -28,7 +28,7 @@ class Pipeline extends Shape
      *     PipelineDisplayName?: string|null,
      *     PipelineDescription?: string|null,
      *     RoleArn?: string|null,
-     *     PipelineStatus?: 'Active'|null,
+     *     PipelineStatus?: 'Active'|'Deleting'|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
      *     LastRunTime?: \Aws\Api\DateTimeResult|null,

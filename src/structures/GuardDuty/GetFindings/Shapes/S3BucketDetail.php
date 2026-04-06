@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Tag>|null $Tags
  * @property DefaultServerSideEncryption|null $DefaultServerSideEncryption
  * @property PublicAccess|null $PublicAccess
+ * @property list<S3ObjectDetail>|null $S3ObjectDetails
  */
 class S3BucketDetail extends Shape
 {
@@ -25,7 +26,8 @@ class S3BucketDetail extends Shape
      *     Owner?: Owner|null,
      *     Tags?: list<Tag>|null,
      *     DefaultServerSideEncryption?: DefaultServerSideEncryption|null,
-     *     PublicAccess?: PublicAccess|null
+     *     PublicAccess?: PublicAccess|null,
+     *     S3ObjectDetails?: list<S3ObjectDetail>|null
      * } $args
      */
     public function __construct(array $args = [])

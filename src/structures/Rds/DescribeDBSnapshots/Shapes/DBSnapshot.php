@@ -39,6 +39,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SnapshotTarget
  * @property int|null $StorageThroughput
  * @property string|null $DBSystemId
+ * @property bool|null $DedicatedLogVolume
+ * @property bool|null $MultiTenant
  */
 class DBSnapshot extends Shape
 {
@@ -77,7 +79,9 @@ class DBSnapshot extends Shape
      *     SnapshotDatabaseTime?: \Aws\Api\DateTimeResult|null,
      *     SnapshotTarget?: string|null,
      *     StorageThroughput?: int|null,
-     *     DBSystemId?: string|null
+     *     DBSystemId?: string|null,
+     *     DedicatedLogVolume?: bool|null,
+     *     MultiTenant?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

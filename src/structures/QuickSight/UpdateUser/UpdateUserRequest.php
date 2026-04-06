@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $Namespace
  * @property string $Email
- * @property 'ADMIN'|'AUTHOR'|'READER'|'RESTRICTED_AUTHOR'|'RESTRICTED_READER' $Role
+ * @property 'ADMIN'|'AUTHOR'|'READER'|'RESTRICTED_AUTHOR'|'RESTRICTED_READER'|'ADMIN_PRO'|'AUTHOR_PRO'|'READER_PRO' $Role
  * @property string|null $CustomPermissionsName
  * @property bool|null $UnapplyCustomPermissions
  * @property string|null $ExternalLoginFederationProviderType
@@ -24,7 +24,7 @@ class UpdateUserRequest extends Request
      *     AwsAccountId: string,
      *     Namespace: string,
      *     Email: string,
-     *     Role: 'ADMIN'|'AUTHOR'|'READER'|'RESTRICTED_AUTHOR'|'RESTRICTED_READER',
+     *     Role: 'ADMIN'|'AUTHOR'|'READER'|'RESTRICTED_AUTHOR'|'RESTRICTED_READER'|'ADMIN_PRO'|'AUTHOR_PRO'|'READER_PRO',
      *     CustomPermissionsName?: string|null,
      *     UnapplyCustomPermissions?: bool|null,
      *     ExternalLoginFederationProviderType?: string|null,

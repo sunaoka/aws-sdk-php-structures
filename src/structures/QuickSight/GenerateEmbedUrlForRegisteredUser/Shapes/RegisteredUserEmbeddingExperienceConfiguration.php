@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RegisteredUserQuickSightConsoleEmbeddingConfiguration|null $QuickSightConsole
  * @property RegisteredUserQSearchBarEmbeddingConfiguration|null $QSearchBar
  * @property RegisteredUserDashboardVisualEmbeddingConfiguration|null $DashboardVisual
+ * @property RegisteredUserGenerativeQnAEmbeddingConfiguration|null $GenerativeQnA
  */
 class RegisteredUserEmbeddingExperienceConfiguration extends Shape
 {
@@ -17,7 +18,8 @@ class RegisteredUserEmbeddingExperienceConfiguration extends Shape
      *     Dashboard?: RegisteredUserDashboardEmbeddingConfiguration|null,
      *     QuickSightConsole?: RegisteredUserQuickSightConsoleEmbeddingConfiguration|null,
      *     QSearchBar?: RegisteredUserQSearchBarEmbeddingConfiguration|null,
-     *     DashboardVisual?: RegisteredUserDashboardVisualEmbeddingConfiguration|null
+     *     DashboardVisual?: RegisteredUserDashboardVisualEmbeddingConfiguration|null,
+     *     GenerativeQnA?: RegisteredUserGenerativeQnAEmbeddingConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

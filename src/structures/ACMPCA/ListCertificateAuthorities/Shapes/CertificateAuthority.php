@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CertificateAuthorityConfiguration|null $CertificateAuthorityConfiguration
  * @property RevocationConfiguration|null $RevocationConfiguration
  * @property \Aws\Api\DateTimeResult|null $RestorableUntil
- * @property 'FIPS_140_2_LEVEL_2_OR_HIGHER'|'FIPS_140_2_LEVEL_3_OR_HIGHER'|null $KeyStorageSecurityStandard
+ * @property 'FIPS_140_2_LEVEL_2_OR_HIGHER'|'FIPS_140_2_LEVEL_3_OR_HIGHER'|'CCPC_LEVEL_1_OR_HIGHER'|null $KeyStorageSecurityStandard
  * @property 'GENERAL_PURPOSE'|'SHORT_LIVED_CERTIFICATE'|null $UsageMode
  */
 class CertificateAuthority extends Shape
@@ -38,7 +38,7 @@ class CertificateAuthority extends Shape
      *     CertificateAuthorityConfiguration?: CertificateAuthorityConfiguration|null,
      *     RevocationConfiguration?: RevocationConfiguration|null,
      *     RestorableUntil?: \Aws\Api\DateTimeResult|null,
-     *     KeyStorageSecurityStandard?: 'FIPS_140_2_LEVEL_2_OR_HIGHER'|'FIPS_140_2_LEVEL_3_OR_HIGHER'|null,
+     *     KeyStorageSecurityStandard?: 'FIPS_140_2_LEVEL_2_OR_HIGHER'|'FIPS_140_2_LEVEL_3_OR_HIGHER'|'CCPC_LEVEL_1_OR_HIGHER'|null,
      *     UsageMode?: 'GENERAL_PURPOSE'|'SHORT_LIVED_CERTIFICATE'|null
      * } $args
      */

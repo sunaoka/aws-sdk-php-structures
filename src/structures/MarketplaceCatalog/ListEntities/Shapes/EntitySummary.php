@@ -11,6 +11,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $EntityArn
  * @property string|null $LastModifiedDate
  * @property string|null $Visibility
+ * @property AmiProductSummary|null $AmiProductSummary
+ * @property ContainerProductSummary|null $ContainerProductSummary
+ * @property DataProductSummary|null $DataProductSummary
+ * @property SaaSProductSummary|null $SaaSProductSummary
+ * @property OfferSummary|null $OfferSummary
+ * @property ResaleAuthorizationSummary|null $ResaleAuthorizationSummary
  */
 class EntitySummary extends Shape
 {
@@ -21,7 +27,13 @@ class EntitySummary extends Shape
      *     EntityId?: string|null,
      *     EntityArn?: string|null,
      *     LastModifiedDate?: string|null,
-     *     Visibility?: string|null
+     *     Visibility?: string|null,
+     *     AmiProductSummary?: AmiProductSummary|null,
+     *     ContainerProductSummary?: ContainerProductSummary|null,
+     *     DataProductSummary?: DataProductSummary|null,
+     *     SaaSProductSummary?: SaaSProductSummary|null,
+     *     OfferSummary?: OfferSummary|null,
+     *     ResaleAuthorizationSummary?: ResaleAuthorizationSummary|null
      * } $args
      */
     public function __construct(array $args = [])

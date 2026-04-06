@@ -18,6 +18,7 @@ class BillingConductorClient extends \Aws\BillingConductor\BillingConductorClien
     use DeletePricingRule\DeletePricingRuleTrait;
     use DisassociateAccounts\DisassociateAccountsTrait;
     use DisassociatePricingRules\DisassociatePricingRulesTrait;
+    use GetBillingGroupCostReport\GetBillingGroupCostReportTrait;
     use ListAccountAssociations\ListAccountAssociationsTrait;
     use ListBillingGroupCostReports\ListBillingGroupCostReportsTrait;
     use ListBillingGroups\ListBillingGroupsTrait;

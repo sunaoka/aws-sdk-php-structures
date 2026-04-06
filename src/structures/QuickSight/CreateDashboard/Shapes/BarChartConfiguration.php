@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TooltipOptions|null $Tooltip
  * @property list<ReferenceLine>|null $ReferenceLines
  * @property list<ContributionAnalysisDefault>|null $ContributionAnalysisDefaults
+ * @property VisualInteractionOptions|null $Interactions
  */
 class BarChartConfiguration extends Shape
 {
@@ -41,7 +42,8 @@ class BarChartConfiguration extends Shape
      *     DataLabels?: DataLabelOptions|null,
      *     Tooltip?: TooltipOptions|null,
      *     ReferenceLines?: list<ReferenceLine>|null,
-     *     ContributionAnalysisDefaults?: list<ContributionAnalysisDefault>|null
+     *     ContributionAnalysisDefaults?: list<ContributionAnalysisDefault>|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

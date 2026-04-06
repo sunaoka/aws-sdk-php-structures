@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AwsS3BucketNotificationConfiguration|null $BucketNotificationConfiguration
  * @property AwsS3BucketBucketVersioningConfiguration|null $BucketVersioningConfiguration
  * @property AwsS3BucketObjectLockConfiguration|null $ObjectLockConfiguration
+ * @property string|null $Name
  */
 class AwsS3BucketDetails extends Shape
 {
@@ -35,7 +36,8 @@ class AwsS3BucketDetails extends Shape
      *     BucketWebsiteConfiguration?: AwsS3BucketWebsiteConfiguration|null,
      *     BucketNotificationConfiguration?: AwsS3BucketNotificationConfiguration|null,
      *     BucketVersioningConfiguration?: AwsS3BucketBucketVersioningConfiguration|null,
-     *     ObjectLockConfiguration?: AwsS3BucketObjectLockConfiguration|null
+     *     ObjectLockConfiguration?: AwsS3BucketObjectLockConfiguration|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

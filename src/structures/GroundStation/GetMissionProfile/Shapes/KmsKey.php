@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $kmsAliasArn
+ * @property string|null $kmsAliasName
  * @property string|null $kmsKeyArn
  */
 class KmsKey extends Shape
@@ -13,6 +14,7 @@ class KmsKey extends Shape
     /**
      * @param array{
      *     kmsAliasArn?: string|null,
+     *     kmsAliasName?: string|null,
      *     kmsKeyArn?: string|null
      * } $args
      */

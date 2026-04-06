@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'NONE'|'RESTRICTED'|'UNRESTRICTED'|'BOTH'|null $AdsOnDeliveryRestrictions
  * @property DashEncryption|null $Encryption
  * @property bool|null $IncludeIframeOnlyStream
- * @property 'FULL'|'COMPACT'|null $ManifestLayout
+ * @property 'FULL'|'COMPACT'|'DRM_TOP_LEVEL_COMPACT'|null $ManifestLayout
  * @property int|null $ManifestWindowSeconds
  * @property int|null $MinBufferTimeSeconds
  * @property int|null $MinUpdatePeriodSeconds
@@ -30,7 +30,7 @@ class DashPackage extends Shape
      *     AdsOnDeliveryRestrictions?: 'NONE'|'RESTRICTED'|'UNRESTRICTED'|'BOTH'|null,
      *     Encryption?: DashEncryption|null,
      *     IncludeIframeOnlyStream?: bool|null,
-     *     ManifestLayout?: 'FULL'|'COMPACT'|null,
+     *     ManifestLayout?: 'FULL'|'COMPACT'|'DRM_TOP_LEVEL_COMPACT'|null,
      *     ManifestWindowSeconds?: int|null,
      *     MinBufferTimeSeconds?: int|null,
      *     MinUpdatePeriodSeconds?: int|null,

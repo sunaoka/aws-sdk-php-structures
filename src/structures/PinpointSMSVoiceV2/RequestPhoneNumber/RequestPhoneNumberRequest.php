@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $IsoCountryCode
  * @property 'TRANSACTIONAL'|'PROMOTIONAL' $MessageType
- * @property list<'SMS'|'VOICE'> $NumberCapabilities
- * @property 'LONG_CODE'|'TOLL_FREE'|'TEN_DLC' $NumberType
+ * @property list<'SMS'|'VOICE'|'MMS'> $NumberCapabilities
+ * @property 'LONG_CODE'|'TOLL_FREE'|'TEN_DLC'|'SIMULATOR' $NumberType
  * @property string|null $OptOutListName
  * @property string|null $PoolId
  * @property string|null $RegistrationId
@@ -22,8 +22,8 @@ class RequestPhoneNumberRequest extends Request
      * @param array{
      *     IsoCountryCode: string,
      *     MessageType: 'TRANSACTIONAL'|'PROMOTIONAL',
-     *     NumberCapabilities: list<'SMS'|'VOICE'>,
-     *     NumberType: 'LONG_CODE'|'TOLL_FREE'|'TEN_DLC',
+     *     NumberCapabilities: list<'SMS'|'VOICE'|'MMS'>,
+     *     NumberType: 'LONG_CODE'|'TOLL_FREE'|'TEN_DLC'|'SIMULATOR',
      *     OptOutListName?: string|null,
      *     PoolId?: string|null,
      *     RegistrationId?: string|null,

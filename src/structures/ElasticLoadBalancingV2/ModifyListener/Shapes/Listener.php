@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SslPolicy
  * @property list<Action>|null $DefaultActions
  * @property list<string>|null $AlpnPolicy
+ * @property MutualAuthenticationAttributes|null $MutualAuthentication
  */
 class Listener extends Shape
 {
@@ -25,7 +26,8 @@ class Listener extends Shape
      *     Certificates?: list<Certificate>|null,
      *     SslPolicy?: string|null,
      *     DefaultActions?: list<Action>|null,
-     *     AlpnPolicy?: list<string>|null
+     *     AlpnPolicy?: list<string>|null,
+     *     MutualAuthentication?: MutualAuthenticationAttributes|null
      * } $args
      */
     public function __construct(array $args = [])

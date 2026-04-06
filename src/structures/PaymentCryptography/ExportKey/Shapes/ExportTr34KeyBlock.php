@@ -6,20 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $CertificateAuthorityPublicKeyIdentifier
+ * @property string $WrappingKeyCertificate
  * @property string $ExportToken
  * @property 'X9_TR34_2012' $KeyBlockFormat
  * @property string|null $RandomNonce
- * @property string $WrappingKeyCertificate
+ * @property KeyBlockHeaders|null $KeyBlockHeaders
  */
 class ExportTr34KeyBlock extends Shape
 {
     /**
      * @param array{
      *     CertificateAuthorityPublicKeyIdentifier: string,
+     *     WrappingKeyCertificate: string,
      *     ExportToken: string,
      *     KeyBlockFormat: 'X9_TR34_2012',
      *     RandomNonce?: string|null,
-     *     WrappingKeyCertificate: string
+     *     KeyBlockHeaders?: KeyBlockHeaders|null
      * } $args
      */
     public function __construct(array $args)

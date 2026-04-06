@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Name
  * @property string|null $RoleArn
  * @property list<Shapes\InputSourceRequest>|null $Sources
+ * @property Shapes\SrtSettingsRequest|null $SrtSettings
  */
 class UpdateInputRequest extends Request
 {
@@ -25,7 +26,8 @@ class UpdateInputRequest extends Request
      *     MediaConnectFlows?: list<Shapes\MediaConnectFlowRequest>|null,
      *     Name?: string|null,
      *     RoleArn?: string|null,
-     *     Sources?: list<Shapes\InputSourceRequest>|null
+     *     Sources?: list<Shapes\InputSourceRequest>|null,
+     *     SrtSettings?: Shapes\SrtSettingsRequest|null
      * } $args
      */
     public function __construct(array $args)

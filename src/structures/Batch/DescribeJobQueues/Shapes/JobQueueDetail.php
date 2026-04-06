@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $priority
  * @property list<ComputeEnvironmentOrder> $computeEnvironmentOrder
  * @property array<string, string>|null $tags
+ * @property list<JobStateTimeLimitAction>|null $jobStateTimeLimitActions
  */
 class JobQueueDetail extends Shape
 {
@@ -27,7 +28,8 @@ class JobQueueDetail extends Shape
      *     statusReason?: string|null,
      *     priority: int,
      *     computeEnvironmentOrder: list<ComputeEnvironmentOrder>,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     jobStateTimeLimitActions?: list<JobStateTimeLimitAction>|null
      * } $args
      */
     public function __construct(array $args)

@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MetricInfo|null $UsageMetric
  * @property QuotaPeriod|null $Period
  * @property ErrorReason|null $ErrorReason
+ * @property 'ACCOUNT'|'RESOURCE'|'ALL'|null $QuotaAppliedAtLevel
+ * @property QuotaContextInfo|null $QuotaContext
  */
 class ServiceQuota extends Shape
 {
@@ -33,7 +35,9 @@ class ServiceQuota extends Shape
      *     GlobalQuota?: bool|null,
      *     UsageMetric?: MetricInfo|null,
      *     Period?: QuotaPeriod|null,
-     *     ErrorReason?: ErrorReason|null
+     *     ErrorReason?: ErrorReason|null,
+     *     QuotaAppliedAtLevel?: 'ACCOUNT'|'RESOURCE'|'ALL'|null,
+     *     QuotaContext?: QuotaContextInfo|null
      * } $args
      */
     public function __construct(array $args = [])

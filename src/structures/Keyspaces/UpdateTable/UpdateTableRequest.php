@@ -12,8 +12,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\EncryptionSpecification|null $encryptionSpecification
  * @property Shapes\PointInTimeRecovery|null $pointInTimeRecovery
  * @property Shapes\TimeToLive|null $ttl
- * @property int<1, 630720000>|null $defaultTimeToLive
+ * @property int<0, 630720000>|null $defaultTimeToLive
  * @property Shapes\ClientSideTimestamps|null $clientSideTimestamps
+ * @property Shapes\AutoScalingSpecification|null $autoScalingSpecification
+ * @property list<Shapes\ReplicaSpecification>|null $replicaSpecifications
  */
 class UpdateTableRequest extends Request
 {
@@ -26,8 +28,10 @@ class UpdateTableRequest extends Request
      *     encryptionSpecification?: Shapes\EncryptionSpecification|null,
      *     pointInTimeRecovery?: Shapes\PointInTimeRecovery|null,
      *     ttl?: Shapes\TimeToLive|null,
-     *     defaultTimeToLive?: int<1, 630720000>|null,
-     *     clientSideTimestamps?: Shapes\ClientSideTimestamps|null
+     *     defaultTimeToLive?: int<0, 630720000>|null,
+     *     clientSideTimestamps?: Shapes\ClientSideTimestamps|null,
+     *     autoScalingSpecification?: Shapes\AutoScalingSpecification|null,
+     *     replicaSpecifications?: list<Shapes\ReplicaSpecification>|null
      * } $args
      */
     public function __construct(array $args)

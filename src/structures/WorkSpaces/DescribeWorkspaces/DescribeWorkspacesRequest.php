@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $BundleId
  * @property int<1, 25>|null $Limit
  * @property string|null $NextToken
+ * @property string|null $WorkspaceName
  */
 class DescribeWorkspacesRequest extends Request
 {
@@ -21,7 +22,8 @@ class DescribeWorkspacesRequest extends Request
      *     UserName?: string|null,
      *     BundleId?: string|null,
      *     Limit?: int<1, 25>|null,
-     *     NextToken?: string|null
+     *     NextToken?: string|null,
+     *     WorkspaceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

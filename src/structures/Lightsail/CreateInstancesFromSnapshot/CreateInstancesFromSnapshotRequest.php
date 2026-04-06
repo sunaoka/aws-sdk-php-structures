@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $keyPairName
  * @property list<Shapes\Tag>|null $tags
  * @property list<Shapes\AddOnRequest>|null $addOns
- * @property 'dualstack'|'ipv4'|null $ipAddressType
+ * @property 'dualstack'|'ipv4'|'ipv6'|null $ipAddressType
  * @property string|null $sourceInstanceName
  * @property string|null $restoreDate
  * @property bool|null $useLatestRestorableAutoSnapshot
@@ -32,7 +32,7 @@ class CreateInstancesFromSnapshotRequest extends Request
      *     keyPairName?: string|null,
      *     tags?: list<Shapes\Tag>|null,
      *     addOns?: list<Shapes\AddOnRequest>|null,
-     *     ipAddressType?: 'dualstack'|'ipv4'|null,
+     *     ipAddressType?: 'dualstack'|'ipv4'|'ipv6'|null,
      *     sourceInstanceName?: string|null,
      *     restoreDate?: string|null,
      *     useLatestRestorableAutoSnapshot?: bool|null

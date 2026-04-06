@@ -13,6 +13,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Parameters|null $Parameters
  * @property EventSource|null $EventSource
  * @property list<Action>|null $Actions
+ * @property 'SIMPLIFIED'|'STANDARD'|null $PolicyLanguage
+ * @property 'VOLUME'|'INSTANCE'|null $ResourceType
+ * @property int<1, max>|null $CreateInterval
+ * @property int<1, max>|null $RetainInterval
+ * @property bool|null $CopyTags
+ * @property list<CrossRegionCopyTarget>|null $CrossRegionCopyTargets
+ * @property bool|null $ExtendDeletion
+ * @property Exclusions|null $Exclusions
  */
 class PolicyDetails extends Shape
 {
@@ -25,7 +33,15 @@ class PolicyDetails extends Shape
      *     Schedules?: list<Schedule>|null,
      *     Parameters?: Parameters|null,
      *     EventSource?: EventSource|null,
-     *     Actions?: list<Action>|null
+     *     Actions?: list<Action>|null,
+     *     PolicyLanguage?: 'SIMPLIFIED'|'STANDARD'|null,
+     *     ResourceType?: 'VOLUME'|'INSTANCE'|null,
+     *     CreateInterval?: int<1, max>|null,
+     *     RetainInterval?: int<1, max>|null,
+     *     CopyTags?: bool|null,
+     *     CrossRegionCopyTargets?: list<CrossRegionCopyTarget>|null,
+     *     ExtendDeletion?: bool|null,
+     *     Exclusions?: Exclusions|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -18,6 +18,12 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $ExpectedCompletionTimeMinutes
  * @property string|null $CreatedResourceArn
  * @property string|null $ResourceType
+ * @property \Aws\Api\DateTimeResult|null $RecoveryPointCreationDate
+ * @property Shapes\RestoreJobCreator|null $CreatedBy
+ * @property 'FAILED'|'SUCCESSFUL'|'TIMED_OUT'|'VALIDATING'|null $ValidationStatus
+ * @property string|null $ValidationStatusMessage
+ * @property 'DELETING'|'FAILED'|'SUCCESSFUL'|null $DeletionStatus
+ * @property string|null $DeletionStatusMessage
  */
 class DescribeRestoreJobResponse extends Response
 {

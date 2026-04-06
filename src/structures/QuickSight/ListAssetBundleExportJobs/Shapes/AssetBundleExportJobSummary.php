@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AssetBundleExportJobId
  * @property bool|null $IncludeAllDependencies
  * @property 'CLOUDFORMATION_JSON'|'QUICKSIGHT_JSON'|null $ExportFormat
+ * @property bool|null $IncludePermissions
+ * @property bool|null $IncludeTags
  */
 class AssetBundleExportJobSummary extends Shape
 {
@@ -21,7 +23,9 @@ class AssetBundleExportJobSummary extends Shape
      *     CreatedTime?: \Aws\Api\DateTimeResult|null,
      *     AssetBundleExportJobId?: string|null,
      *     IncludeAllDependencies?: bool|null,
-     *     ExportFormat?: 'CLOUDFORMATION_JSON'|'QUICKSIGHT_JSON'|null
+     *     ExportFormat?: 'CLOUDFORMATION_JSON'|'QUICKSIGHT_JSON'|null,
+     *     IncludePermissions?: bool|null,
+     *     IncludeTags?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ENABLED'|'DISABLED'|null $domainConfigurationStatus
  * @property bool|null $removeAuthorizerConfig
  * @property Shapes\TlsConfig|null $tlsConfig
+ * @property Shapes\ServerCertificateConfig|null $serverCertificateConfig
  */
 class UpdateDomainConfigurationRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateDomainConfigurationRequest extends Request
      *     authorizerConfig?: Shapes\AuthorizerConfig|null,
      *     domainConfigurationStatus?: 'ENABLED'|'DISABLED'|null,
      *     removeAuthorizerConfig?: bool|null,
-     *     tlsConfig?: Shapes\TlsConfig|null
+     *     tlsConfig?: Shapes\TlsConfig|null,
+     *     serverCertificateConfig?: Shapes\ServerCertificateConfig|null
      * } $args
      */
     public function __construct(array $args)

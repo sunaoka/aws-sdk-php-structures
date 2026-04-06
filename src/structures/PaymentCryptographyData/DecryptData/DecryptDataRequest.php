@@ -5,17 +5,19 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\DecryptData;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string $KeyIdentifier
  * @property string $CipherText
  * @property Shapes\EncryptionDecryptionAttributes $DecryptionAttributes
- * @property string $KeyIdentifier
+ * @property Shapes\WrappedKey|null $WrappedKey
  */
 class DecryptDataRequest extends Request
 {
     /**
      * @param array{
+     *     KeyIdentifier: string,
      *     CipherText: string,
      *     DecryptionAttributes: Shapes\EncryptionDecryptionAttributes,
-     *     KeyIdentifier: string
+     *     WrappedKey?: Shapes\WrappedKey|null
      * } $args
      */
     public function __construct(array $args)

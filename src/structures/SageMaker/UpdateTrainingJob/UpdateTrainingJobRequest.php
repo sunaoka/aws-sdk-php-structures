@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ProfilerConfigForUpdate|null $ProfilerConfig
  * @property list<Shapes\ProfilerRuleConfiguration>|null $ProfilerRuleConfigurations
  * @property Shapes\ResourceConfigForUpdate|null $ResourceConfig
+ * @property Shapes\RemoteDebugConfigForUpdate|null $RemoteDebugConfig
  */
 class UpdateTrainingJobRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateTrainingJobRequest extends Request
      *     TrainingJobName: string,
      *     ProfilerConfig?: Shapes\ProfilerConfigForUpdate|null,
      *     ProfilerRuleConfigurations?: list<Shapes\ProfilerRuleConfiguration>|null,
-     *     ResourceConfig?: Shapes\ResourceConfigForUpdate|null
+     *     ResourceConfig?: Shapes\ResourceConfigForUpdate|null,
+     *     RemoteDebugConfig?: Shapes\RemoteDebugConfigForUpdate|null
      * } $args
      */
     public function __construct(array $args)

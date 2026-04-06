@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $connectInstanceId
- * @property EncryptionConfig $encryptionConfig
  * @property string $serviceLinkedRoleArn
+ * @property EncryptionConfig $encryptionConfig
  */
 class InstanceConfig extends Shape
 {
     /**
      * @param array{
      *     connectInstanceId: string,
-     *     encryptionConfig: EncryptionConfig,
-     *     serviceLinkedRoleArn: string
+     *     serviceLinkedRoleArn: string,
+     *     encryptionConfig: EncryptionConfig
      * } $args
      */
     public function __construct(array $args)

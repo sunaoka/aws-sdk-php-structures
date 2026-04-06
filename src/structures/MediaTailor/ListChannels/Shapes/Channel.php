@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Arn
+ * @property list<string>|null $Audiences
  * @property string $ChannelName
  * @property string $ChannelState
  * @property \Aws\Api\DateTimeResult|null $CreationTime
@@ -22,6 +23,7 @@ class Channel extends Shape
     /**
      * @param array{
      *     Arn: string,
+     *     Audiences?: list<string>|null,
      *     ChannelName: string,
      *     ChannelState: string,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,

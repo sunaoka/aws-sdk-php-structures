@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'ENABLED'|'DISABLED'|null $disassociatedDataStorage
  * @property Shapes\RetentionPeriod|null $retentionPeriod
  * @property Shapes\ConfigurationStatus $configurationStatus
+ * @property 'ENABLED'|'DISABLED'|null $warmTier
+ * @property Shapes\WarmTierRetentionPeriod|null $warmTierRetentionPeriod
  */
 class PutStorageConfigurationResponse extends Response
 {

@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'application'|'network'|'gateway'|null $Type
  * @property list<AvailabilityZone>|null $AvailabilityZones
  * @property list<string>|null $SecurityGroups
- * @property 'ipv4'|'dualstack'|null $IpAddressType
+ * @property 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null $IpAddressType
  * @property string|null $CustomerOwnedIpv4Pool
  * @property string|null $EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic
  */
@@ -35,7 +35,7 @@ class LoadBalancer extends Shape
      *     Type?: 'application'|'network'|'gateway'|null,
      *     AvailabilityZones?: list<AvailabilityZone>|null,
      *     SecurityGroups?: list<string>|null,
-     *     IpAddressType?: 'ipv4'|'dualstack'|null,
+     *     IpAddressType?: 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null,
      *     CustomerOwnedIpv4Pool?: string|null,
      *     EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic?: string|null
      * } $args

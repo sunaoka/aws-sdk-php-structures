@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DomainName
  * @property 'SSO'|'IAM' $AuthMode
  * @property Shapes\UserSettings $DefaultUserSettings
+ * @property Shapes\DomainSettings|null $DomainSettings
  * @property list<string> $SubnetIds
  * @property string $VpcId
  * @property list<Shapes\Tag>|null $Tags
@@ -15,7 +16,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $HomeEfsFileSystemKmsKeyId
  * @property string|null $KmsKeyId
  * @property 'Service'|'Customer'|null $AppSecurityGroupManagement
- * @property Shapes\DomainSettings|null $DomainSettings
  * @property Shapes\DefaultSpaceSettings|null $DefaultSpaceSettings
  */
 class CreateDomainRequest extends Request
@@ -25,6 +25,7 @@ class CreateDomainRequest extends Request
      *     DomainName: string,
      *     AuthMode: 'SSO'|'IAM',
      *     DefaultUserSettings: Shapes\UserSettings,
+     *     DomainSettings?: Shapes\DomainSettings|null,
      *     SubnetIds: list<string>,
      *     VpcId: string,
      *     Tags?: list<Shapes\Tag>|null,
@@ -32,7 +33,6 @@ class CreateDomainRequest extends Request
      *     HomeEfsFileSystemKmsKeyId?: string|null,
      *     KmsKeyId?: string|null,
      *     AppSecurityGroupManagement?: 'Service'|'Customer'|null,
-     *     DomainSettings?: Shapes\DomainSettings|null,
      *     DefaultSpaceSettings?: Shapes\DefaultSpaceSettings|null
      * } $args
      */

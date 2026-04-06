@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MWAA\ListEnvironments;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 25>|null $MaxResults
  * @property string|null $NextToken
+ * @property int<1, 25>|null $MaxResults
  */
 class ListEnvironmentsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int<1, 25>|null,
-     *     NextToken?: string|null
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 25>|null
      * } $args
      */
     public function __construct(array $args = [])

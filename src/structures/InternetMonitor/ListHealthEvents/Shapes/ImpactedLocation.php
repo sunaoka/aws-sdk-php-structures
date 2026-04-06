@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ACTIVE'|'RESOLVED' $Status
  * @property NetworkImpairment|null $CausedBy
  * @property InternetHealth|null $InternetHealth
+ * @property list<string>|null $Ipv4Prefixes
  */
 class ImpactedLocation extends Shape
 {
@@ -37,7 +38,8 @@ class ImpactedLocation extends Shape
      *     ServiceLocation?: string|null,
      *     Status: 'ACTIVE'|'RESOLVED',
      *     CausedBy?: NetworkImpairment|null,
-     *     InternetHealth?: InternetHealth|null
+     *     InternetHealth?: InternetHealth|null,
+     *     Ipv4Prefixes?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

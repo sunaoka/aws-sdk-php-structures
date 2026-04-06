@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool|null $Privileged
+ * @property bool|null $AllowPrivilegeEscalation
  */
 class SecurityContext extends Shape
 {
     /**
-     * @param array{Privileged?: bool|null} $args
+     * @param array{
+     *     Privileged?: bool|null,
+     *     AllowPrivilegeEscalation?: bool|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

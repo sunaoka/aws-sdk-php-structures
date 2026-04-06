@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $version
  * @property \Aws\Api\DateTimeResult|null $creationDate
  * @property \Aws\Api\DateTimeResult|null $lastModifiedDate
+ * @property Shapes\MetricsExportConfig|null $metricsExportConfig
  */
 class DescribeSecurityProfileResponse extends Response
 {

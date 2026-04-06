@@ -16,6 +16,8 @@ class CloudTrailClient extends \Aws\CloudTrail\CloudTrailClient
     use DeregisterOrganizationDelegatedAdmin\DeregisterOrganizationDelegatedAdminTrait;
     use DescribeQuery\DescribeQueryTrait;
     use DescribeTrails\DescribeTrailsTrait;
+    use DisableFederation\DisableFederationTrait;
+    use EnableFederation\EnableFederationTrait;
     use GetChannel\GetChannelTrait;
     use GetEventDataStore\GetEventDataStoreTrait;
     use GetEventSelectors\GetEventSelectorsTrait;
@@ -29,6 +31,7 @@ class CloudTrailClient extends \Aws\CloudTrail\CloudTrailClient
     use ListEventDataStores\ListEventDataStoresTrait;
     use ListImportFailures\ListImportFailuresTrait;
     use ListImports\ListImportsTrait;
+    use ListInsightsMetricData\ListInsightsMetricDataTrait;
     use ListPublicKeys\ListPublicKeysTrait;
     use ListQueries\ListQueriesTrait;
     use ListTags\ListTagsTrait;

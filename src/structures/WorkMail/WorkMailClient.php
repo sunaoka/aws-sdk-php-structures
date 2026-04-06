@@ -32,6 +32,7 @@ class WorkMailClient extends \Aws\WorkMail\WorkMailClient
     use DeregisterFromWorkMail\DeregisterFromWorkMailTrait;
     use DeregisterMailDomain\DeregisterMailDomainTrait;
     use DescribeEmailMonitoringConfiguration\DescribeEmailMonitoringConfigurationTrait;
+    use DescribeEntity\DescribeEntityTrait;
     use DescribeGroup\DescribeGroupTrait;
     use DescribeInboundDmarcSettings\DescribeInboundDmarcSettingsTrait;
     use DescribeMailboxExportJob\DescribeMailboxExportJobTrait;
@@ -53,6 +54,7 @@ class WorkMailClient extends \Aws\WorkMail\WorkMailClient
     use ListAvailabilityConfigurations\ListAvailabilityConfigurationsTrait;
     use ListGroupMembers\ListGroupMembersTrait;
     use ListGroups\ListGroupsTrait;
+    use ListGroupsForEntity\ListGroupsForEntityTrait;
     use ListImpersonationRoles\ListImpersonationRolesTrait;
     use ListMailDomains\ListMailDomainsTrait;
     use ListMailboxExportJobs\ListMailboxExportJobsTrait;
@@ -79,9 +81,11 @@ class WorkMailClient extends \Aws\WorkMail\WorkMailClient
     use UntagResource\UntagResourceTrait;
     use UpdateAvailabilityConfiguration\UpdateAvailabilityConfigurationTrait;
     use UpdateDefaultMailDomain\UpdateDefaultMailDomainTrait;
+    use UpdateGroup\UpdateGroupTrait;
     use UpdateImpersonationRole\UpdateImpersonationRoleTrait;
     use UpdateMailboxQuota\UpdateMailboxQuotaTrait;
     use UpdateMobileDeviceAccessRule\UpdateMobileDeviceAccessRuleTrait;
     use UpdatePrimaryEmailAddress\UpdatePrimaryEmailAddressTrait;
     use UpdateResource\UpdateResourceTrait;
+    use UpdateUser\UpdateUserTrait;
 }

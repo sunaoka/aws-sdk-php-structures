@@ -13,9 +13,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\EncryptionSpecification|null $encryptionSpecification
  * @property Shapes\PointInTimeRecovery|null $pointInTimeRecovery
  * @property Shapes\TimeToLive|null $ttl
- * @property int<1, 630720000>|null $defaultTimeToLive
+ * @property int<0, 630720000>|null $defaultTimeToLive
  * @property list<Shapes\Tag>|null $tags
  * @property Shapes\ClientSideTimestamps|null $clientSideTimestamps
+ * @property Shapes\AutoScalingSpecification|null $autoScalingSpecification
+ * @property list<Shapes\ReplicaSpecification>|null $replicaSpecifications
  */
 class CreateTableRequest extends Request
 {
@@ -29,9 +31,11 @@ class CreateTableRequest extends Request
      *     encryptionSpecification?: Shapes\EncryptionSpecification|null,
      *     pointInTimeRecovery?: Shapes\PointInTimeRecovery|null,
      *     ttl?: Shapes\TimeToLive|null,
-     *     defaultTimeToLive?: int<1, 630720000>|null,
+     *     defaultTimeToLive?: int<0, 630720000>|null,
      *     tags?: list<Shapes\Tag>|null,
-     *     clientSideTimestamps?: Shapes\ClientSideTimestamps|null
+     *     clientSideTimestamps?: Shapes\ClientSideTimestamps|null,
+     *     autoScalingSpecification?: Shapes\AutoScalingSpecification|null,
+     *     replicaSpecifications?: list<Shapes\ReplicaSpecification>|null
      * } $args
      */
     public function __construct(array $args)

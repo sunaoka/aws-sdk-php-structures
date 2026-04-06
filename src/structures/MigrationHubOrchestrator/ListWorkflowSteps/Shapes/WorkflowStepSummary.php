@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AWS_MANAGED'|'CUSTOM'|null $owner
  * @property list<string>|null $previous
  * @property list<string>|null $next
- * @property 'AWAITING_DEPENDENCIES'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED'|null $status
+ * @property 'AWAITING_DEPENDENCIES'|'SKIPPED'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED'|null $status
  * @property string|null $statusMessage
  * @property int|null $noOfSrvCompleted
  * @property int|null $noOfSrvFailed
@@ -29,7 +29,7 @@ class WorkflowStepSummary extends Shape
      *     owner?: 'AWS_MANAGED'|'CUSTOM'|null,
      *     previous?: list<string>|null,
      *     next?: list<string>|null,
-     *     status?: 'AWAITING_DEPENDENCIES'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED'|null,
+     *     status?: 'AWAITING_DEPENDENCIES'|'SKIPPED'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED'|null,
      *     statusMessage?: string|null,
      *     noOfSrvCompleted?: int|null,
      *     noOfSrvFailed?: int|null,

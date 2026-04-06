@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $CollectionName
- * @property \Aws\Api\DateTimeResult $CreateTime
  * @property string $Description
  * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
  * @property string|null $PricingPlanDataSource
+ * @property \Aws\Api\DateTimeResult $CreateTime
  * @property \Aws\Api\DateTimeResult $UpdateTime
  */
 class ListGeofenceCollectionsResponseEntry extends Shape
@@ -17,10 +17,10 @@ class ListGeofenceCollectionsResponseEntry extends Shape
     /**
      * @param array{
      *     CollectionName: string,
-     *     CreateTime: \Aws\Api\DateTimeResult,
      *     Description: string,
      *     PricingPlan?: 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null,
      *     PricingPlanDataSource?: string|null,
+     *     CreateTime: \Aws\Api\DateTimeResult,
      *     UpdateTime: \Aws\Api\DateTimeResult
      * } $args
      */

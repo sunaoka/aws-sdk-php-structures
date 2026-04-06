@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $name
  * @property string|null $description
  * @property string|null $action
- * @property 'PENDING'|'SKIPPED'|'RUNNING'|'COMPLETED'|'FAILED'|null $status
+ * @property 'PENDING'|'SKIPPED'|'RUNNING'|'COMPLETED'|'FAILED'|'CANCELLED'|null $status
  * @property 'RUNNING'|'COMPLETED'|'SKIPPED'|'FAILED'|null $rollbackStatus
  * @property string|null $message
  * @property string|null $inputs

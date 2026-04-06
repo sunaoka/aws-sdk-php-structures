@@ -12,6 +12,7 @@ class DynamoDbClient extends \Aws\DynamoDb\DynamoDbClient
     use CreateTable\CreateTableTrait;
     use DeleteBackup\DeleteBackupTrait;
     use DeleteItem\DeleteItemTrait;
+    use DeleteResourcePolicy\DeleteResourcePolicyTrait;
     use DeleteTable\DeleteTableTrait;
     use DescribeBackup\DescribeBackupTrait;
     use DescribeContinuousBackups\DescribeContinuousBackupsTrait;
@@ -32,6 +33,7 @@ class DynamoDbClient extends \Aws\DynamoDb\DynamoDbClient
     use ExecuteTransaction\ExecuteTransactionTrait;
     use ExportTableToPointInTime\ExportTableToPointInTimeTrait;
     use GetItem\GetItemTrait;
+    use GetResourcePolicy\GetResourcePolicyTrait;
     use ImportTable\ImportTableTrait;
     use ListBackups\ListBackupsTrait;
     use ListContributorInsights\ListContributorInsightsTrait;
@@ -41,6 +43,7 @@ class DynamoDbClient extends \Aws\DynamoDb\DynamoDbClient
     use ListTables\ListTablesTrait;
     use ListTagsOfResource\ListTagsOfResourceTrait;
     use PutItem\PutItemTrait;
+    use PutResourcePolicy\PutResourcePolicyTrait;
     use Query\QueryTrait;
     use RestoreTableFromBackup\RestoreTableFromBackupTrait;
     use RestoreTableToPointInTime\RestoreTableToPointInTimeTrait;
@@ -54,6 +57,7 @@ class DynamoDbClient extends \Aws\DynamoDb\DynamoDbClient
     use UpdateGlobalTable\UpdateGlobalTableTrait;
     use UpdateGlobalTableSettings\UpdateGlobalTableSettingsTrait;
     use UpdateItem\UpdateItemTrait;
+    use UpdateKinesisStreamingDestination\UpdateKinesisStreamingDestinationTrait;
     use UpdateTable\UpdateTableTrait;
     use UpdateTableReplicaAutoScaling\UpdateTableReplicaAutoScalingTrait;
     use UpdateTimeToLive\UpdateTimeToLiveTrait;

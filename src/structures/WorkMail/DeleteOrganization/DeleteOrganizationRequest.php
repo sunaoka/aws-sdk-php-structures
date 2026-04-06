@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ClientToken
  * @property string $OrganizationId
  * @property bool $DeleteDirectory
+ * @property bool|null $ForceDelete
  */
 class DeleteOrganizationRequest extends Request
 {
@@ -15,7 +16,8 @@ class DeleteOrganizationRequest extends Request
      * @param array{
      *     ClientToken?: string|null,
      *     OrganizationId: string,
-     *     DeleteDirectory: bool
+     *     DeleteDirectory: bool,
+     *     ForceDelete?: bool|null
      * } $args
      */
     public function __construct(array $args)

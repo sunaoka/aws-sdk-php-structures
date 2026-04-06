@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientToken
  * @property string|null $customerManagedKey
  * @property string|null $displayName
+ * @property 'standard.regular'|'standard.large'|'standard.xlarge'|null $instanceType
+ * @property int<1, 5000>|null $maxConcurrentSessions
  * @property list<Shapes\Tag>|null $tags
  */
 class CreatePortalRequest extends Request
@@ -21,6 +23,8 @@ class CreatePortalRequest extends Request
      *     clientToken?: string|null,
      *     customerManagedKey?: string|null,
      *     displayName?: string|null,
+     *     instanceType?: 'standard.regular'|'standard.large'|'standard.xlarge'|null,
+     *     maxConcurrentSessions?: int<1, 5000>|null,
      *     tags?: list<Shapes\Tag>|null
      * } $args
      */

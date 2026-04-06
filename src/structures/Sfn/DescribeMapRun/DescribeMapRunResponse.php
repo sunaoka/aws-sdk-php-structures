@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<0, max> $toleratedFailureCount
  * @property Shapes\MapRunItemCounts $itemCounts
  * @property Shapes\MapRunExecutionCounts $executionCounts
+ * @property int|null $redriveCount
+ * @property \Aws\Api\DateTimeResult|null $redriveDate
  */
 class DescribeMapRunResponse extends Response
 {

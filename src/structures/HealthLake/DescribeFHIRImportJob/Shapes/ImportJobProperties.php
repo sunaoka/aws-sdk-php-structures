@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DatastoreId
  * @property InputDataConfig $InputDataConfig
  * @property OutputDataConfig|null $JobOutputDataConfig
+ * @property JobProgressReport|null $JobProgressReport
  * @property string|null $DataAccessRoleArn
  * @property string|null $Message
  */
@@ -28,6 +29,7 @@ class ImportJobProperties extends Shape
      *     DatastoreId: string,
      *     InputDataConfig: InputDataConfig,
      *     JobOutputDataConfig?: OutputDataConfig|null,
+     *     JobProgressReport?: JobProgressReport|null,
      *     DataAccessRoleArn?: string|null,
      *     Message?: string|null
      * } $args

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\VerifyCardValidationDat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationTransactionCounter
- * @property string $PanSequenceNumber
  * @property string $UnpredictableNumber
+ * @property string $PanSequenceNumber
+ * @property string $ApplicationTransactionCounter
  */
 class CardHolderVerificationValue extends Shape
 {
     /**
      * @param array{
-     *     ApplicationTransactionCounter: string,
+     *     UnpredictableNumber: string,
      *     PanSequenceNumber: string,
-     *     UnpredictableNumber: string
+     *     ApplicationTransactionCounter: string
      * } $args
      */
     public function __construct(array $args)

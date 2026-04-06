@@ -5,17 +5,21 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\GetLogDeliveryConfigura
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ERROR' $LogLevel
- * @property 'userNotification' $EventSource
+ * @property 'ERROR'|'INFO' $LogLevel
+ * @property 'userNotification'|'userAuthEvents' $EventSource
  * @property CloudWatchLogsConfigurationType|null $CloudWatchLogsConfiguration
+ * @property S3ConfigurationType|null $S3Configuration
+ * @property FirehoseConfigurationType|null $FirehoseConfiguration
  */
 class LogConfigurationType extends Shape
 {
     /**
      * @param array{
-     *     LogLevel: 'ERROR',
-     *     EventSource: 'userNotification',
-     *     CloudWatchLogsConfiguration?: CloudWatchLogsConfigurationType|null
+     *     LogLevel: 'ERROR'|'INFO',
+     *     EventSource: 'userNotification'|'userAuthEvents',
+     *     CloudWatchLogsConfiguration?: CloudWatchLogsConfigurationType|null,
+     *     S3Configuration?: S3ConfigurationType|null,
+     *     FirehoseConfiguration?: FirehoseConfigurationType|null
      * } $args
      */
     public function __construct(array $args)

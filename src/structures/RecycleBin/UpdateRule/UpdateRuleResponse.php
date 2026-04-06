@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'pending'|'available'|null $Status
  * @property 'locked'|'pending_unlock'|'unlocked'|null $LockState
  * @property \Aws\Api\DateTimeResult|null $LockEndTime
+ * @property string|null $RuleArn
  */
 class UpdateRuleResponse extends Response
 {

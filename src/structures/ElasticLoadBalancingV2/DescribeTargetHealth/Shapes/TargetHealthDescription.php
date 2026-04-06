@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TargetDescription|null $Target
  * @property string|null $HealthCheckPort
  * @property TargetHealth|null $TargetHealth
+ * @property AnomalyDetection|null $AnomalyDetection
  */
 class TargetHealthDescription extends Shape
 {
@@ -15,7 +16,8 @@ class TargetHealthDescription extends Shape
      * @param array{
      *     Target?: TargetDescription|null,
      *     HealthCheckPort?: string|null,
-     *     TargetHealth?: TargetHealth|null
+     *     TargetHealth?: TargetHealth|null,
+     *     AnomalyDetection?: AnomalyDetection|null
      * } $args
      */
     public function __construct(array $args = [])

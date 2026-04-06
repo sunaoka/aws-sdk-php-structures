@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TemplateName
  * @property string|null $TemplateArn
  * @property string|null $TemplateData
+ * @property list<MessageHeader>|null $Headers
  */
 class Template extends Shape
 {
@@ -15,7 +16,8 @@ class Template extends Shape
      * @param array{
      *     TemplateName?: string|null,
      *     TemplateArn?: string|null,
-     *     TemplateData?: string|null
+     *     TemplateData?: string|null,
+     *     Headers?: list<MessageHeader>|null
      * } $args
      */
     public function __construct(array $args = [])

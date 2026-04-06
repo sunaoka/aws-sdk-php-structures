@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $createTime
  * @property 'Server'|'Lambda'|'ECS'|null $computePlatform
  * @property TrafficRoutingConfig|null $trafficRoutingConfig
+ * @property ZonalConfig|null $zonalConfig
  */
 class DeploymentConfigInfo extends Shape
 {
@@ -21,7 +22,8 @@ class DeploymentConfigInfo extends Shape
      *     minimumHealthyHosts?: MinimumHealthyHosts|null,
      *     createTime?: \Aws\Api\DateTimeResult|null,
      *     computePlatform?: 'Server'|'Lambda'|'ECS'|null,
-     *     trafficRoutingConfig?: TrafficRoutingConfig|null
+     *     trafficRoutingConfig?: TrafficRoutingConfig|null,
+     *     zonalConfig?: ZonalConfig|null
      * } $args
      */
     public function __construct(array $args = [])

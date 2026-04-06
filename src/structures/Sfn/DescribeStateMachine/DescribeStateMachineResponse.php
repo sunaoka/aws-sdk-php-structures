@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $label
  * @property string|null $revisionId
  * @property string|null $description
+ * @property Shapes\EncryptionConfiguration|null $encryptionConfiguration
  */
 class DescribeStateMachineResponse extends Response
 {

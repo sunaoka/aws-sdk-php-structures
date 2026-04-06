@@ -34,6 +34,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\PlacementGroupConfig>|null $PlacementGroupConfigs
  * @property Shapes\AutoTerminationPolicy|null $AutoTerminationPolicy
  * @property string|null $OSReleaseLabel
+ * @property int|null $EbsRootVolumeIops
+ * @property int|null $EbsRootVolumeThroughput
  */
 class RunJobFlowRequest extends Request
 {
@@ -67,7 +69,9 @@ class RunJobFlowRequest extends Request
      *     ManagedScalingPolicy?: Shapes\ManagedScalingPolicy|null,
      *     PlacementGroupConfigs?: list<Shapes\PlacementGroupConfig>|null,
      *     AutoTerminationPolicy?: Shapes\AutoTerminationPolicy|null,
-     *     OSReleaseLabel?: string|null
+     *     OSReleaseLabel?: string|null,
+     *     EbsRootVolumeIops?: int|null,
+     *     EbsRootVolumeThroughput?: int|null
      * } $args
      */
     public function __construct(array $args)

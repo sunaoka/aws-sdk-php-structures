@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\AttributeValue|null $UefiData
  * @property Shapes\AttributeValue|null $LastLaunchedTime
  * @property Shapes\AttributeValue|null $ImdsSupport
+ * @property Shapes\AttributeValue|null $DeregistrationProtection
  */
 class DescribeImageAttributeResponse extends Response
 {

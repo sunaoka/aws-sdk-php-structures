@@ -9,7 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DICOMAccessionNumber
  * @property string|null $DICOMStudyId
  * @property string|null $DICOMStudyInstanceUID
+ * @property string|null $DICOMSeriesInstanceUID
  * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property DICOMStudyDateAndTime|null $DICOMStudyDateAndTime
  */
 class SearchByAttributeValue extends Shape
@@ -20,7 +22,9 @@ class SearchByAttributeValue extends Shape
      *     DICOMAccessionNumber?: string|null,
      *     DICOMStudyId?: string|null,
      *     DICOMStudyInstanceUID?: string|null,
+     *     DICOMSeriesInstanceUID?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
      *     DICOMStudyDateAndTime?: DICOMStudyDateAndTime|null
      * } $args
      */

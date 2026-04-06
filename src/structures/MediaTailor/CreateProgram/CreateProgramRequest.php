@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\AdBreak>|null $AdBreaks
+ * @property list<Shapes\AudienceMedia>|null $AudienceMedia
  * @property string $ChannelName
  * @property string|null $LiveSourceName
  * @property string $ProgramName
@@ -18,6 +19,7 @@ class CreateProgramRequest extends Request
     /**
      * @param array{
      *     AdBreaks?: list<Shapes\AdBreak>|null,
+     *     AudienceMedia?: list<Shapes\AudienceMedia>|null,
      *     ChannelName: string,
      *     LiveSourceName?: string|null,
      *     ProgramName: string,

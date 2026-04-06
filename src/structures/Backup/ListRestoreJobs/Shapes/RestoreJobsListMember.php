@@ -18,6 +18,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $ExpectedCompletionTimeMinutes
  * @property string|null $CreatedResourceArn
  * @property string|null $ResourceType
+ * @property \Aws\Api\DateTimeResult|null $RecoveryPointCreationDate
+ * @property RestoreJobCreator|null $CreatedBy
+ * @property 'FAILED'|'SUCCESSFUL'|'TIMED_OUT'|'VALIDATING'|null $ValidationStatus
+ * @property string|null $ValidationStatusMessage
+ * @property 'DELETING'|'FAILED'|'SUCCESSFUL'|null $DeletionStatus
+ * @property string|null $DeletionStatusMessage
  */
 class RestoreJobsListMember extends Shape
 {
@@ -35,7 +41,13 @@ class RestoreJobsListMember extends Shape
      *     IamRoleArn?: string|null,
      *     ExpectedCompletionTimeMinutes?: int|null,
      *     CreatedResourceArn?: string|null,
-     *     ResourceType?: string|null
+     *     ResourceType?: string|null,
+     *     RecoveryPointCreationDate?: \Aws\Api\DateTimeResult|null,
+     *     CreatedBy?: RestoreJobCreator|null,
+     *     ValidationStatus?: 'FAILED'|'SUCCESSFUL'|'TIMED_OUT'|'VALIDATING'|null,
+     *     ValidationStatusMessage?: string|null,
+     *     DeletionStatus?: 'DELETING'|'FAILED'|'SUCCESSFUL'|null,
+     *     DeletionStatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

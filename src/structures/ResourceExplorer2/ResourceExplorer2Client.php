@@ -11,10 +11,12 @@ class ResourceExplorer2Client extends \Aws\ResourceExplorer2\ResourceExplorer2Cl
     use DeleteIndex\DeleteIndexTrait;
     use DeleteView\DeleteViewTrait;
     use DisassociateDefaultView\DisassociateDefaultViewTrait;
+    use GetAccountLevelServiceConfiguration\GetAccountLevelServiceConfigurationTrait;
     use GetDefaultView\GetDefaultViewTrait;
     use GetIndex\GetIndexTrait;
     use GetView\GetViewTrait;
     use ListIndexes\ListIndexesTrait;
+    use ListIndexesForMembers\ListIndexesForMembersTrait;
     use ListSupportedResourceTypes\ListSupportedResourceTypesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListViews\ListViewsTrait;

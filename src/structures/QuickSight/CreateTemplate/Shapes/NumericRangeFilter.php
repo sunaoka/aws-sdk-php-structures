@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'FILTER_ALL_VALUES'|null $SelectAllOptions
  * @property AggregationFunction|null $AggregationFunction
  * @property 'ALL_VALUES'|'NULLS_ONLY'|'NON_NULLS_ONLY' $NullOption
+ * @property DefaultFilterControlConfiguration|null $DefaultFilterControlConfiguration
  */
 class NumericRangeFilter extends Shape
 {
@@ -27,7 +28,8 @@ class NumericRangeFilter extends Shape
      *     RangeMaximum?: NumericRangeFilterValue|null,
      *     SelectAllOptions?: 'FILTER_ALL_VALUES'|null,
      *     AggregationFunction?: AggregationFunction|null,
-     *     NullOption: 'ALL_VALUES'|'NULLS_ONLY'|'NON_NULLS_ONLY'
+     *     NullOption: 'ALL_VALUES'|'NULLS_ONLY'|'NON_NULLS_ONLY',
+     *     DefaultFilterControlConfiguration?: DefaultFilterControlConfiguration|null
      * } $args
      */
     public function __construct(array $args)

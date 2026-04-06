@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $NextToken
  * @property int<1, 25>|null $MaxResults
  * @property 'ACTIVE'|'RESOLVED'|null $EventStatus
+ * @property string|null $LinkedAccountId
  */
 class ListHealthEventsRequest extends Request
 {
@@ -21,7 +22,8 @@ class ListHealthEventsRequest extends Request
      *     EndTime?: \Aws\Api\DateTimeResult|null,
      *     NextToken?: string|null,
      *     MaxResults?: int<1, 25>|null,
-     *     EventStatus?: 'ACTIVE'|'RESOLVED'|null
+     *     EventStatus?: 'ACTIVE'|'RESOLVED'|null,
+     *     LinkedAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

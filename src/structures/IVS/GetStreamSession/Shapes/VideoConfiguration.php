@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\IVS\GetStreamSession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $avcLevel
  * @property string|null $avcProfile
+ * @property string|null $avcLevel
  * @property string|null $codec
  * @property string|null $encoder
  * @property int|null $targetBitrate
@@ -18,8 +18,8 @@ class VideoConfiguration extends Shape
 {
     /**
      * @param array{
-     *     avcLevel?: string|null,
      *     avcProfile?: string|null,
+     *     avcLevel?: string|null,
      *     codec?: string|null,
      *     encoder?: string|null,
      *     targetBitrate?: int|null,

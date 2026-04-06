@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $HookStatusReason
  * @property 'PRE_PROVISION'|null $HookInvocationPoint
  * @property 'FAIL'|'WARN'|null $HookFailureMode
+ * @property 'CONFIGURATION_COMPLETE'|'VALIDATION_FAILED'|null $DetailedStatus
  */
 class StackEvent extends Shape
 {
@@ -41,7 +42,8 @@ class StackEvent extends Shape
      *     HookStatus?: 'HOOK_IN_PROGRESS'|'HOOK_COMPLETE_SUCCEEDED'|'HOOK_COMPLETE_FAILED'|'HOOK_FAILED'|null,
      *     HookStatusReason?: string|null,
      *     HookInvocationPoint?: 'PRE_PROVISION'|null,
-     *     HookFailureMode?: 'FAIL'|'WARN'|null
+     *     HookFailureMode?: 'FAIL'|'WARN'|null,
+     *     DetailedStatus?: 'CONFIGURATION_COMPLETE'|'VALIDATION_FAILED'|null
      * } $args
      */
     public function __construct(array $args)

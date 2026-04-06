@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $applicationID
  * @property string|null $arn
+ * @property Shapes\SourceServerConnectorAction|null $connectorAction
  * @property Shapes\DataReplicationInfo|null $dataReplicationInfo
  * @property string|null $fqdnForActionFramework
  * @property bool|null $isArchived

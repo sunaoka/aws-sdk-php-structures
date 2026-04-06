@@ -14,8 +14,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $RoleArn
  * @property list<Shapes\InputSourceRequest>|null $Sources
  * @property array<string, string>|null $Tags
- * @property 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|null $Type
+ * @property 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|null $Type
  * @property Shapes\InputVpcRequest|null $Vpc
+ * @property Shapes\SrtSettingsRequest|null $SrtSettings
  */
 class CreateInputRequest extends Request
 {
@@ -30,8 +31,9 @@ class CreateInputRequest extends Request
      *     RoleArn?: string|null,
      *     Sources?: list<Shapes\InputSourceRequest>|null,
      *     Tags?: array<string, string>|null,
-     *     Type?: 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|null,
-     *     Vpc?: Shapes\InputVpcRequest|null
+     *     Type?: 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|null,
+     *     Vpc?: Shapes\InputVpcRequest|null,
+     *     SrtSettings?: Shapes\SrtSettingsRequest|null
      * } $args
      */
     public function __construct(array $args = [])

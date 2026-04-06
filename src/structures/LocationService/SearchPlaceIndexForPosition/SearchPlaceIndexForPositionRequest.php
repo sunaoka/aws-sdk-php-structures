@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $IndexName
- * @property string|null $Key
- * @property string|null $Language
- * @property int<1, 50>|null $MaxResults
  * @property list<double> $Position
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $Language
+ * @property string|null $Key
  */
 class SearchPlaceIndexForPositionRequest extends Request
 {
     /**
      * @param array{
      *     IndexName: string,
-     *     Key?: string|null,
-     *     Language?: string|null,
+     *     Position: list<double>,
      *     MaxResults?: int<1, 50>|null,
-     *     Position: list<double>
+     *     Language?: string|null,
+     *     Key?: string|null
      * } $args
      */
     public function __construct(array $args)

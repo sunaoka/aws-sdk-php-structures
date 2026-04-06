@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\AlgorithmSpecification $algorithmSpecification
+ * @property list<Shapes\Association>|null $associations
  * @property int|null $billableDuration
  * @property Shapes\JobCheckpointConfig|null $checkpointConfig
  * @property \Aws\Api\DateTimeResult $createdAt
@@ -19,6 +20,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $jobArn
  * @property string $jobName
  * @property Shapes\JobOutputDataConfig $outputDataConfig
+ * @property Shapes\HybridJobQueueInfo|null $queueInfo
  * @property string $roleArn
  * @property \Aws\Api\DateTimeResult|null $startedAt
  * @property 'QUEUED'|'RUNNING'|'COMPLETED'|'FAILED'|'CANCELLING'|'CANCELLED' $status

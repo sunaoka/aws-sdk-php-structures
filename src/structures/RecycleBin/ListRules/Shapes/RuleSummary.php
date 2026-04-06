@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property RetentionPeriod|null $RetentionPeriod
  * @property 'locked'|'pending_unlock'|'unlocked'|null $LockState
+ * @property string|null $RuleArn
  */
 class RuleSummary extends Shape
 {
@@ -17,7 +18,8 @@ class RuleSummary extends Shape
      *     Identifier?: string|null,
      *     Description?: string|null,
      *     RetentionPeriod?: RetentionPeriod|null,
-     *     LockState?: 'locked'|'pending_unlock'|'unlocked'|null
+     *     LockState?: 'locked'|'pending_unlock'|'unlocked'|null,
+     *     RuleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

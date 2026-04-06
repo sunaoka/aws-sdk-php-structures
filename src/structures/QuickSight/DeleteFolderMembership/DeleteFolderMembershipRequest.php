@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $FolderId
  * @property string $MemberId
- * @property 'DASHBOARD'|'ANALYSIS'|'DATASET' $MemberType
+ * @property 'DASHBOARD'|'ANALYSIS'|'DATASET'|'DATASOURCE'|'TOPIC' $MemberType
  */
 class DeleteFolderMembershipRequest extends Request
 {
@@ -17,7 +17,7 @@ class DeleteFolderMembershipRequest extends Request
      *     AwsAccountId: string,
      *     FolderId: string,
      *     MemberId: string,
-     *     MemberType: 'DASHBOARD'|'ANALYSIS'|'DATASET'
+     *     MemberType: 'DASHBOARD'|'ANALYSIS'|'DATASET'|'DATASOURCE'|'TOPIC'
      * } $args
      */
     public function __construct(array $args)

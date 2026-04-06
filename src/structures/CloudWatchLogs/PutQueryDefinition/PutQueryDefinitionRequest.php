@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $queryDefinitionId
  * @property list<string>|null $logGroupNames
  * @property string $queryString
+ * @property string|null $clientToken
  */
 class PutQueryDefinitionRequest extends Request
 {
@@ -17,7 +18,8 @@ class PutQueryDefinitionRequest extends Request
      *     name: string,
      *     queryDefinitionId?: string|null,
      *     logGroupNames?: list<string>|null,
-     *     queryString: string
+     *     queryString: string,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

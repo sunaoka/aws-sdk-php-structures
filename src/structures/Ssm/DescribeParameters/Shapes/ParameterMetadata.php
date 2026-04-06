@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $Name
+ * @property string|null $ARN
  * @property 'String'|'StringList'|'SecureString'|null $Type
  * @property string|null $KeyId
  * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
@@ -22,6 +23,7 @@ class ParameterMetadata extends Shape
     /**
      * @param array{
      *     Name?: string|null,
+     *     ARN?: string|null,
      *     Type?: 'String'|'StringList'|'SecureString'|null,
      *     KeyId?: string|null,
      *     LastModifiedDate?: \Aws\Api\DateTimeResult|null,

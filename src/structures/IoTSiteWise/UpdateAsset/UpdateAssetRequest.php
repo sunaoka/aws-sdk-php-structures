@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $assetName
  * @property string|null $clientToken
  * @property string|null $assetDescription
+ * @property string|null $assetExternalId
  */
 class UpdateAssetRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateAssetRequest extends Request
      *     assetId: string,
      *     assetName: string,
      *     clientToken?: string|null,
-     *     assetDescription?: string|null
+     *     assetDescription?: string|null,
+     *     assetExternalId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $id
+ * @property string|null $arn
  * @property string|null $description
  * @property array<string, ExperimentTemplateTarget>|null $targets
  * @property array<string, ExperimentTemplateAction>|null $actions
@@ -15,12 +16,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $roleArn
  * @property array<string, string>|null $tags
  * @property ExperimentTemplateLogConfiguration|null $logConfiguration
+ * @property ExperimentTemplateExperimentOptions|null $experimentOptions
+ * @property int<0, max>|null $targetAccountConfigurationsCount
  */
 class ExperimentTemplate extends Shape
 {
     /**
      * @param array{
      *     id?: string|null,
+     *     arn?: string|null,
      *     description?: string|null,
      *     targets?: array<string, ExperimentTemplateTarget>|null,
      *     actions?: array<string, ExperimentTemplateAction>|null,
@@ -29,7 +33,9 @@ class ExperimentTemplate extends Shape
      *     lastUpdateTime?: \Aws\Api\DateTimeResult|null,
      *     roleArn?: string|null,
      *     tags?: array<string, string>|null,
-     *     logConfiguration?: ExperimentTemplateLogConfiguration|null
+     *     logConfiguration?: ExperimentTemplateLogConfiguration|null,
+     *     experimentOptions?: ExperimentTemplateExperimentOptions|null,
+     *     targetAccountConfigurationsCount?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

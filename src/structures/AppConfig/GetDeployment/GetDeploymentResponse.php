@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\AppliedExtension>|null $AppliedExtensions
  * @property string|null $KmsKeyArn
  * @property string|null $KmsKeyIdentifier
+ * @property string|null $VersionLabel
  */
 class GetDeploymentResponse extends Response
 {

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $key
  * @property string|null $partition
  * @property array<string, string> $clientProperties
+ * @property list<KafkaActionHeader>|null $headers
  */
 class KafkaAction extends Shape
 {
@@ -19,7 +20,8 @@ class KafkaAction extends Shape
      *     topic: string,
      *     key?: string|null,
      *     partition?: string|null,
-     *     clientProperties: array<string, string>
+     *     clientProperties: array<string, string>,
+     *     headers?: list<KafkaActionHeader>|null
      * } $args
      */
     public function __construct(array $args)

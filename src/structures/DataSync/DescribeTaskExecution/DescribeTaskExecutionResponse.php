@@ -6,18 +6,25 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $TaskExecutionArn
- * @property 'QUEUED'|'LAUNCHING'|'PREPARING'|'TRANSFERRING'|'VERIFYING'|'SUCCESS'|'ERROR'|null $Status
+ * @property 'QUEUED'|'CANCELLING'|'LAUNCHING'|'PREPARING'|'TRANSFERRING'|'VERIFYING'|'SUCCESS'|'ERROR'|null $Status
  * @property Shapes\Options|null $Options
  * @property list<Shapes\FilterRule>|null $Excludes
  * @property list<Shapes\FilterRule>|null $Includes
+ * @property Shapes\ManifestConfig|null $ManifestConfig
  * @property \Aws\Api\DateTimeResult|null $StartTime
  * @property int|null $EstimatedFilesToTransfer
  * @property int|null $EstimatedBytesToTransfer
  * @property int|null $FilesTransferred
  * @property int|null $BytesWritten
  * @property int|null $BytesTransferred
- * @property Shapes\TaskExecutionResultDetail|null $Result
  * @property int|null $BytesCompressed
+ * @property Shapes\TaskExecutionResultDetail|null $Result
+ * @property Shapes\TaskReportConfig|null $TaskReportConfig
+ * @property int|null $FilesDeleted
+ * @property int|null $FilesSkipped
+ * @property int|null $FilesVerified
+ * @property Shapes\ReportResult|null $ReportResult
+ * @property int|null $EstimatedFilesToDelete
  */
 class DescribeTaskExecutionResponse extends Response
 {

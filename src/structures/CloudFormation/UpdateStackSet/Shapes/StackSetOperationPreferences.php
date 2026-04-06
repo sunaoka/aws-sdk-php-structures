@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 100>|null $FailureTolerancePercentage
  * @property int<1, max>|null $MaxConcurrentCount
  * @property int<1, 100>|null $MaxConcurrentPercentage
+ * @property 'STRICT_FAILURE_TOLERANCE'|'SOFT_FAILURE_TOLERANCE'|null $ConcurrencyMode
  */
 class StackSetOperationPreferences extends Shape
 {
@@ -21,7 +22,8 @@ class StackSetOperationPreferences extends Shape
      *     FailureToleranceCount?: int<0, max>|null,
      *     FailureTolerancePercentage?: int<0, 100>|null,
      *     MaxConcurrentCount?: int<1, max>|null,
-     *     MaxConcurrentPercentage?: int<1, 100>|null
+     *     MaxConcurrentPercentage?: int<1, 100>|null,
+     *     ConcurrencyMode?: 'STRICT_FAILURE_TOLERANCE'|'SOFT_FAILURE_TOLERANCE'|null
      * } $args
      */
     public function __construct(array $args = [])

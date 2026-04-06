@@ -9,12 +9,14 @@ class GlobalAcceleratorClient extends \Aws\GlobalAccelerator\GlobalAcceleratorCl
     use AdvertiseByoipCidr\AdvertiseByoipCidrTrait;
     use AllowCustomRoutingTraffic\AllowCustomRoutingTrafficTrait;
     use CreateAccelerator\CreateAcceleratorTrait;
+    use CreateCrossAccountAttachment\CreateCrossAccountAttachmentTrait;
     use CreateCustomRoutingAccelerator\CreateCustomRoutingAcceleratorTrait;
     use CreateCustomRoutingEndpointGroup\CreateCustomRoutingEndpointGroupTrait;
     use CreateCustomRoutingListener\CreateCustomRoutingListenerTrait;
     use CreateEndpointGroup\CreateEndpointGroupTrait;
     use CreateListener\CreateListenerTrait;
     use DeleteAccelerator\DeleteAcceleratorTrait;
+    use DeleteCrossAccountAttachment\DeleteCrossAccountAttachmentTrait;
     use DeleteCustomRoutingAccelerator\DeleteCustomRoutingAcceleratorTrait;
     use DeleteCustomRoutingEndpointGroup\DeleteCustomRoutingEndpointGroupTrait;
     use DeleteCustomRoutingListener\DeleteCustomRoutingListenerTrait;
@@ -24,6 +26,7 @@ class GlobalAcceleratorClient extends \Aws\GlobalAccelerator\GlobalAcceleratorCl
     use DeprovisionByoipCidr\DeprovisionByoipCidrTrait;
     use DescribeAccelerator\DescribeAcceleratorTrait;
     use DescribeAcceleratorAttributes\DescribeAcceleratorAttributesTrait;
+    use DescribeCrossAccountAttachment\DescribeCrossAccountAttachmentTrait;
     use DescribeCustomRoutingAccelerator\DescribeCustomRoutingAcceleratorTrait;
     use DescribeCustomRoutingAcceleratorAttributes\DescribeCustomRoutingAcceleratorAttributesTrait;
     use DescribeCustomRoutingEndpointGroup\DescribeCustomRoutingEndpointGroupTrait;
@@ -32,6 +35,9 @@ class GlobalAcceleratorClient extends \Aws\GlobalAccelerator\GlobalAcceleratorCl
     use DescribeListener\DescribeListenerTrait;
     use ListAccelerators\ListAcceleratorsTrait;
     use ListByoipCidrs\ListByoipCidrsTrait;
+    use ListCrossAccountAttachments\ListCrossAccountAttachmentsTrait;
+    use ListCrossAccountResourceAccounts\ListCrossAccountResourceAccountsTrait;
+    use ListCrossAccountResources\ListCrossAccountResourcesTrait;
     use ListCustomRoutingAccelerators\ListCustomRoutingAcceleratorsTrait;
     use ListCustomRoutingEndpointGroups\ListCustomRoutingEndpointGroupsTrait;
     use ListCustomRoutingListeners\ListCustomRoutingListenersTrait;
@@ -47,6 +53,7 @@ class GlobalAcceleratorClient extends \Aws\GlobalAccelerator\GlobalAcceleratorCl
     use UntagResource\UntagResourceTrait;
     use UpdateAccelerator\UpdateAcceleratorTrait;
     use UpdateAcceleratorAttributes\UpdateAcceleratorAttributesTrait;
+    use UpdateCrossAccountAttachment\UpdateCrossAccountAttachmentTrait;
     use UpdateCustomRoutingAccelerator\UpdateCustomRoutingAcceleratorTrait;
     use UpdateCustomRoutingAcceleratorAttributes\UpdateCustomRoutingAcceleratorAttributesTrait;
     use UpdateCustomRoutingListener\UpdateCustomRoutingListenerTrait;

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $ExcludedInstanceTypes
  * @property list<'current'|'previous'>|null $InstanceGenerations
  * @property int<0, max>|null $SpotMaxPricePercentageOverLowestPrice
+ * @property int<0, max>|null $MaxSpotPriceAsPercentageOfOptimalOnDemandPrice
  * @property int<0, max>|null $OnDemandMaxPricePercentageOverLowestPrice
  * @property 'included'|'excluded'|'required'|null $BareMetal
  * @property 'included'|'excluded'|'required'|null $BurstablePerformance
@@ -40,6 +41,7 @@ class InstanceRequirements extends Shape
      *     ExcludedInstanceTypes?: list<string>|null,
      *     InstanceGenerations?: list<'current'|'previous'>|null,
      *     SpotMaxPricePercentageOverLowestPrice?: int<0, max>|null,
+     *     MaxSpotPriceAsPercentageOfOptimalOnDemandPrice?: int<0, max>|null,
      *     OnDemandMaxPricePercentageOverLowestPrice?: int<0, max>|null,
      *     BareMetal?: 'included'|'excluded'|'required'|null,
      *     BurstablePerformance?: 'included'|'excluded'|'required'|null,

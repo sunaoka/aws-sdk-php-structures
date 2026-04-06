@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $IncludeNestedStacks
  * @property string|null $ParentChangeSetId
  * @property string|null $RootChangeSetId
+ * @property bool|null $ImportExistingResources
  */
 class ChangeSetSummary extends Shape
 {
@@ -33,7 +34,8 @@ class ChangeSetSummary extends Shape
      *     Description?: string|null,
      *     IncludeNestedStacks?: bool|null,
      *     ParentChangeSetId?: string|null,
-     *     RootChangeSetId?: string|null
+     *     RootChangeSetId?: string|null,
+     *     ImportExistingResources?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

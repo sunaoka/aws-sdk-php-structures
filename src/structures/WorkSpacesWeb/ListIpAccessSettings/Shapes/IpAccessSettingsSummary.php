@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $creationDate
  * @property string|null $description
  * @property string|null $displayName
- * @property string|null $ipAccessSettingsArn
+ * @property string $ipAccessSettingsArn
  */
 class IpAccessSettingsSummary extends Shape
 {
@@ -17,10 +17,10 @@ class IpAccessSettingsSummary extends Shape
      *     creationDate?: \Aws\Api\DateTimeResult|null,
      *     description?: string|null,
      *     displayName?: string|null,
-     *     ipAccessSettingsArn?: string|null
+     *     ipAccessSettingsArn: string
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

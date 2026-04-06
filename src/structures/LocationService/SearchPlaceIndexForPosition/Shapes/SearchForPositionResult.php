@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\LocationService\SearchPlaceIndexForPosition\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Distance
  * @property Place $Place
+ * @property double $Distance
  * @property string|null $PlaceId
  */
 class SearchForPositionResult extends Shape
 {
     /**
      * @param array{
-     *     Distance: double,
      *     Place: Place,
+     *     Distance: double,
      *     PlaceId?: string|null
      * } $args
      */

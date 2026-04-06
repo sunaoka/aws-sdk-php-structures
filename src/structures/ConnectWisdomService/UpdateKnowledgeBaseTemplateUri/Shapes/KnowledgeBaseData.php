@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $description
  * @property string $knowledgeBaseArn
  * @property string $knowledgeBaseId
- * @property 'EXTERNAL'|'CUSTOM' $knowledgeBaseType
+ * @property 'EXTERNAL'|'CUSTOM'|'QUICK_RESPONSES' $knowledgeBaseType
  * @property \Aws\Api\DateTimeResult|null $lastContentModificationTime
  * @property string $name
  * @property RenderingConfiguration|null $renderingConfiguration
@@ -24,7 +24,7 @@ class KnowledgeBaseData extends Shape
      *     description?: string|null,
      *     knowledgeBaseArn: string,
      *     knowledgeBaseId: string,
-     *     knowledgeBaseType: 'EXTERNAL'|'CUSTOM',
+     *     knowledgeBaseType: 'EXTERNAL'|'CUSTOM'|'QUICK_RESPONSES',
      *     lastContentModificationTime?: \Aws\Api\DateTimeResult|null,
      *     name: string,
      *     renderingConfiguration?: RenderingConfiguration|null,

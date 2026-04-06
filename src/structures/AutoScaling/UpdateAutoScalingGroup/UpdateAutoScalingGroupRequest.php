@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Context
  * @property string|null $DesiredCapacityType
  * @property int|null $DefaultInstanceWarmup
+ * @property Shapes\InstanceMaintenancePolicy|null $InstanceMaintenancePolicy
  */
 class UpdateAutoScalingGroupRequest extends Request
 {
@@ -51,7 +52,8 @@ class UpdateAutoScalingGroupRequest extends Request
      *     CapacityRebalance?: bool|null,
      *     Context?: string|null,
      *     DesiredCapacityType?: string|null,
-     *     DefaultInstanceWarmup?: int|null
+     *     DefaultInstanceWarmup?: int|null,
+     *     InstanceMaintenancePolicy?: Shapes\InstanceMaintenancePolicy|null
      * } $args
      */
     public function __construct(array $args)

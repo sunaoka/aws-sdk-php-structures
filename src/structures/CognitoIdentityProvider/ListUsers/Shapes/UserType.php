@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $UserCreateDate
  * @property \Aws\Api\DateTimeResult|null $UserLastModifiedDate
  * @property bool|null $Enabled
- * @property 'UNCONFIRMED'|'CONFIRMED'|'ARCHIVED'|'COMPROMISED'|'UNKNOWN'|'RESET_REQUIRED'|'FORCE_CHANGE_PASSWORD'|null $UserStatus
+ * @property 'UNCONFIRMED'|'CONFIRMED'|'ARCHIVED'|'COMPROMISED'|'UNKNOWN'|'RESET_REQUIRED'|'FORCE_CHANGE_PASSWORD'|'EXTERNAL_PROVIDER'|null $UserStatus
  * @property list<MFAOptionType>|null $MFAOptions
  */
 class UserType extends Shape
@@ -22,7 +22,7 @@ class UserType extends Shape
      *     UserCreateDate?: \Aws\Api\DateTimeResult|null,
      *     UserLastModifiedDate?: \Aws\Api\DateTimeResult|null,
      *     Enabled?: bool|null,
-     *     UserStatus?: 'UNCONFIRMED'|'CONFIRMED'|'ARCHIVED'|'COMPROMISED'|'UNKNOWN'|'RESET_REQUIRED'|'FORCE_CHANGE_PASSWORD'|null,
+     *     UserStatus?: 'UNCONFIRMED'|'CONFIRMED'|'ARCHIVED'|'COMPROMISED'|'UNKNOWN'|'RESET_REQUIRED'|'FORCE_CHANGE_PASSWORD'|'EXTERNAL_PROVIDER'|null,
      *     MFAOptions?: list<MFAOptionType>|null
      * } $args
      */

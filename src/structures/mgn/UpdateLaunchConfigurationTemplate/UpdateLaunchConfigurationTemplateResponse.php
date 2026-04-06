@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $arn
  * @property bool|null $associatePublicIpAddress
- * @property 'LEGACY_BIOS'|'UEFI'|null $bootMode
+ * @property 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE'|null $bootMode
  * @property bool|null $copyPrivateIp
  * @property bool|null $copyTags
  * @property string|null $ec2LaunchTemplateID

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\UpdateInstanceAccessControlAttributeCo
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $InstanceArn
  * @property Shapes\InstanceAccessControlAttributeConfiguration $InstanceAccessControlAttributeConfiguration
+ * @property string $InstanceArn
  */
 class UpdateInstanceAccessControlAttributeConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     InstanceArn: string,
-     *     InstanceAccessControlAttributeConfiguration: Shapes\InstanceAccessControlAttributeConfiguration
+     *     InstanceAccessControlAttributeConfiguration: Shapes\InstanceAccessControlAttributeConfiguration,
+     *     InstanceArn: string
      * } $args
      */
     public function __construct(array $args)

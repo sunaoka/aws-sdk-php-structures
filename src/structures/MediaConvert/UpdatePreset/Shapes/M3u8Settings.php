@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<32, 8182>|null $PmtPid
  * @property int<32, 8182>|null $PrivateMetadataPid
  * @property int<0, 65535>|null $ProgramNumber
+ * @property int<0, 3600>|null $PtsOffset
+ * @property 'AUTO'|'SECONDS'|null $PtsOffsetMode
  * @property int<32, 8182>|null $Scte35Pid
  * @property 'PASSTHROUGH'|'NONE'|null $Scte35Source
  * @property 'PASSTHROUGH'|'NONE'|null $TimedMetadata
@@ -42,6 +44,8 @@ class M3u8Settings extends Shape
      *     PmtPid?: int<32, 8182>|null,
      *     PrivateMetadataPid?: int<32, 8182>|null,
      *     ProgramNumber?: int<0, 65535>|null,
+     *     PtsOffset?: int<0, 3600>|null,
+     *     PtsOffsetMode?: 'AUTO'|'SECONDS'|null,
      *     Scte35Pid?: int<32, 8182>|null,
      *     Scte35Source?: 'PASSTHROUGH'|'NONE'|null,
      *     TimedMetadata?: 'PASSTHROUGH'|'NONE'|null,

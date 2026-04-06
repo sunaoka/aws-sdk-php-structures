@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $arn
  * @property bool|null $associatePublicIpAddress
- * @property 'LEGACY_BIOS'|'UEFI'|null $bootMode
+ * @property 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE'|null $bootMode
  * @property bool|null $copyPrivateIp
  * @property bool|null $copyTags
  * @property string|null $ec2LaunchTemplateID
@@ -29,7 +29,7 @@ class LaunchConfigurationTemplate extends Shape
      * @param array{
      *     arn?: string|null,
      *     associatePublicIpAddress?: bool|null,
-     *     bootMode?: 'LEGACY_BIOS'|'UEFI'|null,
+     *     bootMode?: 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE'|null,
      *     copyPrivateIp?: bool|null,
      *     copyTags?: bool|null,
      *     ec2LaunchTemplateID?: string|null,

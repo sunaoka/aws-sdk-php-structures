@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $policy
  * @property array<string, string>|null $tags
  * @property bool|null $disableExecuteApiEndpoint
+ * @property string|null $rootResourceId
  */
 class RestApi extends Shape
 {
@@ -35,7 +36,8 @@ class RestApi extends Shape
      *     endpointConfiguration?: EndpointConfiguration|null,
      *     policy?: string|null,
      *     tags?: array<string, string>|null,
-     *     disableExecuteApiEndpoint?: bool|null
+     *     disableExecuteApiEndpoint?: bool|null,
+     *     rootResourceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

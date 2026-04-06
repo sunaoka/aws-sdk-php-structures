@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'DATA'|'CREDENTIAL_PROVIDER'|'JOBS'|null $serviceType
  * @property list<Shapes\Tag>|null $tags
  * @property Shapes\TlsConfig|null $tlsConfig
+ * @property Shapes\ServerCertificateConfig|null $serverCertificateConfig
  */
 class CreateDomainConfigurationRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateDomainConfigurationRequest extends Request
      *     authorizerConfig?: Shapes\AuthorizerConfig|null,
      *     serviceType?: 'DATA'|'CREDENTIAL_PROVIDER'|'JOBS'|null,
      *     tags?: list<Shapes\Tag>|null,
-     *     tlsConfig?: Shapes\TlsConfig|null
+     *     tlsConfig?: Shapes\TlsConfig|null,
+     *     serverCertificateConfig?: Shapes\ServerCertificateConfig|null
      * } $args
      */
     public function __construct(array $args)

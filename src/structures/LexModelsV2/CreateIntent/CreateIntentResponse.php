@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $localeId
  * @property \Aws\Api\DateTimeResult|null $creationDateTime
  * @property Shapes\InitialResponseSetting|null $initialResponseSetting
+ * @property Shapes\QnAIntentConfiguration|null $qnAIntentConfiguration
  */
 class CreateIntentResponse extends Response
 {

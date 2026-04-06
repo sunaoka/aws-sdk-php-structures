@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AUTO'|'LEVEL_1'|'LEVEL_1_1'|'LEVEL_1_2'|'LEVEL_1_3'|'LEVEL_2'|'LEVEL_2_1'|'LEVEL_2_2'|'LEVEL_3'|'LEVEL_3_1'|'LEVEL_3_2'|'LEVEL_4'|'LEVEL_4_1'|'LEVEL_4_2'|'LEVEL_5'|'LEVEL_5_1'|'LEVEL_5_2'|null $CodecLevel
  * @property 'BASELINE'|'HIGH'|'HIGH_10BIT'|'HIGH_422'|'HIGH_422_10BIT'|'MAIN'|null $CodecProfile
  * @property 'ADAPTIVE'|'STATIC'|null $DynamicSubGop
+ * @property 'INCLUDE'|'SUPPRESS'|null $EndOfStreamMarkers
  * @property 'CABAC'|'CAVLC'|null $EntropyEncoding
  * @property 'PAFF'|'FORCE_FIELD'|'MBAFF'|null $FieldEncoding
  * @property 'DISABLED'|'ENABLED'|null $FlickerAdaptiveQuantization
@@ -58,6 +59,7 @@ class H264Settings extends Shape
      *     CodecLevel?: 'AUTO'|'LEVEL_1'|'LEVEL_1_1'|'LEVEL_1_2'|'LEVEL_1_3'|'LEVEL_2'|'LEVEL_2_1'|'LEVEL_2_2'|'LEVEL_3'|'LEVEL_3_1'|'LEVEL_3_2'|'LEVEL_4'|'LEVEL_4_1'|'LEVEL_4_2'|'LEVEL_5'|'LEVEL_5_1'|'LEVEL_5_2'|null,
      *     CodecProfile?: 'BASELINE'|'HIGH'|'HIGH_10BIT'|'HIGH_422'|'HIGH_422_10BIT'|'MAIN'|null,
      *     DynamicSubGop?: 'ADAPTIVE'|'STATIC'|null,
+     *     EndOfStreamMarkers?: 'INCLUDE'|'SUPPRESS'|null,
      *     EntropyEncoding?: 'CABAC'|'CAVLC'|null,
      *     FieldEncoding?: 'PAFF'|'FORCE_FIELD'|'MBAFF'|null,
      *     FlickerAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null,

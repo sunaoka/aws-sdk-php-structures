@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ResourceArn
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
+ * @property Shapes\IntervalDetails|null $Interval
  * @property list<Shapes\FilterV2> $Filters
  * @property list<string>|null $Groupings
  * @property list<Shapes\MetricV2> $Metrics
@@ -21,6 +22,7 @@ class GetMetricDataV2Request extends Request
      *     ResourceArn: string,
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
+     *     Interval?: Shapes\IntervalDetails|null,
      *     Filters: list<Shapes\FilterV2>,
      *     Groupings?: list<string>|null,
      *     Metrics: list<Shapes\MetricV2>,

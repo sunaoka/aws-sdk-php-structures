@@ -1,0 +1,25 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\IVSRealTime\GetComposition\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $storageConfigurationArn
+ * @property list<string> $encoderConfigurationArns
+ * @property RecordingConfiguration|null $recordingConfiguration
+ */
+class S3DestinationConfiguration extends Shape
+{
+    /**
+     * @param array{
+     *     storageConfigurationArn: string,
+     *     encoderConfigurationArns: list<string>,
+     *     recordingConfiguration?: RecordingConfiguration|null
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

@@ -5,14 +5,17 @@ namespace Sunaoka\Aws\Structures\OpenSearchService;
 class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceClient
 {
     use AcceptInboundConnection\AcceptInboundConnectionTrait;
+    use AddDataSource\AddDataSourceTrait;
     use AddTags\AddTagsTrait;
     use AssociatePackage\AssociatePackageTrait;
     use AuthorizeVpcEndpointAccess\AuthorizeVpcEndpointAccessTrait;
+    use CancelDomainConfigChange\CancelDomainConfigChangeTrait;
     use CancelServiceSoftwareUpdate\CancelServiceSoftwareUpdateTrait;
     use CreateDomain\CreateDomainTrait;
     use CreateOutboundConnection\CreateOutboundConnectionTrait;
     use CreatePackage\CreatePackageTrait;
     use CreateVpcEndpoint\CreateVpcEndpointTrait;
+    use DeleteDataSource\DeleteDataSourceTrait;
     use DeleteDomain\DeleteDomainTrait;
     use DeleteInboundConnection\DeleteInboundConnectionTrait;
     use DeleteOutboundConnection\DeleteOutboundConnectionTrait;
@@ -35,9 +38,13 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use DescribeVpcEndpoints\DescribeVpcEndpointsTrait;
     use DissociatePackage\DissociatePackageTrait;
     use GetCompatibleVersions\GetCompatibleVersionsTrait;
+    use GetDataSource\GetDataSourceTrait;
+    use GetDomainMaintenanceStatus\GetDomainMaintenanceStatusTrait;
     use GetPackageVersionHistory\GetPackageVersionHistoryTrait;
     use GetUpgradeHistory\GetUpgradeHistoryTrait;
     use GetUpgradeStatus\GetUpgradeStatusTrait;
+    use ListDataSources\ListDataSourcesTrait;
+    use ListDomainMaintenances\ListDomainMaintenancesTrait;
     use ListDomainNames\ListDomainNamesTrait;
     use ListDomainsForPackage\ListDomainsForPackageTrait;
     use ListInstanceTypeDetails\ListInstanceTypeDetailsTrait;
@@ -52,7 +59,9 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use RejectInboundConnection\RejectInboundConnectionTrait;
     use RemoveTags\RemoveTagsTrait;
     use RevokeVpcEndpointAccess\RevokeVpcEndpointAccessTrait;
+    use StartDomainMaintenance\StartDomainMaintenanceTrait;
     use StartServiceSoftwareUpdate\StartServiceSoftwareUpdateTrait;
+    use UpdateDataSource\UpdateDataSourceTrait;
     use UpdateDomainConfig\UpdateDomainConfigTrait;
     use UpdatePackage\UpdatePackageTrait;
     use UpdateScheduledAction\UpdateScheduledActionTrait;

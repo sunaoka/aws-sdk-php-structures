@@ -12,6 +12,7 @@ class ServiceDiscoveryClient extends \Aws\ServiceDiscovery\ServiceDiscoveryClien
     use DeleteService\DeleteServiceTrait;
     use DeregisterInstance\DeregisterInstanceTrait;
     use DiscoverInstances\DiscoverInstancesTrait;
+    use DiscoverInstancesRevision\DiscoverInstancesRevisionTrait;
     use GetInstance\GetInstanceTrait;
     use GetInstancesHealthStatus\GetInstancesHealthStatusTrait;
     use GetNamespace\GetNamespaceTrait;

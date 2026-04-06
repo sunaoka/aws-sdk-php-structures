@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 100>|null $MaxResults
  * @property string|null $TransactionId
  * @property \Aws\Api\DateTimeResult|null $QueryAsOfTime
+ * @property bool|null $IncludeStatusDetails
+ * @property list<'NAME'|'TABLE_TYPE'>|null $AttributesToGet
  */
 class GetTablesRequest extends Request
 {
@@ -23,7 +25,9 @@ class GetTablesRequest extends Request
      *     NextToken?: string|null,
      *     MaxResults?: int<1, 100>|null,
      *     TransactionId?: string|null,
-     *     QueryAsOfTime?: \Aws\Api\DateTimeResult|null
+     *     QueryAsOfTime?: \Aws\Api\DateTimeResult|null,
+     *     IncludeStatusDetails?: bool|null,
+     *     AttributesToGet?: list<'NAME'|'TABLE_TYPE'>|null
      * } $args
      */
     public function __construct(array $args)

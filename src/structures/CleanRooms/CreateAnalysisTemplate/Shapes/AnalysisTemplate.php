@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'SQL' $format
  * @property AnalysisSource $source
  * @property list<AnalysisParameter>|null $analysisParameters
+ * @property list<AnalysisTemplateValidationStatusDetail>|null $validations
  */
 class AnalysisTemplate extends Shape
 {
@@ -37,7 +38,8 @@ class AnalysisTemplate extends Shape
      *     schema: AnalysisSchema,
      *     format: 'SQL',
      *     source: AnalysisSource,
-     *     analysisParameters?: list<AnalysisParameter>|null
+     *     analysisParameters?: list<AnalysisParameter>|null,
+     *     validations?: list<AnalysisTemplateValidationStatusDetail>|null
      * } $args
      */
     public function __construct(array $args)

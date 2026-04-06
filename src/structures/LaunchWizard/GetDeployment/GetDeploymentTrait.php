@@ -1,0 +1,16 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\LaunchWizard\GetDeployment;
+
+trait GetDeploymentTrait
+{
+    /**
+     * @param GetDeploymentRequest $args
+     * @return GetDeploymentResponse
+     */
+    public function getDeployment(GetDeploymentRequest $args)
+    {
+        $result = parent::getDeployment($args->toArray());
+        return new GetDeploymentResponse($result->toArray());
+    }
+}

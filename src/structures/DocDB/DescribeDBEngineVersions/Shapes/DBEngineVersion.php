@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<UpgradeTarget>|null $ValidUpgradeTarget
  * @property list<string>|null $ExportableLogTypes
  * @property bool|null $SupportsLogExportsToCloudwatchLogs
+ * @property list<string>|null $SupportedCACertificateIdentifiers
+ * @property bool|null $SupportsCertificateRotationWithoutRestart
  */
 class DBEngineVersion extends Shape
 {
@@ -25,7 +27,9 @@ class DBEngineVersion extends Shape
      *     DBEngineVersionDescription?: string|null,
      *     ValidUpgradeTarget?: list<UpgradeTarget>|null,
      *     ExportableLogTypes?: list<string>|null,
-     *     SupportsLogExportsToCloudwatchLogs?: bool|null
+     *     SupportsLogExportsToCloudwatchLogs?: bool|null,
+     *     SupportedCACertificateIdentifiers?: list<string>|null,
+     *     SupportsCertificateRotationWithoutRestart?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

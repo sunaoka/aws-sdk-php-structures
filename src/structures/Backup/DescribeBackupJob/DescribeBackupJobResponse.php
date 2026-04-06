@@ -30,6 +30,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $NumberOfChildJobs
  * @property array<'CREATED'|'PENDING'|'RUNNING'|'ABORTING'|'ABORTED'|'COMPLETED'|'FAILED'|'EXPIRED'|'PARTIAL', int>|null $ChildJobsInState
  * @property string|null $ResourceName
+ * @property \Aws\Api\DateTimeResult|null $InitiationDate
+ * @property string|null $MessageCategory
  */
 class DescribeBackupJobResponse extends Response
 {

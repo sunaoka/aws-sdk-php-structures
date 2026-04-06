@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double|null $ProbabilityThresholdAttribute
  * @property string|null $StartTimeOffset
  * @property string|null $EndTimeOffset
+ * @property string|null $ExcludeFeaturesAttribute
  */
 class BatchTransformInput extends Shape
 {
@@ -31,7 +32,8 @@ class BatchTransformInput extends Shape
      *     ProbabilityAttribute?: string|null,
      *     ProbabilityThresholdAttribute?: double|null,
      *     StartTimeOffset?: string|null,
-     *     EndTimeOffset?: string|null
+     *     EndTimeOffset?: string|null,
+     *     ExcludeFeaturesAttribute?: string|null
      * } $args
      */
     public function __construct(array $args)

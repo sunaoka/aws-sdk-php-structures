@@ -7,13 +7,16 @@ class CodeBuildClient extends \Aws\CodeBuild\CodeBuildClient
     use BatchDeleteBuilds\BatchDeleteBuildsTrait;
     use BatchGetBuildBatches\BatchGetBuildBatchesTrait;
     use BatchGetBuilds\BatchGetBuildsTrait;
+    use BatchGetFleets\BatchGetFleetsTrait;
     use BatchGetProjects\BatchGetProjectsTrait;
     use BatchGetReportGroups\BatchGetReportGroupsTrait;
     use BatchGetReports\BatchGetReportsTrait;
+    use CreateFleet\CreateFleetTrait;
     use CreateProject\CreateProjectTrait;
     use CreateReportGroup\CreateReportGroupTrait;
     use CreateWebhook\CreateWebhookTrait;
     use DeleteBuildBatch\DeleteBuildBatchTrait;
+    use DeleteFleet\DeleteFleetTrait;
     use DeleteProject\DeleteProjectTrait;
     use DeleteReport\DeleteReportTrait;
     use DeleteReportGroup\DeleteReportGroupTrait;
@@ -31,6 +34,7 @@ class CodeBuildClient extends \Aws\CodeBuild\CodeBuildClient
     use ListBuilds\ListBuildsTrait;
     use ListBuildsForProject\ListBuildsForProjectTrait;
     use ListCuratedEnvironmentImages\ListCuratedEnvironmentImagesTrait;
+    use ListFleets\ListFleetsTrait;
     use ListProjects\ListProjectsTrait;
     use ListReportGroups\ListReportGroupsTrait;
     use ListReports\ListReportsTrait;
@@ -45,6 +49,7 @@ class CodeBuildClient extends \Aws\CodeBuild\CodeBuildClient
     use StartBuildBatch\StartBuildBatchTrait;
     use StopBuild\StopBuildTrait;
     use StopBuildBatch\StopBuildBatchTrait;
+    use UpdateFleet\UpdateFleetTrait;
     use UpdateProject\UpdateProjectTrait;
     use UpdateProjectVisibility\UpdateProjectVisibilityTrait;
     use UpdateReportGroup\UpdateReportGroupTrait;

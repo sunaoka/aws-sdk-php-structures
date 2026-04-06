@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  * @property string|null $name
  * @property int<1, 65535>|null $port
- * @property 'HTTP'|'HTTPS'|null $protocol
+ * @property 'HTTP'|'HTTPS'|'TLS_PASSTHROUGH'|null $protocol
  */
 class ListenerSummary extends Shape
 {
@@ -23,7 +23,7 @@ class ListenerSummary extends Shape
      *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
      *     name?: string|null,
      *     port?: int<1, 65535>|null,
-     *     protocol?: 'HTTP'|'HTTPS'|null
+     *     protocol?: 'HTTP'|'HTTPS'|'TLS_PASSTHROUGH'|null
      * } $args
      */
     public function __construct(array $args = [])

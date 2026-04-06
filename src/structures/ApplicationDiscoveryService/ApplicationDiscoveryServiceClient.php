@@ -5,12 +5,14 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService;
 class ApplicationDiscoveryServiceClient extends \Aws\ApplicationDiscoveryService\ApplicationDiscoveryServiceClient
 {
     use AssociateConfigurationItemsToApplication\AssociateConfigurationItemsToApplicationTrait;
+    use BatchDeleteAgents\BatchDeleteAgentsTrait;
     use BatchDeleteImportData\BatchDeleteImportDataTrait;
     use CreateApplication\CreateApplicationTrait;
     use CreateTags\CreateTagsTrait;
     use DeleteApplications\DeleteApplicationsTrait;
     use DeleteTags\DeleteTagsTrait;
     use DescribeAgents\DescribeAgentsTrait;
+    use DescribeBatchDeleteConfigurationTask\DescribeBatchDeleteConfigurationTaskTrait;
     use DescribeConfigurations\DescribeConfigurationsTrait;
     use DescribeContinuousExports\DescribeContinuousExportsTrait;
     use DescribeExportConfigurations\DescribeExportConfigurationsTrait;
@@ -22,6 +24,7 @@ class ApplicationDiscoveryServiceClient extends \Aws\ApplicationDiscoveryService
     use GetDiscoverySummary\GetDiscoverySummaryTrait;
     use ListConfigurations\ListConfigurationsTrait;
     use ListServerNeighbors\ListServerNeighborsTrait;
+    use StartBatchDeleteConfigurationTask\StartBatchDeleteConfigurationTaskTrait;
     use StartContinuousExport\StartContinuousExportTrait;
     use StartDataCollectionByAgentIds\StartDataCollectionByAgentIdsTrait;
     use StartExportTask\StartExportTaskTrait;

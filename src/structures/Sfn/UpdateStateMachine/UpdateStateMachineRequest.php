@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\TracingConfiguration|null $tracingConfiguration
  * @property bool|null $publish
  * @property string|null $versionDescription
+ * @property Shapes\EncryptionConfiguration|null $encryptionConfiguration
  */
 class UpdateStateMachineRequest extends Request
 {
@@ -23,7 +24,8 @@ class UpdateStateMachineRequest extends Request
      *     loggingConfiguration?: Shapes\LoggingConfiguration|null,
      *     tracingConfiguration?: Shapes\TracingConfiguration|null,
      *     publish?: bool|null,
-     *     versionDescription?: string|null
+     *     versionDescription?: string|null,
+     *     encryptionConfiguration?: Shapes\EncryptionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

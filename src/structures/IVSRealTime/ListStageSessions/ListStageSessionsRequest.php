@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\ListStageSessions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 100>|null $maxResults
- * @property string|null $nextToken
  * @property string $stageArn
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListStageSessionsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int<1, 100>|null,
+     *     stageArn: string,
      *     nextToken?: string|null,
-     *     stageArn: string
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

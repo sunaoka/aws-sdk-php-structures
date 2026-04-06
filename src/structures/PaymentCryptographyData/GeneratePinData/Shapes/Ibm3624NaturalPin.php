@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DecimalizationTable
- * @property string $PinValidationData
  * @property string $PinValidationDataPadCharacter
+ * @property string $PinValidationData
  */
 class Ibm3624NaturalPin extends Shape
 {
     /**
      * @param array{
      *     DecimalizationTable: string,
-     *     PinValidationData: string,
-     *     PinValidationDataPadCharacter: string
+     *     PinValidationDataPadCharacter: string,
+     *     PinValidationData: string
      * } $args
      */
     public function __construct(array $args)

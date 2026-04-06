@@ -11,6 +11,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property array<string, string>|null $AllowedAccessControlTags
  * @property list<string>|null $TagRestrictedResources
+ * @property list<Shapes\Application>|null $Applications
+ * @property list<string>|null $HierarchyRestrictedResources
+ * @property string|null $AllowedAccessControlHierarchyGroupId
  */
 class UpdateSecurityProfileRequest extends Request
 {
@@ -21,7 +24,10 @@ class UpdateSecurityProfileRequest extends Request
      *     SecurityProfileId: string,
      *     InstanceId: string,
      *     AllowedAccessControlTags?: array<string, string>|null,
-     *     TagRestrictedResources?: list<string>|null
+     *     TagRestrictedResources?: list<string>|null,
+     *     Applications?: list<Shapes\Application>|null,
+     *     HierarchyRestrictedResources?: list<string>|null,
+     *     AllowedAccessControlHierarchyGroupId?: string|null
      * } $args
      */
     public function __construct(array $args)

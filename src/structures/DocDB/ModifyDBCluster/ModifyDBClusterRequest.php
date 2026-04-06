@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $EngineVersion
  * @property bool|null $AllowMajorVersionUpgrade
  * @property bool|null $DeletionProtection
+ * @property string|null $StorageType
  */
 class ModifyDBClusterRequest extends Request
 {
@@ -37,7 +38,8 @@ class ModifyDBClusterRequest extends Request
      *     CloudwatchLogsExportConfiguration?: Shapes\CloudwatchLogsExportConfiguration|null,
      *     EngineVersion?: string|null,
      *     AllowMajorVersionUpgrade?: bool|null,
-     *     DeletionProtection?: bool|null
+     *     DeletionProtection?: bool|null,
+     *     StorageType?: string|null
      * } $args
      */
     public function __construct(array $args)

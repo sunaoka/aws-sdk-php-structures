@@ -13,7 +13,11 @@ class ConnectCasesClient extends \Aws\ConnectCases\ConnectCasesClient
     use CreateRelatedItem\CreateRelatedItemTrait;
     use CreateTemplate\CreateTemplateTrait;
     use DeleteDomain\DeleteDomainTrait;
+    use DeleteField\DeleteFieldTrait;
+    use DeleteLayout\DeleteLayoutTrait;
+    use DeleteTemplate\DeleteTemplateTrait;
     use GetCase\GetCaseTrait;
+    use GetCaseAuditEvents\GetCaseAuditEventsTrait;
     use GetCaseEventConfiguration\GetCaseEventConfigurationTrait;
     use GetDomain\GetDomainTrait;
     use GetLayout\GetLayoutTrait;

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PaymentCryptography\ListAliases;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 100>|null $MaxResults
  * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListAliasesRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int<1, 100>|null,
-     *     NextToken?: string|null
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

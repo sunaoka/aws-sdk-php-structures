@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $creationTime
  * @property \Aws\Api\DateTimeResult|null $startTime
  * @property \Aws\Api\DateTimeResult|null $stopTime
+ * @property 'STATIC'|'DYNAMIC'|null $storageType
  */
 class RunListItem extends Shape
 {
@@ -29,7 +30,8 @@ class RunListItem extends Shape
      *     storageCapacity?: int<0, 100000>|null,
      *     creationTime?: \Aws\Api\DateTimeResult|null,
      *     startTime?: \Aws\Api\DateTimeResult|null,
-     *     stopTime?: \Aws\Api\DateTimeResult|null
+     *     stopTime?: \Aws\Api\DateTimeResult|null,
+     *     storageType?: 'STATIC'|'DYNAMIC'|null
      * } $args
      */
     public function __construct(array $args = [])

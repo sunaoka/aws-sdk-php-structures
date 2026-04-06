@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $KeyId
- * @property string $PolicyName
+ * @property string|null $PolicyName
  * @property string $Policy
  * @property bool|null $BypassPolicyLockoutSafetyCheck
  */
@@ -15,7 +15,7 @@ class PutKeyPolicyRequest extends Request
     /**
      * @param array{
      *     KeyId: string,
-     *     PolicyName: string,
+     *     PolicyName?: string|null,
      *     Policy: string,
      *     BypassPolicyLockoutSafetyCheck?: bool|null
      * } $args

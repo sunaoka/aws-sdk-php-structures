@@ -16,6 +16,7 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use CreateFunction\CreateFunctionTrait;
     use CreateInvalidation\CreateInvalidationTrait;
     use CreateKeyGroup\CreateKeyGroupTrait;
+    use CreateKeyValueStore\CreateKeyValueStoreTrait;
     use CreateMonitoringSubscription\CreateMonitoringSubscriptionTrait;
     use CreateOriginAccessControl\CreateOriginAccessControlTrait;
     use CreateOriginRequestPolicy\CreateOriginRequestPolicyTrait;
@@ -32,6 +33,7 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use DeleteFieldLevelEncryptionProfile\DeleteFieldLevelEncryptionProfileTrait;
     use DeleteFunction\DeleteFunctionTrait;
     use DeleteKeyGroup\DeleteKeyGroupTrait;
+    use DeleteKeyValueStore\DeleteKeyValueStoreTrait;
     use DeleteMonitoringSubscription\DeleteMonitoringSubscriptionTrait;
     use DeleteOriginAccessControl\DeleteOriginAccessControlTrait;
     use DeleteOriginRequestPolicy\DeleteOriginRequestPolicyTrait;
@@ -40,6 +42,7 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use DeleteResponseHeadersPolicy\DeleteResponseHeadersPolicyTrait;
     use DeleteStreamingDistribution\DeleteStreamingDistributionTrait;
     use DescribeFunction\DescribeFunctionTrait;
+    use DescribeKeyValueStore\DescribeKeyValueStoreTrait;
     use GetCachePolicy\GetCachePolicyTrait;
     use GetCachePolicyConfig\GetCachePolicyConfigTrait;
     use GetCloudFrontOriginAccessIdentity\GetCloudFrontOriginAccessIdentityTrait;
@@ -84,6 +87,7 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use ListFunctions\ListFunctionsTrait;
     use ListInvalidations\ListInvalidationsTrait;
     use ListKeyGroups\ListKeyGroupsTrait;
+    use ListKeyValueStores\ListKeyValueStoresTrait;
     use ListOriginAccessControls\ListOriginAccessControlsTrait;
     use ListOriginRequestPolicies\ListOriginRequestPoliciesTrait;
     use ListPublicKeys\ListPublicKeysTrait;
@@ -104,6 +108,7 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use UpdateFieldLevelEncryptionProfile\UpdateFieldLevelEncryptionProfileTrait;
     use UpdateFunction\UpdateFunctionTrait;
     use UpdateKeyGroup\UpdateKeyGroupTrait;
+    use UpdateKeyValueStore\UpdateKeyValueStoreTrait;
     use UpdateOriginAccessControl\UpdateOriginAccessControlTrait;
     use UpdateOriginRequestPolicy\UpdateOriginRequestPolicyTrait;
     use UpdatePublicKey\UpdatePublicKeyTrait;

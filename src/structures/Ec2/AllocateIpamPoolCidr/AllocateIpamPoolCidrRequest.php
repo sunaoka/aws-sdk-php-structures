@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ClientToken
  * @property string|null $Description
  * @property bool|null $PreviewNextCidr
+ * @property list<string>|null $AllowedCidrs
  * @property list<string>|null $DisallowedCidrs
  */
 class AllocateIpamPoolCidrRequest extends Request
@@ -25,6 +26,7 @@ class AllocateIpamPoolCidrRequest extends Request
      *     ClientToken?: string|null,
      *     Description?: string|null,
      *     PreviewNextCidr?: bool|null,
+     *     AllowedCidrs?: list<string>|null,
      *     DisallowedCidrs?: list<string>|null
      * } $args
      */

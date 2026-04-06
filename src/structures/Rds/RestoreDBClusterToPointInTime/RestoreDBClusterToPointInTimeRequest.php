@@ -33,6 +33,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
  * @property string|null $NetworkType
  * @property string|null $SourceDbClusterResourceId
+ * @property Shapes\RdsCustomClusterConfiguration|null $RdsCustomClusterConfiguration
+ * @property string|null $EngineLifecycleSupport
  */
 class RestoreDBClusterToPointInTimeRequest extends Request
 {
@@ -65,7 +67,9 @@ class RestoreDBClusterToPointInTimeRequest extends Request
      *     Iops?: int|null,
      *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
      *     NetworkType?: string|null,
-     *     SourceDbClusterResourceId?: string|null
+     *     SourceDbClusterResourceId?: string|null,
+     *     RdsCustomClusterConfiguration?: Shapes\RdsCustomClusterConfiguration|null,
+     *     EngineLifecycleSupport?: string|null
      * } $args
      */
     public function __construct(array $args)

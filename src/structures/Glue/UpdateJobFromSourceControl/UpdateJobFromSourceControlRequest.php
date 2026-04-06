@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $JobName
- * @property 'GITHUB'|'AWS_CODE_COMMIT'|null $Provider
+ * @property 'GITHUB'|'GITLAB'|'BITBUCKET'|'AWS_CODE_COMMIT'|null $Provider
  * @property string|null $RepositoryName
  * @property string|null $RepositoryOwner
  * @property string|null $BranchName
@@ -20,7 +20,7 @@ class UpdateJobFromSourceControlRequest extends Request
     /**
      * @param array{
      *     JobName?: string|null,
-     *     Provider?: 'GITHUB'|'AWS_CODE_COMMIT'|null,
+     *     Provider?: 'GITHUB'|'GITLAB'|'BITBUCKET'|'AWS_CODE_COMMIT'|null,
      *     RepositoryName?: string|null,
      *     RepositoryOwner?: string|null,
      *     BranchName?: string|null,

@@ -17,12 +17,16 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\MetadataProperties|null $MetadataProperties
  * @property Shapes\ModelMetrics|null $ModelMetrics
  * @property string|null $ClientToken
- * @property array<string, string>|null $CustomerMetadataProperties
- * @property Shapes\DriftCheckBaselines|null $DriftCheckBaselines
  * @property string|null $Domain
  * @property string|null $Task
  * @property string|null $SamplePayloadUrl
+ * @property array<string, string>|null $CustomerMetadataProperties
+ * @property Shapes\DriftCheckBaselines|null $DriftCheckBaselines
  * @property list<Shapes\AdditionalInferenceSpecificationDefinition>|null $AdditionalInferenceSpecifications
+ * @property 'All'|'None'|null $SkipModelValidation
+ * @property string|null $SourceUri
+ * @property Shapes\ModelPackageSecurityConfig|null $SecurityConfig
+ * @property Shapes\ModelPackageModelCard|null $ModelCard
  */
 class CreateModelPackageRequest extends Request
 {
@@ -40,12 +44,16 @@ class CreateModelPackageRequest extends Request
      *     MetadataProperties?: Shapes\MetadataProperties|null,
      *     ModelMetrics?: Shapes\ModelMetrics|null,
      *     ClientToken?: string|null,
-     *     CustomerMetadataProperties?: array<string, string>|null,
-     *     DriftCheckBaselines?: Shapes\DriftCheckBaselines|null,
      *     Domain?: string|null,
      *     Task?: string|null,
      *     SamplePayloadUrl?: string|null,
-     *     AdditionalInferenceSpecifications?: list<Shapes\AdditionalInferenceSpecificationDefinition>|null
+     *     CustomerMetadataProperties?: array<string, string>|null,
+     *     DriftCheckBaselines?: Shapes\DriftCheckBaselines|null,
+     *     AdditionalInferenceSpecifications?: list<Shapes\AdditionalInferenceSpecificationDefinition>|null,
+     *     SkipModelValidation?: 'All'|'None'|null,
+     *     SourceUri?: string|null,
+     *     SecurityConfig?: Shapes\ModelPackageSecurityConfig|null,
+     *     ModelCard?: Shapes\ModelPackageModelCard|null
      * } $args
      */
     public function __construct(array $args = [])

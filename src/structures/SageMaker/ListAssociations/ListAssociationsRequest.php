@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DestinationArn
  * @property string|null $SourceType
  * @property string|null $DestinationType
- * @property 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|null $AssociationType
+ * @property 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|'SameAs'|null $AssociationType
  * @property \Aws\Api\DateTimeResult|null $CreatedAfter
  * @property \Aws\Api\DateTimeResult|null $CreatedBefore
  * @property 'SourceArn'|'DestinationArn'|'SourceType'|'DestinationType'|'CreationTime'|null $SortBy
@@ -25,7 +25,7 @@ class ListAssociationsRequest extends Request
      *     DestinationArn?: string|null,
      *     SourceType?: string|null,
      *     DestinationType?: string|null,
-     *     AssociationType?: 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|null,
+     *     AssociationType?: 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|'SameAs'|null,
      *     CreatedAfter?: \Aws\Api\DateTimeResult|null,
      *     CreatedBefore?: \Aws\Api\DateTimeResult|null,
      *     SortBy?: 'SourceArn'|'DestinationArn'|'SourceType'|'DestinationType'|'CreationTime'|null,

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property list<string>|null $nodesToAdd
  * @property list<string>|null $nodesToRemove
- * @property 'ACTIVE'|'DRAFT'|null $status
+ * @property 'ACTIVE'|'DRAFT'|'INVALID'|'VALIDATING'|null $status
  */
 class UpdateModelManifestRequest extends Request
 {
@@ -19,7 +19,7 @@ class UpdateModelManifestRequest extends Request
      *     description?: string|null,
      *     nodesToAdd?: list<string>|null,
      *     nodesToRemove?: list<string>|null,
-     *     status?: 'ACTIVE'|'DRAFT'|null
+     *     status?: 'ACTIVE'|'DRAFT'|'INVALID'|'VALIDATING'|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,6 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property FileBatchJobIdentifier|null $fileBatchJobIdentifier
+ * @property RestartBatchJobIdentifier|null $restartBatchJobIdentifier
+ * @property S3BatchJobIdentifier|null $s3BatchJobIdentifier
  * @property ScriptBatchJobIdentifier|null $scriptBatchJobIdentifier
  */
 class BatchJobIdentifier extends Shape
@@ -13,6 +15,8 @@ class BatchJobIdentifier extends Shape
     /**
      * @param array{
      *     fileBatchJobIdentifier?: FileBatchJobIdentifier|null,
+     *     restartBatchJobIdentifier?: RestartBatchJobIdentifier|null,
+     *     s3BatchJobIdentifier?: S3BatchJobIdentifier|null,
      *     scriptBatchJobIdentifier?: ScriptBatchJobIdentifier|null
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $policyStoreId
  * @property string|null $nextToken
- * @property int<1, 20>|null $maxResults
+ * @property int<1, max>|null $maxResults
  * @property Shapes\PolicyFilter|null $filter
  */
 class ListPoliciesRequest extends Request
@@ -16,7 +16,7 @@ class ListPoliciesRequest extends Request
      * @param array{
      *     policyStoreId: string,
      *     nextToken?: string|null,
-     *     maxResults?: int<1, 20>|null,
+     *     maxResults?: int<1, max>|null,
      *     filter?: Shapes\PolicyFilter|null
      * } $args
      */

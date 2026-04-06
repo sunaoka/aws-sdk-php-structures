@@ -4,10 +4,13 @@ namespace Sunaoka\Aws\Structures\WorkSpaces;
 
 class WorkSpacesClient extends \Aws\WorkSpaces\WorkSpacesClient
 {
+    use AcceptAccountLinkInvitation\AcceptAccountLinkInvitationTrait;
     use AssociateConnectionAlias\AssociateConnectionAliasTrait;
     use AssociateIpGroups\AssociateIpGroupsTrait;
+    use AssociateWorkspaceApplication\AssociateWorkspaceApplicationTrait;
     use AuthorizeIpRules\AuthorizeIpRulesTrait;
     use CopyWorkspaceImage\CopyWorkspaceImageTrait;
+    use CreateAccountLinkInvitation\CreateAccountLinkInvitationTrait;
     use CreateConnectClientAddIn\CreateConnectClientAddInTrait;
     use CreateConnectionAlias\CreateConnectionAliasTrait;
     use CreateIpGroup\CreateIpGroupTrait;
@@ -17,6 +20,8 @@ class WorkSpacesClient extends \Aws\WorkSpaces\WorkSpacesClient
     use CreateWorkspaceBundle\CreateWorkspaceBundleTrait;
     use CreateWorkspaceImage\CreateWorkspaceImageTrait;
     use CreateWorkspaces\CreateWorkspacesTrait;
+    use CreateWorkspacesPool\CreateWorkspacesPoolTrait;
+    use DeleteAccountLinkInvitation\DeleteAccountLinkInvitationTrait;
     use DeleteClientBranding\DeleteClientBrandingTrait;
     use DeleteConnectClientAddIn\DeleteConnectClientAddInTrait;
     use DeleteConnectionAlias\DeleteConnectionAliasTrait;
@@ -24,16 +29,22 @@ class WorkSpacesClient extends \Aws\WorkSpaces\WorkSpacesClient
     use DeleteTags\DeleteTagsTrait;
     use DeleteWorkspaceBundle\DeleteWorkspaceBundleTrait;
     use DeleteWorkspaceImage\DeleteWorkspaceImageTrait;
+    use DeployWorkspaceApplications\DeployWorkspaceApplicationsTrait;
     use DeregisterWorkspaceDirectory\DeregisterWorkspaceDirectoryTrait;
     use DescribeAccount\DescribeAccountTrait;
     use DescribeAccountModifications\DescribeAccountModificationsTrait;
+    use DescribeApplicationAssociations\DescribeApplicationAssociationsTrait;
+    use DescribeApplications\DescribeApplicationsTrait;
+    use DescribeBundleAssociations\DescribeBundleAssociationsTrait;
     use DescribeClientBranding\DescribeClientBrandingTrait;
     use DescribeClientProperties\DescribeClientPropertiesTrait;
     use DescribeConnectClientAddIns\DescribeConnectClientAddInsTrait;
     use DescribeConnectionAliasPermissions\DescribeConnectionAliasPermissionsTrait;
     use DescribeConnectionAliases\DescribeConnectionAliasesTrait;
+    use DescribeImageAssociations\DescribeImageAssociationsTrait;
     use DescribeIpGroups\DescribeIpGroupsTrait;
     use DescribeTags\DescribeTagsTrait;
+    use DescribeWorkspaceAssociations\DescribeWorkspaceAssociationsTrait;
     use DescribeWorkspaceBundles\DescribeWorkspaceBundlesTrait;
     use DescribeWorkspaceDirectories\DescribeWorkspaceDirectoriesTrait;
     use DescribeWorkspaceImagePermissions\DescribeWorkspaceImagePermissionsTrait;
@@ -41,10 +52,15 @@ class WorkSpacesClient extends \Aws\WorkSpaces\WorkSpacesClient
     use DescribeWorkspaceSnapshots\DescribeWorkspaceSnapshotsTrait;
     use DescribeWorkspaces\DescribeWorkspacesTrait;
     use DescribeWorkspacesConnectionStatus\DescribeWorkspacesConnectionStatusTrait;
+    use DescribeWorkspacesPoolSessions\DescribeWorkspacesPoolSessionsTrait;
+    use DescribeWorkspacesPools\DescribeWorkspacesPoolsTrait;
     use DisassociateConnectionAlias\DisassociateConnectionAliasTrait;
     use DisassociateIpGroups\DisassociateIpGroupsTrait;
+    use DisassociateWorkspaceApplication\DisassociateWorkspaceApplicationTrait;
+    use GetAccountLink\GetAccountLinkTrait;
     use ImportClientBranding\ImportClientBrandingTrait;
     use ImportWorkspaceImage\ImportWorkspaceImageTrait;
+    use ListAccountLinks\ListAccountLinksTrait;
     use ListAvailableManagementCidrRanges\ListAvailableManagementCidrRangesTrait;
     use MigrateWorkspace\MigrateWorkspaceTrait;
     use ModifyAccount\ModifyAccountTrait;
@@ -52,6 +68,7 @@ class WorkSpacesClient extends \Aws\WorkSpaces\WorkSpacesClient
     use ModifyClientProperties\ModifyClientPropertiesTrait;
     use ModifySamlProperties\ModifySamlPropertiesTrait;
     use ModifySelfservicePermissions\ModifySelfservicePermissionsTrait;
+    use ModifyStreamingProperties\ModifyStreamingPropertiesTrait;
     use ModifyWorkspaceAccessProperties\ModifyWorkspaceAccessPropertiesTrait;
     use ModifyWorkspaceCreationProperties\ModifyWorkspaceCreationPropertiesTrait;
     use ModifyWorkspaceProperties\ModifyWorkspacePropertiesTrait;
@@ -59,14 +76,20 @@ class WorkSpacesClient extends \Aws\WorkSpaces\WorkSpacesClient
     use RebootWorkspaces\RebootWorkspacesTrait;
     use RebuildWorkspaces\RebuildWorkspacesTrait;
     use RegisterWorkspaceDirectory\RegisterWorkspaceDirectoryTrait;
+    use RejectAccountLinkInvitation\RejectAccountLinkInvitationTrait;
     use RestoreWorkspace\RestoreWorkspaceTrait;
     use RevokeIpRules\RevokeIpRulesTrait;
     use StartWorkspaces\StartWorkspacesTrait;
+    use StartWorkspacesPool\StartWorkspacesPoolTrait;
     use StopWorkspaces\StopWorkspacesTrait;
+    use StopWorkspacesPool\StopWorkspacesPoolTrait;
     use TerminateWorkspaces\TerminateWorkspacesTrait;
+    use TerminateWorkspacesPool\TerminateWorkspacesPoolTrait;
+    use TerminateWorkspacesPoolSession\TerminateWorkspacesPoolSessionTrait;
     use UpdateConnectClientAddIn\UpdateConnectClientAddInTrait;
     use UpdateConnectionAliasPermission\UpdateConnectionAliasPermissionTrait;
     use UpdateRulesOfIpGroup\UpdateRulesOfIpGroupTrait;
     use UpdateWorkspaceBundle\UpdateWorkspaceBundleTrait;
     use UpdateWorkspaceImagePermission\UpdateWorkspaceImagePermissionTrait;
+    use UpdateWorkspacesPool\UpdateWorkspacesPoolTrait;
 }

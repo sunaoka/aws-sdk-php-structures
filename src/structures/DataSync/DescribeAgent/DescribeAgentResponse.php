@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property 'PUBLIC'|'PRIVATE_LINK'|'FIPS'|null $EndpointType
  * @property Shapes\PrivateLinkConfig|null $PrivateLinkConfig
+ * @property Shapes\Platform|null $Platform
  */
 class DescribeAgentResponse extends Response
 {

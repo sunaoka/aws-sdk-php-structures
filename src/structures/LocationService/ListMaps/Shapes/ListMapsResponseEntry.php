@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\LocationService\ListMaps\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreateTime
- * @property string $DataSource
- * @property string $Description
  * @property string $MapName
+ * @property string $Description
+ * @property string $DataSource
  * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
+ * @property \Aws\Api\DateTimeResult $CreateTime
  * @property \Aws\Api\DateTimeResult $UpdateTime
  */
 class ListMapsResponseEntry extends Shape
 {
     /**
      * @param array{
-     *     CreateTime: \Aws\Api\DateTimeResult,
-     *     DataSource: string,
-     *     Description: string,
      *     MapName: string,
+     *     Description: string,
+     *     DataSource: string,
      *     PricingPlan?: 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null,
+     *     CreateTime: \Aws\Api\DateTimeResult,
      *     UpdateTime: \Aws\Api\DateTimeResult
      * } $args
      */

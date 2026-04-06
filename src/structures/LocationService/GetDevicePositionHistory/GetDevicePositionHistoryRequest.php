@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\LocationService\GetDevicePositionHistory;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string $TrackerName
  * @property string $DeviceId
- * @property \Aws\Api\DateTimeResult|null $EndTimeExclusive
- * @property int<1, 100>|null $MaxResults
  * @property string|null $NextToken
  * @property \Aws\Api\DateTimeResult|null $StartTimeInclusive
- * @property string $TrackerName
+ * @property \Aws\Api\DateTimeResult|null $EndTimeExclusive
+ * @property int<1, 100>|null $MaxResults
  */
 class GetDevicePositionHistoryRequest extends Request
 {
     /**
      * @param array{
+     *     TrackerName: string,
      *     DeviceId: string,
-     *     EndTimeExclusive?: \Aws\Api\DateTimeResult|null,
-     *     MaxResults?: int<1, 100>|null,
      *     NextToken?: string|null,
      *     StartTimeInclusive?: \Aws\Api\DateTimeResult|null,
-     *     TrackerName: string
+     *     EndTimeExclusive?: \Aws\Api\DateTimeResult|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ErrorDetails|null $errorDetails
  * @property string $jobId
  * @property Shapes\JobMetrics|null $metrics
+ * @property list<Shapes\JobOutputSource>|null $outputSourceConfig
  * @property \Aws\Api\DateTimeResult $startTime
  * @property 'RUNNING'|'SUCCEEDED'|'FAILED'|'QUEUED' $status
  */

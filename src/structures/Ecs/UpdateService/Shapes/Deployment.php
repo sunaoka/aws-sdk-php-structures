@@ -23,6 +23,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $rolloutStateReason
  * @property ServiceConnectConfiguration|null $serviceConnectConfiguration
  * @property list<ServiceConnectServiceResource>|null $serviceConnectResources
+ * @property list<ServiceVolumeConfiguration>|null $volumeConfigurations
+ * @property DeploymentEphemeralStorage|null $fargateEphemeralStorage
  */
 class Deployment extends Shape
 {
@@ -45,7 +47,9 @@ class Deployment extends Shape
      *     rolloutState?: 'COMPLETED'|'FAILED'|'IN_PROGRESS'|null,
      *     rolloutStateReason?: string|null,
      *     serviceConnectConfiguration?: ServiceConnectConfiguration|null,
-     *     serviceConnectResources?: list<ServiceConnectServiceResource>|null
+     *     serviceConnectResources?: list<ServiceConnectServiceResource>|null,
+     *     volumeConfigurations?: list<ServiceVolumeConfiguration>|null,
+     *     fargateEphemeralStorage?: DeploymentEphemeralStorage|null
      * } $args
      */
     public function __construct(array $args = [])

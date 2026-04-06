@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $UsageOperation
  * @property list<ProductCode>|null $ProductCodes
  * @property string|null $RamdiskId
- * @property 'pending'|'available'|'invalid'|'deregistered'|'transient'|'failed'|'error'|null $State
+ * @property 'pending'|'available'|'invalid'|'deregistered'|'transient'|'failed'|'error'|'disabled'|null $State
  * @property list<BlockDeviceMapping>|null $BlockDeviceMappings
  * @property string|null $Description
  * @property bool|null $EnaSupport
@@ -35,6 +35,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'v2.0'|null $TpmSupport
  * @property string|null $DeprecationTime
  * @property 'v2.0'|null $ImdsSupport
+ * @property string|null $SourceInstanceId
+ * @property string|null $DeregistrationProtection
+ * @property string|null $LastLaunchedTime
  */
 class Image extends Shape
 {
@@ -53,7 +56,7 @@ class Image extends Shape
      *     UsageOperation?: string|null,
      *     ProductCodes?: list<ProductCode>|null,
      *     RamdiskId?: string|null,
-     *     State?: 'pending'|'available'|'invalid'|'deregistered'|'transient'|'failed'|'error'|null,
+     *     State?: 'pending'|'available'|'invalid'|'deregistered'|'transient'|'failed'|'error'|'disabled'|null,
      *     BlockDeviceMappings?: list<BlockDeviceMapping>|null,
      *     Description?: string|null,
      *     EnaSupport?: bool|null,
@@ -69,7 +72,10 @@ class Image extends Shape
      *     BootMode?: 'legacy-bios'|'uefi'|'uefi-preferred'|null,
      *     TpmSupport?: 'v2.0'|null,
      *     DeprecationTime?: string|null,
-     *     ImdsSupport?: 'v2.0'|null
+     *     ImdsSupport?: 'v2.0'|null,
+     *     SourceInstanceId?: string|null,
+     *     DeregistrationProtection?: string|null,
+     *     LastLaunchedTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

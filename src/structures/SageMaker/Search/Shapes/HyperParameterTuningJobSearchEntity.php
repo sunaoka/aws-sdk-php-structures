@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property HyperParameterTuningJobConfig|null $HyperParameterTuningJobConfig
  * @property HyperParameterTrainingJobDefinition|null $TrainingJobDefinition
  * @property list<HyperParameterTrainingJobDefinition>|null $TrainingJobDefinitions
- * @property 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping'|null $HyperParameterTuningJobStatus
+ * @property 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping'|'Deleting'|'DeleteFailed'|null $HyperParameterTuningJobStatus
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property \Aws\Api\DateTimeResult|null $HyperParameterTuningEndTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
@@ -20,9 +20,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property HyperParameterTrainingJobSummary|null $OverallBestTrainingJob
  * @property HyperParameterTuningJobWarmStartConfig|null $WarmStartConfig
  * @property string|null $FailureReason
- * @property list<Tag>|null $Tags
  * @property HyperParameterTuningJobCompletionDetails|null $TuningJobCompletionDetails
  * @property HyperParameterTuningJobConsumedResources|null $ConsumedResources
+ * @property list<Tag>|null $Tags
  */
 class HyperParameterTuningJobSearchEntity extends Shape
 {
@@ -33,7 +33,7 @@ class HyperParameterTuningJobSearchEntity extends Shape
      *     HyperParameterTuningJobConfig?: HyperParameterTuningJobConfig|null,
      *     TrainingJobDefinition?: HyperParameterTrainingJobDefinition|null,
      *     TrainingJobDefinitions?: list<HyperParameterTrainingJobDefinition>|null,
-     *     HyperParameterTuningJobStatus?: 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping'|null,
+     *     HyperParameterTuningJobStatus?: 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping'|'Deleting'|'DeleteFailed'|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
      *     HyperParameterTuningEndTime?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
@@ -43,9 +43,9 @@ class HyperParameterTuningJobSearchEntity extends Shape
      *     OverallBestTrainingJob?: HyperParameterTrainingJobSummary|null,
      *     WarmStartConfig?: HyperParameterTuningJobWarmStartConfig|null,
      *     FailureReason?: string|null,
-     *     Tags?: list<Tag>|null,
      *     TuningJobCompletionDetails?: HyperParameterTuningJobCompletionDetails|null,
-     *     ConsumedResources?: HyperParameterTuningJobConsumedResources|null
+     *     ConsumedResources?: HyperParameterTuningJobConsumedResources|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

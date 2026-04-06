@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<Summary>|null $summaries
- * @property 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'EcsService'|null $recommendationResourceType
+ * @property 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'EcsService'|'License'|'RdsDBInstance'|'RdsDBInstanceStorage'|null $recommendationResourceType
  * @property string|null $accountId
  * @property SavingsOpportunity|null $savingsOpportunity
  * @property CurrentPerformanceRiskRatings|null $currentPerformanceRiskRatings
@@ -17,7 +17,7 @@ class RecommendationSummary extends Shape
     /**
      * @param array{
      *     summaries?: list<Summary>|null,
-     *     recommendationResourceType?: 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'EcsService'|null,
+     *     recommendationResourceType?: 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'EcsService'|'License'|'RdsDBInstance'|'RdsDBInstanceStorage'|null,
      *     accountId?: string|null,
      *     savingsOpportunity?: SavingsOpportunity|null,
      *     currentPerformanceRiskRatings?: CurrentPerformanceRiskRatings|null,

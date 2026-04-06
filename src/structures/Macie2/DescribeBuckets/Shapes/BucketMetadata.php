@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $accountId
  * @property 'TRUE'|'FALSE'|'UNKNOWN'|null $allowsUnencryptedObjectUploads
+ * @property 'MONITORED'|'NOT_MONITORED'|null $automatedDiscoveryMonitoringStatus
  * @property string|null $bucketArn
  * @property \Aws\Api\DateTimeResult|null $bucketCreatedAt
  * @property string|null $bucketName
@@ -38,6 +39,7 @@ class BucketMetadata extends Shape
      * @param array{
      *     accountId?: string|null,
      *     allowsUnencryptedObjectUploads?: 'TRUE'|'FALSE'|'UNKNOWN'|null,
+     *     automatedDiscoveryMonitoringStatus?: 'MONITORED'|'NOT_MONITORED'|null,
      *     bucketArn?: string|null,
      *     bucketCreatedAt?: \Aws\Api\DateTimeResult|null,
      *     bucketName?: string|null,

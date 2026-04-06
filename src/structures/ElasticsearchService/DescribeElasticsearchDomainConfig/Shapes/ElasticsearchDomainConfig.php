@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AdvancedSecurityOptionsStatus|null $AdvancedSecurityOptions
  * @property AutoTuneOptionsStatus|null $AutoTuneOptions
  * @property ChangeProgressDetails|null $ChangeProgressDetails
+ * @property list<ModifyingProperties>|null $ModifyingProperties
  */
 class ElasticsearchDomainConfig extends Shape
 {
@@ -39,7 +40,8 @@ class ElasticsearchDomainConfig extends Shape
      *     DomainEndpointOptions?: DomainEndpointOptionsStatus|null,
      *     AdvancedSecurityOptions?: AdvancedSecurityOptionsStatus|null,
      *     AutoTuneOptions?: AutoTuneOptionsStatus|null,
-     *     ChangeProgressDetails?: ChangeProgressDetails|null
+     *     ChangeProgressDetails?: ChangeProgressDetails|null,
+     *     ModifyingProperties?: list<ModifyingProperties>|null
      * } $args
      */
     public function __construct(array $args = [])

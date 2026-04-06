@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\LocationService\SearchPlaceIndexForSuggestions\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<double>|null $BiasPosition
- * @property string $DataSource
- * @property list<double>|null $FilterBBox
- * @property list<string>|null $FilterCategories
- * @property list<string>|null $FilterCountries
- * @property string|null $Language
- * @property int|null $MaxResults
  * @property string $Text
+ * @property list<double>|null $BiasPosition
+ * @property list<double>|null $FilterBBox
+ * @property list<string>|null $FilterCountries
+ * @property int|null $MaxResults
+ * @property string $DataSource
+ * @property string|null $Language
+ * @property list<string>|null $FilterCategories
  */
 class SearchPlaceIndexForSuggestionsSummary extends Shape
 {
     /**
      * @param array{
+     *     Text: string,
      *     BiasPosition?: list<double>|null,
-     *     DataSource: string,
      *     FilterBBox?: list<double>|null,
-     *     FilterCategories?: list<string>|null,
      *     FilterCountries?: list<string>|null,
-     *     Language?: string|null,
      *     MaxResults?: int|null,
-     *     Text: string
+     *     DataSource: string,
+     *     Language?: string|null,
+     *     FilterCategories?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

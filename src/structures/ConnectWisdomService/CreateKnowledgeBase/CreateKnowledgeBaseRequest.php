@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $clientToken
  * @property string|null $description
- * @property 'EXTERNAL'|'CUSTOM' $knowledgeBaseType
+ * @property 'EXTERNAL'|'CUSTOM'|'QUICK_RESPONSES' $knowledgeBaseType
  * @property string $name
  * @property Shapes\RenderingConfiguration|null $renderingConfiguration
  * @property Shapes\ServerSideEncryptionConfiguration|null $serverSideEncryptionConfiguration
@@ -20,7 +20,7 @@ class CreateKnowledgeBaseRequest extends Request
      * @param array{
      *     clientToken?: string|null,
      *     description?: string|null,
-     *     knowledgeBaseType: 'EXTERNAL'|'CUSTOM',
+     *     knowledgeBaseType: 'EXTERNAL'|'CUSTOM'|'QUICK_RESPONSES',
      *     name: string,
      *     renderingConfiguration?: Shapes\RenderingConfiguration|null,
      *     serverSideEncryptionConfiguration?: Shapes\ServerSideEncryptionConfiguration|null,

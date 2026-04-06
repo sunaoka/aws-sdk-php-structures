@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DestinationCidrBlock
  * @property string|null $SourceCidrBlock
  * @property string|null $Description
+ * @property list<Tag>|null $Tags
  */
 class TrafficMirrorFilterRule extends Shape
 {
@@ -31,7 +32,8 @@ class TrafficMirrorFilterRule extends Shape
      *     SourcePortRange?: TrafficMirrorPortRange|null,
      *     DestinationCidrBlock?: string|null,
      *     SourceCidrBlock?: string|null,
-     *     Description?: string|null
+     *     Description?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CompositeMemberIdentifier
  * @property bool|null $IsParent
  * @property string|null $ResourceName
+ * @property 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|null $VaultType
  */
 class RecoveryPointByBackupVault extends Shape
 {
@@ -53,7 +54,8 @@ class RecoveryPointByBackupVault extends Shape
      *     ParentRecoveryPointArn?: string|null,
      *     CompositeMemberIdentifier?: string|null,
      *     IsParent?: bool|null,
-     *     ResourceName?: string|null
+     *     ResourceName?: string|null,
+     *     VaultType?: 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|null
      * } $args
      */
     public function __construct(array $args = [])

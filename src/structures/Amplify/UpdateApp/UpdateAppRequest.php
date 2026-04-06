@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $repository
  * @property string|null $oauthToken
  * @property string|null $accessToken
+ * @property Shapes\CacheConfig|null $cacheConfig
  */
 class UpdateAppRequest extends Request
 {
@@ -47,7 +48,8 @@ class UpdateAppRequest extends Request
      *     autoBranchCreationConfig?: Shapes\AutoBranchCreationConfig|null,
      *     repository?: string|null,
      *     oauthToken?: string|null,
-     *     accessToken?: string|null
+     *     accessToken?: string|null,
+     *     cacheConfig?: Shapes\CacheConfig|null
      * } $args
      */
     public function __construct(array $args)

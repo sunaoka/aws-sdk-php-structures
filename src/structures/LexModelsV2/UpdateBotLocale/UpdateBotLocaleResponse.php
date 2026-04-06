@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $creationDateTime
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  * @property list<string>|null $recommendedActions
+ * @property Shapes\GenerativeAISettings|null $generativeAISettings
  */
 class UpdateBotLocaleResponse extends Response
 {

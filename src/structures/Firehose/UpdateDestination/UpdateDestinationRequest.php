@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\SplunkDestinationUpdate|null $SplunkDestinationUpdate
  * @property Shapes\HttpEndpointDestinationUpdate|null $HttpEndpointDestinationUpdate
  * @property Shapes\AmazonOpenSearchServerlessDestinationUpdate|null $AmazonOpenSearchServerlessDestinationUpdate
+ * @property Shapes\SnowflakeDestinationUpdate|null $SnowflakeDestinationUpdate
+ * @property Shapes\IcebergDestinationUpdate|null $IcebergDestinationUpdate
  */
 class UpdateDestinationRequest extends Request
 {
@@ -31,7 +33,9 @@ class UpdateDestinationRequest extends Request
      *     AmazonopensearchserviceDestinationUpdate?: Shapes\AmazonopensearchserviceDestinationUpdate|null,
      *     SplunkDestinationUpdate?: Shapes\SplunkDestinationUpdate|null,
      *     HttpEndpointDestinationUpdate?: Shapes\HttpEndpointDestinationUpdate|null,
-     *     AmazonOpenSearchServerlessDestinationUpdate?: Shapes\AmazonOpenSearchServerlessDestinationUpdate|null
+     *     AmazonOpenSearchServerlessDestinationUpdate?: Shapes\AmazonOpenSearchServerlessDestinationUpdate|null,
+     *     SnowflakeDestinationUpdate?: Shapes\SnowflakeDestinationUpdate|null,
+     *     IcebergDestinationUpdate?: Shapes\IcebergDestinationUpdate|null
      * } $args
      */
     public function __construct(array $args)

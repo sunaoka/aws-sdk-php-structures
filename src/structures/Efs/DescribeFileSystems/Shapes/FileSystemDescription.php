@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AvailabilityZoneName
  * @property string|null $AvailabilityZoneId
  * @property list<Tag> $Tags
+ * @property FileSystemProtectionDescription|null $FileSystemProtection
  */
 class FileSystemDescription extends Shape
 {
@@ -43,7 +44,8 @@ class FileSystemDescription extends Shape
      *     ProvisionedThroughputInMibps?: double|null,
      *     AvailabilityZoneName?: string|null,
      *     AvailabilityZoneId?: string|null,
-     *     Tags: list<Tag>
+     *     Tags: list<Tag>,
+     *     FileSystemProtection?: FileSystemProtectionDescription|null
      * } $args
      */
     public function __construct(array $args)

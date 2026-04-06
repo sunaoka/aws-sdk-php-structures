@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $actionName
  * @property \Aws\Api\DateTimeResult|null $startTime
  * @property \Aws\Api\DateTimeResult|null $lastUpdateTime
+ * @property string|null $updatedBy
  * @property 'InProgress'|'Abandoned'|'Succeeded'|'Failed'|null $status
  * @property ActionExecutionInput|null $input
  * @property ActionExecutionOutput|null $output
@@ -27,6 +28,7 @@ class ActionExecutionDetail extends Shape
      *     actionName?: string|null,
      *     startTime?: \Aws\Api\DateTimeResult|null,
      *     lastUpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     updatedBy?: string|null,
      *     status?: 'InProgress'|'Abandoned'|'Succeeded'|'Failed'|null,
      *     input?: ActionExecutionInput|null,
      *     output?: ActionExecutionOutput|null

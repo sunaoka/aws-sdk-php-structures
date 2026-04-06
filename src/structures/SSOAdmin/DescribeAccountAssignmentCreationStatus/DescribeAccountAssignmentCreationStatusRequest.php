@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\DescribeAccountAssignmentCreationStatu
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $InstanceArn
  * @property string $AccountAssignmentCreationRequestId
+ * @property string $InstanceArn
  */
 class DescribeAccountAssignmentCreationStatusRequest extends Request
 {
     /**
      * @param array{
-     *     InstanceArn: string,
-     *     AccountAssignmentCreationRequestId: string
+     *     AccountAssignmentCreationRequestId: string,
+     *     InstanceArn: string
      * } $args
      */
     public function __construct(array $args)

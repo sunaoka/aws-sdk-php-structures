@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $fieldId
  * @property string $name
  * @property 'System'|'Custom' $namespace
- * @property 'Text'|'Number'|'Boolean'|'DateTime'|'SingleSelect'|'Url' $type
+ * @property 'Text'|'Number'|'Boolean'|'DateTime'|'SingleSelect'|'Url'|'User' $type
  */
 class FieldSummary extends Shape
 {
@@ -19,7 +19,7 @@ class FieldSummary extends Shape
      *     fieldId: string,
      *     name: string,
      *     namespace: 'System'|'Custom',
-     *     type: 'Text'|'Number'|'Boolean'|'DateTime'|'SingleSelect'|'Url'
+     *     type: 'Text'|'Number'|'Boolean'|'DateTime'|'SingleSelect'|'Url'|'User'
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PaymentCryptography\DeleteKey;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<3, 180>|null $DeleteKeyInDays
  * @property string $KeyIdentifier
+ * @property int<3, 180>|null $DeleteKeyInDays
  */
 class DeleteKeyRequest extends Request
 {
     /**
      * @param array{
-     *     DeleteKeyInDays?: int<3, 180>|null,
-     *     KeyIdentifier: string
+     *     KeyIdentifier: string,
+     *     DeleteKeyInDays?: int<3, 180>|null
      * } $args
      */
     public function __construct(array $args)

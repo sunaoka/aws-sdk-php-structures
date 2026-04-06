@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\MinimumHealthyHosts|null $minimumHealthyHosts
  * @property Shapes\TrafficRoutingConfig|null $trafficRoutingConfig
  * @property 'Server'|'Lambda'|'ECS'|null $computePlatform
+ * @property Shapes\ZonalConfig|null $zonalConfig
  */
 class CreateDeploymentConfigRequest extends Request
 {
@@ -17,7 +18,8 @@ class CreateDeploymentConfigRequest extends Request
      *     deploymentConfigName: string,
      *     minimumHealthyHosts?: Shapes\MinimumHealthyHosts|null,
      *     trafficRoutingConfig?: Shapes\TrafficRoutingConfig|null,
-     *     computePlatform?: 'Server'|'Lambda'|'ECS'|null
+     *     computePlatform?: 'Server'|'Lambda'|'ECS'|null,
+     *     zonalConfig?: Shapes\ZonalConfig|null
      * } $args
      */
     public function __construct(array $args)

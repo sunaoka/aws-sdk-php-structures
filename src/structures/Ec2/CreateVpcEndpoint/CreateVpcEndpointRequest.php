@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ClientToken
  * @property bool|null $PrivateDnsEnabled
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property list<Shapes\SubnetConfiguration>|null $SubnetConfigurations
  */
 class CreateVpcEndpointRequest extends Request
 {
@@ -35,7 +36,8 @@ class CreateVpcEndpointRequest extends Request
      *     DnsOptions?: Shapes\DnsOptionsSpecification|null,
      *     ClientToken?: string|null,
      *     PrivateDnsEnabled?: bool|null,
-     *     TagSpecifications?: list<Shapes\TagSpecification>|null
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     SubnetConfigurations?: list<Shapes\SubnetConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

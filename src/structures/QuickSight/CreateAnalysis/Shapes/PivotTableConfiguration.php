@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PivotTableTotalOptions|null $TotalOptions
  * @property PivotTableFieldOptions|null $FieldOptions
  * @property PivotTablePaginatedReportOptions|null $PaginatedReportOptions
+ * @property VisualInteractionOptions|null $Interactions
  */
 class PivotTableConfiguration extends Shape
 {
@@ -21,7 +22,8 @@ class PivotTableConfiguration extends Shape
      *     TableOptions?: PivotTableOptions|null,
      *     TotalOptions?: PivotTableTotalOptions|null,
      *     FieldOptions?: PivotTableFieldOptions|null,
-     *     PaginatedReportOptions?: PivotTablePaginatedReportOptions|null
+     *     PaginatedReportOptions?: PivotTablePaginatedReportOptions|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

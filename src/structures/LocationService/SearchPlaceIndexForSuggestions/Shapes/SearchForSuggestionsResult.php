@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LocationService\SearchPlaceIndexForSuggestions\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string>|null $Categories
- * @property string|null $PlaceId
- * @property list<string>|null $SupplementalCategories
  * @property string $Text
+ * @property string|null $PlaceId
+ * @property list<string>|null $Categories
+ * @property list<string>|null $SupplementalCategories
  */
 class SearchForSuggestionsResult extends Shape
 {
     /**
      * @param array{
-     *     Categories?: list<string>|null,
+     *     Text: string,
      *     PlaceId?: string|null,
-     *     SupplementalCategories?: list<string>|null,
-     *     Text: string
+     *     Categories?: list<string>|null,
+     *     SupplementalCategories?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

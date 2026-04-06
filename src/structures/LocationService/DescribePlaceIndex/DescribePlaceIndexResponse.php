@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LocationService\DescribePlaceIndex;
 use Sunaoka\Aws\Structures\Response;
 
 /**
+ * @property string $IndexName
+ * @property string $IndexArn
+ * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
+ * @property string $Description
  * @property \Aws\Api\DateTimeResult $CreateTime
+ * @property \Aws\Api\DateTimeResult $UpdateTime
  * @property string $DataSource
  * @property Shapes\DataSourceConfiguration $DataSourceConfiguration
- * @property string $Description
- * @property string $IndexArn
- * @property string $IndexName
- * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
  * @property array<string, string>|null $Tags
- * @property \Aws\Api\DateTimeResult $UpdateTime
  */
 class DescribePlaceIndexResponse extends Response
 {

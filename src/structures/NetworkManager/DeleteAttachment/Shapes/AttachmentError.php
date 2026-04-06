@@ -1,0 +1,27 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\NetworkManager\DeleteAttachment\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property 'VPC_NOT_FOUND'|'SUBNET_NOT_FOUND'|'SUBNET_DUPLICATED_IN_AVAILABILITY_ZONE'|'SUBNET_NO_FREE_ADDRESSES'|'SUBNET_UNSUPPORTED_AVAILABILITY_ZONE'|'SUBNET_NO_IPV6_CIDRS'|'VPN_CONNECTION_NOT_FOUND'|'MAXIMUM_NO_ENCAP_LIMIT_EXCEEDED'|null $Code
+ * @property string|null $Message
+ * @property string|null $ResourceArn
+ * @property string|null $RequestId
+ */
+class AttachmentError extends Shape
+{
+    /**
+     * @param array{
+     *     Code?: 'VPC_NOT_FOUND'|'SUBNET_NOT_FOUND'|'SUBNET_DUPLICATED_IN_AVAILABILITY_ZONE'|'SUBNET_NO_FREE_ADDRESSES'|'SUBNET_UNSUPPORTED_AVAILABILITY_ZONE'|'SUBNET_NO_IPV6_CIDRS'|'VPN_CONNECTION_NOT_FOUND'|'MAXIMUM_NO_ENCAP_LIMIT_EXCEEDED'|null,
+     *     Message?: string|null,
+     *     ResourceArn?: string|null,
+     *     RequestId?: string|null
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

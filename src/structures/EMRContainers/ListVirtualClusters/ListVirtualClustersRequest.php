@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'RUNNING'|'TERMINATING'|'TERMINATED'|'ARRESTED'>|null $states
  * @property int|null $maxResults
  * @property string|null $nextToken
+ * @property bool|null $eksAccessEntryIntegrated
  */
 class ListVirtualClustersRequest extends Request
 {
@@ -23,7 +24,8 @@ class ListVirtualClustersRequest extends Request
      *     createdBefore?: \Aws\Api\DateTimeResult|null,
      *     states?: list<'RUNNING'|'TERMINATING'|'TERMINATED'|'ARRESTED'>|null,
      *     maxResults?: int|null,
-     *     nextToken?: string|null
+     *     nextToken?: string|null,
+     *     eksAccessEntryIntegrated?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

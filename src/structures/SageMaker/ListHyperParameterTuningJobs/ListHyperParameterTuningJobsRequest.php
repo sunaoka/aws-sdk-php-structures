@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $CreationTimeBefore
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTimeAfter
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTimeBefore
- * @property 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping'|null $StatusEquals
+ * @property 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping'|'Deleting'|'DeleteFailed'|null $StatusEquals
  */
 class ListHyperParameterTuningJobsRequest extends Request
 {
@@ -29,7 +29,7 @@ class ListHyperParameterTuningJobsRequest extends Request
      *     CreationTimeBefore?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedTimeAfter?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedTimeBefore?: \Aws\Api\DateTimeResult|null,
-     *     StatusEquals?: 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping'|null
+     *     StatusEquals?: 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping'|'Deleting'|'DeleteFailed'|null
      * } $args
      */
     public function __construct(array $args = [])

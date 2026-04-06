@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ComputationId
  * @property string|null $Name
- * @property DimensionField $Time
+ * @property DimensionField|null $Time
  * @property MeasureField|null $Value
  * @property int<1, 1000>|null $PeriodsForward
  * @property int<0, 1000>|null $PeriodsBackward
@@ -23,7 +23,7 @@ class ForecastComputation extends Shape
      * @param array{
      *     ComputationId: string,
      *     Name?: string|null,
-     *     Time: DimensionField,
+     *     Time?: DimensionField|null,
      *     Value?: MeasureField|null,
      *     PeriodsForward?: int<1, 1000>|null,
      *     PeriodsBackward?: int<0, 1000>|null,

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AVAILABLE'|'PENDING_DELETION'|'DELETED'|null $Status
  * @property \Aws\Api\DateTimeResult|null $CreationDate
  * @property string|null $Arn
+ * @property 'ETHEREUM_GOERLI'|'ETHEREUM_MAINNET'|'ETHEREUM_MAINNET_AND_GOERLI'|'POLYGON_MAINNET'|'POLYGON_MUMBAI'|null $NetworkType
  */
 class AccessorSummary extends Shape
 {
@@ -19,7 +20,8 @@ class AccessorSummary extends Shape
      *     Type?: 'BILLING_TOKEN'|null,
      *     Status?: 'AVAILABLE'|'PENDING_DELETION'|'DELETED'|null,
      *     CreationDate?: \Aws\Api\DateTimeResult|null,
-     *     Arn?: string|null
+     *     Arn?: string|null,
+     *     NetworkType?: 'ETHEREUM_GOERLI'|'ETHEREUM_MAINNET'|'ETHEREUM_MAINNET_AND_GOERLI'|'POLYGON_MAINNET'|'POLYGON_MUMBAI'|null
      * } $args
      */
     public function __construct(array $args = [])

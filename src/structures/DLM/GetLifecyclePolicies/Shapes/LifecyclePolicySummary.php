@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ENABLED'|'DISABLED'|'ERROR'|null $State
  * @property array<string, string>|null $Tags
  * @property 'EBS_SNAPSHOT_MANAGEMENT'|'IMAGE_MANAGEMENT'|'EVENT_BASED_POLICY'|null $PolicyType
+ * @property bool|null $DefaultPolicy
  */
 class LifecyclePolicySummary extends Shape
 {
@@ -19,7 +20,8 @@ class LifecyclePolicySummary extends Shape
      *     Description?: string|null,
      *     State?: 'ENABLED'|'DISABLED'|'ERROR'|null,
      *     Tags?: array<string, string>|null,
-     *     PolicyType?: 'EBS_SNAPSHOT_MANAGEMENT'|'IMAGE_MANAGEMENT'|'EVENT_BASED_POLICY'|null
+     *     PolicyType?: 'EBS_SNAPSHOT_MANAGEMENT'|'IMAGE_MANAGEMENT'|'EVENT_BASED_POLICY'|null,
+     *     DefaultPolicy?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

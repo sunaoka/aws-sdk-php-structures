@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AttributeBooleanValue|null $SourceDestCheck
  * @property Shapes\EnaSrdSpecification|null $EnaSrdSpecification
  * @property bool|null $EnablePrimaryIpv6
+ * @property Shapes\ConnectionTrackingSpecificationRequest|null $ConnectionTrackingSpecification
+ * @property bool|null $AssociatePublicIpAddress
  */
 class ModifyNetworkInterfaceAttributeRequest extends Request
 {
@@ -25,7 +27,9 @@ class ModifyNetworkInterfaceAttributeRequest extends Request
      *     NetworkInterfaceId: string,
      *     SourceDestCheck?: Shapes\AttributeBooleanValue|null,
      *     EnaSrdSpecification?: Shapes\EnaSrdSpecification|null,
-     *     EnablePrimaryIpv6?: bool|null
+     *     EnablePrimaryIpv6?: bool|null,
+     *     ConnectionTrackingSpecification?: Shapes\ConnectionTrackingSpecificationRequest|null,
+     *     AssociatePublicIpAddress?: bool|null
      * } $args
      */
     public function __construct(array $args)

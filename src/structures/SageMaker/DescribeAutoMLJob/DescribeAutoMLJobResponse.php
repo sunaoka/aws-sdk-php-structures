@@ -20,7 +20,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\AutoMLPartialFailureReason>|null $PartialFailureReasons
  * @property Shapes\AutoMLCandidate|null $BestCandidate
  * @property 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping' $AutoMLJobStatus
- * @property 'Starting'|'AnalyzingData'|'FeatureEngineering'|'ModelTuning'|'MaxCandidatesReached'|'Failed'|'Stopped'|'MaxAutoMLJobRuntimeReached'|'Stopping'|'CandidateDefinitionsGenerated'|'GeneratingExplainabilityReport'|'Completed'|'ExplainabilityError'|'DeployingModel'|'ModelDeploymentError'|'GeneratingModelInsightsReport'|'ModelInsightsError'|'TrainingModels'|'PreTraining' $AutoMLJobSecondaryStatus
+ * @property 'Starting'|'MaxCandidatesReached'|'Failed'|'Stopped'|'MaxAutoMLJobRuntimeReached'|'Stopping'|'CandidateDefinitionsGenerated'|'Completed'|'ExplainabilityError'|'DeployingModel'|'ModelDeploymentError'|'GeneratingModelInsightsReport'|'ModelInsightsError'|'AnalyzingData'|'FeatureEngineering'|'ModelTuning'|'GeneratingExplainabilityReport'|'TrainingModels'|'PreTraining' $AutoMLJobSecondaryStatus
  * @property bool|null $GenerateCandidateDefinitionsOnly
  * @property Shapes\AutoMLJobArtifacts|null $AutoMLJobArtifacts
  * @property Shapes\ResolvedAttributes|null $ResolvedAttributes

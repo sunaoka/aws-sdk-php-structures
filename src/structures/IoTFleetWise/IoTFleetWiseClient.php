@@ -22,6 +22,7 @@ class IoTFleetWiseClient extends \Aws\IoTFleetWise\IoTFleetWiseClient
     use DisassociateVehicleFleet\DisassociateVehicleFleetTrait;
     use GetCampaign\GetCampaignTrait;
     use GetDecoderManifest\GetDecoderManifestTrait;
+    use GetEncryptionConfiguration\GetEncryptionConfigurationTrait;
     use GetFleet\GetFleetTrait;
     use GetLoggingOptions\GetLoggingOptionsTrait;
     use GetModelManifest\GetModelManifestTrait;
@@ -44,6 +45,7 @@ class IoTFleetWiseClient extends \Aws\IoTFleetWise\IoTFleetWiseClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListVehicles\ListVehiclesTrait;
     use ListVehiclesInFleet\ListVehiclesInFleetTrait;
+    use PutEncryptionConfiguration\PutEncryptionConfigurationTrait;
     use PutLoggingOptions\PutLoggingOptionsTrait;
     use RegisterAccount\RegisterAccountTrait;
     use TagResource\TagResourceTrait;

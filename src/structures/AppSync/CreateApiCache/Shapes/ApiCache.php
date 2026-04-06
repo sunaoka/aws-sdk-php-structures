@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $atRestEncryptionEnabled
  * @property 'T2_SMALL'|'T2_MEDIUM'|'R4_LARGE'|'R4_XLARGE'|'R4_2XLARGE'|'R4_4XLARGE'|'R4_8XLARGE'|'SMALL'|'MEDIUM'|'LARGE'|'XLARGE'|'LARGE_2X'|'LARGE_4X'|'LARGE_8X'|'LARGE_12X'|null $type
  * @property 'AVAILABLE'|'CREATING'|'DELETING'|'MODIFYING'|'FAILED'|null $status
+ * @property 'ENABLED'|'DISABLED'|null $healthMetricsConfig
  */
 class ApiCache extends Shape
 {
@@ -21,7 +22,8 @@ class ApiCache extends Shape
      *     transitEncryptionEnabled?: bool|null,
      *     atRestEncryptionEnabled?: bool|null,
      *     type?: 'T2_SMALL'|'T2_MEDIUM'|'R4_LARGE'|'R4_XLARGE'|'R4_2XLARGE'|'R4_4XLARGE'|'R4_8XLARGE'|'SMALL'|'MEDIUM'|'LARGE'|'XLARGE'|'LARGE_2X'|'LARGE_4X'|'LARGE_8X'|'LARGE_12X'|null,
-     *     status?: 'AVAILABLE'|'CREATING'|'DELETING'|'MODIFYING'|'FAILED'|null
+     *     status?: 'AVAILABLE'|'CREATING'|'DELETING'|'MODIFYING'|'FAILED'|null,
+     *     healthMetricsConfig?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

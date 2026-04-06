@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ClusterConfigStatus|null $ClusterConfig
  * @property EBSOptionsStatus|null $EBSOptions
  * @property AccessPoliciesStatus|null $AccessPolicies
+ * @property IPAddressTypeStatus|null $IPAddressType
  * @property SnapshotOptionsStatus|null $SnapshotOptions
  * @property VPCDerivedInfoStatus|null $VPCOptions
  * @property CognitoOptionsStatus|null $CognitoOptions
@@ -22,6 +23,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ChangeProgressDetails|null $ChangeProgressDetails
  * @property OffPeakWindowOptionsStatus|null $OffPeakWindowOptions
  * @property SoftwareUpdateOptionsStatus|null $SoftwareUpdateOptions
+ * @property list<ModifyingProperties>|null $ModifyingProperties
+ * @property AIMLOptionsStatus|null $AIMLOptions
  */
 class DomainConfig extends Shape
 {
@@ -31,6 +34,7 @@ class DomainConfig extends Shape
      *     ClusterConfig?: ClusterConfigStatus|null,
      *     EBSOptions?: EBSOptionsStatus|null,
      *     AccessPolicies?: AccessPoliciesStatus|null,
+     *     IPAddressType?: IPAddressTypeStatus|null,
      *     SnapshotOptions?: SnapshotOptionsStatus|null,
      *     VPCOptions?: VPCDerivedInfoStatus|null,
      *     CognitoOptions?: CognitoOptionsStatus|null,
@@ -43,7 +47,9 @@ class DomainConfig extends Shape
      *     AutoTuneOptions?: AutoTuneOptionsStatus|null,
      *     ChangeProgressDetails?: ChangeProgressDetails|null,
      *     OffPeakWindowOptions?: OffPeakWindowOptionsStatus|null,
-     *     SoftwareUpdateOptions?: SoftwareUpdateOptionsStatus|null
+     *     SoftwareUpdateOptions?: SoftwareUpdateOptionsStatus|null,
+     *     ModifyingProperties?: list<ModifyingProperties>|null,
+     *     AIMLOptions?: AIMLOptionsStatus|null
      * } $args
      */
     public function __construct(array $args = [])

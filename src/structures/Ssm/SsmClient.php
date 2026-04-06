@@ -22,6 +22,7 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use DeleteDocument\DeleteDocumentTrait;
     use DeleteInventory\DeleteInventoryTrait;
     use DeleteMaintenanceWindow\DeleteMaintenanceWindowTrait;
+    use DeleteOpsItem\DeleteOpsItemTrait;
     use DeleteOpsMetadata\DeleteOpsMetadataTrait;
     use DeleteParameter\DeleteParameterTrait;
     use DeleteParameters\DeleteParametersTrait;
@@ -48,6 +49,7 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use DescribeInstancePatchStates\DescribeInstancePatchStatesTrait;
     use DescribeInstancePatchStatesForPatchGroup\DescribeInstancePatchStatesForPatchGroupTrait;
     use DescribeInstancePatches\DescribeInstancePatchesTrait;
+    use DescribeInstanceProperties\DescribeInstancePropertiesTrait;
     use DescribeInventoryDeletions\DescribeInventoryDeletionsTrait;
     use DescribeMaintenanceWindowExecutionTaskInvocations\DescribeMaintenanceWindowExecutionTaskInvocationsTrait;
     use DescribeMaintenanceWindowExecutionTasks\DescribeMaintenanceWindowExecutionTasksTrait;

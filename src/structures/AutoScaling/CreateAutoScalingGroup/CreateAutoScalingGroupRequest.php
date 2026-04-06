@@ -32,6 +32,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DesiredCapacityType
  * @property int|null $DefaultInstanceWarmup
  * @property list<Shapes\TrafficSourceIdentifier>|null $TrafficSources
+ * @property Shapes\InstanceMaintenancePolicy|null $InstanceMaintenancePolicy
  */
 class CreateAutoScalingGroupRequest extends Request
 {
@@ -63,7 +64,8 @@ class CreateAutoScalingGroupRequest extends Request
      *     Context?: string|null,
      *     DesiredCapacityType?: string|null,
      *     DefaultInstanceWarmup?: int|null,
-     *     TrafficSources?: list<Shapes\TrafficSourceIdentifier>|null
+     *     TrafficSources?: list<Shapes\TrafficSourceIdentifier>|null,
+     *     InstanceMaintenancePolicy?: Shapes\InstanceMaintenancePolicy|null
      * } $args
      */
     public function __construct(array $args)

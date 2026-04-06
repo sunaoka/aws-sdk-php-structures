@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $SkipArchive
  * @property string|null $TransactionId
  * @property string|null $VersionId
+ * @property 'ADD'|'REPLACE'|'ADD_OR_REPLACE'|'DROP'|null $ViewUpdateAction
+ * @property bool|null $Force
  */
 class UpdateTableRequest extends Request
 {
@@ -21,7 +23,9 @@ class UpdateTableRequest extends Request
      *     TableInput: Shapes\TableInput,
      *     SkipArchive?: bool|null,
      *     TransactionId?: string|null,
-     *     VersionId?: string|null
+     *     VersionId?: string|null,
+     *     ViewUpdateAction?: 'ADD'|'REPLACE'|'ADD_OR_REPLACE'|'DROP'|null,
+     *     Force?: bool|null
      * } $args
      */
     public function __construct(array $args)

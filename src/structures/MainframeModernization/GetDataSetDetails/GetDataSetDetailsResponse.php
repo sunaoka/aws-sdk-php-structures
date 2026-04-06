@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $creationTime
  * @property string $dataSetName
  * @property Shapes\DatasetDetailOrgAttributes|null $dataSetOrg
+ * @property int|null $fileSize
  * @property \Aws\Api\DateTimeResult|null $lastReferencedTime
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
  * @property string|null $location

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SseConfig|null $sseConfig
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property string|null $fallbackLocation
+ * @property 'MD5up'|'SHA256up'|'SHA512up'|null $eTagAlgorithmFamily
  */
 class SequenceStoreDetail extends Shape
 {
@@ -23,7 +24,8 @@ class SequenceStoreDetail extends Shape
      *     description?: string|null,
      *     sseConfig?: SseConfig|null,
      *     creationTime: \Aws\Api\DateTimeResult,
-     *     fallbackLocation?: string|null
+     *     fallbackLocation?: string|null,
+     *     eTagAlgorithmFamily?: 'MD5up'|'SHA256up'|'SHA512up'|null
      * } $args
      */
     public function __construct(array $args)

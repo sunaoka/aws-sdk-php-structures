@@ -27,6 +27,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ProfilerRuleConfiguration>|null $ProfilerRuleConfigurations
  * @property array<string, string>|null $Environment
  * @property Shapes\RetryStrategy|null $RetryStrategy
+ * @property Shapes\RemoteDebugConfig|null $RemoteDebugConfig
+ * @property Shapes\InfraCheckConfig|null $InfraCheckConfig
+ * @property Shapes\SessionChainingConfig|null $SessionChainingConfig
  */
 class CreateTrainingJobRequest extends Request
 {
@@ -53,7 +56,10 @@ class CreateTrainingJobRequest extends Request
      *     ProfilerConfig?: Shapes\ProfilerConfig|null,
      *     ProfilerRuleConfigurations?: list<Shapes\ProfilerRuleConfiguration>|null,
      *     Environment?: array<string, string>|null,
-     *     RetryStrategy?: Shapes\RetryStrategy|null
+     *     RetryStrategy?: Shapes\RetryStrategy|null,
+     *     RemoteDebugConfig?: Shapes\RemoteDebugConfig|null,
+     *     InfraCheckConfig?: Shapes\InfraCheckConfig|null,
+     *     SessionChainingConfig?: Shapes\SessionChainingConfig|null
      * } $args
      */
     public function __construct(array $args)

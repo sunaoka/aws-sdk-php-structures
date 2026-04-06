@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ComputationId
  * @property string|null $Name
- * @property DimensionField $Category
+ * @property DimensionField|null $Category
  */
 class UniqueValuesComputation extends Shape
 {
@@ -15,7 +15,7 @@ class UniqueValuesComputation extends Shape
      * @param array{
      *     ComputationId: string,
      *     Name?: string|null,
-     *     Category: DimensionField
+     *     Category?: DimensionField|null
      * } $args
      */
     public function __construct(array $args)

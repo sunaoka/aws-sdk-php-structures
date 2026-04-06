@@ -1,0 +1,25 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\SageMaker\CreateEndpointConfig\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property 'ENABLED'|'DISABLED'|null $Status
+ * @property int<1, max>|null $MinInstanceCount
+ * @property int<1, max>|null $MaxInstanceCount
+ */
+class ProductionVariantManagedInstanceScaling extends Shape
+{
+    /**
+     * @param array{
+     *     Status?: 'ENABLED'|'DISABLED'|null,
+     *     MinInstanceCount?: int<1, max>|null,
+     *     MaxInstanceCount?: int<1, max>|null
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

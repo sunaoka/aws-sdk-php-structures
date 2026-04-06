@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $action
+ * @property list<Shapes\Association>|null $associations
  * @property string $clientToken
  * @property string $deviceArn
  * @property string|null $deviceParameters
@@ -20,6 +21,7 @@ class CreateQuantumTaskRequest extends Request
     /**
      * @param array{
      *     action: string,
+     *     associations?: list<Shapes\Association>|null,
      *     clientToken: string,
      *     deviceArn: string,
      *     deviceParameters?: string|null,

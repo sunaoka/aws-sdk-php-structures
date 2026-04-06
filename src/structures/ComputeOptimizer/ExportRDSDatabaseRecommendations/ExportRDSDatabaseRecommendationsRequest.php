@@ -1,0 +1,33 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\ComputeOptimizer\ExportRDSDatabaseRecommendations;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property list<string>|null $accountIds
+ * @property list<Shapes\RDSDBRecommendationFilter>|null $filters
+ * @property list<'ResourceArn'|'AccountId'|'Engine'|'EngineVersion'|'Idle'|'MultiAZDBInstance'|'CurrentDBInstanceClass'|'CurrentStorageConfigurationStorageType'|'CurrentStorageConfigurationAllocatedStorage'|'CurrentStorageConfigurationMaxAllocatedStorage'|'CurrentStorageConfigurationIOPS'|'CurrentStorageConfigurationStorageThroughput'|'CurrentInstanceOnDemandHourlyPrice'|'CurrentStorageOnDemandMonthlyPrice'|'LookbackPeriodInDays'|'UtilizationMetricsCpuMaximum'|'UtilizationMetricsMemoryMaximum'|'UtilizationMetricsEBSVolumeStorageSpaceUtilizationMaximum'|'UtilizationMetricsNetworkReceiveThroughputMaximum'|'UtilizationMetricsNetworkTransmitThroughputMaximum'|'UtilizationMetricsEBSVolumeReadIOPSMaximum'|'UtilizationMetricsEBSVolumeWriteIOPSMaximum'|'UtilizationMetricsEBSVolumeReadThroughputMaximum'|'UtilizationMetricsEBSVolumeWriteThroughputMaximum'|'UtilizationMetricsDatabaseConnectionsMaximum'|'InstanceFinding'|'InstanceFindingReasonCodes'|'StorageFinding'|'StorageFindingReasonCodes'|'InstanceRecommendationOptionsDBInstanceClass'|'InstanceRecommendationOptionsRank'|'InstanceRecommendationOptionsPerformanceRisk'|'InstanceRecommendationOptionsProjectedUtilizationMetricsCpuMaximum'|'StorageRecommendationOptionsStorageType'|'StorageRecommendationOptionsAllocatedStorage'|'StorageRecommendationOptionsMaxAllocatedStorage'|'StorageRecommendationOptionsIOPS'|'StorageRecommendationOptionsStorageThroughput'|'StorageRecommendationOptionsRank'|'InstanceRecommendationOptionsInstanceOnDemandHourlyPrice'|'InstanceRecommendationOptionsSavingsOpportunityPercentage'|'InstanceRecommendationOptionsEstimatedMonthlySavingsCurrency'|'InstanceRecommendationOptionsEstimatedMonthlySavingsValue'|'InstanceRecommendationOptionsSavingsOpportunityAfterDiscountsPercentage'|'InstanceRecommendationOptionsEstimatedMonthlySavingsCurrencyAfterDiscounts'|'InstanceRecommendationOptionsEstimatedMonthlySavingsValueAfterDiscounts'|'StorageRecommendationOptionsOnDemandMonthlyPrice'|'StorageRecommendationOptionsSavingsOpportunityPercentage'|'StorageRecommendationOptionsEstimatedMonthlySavingsCurrency'|'StorageRecommendationOptionsEstimatedMonthlySavingsValue'|'StorageRecommendationOptionsSavingsOpportunityAfterDiscountsPercentage'|'StorageRecommendationOptionsEstimatedMonthlySavingsCurrencyAfterDiscounts'|'StorageRecommendationOptionsEstimatedMonthlySavingsValueAfterDiscounts'|'EffectiveRecommendationPreferencesCpuVendorArchitectures'|'EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics'|'EffectiveRecommendationPreferencesLookBackPeriod'|'EffectiveRecommendationPreferencesSavingsEstimationMode'|'LastRefreshTimestamp'|'Tags'>|null $fieldsToExport
+ * @property Shapes\S3DestinationConfig $s3DestinationConfig
+ * @property 'Csv'|null $fileFormat
+ * @property bool|null $includeMemberAccounts
+ * @property Shapes\RecommendationPreferences|null $recommendationPreferences
+ */
+class ExportRDSDatabaseRecommendationsRequest extends Request
+{
+    /**
+     * @param array{
+     *     accountIds?: list<string>|null,
+     *     filters?: list<Shapes\RDSDBRecommendationFilter>|null,
+     *     fieldsToExport?: list<'ResourceArn'|'AccountId'|'Engine'|'EngineVersion'|'Idle'|'MultiAZDBInstance'|'CurrentDBInstanceClass'|'CurrentStorageConfigurationStorageType'|'CurrentStorageConfigurationAllocatedStorage'|'CurrentStorageConfigurationMaxAllocatedStorage'|'CurrentStorageConfigurationIOPS'|'CurrentStorageConfigurationStorageThroughput'|'CurrentInstanceOnDemandHourlyPrice'|'CurrentStorageOnDemandMonthlyPrice'|'LookbackPeriodInDays'|'UtilizationMetricsCpuMaximum'|'UtilizationMetricsMemoryMaximum'|'UtilizationMetricsEBSVolumeStorageSpaceUtilizationMaximum'|'UtilizationMetricsNetworkReceiveThroughputMaximum'|'UtilizationMetricsNetworkTransmitThroughputMaximum'|'UtilizationMetricsEBSVolumeReadIOPSMaximum'|'UtilizationMetricsEBSVolumeWriteIOPSMaximum'|'UtilizationMetricsEBSVolumeReadThroughputMaximum'|'UtilizationMetricsEBSVolumeWriteThroughputMaximum'|'UtilizationMetricsDatabaseConnectionsMaximum'|'InstanceFinding'|'InstanceFindingReasonCodes'|'StorageFinding'|'StorageFindingReasonCodes'|'InstanceRecommendationOptionsDBInstanceClass'|'InstanceRecommendationOptionsRank'|'InstanceRecommendationOptionsPerformanceRisk'|'InstanceRecommendationOptionsProjectedUtilizationMetricsCpuMaximum'|'StorageRecommendationOptionsStorageType'|'StorageRecommendationOptionsAllocatedStorage'|'StorageRecommendationOptionsMaxAllocatedStorage'|'StorageRecommendationOptionsIOPS'|'StorageRecommendationOptionsStorageThroughput'|'StorageRecommendationOptionsRank'|'InstanceRecommendationOptionsInstanceOnDemandHourlyPrice'|'InstanceRecommendationOptionsSavingsOpportunityPercentage'|'InstanceRecommendationOptionsEstimatedMonthlySavingsCurrency'|'InstanceRecommendationOptionsEstimatedMonthlySavingsValue'|'InstanceRecommendationOptionsSavingsOpportunityAfterDiscountsPercentage'|'InstanceRecommendationOptionsEstimatedMonthlySavingsCurrencyAfterDiscounts'|'InstanceRecommendationOptionsEstimatedMonthlySavingsValueAfterDiscounts'|'StorageRecommendationOptionsOnDemandMonthlyPrice'|'StorageRecommendationOptionsSavingsOpportunityPercentage'|'StorageRecommendationOptionsEstimatedMonthlySavingsCurrency'|'StorageRecommendationOptionsEstimatedMonthlySavingsValue'|'StorageRecommendationOptionsSavingsOpportunityAfterDiscountsPercentage'|'StorageRecommendationOptionsEstimatedMonthlySavingsCurrencyAfterDiscounts'|'StorageRecommendationOptionsEstimatedMonthlySavingsValueAfterDiscounts'|'EffectiveRecommendationPreferencesCpuVendorArchitectures'|'EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics'|'EffectiveRecommendationPreferencesLookBackPeriod'|'EffectiveRecommendationPreferencesSavingsEstimationMode'|'LastRefreshTimestamp'|'Tags'>|null,
+     *     s3DestinationConfig: Shapes\S3DestinationConfig,
+     *     fileFormat?: 'Csv'|null,
+     *     includeMemberAccounts?: bool|null,
+     *     recommendationPreferences?: Shapes\RecommendationPreferences|null
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

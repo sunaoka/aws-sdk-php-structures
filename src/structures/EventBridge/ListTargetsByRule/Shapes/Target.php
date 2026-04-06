@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SageMakerPipelineParameters|null $SageMakerPipelineParameters
  * @property DeadLetterConfig|null $DeadLetterConfig
  * @property RetryPolicy|null $RetryPolicy
+ * @property AppSyncParameters|null $AppSyncParameters
  */
 class Target extends Shape
 {
@@ -41,7 +42,8 @@ class Target extends Shape
      *     RedshiftDataParameters?: RedshiftDataParameters|null,
      *     SageMakerPipelineParameters?: SageMakerPipelineParameters|null,
      *     DeadLetterConfig?: DeadLetterConfig|null,
-     *     RetryPolicy?: RetryPolicy|null
+     *     RetryPolicy?: RetryPolicy|null,
+     *     AppSyncParameters?: AppSyncParameters|null
      * } $args
      */
     public function __construct(array $args)

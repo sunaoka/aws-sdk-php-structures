@@ -5,6 +5,8 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\RestoreFromSnapshot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $adminPasswordSecretArn
+ * @property string|null $adminPasswordSecretKmsKeyId
  * @property string|null $adminUsername
  * @property \Aws\Api\DateTimeResult|null $creationDate
  * @property string|null $dbName
@@ -21,6 +23,8 @@ class NamespaceShape extends Shape
 {
     /**
      * @param array{
+     *     adminPasswordSecretArn?: string|null,
+     *     adminPasswordSecretKmsKeyId?: string|null,
      *     adminUsername?: string|null,
      *     creationDate?: \Aws\Api\DateTimeResult|null,
      *     dbName?: string|null,

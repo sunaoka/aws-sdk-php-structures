@@ -26,6 +26,7 @@ class DataExchangeClient extends \Aws\DataExchange\DataExchangeClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use RevokeRevision\RevokeRevisionTrait;
     use SendApiAsset\SendApiAssetTrait;
+    use SendDataSetNotification\SendDataSetNotificationTrait;
     use StartJob\StartJobTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;

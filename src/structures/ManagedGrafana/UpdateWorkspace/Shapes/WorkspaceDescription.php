@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $endpoint
  * @property bool|null $freeTrialConsumed
  * @property \Aws\Api\DateTimeResult|null $freeTrialExpiration
+ * @property string|null $grafanaToken
  * @property string $grafanaVersion
  * @property string $id
  * @property \Aws\Api\DateTimeResult|null $licenseExpiration
@@ -42,6 +43,7 @@ class WorkspaceDescription extends Shape
      *     endpoint: string,
      *     freeTrialConsumed?: bool|null,
      *     freeTrialExpiration?: \Aws\Api\DateTimeResult|null,
+     *     grafanaToken?: string|null,
      *     grafanaVersion: string,
      *     id: string,
      *     licenseExpiration?: \Aws\Api\DateTimeResult|null,

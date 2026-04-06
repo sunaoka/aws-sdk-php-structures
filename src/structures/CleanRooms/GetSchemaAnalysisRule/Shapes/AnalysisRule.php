@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $collaborationId
- * @property 'AGGREGATION'|'LIST'|'CUSTOM' $type
+ * @property 'AGGREGATION'|'LIST'|'CUSTOM'|'ID_MAPPING_TABLE' $type
  * @property string $name
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
@@ -17,7 +17,7 @@ class AnalysisRule extends Shape
     /**
      * @param array{
      *     collaborationId: string,
-     *     type: 'AGGREGATION'|'LIST'|'CUSTOM',
+     *     type: 'AGGREGATION'|'LIST'|'CUSTOM'|'ID_MAPPING_TABLE',
      *     name: string,
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,

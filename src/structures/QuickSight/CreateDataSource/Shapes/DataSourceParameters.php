@@ -28,6 +28,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AmazonOpenSearchParameters|null $AmazonOpenSearchParameters
  * @property ExasolParameters|null $ExasolParameters
  * @property DatabricksParameters|null $DatabricksParameters
+ * @property StarburstParameters|null $StarburstParameters
+ * @property TrinoParameters|null $TrinoParameters
+ * @property BigQueryParameters|null $BigQueryParameters
  */
 class DataSourceParameters extends Shape
 {
@@ -55,7 +58,10 @@ class DataSourceParameters extends Shape
      *     TwitterParameters?: TwitterParameters|null,
      *     AmazonOpenSearchParameters?: AmazonOpenSearchParameters|null,
      *     ExasolParameters?: ExasolParameters|null,
-     *     DatabricksParameters?: DatabricksParameters|null
+     *     DatabricksParameters?: DatabricksParameters|null,
+     *     StarburstParameters?: StarburstParameters|null,
+     *     TrinoParameters?: TrinoParameters|null,
+     *     BigQueryParameters?: BigQueryParameters|null
      * } $args
      */
     public function __construct(array $args = [])

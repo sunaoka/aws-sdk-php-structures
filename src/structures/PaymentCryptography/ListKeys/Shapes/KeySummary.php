@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\PaymentCryptography\ListKeys\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property bool $Exportable
  * @property string $KeyArn
+ * @property 'CREATE_IN_PROGRESS'|'CREATE_COMPLETE'|'DELETE_PENDING'|'DELETE_COMPLETE' $KeyState
  * @property KeyAttributes $KeyAttributes
  * @property string $KeyCheckValue
- * @property 'CREATE_IN_PROGRESS'|'CREATE_COMPLETE'|'DELETE_PENDING'|'DELETE_COMPLETE' $KeyState
+ * @property bool $Exportable
+ * @property bool $Enabled
  */
 class KeySummary extends Shape
 {
     /**
      * @param array{
-     *     Enabled: bool,
-     *     Exportable: bool,
      *     KeyArn: string,
+     *     KeyState: 'CREATE_IN_PROGRESS'|'CREATE_COMPLETE'|'DELETE_PENDING'|'DELETE_COMPLETE',
      *     KeyAttributes: KeyAttributes,
      *     KeyCheckValue: string,
-     *     KeyState: 'CREATE_IN_PROGRESS'|'CREATE_COMPLETE'|'DELETE_PENDING'|'DELETE_COMPLETE'
+     *     Exportable: bool,
+     *     Enabled: bool
      * } $args
      */
     public function __construct(array $args)

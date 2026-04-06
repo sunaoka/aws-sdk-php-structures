@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property list<Shapes\AdBreak>|null $AdBreaks
  * @property string|null $Arn
+ * @property list<Shapes\AudienceMedia>|null $AudienceMedia
  * @property string|null $ChannelName
  * @property Shapes\ClipRange|null $ClipRange
  * @property \Aws\Api\DateTimeResult|null $CreationTime

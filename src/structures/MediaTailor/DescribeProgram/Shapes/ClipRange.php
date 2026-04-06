@@ -5,14 +5,18 @@ namespace Sunaoka\Aws\Structures\MediaTailor\DescribeProgram\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $EndOffsetMillis
+ * @property int|null $EndOffsetMillis
+ * @property int|null $StartOffsetMillis
  */
 class ClipRange extends Shape
 {
     /**
-     * @param array{EndOffsetMillis: int} $args
+     * @param array{
+     *     EndOffsetMillis?: int|null,
+     *     StartOffsetMillis?: int|null
+     * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $Accept
  * @property bool|null $DryRun
  * @property string|null $AdditionalInfo
+ * @property 'open'|'targeted'|null $InstanceMatchCriteria
  */
 class ModifyCapacityReservationRequest extends Request
 {
@@ -23,7 +24,8 @@ class ModifyCapacityReservationRequest extends Request
      *     EndDateType?: 'unlimited'|'limited'|null,
      *     Accept?: bool|null,
      *     DryRun?: bool|null,
-     *     AdditionalInfo?: string|null
+     *     AdditionalInfo?: string|null,
+     *     InstanceMatchCriteria?: 'open'|'targeted'|null
      * } $args
      */
     public function __construct(array $args)

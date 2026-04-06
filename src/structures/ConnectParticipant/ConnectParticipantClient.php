@@ -6,6 +6,7 @@ class ConnectParticipantClient extends \Aws\ConnectParticipant\ConnectParticipan
 {
     use CompleteAttachmentUpload\CompleteAttachmentUploadTrait;
     use CreateParticipantConnection\CreateParticipantConnectionTrait;
+    use DescribeView\DescribeViewTrait;
     use DisconnectParticipant\DisconnectParticipantTrait;
     use GetAttachment\GetAttachmentTrait;
     use GetTranscript\GetTranscriptTrait;

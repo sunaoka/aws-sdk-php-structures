@@ -24,6 +24,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $totalExecutionDurationSeconds
  * @property int<0, 1000000>|null $executionTimeoutMinutes
  * @property ResourceUtilization|null $billedResourceUtilization
+ * @property 'BATCH'|'STREAMING'|null $mode
+ * @property RetryPolicy|null $retryPolicy
+ * @property int<1, max>|null $attempt
+ * @property \Aws\Api\DateTimeResult|null $attemptCreatedAt
+ * @property \Aws\Api\DateTimeResult|null $attemptUpdatedAt
  */
 class JobRun extends Shape
 {
@@ -47,7 +52,12 @@ class JobRun extends Shape
      *     networkConfiguration?: NetworkConfiguration|null,
      *     totalExecutionDurationSeconds?: int|null,
      *     executionTimeoutMinutes?: int<0, 1000000>|null,
-     *     billedResourceUtilization?: ResourceUtilization|null
+     *     billedResourceUtilization?: ResourceUtilization|null,
+     *     mode?: 'BATCH'|'STREAMING'|null,
+     *     retryPolicy?: RetryPolicy|null,
+     *     attempt?: int<1, max>|null,
+     *     attemptCreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     attemptUpdatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

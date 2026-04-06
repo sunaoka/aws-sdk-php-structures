@@ -22,6 +22,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TimedMetadataPid
  * @property int<0, 65535>|null $TransportStreamId
  * @property string|null $VideoPid
+ * @property 'NO_PASSTHROUGH'|'PASSTHROUGH'|null $KlvBehavior
+ * @property string|null $KlvDataPids
  */
 class M3u8Settings extends Shape
 {
@@ -43,7 +45,9 @@ class M3u8Settings extends Shape
      *     TimedMetadataBehavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH'|null,
      *     TimedMetadataPid?: string|null,
      *     TransportStreamId?: int<0, 65535>|null,
-     *     VideoPid?: string|null
+     *     VideoPid?: string|null,
+     *     KlvBehavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH'|null,
+     *     KlvDataPids?: string|null
      * } $args
      */
     public function __construct(array $args = [])

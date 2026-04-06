@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $namespaceName
  * @property string|null $newTableName
  * @property int|null $progressInMegaBytes
+ * @property string|null $recoveryPointId
  * @property \Aws\Api\DateTimeResult|null $requestTime
  * @property string|null $snapshotName
  * @property string|null $sourceDatabaseName
@@ -29,6 +30,7 @@ class TableRestoreStatus extends Shape
      *     namespaceName?: string|null,
      *     newTableName?: string|null,
      *     progressInMegaBytes?: int|null,
+     *     recoveryPointId?: string|null,
      *     requestTime?: \Aws\Api\DateTimeResult|null,
      *     snapshotName?: string|null,
      *     sourceDatabaseName?: string|null,

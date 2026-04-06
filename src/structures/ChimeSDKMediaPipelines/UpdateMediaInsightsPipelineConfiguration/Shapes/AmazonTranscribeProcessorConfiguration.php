@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LanguageModelName
  * @property bool|null $FilterPartialResults
  * @property bool|null $IdentifyLanguage
+ * @property bool|null $IdentifyMultipleLanguages
  * @property string|null $LanguageOptions
  * @property 'en-US'|'en-GB'|'es-US'|'fr-CA'|'fr-FR'|'en-AU'|'it-IT'|'de-DE'|'pt-BR'|null $PreferredLanguage
  * @property string|null $VocabularyNames
@@ -40,6 +41,7 @@ class AmazonTranscribeProcessorConfiguration extends Shape
      *     LanguageModelName?: string|null,
      *     FilterPartialResults?: bool|null,
      *     IdentifyLanguage?: bool|null,
+     *     IdentifyMultipleLanguages?: bool|null,
      *     LanguageOptions?: string|null,
      *     PreferredLanguage?: 'en-US'|'en-GB'|'es-US'|'fr-CA'|'fr-FR'|'en-AU'|'it-IT'|'de-DE'|'pt-BR'|null,
      *     VocabularyNames?: string|null,

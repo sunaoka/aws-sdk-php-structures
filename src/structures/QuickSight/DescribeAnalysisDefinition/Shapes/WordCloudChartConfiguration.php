@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property WordCloudSortConfiguration|null $SortConfiguration
  * @property ChartAxisLabelOptions|null $CategoryLabelOptions
  * @property WordCloudOptions|null $WordCloudOptions
+ * @property VisualInteractionOptions|null $Interactions
  */
 class WordCloudChartConfiguration extends Shape
 {
@@ -17,7 +18,8 @@ class WordCloudChartConfiguration extends Shape
      *     FieldWells?: WordCloudFieldWells|null,
      *     SortConfiguration?: WordCloudSortConfiguration|null,
      *     CategoryLabelOptions?: ChartAxisLabelOptions|null,
-     *     WordCloudOptions?: WordCloudOptions|null
+     *     WordCloudOptions?: WordCloudOptions|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

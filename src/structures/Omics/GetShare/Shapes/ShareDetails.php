@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $shareId
  * @property string|null $resourceArn
+ * @property string|null $resourceId
  * @property string|null $principalSubscriber
  * @property string|null $ownerId
  * @property 'PENDING'|'ACTIVATING'|'ACTIVE'|'DELETING'|'DELETED'|'FAILED'|null $status
@@ -21,6 +22,7 @@ class ShareDetails extends Shape
      * @param array{
      *     shareId?: string|null,
      *     resourceArn?: string|null,
+     *     resourceId?: string|null,
      *     principalSubscriber?: string|null,
      *     ownerId?: string|null,
      *     status?: 'PENDING'|'ACTIVATING'|'ACTIVE'|'DELETING'|'DELETED'|'FAILED'|null,

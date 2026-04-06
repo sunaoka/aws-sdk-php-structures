@@ -87,6 +87,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CertificateDetails|null $CertificateDetails
  * @property string|null $ReadReplicaSourceDBClusterIdentifier
  * @property string|null $PercentProgress
+ * @property bool|null $DedicatedLogVolume
+ * @property bool|null $IsStorageConfigUpgradeAvailable
+ * @property bool|null $MultiTenant
+ * @property string|null $EngineLifecycleSupport
  */
 class DBInstance extends Shape
 {
@@ -173,7 +177,11 @@ class DBInstance extends Shape
      *     MasterUserSecret?: MasterUserSecret|null,
      *     CertificateDetails?: CertificateDetails|null,
      *     ReadReplicaSourceDBClusterIdentifier?: string|null,
-     *     PercentProgress?: string|null
+     *     PercentProgress?: string|null,
+     *     DedicatedLogVolume?: bool|null,
+     *     IsStorageConfigUpgradeAvailable?: bool|null,
+     *     MultiTenant?: bool|null,
+     *     EngineLifecycleSupport?: string|null
      * } $args
      */
     public function __construct(array $args = [])

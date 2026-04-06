@@ -21,9 +21,11 @@ class KinesisAnalyticsV2Client extends \Aws\KinesisAnalyticsV2\KinesisAnalyticsV
     use DeleteApplicationSnapshot\DeleteApplicationSnapshotTrait;
     use DeleteApplicationVpcConfiguration\DeleteApplicationVpcConfigurationTrait;
     use DescribeApplication\DescribeApplicationTrait;
+    use DescribeApplicationOperation\DescribeApplicationOperationTrait;
     use DescribeApplicationSnapshot\DescribeApplicationSnapshotTrait;
     use DescribeApplicationVersion\DescribeApplicationVersionTrait;
     use DiscoverInputSchema\DiscoverInputSchemaTrait;
+    use ListApplicationOperations\ListApplicationOperationsTrait;
     use ListApplicationSnapshots\ListApplicationSnapshotsTrait;
     use ListApplicationVersions\ListApplicationVersionsTrait;
     use ListApplications\ListApplicationsTrait;

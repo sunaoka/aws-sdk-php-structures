@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<FilterGroup>|null $FilterGroups
  * @property list<ColumnConfiguration>|null $ColumnConfigurations
  * @property AnalysisDefaults|null $AnalysisDefaults
+ * @property AssetOptions|null $Options
  */
 class DashboardVersionDefinition extends Shape
 {
@@ -23,7 +24,8 @@ class DashboardVersionDefinition extends Shape
      *     ParameterDeclarations?: list<ParameterDeclaration>|null,
      *     FilterGroups?: list<FilterGroup>|null,
      *     ColumnConfigurations?: list<ColumnConfiguration>|null,
-     *     AnalysisDefaults?: AnalysisDefaults|null
+     *     AnalysisDefaults?: AnalysisDefaults|null,
+     *     Options?: AssetOptions|null
      * } $args
      */
     public function __construct(array $args)

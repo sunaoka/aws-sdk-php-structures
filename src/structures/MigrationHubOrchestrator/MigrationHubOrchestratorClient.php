@@ -4,9 +4,11 @@ namespace Sunaoka\Aws\Structures\MigrationHubOrchestrator;
 
 class MigrationHubOrchestratorClient extends \Aws\MigrationHubOrchestrator\MigrationHubOrchestratorClient
 {
+    use CreateTemplate\CreateTemplateTrait;
     use CreateWorkflow\CreateWorkflowTrait;
     use CreateWorkflowStep\CreateWorkflowStepTrait;
     use CreateWorkflowStepGroup\CreateWorkflowStepGroupTrait;
+    use DeleteTemplate\DeleteTemplateTrait;
     use DeleteWorkflow\DeleteWorkflowTrait;
     use DeleteWorkflowStep\DeleteWorkflowStepTrait;
     use DeleteWorkflowStepGroup\DeleteWorkflowStepGroupTrait;
@@ -29,6 +31,7 @@ class MigrationHubOrchestratorClient extends \Aws\MigrationHubOrchestrator\Migra
     use StopWorkflow\StopWorkflowTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateTemplate\UpdateTemplateTrait;
     use UpdateWorkflow\UpdateWorkflowTrait;
     use UpdateWorkflowStep\UpdateWorkflowStepTrait;
     use UpdateWorkflowStepGroup\UpdateWorkflowStepGroupTrait;

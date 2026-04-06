@@ -8,6 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $S3Uri
  * @property 'S3Prefix'|'S3Object' $S3DataType
  * @property 'None'|'Gzip' $CompressionType
+ * @property ModelAccessConfig|null $ModelAccessConfig
+ * @property InferenceHubAccessConfig|null $HubAccessConfig
  */
 class S3ModelDataSource extends Shape
 {
@@ -15,7 +17,9 @@ class S3ModelDataSource extends Shape
      * @param array{
      *     S3Uri: string,
      *     S3DataType: 'S3Prefix'|'S3Object',
-     *     CompressionType: 'None'|'Gzip'
+     *     CompressionType: 'None'|'Gzip',
+     *     ModelAccessConfig?: ModelAccessConfig|null,
+     *     HubAccessConfig?: InferenceHubAccessConfig|null
      * } $args
      */
     public function __construct(array $args)

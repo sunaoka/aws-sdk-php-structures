@@ -1,0 +1,31 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\InternetMonitor\StartQuery;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property string $MonitorName
+ * @property \Aws\Api\DateTimeResult $StartTime
+ * @property \Aws\Api\DateTimeResult $EndTime
+ * @property 'MEASUREMENTS'|'TOP_LOCATIONS'|'TOP_LOCATION_DETAILS' $QueryType
+ * @property list<Shapes\FilterParameter>|null $FilterParameters
+ * @property string|null $LinkedAccountId
+ */
+class StartQueryRequest extends Request
+{
+    /**
+     * @param array{
+     *     MonitorName: string,
+     *     StartTime: \Aws\Api\DateTimeResult,
+     *     EndTime: \Aws\Api\DateTimeResult,
+     *     QueryType: 'MEASUREMENTS'|'TOP_LOCATIONS'|'TOP_LOCATION_DETAILS',
+     *     FilterParameters?: list<Shapes\FilterParameter>|null,
+     *     LinkedAccountId?: string|null
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

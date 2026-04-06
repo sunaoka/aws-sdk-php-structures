@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $CreationTime
  * @property int|null $LastModifiedTime
  * @property int<0, max>|null $AssociationSize
+ * @property string|null $AccountId
  */
 class CustomLineItemListElement extends Shape
 {
@@ -29,7 +30,8 @@ class CustomLineItemListElement extends Shape
      *     BillingGroupArn?: string|null,
      *     CreationTime?: int|null,
      *     LastModifiedTime?: int|null,
-     *     AssociationSize?: int<0, max>|null
+     *     AssociationSize?: int<0, max>|null,
+     *     AccountId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

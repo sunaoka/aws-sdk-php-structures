@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CreatorRequestId
  * @property string|null $CreationTime
  * @property string|null $ModificationTime
+ * @property 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN'|null $FirewallDomainRedirectionAction
+ * @property string|null $Qtype
  */
 class FirewallRule extends Shape
 {
@@ -33,7 +35,9 @@ class FirewallRule extends Shape
      *     BlockOverrideTtl?: int|null,
      *     CreatorRequestId?: string|null,
      *     CreationTime?: string|null,
-     *     ModificationTime?: string|null
+     *     ModificationTime?: string|null,
+     *     FirewallDomainRedirectionAction?: 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN'|null,
+     *     Qtype?: string|null
      * } $args
      */
     public function __construct(array $args = [])

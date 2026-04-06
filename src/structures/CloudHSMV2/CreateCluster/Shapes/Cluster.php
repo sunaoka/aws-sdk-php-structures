@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VpcId
  * @property Certificates|null $Certificates
  * @property list<Tag>|null $TagList
+ * @property 'FIPS'|'NON_FIPS'|null $Mode
  */
 class Cluster extends Shape
 {
@@ -39,7 +40,8 @@ class Cluster extends Shape
      *     SubnetMapping?: array<string, string>|null,
      *     VpcId?: string|null,
      *     Certificates?: Certificates|null,
-     *     TagList?: list<Tag>|null
+     *     TagList?: list<Tag>|null,
+     *     Mode?: 'FIPS'|'NON_FIPS'|null
      * } $args
      */
     public function __construct(array $args = [])

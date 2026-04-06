@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property string|null $membershipId
  * @property string|null $membershipArn
+ * @property PaymentConfiguration $paymentConfiguration
  */
 class MemberSummary extends Shape
 {
@@ -25,7 +26,8 @@ class MemberSummary extends Shape
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
      *     membershipId?: string|null,
-     *     membershipArn?: string|null
+     *     membershipArn?: string|null,
+     *     paymentConfiguration: PaymentConfiguration
      * } $args
      */
     public function __construct(array $args)

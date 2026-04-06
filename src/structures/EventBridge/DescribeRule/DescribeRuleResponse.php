@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Arn
  * @property string|null $EventPattern
  * @property string|null $ScheduleExpression
- * @property 'ENABLED'|'DISABLED'|null $State
+ * @property 'ENABLED'|'DISABLED'|'ENABLED_WITH_ALL_CLOUDTRAIL_MANAGEMENT_EVENTS'|null $State
  * @property string|null $Description
  * @property string|null $RoleArn
  * @property string|null $ManagedBy

@@ -1,0 +1,29 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\MediaConvert\SearchJobs\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string|null $CertificateArn
+ * @property list<string>|null $DashSignaledSystemIds
+ * @property list<string>|null $HlsSignaledSystemIds
+ * @property string|null $ResourceId
+ * @property string|null $Url
+ */
+class SpekeKeyProviderCmaf extends Shape
+{
+    /**
+     * @param array{
+     *     CertificateArn?: string|null,
+     *     DashSignaledSystemIds?: list<string>|null,
+     *     HlsSignaledSystemIds?: list<string>|null,
+     *     ResourceId?: string|null,
+     *     Url?: string|null
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

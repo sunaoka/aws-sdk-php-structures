@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'ENDPOINT'|'AWS_MANAGED'|'CUSTOMER_MANAGED'|null $domainType
  * @property \Aws\Api\DateTimeResult|null $lastStatusChangeDate
  * @property Shapes\TlsConfig|null $tlsConfig
+ * @property Shapes\ServerCertificateConfig|null $serverCertificateConfig
  */
 class DescribeDomainConfigurationResponse extends Response
 {

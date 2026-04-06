@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $accountID
- * @property 'LEGACY_BIOS'|'UEFI'|null $bootMode
+ * @property 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE'|null $bootMode
  * @property bool|null $copyPrivateIp
  * @property bool|null $copyTags
  * @property bool|null $enableMapAutoTagging
@@ -23,7 +23,7 @@ class UpdateLaunchConfigurationRequest extends Request
     /**
      * @param array{
      *     accountID?: string|null,
-     *     bootMode?: 'LEGACY_BIOS'|'UEFI'|null,
+     *     bootMode?: 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE'|null,
      *     copyPrivateIp?: bool|null,
      *     copyTags?: bool|null,
      *     enableMapAutoTagging?: bool|null,

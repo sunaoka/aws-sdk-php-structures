@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DocumentVersion
  * @property \Aws\Api\DateTimeResult|null $ExecutionStartTime
  * @property \Aws\Api\DateTimeResult|null $ExecutionEndTime
- * @property 'Pending'|'InProgress'|'Waiting'|'Success'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'PendingApproval'|'Approved'|'Rejected'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'CompletedWithSuccess'|'CompletedWithFailure'|null $AutomationExecutionStatus
+ * @property 'Pending'|'InProgress'|'Waiting'|'Success'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'PendingApproval'|'Approved'|'Rejected'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'CompletedWithSuccess'|'CompletedWithFailure'|'Exited'|null $AutomationExecutionStatus
  * @property list<StepExecution>|null $StepExecutions
  * @property bool|null $StepExecutionsTruncated
  * @property array<string, list<string>>|null $Parameters
@@ -38,6 +38,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $OpsItemId
  * @property string|null $AssociationId
  * @property string|null $ChangeRequestName
+ * @property array<string, list<string>>|null $Variables
  */
 class AutomationExecution extends Shape
 {
@@ -48,7 +49,7 @@ class AutomationExecution extends Shape
      *     DocumentVersion?: string|null,
      *     ExecutionStartTime?: \Aws\Api\DateTimeResult|null,
      *     ExecutionEndTime?: \Aws\Api\DateTimeResult|null,
-     *     AutomationExecutionStatus?: 'Pending'|'InProgress'|'Waiting'|'Success'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'PendingApproval'|'Approved'|'Rejected'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'CompletedWithSuccess'|'CompletedWithFailure'|null,
+     *     AutomationExecutionStatus?: 'Pending'|'InProgress'|'Waiting'|'Success'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'PendingApproval'|'Approved'|'Rejected'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'CompletedWithSuccess'|'CompletedWithFailure'|'Exited'|null,
      *     StepExecutions?: list<StepExecution>|null,
      *     StepExecutionsTruncated?: bool|null,
      *     Parameters?: array<string, list<string>>|null,
@@ -75,7 +76,8 @@ class AutomationExecution extends Shape
      *     Runbooks?: list<Runbook>|null,
      *     OpsItemId?: string|null,
      *     AssociationId?: string|null,
-     *     ChangeRequestName?: string|null
+     *     ChangeRequestName?: string|null,
+     *     Variables?: array<string, list<string>>|null
      * } $args
      */
     public function __construct(array $args = [])

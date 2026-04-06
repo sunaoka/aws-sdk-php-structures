@@ -13,6 +13,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AsyncInferenceConfig|null $AsyncInferenceConfig
  * @property Shapes\ExplainerConfig|null $ExplainerConfig
  * @property list<Shapes\ProductionVariant>|null $ShadowProductionVariants
+ * @property string|null $ExecutionRoleArn
+ * @property Shapes\VpcConfig|null $VpcConfig
+ * @property bool|null $EnableNetworkIsolation
  */
 class CreateEndpointConfigRequest extends Request
 {
@@ -25,7 +28,10 @@ class CreateEndpointConfigRequest extends Request
      *     KmsKeyId?: string|null,
      *     AsyncInferenceConfig?: Shapes\AsyncInferenceConfig|null,
      *     ExplainerConfig?: Shapes\ExplainerConfig|null,
-     *     ShadowProductionVariants?: list<Shapes\ProductionVariant>|null
+     *     ShadowProductionVariants?: list<Shapes\ProductionVariant>|null,
+     *     ExecutionRoleArn?: string|null,
+     *     VpcConfig?: Shapes\VpcConfig|null,
+     *     EnableNetworkIsolation?: bool|null
      * } $args
      */
     public function __construct(array $args)

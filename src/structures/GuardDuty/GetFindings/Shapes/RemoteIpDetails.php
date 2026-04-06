@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Country|null $Country
  * @property GeoLocation|null $GeoLocation
  * @property string|null $IpAddressV4
+ * @property string|null $IpAddressV6
  * @property Organization|null $Organization
  */
 class RemoteIpDetails extends Shape
@@ -19,6 +20,7 @@ class RemoteIpDetails extends Shape
      *     Country?: Country|null,
      *     GeoLocation?: GeoLocation|null,
      *     IpAddressV4?: string|null,
+     *     IpAddressV6?: string|null,
      *     Organization?: Organization|null
      * } $args
      */

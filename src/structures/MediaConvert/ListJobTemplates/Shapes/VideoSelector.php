@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'FORCE'|'FALLBACK'|null $ColorSpaceUsage
  * @property 'NONE'|'USE_MDPM'|null $EmbeddedTimecodeOverride
  * @property Hdr10Metadata|null $Hdr10Metadata
+ * @property int<0, 2147483647>|null $MaxLuminance
  * @property 'DISABLED'|'BLACK'|null $PadVideo
  * @property int<1, 2147483647>|null $Pid
  * @property int<-2147483648, 2147483647>|null $ProgramNumber
@@ -25,6 +26,7 @@ class VideoSelector extends Shape
      *     ColorSpaceUsage?: 'FORCE'|'FALLBACK'|null,
      *     EmbeddedTimecodeOverride?: 'NONE'|'USE_MDPM'|null,
      *     Hdr10Metadata?: Hdr10Metadata|null,
+     *     MaxLuminance?: int<0, 2147483647>|null,
      *     PadVideo?: 'DISABLED'|'BLACK'|null,
      *     Pid?: int<1, 2147483647>|null,
      *     ProgramNumber?: int<-2147483648, 2147483647>|null,

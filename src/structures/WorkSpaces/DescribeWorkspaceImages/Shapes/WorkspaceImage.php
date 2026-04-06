@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $Created
  * @property string|null $OwnerAccountId
  * @property UpdateResult|null $Updates
+ * @property list<ErrorDetails>|null $ErrorDetails
  */
 class WorkspaceImage extends Shape
 {
@@ -31,7 +32,8 @@ class WorkspaceImage extends Shape
      *     ErrorMessage?: string|null,
      *     Created?: \Aws\Api\DateTimeResult|null,
      *     OwnerAccountId?: string|null,
-     *     Updates?: UpdateResult|null
+     *     Updates?: UpdateResult|null,
+     *     ErrorDetails?: list<ErrorDetails>|null
      * } $args
      */
     public function __construct(array $args = [])

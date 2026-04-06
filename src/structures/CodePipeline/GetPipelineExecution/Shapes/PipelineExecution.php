@@ -11,6 +11,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Cancelled'|'InProgress'|'Stopped'|'Stopping'|'Succeeded'|'Superseded'|'Failed'|null $status
  * @property string|null $statusSummary
  * @property list<ArtifactRevision>|null $artifactRevisions
+ * @property list<ResolvedPipelineVariable>|null $variables
+ * @property ExecutionTrigger|null $trigger
+ * @property 'QUEUED'|'SUPERSEDED'|'PARALLEL'|null $executionMode
+ * @property 'STANDARD'|'ROLLBACK'|null $executionType
+ * @property PipelineRollbackMetadata|null $rollbackMetadata
  */
 class PipelineExecution extends Shape
 {
@@ -21,7 +26,12 @@ class PipelineExecution extends Shape
      *     pipelineExecutionId?: string|null,
      *     status?: 'Cancelled'|'InProgress'|'Stopped'|'Stopping'|'Succeeded'|'Superseded'|'Failed'|null,
      *     statusSummary?: string|null,
-     *     artifactRevisions?: list<ArtifactRevision>|null
+     *     artifactRevisions?: list<ArtifactRevision>|null,
+     *     variables?: list<ResolvedPipelineVariable>|null,
+     *     trigger?: ExecutionTrigger|null,
+     *     executionMode?: 'QUEUED'|'SUPERSEDED'|'PARALLEL'|null,
+     *     executionType?: 'STANDARD'|'ROLLBACK'|null,
+     *     rollbackMetadata?: PipelineRollbackMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

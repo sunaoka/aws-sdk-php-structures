@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Firehose\UpdateDestination\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'RecordDeAggregation'|'Lambda'|'MetadataExtraction'|'AppendDelimiterToRecord' $Type
+ * @property 'RecordDeAggregation'|'Decompression'|'CloudWatchLogProcessing'|'Lambda'|'MetadataExtraction'|'AppendDelimiterToRecord' $Type
  * @property list<ProcessorParameter>|null $Parameters
  */
 class Processor extends Shape
 {
     /**
      * @param array{
-     *     Type: 'RecordDeAggregation'|'Lambda'|'MetadataExtraction'|'AppendDelimiterToRecord',
+     *     Type: 'RecordDeAggregation'|'Decompression'|'CloudWatchLogProcessing'|'Lambda'|'MetadataExtraction'|'AppendDelimiterToRecord',
      *     Parameters?: list<ProcessorParameter>|null
      * } $args
      */

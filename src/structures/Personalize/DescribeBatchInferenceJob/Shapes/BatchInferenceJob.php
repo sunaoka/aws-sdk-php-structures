@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property BatchInferenceJobOutput|null $jobOutput
  * @property BatchInferenceJobConfig|null $batchInferenceJobConfig
  * @property string|null $roleArn
+ * @property 'BATCH_INFERENCE'|'THEME_GENERATION'|null $batchInferenceJobMode
+ * @property ThemeGenerationConfig|null $themeGenerationConfig
  * @property string|null $status
  * @property \Aws\Api\DateTimeResult|null $creationDateTime
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
@@ -33,6 +35,8 @@ class BatchInferenceJob extends Shape
      *     jobOutput?: BatchInferenceJobOutput|null,
      *     batchInferenceJobConfig?: BatchInferenceJobConfig|null,
      *     roleArn?: string|null,
+     *     batchInferenceJobMode?: 'BATCH_INFERENCE'|'THEME_GENERATION'|null,
+     *     themeGenerationConfig?: ThemeGenerationConfig|null,
      *     status?: string|null,
      *     creationDateTime?: \Aws\Api\DateTimeResult|null,
      *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\CdnConfiguration|null $CdnConfiguration
  * @property array<string, array<string, string>>|null $ConfigurationAliases
  * @property Shapes\DashConfigurationForPut|null $DashConfiguration
+ * @property 'STITCHED_ONLY'|'PLAYER_SELECT'|null $InsertionMode
  * @property Shapes\LivePreRollConfiguration|null $LivePreRollConfiguration
  * @property Shapes\ManifestProcessingRules|null $ManifestProcessingRules
  * @property string $Name
@@ -30,6 +31,7 @@ class PutPlaybackConfigurationRequest extends Request
      *     CdnConfiguration?: Shapes\CdnConfiguration|null,
      *     ConfigurationAliases?: array<string, array<string, string>>|null,
      *     DashConfiguration?: Shapes\DashConfigurationForPut|null,
+     *     InsertionMode?: 'STITCHED_ONLY'|'PLAYER_SELECT'|null,
      *     LivePreRollConfiguration?: Shapes\LivePreRollConfiguration|null,
      *     ManifestProcessingRules?: Shapes\ManifestProcessingRules|null,
      *     Name: string,

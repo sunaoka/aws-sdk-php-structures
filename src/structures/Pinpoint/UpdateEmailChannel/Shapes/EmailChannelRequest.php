@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FromAddress
  * @property string $Identity
  * @property string|null $RoleArn
+ * @property string|null $OrchestrationSendingRoleArn
  */
 class EmailChannelRequest extends Shape
 {
@@ -19,7 +20,8 @@ class EmailChannelRequest extends Shape
      *     Enabled?: bool|null,
      *     FromAddress: string,
      *     Identity: string,
-     *     RoleArn?: string|null
+     *     RoleArn?: string|null,
+     *     OrchestrationSendingRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

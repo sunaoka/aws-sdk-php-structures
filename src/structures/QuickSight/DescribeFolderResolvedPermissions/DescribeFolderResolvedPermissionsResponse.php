@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Arn
  * @property list<Shapes\ResourcePermission>|null $Permissions
  * @property string|null $RequestId
+ * @property string|null $NextToken
  */
 class DescribeFolderResolvedPermissionsResponse extends Response
 {

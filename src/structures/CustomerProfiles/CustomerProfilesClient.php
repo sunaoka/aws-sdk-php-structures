@@ -19,6 +19,7 @@ class CustomerProfilesClient extends \Aws\CustomerProfiles\CustomerProfilesClien
     use DeleteProfileObject\DeleteProfileObjectTrait;
     use DeleteProfileObjectType\DeleteProfileObjectTypeTrait;
     use DeleteWorkflow\DeleteWorkflowTrait;
+    use DetectProfileObjectType\DetectProfileObjectTypeTrait;
     use GetAutoMergingPreview\GetAutoMergingPreviewTrait;
     use GetCalculatedAttributeDefinition\GetCalculatedAttributeDefinitionTrait;
     use GetCalculatedAttributeForProfile\GetCalculatedAttributeForProfileTrait;

@@ -95,6 +95,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AwsGuardDutyDetectorDetails|null $AwsGuardDutyDetector
  * @property AwsStepFunctionStateMachineDetails|null $AwsStepFunctionStateMachine
  * @property AwsAthenaWorkGroupDetails|null $AwsAthenaWorkGroup
+ * @property AwsEventsEventbusDetails|null $AwsEventsEventbus
+ * @property AwsDmsEndpointDetails|null $AwsDmsEndpoint
+ * @property AwsEventsEndpointDetails|null $AwsEventsEndpoint
+ * @property AwsDmsReplicationTaskDetails|null $AwsDmsReplicationTask
+ * @property AwsDmsReplicationInstanceDetails|null $AwsDmsReplicationInstance
+ * @property AwsRoute53HostedZoneDetails|null $AwsRoute53HostedZone
+ * @property AwsMskClusterDetails|null $AwsMskCluster
+ * @property AwsS3AccessPointDetails|null $AwsS3AccessPoint
+ * @property AwsEc2ClientVpnEndpointDetails|null $AwsEc2ClientVpnEndpoint
  */
 class ResourceDetails extends Shape
 {
@@ -189,7 +198,16 @@ class ResourceDetails extends Shape
      *     AwsEventSchemasRegistry?: AwsEventSchemasRegistryDetails|null,
      *     AwsGuardDutyDetector?: AwsGuardDutyDetectorDetails|null,
      *     AwsStepFunctionStateMachine?: AwsStepFunctionStateMachineDetails|null,
-     *     AwsAthenaWorkGroup?: AwsAthenaWorkGroupDetails|null
+     *     AwsAthenaWorkGroup?: AwsAthenaWorkGroupDetails|null,
+     *     AwsEventsEventbus?: AwsEventsEventbusDetails|null,
+     *     AwsDmsEndpoint?: AwsDmsEndpointDetails|null,
+     *     AwsEventsEndpoint?: AwsEventsEndpointDetails|null,
+     *     AwsDmsReplicationTask?: AwsDmsReplicationTaskDetails|null,
+     *     AwsDmsReplicationInstance?: AwsDmsReplicationInstanceDetails|null,
+     *     AwsRoute53HostedZone?: AwsRoute53HostedZoneDetails|null,
+     *     AwsMskCluster?: AwsMskClusterDetails|null,
+     *     AwsS3AccessPoint?: AwsS3AccessPointDetails|null,
+     *     AwsEc2ClientVpnEndpoint?: AwsEc2ClientVpnEndpointDetails|null
      * } $args
      */
     public function __construct(array $args = [])

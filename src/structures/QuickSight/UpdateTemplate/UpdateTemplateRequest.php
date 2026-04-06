@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $VersionDescription
  * @property string|null $Name
  * @property Shapes\TemplateVersionDefinition|null $Definition
+ * @property Shapes\ValidationStrategy|null $ValidationStrategy
  */
 class UpdateTemplateRequest extends Request
 {
@@ -21,7 +22,8 @@ class UpdateTemplateRequest extends Request
      *     SourceEntity?: Shapes\TemplateSourceEntity|null,
      *     VersionDescription?: string|null,
      *     Name?: string|null,
-     *     Definition?: Shapes\TemplateVersionDefinition|null
+     *     Definition?: Shapes\TemplateVersionDefinition|null,
+     *     ValidationStrategy?: Shapes\ValidationStrategy|null
      * } $args
      */
     public function __construct(array $args)

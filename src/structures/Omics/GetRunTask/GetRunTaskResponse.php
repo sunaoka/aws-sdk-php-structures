@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $logStream
  * @property int<0, max>|null $gpus
  * @property string|null $instanceType
+ * @property string|null $failureReason
  */
 class GetRunTaskResponse extends Response
 {

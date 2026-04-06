@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\VoiceSettings|null $voiceSettings
  * @property 'Creating'|'Building'|'Built'|'ReadyExpressTesting'|'Failed'|'Deleting'|'NotBuilt'|'Importing'|'Processing'|null $botLocaleStatus
  * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property Shapes\GenerativeAISettings|null $generativeAISettings
  */
 class CreateBotLocaleResponse extends Response
 {

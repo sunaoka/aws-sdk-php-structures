@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignService\DescribeCampaign\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AnswerMachineDetectionConfig|null $answerMachineDetectionConfig
  * @property string $connectContactFlowId
- * @property string $connectQueueId
  * @property string|null $connectSourcePhoneNumber
+ * @property string|null $connectQueueId
+ * @property AnswerMachineDetectionConfig|null $answerMachineDetectionConfig
  */
 class OutboundCallConfig extends Shape
 {
     /**
      * @param array{
-     *     answerMachineDetectionConfig?: AnswerMachineDetectionConfig|null,
      *     connectContactFlowId: string,
-     *     connectQueueId: string,
-     *     connectSourcePhoneNumber?: string|null
+     *     connectSourcePhoneNumber?: string|null,
+     *     connectQueueId?: string|null,
+     *     answerMachineDetectionConfig?: AnswerMachineDetectionConfig|null
      * } $args
      */
     public function __construct(array $args)

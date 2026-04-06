@@ -9,6 +9,7 @@ class S3Client extends \Aws\S3\S3Client
     use CopyObject\CopyObjectTrait;
     use CreateBucket\CreateBucketTrait;
     use CreateMultipartUpload\CreateMultipartUploadTrait;
+    use CreateSession\CreateSessionTrait;
     use DeleteBucket\DeleteBucketTrait;
     use DeleteBucketAnalyticsConfiguration\DeleteBucketAnalyticsConfigurationTrait;
     use DeleteBucketCors\DeleteBucketCorsTrait;
@@ -64,6 +65,7 @@ class S3Client extends \Aws\S3\S3Client
     use ListBucketInventoryConfigurations\ListBucketInventoryConfigurationsTrait;
     use ListBucketMetricsConfigurations\ListBucketMetricsConfigurationsTrait;
     use ListBuckets\ListBucketsTrait;
+    use ListDirectoryBuckets\ListDirectoryBucketsTrait;
     use ListMultipartUploads\ListMultipartUploadsTrait;
     use ListObjectVersions\ListObjectVersionsTrait;
     use ListObjects\ListObjectsTrait;

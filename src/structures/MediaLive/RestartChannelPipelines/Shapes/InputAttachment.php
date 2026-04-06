@@ -1,0 +1,27 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\MediaLive\RestartChannelPipelines\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property AutomaticInputFailoverSettings|null $AutomaticInputFailoverSettings
+ * @property string|null $InputAttachmentName
+ * @property string|null $InputId
+ * @property InputSettings|null $InputSettings
+ */
+class InputAttachment extends Shape
+{
+    /**
+     * @param array{
+     *     AutomaticInputFailoverSettings?: AutomaticInputFailoverSettings|null,
+     *     InputAttachmentName?: string|null,
+     *     InputId?: string|null,
+     *     InputSettings?: InputSettings|null
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

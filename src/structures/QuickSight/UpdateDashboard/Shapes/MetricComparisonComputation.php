@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ComputationId
  * @property string|null $Name
- * @property DimensionField $Time
- * @property MeasureField $FromValue
- * @property MeasureField $TargetValue
+ * @property DimensionField|null $Time
+ * @property MeasureField|null $FromValue
+ * @property MeasureField|null $TargetValue
  */
 class MetricComparisonComputation extends Shape
 {
@@ -17,9 +17,9 @@ class MetricComparisonComputation extends Shape
      * @param array{
      *     ComputationId: string,
      *     Name?: string|null,
-     *     Time: DimensionField,
-     *     FromValue: MeasureField,
-     *     TargetValue: MeasureField
+     *     Time?: DimensionField|null,
+     *     FromValue?: MeasureField|null,
+     *     TargetValue?: MeasureField|null
      * } $args
      */
     public function __construct(array $args)

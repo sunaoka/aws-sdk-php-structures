@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'NONE'|'LZ4'|null $DataCompressionType
  * @property LustreLogCreateConfiguration|null $LogConfiguration
  * @property LustreRootSquashConfiguration|null $RootSquashConfiguration
+ * @property int<12, 1000>|null $PerUnitStorageThroughput
+ * @property UpdateFileSystemLustreMetadataConfiguration|null $MetadataConfiguration
  */
 class UpdateFileSystemLustreConfiguration extends Shape
 {
@@ -23,7 +25,9 @@ class UpdateFileSystemLustreConfiguration extends Shape
      *     AutoImportPolicy?: 'NONE'|'NEW'|'NEW_CHANGED'|'NEW_CHANGED_DELETED'|null,
      *     DataCompressionType?: 'NONE'|'LZ4'|null,
      *     LogConfiguration?: LustreLogCreateConfiguration|null,
-     *     RootSquashConfiguration?: LustreRootSquashConfiguration|null
+     *     RootSquashConfiguration?: LustreRootSquashConfiguration|null,
+     *     PerUnitStorageThroughput?: int<12, 1000>|null,
+     *     MetadataConfiguration?: UpdateFileSystemLustreMetadataConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

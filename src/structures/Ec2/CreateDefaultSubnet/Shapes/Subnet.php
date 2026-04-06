@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $MapPublicIpOnLaunch
  * @property bool|null $MapCustomerOwnedIpOnLaunch
  * @property string|null $CustomerOwnedIpv4Pool
- * @property 'pending'|'available'|null $State
+ * @property 'pending'|'available'|'unavailable'|null $State
  * @property string|null $SubnetId
  * @property string|null $VpcId
  * @property string|null $OwnerId
@@ -40,7 +40,7 @@ class Subnet extends Shape
      *     MapPublicIpOnLaunch?: bool|null,
      *     MapCustomerOwnedIpOnLaunch?: bool|null,
      *     CustomerOwnedIpv4Pool?: string|null,
-     *     State?: 'pending'|'available'|null,
+     *     State?: 'pending'|'available'|'unavailable'|null,
      *     SubnetId?: string|null,
      *     VpcId?: string|null,
      *     OwnerId?: string|null,

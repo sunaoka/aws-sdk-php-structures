@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Pipes\CreatePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string>|null $HeaderParameters
  * @property list<string>|null $PathParameterValues
+ * @property array<string, string>|null $HeaderParameters
  * @property array<string, string>|null $QueryStringParameters
  */
 class PipeTargetHttpParameters extends Shape
 {
     /**
      * @param array{
-     *     HeaderParameters?: array<string, string>|null,
      *     PathParameterValues?: list<string>|null,
+     *     HeaderParameters?: array<string, string>|null,
      *     QueryStringParameters?: array<string, string>|null
      * } $args
      */

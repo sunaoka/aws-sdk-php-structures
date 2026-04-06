@@ -6,12 +6,19 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
 {
     use AssociateKmsKey\AssociateKmsKeyTrait;
     use CancelExportTask\CancelExportTaskTrait;
+    use CreateDelivery\CreateDeliveryTrait;
     use CreateExportTask\CreateExportTaskTrait;
+    use CreateLogAnomalyDetector\CreateLogAnomalyDetectorTrait;
     use CreateLogGroup\CreateLogGroupTrait;
     use CreateLogStream\CreateLogStreamTrait;
     use DeleteAccountPolicy\DeleteAccountPolicyTrait;
     use DeleteDataProtectionPolicy\DeleteDataProtectionPolicyTrait;
+    use DeleteDelivery\DeleteDeliveryTrait;
+    use DeleteDeliveryDestination\DeleteDeliveryDestinationTrait;
+    use DeleteDeliveryDestinationPolicy\DeleteDeliveryDestinationPolicyTrait;
+    use DeleteDeliverySource\DeleteDeliverySourceTrait;
     use DeleteDestination\DeleteDestinationTrait;
+    use DeleteLogAnomalyDetector\DeleteLogAnomalyDetectorTrait;
     use DeleteLogGroup\DeleteLogGroupTrait;
     use DeleteLogStream\DeleteLogStreamTrait;
     use DeleteMetricFilter\DeleteMetricFilterTrait;
@@ -20,6 +27,9 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use DeleteRetentionPolicy\DeleteRetentionPolicyTrait;
     use DeleteSubscriptionFilter\DeleteSubscriptionFilterTrait;
     use DescribeAccountPolicies\DescribeAccountPoliciesTrait;
+    use DescribeDeliveries\DescribeDeliveriesTrait;
+    use DescribeDeliveryDestinations\DescribeDeliveryDestinationsTrait;
+    use DescribeDeliverySources\DescribeDeliverySourcesTrait;
     use DescribeDestinations\DescribeDestinationsTrait;
     use DescribeExportTasks\DescribeExportTasksTrait;
     use DescribeLogGroups\DescribeLogGroupsTrait;
@@ -32,14 +42,24 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use DisassociateKmsKey\DisassociateKmsKeyTrait;
     use FilterLogEvents\FilterLogEventsTrait;
     use GetDataProtectionPolicy\GetDataProtectionPolicyTrait;
+    use GetDelivery\GetDeliveryTrait;
+    use GetDeliveryDestination\GetDeliveryDestinationTrait;
+    use GetDeliveryDestinationPolicy\GetDeliveryDestinationPolicyTrait;
+    use GetDeliverySource\GetDeliverySourceTrait;
+    use GetLogAnomalyDetector\GetLogAnomalyDetectorTrait;
     use GetLogEvents\GetLogEventsTrait;
     use GetLogGroupFields\GetLogGroupFieldsTrait;
     use GetLogRecord\GetLogRecordTrait;
     use GetQueryResults\GetQueryResultsTrait;
+    use ListAnomalies\ListAnomaliesTrait;
+    use ListLogAnomalyDetectors\ListLogAnomalyDetectorsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTagsLogGroup\ListTagsLogGroupTrait;
     use PutAccountPolicy\PutAccountPolicyTrait;
     use PutDataProtectionPolicy\PutDataProtectionPolicyTrait;
+    use PutDeliveryDestination\PutDeliveryDestinationTrait;
+    use PutDeliveryDestinationPolicy\PutDeliveryDestinationPolicyTrait;
+    use PutDeliverySource\PutDeliverySourceTrait;
     use PutDestination\PutDestinationTrait;
     use PutDestinationPolicy\PutDestinationPolicyTrait;
     use PutLogEvents\PutLogEventsTrait;
@@ -48,6 +68,7 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use PutResourcePolicy\PutResourcePolicyTrait;
     use PutRetentionPolicy\PutRetentionPolicyTrait;
     use PutSubscriptionFilter\PutSubscriptionFilterTrait;
+    use StartLiveTail\StartLiveTailTrait;
     use StartQuery\StartQueryTrait;
     use StopQuery\StopQueryTrait;
     use TagLogGroup\TagLogGroupTrait;
@@ -55,4 +76,6 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use TestMetricFilter\TestMetricFilterTrait;
     use UntagLogGroup\UntagLogGroupTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateAnomaly\UpdateAnomalyTrait;
+    use UpdateLogAnomalyDetector\UpdateLogAnomalyDetectorTrait;
 }

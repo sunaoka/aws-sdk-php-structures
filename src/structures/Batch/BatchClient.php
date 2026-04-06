@@ -17,6 +17,7 @@ class BatchClient extends \Aws\Batch\BatchClient
     use DescribeJobQueues\DescribeJobQueuesTrait;
     use DescribeJobs\DescribeJobsTrait;
     use DescribeSchedulingPolicies\DescribeSchedulingPoliciesTrait;
+    use GetJobQueueSnapshot\GetJobQueueSnapshotTrait;
     use ListJobs\ListJobsTrait;
     use ListSchedulingPolicies\ListSchedulingPoliciesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;

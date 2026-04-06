@@ -11,6 +11,8 @@ class ComputeOptimizerClient extends \Aws\ComputeOptimizer\ComputeOptimizerClien
     use ExportEC2InstanceRecommendations\ExportEC2InstanceRecommendationsTrait;
     use ExportECSServiceRecommendations\ExportECSServiceRecommendationsTrait;
     use ExportLambdaFunctionRecommendations\ExportLambdaFunctionRecommendationsTrait;
+    use ExportLicenseRecommendations\ExportLicenseRecommendationsTrait;
+    use ExportRDSDatabaseRecommendations\ExportRDSDatabaseRecommendationsTrait;
     use GetAutoScalingGroupRecommendations\GetAutoScalingGroupRecommendationsTrait;
     use GetEBSVolumeRecommendations\GetEBSVolumeRecommendationsTrait;
     use GetEC2InstanceRecommendations\GetEC2InstanceRecommendationsTrait;
@@ -21,6 +23,9 @@ class ComputeOptimizerClient extends \Aws\ComputeOptimizer\ComputeOptimizerClien
     use GetEnrollmentStatus\GetEnrollmentStatusTrait;
     use GetEnrollmentStatusesForOrganization\GetEnrollmentStatusesForOrganizationTrait;
     use GetLambdaFunctionRecommendations\GetLambdaFunctionRecommendationsTrait;
+    use GetLicenseRecommendations\GetLicenseRecommendationsTrait;
+    use GetRDSDatabaseRecommendationProjectedMetrics\GetRDSDatabaseRecommendationProjectedMetricsTrait;
+    use GetRDSDatabaseRecommendations\GetRDSDatabaseRecommendationsTrait;
     use GetRecommendationPreferences\GetRecommendationPreferencesTrait;
     use GetRecommendationSummaries\GetRecommendationSummariesTrait;
     use PutRecommendationPreferences\PutRecommendationPreferencesTrait;

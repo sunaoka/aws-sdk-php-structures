@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ALL'|'FIELD1_608'|'FIELD1_AND_FIELD2_608'|null $CaptionData
  * @property 'EMIT_OUTPUT'|'PAUSE_OUTPUT'|null $InputLossAction
  * @property int<0, max>|null $RestartDelay
+ * @property 'AUTO'|'DROP'|'INCLUDE'|null $IncludeFillerNalUnits
  */
 class RtmpGroupSettings extends Shape
 {
@@ -23,7 +24,8 @@ class RtmpGroupSettings extends Shape
      *     CacheLength?: int<30, max>|null,
      *     CaptionData?: 'ALL'|'FIELD1_608'|'FIELD1_AND_FIELD2_608'|null,
      *     InputLossAction?: 'EMIT_OUTPUT'|'PAUSE_OUTPUT'|null,
-     *     RestartDelay?: int<0, max>|null
+     *     RestartDelay?: int<0, max>|null,
+     *     IncludeFillerNalUnits?: 'AUTO'|'DROP'|'INCLUDE'|null
      * } $args
      */
     public function __construct(array $args = [])

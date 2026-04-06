@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignService\ListCampaigns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Eq' $operator
  * @property string $value
+ * @property 'Eq' $operator
  */
 class InstanceIdFilter extends Shape
 {
     /**
      * @param array{
-     *     operator: 'Eq',
-     *     value: string
+     *     value: string,
+     *     operator: 'Eq'
      * } $args
      */
     public function __construct(array $args)

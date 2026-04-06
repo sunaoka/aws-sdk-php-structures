@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $MediaPipelineArn
  * @property 'ChimeSdkMeeting'|null $SourceType
  * @property string|null $SourceArn
- * @property 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|null $Status
+ * @property 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|'NotStarted'|null $Status
  * @property 'S3Bucket'|null $SinkType
  * @property string|null $SinkArn
  * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
@@ -24,7 +24,7 @@ class MediaCapturePipeline extends Shape
      *     MediaPipelineArn?: string|null,
      *     SourceType?: 'ChimeSdkMeeting'|null,
      *     SourceArn?: string|null,
-     *     Status?: 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|null,
+     *     Status?: 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|'NotStarted'|null,
      *     SinkType?: 'S3Bucket'|null,
      *     SinkArn?: string|null,
      *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,

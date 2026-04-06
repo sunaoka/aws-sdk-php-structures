@@ -9,12 +9,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Image
  * @property string|null $ImageDigest
  * @property string|null $ModelDataUrl
+ * @property ModelDataSource|null $ModelDataSource
  * @property string|null $ProductId
  * @property array<string, string>|null $Environment
  * @property ModelInput|null $ModelInput
  * @property string|null $Framework
  * @property string|null $FrameworkVersion
  * @property string|null $NearestModelName
+ * @property AdditionalS3DataSource|null $AdditionalS3DataSource
  */
 class ModelPackageContainerDefinition extends Shape
 {
@@ -24,12 +26,14 @@ class ModelPackageContainerDefinition extends Shape
      *     Image: string,
      *     ImageDigest?: string|null,
      *     ModelDataUrl?: string|null,
+     *     ModelDataSource?: ModelDataSource|null,
      *     ProductId?: string|null,
      *     Environment?: array<string, string>|null,
      *     ModelInput?: ModelInput|null,
      *     Framework?: string|null,
      *     FrameworkVersion?: string|null,
-     *     NearestModelName?: string|null
+     *     NearestModelName?: string|null,
+     *     AdditionalS3DataSource?: AdditionalS3DataSource|null
      * } $args
      */
     public function __construct(array $args)

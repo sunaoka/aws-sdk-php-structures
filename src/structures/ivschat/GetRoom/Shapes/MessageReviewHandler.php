@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ivschat\GetRoom\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ALLOW'|'DENY'|null $fallbackResult
  * @property string|null $uri
+ * @property 'ALLOW'|'DENY'|null $fallbackResult
  */
 class MessageReviewHandler extends Shape
 {
     /**
      * @param array{
-     *     fallbackResult?: 'ALLOW'|'DENY'|null,
-     *     uri?: string|null
+     *     uri?: string|null,
+     *     fallbackResult?: 'ALLOW'|'DENY'|null
      * } $args
      */
     public function __construct(array $args = [])

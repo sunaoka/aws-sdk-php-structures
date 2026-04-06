@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'enable'|'disable'|null $DnsSupport
+ * @property 'enable'|'disable'|null $SecurityGroupReferencingSupport
  * @property 'enable'|'disable'|null $Ipv6Support
  * @property 'enable'|'disable'|null $ApplianceModeSupport
  */
@@ -14,6 +15,7 @@ class ModifyTransitGatewayVpcAttachmentRequestOptions extends Shape
     /**
      * @param array{
      *     DnsSupport?: 'enable'|'disable'|null,
+     *     SecurityGroupReferencingSupport?: 'enable'|'disable'|null,
      *     Ipv6Support?: 'enable'|'disable'|null,
      *     ApplianceModeSupport?: 'enable'|'disable'|null
      * } $args

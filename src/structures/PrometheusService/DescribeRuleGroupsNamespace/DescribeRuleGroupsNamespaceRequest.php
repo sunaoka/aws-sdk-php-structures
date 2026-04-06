@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PrometheusService\DescribeRuleGroupsNamespace;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $workspaceId
  * @property string $name
+ * @property string $workspaceId
  */
 class DescribeRuleGroupsNamespaceRequest extends Request
 {
     /**
      * @param array{
-     *     workspaceId: string,
-     *     name: string
+     *     name: string,
+     *     workspaceId: string
      * } $args
      */
     public function __construct(array $args)

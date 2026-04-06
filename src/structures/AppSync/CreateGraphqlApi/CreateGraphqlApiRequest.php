@@ -18,6 +18,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'GRAPHQL'|'MERGED'|null $apiType
  * @property string|null $mergedApiExecutionRoleArn
  * @property string|null $ownerContact
+ * @property 'ENABLED'|'DISABLED'|null $introspectionConfig
+ * @property int<0, 75>|null $queryDepthLimit
+ * @property int<0, 10000>|null $resolverCountLimit
+ * @property Shapes\EnhancedMetricsConfig|null $enhancedMetricsConfig
  */
 class CreateGraphqlApiRequest extends Request
 {
@@ -35,7 +39,11 @@ class CreateGraphqlApiRequest extends Request
      *     visibility?: 'GLOBAL'|'PRIVATE'|null,
      *     apiType?: 'GRAPHQL'|'MERGED'|null,
      *     mergedApiExecutionRoleArn?: string|null,
-     *     ownerContact?: string|null
+     *     ownerContact?: string|null,
+     *     introspectionConfig?: 'ENABLED'|'DISABLED'|null,
+     *     queryDepthLimit?: int<0, 75>|null,
+     *     resolverCountLimit?: int<0, 10000>|null,
+     *     enhancedMetricsConfig?: Shapes\EnhancedMetricsConfig|null
      * } $args
      */
     public function __construct(array $args)

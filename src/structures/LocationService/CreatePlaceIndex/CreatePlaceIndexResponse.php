@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\LocationService\CreatePlaceIndex;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreateTime
- * @property string $IndexArn
  * @property string $IndexName
+ * @property string $IndexArn
+ * @property \Aws\Api\DateTimeResult $CreateTime
  */
 class CreatePlaceIndexResponse extends Response
 {

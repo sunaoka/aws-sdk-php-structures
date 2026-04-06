@@ -19,6 +19,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InputDeviceUhdSettings|null $UhdDeviceSettings
  * @property array<string, string>|null $Tags
  * @property string|null $AvailabilityZone
+ * @property list<string>|null $MedialiveInputArns
+ * @property 'NONE'|'MEDIALIVE_INPUT'|'MEDIACONNECT_FLOW'|null $OutputType
  */
 class InputDeviceSummary extends Shape
 {
@@ -37,7 +39,9 @@ class InputDeviceSummary extends Shape
      *     Type?: 'HD'|'UHD'|null,
      *     UhdDeviceSettings?: InputDeviceUhdSettings|null,
      *     Tags?: array<string, string>|null,
-     *     AvailabilityZone?: string|null
+     *     AvailabilityZone?: string|null,
+     *     MedialiveInputArns?: list<string>|null,
+     *     OutputType?: 'NONE'|'MEDIALIVE_INPUT'|'MEDIACONNECT_FLOW'|null
      * } $args
      */
     public function __construct(array $args = [])

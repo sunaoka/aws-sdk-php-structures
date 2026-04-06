@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\VerifyPinData;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\DukptAttributes|null $DukptAttributes
- * @property string $EncryptedPinBlock
+ * @property string $VerificationKeyIdentifier
  * @property string $EncryptionKeyIdentifier
+ * @property Shapes\PinVerificationAttributes $VerificationAttributes
+ * @property string $EncryptedPinBlock
+ * @property string $PrimaryAccountNumber
  * @property 'ISO_FORMAT_0'|'ISO_FORMAT_3' $PinBlockFormat
  * @property int<4, 12>|null $PinDataLength
- * @property string $PrimaryAccountNumber
- * @property Shapes\PinVerificationAttributes $VerificationAttributes
- * @property string $VerificationKeyIdentifier
+ * @property Shapes\DukptAttributes|null $DukptAttributes
  */
 class VerifyPinDataRequest extends Request
 {
     /**
      * @param array{
-     *     DukptAttributes?: Shapes\DukptAttributes|null,
-     *     EncryptedPinBlock: string,
+     *     VerificationKeyIdentifier: string,
      *     EncryptionKeyIdentifier: string,
+     *     VerificationAttributes: Shapes\PinVerificationAttributes,
+     *     EncryptedPinBlock: string,
+     *     PrimaryAccountNumber: string,
      *     PinBlockFormat: 'ISO_FORMAT_0'|'ISO_FORMAT_3',
      *     PinDataLength?: int<4, 12>|null,
-     *     PrimaryAccountNumber: string,
-     *     VerificationAttributes: Shapes\PinVerificationAttributes,
-     *     VerificationKeyIdentifier: string
+     *     DukptAttributes?: Shapes\DukptAttributes|null
      * } $args
      */
     public function __construct(array $args)

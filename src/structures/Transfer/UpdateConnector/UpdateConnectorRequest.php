@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $AccessRole
  * @property string|null $LoggingRole
  * @property Shapes\SftpConnectorConfig|null $SftpConfig
+ * @property string|null $SecurityPolicyName
  */
 class UpdateConnectorRequest extends Request
 {
@@ -21,7 +22,8 @@ class UpdateConnectorRequest extends Request
      *     As2Config?: Shapes\As2ConnectorConfig|null,
      *     AccessRole?: string|null,
      *     LoggingRole?: string|null,
-     *     SftpConfig?: Shapes\SftpConnectorConfig|null
+     *     SftpConfig?: Shapes\SftpConnectorConfig|null,
+     *     SecurityPolicyName?: string|null
      * } $args
      */
     public function __construct(array $args)

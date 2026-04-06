@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LoggingRole
  * @property list<Tag>|null $Tags
  * @property SftpConnectorConfig|null $SftpConfig
+ * @property list<string>|null $ServiceManagedEgressIpAddresses
+ * @property string|null $SecurityPolicyName
  */
 class DescribedConnector extends Shape
 {
@@ -25,7 +27,9 @@ class DescribedConnector extends Shape
      *     AccessRole?: string|null,
      *     LoggingRole?: string|null,
      *     Tags?: list<Tag>|null,
-     *     SftpConfig?: SftpConnectorConfig|null
+     *     SftpConfig?: SftpConnectorConfig|null,
+     *     ServiceManagedEgressIpAddresses?: list<string>|null,
+     *     SecurityPolicyName?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreationDate
  * @property bool|null $Enabled
  * @property string|null $Description
- * @property 'SIGN_VERIFY'|'ENCRYPT_DECRYPT'|'GENERATE_VERIFY_MAC'|null $KeyUsage
+ * @property 'SIGN_VERIFY'|'ENCRYPT_DECRYPT'|'GENERATE_VERIFY_MAC'|'KEY_AGREEMENT'|null $KeyUsage
  * @property 'Creating'|'Enabled'|'Disabled'|'PendingDeletion'|'PendingImport'|'PendingReplicaDeletion'|'Unavailable'|'Updating'|null $KeyState
  * @property \Aws\Api\DateTimeResult|null $DeletionDate
  * @property \Aws\Api\DateTimeResult|null $ValidTo
@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'RSA_2048'|'RSA_3072'|'RSA_4096'|'ECC_NIST_P256'|'ECC_NIST_P384'|'ECC_NIST_P521'|'ECC_SECG_P256K1'|'SYMMETRIC_DEFAULT'|'HMAC_224'|'HMAC_256'|'HMAC_384'|'HMAC_512'|'SM2'|null $KeySpec
  * @property list<'SYMMETRIC_DEFAULT'|'RSAES_OAEP_SHA_1'|'RSAES_OAEP_SHA_256'|'SM2PKE'>|null $EncryptionAlgorithms
  * @property list<'RSASSA_PSS_SHA_256'|'RSASSA_PSS_SHA_384'|'RSASSA_PSS_SHA_512'|'RSASSA_PKCS1_V1_5_SHA_256'|'RSASSA_PKCS1_V1_5_SHA_384'|'RSASSA_PKCS1_V1_5_SHA_512'|'ECDSA_SHA_256'|'ECDSA_SHA_384'|'ECDSA_SHA_512'|'SM2DSA'>|null $SigningAlgorithms
+ * @property list<'ECDH'>|null $KeyAgreementAlgorithms
  * @property bool|null $MultiRegion
  * @property MultiRegionConfiguration|null $MultiRegionConfiguration
  * @property int<1, 365>|null $PendingDeletionWindowInDays
@@ -40,7 +41,7 @@ class KeyMetadata extends Shape
      *     CreationDate?: \Aws\Api\DateTimeResult|null,
      *     Enabled?: bool|null,
      *     Description?: string|null,
-     *     KeyUsage?: 'SIGN_VERIFY'|'ENCRYPT_DECRYPT'|'GENERATE_VERIFY_MAC'|null,
+     *     KeyUsage?: 'SIGN_VERIFY'|'ENCRYPT_DECRYPT'|'GENERATE_VERIFY_MAC'|'KEY_AGREEMENT'|null,
      *     KeyState?: 'Creating'|'Enabled'|'Disabled'|'PendingDeletion'|'PendingImport'|'PendingReplicaDeletion'|'Unavailable'|'Updating'|null,
      *     DeletionDate?: \Aws\Api\DateTimeResult|null,
      *     ValidTo?: \Aws\Api\DateTimeResult|null,
@@ -53,6 +54,7 @@ class KeyMetadata extends Shape
      *     KeySpec?: 'RSA_2048'|'RSA_3072'|'RSA_4096'|'ECC_NIST_P256'|'ECC_NIST_P384'|'ECC_NIST_P521'|'ECC_SECG_P256K1'|'SYMMETRIC_DEFAULT'|'HMAC_224'|'HMAC_256'|'HMAC_384'|'HMAC_512'|'SM2'|null,
      *     EncryptionAlgorithms?: list<'SYMMETRIC_DEFAULT'|'RSAES_OAEP_SHA_1'|'RSAES_OAEP_SHA_256'|'SM2PKE'>|null,
      *     SigningAlgorithms?: list<'RSASSA_PSS_SHA_256'|'RSASSA_PSS_SHA_384'|'RSASSA_PSS_SHA_512'|'RSASSA_PKCS1_V1_5_SHA_256'|'RSASSA_PKCS1_V1_5_SHA_384'|'RSASSA_PKCS1_V1_5_SHA_512'|'ECDSA_SHA_256'|'ECDSA_SHA_384'|'ECDSA_SHA_512'|'SM2DSA'>|null,
+     *     KeyAgreementAlgorithms?: list<'ECDH'>|null,
      *     MultiRegion?: bool|null,
      *     MultiRegionConfiguration?: MultiRegionConfiguration|null,
      *     PendingDeletionWindowInDays?: int<1, 365>|null,

@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $executionArn
+ * @property 'ALL_DATA'|'METADATA_ONLY'|null $includedData
  */
 class DescribeExecutionRequest extends Request
 {
     /**
-     * @param array{executionArn: string} $args
+     * @param array{
+     *     executionArn: string,
+     *     includedData?: 'ALL_DATA'|'METADATA_ONLY'|null
+     * } $args
      */
     public function __construct(array $args)
     {

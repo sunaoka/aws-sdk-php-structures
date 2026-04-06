@@ -1,0 +1,47 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Bedrock\CreateModelCustomizationJob;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property string $jobName
+ * @property string $customModelName
+ * @property string $roleArn
+ * @property string|null $clientRequestToken
+ * @property string $baseModelIdentifier
+ * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|null $customizationType
+ * @property string|null $customModelKmsKeyId
+ * @property list<Shapes\Tag>|null $jobTags
+ * @property list<Shapes\Tag>|null $customModelTags
+ * @property Shapes\TrainingDataConfig $trainingDataConfig
+ * @property Shapes\ValidationDataConfig|null $validationDataConfig
+ * @property Shapes\OutputDataConfig $outputDataConfig
+ * @property array<string, string> $hyperParameters
+ * @property Shapes\VpcConfig|null $vpcConfig
+ */
+class CreateModelCustomizationJobRequest extends Request
+{
+    /**
+     * @param array{
+     *     jobName: string,
+     *     customModelName: string,
+     *     roleArn: string,
+     *     clientRequestToken?: string|null,
+     *     baseModelIdentifier: string,
+     *     customizationType?: 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|null,
+     *     customModelKmsKeyId?: string|null,
+     *     jobTags?: list<Shapes\Tag>|null,
+     *     customModelTags?: list<Shapes\Tag>|null,
+     *     trainingDataConfig: Shapes\TrainingDataConfig,
+     *     validationDataConfig?: Shapes\ValidationDataConfig|null,
+     *     outputDataConfig: Shapes\OutputDataConfig,
+     *     hyperParameters: array<string, string>,
+     *     vpcConfig?: Shapes\VpcConfig|null
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

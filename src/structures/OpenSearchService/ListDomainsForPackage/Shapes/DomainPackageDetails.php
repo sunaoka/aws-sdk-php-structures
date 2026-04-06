@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $PackageID
  * @property string|null $PackageName
- * @property 'TXT-DICTIONARY'|null $PackageType
+ * @property 'TXT-DICTIONARY'|'ZIP-PLUGIN'|null $PackageType
  * @property \Aws\Api\DateTimeResult|null $LastUpdated
  * @property string|null $DomainName
  * @property 'ASSOCIATING'|'ASSOCIATION_FAILED'|'ACTIVE'|'DISSOCIATING'|'DISSOCIATION_FAILED'|null $DomainPackageStatus
@@ -21,7 +21,7 @@ class DomainPackageDetails extends Shape
      * @param array{
      *     PackageID?: string|null,
      *     PackageName?: string|null,
-     *     PackageType?: 'TXT-DICTIONARY'|null,
+     *     PackageType?: 'TXT-DICTIONARY'|'ZIP-PLUGIN'|null,
      *     LastUpdated?: \Aws\Api\DateTimeResult|null,
      *     DomainName?: string|null,
      *     DomainPackageStatus?: 'ASSOCIATING'|'ASSOCIATION_FAILED'|'ACTIVE'|'DISSOCIATING'|'DISSOCIATION_FAILED'|null,

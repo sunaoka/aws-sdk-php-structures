@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $SourceDBClusterIdentifier
  * @property string|null $Engine
  * @property string|null $EngineVersion
+ * @property string|null $EngineLifecycleSupport
  * @property bool|null $DeletionProtection
  * @property string|null $DatabaseName
  * @property bool|null $StorageEncrypted
@@ -21,6 +22,7 @@ class CreateGlobalClusterRequest extends Request
      *     SourceDBClusterIdentifier?: string|null,
      *     Engine?: string|null,
      *     EngineVersion?: string|null,
+     *     EngineLifecycleSupport?: string|null,
      *     DeletionProtection?: bool|null,
      *     DatabaseName?: string|null,
      *     StorageEncrypted?: bool|null

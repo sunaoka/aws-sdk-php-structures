@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $assetLastUpdateDate
  * @property Shapes\AssetStatus $assetStatus
  * @property string|null $assetDescription
+ * @property list<Shapes\AssetCompositeModelSummary>|null $assetCompositeModelSummaries
+ * @property string|null $assetExternalId
  */
 class DescribeAssetResponse extends Response
 {

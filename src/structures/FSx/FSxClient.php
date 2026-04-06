@@ -7,6 +7,7 @@ class FSxClient extends \Aws\FSx\FSxClient
     use AssociateFileSystemAliases\AssociateFileSystemAliasesTrait;
     use CancelDataRepositoryTask\CancelDataRepositoryTaskTrait;
     use CopyBackup\CopyBackupTrait;
+    use CopySnapshotAndUpdateVolume\CopySnapshotAndUpdateVolumeTrait;
     use CreateBackup\CreateBackupTrait;
     use CreateDataRepositoryAssociation\CreateDataRepositoryAssociationTrait;
     use CreateDataRepositoryTask\CreateDataRepositoryTaskTrait;
@@ -30,6 +31,7 @@ class FSxClient extends \Aws\FSx\FSxClient
     use DescribeFileCaches\DescribeFileCachesTrait;
     use DescribeFileSystemAliases\DescribeFileSystemAliasesTrait;
     use DescribeFileSystems\DescribeFileSystemsTrait;
+    use DescribeSharedVpcConfiguration\DescribeSharedVpcConfigurationTrait;
     use DescribeSnapshots\DescribeSnapshotsTrait;
     use DescribeStorageVirtualMachines\DescribeStorageVirtualMachinesTrait;
     use DescribeVolumes\DescribeVolumesTrait;
@@ -37,11 +39,13 @@ class FSxClient extends \Aws\FSx\FSxClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use ReleaseFileSystemNfsV3Locks\ReleaseFileSystemNfsV3LocksTrait;
     use RestoreVolumeFromSnapshot\RestoreVolumeFromSnapshotTrait;
+    use StartMisconfiguredStateRecovery\StartMisconfiguredStateRecoveryTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateDataRepositoryAssociation\UpdateDataRepositoryAssociationTrait;
     use UpdateFileCache\UpdateFileCacheTrait;
     use UpdateFileSystem\UpdateFileSystemTrait;
+    use UpdateSharedVpcConfiguration\UpdateSharedVpcConfigurationTrait;
     use UpdateSnapshot\UpdateSnapshotTrait;
     use UpdateStorageVirtualMachine\UpdateStorageVirtualMachineTrait;
     use UpdateVolume\UpdateVolumeTrait;

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $InternalUserDatabaseEnabled
  * @property MasterUserOptions|null $MasterUserOptions
  * @property SAMLOptionsInput|null $SAMLOptions
+ * @property JWTOptionsInput|null $JWTOptions
  * @property bool|null $AnonymousAuthEnabled
  */
 class AdvancedSecurityOptionsInput extends Shape
@@ -19,6 +20,7 @@ class AdvancedSecurityOptionsInput extends Shape
      *     InternalUserDatabaseEnabled?: bool|null,
      *     MasterUserOptions?: MasterUserOptions|null,
      *     SAMLOptions?: SAMLOptionsInput|null,
+     *     JWTOptions?: JWTOptionsInput|null,
      *     AnonymousAuthEnabled?: bool|null
      * } $args
      */

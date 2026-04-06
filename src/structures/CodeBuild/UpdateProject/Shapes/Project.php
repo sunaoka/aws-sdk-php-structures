@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ProjectCache|null $cache
  * @property ProjectEnvironment|null $environment
  * @property string|null $serviceRole
- * @property int<5, 480>|null $timeoutInMinutes
+ * @property int<5, 2160>|null $timeoutInMinutes
  * @property int<5, 480>|null $queuedTimeoutInMinutes
  * @property string|null $encryptionKey
  * @property list<Tag>|null $tags
@@ -50,7 +50,7 @@ class Project extends Shape
      *     cache?: ProjectCache|null,
      *     environment?: ProjectEnvironment|null,
      *     serviceRole?: string|null,
-     *     timeoutInMinutes?: int<5, 480>|null,
+     *     timeoutInMinutes?: int<5, 2160>|null,
      *     queuedTimeoutInMinutes?: int<5, 480>|null,
      *     encryptionKey?: string|null,
      *     tags?: list<Tag>|null,

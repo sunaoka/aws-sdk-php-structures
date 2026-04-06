@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Ecr\ListTagsForResource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $Key
- * @property string|null $Value
+ * @property string $Key
+ * @property string $Value
  */
 class Tag extends Shape
 {
     /**
      * @param array{
-     *     Key?: string|null,
-     *     Value?: string|null
+     *     Key: string,
+     *     Value: string
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

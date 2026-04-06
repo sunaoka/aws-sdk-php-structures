@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $Id
- * @property 'HANA'|null $Type
+ * @property 'HANA'|'SAP_ABAP'|null $Type
  * @property string|null $Arn
  * @property string|null $AppRegistryArn
  * @property 'ACTIVATED'|'STARTING'|'STOPPED'|'STOPPING'|'FAILED'|'REGISTERING'|'DELETING'|'UNKNOWN'|null $Status
@@ -20,7 +20,7 @@ class Application extends Shape
     /**
      * @param array{
      *     Id?: string|null,
-     *     Type?: 'HANA'|null,
+     *     Type?: 'HANA'|'SAP_ABAP'|null,
      *     Arn?: string|null,
      *     AppRegistryArn?: string|null,
      *     Status?: 'ACTIVATED'|'STARTING'|'STOPPED'|'STOPPING'|'FAILED'|'REGISTERING'|'DELETING'|'UNKNOWN'|null,

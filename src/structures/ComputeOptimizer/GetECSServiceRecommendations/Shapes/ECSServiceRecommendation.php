@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'MemoryOverprovisioned'|'MemoryUnderprovisioned'|'CPUOverprovisioned'|'CPUUnderprovisioned'>|null $findingReasonCodes
  * @property list<ECSServiceRecommendationOption>|null $serviceRecommendationOptions
  * @property 'VeryLow'|'Low'|'Medium'|'High'|null $currentPerformanceRisk
+ * @property ECSEffectiveRecommendationPreferences|null $effectiveRecommendationPreferences
  * @property list<Tag>|null $tags
  */
 class ECSServiceRecommendation extends Shape
@@ -33,6 +34,7 @@ class ECSServiceRecommendation extends Shape
      *     findingReasonCodes?: list<'MemoryOverprovisioned'|'MemoryUnderprovisioned'|'CPUOverprovisioned'|'CPUUnderprovisioned'>|null,
      *     serviceRecommendationOptions?: list<ECSServiceRecommendationOption>|null,
      *     currentPerformanceRisk?: 'VeryLow'|'Low'|'Medium'|'High'|null,
+     *     effectiveRecommendationPreferences?: ECSEffectiveRecommendationPreferences|null,
      *     tags?: list<Tag>|null
      * } $args
      */

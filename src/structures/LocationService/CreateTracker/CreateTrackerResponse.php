@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\LocationService\CreateTracker;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreateTime
- * @property string $TrackerArn
  * @property string $TrackerName
+ * @property string $TrackerArn
+ * @property \Aws\Api\DateTimeResult $CreateTime
  */
 class CreateTrackerResponse extends Response
 {

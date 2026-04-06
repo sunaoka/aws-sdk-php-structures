@@ -16,6 +16,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $NumberOfAssociatedQueues
  * @property int|null $NumberOfAssociatedUsers
  * @property 'TIME_SINCE_LAST_ACTIVITY'|'TIME_SINCE_LAST_INBOUND'|null $AgentAvailabilityTimer
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $LastModifiedRegion
+ * @property bool|null $IsDefault
+ * @property list<string>|null $AssociatedQueueIds
  */
 class RoutingProfile extends Shape
 {
@@ -31,7 +35,11 @@ class RoutingProfile extends Shape
      *     Tags?: array<string, string>|null,
      *     NumberOfAssociatedQueues?: int|null,
      *     NumberOfAssociatedUsers?: int|null,
-     *     AgentAvailabilityTimer?: 'TIME_SINCE_LAST_ACTIVITY'|'TIME_SINCE_LAST_INBOUND'|null
+     *     AgentAvailabilityTimer?: 'TIME_SINCE_LAST_ACTIVITY'|'TIME_SINCE_LAST_INBOUND'|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedRegion?: string|null,
+     *     IsDefault?: bool|null,
+     *     AssociatedQueueIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

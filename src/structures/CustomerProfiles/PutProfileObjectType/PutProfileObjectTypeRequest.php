@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $EncryptionKey
  * @property bool|null $AllowProfileCreation
  * @property string|null $SourceLastUpdatedTimestampFormat
+ * @property int<1, max>|null $MaxProfileObjectCount
  * @property array<string, Shapes\ObjectTypeField>|null $Fields
  * @property array<string, list<Shapes\ObjectTypeKey>>|null $Keys
  * @property array<string, string>|null $Tags
@@ -29,6 +30,7 @@ class PutProfileObjectTypeRequest extends Request
      *     EncryptionKey?: string|null,
      *     AllowProfileCreation?: bool|null,
      *     SourceLastUpdatedTimestampFormat?: string|null,
+     *     MaxProfileObjectCount?: int<1, max>|null,
      *     Fields?: array<string, Shapes\ObjectTypeField>|null,
      *     Keys?: array<string, list<Shapes\ObjectTypeKey>>|null,
      *     Tags?: array<string, string>|null

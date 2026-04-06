@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'attaching'|'attached'|'detaching'|'detached'|'busy'|null $State
  * @property string|null $VolumeId
  * @property bool|null $DeleteOnTermination
+ * @property string|null $AssociatedResource
+ * @property string|null $InstanceOwningService
  */
 class VolumeAttachment extends Shape
 {
@@ -21,7 +23,9 @@ class VolumeAttachment extends Shape
      *     InstanceId?: string|null,
      *     State?: 'attaching'|'attached'|'detaching'|'detached'|'busy'|null,
      *     VolumeId?: string|null,
-     *     DeleteOnTermination?: bool|null
+     *     DeleteOnTermination?: bool|null,
+     *     AssociatedResource?: string|null,
+     *     InstanceOwningService?: string|null
      * } $args
      */
     public function __construct(array $args = [])

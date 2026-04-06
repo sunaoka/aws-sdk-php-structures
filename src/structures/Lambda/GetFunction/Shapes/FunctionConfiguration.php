@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $FunctionName
  * @property string|null $FunctionArn
- * @property 'nodejs'|'nodejs4.3'|'nodejs6.10'|'nodejs8.10'|'nodejs10.x'|'nodejs12.x'|'nodejs14.x'|'nodejs16.x'|'java8'|'java8.al2'|'java11'|'python2.7'|'python3.6'|'python3.7'|'python3.8'|'python3.9'|'dotnetcore1.0'|'dotnetcore2.0'|'dotnetcore2.1'|'dotnetcore3.1'|'dotnet6'|'nodejs4.3-edge'|'go1.x'|'ruby2.5'|'ruby2.7'|'provided'|'provided.al2'|'nodejs18.x'|'python3.10'|'java17'|'ruby3.2'|'python3.11'|null $Runtime
+ * @property 'nodejs'|'nodejs4.3'|'nodejs6.10'|'nodejs8.10'|'nodejs10.x'|'nodejs12.x'|'nodejs14.x'|'nodejs16.x'|'java8'|'java8.al2'|'java11'|'python2.7'|'python3.6'|'python3.7'|'python3.8'|'python3.9'|'dotnetcore1.0'|'dotnetcore2.0'|'dotnetcore2.1'|'dotnetcore3.1'|'dotnet6'|'dotnet8'|'nodejs4.3-edge'|'go1.x'|'ruby2.5'|'ruby2.7'|'provided'|'provided.al2'|'nodejs18.x'|'python3.10'|'java17'|'ruby3.2'|'ruby3.3'|'python3.11'|'nodejs20.x'|'provided.al2023'|'python3.12'|'java21'|null $Runtime
  * @property string|null $Role
  * @property string|null $Handler
  * @property int|null $CodeSize
@@ -40,6 +40,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EphemeralStorage|null $EphemeralStorage
  * @property SnapStartResponse|null $SnapStart
  * @property RuntimeVersionConfig|null $RuntimeVersionConfig
+ * @property LoggingConfig|null $LoggingConfig
  */
 class FunctionConfiguration extends Shape
 {
@@ -47,7 +48,7 @@ class FunctionConfiguration extends Shape
      * @param array{
      *     FunctionName?: string|null,
      *     FunctionArn?: string|null,
-     *     Runtime?: 'nodejs'|'nodejs4.3'|'nodejs6.10'|'nodejs8.10'|'nodejs10.x'|'nodejs12.x'|'nodejs14.x'|'nodejs16.x'|'java8'|'java8.al2'|'java11'|'python2.7'|'python3.6'|'python3.7'|'python3.8'|'python3.9'|'dotnetcore1.0'|'dotnetcore2.0'|'dotnetcore2.1'|'dotnetcore3.1'|'dotnet6'|'nodejs4.3-edge'|'go1.x'|'ruby2.5'|'ruby2.7'|'provided'|'provided.al2'|'nodejs18.x'|'python3.10'|'java17'|'ruby3.2'|'python3.11'|null,
+     *     Runtime?: 'nodejs'|'nodejs4.3'|'nodejs6.10'|'nodejs8.10'|'nodejs10.x'|'nodejs12.x'|'nodejs14.x'|'nodejs16.x'|'java8'|'java8.al2'|'java11'|'python2.7'|'python3.6'|'python3.7'|'python3.8'|'python3.9'|'dotnetcore1.0'|'dotnetcore2.0'|'dotnetcore2.1'|'dotnetcore3.1'|'dotnet6'|'dotnet8'|'nodejs4.3-edge'|'go1.x'|'ruby2.5'|'ruby2.7'|'provided'|'provided.al2'|'nodejs18.x'|'python3.10'|'java17'|'ruby3.2'|'ruby3.3'|'python3.11'|'nodejs20.x'|'provided.al2023'|'python3.12'|'java21'|null,
      *     Role?: string|null,
      *     Handler?: string|null,
      *     CodeSize?: int|null,
@@ -79,7 +80,8 @@ class FunctionConfiguration extends Shape
      *     Architectures?: list<'x86_64'|'arm64'>|null,
      *     EphemeralStorage?: EphemeralStorage|null,
      *     SnapStart?: SnapStartResponse|null,
-     *     RuntimeVersionConfig?: RuntimeVersionConfig|null
+     *     RuntimeVersionConfig?: RuntimeVersionConfig|null,
+     *     LoggingConfig?: LoggingConfig|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,6 +7,7 @@ class PersonalizeClient extends \Aws\Personalize\PersonalizeClient
     use CreateBatchInferenceJob\CreateBatchInferenceJobTrait;
     use CreateBatchSegmentJob\CreateBatchSegmentJobTrait;
     use CreateCampaign\CreateCampaignTrait;
+    use CreateDataDeletionJob\CreateDataDeletionJobTrait;
     use CreateDataset\CreateDatasetTrait;
     use CreateDatasetExportJob\CreateDatasetExportJobTrait;
     use CreateDatasetGroup\CreateDatasetGroupTrait;
@@ -31,6 +32,7 @@ class PersonalizeClient extends \Aws\Personalize\PersonalizeClient
     use DescribeBatchInferenceJob\DescribeBatchInferenceJobTrait;
     use DescribeBatchSegmentJob\DescribeBatchSegmentJobTrait;
     use DescribeCampaign\DescribeCampaignTrait;
+    use DescribeDataDeletionJob\DescribeDataDeletionJobTrait;
     use DescribeDataset\DescribeDatasetTrait;
     use DescribeDatasetExportJob\DescribeDatasetExportJobTrait;
     use DescribeDatasetGroup\DescribeDatasetGroupTrait;
@@ -48,6 +50,7 @@ class PersonalizeClient extends \Aws\Personalize\PersonalizeClient
     use ListBatchInferenceJobs\ListBatchInferenceJobsTrait;
     use ListBatchSegmentJobs\ListBatchSegmentJobsTrait;
     use ListCampaigns\ListCampaignsTrait;
+    use ListDataDeletionJobs\ListDataDeletionJobsTrait;
     use ListDatasetExportJobs\ListDatasetExportJobsTrait;
     use ListDatasetGroups\ListDatasetGroupsTrait;
     use ListDatasetImportJobs\ListDatasetImportJobsTrait;

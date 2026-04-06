@@ -18,6 +18,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'OFF'|'FATAL'|'ERROR'|'ALL'|null $logLevel
  * @property array<string, string>|null $tags
  * @property string $requestId
+ * @property 'RETAIN'|'REMOVE'|null $retentionMode
+ * @property 'STATIC'|'DYNAMIC'|null $storageType
+ * @property string|null $workflowOwnerId
  */
 class StartRunRequest extends Request
 {
@@ -35,7 +38,10 @@ class StartRunRequest extends Request
      *     outputUri?: string|null,
      *     logLevel?: 'OFF'|'FATAL'|'ERROR'|'ALL'|null,
      *     tags?: array<string, string>|null,
-     *     requestId: string
+     *     requestId: string,
+     *     retentionMode?: 'RETAIN'|'REMOVE'|null,
+     *     storageType?: 'STATIC'|'DYNAMIC'|null,
+     *     workflowOwnerId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $EncryptionKey
  * @property bool|null $AllowProfileCreation
  * @property string|null $SourceLastUpdatedTimestampFormat
+ * @property int<1, max>|null $MaxProfileObjectCount
+ * @property int<0, max>|null $MaxAvailableProfileObjectCount
  * @property array<string, Shapes\ObjectTypeField>|null $Fields
  * @property array<string, list<Shapes\ObjectTypeKey>>|null $Keys
  * @property \Aws\Api\DateTimeResult|null $CreatedAt

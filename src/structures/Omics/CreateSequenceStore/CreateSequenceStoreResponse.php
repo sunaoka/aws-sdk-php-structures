@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\SseConfig|null $sseConfig
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property string|null $fallbackLocation
+ * @property 'MD5up'|'SHA256up'|'SHA512up'|null $eTagAlgorithmFamily
  */
 class CreateSequenceStoreResponse extends Response
 {

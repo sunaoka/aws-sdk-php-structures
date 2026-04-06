@@ -25,6 +25,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $UserCount
  * @property WorkflowDetails|null $WorkflowDetails
  * @property list<string>|null $StructuredLogDestinations
+ * @property S3StorageOptions|null $S3StorageOptions
+ * @property list<string>|null $As2ServiceManagedEgressIpAddresses
  */
 class DescribedServer extends Shape
 {
@@ -49,7 +51,9 @@ class DescribedServer extends Shape
      *     Tags?: list<Tag>|null,
      *     UserCount?: int|null,
      *     WorkflowDetails?: WorkflowDetails|null,
-     *     StructuredLogDestinations?: list<string>|null
+     *     StructuredLogDestinations?: list<string>|null,
+     *     S3StorageOptions?: S3StorageOptions|null,
+     *     As2ServiceManagedEgressIpAddresses?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

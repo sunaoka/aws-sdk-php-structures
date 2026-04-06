@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateAutoMLJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AutoMLDataSource $DataSource
+ * @property AutoMLDataSource|null $DataSource
  * @property 'None'|'Gzip'|null $CompressionType
  * @property string $TargetAttributeName
  * @property string|null $ContentType
@@ -16,7 +16,7 @@ class AutoMLChannel extends Shape
 {
     /**
      * @param array{
-     *     DataSource: AutoMLDataSource,
+     *     DataSource?: AutoMLDataSource|null,
      *     CompressionType?: 'None'|'Gzip'|null,
      *     TargetAttributeName: string,
      *     ContentType?: string|null,

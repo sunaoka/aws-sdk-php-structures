@@ -34,4 +34,5 @@ class EfsClient extends \Aws\Efs\EfsClient
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateFileSystem\UpdateFileSystemTrait;
+    use UpdateFileSystemProtection\UpdateFileSystemProtectionTrait;
 }

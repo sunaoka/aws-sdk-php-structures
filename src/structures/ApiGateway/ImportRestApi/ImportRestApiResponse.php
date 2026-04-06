@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $policy
  * @property array<string, string>|null $tags
  * @property bool|null $disableExecuteApiEndpoint
+ * @property string|null $rootResourceId
  */
 class ImportRestApiResponse extends Response
 {

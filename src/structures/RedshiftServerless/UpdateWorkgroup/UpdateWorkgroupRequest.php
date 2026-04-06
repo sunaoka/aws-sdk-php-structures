@@ -8,6 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $baseCapacity
  * @property list<Shapes\ConfigParameter>|null $configParameters
  * @property bool|null $enhancedVpcRouting
+ * @property string|null $ipAddressType
+ * @property int|null $maxCapacity
  * @property int|null $port
  * @property bool|null $publiclyAccessible
  * @property list<string>|null $securityGroupIds
@@ -21,6 +23,8 @@ class UpdateWorkgroupRequest extends Request
      *     baseCapacity?: int|null,
      *     configParameters?: list<Shapes\ConfigParameter>|null,
      *     enhancedVpcRouting?: bool|null,
+     *     ipAddressType?: string|null,
+     *     maxCapacity?: int|null,
      *     port?: int|null,
      *     publiclyAccessible?: bool|null,
      *     securityGroupIds?: list<string>|null,

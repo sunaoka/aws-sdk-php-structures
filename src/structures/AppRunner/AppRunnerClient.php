@@ -29,6 +29,7 @@ class AppRunnerClient extends \Aws\AppRunner\AppRunnerClient
     use ListObservabilityConfigurations\ListObservabilityConfigurationsTrait;
     use ListOperations\ListOperationsTrait;
     use ListServices\ListServicesTrait;
+    use ListServicesForAutoScalingConfiguration\ListServicesForAutoScalingConfigurationTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListVpcConnectors\ListVpcConnectorsTrait;
     use ListVpcIngressConnections\ListVpcIngressConnectionsTrait;
@@ -37,6 +38,7 @@ class AppRunnerClient extends \Aws\AppRunner\AppRunnerClient
     use StartDeployment\StartDeploymentTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateDefaultAutoScalingConfiguration\UpdateDefaultAutoScalingConfigurationTrait;
     use UpdateService\UpdateServiceTrait;
     use UpdateVpcIngressConnection\UpdateVpcIngressConnectionTrait;
 }

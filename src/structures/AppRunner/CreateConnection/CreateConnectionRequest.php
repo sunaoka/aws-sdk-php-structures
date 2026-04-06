@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ConnectionName
- * @property 'GITHUB' $ProviderType
+ * @property 'GITHUB'|'BITBUCKET' $ProviderType
  * @property list<Shapes\Tag>|null $Tags
  */
 class CreateConnectionRequest extends Request
@@ -14,7 +14,7 @@ class CreateConnectionRequest extends Request
     /**
      * @param array{
      *     ConnectionName: string,
-     *     ProviderType: 'GITHUB',
+     *     ProviderType: 'GITHUB'|'BITBUCKET',
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */

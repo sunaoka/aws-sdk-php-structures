@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ClusterConfig|null $ClusterConfig
  * @property Shapes\EBSOptions|null $EBSOptions
  * @property string|null $AccessPolicies
+ * @property 'ipv4'|'dualstack'|null $IPAddressType
  * @property Shapes\SnapshotOptions|null $SnapshotOptions
  * @property Shapes\VPCOptions|null $VPCOptions
  * @property Shapes\CognitoOptions|null $CognitoOptions
@@ -23,6 +24,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AutoTuneOptionsInput|null $AutoTuneOptions
  * @property Shapes\OffPeakWindowOptions|null $OffPeakWindowOptions
  * @property Shapes\SoftwareUpdateOptions|null $SoftwareUpdateOptions
+ * @property Shapes\AIMLOptionsInput|null $AIMLOptions
  */
 class CreateDomainRequest extends Request
 {
@@ -33,6 +35,7 @@ class CreateDomainRequest extends Request
      *     ClusterConfig?: Shapes\ClusterConfig|null,
      *     EBSOptions?: Shapes\EBSOptions|null,
      *     AccessPolicies?: string|null,
+     *     IPAddressType?: 'ipv4'|'dualstack'|null,
      *     SnapshotOptions?: Shapes\SnapshotOptions|null,
      *     VPCOptions?: Shapes\VPCOptions|null,
      *     CognitoOptions?: Shapes\CognitoOptions|null,
@@ -45,7 +48,8 @@ class CreateDomainRequest extends Request
      *     TagList?: list<Shapes\Tag>|null,
      *     AutoTuneOptions?: Shapes\AutoTuneOptionsInput|null,
      *     OffPeakWindowOptions?: Shapes\OffPeakWindowOptions|null,
-     *     SoftwareUpdateOptions?: Shapes\SoftwareUpdateOptions|null
+     *     SoftwareUpdateOptions?: Shapes\SoftwareUpdateOptions|null,
+     *     AIMLOptions?: Shapes\AIMLOptionsInput|null
      * } $args
      */
     public function __construct(array $args)

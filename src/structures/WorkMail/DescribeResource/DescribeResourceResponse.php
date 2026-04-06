@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'ENABLED'|'DISABLED'|'DELETED'|null $State
  * @property \Aws\Api\DateTimeResult|null $EnabledDate
  * @property \Aws\Api\DateTimeResult|null $DisabledDate
+ * @property string|null $Description
+ * @property bool|null $HiddenFromGlobalAddressList
  */
 class DescribeResourceResponse extends Response
 {

@@ -44,6 +44,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $StorageThroughput
  * @property string|null $DBClusterSnapshotIdentifier
  * @property int|null $AllocatedStorage
+ * @property bool|null $DedicatedLogVolume
+ * @property string|null $CACertificateIdentifier
+ * @property string|null $EngineLifecycleSupport
  */
 class RestoreDBInstanceFromDBSnapshotRequest extends Request
 {
@@ -87,7 +90,10 @@ class RestoreDBInstanceFromDBSnapshotRequest extends Request
      *     NetworkType?: string|null,
      *     StorageThroughput?: int|null,
      *     DBClusterSnapshotIdentifier?: string|null,
-     *     AllocatedStorage?: int|null
+     *     AllocatedStorage?: int|null,
+     *     DedicatedLogVolume?: bool|null,
+     *     CACertificateIdentifier?: string|null,
+     *     EngineLifecycleSupport?: string|null
      * } $args
      */
     public function __construct(array $args)

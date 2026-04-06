@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<UtilizationMetric>|null $utilizationMetrics
  * @property double|null $lookBackPeriodInDays
  * @property AutoScalingGroupConfiguration|null $currentConfiguration
+ * @property GpuInfo|null $currentInstanceGpuInfo
  * @property list<AutoScalingGroupRecommendationOption>|null $recommendationOptions
  * @property \Aws\Api\DateTimeResult|null $lastRefreshTimestamp
  * @property 'VeryLow'|'Low'|'Medium'|'High'|null $currentPerformanceRisk
@@ -29,6 +30,7 @@ class AutoScalingGroupRecommendation extends Shape
      *     utilizationMetrics?: list<UtilizationMetric>|null,
      *     lookBackPeriodInDays?: double|null,
      *     currentConfiguration?: AutoScalingGroupConfiguration|null,
+     *     currentInstanceGpuInfo?: GpuInfo|null,
      *     recommendationOptions?: list<AutoScalingGroupRecommendationOption>|null,
      *     lastRefreshTimestamp?: \Aws\Api\DateTimeResult|null,
      *     currentPerformanceRisk?: 'VeryLow'|'Low'|'Medium'|'High'|null,

@@ -34,9 +34,11 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\Tag>|null $TagList
  * @property bool|null $SupportsBabelfish
  * @property string|null $CustomDBEngineVersionManifest
+ * @property bool|null $SupportsLimitlessDatabase
  * @property bool|null $SupportsCertificateRotationWithoutRestart
  * @property list<string>|null $SupportedCACertificateIdentifiers
  * @property bool|null $SupportsLocalWriteForwarding
+ * @property bool|null $SupportsIntegrations
  */
 class CreateCustomDBEngineVersionResponse extends Response
 {

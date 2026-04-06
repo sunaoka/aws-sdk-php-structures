@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Uid
  * @property list<string>|null $Groups
  * @property list<string>|null $SessionName
+ * @property ImpersonatedUser|null $ImpersonatedUser
  */
 class KubernetesUserDetails extends Shape
 {
@@ -17,7 +18,8 @@ class KubernetesUserDetails extends Shape
      *     Username?: string|null,
      *     Uid?: string|null,
      *     Groups?: list<string>|null,
-     *     SessionName?: list<string>|null
+     *     SessionName?: list<string>|null,
+     *     ImpersonatedUser?: ImpersonatedUser|null
      * } $args
      */
     public function __construct(array $args = [])

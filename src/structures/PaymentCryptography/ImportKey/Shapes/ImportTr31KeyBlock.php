@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PaymentCryptography\ImportKey\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $WrappedKeyBlock
  * @property string $WrappingKeyIdentifier
+ * @property string $WrappedKeyBlock
  */
 class ImportTr31KeyBlock extends Shape
 {
     /**
      * @param array{
-     *     WrappedKeyBlock: string,
-     *     WrappingKeyIdentifier: string
+     *     WrappingKeyIdentifier: string,
+     *     WrappedKeyBlock: string
      * } $args
      */
     public function __construct(array $args)

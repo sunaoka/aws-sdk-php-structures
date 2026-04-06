@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int<-1, 65535>|null $fromPort
  * @property int<-1, 65535>|null $toPort
- * @property 'tcp'|'all'|'udp'|'icmp'|null $protocol
+ * @property 'tcp'|'all'|'udp'|'icmp'|'icmpv6'|null $protocol
  * @property string|null $accessFrom
  * @property 'Public'|'Private'|null $accessType
  * @property string|null $commonName
@@ -22,7 +22,7 @@ class InstancePortInfo extends Shape
      * @param array{
      *     fromPort?: int<-1, 65535>|null,
      *     toPort?: int<-1, 65535>|null,
-     *     protocol?: 'tcp'|'all'|'udp'|'icmp'|null,
+     *     protocol?: 'tcp'|'all'|'udp'|'icmp'|'icmpv6'|null,
      *     accessFrom?: string|null,
      *     accessType?: 'Public'|'Private'|null,
      *     commonName?: string|null,

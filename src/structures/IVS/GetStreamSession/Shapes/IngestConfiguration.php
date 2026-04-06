@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IVS\GetStreamSession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AudioConfiguration|null $audio
  * @property VideoConfiguration|null $video
+ * @property AudioConfiguration|null $audio
  */
 class IngestConfiguration extends Shape
 {
     /**
      * @param array{
-     *     audio?: AudioConfiguration|null,
-     *     video?: VideoConfiguration|null
+     *     video?: VideoConfiguration|null,
+     *     audio?: AudioConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

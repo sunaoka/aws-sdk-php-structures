@@ -6,6 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<EksAttemptContainerDetail>|null $containers
+ * @property list<EksAttemptContainerDetail>|null $initContainers
+ * @property string|null $eksClusterArn
  * @property string|null $podName
  * @property string|null $nodeName
  * @property int|null $startedAt
@@ -17,6 +19,8 @@ class EksAttemptDetail extends Shape
     /**
      * @param array{
      *     containers?: list<EksAttemptContainerDetail>|null,
+     *     initContainers?: list<EksAttemptContainerDetail>|null,
+     *     eksClusterArn?: string|null,
      *     podName?: string|null,
      *     nodeName?: string|null,
      *     startedAt?: int|null,

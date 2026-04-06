@@ -14,6 +14,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $VpcId
  * @property bool|null $DryRun
  * @property bool|null $Ipv6Native
+ * @property string|null $Ipv4IpamPoolId
+ * @property int|null $Ipv4NetmaskLength
+ * @property string|null $Ipv6IpamPoolId
+ * @property int|null $Ipv6NetmaskLength
  */
 class CreateSubnetRequest extends Request
 {
@@ -27,7 +31,11 @@ class CreateSubnetRequest extends Request
      *     OutpostArn?: string|null,
      *     VpcId: string,
      *     DryRun?: bool|null,
-     *     Ipv6Native?: bool|null
+     *     Ipv6Native?: bool|null,
+     *     Ipv4IpamPoolId?: string|null,
+     *     Ipv4NetmaskLength?: int|null,
+     *     Ipv6IpamPoolId?: string|null,
+     *     Ipv6NetmaskLength?: int|null
      * } $args
      */
     public function __construct(array $args)

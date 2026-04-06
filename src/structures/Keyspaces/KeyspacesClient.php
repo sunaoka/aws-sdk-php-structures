@@ -10,6 +10,7 @@ class KeyspacesClient extends \Aws\Keyspaces\KeyspacesClient
     use DeleteTable\DeleteTableTrait;
     use GetKeyspace\GetKeyspaceTrait;
     use GetTable\GetTableTrait;
+    use GetTableAutoScalingSettings\GetTableAutoScalingSettingsTrait;
     use ListKeyspaces\ListKeyspacesTrait;
     use ListTables\ListTablesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;

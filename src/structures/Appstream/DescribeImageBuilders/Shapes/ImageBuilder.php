@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DisplayName
  * @property VpcConfig|null $VpcConfig
  * @property string|null $InstanceType
- * @property 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'AMAZON_LINUX2'|null $Platform
+ * @property 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|null $Platform
  * @property string|null $IamRoleArn
  * @property 'PENDING'|'UPDATING_AGENT'|'RUNNING'|'STOPPING'|'STOPPED'|'REBOOTING'|'SNAPSHOTTING'|'DELETING'|'FAILED'|'UPDATING'|'PENDING_QUALIFICATION'|null $State
  * @property ImageBuilderStateChangeReason|null $StateChangeReason
@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ResourceError>|null $ImageBuilderErrors
  * @property string|null $AppstreamAgentVersion
  * @property list<AccessEndpoint>|null $AccessEndpoints
+ * @property 'TRUE'|'FALSE'|null $LatestAppstreamAgentVersion
  */
 class ImageBuilder extends Shape
 {
@@ -35,7 +36,7 @@ class ImageBuilder extends Shape
      *     DisplayName?: string|null,
      *     VpcConfig?: VpcConfig|null,
      *     InstanceType?: string|null,
-     *     Platform?: 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'AMAZON_LINUX2'|null,
+     *     Platform?: 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|null,
      *     IamRoleArn?: string|null,
      *     State?: 'PENDING'|'UPDATING_AGENT'|'RUNNING'|'STOPPING'|'STOPPED'|'REBOOTING'|'SNAPSHOTTING'|'DELETING'|'FAILED'|'UPDATING'|'PENDING_QUALIFICATION'|null,
      *     StateChangeReason?: ImageBuilderStateChangeReason|null,
@@ -45,7 +46,8 @@ class ImageBuilder extends Shape
      *     NetworkAccessConfiguration?: NetworkAccessConfiguration|null,
      *     ImageBuilderErrors?: list<ResourceError>|null,
      *     AppstreamAgentVersion?: string|null,
-     *     AccessEndpoints?: list<AccessEndpoint>|null
+     *     AccessEndpoints?: list<AccessEndpoint>|null,
+     *     LatestAppstreamAgentVersion?: 'TRUE'|'FALSE'|null
      * } $args
      */
     public function __construct(array $args)

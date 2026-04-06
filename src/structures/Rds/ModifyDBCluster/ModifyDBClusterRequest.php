@@ -47,6 +47,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $EngineMode
  * @property bool|null $AllowEngineModeChange
  * @property bool|null $EnableLocalWriteForwarding
+ * @property string|null $AwsBackupRecoveryPointArn
+ * @property bool|null $EnableLimitlessDatabase
+ * @property string|null $CACertificateIdentifier
  */
 class ModifyDBClusterRequest extends Request
 {
@@ -93,7 +96,10 @@ class ModifyDBClusterRequest extends Request
      *     MasterUserSecretKmsKeyId?: string|null,
      *     EngineMode?: string|null,
      *     AllowEngineModeChange?: bool|null,
-     *     EnableLocalWriteForwarding?: bool|null
+     *     EnableLocalWriteForwarding?: bool|null,
+     *     AwsBackupRecoveryPointArn?: string|null,
+     *     EnableLimitlessDatabase?: bool|null,
+     *     CACertificateIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

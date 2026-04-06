@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ReplicationGroupUpdate>|null $ReplicaUpdates
  * @property 'STANDARD'|'STANDARD_INFREQUENT_ACCESS'|null $TableClass
  * @property bool|null $DeletionProtectionEnabled
+ * @property Shapes\OnDemandThroughput|null $OnDemandThroughput
  */
 class UpdateTableRequest extends Request
 {
@@ -29,7 +30,8 @@ class UpdateTableRequest extends Request
      *     SSESpecification?: Shapes\SSESpecification|null,
      *     ReplicaUpdates?: list<Shapes\ReplicationGroupUpdate>|null,
      *     TableClass?: 'STANDARD'|'STANDARD_INFREQUENT_ACCESS'|null,
-     *     DeletionProtectionEnabled?: bool|null
+     *     DeletionProtectionEnabled?: bool|null,
+     *     OnDemandThroughput?: Shapes\OnDemandThroughput|null
      * } $args
      */
     public function __construct(array $args)

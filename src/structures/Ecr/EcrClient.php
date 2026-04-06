@@ -11,10 +11,12 @@ class EcrClient extends \Aws\Ecr\EcrClient
     use CompleteLayerUpload\CompleteLayerUploadTrait;
     use CreatePullThroughCacheRule\CreatePullThroughCacheRuleTrait;
     use CreateRepository\CreateRepositoryTrait;
+    use CreateRepositoryCreationTemplate\CreateRepositoryCreationTemplateTrait;
     use DeleteLifecyclePolicy\DeleteLifecyclePolicyTrait;
     use DeletePullThroughCacheRule\DeletePullThroughCacheRuleTrait;
     use DeleteRegistryPolicy\DeleteRegistryPolicyTrait;
     use DeleteRepository\DeleteRepositoryTrait;
+    use DeleteRepositoryCreationTemplate\DeleteRepositoryCreationTemplateTrait;
     use DeleteRepositoryPolicy\DeleteRepositoryPolicyTrait;
     use DescribeImageReplicationStatus\DescribeImageReplicationStatusTrait;
     use DescribeImageScanFindings\DescribeImageScanFindingsTrait;
@@ -22,6 +24,8 @@ class EcrClient extends \Aws\Ecr\EcrClient
     use DescribePullThroughCacheRules\DescribePullThroughCacheRulesTrait;
     use DescribeRegistry\DescribeRegistryTrait;
     use DescribeRepositories\DescribeRepositoriesTrait;
+    use DescribeRepositoryCreationTemplates\DescribeRepositoryCreationTemplatesTrait;
+    use GetAccountSetting\GetAccountSettingTrait;
     use GetAuthorizationToken\GetAuthorizationTokenTrait;
     use GetDownloadUrlForLayer\GetDownloadUrlForLayerTrait;
     use GetLifecyclePolicy\GetLifecyclePolicyTrait;
@@ -32,6 +36,7 @@ class EcrClient extends \Aws\Ecr\EcrClient
     use InitiateLayerUpload\InitiateLayerUploadTrait;
     use ListImages\ListImagesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use PutAccountSetting\PutAccountSettingTrait;
     use PutImage\PutImageTrait;
     use PutImageScanningConfiguration\PutImageScanningConfigurationTrait;
     use PutImageTagMutability\PutImageTagMutabilityTrait;
@@ -44,5 +49,8 @@ class EcrClient extends \Aws\Ecr\EcrClient
     use StartLifecyclePolicyPreview\StartLifecyclePolicyPreviewTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdatePullThroughCacheRule\UpdatePullThroughCacheRuleTrait;
+    use UpdateRepositoryCreationTemplate\UpdateRepositoryCreationTemplateTrait;
     use UploadLayerPart\UploadLayerPartTrait;
+    use ValidatePullThroughCacheRule\ValidatePullThroughCacheRuleTrait;
 }

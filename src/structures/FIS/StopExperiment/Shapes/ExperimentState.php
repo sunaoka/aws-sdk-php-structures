@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'pending'|'initiating'|'running'|'completed'|'stopping'|'stopped'|'failed'|null $status
  * @property string|null $reason
+ * @property ExperimentError|null $error
  */
 class ExperimentState extends Shape
 {
     /**
      * @param array{
      *     status?: 'pending'|'initiating'|'running'|'completed'|'stopping'|'stopped'|'failed'|null,
-     *     reason?: string|null
+     *     reason?: string|null,
+     *     error?: ExperimentError|null
      * } $args
      */
     public function __construct(array $args = [])

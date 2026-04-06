@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'PROCESSING'|'COMPLETED'|'FAILED'|'CANCELLING'|'CANCELLED'|null $operationState
  * @property array<string, string>|null $tags
  * @property list<Shapes\GetSolNetworkOperationTaskDetails>|null $tasks
+ * @property 'MODIFY_VNF_INFORMATION'|'UPDATE_NS'|null $updateType
  */
 class GetSolNetworkOperationResponse extends Response
 {

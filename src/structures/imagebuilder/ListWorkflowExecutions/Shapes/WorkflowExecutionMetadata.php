@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $workflowBuildVersionArn
  * @property string|null $workflowExecutionId
  * @property 'BUILD'|'TEST'|'DISTRIBUTION'|null $type
- * @property 'PENDING'|'SKIPPED'|'RUNNING'|'COMPLETED'|'FAILED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETED'|null $status
+ * @property 'PENDING'|'SKIPPED'|'RUNNING'|'COMPLETED'|'FAILED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETED'|'CANCELLED'|null $status
  * @property string|null $message
  * @property int|null $totalStepCount
  * @property int|null $totalStepsSucceeded
@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $totalStepsSkipped
  * @property string|null $startTime
  * @property string|null $endTime
+ * @property string|null $parallelGroup
  */
 class WorkflowExecutionMetadata extends Shape
 {
@@ -24,14 +25,15 @@ class WorkflowExecutionMetadata extends Shape
      *     workflowBuildVersionArn?: string|null,
      *     workflowExecutionId?: string|null,
      *     type?: 'BUILD'|'TEST'|'DISTRIBUTION'|null,
-     *     status?: 'PENDING'|'SKIPPED'|'RUNNING'|'COMPLETED'|'FAILED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETED'|null,
+     *     status?: 'PENDING'|'SKIPPED'|'RUNNING'|'COMPLETED'|'FAILED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETED'|'CANCELLED'|null,
      *     message?: string|null,
      *     totalStepCount?: int|null,
      *     totalStepsSucceeded?: int|null,
      *     totalStepsFailed?: int|null,
      *     totalStepsSkipped?: int|null,
      *     startTime?: string|null,
-     *     endTime?: string|null
+     *     endTime?: string|null,
+     *     parallelGroup?: string|null
      * } $args
      */
     public function __construct(array $args = [])

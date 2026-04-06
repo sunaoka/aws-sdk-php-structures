@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignService\ListCampaigns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $connectInstanceId
  * @property string $id
+ * @property string $arn
  * @property string $name
+ * @property string $connectInstanceId
  */
 class CampaignSummary extends Shape
 {
     /**
      * @param array{
-     *     arn: string,
-     *     connectInstanceId: string,
      *     id: string,
-     *     name: string
+     *     arn: string,
+     *     name: string,
+     *     connectInstanceId: string
      * } $args
      */
     public function __construct(array $args)

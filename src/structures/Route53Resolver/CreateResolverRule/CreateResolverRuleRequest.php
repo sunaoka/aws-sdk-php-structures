@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $CreatorRequestId
  * @property string|null $Name
  * @property 'FORWARD'|'SYSTEM'|'RECURSIVE' $RuleType
- * @property string $DomainName
+ * @property string|null $DomainName
  * @property list<Shapes\TargetAddress>|null $TargetIps
  * @property string|null $ResolverEndpointId
  * @property list<Shapes\Tag>|null $Tags
@@ -20,7 +20,7 @@ class CreateResolverRuleRequest extends Request
      *     CreatorRequestId: string,
      *     Name?: string|null,
      *     RuleType: 'FORWARD'|'SYSTEM'|'RECURSIVE',
-     *     DomainName: string,
+     *     DomainName?: string|null,
      *     TargetIps?: list<Shapes\TargetAddress>|null,
      *     ResolverEndpointId?: string|null,
      *     Tags?: list<Shapes\Tag>|null

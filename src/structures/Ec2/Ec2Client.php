@@ -25,6 +25,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use AssociateEnclaveCertificateIamRole\AssociateEnclaveCertificateIamRoleTrait;
     use AssociateIamInstanceProfile\AssociateIamInstanceProfileTrait;
     use AssociateInstanceEventWindow\AssociateInstanceEventWindowTrait;
+    use AssociateIpamByoasn\AssociateIpamByoasnTrait;
     use AssociateIpamResourceDiscovery\AssociateIpamResourceDiscoveryTrait;
     use AssociateNatGatewayAddress\AssociateNatGatewayAddressTrait;
     use AssociateRouteTable\AssociateRouteTableTrait;
@@ -59,6 +60,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CopyImage\CopyImageTrait;
     use CopySnapshot\CopySnapshotTrait;
     use CreateCapacityReservation\CreateCapacityReservationTrait;
+    use CreateCapacityReservationBySplitting\CreateCapacityReservationBySplittingTrait;
     use CreateCapacityReservationFleet\CreateCapacityReservationFleetTrait;
     use CreateCarrierGateway\CreateCarrierGatewayTrait;
     use CreateClientVpnEndpoint\CreateClientVpnEndpointTrait;
@@ -79,6 +81,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateInstanceExportTask\CreateInstanceExportTaskTrait;
     use CreateInternetGateway\CreateInternetGatewayTrait;
     use CreateIpam\CreateIpamTrait;
+    use CreateIpamExternalResourceVerificationToken\CreateIpamExternalResourceVerificationTokenTrait;
     use CreateIpamPool\CreateIpamPoolTrait;
     use CreateIpamResourceDiscovery\CreateIpamResourceDiscoveryTrait;
     use CreateIpamScope\CreateIpamScopeTrait;
@@ -155,6 +158,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeleteInstanceEventWindow\DeleteInstanceEventWindowTrait;
     use DeleteInternetGateway\DeleteInternetGatewayTrait;
     use DeleteIpam\DeleteIpamTrait;
+    use DeleteIpamExternalResourceVerificationToken\DeleteIpamExternalResourceVerificationTokenTrait;
     use DeleteIpamPool\DeleteIpamPoolTrait;
     use DeleteIpamResourceDiscovery\DeleteIpamResourceDiscoveryTrait;
     use DeleteIpamScope\DeleteIpamScopeTrait;
@@ -215,6 +219,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeleteVpnConnectionRoute\DeleteVpnConnectionRouteTrait;
     use DeleteVpnGateway\DeleteVpnGatewayTrait;
     use DeprovisionByoipCidr\DeprovisionByoipCidrTrait;
+    use DeprovisionIpamByoasn\DeprovisionIpamByoasnTrait;
     use DeprovisionIpamPoolCidr\DeprovisionIpamPoolCidrTrait;
     use DeprovisionPublicIpv4PoolCidr\DeprovisionPublicIpv4PoolCidrTrait;
     use DeregisterImage\DeregisterImageTrait;
@@ -230,6 +235,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeAwsNetworkPerformanceMetricSubscriptions\DescribeAwsNetworkPerformanceMetricSubscriptionsTrait;
     use DescribeBundleTasks\DescribeBundleTasksTrait;
     use DescribeByoipCidrs\DescribeByoipCidrsTrait;
+    use DescribeCapacityBlockOfferings\DescribeCapacityBlockOfferingsTrait;
     use DescribeCapacityReservationFleets\DescribeCapacityReservationFleetsTrait;
     use DescribeCapacityReservations\DescribeCapacityReservationsTrait;
     use DescribeCarrierGateways\DescribeCarrierGatewaysTrait;
@@ -271,10 +277,13 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeInstanceEventNotificationAttributes\DescribeInstanceEventNotificationAttributesTrait;
     use DescribeInstanceEventWindows\DescribeInstanceEventWindowsTrait;
     use DescribeInstanceStatus\DescribeInstanceStatusTrait;
+    use DescribeInstanceTopology\DescribeInstanceTopologyTrait;
     use DescribeInstanceTypeOfferings\DescribeInstanceTypeOfferingsTrait;
     use DescribeInstanceTypes\DescribeInstanceTypesTrait;
     use DescribeInstances\DescribeInstancesTrait;
     use DescribeInternetGateways\DescribeInternetGatewaysTrait;
+    use DescribeIpamByoasn\DescribeIpamByoasnTrait;
+    use DescribeIpamExternalResourceVerificationTokens\DescribeIpamExternalResourceVerificationTokensTrait;
     use DescribeIpamPools\DescribeIpamPoolsTrait;
     use DescribeIpamResourceDiscoveries\DescribeIpamResourceDiscoveriesTrait;
     use DescribeIpamResourceDiscoveryAssociations\DescribeIpamResourceDiscoveryAssociationsTrait;
@@ -290,6 +299,8 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeLocalGatewayVirtualInterfaceGroups\DescribeLocalGatewayVirtualInterfaceGroupsTrait;
     use DescribeLocalGatewayVirtualInterfaces\DescribeLocalGatewayVirtualInterfacesTrait;
     use DescribeLocalGateways\DescribeLocalGatewaysTrait;
+    use DescribeLockedSnapshots\DescribeLockedSnapshotsTrait;
+    use DescribeMacHosts\DescribeMacHostsTrait;
     use DescribeManagedPrefixLists\DescribeManagedPrefixListsTrait;
     use DescribeMovingAddresses\DescribeMovingAddressesTrait;
     use DescribeNatGateways\DescribeNatGatewaysTrait;
@@ -330,6 +341,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeStoreImageTasks\DescribeStoreImageTasksTrait;
     use DescribeSubnets\DescribeSubnetsTrait;
     use DescribeTags\DescribeTagsTrait;
+    use DescribeTrafficMirrorFilterRules\DescribeTrafficMirrorFilterRulesTrait;
     use DescribeTrafficMirrorFilters\DescribeTrafficMirrorFiltersTrait;
     use DescribeTrafficMirrorSessions\DescribeTrafficMirrorSessionsTrait;
     use DescribeTrafficMirrorTargets\DescribeTrafficMirrorTargetsTrait;
@@ -377,9 +389,13 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DisableEbsEncryptionByDefault\DisableEbsEncryptionByDefaultTrait;
     use DisableFastLaunch\DisableFastLaunchTrait;
     use DisableFastSnapshotRestores\DisableFastSnapshotRestoresTrait;
+    use DisableImage\DisableImageTrait;
+    use DisableImageBlockPublicAccess\DisableImageBlockPublicAccessTrait;
     use DisableImageDeprecation\DisableImageDeprecationTrait;
+    use DisableImageDeregistrationProtection\DisableImageDeregistrationProtectionTrait;
     use DisableIpamOrganizationAdminAccount\DisableIpamOrganizationAdminAccountTrait;
     use DisableSerialConsoleAccess\DisableSerialConsoleAccessTrait;
+    use DisableSnapshotBlockPublicAccess\DisableSnapshotBlockPublicAccessTrait;
     use DisableTransitGatewayRouteTablePropagation\DisableTransitGatewayRouteTablePropagationTrait;
     use DisableVgwRoutePropagation\DisableVgwRoutePropagationTrait;
     use DisableVpcClassicLink\DisableVpcClassicLinkTrait;
@@ -389,6 +405,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DisassociateEnclaveCertificateIamRole\DisassociateEnclaveCertificateIamRoleTrait;
     use DisassociateIamInstanceProfile\DisassociateIamInstanceProfileTrait;
     use DisassociateInstanceEventWindow\DisassociateInstanceEventWindowTrait;
+    use DisassociateIpamByoasn\DisassociateIpamByoasnTrait;
     use DisassociateIpamResourceDiscovery\DisassociateIpamResourceDiscoveryTrait;
     use DisassociateNatGatewayAddress\DisassociateNatGatewayAddressTrait;
     use DisassociateRouteTable\DisassociateRouteTableTrait;
@@ -403,10 +420,14 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use EnableEbsEncryptionByDefault\EnableEbsEncryptionByDefaultTrait;
     use EnableFastLaunch\EnableFastLaunchTrait;
     use EnableFastSnapshotRestores\EnableFastSnapshotRestoresTrait;
+    use EnableImage\EnableImageTrait;
+    use EnableImageBlockPublicAccess\EnableImageBlockPublicAccessTrait;
     use EnableImageDeprecation\EnableImageDeprecationTrait;
+    use EnableImageDeregistrationProtection\EnableImageDeregistrationProtectionTrait;
     use EnableIpamOrganizationAdminAccount\EnableIpamOrganizationAdminAccountTrait;
     use EnableReachabilityAnalyzerOrganizationSharing\EnableReachabilityAnalyzerOrganizationSharingTrait;
     use EnableSerialConsoleAccess\EnableSerialConsoleAccessTrait;
+    use EnableSnapshotBlockPublicAccess\EnableSnapshotBlockPublicAccessTrait;
     use EnableTransitGatewayRouteTablePropagation\EnableTransitGatewayRouteTablePropagationTrait;
     use EnableVgwRoutePropagation\EnableVgwRoutePropagationTrait;
     use EnableVolumeIO\EnableVolumeIOTrait;
@@ -429,10 +450,14 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetFlowLogsIntegrationTemplate\GetFlowLogsIntegrationTemplateTrait;
     use GetGroupsForCapacityReservation\GetGroupsForCapacityReservationTrait;
     use GetHostReservationPurchasePreview\GetHostReservationPurchasePreviewTrait;
+    use GetImageBlockPublicAccessState\GetImageBlockPublicAccessStateTrait;
+    use GetInstanceMetadataDefaults\GetInstanceMetadataDefaultsTrait;
+    use GetInstanceTpmEkPub\GetInstanceTpmEkPubTrait;
     use GetInstanceTypesFromInstanceRequirements\GetInstanceTypesFromInstanceRequirementsTrait;
     use GetInstanceUefiData\GetInstanceUefiDataTrait;
     use GetIpamAddressHistory\GetIpamAddressHistoryTrait;
     use GetIpamDiscoveredAccounts\GetIpamDiscoveredAccountsTrait;
+    use GetIpamDiscoveredPublicAddresses\GetIpamDiscoveredPublicAddressesTrait;
     use GetIpamDiscoveredResourceCidrs\GetIpamDiscoveredResourceCidrsTrait;
     use GetIpamPoolAllocations\GetIpamPoolAllocationsTrait;
     use GetIpamPoolCidrs\GetIpamPoolCidrsTrait;
@@ -444,7 +469,9 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetNetworkInsightsAccessScopeContent\GetNetworkInsightsAccessScopeContentTrait;
     use GetPasswordData\GetPasswordDataTrait;
     use GetReservedInstancesExchangeQuote\GetReservedInstancesExchangeQuoteTrait;
+    use GetSecurityGroupsForVpc\GetSecurityGroupsForVpcTrait;
     use GetSerialConsoleAccessStatus\GetSerialConsoleAccessStatusTrait;
+    use GetSnapshotBlockPublicAccessState\GetSnapshotBlockPublicAccessStateTrait;
     use GetSpotPlacementScores\GetSpotPlacementScoresTrait;
     use GetSubnetCidrReservations\GetSubnetCidrReservationsTrait;
     use GetTransitGatewayAttachmentPropagations\GetTransitGatewayAttachmentPropagationsTrait;
@@ -467,6 +494,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ImportVolume\ImportVolumeTrait;
     use ListImagesInRecycleBin\ListImagesInRecycleBinTrait;
     use ListSnapshotsInRecycleBin\ListSnapshotsInRecycleBinTrait;
+    use LockSnapshot\LockSnapshotTrait;
     use ModifyAddressAttribute\ModifyAddressAttributeTrait;
     use ModifyAvailabilityZoneGroup\ModifyAvailabilityZoneGroupTrait;
     use ModifyCapacityReservation\ModifyCapacityReservationTrait;
@@ -486,6 +514,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ModifyInstanceEventStartTime\ModifyInstanceEventStartTimeTrait;
     use ModifyInstanceEventWindow\ModifyInstanceEventWindowTrait;
     use ModifyInstanceMaintenanceOptions\ModifyInstanceMaintenanceOptionsTrait;
+    use ModifyInstanceMetadataDefaults\ModifyInstanceMetadataDefaultsTrait;
     use ModifyInstanceMetadataOptions\ModifyInstanceMetadataOptionsTrait;
     use ModifyInstancePlacement\ModifyInstancePlacementTrait;
     use ModifyIpam\ModifyIpamTrait;
@@ -534,9 +563,12 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use MonitorInstances\MonitorInstancesTrait;
     use MoveAddressToVpc\MoveAddressToVpcTrait;
     use MoveByoipCidrToIpam\MoveByoipCidrToIpamTrait;
+    use MoveCapacityReservationInstances\MoveCapacityReservationInstancesTrait;
     use ProvisionByoipCidr\ProvisionByoipCidrTrait;
+    use ProvisionIpamByoasn\ProvisionIpamByoasnTrait;
     use ProvisionIpamPoolCidr\ProvisionIpamPoolCidrTrait;
     use ProvisionPublicIpv4PoolCidr\ProvisionPublicIpv4PoolCidrTrait;
+    use PurchaseCapacityBlock\PurchaseCapacityBlockTrait;
     use PurchaseHostReservation\PurchaseHostReservationTrait;
     use PurchaseReservedInstancesOffering\PurchaseReservedInstancesOfferingTrait;
     use PurchaseScheduledInstances\PurchaseScheduledInstancesTrait;
@@ -594,6 +626,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use UnassignIpv6Addresses\UnassignIpv6AddressesTrait;
     use UnassignPrivateIpAddresses\UnassignPrivateIpAddressesTrait;
     use UnassignPrivateNatGatewayAddress\UnassignPrivateNatGatewayAddressTrait;
+    use UnlockSnapshot\UnlockSnapshotTrait;
     use UnmonitorInstances\UnmonitorInstancesTrait;
     use UpdateSecurityGroupRuleDescriptionsEgress\UpdateSecurityGroupRuleDescriptionsEgressTrait;
     use UpdateSecurityGroupRuleDescriptionsIngress\UpdateSecurityGroupRuleDescriptionsIngressTrait;

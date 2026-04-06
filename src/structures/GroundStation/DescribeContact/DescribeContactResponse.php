@@ -19,6 +19,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $satelliteArn
  * @property \Aws\Api\DateTimeResult|null $startTime
  * @property array<string, string>|null $tags
+ * @property \Aws\Api\DateTimeResult|null $visibilityEndTime
+ * @property \Aws\Api\DateTimeResult|null $visibilityStartTime
  */
 class DescribeContactResponse extends Response
 {

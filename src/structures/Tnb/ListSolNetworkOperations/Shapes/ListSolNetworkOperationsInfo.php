@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ListSolNetworkOperationsMetadata|null $metadata
  * @property string $nsInstanceId
  * @property 'PROCESSING'|'COMPLETED'|'FAILED'|'CANCELLING'|'CANCELLED' $operationState
+ * @property 'MODIFY_VNF_INFORMATION'|'UPDATE_NS'|null $updateType
  */
 class ListSolNetworkOperationsInfo extends Shape
 {
@@ -23,7 +24,8 @@ class ListSolNetworkOperationsInfo extends Shape
      *     lcmOperationType: 'INSTANTIATE'|'UPDATE'|'TERMINATE',
      *     metadata?: ListSolNetworkOperationsMetadata|null,
      *     nsInstanceId: string,
-     *     operationState: 'PROCESSING'|'COMPLETED'|'FAILED'|'CANCELLING'|'CANCELLED'
+     *     operationState: 'PROCESSING'|'COMPLETED'|'FAILED'|'CANCELLING'|'CANCELLED',
+     *     updateType?: 'MODIFY_VNF_INFORMATION'|'UPDATE_NS'|null
      * } $args
      */
     public function __construct(array $args)

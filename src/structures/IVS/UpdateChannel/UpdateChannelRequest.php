@@ -6,26 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property bool|null $authorized
- * @property bool|null $insecureIngest
- * @property 'NORMAL'|'LOW'|null $latencyMode
  * @property string|null $name
- * @property 'HIGHER_BANDWIDTH_DELIVERY'|'CONSTRAINED_BANDWIDTH_DELIVERY'|null $preset
- * @property string|null $recordingConfigurationArn
+ * @property 'NORMAL'|'LOW'|null $latencyMode
  * @property 'BASIC'|'STANDARD'|'ADVANCED_SD'|'ADVANCED_HD'|null $type
+ * @property bool|null $authorized
+ * @property string|null $recordingConfigurationArn
+ * @property bool|null $insecureIngest
+ * @property 'HIGHER_BANDWIDTH_DELIVERY'|'CONSTRAINED_BANDWIDTH_DELIVERY'|null $preset
+ * @property string|null $playbackRestrictionPolicyArn
  */
 class UpdateChannelRequest extends Request
 {
     /**
      * @param array{
      *     arn: string,
-     *     authorized?: bool|null,
-     *     insecureIngest?: bool|null,
-     *     latencyMode?: 'NORMAL'|'LOW'|null,
      *     name?: string|null,
-     *     preset?: 'HIGHER_BANDWIDTH_DELIVERY'|'CONSTRAINED_BANDWIDTH_DELIVERY'|null,
+     *     latencyMode?: 'NORMAL'|'LOW'|null,
+     *     type?: 'BASIC'|'STANDARD'|'ADVANCED_SD'|'ADVANCED_HD'|null,
+     *     authorized?: bool|null,
      *     recordingConfigurationArn?: string|null,
-     *     type?: 'BASIC'|'STANDARD'|'ADVANCED_SD'|'ADVANCED_HD'|null
+     *     insecureIngest?: bool|null,
+     *     preset?: 'HIGHER_BANDWIDTH_DELIVERY'|'CONSTRAINED_BANDWIDTH_DELIVERY'|null,
+     *     playbackRestrictionPolicyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

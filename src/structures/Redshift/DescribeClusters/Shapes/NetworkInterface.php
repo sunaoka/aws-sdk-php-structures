@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SubnetId
  * @property string|null $PrivateIpAddress
  * @property string|null $AvailabilityZone
+ * @property string|null $Ipv6Address
  */
 class NetworkInterface extends Shape
 {
@@ -17,7 +18,8 @@ class NetworkInterface extends Shape
      *     NetworkInterfaceId?: string|null,
      *     SubnetId?: string|null,
      *     PrivateIpAddress?: string|null,
-     *     AvailabilityZone?: string|null
+     *     AvailabilityZone?: string|null,
+     *     Ipv6Address?: string|null
      * } $args
      */
     public function __construct(array $args = [])

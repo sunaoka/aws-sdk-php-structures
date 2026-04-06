@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $arn
  * @property 'CFN_STACK'|'RESOURCE_TAG_VALUE'|null $resourceType
  * @property ResourceDetails|null $resourceDetails
+ * @property list<'APPLY_APPLICATION_TAG'|'SKIP_APPLICATION_TAG'>|null $options
  */
 class ResourceInfo extends Shape
 {
@@ -17,7 +18,8 @@ class ResourceInfo extends Shape
      *     name?: string|null,
      *     arn?: string|null,
      *     resourceType?: 'CFN_STACK'|'RESOURCE_TAG_VALUE'|null,
-     *     resourceDetails?: ResourceDetails|null
+     *     resourceDetails?: ResourceDetails|null,
+     *     options?: list<'APPLY_APPLICATION_TAG'|'SKIP_APPLICATION_TAG'>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<LiveConnectorSinkConfiguration>|null $Sinks
  * @property string|null $MediaPipelineId
  * @property string|null $MediaPipelineArn
- * @property 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|null $Status
+ * @property 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|'NotStarted'|null $Status
  * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
  * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
  */
@@ -21,7 +21,7 @@ class MediaLiveConnectorPipeline extends Shape
      *     Sinks?: list<LiveConnectorSinkConfiguration>|null,
      *     MediaPipelineId?: string|null,
      *     MediaPipelineArn?: string|null,
-     *     Status?: 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|null,
+     *     Status?: 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|'NotStarted'|null,
      *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
      *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args

@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $EndpointName
  * @property list<MonitoringAlertSummary>|null $MonitoringAlertSummaries
  * @property MonitoringExecutionSummary|null $LastMonitoringExecutionSummary
+ * @property BatchTransformInput|null $BatchTransformInput
  */
 class ModelDashboardMonitoringSchedule extends Shape
 {
@@ -31,7 +32,8 @@ class ModelDashboardMonitoringSchedule extends Shape
      *     MonitoringScheduleConfig?: MonitoringScheduleConfig|null,
      *     EndpointName?: string|null,
      *     MonitoringAlertSummaries?: list<MonitoringAlertSummary>|null,
-     *     LastMonitoringExecutionSummary?: MonitoringExecutionSummary|null
+     *     LastMonitoringExecutionSummary?: MonitoringExecutionSummary|null,
+     *     BatchTransformInput?: BatchTransformInput|null
      * } $args
      */
     public function __construct(array $args = [])

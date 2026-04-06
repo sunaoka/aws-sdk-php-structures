@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\HttpDataSourceConfig|null $httpConfig
  * @property Shapes\RelationalDatabaseDataSourceConfig|null $relationalDatabaseConfig
  * @property Shapes\EventBridgeDataSourceConfig|null $eventBridgeConfig
+ * @property 'ENABLED'|'DISABLED'|null $metricsConfig
  */
 class UpdateDataSourceRequest extends Request
 {
@@ -33,7 +34,8 @@ class UpdateDataSourceRequest extends Request
      *     openSearchServiceConfig?: Shapes\OpenSearchServiceDataSourceConfig|null,
      *     httpConfig?: Shapes\HttpDataSourceConfig|null,
      *     relationalDatabaseConfig?: Shapes\RelationalDatabaseDataSourceConfig|null,
-     *     eventBridgeConfig?: Shapes\EventBridgeDataSourceConfig|null
+     *     eventBridgeConfig?: Shapes\EventBridgeDataSourceConfig|null,
+     *     metricsConfig?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

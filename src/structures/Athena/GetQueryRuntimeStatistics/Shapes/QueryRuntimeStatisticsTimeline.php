@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int|null $QueryQueueTimeInMillis
+ * @property int|null $ServicePreProcessingTimeInMillis
  * @property int|null $QueryPlanningTimeInMillis
  * @property int|null $EngineExecutionTimeInMillis
  * @property int|null $ServiceProcessingTimeInMillis
@@ -16,6 +17,7 @@ class QueryRuntimeStatisticsTimeline extends Shape
     /**
      * @param array{
      *     QueryQueueTimeInMillis?: int|null,
+     *     ServicePreProcessingTimeInMillis?: int|null,
      *     QueryPlanningTimeInMillis?: int|null,
      *     EngineExecutionTimeInMillis?: int|null,
      *     ServiceProcessingTimeInMillis?: int|null,

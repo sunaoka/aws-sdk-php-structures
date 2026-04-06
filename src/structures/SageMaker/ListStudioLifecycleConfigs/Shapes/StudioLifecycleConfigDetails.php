@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $StudioLifecycleConfigName
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
- * @property 'JupyterServer'|'KernelGateway'|null $StudioLifecycleConfigAppType
+ * @property 'JupyterServer'|'KernelGateway'|'CodeEditor'|'JupyterLab'|null $StudioLifecycleConfigAppType
  */
 class StudioLifecycleConfigDetails extends Shape
 {
@@ -19,7 +19,7 @@ class StudioLifecycleConfigDetails extends Shape
      *     StudioLifecycleConfigName?: string|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
-     *     StudioLifecycleConfigAppType?: 'JupyterServer'|'KernelGateway'|null
+     *     StudioLifecycleConfigAppType?: 'JupyterServer'|'KernelGateway'|'CodeEditor'|'JupyterLab'|null
      * } $args
      */
     public function __construct(array $args = [])

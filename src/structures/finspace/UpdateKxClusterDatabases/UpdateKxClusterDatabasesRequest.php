@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $clusterName
  * @property string|null $clientToken
  * @property list<Shapes\KxDatabaseConfiguration> $databases
+ * @property Shapes\KxDeploymentConfiguration|null $deploymentConfiguration
  */
 class UpdateKxClusterDatabasesRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateKxClusterDatabasesRequest extends Request
      *     environmentId: string,
      *     clusterName: string,
      *     clientToken?: string|null,
-     *     databases: list<Shapes\KxDatabaseConfiguration>
+     *     databases: list<Shapes\KxDatabaseConfiguration>,
+     *     deploymentConfiguration?: Shapes\KxDeploymentConfiguration|null
      * } $args
      */
     public function __construct(array $args)

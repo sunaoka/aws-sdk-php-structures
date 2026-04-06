@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ContactDetail|null $RegistrantContact
  * @property Shapes\ContactDetail|null $TechContact
  * @property Shapes\Consent|null $Consent
+ * @property Shapes\ContactDetail|null $BillingContact
  */
 class UpdateDomainContactRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateDomainContactRequest extends Request
      *     AdminContact?: Shapes\ContactDetail|null,
      *     RegistrantContact?: Shapes\ContactDetail|null,
      *     TechContact?: Shapes\ContactDetail|null,
-     *     Consent?: Shapes\Consent|null
+     *     Consent?: Shapes\Consent|null,
+     *     BillingContact?: Shapes\ContactDetail|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $totalSensors
  * @property int|null $totalAttributes
  * @property int|null $totalActuators
+ * @property int|null $totalStructs
+ * @property int|null $totalProperties
  */
 class NodeCounts extends Shape
 {
@@ -19,7 +21,9 @@ class NodeCounts extends Shape
      *     totalBranches?: int|null,
      *     totalSensors?: int|null,
      *     totalAttributes?: int|null,
-     *     totalActuators?: int|null
+     *     totalActuators?: int|null,
+     *     totalStructs?: int|null,
+     *     totalProperties?: int|null
      * } $args
      */
     public function __construct(array $args = [])

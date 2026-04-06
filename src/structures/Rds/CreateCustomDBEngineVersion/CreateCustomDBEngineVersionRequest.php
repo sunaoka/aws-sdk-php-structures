@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property string|null $Manifest
  * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $SourceCustomDbEngineVersionIdentifier
+ * @property bool|null $UseAwsProvidedLatestImage
  */
 class CreateCustomDBEngineVersionRequest extends Request
 {
@@ -27,7 +29,9 @@ class CreateCustomDBEngineVersionRequest extends Request
      *     KMSKeyId?: string|null,
      *     Description?: string|null,
      *     Manifest?: string|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     SourceCustomDbEngineVersionIdentifier?: string|null,
+     *     UseAwsProvidedLatestImage?: bool|null
      * } $args
      */
     public function __construct(array $args)

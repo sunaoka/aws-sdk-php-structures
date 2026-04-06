@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $tags
  * @property int<0, 1000000>|null $executionTimeoutMinutes
  * @property string|null $name
+ * @property 'BATCH'|'STREAMING'|null $mode
+ * @property Shapes\RetryPolicy|null $retryPolicy
  */
 class StartJobRunRequest extends Request
 {
@@ -25,7 +27,9 @@ class StartJobRunRequest extends Request
      *     configurationOverrides?: Shapes\ConfigurationOverrides|null,
      *     tags?: array<string, string>|null,
      *     executionTimeoutMinutes?: int<0, 1000000>|null,
-     *     name?: string|null
+     *     name?: string|null,
+     *     mode?: 'BATCH'|'STREAMING'|null,
+     *     retryPolicy?: Shapes\RetryPolicy|null
      * } $args
      */
     public function __construct(array $args)

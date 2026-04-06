@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\GenerateCardValidationD
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationTransactionCounter
- * @property string $CardExpiryDate
  * @property string $PanSequenceNumber
+ * @property string $CardExpiryDate
  * @property string $ServiceCode
+ * @property string $ApplicationTransactionCounter
  */
 class DynamicCardVerificationValue extends Shape
 {
     /**
      * @param array{
-     *     ApplicationTransactionCounter: string,
-     *     CardExpiryDate: string,
      *     PanSequenceNumber: string,
-     *     ServiceCode: string
+     *     CardExpiryDate: string,
+     *     ServiceCode: string,
+     *     ApplicationTransactionCounter: string
      * } $args
      */
     public function __construct(array $args)

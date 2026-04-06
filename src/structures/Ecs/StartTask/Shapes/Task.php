@@ -41,6 +41,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $taskDefinitionArn
  * @property int|null $version
  * @property EphemeralStorage|null $ephemeralStorage
+ * @property TaskEphemeralStorage|null $fargateEphemeralStorage
  */
 class Task extends Shape
 {
@@ -81,7 +82,8 @@ class Task extends Shape
      *     taskArn?: string|null,
      *     taskDefinitionArn?: string|null,
      *     version?: int|null,
-     *     ephemeralStorage?: EphemeralStorage|null
+     *     ephemeralStorage?: EphemeralStorage|null,
+     *     fargateEphemeralStorage?: TaskEphemeralStorage|null
      * } $args
      */
     public function __construct(array $args = [])

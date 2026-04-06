@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $AutoMLJobName
  * @property string $AutoMLJobArn
  * @property 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping' $AutoMLJobStatus
- * @property 'Starting'|'AnalyzingData'|'FeatureEngineering'|'ModelTuning'|'MaxCandidatesReached'|'Failed'|'Stopped'|'MaxAutoMLJobRuntimeReached'|'Stopping'|'CandidateDefinitionsGenerated'|'GeneratingExplainabilityReport'|'Completed'|'ExplainabilityError'|'DeployingModel'|'ModelDeploymentError'|'GeneratingModelInsightsReport'|'ModelInsightsError'|'TrainingModels'|'PreTraining' $AutoMLJobSecondaryStatus
+ * @property 'Starting'|'MaxCandidatesReached'|'Failed'|'Stopped'|'MaxAutoMLJobRuntimeReached'|'Stopping'|'CandidateDefinitionsGenerated'|'Completed'|'ExplainabilityError'|'DeployingModel'|'ModelDeploymentError'|'GeneratingModelInsightsReport'|'ModelInsightsError'|'AnalyzingData'|'FeatureEngineering'|'ModelTuning'|'GeneratingExplainabilityReport'|'TrainingModels'|'PreTraining' $AutoMLJobSecondaryStatus
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult|null $EndTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
@@ -22,7 +22,7 @@ class AutoMLJobSummary extends Shape
      *     AutoMLJobName: string,
      *     AutoMLJobArn: string,
      *     AutoMLJobStatus: 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping',
-     *     AutoMLJobSecondaryStatus: 'Starting'|'AnalyzingData'|'FeatureEngineering'|'ModelTuning'|'MaxCandidatesReached'|'Failed'|'Stopped'|'MaxAutoMLJobRuntimeReached'|'Stopping'|'CandidateDefinitionsGenerated'|'GeneratingExplainabilityReport'|'Completed'|'ExplainabilityError'|'DeployingModel'|'ModelDeploymentError'|'GeneratingModelInsightsReport'|'ModelInsightsError'|'TrainingModels'|'PreTraining',
+     *     AutoMLJobSecondaryStatus: 'Starting'|'MaxCandidatesReached'|'Failed'|'Stopped'|'MaxAutoMLJobRuntimeReached'|'Stopping'|'CandidateDefinitionsGenerated'|'Completed'|'ExplainabilityError'|'DeployingModel'|'ModelDeploymentError'|'GeneratingModelInsightsReport'|'ModelInsightsError'|'AnalyzingData'|'FeatureEngineering'|'ModelTuning'|'GeneratingExplainabilityReport'|'TrainingModels'|'PreTraining',
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     EndTime?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedTime: \Aws\Api\DateTimeResult,

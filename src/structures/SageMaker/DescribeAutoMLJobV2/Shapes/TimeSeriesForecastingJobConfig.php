@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $ForecastQuantiles
  * @property TimeSeriesTransformations|null $Transformations
  * @property TimeSeriesConfig $TimeSeriesConfig
+ * @property list<HolidayConfigAttributes>|null $HolidayConfig
+ * @property CandidateGenerationConfig|null $CandidateGenerationConfig
  */
 class TimeSeriesForecastingJobConfig extends Shape
 {
@@ -23,7 +25,9 @@ class TimeSeriesForecastingJobConfig extends Shape
      *     ForecastHorizon: int<1, max>,
      *     ForecastQuantiles?: list<string>|null,
      *     Transformations?: TimeSeriesTransformations|null,
-     *     TimeSeriesConfig: TimeSeriesConfig
+     *     TimeSeriesConfig: TimeSeriesConfig,
+     *     HolidayConfig?: list<HolidayConfigAttributes>|null,
+     *     CandidateGenerationConfig?: CandidateGenerationConfig|null
      * } $args
      */
     public function __construct(array $args)

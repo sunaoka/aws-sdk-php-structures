@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property EngineVersion|null $EngineVersion
+ * @property string|null $IdentityCenterApplicationArn
  */
 class WorkGroupSummary extends Shape
 {
@@ -19,7 +20,8 @@ class WorkGroupSummary extends Shape
      *     State?: 'ENABLED'|'DISABLED'|null,
      *     Description?: string|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
-     *     EngineVersion?: EngineVersion|null
+     *     EngineVersion?: EngineVersion|null,
+     *     IdentityCenterApplicationArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

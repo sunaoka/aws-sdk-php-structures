@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientRequestToken
  * @property string $instanceType
  * @property string|null $subnetId
- * @property string|null $imageId
+ * @property string $imageId
  * @property int<0, 20160>|null $automaticStopTimeMinutes
  * @property string|null $ownerArn
  * @property list<Shapes\Tag>|null $tags
@@ -26,7 +26,7 @@ class CreateEnvironmentEC2Request extends Request
      *     clientRequestToken?: string|null,
      *     instanceType: string,
      *     subnetId?: string|null,
-     *     imageId?: string|null,
+     *     imageId: string,
      *     automaticStopTimeMinutes?: int<0, 20160>|null,
      *     ownerArn?: string|null,
      *     tags?: list<Shapes\Tag>|null,

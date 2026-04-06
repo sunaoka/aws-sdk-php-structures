@@ -17,6 +17,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'DO_NOTHING'|'ROLLBACK'|null $FailureAction
  * @property string|null $RequestId
  * @property int|null $Status
+ * @property Shapes\AssetBundleImportJobOverridePermissions|null $OverridePermissions
+ * @property Shapes\AssetBundleImportJobOverrideTags|null $OverrideTags
+ * @property Shapes\AssetBundleImportJobOverrideValidationStrategy|null $OverrideValidationStrategy
+ * @property list<Shapes\AssetBundleImportJobWarning>|null $Warnings
  */
 class DescribeAssetBundleImportJobResponse extends Response
 {

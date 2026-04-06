@@ -28,9 +28,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Task
  * @property string|null $SamplePayloadUrl
  * @property list<AdditionalInferenceSpecificationDefinition>|null $AdditionalInferenceSpecifications
+ * @property string|null $SourceUri
+ * @property ModelPackageSecurityConfig|null $SecurityConfig
+ * @property ModelPackageModelCard|null $ModelCard
  * @property list<Tag>|null $Tags
  * @property array<string, string>|null $CustomerMetadataProperties
  * @property DriftCheckBaselines|null $DriftCheckBaselines
+ * @property 'All'|'None'|null $SkipModelValidation
  */
 class ModelPackage extends Shape
 {
@@ -59,9 +63,13 @@ class ModelPackage extends Shape
      *     Task?: string|null,
      *     SamplePayloadUrl?: string|null,
      *     AdditionalInferenceSpecifications?: list<AdditionalInferenceSpecificationDefinition>|null,
+     *     SourceUri?: string|null,
+     *     SecurityConfig?: ModelPackageSecurityConfig|null,
+     *     ModelCard?: ModelPackageModelCard|null,
      *     Tags?: list<Tag>|null,
      *     CustomerMetadataProperties?: array<string, string>|null,
-     *     DriftCheckBaselines?: DriftCheckBaselines|null
+     *     DriftCheckBaselines?: DriftCheckBaselines|null,
+     *     SkipModelValidation?: 'All'|'None'|null
      * } $args
      */
     public function __construct(array $args = [])

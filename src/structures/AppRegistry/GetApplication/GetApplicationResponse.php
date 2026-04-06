@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<0, max>|null $associatedResourceCount
  * @property array<string, string>|null $tags
  * @property Shapes\Integrations|null $integrations
+ * @property array<string, string>|null $applicationTag
  */
 class GetApplicationResponse extends Response
 {

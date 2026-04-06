@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ContainerDefinition|null $PrimaryContainer
  * @property list<Shapes\ContainerDefinition>|null $Containers
  * @property Shapes\InferenceExecutionConfig|null $InferenceExecutionConfig
- * @property string $ExecutionRoleArn
+ * @property string|null $ExecutionRoleArn
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\VpcConfig|null $VpcConfig
  * @property bool|null $EnableNetworkIsolation
@@ -22,7 +22,7 @@ class CreateModelRequest extends Request
      *     PrimaryContainer?: Shapes\ContainerDefinition|null,
      *     Containers?: list<Shapes\ContainerDefinition>|null,
      *     InferenceExecutionConfig?: Shapes\InferenceExecutionConfig|null,
-     *     ExecutionRoleArn: string,
+     *     ExecutionRoleArn?: string|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     VpcConfig?: Shapes\VpcConfig|null,
      *     EnableNetworkIsolation?: bool|null

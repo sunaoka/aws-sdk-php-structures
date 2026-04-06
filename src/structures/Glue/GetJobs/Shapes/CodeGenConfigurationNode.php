@@ -74,6 +74,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Recipe|null $Recipe
  * @property SnowflakeSource|null $SnowflakeSource
  * @property SnowflakeTarget|null $SnowflakeTarget
+ * @property ConnectorDataSource|null $ConnectorDataSource
+ * @property ConnectorDataTarget|null $ConnectorDataTarget
  */
 class CodeGenConfigurationNode extends Shape
 {
@@ -147,7 +149,9 @@ class CodeGenConfigurationNode extends Shape
      *     EvaluateDataQualityMultiFrame?: EvaluateDataQualityMultiFrame|null,
      *     Recipe?: Recipe|null,
      *     SnowflakeSource?: SnowflakeSource|null,
-     *     SnowflakeTarget?: SnowflakeTarget|null
+     *     SnowflakeTarget?: SnowflakeTarget|null,
+     *     ConnectorDataSource?: ConnectorDataSource|null,
+     *     ConnectorDataTarget?: ConnectorDataTarget|null
      * } $args
      */
     public function __construct(array $args = [])

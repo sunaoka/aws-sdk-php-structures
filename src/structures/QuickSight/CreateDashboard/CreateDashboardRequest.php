@@ -16,6 +16,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\DashboardPublishOptions|null $DashboardPublishOptions
  * @property string|null $ThemeArn
  * @property Shapes\DashboardVersionDefinition|null $Definition
+ * @property Shapes\ValidationStrategy|null $ValidationStrategy
+ * @property list<string>|null $FolderArns
+ * @property Shapes\LinkSharingConfiguration|null $LinkSharingConfiguration
+ * @property list<string>|null $LinkEntities
  */
 class CreateDashboardRequest extends Request
 {
@@ -31,7 +35,11 @@ class CreateDashboardRequest extends Request
      *     VersionDescription?: string|null,
      *     DashboardPublishOptions?: Shapes\DashboardPublishOptions|null,
      *     ThemeArn?: string|null,
-     *     Definition?: Shapes\DashboardVersionDefinition|null
+     *     Definition?: Shapes\DashboardVersionDefinition|null,
+     *     ValidationStrategy?: Shapes\ValidationStrategy|null,
+     *     FolderArns?: list<string>|null,
+     *     LinkSharingConfiguration?: Shapes\LinkSharingConfiguration|null,
+     *     LinkEntities?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

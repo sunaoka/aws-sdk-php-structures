@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $tags
  * @property 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|null $buildType
  * @property 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM'|null $imageSource
+ * @property \Aws\Api\DateTimeResult|null $deprecationTime
+ * @property string|null $lifecycleExecutionId
  */
 class ImageSummary extends Shape
 {
@@ -35,7 +37,9 @@ class ImageSummary extends Shape
      *     outputResources?: OutputResources|null,
      *     tags?: array<string, string>|null,
      *     buildType?: 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|null,
-     *     imageSource?: 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM'|null
+     *     imageSource?: 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM'|null,
+     *     deprecationTime?: \Aws\Api\DateTimeResult|null,
+     *     lifecycleExecutionId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

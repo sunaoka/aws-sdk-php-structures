@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $ModifiedAt
  * @property string|null $Description
  * @property list<Shapes\IngestEndpoint>|null $IngestEndpoints
+ * @property 'HLS'|'CMAF'|null $InputType
+ * @property string|null $ETag
  * @property array<string, string>|null $Tags
  */
 class CreateChannelResponse extends Response

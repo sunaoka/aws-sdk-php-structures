@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property list<Shapes\AddIpamOperatingRegion>|null $AddOperatingRegions
  * @property list<Shapes\RemoveIpamOperatingRegion>|null $RemoveOperatingRegions
+ * @property 'free'|'advanced'|null $Tier
+ * @property bool|null $EnablePrivateGua
  */
 class ModifyIpamRequest extends Request
 {
@@ -19,7 +21,9 @@ class ModifyIpamRequest extends Request
      *     IpamId: string,
      *     Description?: string|null,
      *     AddOperatingRegions?: list<Shapes\AddIpamOperatingRegion>|null,
-     *     RemoveOperatingRegions?: list<Shapes\RemoveIpamOperatingRegion>|null
+     *     RemoveOperatingRegions?: list<Shapes\RemoveIpamOperatingRegion>|null,
+     *     Tier?: 'free'|'advanced'|null,
+     *     EnablePrivateGua?: bool|null
      * } $args
      */
     public function __construct(array $args)

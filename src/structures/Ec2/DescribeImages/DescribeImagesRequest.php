@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $ImageIds
  * @property list<string>|null $Owners
  * @property bool|null $IncludeDeprecated
+ * @property bool|null $IncludeDisabled
  * @property bool|null $DryRun
  * @property int|null $MaxResults
  * @property string|null $NextToken
@@ -23,6 +24,7 @@ class DescribeImagesRequest extends Request
      *     ImageIds?: list<string>|null,
      *     Owners?: list<string>|null,
      *     IncludeDeprecated?: bool|null,
+     *     IncludeDisabled?: bool|null,
      *     DryRun?: bool|null,
      *     MaxResults?: int|null,
      *     NextToken?: string|null

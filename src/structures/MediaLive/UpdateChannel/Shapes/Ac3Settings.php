@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'FILM_STANDARD'|'NONE'|null $DrcProfile
  * @property 'DISABLED'|'ENABLED'|null $LfeFilter
  * @property 'FOLLOW_INPUT'|'USE_CONFIGURED'|null $MetadataControl
+ * @property 'ATTENUATE_3_DB'|'NONE'|null $AttenuationControl
  */
 class Ac3Settings extends Shape
 {
@@ -23,7 +24,8 @@ class Ac3Settings extends Shape
      *     Dialnorm?: int<1, 31>|null,
      *     DrcProfile?: 'FILM_STANDARD'|'NONE'|null,
      *     LfeFilter?: 'DISABLED'|'ENABLED'|null,
-     *     MetadataControl?: 'FOLLOW_INPUT'|'USE_CONFIGURED'|null
+     *     MetadataControl?: 'FOLLOW_INPUT'|'USE_CONFIGURED'|null,
+     *     AttenuationControl?: 'ATTENUATE_3_DB'|'NONE'|null
      * } $args
      */
     public function __construct(array $args = [])

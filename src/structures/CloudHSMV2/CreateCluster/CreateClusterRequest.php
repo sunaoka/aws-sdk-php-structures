@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $SourceBackupId
  * @property list<string> $SubnetIds
  * @property list<Shapes\Tag>|null $TagList
+ * @property 'FIPS'|'NON_FIPS'|null $Mode
  */
 class CreateClusterRequest extends Request
 {
@@ -19,7 +20,8 @@ class CreateClusterRequest extends Request
      *     HsmType: string,
      *     SourceBackupId?: string|null,
      *     SubnetIds: list<string>,
-     *     TagList?: list<Shapes\Tag>|null
+     *     TagList?: list<Shapes\Tag>|null,
+     *     Mode?: 'FIPS'|'NON_FIPS'|null
      * } $args
      */
     public function __construct(array $args)

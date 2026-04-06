@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $InboundCallsEnabled
  * @property bool|null $OutboundCallsEnabled
  * @property string|null $InstanceAccessUrl
+ * @property array<string, string>|null $Tags
  */
 class Instance extends Shape
 {
@@ -31,7 +32,8 @@ class Instance extends Shape
      *     StatusReason?: InstanceStatusReason|null,
      *     InboundCallsEnabled?: bool|null,
      *     OutboundCallsEnabled?: bool|null,
-     *     InstanceAccessUrl?: string|null
+     *     InstanceAccessUrl?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

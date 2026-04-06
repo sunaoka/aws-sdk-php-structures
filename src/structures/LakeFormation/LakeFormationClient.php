@@ -12,14 +12,20 @@ class LakeFormationClient extends \Aws\LakeFormation\LakeFormationClient
     use CommitTransaction\CommitTransactionTrait;
     use CreateDataCellsFilter\CreateDataCellsFilterTrait;
     use CreateLFTag\CreateLFTagTrait;
+    use CreateLakeFormationIdentityCenterConfiguration\CreateLakeFormationIdentityCenterConfigurationTrait;
+    use CreateLakeFormationOptIn\CreateLakeFormationOptInTrait;
     use DeleteDataCellsFilter\DeleteDataCellsFilterTrait;
     use DeleteLFTag\DeleteLFTagTrait;
+    use DeleteLakeFormationIdentityCenterConfiguration\DeleteLakeFormationIdentityCenterConfigurationTrait;
+    use DeleteLakeFormationOptIn\DeleteLakeFormationOptInTrait;
     use DeleteObjectsOnCancel\DeleteObjectsOnCancelTrait;
     use DeregisterResource\DeregisterResourceTrait;
+    use DescribeLakeFormationIdentityCenterConfiguration\DescribeLakeFormationIdentityCenterConfigurationTrait;
     use DescribeResource\DescribeResourceTrait;
     use DescribeTransaction\DescribeTransactionTrait;
     use ExtendTransaction\ExtendTransactionTrait;
     use GetDataCellsFilter\GetDataCellsFilterTrait;
+    use GetDataLakePrincipal\GetDataLakePrincipalTrait;
     use GetDataLakeSettings\GetDataLakeSettingsTrait;
     use GetEffectivePermissionsForPath\GetEffectivePermissionsForPathTrait;
     use GetLFTag\GetLFTagTrait;
@@ -34,6 +40,7 @@ class LakeFormationClient extends \Aws\LakeFormation\LakeFormationClient
     use GrantPermissions\GrantPermissionsTrait;
     use ListDataCellsFilter\ListDataCellsFilterTrait;
     use ListLFTags\ListLFTagsTrait;
+    use ListLakeFormationOptIns\ListLakeFormationOptInsTrait;
     use ListPermissions\ListPermissionsTrait;
     use ListResources\ListResourcesTrait;
     use ListTableStorageOptimizers\ListTableStorageOptimizersTrait;
@@ -48,6 +55,7 @@ class LakeFormationClient extends \Aws\LakeFormation\LakeFormationClient
     use StartTransaction\StartTransactionTrait;
     use UpdateDataCellsFilter\UpdateDataCellsFilterTrait;
     use UpdateLFTag\UpdateLFTagTrait;
+    use UpdateLakeFormationIdentityCenterConfiguration\UpdateLakeFormationIdentityCenterConfigurationTrait;
     use UpdateResource\UpdateResourceTrait;
     use UpdateTableObjects\UpdateTableObjectsTrait;
     use UpdateTableStorageOptimizer\UpdateTableStorageOptimizerTrait;

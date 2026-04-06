@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ApplicationName
  * @property string|null $ApplicationDescription
- * @property 'SQL-1_0'|'FLINK-1_6'|'FLINK-1_8'|'ZEPPELIN-FLINK-1_0'|'FLINK-1_11'|'FLINK-1_13'|'ZEPPELIN-FLINK-2_0'|'FLINK-1_15'|'ZEPPELIN-FLINK-3_0' $RuntimeEnvironment
+ * @property 'SQL-1_0'|'FLINK-1_6'|'FLINK-1_8'|'ZEPPELIN-FLINK-1_0'|'FLINK-1_11'|'FLINK-1_13'|'ZEPPELIN-FLINK-2_0'|'FLINK-1_15'|'ZEPPELIN-FLINK-3_0'|'FLINK-1_18'|'FLINK-1_19' $RuntimeEnvironment
  * @property string $ServiceExecutionRole
  * @property Shapes\ApplicationConfiguration|null $ApplicationConfiguration
  * @property list<Shapes\CloudWatchLoggingOption>|null $CloudWatchLoggingOptions
@@ -20,7 +20,7 @@ class CreateApplicationRequest extends Request
      * @param array{
      *     ApplicationName: string,
      *     ApplicationDescription?: string|null,
-     *     RuntimeEnvironment: 'SQL-1_0'|'FLINK-1_6'|'FLINK-1_8'|'ZEPPELIN-FLINK-1_0'|'FLINK-1_11'|'FLINK-1_13'|'ZEPPELIN-FLINK-2_0'|'FLINK-1_15'|'ZEPPELIN-FLINK-3_0',
+     *     RuntimeEnvironment: 'SQL-1_0'|'FLINK-1_6'|'FLINK-1_8'|'ZEPPELIN-FLINK-1_0'|'FLINK-1_11'|'FLINK-1_13'|'ZEPPELIN-FLINK-2_0'|'FLINK-1_15'|'ZEPPELIN-FLINK-3_0'|'FLINK-1_18'|'FLINK-1_19',
      *     ServiceExecutionRole: string,
      *     ApplicationConfiguration?: Shapes\ApplicationConfiguration|null,
      *     CloudWatchLoggingOptions?: list<Shapes\CloudWatchLoggingOption>|null,

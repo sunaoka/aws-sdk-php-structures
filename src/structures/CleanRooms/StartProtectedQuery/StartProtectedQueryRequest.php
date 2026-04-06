@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'SQL' $type
  * @property string $membershipIdentifier
  * @property Shapes\ProtectedQuerySQLParameters $sqlParameters
- * @property Shapes\ProtectedQueryResultConfiguration $resultConfiguration
+ * @property Shapes\ProtectedQueryResultConfiguration|null $resultConfiguration
  */
 class StartProtectedQueryRequest extends Request
 {
@@ -17,7 +17,7 @@ class StartProtectedQueryRequest extends Request
      *     type: 'SQL',
      *     membershipIdentifier: string,
      *     sqlParameters: Shapes\ProtectedQuerySQLParameters,
-     *     resultConfiguration: Shapes\ProtectedQueryResultConfiguration
+     *     resultConfiguration?: Shapes\ProtectedQueryResultConfiguration|null
      * } $args
      */
     public function __construct(array $args)

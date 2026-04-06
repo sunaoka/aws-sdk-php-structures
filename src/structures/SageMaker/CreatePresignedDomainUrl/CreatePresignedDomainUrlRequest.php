@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1800, 43200>|null $SessionExpirationDurationInSeconds
  * @property int<5, 300>|null $ExpiresInSeconds
  * @property string|null $SpaceName
+ * @property string|null $LandingUri
  */
 class CreatePresignedDomainUrlRequest extends Request
 {
@@ -19,7 +20,8 @@ class CreatePresignedDomainUrlRequest extends Request
      *     UserProfileName: string,
      *     SessionExpirationDurationInSeconds?: int<1800, 43200>|null,
      *     ExpiresInSeconds?: int<5, 300>|null,
-     *     SpaceName?: string|null
+     *     SpaceName?: string|null,
+     *     LandingUri?: string|null
      * } $args
      */
     public function __construct(array $args)

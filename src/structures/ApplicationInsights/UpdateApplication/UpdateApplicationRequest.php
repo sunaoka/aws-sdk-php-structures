@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $OpsItemSNSTopicArn
  * @property bool|null $RemoveSNSTopic
  * @property bool|null $AutoConfigEnabled
+ * @property bool|null $AttachMissingPermission
  */
 class UpdateApplicationRequest extends Request
 {
@@ -21,7 +22,8 @@ class UpdateApplicationRequest extends Request
      *     CWEMonitorEnabled?: bool|null,
      *     OpsItemSNSTopicArn?: string|null,
      *     RemoveSNSTopic?: bool|null,
-     *     AutoConfigEnabled?: bool|null
+     *     AutoConfigEnabled?: bool|null,
+     *     AttachMissingPermission?: bool|null
      * } $args
      */
     public function __construct(array $args)

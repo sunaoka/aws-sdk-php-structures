@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $GeofenceId
- * @property array<string, string>|null $GeofenceProperties
  * @property GeofenceGeometry $Geometry
+ * @property array<string, string>|null $GeofenceProperties
  */
 class BatchPutGeofenceRequestEntry extends Shape
 {
     /**
      * @param array{
      *     GeofenceId: string,
-     *     GeofenceProperties?: array<string, string>|null,
-     *     Geometry: GeofenceGeometry
+     *     Geometry: GeofenceGeometry,
+     *     GeofenceProperties?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

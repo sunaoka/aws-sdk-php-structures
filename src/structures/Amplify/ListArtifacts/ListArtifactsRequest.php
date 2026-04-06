@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $branchName
  * @property string $jobId
  * @property string|null $nextToken
- * @property int<0, 100>|null $maxResults
+ * @property int<0, 50>|null $maxResults
  */
 class ListArtifactsRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListArtifactsRequest extends Request
      *     branchName: string,
      *     jobId: string,
      *     nextToken?: string|null,
-     *     maxResults?: int<0, 100>|null
+     *     maxResults?: int<0, 50>|null
      * } $args
      */
     public function __construct(array $args)

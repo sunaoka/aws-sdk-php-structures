@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $arn
- * @property string|null $fingerprint
  * @property string|null $name
+ * @property string|null $fingerprint
  * @property array<string, string>|null $tags
  */
 class PlaybackKeyPair extends Shape
@@ -15,8 +15,8 @@ class PlaybackKeyPair extends Shape
     /**
      * @param array{
      *     arn?: string|null,
-     *     fingerprint?: string|null,
      *     name?: string|null,
+     *     fingerprint?: string|null,
      *     tags?: array<string, string>|null
      * } $args
      */

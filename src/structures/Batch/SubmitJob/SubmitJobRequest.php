@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\JobTimeout|null $timeout
  * @property array<string, string>|null $tags
  * @property Shapes\EksPropertiesOverride|null $eksPropertiesOverride
+ * @property Shapes\EcsPropertiesOverride|null $ecsPropertiesOverride
  */
 class SubmitJobRequest extends Request
 {
@@ -39,7 +40,8 @@ class SubmitJobRequest extends Request
      *     propagateTags?: bool|null,
      *     timeout?: Shapes\JobTimeout|null,
      *     tags?: array<string, string>|null,
-     *     eksPropertiesOverride?: Shapes\EksPropertiesOverride|null
+     *     eksPropertiesOverride?: Shapes\EksPropertiesOverride|null,
+     *     ecsPropertiesOverride?: Shapes\EcsPropertiesOverride|null
      * } $args
      */
     public function __construct(array $args)

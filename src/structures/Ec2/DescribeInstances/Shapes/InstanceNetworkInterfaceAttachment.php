@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $DeviceIndex
  * @property 'attaching'|'attached'|'detaching'|'detached'|null $Status
  * @property int|null $NetworkCardIndex
+ * @property InstanceAttachmentEnaSrdSpecification|null $EnaSrdSpecification
  */
 class InstanceNetworkInterfaceAttachment extends Shape
 {
@@ -21,7 +22,8 @@ class InstanceNetworkInterfaceAttachment extends Shape
      *     DeleteOnTermination?: bool|null,
      *     DeviceIndex?: int|null,
      *     Status?: 'attaching'|'attached'|'detaching'|'detached'|null,
-     *     NetworkCardIndex?: int|null
+     *     NetworkCardIndex?: int|null,
+     *     EnaSrdSpecification?: InstanceAttachmentEnaSrdSpecification|null
      * } $args
      */
     public function __construct(array $args = [])

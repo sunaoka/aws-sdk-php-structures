@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ApplicationCredential>|null $CredentialsToAddOrUpdate
  * @property list<Shapes\ApplicationCredential>|null $CredentialsToRemove
  * @property Shapes\BackintConfig|null $Backint
+ * @property string|null $DatabaseArn
  */
 class UpdateApplicationSettingsRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateApplicationSettingsRequest extends Request
      *     ApplicationId: string,
      *     CredentialsToAddOrUpdate?: list<Shapes\ApplicationCredential>|null,
      *     CredentialsToRemove?: list<Shapes\ApplicationCredential>|null,
-     *     Backint?: Shapes\BackintConfig|null
+     *     Backint?: Shapes\BackintConfig|null,
+     *     DatabaseArn?: string|null
      * } $args
      */
     public function __construct(array $args)

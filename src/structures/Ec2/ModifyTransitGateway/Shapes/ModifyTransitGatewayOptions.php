@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $RemoveTransitGatewayCidrBlocks
  * @property 'enable'|'disable'|null $VpnEcmpSupport
  * @property 'enable'|'disable'|null $DnsSupport
+ * @property 'enable'|'disable'|null $SecurityGroupReferencingSupport
  * @property 'enable'|'disable'|null $AutoAcceptSharedAttachments
  * @property 'enable'|'disable'|null $DefaultRouteTableAssociation
  * @property string|null $AssociationDefaultRouteTableId
@@ -24,6 +25,7 @@ class ModifyTransitGatewayOptions extends Shape
      *     RemoveTransitGatewayCidrBlocks?: list<string>|null,
      *     VpnEcmpSupport?: 'enable'|'disable'|null,
      *     DnsSupport?: 'enable'|'disable'|null,
+     *     SecurityGroupReferencingSupport?: 'enable'|'disable'|null,
      *     AutoAcceptSharedAttachments?: 'enable'|'disable'|null,
      *     DefaultRouteTableAssociation?: 'enable'|'disable'|null,
      *     AssociationDefaultRouteTableId?: string|null,

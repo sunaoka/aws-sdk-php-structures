@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'HIDDEN'|'COMPARISON'|'ACTUAL'|null $PrimaryValueDisplayType
  * @property FontConfiguration|null $PrimaryValueFontConfiguration
  * @property FontConfiguration|null $SecondaryValueFontConfiguration
+ * @property KPISparklineOptions|null $Sparkline
+ * @property KPIVisualLayoutOptions|null $VisualLayoutOptions
  */
 class KPIOptions extends Shape
 {
@@ -23,7 +25,9 @@ class KPIOptions extends Shape
      *     Comparison?: ComparisonConfiguration|null,
      *     PrimaryValueDisplayType?: 'HIDDEN'|'COMPARISON'|'ACTUAL'|null,
      *     PrimaryValueFontConfiguration?: FontConfiguration|null,
-     *     SecondaryValueFontConfiguration?: FontConfiguration|null
+     *     SecondaryValueFontConfiguration?: FontConfiguration|null,
+     *     Sparkline?: KPISparklineOptions|null,
+     *     VisualLayoutOptions?: KPIVisualLayoutOptions|null
      * } $args
      */
     public function __construct(array $args = [])

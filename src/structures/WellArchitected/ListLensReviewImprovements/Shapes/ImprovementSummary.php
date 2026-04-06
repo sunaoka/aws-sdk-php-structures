@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE'|null $Risk
  * @property string|null $ImprovementPlanUrl
  * @property list<ChoiceImprovementPlan>|null $ImprovementPlans
+ * @property JiraConfiguration|null $JiraConfiguration
  */
 class ImprovementSummary extends Shape
 {
@@ -21,7 +22,8 @@ class ImprovementSummary extends Shape
      *     QuestionTitle?: string|null,
      *     Risk?: 'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE'|null,
      *     ImprovementPlanUrl?: string|null,
-     *     ImprovementPlans?: list<ChoiceImprovementPlan>|null
+     *     ImprovementPlans?: list<ChoiceImprovementPlan>|null,
+     *     JiraConfiguration?: JiraConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

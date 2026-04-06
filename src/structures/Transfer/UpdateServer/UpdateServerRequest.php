@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ServerId
  * @property Shapes\WorkflowDetails|null $WorkflowDetails
  * @property list<string>|null $StructuredLogDestinations
+ * @property Shapes\S3StorageOptions|null $S3StorageOptions
  */
 class UpdateServerRequest extends Request
 {
@@ -37,7 +38,8 @@ class UpdateServerRequest extends Request
      *     SecurityPolicyName?: string|null,
      *     ServerId: string,
      *     WorkflowDetails?: Shapes\WorkflowDetails|null,
-     *     StructuredLogDestinations?: list<string>|null
+     *     StructuredLogDestinations?: list<string>|null,
+     *     S3StorageOptions?: Shapes\S3StorageOptions|null
      * } $args
      */
     public function __construct(array $args)

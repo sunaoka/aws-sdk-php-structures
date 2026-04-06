@@ -34,9 +34,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Tag>|null $TagList
  * @property bool|null $SupportsBabelfish
  * @property string|null $CustomDBEngineVersionManifest
+ * @property bool|null $SupportsLimitlessDatabase
  * @property bool|null $SupportsCertificateRotationWithoutRestart
  * @property list<string>|null $SupportedCACertificateIdentifiers
  * @property bool|null $SupportsLocalWriteForwarding
+ * @property bool|null $SupportsIntegrations
  */
 class DBEngineVersion extends Shape
 {
@@ -71,9 +73,11 @@ class DBEngineVersion extends Shape
      *     TagList?: list<Tag>|null,
      *     SupportsBabelfish?: bool|null,
      *     CustomDBEngineVersionManifest?: string|null,
+     *     SupportsLimitlessDatabase?: bool|null,
      *     SupportsCertificateRotationWithoutRestart?: bool|null,
      *     SupportedCACertificateIdentifiers?: list<string>|null,
-     *     SupportsLocalWriteForwarding?: bool|null
+     *     SupportsLocalWriteForwarding?: bool|null,
+     *     SupportsIntegrations?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

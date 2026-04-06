@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $id
+ * @property string|null $arn
  * @property string|null $description
  * @property \Aws\Api\DateTimeResult|null $creationTime
  * @property \Aws\Api\DateTimeResult|null $lastUpdateTime
@@ -16,6 +17,7 @@ class ExperimentTemplateSummary extends Shape
     /**
      * @param array{
      *     id?: string|null,
+     *     arn?: string|null,
      *     description?: string|null,
      *     creationTime?: \Aws\Api\DateTimeResult|null,
      *     lastUpdateTime?: \Aws\Api\DateTimeResult|null,

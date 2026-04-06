@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $cpu
  * @property string $memory
  * @property string|null $disk
+ * @property string|null $diskType
  */
 class WorkerResourceConfig extends Shape
 {
@@ -15,7 +16,8 @@ class WorkerResourceConfig extends Shape
      * @param array{
      *     cpu: string,
      *     memory: string,
-     *     disk?: string|null
+     *     disk?: string|null,
+     *     diskType?: string|null
      * } $args
      */
     public function __construct(array $args)

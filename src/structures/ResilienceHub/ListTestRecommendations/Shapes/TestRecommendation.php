@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $name
  * @property string|null $prerequisite
  * @property string|null $recommendationId
+ * @property 'Implemented'|'Inactive'|'NotImplemented'|'Excluded'|null $recommendationStatus
  * @property string $referenceId
  * @property 'Small'|'Medium'|'High'|null $risk
  * @property 'Software'|'Hardware'|'AZ'|'Region'|null $type
@@ -29,6 +30,7 @@ class TestRecommendation extends Shape
      *     name?: string|null,
      *     prerequisite?: string|null,
      *     recommendationId?: string|null,
+     *     recommendationStatus?: 'Implemented'|'Inactive'|'NotImplemented'|'Excluded'|null,
      *     referenceId: string,
      *     risk?: 'Small'|'Medium'|'High'|null,
      *     type?: 'Software'|'Hardware'|'AZ'|'Region'|null

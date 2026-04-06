@@ -6,17 +6,17 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string>|null $associatedPortalArns
- * @property string|null $trustStoreArn
+ * @property string $trustStoreArn
  */
 class TrustStore extends Shape
 {
     /**
      * @param array{
      *     associatedPortalArns?: list<string>|null,
-     *     trustStoreArn?: string|null
+     *     trustStoreArn: string
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

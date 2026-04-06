@@ -48,6 +48,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $EnableCustomerOwnedIp
  * @property int|null $AllocatedStorage
  * @property string|null $SourceDBClusterIdentifier
+ * @property bool|null $DedicatedLogVolume
+ * @property bool|null $UpgradeStorageConfig
+ * @property string|null $CACertificateIdentifier
  */
 class CreateDBInstanceReadReplicaRequest extends Request
 {
@@ -95,7 +98,10 @@ class CreateDBInstanceReadReplicaRequest extends Request
      *     StorageThroughput?: int|null,
      *     EnableCustomerOwnedIp?: bool|null,
      *     AllocatedStorage?: int|null,
-     *     SourceDBClusterIdentifier?: string|null
+     *     SourceDBClusterIdentifier?: string|null,
+     *     DedicatedLogVolume?: bool|null,
+     *     UpgradeStorageConfig?: bool|null,
+     *     CACertificateIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

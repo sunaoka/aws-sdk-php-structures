@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\VerifyAuthRequestCrypto
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationTransactionCounter
- * @property string $PanSequenceNumber
  * @property string $PrimaryAccountNumber
+ * @property string $PanSequenceNumber
+ * @property string $ApplicationTransactionCounter
  */
 class SessionKeyEmv2000 extends Shape
 {
     /**
      * @param array{
-     *     ApplicationTransactionCounter: string,
+     *     PrimaryAccountNumber: string,
      *     PanSequenceNumber: string,
-     *     PrimaryAccountNumber: string
+     *     ApplicationTransactionCounter: string
      * } $args
      */
     public function __construct(array $args)

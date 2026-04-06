@@ -48,6 +48,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $NetworkType
  * @property int|null $StorageThroughput
  * @property int|null $AllocatedStorage
+ * @property bool|null $DedicatedLogVolume
+ * @property string|null $CACertificateIdentifier
+ * @property string|null $EngineLifecycleSupport
  */
 class RestoreDBInstanceToPointInTimeRequest extends Request
 {
@@ -95,7 +98,10 @@ class RestoreDBInstanceToPointInTimeRequest extends Request
      *     BackupTarget?: string|null,
      *     NetworkType?: string|null,
      *     StorageThroughput?: int|null,
-     *     AllocatedStorage?: int|null
+     *     AllocatedStorage?: int|null,
+     *     DedicatedLogVolume?: bool|null,
+     *     CACertificateIdentifier?: string|null,
+     *     EngineLifecycleSupport?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -30,6 +30,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DBSystemId
  * @property string|null $StorageType
  * @property string|null $DbClusterResourceId
+ * @property int|null $StorageThroughput
  */
 class DBClusterSnapshot extends Shape
 {
@@ -59,7 +60,8 @@ class DBClusterSnapshot extends Shape
      *     TagList?: list<Tag>|null,
      *     DBSystemId?: string|null,
      *     StorageType?: string|null,
-     *     DbClusterResourceId?: string|null
+     *     DbClusterResourceId?: string|null,
+     *     StorageThroughput?: int|null
      * } $args
      */
     public function __construct(array $args = [])

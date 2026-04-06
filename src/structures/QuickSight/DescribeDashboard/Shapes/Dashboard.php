@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreatedTime
  * @property \Aws\Api\DateTimeResult|null $LastPublishedTime
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
+ * @property list<string>|null $LinkEntities
  */
 class Dashboard extends Shape
 {
@@ -23,7 +24,8 @@ class Dashboard extends Shape
      *     Version?: DashboardVersion|null,
      *     CreatedTime?: \Aws\Api\DateTimeResult|null,
      *     LastPublishedTime?: \Aws\Api\DateTimeResult|null,
-     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null
+     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     LinkEntities?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

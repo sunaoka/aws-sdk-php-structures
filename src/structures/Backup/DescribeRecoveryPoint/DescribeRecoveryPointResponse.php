@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $CompositeMemberIdentifier
  * @property bool|null $IsParent
  * @property string|null $ResourceName
+ * @property 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|null $VaultType
  */
 class DescribeRecoveryPointResponse extends Response
 {

@@ -11,6 +11,7 @@ class WAFV2Client extends \Aws\WAFV2\WAFV2Client
     use CreateRegexPatternSet\CreateRegexPatternSetTrait;
     use CreateRuleGroup\CreateRuleGroupTrait;
     use CreateWebACL\CreateWebACLTrait;
+    use DeleteAPIKey\DeleteAPIKeyTrait;
     use DeleteFirewallManagerRuleGroups\DeleteFirewallManagerRuleGroupsTrait;
     use DeleteIPSet\DeleteIPSetTrait;
     use DeleteLoggingConfiguration\DeleteLoggingConfigurationTrait;

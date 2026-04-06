@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $dataTypeSpec
  * @property string|null $unit
  * @property PropertyType $type
+ * @property string|null $id
+ * @property string|null $externalId
  */
 class AssetModelPropertyDefinition extends Shape
 {
@@ -19,7 +21,9 @@ class AssetModelPropertyDefinition extends Shape
      *     dataType: 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT',
      *     dataTypeSpec?: string|null,
      *     unit?: string|null,
-     *     type: PropertyType
+     *     type: PropertyType,
+     *     id?: string|null,
+     *     externalId?: string|null
      * } $args
      */
     public function __construct(array $args)

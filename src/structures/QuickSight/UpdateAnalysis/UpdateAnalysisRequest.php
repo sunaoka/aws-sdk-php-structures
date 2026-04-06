@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AnalysisSourceEntity|null $SourceEntity
  * @property string|null $ThemeArn
  * @property Shapes\AnalysisDefinition|null $Definition
+ * @property Shapes\ValidationStrategy|null $ValidationStrategy
  */
 class UpdateAnalysisRequest extends Request
 {
@@ -23,7 +24,8 @@ class UpdateAnalysisRequest extends Request
      *     Parameters?: Shapes\Parameters|null,
      *     SourceEntity?: Shapes\AnalysisSourceEntity|null,
      *     ThemeArn?: string|null,
-     *     Definition?: Shapes\AnalysisDefinition|null
+     *     Definition?: Shapes\AnalysisDefinition|null,
+     *     ValidationStrategy?: Shapes\ValidationStrategy|null
      * } $args
      */
     public function __construct(array $args)

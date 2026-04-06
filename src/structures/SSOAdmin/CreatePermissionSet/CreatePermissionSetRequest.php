@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\CreatePermissionSet;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Name
  * @property string|null $Description
  * @property string $InstanceArn
- * @property string|null $SessionDuration
+ * @property string $Name
  * @property string|null $RelayState
+ * @property string|null $SessionDuration
  * @property list<Shapes\Tag>|null $Tags
  */
 class CreatePermissionSetRequest extends Request
 {
     /**
      * @param array{
-     *     Name: string,
      *     Description?: string|null,
      *     InstanceArn: string,
-     *     SessionDuration?: string|null,
+     *     Name: string,
      *     RelayState?: string|null,
+     *     SessionDuration?: string|null,
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */

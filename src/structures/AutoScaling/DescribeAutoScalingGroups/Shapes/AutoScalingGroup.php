@@ -39,6 +39,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DesiredCapacityType
  * @property int|null $DefaultInstanceWarmup
  * @property list<TrafficSourceIdentifier>|null $TrafficSources
+ * @property InstanceMaintenancePolicy|null $InstanceMaintenancePolicy
  */
 class AutoScalingGroup extends Shape
 {
@@ -77,7 +78,8 @@ class AutoScalingGroup extends Shape
      *     Context?: string|null,
      *     DesiredCapacityType?: string|null,
      *     DefaultInstanceWarmup?: int|null,
-     *     TrafficSources?: list<TrafficSourceIdentifier>|null
+     *     TrafficSources?: list<TrafficSourceIdentifier>|null,
+     *     InstanceMaintenancePolicy?: InstanceMaintenancePolicy|null
      * } $args
      */
     public function __construct(array $args)

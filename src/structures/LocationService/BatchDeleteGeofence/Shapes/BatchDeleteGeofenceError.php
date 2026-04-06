@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LocationService\BatchDeleteGeofence\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BatchItemError $Error
  * @property string $GeofenceId
+ * @property BatchItemError $Error
  */
 class BatchDeleteGeofenceError extends Shape
 {
     /**
      * @param array{
-     *     Error: BatchItemError,
-     *     GeofenceId: string
+     *     GeofenceId: string,
+     *     Error: BatchItemError
      * } $args
      */
     public function __construct(array $args)

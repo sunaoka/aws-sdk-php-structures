@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Matcher|null $matcher
  * @property string|null $path
  * @property int<0, 65535>|null $port
- * @property 'HTTP'|'HTTPS'|null $protocol
+ * @property 'HTTP'|'HTTPS'|'TCP'|null $protocol
  * @property 'HTTP1'|'HTTP2'|null $protocolVersion
  * @property int<0, 10>|null $unhealthyThresholdCount
  */
@@ -27,7 +27,7 @@ class HealthCheckConfig extends Shape
      *     matcher?: Matcher|null,
      *     path?: string|null,
      *     port?: int<0, 65535>|null,
-     *     protocol?: 'HTTP'|'HTTPS'|null,
+     *     protocol?: 'HTTP'|'HTTPS'|'TCP'|null,
      *     protocolVersion?: 'HTTP1'|'HTTP2'|null,
      *     unhealthyThresholdCount?: int<0, 10>|null
      * } $args

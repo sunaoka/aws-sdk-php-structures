@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $deletedAt
  * @property string|null $message
  * @property string|null $imageSetArn
+ * @property Shapes\Overrides|null $overrides
  */
 class GetImageSetResponse extends Response
 {

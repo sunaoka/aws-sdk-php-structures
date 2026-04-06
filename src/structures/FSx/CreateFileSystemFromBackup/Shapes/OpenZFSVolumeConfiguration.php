@@ -19,6 +19,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $RestoreToSnapshot
  * @property bool|null $DeleteIntermediateSnaphots
  * @property bool|null $DeleteClonedVolumes
+ * @property bool|null $DeleteIntermediateData
+ * @property string|null $SourceSnapshotARN
+ * @property string|null $DestinationSnapshot
+ * @property 'CLONE'|'FULL_COPY'|'INCREMENTAL_COPY'|null $CopyStrategy
  */
 class OpenZFSVolumeConfiguration extends Shape
 {
@@ -37,7 +41,11 @@ class OpenZFSVolumeConfiguration extends Shape
      *     UserAndGroupQuotas?: list<OpenZFSUserOrGroupQuota>|null,
      *     RestoreToSnapshot?: string|null,
      *     DeleteIntermediateSnaphots?: bool|null,
-     *     DeleteClonedVolumes?: bool|null
+     *     DeleteClonedVolumes?: bool|null,
+     *     DeleteIntermediateData?: bool|null,
+     *     SourceSnapshotARN?: string|null,
+     *     DestinationSnapshot?: string|null,
+     *     CopyStrategy?: 'CLONE'|'FULL_COPY'|'INCREMENTAL_COPY'|null
      * } $args
      */
     public function __construct(array $args = [])

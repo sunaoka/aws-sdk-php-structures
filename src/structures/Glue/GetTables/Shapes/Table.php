@@ -26,6 +26,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CatalogId
  * @property string|null $VersionId
  * @property FederatedTable|null $FederatedTable
+ * @property ViewDefinition|null $ViewDefinition
+ * @property bool|null $IsMultiDialectView
+ * @property TableStatus|null $Status
  */
 class Table extends Shape
 {
@@ -51,7 +54,10 @@ class Table extends Shape
      *     TargetTable?: TableIdentifier|null,
      *     CatalogId?: string|null,
      *     VersionId?: string|null,
-     *     FederatedTable?: FederatedTable|null
+     *     FederatedTable?: FederatedTable|null,
+     *     ViewDefinition?: ViewDefinition|null,
+     *     IsMultiDialectView?: bool|null,
+     *     Status?: TableStatus|null
      * } $args
      */
     public function __construct(array $args)

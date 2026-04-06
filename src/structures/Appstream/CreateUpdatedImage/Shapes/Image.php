@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PUBLIC'|'PRIVATE'|'SHARED'|null $Visibility
  * @property bool|null $ImageBuilderSupported
  * @property string|null $ImageBuilderName
- * @property 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'AMAZON_LINUX2'|null $Platform
+ * @property 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|null $Platform
  * @property string|null $Description
  * @property ImageStateChangeReason|null $StateChangeReason
  * @property list<Application>|null $Applications
@@ -22,6 +22,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AppstreamAgentVersion
  * @property ImagePermissions|null $ImagePermissions
  * @property list<ResourceError>|null $ImageErrors
+ * @property 'TRUE'|'FALSE'|null $LatestAppstreamAgentVersion
+ * @property list<string>|null $SupportedInstanceFamilies
+ * @property 'ENABLED'|'DISABLED'|null $DynamicAppProvidersEnabled
+ * @property 'TRUE'|'FALSE'|null $ImageSharedWithOthers
  */
 class Image extends Shape
 {
@@ -35,7 +39,7 @@ class Image extends Shape
      *     Visibility?: 'PUBLIC'|'PRIVATE'|'SHARED'|null,
      *     ImageBuilderSupported?: bool|null,
      *     ImageBuilderName?: string|null,
-     *     Platform?: 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'AMAZON_LINUX2'|null,
+     *     Platform?: 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|null,
      *     Description?: string|null,
      *     StateChangeReason?: ImageStateChangeReason|null,
      *     Applications?: list<Application>|null,
@@ -43,7 +47,11 @@ class Image extends Shape
      *     PublicBaseImageReleasedDate?: \Aws\Api\DateTimeResult|null,
      *     AppstreamAgentVersion?: string|null,
      *     ImagePermissions?: ImagePermissions|null,
-     *     ImageErrors?: list<ResourceError>|null
+     *     ImageErrors?: list<ResourceError>|null,
+     *     LatestAppstreamAgentVersion?: 'TRUE'|'FALSE'|null,
+     *     SupportedInstanceFamilies?: list<string>|null,
+     *     DynamicAppProvidersEnabled?: 'ENABLED'|'DISABLED'|null,
+     *     ImageSharedWithOthers?: 'TRUE'|'FALSE'|null
      * } $args
      */
     public function __construct(array $args)

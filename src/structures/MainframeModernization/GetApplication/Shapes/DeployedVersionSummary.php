@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int<1, max> $applicationVersion
- * @property 'Deploying'|'Succeeded'|'Failed' $status
+ * @property 'Deploying'|'Succeeded'|'Failed'|'Updating Deployment' $status
  * @property string|null $statusReason
  */
 class DeployedVersionSummary extends Shape
@@ -14,7 +14,7 @@ class DeployedVersionSummary extends Shape
     /**
      * @param array{
      *     applicationVersion: int<1, max>,
-     *     status: 'Deploying'|'Succeeded'|'Failed',
+     *     status: 'Deploying'|'Succeeded'|'Failed'|'Updating Deployment',
      *     statusReason?: string|null
      * } $args
      */

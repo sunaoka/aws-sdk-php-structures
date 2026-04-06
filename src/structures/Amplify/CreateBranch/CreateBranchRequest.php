@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $enablePullRequestPreview
  * @property string|null $pullRequestEnvironmentName
  * @property string|null $backendEnvironmentArn
+ * @property Shapes\Backend|null $backend
  */
 class CreateBranchRequest extends Request
 {
@@ -45,7 +46,8 @@ class CreateBranchRequest extends Request
      *     displayName?: string|null,
      *     enablePullRequestPreview?: bool|null,
      *     pullRequestEnvironmentName?: string|null,
-     *     backendEnvironmentArn?: string|null
+     *     backendEnvironmentArn?: string|null,
+     *     backend?: Shapes\Backend|null
      * } $args
      */
     public function __construct(array $args)

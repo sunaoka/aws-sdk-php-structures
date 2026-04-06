@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'STEADY_STATE'|'STABILIZING'|null $stabilityStatus
  * @property \Aws\Api\DateTimeResult|null $stabilityStatusAt
  * @property list<Tag>|null $tags
+ * @property DeploymentEphemeralStorage|null $fargateEphemeralStorage
  */
 class TaskSet extends Shape
 {
@@ -57,7 +58,8 @@ class TaskSet extends Shape
      *     scale?: Scale|null,
      *     stabilityStatus?: 'STEADY_STATE'|'STABILIZING'|null,
      *     stabilityStatusAt?: \Aws\Api\DateTimeResult|null,
-     *     tags?: list<Tag>|null
+     *     tags?: list<Tag>|null,
+     *     fargateEphemeralStorage?: DeploymentEphemeralStorage|null
      * } $args
      */
     public function __construct(array $args = [])

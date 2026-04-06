@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ExecutionRole
  * @property CustomerContentEncryptionConfiguration|null $CustomerContentEncryptionConfiguration
  * @property bool|null $EnableMinimumEncryptionConfiguration
+ * @property QueryResultsS3AccessGrantsConfiguration|null $QueryResultsS3AccessGrantsConfiguration
  */
 class WorkGroupConfigurationUpdates extends Shape
 {
@@ -33,7 +34,8 @@ class WorkGroupConfigurationUpdates extends Shape
      *     AdditionalConfiguration?: string|null,
      *     ExecutionRole?: string|null,
      *     CustomerContentEncryptionConfiguration?: CustomerContentEncryptionConfiguration|null,
-     *     EnableMinimumEncryptionConfiguration?: bool|null
+     *     EnableMinimumEncryptionConfiguration?: bool|null,
+     *     QueryResultsS3AccessGrantsConfiguration?: QueryResultsS3AccessGrantsConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

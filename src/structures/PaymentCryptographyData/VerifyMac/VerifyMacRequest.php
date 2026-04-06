@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $KeyIdentifier
- * @property string $Mac
- * @property int<4, 16>|null $MacLength
  * @property string $MessageData
+ * @property string $Mac
  * @property Shapes\MacAttributes $VerificationAttributes
+ * @property int<4, 16>|null $MacLength
  */
 class VerifyMacRequest extends Request
 {
     /**
      * @param array{
      *     KeyIdentifier: string,
-     *     Mac: string,
-     *     MacLength?: int<4, 16>|null,
      *     MessageData: string,
-     *     VerificationAttributes: Shapes\MacAttributes
+     *     Mac: string,
+     *     VerificationAttributes: Shapes\MacAttributes,
+     *     MacLength?: int<4, 16>|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $BaseUrl
  * @property 'DISABLED'|'ENABLED'|null $ClientCache
  * @property 'RFC_6381'|'RFC_4281'|null $CodecSpecification
+ * @property string|null $DashIFrameTrickPlayNameModifier
  * @property 'BASIC'|'COMPACT'|'DISTINCT'|null $DashManifestStyle
  * @property string|null $Destination
  * @property DestinationSettings|null $DestinationSettings
@@ -41,6 +42,7 @@ class CmafGroupSettings extends Shape
      *     BaseUrl?: string|null,
      *     ClientCache?: 'DISABLED'|'ENABLED'|null,
      *     CodecSpecification?: 'RFC_6381'|'RFC_4281'|null,
+     *     DashIFrameTrickPlayNameModifier?: string|null,
      *     DashManifestStyle?: 'BASIC'|'COMPACT'|'DISTINCT'|null,
      *     Destination?: string|null,
      *     DestinationSettings?: DestinationSettings|null,

@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ArchivalSummary|null $ArchivalSummary
  * @property TableClassSummary|null $TableClassSummary
  * @property bool|null $DeletionProtectionEnabled
+ * @property OnDemandThroughput|null $OnDemandThroughput
  */
 class TableDescription extends Shape
 {
@@ -55,7 +56,8 @@ class TableDescription extends Shape
      *     SSEDescription?: SSEDescription|null,
      *     ArchivalSummary?: ArchivalSummary|null,
      *     TableClassSummary?: TableClassSummary|null,
-     *     DeletionProtectionEnabled?: bool|null
+     *     DeletionProtectionEnabled?: bool|null,
+     *     OnDemandThroughput?: OnDemandThroughput|null
      * } $args
      */
     public function __construct(array $args = [])

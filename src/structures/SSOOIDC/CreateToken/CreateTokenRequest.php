@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $refreshToken
  * @property list<string>|null $scope
  * @property string|null $redirectUri
+ * @property string|null $codeVerifier
  */
 class CreateTokenRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateTokenRequest extends Request
      *     code?: string|null,
      *     refreshToken?: string|null,
      *     scope?: list<string>|null,
-     *     redirectUri?: string|null
+     *     redirectUri?: string|null,
+     *     codeVerifier?: string|null
      * } $args
      */
     public function __construct(array $args)

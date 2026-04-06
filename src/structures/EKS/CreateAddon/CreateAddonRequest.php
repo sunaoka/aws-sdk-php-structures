@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientRequestToken
  * @property array<string, string>|null $tags
  * @property string|null $configurationValues
+ * @property list<Shapes\AddonPodIdentityAssociations>|null $podIdentityAssociations
  */
 class CreateAddonRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateAddonRequest extends Request
      *     resolveConflicts?: 'OVERWRITE'|'NONE'|'PRESERVE'|null,
      *     clientRequestToken?: string|null,
      *     tags?: array<string, string>|null,
-     *     configurationValues?: string|null
+     *     configurationValues?: string|null,
+     *     podIdentityAssociations?: list<Shapes\AddonPodIdentityAssociations>|null
      * } $args
      */
     public function __construct(array $args)

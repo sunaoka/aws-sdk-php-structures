@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\VerifyAuthRequestCrypto
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthRequestCryptogram
- * @property Shapes\CryptogramAuthResponse|null $AuthResponseAttributes
  * @property string $KeyIdentifier
+ * @property string $TransactionData
+ * @property string $AuthRequestCryptogram
  * @property 'EMV_OPTION_A'|'EMV_OPTION_B' $MajorKeyDerivationMode
  * @property Shapes\SessionKeyDerivation $SessionKeyDerivationAttributes
- * @property string $TransactionData
+ * @property Shapes\CryptogramAuthResponse|null $AuthResponseAttributes
  */
 class VerifyAuthRequestCryptogramRequest extends Request
 {
     /**
      * @param array{
-     *     AuthRequestCryptogram: string,
-     *     AuthResponseAttributes?: Shapes\CryptogramAuthResponse|null,
      *     KeyIdentifier: string,
+     *     TransactionData: string,
+     *     AuthRequestCryptogram: string,
      *     MajorKeyDerivationMode: 'EMV_OPTION_A'|'EMV_OPTION_B',
      *     SessionKeyDerivationAttributes: Shapes\SessionKeyDerivation,
-     *     TransactionData: string
+     *     AuthResponseAttributes?: Shapes\CryptogramAuthResponse|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $RoutingControlArn
  * @property string|null $RoutingControlName
  * @property 'On'|'Off'|null $RoutingControlState
+ * @property string|null $Owner
  */
 class RoutingControl extends Shape
 {
@@ -19,7 +20,8 @@ class RoutingControl extends Shape
      *     ControlPanelName?: string|null,
      *     RoutingControlArn?: string|null,
      *     RoutingControlName?: string|null,
-     *     RoutingControlState?: 'On'|'Off'|null
+     *     RoutingControlState?: 'On'|'Off'|null,
+     *     Owner?: string|null
      * } $args
      */
     public function __construct(array $args = [])

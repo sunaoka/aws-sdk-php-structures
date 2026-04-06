@@ -5,17 +5,19 @@ namespace Sunaoka\Aws\Structures\LocationService\ListDevicePositions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string $TrackerName
  * @property int<1, 100>|null $MaxResults
  * @property string|null $NextToken
- * @property string $TrackerName
+ * @property Shapes\TrackingFilterGeometry|null $FilterGeometry
  */
 class ListDevicePositionsRequest extends Request
 {
     /**
      * @param array{
+     *     TrackerName: string,
      *     MaxResults?: int<1, 100>|null,
      *     NextToken?: string|null,
-     *     TrackerName: string
+     *     FilterGeometry?: Shapes\TrackingFilterGeometry|null
      * } $args
      */
     public function __construct(array $args)

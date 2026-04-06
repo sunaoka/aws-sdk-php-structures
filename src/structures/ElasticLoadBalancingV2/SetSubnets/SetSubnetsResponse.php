@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\AvailabilityZone>|null $AvailabilityZones
- * @property 'ipv4'|'dualstack'|null $IpAddressType
+ * @property 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null $IpAddressType
  */
 class SetSubnetsResponse extends Response
 {

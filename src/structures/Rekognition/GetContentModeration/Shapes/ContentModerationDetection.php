@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, max>|null $StartTimestampMillis
  * @property int<0, max>|null $EndTimestampMillis
  * @property int<0, max>|null $DurationMillis
+ * @property list<ContentType>|null $ContentTypes
  */
 class ContentModerationDetection extends Shape
 {
@@ -19,7 +20,8 @@ class ContentModerationDetection extends Shape
      *     ModerationLabel?: ModerationLabel|null,
      *     StartTimestampMillis?: int<0, max>|null,
      *     EndTimestampMillis?: int<0, max>|null,
-     *     DurationMillis?: int<0, max>|null
+     *     DurationMillis?: int<0, max>|null,
+     *     ContentTypes?: list<ContentType>|null
      * } $args
      */
     public function __construct(array $args = [])

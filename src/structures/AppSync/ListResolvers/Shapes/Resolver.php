@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 2000>|null $maxBatchSize
  * @property AppSyncRuntime|null $runtime
  * @property string|null $code
+ * @property 'ENABLED'|'DISABLED'|null $metricsConfig
  */
 class Resolver extends Shape
 {
@@ -35,7 +36,8 @@ class Resolver extends Shape
      *     cachingConfig?: CachingConfig|null,
      *     maxBatchSize?: int<0, 2000>|null,
      *     runtime?: AppSyncRuntime|null,
-     *     code?: string|null
+     *     code?: string|null,
+     *     metricsConfig?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

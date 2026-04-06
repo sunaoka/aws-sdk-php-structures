@@ -53,6 +53,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $StorageThroughput
  * @property bool|null $ManageMasterUserPassword
  * @property string|null $MasterUserSecretKmsKeyId
+ * @property bool|null $DedicatedLogVolume
+ * @property string|null $CACertificateIdentifier
+ * @property string|null $EngineLifecycleSupport
  */
 class RestoreDBInstanceFromS3Request extends Request
 {
@@ -105,7 +108,10 @@ class RestoreDBInstanceFromS3Request extends Request
      *     NetworkType?: string|null,
      *     StorageThroughput?: int|null,
      *     ManageMasterUserPassword?: bool|null,
-     *     MasterUserSecretKmsKeyId?: string|null
+     *     MasterUserSecretKmsKeyId?: string|null,
+     *     DedicatedLogVolume?: bool|null,
+     *     CACertificateIdentifier?: string|null,
+     *     EngineLifecycleSupport?: string|null
      * } $args
      */
     public function __construct(array $args)

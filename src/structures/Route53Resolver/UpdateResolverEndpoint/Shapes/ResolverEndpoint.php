@@ -17,9 +17,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $StatusMessage
  * @property string|null $CreationTime
  * @property string|null $ModificationTime
- * @property 'IPV6'|'IPV4'|'DUALSTACK'|null $ResolverEndpointType
  * @property string|null $OutpostArn
  * @property string|null $PreferredInstanceType
+ * @property 'IPV6'|'IPV4'|'DUALSTACK'|null $ResolverEndpointType
+ * @property list<'DoH'|'Do53'|'DoH-FIPS'>|null $Protocols
  */
 class ResolverEndpoint extends Shape
 {
@@ -37,9 +38,10 @@ class ResolverEndpoint extends Shape
      *     StatusMessage?: string|null,
      *     CreationTime?: string|null,
      *     ModificationTime?: string|null,
-     *     ResolverEndpointType?: 'IPV6'|'IPV4'|'DUALSTACK'|null,
      *     OutpostArn?: string|null,
-     *     PreferredInstanceType?: string|null
+     *     PreferredInstanceType?: string|null,
+     *     ResolverEndpointType?: 'IPV6'|'IPV4'|'DUALSTACK'|null,
+     *     Protocols?: list<'DoH'|'Do53'|'DoH-FIPS'>|null
      * } $args
      */
     public function __construct(array $args = [])

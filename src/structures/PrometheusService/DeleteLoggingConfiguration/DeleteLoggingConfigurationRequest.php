@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PrometheusService\DeleteLoggingConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $workspaceId
  * @property string|null $clientToken
+ * @property string $workspaceId
  */
 class DeleteLoggingConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     workspaceId: string,
-     *     clientToken?: string|null
+     *     clientToken?: string|null,
+     *     workspaceId: string
      * } $args
      */
     public function __construct(array $args)

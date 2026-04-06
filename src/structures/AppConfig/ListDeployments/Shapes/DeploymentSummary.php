@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property float|null $PercentageComplete
  * @property \Aws\Api\DateTimeResult|null $StartedAt
  * @property \Aws\Api\DateTimeResult|null $CompletedAt
+ * @property string|null $VersionLabel
  */
 class DeploymentSummary extends Shape
 {
@@ -31,7 +32,8 @@ class DeploymentSummary extends Shape
      *     State?: 'BAKING'|'VALIDATING'|'DEPLOYING'|'COMPLETE'|'ROLLING_BACK'|'ROLLED_BACK'|null,
      *     PercentageComplete?: float|null,
      *     StartedAt?: \Aws\Api\DateTimeResult|null,
-     *     CompletedAt?: \Aws\Api\DateTimeResult|null
+     *     CompletedAt?: \Aws\Api\DateTimeResult|null,
+     *     VersionLabel?: string|null
      * } $args
      */
     public function __construct(array $args = [])

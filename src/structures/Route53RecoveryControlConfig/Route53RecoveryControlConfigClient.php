@@ -16,6 +16,7 @@ class Route53RecoveryControlConfigClient extends \Aws\Route53RecoveryControlConf
     use DescribeControlPanel\DescribeControlPanelTrait;
     use DescribeRoutingControl\DescribeRoutingControlTrait;
     use DescribeSafetyRule\DescribeSafetyRuleTrait;
+    use GetResourcePolicy\GetResourcePolicyTrait;
     use ListAssociatedRoute53HealthChecks\ListAssociatedRoute53HealthChecksTrait;
     use ListClusters\ListClustersTrait;
     use ListControlPanels\ListControlPanelsTrait;

@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\LocationService\BatchPutGeofence\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreateTime
  * @property string $GeofenceId
+ * @property \Aws\Api\DateTimeResult $CreateTime
  * @property \Aws\Api\DateTimeResult $UpdateTime
  */
 class BatchPutGeofenceSuccess extends Shape
 {
     /**
      * @param array{
-     *     CreateTime: \Aws\Api\DateTimeResult,
      *     GeofenceId: string,
+     *     CreateTime: \Aws\Api\DateTimeResult,
      *     UpdateTime: \Aws\Api\DateTimeResult
      * } $args
      */

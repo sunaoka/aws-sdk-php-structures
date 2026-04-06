@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $ModifiedAt
  * @property list<ListHlsManifestConfiguration>|null $HlsManifests
  * @property list<ListLowLatencyHlsManifestConfiguration>|null $LowLatencyHlsManifests
+ * @property list<ListDashManifestConfiguration>|null $DashManifests
+ * @property ForceEndpointErrorConfiguration|null $ForceEndpointErrorConfiguration
  */
 class OriginEndpointListConfiguration extends Shape
 {
@@ -29,7 +31,9 @@ class OriginEndpointListConfiguration extends Shape
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     ModifiedAt?: \Aws\Api\DateTimeResult|null,
      *     HlsManifests?: list<ListHlsManifestConfiguration>|null,
-     *     LowLatencyHlsManifests?: list<ListLowLatencyHlsManifestConfiguration>|null
+     *     LowLatencyHlsManifests?: list<ListLowLatencyHlsManifestConfiguration>|null,
+     *     DashManifests?: list<ListDashManifestConfiguration>|null,
+     *     ForceEndpointErrorConfiguration?: ForceEndpointErrorConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeEndpointConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Input'|'Output' $CaptureMode
+ * @property 'Input'|'Output'|'InputAndOutput' $CaptureMode
  */
 class CaptureOption extends Shape
 {
     /**
-     * @param array{CaptureMode: 'Input'|'Output'} $args
+     * @param array{CaptureMode: 'Input'|'Output'|'InputAndOutput'} $args
      */
     public function __construct(array $args)
     {

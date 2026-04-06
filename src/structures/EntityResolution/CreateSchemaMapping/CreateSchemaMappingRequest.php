@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $description
- * @property list<Shapes\SchemaInputAttribute>|null $mappedInputFields
+ * @property list<Shapes\SchemaInputAttribute> $mappedInputFields
  * @property string $schemaName
  * @property array<string, string>|null $tags
  */
@@ -15,7 +15,7 @@ class CreateSchemaMappingRequest extends Request
     /**
      * @param array{
      *     description?: string|null,
-     *     mappedInputFields?: list<Shapes\SchemaInputAttribute>|null,
+     *     mappedInputFields: list<Shapes\SchemaInputAttribute>,
      *     schemaName: string,
      *     tags?: array<string, string>|null
      * } $args

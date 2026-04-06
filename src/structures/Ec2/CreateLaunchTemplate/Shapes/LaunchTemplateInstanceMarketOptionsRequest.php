@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateLaunchTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'spot'|null $MarketType
+ * @property 'spot'|'capacity-block'|null $MarketType
  * @property LaunchTemplateSpotMarketOptionsRequest|null $SpotOptions
  */
 class LaunchTemplateInstanceMarketOptionsRequest extends Shape
 {
     /**
      * @param array{
-     *     MarketType?: 'spot'|null,
+     *     MarketType?: 'spot'|'capacity-block'|null,
      *     SpotOptions?: LaunchTemplateSpotMarketOptionsRequest|null
      * } $args
      */

@@ -22,6 +22,7 @@ class AppstreamClient extends \Aws\Appstream\AppstreamClient
     use CreateImageBuilderStreamingURL\CreateImageBuilderStreamingURLTrait;
     use CreateStack\CreateStackTrait;
     use CreateStreamingURL\CreateStreamingURLTrait;
+    use CreateThemeForStack\CreateThemeForStackTrait;
     use CreateUpdatedImage\CreateUpdatedImageTrait;
     use CreateUsageReportSubscription\CreateUsageReportSubscriptionTrait;
     use CreateUser\CreateUserTrait;
@@ -35,6 +36,7 @@ class AppstreamClient extends \Aws\Appstream\AppstreamClient
     use DeleteImageBuilder\DeleteImageBuilderTrait;
     use DeleteImagePermissions\DeleteImagePermissionsTrait;
     use DeleteStack\DeleteStackTrait;
+    use DeleteThemeForStack\DeleteThemeForStackTrait;
     use DeleteUsageReportSubscription\DeleteUsageReportSubscriptionTrait;
     use DeleteUser\DeleteUserTrait;
     use DescribeAppBlockBuilderAppBlockAssociations\DescribeAppBlockBuilderAppBlockAssociationsTrait;
@@ -50,6 +52,7 @@ class AppstreamClient extends \Aws\Appstream\AppstreamClient
     use DescribeImages\DescribeImagesTrait;
     use DescribeSessions\DescribeSessionsTrait;
     use DescribeStacks\DescribeStacksTrait;
+    use DescribeThemeForStack\DescribeThemeForStackTrait;
     use DescribeUsageReportSubscriptions\DescribeUsageReportSubscriptionsTrait;
     use DescribeUserStackAssociations\DescribeUserStackAssociationsTrait;
     use DescribeUsers\DescribeUsersTrait;
@@ -79,4 +82,5 @@ class AppstreamClient extends \Aws\Appstream\AppstreamClient
     use UpdateFleet\UpdateFleetTrait;
     use UpdateImagePermissions\UpdateImagePermissionsTrait;
     use UpdateStack\UpdateStackTrait;
+    use UpdateThemeForStack\UpdateThemeForStackTrait;
 }

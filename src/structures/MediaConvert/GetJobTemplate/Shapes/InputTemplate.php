@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'IGNORE_PSI'|'USE_PSI'|null $PsiControl
  * @property 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART'|null $TimecodeSource
  * @property string|null $TimecodeStart
+ * @property list<VideoOverlay>|null $VideoOverlays
  * @property VideoSelector|null $VideoSelector
  */
 class InputTemplate extends Shape
@@ -49,6 +50,7 @@ class InputTemplate extends Shape
      *     PsiControl?: 'IGNORE_PSI'|'USE_PSI'|null,
      *     TimecodeSource?: 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART'|null,
      *     TimecodeStart?: string|null,
+     *     VideoOverlays?: list<VideoOverlay>|null,
      *     VideoSelector?: VideoSelector|null
      * } $args
      */

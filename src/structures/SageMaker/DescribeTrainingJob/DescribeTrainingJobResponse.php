@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $AutoMLJobArn
  * @property Shapes\ModelArtifacts $ModelArtifacts
  * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped' $TrainingJobStatus
- * @property 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting' $SecondaryStatus
+ * @property 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending' $SecondaryStatus
  * @property string|null $FailureReason
  * @property array<string, string>|null $HyperParameters
  * @property Shapes\AlgorithmSpecification $AlgorithmSpecification
@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\Channel>|null $InputDataConfig
  * @property Shapes\OutputDataConfig|null $OutputDataConfig
  * @property Shapes\ResourceConfig $ResourceConfig
+ * @property Shapes\WarmPoolStatus|null $WarmPoolStatus
  * @property Shapes\VpcConfig|null $VpcConfig
  * @property Shapes\StoppingCondition $StoppingCondition
  * @property \Aws\Api\DateTimeResult $CreationTime
@@ -43,9 +44,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\ProfilerRuleConfiguration>|null $ProfilerRuleConfigurations
  * @property list<Shapes\ProfilerRuleEvaluationStatus>|null $ProfilerRuleEvaluationStatuses
  * @property 'Enabled'|'Disabled'|null $ProfilingStatus
- * @property Shapes\RetryStrategy|null $RetryStrategy
  * @property array<string, string>|null $Environment
- * @property Shapes\WarmPoolStatus|null $WarmPoolStatus
+ * @property Shapes\RetryStrategy|null $RetryStrategy
+ * @property Shapes\RemoteDebugConfig|null $RemoteDebugConfig
+ * @property Shapes\InfraCheckConfig|null $InfraCheckConfig
  */
 class DescribeTrainingJobResponse extends Response
 {

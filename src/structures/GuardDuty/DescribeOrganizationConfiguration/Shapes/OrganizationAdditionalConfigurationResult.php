@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\GuardDuty\DescribeOrganizationConfiguration\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'EKS_ADDON_MANAGEMENT'|null $Name
+ * @property 'EKS_ADDON_MANAGEMENT'|'ECS_FARGATE_AGENT_MANAGEMENT'|'EC2_AGENT_MANAGEMENT'|null $Name
  * @property 'NEW'|'NONE'|'ALL'|null $AutoEnable
  */
 class OrganizationAdditionalConfigurationResult extends Shape
 {
     /**
      * @param array{
-     *     Name?: 'EKS_ADDON_MANAGEMENT'|null,
+     *     Name?: 'EKS_ADDON_MANAGEMENT'|'ECS_FARGATE_AGENT_MANAGEMENT'|'EC2_AGENT_MANAGEMENT'|null,
      *     AutoEnable?: 'NEW'|'NONE'|'ALL'|null
      * } $args
      */

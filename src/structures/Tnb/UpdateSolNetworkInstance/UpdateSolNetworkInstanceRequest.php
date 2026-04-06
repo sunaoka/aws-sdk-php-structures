@@ -8,7 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\UpdateSolNetworkModify|null $modifyVnfInfoData
  * @property string $nsInstanceId
  * @property array<string, string>|null $tags
- * @property 'MODIFY_VNF_INFORMATION' $updateType
+ * @property Shapes\UpdateSolNetworkServiceData|null $updateNs
+ * @property 'MODIFY_VNF_INFORMATION'|'UPDATE_NS' $updateType
  */
 class UpdateSolNetworkInstanceRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateSolNetworkInstanceRequest extends Request
      *     modifyVnfInfoData?: Shapes\UpdateSolNetworkModify|null,
      *     nsInstanceId: string,
      *     tags?: array<string, string>|null,
-     *     updateType: 'MODIFY_VNF_INFORMATION'
+     *     updateNs?: Shapes\UpdateSolNetworkServiceData|null,
+     *     updateType: 'MODIFY_VNF_INFORMATION'|'UPDATE_NS'
      * } $args
      */
     public function __construct(array $args)

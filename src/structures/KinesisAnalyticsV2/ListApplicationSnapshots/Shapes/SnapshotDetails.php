@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CREATING'|'READY'|'DELETING'|'FAILED' $SnapshotStatus
  * @property int<1, 999999999> $ApplicationVersionId
  * @property \Aws\Api\DateTimeResult|null $SnapshotCreationTimestamp
+ * @property 'SQL-1_0'|'FLINK-1_6'|'FLINK-1_8'|'ZEPPELIN-FLINK-1_0'|'FLINK-1_11'|'FLINK-1_13'|'ZEPPELIN-FLINK-2_0'|'FLINK-1_15'|'ZEPPELIN-FLINK-3_0'|'FLINK-1_18'|'FLINK-1_19'|null $RuntimeEnvironment
  */
 class SnapshotDetails extends Shape
 {
@@ -17,7 +18,8 @@ class SnapshotDetails extends Shape
      *     SnapshotName: string,
      *     SnapshotStatus: 'CREATING'|'READY'|'DELETING'|'FAILED',
      *     ApplicationVersionId: int<1, 999999999>,
-     *     SnapshotCreationTimestamp?: \Aws\Api\DateTimeResult|null
+     *     SnapshotCreationTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     RuntimeEnvironment?: 'SQL-1_0'|'FLINK-1_6'|'FLINK-1_8'|'ZEPPELIN-FLINK-1_0'|'FLINK-1_11'|'FLINK-1_13'|'ZEPPELIN-FLINK-2_0'|'FLINK-1_15'|'ZEPPELIN-FLINK-3_0'|'FLINK-1_18'|'FLINK-1_19'|null
      * } $args
      */
     public function __construct(array $args)

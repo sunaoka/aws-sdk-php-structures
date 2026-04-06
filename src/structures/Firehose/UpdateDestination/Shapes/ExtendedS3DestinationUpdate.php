@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property S3DestinationUpdate|null $S3BackupUpdate
  * @property DataFormatConversionConfiguration|null $DataFormatConversionConfiguration
  * @property DynamicPartitioningConfiguration|null $DynamicPartitioningConfiguration
+ * @property string|null $FileExtension
+ * @property string|null $CustomTimeZone
  */
 class ExtendedS3DestinationUpdate extends Shape
 {
@@ -35,7 +37,9 @@ class ExtendedS3DestinationUpdate extends Shape
      *     S3BackupMode?: 'Disabled'|'Enabled'|null,
      *     S3BackupUpdate?: S3DestinationUpdate|null,
      *     DataFormatConversionConfiguration?: DataFormatConversionConfiguration|null,
-     *     DynamicPartitioningConfiguration?: DynamicPartitioningConfiguration|null
+     *     DynamicPartitioningConfiguration?: DynamicPartitioningConfiguration|null,
+     *     FileExtension?: string|null,
+     *     CustomTimeZone?: string|null
      * } $args
      */
     public function __construct(array $args = [])

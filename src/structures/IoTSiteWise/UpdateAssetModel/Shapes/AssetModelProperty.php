@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $dataTypeSpec
  * @property string|null $unit
  * @property PropertyType $type
+ * @property list<AssetModelPropertyPathSegment>|null $path
+ * @property string|null $externalId
  */
 class AssetModelProperty extends Shape
 {
@@ -21,7 +23,9 @@ class AssetModelProperty extends Shape
      *     dataType: 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT',
      *     dataTypeSpec?: string|null,
      *     unit?: string|null,
-     *     type: PropertyType
+     *     type: PropertyType,
+     *     path?: list<AssetModelPropertyPathSegment>|null,
+     *     externalId?: string|null
      * } $args
      */
     public function __construct(array $args)

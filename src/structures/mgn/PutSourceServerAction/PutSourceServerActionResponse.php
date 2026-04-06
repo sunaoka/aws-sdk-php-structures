@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $actionID
  * @property string|null $actionName
  * @property bool|null $active
- * @property 'DISASTER_RECOVERY'|'OPERATING_SYSTEM'|'LICENSE_AND_SUBSCRIPTION'|'VALIDATION'|'OBSERVABILITY'|'SECURITY'|'NETWORKING'|'CONFIGURATION'|'BACKUP'|'OTHER'|null $category
+ * @property 'DISASTER_RECOVERY'|'OPERATING_SYSTEM'|'LICENSE_AND_SUBSCRIPTION'|'VALIDATION'|'OBSERVABILITY'|'REFACTORING'|'SECURITY'|'NETWORKING'|'CONFIGURATION'|'BACKUP'|'OTHER'|null $category
  * @property string|null $description
  * @property string|null $documentIdentifier
  * @property string|null $documentVersion

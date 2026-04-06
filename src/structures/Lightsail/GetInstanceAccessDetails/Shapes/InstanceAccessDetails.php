@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $certKey
  * @property \Aws\Api\DateTimeResult|null $expiresAt
  * @property string|null $ipAddress
+ * @property list<string>|null $ipv6Addresses
  * @property string|null $password
  * @property PasswordData|null $passwordData
  * @property string|null $privateKey
@@ -23,6 +24,7 @@ class InstanceAccessDetails extends Shape
      *     certKey?: string|null,
      *     expiresAt?: \Aws\Api\DateTimeResult|null,
      *     ipAddress?: string|null,
+     *     ipv6Addresses?: list<string>|null,
      *     password?: string|null,
      *     passwordData?: PasswordData|null,
      *     privateKey?: string|null,

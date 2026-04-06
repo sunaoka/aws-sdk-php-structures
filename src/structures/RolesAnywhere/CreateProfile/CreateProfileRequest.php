@@ -5,7 +5,8 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\CreateProfile;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<900, 3600>|null $durationSeconds
+ * @property bool|null $acceptRoleSessionName
+ * @property int<900, 43200>|null $durationSeconds
  * @property bool|null $enabled
  * @property list<string>|null $managedPolicyArns
  * @property string $name
@@ -18,7 +19,8 @@ class CreateProfileRequest extends Request
 {
     /**
      * @param array{
-     *     durationSeconds?: int<900, 3600>|null,
+     *     acceptRoleSessionName?: bool|null,
+     *     durationSeconds?: int<900, 43200>|null,
      *     enabled?: bool|null,
      *     managedPolicyArns?: list<string>|null,
      *     name: string,

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Type
  * @property string|null $DeviceName
  * @property list<Tag>|null $Tags
+ * @property string|null $BgpAsnExtended
  */
 class CustomerGateway extends Shape
 {
@@ -25,7 +26,8 @@ class CustomerGateway extends Shape
      *     State?: string|null,
      *     Type?: string|null,
      *     DeviceName?: string|null,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     BgpAsnExtended?: string|null
      * } $args
      */
     public function __construct(array $args = [])

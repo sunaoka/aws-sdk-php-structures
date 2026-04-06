@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $certificateDomainName
  * @property list<string>|null $certificateAlternativeNames
  * @property list<Shapes\Tag>|null $tags
- * @property 'dualstack'|'ipv4'|null $ipAddressType
+ * @property 'dualstack'|'ipv4'|'ipv6'|null $ipAddressType
  * @property string|null $tlsPolicyName
  */
 class CreateLoadBalancerRequest extends Request
@@ -26,7 +26,7 @@ class CreateLoadBalancerRequest extends Request
      *     certificateDomainName?: string|null,
      *     certificateAlternativeNames?: list<string>|null,
      *     tags?: list<Shapes\Tag>|null,
-     *     ipAddressType?: 'dualstack'|'ipv4'|null,
+     *     ipAddressType?: 'dualstack'|'ipv4'|'ipv6'|null,
      *     tlsPolicyName?: string|null
      * } $args
      */

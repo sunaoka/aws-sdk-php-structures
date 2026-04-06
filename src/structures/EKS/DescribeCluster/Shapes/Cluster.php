@@ -25,6 +25,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $id
  * @property ClusterHealth|null $health
  * @property OutpostConfigResponse|null $outpostConfig
+ * @property AccessConfigResponse|null $accessConfig
+ * @property UpgradePolicyResponse|null $upgradePolicy
  */
 class Cluster extends Shape
 {
@@ -49,7 +51,9 @@ class Cluster extends Shape
      *     connectorConfig?: ConnectorConfigResponse|null,
      *     id?: string|null,
      *     health?: ClusterHealth|null,
-     *     outpostConfig?: OutpostConfigResponse|null
+     *     outpostConfig?: OutpostConfigResponse|null,
+     *     accessConfig?: AccessConfigResponse|null,
+     *     upgradePolicy?: UpgradePolicyResponse|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RuleAction $defaultAction
  * @property string $name
  * @property int<1, 65535>|null $port
- * @property 'HTTP'|'HTTPS' $protocol
+ * @property 'HTTP'|'HTTPS'|'TLS_PASSTHROUGH' $protocol
  * @property string $serviceIdentifier
  * @property array<string, string>|null $tags
  */
@@ -21,7 +21,7 @@ class CreateListenerRequest extends Request
      *     defaultAction: Shapes\RuleAction,
      *     name: string,
      *     port?: int<1, 65535>|null,
-     *     protocol: 'HTTP'|'HTTPS',
+     *     protocol: 'HTTP'|'HTTPS'|'TLS_PASSTHROUGH',
      *     serviceIdentifier: string,
      *     tags?: array<string, string>|null
      * } $args

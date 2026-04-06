@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ResourceArn
  * @property list<Tag>|null $Tags
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property list<PeeringError>|null $LastModificationErrors
  */
 class Peering extends Shape
 {
@@ -29,7 +30,8 @@ class Peering extends Shape
      *     EdgeLocation?: string|null,
      *     ResourceArn?: string|null,
      *     Tags?: list<Tag>|null,
-     *     CreatedAt?: \Aws\Api\DateTimeResult|null
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     LastModificationErrors?: list<PeeringError>|null
      * } $args
      */
     public function __construct(array $args = [])

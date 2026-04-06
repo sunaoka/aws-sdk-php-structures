@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ProcessingConfiguration|null $ProcessingConfiguration
  * @property CloudWatchLoggingOptions|null $CloudWatchLoggingOptions
  * @property VpcConfiguration|null $VpcConfiguration
+ * @property DocumentIdOptions|null $DocumentIdOptions
  */
 class AmazonopensearchserviceDestinationConfiguration extends Shape
 {
@@ -35,7 +36,8 @@ class AmazonopensearchserviceDestinationConfiguration extends Shape
      *     S3Configuration: S3DestinationConfiguration,
      *     ProcessingConfiguration?: ProcessingConfiguration|null,
      *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions|null,
-     *     VpcConfiguration?: VpcConfiguration|null
+     *     VpcConfiguration?: VpcConfiguration|null,
+     *     DocumentIdOptions?: DocumentIdOptions|null
      * } $args
      */
     public function __construct(array $args)

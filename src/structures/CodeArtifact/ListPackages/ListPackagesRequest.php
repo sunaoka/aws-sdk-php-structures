@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domain
  * @property string|null $domainOwner
  * @property string $repository
- * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|null $format
+ * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo'|null $format
  * @property string|null $namespace
  * @property string|null $packagePrefix
  * @property int<1, 1000>|null $maxResults
@@ -23,7 +23,7 @@ class ListPackagesRequest extends Request
      *     domain: string,
      *     domainOwner?: string|null,
      *     repository: string,
-     *     format?: 'npm'|'pypi'|'maven'|'nuget'|'generic'|null,
+     *     format?: 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo'|null,
      *     namespace?: string|null,
      *     packagePrefix?: string|null,
      *     maxResults?: int<1, 1000>|null,

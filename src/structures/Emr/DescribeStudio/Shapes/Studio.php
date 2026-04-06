@@ -22,6 +22,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $IdpAuthUrl
  * @property string|null $IdpRelayStateParameterName
  * @property list<Tag>|null $Tags
+ * @property string|null $IdcInstanceArn
+ * @property bool|null $TrustedIdentityPropagationEnabled
+ * @property 'REQUIRED'|'OPTIONAL'|null $IdcUserAssignment
+ * @property string|null $EncryptionKeyArn
  */
 class Studio extends Shape
 {
@@ -43,7 +47,11 @@ class Studio extends Shape
      *     DefaultS3Location?: string|null,
      *     IdpAuthUrl?: string|null,
      *     IdpRelayStateParameterName?: string|null,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     IdcInstanceArn?: string|null,
+     *     TrustedIdentityPropagationEnabled?: bool|null,
+     *     IdcUserAssignment?: 'REQUIRED'|'OPTIONAL'|null,
+     *     EncryptionKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

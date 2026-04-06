@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignService\PutDialRequestBatch\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string> $attributes
  * @property string $clientToken
- * @property \Aws\Api\DateTimeResult $expirationTime
  * @property string $phoneNumber
+ * @property \Aws\Api\DateTimeResult $expirationTime
+ * @property array<string, string> $attributes
  */
 class DialRequest extends Shape
 {
     /**
      * @param array{
-     *     attributes: array<string, string>,
      *     clientToken: string,
+     *     phoneNumber: string,
      *     expirationTime: \Aws\Api\DateTimeResult,
-     *     phoneNumber: string
+     *     attributes: array<string, string>
      * } $args
      */
     public function __construct(array $args)

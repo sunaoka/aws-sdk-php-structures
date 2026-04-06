@@ -8,7 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $OriginationIdentityArn
  * @property string $OriginationIdentity
  * @property string $IsoCountryCode
- * @property list<'SMS'|'VOICE'> $NumberCapabilities
+ * @property list<'SMS'|'VOICE'|'MMS'> $NumberCapabilities
+ * @property string|null $PhoneNumber
  */
 class OriginationIdentityMetadata extends Shape
 {
@@ -17,7 +18,8 @@ class OriginationIdentityMetadata extends Shape
      *     OriginationIdentityArn: string,
      *     OriginationIdentity: string,
      *     IsoCountryCode: string,
-     *     NumberCapabilities: list<'SMS'|'VOICE'>
+     *     NumberCapabilities: list<'SMS'|'VOICE'|'MMS'>,
+     *     PhoneNumber?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property NetworkInterfaceAssociation|null $Association
  * @property NetworkInterfaceAttachment|null $Attachment
  * @property string|null $AvailabilityZone
+ * @property ConnectionTrackingConfiguration|null $ConnectionTrackingConfiguration
  * @property string|null $Description
  * @property list<GroupIdentifier>|null $Groups
  * @property 'interface'|'natGateway'|'efa'|'trunk'|'load_balancer'|'network_load_balancer'|'vpc_endpoint'|'branch'|'transit_gateway'|'lambda'|'quicksight'|'global_accelerator_managed'|'api_gateway_managed'|'gateway_load_balancer'|'gateway_load_balancer_endpoint'|'iot_rules_managed'|'aws_codestar_connections_managed'|null $InterfaceType
@@ -39,6 +40,7 @@ class NetworkInterface extends Shape
      *     Association?: NetworkInterfaceAssociation|null,
      *     Attachment?: NetworkInterfaceAttachment|null,
      *     AvailabilityZone?: string|null,
+     *     ConnectionTrackingConfiguration?: ConnectionTrackingConfiguration|null,
      *     Description?: string|null,
      *     Groups?: list<GroupIdentifier>|null,
      *     InterfaceType?: 'interface'|'natGateway'|'efa'|'trunk'|'load_balancer'|'network_load_balancer'|'vpc_endpoint'|'branch'|'transit_gateway'|'lambda'|'quicksight'|'global_accelerator_managed'|'api_gateway_managed'|'gateway_load_balancer'|'gateway_load_balancer_endpoint'|'iot_rules_managed'|'aws_codestar_connections_managed'|null,

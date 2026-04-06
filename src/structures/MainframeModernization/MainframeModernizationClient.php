@@ -24,6 +24,7 @@ class MainframeModernizationClient extends \Aws\MainframeModernization\Mainframe
     use ListApplications\ListApplicationsTrait;
     use ListBatchJobDefinitions\ListBatchJobDefinitionsTrait;
     use ListBatchJobExecutions\ListBatchJobExecutionsTrait;
+    use ListBatchJobRestartPoints\ListBatchJobRestartPointsTrait;
     use ListDataSetImportHistory\ListDataSetImportHistoryTrait;
     use ListDataSets\ListDataSetsTrait;
     use ListDeployments\ListDeploymentsTrait;

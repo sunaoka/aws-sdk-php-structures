@@ -14,7 +14,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $SupportsParallelQuery
  * @property bool|null $SupportsGlobalDatabases
  * @property bool|null $SupportsBabelfish
+ * @property bool|null $SupportsLimitlessDatabase
  * @property bool|null $SupportsLocalWriteForwarding
+ * @property bool|null $SupportsIntegrations
  */
 class UpgradeTarget extends Shape
 {
@@ -29,7 +31,9 @@ class UpgradeTarget extends Shape
      *     SupportsParallelQuery?: bool|null,
      *     SupportsGlobalDatabases?: bool|null,
      *     SupportsBabelfish?: bool|null,
-     *     SupportsLocalWriteForwarding?: bool|null
+     *     SupportsLimitlessDatabase?: bool|null,
+     *     SupportsLocalWriteForwarding?: bool|null,
+     *     SupportsIntegrations?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $RoutingProfileId
  * @property string|null $HierarchyGroupId
  * @property array<string, string>|null $Tags
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $LastModifiedRegion
  */
 class User extends Shape
 {
@@ -29,7 +31,9 @@ class User extends Shape
      *     SecurityProfileIds?: list<string>|null,
      *     RoutingProfileId?: string|null,
      *     HierarchyGroupId?: string|null,
-     *     Tags?: array<string, string>|null
+     *     Tags?: array<string, string>|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

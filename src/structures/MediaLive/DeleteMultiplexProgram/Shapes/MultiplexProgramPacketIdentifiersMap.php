@@ -18,6 +18,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $Scte35Pid
  * @property int|null $TimedMetadataPid
  * @property int|null $VideoPid
+ * @property int|null $AribCaptionsPid
+ * @property list<int>|null $DvbTeletextPids
+ * @property int|null $EcmPid
+ * @property int|null $Smpte2038Pid
  */
 class MultiplexProgramPacketIdentifiersMap extends Shape
 {
@@ -35,7 +39,11 @@ class MultiplexProgramPacketIdentifiersMap extends Shape
      *     Scte27Pids?: list<int>|null,
      *     Scte35Pid?: int|null,
      *     TimedMetadataPid?: int|null,
-     *     VideoPid?: int|null
+     *     VideoPid?: int|null,
+     *     AribCaptionsPid?: int|null,
+     *     DvbTeletextPids?: list<int>|null,
+     *     EcmPid?: int|null,
+     *     Smpte2038Pid?: int|null
      * } $args
      */
     public function __construct(array $args = [])

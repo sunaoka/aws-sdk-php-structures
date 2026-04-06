@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DeviceId
- * @property BatchItemError $Error
  * @property \Aws\Api\DateTimeResult $SampleTime
+ * @property BatchItemError $Error
  */
 class BatchUpdateDevicePositionError extends Shape
 {
     /**
      * @param array{
      *     DeviceId: string,
-     *     Error: BatchItemError,
-     *     SampleTime: \Aws\Api\DateTimeResult
+     *     SampleTime: \Aws\Api\DateTimeResult,
+     *     Error: BatchItemError
      * } $args
      */
     public function __construct(array $args)

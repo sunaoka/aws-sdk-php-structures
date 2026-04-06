@@ -4,11 +4,20 @@ namespace Sunaoka\Aws\Structures\S3Control;
 
 class S3ControlClient extends \Aws\S3Control\S3ControlClient
 {
+    use AssociateAccessGrantsIdentityCenter\AssociateAccessGrantsIdentityCenterTrait;
+    use CreateAccessGrant\CreateAccessGrantTrait;
+    use CreateAccessGrantsInstance\CreateAccessGrantsInstanceTrait;
+    use CreateAccessGrantsLocation\CreateAccessGrantsLocationTrait;
     use CreateAccessPoint\CreateAccessPointTrait;
     use CreateAccessPointForObjectLambda\CreateAccessPointForObjectLambdaTrait;
     use CreateBucket\CreateBucketTrait;
     use CreateJob\CreateJobTrait;
     use CreateMultiRegionAccessPoint\CreateMultiRegionAccessPointTrait;
+    use CreateStorageLensGroup\CreateStorageLensGroupTrait;
+    use DeleteAccessGrant\DeleteAccessGrantTrait;
+    use DeleteAccessGrantsInstance\DeleteAccessGrantsInstanceTrait;
+    use DeleteAccessGrantsInstanceResourcePolicy\DeleteAccessGrantsInstanceResourcePolicyTrait;
+    use DeleteAccessGrantsLocation\DeleteAccessGrantsLocationTrait;
     use DeleteAccessPoint\DeleteAccessPointTrait;
     use DeleteAccessPointForObjectLambda\DeleteAccessPointForObjectLambdaTrait;
     use DeleteAccessPointPolicy\DeleteAccessPointPolicyTrait;
@@ -23,8 +32,15 @@ class S3ControlClient extends \Aws\S3Control\S3ControlClient
     use DeletePublicAccessBlock\DeletePublicAccessBlockTrait;
     use DeleteStorageLensConfiguration\DeleteStorageLensConfigurationTrait;
     use DeleteStorageLensConfigurationTagging\DeleteStorageLensConfigurationTaggingTrait;
+    use DeleteStorageLensGroup\DeleteStorageLensGroupTrait;
     use DescribeJob\DescribeJobTrait;
     use DescribeMultiRegionAccessPointOperation\DescribeMultiRegionAccessPointOperationTrait;
+    use DissociateAccessGrantsIdentityCenter\DissociateAccessGrantsIdentityCenterTrait;
+    use GetAccessGrant\GetAccessGrantTrait;
+    use GetAccessGrantsInstance\GetAccessGrantsInstanceTrait;
+    use GetAccessGrantsInstanceForPrefix\GetAccessGrantsInstanceForPrefixTrait;
+    use GetAccessGrantsInstanceResourcePolicy\GetAccessGrantsInstanceResourcePolicyTrait;
+    use GetAccessGrantsLocation\GetAccessGrantsLocationTrait;
     use GetAccessPoint\GetAccessPointTrait;
     use GetAccessPointConfigurationForObjectLambda\GetAccessPointConfigurationForObjectLambdaTrait;
     use GetAccessPointForObjectLambda\GetAccessPointForObjectLambdaTrait;
@@ -38,6 +54,7 @@ class S3ControlClient extends \Aws\S3Control\S3ControlClient
     use GetBucketReplication\GetBucketReplicationTrait;
     use GetBucketTagging\GetBucketTaggingTrait;
     use GetBucketVersioning\GetBucketVersioningTrait;
+    use GetDataAccess\GetDataAccessTrait;
     use GetJobTagging\GetJobTaggingTrait;
     use GetMultiRegionAccessPoint\GetMultiRegionAccessPointTrait;
     use GetMultiRegionAccessPointPolicy\GetMultiRegionAccessPointPolicyTrait;
@@ -46,12 +63,19 @@ class S3ControlClient extends \Aws\S3Control\S3ControlClient
     use GetPublicAccessBlock\GetPublicAccessBlockTrait;
     use GetStorageLensConfiguration\GetStorageLensConfigurationTrait;
     use GetStorageLensConfigurationTagging\GetStorageLensConfigurationTaggingTrait;
+    use GetStorageLensGroup\GetStorageLensGroupTrait;
+    use ListAccessGrants\ListAccessGrantsTrait;
+    use ListAccessGrantsInstances\ListAccessGrantsInstancesTrait;
+    use ListAccessGrantsLocations\ListAccessGrantsLocationsTrait;
     use ListAccessPoints\ListAccessPointsTrait;
     use ListAccessPointsForObjectLambda\ListAccessPointsForObjectLambdaTrait;
     use ListJobs\ListJobsTrait;
     use ListMultiRegionAccessPoints\ListMultiRegionAccessPointsTrait;
     use ListRegionalBuckets\ListRegionalBucketsTrait;
     use ListStorageLensConfigurations\ListStorageLensConfigurationsTrait;
+    use ListStorageLensGroups\ListStorageLensGroupsTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
+    use PutAccessGrantsInstanceResourcePolicy\PutAccessGrantsInstanceResourcePolicyTrait;
     use PutAccessPointConfigurationForObjectLambda\PutAccessPointConfigurationForObjectLambdaTrait;
     use PutAccessPointPolicy\PutAccessPointPolicyTrait;
     use PutAccessPointPolicyForObjectLambda\PutAccessPointPolicyForObjectLambdaTrait;
@@ -66,6 +90,10 @@ class S3ControlClient extends \Aws\S3Control\S3ControlClient
     use PutStorageLensConfiguration\PutStorageLensConfigurationTrait;
     use PutStorageLensConfigurationTagging\PutStorageLensConfigurationTaggingTrait;
     use SubmitMultiRegionAccessPointRoutes\SubmitMultiRegionAccessPointRoutesTrait;
+    use TagResource\TagResourceTrait;
+    use UntagResource\UntagResourceTrait;
+    use UpdateAccessGrantsLocation\UpdateAccessGrantsLocationTrait;
     use UpdateJobPriority\UpdateJobPriorityTrait;
     use UpdateJobStatus\UpdateJobStatusTrait;
+    use UpdateStorageLensGroup\UpdateStorageLensGroupTrait;
 }

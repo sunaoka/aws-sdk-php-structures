@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $EndpointName
  * @property string $EndpointArn
- * @property string $EndpointConfigName
+ * @property string|null $EndpointConfigName
  * @property list<Shapes\ProductionVariantSummary>|null $ProductionVariants
  * @property Shapes\DataCaptureConfigSummary|null $DataCaptureConfig
  * @property 'OutOfService'|'Creating'|'Updating'|'SystemUpdating'|'RollingBack'|'InService'|'Deleting'|'Failed'|'UpdateRollbackFailed' $EndpointStatus

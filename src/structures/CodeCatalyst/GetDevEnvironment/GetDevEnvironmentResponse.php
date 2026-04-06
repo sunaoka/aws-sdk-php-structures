@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'dev.standard1.small'|'dev.standard1.medium'|'dev.standard1.large'|'dev.standard1.xlarge' $instanceType
  * @property int<0, 1200> $inactivityTimeoutMinutes
  * @property Shapes\PersistentStorage $persistentStorage
+ * @property string|null $vpcConnectionName
  */
 class GetDevEnvironmentResponse extends Response
 {

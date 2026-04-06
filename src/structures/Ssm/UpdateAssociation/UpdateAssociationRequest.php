@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $CalendarNames
  * @property list<Shapes\TargetLocation>|null $TargetLocations
  * @property int<1, 6>|null $ScheduleOffset
+ * @property int<1, 24>|null $Duration
  * @property list<array<string, list<string>>>|null $TargetMaps
  * @property Shapes\AlarmConfiguration|null $AlarmConfiguration
  */
@@ -48,6 +49,7 @@ class UpdateAssociationRequest extends Request
      *     CalendarNames?: list<string>|null,
      *     TargetLocations?: list<Shapes\TargetLocation>|null,
      *     ScheduleOffset?: int<1, 6>|null,
+     *     Duration?: int<1, 24>|null,
      *     TargetMaps?: list<array<string, list<string>>>|null,
      *     AlarmConfiguration?: Shapes\AlarmConfiguration|null
      * } $args

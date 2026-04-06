@@ -17,7 +17,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $StartoverWindowSeconds
  * @property list<Shapes\GetHlsManifestConfiguration>|null $HlsManifests
  * @property list<Shapes\GetLowLatencyHlsManifestConfiguration>|null $LowLatencyHlsManifests
+ * @property Shapes\ForceEndpointErrorConfiguration|null $ForceEndpointErrorConfiguration
+ * @property string|null $ETag
  * @property array<string, string>|null $Tags
+ * @property list<Shapes\GetDashManifestConfiguration>|null $DashManifests
  */
 class UpdateOriginEndpointResponse extends Response
 {

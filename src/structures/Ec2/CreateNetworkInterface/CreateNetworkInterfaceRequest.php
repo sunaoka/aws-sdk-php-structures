@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property string|null $ClientToken
  * @property bool|null $EnablePrimaryIpv6
+ * @property Shapes\ConnectionTrackingSpecificationRequest|null $ConnectionTrackingSpecification
  */
 class CreateNetworkInterfaceRequest extends Request
 {
@@ -43,7 +44,8 @@ class CreateNetworkInterfaceRequest extends Request
      *     SubnetId: string,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     ClientToken?: string|null,
-     *     EnablePrimaryIpv6?: bool|null
+     *     EnablePrimaryIpv6?: bool|null,
+     *     ConnectionTrackingSpecification?: Shapes\ConnectionTrackingSpecificationRequest|null
      * } $args
      */
     public function __construct(array $args)

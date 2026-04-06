@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<KeySchemaElement> $KeySchema
  * @property 'PROVISIONED'|'PAY_PER_REQUEST'|null $BillingMode
  * @property ProvisionedThroughput|null $ProvisionedThroughput
+ * @property OnDemandThroughput|null $OnDemandThroughput
  * @property SSESpecification|null $SSESpecification
  * @property list<GlobalSecondaryIndex>|null $GlobalSecondaryIndexes
  */
@@ -22,6 +23,7 @@ class TableCreationParameters extends Shape
      *     KeySchema: list<KeySchemaElement>,
      *     BillingMode?: 'PROVISIONED'|'PAY_PER_REQUEST'|null,
      *     ProvisionedThroughput?: ProvisionedThroughput|null,
+     *     OnDemandThroughput?: OnDemandThroughput|null,
      *     SSESpecification?: SSESpecification|null,
      *     GlobalSecondaryIndexes?: list<GlobalSecondaryIndex>|null
      * } $args

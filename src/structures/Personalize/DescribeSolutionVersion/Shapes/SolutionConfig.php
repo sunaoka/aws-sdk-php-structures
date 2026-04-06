@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AutoMLConfig|null $autoMLConfig
  * @property OptimizationObjective|null $optimizationObjective
  * @property TrainingDataConfig|null $trainingDataConfig
+ * @property AutoTrainingConfig|null $autoTrainingConfig
  */
 class SolutionConfig extends Shape
 {
@@ -23,7 +24,8 @@ class SolutionConfig extends Shape
      *     featureTransformationParameters?: array<string, string>|null,
      *     autoMLConfig?: AutoMLConfig|null,
      *     optimizationObjective?: OptimizationObjective|null,
-     *     trainingDataConfig?: TrainingDataConfig|null
+     *     trainingDataConfig?: TrainingDataConfig|null,
+     *     autoTrainingConfig?: AutoTrainingConfig|null
      * } $args
      */
     public function __construct(array $args = [])

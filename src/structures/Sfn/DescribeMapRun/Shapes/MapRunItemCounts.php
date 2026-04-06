@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, max> $aborted
  * @property int<0, max> $total
  * @property int<0, max> $resultsWritten
+ * @property int|null $failuresNotRedrivable
+ * @property int|null $pendingRedrive
  */
 class MapRunItemCounts extends Shape
 {
@@ -25,7 +27,9 @@ class MapRunItemCounts extends Shape
      *     timedOut: int<0, max>,
      *     aborted: int<0, max>,
      *     total: int<0, max>,
-     *     resultsWritten: int<0, max>
+     *     resultsWritten: int<0, max>,
+     *     failuresNotRedrivable?: int|null,
+     *     pendingRedrive?: int|null
      * } $args
      */
     public function __construct(array $args)

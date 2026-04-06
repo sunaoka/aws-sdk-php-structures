@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $arn
  * @property string|null $description
  * @property string|null $signalCatalogArn
- * @property 'ACTIVE'|'DRAFT'|null $status
+ * @property 'ACTIVE'|'DRAFT'|'INVALID'|'VALIDATING'|null $status
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastModificationTime
  */

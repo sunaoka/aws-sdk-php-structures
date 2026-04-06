@@ -15,10 +15,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ResourceArn
  * @property int|null $AttachmentPolicyRuleNumber
  * @property string|null $SegmentName
+ * @property string|null $NetworkFunctionGroupName
  * @property list<Tag>|null $Tags
  * @property ProposedSegmentChange|null $ProposedSegmentChange
+ * @property ProposedNetworkFunctionGroupChange|null $ProposedNetworkFunctionGroupChange
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property \Aws\Api\DateTimeResult|null $UpdatedAt
+ * @property list<AttachmentError>|null $LastModificationErrors
  */
 class Attachment extends Shape
 {
@@ -34,10 +37,13 @@ class Attachment extends Shape
      *     ResourceArn?: string|null,
      *     AttachmentPolicyRuleNumber?: int|null,
      *     SegmentName?: string|null,
+     *     NetworkFunctionGroupName?: string|null,
      *     Tags?: list<Tag>|null,
      *     ProposedSegmentChange?: ProposedSegmentChange|null,
+     *     ProposedNetworkFunctionGroupChange?: ProposedNetworkFunctionGroupChange|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
-     *     UpdatedAt?: \Aws\Api\DateTimeResult|null
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     LastModificationErrors?: list<AttachmentError>|null
      * } $args
      */
     public function __construct(array $args = [])

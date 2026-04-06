@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
+ * @property string|null $WorkGroup
  */
 class GetDataCatalogRequest extends Request
 {
     /**
-     * @param array{Name: string} $args
+     * @param array{
+     *     Name: string,
+     *     WorkGroup?: string|null
+     * } $args
      */
     public function __construct(array $args)
     {

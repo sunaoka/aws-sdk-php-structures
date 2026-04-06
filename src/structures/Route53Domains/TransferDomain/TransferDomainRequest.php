@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $PrivacyProtectAdminContact
  * @property bool|null $PrivacyProtectRegistrantContact
  * @property bool|null $PrivacyProtectTechContact
+ * @property Shapes\ContactDetail|null $BillingContact
+ * @property bool|null $PrivacyProtectBillingContact
  */
 class TransferDomainRequest extends Request
 {
@@ -33,7 +35,9 @@ class TransferDomainRequest extends Request
      *     TechContact: Shapes\ContactDetail,
      *     PrivacyProtectAdminContact?: bool|null,
      *     PrivacyProtectRegistrantContact?: bool|null,
-     *     PrivacyProtectTechContact?: bool|null
+     *     PrivacyProtectTechContact?: bool|null,
+     *     BillingContact?: Shapes\ContactDetail|null,
+     *     PrivacyProtectBillingContact?: bool|null
      * } $args
      */
     public function __construct(array $args)

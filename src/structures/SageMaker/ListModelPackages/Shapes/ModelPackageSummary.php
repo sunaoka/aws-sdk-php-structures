@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListModelPackages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ModelPackageName
+ * @property string|null $ModelPackageName
  * @property string|null $ModelPackageGroupName
  * @property int<1, max>|null $ModelPackageVersion
  * @property string $ModelPackageArn
@@ -18,7 +18,7 @@ class ModelPackageSummary extends Shape
 {
     /**
      * @param array{
-     *     ModelPackageName: string,
+     *     ModelPackageName?: string|null,
      *     ModelPackageGroupName?: string|null,
      *     ModelPackageVersion?: int<1, max>|null,
      *     ModelPackageArn: string,

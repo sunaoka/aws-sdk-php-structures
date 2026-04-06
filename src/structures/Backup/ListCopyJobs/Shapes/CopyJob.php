@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $NumberOfChildJobs
  * @property array<'CREATED'|'RUNNING'|'COMPLETED'|'FAILED'|'PARTIAL', int>|null $ChildJobsInState
  * @property string|null $ResourceName
+ * @property string|null $MessageCategory
  */
 class CopyJob extends Shape
 {
@@ -51,7 +52,8 @@ class CopyJob extends Shape
      *     CompositeMemberIdentifier?: string|null,
      *     NumberOfChildJobs?: int|null,
      *     ChildJobsInState?: array<'CREATED'|'RUNNING'|'COMPLETED'|'FAILED'|'PARTIAL', int>|null,
-     *     ResourceName?: string|null
+     *     ResourceName?: string|null,
+     *     MessageCategory?: string|null
      * } $args
      */
     public function __construct(array $args = [])

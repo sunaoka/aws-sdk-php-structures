@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PENDING'|'DEPLOYED'|'PENDING_DELETION' $Status
  * @property list<string> $TargetControls
  * @property int $WaitPeriodMs
+ * @property string|null $Owner
  */
 class GatingRule extends Shape
 {
@@ -25,7 +26,8 @@ class GatingRule extends Shape
      *     SafetyRuleArn: string,
      *     Status: 'PENDING'|'DEPLOYED'|'PENDING_DELETION',
      *     TargetControls: list<string>,
-     *     WaitPeriodMs: int
+     *     WaitPeriodMs: int,
+     *     Owner?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property string $domainId
  * @property string $name
- * @property 'Text'|'Number'|'Boolean'|'DateTime'|'SingleSelect'|'Url' $type
+ * @property 'Text'|'Number'|'Boolean'|'DateTime'|'SingleSelect'|'Url'|'User' $type
  */
 class CreateFieldRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateFieldRequest extends Request
      *     description?: string|null,
      *     domainId: string,
      *     name: string,
-     *     type: 'Text'|'Number'|'Boolean'|'DateTime'|'SingleSelect'|'Url'
+     *     type: 'Text'|'Number'|'Boolean'|'DateTime'|'SingleSelect'|'Url'|'User'
      * } $args
      */
     public function __construct(array $args)

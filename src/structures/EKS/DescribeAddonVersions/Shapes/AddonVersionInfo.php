@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $architecture
  * @property list<Compatibility>|null $compatibilities
  * @property bool|null $requiresConfiguration
+ * @property bool|null $requiresIamPermissions
  */
 class AddonVersionInfo extends Shape
 {
@@ -17,7 +18,8 @@ class AddonVersionInfo extends Shape
      *     addonVersion?: string|null,
      *     architecture?: list<string>|null,
      *     compatibilities?: list<Compatibility>|null,
-     *     requiresConfiguration?: bool|null
+     *     requiresConfiguration?: bool|null,
+     *     requiresIamPermissions?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

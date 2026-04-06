@@ -9,8 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $created
  * @property string|null $description
  * @property string $endpoint
+ * @property string|null $grafanaToken
  * @property string $grafanaVersion
  * @property string $id
+ * @property 'ENTERPRISE'|'ENTERPRISE_FREE_TRIAL'|null $licenseType
  * @property \Aws\Api\DateTimeResult $modified
  * @property string|null $name
  * @property list<'SNS'>|null $notificationDestinations
@@ -25,8 +27,10 @@ class WorkspaceSummary extends Shape
      *     created: \Aws\Api\DateTimeResult,
      *     description?: string|null,
      *     endpoint: string,
+     *     grafanaToken?: string|null,
      *     grafanaVersion: string,
      *     id: string,
+     *     licenseType?: 'ENTERPRISE'|'ENTERPRISE_FREE_TRIAL'|null,
      *     modified: \Aws\Api\DateTimeResult,
      *     name?: string|null,
      *     notificationDestinations?: list<'SNS'>|null,

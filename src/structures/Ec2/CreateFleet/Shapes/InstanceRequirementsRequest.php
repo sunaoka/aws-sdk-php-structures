@@ -23,11 +23,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property BaselineEbsBandwidthMbpsRequest|null $BaselineEbsBandwidthMbps
  * @property list<'gpu'|'fpga'|'inference'>|null $AcceleratorTypes
  * @property AcceleratorCountRequest|null $AcceleratorCount
- * @property list<'nvidia'|'amd'|'amazon-web-services'|'xilinx'>|null $AcceleratorManufacturers
- * @property list<'a100'|'v100'|'k80'|'t4'|'m60'|'radeon-pro-v520'|'vu9p'|'inferentia'|'k520'>|null $AcceleratorNames
+ * @property list<'amazon-web-services'|'amd'|'nvidia'|'xilinx'|'habana'>|null $AcceleratorManufacturers
+ * @property list<'a100'|'inferentia'|'k520'|'k80'|'m60'|'radeon-pro-v520'|'t4'|'vu9p'|'v100'|'a10g'|'h100'|'t4g'>|null $AcceleratorNames
  * @property AcceleratorTotalMemoryMiBRequest|null $AcceleratorTotalMemoryMiB
  * @property NetworkBandwidthGbpsRequest|null $NetworkBandwidthGbps
  * @property list<string>|null $AllowedInstanceTypes
+ * @property int|null $MaxSpotPriceAsPercentageOfOptimalOnDemandPrice
  */
 class InstanceRequirementsRequest extends Shape
 {
@@ -51,11 +52,12 @@ class InstanceRequirementsRequest extends Shape
      *     BaselineEbsBandwidthMbps?: BaselineEbsBandwidthMbpsRequest|null,
      *     AcceleratorTypes?: list<'gpu'|'fpga'|'inference'>|null,
      *     AcceleratorCount?: AcceleratorCountRequest|null,
-     *     AcceleratorManufacturers?: list<'nvidia'|'amd'|'amazon-web-services'|'xilinx'>|null,
-     *     AcceleratorNames?: list<'a100'|'v100'|'k80'|'t4'|'m60'|'radeon-pro-v520'|'vu9p'|'inferentia'|'k520'>|null,
+     *     AcceleratorManufacturers?: list<'amazon-web-services'|'amd'|'nvidia'|'xilinx'|'habana'>|null,
+     *     AcceleratorNames?: list<'a100'|'inferentia'|'k520'|'k80'|'m60'|'radeon-pro-v520'|'t4'|'vu9p'|'v100'|'a10g'|'h100'|'t4g'>|null,
      *     AcceleratorTotalMemoryMiB?: AcceleratorTotalMemoryMiBRequest|null,
      *     NetworkBandwidthGbps?: NetworkBandwidthGbpsRequest|null,
-     *     AllowedInstanceTypes?: list<string>|null
+     *     AllowedInstanceTypes?: list<string>|null,
+     *     MaxSpotPriceAsPercentageOfOptimalOnDemandPrice?: int|null
      * } $args
      */
     public function __construct(array $args)

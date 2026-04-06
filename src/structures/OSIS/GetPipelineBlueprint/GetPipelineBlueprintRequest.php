@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BlueprintName
+ * @property string|null $Format
  */
 class GetPipelineBlueprintRequest extends Request
 {
     /**
-     * @param array{BlueprintName: string} $args
+     * @param array{
+     *     BlueprintName: string,
+     *     Format?: string|null
+     * } $args
      */
     public function __construct(array $args)
     {

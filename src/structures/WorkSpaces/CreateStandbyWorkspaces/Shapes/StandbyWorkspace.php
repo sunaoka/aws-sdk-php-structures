@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VolumeEncryptionKey
  * @property string $DirectoryId
  * @property list<Tag>|null $Tags
+ * @property 'NO_REPLICATION'|'PRIMARY_AS_SOURCE'|null $DataReplication
  */
 class StandbyWorkspace extends Shape
 {
@@ -17,7 +18,8 @@ class StandbyWorkspace extends Shape
      *     PrimaryWorkspaceId: string,
      *     VolumeEncryptionKey?: string|null,
      *     DirectoryId: string,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     DataReplication?: 'NO_REPLICATION'|'PRIMARY_AS_SOURCE'|null
      * } $args
      */
     public function __construct(array $args)

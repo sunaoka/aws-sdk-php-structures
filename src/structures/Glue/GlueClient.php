@@ -16,8 +16,10 @@ class GlueClient extends \Aws\Glue\GlueClient
     use BatchGetDevEndpoints\BatchGetDevEndpointsTrait;
     use BatchGetJobs\BatchGetJobsTrait;
     use BatchGetPartition\BatchGetPartitionTrait;
+    use BatchGetTableOptimizer\BatchGetTableOptimizerTrait;
     use BatchGetTriggers\BatchGetTriggersTrait;
     use BatchGetWorkflows\BatchGetWorkflowsTrait;
+    use BatchPutDataQualityStatisticAnnotation\BatchPutDataQualityStatisticAnnotationTrait;
     use BatchStopJobRun\BatchStopJobRunTrait;
     use BatchUpdatePartition\BatchUpdatePartitionTrait;
     use CancelDataQualityRuleRecommendationRun\CancelDataQualityRuleRecommendationRunTrait;
@@ -43,7 +45,9 @@ class GlueClient extends \Aws\Glue\GlueClient
     use CreateSecurityConfiguration\CreateSecurityConfigurationTrait;
     use CreateSession\CreateSessionTrait;
     use CreateTable\CreateTableTrait;
+    use CreateTableOptimizer\CreateTableOptimizerTrait;
     use CreateTrigger\CreateTriggerTrait;
+    use CreateUsageProfile\CreateUsageProfileTrait;
     use CreateUserDefinedFunction\CreateUserDefinedFunctionTrait;
     use CreateWorkflow\CreateWorkflowTrait;
     use DeleteBlueprint\DeleteBlueprintTrait;
@@ -67,8 +71,10 @@ class GlueClient extends \Aws\Glue\GlueClient
     use DeleteSecurityConfiguration\DeleteSecurityConfigurationTrait;
     use DeleteSession\DeleteSessionTrait;
     use DeleteTable\DeleteTableTrait;
+    use DeleteTableOptimizer\DeleteTableOptimizerTrait;
     use DeleteTableVersion\DeleteTableVersionTrait;
     use DeleteTrigger\DeleteTriggerTrait;
+    use DeleteUsageProfile\DeleteUsageProfileTrait;
     use DeleteUserDefinedFunction\DeleteUserDefinedFunctionTrait;
     use DeleteWorkflow\DeleteWorkflowTrait;
     use GetBlueprint\GetBlueprintTrait;
@@ -79,6 +85,8 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetClassifiers\GetClassifiersTrait;
     use GetColumnStatisticsForPartition\GetColumnStatisticsForPartitionTrait;
     use GetColumnStatisticsForTable\GetColumnStatisticsForTableTrait;
+    use GetColumnStatisticsTaskRun\GetColumnStatisticsTaskRunTrait;
+    use GetColumnStatisticsTaskRuns\GetColumnStatisticsTaskRunsTrait;
     use GetConnection\GetConnectionTrait;
     use GetConnections\GetConnectionsTrait;
     use GetCrawler\GetCrawlerTrait;
@@ -86,6 +94,8 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetCrawlers\GetCrawlersTrait;
     use GetCustomEntityType\GetCustomEntityTypeTrait;
     use GetDataCatalogEncryptionSettings\GetDataCatalogEncryptionSettingsTrait;
+    use GetDataQualityModel\GetDataQualityModelTrait;
+    use GetDataQualityModelResult\GetDataQualityModelResultTrait;
     use GetDataQualityResult\GetDataQualityResultTrait;
     use GetDataQualityRuleRecommendationRun\GetDataQualityRuleRecommendationRunTrait;
     use GetDataQualityRuleset\GetDataQualityRulesetTrait;
@@ -121,6 +131,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetSession\GetSessionTrait;
     use GetStatement\GetStatementTrait;
     use GetTable\GetTableTrait;
+    use GetTableOptimizer\GetTableOptimizerTrait;
     use GetTableVersion\GetTableVersionTrait;
     use GetTableVersions\GetTableVersionsTrait;
     use GetTables\GetTablesTrait;
@@ -130,6 +141,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetUnfilteredPartitionMetadata\GetUnfilteredPartitionMetadataTrait;
     use GetUnfilteredPartitionsMetadata\GetUnfilteredPartitionsMetadataTrait;
     use GetUnfilteredTableMetadata\GetUnfilteredTableMetadataTrait;
+    use GetUsageProfile\GetUsageProfileTrait;
     use GetUserDefinedFunction\GetUserDefinedFunctionTrait;
     use GetUserDefinedFunctions\GetUserDefinedFunctionsTrait;
     use GetWorkflow\GetWorkflowTrait;
@@ -138,6 +150,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetWorkflowRuns\GetWorkflowRunsTrait;
     use ImportCatalogToGlue\ImportCatalogToGlueTrait;
     use ListBlueprints\ListBlueprintsTrait;
+    use ListColumnStatisticsTaskRuns\ListColumnStatisticsTaskRunsTrait;
     use ListCrawlers\ListCrawlersTrait;
     use ListCrawls\ListCrawlsTrait;
     use ListCustomEntityTypes\ListCustomEntityTypesTrait;
@@ -145,6 +158,8 @@ class GlueClient extends \Aws\Glue\GlueClient
     use ListDataQualityRuleRecommendationRuns\ListDataQualityRuleRecommendationRunsTrait;
     use ListDataQualityRulesetEvaluationRuns\ListDataQualityRulesetEvaluationRunsTrait;
     use ListDataQualityRulesets\ListDataQualityRulesetsTrait;
+    use ListDataQualityStatisticAnnotations\ListDataQualityStatisticAnnotationsTrait;
+    use ListDataQualityStatistics\ListDataQualityStatisticsTrait;
     use ListDevEndpoints\ListDevEndpointsTrait;
     use ListJobs\ListJobsTrait;
     use ListMLTransforms\ListMLTransformsTrait;
@@ -153,9 +168,12 @@ class GlueClient extends \Aws\Glue\GlueClient
     use ListSchemas\ListSchemasTrait;
     use ListSessions\ListSessionsTrait;
     use ListStatements\ListStatementsTrait;
+    use ListTableOptimizerRuns\ListTableOptimizerRunsTrait;
     use ListTriggers\ListTriggersTrait;
+    use ListUsageProfiles\ListUsageProfilesTrait;
     use ListWorkflows\ListWorkflowsTrait;
     use PutDataCatalogEncryptionSettings\PutDataCatalogEncryptionSettingsTrait;
+    use PutDataQualityProfileAnnotation\PutDataQualityProfileAnnotationTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;
     use PutSchemaVersionMetadata\PutSchemaVersionMetadataTrait;
     use PutWorkflowRunProperties\PutWorkflowRunPropertiesTrait;
@@ -167,6 +185,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use RunStatement\RunStatementTrait;
     use SearchTables\SearchTablesTrait;
     use StartBlueprintRun\StartBlueprintRunTrait;
+    use StartColumnStatisticsTaskRun\StartColumnStatisticsTaskRunTrait;
     use StartCrawler\StartCrawlerTrait;
     use StartCrawlerSchedule\StartCrawlerScheduleTrait;
     use StartDataQualityRuleRecommendationRun\StartDataQualityRuleRecommendationRunTrait;
@@ -178,6 +197,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use StartMLLabelingSetGenerationTaskRun\StartMLLabelingSetGenerationTaskRunTrait;
     use StartTrigger\StartTriggerTrait;
     use StartWorkflowRun\StartWorkflowRunTrait;
+    use StopColumnStatisticsTaskRun\StopColumnStatisticsTaskRunTrait;
     use StopCrawler\StopCrawlerTrait;
     use StopCrawlerSchedule\StopCrawlerScheduleTrait;
     use StopSession\StopSessionTrait;
@@ -203,7 +223,9 @@ class GlueClient extends \Aws\Glue\GlueClient
     use UpdateSchema\UpdateSchemaTrait;
     use UpdateSourceControlFromJob\UpdateSourceControlFromJobTrait;
     use UpdateTable\UpdateTableTrait;
+    use UpdateTableOptimizer\UpdateTableOptimizerTrait;
     use UpdateTrigger\UpdateTriggerTrait;
+    use UpdateUsageProfile\UpdateUsageProfileTrait;
     use UpdateUserDefinedFunction\UpdateUserDefinedFunctionTrait;
     use UpdateWorkflow\UpdateWorkflowTrait;
 }

@@ -51,7 +51,9 @@ class EmrClient extends \Aws\Emr\EmrClient
     use RemoveManagedScalingPolicy\RemoveManagedScalingPolicyTrait;
     use RemoveTags\RemoveTagsTrait;
     use RunJobFlow\RunJobFlowTrait;
+    use SetKeepJobFlowAliveWhenNoSteps\SetKeepJobFlowAliveWhenNoStepsTrait;
     use SetTerminationProtection\SetTerminationProtectionTrait;
+    use SetUnhealthyNodeReplacement\SetUnhealthyNodeReplacementTrait;
     use SetVisibleToAllUsers\SetVisibleToAllUsersTrait;
     use StartNotebookExecution\StartNotebookExecutionTrait;
     use StopNotebookExecution\StopNotebookExecutionTrait;

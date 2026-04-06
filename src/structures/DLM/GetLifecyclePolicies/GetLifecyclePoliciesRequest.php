@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'VOLUME'|'INSTANCE'>|null $ResourceTypes
  * @property list<string>|null $TargetTags
  * @property list<string>|null $TagsToAdd
+ * @property 'VOLUME'|'INSTANCE'|'ALL'|null $DefaultPolicyType
  */
 class GetLifecyclePoliciesRequest extends Request
 {
@@ -19,7 +20,8 @@ class GetLifecyclePoliciesRequest extends Request
      *     State?: 'ENABLED'|'DISABLED'|'ERROR'|null,
      *     ResourceTypes?: list<'VOLUME'|'INSTANCE'>|null,
      *     TargetTags?: list<string>|null,
-     *     TagsToAdd?: list<string>|null
+     *     TagsToAdd?: list<string>|null,
+     *     DefaultPolicyType?: 'VOLUME'|'INSTANCE'|'ALL'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -38,6 +38,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ReservedNodeId
  * @property string|null $TargetReservedNodeOfferingId
  * @property bool|null $Encrypted
+ * @property bool|null $ManageMasterPassword
+ * @property string|null $MasterPasswordSecretKmsKeyId
+ * @property string|null $IpAddressType
+ * @property bool|null $MultiAZ
  */
 class RestoreFromClusterSnapshotRequest extends Request
 {
@@ -75,7 +79,11 @@ class RestoreFromClusterSnapshotRequest extends Request
      *     DefaultIamRoleArn?: string|null,
      *     ReservedNodeId?: string|null,
      *     TargetReservedNodeOfferingId?: string|null,
-     *     Encrypted?: bool|null
+     *     Encrypted?: bool|null,
+     *     ManageMasterPassword?: bool|null,
+     *     MasterPasswordSecretKmsKeyId?: string|null,
+     *     IpAddressType?: string|null,
+     *     MultiAZ?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,17 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignService\UpdateCampaignDialerConf
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PredictiveDialerConfig|null $predictiveDialerConfig
  * @property ProgressiveDialerConfig|null $progressiveDialerConfig
+ * @property PredictiveDialerConfig|null $predictiveDialerConfig
+ * @property AgentlessDialerConfig|null $agentlessDialerConfig
  */
 class DialerConfig extends Shape
 {
     /**
      * @param array{
+     *     progressiveDialerConfig?: ProgressiveDialerConfig|null,
      *     predictiveDialerConfig?: PredictiveDialerConfig|null,
-     *     progressiveDialerConfig?: ProgressiveDialerConfig|null
+     *     agentlessDialerConfig?: AgentlessDialerConfig|null
      * } $args
      */
     public function __construct(array $args = [])

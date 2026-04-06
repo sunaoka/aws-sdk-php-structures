@@ -24,12 +24,16 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property Shapes\UserContext|null $LastModifiedBy
  * @property string|null $ApprovalDescription
- * @property array<string, string>|null $CustomerMetadataProperties
- * @property Shapes\DriftCheckBaselines|null $DriftCheckBaselines
  * @property string|null $Domain
  * @property string|null $Task
  * @property string|null $SamplePayloadUrl
+ * @property array<string, string>|null $CustomerMetadataProperties
+ * @property Shapes\DriftCheckBaselines|null $DriftCheckBaselines
  * @property list<Shapes\AdditionalInferenceSpecificationDefinition>|null $AdditionalInferenceSpecifications
+ * @property 'All'|'None'|null $SkipModelValidation
+ * @property string|null $SourceUri
+ * @property Shapes\ModelPackageSecurityConfig|null $SecurityConfig
+ * @property Shapes\ModelPackageModelCard|null $ModelCard
  */
 class DescribeModelPackageResponse extends Response
 {

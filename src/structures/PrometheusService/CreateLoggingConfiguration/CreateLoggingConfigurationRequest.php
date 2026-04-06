@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\PrometheusService\CreateLoggingConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $workspaceId
- * @property string $logGroupArn
  * @property string|null $clientToken
+ * @property string $logGroupArn
+ * @property string $workspaceId
  */
 class CreateLoggingConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     workspaceId: string,
+     *     clientToken?: string|null,
      *     logGroupArn: string,
-     *     clientToken?: string|null
+     *     workspaceId: string
      * } $args
      */
     public function __construct(array $args)

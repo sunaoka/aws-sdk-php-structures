@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\Glue\UpdateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null $JobMode
  * @property string|null $Description
  * @property string|null $LogUri
  * @property string|null $Role
@@ -25,11 +26,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, CodeGenConfigurationNode>|null $CodeGenConfigurationNodes
  * @property 'FLEX'|'STANDARD'|null $ExecutionClass
  * @property SourceControlDetails|null $SourceControlDetails
+ * @property string|null $MaintenanceWindow
  */
 class JobUpdate extends Shape
 {
     /**
      * @param array{
+     *     JobMode?: 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null,
      *     Description?: string|null,
      *     LogUri?: string|null,
      *     Role?: string|null,
@@ -49,7 +52,8 @@ class JobUpdate extends Shape
      *     GlueVersion?: string|null,
      *     CodeGenConfigurationNodes?: array<string, CodeGenConfigurationNode>|null,
      *     ExecutionClass?: 'FLEX'|'STANDARD'|null,
-     *     SourceControlDetails?: SourceControlDetails|null
+     *     SourceControlDetails?: SourceControlDetails|null,
+     *     MaintenanceWindow?: string|null
      * } $args
      */
     public function __construct(array $args = [])

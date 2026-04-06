@@ -27,6 +27,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM'|null $imageSource
  * @property ImageScanState|null $scanState
  * @property ImageScanningConfiguration|null $imageScanningConfiguration
+ * @property \Aws\Api\DateTimeResult|null $deprecationTime
+ * @property string|null $lifecycleExecutionId
+ * @property string|null $executionRole
+ * @property list<WorkflowConfiguration>|null $workflows
  */
 class Image extends Shape
 {
@@ -53,7 +57,11 @@ class Image extends Shape
      *     buildType?: 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|null,
      *     imageSource?: 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM'|null,
      *     scanState?: ImageScanState|null,
-     *     imageScanningConfiguration?: ImageScanningConfiguration|null
+     *     imageScanningConfiguration?: ImageScanningConfiguration|null,
+     *     deprecationTime?: \Aws\Api\DateTimeResult|null,
+     *     lifecycleExecutionId?: string|null,
+     *     executionRole?: string|null,
+     *     workflows?: list<WorkflowConfiguration>|null
      * } $args
      */
     public function __construct(array $args = [])

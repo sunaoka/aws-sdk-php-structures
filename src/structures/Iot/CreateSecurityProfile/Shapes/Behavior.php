@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MetricDimension|null $metricDimension
  * @property BehaviorCriteria|null $criteria
  * @property bool|null $suppressAlerts
+ * @property bool|null $exportMetric
  */
 class Behavior extends Shape
 {
@@ -19,7 +20,8 @@ class Behavior extends Shape
      *     metric?: string|null,
      *     metricDimension?: MetricDimension|null,
      *     criteria?: BehaviorCriteria|null,
-     *     suppressAlerts?: bool|null
+     *     suppressAlerts?: bool|null,
+     *     exportMetric?: bool|null
      * } $args
      */
     public function __construct(array $args)

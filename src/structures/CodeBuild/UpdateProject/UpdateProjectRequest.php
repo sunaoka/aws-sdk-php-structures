@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ProjectCache|null $cache
  * @property Shapes\ProjectEnvironment|null $environment
  * @property string|null $serviceRole
- * @property int<5, 480>|null $timeoutInMinutes
+ * @property int<5, 2160>|null $timeoutInMinutes
  * @property int<5, 480>|null $queuedTimeoutInMinutes
  * @property string|null $encryptionKey
  * @property list<Shapes\Tag>|null $tags
@@ -42,7 +42,7 @@ class UpdateProjectRequest extends Request
      *     cache?: Shapes\ProjectCache|null,
      *     environment?: Shapes\ProjectEnvironment|null,
      *     serviceRole?: string|null,
-     *     timeoutInMinutes?: int<5, 480>|null,
+     *     timeoutInMinutes?: int<5, 2160>|null,
      *     queuedTimeoutInMinutes?: int<5, 480>|null,
      *     encryptionKey?: string|null,
      *     tags?: list<Shapes\Tag>|null,

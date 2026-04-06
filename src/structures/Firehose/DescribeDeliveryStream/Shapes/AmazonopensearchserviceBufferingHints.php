@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Firehose\DescribeDeliveryStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<60, 900>|null $IntervalInSeconds
+ * @property int<0, 900>|null $IntervalInSeconds
  * @property int<1, 100>|null $SizeInMBs
  */
 class AmazonopensearchserviceBufferingHints extends Shape
 {
     /**
      * @param array{
-     *     IntervalInSeconds?: int<60, 900>|null,
+     *     IntervalInSeconds?: int<0, 900>|null,
      *     SizeInMBs?: int<1, 100>|null
      * } $args
      */

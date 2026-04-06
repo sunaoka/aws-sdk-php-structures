@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<EbsBlockDevice>|null $EbsBlockDevices
  * @property bool|null $EbsOptimized
  * @property string|null $CustomAmiId
+ * @property double|null $Priority
  */
 class InstanceTypeSpecification extends Shape
 {
@@ -25,7 +26,8 @@ class InstanceTypeSpecification extends Shape
      *     Configurations?: list<Configuration>|null,
      *     EbsBlockDevices?: list<EbsBlockDevice>|null,
      *     EbsOptimized?: bool|null,
-     *     CustomAmiId?: string|null
+     *     CustomAmiId?: string|null,
+     *     Priority?: double|null
      * } $args
      */
     public function __construct(array $args = [])

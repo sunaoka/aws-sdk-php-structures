@@ -32,6 +32,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $EnableCloudwatchLogsExports
  * @property string|null $EngineMode
  * @property Shapes\ScalingConfiguration|null $ScalingConfiguration
+ * @property Shapes\RdsCustomClusterConfiguration|null $RdsCustomClusterConfiguration
  * @property bool|null $DeletionProtection
  * @property string|null $GlobalClusterIdentifier
  * @property bool|null $EnableHttpEndpoint
@@ -50,12 +51,15 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $EnablePerformanceInsights
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
+ * @property bool|null $EnableLimitlessDatabase
  * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
  * @property string|null $NetworkType
  * @property string|null $DBSystemId
  * @property bool|null $ManageMasterUserPassword
  * @property string|null $MasterUserSecretKmsKeyId
  * @property bool|null $EnableLocalWriteForwarding
+ * @property string|null $CACertificateIdentifier
+ * @property string|null $EngineLifecycleSupport
  */
 class CreateDBClusterRequest extends Request
 {
@@ -88,6 +92,7 @@ class CreateDBClusterRequest extends Request
      *     EnableCloudwatchLogsExports?: list<string>|null,
      *     EngineMode?: string|null,
      *     ScalingConfiguration?: Shapes\ScalingConfiguration|null,
+     *     RdsCustomClusterConfiguration?: Shapes\RdsCustomClusterConfiguration|null,
      *     DeletionProtection?: bool|null,
      *     GlobalClusterIdentifier?: string|null,
      *     EnableHttpEndpoint?: bool|null,
@@ -106,12 +111,15 @@ class CreateDBClusterRequest extends Request
      *     EnablePerformanceInsights?: bool|null,
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,
+     *     EnableLimitlessDatabase?: bool|null,
      *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
      *     NetworkType?: string|null,
      *     DBSystemId?: string|null,
      *     ManageMasterUserPassword?: bool|null,
      *     MasterUserSecretKmsKeyId?: string|null,
-     *     EnableLocalWriteForwarding?: bool|null
+     *     EnableLocalWriteForwarding?: bool|null,
+     *     CACertificateIdentifier?: string|null,
+     *     EngineLifecycleSupport?: string|null
      * } $args
      */
     public function __construct(array $args)

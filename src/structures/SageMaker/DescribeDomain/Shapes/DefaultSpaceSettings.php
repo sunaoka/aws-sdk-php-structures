@@ -9,6 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $SecurityGroups
  * @property JupyterServerAppSettings|null $JupyterServerAppSettings
  * @property KernelGatewayAppSettings|null $KernelGatewayAppSettings
+ * @property JupyterLabAppSettings|null $JupyterLabAppSettings
+ * @property DefaultSpaceStorageSettings|null $SpaceStorageSettings
+ * @property CustomPosixUserConfig|null $CustomPosixUserConfig
+ * @property list<CustomFileSystemConfig>|null $CustomFileSystemConfigs
  */
 class DefaultSpaceSettings extends Shape
 {
@@ -17,7 +21,11 @@ class DefaultSpaceSettings extends Shape
      *     ExecutionRole?: string|null,
      *     SecurityGroups?: list<string>|null,
      *     JupyterServerAppSettings?: JupyterServerAppSettings|null,
-     *     KernelGatewayAppSettings?: KernelGatewayAppSettings|null
+     *     KernelGatewayAppSettings?: KernelGatewayAppSettings|null,
+     *     JupyterLabAppSettings?: JupyterLabAppSettings|null,
+     *     SpaceStorageSettings?: DefaultSpaceStorageSettings|null,
+     *     CustomPosixUserConfig?: CustomPosixUserConfig|null,
+     *     CustomFileSystemConfigs?: list<CustomFileSystemConfig>|null
      * } $args
      */
     public function __construct(array $args = [])

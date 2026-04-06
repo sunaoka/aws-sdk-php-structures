@@ -32,6 +32,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $PromotionTier
  * @property string|null $DBInstanceArn
  * @property list<string>|null $EnabledCloudwatchLogsExports
+ * @property CertificateDetails|null $CertificateDetails
+ * @property bool|null $PerformanceInsightsEnabled
+ * @property string|null $PerformanceInsightsKMSKeyId
  */
 class DBInstance extends Shape
 {
@@ -63,7 +66,10 @@ class DBInstance extends Shape
      *     CopyTagsToSnapshot?: bool|null,
      *     PromotionTier?: int|null,
      *     DBInstanceArn?: string|null,
-     *     EnabledCloudwatchLogsExports?: list<string>|null
+     *     EnabledCloudwatchLogsExports?: list<string>|null,
+     *     CertificateDetails?: CertificateDetails|null,
+     *     PerformanceInsightsEnabled?: bool|null,
+     *     PerformanceInsightsKMSKeyId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

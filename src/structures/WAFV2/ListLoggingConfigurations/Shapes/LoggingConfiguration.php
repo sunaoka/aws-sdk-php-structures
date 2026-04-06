@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<FieldToMatch>|null $RedactedFields
  * @property bool|null $ManagedByFirewallManager
  * @property LoggingFilter|null $LoggingFilter
+ * @property 'WAF_LOGS'|null $LogType
+ * @property 'CUSTOMER'|'SECURITY_LAKE'|null $LogScope
  */
 class LoggingConfiguration extends Shape
 {
@@ -19,7 +21,9 @@ class LoggingConfiguration extends Shape
      *     LogDestinationConfigs: list<string>,
      *     RedactedFields?: list<FieldToMatch>|null,
      *     ManagedByFirewallManager?: bool|null,
-     *     LoggingFilter?: LoggingFilter|null
+     *     LoggingFilter?: LoggingFilter|null,
+     *     LogType?: 'WAF_LOGS'|null,
+     *     LogScope?: 'CUSTOMER'|'SECURITY_LAKE'|null
      * } $args
      */
     public function __construct(array $args)

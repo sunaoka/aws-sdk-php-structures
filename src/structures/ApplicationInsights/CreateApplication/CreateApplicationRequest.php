@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $AutoConfigEnabled
  * @property bool|null $AutoCreate
  * @property 'ACCOUNT_BASED'|null $GroupingType
+ * @property bool|null $AttachMissingPermission
  */
 class CreateApplicationRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateApplicationRequest extends Request
      *     Tags?: list<Shapes\Tag>|null,
      *     AutoConfigEnabled?: bool|null,
      *     AutoCreate?: bool|null,
-     *     GroupingType?: 'ACCOUNT_BASED'|null
+     *     GroupingType?: 'ACCOUNT_BASED'|null,
+     *     AttachMissingPermission?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

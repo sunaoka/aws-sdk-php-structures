@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  * @property string|null $name
  * @property int<1, 65535>|null $port
- * @property 'HTTP'|'HTTPS'|null $protocol
+ * @property 'HTTP'|'HTTPS'|'TLS_PASSTHROUGH'|null $protocol
  * @property string|null $serviceArn
  * @property string|null $serviceId
  */

@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaTailor\GetChannelSchedule;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string|null $Audience
  * @property string $ChannelName
  * @property string|null $DurationMinutes
  * @property int<1, 100>|null $MaxResults
@@ -14,6 +15,7 @@ class GetChannelScheduleRequest extends Request
 {
     /**
      * @param array{
+     *     Audience?: string|null,
      *     ChannelName: string,
      *     DurationMinutes?: string|null,
      *     MaxResults?: int<1, 100>|null,

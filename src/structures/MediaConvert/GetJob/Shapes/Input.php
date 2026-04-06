@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART'|null $TimecodeSource
  * @property string|null $TimecodeStart
  * @property InputVideoGenerator|null $VideoGenerator
+ * @property list<VideoOverlay>|null $VideoOverlays
  * @property VideoSelector|null $VideoSelector
  */
 class Input extends Shape
@@ -57,6 +58,7 @@ class Input extends Shape
      *     TimecodeSource?: 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART'|null,
      *     TimecodeStart?: string|null,
      *     VideoGenerator?: InputVideoGenerator|null,
+     *     VideoOverlays?: list<VideoOverlay>|null,
      *     VideoSelector?: VideoSelector|null
      * } $args
      */

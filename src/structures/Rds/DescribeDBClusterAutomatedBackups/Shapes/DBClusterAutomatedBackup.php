@@ -28,6 +28,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $KmsKeyId
  * @property string|null $StorageType
  * @property int|null $Iops
+ * @property string|null $AwsBackupRecoveryPointArn
+ * @property int|null $StorageThroughput
  */
 class DBClusterAutomatedBackup extends Shape
 {
@@ -55,7 +57,9 @@ class DBClusterAutomatedBackup extends Shape
      *     Port?: int|null,
      *     KmsKeyId?: string|null,
      *     StorageType?: string|null,
-     *     Iops?: int|null
+     *     Iops?: int|null,
+     *     AwsBackupRecoveryPointArn?: string|null,
+     *     StorageThroughput?: int|null
      * } $args
      */
     public function __construct(array $args = [])

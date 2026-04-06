@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $applicationID
  * @property string|null $arn
+ * @property SourceServerConnectorAction|null $connectorAction
  * @property DataReplicationInfo|null $dataReplicationInfo
  * @property string|null $fqdnForActionFramework
  * @property bool|null $isArchived
@@ -25,6 +26,7 @@ class SourceServer extends Shape
      * @param array{
      *     applicationID?: string|null,
      *     arn?: string|null,
+     *     connectorAction?: SourceServerConnectorAction|null,
      *     dataReplicationInfo?: DataReplicationInfo|null,
      *     fqdnForActionFramework?: string|null,
      *     isArchived?: bool|null,

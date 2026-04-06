@@ -25,6 +25,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $ResumeFullAutomationModeTime
  * @property int|null $StorageThroughput
  * @property string|null $Engine
+ * @property bool|null $DedicatedLogVolume
+ * @property bool|null $MultiTenant
  */
 class PendingModifiedValues extends Shape
 {
@@ -49,7 +51,9 @@ class PendingModifiedValues extends Shape
      *     AutomationMode?: 'full'|'all-paused'|null,
      *     ResumeFullAutomationModeTime?: \Aws\Api\DateTimeResult|null,
      *     StorageThroughput?: int|null,
-     *     Engine?: string|null
+     *     Engine?: string|null,
+     *     DedicatedLogVolume?: bool|null,
+     *     MultiTenant?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -18,9 +18,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VolumeEncryptionKey
  * @property bool|null $UserVolumeEncryptionEnabled
  * @property bool|null $RootVolumeEncryptionEnabled
+ * @property string|null $WorkspaceName
  * @property WorkspaceProperties|null $WorkspaceProperties
  * @property list<ModificationState>|null $ModificationStates
  * @property list<RelatedWorkspaceProperties>|null $RelatedWorkspaces
+ * @property DataReplicationSettings|null $DataReplicationSettings
+ * @property list<StandbyWorkspacesProperties>|null $StandbyWorkspacesProperties
  */
 class Workspace extends Shape
 {
@@ -39,9 +42,12 @@ class Workspace extends Shape
      *     VolumeEncryptionKey?: string|null,
      *     UserVolumeEncryptionEnabled?: bool|null,
      *     RootVolumeEncryptionEnabled?: bool|null,
+     *     WorkspaceName?: string|null,
      *     WorkspaceProperties?: WorkspaceProperties|null,
      *     ModificationStates?: list<ModificationState>|null,
-     *     RelatedWorkspaces?: list<RelatedWorkspaceProperties>|null
+     *     RelatedWorkspaces?: list<RelatedWorkspaceProperties>|null,
+     *     DataReplicationSettings?: DataReplicationSettings|null,
+     *     StandbyWorkspacesProperties?: list<StandbyWorkspacesProperties>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -15,11 +15,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Pipeline|null $Pipeline
  * @property PipelineExecution|null $PipelineExecution
  * @property FeatureGroup|null $FeatureGroup
- * @property Project|null $Project
  * @property FeatureMetadata|null $FeatureMetadata
+ * @property Project|null $Project
  * @property HyperParameterTuningJobSearchEntity|null $HyperParameterTuningJob
- * @property ModelDashboardModel|null $Model
  * @property ModelCard|null $ModelCard
+ * @property ModelDashboardModel|null $Model
  */
 class SearchRecord extends Shape
 {
@@ -35,11 +35,11 @@ class SearchRecord extends Shape
      *     Pipeline?: Pipeline|null,
      *     PipelineExecution?: PipelineExecution|null,
      *     FeatureGroup?: FeatureGroup|null,
-     *     Project?: Project|null,
      *     FeatureMetadata?: FeatureMetadata|null,
+     *     Project?: Project|null,
      *     HyperParameterTuningJob?: HyperParameterTuningJobSearchEntity|null,
-     *     Model?: ModelDashboardModel|null,
-     *     ModelCard?: ModelCard|null
+     *     ModelCard?: ModelCard|null,
+     *     Model?: ModelDashboardModel|null
      * } $args
      */
     public function __construct(array $args = [])

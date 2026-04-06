@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\AlgorithmSpecification $algorithmSpecification
+ * @property list<Shapes\Association>|null $associations
  * @property Shapes\JobCheckpointConfig|null $checkpointConfig
  * @property string $clientToken
  * @property Shapes\DeviceConfig $deviceConfig
@@ -23,6 +24,7 @@ class CreateJobRequest extends Request
     /**
      * @param array{
      *     algorithmSpecification: Shapes\AlgorithmSpecification,
+     *     associations?: list<Shapes\Association>|null,
      *     checkpointConfig?: Shapes\JobCheckpointConfig|null,
      *     clientToken: string,
      *     deviceConfig: Shapes\DeviceConfig,

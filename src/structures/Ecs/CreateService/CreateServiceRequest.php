@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'TASK_DEFINITION'|'SERVICE'|'NONE'|null $propagateTags
  * @property bool|null $enableExecuteCommand
  * @property Shapes\ServiceConnectConfiguration|null $serviceConnectConfiguration
+ * @property list<Shapes\ServiceVolumeConfiguration>|null $volumeConfigurations
  */
 class CreateServiceRequest extends Request
 {
@@ -55,7 +56,8 @@ class CreateServiceRequest extends Request
      *     enableECSManagedTags?: bool|null,
      *     propagateTags?: 'TASK_DEFINITION'|'SERVICE'|'NONE'|null,
      *     enableExecuteCommand?: bool|null,
-     *     serviceConnectConfiguration?: Shapes\ServiceConnectConfiguration|null
+     *     serviceConnectConfiguration?: Shapes\ServiceConnectConfiguration|null,
+     *     volumeConfigurations?: list<Shapes\ServiceVolumeConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

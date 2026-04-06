@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property double $bandwidthAllocation
+ * @property double|null $dialingCapacity
  */
 class PredictiveDialerConfig extends Shape
 {
     /**
-     * @param array{bandwidthAllocation: double} $args
+     * @param array{
+     *     bandwidthAllocation: double,
+     *     dialingCapacity?: double|null
+     * } $args
      */
     public function __construct(array $args)
     {

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LocationService\SearchPlaceIndexForText;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\SearchForTextResult> $Results
  * @property Shapes\SearchPlaceIndexForTextSummary $Summary
+ * @property list<Shapes\SearchForTextResult> $Results
  */
 class SearchPlaceIndexForTextResponse extends Response
 {

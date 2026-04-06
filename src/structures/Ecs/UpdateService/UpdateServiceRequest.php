@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'TASK_DEFINITION'|'SERVICE'|'NONE'|null $propagateTags
  * @property list<Shapes\ServiceRegistry>|null $serviceRegistries
  * @property Shapes\ServiceConnectConfiguration|null $serviceConnectConfiguration
+ * @property list<Shapes\ServiceVolumeConfiguration>|null $volumeConfigurations
  */
 class UpdateServiceRequest extends Request
 {
@@ -45,7 +46,8 @@ class UpdateServiceRequest extends Request
      *     loadBalancers?: list<Shapes\LoadBalancer>|null,
      *     propagateTags?: 'TASK_DEFINITION'|'SERVICE'|'NONE'|null,
      *     serviceRegistries?: list<Shapes\ServiceRegistry>|null,
-     *     serviceConnectConfiguration?: Shapes\ServiceConnectConfiguration|null
+     *     serviceConnectConfiguration?: Shapes\ServiceConnectConfiguration|null,
+     *     volumeConfigurations?: list<Shapes\ServiceVolumeConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

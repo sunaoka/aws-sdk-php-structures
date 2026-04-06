@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property bool|null $performHPO
  * @property bool|null $performAutoML
+ * @property bool|null $performAutoTraining
  * @property string|null $recipeArn
  * @property string $datasetGroupArn
  * @property string|null $eventType
@@ -21,6 +22,7 @@ class CreateSolutionRequest extends Request
      *     name: string,
      *     performHPO?: bool|null,
      *     performAutoML?: bool|null,
+     *     performAutoTraining?: bool|null,
      *     recipeArn?: string|null,
      *     datasetGroupArn: string,
      *     eventType?: string|null,

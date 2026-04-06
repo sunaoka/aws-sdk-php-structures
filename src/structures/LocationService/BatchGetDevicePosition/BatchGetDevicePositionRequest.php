@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LocationService\BatchGetDevicePosition;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $DeviceIds
  * @property string $TrackerName
+ * @property list<string> $DeviceIds
  */
 class BatchGetDevicePositionRequest extends Request
 {
     /**
      * @param array{
-     *     DeviceIds: list<string>,
-     *     TrackerName: string
+     *     TrackerName: string,
+     *     DeviceIds: list<string>
      * } $args
      */
     public function __construct(array $args)

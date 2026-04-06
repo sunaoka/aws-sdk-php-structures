@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $IpamPoolId
  * @property string $PoolId
  * @property int $NetmaskLength
+ * @property string|null $NetworkBorderGroup
  */
 class ProvisionPublicIpv4PoolCidrRequest extends Request
 {
@@ -17,7 +18,8 @@ class ProvisionPublicIpv4PoolCidrRequest extends Request
      *     DryRun?: bool|null,
      *     IpamPoolId: string,
      *     PoolId: string,
-     *     NetmaskLength: int
+     *     NetmaskLength: int,
+     *     NetworkBorderGroup?: string|null
      * } $args
      */
     public function __construct(array $args)

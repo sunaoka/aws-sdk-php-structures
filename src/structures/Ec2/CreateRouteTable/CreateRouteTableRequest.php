@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DryRun
  * @property string $VpcId
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property string|null $ClientToken
  */
 class CreateRouteTableRequest extends Request
 {
@@ -15,7 +16,8 @@ class CreateRouteTableRequest extends Request
      * @param array{
      *     DryRun?: bool|null,
      *     VpcId: string,
-     *     TagSpecifications?: list<Shapes\TagSpecification>|null
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

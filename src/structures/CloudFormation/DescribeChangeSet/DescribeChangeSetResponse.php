@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ParentChangeSetId
  * @property string|null $RootChangeSetId
  * @property 'DO_NOTHING'|'ROLLBACK'|'DELETE'|null $OnStackFailure
+ * @property bool|null $ImportExistingResources
  */
 class DescribeChangeSetResponse extends Response
 {

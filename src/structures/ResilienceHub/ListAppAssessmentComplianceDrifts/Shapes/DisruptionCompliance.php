@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int<0, max>|null $achievableRpoInSecs
  * @property int<0, max>|null $achievableRtoInSecs
- * @property 'PolicyBreached'|'PolicyMet' $complianceStatus
+ * @property 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy' $complianceStatus
  * @property int<0, max>|null $currentRpoInSecs
  * @property int<0, max>|null $currentRtoInSecs
  * @property string|null $message
@@ -22,7 +22,7 @@ class DisruptionCompliance extends Shape
      * @param array{
      *     achievableRpoInSecs?: int<0, max>|null,
      *     achievableRtoInSecs?: int<0, max>|null,
-     *     complianceStatus: 'PolicyBreached'|'PolicyMet',
+     *     complianceStatus: 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy',
      *     currentRpoInSecs?: int<0, max>|null,
      *     currentRtoInSecs?: int<0, max>|null,
      *     message?: string|null,

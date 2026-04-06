@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $tags
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $modifiedAt
+ * @property list<CodegenDependency>|null $dependencies
  */
 class CodegenJob extends Shape
 {
@@ -35,7 +36,8 @@ class CodegenJob extends Shape
      *     asset?: CodegenJobAsset|null,
      *     tags?: array<string, string>|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     modifiedAt?: \Aws\Api\DateTimeResult|null
+     *     modifiedAt?: \Aws\Api\DateTimeResult|null,
+     *     dependencies?: list<CodegenDependency>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $accountId
+ * @property 'MONITORED'|'NOT_MONITORED'|null $automatedDiscoveryMonitoringStatus
  * @property string|null $bucketName
  * @property int|null $classifiableObjectCount
  * @property int|null $classifiableSizeInBytes
@@ -26,6 +27,7 @@ class MatchingBucket extends Shape
     /**
      * @param array{
      *     accountId?: string|null,
+     *     automatedDiscoveryMonitoringStatus?: 'MONITORED'|'NOT_MONITORED'|null,
      *     bucketName?: string|null,
      *     classifiableObjectCount?: int|null,
      *     classifiableSizeInBytes?: int|null,

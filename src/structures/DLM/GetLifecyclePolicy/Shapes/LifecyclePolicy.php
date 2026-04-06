@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PolicyDetails|null $PolicyDetails
  * @property array<string, string>|null $Tags
  * @property string|null $PolicyArn
+ * @property bool|null $DefaultPolicy
  */
 class LifecyclePolicy extends Shape
 {
@@ -29,7 +30,8 @@ class LifecyclePolicy extends Shape
      *     DateModified?: \Aws\Api\DateTimeResult|null,
      *     PolicyDetails?: PolicyDetails|null,
      *     Tags?: array<string, string>|null,
-     *     PolicyArn?: string|null
+     *     PolicyArn?: string|null,
+     *     DefaultPolicy?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

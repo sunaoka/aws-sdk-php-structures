@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\RetentionPeriod|null $retentionPeriod
  * @property Shapes\ConfigurationStatus $configurationStatus
  * @property \Aws\Api\DateTimeResult|null $lastUpdateDate
+ * @property 'ENABLED'|'DISABLED'|null $warmTier
+ * @property Shapes\WarmTierRetentionPeriod|null $warmTierRetentionPeriod
  */
 class DescribeStorageConfigurationResponse extends Response
 {

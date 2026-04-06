@@ -25,10 +25,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $IdleDisconnectTimeoutInSeconds
  * @property string|null $IamRoleArn
  * @property 'APP'|'DESKTOP'|null $StreamView
- * @property 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'AMAZON_LINUX2'|null $Platform
+ * @property 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|null $Platform
  * @property int|null $MaxConcurrentSessions
  * @property list<string>|null $UsbDeviceFilterStrings
  * @property S3Location|null $SessionScriptS3Location
+ * @property int|null $MaxSessionsPerInstance
  */
 class Fleet extends Shape
 {
@@ -54,10 +55,11 @@ class Fleet extends Shape
      *     IdleDisconnectTimeoutInSeconds?: int|null,
      *     IamRoleArn?: string|null,
      *     StreamView?: 'APP'|'DESKTOP'|null,
-     *     Platform?: 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'AMAZON_LINUX2'|null,
+     *     Platform?: 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|null,
      *     MaxConcurrentSessions?: int|null,
      *     UsbDeviceFilterStrings?: list<string>|null,
-     *     SessionScriptS3Location?: S3Location|null
+     *     SessionScriptS3Location?: S3Location|null,
+     *     MaxSessionsPerInstance?: int|null
      * } $args
      */
     public function __construct(array $args)

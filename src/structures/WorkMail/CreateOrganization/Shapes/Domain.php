@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\WorkMail\CreateOrganization\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $DomainName
+ * @property string $DomainName
  * @property string|null $HostedZoneId
  */
 class Domain extends Shape
 {
     /**
      * @param array{
-     *     DomainName?: string|null,
+     *     DomainName: string,
      *     HostedZoneId?: string|null
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

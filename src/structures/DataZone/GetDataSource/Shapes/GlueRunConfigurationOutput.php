@@ -1,0 +1,29 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\DataZone\GetDataSource\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string|null $accountId
+ * @property bool|null $autoImportDataQualityResult
+ * @property string|null $dataAccessRole
+ * @property string|null $region
+ * @property list<RelationalFilterConfiguration> $relationalFilterConfigurations
+ */
+class GlueRunConfigurationOutput extends Shape
+{
+    /**
+     * @param array{
+     *     accountId?: string|null,
+     *     autoImportDataQualityResult?: bool|null,
+     *     dataAccessRole?: string|null,
+     *     region?: string|null,
+     *     relationalFilterConfigurations: list<RelationalFilterConfiguration>
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

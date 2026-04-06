@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\WorkflowStepOutput>|null $outputs
  * @property list<string>|null $previous
  * @property list<string>|null $next
- * @property 'AWAITING_DEPENDENCIES'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED'|null $status
+ * @property 'AWAITING_DEPENDENCIES'|'SKIPPED'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED'|null $status
  */
 class UpdateWorkflowStepRequest extends Request
 {
@@ -33,7 +33,7 @@ class UpdateWorkflowStepRequest extends Request
      *     outputs?: list<Shapes\WorkflowStepOutput>|null,
      *     previous?: list<string>|null,
      *     next?: list<string>|null,
-     *     status?: 'AWAITING_DEPENDENCIES'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED'|null
+     *     status?: 'AWAITING_DEPENDENCIES'|'SKIPPED'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED'|null
      * } $args
      */
     public function __construct(array $args)

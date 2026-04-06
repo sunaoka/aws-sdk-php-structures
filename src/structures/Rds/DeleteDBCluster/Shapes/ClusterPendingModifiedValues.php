@@ -12,8 +12,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $EngineVersion
  * @property int|null $BackupRetentionPeriod
  * @property int|null $AllocatedStorage
+ * @property RdsCustomClusterConfiguration|null $RdsCustomClusterConfiguration
  * @property int|null $Iops
  * @property string|null $StorageType
+ * @property CertificateDetails|null $CertificateDetails
  */
 class ClusterPendingModifiedValues extends Shape
 {
@@ -26,8 +28,10 @@ class ClusterPendingModifiedValues extends Shape
      *     EngineVersion?: string|null,
      *     BackupRetentionPeriod?: int|null,
      *     AllocatedStorage?: int|null,
+     *     RdsCustomClusterConfiguration?: RdsCustomClusterConfiguration|null,
      *     Iops?: int|null,
-     *     StorageType?: string|null
+     *     StorageType?: string|null,
+     *     CertificateDetails?: CertificateDetails|null
      * } $args
      */
     public function __construct(array $args = [])

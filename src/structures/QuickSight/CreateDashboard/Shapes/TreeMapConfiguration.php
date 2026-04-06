@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LegendOptions|null $Legend
  * @property DataLabelOptions|null $DataLabels
  * @property TooltipOptions|null $Tooltip
+ * @property VisualInteractionOptions|null $Interactions
  */
 class TreeMapConfiguration extends Shape
 {
@@ -27,7 +28,8 @@ class TreeMapConfiguration extends Shape
      *     ColorScale?: ColorScale|null,
      *     Legend?: LegendOptions|null,
      *     DataLabels?: DataLabelOptions|null,
-     *     Tooltip?: TooltipOptions|null
+     *     Tooltip?: TooltipOptions|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

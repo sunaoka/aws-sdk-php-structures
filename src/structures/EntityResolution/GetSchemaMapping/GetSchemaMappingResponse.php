@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string|null $description
+ * @property bool $hasWorkflows
  * @property list<Shapes\SchemaInputAttribute> $mappedInputFields
  * @property string $schemaArn
  * @property string $schemaName

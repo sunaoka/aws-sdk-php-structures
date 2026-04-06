@@ -5,15 +5,17 @@ namespace Sunaoka\Aws\Structures\PaymentCryptography\ExportKey;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ExportKeyIdentifier
  * @property Shapes\ExportKeyMaterial $KeyMaterial
+ * @property string $ExportKeyIdentifier
+ * @property Shapes\ExportAttributes|null $ExportAttributes
  */
 class ExportKeyRequest extends Request
 {
     /**
      * @param array{
+     *     KeyMaterial: Shapes\ExportKeyMaterial,
      *     ExportKeyIdentifier: string,
-     *     KeyMaterial: Shapes\ExportKeyMaterial
+     *     ExportAttributes?: Shapes\ExportAttributes|null
      * } $args
      */
     public function __construct(array $args)

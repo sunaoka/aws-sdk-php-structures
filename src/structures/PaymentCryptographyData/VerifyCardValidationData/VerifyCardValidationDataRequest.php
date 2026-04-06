@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $KeyIdentifier
  * @property string $PrimaryAccountNumber
- * @property string $ValidationData
  * @property Shapes\CardVerificationAttributes $VerificationAttributes
+ * @property string $ValidationData
  */
 class VerifyCardValidationDataRequest extends Request
 {
@@ -16,8 +16,8 @@ class VerifyCardValidationDataRequest extends Request
      * @param array{
      *     KeyIdentifier: string,
      *     PrimaryAccountNumber: string,
-     *     ValidationData: string,
-     *     VerificationAttributes: Shapes\CardVerificationAttributes
+     *     VerificationAttributes: Shapes\CardVerificationAttributes,
+     *     ValidationData: string
      * } $args
      */
     public function __construct(array $args)

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Name
  * @property 'ACCEPT_ALL'|'DENY_ALL'|null $PlayerSessionCreationPolicy
  * @property 'NoProtection'|'FullProtection'|null $ProtectionPolicy
+ * @property list<Shapes\GameProperty>|null $GameProperties
  */
 class UpdateGameSessionRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateGameSessionRequest extends Request
      *     MaximumPlayerSessionCount?: int<0, max>|null,
      *     Name?: string|null,
      *     PlayerSessionCreationPolicy?: 'ACCEPT_ALL'|'DENY_ALL'|null,
-     *     ProtectionPolicy?: 'NoProtection'|'FullProtection'|null
+     *     ProtectionPolicy?: 'NoProtection'|'FullProtection'|null,
+     *     GameProperties?: list<Shapes\GameProperty>|null
      * } $args
      */
     public function __construct(array $args)

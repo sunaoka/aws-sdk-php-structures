@@ -23,6 +23,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ARM64'|'X86_64'|null $architecture
  * @property ImageConfiguration|null $imageConfiguration
  * @property array<string, WorkerTypeSpecification>|null $workerTypeSpecifications
+ * @property list<Configuration>|null $runtimeConfiguration
+ * @property MonitoringConfiguration|null $monitoringConfiguration
+ * @property InteractiveConfiguration|null $interactiveConfiguration
  */
 class Application extends Shape
 {
@@ -45,7 +48,10 @@ class Application extends Shape
      *     networkConfiguration?: NetworkConfiguration|null,
      *     architecture?: 'ARM64'|'X86_64'|null,
      *     imageConfiguration?: ImageConfiguration|null,
-     *     workerTypeSpecifications?: array<string, WorkerTypeSpecification>|null
+     *     workerTypeSpecifications?: array<string, WorkerTypeSpecification>|null,
+     *     runtimeConfiguration?: list<Configuration>|null,
+     *     monitoringConfiguration?: MonitoringConfiguration|null,
+     *     interactiveConfiguration?: InteractiveConfiguration|null
      * } $args
      */
     public function __construct(array $args)

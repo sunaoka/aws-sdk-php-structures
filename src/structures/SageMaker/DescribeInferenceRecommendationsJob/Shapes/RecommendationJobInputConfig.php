@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $ModelPackageVersionArn
+ * @property string|null $ModelName
  * @property int<1, max>|null $JobDurationInSeconds
  * @property TrafficPattern|null $TrafficPattern
  * @property RecommendationJobResourceLimit|null $ResourceLimit
@@ -14,13 +15,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RecommendationJobContainerConfig|null $ContainerConfig
  * @property list<EndpointInfo>|null $Endpoints
  * @property RecommendationJobVpcConfig|null $VpcConfig
- * @property string|null $ModelName
  */
 class RecommendationJobInputConfig extends Shape
 {
     /**
      * @param array{
      *     ModelPackageVersionArn?: string|null,
+     *     ModelName?: string|null,
      *     JobDurationInSeconds?: int<1, max>|null,
      *     TrafficPattern?: TrafficPattern|null,
      *     ResourceLimit?: RecommendationJobResourceLimit|null,
@@ -28,8 +29,7 @@ class RecommendationJobInputConfig extends Shape
      *     VolumeKmsKeyId?: string|null,
      *     ContainerConfig?: RecommendationJobContainerConfig|null,
      *     Endpoints?: list<EndpointInfo>|null,
-     *     VpcConfig?: RecommendationJobVpcConfig|null,
-     *     ModelName?: string|null
+     *     VpcConfig?: RecommendationJobVpcConfig|null
      * } $args
      */
     public function __construct(array $args = [])

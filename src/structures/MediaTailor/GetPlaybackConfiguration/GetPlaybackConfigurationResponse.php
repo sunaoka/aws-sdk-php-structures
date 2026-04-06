@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, array<string, string>>|null $ConfigurationAliases
  * @property Shapes\DashConfiguration|null $DashConfiguration
  * @property Shapes\HlsConfiguration|null $HlsConfiguration
+ * @property 'STITCHED_ONLY'|'PLAYER_SELECT'|null $InsertionMode
  * @property Shapes\LivePreRollConfiguration|null $LivePreRollConfiguration
  * @property Shapes\LogConfiguration|null $LogConfiguration
  * @property Shapes\ManifestProcessingRules|null $ManifestProcessingRules

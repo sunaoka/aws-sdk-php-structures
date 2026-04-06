@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double|null $doubleValue
  * @property EmptyFieldValue|null $emptyValue
  * @property string|null $stringValue
+ * @property string|null $userArnValue
  */
 class FieldValueUnion extends Shape
 {
@@ -17,7 +18,8 @@ class FieldValueUnion extends Shape
      *     booleanValue?: bool|null,
      *     doubleValue?: double|null,
      *     emptyValue?: EmptyFieldValue|null,
-     *     stringValue?: string|null
+     *     stringValue?: string|null,
+     *     userArnValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

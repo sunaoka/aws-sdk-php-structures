@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TimecodeConfig $TimecodeConfig
  * @property list<VideoDescription> $VideoDescriptions
  * @property ThumbnailConfiguration|null $ThumbnailConfiguration
+ * @property ColorCorrectionSettings|null $ColorCorrectionSettings
  */
 class EncoderSettings extends Shape
 {
@@ -35,7 +36,8 @@ class EncoderSettings extends Shape
      *     OutputGroups: list<OutputGroup>,
      *     TimecodeConfig: TimecodeConfig,
      *     VideoDescriptions: list<VideoDescription>,
-     *     ThumbnailConfiguration?: ThumbnailConfiguration|null
+     *     ThumbnailConfiguration?: ThumbnailConfiguration|null,
+     *     ColorCorrectionSettings?: ColorCorrectionSettings|null
      * } $args
      */
     public function __construct(array $args)

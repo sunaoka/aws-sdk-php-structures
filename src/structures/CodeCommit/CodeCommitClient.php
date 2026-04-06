@@ -49,6 +49,7 @@ class CodeCommitClient extends \Aws\CodeCommit\CodeCommitClient
     use ListApprovalRuleTemplates\ListApprovalRuleTemplatesTrait;
     use ListAssociatedApprovalRuleTemplatesForRepository\ListAssociatedApprovalRuleTemplatesForRepositoryTrait;
     use ListBranches\ListBranchesTrait;
+    use ListFileCommitHistory\ListFileCommitHistoryTrait;
     use ListPullRequests\ListPullRequestsTrait;
     use ListRepositories\ListRepositoriesTrait;
     use ListRepositoriesForApprovalRuleTemplate\ListRepositoriesForApprovalRuleTemplateTrait;
@@ -80,5 +81,6 @@ class CodeCommitClient extends \Aws\CodeCommit\CodeCommitClient
     use UpdatePullRequestStatus\UpdatePullRequestStatusTrait;
     use UpdatePullRequestTitle\UpdatePullRequestTitleTrait;
     use UpdateRepositoryDescription\UpdateRepositoryDescriptionTrait;
+    use UpdateRepositoryEncryptionKey\UpdateRepositoryEncryptionKeyTrait;
     use UpdateRepositoryName\UpdateRepositoryNameTrait;
 }

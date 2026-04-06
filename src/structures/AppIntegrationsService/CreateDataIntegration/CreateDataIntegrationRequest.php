@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string|null $Description
  * @property string $KmsKey
- * @property string $SourceURI
- * @property Shapes\ScheduleConfiguration $ScheduleConfig
+ * @property string|null $SourceURI
+ * @property Shapes\ScheduleConfiguration|null $ScheduleConfig
  * @property array<string, string>|null $Tags
  * @property string|null $ClientToken
  * @property Shapes\FileConfiguration|null $FileConfiguration
@@ -22,8 +22,8 @@ class CreateDataIntegrationRequest extends Request
      *     Name: string,
      *     Description?: string|null,
      *     KmsKey: string,
-     *     SourceURI: string,
-     *     ScheduleConfig: Shapes\ScheduleConfiguration,
+     *     SourceURI?: string|null,
+     *     ScheduleConfig?: Shapes\ScheduleConfiguration|null,
      *     Tags?: array<string, string>|null,
      *     ClientToken?: string|null,
      *     FileConfiguration?: Shapes\FileConfiguration|null,
