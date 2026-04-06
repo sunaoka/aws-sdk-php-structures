@@ -26,6 +26,10 @@ jobs:
           version=$(curl -sL -o - https://raw.githubusercontent.com/sunaoka/aws-sdk-php-structures-generator/refs/heads/main/composer.json | jq -r .require.'"aws/aws-sdk-php"')
           echo "version=$version" >> "$GITHUB_OUTPUT"
 
+      - name: Update composer.json
+        run: |
+          composer require aws/aws-sdk-php:"${{ steps.version.outputs.version }}"
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v8
         with:
