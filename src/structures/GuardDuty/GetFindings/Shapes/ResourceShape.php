@@ -14,10 +14,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EbsVolumeDetails|null $EbsVolumeDetails
  * @property EcsClusterDetails|null $EcsClusterDetails
  * @property Container|null $ContainerDetails
+ * @property LambdaDetails|null $LambdaDetails
  * @property RdsDbInstanceDetails|null $RdsDbInstanceDetails
  * @property RdsLimitlessDbDetails|null $RdsLimitlessDbDetails
  * @property RdsDbUserDetails|null $RdsDbUserDetails
- * @property LambdaDetails|null $LambdaDetails
  * @property EbsSnapshotDetails|null $EbsSnapshotDetails
  * @property Ec2ImageDetails|null $Ec2ImageDetails
  * @property RecoveryPointDetails|null $RecoveryPointDetails
@@ -35,10 +35,10 @@ class ResourceShape extends Shape
      *     EbsVolumeDetails?: EbsVolumeDetails|null,
      *     EcsClusterDetails?: EcsClusterDetails|null,
      *     ContainerDetails?: Container|null,
+     *     LambdaDetails?: LambdaDetails|null,
      *     RdsDbInstanceDetails?: RdsDbInstanceDetails|null,
      *     RdsLimitlessDbDetails?: RdsLimitlessDbDetails|null,
      *     RdsDbUserDetails?: RdsDbUserDetails|null,
-     *     LambdaDetails?: LambdaDetails|null,
      *     EbsSnapshotDetails?: EbsSnapshotDetails|null,
      *     Ec2ImageDetails?: Ec2ImageDetails|null,
      *     RecoveryPointDetails?: RecoveryPointDetails|null

@@ -7,12 +7,9 @@ class Request implements Arrayable
     use ArrayTrait;
 
     /**
-     * @param string $name
-     * @param scalar $value
-     *
      * @return void
      */
-    public function __set($name, $value)
+    public function __set(string $name, mixed $value)
     {
         $this->__data[$name] = $value;
     }

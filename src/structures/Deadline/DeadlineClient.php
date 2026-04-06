@@ -13,7 +13,15 @@ class DeadlineClient extends \Aws\Deadline\DeadlineClient
     use AssumeQueueRoleForRead\AssumeQueueRoleForReadTrait;
     use AssumeQueueRoleForUser\AssumeQueueRoleForUserTrait;
     use AssumeQueueRoleForWorker\AssumeQueueRoleForWorkerTrait;
+    use BatchGetJob\BatchGetJobTrait;
     use BatchGetJobEntity\BatchGetJobEntityTrait;
+    use BatchGetSession\BatchGetSessionTrait;
+    use BatchGetSessionAction\BatchGetSessionActionTrait;
+    use BatchGetStep\BatchGetStepTrait;
+    use BatchGetTask\BatchGetTaskTrait;
+    use BatchGetWorker\BatchGetWorkerTrait;
+    use BatchUpdateJob\BatchUpdateJobTrait;
+    use BatchUpdateTask\BatchUpdateTaskTrait;
     use CopyJobTemplate\CopyJobTemplateTrait;
     use CreateBudget\CreateBudgetTrait;
     use CreateFarm\CreateFarmTrait;

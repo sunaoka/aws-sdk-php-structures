@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ClipRange|null $ClipRange
  * @property int|null $DurationMillis
  * @property list<Shapes\AudienceMedia>|null $AudienceMedia
+ * @property array<string, string>|null $Tags
  */
 class DescribeProgramResponse extends Response
 {

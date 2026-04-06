@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'SINGLE'|'RECURRING'|null $ScheduleType
  * @property Shapes\RecurringPrefetchConfiguration|null $RecurringPrefetchConfiguration
  * @property string|null $StreamId
+ * @property array<string, string>|null $Tags
  */
 class GetPrefetchScheduleResponse extends Response
 {

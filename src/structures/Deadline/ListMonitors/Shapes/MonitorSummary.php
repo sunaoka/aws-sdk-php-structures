@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $url
  * @property string $roleArn
  * @property string $identityCenterInstanceArn
+ * @property string|null $identityCenterRegion
  * @property string $identityCenterApplicationArn
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
@@ -27,6 +28,7 @@ class MonitorSummary extends Shape
      *     url: string,
      *     roleArn: string,
      *     identityCenterInstanceArn: string,
+     *     identityCenterRegion?: string|null,
      *     identityCenterApplicationArn: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     createdBy: string,

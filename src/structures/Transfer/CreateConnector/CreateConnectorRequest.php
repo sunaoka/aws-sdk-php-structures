@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\SftpConnectorConfig|null $SftpConfig
  * @property string|null $SecurityPolicyName
  * @property Shapes\ConnectorEgressConfig|null $EgressConfig
+ * @property 'IPV4'|'DUALSTACK'|null $IpAddressType
  */
 class CreateConnectorRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateConnectorRequest extends Request
      *     Tags?: list<Shapes\Tag>|null,
      *     SftpConfig?: Shapes\SftpConnectorConfig|null,
      *     SecurityPolicyName?: string|null,
-     *     EgressConfig?: Shapes\ConnectorEgressConfig|null
+     *     EgressConfig?: Shapes\ConnectorEgressConfig|null,
+     *     IpAddressType?: 'IPV4'|'DUALSTACK'|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, 1000>|null $Count
  * @property int<1, max>|null $Interval
  * @property 'DAYS'|'WEEKS'|'MONTHS'|'YEARS'|null $IntervalUnit
- * @property list<string> $AvailabilityZones
+ * @property list<string>|null $AvailabilityZones
+ * @property list<string>|null $AvailabilityZoneIds
  */
 class FastRestoreRule extends Shape
 {
@@ -17,10 +18,11 @@ class FastRestoreRule extends Shape
      *     Count?: int<1, 1000>|null,
      *     Interval?: int<1, max>|null,
      *     IntervalUnit?: 'DAYS'|'WEEKS'|'MONTHS'|'YEARS'|null,
-     *     AvailabilityZones: list<string>
+     *     AvailabilityZones?: list<string>|null,
+     *     AvailabilityZoneIds?: list<string>|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

@@ -11,10 +11,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property NetworkConnectionAction|null $NetworkConnectionAction
  * @property PortProbeAction|null $PortProbeAction
  * @property KubernetesApiCallAction|null $KubernetesApiCallAction
- * @property RdsLoginAttemptAction|null $RdsLoginAttemptAction
  * @property KubernetesPermissionCheckedDetails|null $KubernetesPermissionCheckedDetails
  * @property KubernetesRoleBindingDetails|null $KubernetesRoleBindingDetails
  * @property KubernetesRoleDetails|null $KubernetesRoleDetails
+ * @property RdsLoginAttemptAction|null $RdsLoginAttemptAction
  */
 class Action extends Shape
 {
@@ -26,10 +26,10 @@ class Action extends Shape
      *     NetworkConnectionAction?: NetworkConnectionAction|null,
      *     PortProbeAction?: PortProbeAction|null,
      *     KubernetesApiCallAction?: KubernetesApiCallAction|null,
-     *     RdsLoginAttemptAction?: RdsLoginAttemptAction|null,
      *     KubernetesPermissionCheckedDetails?: KubernetesPermissionCheckedDetails|null,
      *     KubernetesRoleBindingDetails?: KubernetesRoleBindingDetails|null,
-     *     KubernetesRoleDetails?: KubernetesRoleDetails|null
+     *     KubernetesRoleDetails?: KubernetesRoleDetails|null,
+     *     RdsLoginAttemptAction?: RdsLoginAttemptAction|null
      * } $args
      */
     public function __construct(array $args = [])

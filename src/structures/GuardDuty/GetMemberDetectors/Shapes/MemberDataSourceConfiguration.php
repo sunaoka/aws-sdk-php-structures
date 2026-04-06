@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $AccountId
- * @property DataSourceConfigurationsResult|null $DataSources
+ * @property DataSourceConfigurationsResult $DataSources
  * @property list<MemberFeaturesConfigurationResult>|null $Features
  */
 class MemberDataSourceConfiguration extends Shape
@@ -14,7 +14,7 @@ class MemberDataSourceConfiguration extends Shape
     /**
      * @param array{
      *     AccountId: string,
-     *     DataSources?: DataSourceConfigurationsResult|null,
+     *     DataSources: DataSourceConfigurationsResult,
      *     Features?: list<MemberFeaturesConfigurationResult>|null
      * } $args
      */

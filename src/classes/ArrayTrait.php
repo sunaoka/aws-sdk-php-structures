@@ -7,9 +7,9 @@ trait ArrayTrait
     /**
      * @var array<string, mixed>
      */
-    protected $__data = [];
+    protected array $__data = [];
 
-    public function toArray()
+    public function toArray(): array
     {
         $result = $this->__data;
 

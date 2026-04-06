@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'SERVICE_MANAGED'|'VPC_LATTICE' $EgressType
  * @property string|null $ErrorMessage
  * @property 'ACTIVE'|'ERRORED'|'PENDING' $Status
+ * @property 'IPV4'|'DUALSTACK'|null $IpAddressType
  */
 class DescribedConnector extends Shape
 {
@@ -37,7 +38,8 @@ class DescribedConnector extends Shape
      *     EgressConfig?: DescribedConnectorEgressConfig|null,
      *     EgressType: 'SERVICE_MANAGED'|'VPC_LATTICE',
      *     ErrorMessage?: string|null,
-     *     Status: 'ACTIVE'|'ERRORED'|'PENDING'
+     *     Status: 'ACTIVE'|'ERRORED'|'PENDING',
+     *     IpAddressType?: 'IPV4'|'DUALSTACK'|null
      * } $args
      */
     public function __construct(array $args)

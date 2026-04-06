@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $url
  * @property string $roleArn
  * @property string $identityCenterInstanceArn
+ * @property string|null $identityCenterRegion
  * @property string $identityCenterApplicationArn
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy

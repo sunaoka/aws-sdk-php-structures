@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientToken
  * @property string|null $orchestratorUseCase
  * @property array<string, string>|null $metadata
+ * @property string|null $originRequestId
  */
 class SendMessageRequest extends Request
 {
@@ -29,7 +30,8 @@ class SendMessageRequest extends Request
      *     configuration?: Shapes\MessageConfiguration|null,
      *     clientToken?: string|null,
      *     orchestratorUseCase?: string|null,
-     *     metadata?: array<string, string>|null
+     *     metadata?: array<string, string>|null,
+     *     originRequestId?: string|null
      * } $args
      */
     public function __construct(array $args)

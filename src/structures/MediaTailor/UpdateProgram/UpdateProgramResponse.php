@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $DurationMillis
  * @property \Aws\Api\DateTimeResult|null $ScheduledStartTime
  * @property list<Shapes\AudienceMedia>|null $AudienceMedia
+ * @property array<string, string>|null $Tags
  */
 class UpdateProgramResponse extends Response
 {

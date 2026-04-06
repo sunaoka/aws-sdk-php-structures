@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'SINGLE'|'RECURRING'|null $ScheduleType
  * @property RecurringPrefetchConfiguration|null $RecurringPrefetchConfiguration
  * @property string|null $StreamId
+ * @property array<string, string>|null $Tags
  */
 class PrefetchSchedule extends Shape
 {
@@ -25,7 +26,8 @@ class PrefetchSchedule extends Shape
      *     Retrieval?: PrefetchRetrieval|null,
      *     ScheduleType?: 'SINGLE'|'RECURRING'|null,
      *     RecurringPrefetchConfiguration?: RecurringPrefetchConfiguration|null,
-     *     StreamId?: string|null
+     *     StreamId?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)
