@@ -8,19 +8,14 @@ use Symfony\Component\Finder\Finder;
 
 class Composer
 {
-    /**
-     * @param null|Filesystem $filesystem
-     *
-     * @return void
-     */
-    public static function removeUnusedServices(Event $event, $filesystem = null)
+    public static function removeUnusedServices(Event $event, ?Filesystem $filesystem = null): void
     {
         $composer = $event->getComposer();
         $extra = $composer->getPackage()->getExtra();
         $filesystem = $filesystem ?: new Filesystem();
 
         /** @var array<string, list<string>> $extra */
-        $extra = isset($extra['sunaoka/aws-sdk-php-structures']) ? $extra['sunaoka/aws-sdk-php-structures'] : [];
+        $extra = $extra['sunaoka/aws-sdk-php-structures'] ?? [];
         if (count($extra) === 0) {
             return;
         }
@@ -68,12 +63,7 @@ class Composer
         $event->getIO()->write(sprintf('Removed %d AWS action structures', count($removeActions)));
     }
 
-    /**
-     * @param string $directory
-     *
-     * @return Finder
-     */
-    private static function getFinder($directory)
+    private static function getFinder(string $directory): Finder
     {
         return (new Finder())
             ->directories()
@@ -82,12 +72,7 @@ class Composer
         ;
     }
 
-    /**
-     * @param string $directory
-     *
-     * @return string
-     */
-    private static function getClient($directory)
+    private static function getClient(string $directory): string
     {
         $finder = (new Finder())
             ->files()
@@ -109,19 +94,16 @@ class Composer
     }
 
     /**
-     * @param string   $filename
      * @param string[] $names
-     *
-     * @return void
      */
-    private static function removeTraits($filename, $names)
+    private static function removeTraits(string $filename, array $names): void
     {
         $lines = file($filename, FILE_IGNORE_NEW_LINES);
         if ($lines === false) {
             throw new \RuntimeException("{$filename}: Failed to read file");  // @codeCoverageIgnore
         }
 
-        $result = array_filter($lines, function ($item) use ($names) {
+        $result = array_filter($lines, static function ($item) use ($names) {
             foreach ($names as $name) {
                 if (preg_match("/use {$name}\\\\{$name}Trait;/", $item) === 1) {
                     return false;

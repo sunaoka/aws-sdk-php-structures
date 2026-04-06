@@ -21,7 +21,7 @@ class TestCase extends \PHPUnit\Framework\TestCase
      *
      * @return T
      */
-    protected function createMockClient($client, array $data = [])
+    protected function createMockClient(string $client, array $data = []): AwsClient
     {
         return new $client([
             'credentials' => false,
@@ -33,10 +33,8 @@ class TestCase extends \PHPUnit\Framework\TestCase
 
     /**
      * @param array<string, mixed> $data
-     *
-     * @return MockHandler
      */
-    protected function getMockHandler(array $data = [])
+    protected function getMockHandler(array $data = []): MockHandler
     {
         $handler = new MockHandler();
         $handler->append(new Result($data));

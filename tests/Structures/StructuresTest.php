@@ -16,10 +16,7 @@ use Tests\TestCase;
  */
 class StructuresTest extends TestCase
 {
-    /**
-     * @return void
-     */
-    public function testS3GetObject()
+    public function testS3GetObject(): void
     {
         $client = $this->createMockClient(S3Client::class, [
             'Body' => Psr7\Utils::streamFor('body'),
@@ -35,15 +32,12 @@ class StructuresTest extends TestCase
         self::assertInstanceOf(StreamInterface::class, $response->Body);
         self::assertSame('body', (string) $response->Body);
 
-        $this->expectExceptionCompat(\InvalidArgumentException::class);
+        $this->expectException(\InvalidArgumentException::class);
 
         $response->__get('foo');
     }
 
-    /**
-     * @return void
-     */
-    public function testS3PutObject()
+    public function testS3PutObject(): void
     {
         $client = $this->createMockClient(S3Client::class, [
             'ETag' => '"ETAG"',
@@ -59,15 +53,12 @@ class StructuresTest extends TestCase
 
         self::assertSame('"ETAG"', $response->ETag);
 
-        $this->expectExceptionCompat(\InvalidArgumentException::class);
+        $this->expectException(\InvalidArgumentException::class);
 
         $response->__get('foo');
     }
 
-    /**
-     * @return void
-     */
-    public function testBatchSubmitJob()
+    public function testBatchSubmitJob(): void
     {
         $client = $this->createMockClient(BatchClient::class, [
             'jobArn'  => 'jobArn',
@@ -98,7 +89,7 @@ class StructuresTest extends TestCase
         self::assertSame('jobId', $response->jobId);
         self::assertSame('jobName', $response->jobName);
 
-        $this->expectExceptionCompat(\InvalidArgumentException::class);
+        $this->expectException(\InvalidArgumentException::class);
 
         $response->__get('foo');
     }

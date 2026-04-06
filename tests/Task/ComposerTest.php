@@ -16,10 +16,7 @@ use Tests\TestCase;
  */
 class ComposerTest extends TestCase
 {
-    /**
-     * @return void
-     */
-    public function testRemoveUnusedServicesSuccess()
+    public function testRemoveUnusedServicesSuccess(): void
     {
         $tempDir = sys_get_temp_dir();
         $vendorPath = $tempDir . '/sunaoka/aws-sdk-php-structures-vendor-' . mt_rand();
@@ -86,10 +83,7 @@ class ComposerTest extends TestCase
         $filesystem->remove($vendorPath);
     }
 
-    /**
-     * @return void
-     */
-    public function testRemoveUnusedServicesWithoutExtraSuccess()
+    public function testRemoveUnusedServicesWithoutExtraSuccess(): void
     {
         $tempDir = sys_get_temp_dir();
         $vendorPath = $tempDir . '/sunaoka/aws-sdk-php-structures-vendor-' . mt_rand();
@@ -123,11 +117,8 @@ class ComposerTest extends TestCase
 
     /**
      * @param array<string, string[]> $keeps
-     * @param string                  $vendorPath
-     *
-     * @return Event|MockInterface
      */
-    private function getMockEvent(array $keeps, $vendorPath)
+    private function getMockEvent(array $keeps, string $vendorPath): Event&MockInterface
     {
         $package = \Mockery::mock(RootPackage::class)
             ->shouldReceive('getExtra')
@@ -151,7 +142,7 @@ class ComposerTest extends TestCase
             ->getMock()
         ;
 
-        /** @var Event|MockInterface */
+        /** @var Event&MockInterface */
         return \Mockery::mock(Event::class)
             ->shouldReceive('getComposer')
             ->andReturn($composer)
