@@ -21,6 +21,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AutoMLJobStepMetadata|null $AutoMLJob
  * @property EndpointStepMetadata|null $Endpoint
  * @property EndpointConfigStepMetadata|null $EndpointConfig
+ * @property BedrockCustomModelMetadata|null $BedrockCustomModel
+ * @property BedrockCustomModelDeploymentMetadata|null $BedrockCustomModelDeployment
+ * @property BedrockProvisionedModelThroughputMetadata|null $BedrockProvisionedModelThroughput
+ * @property BedrockModelImportMetadata|null $BedrockModelImport
+ * @property InferenceComponentMetadata|null $InferenceComponent
+ * @property LineageMetadata|null $Lineage
  */
 class PipelineExecutionStepMetadata extends Shape
 {
@@ -41,7 +47,13 @@ class PipelineExecutionStepMetadata extends Shape
      *     Fail?: FailStepMetadata|null,
      *     AutoMLJob?: AutoMLJobStepMetadata|null,
      *     Endpoint?: EndpointStepMetadata|null,
-     *     EndpointConfig?: EndpointConfigStepMetadata|null
+     *     EndpointConfig?: EndpointConfigStepMetadata|null,
+     *     BedrockCustomModel?: BedrockCustomModelMetadata|null,
+     *     BedrockCustomModelDeployment?: BedrockCustomModelDeploymentMetadata|null,
+     *     BedrockProvisionedModelThroughput?: BedrockProvisionedModelThroughputMetadata|null,
+     *     BedrockModelImport?: BedrockModelImportMetadata|null,
+     *     InferenceComponent?: InferenceComponentMetadata|null,
+     *     Lineage?: LineageMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,26 +5,26 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\ListCrls\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult|null $createdAt
- * @property string|null $crlArn
- * @property \Psr\Http\Message\StreamInterface|null $crlData
  * @property string|null $crlId
- * @property bool|null $enabled
+ * @property string|null $crlArn
  * @property string|null $name
+ * @property bool|null $enabled
+ * @property \Psr\Http\Message\StreamInterface|null $crlData
  * @property string|null $trustAnchorArn
+ * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class CrlDetail extends Shape
 {
     /**
      * @param array{
-     *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     crlArn?: string|null,
-     *     crlData?: \Psr\Http\Message\StreamInterface|null,
      *     crlId?: string|null,
-     *     enabled?: bool|null,
+     *     crlArn?: string|null,
      *     name?: string|null,
+     *     enabled?: bool|null,
+     *     crlData?: \Psr\Http\Message\StreamInterface|null,
      *     trustAnchorArn?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */

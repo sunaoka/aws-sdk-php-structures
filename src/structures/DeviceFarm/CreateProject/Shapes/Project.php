@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $defaultJobTimeoutMinutes
  * @property \Aws\Api\DateTimeResult|null $created
  * @property VpcConfig|null $vpcConfig
+ * @property list<EnvironmentVariable>|null $environmentVariables
+ * @property string|null $executionRoleArn
  */
 class Project extends Shape
 {
@@ -19,7 +21,9 @@ class Project extends Shape
      *     name?: string|null,
      *     defaultJobTimeoutMinutes?: int|null,
      *     created?: \Aws\Api\DateTimeResult|null,
-     *     vpcConfig?: VpcConfig|null
+     *     vpcConfig?: VpcConfig|null,
+     *     environmentVariables?: list<EnvironmentVariable>|null,
+     *     executionRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

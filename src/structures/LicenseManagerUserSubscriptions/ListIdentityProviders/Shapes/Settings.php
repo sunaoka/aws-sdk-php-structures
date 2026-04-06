@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\ListIdentityPro
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SecurityGroupId
  * @property list<string> $Subnets
+ * @property string $SecurityGroupId
  */
 class Settings extends Shape
 {
     /**
      * @param array{
-     *     SecurityGroupId: string,
-     *     Subnets: list<string>
+     *     Subnets: list<string>,
+     *     SecurityGroupId: string
      * } $args
      */
     public function __construct(array $args)

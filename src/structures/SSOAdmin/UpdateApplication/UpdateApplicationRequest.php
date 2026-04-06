@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationArn
- * @property string|null $Description
  * @property string|null $Name
- * @property Shapes\UpdateApplicationPortalOptions|null $PortalOptions
+ * @property string|null $Description
  * @property 'ENABLED'|'DISABLED'|null $Status
+ * @property Shapes\UpdateApplicationPortalOptions|null $PortalOptions
  */
 class UpdateApplicationRequest extends Request
 {
     /**
      * @param array{
      *     ApplicationArn: string,
-     *     Description?: string|null,
      *     Name?: string|null,
-     *     PortalOptions?: Shapes\UpdateApplicationPortalOptions|null,
-     *     Status?: 'ENABLED'|'DISABLED'|null
+     *     Description?: string|null,
+     *     Status?: 'ENABLED'|'DISABLED'|null,
+     *     PortalOptions?: Shapes\UpdateApplicationPortalOptions|null
      * } $args
      */
     public function __construct(array $args)

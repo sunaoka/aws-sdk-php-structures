@@ -14,8 +14,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $costCalculationLookbackPeriodInDays
  * @property double|null $estimatedSavingsPercentage
  * @property double|null $estimatedSavingsOverCostCalculationLookbackPeriod
- * @property 'Ec2Instance'|'LambdaFunction'|'EbsVolume'|'EcsService'|'Ec2AutoScalingGroup'|'Ec2InstanceSavingsPlans'|'ComputeSavingsPlans'|'SageMakerSavingsPlans'|'Ec2ReservedInstances'|'RdsReservedInstances'|'OpenSearchReservedInstances'|'RedshiftReservedInstances'|'ElastiCacheReservedInstances'|'RdsDbInstanceStorage'|'RdsDbInstance'|null $currentResourceType
- * @property 'Ec2Instance'|'LambdaFunction'|'EbsVolume'|'EcsService'|'Ec2AutoScalingGroup'|'Ec2InstanceSavingsPlans'|'ComputeSavingsPlans'|'SageMakerSavingsPlans'|'Ec2ReservedInstances'|'RdsReservedInstances'|'OpenSearchReservedInstances'|'RedshiftReservedInstances'|'ElastiCacheReservedInstances'|'RdsDbInstanceStorage'|'RdsDbInstance'|null $recommendedResourceType
+ * @property 'Ec2Instance'|'LambdaFunction'|'EbsVolume'|'EcsService'|'Ec2AutoScalingGroup'|'Ec2InstanceSavingsPlans'|'ComputeSavingsPlans'|'SageMakerSavingsPlans'|'Ec2ReservedInstances'|'RdsReservedInstances'|'OpenSearchReservedInstances'|'RedshiftReservedInstances'|'ElastiCacheReservedInstances'|'RdsDbInstanceStorage'|'RdsDbInstance'|'AuroraDbClusterStorage'|'DynamoDbReservedCapacity'|'MemoryDbReservedInstances'|'NatGateway'|null $currentResourceType
+ * @property 'Ec2Instance'|'LambdaFunction'|'EbsVolume'|'EcsService'|'Ec2AutoScalingGroup'|'Ec2InstanceSavingsPlans'|'ComputeSavingsPlans'|'SageMakerSavingsPlans'|'Ec2ReservedInstances'|'RdsReservedInstances'|'OpenSearchReservedInstances'|'RedshiftReservedInstances'|'ElastiCacheReservedInstances'|'RdsDbInstanceStorage'|'RdsDbInstance'|'AuroraDbClusterStorage'|'DynamoDbReservedCapacity'|'MemoryDbReservedInstances'|'NatGateway'|null $recommendedResourceType
  * @property string|null $region
  * @property 'ComputeOptimizer'|'CostExplorer'|null $source
  * @property \Aws\Api\DateTimeResult|null $lastRefreshTimestamp
@@ -23,7 +23,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property double|null $estimatedMonthlyCost
  * @property 'VeryLow'|'Low'|'Medium'|'High'|'VeryHigh'|null $implementationEffort
  * @property bool|null $restartNeeded
- * @property 'Rightsize'|'Stop'|'Upgrade'|'PurchaseSavingsPlans'|'PurchaseReservedInstances'|'MigrateToGraviton'|'Delete'|null $actionType
+ * @property 'Rightsize'|'Stop'|'Upgrade'|'PurchaseSavingsPlans'|'PurchaseReservedInstances'|'MigrateToGraviton'|'Delete'|'ScaleIn'|null $actionType
  * @property bool|null $rollbackPossible
  * @property Shapes\ResourceDetails|null $currentResourceDetails
  * @property Shapes\ResourceDetails|null $recommendedResourceDetails

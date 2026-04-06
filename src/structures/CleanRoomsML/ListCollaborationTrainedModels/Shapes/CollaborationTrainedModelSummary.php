@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property string $trainedModelArn
  * @property string $name
+ * @property string|null $versionIdentifier
+ * @property list<IncrementalTrainingDataChannelOutput>|null $incrementalTrainingDataChannels
  * @property string|null $description
  * @property string $membershipIdentifier
  * @property string $collaborationIdentifier
@@ -24,6 +26,8 @@ class CollaborationTrainedModelSummary extends Shape
      *     updateTime: \Aws\Api\DateTimeResult,
      *     trainedModelArn: string,
      *     name: string,
+     *     versionIdentifier?: string|null,
+     *     incrementalTrainingDataChannels?: list<IncrementalTrainingDataChannelOutput>|null,
      *     description?: string|null,
      *     membershipIdentifier: string,
      *     collaborationIdentifier: string,

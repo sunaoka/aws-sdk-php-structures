@@ -12,6 +12,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $Capacity
  * @property Shapes\StatefulRuleOptions|null $StatefulRuleOptions
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $VendorName
+ * @property string|null $ProductId
+ * @property string|null $ListingName
  */
 class DescribeRuleGroupMetadataResponse extends Response
 {

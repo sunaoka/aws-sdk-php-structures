@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\RunInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'spot'|'capacity-block'|null $MarketType
+ * @property 'spot'|'capacity-block'|'interruptible-capacity-reservation'|null $MarketType
  * @property SpotMarketOptions|null $SpotOptions
  */
 class InstanceMarketOptionsRequest extends Shape
 {
     /**
      * @param array{
-     *     MarketType?: 'spot'|'capacity-block'|null,
+     *     MarketType?: 'spot'|'capacity-block'|'interruptible-capacity-reservation'|null,
      *     SpotOptions?: SpotMarketOptions|null
      * } $args
      */

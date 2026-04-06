@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $endSession
  * @property string|null $inputText
  * @property string|null $memoryId
+ * @property Shapes\PromptCreationConfigurations|null $promptCreationConfigurations
  * @property string $sessionId
  * @property Shapes\SessionState|null $sessionState
  * @property string|null $sourceArn
@@ -28,6 +29,7 @@ class InvokeAgentRequest extends Request
      *     endSession?: bool|null,
      *     inputText?: string|null,
      *     memoryId?: string|null,
+     *     promptCreationConfigurations?: Shapes\PromptCreationConfigurations|null,
      *     sessionId: string,
      *     sessionState?: Shapes\SessionState|null,
      *     sourceArn?: string|null,

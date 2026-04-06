@@ -12,6 +12,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $WebAppEndpoint
  * @property WebAppUnits|null $WebAppUnits
  * @property list<Tag>|null $Tags
+ * @property 'FIPS'|'STANDARD'|null $WebAppEndpointPolicy
+ * @property 'PUBLIC'|'VPC'|null $EndpointType
+ * @property DescribedWebAppEndpointDetails|null $DescribedEndpointDetails
  */
 class DescribedWebApp extends Shape
 {
@@ -23,7 +26,10 @@ class DescribedWebApp extends Shape
      *     AccessEndpoint?: string|null,
      *     WebAppEndpoint?: string|null,
      *     WebAppUnits?: WebAppUnits|null,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     WebAppEndpointPolicy?: 'FIPS'|'STANDARD'|null,
+     *     EndpointType?: 'PUBLIC'|'VPC'|null,
+     *     DescribedEndpointDetails?: DescribedWebAppEndpointDetails|null
      * } $args
      */
     public function __construct(array $args)

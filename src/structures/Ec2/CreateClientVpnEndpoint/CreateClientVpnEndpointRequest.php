@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateClientVpnEndpoint;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientCidrBlock
+ * @property string|null $ClientCidrBlock
  * @property string $ServerCertificateArn
  * @property list<Shapes\ClientVpnAuthenticationRequest> $AuthenticationOptions
  * @property Shapes\ConnectionLogOptions $ConnectionLogOptions
@@ -23,13 +23,16 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ClientConnectOptions|null $ClientConnectOptions
  * @property int|null $SessionTimeoutHours
  * @property Shapes\ClientLoginBannerOptions|null $ClientLoginBannerOptions
+ * @property Shapes\ClientRouteEnforcementOptions|null $ClientRouteEnforcementOptions
  * @property bool|null $DisconnectOnSessionTimeout
+ * @property 'ipv4'|'ipv6'|'dual-stack'|null $EndpointIpAddressType
+ * @property 'ipv4'|'ipv6'|'dual-stack'|null $TrafficIpAddressType
  */
 class CreateClientVpnEndpointRequest extends Request
 {
     /**
      * @param array{
-     *     ClientCidrBlock: string,
+     *     ClientCidrBlock?: string|null,
      *     ServerCertificateArn: string,
      *     AuthenticationOptions: list<Shapes\ClientVpnAuthenticationRequest>,
      *     ConnectionLogOptions: Shapes\ConnectionLogOptions,
@@ -47,7 +50,10 @@ class CreateClientVpnEndpointRequest extends Request
      *     ClientConnectOptions?: Shapes\ClientConnectOptions|null,
      *     SessionTimeoutHours?: int|null,
      *     ClientLoginBannerOptions?: Shapes\ClientLoginBannerOptions|null,
-     *     DisconnectOnSessionTimeout?: bool|null
+     *     ClientRouteEnforcementOptions?: Shapes\ClientRouteEnforcementOptions|null,
+     *     DisconnectOnSessionTimeout?: bool|null,
+     *     EndpointIpAddressType?: 'ipv4'|'ipv6'|'dual-stack'|null,
+     *     TrafficIpAddressType?: 'ipv4'|'ipv6'|'dual-stack'|null
      * } $args
      */
     public function __construct(array $args)

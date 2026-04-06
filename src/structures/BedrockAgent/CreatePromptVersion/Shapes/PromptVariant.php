@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreatePromptVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Document|null $additionalModelRequestFields
- * @property PromptGenAiResource|null $genAiResource
+ * @property string $name
+ * @property 'TEXT'|'CHAT' $templateType
+ * @property PromptTemplateConfiguration $templateConfiguration
+ * @property string|null $modelId
  * @property PromptInferenceConfiguration|null $inferenceConfiguration
  * @property list<PromptMetadataEntry>|null $metadata
- * @property string|null $modelId
- * @property string $name
- * @property PromptTemplateConfiguration $templateConfiguration
- * @property 'TEXT'|'CHAT' $templateType
+ * @property Document|null $additionalModelRequestFields
+ * @property PromptGenAiResource|null $genAiResource
  */
 class PromptVariant extends Shape
 {
     /**
      * @param array{
-     *     additionalModelRequestFields?: Document|null,
-     *     genAiResource?: PromptGenAiResource|null,
+     *     name: string,
+     *     templateType: 'TEXT'|'CHAT',
+     *     templateConfiguration: PromptTemplateConfiguration,
+     *     modelId?: string|null,
      *     inferenceConfiguration?: PromptInferenceConfiguration|null,
      *     metadata?: list<PromptMetadataEntry>|null,
-     *     modelId?: string|null,
-     *     name: string,
-     *     templateConfiguration: PromptTemplateConfiguration,
-     *     templateType: 'TEXT'|'CHAT'
+     *     additionalModelRequestFields?: Document|null,
+     *     genAiResource?: PromptGenAiResource|null
      * } $args
      */
     public function __construct(array $args)

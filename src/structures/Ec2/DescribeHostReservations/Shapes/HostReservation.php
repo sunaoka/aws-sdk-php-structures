@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $OfferingId
  * @property 'AllUpfront'|'PartialUpfront'|'NoUpfront'|null $PaymentOption
  * @property \Aws\Api\DateTimeResult|null $Start
- * @property 'payment-pending'|'payment-failed'|'active'|'retired'|null $State
+ * @property 'active'|'expired'|'cancelled'|'scheduled'|'pending'|'failed'|'delayed'|'unsupported'|'payment-pending'|'payment-failed'|'retired'|null $State
  * @property string|null $UpfrontPrice
  * @property list<Tag>|null $Tags
  */
@@ -35,7 +35,7 @@ class HostReservation extends Shape
      *     OfferingId?: string|null,
      *     PaymentOption?: 'AllUpfront'|'PartialUpfront'|'NoUpfront'|null,
      *     Start?: \Aws\Api\DateTimeResult|null,
-     *     State?: 'payment-pending'|'payment-failed'|'active'|'retired'|null,
+     *     State?: 'active'|'expired'|'cancelled'|'scheduled'|'pending'|'failed'|'delayed'|'unsupported'|'payment-pending'|'payment-failed'|'retired'|null,
      *     UpfrontPrice?: string|null,
      *     Tags?: list<Tag>|null
      * } $args

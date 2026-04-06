@@ -1,0 +1,31 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\GameLiftStreams\UpdateStreamGroup\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $LocationName
+ * @property int<0, max>|null $AlwaysOnCapacity
+ * @property int<0, max>|null $OnDemandCapacity
+ * @property int<0, max>|null $TargetIdleCapacity
+ * @property int<0, max>|null $MaximumCapacity
+ * @property VpcTransitConfiguration|null $VpcTransitConfiguration
+ */
+class LocationConfiguration extends Shape
+{
+    /**
+     * @param array{
+     *     LocationName: string,
+     *     AlwaysOnCapacity?: int<0, max>|null,
+     *     OnDemandCapacity?: int<0, max>|null,
+     *     TargetIdleCapacity?: int<0, max>|null,
+     *     MaximumCapacity?: int<0, max>|null,
+     *     VpcTransitConfiguration?: VpcTransitConfiguration|null
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

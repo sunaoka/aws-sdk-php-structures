@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\HoursOfOperationOverrideConfig>|null $Config
  * @property string|null $EffectiveFrom
  * @property string|null $EffectiveTill
+ * @property Shapes\RecurrenceConfig|null $RecurrenceConfig
+ * @property 'STANDARD'|'OPEN'|'CLOSED'|null $OverrideType
  */
 class UpdateHoursOfOperationOverrideRequest extends Request
 {
@@ -25,7 +27,9 @@ class UpdateHoursOfOperationOverrideRequest extends Request
      *     Description?: string|null,
      *     Config?: list<Shapes\HoursOfOperationOverrideConfig>|null,
      *     EffectiveFrom?: string|null,
-     *     EffectiveTill?: string|null
+     *     EffectiveTill?: string|null,
+     *     RecurrenceConfig?: Shapes\RecurrenceConfig|null,
+     *     OverrideType?: 'STANDARD'|'OPEN'|'CLOSED'|null
      * } $args
      */
     public function __construct(array $args)

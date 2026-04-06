@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $domainId
  * @property string|null $entityId
  * @property 'ASSET'|'LISTING'|null $entityType
- * @property Shapes\TimeSeriesDataPointFormOutput|null $form
  * @property string|null $formName
+ * @property Shapes\TimeSeriesDataPointFormOutput|null $form
  */
 class GetTimeSeriesDataPointResponse extends Response
 {

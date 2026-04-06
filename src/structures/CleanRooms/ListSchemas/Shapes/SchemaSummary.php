@@ -13,7 +13,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $collaborationId
  * @property string $collaborationArn
  * @property list<'AGGREGATION'|'LIST'|'CUSTOM'|'ID_MAPPING_TABLE'> $analysisRuleTypes
- * @property 'DIRECT_QUERY'|null $analysisMethod
+ * @property 'DIRECT_QUERY'|'DIRECT_JOB'|'MULTIPLE'|null $analysisMethod
+ * @property string|null $resourceArn
+ * @property list<'DIRECT_QUERY'|'DIRECT_JOB'>|null $selectedAnalysisMethods
  */
 class SchemaSummary extends Shape
 {
@@ -27,7 +29,9 @@ class SchemaSummary extends Shape
      *     collaborationId: string,
      *     collaborationArn: string,
      *     analysisRuleTypes: list<'AGGREGATION'|'LIST'|'CUSTOM'|'ID_MAPPING_TABLE'>,
-     *     analysisMethod?: 'DIRECT_QUERY'|null
+     *     analysisMethod?: 'DIRECT_QUERY'|'DIRECT_JOB'|'MULTIPLE'|null,
+     *     resourceArn?: string|null,
+     *     selectedAnalysisMethods?: list<'DIRECT_QUERY'|'DIRECT_JOB'>|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DatabaseName
  * @property 'none'|'require'|'verify-ca'|'verify-full'|null $SslMode
  * @property string|null $CertificateArn
+ * @property string|null $S3Path
+ * @property string|null $S3AccessRoleArn
  */
 class PostgreSqlDataProviderSettings extends Shape
 {
@@ -19,7 +21,9 @@ class PostgreSqlDataProviderSettings extends Shape
      *     Port?: int|null,
      *     DatabaseName?: string|null,
      *     SslMode?: 'none'|'require'|'verify-ca'|'verify-full'|null,
-     *     CertificateArn?: string|null
+     *     CertificateArn?: string|null,
+     *     S3Path?: string|null,
+     *     S3AccessRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

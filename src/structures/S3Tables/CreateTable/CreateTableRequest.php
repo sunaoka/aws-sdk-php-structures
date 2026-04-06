@@ -9,6 +9,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $namespace
  * @property string $name
  * @property 'ICEBERG' $format
+ * @property Shapes\TableMetadata|null $metadata
+ * @property Shapes\EncryptionConfiguration|null $encryptionConfiguration
+ * @property Shapes\StorageClassConfiguration|null $storageClassConfiguration
+ * @property array<string, string>|null $tags
  */
 class CreateTableRequest extends Request
 {
@@ -17,7 +21,11 @@ class CreateTableRequest extends Request
      *     tableBucketARN: string,
      *     namespace: string,
      *     name: string,
-     *     format: 'ICEBERG'
+     *     format: 'ICEBERG',
+     *     metadata?: Shapes\TableMetadata|null,
+     *     encryptionConfiguration?: Shapes\EncryptionConfiguration|null,
+     *     storageClassConfiguration?: Shapes\StorageClassConfiguration|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

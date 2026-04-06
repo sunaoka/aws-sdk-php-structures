@@ -25,6 +25,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\VpcOutputSettingsDescription|null $Vpc
  * @property Shapes\DescribeAnywhereSettings|null $AnywhereSettings
  * @property Shapes\ChannelEngineVersionResponse|null $ChannelEngineVersion
+ * @property Shapes\DescribeLinkedChannelSettings|null $LinkedChannelSettings
+ * @property list<string>|null $ChannelSecurityGroups
+ * @property Shapes\DescribeInferenceSettings|null $InferenceSettings
  */
 class DescribeChannelResponse extends Response
 {

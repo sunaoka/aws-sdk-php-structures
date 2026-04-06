@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int<64000, 640000>|null $Bitrate
  * @property 'COMPLETE_MAIN'|'COMMENTARY'|'DIALOGUE'|'EMERGENCY'|'HEARING_IMPAIRED'|'MUSIC_AND_EFFECTS'|'VISUALLY_IMPAIRED'|'VOICE_OVER'|null $BitstreamMode
- * @property 'CODING_MODE_1_0'|'CODING_MODE_1_1'|'CODING_MODE_2_0'|'CODING_MODE_3_2_LFE'|null $CodingMode
+ * @property 'CODING_MODE_1_0'|'CODING_MODE_1_1'|'CODING_MODE_2_0'|'CODING_MODE_3_2_LFE'|'CODING_MODE_AUTO'|null $CodingMode
  * @property int<1, 31>|null $Dialnorm
  * @property 'FILM_STANDARD'|'FILM_LIGHT'|'MUSIC_STANDARD'|'MUSIC_LIGHT'|'SPEECH'|'NONE'|null $DynamicRangeCompressionLine
  * @property 'FILM_STANDARD'|'NONE'|null $DynamicRangeCompressionProfile
@@ -22,7 +22,7 @@ class Ac3Settings extends Shape
      * @param array{
      *     Bitrate?: int<64000, 640000>|null,
      *     BitstreamMode?: 'COMPLETE_MAIN'|'COMMENTARY'|'DIALOGUE'|'EMERGENCY'|'HEARING_IMPAIRED'|'MUSIC_AND_EFFECTS'|'VISUALLY_IMPAIRED'|'VOICE_OVER'|null,
-     *     CodingMode?: 'CODING_MODE_1_0'|'CODING_MODE_1_1'|'CODING_MODE_2_0'|'CODING_MODE_3_2_LFE'|null,
+     *     CodingMode?: 'CODING_MODE_1_0'|'CODING_MODE_1_1'|'CODING_MODE_2_0'|'CODING_MODE_3_2_LFE'|'CODING_MODE_AUTO'|null,
      *     Dialnorm?: int<1, 31>|null,
      *     DynamicRangeCompressionLine?: 'FILM_STANDARD'|'FILM_LIGHT'|'MUSIC_STANDARD'|'MUSIC_LIGHT'|'SPEECH'|'NONE'|null,
      *     DynamicRangeCompressionProfile?: 'FILM_STANDARD'|'NONE'|null,

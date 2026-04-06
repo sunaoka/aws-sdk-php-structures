@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateDomain;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string|null $description
- * @property string $domainExecutionRole
- * @property 'V1'|'V2'|null $domainVersion
- * @property string|null $kmsKeyIdentifier
  * @property string $name
- * @property string|null $serviceRole
+ * @property string|null $description
  * @property Shapes\SingleSignOn|null $singleSignOn
+ * @property string $domainExecutionRole
+ * @property string|null $kmsKeyIdentifier
  * @property array<string, string>|null $tags
+ * @property 'V1'|'V2'|null $domainVersion
+ * @property string|null $serviceRole
+ * @property string|null $clientToken
  */
 class CreateDomainRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
-     *     description?: string|null,
-     *     domainExecutionRole: string,
-     *     domainVersion?: 'V1'|'V2'|null,
-     *     kmsKeyIdentifier?: string|null,
      *     name: string,
-     *     serviceRole?: string|null,
+     *     description?: string|null,
      *     singleSignOn?: Shapes\SingleSignOn|null,
-     *     tags?: array<string, string>|null
+     *     domainExecutionRole: string,
+     *     kmsKeyIdentifier?: string|null,
+     *     tags?: array<string, string>|null,
+     *     domainVersion?: 'V1'|'V2'|null,
+     *     serviceRole?: string|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

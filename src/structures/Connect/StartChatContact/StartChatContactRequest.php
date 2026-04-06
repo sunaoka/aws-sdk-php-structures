@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ContactFlowId
  * @property array<string, string>|null $Attributes
  * @property Shapes\ParticipantDetails $ParticipantDetails
+ * @property Shapes\ParticipantConfiguration|null $ParticipantConfiguration
  * @property Shapes\ChatMessage|null $InitialMessage
  * @property string|null $ClientToken
  * @property int<60, 10080>|null $ChatDurationInMinutes
@@ -17,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $RelatedContactId
  * @property array<string, Shapes\SegmentAttributeValue>|null $SegmentAttributes
  * @property string|null $CustomerId
+ * @property list<'AGENT'>|null $DisconnectOnCustomerExit
  */
 class StartChatContactRequest extends Request
 {
@@ -26,6 +28,7 @@ class StartChatContactRequest extends Request
      *     ContactFlowId: string,
      *     Attributes?: array<string, string>|null,
      *     ParticipantDetails: Shapes\ParticipantDetails,
+     *     ParticipantConfiguration?: Shapes\ParticipantConfiguration|null,
      *     InitialMessage?: Shapes\ChatMessage|null,
      *     ClientToken?: string|null,
      *     ChatDurationInMinutes?: int<60, 10080>|null,
@@ -33,7 +36,8 @@ class StartChatContactRequest extends Request
      *     PersistentChat?: Shapes\PersistentChat|null,
      *     RelatedContactId?: string|null,
      *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>|null,
-     *     CustomerId?: string|null
+     *     CustomerId?: string|null,
+     *     DisconnectOnCustomerExit?: list<'AGENT'>|null
      * } $args
      */
     public function __construct(array $args)

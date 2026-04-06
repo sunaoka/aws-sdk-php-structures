@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataZone\ListMetadataGenerationRuns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property 'ASSET' $type
  * @property string $identifier
  * @property string|null $revision
- * @property 'ASSET' $type
  */
 class MetadataGenerationRunTarget extends Shape
 {
     /**
      * @param array{
+     *     type: 'ASSET',
      *     identifier: string,
-     *     revision?: string|null,
-     *     type: 'ASSET'
+     *     revision?: string|null
      * } $args
      */
     public function __construct(array $args)

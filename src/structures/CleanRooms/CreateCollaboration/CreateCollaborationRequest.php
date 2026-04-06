@@ -8,14 +8,18 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\MemberSpecification> $members
  * @property string $name
  * @property string $description
- * @property list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'> $creatorMemberAbilities
+ * @property list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'|'CAN_RUN_JOB'> $creatorMemberAbilities
  * @property Shapes\MLMemberAbilities|null $creatorMLMemberAbilities
  * @property string $creatorDisplayName
  * @property Shapes\DataEncryptionMetadata|null $dataEncryptionMetadata
  * @property 'ENABLED'|'DISABLED' $queryLogStatus
+ * @property 'ENABLED'|'DISABLED'|null $jobLogStatus
  * @property array<string, string>|null $tags
  * @property Shapes\PaymentConfiguration|null $creatorPaymentConfiguration
  * @property 'SPARK'|'CLEAN_ROOMS_SQL'|null $analyticsEngine
+ * @property list<'ADD_MEMBER'|'GRANT_RECEIVE_RESULTS_ABILITY'|'REVOKE_RECEIVE_RESULTS_ABILITY'>|null $autoApprovedChangeRequestTypes
+ * @property list<'us-west-1'|'us-west-2'|'us-east-1'|'us-east-2'|'af-south-1'|'ap-east-1'|'ap-east-2'|'ap-south-2'|'ap-southeast-1'|'ap-southeast-2'|'ap-southeast-3'|'ap-southeast-5'|'ap-southeast-4'|'ap-southeast-7'|'ap-south-1'|'ap-northeast-3'|'ap-northeast-1'|'ap-northeast-2'|'ca-central-1'|'ca-west-1'|'eu-south-1'|'eu-west-3'|'eu-south-2'|'eu-central-2'|'eu-central-1'|'eu-north-1'|'eu-west-1'|'eu-west-2'|'me-south-1'|'me-central-1'|'il-central-1'|'sa-east-1'|'mx-central-1'>|null $allowedResultRegions
+ * @property bool|null $isMetricsEnabled
  */
 class CreateCollaborationRequest extends Request
 {
@@ -24,14 +28,18 @@ class CreateCollaborationRequest extends Request
      *     members: list<Shapes\MemberSpecification>,
      *     name: string,
      *     description: string,
-     *     creatorMemberAbilities: list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'>,
+     *     creatorMemberAbilities: list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'|'CAN_RUN_JOB'>,
      *     creatorMLMemberAbilities?: Shapes\MLMemberAbilities|null,
      *     creatorDisplayName: string,
      *     dataEncryptionMetadata?: Shapes\DataEncryptionMetadata|null,
      *     queryLogStatus: 'ENABLED'|'DISABLED',
+     *     jobLogStatus?: 'ENABLED'|'DISABLED'|null,
      *     tags?: array<string, string>|null,
      *     creatorPaymentConfiguration?: Shapes\PaymentConfiguration|null,
-     *     analyticsEngine?: 'SPARK'|'CLEAN_ROOMS_SQL'|null
+     *     analyticsEngine?: 'SPARK'|'CLEAN_ROOMS_SQL'|null,
+     *     autoApprovedChangeRequestTypes?: list<'ADD_MEMBER'|'GRANT_RECEIVE_RESULTS_ABILITY'|'REVOKE_RECEIVE_RESULTS_ABILITY'>|null,
+     *     allowedResultRegions?: list<'us-west-1'|'us-west-2'|'us-east-1'|'us-east-2'|'af-south-1'|'ap-east-1'|'ap-east-2'|'ap-south-2'|'ap-southeast-1'|'ap-southeast-2'|'ap-southeast-3'|'ap-southeast-5'|'ap-southeast-4'|'ap-southeast-7'|'ap-south-1'|'ap-northeast-3'|'ap-northeast-1'|'ap-northeast-2'|'ca-central-1'|'ca-west-1'|'eu-south-1'|'eu-west-3'|'eu-south-2'|'eu-central-2'|'eu-central-1'|'eu-north-1'|'eu-west-1'|'eu-west-2'|'me-south-1'|'me-central-1'|'il-central-1'|'sa-east-1'|'mx-central-1'>|null,
+     *     isMetricsEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

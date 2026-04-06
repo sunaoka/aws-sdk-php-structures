@@ -11,12 +11,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE' $runStatus
  * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null $targetRunStatus
  * @property int<0, 2147483647>|null $failureRetryCount
- * @property array<string, TaskParameterValue>|null $parameters
  * @property \Aws\Api\DateTimeResult|null $startedAt
  * @property \Aws\Api\DateTimeResult|null $endedAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string|null $updatedBy
  * @property string|null $latestSessionActionId
+ * @property array<string, TaskParameterValue>|null $parameters
  */
 class TaskSummary extends Shape
 {
@@ -28,12 +28,12 @@ class TaskSummary extends Shape
      *     runStatus: 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE',
      *     targetRunStatus?: 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null,
      *     failureRetryCount?: int<0, 2147483647>|null,
-     *     parameters?: array<string, TaskParameterValue>|null,
      *     startedAt?: \Aws\Api\DateTimeResult|null,
      *     endedAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
      *     updatedBy?: string|null,
-     *     latestSessionActionId?: string|null
+     *     latestSessionActionId?: string|null,
+     *     parameters?: array<string, TaskParameterValue>|null
      * } $args
      */
     public function __construct(array $args)

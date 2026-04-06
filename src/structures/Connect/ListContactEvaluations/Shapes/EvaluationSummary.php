@@ -9,11 +9,17 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $EvaluationArn
  * @property string $EvaluationFormTitle
  * @property string $EvaluationFormId
- * @property 'DRAFT'|'SUBMITTED' $Status
+ * @property string|null $CalibrationSessionId
+ * @property 'DRAFT'|'SUBMITTED'|'REVIEW_REQUESTED'|'UNDER_REVIEW' $Status
+ * @property bool|null $AutoEvaluationEnabled
+ * @property 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|null $AutoEvaluationStatus
  * @property string $EvaluatorArn
  * @property EvaluationScore|null $Score
+ * @property EvaluationAcknowledgementSummary|null $Acknowledgement
+ * @property 'STANDARD'|'CALIBRATION'|null $EvaluationType
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property EvaluationContactParticipant|null $ContactParticipant
  */
 class EvaluationSummary extends Shape
 {
@@ -23,11 +29,17 @@ class EvaluationSummary extends Shape
      *     EvaluationArn: string,
      *     EvaluationFormTitle: string,
      *     EvaluationFormId: string,
-     *     Status: 'DRAFT'|'SUBMITTED',
+     *     CalibrationSessionId?: string|null,
+     *     Status: 'DRAFT'|'SUBMITTED'|'REVIEW_REQUESTED'|'UNDER_REVIEW',
+     *     AutoEvaluationEnabled?: bool|null,
+     *     AutoEvaluationStatus?: 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|null,
      *     EvaluatorArn: string,
      *     Score?: EvaluationScore|null,
+     *     Acknowledgement?: EvaluationAcknowledgementSummary|null,
+     *     EvaluationType?: 'STANDARD'|'CALIBRATION'|null,
      *     CreatedTime: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime: \Aws\Api\DateTimeResult
+     *     LastModifiedTime: \Aws\Api\DateTimeResult,
+     *     ContactParticipant?: EvaluationContactParticipant|null
      * } $args
      */
     public function __construct(array $args)

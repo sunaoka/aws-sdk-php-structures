@@ -7,11 +7,12 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $agentAliasId
  * @property string $agentAliasName
- * @property 'CREATING'|'PREPARED'|'FAILED'|'UPDATING'|'DELETING' $agentAliasStatus
- * @property \Aws\Api\DateTimeResult $createdAt
  * @property string|null $description
  * @property list<AgentAliasRoutingConfigurationListItem>|null $routingConfiguration
+ * @property 'CREATING'|'PREPARED'|'FAILED'|'UPDATING'|'DELETING'|'DISSOCIATED' $agentAliasStatus
+ * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property 'ACCEPT_INVOCATIONS'|'REJECT_INVOCATIONS'|null $aliasInvocationState
  */
 class AgentAliasSummary extends Shape
 {
@@ -19,11 +20,12 @@ class AgentAliasSummary extends Shape
      * @param array{
      *     agentAliasId: string,
      *     agentAliasName: string,
-     *     agentAliasStatus: 'CREATING'|'PREPARED'|'FAILED'|'UPDATING'|'DELETING',
-     *     createdAt: \Aws\Api\DateTimeResult,
      *     description?: string|null,
      *     routingConfiguration?: list<AgentAliasRoutingConfigurationListItem>|null,
-     *     updatedAt: \Aws\Api\DateTimeResult
+     *     agentAliasStatus: 'CREATING'|'PREPARED'|'FAILED'|'UPDATING'|'DELETING'|'DISSOCIATED',
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     updatedAt: \Aws\Api\DateTimeResult,
+     *     aliasInvocationState?: 'ACCEPT_INVOCATIONS'|'REJECT_INVOCATIONS'|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,11 +8,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $adminPasswordSecretArn
  * @property string|null $adminPasswordSecretKmsKeyId
  * @property string|null $adminUsername
+ * @property string|null $catalogArn
  * @property \Aws\Api\DateTimeResult|null $creationDate
  * @property string|null $dbName
  * @property string|null $defaultIamRoleArn
  * @property list<string>|null $iamRoles
  * @property string|null $kmsKeyId
+ * @property string|null $lakehouseRegistrationStatus
  * @property list<'useractivitylog'|'userlog'|'connectionlog'>|null $logExports
  * @property string|null $namespaceArn
  * @property string|null $namespaceId
@@ -26,11 +28,13 @@ class NamespaceShape extends Shape
      *     adminPasswordSecretArn?: string|null,
      *     adminPasswordSecretKmsKeyId?: string|null,
      *     adminUsername?: string|null,
+     *     catalogArn?: string|null,
      *     creationDate?: \Aws\Api\DateTimeResult|null,
      *     dbName?: string|null,
      *     defaultIamRoleArn?: string|null,
      *     iamRoles?: list<string>|null,
      *     kmsKeyId?: string|null,
+     *     lakehouseRegistrationStatus?: string|null,
      *     logExports?: list<'useractivitylog'|'userlog'|'connectionlog'>|null,
      *     namespaceArn?: string|null,
      *     namespaceId?: string|null,

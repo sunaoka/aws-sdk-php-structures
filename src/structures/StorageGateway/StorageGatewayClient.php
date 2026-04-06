@@ -13,6 +13,7 @@ class StorageGatewayClient extends \Aws\StorageGateway\StorageGatewayClient
     use AssociateFileSystem\AssociateFileSystemTrait;
     use AttachVolume\AttachVolumeTrait;
     use CancelArchival\CancelArchivalTrait;
+    use CancelCacheReport\CancelCacheReportTrait;
     use CancelRetrieval\CancelRetrievalTrait;
     use CreateCachediSCSIVolume\CreateCachediSCSIVolumeTrait;
     use CreateNFSFileShare\CreateNFSFileShareTrait;
@@ -25,6 +26,7 @@ class StorageGatewayClient extends \Aws\StorageGateway\StorageGatewayClient
     use CreateTapes\CreateTapesTrait;
     use DeleteAutomaticTapeCreationPolicy\DeleteAutomaticTapeCreationPolicyTrait;
     use DeleteBandwidthRateLimit\DeleteBandwidthRateLimitTrait;
+    use DeleteCacheReport\DeleteCacheReportTrait;
     use DeleteChapCredentials\DeleteChapCredentialsTrait;
     use DeleteFileShare\DeleteFileShareTrait;
     use DeleteGateway\DeleteGatewayTrait;
@@ -37,6 +39,7 @@ class StorageGatewayClient extends \Aws\StorageGateway\StorageGatewayClient
     use DescribeBandwidthRateLimit\DescribeBandwidthRateLimitTrait;
     use DescribeBandwidthRateLimitSchedule\DescribeBandwidthRateLimitScheduleTrait;
     use DescribeCache\DescribeCacheTrait;
+    use DescribeCacheReport\DescribeCacheReportTrait;
     use DescribeCachediSCSIVolumes\DescribeCachediSCSIVolumesTrait;
     use DescribeChapCredentials\DescribeChapCredentialsTrait;
     use DescribeFileSystemAssociations\DescribeFileSystemAssociationsTrait;
@@ -56,8 +59,10 @@ class StorageGatewayClient extends \Aws\StorageGateway\StorageGatewayClient
     use DetachVolume\DetachVolumeTrait;
     use DisableGateway\DisableGatewayTrait;
     use DisassociateFileSystem\DisassociateFileSystemTrait;
+    use EvictFilesFailingUpload\EvictFilesFailingUploadTrait;
     use JoinDomain\JoinDomainTrait;
     use ListAutomaticTapeCreationPolicies\ListAutomaticTapeCreationPoliciesTrait;
+    use ListCacheReports\ListCacheReportsTrait;
     use ListFileShares\ListFileSharesTrait;
     use ListFileSystemAssociations\ListFileSystemAssociationsTrait;
     use ListGateways\ListGatewaysTrait;
@@ -78,6 +83,7 @@ class StorageGatewayClient extends \Aws\StorageGateway\StorageGatewayClient
     use SetSMBGuestPassword\SetSMBGuestPasswordTrait;
     use ShutdownGateway\ShutdownGatewayTrait;
     use StartAvailabilityMonitorTest\StartAvailabilityMonitorTestTrait;
+    use StartCacheReport\StartCacheReportTrait;
     use StartGateway\StartGatewayTrait;
     use UpdateAutomaticTapeCreationPolicy\UpdateAutomaticTapeCreationPolicyTrait;
     use UpdateBandwidthRateLimit\UpdateBandwidthRateLimitTrait;

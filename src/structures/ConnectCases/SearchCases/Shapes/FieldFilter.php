@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ConnectCases\SearchCases\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FieldValue|null $contains
  * @property FieldValue|null $equalTo
+ * @property FieldValue|null $contains
  * @property FieldValue|null $greaterThan
  * @property FieldValue|null $greaterThanOrEqualTo
  * @property FieldValue|null $lessThan
@@ -16,8 +16,8 @@ class FieldFilter extends Shape
 {
     /**
      * @param array{
-     *     contains?: FieldValue|null,
      *     equalTo?: FieldValue|null,
+     *     contains?: FieldValue|null,
      *     greaterThan?: FieldValue|null,
      *     greaterThanOrEqualTo?: FieldValue|null,
      *     lessThan?: FieldValue|null,

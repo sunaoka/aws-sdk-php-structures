@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $endOfStandardSupportDate
  * @property \Aws\Api\DateTimeResult|null $endOfExtendedSupportDate
  * @property 'unsupported'|'standard-support'|'extended-support'|null $status
+ * @property 'UNSUPPORTED'|'STANDARD_SUPPORT'|'EXTENDED_SUPPORT'|null $versionStatus
  * @property string|null $kubernetesPatchVersion
  */
 class ClusterVersionInformation extends Shape
@@ -27,6 +28,7 @@ class ClusterVersionInformation extends Shape
      *     endOfStandardSupportDate?: \Aws\Api\DateTimeResult|null,
      *     endOfExtendedSupportDate?: \Aws\Api\DateTimeResult|null,
      *     status?: 'unsupported'|'standard-support'|'extended-support'|null,
+     *     versionStatus?: 'UNSUPPORTED'|'STANDARD_SUPPORT'|'EXTENDED_SUPPORT'|null,
      *     kubernetesPatchVersion?: string|null
      * } $args
      */

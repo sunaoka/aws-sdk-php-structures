@@ -74,6 +74,7 @@ class RdsClient extends \Aws\Rds\RdsClient
     use DescribeDBInstanceAutomatedBackups\DescribeDBInstanceAutomatedBackupsTrait;
     use DescribeDBInstances\DescribeDBInstancesTrait;
     use DescribeDBLogFiles\DescribeDBLogFilesTrait;
+    use DescribeDBMajorEngineVersions\DescribeDBMajorEngineVersionsTrait;
     use DescribeDBParameterGroups\DescribeDBParameterGroupsTrait;
     use DescribeDBParameters\DescribeDBParametersTrait;
     use DescribeDBProxies\DescribeDBProxiesTrait;

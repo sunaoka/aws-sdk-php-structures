@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\VpcConfigInput|null $VpcConfig
  * @property list<'lambda-function'>|null $ResourcesToReplicateTags
  * @property 'AUTOMATIC'|'OFF'|null $ProvisionedResourceCleanup
+ * @property list<Shapes\BrowserConfig>|null $BrowserConfigs
  * @property array<string, string>|null $Tags
  * @property Shapes\ArtifactConfigInput|null $ArtifactConfig
  */
@@ -36,6 +37,7 @@ class CreateCanaryRequest extends Request
      *     VpcConfig?: Shapes\VpcConfigInput|null,
      *     ResourcesToReplicateTags?: list<'lambda-function'>|null,
      *     ProvisionedResourceCleanup?: 'AUTOMATIC'|'OFF'|null,
+     *     BrowserConfigs?: list<Shapes\BrowserConfig>|null,
      *     Tags?: array<string, string>|null,
      *     ArtifactConfig?: Shapes\ArtifactConfigInput|null
      * } $args

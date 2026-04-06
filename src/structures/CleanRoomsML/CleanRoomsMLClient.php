@@ -51,6 +51,7 @@ class CleanRoomsMLClient extends \Aws\CleanRoomsML\CleanRoomsMLClient
     use ListMLInputChannels\ListMLInputChannelsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTrainedModelInferenceJobs\ListTrainedModelInferenceJobsTrait;
+    use ListTrainedModelVersions\ListTrainedModelVersionsTrait;
     use ListTrainedModels\ListTrainedModelsTrait;
     use ListTrainingDatasets\ListTrainingDatasetsTrait;
     use PutConfiguredAudienceModelPolicy\PutConfiguredAudienceModelPolicyTrait;

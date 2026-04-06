@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'NONE'|'KMS' $EncryptionType
  * @property string $KeyId
  * @property string|null $StreamARN
+ * @property string|null $StreamId
  */
 class StopStreamEncryptionRequest extends Request
 {
@@ -17,7 +18,8 @@ class StopStreamEncryptionRequest extends Request
      *     StreamName?: string|null,
      *     EncryptionType: 'NONE'|'KMS',
      *     KeyId: string,
-     *     StreamARN?: string|null
+     *     StreamARN?: string|null,
+     *     StreamId?: string|null
      * } $args
      */
     public function __construct(array $args)

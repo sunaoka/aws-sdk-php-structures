@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\ListOpportunities;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string|null $NextToken
  * @property list<Shapes\OpportunitySummary> $OpportunitySummaries
+ * @property string|null $NextToken
  */
 class ListOpportunitiesResponse extends Response
 {

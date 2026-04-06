@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ATTENUATE_3_DB'|'NONE'|null $AttenuationControl
  * @property int<32000, 3024000>|null $Bitrate
  * @property 'COMPLETE_MAIN'|'COMMENTARY'|'EMERGENCY'|'HEARING_IMPAIRED'|'VISUALLY_IMPAIRED'|null $BitstreamMode
- * @property 'CODING_MODE_1_0'|'CODING_MODE_2_0'|'CODING_MODE_3_2'|null $CodingMode
+ * @property 'CODING_MODE_1_0'|'CODING_MODE_2_0'|'CODING_MODE_3_2'|'CODING_MODE_AUTO'|null $CodingMode
  * @property 'ENABLED'|'DISABLED'|null $DcFilter
  * @property int<1, 31>|null $Dialnorm
  * @property 'NONE'|'FILM_STANDARD'|'FILM_LIGHT'|'MUSIC_STANDARD'|'MUSIC_LIGHT'|'SPEECH'|null $DynamicRangeCompressionLine
@@ -34,7 +34,7 @@ class Eac3Settings extends Shape
      *     AttenuationControl?: 'ATTENUATE_3_DB'|'NONE'|null,
      *     Bitrate?: int<32000, 3024000>|null,
      *     BitstreamMode?: 'COMPLETE_MAIN'|'COMMENTARY'|'EMERGENCY'|'HEARING_IMPAIRED'|'VISUALLY_IMPAIRED'|null,
-     *     CodingMode?: 'CODING_MODE_1_0'|'CODING_MODE_2_0'|'CODING_MODE_3_2'|null,
+     *     CodingMode?: 'CODING_MODE_1_0'|'CODING_MODE_2_0'|'CODING_MODE_3_2'|'CODING_MODE_AUTO'|null,
      *     DcFilter?: 'ENABLED'|'DISABLED'|null,
      *     Dialnorm?: int<1, 31>|null,
      *     DynamicRangeCompressionLine?: 'NONE'|'FILM_STANDARD'|'FILM_LIGHT'|'MUSIC_STANDARD'|'MUSIC_LIGHT'|'SPEECH'|null,

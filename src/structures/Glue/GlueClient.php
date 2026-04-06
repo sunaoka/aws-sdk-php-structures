@@ -37,6 +37,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use CreateDataQualityRuleset\CreateDataQualityRulesetTrait;
     use CreateDatabase\CreateDatabaseTrait;
     use CreateDevEndpoint\CreateDevEndpointTrait;
+    use CreateGlueIdentityCenterConfiguration\CreateGlueIdentityCenterConfigurationTrait;
     use CreateIntegration\CreateIntegrationTrait;
     use CreateIntegrationResourceProperty\CreateIntegrationResourcePropertyTrait;
     use CreateIntegrationTableProperties\CreateIntegrationTablePropertiesTrait;
@@ -62,12 +63,15 @@ class GlueClient extends \Aws\Glue\GlueClient
     use DeleteColumnStatisticsForTable\DeleteColumnStatisticsForTableTrait;
     use DeleteColumnStatisticsTaskSettings\DeleteColumnStatisticsTaskSettingsTrait;
     use DeleteConnection\DeleteConnectionTrait;
+    use DeleteConnectionType\DeleteConnectionTypeTrait;
     use DeleteCrawler\DeleteCrawlerTrait;
     use DeleteCustomEntityType\DeleteCustomEntityTypeTrait;
     use DeleteDataQualityRuleset\DeleteDataQualityRulesetTrait;
     use DeleteDatabase\DeleteDatabaseTrait;
     use DeleteDevEndpoint\DeleteDevEndpointTrait;
+    use DeleteGlueIdentityCenterConfiguration\DeleteGlueIdentityCenterConfigurationTrait;
     use DeleteIntegration\DeleteIntegrationTrait;
+    use DeleteIntegrationResourceProperty\DeleteIntegrationResourcePropertyTrait;
     use DeleteIntegrationTableProperties\DeleteIntegrationTablePropertiesTrait;
     use DeleteJob\DeleteJobTrait;
     use DeleteMLTransform\DeleteMLTransformTrait;
@@ -122,6 +126,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetDevEndpoint\GetDevEndpointTrait;
     use GetDevEndpoints\GetDevEndpointsTrait;
     use GetEntityRecords\GetEntityRecordsTrait;
+    use GetGlueIdentityCenterConfiguration\GetGlueIdentityCenterConfigurationTrait;
     use GetIntegrationResourceProperty\GetIntegrationResourcePropertyTrait;
     use GetIntegrationTableProperties\GetIntegrationTablePropertiesTrait;
     use GetJob\GetJobTrait;
@@ -134,6 +139,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetMLTransform\GetMLTransformTrait;
     use GetMLTransforms\GetMLTransformsTrait;
     use GetMapping\GetMappingTrait;
+    use GetMaterializedViewRefreshTaskRun\GetMaterializedViewRefreshTaskRunTrait;
     use GetPartition\GetPartitionTrait;
     use GetPartitionIndexes\GetPartitionIndexesTrait;
     use GetPartitions\GetPartitionsTrait;
@@ -182,8 +188,10 @@ class GlueClient extends \Aws\Glue\GlueClient
     use ListDataQualityStatistics\ListDataQualityStatisticsTrait;
     use ListDevEndpoints\ListDevEndpointsTrait;
     use ListEntities\ListEntitiesTrait;
+    use ListIntegrationResourceProperties\ListIntegrationResourcePropertiesTrait;
     use ListJobs\ListJobsTrait;
     use ListMLTransforms\ListMLTransformsTrait;
+    use ListMaterializedViewRefreshTaskRuns\ListMaterializedViewRefreshTaskRunsTrait;
     use ListRegistries\ListRegistriesTrait;
     use ListSchemaVersions\ListSchemaVersionsTrait;
     use ListSchemas\ListSchemasTrait;
@@ -200,6 +208,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use PutSchemaVersionMetadata\PutSchemaVersionMetadataTrait;
     use PutWorkflowRunProperties\PutWorkflowRunPropertiesTrait;
     use QuerySchemaVersionMetadata\QuerySchemaVersionMetadataTrait;
+    use RegisterConnectionType\RegisterConnectionTypeTrait;
     use RegisterSchemaVersion\RegisterSchemaVersionTrait;
     use RemoveSchemaVersionMetadata\RemoveSchemaVersionMetadataTrait;
     use ResetJobBookmark\ResetJobBookmarkTrait;
@@ -218,12 +227,14 @@ class GlueClient extends \Aws\Glue\GlueClient
     use StartJobRun\StartJobRunTrait;
     use StartMLEvaluationTaskRun\StartMLEvaluationTaskRunTrait;
     use StartMLLabelingSetGenerationTaskRun\StartMLLabelingSetGenerationTaskRunTrait;
+    use StartMaterializedViewRefreshTaskRun\StartMaterializedViewRefreshTaskRunTrait;
     use StartTrigger\StartTriggerTrait;
     use StartWorkflowRun\StartWorkflowRunTrait;
     use StopColumnStatisticsTaskRun\StopColumnStatisticsTaskRunTrait;
     use StopColumnStatisticsTaskRunSchedule\StopColumnStatisticsTaskRunScheduleTrait;
     use StopCrawler\StopCrawlerTrait;
     use StopCrawlerSchedule\StopCrawlerScheduleTrait;
+    use StopMaterializedViewRefreshTaskRun\StopMaterializedViewRefreshTaskRunTrait;
     use StopSession\StopSessionTrait;
     use StopTrigger\StopTriggerTrait;
     use StopWorkflowRun\StopWorkflowRunTrait;
@@ -242,6 +253,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use UpdateDataQualityRuleset\UpdateDataQualityRulesetTrait;
     use UpdateDatabase\UpdateDatabaseTrait;
     use UpdateDevEndpoint\UpdateDevEndpointTrait;
+    use UpdateGlueIdentityCenterConfiguration\UpdateGlueIdentityCenterConfigurationTrait;
     use UpdateIntegrationResourceProperty\UpdateIntegrationResourcePropertyTrait;
     use UpdateIntegrationTableProperties\UpdateIntegrationTablePropertiesTrait;
     use UpdateJob\UpdateJobTrait;

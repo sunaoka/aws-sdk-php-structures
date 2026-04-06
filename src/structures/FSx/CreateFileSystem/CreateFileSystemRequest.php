@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\CreateFileSystemOntapConfiguration|null $OntapConfiguration
  * @property string|null $FileSystemTypeVersion
  * @property Shapes\CreateFileSystemOpenZFSConfiguration|null $OpenZFSConfiguration
+ * @property 'IPV4'|'DUAL'|null $NetworkType
  */
 class CreateFileSystemRequest extends Request
 {
@@ -35,7 +36,8 @@ class CreateFileSystemRequest extends Request
      *     LustreConfiguration?: Shapes\CreateFileSystemLustreConfiguration|null,
      *     OntapConfiguration?: Shapes\CreateFileSystemOntapConfiguration|null,
      *     FileSystemTypeVersion?: string|null,
-     *     OpenZFSConfiguration?: Shapes\CreateFileSystemOpenZFSConfiguration|null
+     *     OpenZFSConfiguration?: Shapes\CreateFileSystemOpenZFSConfiguration|null,
+     *     NetworkType?: 'IPV4'|'DUAL'|null
      * } $args
      */
     public function __construct(array $args)

@@ -34,6 +34,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<array<string, list<string>>>|null $TargetMaps
  * @property AlarmConfiguration|null $AlarmConfiguration
  * @property list<AlarmStateInformation>|null $TriggeredAlarms
+ * @property string|null $AssociationDispatchAssumeRole
  */
 class AssociationDescription extends Shape
 {
@@ -67,7 +68,8 @@ class AssociationDescription extends Shape
      *     Duration?: int<1, 24>|null,
      *     TargetMaps?: list<array<string, list<string>>>|null,
      *     AlarmConfiguration?: AlarmConfiguration|null,
-     *     TriggeredAlarms?: list<AlarmStateInformation>|null
+     *     TriggeredAlarms?: list<AlarmStateInformation>|null,
+     *     AssociationDispatchAssumeRole?: string|null
      * } $args
      */
     public function __construct(array $args = [])

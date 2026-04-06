@@ -22,6 +22,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\DatasetParameter>|null $DatasetParameters
  * @property list<string>|null $FolderArns
  * @property Shapes\PerformanceConfiguration|null $PerformanceConfiguration
+ * @property 'RLS_RULES'|null $UseAs
+ * @property Shapes\DataPrepConfiguration|null $DataPrepConfiguration
+ * @property Shapes\SemanticModelConfiguration|null $SemanticModelConfiguration
  */
 class CreateDataSetRequest extends Request
 {
@@ -43,7 +46,10 @@ class CreateDataSetRequest extends Request
      *     DataSetUsageConfiguration?: Shapes\DataSetUsageConfiguration|null,
      *     DatasetParameters?: list<Shapes\DatasetParameter>|null,
      *     FolderArns?: list<string>|null,
-     *     PerformanceConfiguration?: Shapes\PerformanceConfiguration|null
+     *     PerformanceConfiguration?: Shapes\PerformanceConfiguration|null,
+     *     UseAs?: 'RLS_RULES'|null,
+     *     DataPrepConfiguration?: Shapes\DataPrepConfiguration|null,
+     *     SemanticModelConfiguration?: Shapes\SemanticModelConfiguration|null
      * } $args
      */
     public function __construct(array $args)

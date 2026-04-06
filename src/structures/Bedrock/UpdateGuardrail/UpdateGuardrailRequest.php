@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\GuardrailWordPolicyConfig|null $wordPolicyConfig
  * @property Shapes\GuardrailSensitiveInformationPolicyConfig|null $sensitiveInformationPolicyConfig
  * @property Shapes\GuardrailContextualGroundingPolicyConfig|null $contextualGroundingPolicyConfig
+ * @property Shapes\GuardrailAutomatedReasoningPolicyConfig|null $automatedReasoningPolicyConfig
+ * @property Shapes\GuardrailCrossRegionConfig|null $crossRegionConfig
  * @property string $blockedInputMessaging
  * @property string $blockedOutputsMessaging
  * @property string|null $kmsKeyId
@@ -29,6 +31,8 @@ class UpdateGuardrailRequest extends Request
      *     wordPolicyConfig?: Shapes\GuardrailWordPolicyConfig|null,
      *     sensitiveInformationPolicyConfig?: Shapes\GuardrailSensitiveInformationPolicyConfig|null,
      *     contextualGroundingPolicyConfig?: Shapes\GuardrailContextualGroundingPolicyConfig|null,
+     *     automatedReasoningPolicyConfig?: Shapes\GuardrailAutomatedReasoningPolicyConfig|null,
+     *     crossRegionConfig?: Shapes\GuardrailCrossRegionConfig|null,
      *     blockedInputMessaging: string,
      *     blockedOutputsMessaging: string,
      *     kmsKeyId?: string|null

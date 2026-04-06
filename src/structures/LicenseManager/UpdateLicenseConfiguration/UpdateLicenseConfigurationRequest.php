@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property list<Shapes\ProductInformation>|null $ProductInformationList
  * @property bool|null $DisassociateWhenNotFound
+ * @property int|null $LicenseExpiry
  */
 class UpdateLicenseConfigurationRequest extends Request
 {
@@ -27,7 +28,8 @@ class UpdateLicenseConfigurationRequest extends Request
      *     Name?: string|null,
      *     Description?: string|null,
      *     ProductInformationList?: list<Shapes\ProductInformation>|null,
-     *     DisassociateWhenNotFound?: bool|null
+     *     DisassociateWhenNotFound?: bool|null,
+     *     LicenseExpiry?: int|null
      * } $args
      */
     public function __construct(array $args)

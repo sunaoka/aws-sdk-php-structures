@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\QuickSight\DescribeDataSet\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $TransformOperationId
+ */
+class DestinationTableSource extends Shape
+{
+    /**
+     * @param array{TransformOperationId: string} $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

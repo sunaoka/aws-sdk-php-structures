@@ -5,34 +5,34 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateQuickResponse;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string>|null $channels
- * @property string|null $clientToken
+ * @property string $knowledgeBaseId
+ * @property string $name
  * @property Shapes\QuickResponseDataProvider $content
  * @property string|null $contentType
- * @property string|null $description
  * @property Shapes\GroupingConfiguration|null $groupingConfiguration
- * @property bool|null $isActive
- * @property string $knowledgeBaseId
- * @property string|null $language
- * @property string $name
+ * @property string|null $description
  * @property string|null $shortcutKey
+ * @property bool|null $isActive
+ * @property list<string>|null $channels
+ * @property string|null $language
+ * @property string|null $clientToken
  * @property array<string, string>|null $tags
  */
 class CreateQuickResponseRequest extends Request
 {
     /**
      * @param array{
-     *     channels?: list<string>|null,
-     *     clientToken?: string|null,
+     *     knowledgeBaseId: string,
+     *     name: string,
      *     content: Shapes\QuickResponseDataProvider,
      *     contentType?: string|null,
-     *     description?: string|null,
      *     groupingConfiguration?: Shapes\GroupingConfiguration|null,
-     *     isActive?: bool|null,
-     *     knowledgeBaseId: string,
-     *     language?: string|null,
-     *     name: string,
+     *     description?: string|null,
      *     shortcutKey?: string|null,
+     *     isActive?: bool|null,
+     *     channels?: list<string>|null,
+     *     language?: string|null,
+     *     clientToken?: string|null,
      *     tags?: array<string, string>|null
      * } $args
      */

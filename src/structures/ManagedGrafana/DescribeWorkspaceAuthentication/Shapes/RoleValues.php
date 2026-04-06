@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\DescribeWorkspaceAuthentication\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string>|null $admin
  * @property list<string>|null $editor
+ * @property list<string>|null $admin
  */
 class RoleValues extends Shape
 {
     /**
      * @param array{
-     *     admin?: list<string>|null,
-     *     editor?: list<string>|null
+     *     editor?: list<string>|null,
+     *     admin?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

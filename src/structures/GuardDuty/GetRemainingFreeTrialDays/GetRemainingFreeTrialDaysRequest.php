@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DetectorId
- * @property list<string>|null $AccountIds
+ * @property list<string> $AccountIds
  */
 class GetRemainingFreeTrialDaysRequest extends Request
 {
     /**
      * @param array{
      *     DetectorId: string,
-     *     AccountIds?: list<string>|null
+     *     AccountIds: list<string>
      * } $args
      */
     public function __construct(array $args)

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'ACTIVE'|'PARTIALLY_ACTIVE'|'INACTIVE'|'DELETING' $status
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property 'LONG'|'SHORT'|'NONE'|null $aggregationDuration
+ * @property 'ACCOUNT'|'ADMIN_MANAGED'|null $subtype
  */
 class GetNotificationConfigurationResponse extends Response
 {

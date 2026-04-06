@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\GetMessageTemplate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $knowledgeBaseId
  * @property string $messageTemplateId
+ * @property string $knowledgeBaseId
  */
 class GetMessageTemplateRequest extends Request
 {
     /**
      * @param array{
-     *     knowledgeBaseId: string,
-     *     messageTemplateId: string
+     *     messageTemplateId: string,
+     *     knowledgeBaseId: string
      * } $args
      */
     public function __construct(array $args)

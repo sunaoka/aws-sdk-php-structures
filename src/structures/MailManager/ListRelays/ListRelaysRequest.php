@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MailManager\ListRelays;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $NextToken
  * @property int|null $PageSize
+ * @property string|null $NextToken
  */
 class ListRelaysRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string|null,
-     *     PageSize?: int|null
+     *     PageSize?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

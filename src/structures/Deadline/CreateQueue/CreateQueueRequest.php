@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Deadline\CreateQueue;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
  * @property string $farmId
+ * @property string|null $clientToken
  * @property string $displayName
  * @property string|null $description
  * @property 'NONE'|'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS'|null $defaultBudgetAction
@@ -16,13 +16,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $requiredFileSystemLocationNames
  * @property list<string>|null $allowedStorageProfileIds
  * @property array<string, string>|null $tags
+ * @property Shapes\SchedulingConfiguration|null $schedulingConfiguration
  */
 class CreateQueueRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
      *     farmId: string,
+     *     clientToken?: string|null,
      *     displayName: string,
      *     description?: string|null,
      *     defaultBudgetAction?: 'NONE'|'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS'|null,
@@ -31,7 +32,8 @@ class CreateQueueRequest extends Request
      *     jobRunAsUser?: Shapes\JobRunAsUser|null,
      *     requiredFileSystemLocationNames?: list<string>|null,
      *     allowedStorageProfileIds?: list<string>|null,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     schedulingConfiguration?: Shapes\SchedulingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $assetModelExternalId
  * @property string $assetModelArn
  * @property string $assetModelName
- * @property 'ASSET_MODEL'|'COMPONENT_MODEL'|null $assetModelType
+ * @property 'ASSET_MODEL'|'COMPONENT_MODEL'|'INTERFACE'|null $assetModelType
  * @property string $assetModelDescription
  * @property list<Shapes\AssetModelProperty> $assetModelProperties
  * @property list<Shapes\AssetModelHierarchy> $assetModelHierarchies
@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $assetModelLastUpdateDate
  * @property Shapes\AssetModelStatus $assetModelStatus
  * @property string|null $assetModelVersion
+ * @property list<Shapes\InterfaceRelationship>|null $interfaceDetails
  * @property string|null $eTag
  */
 class DescribeAssetModelResponse extends Response

@@ -5,7 +5,8 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateVolume;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AvailabilityZone
+ * @property string|null $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
  * @property bool|null $Encrypted
  * @property int|null $Iops
  * @property string|null $KmsKeyId
@@ -17,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $MultiAttachEnabled
  * @property int|null $Throughput
  * @property string|null $ClientToken
+ * @property int|null $VolumeInitializationRate
  * @property Shapes\OperatorRequest|null $Operator
  * @property bool|null $DryRun
  */
@@ -24,7 +26,8 @@ class CreateVolumeRequest extends Request
 {
     /**
      * @param array{
-     *     AvailabilityZone: string,
+     *     AvailabilityZone?: string|null,
+     *     AvailabilityZoneId?: string|null,
      *     Encrypted?: bool|null,
      *     Iops?: int|null,
      *     KmsKeyId?: string|null,
@@ -36,11 +39,12 @@ class CreateVolumeRequest extends Request
      *     MultiAttachEnabled?: bool|null,
      *     Throughput?: int|null,
      *     ClientToken?: string|null,
+     *     VolumeInitializationRate?: int|null,
      *     Operator?: Shapes\OperatorRequest|null,
      *     DryRun?: bool|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

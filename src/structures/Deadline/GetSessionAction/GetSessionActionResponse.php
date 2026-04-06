@@ -11,9 +11,11 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $endedAt
  * @property \Aws\Api\DateTimeResult|null $workerUpdatedAt
  * @property float|null $progressPercent
+ * @property list<Shapes\TaskRunManifestPropertiesResponse>|null $manifests
  * @property string $sessionId
  * @property int<-2147483648, 2147483647>|null $processExitCode
  * @property string|null $progressMessage
+ * @property list<Shapes\AcquiredLimit>|null $acquiredLimits
  * @property Shapes\SessionActionDefinition $definition
  */
 class GetSessionActionResponse extends Response

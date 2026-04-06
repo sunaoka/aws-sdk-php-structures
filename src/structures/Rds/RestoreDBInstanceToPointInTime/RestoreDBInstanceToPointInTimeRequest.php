@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DBName
  * @property string|null $Engine
  * @property int|null $Iops
+ * @property int|null $StorageThroughput
  * @property string|null $OptionGroupName
  * @property bool|null $CopyTagsToSnapshot
  * @property list<Shapes\Tag>|null $Tags
@@ -41,16 +42,21 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DeletionProtection
  * @property string|null $SourceDbiResourceId
  * @property int|null $MaxAllocatedStorage
- * @property string|null $SourceDBInstanceAutomatedBackupsArn
  * @property bool|null $EnableCustomerOwnedIp
- * @property string|null $CustomIamInstanceProfile
- * @property string|null $BackupTarget
  * @property string|null $NetworkType
- * @property int|null $StorageThroughput
+ * @property string|null $SourceDBInstanceAutomatedBackupsArn
+ * @property string|null $BackupTarget
+ * @property string|null $CustomIamInstanceProfile
  * @property int|null $AllocatedStorage
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $PreferredBackupWindow
  * @property bool|null $DedicatedLogVolume
  * @property string|null $CACertificateIdentifier
  * @property string|null $EngineLifecycleSupport
+ * @property list<Shapes\AdditionalStorageVolume>|null $AdditionalStorageVolumes
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $ManageMasterUserPassword
+ * @property string|null $MasterUserSecretKmsKeyId
  */
 class RestoreDBInstanceToPointInTimeRequest extends Request
 {
@@ -71,6 +77,7 @@ class RestoreDBInstanceToPointInTimeRequest extends Request
      *     DBName?: string|null,
      *     Engine?: string|null,
      *     Iops?: int|null,
+     *     StorageThroughput?: int|null,
      *     OptionGroupName?: string|null,
      *     CopyTagsToSnapshot?: bool|null,
      *     Tags?: list<Shapes\Tag>|null,
@@ -92,16 +99,21 @@ class RestoreDBInstanceToPointInTimeRequest extends Request
      *     DeletionProtection?: bool|null,
      *     SourceDbiResourceId?: string|null,
      *     MaxAllocatedStorage?: int|null,
-     *     SourceDBInstanceAutomatedBackupsArn?: string|null,
      *     EnableCustomerOwnedIp?: bool|null,
-     *     CustomIamInstanceProfile?: string|null,
-     *     BackupTarget?: string|null,
      *     NetworkType?: string|null,
-     *     StorageThroughput?: int|null,
+     *     SourceDBInstanceAutomatedBackupsArn?: string|null,
+     *     BackupTarget?: string|null,
+     *     CustomIamInstanceProfile?: string|null,
      *     AllocatedStorage?: int|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     PreferredBackupWindow?: string|null,
      *     DedicatedLogVolume?: bool|null,
      *     CACertificateIdentifier?: string|null,
-     *     EngineLifecycleSupport?: string|null
+     *     EngineLifecycleSupport?: string|null,
+     *     AdditionalStorageVolumes?: list<Shapes\AdditionalStorageVolume>|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     ManageMasterUserPassword?: bool|null,
+     *     MasterUserSecretKmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

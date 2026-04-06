@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\UpdateFileSystemOntapConfiguration|null $OntapConfiguration
  * @property Shapes\UpdateFileSystemOpenZFSConfiguration|null $OpenZFSConfiguration
  * @property 'SSD'|'HDD'|'INTELLIGENT_TIERING'|null $StorageType
+ * @property string|null $FileSystemTypeVersion
+ * @property 'IPV4'|'DUAL'|null $NetworkType
  */
 class UpdateFileSystemRequest extends Request
 {
@@ -25,7 +27,9 @@ class UpdateFileSystemRequest extends Request
      *     LustreConfiguration?: Shapes\UpdateFileSystemLustreConfiguration|null,
      *     OntapConfiguration?: Shapes\UpdateFileSystemOntapConfiguration|null,
      *     OpenZFSConfiguration?: Shapes\UpdateFileSystemOpenZFSConfiguration|null,
-     *     StorageType?: 'SSD'|'HDD'|'INTELLIGENT_TIERING'|null
+     *     StorageType?: 'SSD'|'HDD'|'INTELLIGENT_TIERING'|null,
+     *     FileSystemTypeVersion?: string|null,
+     *     NetworkType?: 'IPV4'|'DUAL'|null
      * } $args
      */
     public function __construct(array $args)

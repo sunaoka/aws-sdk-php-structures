@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'EC2'|'FARGATE'>|null $platformCapabilities
  * @property Shapes\EksProperties|null $eksProperties
  * @property Shapes\EcsProperties|null $ecsProperties
+ * @property Shapes\ConsumableResourceProperties|null $consumableResourceProperties
  */
 class RegisterJobDefinitionRequest extends Request
 {
@@ -35,7 +36,8 @@ class RegisterJobDefinitionRequest extends Request
      *     tags?: array<string, string>|null,
      *     platformCapabilities?: list<'EC2'|'FARGATE'>|null,
      *     eksProperties?: Shapes\EksProperties|null,
-     *     ecsProperties?: Shapes\EcsProperties|null
+     *     ecsProperties?: Shapes\EcsProperties|null,
+     *     consumableResourceProperties?: Shapes\ConsumableResourceProperties|null
      * } $args
      */
     public function __construct(array $args)

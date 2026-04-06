@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $userArn
+ * @property string|null $customEntity
  */
 class UserUnion extends Shape
 {
     /**
-     * @param array{userArn?: string|null} $args
+     * @param array{
+     *     userArn?: string|null,
+     *     customEntity?: string|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

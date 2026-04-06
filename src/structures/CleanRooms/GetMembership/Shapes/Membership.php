@@ -15,11 +15,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property 'ACTIVE'|'REMOVED'|'COLLABORATION_DELETED' $status
- * @property list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'> $memberAbilities
+ * @property list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'|'CAN_RUN_JOB'> $memberAbilities
  * @property MLMemberAbilities|null $mlMemberAbilities
  * @property 'ENABLED'|'DISABLED' $queryLogStatus
+ * @property 'ENABLED'|'DISABLED'|null $jobLogStatus
  * @property MembershipProtectedQueryResultConfiguration|null $defaultResultConfiguration
+ * @property MembershipProtectedJobResultConfiguration|null $defaultJobResultConfiguration
  * @property MembershipPaymentConfiguration $paymentConfiguration
+ * @property bool|null $isMetricsEnabled
  */
 class Membership extends Shape
 {
@@ -35,11 +38,14 @@ class Membership extends Shape
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
      *     status: 'ACTIVE'|'REMOVED'|'COLLABORATION_DELETED',
-     *     memberAbilities: list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'>,
+     *     memberAbilities: list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'|'CAN_RUN_JOB'>,
      *     mlMemberAbilities?: MLMemberAbilities|null,
      *     queryLogStatus: 'ENABLED'|'DISABLED',
+     *     jobLogStatus?: 'ENABLED'|'DISABLED'|null,
      *     defaultResultConfiguration?: MembershipProtectedQueryResultConfiguration|null,
-     *     paymentConfiguration: MembershipPaymentConfiguration
+     *     defaultJobResultConfiguration?: MembershipProtectedJobResultConfiguration|null,
+     *     paymentConfiguration: MembershipPaymentConfiguration,
+     *     isMetricsEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

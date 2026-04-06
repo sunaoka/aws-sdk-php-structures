@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AuthenticationConfigurationPatch|null $authenticationConfiguration
- * @property array<string, string>|null $connectionProperties
  * @property string|null $description
+ * @property array<string, string>|null $connectionProperties
+ * @property AuthenticationConfigurationPatch|null $authenticationConfiguration
  */
 class GlueConnectionPatch extends Shape
 {
     /**
      * @param array{
-     *     authenticationConfiguration?: AuthenticationConfigurationPatch|null,
+     *     description?: string|null,
      *     connectionProperties?: array<string, string>|null,
-     *     description?: string|null
+     *     authenticationConfiguration?: AuthenticationConfigurationPatch|null
      * } $args
      */
     public function __construct(array $args = [])

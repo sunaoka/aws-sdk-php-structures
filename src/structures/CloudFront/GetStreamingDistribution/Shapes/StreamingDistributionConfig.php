@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Comment
  * @property StreamingLoggingConfig|null $Logging
  * @property TrustedSigners $TrustedSigners
- * @property 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|null $PriceClass
+ * @property 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|'None'|null $PriceClass
  * @property bool $Enabled
  */
 class StreamingDistributionConfig extends Shape
@@ -24,7 +24,7 @@ class StreamingDistributionConfig extends Shape
      *     Comment: string,
      *     Logging?: StreamingLoggingConfig|null,
      *     TrustedSigners: TrustedSigners,
-     *     PriceClass?: 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|null,
+     *     PriceClass?: 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|'None'|null,
      *     Enabled: bool
      * } $args
      */

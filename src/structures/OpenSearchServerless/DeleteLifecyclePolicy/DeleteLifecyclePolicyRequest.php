@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\DeleteLifecyclePolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string $name
  * @property 'retention' $type
+ * @property string $name
+ * @property string|null $clientToken
  */
 class DeleteLifecyclePolicyRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
+     *     type: 'retention',
      *     name: string,
-     *     type: 'retention'
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

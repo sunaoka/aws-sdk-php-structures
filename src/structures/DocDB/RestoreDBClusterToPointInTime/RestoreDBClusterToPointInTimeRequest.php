@@ -17,7 +17,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $KmsKeyId
  * @property list<string>|null $EnableCloudwatchLogsExports
  * @property bool|null $DeletionProtection
+ * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
  * @property string|null $StorageType
+ * @property string|null $NetworkType
  */
 class RestoreDBClusterToPointInTimeRequest extends Request
 {
@@ -35,7 +37,9 @@ class RestoreDBClusterToPointInTimeRequest extends Request
      *     KmsKeyId?: string|null,
      *     EnableCloudwatchLogsExports?: list<string>|null,
      *     DeletionProtection?: bool|null,
-     *     StorageType?: string|null
+     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
+     *     StorageType?: string|null,
+     *     NetworkType?: string|null
      * } $args
      */
     public function __construct(array $args)

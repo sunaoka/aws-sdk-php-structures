@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListApplicationAccessScopes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string>|null $AuthorizedTargets
  * @property string $Scope
+ * @property list<string>|null $AuthorizedTargets
  */
 class ScopeDetails extends Shape
 {
     /**
      * @param array{
-     *     AuthorizedTargets?: list<string>|null,
-     *     Scope: string
+     *     Scope: string,
+     *     AuthorizedTargets?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

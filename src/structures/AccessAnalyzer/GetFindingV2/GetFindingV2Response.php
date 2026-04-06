@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'ACTIVE'|'ARCHIVED'|'RESOLVED' $status
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property list<Shapes\FindingDetails> $findingDetails
- * @property 'ExternalAccess'|'UnusedIAMRole'|'UnusedIAMUserAccessKey'|'UnusedIAMUserPassword'|'UnusedPermission'|null $findingType
+ * @property 'ExternalAccess'|'UnusedIAMRole'|'UnusedIAMUserAccessKey'|'UnusedIAMUserPassword'|'UnusedPermission'|'InternalAccess'|null $findingType
  */
 class GetFindingV2Response extends Response
 {

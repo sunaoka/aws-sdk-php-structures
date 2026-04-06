@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $StreamCreationTimestamp
  * @property Shapes\ShardFilter|null $ShardFilter
  * @property string|null $StreamARN
+ * @property string|null $StreamId
  */
 class ListShardsRequest extends Request
 {
@@ -23,7 +24,8 @@ class ListShardsRequest extends Request
      *     MaxResults?: int<1, 10000>|null,
      *     StreamCreationTimestamp?: \Aws\Api\DateTimeResult|null,
      *     ShardFilter?: Shapes\ShardFilter|null,
-     *     StreamARN?: string|null
+     *     StreamARN?: string|null,
+     *     StreamId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

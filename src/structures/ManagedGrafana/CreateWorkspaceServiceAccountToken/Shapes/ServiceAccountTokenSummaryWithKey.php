@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $id
- * @property string $key
  * @property string $name
+ * @property string $key
  */
 class ServiceAccountTokenSummaryWithKey extends Shape
 {
     /**
      * @param array{
      *     id: string,
-     *     key: string,
-     *     name: string
+     *     name: string,
+     *     key: string
      * } $args
      */
     public function __construct(array $args)

@@ -14,10 +14,12 @@ class DirectoryServiceClient extends \Aws\DirectoryService\DirectoryServiceClien
     use CreateComputer\CreateComputerTrait;
     use CreateConditionalForwarder\CreateConditionalForwarderTrait;
     use CreateDirectory\CreateDirectoryTrait;
+    use CreateHybridAD\CreateHybridADTrait;
     use CreateLogSubscription\CreateLogSubscriptionTrait;
     use CreateMicrosoftAD\CreateMicrosoftADTrait;
     use CreateSnapshot\CreateSnapshotTrait;
     use CreateTrust\CreateTrustTrait;
+    use DeleteADAssessment\DeleteADAssessmentTrait;
     use DeleteConditionalForwarder\DeleteConditionalForwarderTrait;
     use DeleteDirectory\DeleteDirectoryTrait;
     use DeleteLogSubscription\DeleteLogSubscriptionTrait;
@@ -25,6 +27,8 @@ class DirectoryServiceClient extends \Aws\DirectoryService\DirectoryServiceClien
     use DeleteTrust\DeleteTrustTrait;
     use DeregisterCertificate\DeregisterCertificateTrait;
     use DeregisterEventTopic\DeregisterEventTopicTrait;
+    use DescribeADAssessment\DescribeADAssessmentTrait;
+    use DescribeCAEnrollmentPolicy\DescribeCAEnrollmentPolicyTrait;
     use DescribeCertificate\DescribeCertificateTrait;
     use DescribeClientAuthenticationSettings\DescribeClientAuthenticationSettingsTrait;
     use DescribeConditionalForwarders\DescribeConditionalForwardersTrait;
@@ -32,6 +36,7 @@ class DirectoryServiceClient extends \Aws\DirectoryService\DirectoryServiceClien
     use DescribeDirectoryDataAccess\DescribeDirectoryDataAccessTrait;
     use DescribeDomainControllers\DescribeDomainControllersTrait;
     use DescribeEventTopics\DescribeEventTopicsTrait;
+    use DescribeHybridADUpdate\DescribeHybridADUpdateTrait;
     use DescribeLDAPSSettings\DescribeLDAPSSettingsTrait;
     use DescribeRegions\DescribeRegionsTrait;
     use DescribeSettings\DescribeSettingsTrait;
@@ -39,11 +44,13 @@ class DirectoryServiceClient extends \Aws\DirectoryService\DirectoryServiceClien
     use DescribeSnapshots\DescribeSnapshotsTrait;
     use DescribeTrusts\DescribeTrustsTrait;
     use DescribeUpdateDirectory\DescribeUpdateDirectoryTrait;
+    use DisableCAEnrollmentPolicy\DisableCAEnrollmentPolicyTrait;
     use DisableClientAuthentication\DisableClientAuthenticationTrait;
     use DisableDirectoryDataAccess\DisableDirectoryDataAccessTrait;
     use DisableLDAPS\DisableLDAPSTrait;
     use DisableRadius\DisableRadiusTrait;
     use DisableSso\DisableSsoTrait;
+    use EnableCAEnrollmentPolicy\EnableCAEnrollmentPolicyTrait;
     use EnableClientAuthentication\EnableClientAuthenticationTrait;
     use EnableDirectoryDataAccess\EnableDirectoryDataAccessTrait;
     use EnableLDAPS\EnableLDAPSTrait;
@@ -51,6 +58,7 @@ class DirectoryServiceClient extends \Aws\DirectoryService\DirectoryServiceClien
     use EnableSso\EnableSsoTrait;
     use GetDirectoryLimits\GetDirectoryLimitsTrait;
     use GetSnapshotLimits\GetSnapshotLimitsTrait;
+    use ListADAssessments\ListADAssessmentsTrait;
     use ListCertificates\ListCertificatesTrait;
     use ListIpRoutes\ListIpRoutesTrait;
     use ListLogSubscriptions\ListLogSubscriptionsTrait;
@@ -65,10 +73,12 @@ class DirectoryServiceClient extends \Aws\DirectoryService\DirectoryServiceClien
     use ResetUserPassword\ResetUserPasswordTrait;
     use RestoreFromSnapshot\RestoreFromSnapshotTrait;
     use ShareDirectory\ShareDirectoryTrait;
+    use StartADAssessment\StartADAssessmentTrait;
     use StartSchemaExtension\StartSchemaExtensionTrait;
     use UnshareDirectory\UnshareDirectoryTrait;
     use UpdateConditionalForwarder\UpdateConditionalForwarderTrait;
     use UpdateDirectorySetup\UpdateDirectorySetupTrait;
+    use UpdateHybridAD\UpdateHybridADTrait;
     use UpdateNumberOfDomainControllers\UpdateNumberOfDomainControllersTrait;
     use UpdateRadius\UpdateRadiusTrait;
     use UpdateSettings\UpdateSettingsTrait;

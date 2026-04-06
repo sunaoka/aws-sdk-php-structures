@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $CreationDate
  * @property string|null $VersionId
  * @property list<Shapes\AdvancedBackupSetting>|null $AdvancedBackupSettings
+ * @property list<Shapes\ScanSetting>|null $ScanSettings
  */
 class UpdateBackupPlanResponse extends Response
 {

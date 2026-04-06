@@ -15,6 +15,7 @@ class EntityResolutionClient extends \Aws\EntityResolution\EntityResolutionClien
     use DeleteMatchingWorkflow\DeleteMatchingWorkflowTrait;
     use DeletePolicyStatement\DeletePolicyStatementTrait;
     use DeleteSchemaMapping\DeleteSchemaMappingTrait;
+    use GenerateMatchId\GenerateMatchIdTrait;
     use GetIdMappingJob\GetIdMappingJobTrait;
     use GetIdMappingWorkflow\GetIdMappingWorkflowTrait;
     use GetIdNamespace\GetIdNamespaceTrait;

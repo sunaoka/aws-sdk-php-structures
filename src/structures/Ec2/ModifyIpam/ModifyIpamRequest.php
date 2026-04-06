@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\RemoveIpamOperatingRegion>|null $RemoveOperatingRegions
  * @property 'free'|'advanced'|null $Tier
  * @property bool|null $EnablePrivateGua
+ * @property 'ipam-owner'|'resource-owner'|null $MeteredAccount
  */
 class ModifyIpamRequest extends Request
 {
@@ -23,7 +24,8 @@ class ModifyIpamRequest extends Request
      *     AddOperatingRegions?: list<Shapes\AddIpamOperatingRegion>|null,
      *     RemoveOperatingRegions?: list<Shapes\RemoveIpamOperatingRegion>|null,
      *     Tier?: 'free'|'advanced'|null,
-     *     EnablePrivateGua?: bool|null
+     *     EnablePrivateGua?: bool|null,
+     *     MeteredAccount?: 'ipam-owner'|'resource-owner'|null
      * } $args
      */
     public function __construct(array $args)

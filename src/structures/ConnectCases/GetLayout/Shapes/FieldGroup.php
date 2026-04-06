@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectCases\GetLayout\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<FieldItem> $fields
  * @property string|null $name
+ * @property list<FieldItem> $fields
  */
 class FieldGroup extends Shape
 {
     /**
      * @param array{
-     *     fields: list<FieldItem>,
-     *     name?: string|null
+     *     name?: string|null,
+     *     fields: list<FieldItem>
      * } $args
      */
     public function __construct(array $args)

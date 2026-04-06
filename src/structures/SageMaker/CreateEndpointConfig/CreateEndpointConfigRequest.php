@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ExecutionRoleArn
  * @property Shapes\VpcConfig|null $VpcConfig
  * @property bool|null $EnableNetworkIsolation
+ * @property Shapes\MetricsConfig|null $MetricsConfig
  */
 class CreateEndpointConfigRequest extends Request
 {
@@ -31,7 +32,8 @@ class CreateEndpointConfigRequest extends Request
      *     ShadowProductionVariants?: list<Shapes\ProductionVariant>|null,
      *     ExecutionRoleArn?: string|null,
      *     VpcConfig?: Shapes\VpcConfig|null,
-     *     EnableNetworkIsolation?: bool|null
+     *     EnableNetworkIsolation?: bool|null,
+     *     MetricsConfig?: Shapes\MetricsConfig|null
      * } $args
      */
     public function __construct(array $args)

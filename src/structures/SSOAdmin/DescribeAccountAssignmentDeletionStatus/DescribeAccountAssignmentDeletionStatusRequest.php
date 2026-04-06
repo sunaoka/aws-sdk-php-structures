@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\DescribeAccountAssignmentDeletionStatu
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AccountAssignmentDeletionRequestId
  * @property string $InstanceArn
+ * @property string $AccountAssignmentDeletionRequestId
  */
 class DescribeAccountAssignmentDeletionStatusRequest extends Request
 {
     /**
      * @param array{
-     *     AccountAssignmentDeletionRequestId: string,
-     *     InstanceArn: string
+     *     InstanceArn: string,
+     *     AccountAssignmentDeletionRequestId: string
      * } $args
      */
     public function __construct(array $args)

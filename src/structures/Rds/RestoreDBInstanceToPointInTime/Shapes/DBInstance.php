@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DBInstanceClass
  * @property string|null $Engine
  * @property string|null $DBInstanceStatus
- * @property \Aws\Api\DateTimeResult|null $AutomaticRestartTime
  * @property string|null $MasterUsername
  * @property string|null $DBName
  * @property Endpoint|null $Endpoint
@@ -23,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AvailabilityZone
  * @property DBSubnetGroup|null $DBSubnetGroup
  * @property string|null $PreferredMaintenanceWindow
+ * @property 'first'|'second'|'last'|null $UpgradeRolloutOrder
  * @property PendingModifiedValues|null $PendingModifiedValues
  * @property \Aws\Api\DateTimeResult|null $LatestRestorableTime
  * @property bool|null $MultiAZ
@@ -34,6 +34,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'open-read-only'|'mounted'|null $ReplicaMode
  * @property string|null $LicenseModel
  * @property int|null $Iops
+ * @property int|null $StorageThroughput
  * @property list<OptionGroupMembership>|null $OptionGroupMemberships
  * @property string|null $CharacterSetName
  * @property string|null $NcharCharacterSetName
@@ -41,6 +42,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $PubliclyAccessible
  * @property list<DBInstanceStatusInfo>|null $StatusInfos
  * @property string|null $StorageType
+ * @property 'none'|'sse-kms'|'sse-rds'|null $StorageEncryptionType
  * @property string|null $TdeCredentialArn
  * @property int|null $DbInstancePort
  * @property string|null $DBClusterIdentifier
@@ -68,30 +70,32 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Endpoint|null $ListenerEndpoint
  * @property int|null $MaxAllocatedStorage
  * @property list<Tag>|null $TagList
- * @property list<DBInstanceAutomatedBackupsReplication>|null $DBInstanceAutomatedBackupsReplications
+ * @property 'full'|'all-paused'|null $AutomationMode
+ * @property \Aws\Api\DateTimeResult|null $ResumeFullAutomationModeTime
  * @property bool|null $CustomerOwnedIpEnabled
- * @property string|null $AwsBackupRecoveryPointArn
+ * @property string|null $NetworkType
  * @property 'stopped'|'starting'|'started'|'stopping'|null $ActivityStreamStatus
  * @property string|null $ActivityStreamKmsKeyId
  * @property string|null $ActivityStreamKinesisStreamName
  * @property 'sync'|'async'|null $ActivityStreamMode
  * @property bool|null $ActivityStreamEngineNativeAuditFieldsIncluded
- * @property 'full'|'all-paused'|null $AutomationMode
- * @property \Aws\Api\DateTimeResult|null $ResumeFullAutomationModeTime
- * @property string|null $CustomIamInstanceProfile
+ * @property string|null $AwsBackupRecoveryPointArn
+ * @property list<DBInstanceAutomatedBackupsReplication>|null $DBInstanceAutomatedBackupsReplications
  * @property string|null $BackupTarget
- * @property string|null $NetworkType
+ * @property \Aws\Api\DateTimeResult|null $AutomaticRestartTime
+ * @property string|null $CustomIamInstanceProfile
  * @property 'locked'|'unlocked'|'locking-policy'|'unlocking-policy'|null $ActivityStreamPolicyStatus
- * @property int|null $StorageThroughput
+ * @property CertificateDetails|null $CertificateDetails
  * @property string|null $DBSystemId
  * @property MasterUserSecret|null $MasterUserSecret
- * @property CertificateDetails|null $CertificateDetails
  * @property string|null $ReadReplicaSourceDBClusterIdentifier
  * @property string|null $PercentProgress
+ * @property bool|null $MultiTenant
  * @property bool|null $DedicatedLogVolume
  * @property bool|null $IsStorageConfigUpgradeAvailable
- * @property bool|null $MultiTenant
  * @property string|null $EngineLifecycleSupport
+ * @property list<AdditionalStorageVolumeOutput>|null $AdditionalStorageVolumes
+ * @property string|null $StorageVolumeStatus
  */
 class DBInstance extends Shape
 {
@@ -101,7 +105,6 @@ class DBInstance extends Shape
      *     DBInstanceClass?: string|null,
      *     Engine?: string|null,
      *     DBInstanceStatus?: string|null,
-     *     AutomaticRestartTime?: \Aws\Api\DateTimeResult|null,
      *     MasterUsername?: string|null,
      *     DBName?: string|null,
      *     Endpoint?: Endpoint|null,
@@ -115,6 +118,7 @@ class DBInstance extends Shape
      *     AvailabilityZone?: string|null,
      *     DBSubnetGroup?: DBSubnetGroup|null,
      *     PreferredMaintenanceWindow?: string|null,
+     *     UpgradeRolloutOrder?: 'first'|'second'|'last'|null,
      *     PendingModifiedValues?: PendingModifiedValues|null,
      *     LatestRestorableTime?: \Aws\Api\DateTimeResult|null,
      *     MultiAZ?: bool|null,
@@ -126,6 +130,7 @@ class DBInstance extends Shape
      *     ReplicaMode?: 'open-read-only'|'mounted'|null,
      *     LicenseModel?: string|null,
      *     Iops?: int|null,
+     *     StorageThroughput?: int|null,
      *     OptionGroupMemberships?: list<OptionGroupMembership>|null,
      *     CharacterSetName?: string|null,
      *     NcharCharacterSetName?: string|null,
@@ -133,6 +138,7 @@ class DBInstance extends Shape
      *     PubliclyAccessible?: bool|null,
      *     StatusInfos?: list<DBInstanceStatusInfo>|null,
      *     StorageType?: string|null,
+     *     StorageEncryptionType?: 'none'|'sse-kms'|'sse-rds'|null,
      *     TdeCredentialArn?: string|null,
      *     DbInstancePort?: int|null,
      *     DBClusterIdentifier?: string|null,
@@ -160,30 +166,32 @@ class DBInstance extends Shape
      *     ListenerEndpoint?: Endpoint|null,
      *     MaxAllocatedStorage?: int|null,
      *     TagList?: list<Tag>|null,
-     *     DBInstanceAutomatedBackupsReplications?: list<DBInstanceAutomatedBackupsReplication>|null,
+     *     AutomationMode?: 'full'|'all-paused'|null,
+     *     ResumeFullAutomationModeTime?: \Aws\Api\DateTimeResult|null,
      *     CustomerOwnedIpEnabled?: bool|null,
-     *     AwsBackupRecoveryPointArn?: string|null,
+     *     NetworkType?: string|null,
      *     ActivityStreamStatus?: 'stopped'|'starting'|'started'|'stopping'|null,
      *     ActivityStreamKmsKeyId?: string|null,
      *     ActivityStreamKinesisStreamName?: string|null,
      *     ActivityStreamMode?: 'sync'|'async'|null,
      *     ActivityStreamEngineNativeAuditFieldsIncluded?: bool|null,
-     *     AutomationMode?: 'full'|'all-paused'|null,
-     *     ResumeFullAutomationModeTime?: \Aws\Api\DateTimeResult|null,
-     *     CustomIamInstanceProfile?: string|null,
+     *     AwsBackupRecoveryPointArn?: string|null,
+     *     DBInstanceAutomatedBackupsReplications?: list<DBInstanceAutomatedBackupsReplication>|null,
      *     BackupTarget?: string|null,
-     *     NetworkType?: string|null,
+     *     AutomaticRestartTime?: \Aws\Api\DateTimeResult|null,
+     *     CustomIamInstanceProfile?: string|null,
      *     ActivityStreamPolicyStatus?: 'locked'|'unlocked'|'locking-policy'|'unlocking-policy'|null,
-     *     StorageThroughput?: int|null,
+     *     CertificateDetails?: CertificateDetails|null,
      *     DBSystemId?: string|null,
      *     MasterUserSecret?: MasterUserSecret|null,
-     *     CertificateDetails?: CertificateDetails|null,
      *     ReadReplicaSourceDBClusterIdentifier?: string|null,
      *     PercentProgress?: string|null,
+     *     MultiTenant?: bool|null,
      *     DedicatedLogVolume?: bool|null,
      *     IsStorageConfigUpgradeAvailable?: bool|null,
-     *     MultiTenant?: bool|null,
-     *     EngineLifecycleSupport?: string|null
+     *     EngineLifecycleSupport?: string|null,
+     *     AdditionalStorageVolumes?: list<AdditionalStorageVolumeOutput>|null,
+     *     StorageVolumeStatus?: string|null
      * } $args
      */
     public function __construct(array $args = [])

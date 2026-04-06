@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property Scope|null $scope
- * @property 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'Idle'|null $resourceType
+ * @property 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'AuroraDBClusterStorage'|'Idle'|null $resourceType
  * @property 'Active'|'Inactive'|null $enhancedInfrastructureMetrics
  * @property 'Active'|'Inactive'|null $inferredWorkloadTypes
  * @property ExternalMetricsPreference|null $externalMetricsPreference
@@ -20,7 +20,7 @@ class RecommendationPreferencesDetail extends Shape
     /**
      * @param array{
      *     scope?: Scope|null,
-     *     resourceType?: 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'Idle'|null,
+     *     resourceType?: 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'AuroraDBClusterStorage'|'Idle'|null,
      *     enhancedInfrastructureMetrics?: 'Active'|'Inactive'|null,
      *     inferredWorkloadTypes?: 'Active'|'Inactive'|null,
      *     externalMetricsPreference?: ExternalMetricsPreference|null,

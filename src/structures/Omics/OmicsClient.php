@@ -9,10 +9,12 @@ class OmicsClient extends \Aws\Omics\OmicsClient
     use BatchDeleteReadSet\BatchDeleteReadSetTrait;
     use CancelAnnotationImportJob\CancelAnnotationImportJobTrait;
     use CancelRun\CancelRunTrait;
+    use CancelRunBatch\CancelRunBatchTrait;
     use CancelVariantImportJob\CancelVariantImportJobTrait;
     use CompleteMultipartReadSetUpload\CompleteMultipartReadSetUploadTrait;
     use CreateAnnotationStore\CreateAnnotationStoreTrait;
     use CreateAnnotationStoreVersion\CreateAnnotationStoreVersionTrait;
+    use CreateConfiguration\CreateConfigurationTrait;
     use CreateMultipartReadSetUpload\CreateMultipartReadSetUploadTrait;
     use CreateReferenceStore\CreateReferenceStoreTrait;
     use CreateRunCache\CreateRunCacheTrait;
@@ -21,11 +23,15 @@ class OmicsClient extends \Aws\Omics\OmicsClient
     use CreateShare\CreateShareTrait;
     use CreateVariantStore\CreateVariantStoreTrait;
     use CreateWorkflow\CreateWorkflowTrait;
+    use CreateWorkflowVersion\CreateWorkflowVersionTrait;
     use DeleteAnnotationStore\DeleteAnnotationStoreTrait;
     use DeleteAnnotationStoreVersions\DeleteAnnotationStoreVersionsTrait;
+    use DeleteBatch\DeleteBatchTrait;
+    use DeleteConfiguration\DeleteConfigurationTrait;
     use DeleteReference\DeleteReferenceTrait;
     use DeleteReferenceStore\DeleteReferenceStoreTrait;
     use DeleteRun\DeleteRunTrait;
+    use DeleteRunBatch\DeleteRunBatchTrait;
     use DeleteRunCache\DeleteRunCacheTrait;
     use DeleteRunGroup\DeleteRunGroupTrait;
     use DeleteS3AccessPolicy\DeleteS3AccessPolicyTrait;
@@ -33,9 +39,12 @@ class OmicsClient extends \Aws\Omics\OmicsClient
     use DeleteShare\DeleteShareTrait;
     use DeleteVariantStore\DeleteVariantStoreTrait;
     use DeleteWorkflow\DeleteWorkflowTrait;
+    use DeleteWorkflowVersion\DeleteWorkflowVersionTrait;
     use GetAnnotationImportJob\GetAnnotationImportJobTrait;
     use GetAnnotationStore\GetAnnotationStoreTrait;
     use GetAnnotationStoreVersion\GetAnnotationStoreVersionTrait;
+    use GetBatch\GetBatchTrait;
+    use GetConfiguration\GetConfigurationTrait;
     use GetReadSet\GetReadSetTrait;
     use GetReadSetActivationJob\GetReadSetActivationJobTrait;
     use GetReadSetExportJob\GetReadSetExportJobTrait;
@@ -55,9 +64,12 @@ class OmicsClient extends \Aws\Omics\OmicsClient
     use GetVariantImportJob\GetVariantImportJobTrait;
     use GetVariantStore\GetVariantStoreTrait;
     use GetWorkflow\GetWorkflowTrait;
+    use GetWorkflowVersion\GetWorkflowVersionTrait;
     use ListAnnotationImportJobs\ListAnnotationImportJobsTrait;
     use ListAnnotationStoreVersions\ListAnnotationStoreVersionsTrait;
     use ListAnnotationStores\ListAnnotationStoresTrait;
+    use ListBatch\ListBatchTrait;
+    use ListConfigurations\ListConfigurationsTrait;
     use ListMultipartReadSetUploads\ListMultipartReadSetUploadsTrait;
     use ListReadSetActivationJobs\ListReadSetActivationJobsTrait;
     use ListReadSetExportJobs\ListReadSetExportJobsTrait;
@@ -71,11 +83,13 @@ class OmicsClient extends \Aws\Omics\OmicsClient
     use ListRunGroups\ListRunGroupsTrait;
     use ListRunTasks\ListRunTasksTrait;
     use ListRuns\ListRunsTrait;
+    use ListRunsInBatch\ListRunsInBatchTrait;
     use ListSequenceStores\ListSequenceStoresTrait;
     use ListShares\ListSharesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListVariantImportJobs\ListVariantImportJobsTrait;
     use ListVariantStores\ListVariantStoresTrait;
+    use ListWorkflowVersions\ListWorkflowVersionsTrait;
     use ListWorkflows\ListWorkflowsTrait;
     use PutS3AccessPolicy\PutS3AccessPolicyTrait;
     use StartAnnotationImportJob\StartAnnotationImportJobTrait;
@@ -84,6 +98,7 @@ class OmicsClient extends \Aws\Omics\OmicsClient
     use StartReadSetImportJob\StartReadSetImportJobTrait;
     use StartReferenceImportJob\StartReferenceImportJobTrait;
     use StartRun\StartRunTrait;
+    use StartRunBatch\StartRunBatchTrait;
     use StartVariantImportJob\StartVariantImportJobTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
@@ -94,5 +109,6 @@ class OmicsClient extends \Aws\Omics\OmicsClient
     use UpdateSequenceStore\UpdateSequenceStoreTrait;
     use UpdateVariantStore\UpdateVariantStoreTrait;
     use UpdateWorkflow\UpdateWorkflowTrait;
+    use UpdateWorkflowVersion\UpdateWorkflowVersionTrait;
     use UploadReadSetPart\UploadReadSetPartTrait;
 }

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $ReservoirQuota
  * @property \Aws\Api\DateTimeResult|null $ReservoirQuotaTTL
  * @property int|null $Interval
+ * @property SamplingBoost|null $SamplingBoost
  */
 class SamplingTargetDocument extends Shape
 {
@@ -19,7 +20,8 @@ class SamplingTargetDocument extends Shape
      *     FixedRate?: double|null,
      *     ReservoirQuota?: int|null,
      *     ReservoirQuotaTTL?: \Aws\Api\DateTimeResult|null,
-     *     Interval?: int|null
+     *     Interval?: int|null,
+     *     SamplingBoost?: SamplingBoost|null
      * } $args
      */
     public function __construct(array $args = [])

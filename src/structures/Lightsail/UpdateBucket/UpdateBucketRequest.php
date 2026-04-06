@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $versioning
  * @property list<string>|null $readonlyAccessAccounts
  * @property Shapes\BucketAccessLogConfig|null $accessLogConfig
+ * @property Shapes\BucketCorsConfig|null $cors
  */
 class UpdateBucketRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateBucketRequest extends Request
      *     accessRules?: Shapes\AccessRules|null,
      *     versioning?: string|null,
      *     readonlyAccessAccounts?: list<string>|null,
-     *     accessLogConfig?: Shapes\BucketAccessLogConfig|null
+     *     accessLogConfig?: Shapes\BucketAccessLogConfig|null,
+     *     cors?: Shapes\BucketCorsConfig|null
      * } $args
      */
     public function __construct(array $args)

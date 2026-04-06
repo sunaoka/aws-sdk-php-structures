@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ServiceAccessRoleArn
  * @property bool|null $EnableCloudwatchLogs
  * @property list<Shapes\SourceDataSetting>|null $SourceDataSettings
+ * @property list<Shapes\TargetDataSetting>|null $TargetDataSettings
  * @property int|null $NumberOfJobs
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $SelectionRules
@@ -25,6 +26,7 @@ class CreateDataMigrationRequest extends Request
      *     ServiceAccessRoleArn: string,
      *     EnableCloudwatchLogs?: bool|null,
      *     SourceDataSettings?: list<Shapes\SourceDataSetting>|null,
+     *     TargetDataSettings?: list<Shapes\TargetDataSetting>|null,
      *     NumberOfJobs?: int|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     SelectionRules?: string|null

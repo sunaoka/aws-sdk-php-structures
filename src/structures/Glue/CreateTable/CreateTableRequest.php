@@ -7,7 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $CatalogId
  * @property string $DatabaseName
- * @property Shapes\TableInput $TableInput
+ * @property string|null $Name
+ * @property Shapes\TableInput|null $TableInput
  * @property list<Shapes\PartitionIndex>|null $PartitionIndexes
  * @property string|null $TransactionId
  * @property Shapes\OpenTableFormatInput|null $OpenTableFormatInput
@@ -18,7 +19,8 @@ class CreateTableRequest extends Request
      * @param array{
      *     CatalogId?: string|null,
      *     DatabaseName: string,
-     *     TableInput: Shapes\TableInput,
+     *     Name?: string|null,
+     *     TableInput?: Shapes\TableInput|null,
      *     PartitionIndexes?: list<Shapes\PartitionIndex>|null,
      *     TransactionId?: string|null,
      *     OpenTableFormatInput?: Shapes\OpenTableFormatInput|null

@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string|null $description
- * @property list<string>|null $failureReasons
- * @property string $knowledgeBaseArn
- * @property KnowledgeBaseConfiguration $knowledgeBaseConfiguration
  * @property string $knowledgeBaseId
  * @property string $name
+ * @property string $knowledgeBaseArn
+ * @property string|null $description
  * @property string $roleArn
- * @property 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL' $status
+ * @property KnowledgeBaseConfiguration $knowledgeBaseConfiguration
  * @property StorageConfiguration|null $storageConfiguration
+ * @property 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL' $status
+ * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property list<string>|null $failureReasons
  */
 class KnowledgeBase extends Shape
 {
     /**
      * @param array{
-     *     createdAt: \Aws\Api\DateTimeResult,
-     *     description?: string|null,
-     *     failureReasons?: list<string>|null,
-     *     knowledgeBaseArn: string,
-     *     knowledgeBaseConfiguration: KnowledgeBaseConfiguration,
      *     knowledgeBaseId: string,
      *     name: string,
+     *     knowledgeBaseArn: string,
+     *     description?: string|null,
      *     roleArn: string,
-     *     status: 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL',
+     *     knowledgeBaseConfiguration: KnowledgeBaseConfiguration,
      *     storageConfiguration?: StorageConfiguration|null,
-     *     updatedAt: \Aws\Api\DateTimeResult
+     *     status: 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL',
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     updatedAt: \Aws\Api\DateTimeResult,
+     *     failureReasons?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

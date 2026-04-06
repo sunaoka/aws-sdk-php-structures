@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $EmailAddress
  * @property string|null $Description
  * @property string|null $DisplayName
+ * @property list<AliasConfiguration>|null $AliasConfigurations
  */
 class EmailAddressMetadata extends Shape
 {
@@ -19,7 +20,8 @@ class EmailAddressMetadata extends Shape
      *     EmailAddressArn?: string|null,
      *     EmailAddress?: string|null,
      *     Description?: string|null,
-     *     DisplayName?: string|null
+     *     DisplayName?: string|null,
+     *     AliasConfigurations?: list<AliasConfiguration>|null
      * } $args
      */
     public function __construct(array $args = [])

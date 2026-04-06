@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CatalogProperties|null $CatalogProperties
  * @property list<PrincipalPermissions>|null $CreateTableDefaultPermissions
  * @property list<PrincipalPermissions>|null $CreateDatabaseDefaultPermissions
+ * @property 'True'|'False'|null $AllowFullTableExternalDataAccess
+ * @property 'Accept'|'Deny'|null $OverwriteChildResourcePermissionsWithDefault
  */
 class CatalogInput extends Shape
 {
@@ -23,7 +25,9 @@ class CatalogInput extends Shape
      *     TargetRedshiftCatalog?: TargetRedshiftCatalog|null,
      *     CatalogProperties?: CatalogProperties|null,
      *     CreateTableDefaultPermissions?: list<PrincipalPermissions>|null,
-     *     CreateDatabaseDefaultPermissions?: list<PrincipalPermissions>|null
+     *     CreateDatabaseDefaultPermissions?: list<PrincipalPermissions>|null,
+     *     AllowFullTableExternalDataAccess?: 'True'|'False'|null,
+     *     OverwriteChildResourcePermissionsWithDefault?: 'Accept'|'Deny'|null
      * } $args
      */
     public function __construct(array $args = [])

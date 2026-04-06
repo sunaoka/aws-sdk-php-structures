@@ -14,7 +14,9 @@ class GuardDutyClient extends \Aws\GuardDuty\GuardDutyClient
     use CreateMembers\CreateMembersTrait;
     use CreatePublishingDestination\CreatePublishingDestinationTrait;
     use CreateSampleFindings\CreateSampleFindingsTrait;
+    use CreateThreatEntitySet\CreateThreatEntitySetTrait;
     use CreateThreatIntelSet\CreateThreatIntelSetTrait;
+    use CreateTrustedEntitySet\CreateTrustedEntitySetTrait;
     use DeclineInvitations\DeclineInvitationsTrait;
     use DeleteDetector\DeleteDetectorTrait;
     use DeleteFilter\DeleteFilterTrait;
@@ -23,7 +25,9 @@ class GuardDutyClient extends \Aws\GuardDuty\GuardDutyClient
     use DeleteMalwareProtectionPlan\DeleteMalwareProtectionPlanTrait;
     use DeleteMembers\DeleteMembersTrait;
     use DeletePublishingDestination\DeletePublishingDestinationTrait;
+    use DeleteThreatEntitySet\DeleteThreatEntitySetTrait;
     use DeleteThreatIntelSet\DeleteThreatIntelSetTrait;
+    use DeleteTrustedEntitySet\DeleteTrustedEntitySetTrait;
     use DescribeMalwareScans\DescribeMalwareScansTrait;
     use DescribeOrganizationConfiguration\DescribeOrganizationConfigurationTrait;
     use DescribePublishingDestination\DescribePublishingDestinationTrait;
@@ -41,13 +45,16 @@ class GuardDutyClient extends \Aws\GuardDuty\GuardDutyClient
     use GetIPSet\GetIPSetTrait;
     use GetInvitationsCount\GetInvitationsCountTrait;
     use GetMalwareProtectionPlan\GetMalwareProtectionPlanTrait;
+    use GetMalwareScan\GetMalwareScanTrait;
     use GetMalwareScanSettings\GetMalwareScanSettingsTrait;
     use GetMasterAccount\GetMasterAccountTrait;
     use GetMemberDetectors\GetMemberDetectorsTrait;
     use GetMembers\GetMembersTrait;
     use GetOrganizationStatistics\GetOrganizationStatisticsTrait;
     use GetRemainingFreeTrialDays\GetRemainingFreeTrialDaysTrait;
+    use GetThreatEntitySet\GetThreatEntitySetTrait;
     use GetThreatIntelSet\GetThreatIntelSetTrait;
+    use GetTrustedEntitySet\GetTrustedEntitySetTrait;
     use GetUsageStatistics\GetUsageStatisticsTrait;
     use InviteMembers\InviteMembersTrait;
     use ListCoverage\ListCoverageTrait;
@@ -57,11 +64,15 @@ class GuardDutyClient extends \Aws\GuardDuty\GuardDutyClient
     use ListIPSets\ListIPSetsTrait;
     use ListInvitations\ListInvitationsTrait;
     use ListMalwareProtectionPlans\ListMalwareProtectionPlansTrait;
+    use ListMalwareScans\ListMalwareScansTrait;
     use ListMembers\ListMembersTrait;
     use ListOrganizationAdminAccounts\ListOrganizationAdminAccountsTrait;
     use ListPublishingDestinations\ListPublishingDestinationsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use ListThreatEntitySets\ListThreatEntitySetsTrait;
     use ListThreatIntelSets\ListThreatIntelSetsTrait;
+    use ListTrustedEntitySets\ListTrustedEntitySetsTrait;
+    use SendObjectMalwareScan\SendObjectMalwareScanTrait;
     use StartMalwareScan\StartMalwareScanTrait;
     use StartMonitoringMembers\StartMonitoringMembersTrait;
     use StopMonitoringMembers\StopMonitoringMembersTrait;
@@ -77,5 +88,7 @@ class GuardDutyClient extends \Aws\GuardDuty\GuardDutyClient
     use UpdateMemberDetectors\UpdateMemberDetectorsTrait;
     use UpdateOrganizationConfiguration\UpdateOrganizationConfigurationTrait;
     use UpdatePublishingDestination\UpdatePublishingDestinationTrait;
+    use UpdateThreatEntitySet\UpdateThreatEntitySetTrait;
     use UpdateThreatIntelSet\UpdateThreatIntelSetTrait;
+    use UpdateTrustedEntitySet\UpdateTrustedEntitySetTrait;
 }

@@ -5,28 +5,28 @@ namespace Sunaoka\Aws\Structures\QConnect\GetContentAssociation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ContentAssociationContents $associationData
- * @property 'AMAZON_CONNECT_GUIDE' $associationType
- * @property string $contentArn
- * @property string $contentAssociationArn
- * @property string $contentAssociationId
- * @property string $contentId
- * @property string $knowledgeBaseArn
  * @property string $knowledgeBaseId
+ * @property string $knowledgeBaseArn
+ * @property string $contentId
+ * @property string $contentArn
+ * @property string $contentAssociationId
+ * @property string $contentAssociationArn
+ * @property 'AMAZON_CONNECT_GUIDE' $associationType
+ * @property ContentAssociationContents $associationData
  * @property array<string, string>|null $tags
  */
 class ContentAssociationData extends Shape
 {
     /**
      * @param array{
-     *     associationData: ContentAssociationContents,
-     *     associationType: 'AMAZON_CONNECT_GUIDE',
-     *     contentArn: string,
-     *     contentAssociationArn: string,
-     *     contentAssociationId: string,
-     *     contentId: string,
-     *     knowledgeBaseArn: string,
      *     knowledgeBaseId: string,
+     *     knowledgeBaseArn: string,
+     *     contentId: string,
+     *     contentArn: string,
+     *     contentAssociationId: string,
+     *     contentAssociationArn: string,
+     *     associationType: 'AMAZON_CONNECT_GUIDE',
+     *     associationData: ContentAssociationContents,
      *     tags?: array<string, string>|null
      * } $args
      */

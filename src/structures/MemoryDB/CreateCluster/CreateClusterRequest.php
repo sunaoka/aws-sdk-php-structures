@@ -29,6 +29,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $EngineVersion
  * @property bool|null $AutoMinorVersionUpgrade
  * @property bool|null $DataTiering
+ * @property 'ipv4'|'ipv6'|'dual_stack'|null $NetworkType
+ * @property 'ipv4'|'ipv6'|null $IpDiscovery
  */
 class CreateClusterRequest extends Request
 {
@@ -57,7 +59,9 @@ class CreateClusterRequest extends Request
      *     Engine?: string|null,
      *     EngineVersion?: string|null,
      *     AutoMinorVersionUpgrade?: bool|null,
-     *     DataTiering?: bool|null
+     *     DataTiering?: bool|null,
+     *     NetworkType?: 'ipv4'|'ipv6'|'dual_stack'|null,
+     *     IpDiscovery?: 'ipv4'|'ipv6'|null
      * } $args
      */
     public function __construct(array $args)

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'IDLE'|'IN_USE'|'UPDATING'|'DELETED'|null $State
  * @property array<string, string>|null $Tags
  * @property list<InputWhitelistRule>|null $WhitelistRules
+ * @property list<string>|null $Channels
  */
 class InputSecurityGroup extends Shape
 {
@@ -21,7 +22,8 @@ class InputSecurityGroup extends Shape
      *     Inputs?: list<string>|null,
      *     State?: 'IDLE'|'IN_USE'|'UPDATING'|'DELETED'|null,
      *     Tags?: array<string, string>|null,
-     *     WhitelistRules?: list<InputWhitelistRule>|null
+     *     WhitelistRules?: list<InputWhitelistRule>|null,
+     *     Channels?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

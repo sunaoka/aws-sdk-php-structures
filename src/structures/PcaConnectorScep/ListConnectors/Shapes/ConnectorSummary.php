@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MobileDeviceManagement|null $MobileDeviceManagement
  * @property OpenIdConfiguration|null $OpenIdConfiguration
  * @property 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|null $Status
- * @property 'INTERNAL_FAILURE'|'PRIVATECA_ACCESS_DENIED'|'PRIVATECA_INVALID_STATE'|'PRIVATECA_RESOURCE_NOT_FOUND'|null $StatusReason
+ * @property 'INTERNAL_FAILURE'|'PRIVATECA_ACCESS_DENIED'|'PRIVATECA_INVALID_STATE'|'PRIVATECA_RESOURCE_NOT_FOUND'|'VPC_ENDPOINT_RESOURCE_NOT_FOUND'|'VPC_ENDPOINT_DNS_ENTRIES_NOT_FOUND'|null $StatusReason
  * @property string|null $Endpoint
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property \Aws\Api\DateTimeResult|null $UpdatedAt
@@ -26,7 +26,7 @@ class ConnectorSummary extends Shape
      *     MobileDeviceManagement?: MobileDeviceManagement|null,
      *     OpenIdConfiguration?: OpenIdConfiguration|null,
      *     Status?: 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|null,
-     *     StatusReason?: 'INTERNAL_FAILURE'|'PRIVATECA_ACCESS_DENIED'|'PRIVATECA_INVALID_STATE'|'PRIVATECA_RESOURCE_NOT_FOUND'|null,
+     *     StatusReason?: 'INTERNAL_FAILURE'|'PRIVATECA_ACCESS_DENIED'|'PRIVATECA_INVALID_STATE'|'PRIVATECA_RESOURCE_NOT_FOUND'|'VPC_ENDPOINT_RESOURCE_NOT_FOUND'|'VPC_ENDPOINT_DNS_ENTRIES_NOT_FOUND'|null,
      *     Endpoint?: string|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     UpdatedAt?: \Aws\Api\DateTimeResult|null

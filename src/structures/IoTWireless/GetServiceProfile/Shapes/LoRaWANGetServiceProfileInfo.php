@@ -24,6 +24,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $NwkGeoLoc
  * @property int<0, 100>|null $TargetPer
  * @property int<1, 100>|null $MinGwDiversity
+ * @property int<0, 15>|null $TxPowerIndexMin
+ * @property int<0, 15>|null $TxPowerIndexMax
+ * @property int<0, 15>|null $NbTransMin
+ * @property int<0, 15>|null $NbTransMax
  */
 class LoRaWANGetServiceProfileInfo extends Shape
 {
@@ -47,7 +51,11 @@ class LoRaWANGetServiceProfileInfo extends Shape
      *     RaAllowed?: bool|null,
      *     NwkGeoLoc?: bool|null,
      *     TargetPer?: int<0, 100>|null,
-     *     MinGwDiversity?: int<1, 100>|null
+     *     MinGwDiversity?: int<1, 100>|null,
+     *     TxPowerIndexMin?: int<0, 15>|null,
+     *     TxPowerIndexMax?: int<0, 15>|null,
+     *     NbTransMin?: int<0, 15>|null,
+     *     NbTransMax?: int<0, 15>|null
      * } $args
      */
     public function __construct(array $args = [])

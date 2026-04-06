@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'MPEG_CHANNEL_CONFIGURATION'|'DOLBY_CHANNEL_CONFIGURATION'|null $AudioChannelConfigSchemeIdUri
  * @property string|null $BaseUrl
  * @property string|null $DashIFrameTrickPlayNameModifier
- * @property 'BASIC'|'COMPACT'|'DISTINCT'|null $DashManifestStyle
+ * @property 'BASIC'|'COMPACT'|'DISTINCT'|'FULL'|null $DashManifestStyle
  * @property string|null $Destination
  * @property DestinationSettings|null $DestinationSettings
  * @property DashIsoEncryptionSettings|null $Encryption
@@ -24,7 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ZERO_BASED'|'MATCH_INITIAL_PTS'|null $PtsOffsetHandlingForBFrames
  * @property 'SINGLE_FILE'|'SEGMENTED_FILES'|null $SegmentControl
  * @property int<1, 2147483647>|null $SegmentLength
- * @property 'EXACT'|'GOP_MULTIPLE'|null $SegmentLengthControl
+ * @property 'EXACT'|'GOP_MULTIPLE'|'MATCH'|null $SegmentLengthControl
  * @property 'SIGNED'|'UNSIGNED'|null $VideoCompositionOffsets
  * @property 'ENABLED'|'DISABLED'|null $WriteSegmentTimelineInRepresentation
  */
@@ -36,7 +36,7 @@ class DashIsoGroupSettings extends Shape
      *     AudioChannelConfigSchemeIdUri?: 'MPEG_CHANNEL_CONFIGURATION'|'DOLBY_CHANNEL_CONFIGURATION'|null,
      *     BaseUrl?: string|null,
      *     DashIFrameTrickPlayNameModifier?: string|null,
-     *     DashManifestStyle?: 'BASIC'|'COMPACT'|'DISTINCT'|null,
+     *     DashManifestStyle?: 'BASIC'|'COMPACT'|'DISTINCT'|'FULL'|null,
      *     Destination?: string|null,
      *     DestinationSettings?: DestinationSettings|null,
      *     Encryption?: DashIsoEncryptionSettings|null,
@@ -51,7 +51,7 @@ class DashIsoGroupSettings extends Shape
      *     PtsOffsetHandlingForBFrames?: 'ZERO_BASED'|'MATCH_INITIAL_PTS'|null,
      *     SegmentControl?: 'SINGLE_FILE'|'SEGMENTED_FILES'|null,
      *     SegmentLength?: int<1, 2147483647>|null,
-     *     SegmentLengthControl?: 'EXACT'|'GOP_MULTIPLE'|null,
+     *     SegmentLengthControl?: 'EXACT'|'GOP_MULTIPLE'|'MATCH'|null,
      *     VideoCompositionOffsets?: 'SIGNED'|'UNSIGNED'|null,
      *     WriteSegmentTimelineInRepresentation?: 'ENABLED'|'DISABLED'|null
      * } $args

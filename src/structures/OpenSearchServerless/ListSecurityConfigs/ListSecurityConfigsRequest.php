@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\ListSecurityConfigs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 100>|null $maxResults
+ * @property 'saml'|'iamidentitycenter'|'iamfederation' $type
  * @property string|null $nextToken
- * @property 'saml'|'iamidentitycenter' $type
+ * @property int<1, 100>|null $maxResults
  */
 class ListSecurityConfigsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int<1, 100>|null,
+     *     type: 'saml'|'iamidentitycenter'|'iamfederation',
      *     nextToken?: string|null,
-     *     type: 'saml'|'iamidentitycenter'
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\MedicalScribeSettings $Settings
  * @property list<Shapes\MedicalScribeChannelDefinition>|null $ChannelDefinitions
  * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\MedicalScribeContext|null $MedicalScribeContext
  */
 class StartMedicalScribeJobRequest extends Request
 {
@@ -27,7 +28,8 @@ class StartMedicalScribeJobRequest extends Request
      *     DataAccessRoleArn: string,
      *     Settings: Shapes\MedicalScribeSettings,
      *     ChannelDefinitions?: list<Shapes\MedicalScribeChannelDefinition>|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     MedicalScribeContext?: Shapes\MedicalScribeContext|null
      * } $args
      */
     public function __construct(array $args)

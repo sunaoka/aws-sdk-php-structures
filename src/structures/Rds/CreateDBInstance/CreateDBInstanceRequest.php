@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $AutoMinorVersionUpgrade
  * @property string|null $LicenseModel
  * @property int|null $Iops
+ * @property int|null $StorageThroughput
  * @property string|null $OptionGroupName
  * @property string|null $CharacterSetName
  * @property string|null $NcharCharacterSetName
@@ -58,17 +59,19 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DeletionProtection
  * @property int|null $MaxAllocatedStorage
  * @property bool|null $EnableCustomerOwnedIp
- * @property string|null $CustomIamInstanceProfile
- * @property string|null $BackupTarget
  * @property string|null $NetworkType
- * @property int|null $StorageThroughput
+ * @property string|null $BackupTarget
+ * @property string|null $CustomIamInstanceProfile
+ * @property string|null $DBSystemId
+ * @property string|null $CACertificateIdentifier
  * @property bool|null $ManageMasterUserPassword
  * @property string|null $MasterUserSecretKmsKeyId
- * @property string|null $CACertificateIdentifier
- * @property string|null $DBSystemId
- * @property bool|null $DedicatedLogVolume
  * @property bool|null $MultiTenant
+ * @property bool|null $DedicatedLogVolume
  * @property string|null $EngineLifecycleSupport
+ * @property list<Shapes\AdditionalStorageVolume>|null $AdditionalStorageVolumes
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property 'password'|'iam-db-auth'|null $MasterUserAuthenticationType
  */
 class CreateDBInstanceRequest extends Request
 {
@@ -95,6 +98,7 @@ class CreateDBInstanceRequest extends Request
      *     AutoMinorVersionUpgrade?: bool|null,
      *     LicenseModel?: string|null,
      *     Iops?: int|null,
+     *     StorageThroughput?: int|null,
      *     OptionGroupName?: string|null,
      *     CharacterSetName?: string|null,
      *     NcharCharacterSetName?: string|null,
@@ -127,17 +131,19 @@ class CreateDBInstanceRequest extends Request
      *     DeletionProtection?: bool|null,
      *     MaxAllocatedStorage?: int|null,
      *     EnableCustomerOwnedIp?: bool|null,
-     *     CustomIamInstanceProfile?: string|null,
-     *     BackupTarget?: string|null,
      *     NetworkType?: string|null,
-     *     StorageThroughput?: int|null,
+     *     BackupTarget?: string|null,
+     *     CustomIamInstanceProfile?: string|null,
+     *     DBSystemId?: string|null,
+     *     CACertificateIdentifier?: string|null,
      *     ManageMasterUserPassword?: bool|null,
      *     MasterUserSecretKmsKeyId?: string|null,
-     *     CACertificateIdentifier?: string|null,
-     *     DBSystemId?: string|null,
-     *     DedicatedLogVolume?: bool|null,
      *     MultiTenant?: bool|null,
-     *     EngineLifecycleSupport?: string|null
+     *     DedicatedLogVolume?: bool|null,
+     *     EngineLifecycleSupport?: string|null,
+     *     AdditionalStorageVolumes?: list<Shapes\AdditionalStorageVolume>|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     MasterUserAuthenticationType?: 'password'|'iam-db-auth'|null
      * } $args
      */
     public function __construct(array $args)

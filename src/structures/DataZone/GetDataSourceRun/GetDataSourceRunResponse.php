@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\DataZone\GetDataSourceRun;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string|null $dataSourceConfigurationSnapshot
- * @property string $dataSourceId
  * @property string $domainId
- * @property Shapes\DataSourceErrorMessage|null $errorMessage
+ * @property string $dataSourceId
  * @property string $id
- * @property Shapes\DataSourceRunLineageSummary|null $lineageSummary
  * @property string $projectId
- * @property Shapes\RunStatisticsForAssets|null $runStatisticsForAssets
- * @property \Aws\Api\DateTimeResult|null $startedAt
  * @property 'REQUESTED'|'RUNNING'|'FAILED'|'PARTIALLY_SUCCEEDED'|'SUCCESS' $status
- * @property \Aws\Api\DateTimeResult|null $stoppedAt
  * @property 'PRIORITIZED'|'SCHEDULED' $type
+ * @property string|null $dataSourceConfigurationSnapshot
+ * @property Shapes\RunStatisticsForAssets|null $runStatisticsForAssets
+ * @property Shapes\DataSourceRunLineageSummary|null $lineageSummary
+ * @property Shapes\DataSourceErrorMessage|null $errorMessage
+ * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property \Aws\Api\DateTimeResult|null $startedAt
+ * @property \Aws\Api\DateTimeResult|null $stoppedAt
  */
 class GetDataSourceRunResponse extends Response
 {

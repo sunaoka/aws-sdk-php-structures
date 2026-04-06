@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SnsTopic
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property list<AnalysisResult>|null $AnalysisResults
+ * @property SummaryConfiguration|null $SummaryConfiguration
  */
 class RuleGroupResponse extends Shape
 {
@@ -39,7 +40,8 @@ class RuleGroupResponse extends Shape
      *     SourceMetadata?: SourceMetadata|null,
      *     SnsTopic?: string|null,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
-     *     AnalysisResults?: list<AnalysisResult>|null
+     *     AnalysisResults?: list<AnalysisResult>|null,
+     *     SummaryConfiguration?: SummaryConfiguration|null
      * } $args
      */
     public function __construct(array $args)

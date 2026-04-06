@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateChannelClass\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 3600000>|null $CaptureInterval
+ * @property int|null $CaptureInterval
  * @property 'MILLISECONDS'|'SECONDS'|null $CaptureIntervalUnits
  * @property TimecodeBurninSettings|null $TimecodeBurninSettings
  */
@@ -13,7 +13,7 @@ class FrameCaptureSettings extends Shape
 {
     /**
      * @param array{
-     *     CaptureInterval?: int<1, 3600000>|null,
+     *     CaptureInterval?: int|null,
      *     CaptureIntervalUnits?: 'MILLISECONDS'|'SECONDS'|null,
      *     TimecodeBurninSettings?: TimecodeBurninSettings|null
      * } $args

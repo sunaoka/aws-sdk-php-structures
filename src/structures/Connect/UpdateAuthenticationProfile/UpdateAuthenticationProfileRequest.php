@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $AllowedIps
  * @property list<string>|null $BlockedIps
  * @property int<10, 60>|null $PeriodicSessionDuration
+ * @property int<15, 720>|null $SessionInactivityDuration
+ * @property bool|null $SessionInactivityHandlingEnabled
  */
 class UpdateAuthenticationProfileRequest extends Request
 {
@@ -23,7 +25,9 @@ class UpdateAuthenticationProfileRequest extends Request
      *     Description?: string|null,
      *     AllowedIps?: list<string>|null,
      *     BlockedIps?: list<string>|null,
-     *     PeriodicSessionDuration?: int<10, 60>|null
+     *     PeriodicSessionDuration?: int<10, 60>|null,
+     *     SessionInactivityDuration?: int<15, 720>|null,
+     *     SessionInactivityHandlingEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

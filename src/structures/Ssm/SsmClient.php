@@ -67,6 +67,7 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use DescribePatchProperties\DescribePatchPropertiesTrait;
     use DescribeSessions\DescribeSessionsTrait;
     use DisassociateOpsItemRelatedItem\DisassociateOpsItemRelatedItemTrait;
+    use GetAccessToken\GetAccessTokenTrait;
     use GetAutomationExecution\GetAutomationExecutionTrait;
     use GetCalendarState\GetCalendarStateTrait;
     use GetCommandInvocation\GetCommandInvocationTrait;
@@ -126,6 +127,7 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use ResumeSession\ResumeSessionTrait;
     use SendAutomationSignal\SendAutomationSignalTrait;
     use SendCommand\SendCommandTrait;
+    use StartAccessRequest\StartAccessRequestTrait;
     use StartAssociationsOnce\StartAssociationsOnceTrait;
     use StartAutomationExecution\StartAutomationExecutionTrait;
     use StartChangeRequestExecution\StartChangeRequestExecutionTrait;

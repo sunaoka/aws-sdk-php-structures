@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\AppConfig>|null $appConfigs
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property string|null $kmsKeyArn
  */
 class GetApplicationResponse extends Response
 {

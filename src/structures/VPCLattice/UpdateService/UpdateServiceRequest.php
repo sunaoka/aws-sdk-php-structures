@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\VPCLattice\UpdateService;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'NONE'|'AWS_IAM'|null $authType
- * @property string|null $certificateArn
  * @property string $serviceIdentifier
+ * @property string|null $certificateArn
+ * @property 'NONE'|'AWS_IAM'|null $authType
  */
 class UpdateServiceRequest extends Request
 {
     /**
      * @param array{
-     *     authType?: 'NONE'|'AWS_IAM'|null,
+     *     serviceIdentifier: string,
      *     certificateArn?: string|null,
-     *     serviceIdentifier: string
+     *     authType?: 'NONE'|'AWS_IAM'|null
      * } $args
      */
     public function __construct(array $args)

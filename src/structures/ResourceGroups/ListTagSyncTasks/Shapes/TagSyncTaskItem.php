@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TaskArn
  * @property string|null $TagKey
  * @property string|null $TagValue
+ * @property ResourceQuery|null $ResourceQuery
  * @property string|null $RoleArn
  * @property 'ACTIVE'|'ERROR'|null $Status
  * @property string|null $ErrorMessage
@@ -24,6 +25,7 @@ class TagSyncTaskItem extends Shape
      *     TaskArn?: string|null,
      *     TagKey?: string|null,
      *     TagValue?: string|null,
+     *     ResourceQuery?: ResourceQuery|null,
      *     RoleArn?: string|null,
      *     Status?: 'ACTIVE'|'ERROR'|null,
      *     ErrorMessage?: string|null,

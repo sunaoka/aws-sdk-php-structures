@@ -20,8 +20,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, Shapes\WorkerTypeSpecificationInput>|null $workerTypeSpecifications
  * @property list<Shapes\Configuration>|null $runtimeConfiguration
  * @property Shapes\MonitoringConfiguration|null $monitoringConfiguration
+ * @property Shapes\DiskEncryptionConfiguration|null $diskEncryptionConfiguration
  * @property Shapes\InteractiveConfiguration|null $interactiveConfiguration
  * @property Shapes\SchedulerConfiguration|null $schedulerConfiguration
+ * @property Shapes\IdentityCenterConfigurationInput|null $identityCenterConfiguration
+ * @property Shapes\JobLevelCostAllocationConfiguration|null $jobLevelCostAllocationConfiguration
  */
 class CreateApplicationRequest extends Request
 {
@@ -42,8 +45,11 @@ class CreateApplicationRequest extends Request
      *     workerTypeSpecifications?: array<string, Shapes\WorkerTypeSpecificationInput>|null,
      *     runtimeConfiguration?: list<Shapes\Configuration>|null,
      *     monitoringConfiguration?: Shapes\MonitoringConfiguration|null,
+     *     diskEncryptionConfiguration?: Shapes\DiskEncryptionConfiguration|null,
      *     interactiveConfiguration?: Shapes\InteractiveConfiguration|null,
-     *     schedulerConfiguration?: Shapes\SchedulerConfiguration|null
+     *     schedulerConfiguration?: Shapes\SchedulerConfiguration|null,
+     *     identityCenterConfiguration?: Shapes\IdentityCenterConfigurationInput|null,
+     *     jobLevelCostAllocationConfiguration?: Shapes\JobLevelCostAllocationConfiguration|null
      * } $args
      */
     public function __construct(array $args)

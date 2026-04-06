@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\EntityFilter $filter
  * @property string|null $locale
  * @property string|null $nextToken
- * @property int<10, 100>|null $maxResults
+ * @property int<1, 100>|null $maxResults
  */
 class DescribeAffectedEntitiesRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeAffectedEntitiesRequest extends Request
      *     filter: Shapes\EntityFilter,
      *     locale?: string|null,
      *     nextToken?: string|null,
-     *     maxResults?: int<10, 100>|null
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

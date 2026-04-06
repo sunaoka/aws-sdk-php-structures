@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\GetSubscriptionTarget\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $content
  * @property string $formName
+ * @property string $content
  */
 class SubscriptionTargetForm extends Shape
 {
     /**
      * @param array{
-     *     content: string,
-     *     formName: string
+     *     formName: string,
+     *     content: string
      * } $args
      */
     public function __construct(array $args)

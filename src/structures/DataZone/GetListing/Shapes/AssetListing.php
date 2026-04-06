@@ -10,8 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $assetType
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $forms
- * @property list<DetailedGlossaryTerm>|null $glossaryTerms
  * @property list<TimeSeriesDataPointSummaryFormOutput>|null $latestTimeSeriesDataPointForms
+ * @property list<DetailedGlossaryTerm>|null $glossaryTerms
+ * @property list<DetailedGlossaryTerm>|null $governedGlossaryTerms
  * @property string|null $owningProjectId
  */
 class AssetListing extends Shape
@@ -23,8 +24,9 @@ class AssetListing extends Shape
      *     assetType?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     forms?: string|null,
-     *     glossaryTerms?: list<DetailedGlossaryTerm>|null,
      *     latestTimeSeriesDataPointForms?: list<TimeSeriesDataPointSummaryFormOutput>|null,
+     *     glossaryTerms?: list<DetailedGlossaryTerm>|null,
+     *     governedGlossaryTerms?: list<DetailedGlossaryTerm>|null,
      *     owningProjectId?: string|null
      * } $args
      */

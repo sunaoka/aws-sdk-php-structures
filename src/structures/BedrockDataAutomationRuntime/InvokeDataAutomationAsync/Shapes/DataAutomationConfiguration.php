@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\BedrockDataAutomationRuntime\InvokeDataAutomati
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $dataAutomationArn
+ * @property string $dataAutomationProjectArn
  * @property 'LIVE'|'DEVELOPMENT'|null $stage
  */
 class DataAutomationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     dataAutomationArn: string,
+     *     dataAutomationProjectArn: string,
      *     stage?: 'LIVE'|'DEVELOPMENT'|null
      * } $args
      */

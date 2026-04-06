@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Braket\SearchDevices;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\SearchDevicesFilter> $filters
- * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
+ * @property list<Shapes\SearchDevicesFilter> $filters
  */
 class SearchDevicesRequest extends Request
 {
     /**
      * @param array{
-     *     filters: list<Shapes\SearchDevicesFilter>,
+     *     nextToken?: string|null,
      *     maxResults?: int<1, 100>|null,
-     *     nextToken?: string|null
+     *     filters: list<Shapes\SearchDevicesFilter>
      * } $args
      */
     public function __construct(array $args)

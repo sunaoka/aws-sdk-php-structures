@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property MetadataFormEnforcementDetail|null $metadataFormEnforcementDetail
+ * @property GlossaryTermEnforcementDetail|null $glossaryTermEnforcementDetail
  */
 class RuleDetail extends Shape
 {
     /**
-     * @param array{metadataFormEnforcementDetail?: MetadataFormEnforcementDetail|null} $args
+     * @param array{
+     *     metadataFormEnforcementDetail?: MetadataFormEnforcementDetail|null,
+     *     glossaryTermEnforcementDetail?: GlossaryTermEnforcementDetail|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

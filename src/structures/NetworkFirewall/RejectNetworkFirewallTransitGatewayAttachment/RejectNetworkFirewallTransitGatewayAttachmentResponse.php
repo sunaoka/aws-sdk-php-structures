@@ -1,0 +1,13 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\NetworkFirewall\RejectNetworkFirewallTransitGatewayAttachment;
+
+use Sunaoka\Aws\Structures\Response;
+
+/**
+ * @property string $TransitGatewayAttachmentId
+ * @property 'CREATING'|'DELETING'|'DELETED'|'FAILED'|'ERROR'|'READY'|'PENDING_ACCEPTANCE'|'REJECTING'|'REJECTED' $TransitGatewayAttachmentStatus
+ */
+class RejectNetworkFirewallTransitGatewayAttachmentResponse extends Response
+{
+}

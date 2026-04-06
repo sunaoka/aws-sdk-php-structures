@@ -9,6 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $MembershipId
  * @property string|null $GroupId
  * @property MemberId|null $MemberId
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
+ * @property string|null $CreatedBy
+ * @property string|null $UpdatedBy
  */
 class GroupMembership extends Shape
 {
@@ -17,7 +21,11 @@ class GroupMembership extends Shape
      *     IdentityStoreId: string,
      *     MembershipId?: string|null,
      *     GroupId?: string|null,
-     *     MemberId?: MemberId|null
+     *     MemberId?: MemberId|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     CreatedBy?: string|null,
+     *     UpdatedBy?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $StorageEncrypted
  * @property bool|null $DeletionProtection
  * @property list<GlobalClusterMember>|null $GlobalClusterMembers
+ * @property FailoverState|null $FailoverState
+ * @property list<Tag>|null $TagList
  */
 class GlobalCluster extends Shape
 {
@@ -29,7 +31,9 @@ class GlobalCluster extends Shape
      *     DatabaseName?: string|null,
      *     StorageEncrypted?: bool|null,
      *     DeletionProtection?: bool|null,
-     *     GlobalClusterMembers?: list<GlobalClusterMember>|null
+     *     GlobalClusterMembers?: list<GlobalClusterMember>|null,
+     *     FailoverState?: FailoverState|null,
+     *     TagList?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $accessToken
- * @property string|null $jwtToken
- * @property string|null $refreshToken
  * @property string|null $userManagedClientApplicationClientSecret
+ * @property string|null $accessToken
+ * @property string|null $refreshToken
+ * @property string|null $jwtToken
  */
 class GlueOAuth2Credentials extends Shape
 {
     /**
      * @param array{
+     *     userManagedClientApplicationClientSecret?: string|null,
      *     accessToken?: string|null,
-     *     jwtToken?: string|null,
      *     refreshToken?: string|null,
-     *     userManagedClientApplicationClientSecret?: string|null
+     *     jwtToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

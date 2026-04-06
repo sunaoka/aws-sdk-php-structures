@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $dataAccessorArn
  * @property string|null $idcApplicationArn
  * @property string|null $principal
+ * @property DataAccessorAuthenticationDetail|null $authenticationDetail
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
@@ -22,6 +23,7 @@ class DataAccessor extends Shape
      *     dataAccessorArn?: string|null,
      *     idcApplicationArn?: string|null,
      *     principal?: string|null,
+     *     authenticationDetail?: DataAccessorAuthenticationDetail|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args

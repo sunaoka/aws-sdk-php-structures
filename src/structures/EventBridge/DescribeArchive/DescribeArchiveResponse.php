@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $EventPattern
  * @property 'ENABLED'|'DISABLED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED'|null $State
  * @property string|null $StateReason
+ * @property string|null $KmsKeyIdentifier
  * @property int<0, max>|null $RetentionDays
  * @property int|null $SizeBytes
  * @property int|null $EventCount

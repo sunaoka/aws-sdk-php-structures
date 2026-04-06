@@ -27,6 +27,7 @@ class OrganizationsClient extends \Aws\Organizations\OrganizationsClient
     use DescribeOrganizationalUnit\DescribeOrganizationalUnitTrait;
     use DescribePolicy\DescribePolicyTrait;
     use DescribeResourcePolicy\DescribeResourcePolicyTrait;
+    use DescribeResponsibilityTransfer\DescribeResponsibilityTransferTrait;
     use DetachPolicy\DetachPolicyTrait;
     use DisableAWSServiceAccess\DisableAWSServiceAccessTrait;
     use DisablePolicyType\DisablePolicyTypeTrait;
@@ -34,17 +35,22 @@ class OrganizationsClient extends \Aws\Organizations\OrganizationsClient
     use EnableAllFeatures\EnableAllFeaturesTrait;
     use EnablePolicyType\EnablePolicyTypeTrait;
     use InviteAccountToOrganization\InviteAccountToOrganizationTrait;
+    use InviteOrganizationToTransferResponsibility\InviteOrganizationToTransferResponsibilityTrait;
     use LeaveOrganization\LeaveOrganizationTrait;
     use ListAWSServiceAccessForOrganization\ListAWSServiceAccessForOrganizationTrait;
     use ListAccounts\ListAccountsTrait;
     use ListAccountsForParent\ListAccountsForParentTrait;
+    use ListAccountsWithInvalidEffectivePolicy\ListAccountsWithInvalidEffectivePolicyTrait;
     use ListChildren\ListChildrenTrait;
     use ListCreateAccountStatus\ListCreateAccountStatusTrait;
     use ListDelegatedAdministrators\ListDelegatedAdministratorsTrait;
     use ListDelegatedServicesForAccount\ListDelegatedServicesForAccountTrait;
+    use ListEffectivePolicyValidationErrors\ListEffectivePolicyValidationErrorsTrait;
     use ListHandshakesForAccount\ListHandshakesForAccountTrait;
     use ListHandshakesForOrganization\ListHandshakesForOrganizationTrait;
+    use ListInboundResponsibilityTransfers\ListInboundResponsibilityTransfersTrait;
     use ListOrganizationalUnitsForParent\ListOrganizationalUnitsForParentTrait;
+    use ListOutboundResponsibilityTransfers\ListOutboundResponsibilityTransfersTrait;
     use ListParents\ListParentsTrait;
     use ListPolicies\ListPoliciesTrait;
     use ListPoliciesForTarget\ListPoliciesForTargetTrait;
@@ -56,7 +62,9 @@ class OrganizationsClient extends \Aws\Organizations\OrganizationsClient
     use RegisterDelegatedAdministrator\RegisterDelegatedAdministratorTrait;
     use RemoveAccountFromOrganization\RemoveAccountFromOrganizationTrait;
     use TagResource\TagResourceTrait;
+    use TerminateResponsibilityTransfer\TerminateResponsibilityTransferTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateOrganizationalUnit\UpdateOrganizationalUnitTrait;
     use UpdatePolicy\UpdatePolicyTrait;
+    use UpdateResponsibilityTransfer\UpdateResponsibilityTransferTrait;
 }

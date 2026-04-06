@@ -39,6 +39,7 @@ class ElasticLoadBalancingV2Client extends \Aws\ElasticLoadBalancingV2\ElasticLo
     use GetTrustStoreCaCertificatesBundle\GetTrustStoreCaCertificatesBundleTrait;
     use GetTrustStoreRevocationContent\GetTrustStoreRevocationContentTrait;
     use ModifyCapacityReservation\ModifyCapacityReservationTrait;
+    use ModifyIpPools\ModifyIpPoolsTrait;
     use ModifyListener\ModifyListenerTrait;
     use ModifyListenerAttributes\ModifyListenerAttributesTrait;
     use ModifyLoadBalancerAttributes\ModifyLoadBalancerAttributesTrait;

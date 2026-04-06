@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Arn
  * @property string|null $Name
  * @property list<string>|null $SecurityGroupIds
- * @property 'INBOUND'|'OUTBOUND'|null $Direction
+ * @property 'INBOUND'|'OUTBOUND'|'INBOUND_DELEGATION'|null $Direction
  * @property int|null $IpAddressCount
  * @property string|null $HostVPCId
  * @property 'CREATING'|'OPERATIONAL'|'UPDATING'|'AUTO_RECOVERING'|'ACTION_NEEDED'|'DELETING'|null $Status
@@ -21,6 +21,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PreferredInstanceType
  * @property 'IPV6'|'IPV4'|'DUALSTACK'|null $ResolverEndpointType
  * @property list<'DoH'|'Do53'|'DoH-FIPS'>|null $Protocols
+ * @property bool|null $RniEnhancedMetricsEnabled
+ * @property bool|null $TargetNameServerMetricsEnabled
  */
 class ResolverEndpoint extends Shape
 {
@@ -31,7 +33,7 @@ class ResolverEndpoint extends Shape
      *     Arn?: string|null,
      *     Name?: string|null,
      *     SecurityGroupIds?: list<string>|null,
-     *     Direction?: 'INBOUND'|'OUTBOUND'|null,
+     *     Direction?: 'INBOUND'|'OUTBOUND'|'INBOUND_DELEGATION'|null,
      *     IpAddressCount?: int|null,
      *     HostVPCId?: string|null,
      *     Status?: 'CREATING'|'OPERATIONAL'|'UPDATING'|'AUTO_RECOVERING'|'ACTION_NEEDED'|'DELETING'|null,
@@ -41,7 +43,9 @@ class ResolverEndpoint extends Shape
      *     OutpostArn?: string|null,
      *     PreferredInstanceType?: string|null,
      *     ResolverEndpointType?: 'IPV6'|'IPV4'|'DUALSTACK'|null,
-     *     Protocols?: list<'DoH'|'Do53'|'DoH-FIPS'>|null
+     *     Protocols?: list<'DoH'|'Do53'|'DoH-FIPS'>|null,
+     *     RniEnhancedMetricsEnabled?: bool|null,
+     *     TargetNameServerMetricsEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

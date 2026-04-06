@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $awayFrom
- * @property \Aws\Api\DateTimeResult $endTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
  * @property \Aws\Api\DateTimeResult $startTime
  * @property 'ACTIVE'|'COMPLETED' $status
  */
@@ -15,7 +15,7 @@ class AutoshiftSummary extends Shape
     /**
      * @param array{
      *     awayFrom: string,
-     *     endTime: \Aws\Api\DateTimeResult,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
      *     startTime: \Aws\Api\DateTimeResult,
      *     status: 'ACTIVE'|'COMPLETED'
      * } $args

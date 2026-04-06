@@ -6,10 +6,11 @@ trait DeleteImportedKeyMaterialTrait
 {
     /**
      * @param DeleteImportedKeyMaterialRequest $args
-     * @return void
+     * @return DeleteImportedKeyMaterialResponse
      */
     public function deleteImportedKeyMaterial(DeleteImportedKeyMaterialRequest $args)
     {
-        parent::deleteImportedKeyMaterial($args->toArray());
+        $result = parent::deleteImportedKeyMaterial($args->toArray());
+        return new DeleteImportedKeyMaterialResponse($result->toArray());
     }
 }

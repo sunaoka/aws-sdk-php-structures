@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VpcOwnerId
  * @property 'associating'|'associated'|'association-failed'|'disassociating'|'disassociated'|'disassociation-failed'|null $State
  * @property string|null $StateReason
+ * @property string|null $GroupOwnerId
  */
 class SecurityGroupVpcAssociation extends Shape
 {
@@ -19,7 +20,8 @@ class SecurityGroupVpcAssociation extends Shape
      *     VpcId?: string|null,
      *     VpcOwnerId?: string|null,
      *     State?: 'associating'|'associated'|'association-failed'|'disassociating'|'disassociated'|'disassociation-failed'|null,
-     *     StateReason?: string|null
+     *     StateReason?: string|null,
+     *     GroupOwnerId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -16,12 +16,14 @@ class ConnectCampaignsV2Client extends \Aws\ConnectCampaignsV2\ConnectCampaignsV
     use GetCampaignState\GetCampaignStateTrait;
     use GetCampaignStateBatch\GetCampaignStateBatchTrait;
     use GetConnectInstanceConfig\GetConnectInstanceConfigTrait;
+    use GetInstanceCommunicationLimits\GetInstanceCommunicationLimitsTrait;
     use GetInstanceOnboardingJobStatus\GetInstanceOnboardingJobStatusTrait;
     use ListCampaigns\ListCampaignsTrait;
     use ListConnectInstanceIntegrations\ListConnectInstanceIntegrationsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PauseCampaign\PauseCampaignTrait;
     use PutConnectInstanceIntegration\PutConnectInstanceIntegrationTrait;
+    use PutInstanceCommunicationLimits\PutInstanceCommunicationLimitsTrait;
     use PutOutboundRequestBatch\PutOutboundRequestBatchTrait;
     use PutProfileOutboundRequestBatch\PutProfileOutboundRequestBatchTrait;
     use ResumeCampaign\ResumeCampaignTrait;

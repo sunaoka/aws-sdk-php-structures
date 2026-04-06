@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $portEncryptionStatus
  * @property string|null $encryptionMode
  * @property list<MacSecKey>|null $macSecKeys
+ * @property bool|null $partnerInterconnectMacSecCapable
  */
 class Connection extends Shape
 {
@@ -53,7 +54,8 @@ class Connection extends Shape
      *     macSecCapable?: bool|null,
      *     portEncryptionStatus?: string|null,
      *     encryptionMode?: string|null,
-     *     macSecKeys?: list<MacSecKey>|null
+     *     macSecKeys?: list<MacSecKey>|null,
+     *     partnerInterconnectMacSecCapable?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -25,6 +25,8 @@ class MemoryDBClient extends \Aws\MemoryDB\MemoryDBClient
     use DescribeEngineVersions\DescribeEngineVersionsTrait;
     use DescribeEvents\DescribeEventsTrait;
     use DescribeMultiRegionClusters\DescribeMultiRegionClustersTrait;
+    use DescribeMultiRegionParameterGroups\DescribeMultiRegionParameterGroupsTrait;
+    use DescribeMultiRegionParameters\DescribeMultiRegionParametersTrait;
     use DescribeParameterGroups\DescribeParameterGroupsTrait;
     use DescribeParameters\DescribeParametersTrait;
     use DescribeReservedNodes\DescribeReservedNodesTrait;

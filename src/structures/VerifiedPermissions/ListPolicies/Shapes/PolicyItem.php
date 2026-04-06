@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdDate
  * @property \Aws\Api\DateTimeResult $lastUpdatedDate
  * @property 'Permit'|'Forbid'|null $effect
+ * @property string|null $name
  */
 class PolicyItem extends Shape
 {
@@ -29,7 +30,8 @@ class PolicyItem extends Shape
      *     definition: PolicyDefinitionItem,
      *     createdDate: \Aws\Api\DateTimeResult,
      *     lastUpdatedDate: \Aws\Api\DateTimeResult,
-     *     effect?: 'Permit'|'Forbid'|null
+     *     effect?: 'Permit'|'Forbid'|null,
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args)

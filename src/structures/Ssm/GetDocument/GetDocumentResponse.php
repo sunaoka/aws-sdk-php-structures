@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'Creating'|'Active'|'Updating'|'Deleting'|'Failed'|null $Status
  * @property string|null $StatusInformation
  * @property string|null $Content
- * @property 'Command'|'Policy'|'Automation'|'Session'|'Package'|'ApplicationConfiguration'|'ApplicationConfigurationSchema'|'DeploymentStrategy'|'ChangeCalendar'|'Automation.ChangeTemplate'|'ProblemAnalysis'|'ProblemAnalysisTemplate'|'CloudFormation'|'ConformancePackTemplate'|'QuickSetup'|null $DocumentType
+ * @property 'Command'|'Policy'|'Automation'|'Session'|'Package'|'ApplicationConfiguration'|'ApplicationConfigurationSchema'|'DeploymentStrategy'|'ChangeCalendar'|'Automation.ChangeTemplate'|'ProblemAnalysis'|'ProblemAnalysisTemplate'|'CloudFormation'|'ConformancePackTemplate'|'QuickSetup'|'ManualApprovalPolicy'|'AutoApprovalPolicy'|null $DocumentType
  * @property 'YAML'|'JSON'|'TEXT'|null $DocumentFormat
  * @property list<Shapes\DocumentRequires>|null $Requires
  * @property list<Shapes\AttachmentContent>|null $AttachmentsContent

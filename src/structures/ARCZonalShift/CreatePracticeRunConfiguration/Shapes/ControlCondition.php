@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ARCZonalShift\CreatePracticeRunConfiguration\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $alarmIdentifier
  * @property 'CLOUDWATCH' $type
+ * @property string $alarmIdentifier
  */
 class ControlCondition extends Shape
 {
     /**
      * @param array{
-     *     alarmIdentifier: string,
-     *     type: 'CLOUDWATCH'
+     *     type: 'CLOUDWATCH',
+     *     alarmIdentifier: string
      * } $args
      */
     public function __construct(array $args)

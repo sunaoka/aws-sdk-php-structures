@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'HEVC'|'AVC'|null $Codec
  * @property InputDeviceMediaConnectConfigurableSettings|null $MediaconnectSettings
  * @property list<InputDeviceConfigurableAudioChannelPairConfig>|null $AudioChannelPairs
+ * @property string|null $InputResolution
  */
 class InputDeviceConfigurableSettings extends Shape
 {
@@ -21,7 +22,8 @@ class InputDeviceConfigurableSettings extends Shape
      *     LatencyMs?: int|null,
      *     Codec?: 'HEVC'|'AVC'|null,
      *     MediaconnectSettings?: InputDeviceMediaConnectConfigurableSettings|null,
-     *     AudioChannelPairs?: list<InputDeviceConfigurableAudioChannelPairConfig>|null
+     *     AudioChannelPairs?: list<InputDeviceConfigurableAudioChannelPairConfig>|null,
+     *     InputResolution?: string|null
      * } $args
      */
     public function __construct(array $args = [])

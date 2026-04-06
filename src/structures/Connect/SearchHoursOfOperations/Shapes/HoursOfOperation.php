@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property string|null $TimeZone
  * @property list<HoursOfOperationConfig>|null $Config
+ * @property list<HoursOfOperationsIdentifier>|null $ParentHoursOfOperations
  * @property array<string, string>|null $Tags
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property string|null $LastModifiedRegion
@@ -25,6 +26,7 @@ class HoursOfOperation extends Shape
      *     Description?: string|null,
      *     TimeZone?: string|null,
      *     Config?: list<HoursOfOperationConfig>|null,
+     *     ParentHoursOfOperations?: list<HoursOfOperationsIdentifier>|null,
      *     Tags?: array<string, string>|null,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedRegion?: string|null

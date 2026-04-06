@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\QConnect\ListAIAgentVersions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $aiAgentId
  * @property string $assistantId
- * @property int<1, 100>|null $maxResults
+ * @property string $aiAgentId
  * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  * @property 'SYSTEM'|'CUSTOMER'|null $origin
  */
 class ListAIAgentVersionsRequest extends Request
 {
     /**
      * @param array{
-     *     aiAgentId: string,
      *     assistantId: string,
-     *     maxResults?: int<1, 100>|null,
+     *     aiAgentId: string,
      *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null,
      *     origin?: 'SYSTEM'|'CUSTOMER'|null
      * } $args
      */

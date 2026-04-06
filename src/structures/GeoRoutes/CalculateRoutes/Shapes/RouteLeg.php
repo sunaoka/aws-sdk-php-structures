@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RouteLegGeometry $Geometry
  * @property string|null $Language
  * @property RoutePedestrianLegDetails|null $PedestrianLegDetails
- * @property 'Car'|'Ferry'|'Pedestrian'|'Scooter'|'Truck' $TravelMode
+ * @property 'Car'|'Ferry'|'Pedestrian'|'Scooter'|'Truck'|'CarShuttleTrain' $TravelMode
  * @property 'Ferry'|'Pedestrian'|'Vehicle' $Type
  * @property RouteVehicleLegDetails|null $VehicleLegDetails
  */
@@ -21,7 +21,7 @@ class RouteLeg extends Shape
      *     Geometry: RouteLegGeometry,
      *     Language?: string|null,
      *     PedestrianLegDetails?: RoutePedestrianLegDetails|null,
-     *     TravelMode: 'Car'|'Ferry'|'Pedestrian'|'Scooter'|'Truck',
+     *     TravelMode: 'Car'|'Ferry'|'Pedestrian'|'Scooter'|'Truck'|'CarShuttleTrain',
      *     Type: 'Ferry'|'Pedestrian'|'Vehicle',
      *     VehicleLegDetails?: RouteVehicleLegDetails|null
      * } $args

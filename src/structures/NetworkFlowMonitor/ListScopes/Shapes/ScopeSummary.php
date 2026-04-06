@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $scopeId
- * @property 'SUCCEEDED'|'IN_PROGRESS'|'FAILED' $status
+ * @property 'SUCCEEDED'|'IN_PROGRESS'|'FAILED'|'DEACTIVATING'|'DEACTIVATED' $status
  * @property string $scopeArn
  */
 class ScopeSummary extends Shape
@@ -14,7 +14,7 @@ class ScopeSummary extends Shape
     /**
      * @param array{
      *     scopeId: string,
-     *     status: 'SUCCEEDED'|'IN_PROGRESS'|'FAILED',
+     *     status: 'SUCCEEDED'|'IN_PROGRESS'|'FAILED'|'DEACTIVATING'|'DEACTIVATED',
      *     scopeArn: string
      * } $args
      */

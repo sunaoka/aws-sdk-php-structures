@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $channelNamespaceArn
  * @property \Aws\Api\DateTimeResult|null $created
  * @property \Aws\Api\DateTimeResult|null $lastModified
+ * @property HandlerConfigs|null $handlerConfigs
  */
 class ChannelNamespace extends Shape
 {
@@ -27,7 +28,8 @@ class ChannelNamespace extends Shape
      *     tags?: array<string, string>|null,
      *     channelNamespaceArn?: string|null,
      *     created?: \Aws\Api\DateTimeResult|null,
-     *     lastModified?: \Aws\Api\DateTimeResult|null
+     *     lastModified?: \Aws\Api\DateTimeResult|null,
+     *     handlerConfigs?: HandlerConfigs|null
      * } $args
      */
     public function __construct(array $args = [])

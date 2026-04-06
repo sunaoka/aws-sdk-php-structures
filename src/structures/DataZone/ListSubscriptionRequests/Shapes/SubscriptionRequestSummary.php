@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\DataZone\ListSubscriptionRequests\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property string|null $decisionComment
- * @property string $domainId
- * @property string|null $existingSubscriptionId
  * @property string $id
- * @property list<MetadataFormSummary>|null $metadataFormsSummary
- * @property string $requestReason
- * @property string|null $reviewerId
- * @property 'PENDING'|'ACCEPTED'|'REJECTED' $status
- * @property list<SubscribedListing> $subscribedListings
- * @property list<SubscribedPrincipal> $subscribedPrincipals
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string $createdBy
  * @property string|null $updatedBy
+ * @property string $domainId
+ * @property 'PENDING'|'ACCEPTED'|'REJECTED' $status
+ * @property \Aws\Api\DateTimeResult $createdAt
+ * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string $requestReason
+ * @property list<SubscribedPrincipal> $subscribedPrincipals
+ * @property list<SubscribedListing> $subscribedListings
+ * @property string|null $reviewerId
+ * @property string|null $decisionComment
+ * @property string|null $existingSubscriptionId
+ * @property list<MetadataFormSummary>|null $metadataFormsSummary
  */
 class SubscriptionRequestSummary extends Shape
 {
     /**
      * @param array{
-     *     createdAt: \Aws\Api\DateTimeResult,
-     *     createdBy: string,
-     *     decisionComment?: string|null,
-     *     domainId: string,
-     *     existingSubscriptionId?: string|null,
      *     id: string,
-     *     metadataFormsSummary?: list<MetadataFormSummary>|null,
-     *     requestReason: string,
-     *     reviewerId?: string|null,
+     *     createdBy: string,
+     *     updatedBy?: string|null,
+     *     domainId: string,
      *     status: 'PENDING'|'ACCEPTED'|'REJECTED',
-     *     subscribedListings: list<SubscribedListing>,
-     *     subscribedPrincipals: list<SubscribedPrincipal>,
+     *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
-     *     updatedBy?: string|null
+     *     requestReason: string,
+     *     subscribedPrincipals: list<SubscribedPrincipal>,
+     *     subscribedListings: list<SubscribedListing>,
+     *     reviewerId?: string|null,
+     *     decisionComment?: string|null,
+     *     existingSubscriptionId?: string|null,
+     *     metadataFormsSummary?: list<MetadataFormSummary>|null
      * } $args
      */
     public function __construct(array $args)

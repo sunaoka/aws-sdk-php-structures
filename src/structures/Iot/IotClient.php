@@ -105,6 +105,7 @@ class IotClient extends \Aws\Iot\IotClient
     use DescribeDetectMitigationActionsTask\DescribeDetectMitigationActionsTaskTrait;
     use DescribeDimension\DescribeDimensionTrait;
     use DescribeDomainConfiguration\DescribeDomainConfigurationTrait;
+    use DescribeEncryptionConfiguration\DescribeEncryptionConfigurationTrait;
     use DescribeEndpoint\DescribeEndpointTrait;
     use DescribeEventConfigurations\DescribeEventConfigurationsTrait;
     use DescribeFleetMetric\DescribeFleetMetricTrait;
@@ -254,6 +255,7 @@ class IotClient extends \Aws\Iot\IotClient
     use UpdateDimension\UpdateDimensionTrait;
     use UpdateDomainConfiguration\UpdateDomainConfigurationTrait;
     use UpdateDynamicThingGroup\UpdateDynamicThingGroupTrait;
+    use UpdateEncryptionConfiguration\UpdateEncryptionConfigurationTrait;
     use UpdateEventConfigurations\UpdateEventConfigurationsTrait;
     use UpdateFleetMetric\UpdateFleetMetricTrait;
     use UpdateIndexingConfiguration\UpdateIndexingConfigurationTrait;
@@ -273,4 +275,5 @@ class IotClient extends \Aws\Iot\IotClient
     use UpdateThingType\UpdateThingTypeTrait;
     use UpdateTopicRuleDestination\UpdateTopicRuleDestinationTrait;
     use ValidateSecurityProfileBehaviors\ValidateSecurityProfileBehaviorsTrait;
+    use GetDeviceCommand\GetDeviceCommandTrait;
 }

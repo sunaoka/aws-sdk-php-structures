@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $SegmentDefinitionArn
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property array<string, string>|null $Tags
+ * @property string|null $SegmentSqlQuery
+ * @property 'CLASSIC'|'ENHANCED'|null $SegmentType
  */
 class GetSegmentDefinitionResponse extends Response
 {

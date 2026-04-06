@@ -7,7 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $match
  * @property 'PROFANITY' $type
- * @property 'BLOCKED' $action
+ * @property 'BLOCKED'|'NONE' $action
+ * @property bool|null $detected
  */
 class GuardrailManagedWord extends Shape
 {
@@ -15,7 +16,8 @@ class GuardrailManagedWord extends Shape
      * @param array{
      *     match: string,
      *     type: 'PROFANITY',
-     *     action: 'BLOCKED'
+     *     action: 'BLOCKED'|'NONE',
+     *     detected?: bool|null
      * } $args
      */
     public function __construct(array $args)

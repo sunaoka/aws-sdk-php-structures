@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION'|null $AudioDuration
  * @property int<0, 2147483647>|null $AudioFramesPerPes
  * @property list<int<32, 8182>>|null $AudioPids
+ * @property int<-10000, 10000>|null $AudioPtsOffsetDelta
  * @property 'AUTO'|'ALIGN_TO_VIDEO'|null $DataPTSControl
  * @property int<0, 500>|null $MaxPcrInterval
  * @property 'INSERT'|'NONE'|null $NielsenId3
@@ -19,7 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<32, 8182>|null $PrivateMetadataPid
  * @property int<0, 65535>|null $ProgramNumber
  * @property int<0, 3600>|null $PtsOffset
- * @property 'AUTO'|'SECONDS'|null $PtsOffsetMode
+ * @property 'AUTO'|'SECONDS'|'MILLISECONDS'|null $PtsOffsetMode
  * @property int<32, 8182>|null $Scte35Pid
  * @property 'PASSTHROUGH'|'NONE'|null $Scte35Source
  * @property 'PASSTHROUGH'|'NONE'|null $TimedMetadata
@@ -34,6 +35,7 @@ class M3u8Settings extends Shape
      *     AudioDuration?: 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION'|null,
      *     AudioFramesPerPes?: int<0, 2147483647>|null,
      *     AudioPids?: list<int<32, 8182>>|null,
+     *     AudioPtsOffsetDelta?: int<-10000, 10000>|null,
      *     DataPTSControl?: 'AUTO'|'ALIGN_TO_VIDEO'|null,
      *     MaxPcrInterval?: int<0, 500>|null,
      *     NielsenId3?: 'INSERT'|'NONE'|null,
@@ -45,7 +47,7 @@ class M3u8Settings extends Shape
      *     PrivateMetadataPid?: int<32, 8182>|null,
      *     ProgramNumber?: int<0, 65535>|null,
      *     PtsOffset?: int<0, 3600>|null,
-     *     PtsOffsetMode?: 'AUTO'|'SECONDS'|null,
+     *     PtsOffsetMode?: 'AUTO'|'SECONDS'|'MILLISECONDS'|null,
      *     Scte35Pid?: int<32, 8182>|null,
      *     Scte35Source?: 'PASSTHROUGH'|'NONE'|null,
      *     TimedMetadata?: 'PASSTHROUGH'|'NONE'|null,

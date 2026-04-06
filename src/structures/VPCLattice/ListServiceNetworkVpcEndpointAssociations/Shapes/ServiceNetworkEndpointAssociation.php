@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\VPCLattice\ListServiceNetworkVpcEndpointAssocia
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult|null $createdAt
- * @property string|null $id
- * @property string|null $serviceNetworkArn
- * @property string|null $state
  * @property string|null $vpcEndpointId
- * @property string|null $vpcEndpointOwnerId
  * @property string|null $vpcId
+ * @property string|null $vpcEndpointOwnerId
+ * @property string|null $id
+ * @property string|null $state
+ * @property string|null $serviceNetworkArn
+ * @property \Aws\Api\DateTimeResult|null $createdAt
  */
 class ServiceNetworkEndpointAssociation extends Shape
 {
     /**
      * @param array{
-     *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     id?: string|null,
-     *     serviceNetworkArn?: string|null,
-     *     state?: string|null,
      *     vpcEndpointId?: string|null,
+     *     vpcId?: string|null,
      *     vpcEndpointOwnerId?: string|null,
-     *     vpcId?: string|null
+     *     id?: string|null,
+     *     state?: string|null,
+     *     serviceNetworkArn?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $queryText
  * @property Shapes\ContentSource $contentSource
  * @property Shapes\AttributeFilter|null $attributeFilter
- * @property int|null $maxResults
+ * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
  */
 class SearchRelevantContentRequest extends Request
@@ -20,7 +20,7 @@ class SearchRelevantContentRequest extends Request
      *     queryText: string,
      *     contentSource: Shapes\ContentSource,
      *     attributeFilter?: Shapes\AttributeFilter|null,
-     *     maxResults?: int|null,
+     *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null
      * } $args
      */

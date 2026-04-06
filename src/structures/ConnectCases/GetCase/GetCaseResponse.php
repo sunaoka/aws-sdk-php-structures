@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\FieldValue> $fields
+ * @property string $templateId
  * @property string|null $nextToken
  * @property array<string, string>|null $tags
- * @property string $templateId
  */
 class GetCaseResponse extends Response
 {

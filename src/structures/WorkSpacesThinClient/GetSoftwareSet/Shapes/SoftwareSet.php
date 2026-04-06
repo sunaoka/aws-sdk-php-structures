@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'VALIDATED'|'NOT_VALIDATED'|null $validationStatus
  * @property list<Software>|null $software
  * @property string|null $arn
- * @property array<string, string>|null $tags
  */
 class SoftwareSet extends Shape
 {
@@ -24,8 +23,7 @@ class SoftwareSet extends Shape
      *     supportedUntil?: \Aws\Api\DateTimeResult|null,
      *     validationStatus?: 'VALIDATED'|'NOT_VALIDATED'|null,
      *     software?: list<Software>|null,
-     *     arn?: string|null,
-     *     tags?: array<string, string>|null
+     *     arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $FramerateControl
- * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null $FramerateConversionAlgorithm
+ * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null $FramerateConversionAlgorithm
  * @property int<1, 1001>|null $FramerateDenominator
  * @property int<24, 60000>|null $FramerateNumerator
  * @property 'INTERLACED'|'PROGRESSIVE'|null $InterlaceMode
@@ -20,7 +20,7 @@ class Vc3Settings extends Shape
     /**
      * @param array{
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
-     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null,
+     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null,
      *     FramerateDenominator?: int<1, 1001>|null,
      *     FramerateNumerator?: int<24, 60000>|null,
      *     InterlaceMode?: 'INTERLACED'|'PROGRESSIVE'|null,

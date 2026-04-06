@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Small'|'Large' $Size
  * @property Shapes\DirectoryConnectSettings $ConnectSettings
  * @property list<Shapes\Tag>|null $Tags
+ * @property 'Dual-stack'|'IPv4'|'IPv6'|null $NetworkType
  */
 class ConnectDirectoryRequest extends Request
 {
@@ -23,7 +24,8 @@ class ConnectDirectoryRequest extends Request
      *     Description?: string|null,
      *     Size: 'Small'|'Large',
      *     ConnectSettings: Shapes\DirectoryConnectSettings,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     NetworkType?: 'Dual-stack'|'IPv4'|'IPv6'|null
      * } $args
      */
     public function __construct(array $args)

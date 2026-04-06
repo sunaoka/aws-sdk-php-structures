@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateAssetType;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $description
  * @property string $domainIdentifier
- * @property array<string, Shapes\FormEntryInput> $formsInput
  * @property string $name
+ * @property string|null $description
+ * @property array<string, Shapes\FormEntryInput> $formsInput
  * @property string $owningProjectIdentifier
  */
 class CreateAssetTypeRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string|null,
      *     domainIdentifier: string,
-     *     formsInput: array<string, Shapes\FormEntryInput>,
      *     name: string,
+     *     description?: string|null,
+     *     formsInput: array<string, Shapes\FormEntryInput>,
      *     owningProjectIdentifier: string
      * } $args
      */

@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $Id
  * @property string|null $Arn
+ * @property string|null $ResourceOwner
  * @property string|null $Name
  * @property 'DNS_PUBLIC'|'DNS_PRIVATE'|'HTTP'|null $Type
  * @property string|null $Description
@@ -21,6 +22,7 @@ class NamespaceShape extends Shape
      * @param array{
      *     Id?: string|null,
      *     Arn?: string|null,
+     *     ResourceOwner?: string|null,
      *     Name?: string|null,
      *     Type?: 'DNS_PUBLIC'|'DNS_PRIVATE'|'HTTP'|null,
      *     Description?: string|null,

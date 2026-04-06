@@ -17,10 +17,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LocalGatewayId
  * @property string|null $CarrierGatewayId
  * @property string|null $NetworkInterfaceId
- * @property 'CreateRouteTable'|'CreateRoute'|'EnableVgwRoutePropagation'|null $Origin
- * @property 'active'|'blackhole'|null $State
+ * @property 'CreateRouteTable'|'CreateRoute'|'EnableVgwRoutePropagation'|'Advertisement'|null $Origin
+ * @property 'active'|'blackhole'|'filtered'|null $State
  * @property string|null $VpcPeeringConnectionId
  * @property string|null $CoreNetworkArn
+ * @property string|null $OdbNetworkArn
+ * @property string|null $IpAddress
  */
 class Route extends Shape
 {
@@ -38,10 +40,12 @@ class Route extends Shape
      *     LocalGatewayId?: string|null,
      *     CarrierGatewayId?: string|null,
      *     NetworkInterfaceId?: string|null,
-     *     Origin?: 'CreateRouteTable'|'CreateRoute'|'EnableVgwRoutePropagation'|null,
-     *     State?: 'active'|'blackhole'|null,
+     *     Origin?: 'CreateRouteTable'|'CreateRoute'|'EnableVgwRoutePropagation'|'Advertisement'|null,
+     *     State?: 'active'|'blackhole'|'filtered'|null,
      *     VpcPeeringConnectionId?: string|null,
-     *     CoreNetworkArn?: string|null
+     *     CoreNetworkArn?: string|null,
+     *     OdbNetworkArn?: string|null,
+     *     IpAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

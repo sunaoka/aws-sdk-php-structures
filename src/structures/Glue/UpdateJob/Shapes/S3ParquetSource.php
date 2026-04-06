@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property list<string> $Paths
- * @property 'snappy'|'lzo'|'gzip'|'uncompressed'|'none'|null $CompressionType
+ * @property 'snappy'|'lzo'|'gzip'|'brotli'|'lz4'|'uncompressed'|'none'|null $CompressionType
  * @property list<string>|null $Exclusions
  * @property string|null $GroupSize
  * @property string|null $GroupFiles
@@ -23,7 +23,7 @@ class S3ParquetSource extends Shape
      * @param array{
      *     Name: string,
      *     Paths: list<string>,
-     *     CompressionType?: 'snappy'|'lzo'|'gzip'|'uncompressed'|'none'|null,
+     *     CompressionType?: 'snappy'|'lzo'|'gzip'|'brotli'|'lz4'|'uncompressed'|'none'|null,
      *     Exclusions?: list<string>|null,
      *     GroupSize?: string|null,
      *     GroupFiles?: string|null,

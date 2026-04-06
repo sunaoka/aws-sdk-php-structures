@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EcsProperties|null $ecsProperties
  * @property EksProperties|null $eksProperties
  * @property 'ECS'|'EKS'|null $containerOrchestrationType
+ * @property ConsumableResourceProperties|null $consumableResourceProperties
  */
 class JobDefinition extends Shape
 {
@@ -43,7 +44,8 @@ class JobDefinition extends Shape
      *     platformCapabilities?: list<'EC2'|'FARGATE'>|null,
      *     ecsProperties?: EcsProperties|null,
      *     eksProperties?: EksProperties|null,
-     *     containerOrchestrationType?: 'ECS'|'EKS'|null
+     *     containerOrchestrationType?: 'ECS'|'EKS'|null,
+     *     consumableResourceProperties?: ConsumableResourceProperties|null
      * } $args
      */
     public function __construct(array $args)

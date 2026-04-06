@@ -7,11 +7,14 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $ARN
  * @property string|null $Name
+ * @property string|null $Type
  * @property string|null $Description
  * @property string|null $KmsKeyId
  * @property bool|null $RotationEnabled
  * @property string|null $RotationLambdaARN
  * @property Shapes\RotationRulesType|null $RotationRules
+ * @property list<Shapes\ExternalSecretRotationMetadataItem>|null $ExternalSecretRotationMetadata
+ * @property string|null $ExternalSecretRotationRoleArn
  * @property \Aws\Api\DateTimeResult|null $LastRotatedDate
  * @property \Aws\Api\DateTimeResult|null $LastChangedDate
  * @property \Aws\Api\DateTimeResult|null $LastAccessedDate

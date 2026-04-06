@@ -7,8 +7,12 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use AddAssociation\AddAssociationTrait;
     use AddTags\AddTagsTrait;
     use AssociateTrialComponent\AssociateTrialComponentTrait;
+    use AttachClusterNodeVolume\AttachClusterNodeVolumeTrait;
+    use BatchAddClusterNodes\BatchAddClusterNodesTrait;
     use BatchDeleteClusterNodes\BatchDeleteClusterNodesTrait;
     use BatchDescribeModelPackage\BatchDescribeModelPackageTrait;
+    use BatchRebootClusterNodes\BatchRebootClusterNodesTrait;
+    use BatchReplaceClusterNodes\BatchReplaceClusterNodesTrait;
     use CreateAction\CreateActionTrait;
     use CreateAlgorithm\CreateAlgorithmTrait;
     use CreateApp\CreateAppTrait;
@@ -34,6 +38,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use CreateFeatureGroup\CreateFeatureGroupTrait;
     use CreateFlowDefinition\CreateFlowDefinitionTrait;
     use CreateHub\CreateHubTrait;
+    use CreateHubContentPresignedUrls\CreateHubContentPresignedUrlsTrait;
     use CreateHubContentReference\CreateHubContentReferenceTrait;
     use CreateHumanTaskUi\CreateHumanTaskUiTrait;
     use CreateHyperParameterTuningJob\CreateHyperParameterTuningJobTrait;
@@ -43,6 +48,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use CreateInferenceExperiment\CreateInferenceExperimentTrait;
     use CreateInferenceRecommendationsJob\CreateInferenceRecommendationsJobTrait;
     use CreateLabelingJob\CreateLabelingJobTrait;
+    use CreateMlflowApp\CreateMlflowAppTrait;
     use CreateMlflowTrackingServer\CreateMlflowTrackingServerTrait;
     use CreateModel\CreateModelTrait;
     use CreateModelBiasJobDefinition\CreateModelBiasJobDefinitionTrait;
@@ -60,6 +66,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use CreatePartnerAppPresignedUrl\CreatePartnerAppPresignedUrlTrait;
     use CreatePipeline\CreatePipelineTrait;
     use CreatePresignedDomainUrl\CreatePresignedDomainUrlTrait;
+    use CreatePresignedMlflowAppUrl\CreatePresignedMlflowAppUrlTrait;
     use CreatePresignedMlflowTrackingServerUrl\CreatePresignedMlflowTrackingServerUrlTrait;
     use CreatePresignedNotebookInstanceUrl\CreatePresignedNotebookInstanceUrlTrait;
     use CreateProcessingJob\CreateProcessingJobTrait;
@@ -105,6 +112,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DeleteImageVersion\DeleteImageVersionTrait;
     use DeleteInferenceComponent\DeleteInferenceComponentTrait;
     use DeleteInferenceExperiment\DeleteInferenceExperimentTrait;
+    use DeleteMlflowApp\DeleteMlflowAppTrait;
     use DeleteMlflowTrackingServer\DeleteMlflowTrackingServerTrait;
     use DeleteModel\DeleteModelTrait;
     use DeleteModelBiasJobDefinition\DeleteModelBiasJobDefinitionTrait;
@@ -120,10 +128,12 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DeleteOptimizationJob\DeleteOptimizationJobTrait;
     use DeletePartnerApp\DeletePartnerAppTrait;
     use DeletePipeline\DeletePipelineTrait;
+    use DeleteProcessingJob\DeleteProcessingJobTrait;
     use DeleteProject\DeleteProjectTrait;
     use DeleteSpace\DeleteSpaceTrait;
     use DeleteStudioLifecycleConfig\DeleteStudioLifecycleConfigTrait;
     use DeleteTags\DeleteTagsTrait;
+    use DeleteTrainingJob\DeleteTrainingJobTrait;
     use DeleteTrial\DeleteTrialTrait;
     use DeleteTrialComponent\DeleteTrialComponentTrait;
     use DeleteUserProfile\DeleteUserProfileTrait;
@@ -138,6 +148,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DescribeAutoMLJob\DescribeAutoMLJobTrait;
     use DescribeAutoMLJobV2\DescribeAutoMLJobV2Trait;
     use DescribeCluster\DescribeClusterTrait;
+    use DescribeClusterEvent\DescribeClusterEventTrait;
     use DescribeClusterNode\DescribeClusterNodeTrait;
     use DescribeClusterSchedulerConfig\DescribeClusterSchedulerConfigTrait;
     use DescribeCodeRepository\DescribeCodeRepositoryTrait;
@@ -167,6 +178,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DescribeInferenceRecommendationsJob\DescribeInferenceRecommendationsJobTrait;
     use DescribeLabelingJob\DescribeLabelingJobTrait;
     use DescribeLineageGroup\DescribeLineageGroupTrait;
+    use DescribeMlflowApp\DescribeMlflowAppTrait;
     use DescribeMlflowTrackingServer\DescribeMlflowTrackingServerTrait;
     use DescribeModel\DescribeModelTrait;
     use DescribeModelBiasJobDefinition\DescribeModelBiasJobDefinitionTrait;
@@ -186,20 +198,24 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DescribePipelineExecution\DescribePipelineExecutionTrait;
     use DescribeProcessingJob\DescribeProcessingJobTrait;
     use DescribeProject\DescribeProjectTrait;
+    use DescribeReservedCapacity\DescribeReservedCapacityTrait;
     use DescribeSpace\DescribeSpaceTrait;
     use DescribeStudioLifecycleConfig\DescribeStudioLifecycleConfigTrait;
     use DescribeSubscribedWorkteam\DescribeSubscribedWorkteamTrait;
     use DescribeTrainingJob\DescribeTrainingJobTrait;
     use DescribeTrainingPlan\DescribeTrainingPlanTrait;
+    use DescribeTrainingPlanExtensionHistory\DescribeTrainingPlanExtensionHistoryTrait;
     use DescribeTransformJob\DescribeTransformJobTrait;
     use DescribeTrial\DescribeTrialTrait;
     use DescribeTrialComponent\DescribeTrialComponentTrait;
     use DescribeUserProfile\DescribeUserProfileTrait;
     use DescribeWorkforce\DescribeWorkforceTrait;
     use DescribeWorkteam\DescribeWorkteamTrait;
+    use DetachClusterNodeVolume\DetachClusterNodeVolumeTrait;
     use DisableSagemakerServicecatalogPortfolio\DisableSagemakerServicecatalogPortfolioTrait;
     use DisassociateTrialComponent\DisassociateTrialComponentTrait;
     use EnableSagemakerServicecatalogPortfolio\EnableSagemakerServicecatalogPortfolioTrait;
+    use ExtendTrainingPlan\ExtendTrainingPlanTrait;
     use GetDeviceFleetReport\GetDeviceFleetReportTrait;
     use GetLineageGroupPolicy\GetLineageGroupPolicyTrait;
     use GetModelPackageGroupPolicy\GetModelPackageGroupPolicyTrait;
@@ -216,6 +232,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListAssociations\ListAssociationsTrait;
     use ListAutoMLJobs\ListAutoMLJobsTrait;
     use ListCandidatesForAutoMLJob\ListCandidatesForAutoMLJobTrait;
+    use ListClusterEvents\ListClusterEventsTrait;
     use ListClusterNodes\ListClusterNodesTrait;
     use ListClusterSchedulerConfigs\ListClusterSchedulerConfigsTrait;
     use ListClusters\ListClustersTrait;
@@ -248,6 +265,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListLabelingJobs\ListLabelingJobsTrait;
     use ListLabelingJobsForWorkteam\ListLabelingJobsForWorkteamTrait;
     use ListLineageGroups\ListLineageGroupsTrait;
+    use ListMlflowApps\ListMlflowAppsTrait;
     use ListMlflowTrackingServers\ListMlflowTrackingServersTrait;
     use ListModelBiasJobDefinitions\ListModelBiasJobDefinitionsTrait;
     use ListModelCardExportJobs\ListModelCardExportJobsTrait;
@@ -270,6 +288,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListPipelineExecutionSteps\ListPipelineExecutionStepsTrait;
     use ListPipelineExecutions\ListPipelineExecutionsTrait;
     use ListPipelineParametersForExecution\ListPipelineParametersForExecutionTrait;
+    use ListPipelineVersions\ListPipelineVersionsTrait;
     use ListPipelines\ListPipelinesTrait;
     use ListProcessingJobs\ListProcessingJobsTrait;
     use ListProjects\ListProjectsTrait;
@@ -285,6 +304,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListTransformJobs\ListTransformJobsTrait;
     use ListTrialComponents\ListTrialComponentsTrait;
     use ListTrials\ListTrialsTrait;
+    use ListUltraServersByReservedCapacity\ListUltraServersByReservedCapacityTrait;
     use ListUserProfiles\ListUserProfilesTrait;
     use ListWorkforces\ListWorkforcesTrait;
     use ListWorkteams\ListWorkteamsTrait;
@@ -303,6 +323,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use StartMonitoringSchedule\StartMonitoringScheduleTrait;
     use StartNotebookInstance\StartNotebookInstanceTrait;
     use StartPipelineExecution\StartPipelineExecutionTrait;
+    use StartSession\StartSessionTrait;
     use StopAutoMLJob\StopAutoMLJobTrait;
     use StopCompilationJob\StopCompilationJobTrait;
     use StopEdgeDeploymentStage\StopEdgeDeploymentStageTrait;
@@ -337,11 +358,14 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use UpdateFeatureGroup\UpdateFeatureGroupTrait;
     use UpdateFeatureMetadata\UpdateFeatureMetadataTrait;
     use UpdateHub\UpdateHubTrait;
+    use UpdateHubContent\UpdateHubContentTrait;
+    use UpdateHubContentReference\UpdateHubContentReferenceTrait;
     use UpdateImage\UpdateImageTrait;
     use UpdateImageVersion\UpdateImageVersionTrait;
     use UpdateInferenceComponent\UpdateInferenceComponentTrait;
     use UpdateInferenceComponentRuntimeConfig\UpdateInferenceComponentRuntimeConfigTrait;
     use UpdateInferenceExperiment\UpdateInferenceExperimentTrait;
+    use UpdateMlflowApp\UpdateMlflowAppTrait;
     use UpdateMlflowTrackingServer\UpdateMlflowTrackingServerTrait;
     use UpdateModelCard\UpdateModelCardTrait;
     use UpdateModelPackage\UpdateModelPackageTrait;
@@ -352,6 +376,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use UpdatePartnerApp\UpdatePartnerAppTrait;
     use UpdatePipeline\UpdatePipelineTrait;
     use UpdatePipelineExecution\UpdatePipelineExecutionTrait;
+    use UpdatePipelineVersion\UpdatePipelineVersionTrait;
     use UpdateProject\UpdateProjectTrait;
     use UpdateSpace\UpdateSpaceTrait;
     use UpdateTrainingJob\UpdateTrainingJobTrait;

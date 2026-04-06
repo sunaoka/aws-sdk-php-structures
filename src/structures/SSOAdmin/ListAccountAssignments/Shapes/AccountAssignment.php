@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $AccountId
  * @property string|null $PermissionSetArn
- * @property string|null $PrincipalId
  * @property 'USER'|'GROUP'|null $PrincipalType
+ * @property string|null $PrincipalId
  */
 class AccountAssignment extends Shape
 {
@@ -16,8 +16,8 @@ class AccountAssignment extends Shape
      * @param array{
      *     AccountId?: string|null,
      *     PermissionSetArn?: string|null,
-     *     PrincipalId?: string|null,
-     *     PrincipalType?: 'USER'|'GROUP'|null
+     *     PrincipalType?: 'USER'|'GROUP'|null,
+     *     PrincipalId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

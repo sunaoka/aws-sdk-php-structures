@@ -6,15 +6,15 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $arn
- * @property \Aws\Api\DateTimeResult|null $createdAt
- * @property Shapes\RuleAction|null $defaultAction
  * @property string|null $id
- * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  * @property string|null $name
- * @property int<1, 65535>|null $port
  * @property 'HTTP'|'HTTPS'|'TLS_PASSTHROUGH'|null $protocol
+ * @property int<1, 65535>|null $port
  * @property string|null $serviceArn
  * @property string|null $serviceId
+ * @property Shapes\RuleAction|null $defaultAction
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  */
 class GetListenerResponse extends Response
 {

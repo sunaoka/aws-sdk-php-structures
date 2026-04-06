@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property DifferentialPrivacyTemplateUpdateParameters|null $differentialPrivacy
+ * @property AccessBudgetsPrivacyTemplateUpdateParameters|null $accessBudget
  */
 class PrivacyBudgetTemplateUpdateParameters extends Shape
 {
     /**
-     * @param array{differentialPrivacy?: DifferentialPrivacyTemplateUpdateParameters|null} $args
+     * @param array{
+     *     differentialPrivacy?: DifferentialPrivacyTemplateUpdateParameters|null,
+     *     accessBudget?: AccessBudgetsPrivacyTemplateUpdateParameters|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

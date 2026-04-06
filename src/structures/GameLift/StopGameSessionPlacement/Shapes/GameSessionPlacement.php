@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $GameSessionData
  * @property string|null $MatchmakerData
  * @property PriorityConfigurationOverride|null $PriorityConfigurationOverride
+ * @property 'DISABLED'|'ENABLED'|null $PlayerGatewayStatus
  */
 class GameSessionPlacement extends Shape
 {
@@ -47,7 +48,8 @@ class GameSessionPlacement extends Shape
      *     PlacedPlayerSessions?: list<PlacedPlayerSession>|null,
      *     GameSessionData?: string|null,
      *     MatchmakerData?: string|null,
-     *     PriorityConfigurationOverride?: PriorityConfigurationOverride|null
+     *     PriorityConfigurationOverride?: PriorityConfigurationOverride|null,
+     *     PlayerGatewayStatus?: 'DISABLED'|'ENABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

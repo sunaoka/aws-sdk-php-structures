@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConnectCases\SearchRelatedItems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string $contactArn
  * @property string $channel
  * @property \Aws\Api\DateTimeResult $connectedToSystemTime
- * @property string $contactArn
  */
 class ContactContent extends Shape
 {
     /**
      * @param array{
+     *     contactArn: string,
      *     channel: string,
-     *     connectedToSystemTime: \Aws\Api\DateTimeResult,
-     *     contactArn: string
+     *     connectedToSystemTime: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

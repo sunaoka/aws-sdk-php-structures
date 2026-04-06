@@ -6,6 +6,7 @@ class MainframeModernizationClient extends \Aws\MainframeModernization\Mainframe
 {
     use CancelBatchJobExecution\CancelBatchJobExecutionTrait;
     use CreateApplication\CreateApplicationTrait;
+    use CreateDataSetExportTask\CreateDataSetExportTaskTrait;
     use CreateDataSetImportTask\CreateDataSetImportTaskTrait;
     use CreateDeployment\CreateDeploymentTrait;
     use CreateEnvironment\CreateEnvironmentTrait;
@@ -16,6 +17,7 @@ class MainframeModernizationClient extends \Aws\MainframeModernization\Mainframe
     use GetApplicationVersion\GetApplicationVersionTrait;
     use GetBatchJobExecution\GetBatchJobExecutionTrait;
     use GetDataSetDetails\GetDataSetDetailsTrait;
+    use GetDataSetExportTask\GetDataSetExportTaskTrait;
     use GetDataSetImportTask\GetDataSetImportTaskTrait;
     use GetDeployment\GetDeploymentTrait;
     use GetEnvironment\GetEnvironmentTrait;
@@ -25,6 +27,7 @@ class MainframeModernizationClient extends \Aws\MainframeModernization\Mainframe
     use ListBatchJobDefinitions\ListBatchJobDefinitionsTrait;
     use ListBatchJobExecutions\ListBatchJobExecutionsTrait;
     use ListBatchJobRestartPoints\ListBatchJobRestartPointsTrait;
+    use ListDataSetExportHistory\ListDataSetExportHistoryTrait;
     use ListDataSetImportHistory\ListDataSetImportHistoryTrait;
     use ListDataSets\ListDataSetsTrait;
     use ListDeployments\ListDeploymentsTrait;

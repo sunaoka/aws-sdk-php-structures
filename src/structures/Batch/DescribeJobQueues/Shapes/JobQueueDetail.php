@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $statusReason
  * @property int $priority
  * @property list<ComputeEnvironmentOrder> $computeEnvironmentOrder
+ * @property list<ServiceEnvironmentOrder>|null $serviceEnvironmentOrder
+ * @property 'EKS'|'ECS'|'ECS_FARGATE'|'SAGEMAKER_TRAINING'|null $jobQueueType
  * @property array<string, string>|null $tags
  * @property list<JobStateTimeLimitAction>|null $jobStateTimeLimitActions
  */
@@ -28,6 +30,8 @@ class JobQueueDetail extends Shape
      *     statusReason?: string|null,
      *     priority: int,
      *     computeEnvironmentOrder: list<ComputeEnvironmentOrder>,
+     *     serviceEnvironmentOrder?: list<ServiceEnvironmentOrder>|null,
+     *     jobQueueType?: 'EKS'|'ECS'|'ECS_FARGATE'|'SAGEMAKER_TRAINING'|null,
      *     tags?: array<string, string>|null,
      *     jobStateTimeLimitActions?: list<JobStateTimeLimitAction>|null
      * } $args

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BackupGateway\GetHypervisorPropertyMappings\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AwsTagKey
- * @property string $AwsTagValue
  * @property string $VmwareCategory
  * @property string $VmwareTagName
+ * @property string $AwsTagKey
+ * @property string $AwsTagValue
  */
 class VmwareToAwsTagMapping extends Shape
 {
     /**
      * @param array{
-     *     AwsTagKey: string,
-     *     AwsTagValue: string,
      *     VmwareCategory: string,
-     *     VmwareTagName: string
+     *     VmwareTagName: string,
+     *     AwsTagKey: string,
+     *     AwsTagValue: string
      * } $args
      */
     public function __construct(array $args)

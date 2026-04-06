@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\ListSecurityPolicies\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int|null $createdDate
- * @property string|null $description
- * @property int|null $lastModifiedDate
+ * @property 'encryption'|'network'|null $type
  * @property string|null $name
  * @property string|null $policyVersion
- * @property 'encryption'|'network'|null $type
+ * @property string|null $description
+ * @property int|null $createdDate
+ * @property int|null $lastModifiedDate
  */
 class SecurityPolicySummary extends Shape
 {
     /**
      * @param array{
-     *     createdDate?: int|null,
-     *     description?: string|null,
-     *     lastModifiedDate?: int|null,
+     *     type?: 'encryption'|'network'|null,
      *     name?: string|null,
      *     policyVersion?: string|null,
-     *     type?: 'encryption'|'network'|null
+     *     description?: string|null,
+     *     createdDate?: int|null,
+     *     lastModifiedDate?: int|null
      * } $args
      */
     public function __construct(array $args = [])

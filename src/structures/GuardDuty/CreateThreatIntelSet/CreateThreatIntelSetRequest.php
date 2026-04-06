@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $Activate
  * @property string|null $ClientToken
  * @property array<string, string>|null $Tags
+ * @property string|null $ExpectedBucketOwner
  */
 class CreateThreatIntelSetRequest extends Request
 {
@@ -23,7 +24,8 @@ class CreateThreatIntelSetRequest extends Request
      *     Location: string,
      *     Activate: bool,
      *     ClientToken?: string|null,
-     *     Tags?: array<string, string>|null
+     *     Tags?: array<string, string>|null,
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

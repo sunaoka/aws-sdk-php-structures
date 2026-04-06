@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $IncludeDeletedGroups
  * @property int|null $MaxRecords
  * @property string|null $NextToken
+ * @property list<Shapes\Filter>|null $Filters
  */
 class DescribeScalingActivitiesRequest extends Request
 {
@@ -19,7 +20,8 @@ class DescribeScalingActivitiesRequest extends Request
      *     AutoScalingGroupName?: string|null,
      *     IncludeDeletedGroups?: bool|null,
      *     MaxRecords?: int|null,
-     *     NextToken?: string|null
+     *     NextToken?: string|null,
+     *     Filters?: list<Shapes\Filter>|null
      * } $args
      */
     public function __construct(array $args = [])

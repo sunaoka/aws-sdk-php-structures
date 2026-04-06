@@ -15,10 +15,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $dbClusterIdentifier
  * @property 'True'|'False'|null $idle
  * @property 'Optimized'|'Underprovisioned'|'Overprovisioned'|null $instanceFinding
- * @property 'Optimized'|'Underprovisioned'|'Overprovisioned'|null $storageFinding
+ * @property 'Optimized'|'Underprovisioned'|'Overprovisioned'|'NotOptimized'|null $storageFinding
  * @property list<'CPUOverprovisioned'|'NetworkBandwidthOverprovisioned'|'EBSIOPSOverprovisioned'|'EBSIOPSUnderprovisioned'|'EBSThroughputOverprovisioned'|'CPUUnderprovisioned'|'NetworkBandwidthUnderprovisioned'|'EBSThroughputUnderprovisioned'|'NewGenerationDBInstanceClassAvailable'|'NewEngineVersionAvailable'|'DBClusterWriterUnderprovisioned'|'MemoryUnderprovisioned'|'InstanceStorageReadIOPSUnderprovisioned'|'InstanceStorageWriteIOPSUnderprovisioned'>|null $instanceFindingReasonCodes
  * @property 'VeryLow'|'Low'|'Medium'|'High'|null $currentInstancePerformanceRisk
- * @property list<'EBSVolumeAllocatedStorageUnderprovisioned'|'EBSVolumeThroughputUnderprovisioned'|'EBSVolumeIOPSOverprovisioned'|'EBSVolumeThroughputOverprovisioned'|'NewGenerationStorageTypeAvailable'>|null $storageFindingReasonCodes
+ * @property 'None'|'Low'|'Medium'|'High'|null $currentStorageEstimatedMonthlyVolumeIOPsCostVariation
+ * @property list<'EBSVolumeAllocatedStorageUnderprovisioned'|'EBSVolumeThroughputUnderprovisioned'|'EBSVolumeIOPSOverprovisioned'|'EBSVolumeThroughputOverprovisioned'|'NewGenerationStorageTypeAvailable'|'DBClusterStorageOptionAvailable'|'DBClusterStorageSavingsAvailable'>|null $storageFindingReasonCodes
  * @property list<RDSDBInstanceRecommendationOption>|null $instanceRecommendationOptions
  * @property list<RDSDBStorageRecommendationOption>|null $storageRecommendationOptions
  * @property list<RDSDBUtilizationMetric>|null $utilizationMetrics
@@ -41,10 +42,11 @@ class RDSDBRecommendation extends Shape
      *     dbClusterIdentifier?: string|null,
      *     idle?: 'True'|'False'|null,
      *     instanceFinding?: 'Optimized'|'Underprovisioned'|'Overprovisioned'|null,
-     *     storageFinding?: 'Optimized'|'Underprovisioned'|'Overprovisioned'|null,
+     *     storageFinding?: 'Optimized'|'Underprovisioned'|'Overprovisioned'|'NotOptimized'|null,
      *     instanceFindingReasonCodes?: list<'CPUOverprovisioned'|'NetworkBandwidthOverprovisioned'|'EBSIOPSOverprovisioned'|'EBSIOPSUnderprovisioned'|'EBSThroughputOverprovisioned'|'CPUUnderprovisioned'|'NetworkBandwidthUnderprovisioned'|'EBSThroughputUnderprovisioned'|'NewGenerationDBInstanceClassAvailable'|'NewEngineVersionAvailable'|'DBClusterWriterUnderprovisioned'|'MemoryUnderprovisioned'|'InstanceStorageReadIOPSUnderprovisioned'|'InstanceStorageWriteIOPSUnderprovisioned'>|null,
      *     currentInstancePerformanceRisk?: 'VeryLow'|'Low'|'Medium'|'High'|null,
-     *     storageFindingReasonCodes?: list<'EBSVolumeAllocatedStorageUnderprovisioned'|'EBSVolumeThroughputUnderprovisioned'|'EBSVolumeIOPSOverprovisioned'|'EBSVolumeThroughputOverprovisioned'|'NewGenerationStorageTypeAvailable'>|null,
+     *     currentStorageEstimatedMonthlyVolumeIOPsCostVariation?: 'None'|'Low'|'Medium'|'High'|null,
+     *     storageFindingReasonCodes?: list<'EBSVolumeAllocatedStorageUnderprovisioned'|'EBSVolumeThroughputUnderprovisioned'|'EBSVolumeIOPSOverprovisioned'|'EBSVolumeThroughputOverprovisioned'|'NewGenerationStorageTypeAvailable'|'DBClusterStorageOptionAvailable'|'DBClusterStorageSavingsAvailable'>|null,
      *     instanceRecommendationOptions?: list<RDSDBInstanceRecommendationOption>|null,
      *     storageRecommendationOptions?: list<RDSDBStorageRecommendationOption>|null,
      *     utilizationMetrics?: list<RDSDBUtilizationMetric>|null,

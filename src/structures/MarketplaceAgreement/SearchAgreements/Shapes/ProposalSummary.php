@@ -5,15 +5,17 @@ namespace Sunaoka\Aws\Structures\MarketplaceAgreement\SearchAgreements\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $offerId
  * @property list<ResourceShape>|null $resources
+ * @property string|null $offerId
+ * @property string|null $offerSetId
  */
 class ProposalSummary extends Shape
 {
     /**
      * @param array{
+     *     resources?: list<ResourceShape>|null,
      *     offerId?: string|null,
-     *     resources?: list<ResourceShape>|null
+     *     offerSetId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

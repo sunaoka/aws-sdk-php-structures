@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string|null $description
  * @property string $semanticVersion
- * @property list<Shapes\ComponentConfiguration> $components
+ * @property list<Shapes\ComponentConfiguration>|null $components
  * @property Shapes\InstanceConfiguration|null $instanceConfiguration
  * @property string|null $dockerfileTemplateData
  * @property string|null $dockerfileTemplateUri
@@ -30,7 +30,7 @@ class CreateContainerRecipeRequest extends Request
      *     name: string,
      *     description?: string|null,
      *     semanticVersion: string,
-     *     components: list<Shapes\ComponentConfiguration>,
+     *     components?: list<Shapes\ComponentConfiguration>|null,
      *     instanceConfiguration?: Shapes\InstanceConfiguration|null,
      *     dockerfileTemplateData?: string|null,
      *     dockerfileTemplateUri?: string|null,

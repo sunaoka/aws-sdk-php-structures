@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AwsAccountId
- * @property 'REDSHIFT'|'QBUSINESS' $Service
+ * @property 'REDSHIFT'|'QBUSINESS'|'ATHENA' $Service
  */
 class DeleteIdentityPropagationConfigRequest extends Request
 {
     /**
      * @param array{
      *     AwsAccountId: string,
-     *     Service: 'REDSHIFT'|'QBUSINESS'
+     *     Service: 'REDSHIFT'|'QBUSINESS'|'ATHENA'
      * } $args
      */
     public function __construct(array $args)

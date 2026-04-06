@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property UpdateError|null $Error
  * @property string|null $Source
+ * @property 'FORCED'|'GRACEFUL'|null $WorkerReplacementStrategy
  */
 class LastUpdate extends Shape
 {
@@ -17,7 +18,8 @@ class LastUpdate extends Shape
      *     Status?: 'SUCCESS'|'PENDING'|'FAILED'|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     Error?: UpdateError|null,
-     *     Source?: string|null
+     *     Source?: string|null,
+     *     WorkerReplacementStrategy?: 'FORCED'|'GRACEFUL'|null
      * } $args
      */
     public function __construct(array $args = [])

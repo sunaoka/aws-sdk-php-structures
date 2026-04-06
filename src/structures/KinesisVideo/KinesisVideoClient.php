@@ -16,6 +16,7 @@ class KinesisVideoClient extends \Aws\KinesisVideo\KinesisVideoClient
     use DescribeNotificationConfiguration\DescribeNotificationConfigurationTrait;
     use DescribeSignalingChannel\DescribeSignalingChannelTrait;
     use DescribeStream\DescribeStreamTrait;
+    use DescribeStreamStorageConfiguration\DescribeStreamStorageConfigurationTrait;
     use GetDataEndpoint\GetDataEndpointTrait;
     use GetSignalingChannelEndpoint\GetSignalingChannelEndpointTrait;
     use ListEdgeAgentConfigurations\ListEdgeAgentConfigurationsTrait;
@@ -34,4 +35,5 @@ class KinesisVideoClient extends \Aws\KinesisVideo\KinesisVideoClient
     use UpdateNotificationConfiguration\UpdateNotificationConfigurationTrait;
     use UpdateSignalingChannel\UpdateSignalingChannelTrait;
     use UpdateStream\UpdateStreamTrait;
+    use UpdateStreamStorageConfiguration\UpdateStreamStorageConfigurationTrait;
 }

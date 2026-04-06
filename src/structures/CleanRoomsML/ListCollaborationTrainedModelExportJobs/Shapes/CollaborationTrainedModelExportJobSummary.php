@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $description
  * @property string $creatorAccountId
  * @property string $trainedModelArn
+ * @property string|null $trainedModelVersionIdentifier
  * @property string $membershipIdentifier
  * @property string $collaborationIdentifier
  */
@@ -30,6 +31,7 @@ class CollaborationTrainedModelExportJobSummary extends Shape
      *     description?: string|null,
      *     creatorAccountId: string,
      *     trainedModelArn: string,
+     *     trainedModelVersionIdentifier?: string|null,
      *     membershipIdentifier: string,
      *     collaborationIdentifier: string
      * } $args

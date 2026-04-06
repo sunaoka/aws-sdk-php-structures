@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'QUANTUM_TASKS_QUEUE'|'JOBS_QUEUE' $queue
- * @property 'Normal'|'Priority'|null $queuePriority
  * @property string $queueSize
+ * @property 'Normal'|'Priority'|null $queuePriority
  */
 class DeviceQueueInfo extends Shape
 {
     /**
      * @param array{
      *     queue: 'QUANTUM_TASKS_QUEUE'|'JOBS_QUEUE',
-     *     queuePriority?: 'Normal'|'Priority'|null,
-     *     queueSize: string
+     *     queueSize: string,
+     *     queuePriority?: 'Normal'|'Priority'|null
      * } $args
      */
     public function __construct(array $args)

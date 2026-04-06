@@ -10,7 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $repositoryName
  * @property string|null $repositoryUri
  * @property \Aws\Api\DateTimeResult|null $createdAt
- * @property 'MUTABLE'|'IMMUTABLE'|null $imageTagMutability
+ * @property 'MUTABLE'|'IMMUTABLE'|'IMMUTABLE_WITH_EXCLUSION'|'MUTABLE_WITH_EXCLUSION'|null $imageTagMutability
+ * @property list<ImageTagMutabilityExclusionFilter>|null $imageTagMutabilityExclusionFilters
  * @property ImageScanningConfiguration|null $imageScanningConfiguration
  * @property EncryptionConfiguration|null $encryptionConfiguration
  */
@@ -23,7 +24,8 @@ class Repository extends Shape
      *     repositoryName?: string|null,
      *     repositoryUri?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     imageTagMutability?: 'MUTABLE'|'IMMUTABLE'|null,
+     *     imageTagMutability?: 'MUTABLE'|'IMMUTABLE'|'IMMUTABLE_WITH_EXCLUSION'|'MUTABLE_WITH_EXCLUSION'|null,
+     *     imageTagMutabilityExclusionFilters?: list<ImageTagMutabilityExclusionFilter>|null,
      *     imageScanningConfiguration?: ImageScanningConfiguration|null,
      *     encryptionConfiguration?: EncryptionConfiguration|null
      * } $args

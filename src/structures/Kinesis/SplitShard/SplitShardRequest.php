@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ShardToSplit
  * @property string $NewStartingHashKey
  * @property string|null $StreamARN
+ * @property string|null $StreamId
  */
 class SplitShardRequest extends Request
 {
@@ -17,7 +18,8 @@ class SplitShardRequest extends Request
      *     StreamName?: string|null,
      *     ShardToSplit: string,
      *     NewStartingHashKey: string,
-     *     StreamARN?: string|null
+     *     StreamARN?: string|null,
+     *     StreamId?: string|null
      * } $args
      */
     public function __construct(array $args)

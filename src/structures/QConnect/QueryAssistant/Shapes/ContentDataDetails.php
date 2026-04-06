@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\QueryAssistant\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RankingData $rankingData
  * @property TextData $textData
+ * @property RankingData $rankingData
  */
 class ContentDataDetails extends Shape
 {
     /**
      * @param array{
-     *     rankingData: RankingData,
-     *     textData: TextData
+     *     textData: TextData,
+     *     rankingData: RankingData
      * } $args
      */
     public function __construct(array $args)

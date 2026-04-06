@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceArn
+ * @property string $PermissionSetArn
  * @property int<1, 100>|null $MaxResults
  * @property string|null $NextToken
- * @property string $PermissionSetArn
  */
 class ListCustomerManagedPolicyReferencesInPermissionSetRequest extends Request
 {
     /**
      * @param array{
      *     InstanceArn: string,
+     *     PermissionSetArn: string,
      *     MaxResults?: int<1, 100>|null,
-     *     NextToken?: string|null,
-     *     PermissionSetArn: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

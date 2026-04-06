@@ -18,17 +18,19 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $CopySourceIfModifiedSince
  * @property string|null $CopySourceIfNoneMatch
  * @property \Aws\Api\DateTimeResult|null $CopySourceIfUnmodifiedSince
- * @property \Aws\Api\DateTimeResult|null $Expires
+ * @property string|null $Expires
  * @property string|null $GrantFullControl
  * @property string|null $GrantRead
  * @property string|null $GrantReadACP
  * @property string|null $GrantWriteACP
+ * @property string|null $IfMatch
+ * @property string|null $IfNoneMatch
  * @property string $Key
  * @property array<string, string>|null $Metadata
  * @property 'COPY'|'REPLACE'|null $MetadataDirective
  * @property 'COPY'|'REPLACE'|null $TaggingDirective
- * @property 'AES256'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
- * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null $StorageClass
+ * @property 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
+ * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|'FSX_ONTAP'|null $StorageClass
  * @property string|null $WebsiteRedirectLocation
  * @property string|null $SSECustomerAlgorithm
  * @property string|null $SSECustomerKey
@@ -64,17 +66,19 @@ class CopyObjectRequest extends Request
      *     CopySourceIfModifiedSince?: \Aws\Api\DateTimeResult|null,
      *     CopySourceIfNoneMatch?: string|null,
      *     CopySourceIfUnmodifiedSince?: \Aws\Api\DateTimeResult|null,
-     *     Expires?: \Aws\Api\DateTimeResult|null,
+     *     Expires?: string|null,
      *     GrantFullControl?: string|null,
      *     GrantRead?: string|null,
      *     GrantReadACP?: string|null,
      *     GrantWriteACP?: string|null,
+     *     IfMatch?: string|null,
+     *     IfNoneMatch?: string|null,
      *     Key: string,
      *     Metadata?: array<string, string>|null,
      *     MetadataDirective?: 'COPY'|'REPLACE'|null,
      *     TaggingDirective?: 'COPY'|'REPLACE'|null,
-     *     ServerSideEncryption?: 'AES256'|'aws:kms'|'aws:kms:dsse'|null,
-     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null,
+     *     ServerSideEncryption?: 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null,
+     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|'FSX_ONTAP'|null,
      *     WebsiteRedirectLocation?: string|null,
      *     SSECustomerAlgorithm?: string|null,
      *     SSECustomerKey?: string|null,

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $ContainerHostname
- * @property string $Image
+ * @property string|null $Image
  * @property string|null $ImageDigest
  * @property string|null $ModelDataUrl
  * @property ModelDataSource|null $ModelDataSource
@@ -18,13 +18,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $NearestModelName
  * @property AdditionalS3DataSource|null $AdditionalS3DataSource
  * @property string|null $ModelDataETag
+ * @property bool|null $IsCheckpoint
+ * @property BaseModel|null $BaseModel
  */
 class ModelPackageContainerDefinition extends Shape
 {
     /**
      * @param array{
      *     ContainerHostname?: string|null,
-     *     Image: string,
+     *     Image?: string|null,
      *     ImageDigest?: string|null,
      *     ModelDataUrl?: string|null,
      *     ModelDataSource?: ModelDataSource|null,
@@ -35,10 +37,12 @@ class ModelPackageContainerDefinition extends Shape
      *     FrameworkVersion?: string|null,
      *     NearestModelName?: string|null,
      *     AdditionalS3DataSource?: AdditionalS3DataSource|null,
-     *     ModelDataETag?: string|null
+     *     ModelDataETag?: string|null,
+     *     IsCheckpoint?: bool|null,
+     *     BaseModel?: BaseModel|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

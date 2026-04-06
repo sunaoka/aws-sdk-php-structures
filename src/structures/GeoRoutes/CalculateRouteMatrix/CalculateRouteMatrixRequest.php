@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Key
  * @property 'FastestRoute'|'ShortestRoute'|null $OptimizeRoutingFor
  * @property list<Shapes\RouteMatrixOrigin> $Origins
- * @property Shapes\RouteMatrixBoundary $RoutingBoundary
+ * @property Shapes\RouteMatrixBoundary|null $RoutingBoundary
  * @property Shapes\RouteMatrixTrafficOptions|null $Traffic
  * @property 'Car'|'Pedestrian'|'Scooter'|'Truck'|null $TravelMode
  * @property Shapes\RouteMatrixTravelModeOptions|null $TravelModeOptions
@@ -32,7 +32,7 @@ class CalculateRouteMatrixRequest extends Request
      *     Key?: string|null,
      *     OptimizeRoutingFor?: 'FastestRoute'|'ShortestRoute'|null,
      *     Origins: list<Shapes\RouteMatrixOrigin>,
-     *     RoutingBoundary: Shapes\RouteMatrixBoundary,
+     *     RoutingBoundary?: Shapes\RouteMatrixBoundary|null,
      *     Traffic?: Shapes\RouteMatrixTrafficOptions|null,
      *     TravelMode?: 'Car'|'Pedestrian'|'Scooter'|'Truck'|null,
      *     TravelModeOptions?: Shapes\RouteMatrixTravelModeOptions|null

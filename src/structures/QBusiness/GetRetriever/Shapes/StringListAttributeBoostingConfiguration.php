@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QBusiness\GetRetriever\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'NONE'|'LOW'|'MEDIUM'|'HIGH'|'VERY_HIGH' $boostingLevel
+ * @property 'NONE'|'LOW'|'MEDIUM'|'HIGH'|'VERY_HIGH'|'ONE'|'TWO' $boostingLevel
  */
 class StringListAttributeBoostingConfiguration extends Shape
 {
     /**
-     * @param array{boostingLevel: 'NONE'|'LOW'|'MEDIUM'|'HIGH'|'VERY_HIGH'} $args
+     * @param array{boostingLevel: 'NONE'|'LOW'|'MEDIUM'|'HIGH'|'VERY_HIGH'|'ONE'|'TWO'} $args
      */
     public function __construct(array $args)
     {

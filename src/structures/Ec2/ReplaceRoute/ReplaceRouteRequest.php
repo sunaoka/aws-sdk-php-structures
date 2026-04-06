@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $LocalGatewayId
  * @property string|null $CarrierGatewayId
  * @property string|null $CoreNetworkArn
+ * @property string|null $OdbNetworkArn
  * @property bool|null $DryRun
  * @property string $RouteTableId
  * @property string|null $DestinationCidrBlock
@@ -34,6 +35,7 @@ class ReplaceRouteRequest extends Request
      *     LocalGatewayId?: string|null,
      *     CarrierGatewayId?: string|null,
      *     CoreNetworkArn?: string|null,
+     *     OdbNetworkArn?: string|null,
      *     DryRun?: bool|null,
      *     RouteTableId: string,
      *     DestinationCidrBlock?: string|null,

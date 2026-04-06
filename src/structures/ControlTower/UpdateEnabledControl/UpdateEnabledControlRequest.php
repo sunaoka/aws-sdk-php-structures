@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ControlTower\UpdateEnabledControl;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $enabledControlIdentifier
  * @property list<Shapes\EnabledControlParameter> $parameters
+ * @property string $enabledControlIdentifier
  */
 class UpdateEnabledControlRequest extends Request
 {
     /**
      * @param array{
-     *     enabledControlIdentifier: string,
-     *     parameters: list<Shapes\EnabledControlParameter>
+     *     parameters: list<Shapes\EnabledControlParameter>,
+     *     enabledControlIdentifier: string
      * } $args
      */
     public function __construct(array $args)

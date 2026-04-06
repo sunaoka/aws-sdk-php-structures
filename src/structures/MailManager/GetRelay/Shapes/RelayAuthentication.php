@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MailManager\GetRelay\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NoAuthentication|null $NoAuthentication
  * @property string|null $SecretArn
+ * @property NoAuthentication|null $NoAuthentication
  */
 class RelayAuthentication extends Shape
 {
     /**
      * @param array{
-     *     NoAuthentication?: NoAuthentication|null,
-     *     SecretArn?: string|null
+     *     SecretArn?: string|null,
+     *     NoAuthentication?: NoAuthentication|null
      * } $args
      */
     public function __construct(array $args = [])

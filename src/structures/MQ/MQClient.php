@@ -9,6 +9,7 @@ class MQClient extends \Aws\MQ\MQClient
     use CreateTags\CreateTagsTrait;
     use CreateUser\CreateUserTrait;
     use DeleteBroker\DeleteBrokerTrait;
+    use DeleteConfiguration\DeleteConfigurationTrait;
     use DeleteTags\DeleteTagsTrait;
     use DeleteUser\DeleteUserTrait;
     use DescribeBroker\DescribeBrokerTrait;

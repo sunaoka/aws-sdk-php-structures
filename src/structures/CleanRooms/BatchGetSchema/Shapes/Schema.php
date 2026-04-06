@@ -8,7 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Column> $columns
  * @property list<Column> $partitionKeys
  * @property list<'AGGREGATION'|'LIST'|'CUSTOM'|'ID_MAPPING_TABLE'> $analysisRuleTypes
- * @property 'DIRECT_QUERY'|null $analysisMethod
+ * @property 'DIRECT_QUERY'|'DIRECT_JOB'|'MULTIPLE'|null $analysisMethod
+ * @property list<'DIRECT_QUERY'|'DIRECT_JOB'>|null $selectedAnalysisMethods
  * @property string $creatorAccountId
  * @property string $name
  * @property string $collaborationId
@@ -18,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property 'TABLE'|'ID_MAPPING_TABLE' $type
  * @property list<SchemaStatusDetail> $schemaStatusDetails
+ * @property string|null $resourceArn
  * @property SchemaTypeProperties|null $schemaTypeProperties
  */
 class Schema extends Shape
@@ -27,7 +29,8 @@ class Schema extends Shape
      *     columns: list<Column>,
      *     partitionKeys: list<Column>,
      *     analysisRuleTypes: list<'AGGREGATION'|'LIST'|'CUSTOM'|'ID_MAPPING_TABLE'>,
-     *     analysisMethod?: 'DIRECT_QUERY'|null,
+     *     analysisMethod?: 'DIRECT_QUERY'|'DIRECT_JOB'|'MULTIPLE'|null,
+     *     selectedAnalysisMethods?: list<'DIRECT_QUERY'|'DIRECT_JOB'>|null,
      *     creatorAccountId: string,
      *     name: string,
      *     collaborationId: string,
@@ -37,6 +40,7 @@ class Schema extends Shape
      *     updateTime: \Aws\Api\DateTimeResult,
      *     type: 'TABLE'|'ID_MAPPING_TABLE',
      *     schemaStatusDetails: list<SchemaStatusDetail>,
+     *     resourceArn?: string|null,
      *     schemaTypeProperties?: SchemaTypeProperties|null
      * } $args
      */

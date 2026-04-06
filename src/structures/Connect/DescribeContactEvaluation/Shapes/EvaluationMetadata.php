@@ -8,7 +8,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ContactId
  * @property string $EvaluatorArn
  * @property string|null $ContactAgentId
+ * @property string|null $CalibrationSessionId
  * @property EvaluationScore|null $Score
+ * @property AutoEvaluationDetails|null $AutoEvaluation
+ * @property EvaluationAcknowledgement|null $Acknowledgement
+ * @property EvaluationReviewMetadata|null $Review
+ * @property EvaluationContactParticipant|null $ContactParticipant
+ * @property string|null $SamplingJobId
  */
 class EvaluationMetadata extends Shape
 {
@@ -17,7 +23,13 @@ class EvaluationMetadata extends Shape
      *     ContactId: string,
      *     EvaluatorArn: string,
      *     ContactAgentId?: string|null,
-     *     Score?: EvaluationScore|null
+     *     CalibrationSessionId?: string|null,
+     *     Score?: EvaluationScore|null,
+     *     AutoEvaluation?: AutoEvaluationDetails|null,
+     *     Acknowledgement?: EvaluationAcknowledgement|null,
+     *     Review?: EvaluationReviewMetadata|null,
+     *     ContactParticipant?: EvaluationContactParticipant|null,
+     *     SamplingJobId?: string|null
      * } $args
      */
     public function __construct(array $args)

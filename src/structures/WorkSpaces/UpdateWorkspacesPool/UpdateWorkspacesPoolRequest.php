@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Capacity|null $Capacity
  * @property Shapes\ApplicationSettingsRequest|null $ApplicationSettings
  * @property Shapes\TimeoutSettings|null $TimeoutSettings
+ * @property 'AUTO_STOP'|'ALWAYS_ON'|null $RunningMode
  */
 class UpdateWorkspacesPoolRequest extends Request
 {
@@ -23,7 +24,8 @@ class UpdateWorkspacesPoolRequest extends Request
      *     DirectoryId?: string|null,
      *     Capacity?: Shapes\Capacity|null,
      *     ApplicationSettings?: Shapes\ApplicationSettingsRequest|null,
-     *     TimeoutSettings?: Shapes\TimeoutSettings|null
+     *     TimeoutSettings?: Shapes\TimeoutSettings|null,
+     *     RunningMode?: 'AUTO_STOP'|'ALWAYS_ON'|null
      * } $args
      */
     public function __construct(array $args)

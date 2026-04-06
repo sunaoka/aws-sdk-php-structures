@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $roleArn
  * @property string|null $name
  * @property string|null $runGroupId
+ * @property string|null $batchId
  * @property int<0, 100000>|null $priority
  * @property string|null $definition
  * @property string|null $digest
@@ -39,6 +40,11 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $runOutputUri
  * @property 'STATIC'|'DYNAMIC'|null $storageType
  * @property string|null $workflowOwnerId
+ * @property string|null $workflowVersionName
+ * @property string|null $workflowUuid
+ * @property 'RESTRICTED'|'VPC'|null $networkingMode
+ * @property Shapes\ConfigurationDetails|null $configuration
+ * @property Shapes\VpcConfigResponse|null $vpcConfig
  */
 class GetRunResponse extends Response
 {

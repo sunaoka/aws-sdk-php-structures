@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $ModifiedDate
  * @property string|null $Description
  * @property list<Shapes\PatchSource>|null $Sources
+ * @property 'COMPLIANT'|'NON_COMPLIANT'|null $AvailableSecurityUpdatesComplianceStatus
  */
 class UpdatePatchBaselineResponse extends Response
 {

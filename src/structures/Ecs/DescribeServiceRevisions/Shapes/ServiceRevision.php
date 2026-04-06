@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $clusterArn
  * @property string|null $taskDefinition
  * @property list<CapacityProviderStrategyItem>|null $capacityProviderStrategy
- * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null $launchType
  * @property string|null $platformVersion
  * @property string|null $platformFamily
  * @property list<LoadBalancer>|null $loadBalancers
@@ -23,6 +23,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DeploymentEphemeralStorage|null $fargateEphemeralStorage
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property list<VpcLatticeConfiguration>|null $vpcLatticeConfigurations
+ * @property ResolvedConfiguration|null $resolvedConfiguration
+ * @property ECSManagedResources|null $ecsManagedResources
  */
 class ServiceRevision extends Shape
 {
@@ -33,7 +35,7 @@ class ServiceRevision extends Shape
      *     clusterArn?: string|null,
      *     taskDefinition?: string|null,
      *     capacityProviderStrategy?: list<CapacityProviderStrategyItem>|null,
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null,
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null,
      *     platformVersion?: string|null,
      *     platformFamily?: string|null,
      *     loadBalancers?: list<LoadBalancer>|null,
@@ -45,7 +47,9 @@ class ServiceRevision extends Shape
      *     volumeConfigurations?: list<ServiceVolumeConfiguration>|null,
      *     fargateEphemeralStorage?: DeploymentEphemeralStorage|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     vpcLatticeConfigurations?: list<VpcLatticeConfiguration>|null
+     *     vpcLatticeConfigurations?: list<VpcLatticeConfiguration>|null,
+     *     resolvedConfiguration?: ResolvedConfiguration|null,
+     *     ecsManagedResources?: ECSManagedResources|null
      * } $args
      */
     public function __construct(array $args = [])

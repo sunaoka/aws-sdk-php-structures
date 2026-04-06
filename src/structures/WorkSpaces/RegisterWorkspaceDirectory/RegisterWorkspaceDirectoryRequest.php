@@ -7,7 +7,6 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $DirectoryId
  * @property list<string>|null $SubnetIds
- * @property bool|null $EnableWorkDocs
  * @property bool|null $EnableSelfService
  * @property 'DEDICATED'|'SHARED'|null $Tenancy
  * @property list<Shapes\Tag>|null $Tags
@@ -25,7 +24,6 @@ class RegisterWorkspaceDirectoryRequest extends Request
      * @param array{
      *     DirectoryId?: string|null,
      *     SubnetIds?: list<string>|null,
-     *     EnableWorkDocs?: bool|null,
      *     EnableSelfService?: bool|null,
      *     Tenancy?: 'DEDICATED'|'SHARED'|null,
      *     Tags?: list<Shapes\Tag>|null,

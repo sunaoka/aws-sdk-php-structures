@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\DukptDerivationAttributes|null $OutgoingDukptAttributes
  * @property Shapes\WrappedKey|null $IncomingWrappedKey
  * @property Shapes\WrappedKey|null $OutgoingWrappedKey
+ * @property Shapes\As2805PekDerivationAttributes|null $IncomingAs2805Attributes
  */
 class TranslatePinDataRequest extends Request
 {
@@ -27,7 +28,8 @@ class TranslatePinDataRequest extends Request
      *     IncomingDukptAttributes?: Shapes\DukptDerivationAttributes|null,
      *     OutgoingDukptAttributes?: Shapes\DukptDerivationAttributes|null,
      *     IncomingWrappedKey?: Shapes\WrappedKey|null,
-     *     OutgoingWrappedKey?: Shapes\WrappedKey|null
+     *     OutgoingWrappedKey?: Shapes\WrappedKey|null,
+     *     IncomingAs2805Attributes?: Shapes\As2805PekDerivationAttributes|null
      * } $args
      */
     public function __construct(array $args)

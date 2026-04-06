@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'MAIN'|'PROFILE_422'|null $CodecProfile
  * @property 'ADAPTIVE'|'STATIC'|null $DynamicSubGop
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $FramerateControl
- * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null $FramerateConversionAlgorithm
+ * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null $FramerateConversionAlgorithm
  * @property int<1, 1001>|null $FramerateDenominator
  * @property int<24, 60000>|null $FramerateNumerator
  * @property int<0, 2147483647>|null $GopClosedCadence
@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $ParControl
  * @property int<1, 2147483647>|null $ParDenominator
  * @property int<1, 2147483647>|null $ParNumerator
+ * @property list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'|'SHOT_CHANGE'>|null $PerFrameMetrics
  * @property 'SINGLE_PASS'|'MULTI_PASS'|null $QualityTuningLevel
  * @property 'VBR'|'CBR'|null $RateControlMode
  * @property 'INTERLACED'|'INTERLACED_OPTIMIZE'|null $ScanTypeConversionMode
@@ -49,7 +50,7 @@ class Mpeg2Settings extends Shape
      *     CodecProfile?: 'MAIN'|'PROFILE_422'|null,
      *     DynamicSubGop?: 'ADAPTIVE'|'STATIC'|null,
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
-     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null,
+     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null,
      *     FramerateDenominator?: int<1, 1001>|null,
      *     FramerateNumerator?: int<24, 60000>|null,
      *     GopClosedCadence?: int<0, 2147483647>|null,
@@ -66,6 +67,7 @@ class Mpeg2Settings extends Shape
      *     ParControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
      *     ParDenominator?: int<1, 2147483647>|null,
      *     ParNumerator?: int<1, 2147483647>|null,
+     *     PerFrameMetrics?: list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'|'SHOT_CHANGE'>|null,
      *     QualityTuningLevel?: 'SINGLE_PASS'|'MULTI_PASS'|null,
      *     RateControlMode?: 'VBR'|'CBR'|null,
      *     ScanTypeConversionMode?: 'INTERLACED'|'INTERLACED_OPTIMIZE'|null,

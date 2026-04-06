@@ -5,27 +5,29 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\UpdateSecurityConfig\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $configVersion
- * @property int|null $createdDate
- * @property string|null $description
- * @property IamIdentityCenterConfigOptions|null $iamIdentityCenterOptions
  * @property string|null $id
- * @property int|null $lastModifiedDate
+ * @property 'saml'|'iamidentitycenter'|'iamfederation'|null $type
+ * @property string|null $configVersion
+ * @property string|null $description
  * @property SamlConfigOptions|null $samlOptions
- * @property 'saml'|'iamidentitycenter'|null $type
+ * @property IamIdentityCenterConfigOptions|null $iamIdentityCenterOptions
+ * @property IamFederationConfigOptions|null $iamFederationOptions
+ * @property int|null $createdDate
+ * @property int|null $lastModifiedDate
  */
 class SecurityConfigDetail extends Shape
 {
     /**
      * @param array{
-     *     configVersion?: string|null,
-     *     createdDate?: int|null,
-     *     description?: string|null,
-     *     iamIdentityCenterOptions?: IamIdentityCenterConfigOptions|null,
      *     id?: string|null,
-     *     lastModifiedDate?: int|null,
+     *     type?: 'saml'|'iamidentitycenter'|'iamfederation'|null,
+     *     configVersion?: string|null,
+     *     description?: string|null,
      *     samlOptions?: SamlConfigOptions|null,
-     *     type?: 'saml'|'iamidentitycenter'|null
+     *     iamIdentityCenterOptions?: IamIdentityCenterConfigOptions|null,
+     *     iamFederationOptions?: IamFederationConfigOptions|null,
+     *     createdDate?: int|null,
+     *     lastModifiedDate?: int|null
      * } $args
      */
     public function __construct(array $args = [])

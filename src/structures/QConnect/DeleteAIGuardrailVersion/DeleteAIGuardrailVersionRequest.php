@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\QConnect\DeleteAIGuardrailVersion;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $aiGuardrailId
  * @property string $assistantId
+ * @property string $aiGuardrailId
  * @property int<1, max> $versionNumber
  */
 class DeleteAIGuardrailVersionRequest extends Request
 {
     /**
      * @param array{
-     *     aiGuardrailId: string,
      *     assistantId: string,
+     *     aiGuardrailId: string,
      *     versionNumber: int<1, max>
      * } $args
      */

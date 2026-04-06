@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DataZone\RemoveEntityOwner;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
  * @property string $domainIdentifier
- * @property string $entityIdentifier
  * @property 'DOMAIN_UNIT' $entityType
+ * @property string $entityIdentifier
  * @property Shapes\OwnerProperties $owner
+ * @property string|null $clientToken
  */
 class RemoveEntityOwnerRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
      *     domainIdentifier: string,
-     *     entityIdentifier: string,
      *     entityType: 'DOMAIN_UNIT',
-     *     owner: Shapes\OwnerProperties
+     *     entityIdentifier: string,
+     *     owner: Shapes\OwnerProperties,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

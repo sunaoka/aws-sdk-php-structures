@@ -5,7 +5,9 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVolumes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $AvailabilityZoneId
  * @property string|null $OutpostArn
+ * @property string|null $SourceVolumeId
  * @property int|null $Iops
  * @property list<Tag>|null $Tags
  * @property 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null $VolumeType
@@ -14,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $Throughput
  * @property 'sse-ebs'|'sse-kms'|'none'|null $SseType
  * @property OperatorResponse|null $Operator
+ * @property int|null $VolumeInitializationRate
  * @property string|null $VolumeId
  * @property int|null $Size
  * @property string|null $SnapshotId
@@ -28,7 +31,9 @@ class Volume extends Shape
 {
     /**
      * @param array{
+     *     AvailabilityZoneId?: string|null,
      *     OutpostArn?: string|null,
+     *     SourceVolumeId?: string|null,
      *     Iops?: int|null,
      *     Tags?: list<Tag>|null,
      *     VolumeType?: 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null,
@@ -37,6 +42,7 @@ class Volume extends Shape
      *     Throughput?: int|null,
      *     SseType?: 'sse-ebs'|'sse-kms'|'none'|null,
      *     Operator?: OperatorResponse|null,
+     *     VolumeInitializationRate?: int|null,
      *     VolumeId?: string|null,
      *     Size?: int|null,
      *     SnapshotId?: string|null,

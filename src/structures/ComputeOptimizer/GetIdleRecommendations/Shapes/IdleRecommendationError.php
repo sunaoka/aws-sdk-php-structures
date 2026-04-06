@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $identifier
  * @property string|null $code
  * @property string|null $message
- * @property 'EC2Instance'|'AutoScalingGroup'|'EBSVolume'|'ECSService'|'RDSDBInstance'|null $resourceType
+ * @property 'EC2Instance'|'AutoScalingGroup'|'EBSVolume'|'ECSService'|'RDSDBInstance'|'NatGateway'|null $resourceType
  */
 class IdleRecommendationError extends Shape
 {
@@ -17,7 +17,7 @@ class IdleRecommendationError extends Shape
      *     identifier?: string|null,
      *     code?: string|null,
      *     message?: string|null,
-     *     resourceType?: 'EC2Instance'|'AutoScalingGroup'|'EBSVolume'|'ECSService'|'RDSDBInstance'|null
+     *     resourceType?: 'EC2Instance'|'AutoScalingGroup'|'EBSVolume'|'ECSService'|'RDSDBInstance'|'NatGateway'|null
      * } $args
      */
     public function __construct(array $args = [])

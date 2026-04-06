@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataZone\GetAssetType\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool|null $required
  * @property string $typeName
  * @property string $typeRevision
+ * @property bool|null $required
  */
 class FormEntryOutput extends Shape
 {
     /**
      * @param array{
-     *     required?: bool|null,
      *     typeName: string,
-     *     typeRevision: string
+     *     typeRevision: string,
+     *     required?: bool|null
      * } $args
      */
     public function __construct(array $args)

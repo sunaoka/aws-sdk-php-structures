@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\Braket\CreateJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\AlgorithmSpecification $algorithmSpecification
- * @property list<Shapes\Association>|null $associations
- * @property Shapes\JobCheckpointConfig|null $checkpointConfig
  * @property string $clientToken
- * @property Shapes\DeviceConfig $deviceConfig
- * @property array<string, string>|null $hyperParameters
+ * @property Shapes\AlgorithmSpecification $algorithmSpecification
  * @property list<Shapes\InputFileConfig>|null $inputDataConfig
- * @property Shapes\InstanceConfig $instanceConfig
- * @property string $jobName
  * @property Shapes\JobOutputDataConfig $outputDataConfig
+ * @property Shapes\JobCheckpointConfig|null $checkpointConfig
+ * @property string $jobName
  * @property string $roleArn
  * @property Shapes\JobStoppingCondition|null $stoppingCondition
+ * @property Shapes\InstanceConfig $instanceConfig
+ * @property array<string, string>|null $hyperParameters
+ * @property Shapes\DeviceConfig $deviceConfig
  * @property array<string, string>|null $tags
+ * @property list<Shapes\Association>|null $associations
  */
 class CreateJobRequest extends Request
 {
     /**
      * @param array{
-     *     algorithmSpecification: Shapes\AlgorithmSpecification,
-     *     associations?: list<Shapes\Association>|null,
-     *     checkpointConfig?: Shapes\JobCheckpointConfig|null,
      *     clientToken: string,
-     *     deviceConfig: Shapes\DeviceConfig,
-     *     hyperParameters?: array<string, string>|null,
+     *     algorithmSpecification: Shapes\AlgorithmSpecification,
      *     inputDataConfig?: list<Shapes\InputFileConfig>|null,
-     *     instanceConfig: Shapes\InstanceConfig,
-     *     jobName: string,
      *     outputDataConfig: Shapes\JobOutputDataConfig,
+     *     checkpointConfig?: Shapes\JobCheckpointConfig|null,
+     *     jobName: string,
      *     roleArn: string,
      *     stoppingCondition?: Shapes\JobStoppingCondition|null,
-     *     tags?: array<string, string>|null
+     *     instanceConfig: Shapes\InstanceConfig,
+     *     hyperParameters?: array<string, string>|null,
+     *     deviceConfig: Shapes\DeviceConfig,
+     *     tags?: array<string, string>|null,
+     *     associations?: list<Shapes\Association>|null
      * } $args
      */
     public function __construct(array $args)

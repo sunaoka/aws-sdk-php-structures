@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property bool|null $DisableSchemaValidation
  * @property bool|null $DisableExecuteApiEndpoint
+ * @property 'ipv4'|'dualstack'|null $IpAddressType
  * @property string|null $Name
  * @property string|null $RouteKey
  * @property string|null $RouteSelectionExpression
@@ -29,6 +30,7 @@ class UpdateApiRequest extends Request
      *     Description?: string|null,
      *     DisableSchemaValidation?: bool|null,
      *     DisableExecuteApiEndpoint?: bool|null,
+     *     IpAddressType?: 'ipv4'|'dualstack'|null,
      *     Name?: string|null,
      *     RouteKey?: string|null,
      *     RouteSelectionExpression?: string|null,

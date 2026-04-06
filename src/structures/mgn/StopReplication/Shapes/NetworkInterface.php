@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\mgn\StopReplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $macAddress
  * @property list<string>|null $ips
  * @property bool|null $isPrimary
- * @property string|null $macAddress
  */
 class NetworkInterface extends Shape
 {
     /**
      * @param array{
+     *     macAddress?: string|null,
      *     ips?: list<string>|null,
-     *     isPrimary?: bool|null,
-     *     macAddress?: string|null
+     *     isPrimary?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

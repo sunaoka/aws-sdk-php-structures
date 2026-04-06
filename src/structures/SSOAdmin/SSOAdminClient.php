@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\SSOAdmin;
 
 class SSOAdminClient extends \Aws\SSOAdmin\SSOAdminClient
 {
+    use AddRegion\AddRegionTrait;
     use AttachCustomerManagedPolicyReferenceToPermissionSet\AttachCustomerManagedPolicyReferenceToPermissionSetTrait;
     use AttachManagedPolicyToPermissionSet\AttachManagedPolicyToPermissionSetTrait;
     use CreateAccountAssignment\CreateAccountAssignmentTrait;
@@ -34,6 +35,7 @@ class SSOAdminClient extends \Aws\SSOAdmin\SSOAdminClient
     use DescribeInstanceAccessControlAttributeConfiguration\DescribeInstanceAccessControlAttributeConfigurationTrait;
     use DescribePermissionSet\DescribePermissionSetTrait;
     use DescribePermissionSetProvisioningStatus\DescribePermissionSetProvisioningStatusTrait;
+    use DescribeRegion\DescribeRegionTrait;
     use DescribeTrustedTokenIssuer\DescribeTrustedTokenIssuerTrait;
     use DetachCustomerManagedPolicyReferenceFromPermissionSet\DetachCustomerManagedPolicyReferenceFromPermissionSetTrait;
     use DetachManagedPolicyFromPermissionSet\DetachManagedPolicyFromPermissionSetTrait;
@@ -41,6 +43,7 @@ class SSOAdminClient extends \Aws\SSOAdmin\SSOAdminClient
     use GetApplicationAssignmentConfiguration\GetApplicationAssignmentConfigurationTrait;
     use GetApplicationAuthenticationMethod\GetApplicationAuthenticationMethodTrait;
     use GetApplicationGrant\GetApplicationGrantTrait;
+    use GetApplicationSessionConfiguration\GetApplicationSessionConfigurationTrait;
     use GetInlinePolicyForPermissionSet\GetInlinePolicyForPermissionSetTrait;
     use GetPermissionsBoundaryForPermissionSet\GetPermissionsBoundaryForPermissionSetTrait;
     use ListAccountAssignmentCreationStatus\ListAccountAssignmentCreationStatusTrait;
@@ -61,6 +64,7 @@ class SSOAdminClient extends \Aws\SSOAdmin\SSOAdminClient
     use ListPermissionSetProvisioningStatus\ListPermissionSetProvisioningStatusTrait;
     use ListPermissionSets\ListPermissionSetsTrait;
     use ListPermissionSetsProvisionedToAccount\ListPermissionSetsProvisionedToAccountTrait;
+    use ListRegions\ListRegionsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTrustedTokenIssuers\ListTrustedTokenIssuersTrait;
     use ProvisionPermissionSet\ProvisionPermissionSetTrait;
@@ -68,8 +72,10 @@ class SSOAdminClient extends \Aws\SSOAdmin\SSOAdminClient
     use PutApplicationAssignmentConfiguration\PutApplicationAssignmentConfigurationTrait;
     use PutApplicationAuthenticationMethod\PutApplicationAuthenticationMethodTrait;
     use PutApplicationGrant\PutApplicationGrantTrait;
+    use PutApplicationSessionConfiguration\PutApplicationSessionConfigurationTrait;
     use PutInlinePolicyToPermissionSet\PutInlinePolicyToPermissionSetTrait;
     use PutPermissionsBoundaryToPermissionSet\PutPermissionsBoundaryToPermissionSetTrait;
+    use RemoveRegion\RemoveRegionTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateApplication\UpdateApplicationTrait;

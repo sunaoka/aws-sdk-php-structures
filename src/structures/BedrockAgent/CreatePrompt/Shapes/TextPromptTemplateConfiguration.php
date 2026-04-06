@@ -5,15 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreatePrompt\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<PromptInputVariable>|null $inputVariables
  * @property string $text
+ * @property CachePointBlock|null $cachePoint
+ * @property list<PromptInputVariable>|null $inputVariables
  */
 class TextPromptTemplateConfiguration extends Shape
 {
     /**
      * @param array{
-     *     inputVariables?: list<PromptInputVariable>|null,
-     *     text: string
+     *     text: string,
+     *     cachePoint?: CachePointBlock|null,
+     *     inputVariables?: list<PromptInputVariable>|null
      * } $args
      */
     public function __construct(array $args)

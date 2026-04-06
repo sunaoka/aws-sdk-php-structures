@@ -7,17 +7,24 @@ class QBusinessClient extends \Aws\QBusiness\QBusinessClient
     use AssociatePermission\AssociatePermissionTrait;
     use BatchDeleteDocument\BatchDeleteDocumentTrait;
     use BatchPutDocument\BatchPutDocumentTrait;
+    use CancelSubscription\CancelSubscriptionTrait;
     use ChatSync\ChatSyncTrait;
+    use CheckDocumentAccess\CheckDocumentAccessTrait;
+    use CreateAnonymousWebExperienceUrl\CreateAnonymousWebExperienceUrlTrait;
     use CreateApplication\CreateApplicationTrait;
+    use CreateChatResponseConfiguration\CreateChatResponseConfigurationTrait;
     use CreateDataAccessor\CreateDataAccessorTrait;
     use CreateDataSource\CreateDataSourceTrait;
     use CreateIndex\CreateIndexTrait;
     use CreatePlugin\CreatePluginTrait;
     use CreateRetriever\CreateRetrieverTrait;
+    use CreateSubscription\CreateSubscriptionTrait;
     use CreateUser\CreateUserTrait;
     use CreateWebExperience\CreateWebExperienceTrait;
     use DeleteApplication\DeleteApplicationTrait;
+    use DeleteAttachment\DeleteAttachmentTrait;
     use DeleteChatControlsConfiguration\DeleteChatControlsConfigurationTrait;
+    use DeleteChatResponseConfiguration\DeleteChatResponseConfigurationTrait;
     use DeleteConversation\DeleteConversationTrait;
     use DeleteDataAccessor\DeleteDataAccessorTrait;
     use DeleteDataSource\DeleteDataSourceTrait;
@@ -30,8 +37,10 @@ class QBusinessClient extends \Aws\QBusiness\QBusinessClient
     use DisassociatePermission\DisassociatePermissionTrait;
     use GetApplication\GetApplicationTrait;
     use GetChatControlsConfiguration\GetChatControlsConfigurationTrait;
+    use GetChatResponseConfiguration\GetChatResponseConfigurationTrait;
     use GetDataAccessor\GetDataAccessorTrait;
     use GetDataSource\GetDataSourceTrait;
+    use GetDocumentContent\GetDocumentContentTrait;
     use GetGroup\GetGroupTrait;
     use GetIndex\GetIndexTrait;
     use GetMedia\GetMediaTrait;
@@ -42,6 +51,7 @@ class QBusinessClient extends \Aws\QBusiness\QBusinessClient
     use GetWebExperience\GetWebExperienceTrait;
     use ListApplications\ListApplicationsTrait;
     use ListAttachments\ListAttachmentsTrait;
+    use ListChatResponseConfigurations\ListChatResponseConfigurationsTrait;
     use ListConversations\ListConversationsTrait;
     use ListDataAccessors\ListDataAccessorsTrait;
     use ListDataSourceSyncJobs\ListDataSourceSyncJobsTrait;
@@ -55,6 +65,7 @@ class QBusinessClient extends \Aws\QBusiness\QBusinessClient
     use ListPluginTypeMetadata\ListPluginTypeMetadataTrait;
     use ListPlugins\ListPluginsTrait;
     use ListRetrievers\ListRetrieversTrait;
+    use ListSubscriptions\ListSubscriptionsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListWebExperiences\ListWebExperiencesTrait;
     use PutFeedback\PutFeedbackTrait;
@@ -66,11 +77,13 @@ class QBusinessClient extends \Aws\QBusiness\QBusinessClient
     use UntagResource\UntagResourceTrait;
     use UpdateApplication\UpdateApplicationTrait;
     use UpdateChatControlsConfiguration\UpdateChatControlsConfigurationTrait;
+    use UpdateChatResponseConfiguration\UpdateChatResponseConfigurationTrait;
     use UpdateDataAccessor\UpdateDataAccessorTrait;
     use UpdateDataSource\UpdateDataSourceTrait;
     use UpdateIndex\UpdateIndexTrait;
     use UpdatePlugin\UpdatePluginTrait;
     use UpdateRetriever\UpdateRetrieverTrait;
+    use UpdateSubscription\UpdateSubscriptionTrait;
     use UpdateUser\UpdateUserTrait;
     use UpdateWebExperience\UpdateWebExperienceTrait;
 }

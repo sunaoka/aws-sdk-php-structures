@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Tag>|null $Tags
  * @property 'CREATING'|'ACTIVE'|'MODIFYING'|'FAILED'|'DELETING'|'SYNCING'|'NEEDS_ATTENTION' $Status
  * @property \Aws\Api\DateTimeResult $CreateTime
+ * @property IntegrationConfig|null $IntegrationConfig
  * @property list<IntegrationError>|null $Errors
  * @property string|null $DataFilter
  */
@@ -32,6 +33,7 @@ class Integration extends Shape
      *     Tags?: list<Tag>|null,
      *     Status: 'CREATING'|'ACTIVE'|'MODIFYING'|'FAILED'|'DELETING'|'SYNCING'|'NEEDS_ATTENTION',
      *     CreateTime: \Aws\Api\DateTimeResult,
+     *     IntegrationConfig?: IntegrationConfig|null,
      *     Errors?: list<IntegrationError>|null,
      *     DataFilter?: string|null
      * } $args

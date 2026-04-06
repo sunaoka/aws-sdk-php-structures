@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\DeleteAttributeMapping;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'x509Subject'|'x509Issuer'|'x509SAN' $certificateField
  * @property string $profileId
+ * @property 'x509Subject'|'x509Issuer'|'x509SAN' $certificateField
  * @property list<string>|null $specifiers
  */
 class DeleteAttributeMappingRequest extends Request
 {
     /**
      * @param array{
-     *     certificateField: 'x509Subject'|'x509Issuer'|'x509SAN',
      *     profileId: string,
+     *     certificateField: 'x509Subject'|'x509Issuer'|'x509SAN',
      *     specifiers?: list<string>|null
      * } $args
      */

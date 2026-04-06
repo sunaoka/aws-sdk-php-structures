@@ -17,8 +17,10 @@ class SecurityIRClient extends \Aws\SecurityIR\SecurityIRClient
     use ListCaseEdits\ListCaseEditsTrait;
     use ListCases\ListCasesTrait;
     use ListComments\ListCommentsTrait;
+    use ListInvestigations\ListInvestigationsTrait;
     use ListMemberships\ListMembershipsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use SendFeedback\SendFeedbackTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateCase\UpdateCaseTrait;

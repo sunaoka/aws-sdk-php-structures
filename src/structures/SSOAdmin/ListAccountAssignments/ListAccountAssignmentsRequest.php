@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListAccountAssignments;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AccountId
  * @property string $InstanceArn
+ * @property string $AccountId
+ * @property string $PermissionSetArn
  * @property int<1, 100>|null $MaxResults
  * @property string|null $NextToken
- * @property string $PermissionSetArn
  */
 class ListAccountAssignmentsRequest extends Request
 {
     /**
      * @param array{
-     *     AccountId: string,
      *     InstanceArn: string,
+     *     AccountId: string,
+     *     PermissionSetArn: string,
      *     MaxResults?: int<1, 100>|null,
-     *     NextToken?: string|null,
-     *     PermissionSetArn: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

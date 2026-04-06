@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MailManager\GetArchiveSearch\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ArchiveBooleanExpression|null $BooleanExpression
  * @property ArchiveStringExpression|null $StringExpression
+ * @property ArchiveBooleanExpression|null $BooleanExpression
  */
 class ArchiveFilterCondition extends Shape
 {
     /**
      * @param array{
-     *     BooleanExpression?: ArchiveBooleanExpression|null,
-     *     StringExpression?: ArchiveStringExpression|null
+     *     StringExpression?: ArchiveStringExpression|null,
+     *     BooleanExpression?: ArchiveBooleanExpression|null
      * } $args
      */
     public function __construct(array $args = [])

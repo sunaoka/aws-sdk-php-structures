@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $actionDefinitionId
  * @property Shapes\ActionPayload $actionPayload
  * @property \Aws\Api\DateTimeResult $executionTime
+ * @property Shapes\ResolveTo|null $resolveTo
  */
 class DescribeActionResponse extends Response
 {

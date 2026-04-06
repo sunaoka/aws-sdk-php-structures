@@ -8,9 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DBInstanceIdentifier
  * @property string $TenantDBName
  * @property string $MasterUsername
- * @property string $MasterUserPassword
+ * @property string|null $MasterUserPassword
  * @property string|null $CharacterSetName
  * @property string|null $NcharCharacterSetName
+ * @property bool|null $ManageMasterUserPassword
+ * @property string|null $MasterUserSecretKmsKeyId
  * @property list<Shapes\Tag>|null $Tags
  */
 class CreateTenantDatabaseRequest extends Request
@@ -20,9 +22,11 @@ class CreateTenantDatabaseRequest extends Request
      *     DBInstanceIdentifier: string,
      *     TenantDBName: string,
      *     MasterUsername: string,
-     *     MasterUserPassword: string,
+     *     MasterUserPassword?: string|null,
      *     CharacterSetName?: string|null,
      *     NcharCharacterSetName?: string|null,
+     *     ManageMasterUserPassword?: bool|null,
+     *     MasterUserSecretKmsKeyId?: string|null,
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */

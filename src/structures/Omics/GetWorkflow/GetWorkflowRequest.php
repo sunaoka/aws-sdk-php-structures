@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $id
  * @property 'PRIVATE'|'READY2RUN'|null $type
- * @property list<'DEFINITION'>|null $export
+ * @property list<'DEFINITION'|'README'>|null $export
  * @property string|null $workflowOwnerId
  */
 class GetWorkflowRequest extends Request
@@ -16,7 +16,7 @@ class GetWorkflowRequest extends Request
      * @param array{
      *     id: string,
      *     type?: 'PRIVATE'|'READY2RUN'|null,
-     *     export?: list<'DEFINITION'>|null,
+     *     export?: list<'DEFINITION'|'README'>|null,
      *     workflowOwnerId?: string|null
      * } $args
      */

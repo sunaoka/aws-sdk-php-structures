@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property Shapes\FilterCriteria $filterCriteria
  * @property string $name
- * @property string|null $reason
  * @property array<string, string>|null $tags
+ * @property string|null $reason
  */
 class CreateFilterRequest extends Request
 {
@@ -20,8 +20,8 @@ class CreateFilterRequest extends Request
      *     description?: string|null,
      *     filterCriteria: Shapes\FilterCriteria,
      *     name: string,
-     *     reason?: string|null,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     reason?: string|null
      * } $args
      */
     public function __construct(array $args)

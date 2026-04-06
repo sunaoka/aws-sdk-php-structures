@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\IamIdentityCenterOptionsInput|null $iamIdentityCenterOptions
  * @property list<Shapes\AppConfig>|null $appConfigs
  * @property list<Shapes\Tag>|null $tagList
+ * @property string|null $kmsKeyArn
  */
 class CreateApplicationRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateApplicationRequest extends Request
      *     dataSources?: list<Shapes\DataSource>|null,
      *     iamIdentityCenterOptions?: Shapes\IamIdentityCenterOptionsInput|null,
      *     appConfigs?: list<Shapes\AppConfig>|null,
-     *     tagList?: list<Shapes\Tag>|null
+     *     tagList?: list<Shapes\Tag>|null,
+     *     kmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

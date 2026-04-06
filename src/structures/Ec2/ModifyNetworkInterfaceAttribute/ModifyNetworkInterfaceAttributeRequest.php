@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $EnablePrimaryIpv6
  * @property Shapes\ConnectionTrackingSpecificationRequest|null $ConnectionTrackingSpecification
  * @property bool|null $AssociatePublicIpAddress
+ * @property list<string>|null $AssociatedSubnetIds
  * @property bool|null $DryRun
  * @property string $NetworkInterfaceId
  * @property Shapes\AttributeValue|null $Description
@@ -24,6 +25,7 @@ class ModifyNetworkInterfaceAttributeRequest extends Request
      *     EnablePrimaryIpv6?: bool|null,
      *     ConnectionTrackingSpecification?: Shapes\ConnectionTrackingSpecificationRequest|null,
      *     AssociatePublicIpAddress?: bool|null,
+     *     AssociatedSubnetIds?: list<string>|null,
      *     DryRun?: bool|null,
      *     NetworkInterfaceId: string,
      *     Description?: Shapes\AttributeValue|null,

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $NetworkNodes
  * @property string|null $AvailabilityZone
  * @property string|null $ZoneId
+ * @property string|null $CapacityBlockId
  */
 class InstanceTopology extends Shape
 {
@@ -21,7 +22,8 @@ class InstanceTopology extends Shape
      *     GroupName?: string|null,
      *     NetworkNodes?: list<string>|null,
      *     AvailabilityZone?: string|null,
-     *     ZoneId?: string|null
+     *     ZoneId?: string|null,
+     *     CapacityBlockId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

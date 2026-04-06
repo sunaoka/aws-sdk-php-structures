@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ModelPackageName
  * @property string|null $ModelPackageGroupName
  * @property string|null $ModelPackageDescription
+ * @property 'Logged'|'Registered'|null $ModelPackageRegistrationType
  * @property Shapes\InferenceSpecification|null $InferenceSpecification
  * @property Shapes\ModelPackageValidationSpecification|null $ValidationSpecification
  * @property Shapes\SourceAlgorithmSpecification|null $SourceAlgorithmSpecification
@@ -36,6 +37,7 @@ class CreateModelPackageRequest extends Request
      *     ModelPackageName?: string|null,
      *     ModelPackageGroupName?: string|null,
      *     ModelPackageDescription?: string|null,
+     *     ModelPackageRegistrationType?: 'Logged'|'Registered'|null,
      *     InferenceSpecification?: Shapes\InferenceSpecification|null,
      *     ValidationSpecification?: Shapes\ModelPackageValidationSpecification|null,
      *     SourceAlgorithmSpecification?: Shapes\SourceAlgorithmSpecification|null,

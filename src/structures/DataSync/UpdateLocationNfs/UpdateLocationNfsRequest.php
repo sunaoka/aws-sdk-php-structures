@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $LocationArn
  * @property string|null $Subdirectory
+ * @property string|null $ServerHostname
  * @property Shapes\OnPremConfig|null $OnPremConfig
  * @property Shapes\NfsMountOptions|null $MountOptions
  */
@@ -16,6 +17,7 @@ class UpdateLocationNfsRequest extends Request
      * @param array{
      *     LocationArn: string,
      *     Subdirectory?: string|null,
+     *     ServerHostname?: string|null,
      *     OnPremConfig?: Shapes\OnPremConfig|null,
      *     MountOptions?: Shapes\NfsMountOptions|null
      * } $args

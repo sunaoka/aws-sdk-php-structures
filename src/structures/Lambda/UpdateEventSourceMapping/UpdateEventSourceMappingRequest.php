@@ -20,9 +20,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<0, 900>|null $TumblingWindowInSeconds
  * @property list<'ReportBatchItemFailures'>|null $FunctionResponseTypes
  * @property Shapes\ScalingConfig|null $ScalingConfig
+ * @property Shapes\AmazonManagedKafkaEventSourceConfig|null $AmazonManagedKafkaEventSourceConfig
+ * @property Shapes\SelfManagedKafkaEventSourceConfig|null $SelfManagedKafkaEventSourceConfig
  * @property Shapes\DocumentDBEventSourceConfig|null $DocumentDBEventSourceConfig
  * @property string|null $KMSKeyArn
  * @property Shapes\EventSourceMappingMetricsConfig|null $MetricsConfig
+ * @property Shapes\EventSourceMappingLoggingConfig|null $LoggingConfig
  * @property Shapes\ProvisionedPollerConfig|null $ProvisionedPollerConfig
  */
 class UpdateEventSourceMappingRequest extends Request
@@ -44,9 +47,12 @@ class UpdateEventSourceMappingRequest extends Request
      *     TumblingWindowInSeconds?: int<0, 900>|null,
      *     FunctionResponseTypes?: list<'ReportBatchItemFailures'>|null,
      *     ScalingConfig?: Shapes\ScalingConfig|null,
+     *     AmazonManagedKafkaEventSourceConfig?: Shapes\AmazonManagedKafkaEventSourceConfig|null,
+     *     SelfManagedKafkaEventSourceConfig?: Shapes\SelfManagedKafkaEventSourceConfig|null,
      *     DocumentDBEventSourceConfig?: Shapes\DocumentDBEventSourceConfig|null,
      *     KMSKeyArn?: string|null,
      *     MetricsConfig?: Shapes\EventSourceMappingMetricsConfig|null,
+     *     LoggingConfig?: Shapes\EventSourceMappingLoggingConfig|null,
      *     ProvisionedPollerConfig?: Shapes\ProvisionedPollerConfig|null
      * } $args
      */

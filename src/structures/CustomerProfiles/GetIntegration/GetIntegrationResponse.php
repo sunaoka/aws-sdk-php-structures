@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool|null $IsUnstructured
  * @property string|null $RoleArn
  * @property list<string>|null $EventTriggerNames
+ * @property 'PROFILE'|'DOMAIN'|null $Scope
  */
 class GetIntegrationResponse extends Response
 {

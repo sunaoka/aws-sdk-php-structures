@@ -15,6 +15,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SftpConnectorConfig|null $SftpConfig
  * @property list<string>|null $ServiceManagedEgressIpAddresses
  * @property string|null $SecurityPolicyName
+ * @property DescribedConnectorEgressConfig|null $EgressConfig
+ * @property 'SERVICE_MANAGED'|'VPC_LATTICE' $EgressType
+ * @property string|null $ErrorMessage
+ * @property 'ACTIVE'|'ERRORED'|'PENDING' $Status
  */
 class DescribedConnector extends Shape
 {
@@ -29,7 +33,11 @@ class DescribedConnector extends Shape
      *     Tags?: list<Tag>|null,
      *     SftpConfig?: SftpConnectorConfig|null,
      *     ServiceManagedEgressIpAddresses?: list<string>|null,
-     *     SecurityPolicyName?: string|null
+     *     SecurityPolicyName?: string|null,
+     *     EgressConfig?: DescribedConnectorEgressConfig|null,
+     *     EgressType: 'SERVICE_MANAGED'|'VPC_LATTICE',
+     *     ErrorMessage?: string|null,
+     *     Status: 'ACTIVE'|'ERRORED'|'PENDING'
      * } $args
      */
     public function __construct(array $args)

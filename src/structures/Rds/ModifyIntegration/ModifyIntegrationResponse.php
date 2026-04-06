@@ -13,10 +13,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $AdditionalEncryptionContext
  * @property 'creating'|'active'|'modifying'|'failed'|'deleting'|'syncing'|'needs_attention'|null $Status
  * @property list<Shapes\Tag>|null $Tags
- * @property \Aws\Api\DateTimeResult|null $CreateTime
- * @property list<Shapes\IntegrationError>|null $Errors
  * @property string|null $DataFilter
  * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
+ * @property list<Shapes\IntegrationError>|null $Errors
  */
 class ModifyIntegrationResponse extends Response
 {

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ControlTower\EnableBaseline;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $baselineIdentifier
  * @property string $baselineVersion
  * @property list<Shapes\EnabledBaselineParameter>|null $parameters
- * @property array<string, string>|null $tags
+ * @property string $baselineIdentifier
  * @property string $targetIdentifier
+ * @property array<string, string>|null $tags
  */
 class EnableBaselineRequest extends Request
 {
     /**
      * @param array{
-     *     baselineIdentifier: string,
      *     baselineVersion: string,
      *     parameters?: list<Shapes\EnabledBaselineParameter>|null,
-     *     tags?: array<string, string>|null,
-     *     targetIdentifier: string
+     *     baselineIdentifier: string,
+     *     targetIdentifier: string,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

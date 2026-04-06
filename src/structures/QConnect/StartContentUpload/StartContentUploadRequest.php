@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\QConnect\StartContentUpload;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $contentType
  * @property string $knowledgeBaseId
+ * @property string $contentType
  * @property int<1, 60>|null $presignedUrlTimeToLive
  */
 class StartContentUploadRequest extends Request
 {
     /**
      * @param array{
-     *     contentType: string,
      *     knowledgeBaseId: string,
+     *     contentType: string,
      *     presignedUrlTimeToLive?: int<1, 60>|null
      * } $args
      */

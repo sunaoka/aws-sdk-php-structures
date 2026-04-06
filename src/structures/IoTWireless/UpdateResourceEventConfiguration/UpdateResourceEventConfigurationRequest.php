@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Identifier
- * @property 'PartnerAccountId'|'DevEui'|'FuotaTaskId'|'GatewayEui'|'WirelessDeviceId'|'WirelessGatewayId' $IdentifierType
+ * @property 'PartnerAccountId'|'DevEui'|'GatewayEui'|'WirelessDeviceId'|'WirelessGatewayId' $IdentifierType
  * @property 'Sidewalk'|null $PartnerType
  * @property Shapes\DeviceRegistrationStateEventConfiguration|null $DeviceRegistrationState
  * @property Shapes\ProximityEventConfiguration|null $Proximity
@@ -19,7 +19,7 @@ class UpdateResourceEventConfigurationRequest extends Request
     /**
      * @param array{
      *     Identifier: string,
-     *     IdentifierType: 'PartnerAccountId'|'DevEui'|'FuotaTaskId'|'GatewayEui'|'WirelessDeviceId'|'WirelessGatewayId',
+     *     IdentifierType: 'PartnerAccountId'|'DevEui'|'GatewayEui'|'WirelessDeviceId'|'WirelessGatewayId',
      *     PartnerType?: 'Sidewalk'|null,
      *     DeviceRegistrationState?: Shapes\DeviceRegistrationStateEventConfiguration|null,
      *     Proximity?: Shapes\ProximityEventConfiguration|null,

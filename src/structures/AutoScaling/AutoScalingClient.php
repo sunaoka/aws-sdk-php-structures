@@ -54,6 +54,7 @@ class AutoScalingClient extends \Aws\AutoScaling\AutoScalingClient
     use ExecutePolicy\ExecutePolicyTrait;
     use ExitStandby\ExitStandbyTrait;
     use GetPredictiveScalingForecast\GetPredictiveScalingForecastTrait;
+    use LaunchInstances\LaunchInstancesTrait;
     use PutLifecycleHook\PutLifecycleHookTrait;
     use PutNotificationConfiguration\PutNotificationConfigurationTrait;
     use PutScalingPolicy\PutScalingPolicyTrait;

@@ -15,6 +15,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $BootstrapBrokerStringVpcConnectivityTls
  * @property string|null $BootstrapBrokerStringVpcConnectivitySaslScram
  * @property string|null $BootstrapBrokerStringVpcConnectivitySaslIam
+ * @property string|null $BootstrapBrokerStringIpv6
+ * @property string|null $BootstrapBrokerStringTlsIpv6
+ * @property string|null $BootstrapBrokerStringSaslScramIpv6
+ * @property string|null $BootstrapBrokerStringSaslIamIpv6
  */
 class GetBootstrapBrokersResponse extends Response
 {

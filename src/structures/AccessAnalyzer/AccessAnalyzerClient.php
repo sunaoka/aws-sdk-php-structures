@@ -22,6 +22,7 @@ class AccessAnalyzerClient extends \Aws\AccessAnalyzer\AccessAnalyzerClient
     use GetFinding\GetFindingTrait;
     use GetFindingRecommendation\GetFindingRecommendationTrait;
     use GetFindingV2\GetFindingV2Trait;
+    use GetFindingsStatistics\GetFindingsStatisticsTrait;
     use GetGeneratedPolicy\GetGeneratedPolicyTrait;
     use ListAccessPreviewFindings\ListAccessPreviewFindingsTrait;
     use ListAccessPreviews\ListAccessPreviewsTrait;

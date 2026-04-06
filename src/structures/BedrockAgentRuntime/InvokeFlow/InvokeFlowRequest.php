@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property bool|null $enableTrace
+ * @property string|null $executionId
  * @property string $flowAliasIdentifier
  * @property string $flowIdentifier
  * @property list<Shapes\FlowInput> $inputs
@@ -16,6 +17,7 @@ class InvokeFlowRequest extends Request
     /**
      * @param array{
      *     enableTrace?: bool|null,
+     *     executionId?: string|null,
      *     flowAliasIdentifier: string,
      *     flowIdentifier: string,
      *     inputs: list<Shapes\FlowInput>,

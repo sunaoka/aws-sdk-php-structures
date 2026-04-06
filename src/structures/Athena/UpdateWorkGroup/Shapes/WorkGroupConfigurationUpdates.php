@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property bool|null $EnforceWorkGroupConfiguration
  * @property ResultConfigurationUpdates|null $ResultConfigurationUpdates
+ * @property ManagedQueryResultsConfigurationUpdates|null $ManagedQueryResultsConfigurationUpdates
  * @property bool|null $PublishCloudWatchMetricsEnabled
  * @property int<10000000, max>|null $BytesScannedCutoffPerQuery
  * @property bool|null $RemoveBytesScannedCutoffPerQuery
@@ -18,6 +19,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CustomerContentEncryptionConfiguration|null $CustomerContentEncryptionConfiguration
  * @property bool|null $EnableMinimumEncryptionConfiguration
  * @property QueryResultsS3AccessGrantsConfiguration|null $QueryResultsS3AccessGrantsConfiguration
+ * @property MonitoringConfiguration|null $MonitoringConfiguration
+ * @property EngineConfiguration|null $EngineConfiguration
  */
 class WorkGroupConfigurationUpdates extends Shape
 {
@@ -25,6 +28,7 @@ class WorkGroupConfigurationUpdates extends Shape
      * @param array{
      *     EnforceWorkGroupConfiguration?: bool|null,
      *     ResultConfigurationUpdates?: ResultConfigurationUpdates|null,
+     *     ManagedQueryResultsConfigurationUpdates?: ManagedQueryResultsConfigurationUpdates|null,
      *     PublishCloudWatchMetricsEnabled?: bool|null,
      *     BytesScannedCutoffPerQuery?: int<10000000, max>|null,
      *     RemoveBytesScannedCutoffPerQuery?: bool|null,
@@ -35,7 +39,9 @@ class WorkGroupConfigurationUpdates extends Shape
      *     ExecutionRole?: string|null,
      *     CustomerContentEncryptionConfiguration?: CustomerContentEncryptionConfiguration|null,
      *     EnableMinimumEncryptionConfiguration?: bool|null,
-     *     QueryResultsS3AccessGrantsConfiguration?: QueryResultsS3AccessGrantsConfiguration|null
+     *     QueryResultsS3AccessGrantsConfiguration?: QueryResultsS3AccessGrantsConfiguration|null,
+     *     MonitoringConfiguration?: MonitoringConfiguration|null,
+     *     EngineConfiguration?: EngineConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'USER_INPUT'|'SECRET'|'READ_ONLY'|'UNUSED'|'SECRET_OR_USER_INPUT'> $PropertyTypes
  * @property list<AllowedValue>|null $AllowedValues
  * @property list<'READ'|'WRITE'>|null $DataOperationScopes
+ * @property string|null $KeyOverride
+ * @property 'HEADER'|'BODY'|'QUERY_PARAM'|'PATH'|null $PropertyLocation
  */
 class Property extends Shape
 {
@@ -23,7 +25,9 @@ class Property extends Shape
      *     DefaultValue?: string|null,
      *     PropertyTypes: list<'USER_INPUT'|'SECRET'|'READ_ONLY'|'UNUSED'|'SECRET_OR_USER_INPUT'>,
      *     AllowedValues?: list<AllowedValue>|null,
-     *     DataOperationScopes?: list<'READ'|'WRITE'>|null
+     *     DataOperationScopes?: list<'READ'|'WRITE'>|null,
+     *     KeyOverride?: string|null,
+     *     PropertyLocation?: 'HEADER'|'BODY'|'QUERY_PARAM'|'PATH'|null
      * } $args
      */
     public function __construct(array $args)

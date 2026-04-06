@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\CreateTrustAnchor;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool|null $enabled
  * @property string $name
- * @property list<Shapes\NotificationSetting>|null $notificationSettings
  * @property Shapes\Source $source
+ * @property bool|null $enabled
  * @property list<Shapes\Tag>|null $tags
+ * @property list<Shapes\NotificationSetting>|null $notificationSettings
  */
 class CreateTrustAnchorRequest extends Request
 {
     /**
      * @param array{
-     *     enabled?: bool|null,
      *     name: string,
-     *     notificationSettings?: list<Shapes\NotificationSetting>|null,
      *     source: Shapes\Source,
-     *     tags?: list<Shapes\Tag>|null
+     *     enabled?: bool|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     notificationSettings?: list<Shapes\NotificationSetting>|null
      * } $args
      */
     public function __construct(array $args)

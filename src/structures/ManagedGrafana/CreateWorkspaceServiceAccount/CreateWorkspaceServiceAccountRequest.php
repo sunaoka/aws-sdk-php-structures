@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\CreateWorkspaceServiceAccount;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'ADMIN'|'EDITOR'|'VIEWER' $grafanaRole
  * @property string $name
+ * @property 'ADMIN'|'EDITOR'|'VIEWER' $grafanaRole
  * @property string $workspaceId
  */
 class CreateWorkspaceServiceAccountRequest extends Request
 {
     /**
      * @param array{
-     *     grafanaRole: 'ADMIN'|'EDITOR'|'VIEWER',
      *     name: string,
+     *     grafanaRole: 'ADMIN'|'EDITOR'|'VIEWER',
      *     workspaceId: string
      * } $args
      */

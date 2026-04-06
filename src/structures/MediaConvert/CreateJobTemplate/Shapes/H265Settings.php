@@ -11,11 +11,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1000, 1466400000>|null $Bitrate
  * @property 'AUTO'|'LEVEL_1'|'LEVEL_2'|'LEVEL_2_1'|'LEVEL_3'|'LEVEL_3_1'|'LEVEL_4'|'LEVEL_4_1'|'LEVEL_5'|'LEVEL_5_1'|'LEVEL_5_2'|'LEVEL_6'|'LEVEL_6_1'|'LEVEL_6_2'|null $CodecLevel
  * @property 'MAIN_MAIN'|'MAIN_HIGH'|'MAIN10_MAIN'|'MAIN10_HIGH'|'MAIN_422_8BIT_MAIN'|'MAIN_422_8BIT_HIGH'|'MAIN_422_10BIT_MAIN'|'MAIN_422_10BIT_HIGH'|null $CodecProfile
+ * @property 'ENABLED'|'DISABLED'|null $Deblocking
  * @property 'ADAPTIVE'|'STATIC'|null $DynamicSubGop
  * @property 'INCLUDE'|'SUPPRESS'|null $EndOfStreamMarkers
  * @property 'DISABLED'|'ENABLED'|null $FlickerAdaptiveQuantization
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $FramerateControl
- * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null $FramerateConversionAlgorithm
+ * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null $FramerateConversionAlgorithm
  * @property int<1, 2147483647>|null $FramerateDenominator
  * @property int<1, 2147483647>|null $FramerateNumerator
  * @property 'DISABLED'|'ENABLED'|null $GopBReference
@@ -28,11 +29,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD'|null $InterlaceMode
  * @property int<1000, 1466400000>|null $MaxBitrate
  * @property int<0, 30>|null $MinIInterval
+ * @property 'ENABLED'|'DISABLED'|null $MvOverPictureBoundaries
+ * @property 'ENABLED'|'DISABLED'|null $MvTemporalPredictor
  * @property int<0, 7>|null $NumberBFramesBetweenReferenceFrames
  * @property int<1, 6>|null $NumberReferenceFrames
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $ParControl
  * @property int<1, 2147483647>|null $ParDenominator
  * @property int<1, 2147483647>|null $ParNumerator
+ * @property list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'|'SHOT_CHANGE'>|null $PerFrameMetrics
  * @property 'SINGLE_PASS'|'SINGLE_PASS_HQ'|'MULTI_PASS_HQ'|null $QualityTuningLevel
  * @property H265QvbrSettings|null $QvbrSettings
  * @property 'VBR'|'CBR'|'QVBR'|null $RateControlMode
@@ -45,7 +49,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'NONE'|'SOFT'|'HARD'|null $Telecine
  * @property 'DISABLED'|'ENABLED'|null $TemporalAdaptiveQuantization
  * @property 'DISABLED'|'ENABLED'|null $TemporalIds
+ * @property int<64, 2160>|null $TileHeight
+ * @property 'NONE'|'PADDED'|null $TilePadding
+ * @property int<256, 3840>|null $TileWidth
  * @property 'DISABLED'|'ENABLED'|null $Tiles
+ * @property 'AUTO'|'TREE_SIZE_32X32'|null $TreeBlockSize
  * @property 'DISABLED'|'ENABLED'|null $UnregisteredSeiTimecode
  * @property 'HVC1'|'HEV1'|null $WriteMp4PackagingType
  */
@@ -59,11 +67,12 @@ class H265Settings extends Shape
      *     Bitrate?: int<1000, 1466400000>|null,
      *     CodecLevel?: 'AUTO'|'LEVEL_1'|'LEVEL_2'|'LEVEL_2_1'|'LEVEL_3'|'LEVEL_3_1'|'LEVEL_4'|'LEVEL_4_1'|'LEVEL_5'|'LEVEL_5_1'|'LEVEL_5_2'|'LEVEL_6'|'LEVEL_6_1'|'LEVEL_6_2'|null,
      *     CodecProfile?: 'MAIN_MAIN'|'MAIN_HIGH'|'MAIN10_MAIN'|'MAIN10_HIGH'|'MAIN_422_8BIT_MAIN'|'MAIN_422_8BIT_HIGH'|'MAIN_422_10BIT_MAIN'|'MAIN_422_10BIT_HIGH'|null,
+     *     Deblocking?: 'ENABLED'|'DISABLED'|null,
      *     DynamicSubGop?: 'ADAPTIVE'|'STATIC'|null,
      *     EndOfStreamMarkers?: 'INCLUDE'|'SUPPRESS'|null,
      *     FlickerAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null,
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
-     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null,
+     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null,
      *     FramerateDenominator?: int<1, 2147483647>|null,
      *     FramerateNumerator?: int<1, 2147483647>|null,
      *     GopBReference?: 'DISABLED'|'ENABLED'|null,
@@ -76,11 +85,14 @@ class H265Settings extends Shape
      *     InterlaceMode?: 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD'|null,
      *     MaxBitrate?: int<1000, 1466400000>|null,
      *     MinIInterval?: int<0, 30>|null,
+     *     MvOverPictureBoundaries?: 'ENABLED'|'DISABLED'|null,
+     *     MvTemporalPredictor?: 'ENABLED'|'DISABLED'|null,
      *     NumberBFramesBetweenReferenceFrames?: int<0, 7>|null,
      *     NumberReferenceFrames?: int<1, 6>|null,
      *     ParControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
      *     ParDenominator?: int<1, 2147483647>|null,
      *     ParNumerator?: int<1, 2147483647>|null,
+     *     PerFrameMetrics?: list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'|'SHOT_CHANGE'>|null,
      *     QualityTuningLevel?: 'SINGLE_PASS'|'SINGLE_PASS_HQ'|'MULTI_PASS_HQ'|null,
      *     QvbrSettings?: H265QvbrSettings|null,
      *     RateControlMode?: 'VBR'|'CBR'|'QVBR'|null,
@@ -93,7 +105,11 @@ class H265Settings extends Shape
      *     Telecine?: 'NONE'|'SOFT'|'HARD'|null,
      *     TemporalAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null,
      *     TemporalIds?: 'DISABLED'|'ENABLED'|null,
+     *     TileHeight?: int<64, 2160>|null,
+     *     TilePadding?: 'NONE'|'PADDED'|null,
+     *     TileWidth?: int<256, 3840>|null,
      *     Tiles?: 'DISABLED'|'ENABLED'|null,
+     *     TreeBlockSize?: 'AUTO'|'TREE_SIZE_32X32'|null,
      *     UnregisteredSeiTimecode?: 'DISABLED'|'ENABLED'|null,
      *     WriteMp4PackagingType?: 'HVC1'|'HEV1'|null
      * } $args

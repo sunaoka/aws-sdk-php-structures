@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\KafkaClusterEncryptionInTransitDescription|null $kafkaClusterEncryptionInTransit
  * @property string|null $kafkaConnectVersion
  * @property Shapes\LogDeliveryDescription|null $logDelivery
+ * @property 'IPV4'|'DUAL'|null $networkType
  * @property list<Shapes\PluginDescription>|null $plugins
  * @property string|null $serviceExecutionRoleArn
  * @property Shapes\WorkerConfigurationDescription|null $workerConfiguration

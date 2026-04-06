@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceArn
- * @property string $PermissionSetArn
- * @property string $PrincipalId
- * @property 'USER'|'GROUP' $PrincipalType
  * @property string $TargetId
  * @property 'AWS_ACCOUNT' $TargetType
+ * @property string $PermissionSetArn
+ * @property 'USER'|'GROUP' $PrincipalType
+ * @property string $PrincipalId
  */
 class DeleteAccountAssignmentRequest extends Request
 {
     /**
      * @param array{
      *     InstanceArn: string,
-     *     PermissionSetArn: string,
-     *     PrincipalId: string,
-     *     PrincipalType: 'USER'|'GROUP',
      *     TargetId: string,
-     *     TargetType: 'AWS_ACCOUNT'
+     *     TargetType: 'AWS_ACCOUNT',
+     *     PermissionSetArn: string,
+     *     PrincipalType: 'USER'|'GROUP',
+     *     PrincipalId: string
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\VPCLattice\CreateRule;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\RuleAction|null $action
  * @property string|null $arn
  * @property string|null $id
- * @property Shapes\RuleMatch|null $match
  * @property string|null $name
- * @property int<1, 100>|null $priority
+ * @property Shapes\RuleMatch|null $match
+ * @property int<1, 2000>|null $priority
+ * @property Shapes\RuleAction|null $action
  */
 class CreateRuleResponse extends Response
 {

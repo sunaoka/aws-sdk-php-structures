@@ -24,22 +24,27 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $CopyTagsToSnapshot
  * @property string|null $Domain
  * @property string|null $DomainIAMRoleName
- * @property Shapes\ScalingConfiguration|null $ScalingConfiguration
- * @property string|null $EngineMode
  * @property string|null $DBClusterInstanceClass
  * @property string|null $StorageType
  * @property bool|null $PubliclyAccessible
  * @property int|null $Iops
- * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
  * @property string|null $NetworkType
  * @property string|null $SourceDbClusterResourceId
+ * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
+ * @property Shapes\ScalingConfiguration|null $ScalingConfiguration
+ * @property string|null $EngineMode
  * @property Shapes\RdsCustomClusterConfiguration|null $RdsCustomClusterConfiguration
  * @property int|null $MonitoringInterval
  * @property string|null $MonitoringRoleArn
  * @property bool|null $EnablePerformanceInsights
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $PreferredBackupWindow
  * @property string|null $EngineLifecycleSupport
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $EnableVPCNetworking
+ * @property bool|null $EnableInternetAccessGateway
  */
 class RestoreDBClusterToPointInTimeRequest extends Request
 {
@@ -64,22 +69,27 @@ class RestoreDBClusterToPointInTimeRequest extends Request
      *     CopyTagsToSnapshot?: bool|null,
      *     Domain?: string|null,
      *     DomainIAMRoleName?: string|null,
-     *     ScalingConfiguration?: Shapes\ScalingConfiguration|null,
-     *     EngineMode?: string|null,
      *     DBClusterInstanceClass?: string|null,
      *     StorageType?: string|null,
      *     PubliclyAccessible?: bool|null,
      *     Iops?: int|null,
-     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
      *     NetworkType?: string|null,
      *     SourceDbClusterResourceId?: string|null,
+     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
+     *     ScalingConfiguration?: Shapes\ScalingConfiguration|null,
+     *     EngineMode?: string|null,
      *     RdsCustomClusterConfiguration?: Shapes\RdsCustomClusterConfiguration|null,
      *     MonitoringInterval?: int|null,
      *     MonitoringRoleArn?: string|null,
      *     EnablePerformanceInsights?: bool|null,
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,
-     *     EngineLifecycleSupport?: string|null
+     *     BackupRetentionPeriod?: int|null,
+     *     PreferredBackupWindow?: string|null,
+     *     EngineLifecycleSupport?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     EnableVPCNetworking?: bool|null,
+     *     EnableInternetAccessGateway?: bool|null
      * } $args
      */
     public function __construct(array $args)

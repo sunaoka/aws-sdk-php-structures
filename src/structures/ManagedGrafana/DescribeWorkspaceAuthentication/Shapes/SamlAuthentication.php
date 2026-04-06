@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\DescribeWorkspaceAuthentication\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SamlConfiguration|null $configuration
  * @property 'CONFIGURED'|'NOT_CONFIGURED' $status
+ * @property SamlConfiguration|null $configuration
  */
 class SamlAuthentication extends Shape
 {
     /**
      * @param array{
-     *     configuration?: SamlConfiguration|null,
-     *     status: 'CONFIGURED'|'NOT_CONFIGURED'
+     *     status: 'CONFIGURED'|'NOT_CONFIGURED',
+     *     configuration?: SamlConfiguration|null
      * } $args
      */
     public function __construct(array $args)

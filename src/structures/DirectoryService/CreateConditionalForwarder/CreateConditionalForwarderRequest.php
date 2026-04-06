@@ -7,7 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DirectoryId
  * @property string $RemoteDomainName
- * @property list<string> $DnsIpAddrs
+ * @property list<string>|null $DnsIpAddrs
+ * @property list<string>|null $DnsIpv6Addrs
  */
 class CreateConditionalForwarderRequest extends Request
 {
@@ -15,7 +16,8 @@ class CreateConditionalForwarderRequest extends Request
      * @param array{
      *     DirectoryId: string,
      *     RemoteDomainName: string,
-     *     DnsIpAddrs: list<string>
+     *     DnsIpAddrs?: list<string>|null,
+     *     DnsIpv6Addrs?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

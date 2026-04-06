@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\DataZone\GetConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property RedshiftStorageProperties|null $storage
  * @property RedshiftCredentials|null $credentials
- * @property string|null $databaseName
  * @property bool|null $isProvisionedSecret
  * @property string|null $jdbcIamUrl
  * @property string|null $jdbcUrl
- * @property RedshiftLineageSyncConfigurationOutput|null $lineageSync
  * @property string|null $redshiftTempDir
+ * @property RedshiftLineageSyncConfigurationOutput|null $lineageSync
  * @property 'CREATING'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED'|'READY'|'UPDATING'|'UPDATE_FAILED'|'DELETED'|null $status
- * @property RedshiftStorageProperties|null $storage
+ * @property string|null $databaseName
  */
 class RedshiftPropertiesOutput extends Shape
 {
     /**
      * @param array{
+     *     storage?: RedshiftStorageProperties|null,
      *     credentials?: RedshiftCredentials|null,
-     *     databaseName?: string|null,
      *     isProvisionedSecret?: bool|null,
      *     jdbcIamUrl?: string|null,
      *     jdbcUrl?: string|null,
-     *     lineageSync?: RedshiftLineageSyncConfigurationOutput|null,
      *     redshiftTempDir?: string|null,
+     *     lineageSync?: RedshiftLineageSyncConfigurationOutput|null,
      *     status?: 'CREATING'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED'|'READY'|'UPDATING'|'UPDATE_FAILED'|'DELETED'|null,
-     *     storage?: RedshiftStorageProperties|null
+     *     databaseName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

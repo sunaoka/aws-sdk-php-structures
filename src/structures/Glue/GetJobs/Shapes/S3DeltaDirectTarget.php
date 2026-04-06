@@ -10,9 +10,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<list<string>>|null $PartitionKeys
  * @property string $Path
  * @property 'uncompressed'|'snappy' $Compression
- * @property 'json'|'csv'|'avro'|'orc'|'parquet'|'hudi'|'delta' $Format
+ * @property string|null $NumberTargetPartitions
+ * @property 'json'|'csv'|'avro'|'orc'|'parquet'|'hudi'|'delta'|'iceberg'|'hyper'|'xml' $Format
  * @property array<string, string>|null $AdditionalOptions
  * @property DirectSchemaChangePolicy|null $SchemaChangePolicy
+ * @property AutoDataQuality|null $AutoDataQuality
  */
 class S3DeltaDirectTarget extends Shape
 {
@@ -23,9 +25,11 @@ class S3DeltaDirectTarget extends Shape
      *     PartitionKeys?: list<list<string>>|null,
      *     Path: string,
      *     Compression: 'uncompressed'|'snappy',
-     *     Format: 'json'|'csv'|'avro'|'orc'|'parquet'|'hudi'|'delta',
+     *     NumberTargetPartitions?: string|null,
+     *     Format: 'json'|'csv'|'avro'|'orc'|'parquet'|'hudi'|'delta'|'iceberg'|'hyper'|'xml',
      *     AdditionalOptions?: array<string, string>|null,
-     *     SchemaChangePolicy?: DirectSchemaChangePolicy|null
+     *     SchemaChangePolicy?: DirectSchemaChangePolicy|null,
+     *     AutoDataQuality?: AutoDataQuality|null
      * } $args
      */
     public function __construct(array $args)

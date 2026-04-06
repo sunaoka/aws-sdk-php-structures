@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\InstanceRequirementsRequest $InstanceRequirements
  * @property int|null $MaxResults
  * @property string|null $NextToken
+ * @property string|null $Context
  */
 class GetInstanceTypesFromInstanceRequirementsRequest extends Request
 {
@@ -21,7 +22,8 @@ class GetInstanceTypesFromInstanceRequirementsRequest extends Request
      *     VirtualizationTypes: list<'hvm'|'paravirtual'>,
      *     InstanceRequirements: Shapes\InstanceRequirementsRequest,
      *     MaxResults?: int|null,
-     *     NextToken?: string|null
+     *     NextToken?: string|null,
+     *     Context?: string|null
      * } $args
      */
     public function __construct(array $args)

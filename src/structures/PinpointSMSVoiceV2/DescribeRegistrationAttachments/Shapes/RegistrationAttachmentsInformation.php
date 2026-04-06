@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'UPLOAD_IN_PROGRESS'|'UPLOAD_COMPLETE'|'UPLOAD_FAILED'|'DELETED' $AttachmentStatus
  * @property 'INTERNAL_ERROR'|null $AttachmentUploadErrorReason
  * @property \Aws\Api\DateTimeResult $CreatedTimestamp
+ * @property string|null $AttachmentUrl
  */
 class RegistrationAttachmentsInformation extends Shape
 {
@@ -19,7 +20,8 @@ class RegistrationAttachmentsInformation extends Shape
      *     RegistrationAttachmentId: string,
      *     AttachmentStatus: 'UPLOAD_IN_PROGRESS'|'UPLOAD_COMPLETE'|'UPLOAD_FAILED'|'DELETED',
      *     AttachmentUploadErrorReason?: 'INTERNAL_ERROR'|null,
-     *     CreatedTimestamp: \Aws\Api\DateTimeResult
+     *     CreatedTimestamp: \Aws\Api\DateTimeResult,
+     *     AttachmentUrl?: string|null
      * } $args
      */
     public function __construct(array $args)

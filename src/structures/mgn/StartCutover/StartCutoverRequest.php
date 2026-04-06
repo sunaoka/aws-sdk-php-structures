@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\mgn\StartCutover;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $accountID
  * @property list<string> $sourceServerIDs
  * @property array<string, string>|null $tags
+ * @property string|null $accountID
  */
 class StartCutoverRequest extends Request
 {
     /**
      * @param array{
-     *     accountID?: string|null,
      *     sourceServerIDs: list<string>,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     accountID?: string|null
      * } $args
      */
     public function __construct(array $args)

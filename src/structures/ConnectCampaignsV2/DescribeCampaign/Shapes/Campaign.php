@@ -9,7 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property string $name
  * @property string $connectInstanceId
- * @property ChannelSubtypeConfig $channelSubtypeConfig
+ * @property ChannelSubtypeConfig|null $channelSubtypeConfig
+ * @property 'MANAGED'|'JOURNEY'|null $type
  * @property Source|null $source
  * @property string|null $connectCampaignFlowArn
  * @property Schedule|null $schedule
@@ -25,7 +26,8 @@ class Campaign extends Shape
      *     arn: string,
      *     name: string,
      *     connectInstanceId: string,
-     *     channelSubtypeConfig: ChannelSubtypeConfig,
+     *     channelSubtypeConfig?: ChannelSubtypeConfig|null,
+     *     type?: 'MANAGED'|'JOURNEY'|null,
      *     source?: Source|null,
      *     connectCampaignFlowArn?: string|null,
      *     schedule?: Schedule|null,

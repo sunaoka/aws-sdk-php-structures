@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property DICOMStudyDateAndTime|null $DICOMStudyDateAndTime
+ * @property bool|null $isPrimary
  */
 class SearchByAttributeValue extends Shape
 {
@@ -25,7 +26,8 @@ class SearchByAttributeValue extends Shape
      *     DICOMSeriesInstanceUID?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     DICOMStudyDateAndTime?: DICOMStudyDateAndTime|null
+     *     DICOMStudyDateAndTime?: DICOMStudyDateAndTime|null,
+     *     isPrimary?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\DeleteContent;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $contentId
  * @property string $knowledgeBaseId
+ * @property string $contentId
  */
 class DeleteContentRequest extends Request
 {
     /**
      * @param array{
-     *     contentId: string,
-     *     knowledgeBaseId: string
+     *     knowledgeBaseId: string,
+     *     contentId: string
      * } $args
      */
     public function __construct(array $args)

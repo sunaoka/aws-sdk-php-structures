@@ -8,6 +8,7 @@ class PartnerCentralSellingClient extends \Aws\PartnerCentralSelling\PartnerCent
     use AssignOpportunity\AssignOpportunityTrait;
     use AssociateOpportunity\AssociateOpportunityTrait;
     use CreateEngagement\CreateEngagementTrait;
+    use CreateEngagementContext\CreateEngagementContextTrait;
     use CreateEngagementInvitation\CreateEngagementInvitationTrait;
     use CreateOpportunity\CreateOpportunityTrait;
     use CreateResourceSnapshot\CreateResourceSnapshotTrait;
@@ -28,6 +29,7 @@ class PartnerCentralSellingClient extends \Aws\PartnerCentralSelling\PartnerCent
     use ListEngagementResourceAssociations\ListEngagementResourceAssociationsTrait;
     use ListEngagements\ListEngagementsTrait;
     use ListOpportunities\ListOpportunitiesTrait;
+    use ListOpportunityFromEngagementTasks\ListOpportunityFromEngagementTasksTrait;
     use ListResourceSnapshotJobs\ListResourceSnapshotJobsTrait;
     use ListResourceSnapshots\ListResourceSnapshotsTrait;
     use ListSolutions\ListSolutionsTrait;
@@ -36,10 +38,12 @@ class PartnerCentralSellingClient extends \Aws\PartnerCentralSelling\PartnerCent
     use RejectEngagementInvitation\RejectEngagementInvitationTrait;
     use StartEngagementByAcceptingInvitationTask\StartEngagementByAcceptingInvitationTaskTrait;
     use StartEngagementFromOpportunityTask\StartEngagementFromOpportunityTaskTrait;
+    use StartOpportunityFromEngagementTask\StartOpportunityFromEngagementTaskTrait;
     use StartResourceSnapshotJob\StartResourceSnapshotJobTrait;
     use StopResourceSnapshotJob\StopResourceSnapshotJobTrait;
     use SubmitOpportunity\SubmitOpportunityTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateEngagementContext\UpdateEngagementContextTrait;
     use UpdateOpportunity\UpdateOpportunityTrait;
 }

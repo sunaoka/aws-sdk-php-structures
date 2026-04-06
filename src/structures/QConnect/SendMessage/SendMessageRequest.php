@@ -6,22 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assistantId
- * @property string|null $clientToken
- * @property Shapes\ConversationContext|null $conversationContext
- * @property Shapes\MessageInput $message
  * @property string $sessionId
- * @property 'TEXT' $type
+ * @property 'TEXT'|'TOOL_USE_RESULT' $type
+ * @property Shapes\MessageInput $message
+ * @property string|null $aiAgentId
+ * @property Shapes\ConversationContext|null $conversationContext
+ * @property Shapes\MessageConfiguration|null $configuration
+ * @property string|null $clientToken
+ * @property string|null $orchestratorUseCase
+ * @property array<string, string>|null $metadata
  */
 class SendMessageRequest extends Request
 {
     /**
      * @param array{
      *     assistantId: string,
-     *     clientToken?: string|null,
-     *     conversationContext?: Shapes\ConversationContext|null,
-     *     message: Shapes\MessageInput,
      *     sessionId: string,
-     *     type: 'TEXT'
+     *     type: 'TEXT'|'TOOL_USE_RESULT',
+     *     message: Shapes\MessageInput,
+     *     aiAgentId?: string|null,
+     *     conversationContext?: Shapes\ConversationContext|null,
+     *     configuration?: Shapes\MessageConfiguration|null,
+     *     clientToken?: string|null,
+     *     orchestratorUseCase?: string|null,
+     *     metadata?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $startTime
  * @property string|null $endTime
  * @property string|null $parallelGroup
+ * @property bool|null $retried
  */
 class WorkflowExecutionMetadata extends Shape
 {
@@ -33,7 +34,8 @@ class WorkflowExecutionMetadata extends Shape
      *     totalStepsSkipped?: int|null,
      *     startTime?: string|null,
      *     endTime?: string|null,
-     *     parallelGroup?: string|null
+     *     parallelGroup?: string|null,
+     *     retried?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -11,6 +11,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $citationNumber
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property list<TextSegment>|null $textMessageSegments
+ * @property string|null $documentId
+ * @property string|null $indexId
+ * @property string|null $datasourceId
  */
 class SourceAttribution extends Shape
 {
@@ -21,7 +24,10 @@ class SourceAttribution extends Shape
      *     url?: string|null,
      *     citationNumber?: int|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     textMessageSegments?: list<TextSegment>|null
+     *     textMessageSegments?: list<TextSegment>|null,
+     *     documentId?: string|null,
+     *     indexId?: string|null,
+     *     datasourceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

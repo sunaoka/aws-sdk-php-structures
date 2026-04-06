@@ -32,7 +32,9 @@ class NeptuneGraphClient extends \Aws\NeptuneGraph\NeptuneGraphClient
     use ResetGraph\ResetGraphTrait;
     use RestoreGraphFromSnapshot\RestoreGraphFromSnapshotTrait;
     use StartExportTask\StartExportTaskTrait;
+    use StartGraph\StartGraphTrait;
     use StartImportTask\StartImportTaskTrait;
+    use StopGraph\StopGraphTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateGraph\UpdateGraphTrait;

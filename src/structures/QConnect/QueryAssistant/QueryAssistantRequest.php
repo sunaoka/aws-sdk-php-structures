@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assistantId
- * @property int<1, 100>|null $maxResults
+ * @property string|null $queryText
  * @property string|null $nextToken
- * @property 'HYBRID'|'SEMANTIC'|null $overrideKnowledgeBaseSearchType
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $sessionId
  * @property list<Shapes\QueryCondition>|null $queryCondition
  * @property Shapes\QueryInputData|null $queryInputData
- * @property string|null $queryText
- * @property string|null $sessionId
+ * @property 'HYBRID'|'SEMANTIC'|null $overrideKnowledgeBaseSearchType
  */
 class QueryAssistantRequest extends Request
 {
     /**
      * @param array{
      *     assistantId: string,
-     *     maxResults?: int<1, 100>|null,
+     *     queryText?: string|null,
      *     nextToken?: string|null,
-     *     overrideKnowledgeBaseSearchType?: 'HYBRID'|'SEMANTIC'|null,
+     *     maxResults?: int<1, 100>|null,
+     *     sessionId?: string|null,
      *     queryCondition?: list<Shapes\QueryCondition>|null,
      *     queryInputData?: Shapes\QueryInputData|null,
-     *     queryText?: string|null,
-     *     sessionId?: string|null
+     *     overrideKnowledgeBaseSearchType?: 'HYBRID'|'SEMANTIC'|null
      * } $args
      */
     public function __construct(array $args)

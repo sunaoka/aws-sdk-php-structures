@@ -34,6 +34,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $MasterPasswordSecretKmsKeyId
  * @property string|null $IpAddressType
  * @property bool|null $MultiAZ
+ * @property bool|null $ExtraComputeForAutomaticOptimization
  */
 class ModifyClusterRequest extends Request
 {
@@ -67,7 +68,8 @@ class ModifyClusterRequest extends Request
      *     ManageMasterPassword?: bool|null,
      *     MasterPasswordSecretKmsKeyId?: string|null,
      *     IpAddressType?: string|null,
-     *     MultiAZ?: bool|null
+     *     MultiAZ?: bool|null,
+     *     ExtraComputeForAutomaticOptimization?: bool|null
      * } $args
      */
     public function __construct(array $args)

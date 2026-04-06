@@ -5,17 +5,19 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\UpdateCollection;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string|null $description
  * @property string $id
+ * @property string|null $description
+ * @property Shapes\VectorOptions|null $vectorOptions
+ * @property string|null $clientToken
  */
 class UpdateCollectionRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
+     *     id: string,
      *     description?: string|null,
-     *     id: string
+     *     vectorOptions?: Shapes\VectorOptions|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

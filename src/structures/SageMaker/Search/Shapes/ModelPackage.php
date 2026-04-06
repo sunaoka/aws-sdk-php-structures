@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ModelPackageName
  * @property string|null $ModelPackageGroupName
  * @property int<1, max>|null $ModelPackageVersion
+ * @property 'Logged'|'Registered'|null $ModelPackageRegistrationType
  * @property string|null $ModelPackageArn
  * @property string|null $ModelPackageDescription
  * @property \Aws\Api\DateTimeResult|null $CreationTime
@@ -44,6 +45,7 @@ class ModelPackage extends Shape
      *     ModelPackageName?: string|null,
      *     ModelPackageGroupName?: string|null,
      *     ModelPackageVersion?: int<1, max>|null,
+     *     ModelPackageRegistrationType?: 'Logged'|'Registered'|null,
      *     ModelPackageArn?: string|null,
      *     ModelPackageDescription?: string|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,

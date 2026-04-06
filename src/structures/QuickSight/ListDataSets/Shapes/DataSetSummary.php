@@ -12,8 +12,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
  * @property 'SPICE'|'DIRECT_QUERY'|null $ImportMode
  * @property RowLevelPermissionDataSet|null $RowLevelPermissionDataSet
+ * @property array<string, RowLevelPermissionDataSet>|null $RowLevelPermissionDataSetMap
  * @property bool|null $RowLevelPermissionTagConfigurationApplied
  * @property bool|null $ColumnLevelPermissionRulesApplied
+ * @property 'RLS_RULES'|null $UseAs
  */
 class DataSetSummary extends Shape
 {
@@ -26,8 +28,10 @@ class DataSetSummary extends Shape
      *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null,
      *     ImportMode?: 'SPICE'|'DIRECT_QUERY'|null,
      *     RowLevelPermissionDataSet?: RowLevelPermissionDataSet|null,
+     *     RowLevelPermissionDataSetMap?: array<string, RowLevelPermissionDataSet>|null,
      *     RowLevelPermissionTagConfigurationApplied?: bool|null,
-     *     ColumnLevelPermissionRulesApplied?: bool|null
+     *     ColumnLevelPermissionRulesApplied?: bool|null,
+     *     UseAs?: 'RLS_RULES'|null
      * } $args
      */
     public function __construct(array $args = [])

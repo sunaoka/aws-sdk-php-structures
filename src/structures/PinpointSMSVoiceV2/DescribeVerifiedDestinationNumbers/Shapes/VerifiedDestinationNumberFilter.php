@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\DescribeVerifiedDestinationN
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'status' $Name
+ * @property 'status'|'rcs-agent-id' $Name
  * @property list<string> $Values
  */
 class VerifiedDestinationNumberFilter extends Shape
 {
     /**
      * @param array{
-     *     Name: 'status',
+     *     Name: 'status'|'rcs-agent-id',
      *     Values: list<string>
      * } $args
      */

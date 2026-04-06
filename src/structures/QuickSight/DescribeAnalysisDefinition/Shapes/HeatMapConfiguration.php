@@ -7,7 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property HeatMapFieldWells|null $FieldWells
  * @property HeatMapSortConfiguration|null $SortConfiguration
+ * @property AxisDisplayOptions|null $RowAxisDisplayOptions
  * @property ChartAxisLabelOptions|null $RowLabelOptions
+ * @property AxisDisplayOptions|null $ColumnAxisDisplayOptions
  * @property ChartAxisLabelOptions|null $ColumnLabelOptions
  * @property ColorScale|null $ColorScale
  * @property LegendOptions|null $Legend
@@ -21,7 +23,9 @@ class HeatMapConfiguration extends Shape
      * @param array{
      *     FieldWells?: HeatMapFieldWells|null,
      *     SortConfiguration?: HeatMapSortConfiguration|null,
+     *     RowAxisDisplayOptions?: AxisDisplayOptions|null,
      *     RowLabelOptions?: ChartAxisLabelOptions|null,
+     *     ColumnAxisDisplayOptions?: AxisDisplayOptions|null,
      *     ColumnLabelOptions?: ChartAxisLabelOptions|null,
      *     ColorScale?: ColorScale|null,
      *     Legend?: LegendOptions|null,

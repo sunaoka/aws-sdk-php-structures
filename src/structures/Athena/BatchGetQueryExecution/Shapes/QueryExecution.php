@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $QueryExecutionId
  * @property string|null $Query
  * @property 'DDL'|'DML'|'UTILITY'|null $StatementType
+ * @property ManagedQueryResultsConfiguration|null $ManagedQueryResultsConfiguration
  * @property ResultConfiguration|null $ResultConfiguration
  * @property ResultReuseConfiguration|null $ResultReuseConfiguration
  * @property QueryExecutionContext|null $QueryExecutionContext
@@ -26,6 +27,7 @@ class QueryExecution extends Shape
      *     QueryExecutionId?: string|null,
      *     Query?: string|null,
      *     StatementType?: 'DDL'|'DML'|'UTILITY'|null,
+     *     ManagedQueryResultsConfiguration?: ManagedQueryResultsConfiguration|null,
      *     ResultConfiguration?: ResultConfiguration|null,
      *     ResultReuseConfiguration?: ResultReuseConfiguration|null,
      *     QueryExecutionContext?: QueryExecutionContext|null,

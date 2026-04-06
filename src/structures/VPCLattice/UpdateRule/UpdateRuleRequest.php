@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\VPCLattice\UpdateRule;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\RuleAction|null $action
- * @property string $listenerIdentifier
- * @property Shapes\RuleMatch|null $match
- * @property int<1, 100>|null $priority
- * @property string $ruleIdentifier
  * @property string $serviceIdentifier
+ * @property string $listenerIdentifier
+ * @property string $ruleIdentifier
+ * @property Shapes\RuleMatch|null $match
+ * @property int<1, 2000>|null $priority
+ * @property Shapes\RuleAction|null $action
  */
 class UpdateRuleRequest extends Request
 {
     /**
      * @param array{
-     *     action?: Shapes\RuleAction|null,
+     *     serviceIdentifier: string,
      *     listenerIdentifier: string,
-     *     match?: Shapes\RuleMatch|null,
-     *     priority?: int<1, 100>|null,
      *     ruleIdentifier: string,
-     *     serviceIdentifier: string
+     *     match?: Shapes\RuleMatch|null,
+     *     priority?: int<1, 2000>|null,
+     *     action?: Shapes\RuleAction|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,6 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $definition
  * @property list<string>|null $examples
  * @property 'DENY' $type
+ * @property 'BLOCK'|'NONE'|null $inputAction
+ * @property 'BLOCK'|'NONE'|null $outputAction
+ * @property bool|null $inputEnabled
+ * @property bool|null $outputEnabled
  */
 class GuardrailTopicConfig extends Shape
 {
@@ -17,7 +21,11 @@ class GuardrailTopicConfig extends Shape
      *     name: string,
      *     definition: string,
      *     examples?: list<string>|null,
-     *     type: 'DENY'
+     *     type: 'DENY',
+     *     inputAction?: 'BLOCK'|'NONE'|null,
+     *     outputAction?: 'BLOCK'|'NONE'|null,
+     *     inputEnabled?: bool|null,
+     *     outputEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

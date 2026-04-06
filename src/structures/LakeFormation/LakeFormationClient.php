@@ -36,6 +36,7 @@ class LakeFormationClient extends \Aws\LakeFormation\LakeFormationClient
     use GetQueryStatistics\GetQueryStatisticsTrait;
     use GetResourceLFTags\GetResourceLFTagsTrait;
     use GetTableObjects\GetTableObjectsTrait;
+    use GetTemporaryDataLocationCredentials\GetTemporaryDataLocationCredentialsTrait;
     use GetTemporaryGluePartitionCredentials\GetTemporaryGluePartitionCredentialsTrait;
     use GetTemporaryGlueTableCredentials\GetTemporaryGlueTableCredentialsTrait;
     use GetWorkUnitResults\GetWorkUnitResultsTrait;

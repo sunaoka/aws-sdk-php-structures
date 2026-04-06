@@ -5,24 +5,24 @@ namespace Sunaoka\Aws\Structures\QConnect\GetAssistantAssociation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $assistantArn
- * @property string $assistantAssociationArn
  * @property string $assistantAssociationId
+ * @property string $assistantAssociationArn
  * @property string $assistantId
+ * @property string $assistantArn
+ * @property 'KNOWLEDGE_BASE'|'EXTERNAL_BEDROCK_KNOWLEDGE_BASE' $associationType
  * @property AssistantAssociationOutputData $associationData
- * @property 'KNOWLEDGE_BASE' $associationType
  * @property array<string, string>|null $tags
  */
 class AssistantAssociationData extends Shape
 {
     /**
      * @param array{
-     *     assistantArn: string,
-     *     assistantAssociationArn: string,
      *     assistantAssociationId: string,
+     *     assistantAssociationArn: string,
      *     assistantId: string,
+     *     assistantArn: string,
+     *     associationType: 'KNOWLEDGE_BASE'|'EXTERNAL_BEDROCK_KNOWLEDGE_BASE',
      *     associationData: AssistantAssociationOutputData,
-     *     associationType: 'KNOWLEDGE_BASE',
      *     tags?: array<string, string>|null
      * } $args
      */

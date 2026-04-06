@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DataProviderName
  * @property string|null $Description
  * @property string $Engine
+ * @property bool|null $Virtual
  * @property Shapes\DataProviderSettings $Settings
  * @property list<Shapes\Tag>|null $Tags
  */
@@ -18,6 +19,7 @@ class CreateDataProviderRequest extends Request
      *     DataProviderName?: string|null,
      *     Description?: string|null,
      *     Engine: string,
+     *     Virtual?: bool|null,
      *     Settings: Shapes\DataProviderSettings,
      *     Tags?: list<Shapes\Tag>|null
      * } $args

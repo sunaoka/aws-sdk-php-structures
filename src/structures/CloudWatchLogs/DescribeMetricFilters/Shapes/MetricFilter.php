@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, max>|null $creationTime
  * @property string|null $logGroupName
  * @property bool|null $applyOnTransformedLogs
+ * @property string|null $fieldSelectionCriteria
+ * @property list<string>|null $emitSystemFieldDimensions
  */
 class MetricFilter extends Shape
 {
@@ -21,7 +23,9 @@ class MetricFilter extends Shape
      *     metricTransformations?: list<MetricTransformation>|null,
      *     creationTime?: int<0, max>|null,
      *     logGroupName?: string|null,
-     *     applyOnTransformedLogs?: bool|null
+     *     applyOnTransformedLogs?: bool|null,
+     *     fieldSelectionCriteria?: string|null,
+     *     emitSystemFieldDimensions?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $AdditionalDataSources
  * @property string $Ruleset
  * @property DQResultsPublishingOptions|null $PublishingOptions
- * @property array<'performanceTuning.caching'|'observations.scope', string>|null $AdditionalOptions
+ * @property array<'performanceTuning.caching'|'observations.scope'|'compositeRuleEvaluation.method', string>|null $AdditionalOptions
  * @property DQStopJobOnFailureOptions|null $StopJobOnFailureOptions
  */
 class EvaluateDataQualityMultiFrame extends Shape
@@ -22,7 +22,7 @@ class EvaluateDataQualityMultiFrame extends Shape
      *     AdditionalDataSources?: array<string, string>|null,
      *     Ruleset: string,
      *     PublishingOptions?: DQResultsPublishingOptions|null,
-     *     AdditionalOptions?: array<'performanceTuning.caching'|'observations.scope', string>|null,
+     *     AdditionalOptions?: array<'performanceTuning.caching'|'observations.scope'|'compositeRuleEvaluation.method', string>|null,
      *     StopJobOnFailureOptions?: DQStopJobOnFailureOptions|null
      * } $args
      */

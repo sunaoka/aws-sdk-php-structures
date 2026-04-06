@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $NcharCharacterSetName
  * @property bool|null $DeletionProtection
  * @property TenantDatabasePendingModifiedValues|null $PendingModifiedValues
+ * @property MasterUserSecret|null $MasterUserSecret
  * @property list<Tag>|null $TagList
  */
 class TenantDatabase extends Shape
@@ -35,6 +36,7 @@ class TenantDatabase extends Shape
      *     NcharCharacterSetName?: string|null,
      *     DeletionProtection?: bool|null,
      *     PendingModifiedValues?: TenantDatabasePendingModifiedValues|null,
+     *     MasterUserSecret?: MasterUserSecret|null,
      *     TagList?: list<Tag>|null
      * } $args
      */

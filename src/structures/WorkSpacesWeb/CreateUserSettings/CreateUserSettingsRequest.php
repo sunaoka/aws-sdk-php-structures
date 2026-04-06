@@ -5,37 +5,43 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\CreateUserSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property array<string, string>|null $additionalEncryptionContext
- * @property string|null $clientToken
- * @property Shapes\CookieSynchronizationConfiguration|null $cookieSynchronizationConfiguration
  * @property 'Disabled'|'Enabled' $copyAllowed
- * @property string|null $customerManagedKey
- * @property 'Disabled'|'Enabled'|null $deepLinkAllowed
- * @property int<1, 600>|null $disconnectTimeoutInMinutes
- * @property 'Disabled'|'Enabled' $downloadAllowed
- * @property int<0, 60>|null $idleDisconnectTimeoutInMinutes
  * @property 'Disabled'|'Enabled' $pasteAllowed
+ * @property 'Disabled'|'Enabled' $downloadAllowed
+ * @property 'Disabled'|'Enabled' $uploadAllowed
  * @property 'Disabled'|'Enabled' $printAllowed
  * @property list<Shapes\Tag>|null $tags
- * @property 'Disabled'|'Enabled' $uploadAllowed
+ * @property int<1, 600>|null $disconnectTimeoutInMinutes
+ * @property int<0, 60>|null $idleDisconnectTimeoutInMinutes
+ * @property string|null $clientToken
+ * @property Shapes\CookieSynchronizationConfiguration|null $cookieSynchronizationConfiguration
+ * @property string|null $customerManagedKey
+ * @property array<string, string>|null $additionalEncryptionContext
+ * @property 'Disabled'|'Enabled'|null $deepLinkAllowed
+ * @property Shapes\ToolbarConfiguration|null $toolbarConfiguration
+ * @property Shapes\BrandingConfigurationCreateInput|null $brandingConfigurationInput
+ * @property 'Disabled'|'Enabled'|null $webAuthnAllowed
  */
 class CreateUserSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     additionalEncryptionContext?: array<string, string>|null,
-     *     clientToken?: string|null,
-     *     cookieSynchronizationConfiguration?: Shapes\CookieSynchronizationConfiguration|null,
      *     copyAllowed: 'Disabled'|'Enabled',
-     *     customerManagedKey?: string|null,
-     *     deepLinkAllowed?: 'Disabled'|'Enabled'|null,
-     *     disconnectTimeoutInMinutes?: int<1, 600>|null,
-     *     downloadAllowed: 'Disabled'|'Enabled',
-     *     idleDisconnectTimeoutInMinutes?: int<0, 60>|null,
      *     pasteAllowed: 'Disabled'|'Enabled',
+     *     downloadAllowed: 'Disabled'|'Enabled',
+     *     uploadAllowed: 'Disabled'|'Enabled',
      *     printAllowed: 'Disabled'|'Enabled',
      *     tags?: list<Shapes\Tag>|null,
-     *     uploadAllowed: 'Disabled'|'Enabled'
+     *     disconnectTimeoutInMinutes?: int<1, 600>|null,
+     *     idleDisconnectTimeoutInMinutes?: int<0, 60>|null,
+     *     clientToken?: string|null,
+     *     cookieSynchronizationConfiguration?: Shapes\CookieSynchronizationConfiguration|null,
+     *     customerManagedKey?: string|null,
+     *     additionalEncryptionContext?: array<string, string>|null,
+     *     deepLinkAllowed?: 'Disabled'|'Enabled'|null,
+     *     toolbarConfiguration?: Shapes\ToolbarConfiguration|null,
+     *     brandingConfigurationInput?: Shapes\BrandingConfigurationCreateInput|null,
+     *     webAuthnAllowed?: 'Disabled'|'Enabled'|null
      * } $args
      */
     public function __construct(array $args)

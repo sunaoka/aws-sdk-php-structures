@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string $ownerAccountId
  * @property \Aws\Api\DateTimeResult $createdAt
+ * @property string|null $tableBucketId
+ * @property 'customer'|'aws'|null $type
  */
 class TableBucketSummary extends Shape
 {
@@ -17,7 +19,9 @@ class TableBucketSummary extends Shape
      *     arn: string,
      *     name: string,
      *     ownerAccountId: string,
-     *     createdAt: \Aws\Api\DateTimeResult
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     tableBucketId?: string|null,
+     *     type?: 'customer'|'aws'|null
      * } $args
      */
     public function __construct(array $args)

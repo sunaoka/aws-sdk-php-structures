@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 50000> $Priority
  * @property list<Shapes\Action> $Actions
  * @property list<Shapes\Tag>|null $Tags
+ * @property list<Shapes\RuleTransform>|null $Transforms
  */
 class CreateRuleRequest extends Request
 {
@@ -19,7 +20,8 @@ class CreateRuleRequest extends Request
      *     Conditions: list<Shapes\RuleCondition>,
      *     Priority: int<1, 50000>,
      *     Actions: list<Shapes\Action>,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     Transforms?: list<Shapes\RuleTransform>|null
      * } $args
      */
     public function __construct(array $args)

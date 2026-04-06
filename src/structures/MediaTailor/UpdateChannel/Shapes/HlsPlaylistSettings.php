@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaTailor\UpdateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<'DATERANGE'|'SCTE35_ENHANCED'>|null $AdMarkupType
  * @property int|null $ManifestWindowSeconds
+ * @property list<'DATERANGE'|'SCTE35_ENHANCED'>|null $AdMarkupType
  */
 class HlsPlaylistSettings extends Shape
 {
     /**
      * @param array{
-     *     AdMarkupType?: list<'DATERANGE'|'SCTE35_ENHANCED'>|null,
-     *     ManifestWindowSeconds?: int|null
+     *     ManifestWindowSeconds?: int|null,
+     *     AdMarkupType?: list<'DATERANGE'|'SCTE35_ENHANCED'>|null
      * } $args
      */
     public function __construct(array $args = [])

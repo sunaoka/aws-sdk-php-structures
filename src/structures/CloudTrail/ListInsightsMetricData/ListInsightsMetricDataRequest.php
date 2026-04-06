@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudTrail\ListInsightsMetricData;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string|null $TrailName
  * @property string $EventSource
  * @property string $EventName
  * @property 'ApiCallRateInsight'|'ApiErrorRateInsight' $InsightType
@@ -20,6 +21,7 @@ class ListInsightsMetricDataRequest extends Request
 {
     /**
      * @param array{
+     *     TrailName?: string|null,
      *     EventSource: string,
      *     EventName: string,
      *     InsightType: 'ApiCallRateInsight'|'ApiErrorRateInsight',

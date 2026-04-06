@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\AssociateNetworkSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $networkSettingsArn
  * @property string $portalArn
+ * @property string $networkSettingsArn
  */
 class AssociateNetworkSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     networkSettingsArn: string,
-     *     portalArn: string
+     *     portalArn: string,
+     *     networkSettingsArn: string
      * } $args
      */
     public function __construct(array $args)

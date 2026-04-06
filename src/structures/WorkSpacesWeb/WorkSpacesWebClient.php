@@ -8,6 +8,7 @@ class WorkSpacesWebClient extends \Aws\WorkSpacesWeb\WorkSpacesWebClient
     use AssociateDataProtectionSettings\AssociateDataProtectionSettingsTrait;
     use AssociateIpAccessSettings\AssociateIpAccessSettingsTrait;
     use AssociateNetworkSettings\AssociateNetworkSettingsTrait;
+    use AssociateSessionLogger\AssociateSessionLoggerTrait;
     use AssociateTrustStore\AssociateTrustStoreTrait;
     use AssociateUserAccessLoggingSettings\AssociateUserAccessLoggingSettingsTrait;
     use AssociateUserSettings\AssociateUserSettingsTrait;
@@ -17,6 +18,7 @@ class WorkSpacesWebClient extends \Aws\WorkSpacesWeb\WorkSpacesWebClient
     use CreateIpAccessSettings\CreateIpAccessSettingsTrait;
     use CreateNetworkSettings\CreateNetworkSettingsTrait;
     use CreatePortal\CreatePortalTrait;
+    use CreateSessionLogger\CreateSessionLoggerTrait;
     use CreateTrustStore\CreateTrustStoreTrait;
     use CreateUserAccessLoggingSettings\CreateUserAccessLoggingSettingsTrait;
     use CreateUserSettings\CreateUserSettingsTrait;
@@ -26,6 +28,7 @@ class WorkSpacesWebClient extends \Aws\WorkSpacesWeb\WorkSpacesWebClient
     use DeleteIpAccessSettings\DeleteIpAccessSettingsTrait;
     use DeleteNetworkSettings\DeleteNetworkSettingsTrait;
     use DeletePortal\DeletePortalTrait;
+    use DeleteSessionLogger\DeleteSessionLoggerTrait;
     use DeleteTrustStore\DeleteTrustStoreTrait;
     use DeleteUserAccessLoggingSettings\DeleteUserAccessLoggingSettingsTrait;
     use DeleteUserSettings\DeleteUserSettingsTrait;
@@ -33,6 +36,7 @@ class WorkSpacesWebClient extends \Aws\WorkSpacesWeb\WorkSpacesWebClient
     use DisassociateDataProtectionSettings\DisassociateDataProtectionSettingsTrait;
     use DisassociateIpAccessSettings\DisassociateIpAccessSettingsTrait;
     use DisassociateNetworkSettings\DisassociateNetworkSettingsTrait;
+    use DisassociateSessionLogger\DisassociateSessionLoggerTrait;
     use DisassociateTrustStore\DisassociateTrustStoreTrait;
     use DisassociateUserAccessLoggingSettings\DisassociateUserAccessLoggingSettingsTrait;
     use DisassociateUserSettings\DisassociateUserSettingsTrait;
@@ -45,6 +49,7 @@ class WorkSpacesWebClient extends \Aws\WorkSpacesWeb\WorkSpacesWebClient
     use GetPortal\GetPortalTrait;
     use GetPortalServiceProviderMetadata\GetPortalServiceProviderMetadataTrait;
     use GetSession\GetSessionTrait;
+    use GetSessionLogger\GetSessionLoggerTrait;
     use GetTrustStore\GetTrustStoreTrait;
     use GetTrustStoreCertificate\GetTrustStoreCertificateTrait;
     use GetUserAccessLoggingSettings\GetUserAccessLoggingSettingsTrait;
@@ -55,6 +60,7 @@ class WorkSpacesWebClient extends \Aws\WorkSpacesWeb\WorkSpacesWebClient
     use ListIpAccessSettings\ListIpAccessSettingsTrait;
     use ListNetworkSettings\ListNetworkSettingsTrait;
     use ListPortals\ListPortalsTrait;
+    use ListSessionLoggers\ListSessionLoggersTrait;
     use ListSessions\ListSessionsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTrustStoreCertificates\ListTrustStoreCertificatesTrait;
@@ -69,6 +75,7 @@ class WorkSpacesWebClient extends \Aws\WorkSpacesWeb\WorkSpacesWebClient
     use UpdateIpAccessSettings\UpdateIpAccessSettingsTrait;
     use UpdateNetworkSettings\UpdateNetworkSettingsTrait;
     use UpdatePortal\UpdatePortalTrait;
+    use UpdateSessionLogger\UpdateSessionLoggerTrait;
     use UpdateTrustStore\UpdateTrustStoreTrait;
     use UpdateUserAccessLoggingSettings\UpdateUserAccessLoggingSettingsTrait;
     use UpdateUserSettings\UpdateUserSettingsTrait;

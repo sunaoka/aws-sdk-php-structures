@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateDataProduct;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string|null $description
  * @property string $domainIdentifier
- * @property list<Shapes\FormInput>|null $formsInput
- * @property list<string>|null $glossaryTerms
- * @property list<Shapes\DataProductItem>|null $items
  * @property string $name
  * @property string $owningProjectIdentifier
+ * @property string|null $description
+ * @property list<string>|null $glossaryTerms
+ * @property list<Shapes\FormInput>|null $formsInput
+ * @property list<Shapes\DataProductItem>|null $items
+ * @property string|null $clientToken
  */
 class CreateDataProductRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
-     *     description?: string|null,
      *     domainIdentifier: string,
-     *     formsInput?: list<Shapes\FormInput>|null,
-     *     glossaryTerms?: list<string>|null,
-     *     items?: list<Shapes\DataProductItem>|null,
      *     name: string,
-     *     owningProjectIdentifier: string
+     *     owningProjectIdentifier: string,
+     *     description?: string|null,
+     *     glossaryTerms?: list<string>|null,
+     *     formsInput?: list<Shapes\FormInput>|null,
+     *     items?: list<Shapes\DataProductItem>|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

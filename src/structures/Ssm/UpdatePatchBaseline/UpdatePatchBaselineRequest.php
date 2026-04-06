@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ALLOW_AS_DEPENDENCY'|'BLOCK'|null $RejectedPatchesAction
  * @property string|null $Description
  * @property list<Shapes\PatchSource>|null $Sources
+ * @property 'COMPLIANT'|'NON_COMPLIANT'|null $AvailableSecurityUpdatesComplianceStatus
  * @property bool|null $Replace
  */
 class UpdatePatchBaselineRequest extends Request
@@ -33,6 +34,7 @@ class UpdatePatchBaselineRequest extends Request
      *     RejectedPatchesAction?: 'ALLOW_AS_DEPENDENCY'|'BLOCK'|null,
      *     Description?: string|null,
      *     Sources?: list<Shapes\PatchSource>|null,
+     *     AvailableSecurityUpdatesComplianceStatus?: 'COMPLIANT'|'NON_COMPLIANT'|null,
      *     Replace?: bool|null
      * } $args
      */

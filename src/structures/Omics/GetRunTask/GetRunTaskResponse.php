@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<0, max>|null $gpus
  * @property string|null $instanceType
  * @property string|null $failureReason
+ * @property Shapes\ImageDetails|null $imageDetails
  */
 class GetRunTaskResponse extends Response
 {

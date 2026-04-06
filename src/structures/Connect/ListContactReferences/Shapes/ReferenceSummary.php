@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property UrlReference|null $Url
  * @property AttachmentReference|null $Attachment
  * @property EmailMessageReference|null $EmailMessage
+ * @property EmailMessageReference|null $EmailMessagePlainText
  * @property StringReference|null $String
  * @property NumberReference|null $Number
  * @property DateReference|null $Date
@@ -20,6 +21,7 @@ class ReferenceSummary extends Shape
      *     Url?: UrlReference|null,
      *     Attachment?: AttachmentReference|null,
      *     EmailMessage?: EmailMessageReference|null,
+     *     EmailMessagePlainText?: EmailMessageReference|null,
      *     String?: StringReference|null,
      *     Number?: NumberReference|null,
      *     Date?: DateReference|null,

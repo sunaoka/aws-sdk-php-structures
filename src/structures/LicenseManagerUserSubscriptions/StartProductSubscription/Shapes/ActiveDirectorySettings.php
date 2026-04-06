@@ -5,18 +5,20 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\StartProductSub
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CredentialsProvider|null $DomainCredentialsProvider
- * @property list<string>|null $DomainIpv4List
  * @property string|null $DomainName
+ * @property list<string>|null $DomainIpv4List
+ * @property list<string>|null $DomainIpv6List
+ * @property CredentialsProvider|null $DomainCredentialsProvider
  * @property DomainNetworkSettings|null $DomainNetworkSettings
  */
 class ActiveDirectorySettings extends Shape
 {
     /**
      * @param array{
-     *     DomainCredentialsProvider?: CredentialsProvider|null,
-     *     DomainIpv4List?: list<string>|null,
      *     DomainName?: string|null,
+     *     DomainIpv4List?: list<string>|null,
+     *     DomainIpv6List?: list<string>|null,
+     *     DomainCredentialsProvider?: CredentialsProvider|null,
      *     DomainNetworkSettings?: DomainNetworkSettings|null
      * } $args
      */

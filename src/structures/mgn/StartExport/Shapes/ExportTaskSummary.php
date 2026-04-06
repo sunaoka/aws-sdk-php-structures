@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\mgn\StartExport\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, max>|null $applicationsCount
  * @property int<0, max>|null $serversCount
+ * @property int<0, max>|null $applicationsCount
  * @property int<0, max>|null $wavesCount
  */
 class ExportTaskSummary extends Shape
 {
     /**
      * @param array{
-     *     applicationsCount?: int<0, max>|null,
      *     serversCount?: int<0, max>|null,
+     *     applicationsCount?: int<0, max>|null,
      *     wavesCount?: int<0, max>|null
      * } $args
      */

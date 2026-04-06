@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SubnetId
  * @property string|null $Ip
  * @property string|null $Ipv6
- * @property 'CREATING'|'FAILED_CREATION'|'ATTACHING'|'ATTACHED'|'REMAP_DETACHING'|'REMAP_ATTACHING'|'DETACHING'|'FAILED_RESOURCE_GONE'|'DELETING'|'DELETE_FAILED_FAS_EXPIRED'|'UPDATING'|'UPDATE_FAILED'|null $Status
+ * @property 'CREATING'|'FAILED_CREATION'|'ATTACHING'|'ATTACHED'|'REMAP_DETACHING'|'REMAP_ATTACHING'|'DETACHING'|'FAILED_RESOURCE_GONE'|'DELETING'|'DELETE_FAILED_FAS_EXPIRED'|'UPDATING'|'UPDATE_FAILED'|'ISOLATED'|null $Status
  * @property string|null $StatusMessage
  * @property string|null $CreationTime
  * @property string|null $ModificationTime
@@ -22,7 +22,7 @@ class IpAddressResponse extends Shape
      *     SubnetId?: string|null,
      *     Ip?: string|null,
      *     Ipv6?: string|null,
-     *     Status?: 'CREATING'|'FAILED_CREATION'|'ATTACHING'|'ATTACHED'|'REMAP_DETACHING'|'REMAP_ATTACHING'|'DETACHING'|'FAILED_RESOURCE_GONE'|'DELETING'|'DELETE_FAILED_FAS_EXPIRED'|'UPDATING'|'UPDATE_FAILED'|null,
+     *     Status?: 'CREATING'|'FAILED_CREATION'|'ATTACHING'|'ATTACHED'|'REMAP_DETACHING'|'REMAP_ATTACHING'|'DETACHING'|'FAILED_RESOURCE_GONE'|'DELETING'|'DELETE_FAILED_FAS_EXPIRED'|'UPDATING'|'UPDATE_FAILED'|'ISOLATED'|null,
      *     StatusMessage?: string|null,
      *     CreationTime?: string|null,
      *     ModificationTime?: string|null

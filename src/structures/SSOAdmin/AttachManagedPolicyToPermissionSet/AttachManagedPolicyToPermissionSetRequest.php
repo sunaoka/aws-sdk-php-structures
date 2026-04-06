@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceArn
- * @property string $ManagedPolicyArn
  * @property string $PermissionSetArn
+ * @property string $ManagedPolicyArn
  */
 class AttachManagedPolicyToPermissionSetRequest extends Request
 {
     /**
      * @param array{
      *     InstanceArn: string,
-     *     ManagedPolicyArn: string,
-     *     PermissionSetArn: string
+     *     PermissionSetArn: string,
+     *     ManagedPolicyArn: string
      * } $args
      */
     public function __construct(array $args)

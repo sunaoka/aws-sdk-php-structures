@@ -1,0 +1,26 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\BedrockAgentCore\GetBrowserSession;
+
+use Sunaoka\Aws\Structures\Response;
+
+/**
+ * @property string $browserIdentifier
+ * @property string $sessionId
+ * @property string|null $name
+ * @property \Aws\Api\DateTimeResult $createdAt
+ * @property Shapes\ViewPort|null $viewPort
+ * @property list<Shapes\BrowserExtension>|null $extensions
+ * @property list<Shapes\BrowserEnterprisePolicy>|null $enterprisePolicies
+ * @property Shapes\BrowserProfileConfiguration|null $profileConfiguration
+ * @property int<1, 28800>|null $sessionTimeoutSeconds
+ * @property 'READY'|'TERMINATED'|null $status
+ * @property Shapes\BrowserSessionStream|null $streams
+ * @property Shapes\ProxyConfiguration|null $proxyConfiguration
+ * @property list<Shapes\Certificate>|null $certificates
+ * @property string|null $sessionReplayArtifact
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ */
+class GetBrowserSessionResponse extends Response
+{
+}

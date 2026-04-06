@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property WorkforceVpcConfigResponse|null $WorkforceVpcConfig
  * @property 'Initializing'|'Updating'|'Deleting'|'Failed'|'Active'|null $Status
  * @property string|null $FailureReason
+ * @property 'ipv4'|'dualstack'|null $IpAddressType
  */
 class Workforce extends Shape
 {
@@ -31,7 +32,8 @@ class Workforce extends Shape
      *     CreateDate?: \Aws\Api\DateTimeResult|null,
      *     WorkforceVpcConfig?: WorkforceVpcConfigResponse|null,
      *     Status?: 'Initializing'|'Updating'|'Deleting'|'Failed'|'Active'|null,
-     *     FailureReason?: string|null
+     *     FailureReason?: string|null,
+     *     IpAddressType?: 'ipv4'|'dualstack'|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AutoScalingGroupName
- * @property 'Rolling'|null $Strategy
+ * @property 'Rolling'|'ReplaceRootVolume'|null $Strategy
  * @property Shapes\DesiredConfiguration|null $DesiredConfiguration
  * @property Shapes\RefreshPreferences|null $Preferences
  */
@@ -15,7 +15,7 @@ class StartInstanceRefreshRequest extends Request
     /**
      * @param array{
      *     AutoScalingGroupName: string,
-     *     Strategy?: 'Rolling'|null,
+     *     Strategy?: 'Rolling'|'ReplaceRootVolume'|null,
      *     DesiredConfiguration?: Shapes\DesiredConfiguration|null,
      *     Preferences?: Shapes\RefreshPreferences|null
      * } $args

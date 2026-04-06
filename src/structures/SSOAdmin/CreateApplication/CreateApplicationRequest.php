@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\CreateApplication;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ApplicationProviderArn
- * @property string|null $ClientToken
- * @property string|null $Description
  * @property string $InstanceArn
+ * @property string $ApplicationProviderArn
  * @property string $Name
+ * @property string|null $Description
  * @property Shapes\PortalOptions|null $PortalOptions
- * @property 'ENABLED'|'DISABLED'|null $Status
  * @property list<Shapes\Tag>|null $Tags
+ * @property 'ENABLED'|'DISABLED'|null $Status
+ * @property string|null $ClientToken
  */
 class CreateApplicationRequest extends Request
 {
     /**
      * @param array{
-     *     ApplicationProviderArn: string,
-     *     ClientToken?: string|null,
-     *     Description?: string|null,
      *     InstanceArn: string,
+     *     ApplicationProviderArn: string,
      *     Name: string,
+     *     Description?: string|null,
      *     PortalOptions?: Shapes\PortalOptions|null,
+     *     Tags?: list<Shapes\Tag>|null,
      *     Status?: 'ENABLED'|'DISABLED'|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

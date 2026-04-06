@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CustomerOwnedIpv4Pool
  * @property string|null $EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic
  * @property 'on'|'off'|null $EnablePrefixForIpv6SourceNat
+ * @property IpamPools|null $IpamPools
  */
 class LoadBalancer extends Shape
 {
@@ -39,7 +40,8 @@ class LoadBalancer extends Shape
      *     IpAddressType?: 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null,
      *     CustomerOwnedIpv4Pool?: string|null,
      *     EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic?: string|null,
-     *     EnablePrefixForIpv6SourceNat?: 'on'|'off'|null
+     *     EnablePrefixForIpv6SourceNat?: 'on'|'off'|null,
+     *     IpamPools?: IpamPools|null
      * } $args
      */
     public function __construct(array $args = [])

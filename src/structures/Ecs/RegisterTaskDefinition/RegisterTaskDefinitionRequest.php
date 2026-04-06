@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ContainerDefinition> $containerDefinitions
  * @property list<Shapes\Volume>|null $volumes
  * @property list<Shapes\TaskDefinitionPlacementConstraint>|null $placementConstraints
- * @property list<'EC2'|'FARGATE'|'EXTERNAL'>|null $requiresCompatibilities
+ * @property list<'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'>|null $requiresCompatibilities
  * @property string|null $cpu
  * @property string|null $memory
  * @property list<Shapes\Tag>|null $tags
@@ -35,7 +35,7 @@ class RegisterTaskDefinitionRequest extends Request
      *     containerDefinitions: list<Shapes\ContainerDefinition>,
      *     volumes?: list<Shapes\Volume>|null,
      *     placementConstraints?: list<Shapes\TaskDefinitionPlacementConstraint>|null,
-     *     requiresCompatibilities?: list<'EC2'|'FARGATE'|'EXTERNAL'>|null,
+     *     requiresCompatibilities?: list<'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'>|null,
      *     cpu?: string|null,
      *     memory?: string|null,
      *     tags?: list<Shapes\Tag>|null,

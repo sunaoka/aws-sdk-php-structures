@@ -27,6 +27,8 @@ class MediaPackageV2Client extends \Aws\MediaPackageV2\MediaPackageV2Client
     use ListTagsForResource\ListTagsForResourceTrait;
     use PutChannelPolicy\PutChannelPolicyTrait;
     use PutOriginEndpointPolicy\PutOriginEndpointPolicyTrait;
+    use ResetChannelState\ResetChannelStateTrait;
+    use ResetOriginEndpointState\ResetOriginEndpointStateTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateChannel\UpdateChannelTrait;

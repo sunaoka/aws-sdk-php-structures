@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ReleaseLabel
  * @property Shapes\JobFlowInstancesConfig $Instances
  * @property list<Shapes\StepConfig>|null $Steps
+ * @property string|null $StepExecutionRoleArn
  * @property list<Shapes\BootstrapActionConfig>|null $BootstrapActions
  * @property list<string>|null $SupportedProducts
  * @property list<Shapes\SupportedProductConfig>|null $NewSupportedProducts
@@ -36,6 +37,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $OSReleaseLabel
  * @property int|null $EbsRootVolumeIops
  * @property int|null $EbsRootVolumeThroughput
+ * @property bool|null $ExtendedSupport
+ * @property Shapes\MonitoringConfiguration|null $MonitoringConfiguration
  */
 class RunJobFlowRequest extends Request
 {
@@ -49,6 +52,7 @@ class RunJobFlowRequest extends Request
      *     ReleaseLabel?: string|null,
      *     Instances: Shapes\JobFlowInstancesConfig,
      *     Steps?: list<Shapes\StepConfig>|null,
+     *     StepExecutionRoleArn?: string|null,
      *     BootstrapActions?: list<Shapes\BootstrapActionConfig>|null,
      *     SupportedProducts?: list<string>|null,
      *     NewSupportedProducts?: list<Shapes\SupportedProductConfig>|null,
@@ -71,7 +75,9 @@ class RunJobFlowRequest extends Request
      *     AutoTerminationPolicy?: Shapes\AutoTerminationPolicy|null,
      *     OSReleaseLabel?: string|null,
      *     EbsRootVolumeIops?: int|null,
-     *     EbsRootVolumeThroughput?: int|null
+     *     EbsRootVolumeThroughput?: int|null,
+     *     ExtendedSupport?: bool|null,
+     *     MonitoringConfiguration?: Shapes\MonitoringConfiguration|null
      * } $args
      */
     public function __construct(array $args)

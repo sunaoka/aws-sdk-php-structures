@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $id
  * @property string $name
  * @property string $arn
- * @property 'CREATING'|'AVAILABLE'|'DELETING'|'RESETTING'|'UPDATING'|'SNAPSHOTTING'|'FAILED'|'IMPORTING'|null $status
+ * @property 'CREATING'|'AVAILABLE'|'DELETING'|'RESETTING'|'UPDATING'|'SNAPSHOTTING'|'FAILED'|'IMPORTING'|'STARTING'|'STOPPING'|'STOPPED'|null $status
  * @property int<16, 24576>|null $provisionedMemory
  * @property bool|null $publicConnectivity
  * @property string|null $endpoint
@@ -23,7 +23,7 @@ class GraphSummary extends Shape
      *     id: string,
      *     name: string,
      *     arn: string,
-     *     status?: 'CREATING'|'AVAILABLE'|'DELETING'|'RESETTING'|'UPDATING'|'SNAPSHOTTING'|'FAILED'|'IMPORTING'|null,
+     *     status?: 'CREATING'|'AVAILABLE'|'DELETING'|'RESETTING'|'UPDATING'|'SNAPSHOTTING'|'FAILED'|'IMPORTING'|'STARTING'|'STOPPING'|'STOPPED'|null,
      *     provisionedMemory?: int<16, 24576>|null,
      *     publicConnectivity?: bool|null,
      *     endpoint?: string|null,

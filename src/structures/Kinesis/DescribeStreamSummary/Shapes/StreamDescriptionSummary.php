@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $StreamName
  * @property string $StreamARN
+ * @property string|null $StreamId
  * @property 'CREATING'|'DELETING'|'ACTIVE'|'UPDATING' $StreamStatus
  * @property StreamModeDetails|null $StreamModeDetails
  * @property int $RetentionPeriodHours
@@ -16,6 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $KeyId
  * @property int<0, 1000000> $OpenShardCount
  * @property int<0, 1000000>|null $ConsumerCount
+ * @property WarmThroughputObject|null $WarmThroughput
+ * @property int<1024, 10240>|null $MaxRecordSizeInKiB
  */
 class StreamDescriptionSummary extends Shape
 {
@@ -23,6 +26,7 @@ class StreamDescriptionSummary extends Shape
      * @param array{
      *     StreamName: string,
      *     StreamARN: string,
+     *     StreamId?: string|null,
      *     StreamStatus: 'CREATING'|'DELETING'|'ACTIVE'|'UPDATING',
      *     StreamModeDetails?: StreamModeDetails|null,
      *     RetentionPeriodHours: int,
@@ -31,7 +35,9 @@ class StreamDescriptionSummary extends Shape
      *     EncryptionType?: 'NONE'|'KMS'|null,
      *     KeyId?: string|null,
      *     OpenShardCount: int<0, 1000000>,
-     *     ConsumerCount?: int<0, 1000000>|null
+     *     ConsumerCount?: int<0, 1000000>|null,
+     *     WarmThroughput?: WarmThroughputObject|null,
+     *     MaxRecordSizeInKiB?: int<1024, 10240>|null
      * } $args
      */
     public function __construct(array $args)

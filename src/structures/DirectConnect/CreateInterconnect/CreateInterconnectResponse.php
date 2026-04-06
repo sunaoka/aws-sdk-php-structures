@@ -20,6 +20,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'unknown'|'yes'|'no'|null $hasLogicalRedundancy
  * @property list<Shapes\Tag>|null $tags
  * @property string|null $providerName
+ * @property bool|null $macSecCapable
+ * @property string|null $portEncryptionStatus
+ * @property string|null $encryptionMode
+ * @property list<Shapes\MacSecKey>|null $macSecKeys
  */
 class CreateInterconnectResponse extends Response
 {

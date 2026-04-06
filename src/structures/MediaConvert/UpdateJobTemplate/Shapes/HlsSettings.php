@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AudioRenditionSets
  * @property 'ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT'|'ALTERNATE_AUDIO_AUTO_SELECT'|'ALTERNATE_AUDIO_NOT_AUTO_SELECT'|'AUDIO_ONLY_VARIANT_STREAM'|null $AudioTrackType
  * @property 'DONT_FLAG'|'FLAG'|null $DescriptiveVideoServiceFlag
- * @property 'INCLUDE'|'EXCLUDE'|null $IFrameOnlyManifest
+ * @property 'INCLUDE'|'INCLUDE_AS_TS'|'EXCLUDE'|null $IFrameOnlyManifest
  * @property string|null $SegmentModifier
  */
 class HlsSettings extends Shape
@@ -22,7 +22,7 @@ class HlsSettings extends Shape
      *     AudioRenditionSets?: string|null,
      *     AudioTrackType?: 'ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT'|'ALTERNATE_AUDIO_AUTO_SELECT'|'ALTERNATE_AUDIO_NOT_AUTO_SELECT'|'AUDIO_ONLY_VARIANT_STREAM'|null,
      *     DescriptiveVideoServiceFlag?: 'DONT_FLAG'|'FLAG'|null,
-     *     IFrameOnlyManifest?: 'INCLUDE'|'EXCLUDE'|null,
+     *     IFrameOnlyManifest?: 'INCLUDE'|'INCLUDE_AS_TS'|'EXCLUDE'|null,
      *     SegmentModifier?: string|null
      * } $args
      */

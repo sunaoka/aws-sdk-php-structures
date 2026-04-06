@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $requestedTaskCount
  * @property int|null $runningTaskCount
  * @property int|null $pendingTaskCount
+ * @property double|null $requestedTestTrafficWeight
+ * @property double|null $requestedProductionTrafficWeight
  */
 class ServiceRevisionSummary extends Shape
 {
@@ -17,7 +19,9 @@ class ServiceRevisionSummary extends Shape
      *     arn?: string|null,
      *     requestedTaskCount?: int|null,
      *     runningTaskCount?: int|null,
-     *     pendingTaskCount?: int|null
+     *     pendingTaskCount?: int|null,
+     *     requestedTestTrafficWeight?: double|null,
+     *     requestedProductionTrafficWeight?: double|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $QueueId
  * @property array<string, string>|null $Attributes
  * @property Campaign|null $Campaign
+ * @property OutboundStrategy|null $OutboundStrategy
  */
 class ContactDataRequest extends Shape
 {
@@ -21,7 +22,8 @@ class ContactDataRequest extends Shape
      *     RequestIdentifier?: string|null,
      *     QueueId?: string|null,
      *     Attributes?: array<string, string>|null,
-     *     Campaign?: Campaign|null
+     *     Campaign?: Campaign|null,
+     *     OutboundStrategy?: OutboundStrategy|null
      * } $args
      */
     public function __construct(array $args = [])

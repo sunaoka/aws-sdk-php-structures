@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Name
  * @property string|null $Version
  * @property 'INITIALIZED'|'READY'|'FAILED'|null $Status
- * @property int<1, max>|null $SizeOnDisk
- * @property 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023'|null $OperatingSystem
+ * @property int<0, max>|null $SizeOnDisk
+ * @property 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023'|'WINDOWS_2022'|null $OperatingSystem
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property string|null $ServerSdkVersion
  */
@@ -24,8 +24,8 @@ class Build extends Shape
      *     Name?: string|null,
      *     Version?: string|null,
      *     Status?: 'INITIALIZED'|'READY'|'FAILED'|null,
-     *     SizeOnDisk?: int<1, max>|null,
-     *     OperatingSystem?: 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023'|null,
+     *     SizeOnDisk?: int<0, max>|null,
+     *     OperatingSystem?: 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023'|'WINDOWS_2022'|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
      *     ServerSdkVersion?: string|null
      * } $args

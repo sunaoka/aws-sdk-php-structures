@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\ValidateFlowDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $cause
- * @property string $condition
  * @property string $node
+ * @property string $condition
+ * @property string $cause
  */
 class MalformedConditionExpressionFlowValidationDetails extends Shape
 {
     /**
      * @param array{
-     *     cause: string,
+     *     node: string,
      *     condition: string,
-     *     node: string
+     *     cause: string
      * } $args
      */
     public function __construct(array $args)

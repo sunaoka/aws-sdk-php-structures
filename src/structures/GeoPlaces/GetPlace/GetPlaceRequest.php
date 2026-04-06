@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PlaceId
- * @property list<'TimeZone'|'Phonemes'|'Access'|'Contact'>|null $AdditionalFeatures
+ * @property list<'TimeZone'|'Phonemes'|'Access'|'Contact'|'SecondaryAddresses'>|null $AdditionalFeatures
  * @property string|null $Language
  * @property string|null $PoliticalView
  * @property 'SingleUse'|'Storage'|null $IntendedUse
@@ -17,7 +17,7 @@ class GetPlaceRequest extends Request
     /**
      * @param array{
      *     PlaceId: string,
-     *     AdditionalFeatures?: list<'TimeZone'|'Phonemes'|'Access'|'Contact'>|null,
+     *     AdditionalFeatures?: list<'TimeZone'|'Phonemes'|'Access'|'Contact'|'SecondaryAddresses'>|null,
      *     Language?: string|null,
      *     PoliticalView?: string|null,
      *     IntendedUse?: 'SingleUse'|'Storage'|null,

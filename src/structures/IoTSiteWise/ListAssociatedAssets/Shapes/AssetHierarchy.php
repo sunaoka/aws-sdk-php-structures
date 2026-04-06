@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $id
- * @property string $name
  * @property string|null $externalId
+ * @property string $name
  */
 class AssetHierarchy extends Shape
 {
     /**
      * @param array{
      *     id?: string|null,
-     *     name: string,
-     *     externalId?: string|null
+     *     externalId?: string|null,
+     *     name: string
      * } $args
      */
     public function __construct(array $args)

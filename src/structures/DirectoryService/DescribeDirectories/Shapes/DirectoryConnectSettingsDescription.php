@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SecurityGroupId
  * @property list<string>|null $AvailabilityZones
  * @property list<string>|null $ConnectIps
+ * @property list<string>|null $ConnectIpsV6
  */
 class DirectoryConnectSettingsDescription extends Shape
 {
@@ -21,7 +22,8 @@ class DirectoryConnectSettingsDescription extends Shape
      *     CustomerUserName?: string|null,
      *     SecurityGroupId?: string|null,
      *     AvailabilityZones?: list<string>|null,
-     *     ConnectIps?: list<string>|null
+     *     ConnectIps?: list<string>|null,
+     *     ConnectIpsV6?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QConnect\ListAIGuardrailVersions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $aiGuardrailId
  * @property string $assistantId
- * @property int<1, 100>|null $maxResults
+ * @property string $aiGuardrailId
  * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListAIGuardrailVersionsRequest extends Request
 {
     /**
      * @param array{
-     *     aiGuardrailId: string,
      *     assistantId: string,
-     *     maxResults?: int<1, 100>|null,
-     *     nextToken?: string|null
+     *     aiGuardrailId: string,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

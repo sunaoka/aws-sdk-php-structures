@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\DataZone\ListAssetFilters\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $assetId
- * @property \Aws\Api\DateTimeResult|null $createdAt
- * @property string|null $description
+ * @property string $id
  * @property string $domainId
+ * @property string $assetId
+ * @property string $name
+ * @property string|null $description
+ * @property 'VALID'|'INVALID'|null $status
  * @property list<string>|null $effectiveColumnNames
  * @property string|null $effectiveRowFilter
+ * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $errorMessage
- * @property string $id
- * @property string $name
- * @property 'VALID'|'INVALID'|null $status
  */
 class AssetFilterSummary extends Shape
 {
     /**
      * @param array{
-     *     assetId: string,
-     *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     description?: string|null,
+     *     id: string,
      *     domainId: string,
+     *     assetId: string,
+     *     name: string,
+     *     description?: string|null,
+     *     status?: 'VALID'|'INVALID'|null,
      *     effectiveColumnNames?: list<string>|null,
      *     effectiveRowFilter?: string|null,
-     *     errorMessage?: string|null,
-     *     id: string,
-     *     name: string,
-     *     status?: 'VALID'|'INVALID'|null
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

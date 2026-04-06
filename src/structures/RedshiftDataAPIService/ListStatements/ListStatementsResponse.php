@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\RedshiftDataAPIService\ListStatements;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string|null $NextToken
  * @property list<Shapes\StatementData> $Statements
+ * @property string|null $NextToken
  */
 class ListStatementsResponse extends Response
 {

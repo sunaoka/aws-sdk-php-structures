@@ -11,7 +11,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property double $nluIntentConfidenceThreshold
  * @property Shapes\VoiceSettings|null $voiceSettings
+ * @property Shapes\UnifiedSpeechSettings|null $unifiedSpeechSettings
+ * @property Shapes\SpeechRecognitionSettings|null $speechRecognitionSettings
  * @property Shapes\GenerativeAISettings|null $generativeAISettings
+ * @property 'Default'|'HighNoiseTolerance'|'MaximumNoiseTolerance'|null $speechDetectionSensitivity
  */
 class CreateBotLocaleRequest extends Request
 {
@@ -23,7 +26,10 @@ class CreateBotLocaleRequest extends Request
      *     description?: string|null,
      *     nluIntentConfidenceThreshold: double,
      *     voiceSettings?: Shapes\VoiceSettings|null,
-     *     generativeAISettings?: Shapes\GenerativeAISettings|null
+     *     unifiedSpeechSettings?: Shapes\UnifiedSpeechSettings|null,
+     *     speechRecognitionSettings?: Shapes\SpeechRecognitionSettings|null,
+     *     generativeAISettings?: Shapes\GenerativeAISettings|null,
+     *     speechDetectionSensitivity?: 'Default'|'HighNoiseTolerance'|'MaximumNoiseTolerance'|null
      * } $args
      */
     public function __construct(array $args)

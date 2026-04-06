@@ -28,6 +28,7 @@ class IVSRealTimeClient extends \Aws\IVSRealTime\IVSRealTimeClient
     use ListEncoderConfigurations\ListEncoderConfigurationsTrait;
     use ListIngestConfigurations\ListIngestConfigurationsTrait;
     use ListParticipantEvents\ListParticipantEventsTrait;
+    use ListParticipantReplicas\ListParticipantReplicasTrait;
     use ListParticipants\ListParticipantsTrait;
     use ListPublicKeys\ListPublicKeysTrait;
     use ListStageSessions\ListStageSessionsTrait;
@@ -35,7 +36,9 @@ class IVSRealTimeClient extends \Aws\IVSRealTime\IVSRealTimeClient
     use ListStorageConfigurations\ListStorageConfigurationsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use StartComposition\StartCompositionTrait;
+    use StartParticipantReplication\StartParticipantReplicationTrait;
     use StopComposition\StopCompositionTrait;
+    use StopParticipantReplication\StopParticipantReplicationTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateIngestConfiguration\UpdateIngestConfigurationTrait;

@@ -5,6 +5,8 @@ namespace Sunaoka\Aws\Structures\Inspector2;
 class Inspector2Client extends \Aws\Inspector2\Inspector2Client
 {
     use AssociateMember\AssociateMemberTrait;
+    use BatchAssociateCodeSecurityScanConfiguration\BatchAssociateCodeSecurityScanConfigurationTrait;
+    use BatchDisassociateCodeSecurityScanConfiguration\BatchDisassociateCodeSecurityScanConfigurationTrait;
     use BatchGetAccountStatus\BatchGetAccountStatusTrait;
     use BatchGetCodeSnippet\BatchGetCodeSnippetTrait;
     use BatchGetFindingDetails\BatchGetFindingDetailsTrait;
@@ -14,10 +16,14 @@ class Inspector2Client extends \Aws\Inspector2\Inspector2Client
     use CancelFindingsReport\CancelFindingsReportTrait;
     use CancelSbomExport\CancelSbomExportTrait;
     use CreateCisScanConfiguration\CreateCisScanConfigurationTrait;
+    use CreateCodeSecurityIntegration\CreateCodeSecurityIntegrationTrait;
+    use CreateCodeSecurityScanConfiguration\CreateCodeSecurityScanConfigurationTrait;
     use CreateFilter\CreateFilterTrait;
     use CreateFindingsReport\CreateFindingsReportTrait;
     use CreateSbomExport\CreateSbomExportTrait;
     use DeleteCisScanConfiguration\DeleteCisScanConfigurationTrait;
+    use DeleteCodeSecurityIntegration\DeleteCodeSecurityIntegrationTrait;
+    use DeleteCodeSecurityScanConfiguration\DeleteCodeSecurityScanConfigurationTrait;
     use DeleteFilter\DeleteFilterTrait;
     use DescribeOrganizationConfiguration\DescribeOrganizationConfigurationTrait;
     use Disable\DisableTrait;
@@ -27,6 +33,10 @@ class Inspector2Client extends \Aws\Inspector2\Inspector2Client
     use EnableDelegatedAdminAccount\EnableDelegatedAdminAccountTrait;
     use GetCisScanReport\GetCisScanReportTrait;
     use GetCisScanResultDetails\GetCisScanResultDetailsTrait;
+    use GetClustersForImage\GetClustersForImageTrait;
+    use GetCodeSecurityIntegration\GetCodeSecurityIntegrationTrait;
+    use GetCodeSecurityScan\GetCodeSecurityScanTrait;
+    use GetCodeSecurityScanConfiguration\GetCodeSecurityScanConfigurationTrait;
     use GetConfiguration\GetConfigurationTrait;
     use GetDelegatedAdminAccount\GetDelegatedAdminAccountTrait;
     use GetEc2DeepInspectionConfiguration\GetEc2DeepInspectionConfigurationTrait;
@@ -39,6 +49,9 @@ class Inspector2Client extends \Aws\Inspector2\Inspector2Client
     use ListCisScanResultsAggregatedByChecks\ListCisScanResultsAggregatedByChecksTrait;
     use ListCisScanResultsAggregatedByTargetResource\ListCisScanResultsAggregatedByTargetResourceTrait;
     use ListCisScans\ListCisScansTrait;
+    use ListCodeSecurityIntegrations\ListCodeSecurityIntegrationsTrait;
+    use ListCodeSecurityScanConfigurationAssociations\ListCodeSecurityScanConfigurationAssociationsTrait;
+    use ListCodeSecurityScanConfigurations\ListCodeSecurityScanConfigurationsTrait;
     use ListCoverage\ListCoverageTrait;
     use ListCoverageStatistics\ListCoverageStatisticsTrait;
     use ListDelegatedAdminAccounts\ListDelegatedAdminAccountsTrait;
@@ -53,10 +66,13 @@ class Inspector2Client extends \Aws\Inspector2\Inspector2Client
     use SendCisSessionHealth\SendCisSessionHealthTrait;
     use SendCisSessionTelemetry\SendCisSessionTelemetryTrait;
     use StartCisSession\StartCisSessionTrait;
+    use StartCodeSecurityScan\StartCodeSecurityScanTrait;
     use StopCisSession\StopCisSessionTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateCisScanConfiguration\UpdateCisScanConfigurationTrait;
+    use UpdateCodeSecurityIntegration\UpdateCodeSecurityIntegrationTrait;
+    use UpdateCodeSecurityScanConfiguration\UpdateCodeSecurityScanConfigurationTrait;
     use UpdateConfiguration\UpdateConfigurationTrait;
     use UpdateEc2DeepInspectionConfiguration\UpdateEc2DeepInspectionConfigurationTrait;
     use UpdateEncryptionKey\UpdateEncryptionKeyTrait;

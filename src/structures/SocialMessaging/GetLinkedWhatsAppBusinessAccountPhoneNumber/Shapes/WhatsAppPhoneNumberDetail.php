@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $displayPhoneNumberName
  * @property string $displayPhoneNumber
  * @property string $qualityRating
+ * @property string|null $dataLocalizationRegion
  */
 class WhatsAppPhoneNumberDetail extends Shape
 {
@@ -23,7 +24,8 @@ class WhatsAppPhoneNumberDetail extends Shape
      *     metaPhoneNumberId: string,
      *     displayPhoneNumberName: string,
      *     displayPhoneNumber: string,
-     *     qualityRating: string
+     *     qualityRating: string,
+     *     dataLocalizationRegion?: string|null
      * } $args
      */
     public function __construct(array $args)

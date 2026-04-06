@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $completion
- * @property RankingData $rankingData
  * @property list<DataSummary> $references
+ * @property RankingData $rankingData
  */
 class GenerativeDataDetails extends Shape
 {
     /**
      * @param array{
      *     completion: string,
-     *     rankingData: RankingData,
-     *     references: list<DataSummary>
+     *     references: list<DataSummary>,
+     *     rankingData: RankingData
      * } $args
      */
     public function __construct(array $args)

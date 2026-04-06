@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\StartImportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Configuration $configuration
  * @property 'AMAZON_CONNECT' $source
+ * @property Configuration $configuration
  */
 class ExternalSourceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     configuration: Configuration,
-     *     source: 'AMAZON_CONNECT'
+     *     source: 'AMAZON_CONNECT',
+     *     configuration: Configuration
      * } $args
      */
     public function __construct(array $args)

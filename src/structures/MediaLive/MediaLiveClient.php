@@ -119,4 +119,12 @@ class MediaLiveClient extends \Aws\MediaLive\MediaLiveClient
     use UpdateNode\UpdateNodeTrait;
     use UpdateNodeState\UpdateNodeStateTrait;
     use ListVersions\ListVersionsTrait;
+    use CreateSdiSource\CreateSdiSourceTrait;
+    use DeleteSdiSource\DeleteSdiSourceTrait;
+    use DescribeSdiSource\DescribeSdiSourceTrait;
+    use ListSdiSources\ListSdiSourcesTrait;
+    use UpdateSdiSource\UpdateSdiSourceTrait;
+    use ListAlerts\ListAlertsTrait;
+    use ListClusterAlerts\ListClusterAlertsTrait;
+    use ListMultiplexAlerts\ListMultiplexAlertsTrait;
 }

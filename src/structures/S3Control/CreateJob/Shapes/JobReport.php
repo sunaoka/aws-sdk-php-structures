@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $Enabled
  * @property string|null $Prefix
  * @property 'AllTasks'|'FailedTasksOnly'|null $ReportScope
+ * @property string|null $ExpectedBucketOwner
  */
 class JobReport extends Shape
 {
@@ -19,7 +20,8 @@ class JobReport extends Shape
      *     Format?: 'Report_CSV_20180820'|null,
      *     Enabled: bool,
      *     Prefix?: string|null,
-     *     ReportScope?: 'AllTasks'|'FailedTasksOnly'|null
+     *     ReportScope?: 'AllTasks'|'FailedTasksOnly'|null,
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\mgn\UpdateLaunchConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $accountID
- * @property 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE'|null $bootMode
+ * @property string $sourceServerID
+ * @property string|null $name
+ * @property 'STOPPED'|'STARTED'|null $launchDisposition
+ * @property 'NONE'|'BASIC'|null $targetInstanceTypeRightSizingMethod
  * @property bool|null $copyPrivateIp
  * @property bool|null $copyTags
- * @property bool|null $enableMapAutoTagging
- * @property 'STOPPED'|'STARTED'|null $launchDisposition
  * @property Shapes\Licensing|null $licensing
- * @property string|null $mapAutoTaggingMpeID
- * @property string|null $name
+ * @property 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE'|null $bootMode
  * @property Shapes\PostLaunchActions|null $postLaunchActions
- * @property string $sourceServerID
- * @property 'NONE'|'BASIC'|null $targetInstanceTypeRightSizingMethod
+ * @property bool|null $enableMapAutoTagging
+ * @property string|null $mapAutoTaggingMpeID
+ * @property string|null $accountID
  */
 class UpdateLaunchConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     accountID?: string|null,
-     *     bootMode?: 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE'|null,
+     *     sourceServerID: string,
+     *     name?: string|null,
+     *     launchDisposition?: 'STOPPED'|'STARTED'|null,
+     *     targetInstanceTypeRightSizingMethod?: 'NONE'|'BASIC'|null,
      *     copyPrivateIp?: bool|null,
      *     copyTags?: bool|null,
-     *     enableMapAutoTagging?: bool|null,
-     *     launchDisposition?: 'STOPPED'|'STARTED'|null,
      *     licensing?: Shapes\Licensing|null,
-     *     mapAutoTaggingMpeID?: string|null,
-     *     name?: string|null,
+     *     bootMode?: 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE'|null,
      *     postLaunchActions?: Shapes\PostLaunchActions|null,
-     *     sourceServerID: string,
-     *     targetInstanceTypeRightSizingMethod?: 'NONE'|'BASIC'|null
+     *     enableMapAutoTagging?: bool|null,
+     *     mapAutoTaggingMpeID?: string|null,
+     *     accountID?: string|null
      * } $args
      */
     public function __construct(array $args)

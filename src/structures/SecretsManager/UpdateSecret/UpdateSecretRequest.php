@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $KmsKeyId
  * @property string|resource|\Psr\Http\Message\StreamInterface|null $SecretBinary
  * @property string|null $SecretString
+ * @property string|null $Type
  */
 class UpdateSecretRequest extends Request
 {
@@ -21,7 +22,8 @@ class UpdateSecretRequest extends Request
      *     Description?: string|null,
      *     KmsKeyId?: string|null,
      *     SecretBinary?: string|resource|\Psr\Http\Message\StreamInterface|null,
-     *     SecretString?: string|null
+     *     SecretString?: string|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args)

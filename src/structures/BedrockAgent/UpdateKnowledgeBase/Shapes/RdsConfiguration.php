@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string $resourceArn
  * @property string $credentialsSecretArn
  * @property string $databaseName
- * @property RdsFieldMapping $fieldMapping
- * @property string $resourceArn
  * @property string $tableName
+ * @property RdsFieldMapping $fieldMapping
  */
 class RdsConfiguration extends Shape
 {
     /**
      * @param array{
+     *     resourceArn: string,
      *     credentialsSecretArn: string,
      *     databaseName: string,
-     *     fieldMapping: RdsFieldMapping,
-     *     resourceArn: string,
-     *     tableName: string
+     *     tableName: string,
+     *     fieldMapping: RdsFieldMapping
      * } $args
      */
     public function __construct(array $args)

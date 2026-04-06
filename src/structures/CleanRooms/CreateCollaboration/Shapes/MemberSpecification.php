@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $accountId
- * @property list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'> $memberAbilities
+ * @property list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'|'CAN_RUN_JOB'> $memberAbilities
  * @property MLMemberAbilities|null $mlMemberAbilities
  * @property string $displayName
  * @property PaymentConfiguration|null $paymentConfiguration
@@ -16,7 +16,7 @@ class MemberSpecification extends Shape
     /**
      * @param array{
      *     accountId: string,
-     *     memberAbilities: list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'>,
+     *     memberAbilities: list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'|'CAN_RUN_JOB'>,
      *     mlMemberAbilities?: MLMemberAbilities|null,
      *     displayName: string,
      *     paymentConfiguration?: PaymentConfiguration|null

@@ -8,6 +8,7 @@ class FSxClient extends \Aws\FSx\FSxClient
     use CancelDataRepositoryTask\CancelDataRepositoryTaskTrait;
     use CopyBackup\CopyBackupTrait;
     use CopySnapshotAndUpdateVolume\CopySnapshotAndUpdateVolumeTrait;
+    use CreateAndAttachS3AccessPoint\CreateAndAttachS3AccessPointTrait;
     use CreateBackup\CreateBackupTrait;
     use CreateDataRepositoryAssociation\CreateDataRepositoryAssociationTrait;
     use CreateDataRepositoryTask\CreateDataRepositoryTaskTrait;
@@ -31,10 +32,12 @@ class FSxClient extends \Aws\FSx\FSxClient
     use DescribeFileCaches\DescribeFileCachesTrait;
     use DescribeFileSystemAliases\DescribeFileSystemAliasesTrait;
     use DescribeFileSystems\DescribeFileSystemsTrait;
+    use DescribeS3AccessPointAttachments\DescribeS3AccessPointAttachmentsTrait;
     use DescribeSharedVpcConfiguration\DescribeSharedVpcConfigurationTrait;
     use DescribeSnapshots\DescribeSnapshotsTrait;
     use DescribeStorageVirtualMachines\DescribeStorageVirtualMachinesTrait;
     use DescribeVolumes\DescribeVolumesTrait;
+    use DetachAndDeleteS3AccessPoint\DetachAndDeleteS3AccessPointTrait;
     use DisassociateFileSystemAliases\DisassociateFileSystemAliasesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ReleaseFileSystemNfsV3Locks\ReleaseFileSystemNfsV3LocksTrait;

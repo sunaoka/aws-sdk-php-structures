@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $LastUpdateTimestamp
  * @property \Aws\Api\DateTimeResult|null $LastPausedTimestamp
  * @property \Aws\Api\DateTimeResult|null $LastResumedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $RingStartTimestamp
  * @property int<0, 10>|null $TotalPauseCount
  * @property int<0, max>|null $TotalPauseDurationInSeconds
  * @property \Aws\Api\DateTimeResult|null $ScheduledTimestamp
@@ -39,9 +40,19 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ANSWERED'|'UNDETECTED'|'ERROR'|'HUMAN_ANSWERED'|'SIT_TONE_DETECTED'|'SIT_TONE_BUSY'|'SIT_TONE_INVALID_NUMBER'|'FAX_MACHINE_DETECTED'|'VOICEMAIL_BEEP'|'VOICEMAIL_NO_BEEP'|'AMD_UNRESOLVED'|'AMD_UNANSWERED'|'AMD_ERROR'|'AMD_NOT_APPLICABLE'|null $AnsweringMachineDetectionStatus
  * @property CustomerVoiceActivity|null $CustomerVoiceActivity
  * @property QualityMetrics|null $QualityMetrics
+ * @property ChatMetrics|null $ChatMetrics
  * @property DisconnectDetails|null $DisconnectDetails
  * @property AdditionalEmailRecipients|null $AdditionalEmailRecipients
  * @property array<string, SegmentAttributeValue>|null $SegmentAttributes
+ * @property list<RecordingInfo>|null $Recordings
+ * @property string|null $DisconnectReason
+ * @property array<string, ContactEvaluation>|null $ContactEvaluations
+ * @property TaskTemplateInfoV2|null $TaskTemplateInfo
+ * @property ContactDetails|null $ContactDetails
+ * @property OutboundStrategy|null $OutboundStrategy
+ * @property array<string, string>|null $Attributes
+ * @property list<NextContactEntry>|null $NextContacts
+ * @property GlobalResiliencyMetadata|null $GlobalResiliencyMetadata
  */
 class Contact extends Shape
 {
@@ -63,6 +74,7 @@ class Contact extends Shape
      *     LastUpdateTimestamp?: \Aws\Api\DateTimeResult|null,
      *     LastPausedTimestamp?: \Aws\Api\DateTimeResult|null,
      *     LastResumedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     RingStartTimestamp?: \Aws\Api\DateTimeResult|null,
      *     TotalPauseCount?: int<0, 10>|null,
      *     TotalPauseDurationInSeconds?: int<0, max>|null,
      *     ScheduledTimestamp?: \Aws\Api\DateTimeResult|null,
@@ -81,9 +93,19 @@ class Contact extends Shape
      *     AnsweringMachineDetectionStatus?: 'ANSWERED'|'UNDETECTED'|'ERROR'|'HUMAN_ANSWERED'|'SIT_TONE_DETECTED'|'SIT_TONE_BUSY'|'SIT_TONE_INVALID_NUMBER'|'FAX_MACHINE_DETECTED'|'VOICEMAIL_BEEP'|'VOICEMAIL_NO_BEEP'|'AMD_UNRESOLVED'|'AMD_UNANSWERED'|'AMD_ERROR'|'AMD_NOT_APPLICABLE'|null,
      *     CustomerVoiceActivity?: CustomerVoiceActivity|null,
      *     QualityMetrics?: QualityMetrics|null,
+     *     ChatMetrics?: ChatMetrics|null,
      *     DisconnectDetails?: DisconnectDetails|null,
      *     AdditionalEmailRecipients?: AdditionalEmailRecipients|null,
-     *     SegmentAttributes?: array<string, SegmentAttributeValue>|null
+     *     SegmentAttributes?: array<string, SegmentAttributeValue>|null,
+     *     Recordings?: list<RecordingInfo>|null,
+     *     DisconnectReason?: string|null,
+     *     ContactEvaluations?: array<string, ContactEvaluation>|null,
+     *     TaskTemplateInfo?: TaskTemplateInfoV2|null,
+     *     ContactDetails?: ContactDetails|null,
+     *     OutboundStrategy?: OutboundStrategy|null,
+     *     Attributes?: array<string, string>|null,
+     *     NextContacts?: list<NextContactEntry>|null,
+     *     GlobalResiliencyMetadata?: GlobalResiliencyMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

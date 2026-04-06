@@ -25,8 +25,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, WorkerTypeSpecification>|null $workerTypeSpecifications
  * @property list<Configuration>|null $runtimeConfiguration
  * @property MonitoringConfiguration|null $monitoringConfiguration
+ * @property DiskEncryptionConfiguration|null $diskEncryptionConfiguration
  * @property InteractiveConfiguration|null $interactiveConfiguration
  * @property SchedulerConfiguration|null $schedulerConfiguration
+ * @property IdentityCenterConfiguration|null $identityCenterConfiguration
+ * @property JobLevelCostAllocationConfiguration|null $jobLevelCostAllocationConfiguration
  */
 class Application extends Shape
 {
@@ -52,8 +55,11 @@ class Application extends Shape
      *     workerTypeSpecifications?: array<string, WorkerTypeSpecification>|null,
      *     runtimeConfiguration?: list<Configuration>|null,
      *     monitoringConfiguration?: MonitoringConfiguration|null,
+     *     diskEncryptionConfiguration?: DiskEncryptionConfiguration|null,
      *     interactiveConfiguration?: InteractiveConfiguration|null,
-     *     schedulerConfiguration?: SchedulerConfiguration|null
+     *     schedulerConfiguration?: SchedulerConfiguration|null,
+     *     identityCenterConfiguration?: IdentityCenterConfiguration|null,
+     *     jobLevelCostAllocationConfiguration?: JobLevelCostAllocationConfiguration|null
      * } $args
      */
     public function __construct(array $args)

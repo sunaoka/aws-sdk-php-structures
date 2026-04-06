@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GroundStation\UpdateConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'GHz'|'MHz'|'kHz' $units
  * @property double $value
+ * @property 'GHz'|'MHz'|'kHz' $units
  */
 class Frequency extends Shape
 {
     /**
      * @param array{
-     *     units: 'GHz'|'MHz'|'kHz',
-     *     value: double
+     *     value: double,
+     *     units: 'GHz'|'MHz'|'kHz'
      * } $args
      */
     public function __construct(array $args)

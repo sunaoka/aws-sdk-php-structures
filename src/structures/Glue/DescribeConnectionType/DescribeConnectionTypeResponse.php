@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, Shapes\Property>|null $AthenaConnectionProperties
  * @property array<string, Shapes\Property>|null $PythonConnectionProperties
  * @property array<string, Shapes\Property>|null $SparkConnectionProperties
+ * @property Shapes\RestConfiguration|null $RestConfiguration
  */
 class DescribeConnectionTypeResponse extends Response
 {

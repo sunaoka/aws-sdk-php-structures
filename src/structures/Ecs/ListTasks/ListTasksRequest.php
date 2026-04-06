@@ -13,7 +13,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $startedBy
  * @property string|null $serviceName
  * @property 'RUNNING'|'PENDING'|'STOPPED'|null $desiredStatus
- * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null $launchType
+ * @property string|null $daemonName
  */
 class ListTasksRequest extends Request
 {
@@ -27,7 +28,8 @@ class ListTasksRequest extends Request
      *     startedBy?: string|null,
      *     serviceName?: string|null,
      *     desiredStatus?: 'RUNNING'|'PENDING'|'STOPPED'|null,
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null,
+     *     daemonName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

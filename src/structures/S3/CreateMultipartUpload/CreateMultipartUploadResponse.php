@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Bucket
  * @property string|null $Key
  * @property string|null $UploadId
- * @property 'AES256'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
+ * @property 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
  * @property string|null $SSECustomerAlgorithm
  * @property string|null $SSECustomerKeyMD5
  * @property string|null $SSEKMSKeyId

@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Rds\RemoveFromGlobalCluster;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $GlobalClusterIdentifier
- * @property string|null $DbClusterIdentifier
+ * @property string $GlobalClusterIdentifier
+ * @property string $DbClusterIdentifier
  */
 class RemoveFromGlobalClusterRequest extends Request
 {
     /**
      * @param array{
-     *     GlobalClusterIdentifier?: string|null,
-     *     DbClusterIdentifier?: string|null
+     *     GlobalClusterIdentifier: string,
+     *     DbClusterIdentifier: string
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

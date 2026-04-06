@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\EnabledBaselineFilter|null $filter
- * @property bool|null $includeChildren
- * @property int<5, 100>|null $maxResults
  * @property string|null $nextToken
+ * @property int<5, 100>|null $maxResults
+ * @property bool|null $includeChildren
  */
 class ListEnabledBaselinesRequest extends Request
 {
     /**
      * @param array{
      *     filter?: Shapes\EnabledBaselineFilter|null,
-     *     includeChildren?: bool|null,
+     *     nextToken?: string|null,
      *     maxResults?: int<5, 100>|null,
-     *     nextToken?: string|null
+     *     includeChildren?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

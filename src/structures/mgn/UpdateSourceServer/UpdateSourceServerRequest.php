@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $accountID
- * @property Shapes\SourceServerConnectorAction|null $connectorAction
  * @property string $sourceServerID
+ * @property Shapes\SourceServerConnectorAction|null $connectorAction
  */
 class UpdateSourceServerRequest extends Request
 {
     /**
      * @param array{
      *     accountID?: string|null,
-     *     connectorAction?: Shapes\SourceServerConnectorAction|null,
-     *     sourceServerID: string
+     *     sourceServerID: string,
+     *     connectorAction?: Shapes\SourceServerConnectorAction|null
      * } $args
      */
     public function __construct(array $args)

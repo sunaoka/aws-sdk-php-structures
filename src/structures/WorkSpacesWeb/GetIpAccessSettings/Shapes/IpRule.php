@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\GetIpAccessSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $description
  * @property string $ipRange
+ * @property string|null $description
  */
 class IpRule extends Shape
 {
     /**
      * @param array{
-     *     description?: string|null,
-     *     ipRange: string
+     *     ipRange: string,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

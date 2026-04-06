@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property \Aws\Api\DateTimeResult $DraftTimestamp
  * @property \Aws\Api\DateTimeResult|null $SubmittedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $AwsReviewingTimestamp
  * @property \Aws\Api\DateTimeResult|null $ReviewingTimestamp
  * @property \Aws\Api\DateTimeResult|null $RequiresAuthenticationTimestamp
  * @property \Aws\Api\DateTimeResult|null $ApprovedTimestamp
@@ -21,6 +22,7 @@ class RegistrationVersionStatusHistory extends Shape
      * @param array{
      *     DraftTimestamp: \Aws\Api\DateTimeResult,
      *     SubmittedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     AwsReviewingTimestamp?: \Aws\Api\DateTimeResult|null,
      *     ReviewingTimestamp?: \Aws\Api\DateTimeResult|null,
      *     RequiresAuthenticationTimestamp?: \Aws\Api\DateTimeResult|null,
      *     ApprovedTimestamp?: \Aws\Api\DateTimeResult|null,

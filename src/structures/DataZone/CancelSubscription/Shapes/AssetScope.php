@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $assetId
- * @property string|null $errorMessage
  * @property list<string> $filterIds
  * @property string $status
+ * @property string|null $errorMessage
  */
 class AssetScope extends Shape
 {
     /**
      * @param array{
      *     assetId: string,
-     *     errorMessage?: string|null,
      *     filterIds: list<string>,
-     *     status: string
+     *     status: string,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

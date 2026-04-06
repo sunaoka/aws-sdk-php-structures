@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property list<Shapes\ReplicaRegionType>|null $AddReplicaRegions
  * @property bool|null $ForceOverwriteReplicaSecret
+ * @property string|null $Type
  */
 class CreateSecretRequest extends Request
 {
@@ -27,7 +28,8 @@ class CreateSecretRequest extends Request
      *     SecretString?: string|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     AddReplicaRegions?: list<Shapes\ReplicaRegionType>|null,
-     *     ForceOverwriteReplicaSecret?: bool|null
+     *     ForceOverwriteReplicaSecret?: bool|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args)

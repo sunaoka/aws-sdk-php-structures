@@ -30,6 +30,7 @@ class RAMClient extends \Aws\RAM\RAMClient
     use ListResourceSharePermissions\ListResourceSharePermissionsTrait;
     use ListResourceTypes\ListResourceTypesTrait;
     use ListResources\ListResourcesTrait;
+    use ListSourceAssociations\ListSourceAssociationsTrait;
     use PromotePermissionCreatedFromPolicy\PromotePermissionCreatedFromPolicyTrait;
     use PromoteResourceShareCreatedFromPolicy\PromoteResourceShareCreatedFromPolicyTrait;
     use RejectResourceShareInvitation\RejectResourceShareInvitationTrait;

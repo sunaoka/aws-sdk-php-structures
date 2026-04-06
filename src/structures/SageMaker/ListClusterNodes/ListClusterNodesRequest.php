@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $NextToken
  * @property 'CREATION_TIME'|'NAME'|null $SortBy
  * @property 'Ascending'|'Descending'|null $SortOrder
+ * @property bool|null $IncludeNodeLogicalIds
  */
 class ListClusterNodesRequest extends Request
 {
@@ -25,7 +26,8 @@ class ListClusterNodesRequest extends Request
      *     MaxResults?: int<1, 100>|null,
      *     NextToken?: string|null,
      *     SortBy?: 'CREATION_TIME'|'NAME'|null,
-     *     SortOrder?: 'Ascending'|'Descending'|null
+     *     SortOrder?: 'Ascending'|'Descending'|null,
+     *     IncludeNodeLogicalIds?: bool|null
      * } $args
      */
     public function __construct(array $args)

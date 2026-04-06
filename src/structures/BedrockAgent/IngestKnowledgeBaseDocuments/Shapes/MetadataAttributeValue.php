@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\IngestKnowledgeBaseDocuments\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool|null $booleanValue
- * @property double|null $numberValue
- * @property list<string>|null $stringListValue
- * @property string|null $stringValue
  * @property 'BOOLEAN'|'NUMBER'|'STRING'|'STRING_LIST' $type
+ * @property double|null $numberValue
+ * @property bool|null $booleanValue
+ * @property string|null $stringValue
+ * @property list<string>|null $stringListValue
  */
 class MetadataAttributeValue extends Shape
 {
     /**
      * @param array{
-     *     booleanValue?: bool|null,
+     *     type: 'BOOLEAN'|'NUMBER'|'STRING'|'STRING_LIST',
      *     numberValue?: double|null,
-     *     stringListValue?: list<string>|null,
+     *     booleanValue?: bool|null,
      *     stringValue?: string|null,
-     *     type: 'BOOLEAN'|'NUMBER'|'STRING'|'STRING_LIST'
+     *     stringListValue?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

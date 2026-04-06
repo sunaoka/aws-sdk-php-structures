@@ -5,12 +5,13 @@ namespace Sunaoka\Aws\Structures\QConnect\GetNextMessage;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\RuntimeSessionData>|null $conversationSessionData
+ * @property 'TEXT'|'TOOL_USE_RESULT' $type
+ * @property Shapes\MessageOutput $response
+ * @property string $requestMessageId
  * @property Shapes\ConversationState $conversationState
  * @property string|null $nextMessageToken
- * @property string $requestMessageId
- * @property Shapes\MessageOutput $response
- * @property 'TEXT' $type
+ * @property list<Shapes\RuntimeSessionData>|null $conversationSessionData
+ * @property bool|null $chunkedResponseTerminated
  */
 class GetNextMessageResponse extends Response
 {

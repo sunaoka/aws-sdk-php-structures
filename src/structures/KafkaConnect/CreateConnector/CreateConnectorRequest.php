@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\KafkaClusterEncryptionInTransit $kafkaClusterEncryptionInTransit
  * @property string $kafkaConnectVersion
  * @property Shapes\LogDelivery|null $logDelivery
+ * @property 'IPV4'|'DUAL'|null $networkType
  * @property list<Shapes\Plugin> $plugins
  * @property string $serviceExecutionRoleArn
  * @property Shapes\WorkerConfiguration|null $workerConfiguration
@@ -32,6 +33,7 @@ class CreateConnectorRequest extends Request
      *     kafkaClusterEncryptionInTransit: Shapes\KafkaClusterEncryptionInTransit,
      *     kafkaConnectVersion: string,
      *     logDelivery?: Shapes\LogDelivery|null,
+     *     networkType?: 'IPV4'|'DUAL'|null,
      *     plugins: list<Shapes\Plugin>,
      *     serviceExecutionRoleArn: string,
      *     workerConfiguration?: Shapes\WorkerConfiguration|null,

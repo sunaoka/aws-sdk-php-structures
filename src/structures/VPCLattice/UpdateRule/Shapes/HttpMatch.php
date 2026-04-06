@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\VPCLattice\UpdateRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<HeaderMatch>|null $headerMatches
  * @property string|null $method
  * @property PathMatch|null $pathMatch
+ * @property list<HeaderMatch>|null $headerMatches
  */
 class HttpMatch extends Shape
 {
     /**
      * @param array{
-     *     headerMatches?: list<HeaderMatch>|null,
      *     method?: string|null,
-     *     pathMatch?: PathMatch|null
+     *     pathMatch?: PathMatch|null,
+     *     headerMatches?: list<HeaderMatch>|null
      * } $args
      */
     public function __construct(array $args = [])

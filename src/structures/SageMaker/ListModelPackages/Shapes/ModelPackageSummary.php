@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting' $ModelPackageStatus
  * @property 'Approved'|'Rejected'|'PendingManualApproval'|null $ModelApprovalStatus
+ * @property ModelLifeCycle|null $ModelLifeCycle
+ * @property 'Logged'|'Registered'|null $ModelPackageRegistrationType
  */
 class ModelPackageSummary extends Shape
 {
@@ -25,7 +27,9 @@ class ModelPackageSummary extends Shape
      *     ModelPackageDescription?: string|null,
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     ModelPackageStatus: 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting',
-     *     ModelApprovalStatus?: 'Approved'|'Rejected'|'PendingManualApproval'|null
+     *     ModelApprovalStatus?: 'Approved'|'Rejected'|'PendingManualApproval'|null,
+     *     ModelLifeCycle?: ModelLifeCycle|null,
+     *     ModelPackageRegistrationType?: 'Logged'|'Registered'|null
      * } $args
      */
     public function __construct(array $args)

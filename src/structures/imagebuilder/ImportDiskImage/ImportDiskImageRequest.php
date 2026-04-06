@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $executionRole
  * @property string $infrastructureConfigurationArn
  * @property string $uri
+ * @property Shapes\ImageLoggingConfiguration|null $loggingConfiguration
  * @property array<string, string>|null $tags
  * @property string $clientToken
  */
@@ -28,6 +29,7 @@ class ImportDiskImageRequest extends Request
      *     executionRole?: string|null,
      *     infrastructureConfigurationArn: string,
      *     uri: string,
+     *     loggingConfiguration?: Shapes\ImageLoggingConfiguration|null,
      *     tags?: array<string, string>|null,
      *     clientToken: string
      * } $args

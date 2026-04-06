@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\AuthMode>|null $subscribeAuthModes
  * @property list<Shapes\AuthMode>|null $publishAuthModes
  * @property string|null $codeHandlers
+ * @property Shapes\HandlerConfigs|null $handlerConfigs
  */
 class UpdateChannelNamespaceRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateChannelNamespaceRequest extends Request
      *     name: string,
      *     subscribeAuthModes?: list<Shapes\AuthMode>|null,
      *     publishAuthModes?: list<Shapes\AuthMode>|null,
-     *     codeHandlers?: string|null
+     *     codeHandlers?: string|null,
+     *     handlerConfigs?: Shapes\HandlerConfigs|null
      * } $args
      */
     public function __construct(array $args)

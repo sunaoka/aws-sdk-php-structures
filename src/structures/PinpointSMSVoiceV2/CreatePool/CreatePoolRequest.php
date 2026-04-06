@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OriginationIdentity
- * @property string $IsoCountryCode
+ * @property string|null $IsoCountryCode
  * @property 'TRANSACTIONAL'|'PROMOTIONAL' $MessageType
  * @property bool|null $DeletionProtectionEnabled
  * @property list<Shapes\Tag>|null $Tags
@@ -17,7 +17,7 @@ class CreatePoolRequest extends Request
     /**
      * @param array{
      *     OriginationIdentity: string,
-     *     IsoCountryCode: string,
+     *     IsoCountryCode?: string|null,
      *     MessageType: 'TRANSACTIONAL'|'PROMOTIONAL',
      *     DeletionProtectionEnabled?: bool|null,
      *     Tags?: list<Shapes\Tag>|null,

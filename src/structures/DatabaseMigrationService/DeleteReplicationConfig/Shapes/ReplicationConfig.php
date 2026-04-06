@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TableMappings
  * @property \Aws\Api\DateTimeResult|null $ReplicationConfigCreateTime
  * @property \Aws\Api\DateTimeResult|null $ReplicationConfigUpdateTime
+ * @property bool|null $IsReadOnly
  */
 class ReplicationConfig extends Shape
 {
@@ -31,7 +32,8 @@ class ReplicationConfig extends Shape
      *     SupplementalSettings?: string|null,
      *     TableMappings?: string|null,
      *     ReplicationConfigCreateTime?: \Aws\Api\DateTimeResult|null,
-     *     ReplicationConfigUpdateTime?: \Aws\Api\DateTimeResult|null
+     *     ReplicationConfigUpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     IsReadOnly?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

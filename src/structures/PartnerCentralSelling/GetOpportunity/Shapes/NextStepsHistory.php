@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\GetOpportunity\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $Time
  * @property string $Value
+ * @property \Aws\Api\DateTimeResult $Time
  */
 class NextStepsHistory extends Shape
 {
     /**
      * @param array{
-     *     Time: \Aws\Api\DateTimeResult,
-     *     Value: string
+     *     Value: string,
+     *     Time: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

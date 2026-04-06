@@ -22,6 +22,7 @@ class S3ControlClient extends \Aws\S3Control\S3ControlClient
     use DeleteAccessPointForObjectLambda\DeleteAccessPointForObjectLambdaTrait;
     use DeleteAccessPointPolicy\DeleteAccessPointPolicyTrait;
     use DeleteAccessPointPolicyForObjectLambda\DeleteAccessPointPolicyForObjectLambdaTrait;
+    use DeleteAccessPointScope\DeleteAccessPointScopeTrait;
     use DeleteBucket\DeleteBucketTrait;
     use DeleteBucketLifecycleConfiguration\DeleteBucketLifecycleConfigurationTrait;
     use DeleteBucketPolicy\DeleteBucketPolicyTrait;
@@ -48,6 +49,7 @@ class S3ControlClient extends \Aws\S3Control\S3ControlClient
     use GetAccessPointPolicyForObjectLambda\GetAccessPointPolicyForObjectLambdaTrait;
     use GetAccessPointPolicyStatus\GetAccessPointPolicyStatusTrait;
     use GetAccessPointPolicyStatusForObjectLambda\GetAccessPointPolicyStatusForObjectLambdaTrait;
+    use GetAccessPointScope\GetAccessPointScopeTrait;
     use GetBucket\GetBucketTrait;
     use GetBucketLifecycleConfiguration\GetBucketLifecycleConfigurationTrait;
     use GetBucketPolicy\GetBucketPolicyTrait;
@@ -68,6 +70,7 @@ class S3ControlClient extends \Aws\S3Control\S3ControlClient
     use ListAccessGrantsInstances\ListAccessGrantsInstancesTrait;
     use ListAccessGrantsLocations\ListAccessGrantsLocationsTrait;
     use ListAccessPoints\ListAccessPointsTrait;
+    use ListAccessPointsForDirectoryBuckets\ListAccessPointsForDirectoryBucketsTrait;
     use ListAccessPointsForObjectLambda\ListAccessPointsForObjectLambdaTrait;
     use ListCallerAccessGrants\ListCallerAccessGrantsTrait;
     use ListJobs\ListJobsTrait;
@@ -80,6 +83,7 @@ class S3ControlClient extends \Aws\S3Control\S3ControlClient
     use PutAccessPointConfigurationForObjectLambda\PutAccessPointConfigurationForObjectLambdaTrait;
     use PutAccessPointPolicy\PutAccessPointPolicyTrait;
     use PutAccessPointPolicyForObjectLambda\PutAccessPointPolicyForObjectLambdaTrait;
+    use PutAccessPointScope\PutAccessPointScopeTrait;
     use PutBucketLifecycleConfiguration\PutBucketLifecycleConfigurationTrait;
     use PutBucketPolicy\PutBucketPolicyTrait;
     use PutBucketReplication\PutBucketReplicationTrait;

@@ -8,6 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $DynamicVariables
  * @property \Aws\Api\DateTimeResult $EndTime
  * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property 'RETRIEVAL_WINDOW'|'TPS'|null $TrafficShapingType
+ * @property TrafficShapingRetrievalWindow|null $TrafficShapingRetrievalWindow
+ * @property TrafficShapingTpsConfiguration|null $TrafficShapingTpsConfiguration
  */
 class PrefetchRetrieval extends Shape
 {
@@ -15,7 +18,10 @@ class PrefetchRetrieval extends Shape
      * @param array{
      *     DynamicVariables?: array<string, string>|null,
      *     EndTime: \Aws\Api\DateTimeResult,
-     *     StartTime?: \Aws\Api\DateTimeResult|null
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     TrafficShapingType?: 'RETRIEVAL_WINDOW'|'TPS'|null,
+     *     TrafficShapingRetrievalWindow?: TrafficShapingRetrievalWindow|null,
+     *     TrafficShapingTpsConfiguration?: TrafficShapingTpsConfiguration|null
      * } $args
      */
     public function __construct(array $args)

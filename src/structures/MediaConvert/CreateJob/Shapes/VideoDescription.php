@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'NONE'|'AUTO'|'FIXED'|null $AfdSignaling
  * @property 'DISABLED'|'ENABLED'|null $AntiAlias
+ * @property 'AUTO'|'FORCE_CENTER'|'FORCE_TOP_LEFT'|null $ChromaPositionMode
  * @property VideoCodecSettings|null $CodecSettings
  * @property 'IGNORE'|'INSERT'|null $ColorMetadata
  * @property Rectangle|null $Crop
@@ -28,6 +29,7 @@ class VideoDescription extends Shape
      * @param array{
      *     AfdSignaling?: 'NONE'|'AUTO'|'FIXED'|null,
      *     AntiAlias?: 'DISABLED'|'ENABLED'|null,
+     *     ChromaPositionMode?: 'AUTO'|'FORCE_CENTER'|'FORCE_TOP_LEFT'|null,
      *     CodecSettings?: VideoCodecSettings|null,
      *     ColorMetadata?: 'IGNORE'|'INSERT'|null,
      *     Crop?: Rectangle|null,

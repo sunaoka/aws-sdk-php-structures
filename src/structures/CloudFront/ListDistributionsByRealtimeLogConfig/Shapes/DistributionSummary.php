@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Id
  * @property string $ARN
+ * @property string|null $ETag
  * @property string $Status
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  * @property string $DomainName
@@ -17,7 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CacheBehaviors $CacheBehaviors
  * @property CustomErrorResponses $CustomErrorResponses
  * @property string $Comment
- * @property 'PriceClass_100'|'PriceClass_200'|'PriceClass_All' $PriceClass
+ * @property 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|'None' $PriceClass
  * @property bool $Enabled
  * @property ViewerCertificate $ViewerCertificate
  * @property Restrictions $Restrictions
@@ -26,7 +27,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $IsIPV6Enabled
  * @property list<AliasICPRecordal>|null $AliasICPRecordals
  * @property bool $Staging
+ * @property 'direct'|'tenant-only'|null $ConnectionMode
  * @property string|null $AnycastIpListId
+ * @property ViewerMtlsConfig|null $ViewerMtlsConfig
+ * @property ConnectionFunctionAssociation|null $ConnectionFunctionAssociation
  */
 class DistributionSummary extends Shape
 {
@@ -34,6 +38,7 @@ class DistributionSummary extends Shape
      * @param array{
      *     Id: string,
      *     ARN: string,
+     *     ETag?: string|null,
      *     Status: string,
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
      *     DomainName: string,
@@ -44,7 +49,7 @@ class DistributionSummary extends Shape
      *     CacheBehaviors: CacheBehaviors,
      *     CustomErrorResponses: CustomErrorResponses,
      *     Comment: string,
-     *     PriceClass: 'PriceClass_100'|'PriceClass_200'|'PriceClass_All',
+     *     PriceClass: 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|'None',
      *     Enabled: bool,
      *     ViewerCertificate: ViewerCertificate,
      *     Restrictions: Restrictions,
@@ -53,7 +58,10 @@ class DistributionSummary extends Shape
      *     IsIPV6Enabled: bool,
      *     AliasICPRecordals?: list<AliasICPRecordal>|null,
      *     Staging: bool,
-     *     AnycastIpListId?: string|null
+     *     ConnectionMode?: 'direct'|'tenant-only'|null,
+     *     AnycastIpListId?: string|null,
+     *     ViewerMtlsConfig?: ViewerMtlsConfig|null,
+     *     ConnectionFunctionAssociation?: ConnectionFunctionAssociation|null
      * } $args
      */
     public function __construct(array $args)

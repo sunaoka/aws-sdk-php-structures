@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $configuredModelAlgorithmAssociationArn
  * @property string $membershipIdentifier
  * @property string $trainedModelArn
+ * @property string|null $trainedModelVersionIdentifier
  * @property string $collaborationIdentifier
  * @property 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'CANCEL_PENDING'|'CANCEL_IN_PROGRESS'|'CANCEL_FAILED'|'INACTIVE' $status
  * @property InferenceOutputConfiguration $outputConfiguration
@@ -30,6 +31,7 @@ class CollaborationTrainedModelInferenceJobSummary extends Shape
      *     configuredModelAlgorithmAssociationArn?: string|null,
      *     membershipIdentifier: string,
      *     trainedModelArn: string,
+     *     trainedModelVersionIdentifier?: string|null,
      *     collaborationIdentifier: string,
      *     status: 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'CANCEL_PENDING'|'CANCEL_IN_PROGRESS'|'CANCEL_FAILED'|'INACTIVE',
      *     outputConfiguration: InferenceOutputConfiguration,

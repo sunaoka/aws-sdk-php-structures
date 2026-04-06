@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Catalog
  * @property string $ClientToken
  * @property string $EngagementIdentifier
+ * @property 'Opportunity' $ResourceType
  * @property string $ResourceIdentifier
  * @property string $ResourceSnapshotTemplateIdentifier
- * @property 'Opportunity' $ResourceType
  * @property list<Shapes\Tag>|null $Tags
  */
 class CreateResourceSnapshotJobRequest extends Request
@@ -20,9 +20,9 @@ class CreateResourceSnapshotJobRequest extends Request
      *     Catalog: string,
      *     ClientToken: string,
      *     EngagementIdentifier: string,
+     *     ResourceType: 'Opportunity',
      *     ResourceIdentifier: string,
      *     ResourceSnapshotTemplateIdentifier: string,
-     *     ResourceType: 'Opportunity',
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */

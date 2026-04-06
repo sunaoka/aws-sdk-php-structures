@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $localAz
  * @property string|null $localSubnetId
  * @property int|null $targetPort
- * @property 'INTRA_AZ'|'INTER_AZ'|'INTER_VPC'|'UNCLASSIFIED'|'AMAZON_S3'|'AMAZON_DYNAMODB'|null $destinationCategory
+ * @property 'INTRA_AZ'|'INTER_AZ'|'INTER_VPC'|'UNCLASSIFIED'|'AMAZON_S3'|'AMAZON_DYNAMODB'|'INTER_REGION'|null $destinationCategory
  * @property string|null $remoteVpcId
  * @property string|null $remoteRegion
  * @property string|null $remoteAz
@@ -43,7 +43,7 @@ class MonitorTopContributorsRow extends Shape
      *     localAz?: string|null,
      *     localSubnetId?: string|null,
      *     targetPort?: int|null,
-     *     destinationCategory?: 'INTRA_AZ'|'INTER_AZ'|'INTER_VPC'|'UNCLASSIFIED'|'AMAZON_S3'|'AMAZON_DYNAMODB'|null,
+     *     destinationCategory?: 'INTRA_AZ'|'INTER_AZ'|'INTER_VPC'|'UNCLASSIFIED'|'AMAZON_S3'|'AMAZON_DYNAMODB'|'INTER_REGION'|null,
      *     remoteVpcId?: string|null,
      *     remoteRegion?: string|null,
      *     remoteAz?: string|null,

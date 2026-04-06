@@ -6,12 +6,15 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
 {
     use AddLayerVersionPermission\AddLayerVersionPermissionTrait;
     use AddPermission\AddPermissionTrait;
+    use CheckpointDurableExecution\CheckpointDurableExecutionTrait;
     use CreateAlias\CreateAliasTrait;
+    use CreateCapacityProvider\CreateCapacityProviderTrait;
     use CreateCodeSigningConfig\CreateCodeSigningConfigTrait;
     use CreateEventSourceMapping\CreateEventSourceMappingTrait;
     use CreateFunction\CreateFunctionTrait;
     use CreateFunctionUrlConfig\CreateFunctionUrlConfigTrait;
     use DeleteAlias\DeleteAliasTrait;
+    use DeleteCapacityProvider\DeleteCapacityProviderTrait;
     use DeleteCodeSigningConfig\DeleteCodeSigningConfigTrait;
     use DeleteEventSourceMapping\DeleteEventSourceMappingTrait;
     use DeleteFunction\DeleteFunctionTrait;
@@ -23,7 +26,11 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use DeleteProvisionedConcurrencyConfig\DeleteProvisionedConcurrencyConfigTrait;
     use GetAccountSettings\GetAccountSettingsTrait;
     use GetAlias\GetAliasTrait;
+    use GetCapacityProvider\GetCapacityProviderTrait;
     use GetCodeSigningConfig\GetCodeSigningConfigTrait;
+    use GetDurableExecution\GetDurableExecutionTrait;
+    use GetDurableExecutionHistory\GetDurableExecutionHistoryTrait;
+    use GetDurableExecutionState\GetDurableExecutionStateTrait;
     use GetEventSourceMapping\GetEventSourceMappingTrait;
     use GetFunction\GetFunctionTrait;
     use GetFunctionCodeSigningConfig\GetFunctionCodeSigningConfigTrait;
@@ -31,6 +38,7 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use GetFunctionConfiguration\GetFunctionConfigurationTrait;
     use GetFunctionEventInvokeConfig\GetFunctionEventInvokeConfigTrait;
     use GetFunctionRecursionConfig\GetFunctionRecursionConfigTrait;
+    use GetFunctionScalingConfig\GetFunctionScalingConfigTrait;
     use GetFunctionUrlConfig\GetFunctionUrlConfigTrait;
     use GetLayerVersion\GetLayerVersionTrait;
     use GetLayerVersionByArn\GetLayerVersionByArnTrait;
@@ -39,13 +47,15 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use GetProvisionedConcurrencyConfig\GetProvisionedConcurrencyConfigTrait;
     use GetRuntimeManagementConfig\GetRuntimeManagementConfigTrait;
     use Invoke\InvokeTrait;
-    use InvokeAsync\InvokeAsyncTrait;
     use InvokeWithResponseStream\InvokeWithResponseStreamTrait;
     use ListAliases\ListAliasesTrait;
+    use ListCapacityProviders\ListCapacityProvidersTrait;
     use ListCodeSigningConfigs\ListCodeSigningConfigsTrait;
+    use ListDurableExecutionsByFunction\ListDurableExecutionsByFunctionTrait;
     use ListEventSourceMappings\ListEventSourceMappingsTrait;
     use ListFunctionEventInvokeConfigs\ListFunctionEventInvokeConfigsTrait;
     use ListFunctionUrlConfigs\ListFunctionUrlConfigsTrait;
+    use ListFunctionVersionsByCapacityProvider\ListFunctionVersionsByCapacityProviderTrait;
     use ListFunctions\ListFunctionsTrait;
     use ListFunctionsByCodeSigningConfig\ListFunctionsByCodeSigningConfigTrait;
     use ListLayerVersions\ListLayerVersionsTrait;
@@ -59,17 +69,24 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use PutFunctionConcurrency\PutFunctionConcurrencyTrait;
     use PutFunctionEventInvokeConfig\PutFunctionEventInvokeConfigTrait;
     use PutFunctionRecursionConfig\PutFunctionRecursionConfigTrait;
+    use PutFunctionScalingConfig\PutFunctionScalingConfigTrait;
     use PutProvisionedConcurrencyConfig\PutProvisionedConcurrencyConfigTrait;
     use PutRuntimeManagementConfig\PutRuntimeManagementConfigTrait;
     use RemoveLayerVersionPermission\RemoveLayerVersionPermissionTrait;
     use RemovePermission\RemovePermissionTrait;
+    use SendDurableExecutionCallbackFailure\SendDurableExecutionCallbackFailureTrait;
+    use SendDurableExecutionCallbackHeartbeat\SendDurableExecutionCallbackHeartbeatTrait;
+    use SendDurableExecutionCallbackSuccess\SendDurableExecutionCallbackSuccessTrait;
+    use StopDurableExecution\StopDurableExecutionTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAlias\UpdateAliasTrait;
+    use UpdateCapacityProvider\UpdateCapacityProviderTrait;
     use UpdateCodeSigningConfig\UpdateCodeSigningConfigTrait;
     use UpdateEventSourceMapping\UpdateEventSourceMappingTrait;
     use UpdateFunctionCode\UpdateFunctionCodeTrait;
     use UpdateFunctionConfiguration\UpdateFunctionConfigurationTrait;
     use UpdateFunctionEventInvokeConfig\UpdateFunctionEventInvokeConfigTrait;
     use UpdateFunctionUrlConfig\UpdateFunctionUrlConfigTrait;
+    use InvokeAsynchronous\InvokeAsynchronousTrait;
 }

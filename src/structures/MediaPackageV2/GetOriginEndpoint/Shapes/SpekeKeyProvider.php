@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'CLEAR_KEY_AES_128'|'FAIRPLAY'|'PLAYREADY'|'WIDEVINE'|'IRDETO'> $DrmSystems
  * @property string $RoleArn
  * @property string $Url
+ * @property string|null $CertificateArn
  */
 class SpekeKeyProvider extends Shape
 {
@@ -19,7 +20,8 @@ class SpekeKeyProvider extends Shape
      *     ResourceId: string,
      *     DrmSystems: list<'CLEAR_KEY_AES_128'|'FAIRPLAY'|'PLAYREADY'|'WIDEVINE'|'IRDETO'>,
      *     RoleArn: string,
-     *     Url: string
+     *     Url: string,
+     *     CertificateArn?: string|null
      * } $args
      */
     public function __construct(array $args)

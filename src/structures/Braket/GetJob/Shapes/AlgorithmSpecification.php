@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Braket\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ContainerImage|null $containerImage
  * @property ScriptModeConfig|null $scriptModeConfig
+ * @property ContainerImage|null $containerImage
  */
 class AlgorithmSpecification extends Shape
 {
     /**
      * @param array{
-     *     containerImage?: ContainerImage|null,
-     *     scriptModeConfig?: ScriptModeConfig|null
+     *     scriptModeConfig?: ScriptModeConfig|null,
+     *     containerImage?: ContainerImage|null
      * } $args
      */
     public function __construct(array $args = [])

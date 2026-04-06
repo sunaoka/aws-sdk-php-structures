@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ImpactedAwsRegion>|null $impactedAwsRegionsToDelete
  * @property list<string>|null $impactedAccountsToAdd
  * @property list<string>|null $impactedAccountsToDelete
+ * @property list<Shapes\CaseMetadataEntry>|null $caseMetadata
  */
 class UpdateCaseRequest extends Request
 {
@@ -41,7 +42,8 @@ class UpdateCaseRequest extends Request
      *     impactedAwsRegionsToAdd?: list<Shapes\ImpactedAwsRegion>|null,
      *     impactedAwsRegionsToDelete?: list<Shapes\ImpactedAwsRegion>|null,
      *     impactedAccountsToAdd?: list<string>|null,
-     *     impactedAccountsToDelete?: list<string>|null
+     *     impactedAccountsToDelete?: list<string>|null,
+     *     caseMetadata?: list<Shapes\CaseMetadataEntry>|null
      * } $args
      */
     public function __construct(array $args)

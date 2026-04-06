@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\GetQuickResponse;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $knowledgeBaseId
  * @property string $quickResponseId
+ * @property string $knowledgeBaseId
  */
 class GetQuickResponseRequest extends Request
 {
     /**
      * @param array{
-     *     knowledgeBaseId: string,
-     *     quickResponseId: string
+     *     quickResponseId: string,
+     *     knowledgeBaseId: string
      * } $args
      */
     public function __construct(array $args)

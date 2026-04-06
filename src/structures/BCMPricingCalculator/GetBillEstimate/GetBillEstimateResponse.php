@@ -13,6 +13,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\BillEstimateCostSummary|null $costSummary
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $expiresAt
+ * @property 'OPEN'|'PRIORITIZED'|'RESTRICTED'|null $groupSharingPreference
+ * @property string|null $costCategoryGroupSharingPreferenceArn
+ * @property \Aws\Api\DateTimeResult|null $costCategoryGroupSharingPreferenceEffectiveDate
  */
 class GetBillEstimateResponse extends Response
 {

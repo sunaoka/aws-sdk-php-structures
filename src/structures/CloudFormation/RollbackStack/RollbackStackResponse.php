@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $StackId
+ * @property string|null $OperationId
  */
 class RollbackStackResponse extends Response
 {

@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domainIdentifier
  * @property string|null $glossaryIdentifier
  * @property string $identifier
- * @property string|null $longDescription
  * @property string|null $name
  * @property string|null $shortDescription
- * @property 'ENABLED'|'DISABLED'|null $status
+ * @property string|null $longDescription
  * @property Shapes\TermRelations|null $termRelations
+ * @property 'ENABLED'|'DISABLED'|null $status
  */
 class UpdateGlossaryTermRequest extends Request
 {
@@ -21,11 +21,11 @@ class UpdateGlossaryTermRequest extends Request
      *     domainIdentifier: string,
      *     glossaryIdentifier?: string|null,
      *     identifier: string,
-     *     longDescription?: string|null,
      *     name?: string|null,
      *     shortDescription?: string|null,
-     *     status?: 'ENABLED'|'DISABLED'|null,
-     *     termRelations?: Shapes\TermRelations|null
+     *     longDescription?: string|null,
+     *     termRelations?: Shapes\TermRelations|null,
+     *     status?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

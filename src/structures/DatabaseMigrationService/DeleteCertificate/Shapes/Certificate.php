@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $ValidToDate
  * @property string|null $SigningAlgorithm
  * @property int|null $KeyLength
+ * @property string|null $KmsKeyId
  */
 class Certificate extends Shape
 {
@@ -29,7 +30,8 @@ class Certificate extends Shape
      *     ValidFromDate?: \Aws\Api\DateTimeResult|null,
      *     ValidToDate?: \Aws\Api\DateTimeResult|null,
      *     SigningAlgorithm?: string|null,
-     *     KeyLength?: int|null
+     *     KeyLength?: int|null,
+     *     KmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

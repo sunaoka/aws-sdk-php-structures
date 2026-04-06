@@ -5,23 +5,29 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MongoDbAtlasConfiguration|null $mongoDbAtlasConfiguration
+ * @property 'OPENSEARCH_SERVERLESS'|'PINECONE'|'REDIS_ENTERPRISE_CLOUD'|'RDS'|'MONGO_DB_ATLAS'|'NEPTUNE_ANALYTICS'|'OPENSEARCH_MANAGED_CLUSTER'|'S3_VECTORS' $type
  * @property OpenSearchServerlessConfiguration|null $opensearchServerlessConfiguration
+ * @property OpenSearchManagedClusterConfiguration|null $opensearchManagedClusterConfiguration
  * @property PineconeConfiguration|null $pineconeConfiguration
- * @property RdsConfiguration|null $rdsConfiguration
  * @property RedisEnterpriseCloudConfiguration|null $redisEnterpriseCloudConfiguration
- * @property 'OPENSEARCH_SERVERLESS'|'PINECONE'|'REDIS_ENTERPRISE_CLOUD'|'RDS'|'MONGO_DB_ATLAS' $type
+ * @property RdsConfiguration|null $rdsConfiguration
+ * @property MongoDbAtlasConfiguration|null $mongoDbAtlasConfiguration
+ * @property NeptuneAnalyticsConfiguration|null $neptuneAnalyticsConfiguration
+ * @property S3VectorsConfiguration|null $s3VectorsConfiguration
  */
 class StorageConfiguration extends Shape
 {
     /**
      * @param array{
-     *     mongoDbAtlasConfiguration?: MongoDbAtlasConfiguration|null,
+     *     type: 'OPENSEARCH_SERVERLESS'|'PINECONE'|'REDIS_ENTERPRISE_CLOUD'|'RDS'|'MONGO_DB_ATLAS'|'NEPTUNE_ANALYTICS'|'OPENSEARCH_MANAGED_CLUSTER'|'S3_VECTORS',
      *     opensearchServerlessConfiguration?: OpenSearchServerlessConfiguration|null,
+     *     opensearchManagedClusterConfiguration?: OpenSearchManagedClusterConfiguration|null,
      *     pineconeConfiguration?: PineconeConfiguration|null,
-     *     rdsConfiguration?: RdsConfiguration|null,
      *     redisEnterpriseCloudConfiguration?: RedisEnterpriseCloudConfiguration|null,
-     *     type: 'OPENSEARCH_SERVERLESS'|'PINECONE'|'REDIS_ENTERPRISE_CLOUD'|'RDS'|'MONGO_DB_ATLAS'
+     *     rdsConfiguration?: RdsConfiguration|null,
+     *     mongoDbAtlasConfiguration?: MongoDbAtlasConfiguration|null,
+     *     neptuneAnalyticsConfiguration?: NeptuneAnalyticsConfiguration|null,
+     *     s3VectorsConfiguration?: S3VectorsConfiguration|null
      * } $args
      */
     public function __construct(array $args)

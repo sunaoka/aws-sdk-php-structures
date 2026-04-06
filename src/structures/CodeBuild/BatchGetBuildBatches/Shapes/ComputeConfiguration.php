@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $memory
  * @property int|null $disk
  * @property 'GENERAL'|'NVME'|null $machineType
+ * @property string|null $instanceType
  */
 class ComputeConfiguration extends Shape
 {
@@ -17,7 +18,8 @@ class ComputeConfiguration extends Shape
      *     vCpu?: int|null,
      *     memory?: int|null,
      *     disk?: int|null,
-     *     machineType?: 'GENERAL'|'NVME'|null
+     *     machineType?: 'GENERAL'|'NVME'|null,
+     *     instanceType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

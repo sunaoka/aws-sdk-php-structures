@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateAlgorithm\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ManifestFile'|'S3Prefix'|'AugmentedManifestFile' $S3DataType
+ * @property 'ManifestFile'|'S3Prefix'|'AugmentedManifestFile'|'Converse' $S3DataType
  * @property string $S3Uri
  */
 class TransformS3DataSource extends Shape
 {
     /**
      * @param array{
-     *     S3DataType: 'ManifestFile'|'S3Prefix'|'AugmentedManifestFile',
+     *     S3DataType: 'ManifestFile'|'S3Prefix'|'AugmentedManifestFile'|'Converse',
      *     S3Uri: string
      * } $args
      */

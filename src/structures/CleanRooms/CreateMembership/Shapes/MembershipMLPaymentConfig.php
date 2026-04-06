@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property MembershipModelTrainingPaymentConfig|null $modelTraining
  * @property MembershipModelInferencePaymentConfig|null $modelInference
+ * @property MembershipSyntheticDataGenerationPaymentConfig|null $syntheticDataGeneration
  */
 class MembershipMLPaymentConfig extends Shape
 {
     /**
      * @param array{
      *     modelTraining?: MembershipModelTrainingPaymentConfig|null,
-     *     modelInference?: MembershipModelInferencePaymentConfig|null
+     *     modelInference?: MembershipModelInferencePaymentConfig|null,
+     *     syntheticDataGeneration?: MembershipSyntheticDataGenerationPaymentConfig|null
      * } $args
      */
     public function __construct(array $args = [])

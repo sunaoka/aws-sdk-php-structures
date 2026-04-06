@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null $WorkerType
  * @property int|null $NumberOfWorkers
  * @property 'FLEX'|'STANDARD'|null $ExecutionClass
+ * @property string|null $ExecutionRoleSessionPolicy
  */
 class StartJobRunRequest extends Request
 {
@@ -33,7 +34,8 @@ class StartJobRunRequest extends Request
      *     NotificationProperty?: Shapes\NotificationProperty|null,
      *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null,
      *     NumberOfWorkers?: int|null,
-     *     ExecutionClass?: 'FLEX'|'STANDARD'|null
+     *     ExecutionClass?: 'FLEX'|'STANDARD'|null,
+     *     ExecutionRoleSessionPolicy?: string|null
      * } $args
      */
     public function __construct(array $args)

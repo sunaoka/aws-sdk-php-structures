@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int|null $added
- * @property int|null $failed
- * @property int|null $skipped
- * @property int|null $unchanged
  * @property int|null $updated
+ * @property int|null $unchanged
+ * @property int|null $skipped
+ * @property int|null $failed
  */
 class RunStatisticsForAssets extends Shape
 {
     /**
      * @param array{
      *     added?: int|null,
-     *     failed?: int|null,
-     *     skipped?: int|null,
+     *     updated?: int|null,
      *     unchanged?: int|null,
-     *     updated?: int|null
+     *     skipped?: int|null,
+     *     failed?: int|null
      * } $args
      */
     public function __construct(array $args = [])

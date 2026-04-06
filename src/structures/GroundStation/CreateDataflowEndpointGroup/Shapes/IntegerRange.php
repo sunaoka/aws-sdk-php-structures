@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GroundStation\CreateDataflowEndpointGroup\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $maximum
  * @property int $minimum
+ * @property int $maximum
  */
 class IntegerRange extends Shape
 {
     /**
      * @param array{
-     *     maximum: int,
-     *     minimum: int
+     *     minimum: int,
+     *     maximum: int
      * } $args
      */
     public function __construct(array $args)

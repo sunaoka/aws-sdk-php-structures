@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<30, max>|null $ManifestWindowSeconds
  * @property int<1, 1209600>|null $ProgramDateTimeIntervalSeconds
  * @property FilterConfiguration|null $FilterConfiguration
+ * @property bool|null $UrlEncodeChildManifest
  */
 class CreateLowLatencyHlsManifestConfiguration extends Shape
 {
@@ -23,7 +24,8 @@ class CreateLowLatencyHlsManifestConfiguration extends Shape
      *     StartTag?: StartTag|null,
      *     ManifestWindowSeconds?: int<30, max>|null,
      *     ProgramDateTimeIntervalSeconds?: int<1, 1209600>|null,
-     *     FilterConfiguration?: FilterConfiguration|null
+     *     FilterConfiguration?: FilterConfiguration|null,
+     *     UrlEncodeChildManifest?: bool|null
      * } $args
      */
     public function __construct(array $args)

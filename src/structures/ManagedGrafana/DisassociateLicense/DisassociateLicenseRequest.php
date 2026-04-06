@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\DisassociateLicense;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'ENTERPRISE'|'ENTERPRISE_FREE_TRIAL' $licenseType
  * @property string $workspaceId
+ * @property 'ENTERPRISE'|'ENTERPRISE_FREE_TRIAL' $licenseType
  */
 class DisassociateLicenseRequest extends Request
 {
     /**
      * @param array{
-     *     licenseType: 'ENTERPRISE'|'ENTERPRISE_FREE_TRIAL',
-     *     workspaceId: string
+     *     workspaceId: string,
+     *     licenseType: 'ENTERPRISE'|'ENTERPRISE_FREE_TRIAL'
      * } $args
      */
     public function __construct(array $args)

@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $FunctionArn
+ * @property string|null $ClientToken
  */
 class DisassociateLambdaFunctionRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     FunctionArn: string
+     *     FunctionArn: string,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

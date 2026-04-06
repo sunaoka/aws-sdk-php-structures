@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\GetEngagementInvitation\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property list<SenderContact>|null $SenderContacts
+ * @property list<'Distributor'|'Reseller'|'Hardware Partner'|'Managed Service Provider'|'Software Partner'|'Services Partner'|'Training Partner'|'Co-Sell Facilitator'|'Facilitator'> $ReceiverResponsibilities
  * @property EngagementCustomer $Customer
  * @property ProjectDetails $Project
- * @property list<'Distributor'|'Reseller'|'Hardware Partner'|'Managed Service Provider'|'Software Partner'|'Services Partner'|'Training Partner'|'Co-Sell Facilitator'|'Facilitator'> $ReceiverResponsibilities
- * @property list<SenderContact>|null $SenderContacts
  */
 class OpportunityInvitationPayload extends Shape
 {
     /**
      * @param array{
-     *     Customer: EngagementCustomer,
-     *     Project: ProjectDetails,
+     *     SenderContacts?: list<SenderContact>|null,
      *     ReceiverResponsibilities: list<'Distributor'|'Reseller'|'Hardware Partner'|'Managed Service Provider'|'Software Partner'|'Services Partner'|'Training Partner'|'Co-Sell Facilitator'|'Facilitator'>,
-     *     SenderContacts?: list<SenderContact>|null
+     *     Customer: EngagementCustomer,
+     *     Project: ProjectDetails
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\ListEngagementByAccepting
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string|null $NextToken
  * @property list<Shapes\ListEngagementByAcceptingInvitationTaskSummary>|null $TaskSummaries
+ * @property string|null $NextToken
  */
 class ListEngagementByAcceptingInvitationTasksResponse extends Response
 {

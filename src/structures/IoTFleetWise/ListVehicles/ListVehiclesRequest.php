@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $attributeValues
  * @property string|null $nextToken
  * @property int<1, 100>|null $maxResults
+ * @property 'METADATA_ONLY'|null $listResponseScope
  */
 class ListVehiclesRequest extends Request
 {
@@ -19,7 +20,8 @@ class ListVehiclesRequest extends Request
      *     attributeNames?: list<string>|null,
      *     attributeValues?: list<string>|null,
      *     nextToken?: string|null,
-     *     maxResults?: int<1, 100>|null
+     *     maxResults?: int<1, 100>|null,
+     *     listResponseScope?: 'METADATA_ONLY'|null
      * } $args
      */
     public function __construct(array $args = [])

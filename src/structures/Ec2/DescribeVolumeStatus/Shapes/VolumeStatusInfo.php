@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<VolumeStatusDetails>|null $Details
- * @property 'ok'|'impaired'|'insufficient-data'|null $Status
+ * @property 'ok'|'impaired'|'insufficient-data'|'warning'|null $Status
  */
 class VolumeStatusInfo extends Shape
 {
     /**
      * @param array{
      *     Details?: list<VolumeStatusDetails>|null,
-     *     Status?: 'ok'|'impaired'|'insufficient-data'|null
+     *     Status?: 'ok'|'impaired'|'insufficient-data'|'warning'|null
      * } $args
      */
     public function __construct(array $args = [])

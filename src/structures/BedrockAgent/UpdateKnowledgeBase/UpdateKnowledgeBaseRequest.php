@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateKnowledgeBase;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $description
- * @property Shapes\KnowledgeBaseConfiguration $knowledgeBaseConfiguration
  * @property string $knowledgeBaseId
  * @property string $name
+ * @property string|null $description
  * @property string $roleArn
+ * @property Shapes\KnowledgeBaseConfiguration $knowledgeBaseConfiguration
  * @property Shapes\StorageConfiguration|null $storageConfiguration
  */
 class UpdateKnowledgeBaseRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string|null,
-     *     knowledgeBaseConfiguration: Shapes\KnowledgeBaseConfiguration,
      *     knowledgeBaseId: string,
      *     name: string,
+     *     description?: string|null,
      *     roleArn: string,
+     *     knowledgeBaseConfiguration: Shapes\KnowledgeBaseConfiguration,
      *     storageConfiguration?: Shapes\StorageConfiguration|null
      * } $args
      */

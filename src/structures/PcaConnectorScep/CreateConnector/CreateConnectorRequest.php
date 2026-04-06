@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CertificateAuthorityArn
  * @property Shapes\MobileDeviceManagement|null $MobileDeviceManagement
+ * @property string|null $VpcEndpointId
  * @property string|null $ClientToken
  * @property array<string, string>|null $Tags
  */
@@ -16,6 +17,7 @@ class CreateConnectorRequest extends Request
      * @param array{
      *     CertificateAuthorityArn: string,
      *     MobileDeviceManagement?: Shapes\MobileDeviceManagement|null,
+     *     VpcEndpointId?: string|null,
      *     ClientToken?: string|null,
      *     Tags?: array<string, string>|null
      * } $args

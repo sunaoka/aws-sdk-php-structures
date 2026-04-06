@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\GroundStation\ListEphemerides;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\EphemerisItem>|null $ephemerides
  * @property string|null $nextToken
+ * @property list<Shapes\EphemerisItem>|null $ephemerides
  */
 class ListEphemeridesResponse extends Response
 {

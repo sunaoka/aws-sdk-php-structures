@@ -5,25 +5,27 @@ namespace Sunaoka\Aws\Structures\mgn\ResumeReplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DataReplicationError|null $dataReplicationError
- * @property DataReplicationInitiation|null $dataReplicationInitiation
- * @property 'STOPPED'|'INITIATING'|'INITIAL_SYNC'|'BACKLOG'|'CREATING_SNAPSHOT'|'CONTINUOUS'|'PAUSED'|'RESCAN'|'STALLED'|'DISCONNECTED'|'PENDING_SNAPSHOT_SHIPPING'|'SHIPPING_SNAPSHOT'|null $dataReplicationState
- * @property string|null $etaDateTime
  * @property string|null $lagDuration
- * @property string|null $lastSnapshotDateTime
+ * @property string|null $etaDateTime
  * @property list<DataReplicationInfoReplicatedDisk>|null $replicatedDisks
+ * @property 'STOPPED'|'INITIATING'|'INITIAL_SYNC'|'BACKLOG'|'CREATING_SNAPSHOT'|'CONTINUOUS'|'PAUSED'|'RESCAN'|'STALLED'|'DISCONNECTED'|'PENDING_SNAPSHOT_SHIPPING'|'SHIPPING_SNAPSHOT'|null $dataReplicationState
+ * @property DataReplicationInitiation|null $dataReplicationInitiation
+ * @property DataReplicationError|null $dataReplicationError
+ * @property string|null $lastSnapshotDateTime
+ * @property string|null $replicatorId
  */
 class DataReplicationInfo extends Shape
 {
     /**
      * @param array{
-     *     dataReplicationError?: DataReplicationError|null,
-     *     dataReplicationInitiation?: DataReplicationInitiation|null,
-     *     dataReplicationState?: 'STOPPED'|'INITIATING'|'INITIAL_SYNC'|'BACKLOG'|'CREATING_SNAPSHOT'|'CONTINUOUS'|'PAUSED'|'RESCAN'|'STALLED'|'DISCONNECTED'|'PENDING_SNAPSHOT_SHIPPING'|'SHIPPING_SNAPSHOT'|null,
-     *     etaDateTime?: string|null,
      *     lagDuration?: string|null,
+     *     etaDateTime?: string|null,
+     *     replicatedDisks?: list<DataReplicationInfoReplicatedDisk>|null,
+     *     dataReplicationState?: 'STOPPED'|'INITIATING'|'INITIAL_SYNC'|'BACKLOG'|'CREATING_SNAPSHOT'|'CONTINUOUS'|'PAUSED'|'RESCAN'|'STALLED'|'DISCONNECTED'|'PENDING_SNAPSHOT_SHIPPING'|'SHIPPING_SNAPSHOT'|null,
+     *     dataReplicationInitiation?: DataReplicationInitiation|null,
+     *     dataReplicationError?: DataReplicationError|null,
      *     lastSnapshotDateTime?: string|null,
-     *     replicatedDisks?: list<DataReplicationInfoReplicatedDisk>|null
+     *     replicatorId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

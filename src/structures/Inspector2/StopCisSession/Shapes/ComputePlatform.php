@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Inspector2\StopCisSession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $product
  * @property string|null $vendor
+ * @property string|null $product
  * @property string|null $version
  */
 class ComputePlatform extends Shape
 {
     /**
      * @param array{
-     *     product?: string|null,
      *     vendor?: string|null,
+     *     product?: string|null,
      *     version?: string|null
      * } $args
      */

@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
  * @property string|null $OutpostArn
  * @property OperatorResponse|null $Operator
  * @property list<InstanceStatusEvent>|null $Events
@@ -20,6 +21,7 @@ class InstanceStatus extends Shape
     /**
      * @param array{
      *     AvailabilityZone?: string|null,
+     *     AvailabilityZoneId?: string|null,
      *     OutpostArn?: string|null,
      *     Operator?: OperatorResponse|null,
      *     Events?: list<InstanceStatusEvent>|null,

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\OpsItemNotification>|null $Notifications
  * @property int<1, 5>|null $Priority
  * @property list<Shapes\RelatedOpsItem>|null $RelatedOpsItems
- * @property 'Open'|'InProgress'|'Resolved'|'Pending'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'CompletedWithSuccess'|'CompletedWithFailure'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'PendingApproval'|'Approved'|'Rejected'|'Closed'|null $Status
+ * @property 'Open'|'InProgress'|'Resolved'|'Pending'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'CompletedWithSuccess'|'CompletedWithFailure'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'PendingApproval'|'Approved'|'Revoked'|'Rejected'|'Closed'|null $Status
  * @property string $OpsItemId
  * @property string|null $Title
  * @property string|null $Category
@@ -32,7 +32,7 @@ class UpdateOpsItemRequest extends Request
      *     Notifications?: list<Shapes\OpsItemNotification>|null,
      *     Priority?: int<1, 5>|null,
      *     RelatedOpsItems?: list<Shapes\RelatedOpsItem>|null,
-     *     Status?: 'Open'|'InProgress'|'Resolved'|'Pending'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'CompletedWithSuccess'|'CompletedWithFailure'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'PendingApproval'|'Approved'|'Rejected'|'Closed'|null,
+     *     Status?: 'Open'|'InProgress'|'Resolved'|'Pending'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'CompletedWithSuccess'|'CompletedWithFailure'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'PendingApproval'|'Approved'|'Revoked'|'Rejected'|'Closed'|null,
      *     OpsItemId: string,
      *     Title?: string|null,
      *     Category?: string|null,

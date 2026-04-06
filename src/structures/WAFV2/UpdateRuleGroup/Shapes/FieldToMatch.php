@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Cookies|null $Cookies
  * @property HeaderOrder|null $HeaderOrder
  * @property JA3Fingerprint|null $JA3Fingerprint
+ * @property JA4Fingerprint|null $JA4Fingerprint
+ * @property UriFragment|null $UriFragment
  */
 class FieldToMatch extends Shape
 {
@@ -33,7 +35,9 @@ class FieldToMatch extends Shape
      *     Headers?: Headers|null,
      *     Cookies?: Cookies|null,
      *     HeaderOrder?: HeaderOrder|null,
-     *     JA3Fingerprint?: JA3Fingerprint|null
+     *     JA3Fingerprint?: JA3Fingerprint|null,
+     *     JA4Fingerprint?: JA4Fingerprint|null,
+     *     UriFragment?: UriFragment|null
      * } $args
      */
     public function __construct(array $args = [])

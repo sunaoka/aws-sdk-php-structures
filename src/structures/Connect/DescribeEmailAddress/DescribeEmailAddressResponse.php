@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Description
  * @property string|null $CreateTimestamp
  * @property string|null $ModifiedTimestamp
+ * @property list<Shapes\AliasConfiguration>|null $AliasConfigurations
  * @property array<string, string>|null $Tags
  */
 class DescribeEmailAddressResponse extends Response

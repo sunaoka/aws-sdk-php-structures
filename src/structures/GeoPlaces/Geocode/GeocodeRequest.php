@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 100>|null $MaxResults
  * @property list<double>|null $BiasPosition
  * @property Shapes\GeocodeFilter|null $Filter
- * @property list<'TimeZone'|'Access'>|null $AdditionalFeatures
+ * @property list<'TimeZone'|'Access'|'SecondaryAddresses'|'Intersections'>|null $AdditionalFeatures
  * @property string|null $Language
  * @property string|null $PoliticalView
  * @property 'SingleUse'|'Storage'|null $IntendedUse
@@ -25,7 +25,7 @@ class GeocodeRequest extends Request
      *     MaxResults?: int<1, 100>|null,
      *     BiasPosition?: list<double>|null,
      *     Filter?: Shapes\GeocodeFilter|null,
-     *     AdditionalFeatures?: list<'TimeZone'|'Access'>|null,
+     *     AdditionalFeatures?: list<'TimeZone'|'Access'|'SecondaryAddresses'|'Intersections'>|null,
      *     Language?: string|null,
      *     PoliticalView?: string|null,
      *     IntendedUse?: 'SingleUse'|'Storage'|null,

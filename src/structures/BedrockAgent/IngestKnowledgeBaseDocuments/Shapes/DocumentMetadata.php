@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\IngestKnowledgeBaseDocuments\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property 'IN_LINE_ATTRIBUTE'|'S3_LOCATION' $type
  * @property list<MetadataAttribute>|null $inlineAttributes
  * @property CustomS3Location|null $s3Location
- * @property 'IN_LINE_ATTRIBUTE'|'S3_LOCATION' $type
  */
 class DocumentMetadata extends Shape
 {
     /**
      * @param array{
+     *     type: 'IN_LINE_ATTRIBUTE'|'S3_LOCATION',
      *     inlineAttributes?: list<MetadataAttribute>|null,
-     *     s3Location?: CustomS3Location|null,
-     *     type: 'IN_LINE_ATTRIBUTE'|'S3_LOCATION'
+     *     s3Location?: CustomS3Location|null
      * } $args
      */
     public function __construct(array $args)

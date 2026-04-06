@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $idcApplicationArn
  * @property string|null $principal
  * @property list<Shapes\ActionConfiguration>|null $actionConfigurations
+ * @property Shapes\DataAccessorAuthenticationDetail|null $authenticationDetail
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */

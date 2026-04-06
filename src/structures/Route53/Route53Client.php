@@ -72,6 +72,7 @@ class Route53Client extends \Aws\Route53\Route53Client
     use TestDNSAnswer\TestDNSAnswerTrait;
     use UpdateHealthCheck\UpdateHealthCheckTrait;
     use UpdateHostedZoneComment\UpdateHostedZoneCommentTrait;
+    use UpdateHostedZoneFeatures\UpdateHostedZoneFeaturesTrait;
     use UpdateTrafficPolicyComment\UpdateTrafficPolicyCommentTrait;
     use UpdateTrafficPolicyInstance\UpdateTrafficPolicyInstanceTrait;
 }

@@ -5,29 +5,35 @@ namespace Sunaoka\Aws\Structures\MailManager\GetRuleSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AddHeaderAction|null $AddHeader
- * @property ArchiveAction|null $Archive
- * @property DeliverToMailboxAction|null $DeliverToMailbox
- * @property DeliverToQBusinessAction|null $DeliverToQBusiness
  * @property DropAction|null $Drop
  * @property RelayAction|null $Relay
- * @property ReplaceRecipientAction|null $ReplaceRecipient
- * @property SendAction|null $Send
+ * @property ArchiveAction|null $Archive
  * @property S3Action|null $WriteToS3
+ * @property SendAction|null $Send
+ * @property AddHeaderAction|null $AddHeader
+ * @property ReplaceRecipientAction|null $ReplaceRecipient
+ * @property DeliverToMailboxAction|null $DeliverToMailbox
+ * @property DeliverToQBusinessAction|null $DeliverToQBusiness
+ * @property SnsAction|null $PublishToSns
+ * @property BounceAction|null $Bounce
+ * @property InvokeLambdaAction|null $InvokeLambda
  */
 class RuleAction extends Shape
 {
     /**
      * @param array{
-     *     AddHeader?: AddHeaderAction|null,
-     *     Archive?: ArchiveAction|null,
-     *     DeliverToMailbox?: DeliverToMailboxAction|null,
-     *     DeliverToQBusiness?: DeliverToQBusinessAction|null,
      *     Drop?: DropAction|null,
      *     Relay?: RelayAction|null,
-     *     ReplaceRecipient?: ReplaceRecipientAction|null,
+     *     Archive?: ArchiveAction|null,
+     *     WriteToS3?: S3Action|null,
      *     Send?: SendAction|null,
-     *     WriteToS3?: S3Action|null
+     *     AddHeader?: AddHeaderAction|null,
+     *     ReplaceRecipient?: ReplaceRecipientAction|null,
+     *     DeliverToMailbox?: DeliverToMailboxAction|null,
+     *     DeliverToQBusiness?: DeliverToQBusinessAction|null,
+     *     PublishToSns?: SnsAction|null,
+     *     Bounce?: BounceAction|null,
+     *     InvokeLambda?: InvokeLambdaAction|null
      * } $args
      */
     public function __construct(array $args = [])

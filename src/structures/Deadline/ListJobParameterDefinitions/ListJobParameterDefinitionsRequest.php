@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $farmId
- * @property string $jobId
  * @property string $queueId
+ * @property string $jobId
  * @property string|null $nextToken
  * @property int<1, 100>|null $maxResults
  */
@@ -16,8 +16,8 @@ class ListJobParameterDefinitionsRequest extends Request
     /**
      * @param array{
      *     farmId: string,
-     *     jobId: string,
      *     queueId: string,
+     *     jobId: string,
      *     nextToken?: string|null,
      *     maxResults?: int<1, 100>|null
      * } $args

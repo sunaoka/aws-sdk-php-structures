@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $AddRouteTableIds
  * @property list<string>|null $RemoveRouteTableIds
  * @property OpenZFSReadCacheConfiguration|null $ReadCacheConfiguration
+ * @property string|null $EndpointIpv6AddressRange
  */
 class UpdateFileSystemOpenZFSConfiguration extends Shape
 {
@@ -29,7 +30,8 @@ class UpdateFileSystemOpenZFSConfiguration extends Shape
      *     DiskIopsConfiguration?: DiskIopsConfiguration|null,
      *     AddRouteTableIds?: list<string>|null,
      *     RemoveRouteTableIds?: list<string>|null,
-     *     ReadCacheConfiguration?: OpenZFSReadCacheConfiguration|null
+     *     ReadCacheConfiguration?: OpenZFSReadCacheConfiguration|null,
+     *     EndpointIpv6AddressRange?: string|null
      * } $args
      */
     public function __construct(array $args = [])

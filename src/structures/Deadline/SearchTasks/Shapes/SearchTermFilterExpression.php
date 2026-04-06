@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $searchTerm
+ * @property 'FUZZY_MATCH'|'CONTAINS'|null $matchType
  */
 class SearchTermFilterExpression extends Shape
 {
     /**
-     * @param array{searchTerm: string} $args
+     * @param array{
+     *     searchTerm: string,
+     *     matchType?: 'FUZZY_MATCH'|'CONTAINS'|null
+     * } $args
      */
     public function __construct(array $args)
     {

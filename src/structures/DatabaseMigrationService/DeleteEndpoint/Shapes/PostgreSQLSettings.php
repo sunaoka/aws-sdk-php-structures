@@ -30,6 +30,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'default'|'babelfish'|null $DatabaseMode
  * @property string|null $BabelfishDatabaseName
  * @property bool|null $DisableUnicodeSourceFilter
+ * @property string|null $ServiceAccessRoleArn
+ * @property 'password'|'iam'|null $AuthenticationMethod
  */
 class PostgreSQLSettings extends Shape
 {
@@ -59,7 +61,9 @@ class PostgreSQLSettings extends Shape
      *     MapLongVarcharAs?: 'wstring'|'clob'|'nclob'|null,
      *     DatabaseMode?: 'default'|'babelfish'|null,
      *     BabelfishDatabaseName?: string|null,
-     *     DisableUnicodeSourceFilter?: bool|null
+     *     DisableUnicodeSourceFilter?: bool|null,
+     *     ServiceAccessRoleArn?: string|null,
+     *     AuthenticationMethod?: 'password'|'iam'|null
      * } $args
      */
     public function __construct(array $args = [])

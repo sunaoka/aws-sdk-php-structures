@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $UsageLimitId
  * @property string|null $ClusterIdentifier
- * @property 'spectrum'|'concurrency-scaling'|'cross-region-datasharing'|null $FeatureType
+ * @property 'spectrum'|'concurrency-scaling'|'cross-region-datasharing'|'extra-compute-for-automatic-optimization'|null $FeatureType
  * @property 'time'|'data-scanned'|null $LimitType
  * @property int|null $Amount
  * @property 'daily'|'weekly'|'monthly'|null $Period

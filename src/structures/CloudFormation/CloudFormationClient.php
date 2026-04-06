@@ -13,6 +13,7 @@ class CloudFormationClient extends \Aws\CloudFormation\CloudFormationClient
     use CreateGeneratedTemplate\CreateGeneratedTemplateTrait;
     use CreateStack\CreateStackTrait;
     use CreateStackInstances\CreateStackInstancesTrait;
+    use CreateStackRefactor\CreateStackRefactorTrait;
     use CreateStackSet\CreateStackSetTrait;
     use DeactivateOrganizationsAccess\DeactivateOrganizationsAccessTrait;
     use DeactivateType\DeactivateTypeTrait;
@@ -25,6 +26,7 @@ class CloudFormationClient extends \Aws\CloudFormation\CloudFormationClient
     use DescribeAccountLimits\DescribeAccountLimitsTrait;
     use DescribeChangeSet\DescribeChangeSetTrait;
     use DescribeChangeSetHooks\DescribeChangeSetHooksTrait;
+    use DescribeEvents\DescribeEventsTrait;
     use DescribeGeneratedTemplate\DescribeGeneratedTemplateTrait;
     use DescribeOrganizationsAccess\DescribeOrganizationsAccessTrait;
     use DescribePublisher\DescribePublisherTrait;
@@ -32,6 +34,7 @@ class CloudFormationClient extends \Aws\CloudFormation\CloudFormationClient
     use DescribeStackDriftDetectionStatus\DescribeStackDriftDetectionStatusTrait;
     use DescribeStackEvents\DescribeStackEventsTrait;
     use DescribeStackInstance\DescribeStackInstanceTrait;
+    use DescribeStackRefactor\DescribeStackRefactorTrait;
     use DescribeStackResource\DescribeStackResourceTrait;
     use DescribeStackResourceDrifts\DescribeStackResourceDriftsTrait;
     use DescribeStackResources\DescribeStackResourcesTrait;
@@ -45,7 +48,9 @@ class CloudFormationClient extends \Aws\CloudFormation\CloudFormationClient
     use DetectStackSetDrift\DetectStackSetDriftTrait;
     use EstimateTemplateCost\EstimateTemplateCostTrait;
     use ExecuteChangeSet\ExecuteChangeSetTrait;
+    use ExecuteStackRefactor\ExecuteStackRefactorTrait;
     use GetGeneratedTemplate\GetGeneratedTemplateTrait;
+    use GetHookResult\GetHookResultTrait;
     use GetStackPolicy\GetStackPolicyTrait;
     use GetTemplate\GetTemplateTrait;
     use GetTemplateSummary\GetTemplateSummaryTrait;
@@ -60,6 +65,8 @@ class CloudFormationClient extends \Aws\CloudFormation\CloudFormationClient
     use ListResourceScans\ListResourceScansTrait;
     use ListStackInstanceResourceDrifts\ListStackInstanceResourceDriftsTrait;
     use ListStackInstances\ListStackInstancesTrait;
+    use ListStackRefactorActions\ListStackRefactorActionsTrait;
+    use ListStackRefactors\ListStackRefactorsTrait;
     use ListStackResources\ListStackResourcesTrait;
     use ListStackSetAutoDeploymentTargets\ListStackSetAutoDeploymentTargetsTrait;
     use ListStackSetOperationResults\ListStackSetOperationResultsTrait;

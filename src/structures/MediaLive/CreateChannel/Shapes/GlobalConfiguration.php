@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<-60, 60>|null $InitialAudioGain
+ * @property int|null $InitialAudioGain
  * @property 'NONE'|'SWITCH_AND_LOOP_INPUTS'|null $InputEndAction
  * @property InputLossBehavior|null $InputLossBehavior
- * @property 'EPOCH_LOCKING'|'PIPELINE_LOCKING'|null $OutputLockingMode
+ * @property 'EPOCH_LOCKING'|'PIPELINE_LOCKING'|'DISABLED'|null $OutputLockingMode
  * @property 'INPUT_CLOCK'|'SYSTEM_CLOCK'|null $OutputTimingSource
  * @property 'DISABLED'|'ENABLED'|null $SupportLowFramerateInputs
  * @property OutputLockingSettings|null $OutputLockingSettings
@@ -17,10 +17,10 @@ class GlobalConfiguration extends Shape
 {
     /**
      * @param array{
-     *     InitialAudioGain?: int<-60, 60>|null,
+     *     InitialAudioGain?: int|null,
      *     InputEndAction?: 'NONE'|'SWITCH_AND_LOOP_INPUTS'|null,
      *     InputLossBehavior?: InputLossBehavior|null,
-     *     OutputLockingMode?: 'EPOCH_LOCKING'|'PIPELINE_LOCKING'|null,
+     *     OutputLockingMode?: 'EPOCH_LOCKING'|'PIPELINE_LOCKING'|'DISABLED'|null,
      *     OutputTimingSource?: 'INPUT_CLOCK'|'SYSTEM_CLOCK'|null,
      *     SupportLowFramerateInputs?: 'DISABLED'|'ENABLED'|null,
      *     OutputLockingSettings?: OutputLockingSettings|null

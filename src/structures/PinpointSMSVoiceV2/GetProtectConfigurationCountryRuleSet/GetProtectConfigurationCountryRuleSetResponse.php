@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $ProtectConfigurationArn
  * @property string $ProtectConfigurationId
- * @property 'SMS'|'VOICE'|'MMS' $NumberCapability
+ * @property 'SMS'|'VOICE'|'MMS'|'RCS' $NumberCapability
  * @property array<string, Shapes\ProtectConfigurationCountryRuleSetInformation> $CountryRuleSet
  */
 class GetProtectConfigurationCountryRuleSetResponse extends Response

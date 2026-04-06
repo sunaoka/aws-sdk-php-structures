@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MediaLive\DeleteChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 1000000>|null $BlackFrameMsec
+ * @property int|null $BlackFrameMsec
  * @property string|null $InputLossImageColor
  * @property InputLocation|null $InputLossImageSlate
  * @property 'COLOR'|'SLATE'|null $InputLossImageType
- * @property int<0, 1000000>|null $RepeatFrameMsec
+ * @property int|null $RepeatFrameMsec
  */
 class InputLossBehavior extends Shape
 {
     /**
      * @param array{
-     *     BlackFrameMsec?: int<0, 1000000>|null,
+     *     BlackFrameMsec?: int|null,
      *     InputLossImageColor?: string|null,
      *     InputLossImageSlate?: InputLocation|null,
      *     InputLossImageType?: 'COLOR'|'SLATE'|null,
-     *     RepeatFrameMsec?: int<0, 1000000>|null
+     *     RepeatFrameMsec?: int|null
      * } $args
      */
     public function __construct(array $args = [])

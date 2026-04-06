@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\CreateInstance;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $ClientToken
  * @property string|null $Name
+ * @property string|null $ClientToken
  * @property list<Shapes\Tag>|null $Tags
  */
 class CreateInstanceRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string|null,
      *     Name?: string|null,
+     *     ClientToken?: string|null,
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */

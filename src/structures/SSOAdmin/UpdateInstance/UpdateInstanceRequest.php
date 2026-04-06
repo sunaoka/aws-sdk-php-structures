@@ -5,15 +5,17 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\UpdateInstance;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string|null $Name
  * @property string $InstanceArn
- * @property string $Name
+ * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
  */
 class UpdateInstanceRequest extends Request
 {
     /**
      * @param array{
+     *     Name?: string|null,
      *     InstanceArn: string,
-     *     Name: string
+     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

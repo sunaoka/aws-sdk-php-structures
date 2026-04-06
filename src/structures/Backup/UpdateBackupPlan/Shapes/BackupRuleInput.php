@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $RuleName
  * @property string $TargetBackupVaultName
+ * @property string|null $TargetLogicallyAirGappedBackupVaultArn
  * @property string|null $ScheduleExpression
  * @property int|null $StartWindowMinutes
  * @property int|null $CompletionWindowMinutes
@@ -16,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $EnableContinuousBackup
  * @property string|null $ScheduleExpressionTimezone
  * @property list<IndexAction>|null $IndexActions
+ * @property list<ScanAction>|null $ScanActions
  */
 class BackupRuleInput extends Shape
 {
@@ -23,6 +25,7 @@ class BackupRuleInput extends Shape
      * @param array{
      *     RuleName: string,
      *     TargetBackupVaultName: string,
+     *     TargetLogicallyAirGappedBackupVaultArn?: string|null,
      *     ScheduleExpression?: string|null,
      *     StartWindowMinutes?: int|null,
      *     CompletionWindowMinutes?: int|null,
@@ -31,7 +34,8 @@ class BackupRuleInput extends Shape
      *     CopyActions?: list<CopyAction>|null,
      *     EnableContinuousBackup?: bool|null,
      *     ScheduleExpressionTimezone?: string|null,
-     *     IndexActions?: list<IndexAction>|null
+     *     IndexActions?: list<IndexAction>|null,
+     *     ScanActions?: list<ScanAction>|null
      * } $args
      */
     public function __construct(array $args)

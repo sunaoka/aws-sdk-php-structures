@@ -8,10 +8,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $id
  * @property string|null $name
  * @property BillInterval|null $billInterval
- * @property 'READY'|'LOCKED'|'FAILED'|null $status
+ * @property 'READY'|'LOCKED'|'FAILED'|'STALE'|null $status
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $expiresAt
  * @property string|null $failureMessage
+ * @property 'OPEN'|'PRIORITIZED'|'RESTRICTED'|null $groupSharingPreference
+ * @property string|null $costCategoryGroupSharingPreferenceArn
  */
 class BillScenarioSummary extends Shape
 {
@@ -20,10 +22,12 @@ class BillScenarioSummary extends Shape
      *     id: string,
      *     name?: string|null,
      *     billInterval?: BillInterval|null,
-     *     status?: 'READY'|'LOCKED'|'FAILED'|null,
+     *     status?: 'READY'|'LOCKED'|'FAILED'|'STALE'|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     expiresAt?: \Aws\Api\DateTimeResult|null,
-     *     failureMessage?: string|null
+     *     failureMessage?: string|null,
+     *     groupSharingPreference?: 'OPEN'|'PRIORITIZED'|'RESTRICTED'|null,
+     *     costCategoryGroupSharingPreferenceArn?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'BASIC'|'OAUTH2'|'CUSTOM'|'IAM'|null $AuthenticationType
  * @property string|null $SecretArn
+ * @property string|null $KmsKeyArn
  * @property OAuth2Properties|null $OAuth2Properties
  */
 class AuthenticationConfiguration extends Shape
@@ -15,6 +16,7 @@ class AuthenticationConfiguration extends Shape
      * @param array{
      *     AuthenticationType?: 'BASIC'|'OAUTH2'|'CUSTOM'|'IAM'|null,
      *     SecretArn?: string|null,
+     *     KmsKeyArn?: string|null,
      *     OAuth2Properties?: OAuth2Properties|null
      * } $args
      */

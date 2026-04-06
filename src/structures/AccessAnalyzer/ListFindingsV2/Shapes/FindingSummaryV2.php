@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $resourceOwnerAccount
  * @property 'ACTIVE'|'ARCHIVED'|'RESOLVED' $status
  * @property \Aws\Api\DateTimeResult $updatedAt
- * @property 'ExternalAccess'|'UnusedIAMRole'|'UnusedIAMUserAccessKey'|'UnusedIAMUserPassword'|'UnusedPermission'|null $findingType
+ * @property 'ExternalAccess'|'UnusedIAMRole'|'UnusedIAMUserAccessKey'|'UnusedIAMUserPassword'|'UnusedPermission'|'InternalAccess'|null $findingType
  */
 class FindingSummaryV2 extends Shape
 {
@@ -29,7 +29,7 @@ class FindingSummaryV2 extends Shape
      *     resourceOwnerAccount: string,
      *     status: 'ACTIVE'|'ARCHIVED'|'RESOLVED',
      *     updatedAt: \Aws\Api\DateTimeResult,
-     *     findingType?: 'ExternalAccess'|'UnusedIAMRole'|'UnusedIAMUserAccessKey'|'UnusedIAMUserPassword'|'UnusedPermission'|null
+     *     findingType?: 'ExternalAccess'|'UnusedIAMRole'|'UnusedIAMUserAccessKey'|'UnusedIAMUserPassword'|'UnusedPermission'|'InternalAccess'|null
      * } $args
      */
     public function __construct(array $args)

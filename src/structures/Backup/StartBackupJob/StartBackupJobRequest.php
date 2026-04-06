@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BackupVaultName
+ * @property string|null $LogicallyAirGappedBackupVaultArn
  * @property string $ResourceArn
  * @property string $IamRoleArn
  * @property string|null $IdempotencyToken
@@ -21,6 +22,7 @@ class StartBackupJobRequest extends Request
     /**
      * @param array{
      *     BackupVaultName: string,
+     *     LogicallyAirGappedBackupVaultArn?: string|null,
      *     ResourceArn: string,
      *     IamRoleArn: string,
      *     IdempotencyToken?: string|null,

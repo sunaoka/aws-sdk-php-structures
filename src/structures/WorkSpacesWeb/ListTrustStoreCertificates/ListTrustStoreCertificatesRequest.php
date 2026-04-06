@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\ListTrustStoreCertificates;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, max>|null $maxResults
- * @property string|null $nextToken
  * @property string $trustStoreArn
+ * @property string|null $nextToken
+ * @property int<1, max>|null $maxResults
  */
 class ListTrustStoreCertificatesRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int<1, max>|null,
+     *     trustStoreArn: string,
      *     nextToken?: string|null,
-     *     trustStoreArn: string
+     *     maxResults?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args)

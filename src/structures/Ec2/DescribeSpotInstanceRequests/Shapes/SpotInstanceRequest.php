@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LaunchGroup
  * @property LaunchSpecification|null $LaunchSpecification
  * @property string|null $LaunchedAvailabilityZone
+ * @property string|null $LaunchedAvailabilityZoneId
  * @property 'Linux/UNIX'|'Linux/UNIX (Amazon VPC)'|'Windows'|'Windows (Amazon VPC)'|null $ProductDescription
  * @property string|null $SpotInstanceRequestId
  * @property string|null $SpotPrice
@@ -38,6 +39,7 @@ class SpotInstanceRequest extends Shape
      *     LaunchGroup?: string|null,
      *     LaunchSpecification?: LaunchSpecification|null,
      *     LaunchedAvailabilityZone?: string|null,
+     *     LaunchedAvailabilityZoneId?: string|null,
      *     ProductDescription?: 'Linux/UNIX'|'Linux/UNIX (Amazon VPC)'|'Windows'|'Windows (Amazon VPC)'|null,
      *     SpotInstanceRequestId?: string|null,
      *     SpotPrice?: string|null,

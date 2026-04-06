@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\QConnect\SearchQuickResponses;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property array<string, string>|null $attributes
  * @property string $knowledgeBaseId
- * @property int<1, 100>|null $maxResults
- * @property string|null $nextToken
  * @property Shapes\QuickResponseSearchExpression $searchExpression
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
+ * @property array<string, string>|null $attributes
  */
 class SearchQuickResponsesRequest extends Request
 {
     /**
      * @param array{
-     *     attributes?: array<string, string>|null,
      *     knowledgeBaseId: string,
-     *     maxResults?: int<1, 100>|null,
+     *     searchExpression: Shapes\QuickResponseSearchExpression,
      *     nextToken?: string|null,
-     *     searchExpression: Shapes\QuickResponseSearchExpression
+     *     maxResults?: int<1, 100>|null,
+     *     attributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

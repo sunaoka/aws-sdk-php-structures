@@ -16,6 +16,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $imageManifestMediaType
  * @property string|null $artifactMediaType
  * @property \Aws\Api\DateTimeResult|null $lastRecordedPullTime
+ * @property string|null $subjectManifestDigest
+ * @property 'ACTIVE'|'ARCHIVED'|'ACTIVATING'|null $imageStatus
+ * @property \Aws\Api\DateTimeResult|null $lastArchivedAt
+ * @property \Aws\Api\DateTimeResult|null $lastActivatedAt
  */
 class ImageDetail extends Shape
 {
@@ -31,7 +35,11 @@ class ImageDetail extends Shape
      *     imageScanFindingsSummary?: ImageScanFindingsSummary|null,
      *     imageManifestMediaType?: string|null,
      *     artifactMediaType?: string|null,
-     *     lastRecordedPullTime?: \Aws\Api\DateTimeResult|null
+     *     lastRecordedPullTime?: \Aws\Api\DateTimeResult|null,
+     *     subjectManifestDigest?: string|null,
+     *     imageStatus?: 'ACTIVE'|'ARCHIVED'|'ACTIVATING'|null,
+     *     lastArchivedAt?: \Aws\Api\DateTimeResult|null,
+     *     lastActivatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

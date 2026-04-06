@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListApplicationAuthenticationMethods\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AuthenticationMethod|null $AuthenticationMethod
  * @property 'IAM'|null $AuthenticationMethodType
+ * @property AuthenticationMethod|null $AuthenticationMethod
  */
 class AuthenticationMethodItem extends Shape
 {
     /**
      * @param array{
-     *     AuthenticationMethod?: AuthenticationMethod|null,
-     *     AuthenticationMethodType?: 'IAM'|null
+     *     AuthenticationMethodType?: 'IAM'|null,
+     *     AuthenticationMethod?: AuthenticationMethod|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CreationTime'|null $sortBy
  * @property 'Ascending'|'Descending'|null $sortOrder
  * @property bool|null $isOwned
+ * @property 'Active'|'Creating'|'Failed'|null $modelStatus
  */
 class ListCustomModelsRequest extends Request
 {
@@ -29,7 +30,8 @@ class ListCustomModelsRequest extends Request
      *     nextToken?: string|null,
      *     sortBy?: 'CreationTime'|null,
      *     sortOrder?: 'Ascending'|'Descending'|null,
-     *     isOwned?: bool|null
+     *     isOwned?: bool|null,
+     *     modelStatus?: 'Active'|'Creating'|'Failed'|null
      * } $args
      */
     public function __construct(array $args = [])

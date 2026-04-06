@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $clientRequestToken
  * @property string $roleArn
  * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null $status
+ * @property Shapes\StatusDetails|null $statusDetails
  * @property string|null $failureMessage
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
@@ -21,7 +22,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\TrainingDataConfig $trainingDataConfig
  * @property Shapes\ValidationDataConfig $validationDataConfig
  * @property Shapes\OutputDataConfig $outputDataConfig
- * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|null $customizationType
+ * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|'REINFORCEMENT_FINE_TUNING'|'IMPORTED'|null $customizationType
  * @property string|null $outputModelKmsKeyArn
  * @property Shapes\TrainingMetrics|null $trainingMetrics
  * @property list<Shapes\ValidatorMetric>|null $validationMetrics

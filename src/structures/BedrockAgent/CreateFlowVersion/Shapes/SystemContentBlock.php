@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $text
+ * @property CachePointBlock|null $cachePoint
  */
 class SystemContentBlock extends Shape
 {
     /**
-     * @param array{text?: string|null} $args
+     * @param array{
+     *     text?: string|null,
+     *     cachePoint?: CachePointBlock|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

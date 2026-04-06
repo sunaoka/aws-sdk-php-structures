@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GroundStation\GetMissionProfileConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'dBW' $units
  * @property double $value
+ * @property 'dBW' $units
  */
 class Eirp extends Shape
 {
     /**
      * @param array{
-     *     units: 'dBW',
-     *     value: double
+     *     value: double,
+     *     units: 'dBW'
      * } $args
      */
     public function __construct(array $args)

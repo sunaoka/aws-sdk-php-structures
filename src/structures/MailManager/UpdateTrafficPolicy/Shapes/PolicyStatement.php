@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MailManager\UpdateTrafficPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ALLOW'|'DENY' $Action
  * @property list<PolicyCondition> $Conditions
+ * @property 'ALLOW'|'DENY' $Action
  */
 class PolicyStatement extends Shape
 {
     /**
      * @param array{
-     *     Action: 'ALLOW'|'DENY',
-     *     Conditions: list<PolicyCondition>
+     *     Conditions: list<PolicyCondition>,
+     *     Action: 'ALLOW'|'DENY'
      * } $args
      */
     public function __construct(array $args)

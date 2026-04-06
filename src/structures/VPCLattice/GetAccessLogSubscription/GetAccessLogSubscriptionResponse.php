@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\VPCLattice\GetAccessLogSubscription;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $arn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $destinationArn
  * @property string $id
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property string $resourceArn
+ * @property string $arn
  * @property string $resourceId
+ * @property string $resourceArn
+ * @property string $destinationArn
  * @property 'SERVICE'|'RESOURCE'|null $serviceNetworkLogType
+ * @property \Aws\Api\DateTimeResult $createdAt
+ * @property \Aws\Api\DateTimeResult $lastUpdatedAt
  */
 class GetAccessLogSubscriptionResponse extends Response
 {

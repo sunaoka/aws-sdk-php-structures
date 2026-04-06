@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\NodeInterfaceMapping>|null $NodeInterfaceMappings
  * @property 'BACKUP'|'ACTIVE'|null $Role
  * @property 'CREATED'|'REGISTERING'|'READY_TO_ACTIVATE'|'REGISTRATION_FAILED'|'ACTIVATION_FAILED'|'ACTIVE'|'READY'|'IN_USE'|'DEREGISTERING'|'DRAINING'|'DEREGISTRATION_FAILED'|'DEREGISTERED'|null $State
+ * @property list<Shapes\SdiSourceMapping>|null $SdiSourceMappings
  */
 class DescribeNodeResponse extends Response
 {

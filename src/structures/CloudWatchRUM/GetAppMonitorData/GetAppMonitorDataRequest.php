@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CloudWatchRUM\GetAppMonitorData;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string $Name
+ * @property Shapes\TimeRange $TimeRange
  * @property list<Shapes\QueryFilter>|null $Filters
  * @property int<0, 100>|null $MaxResults
- * @property string $Name
  * @property string|null $NextToken
- * @property Shapes\TimeRange $TimeRange
  */
 class GetAppMonitorDataRequest extends Request
 {
     /**
      * @param array{
+     *     Name: string,
+     *     TimeRange: Shapes\TimeRange,
      *     Filters?: list<Shapes\QueryFilter>|null,
      *     MaxResults?: int<0, 100>|null,
-     *     Name: string,
-     *     NextToken?: string|null,
-     *     TimeRange: Shapes\TimeRange
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

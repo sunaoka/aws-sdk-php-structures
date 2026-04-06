@@ -34,6 +34,7 @@ class WAFV2Client extends \Aws\WAFV2\WAFV2Client
     use GetRegexPatternSet\GetRegexPatternSetTrait;
     use GetRuleGroup\GetRuleGroupTrait;
     use GetSampledRequests\GetSampledRequestsTrait;
+    use GetTopPathStatisticsByTraffic\GetTopPathStatisticsByTrafficTrait;
     use GetWebACL\GetWebACLTrait;
     use GetWebACLForResource\GetWebACLForResourceTrait;
     use ListAPIKeys\ListAPIKeysTrait;

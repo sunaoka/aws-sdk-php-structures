@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RedshiftServerlessAuthConfiguration $authConfiguration
  * @property string $workgroupArn
+ * @property RedshiftServerlessAuthConfiguration $authConfiguration
  */
 class RedshiftServerlessConfiguration extends Shape
 {
     /**
      * @param array{
-     *     authConfiguration: RedshiftServerlessAuthConfiguration,
-     *     workgroupArn: string
+     *     workgroupArn: string,
+     *     authConfiguration: RedshiftServerlessAuthConfiguration
      * } $args
      */
     public function __construct(array $args)

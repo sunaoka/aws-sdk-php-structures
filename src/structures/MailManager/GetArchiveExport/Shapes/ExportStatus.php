@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MailManager\GetArchiveExport\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult|null $CompletionTimestamp
- * @property string|null $ErrorMessage
- * @property 'QUEUED'|'PREPROCESSING'|'PROCESSING'|'COMPLETED'|'FAILED'|'CANCELLED'|null $State
  * @property \Aws\Api\DateTimeResult|null $SubmissionTimestamp
+ * @property \Aws\Api\DateTimeResult|null $CompletionTimestamp
+ * @property 'QUEUED'|'PREPROCESSING'|'PROCESSING'|'COMPLETED'|'FAILED'|'CANCELLED'|null $State
+ * @property string|null $ErrorMessage
  */
 class ExportStatus extends Shape
 {
     /**
      * @param array{
+     *     SubmissionTimestamp?: \Aws\Api\DateTimeResult|null,
      *     CompletionTimestamp?: \Aws\Api\DateTimeResult|null,
-     *     ErrorMessage?: string|null,
      *     State?: 'QUEUED'|'PREPROCESSING'|'PROCESSING'|'COMPLETED'|'FAILED'|'CANCELLED'|null,
-     *     SubmissionTimestamp?: \Aws\Api\DateTimeResult|null
+     *     ErrorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,6 +9,7 @@ class EKSClient extends \Aws\EKS\EKSClient
     use AssociateIdentityProviderConfig\AssociateIdentityProviderConfigTrait;
     use CreateAccessEntry\CreateAccessEntryTrait;
     use CreateAddon\CreateAddonTrait;
+    use CreateCapability\CreateCapabilityTrait;
     use CreateCluster\CreateClusterTrait;
     use CreateEksAnywhereSubscription\CreateEksAnywhereSubscriptionTrait;
     use CreateFargateProfile\CreateFargateProfileTrait;
@@ -16,6 +17,7 @@ class EKSClient extends \Aws\EKS\EKSClient
     use CreatePodIdentityAssociation\CreatePodIdentityAssociationTrait;
     use DeleteAccessEntry\DeleteAccessEntryTrait;
     use DeleteAddon\DeleteAddonTrait;
+    use DeleteCapability\DeleteCapabilityTrait;
     use DeleteCluster\DeleteClusterTrait;
     use DeleteEksAnywhereSubscription\DeleteEksAnywhereSubscriptionTrait;
     use DeleteFargateProfile\DeleteFargateProfileTrait;
@@ -26,12 +28,14 @@ class EKSClient extends \Aws\EKS\EKSClient
     use DescribeAddon\DescribeAddonTrait;
     use DescribeAddonConfiguration\DescribeAddonConfigurationTrait;
     use DescribeAddonVersions\DescribeAddonVersionsTrait;
+    use DescribeCapability\DescribeCapabilityTrait;
     use DescribeCluster\DescribeClusterTrait;
     use DescribeClusterVersions\DescribeClusterVersionsTrait;
     use DescribeEksAnywhereSubscription\DescribeEksAnywhereSubscriptionTrait;
     use DescribeFargateProfile\DescribeFargateProfileTrait;
     use DescribeIdentityProviderConfig\DescribeIdentityProviderConfigTrait;
     use DescribeInsight\DescribeInsightTrait;
+    use DescribeInsightsRefresh\DescribeInsightsRefreshTrait;
     use DescribeNodegroup\DescribeNodegroupTrait;
     use DescribePodIdentityAssociation\DescribePodIdentityAssociationTrait;
     use DescribeUpdate\DescribeUpdateTrait;
@@ -41,6 +45,7 @@ class EKSClient extends \Aws\EKS\EKSClient
     use ListAccessPolicies\ListAccessPoliciesTrait;
     use ListAddons\ListAddonsTrait;
     use ListAssociatedAccessPolicies\ListAssociatedAccessPoliciesTrait;
+    use ListCapabilities\ListCapabilitiesTrait;
     use ListClusters\ListClustersTrait;
     use ListEksAnywhereSubscriptions\ListEksAnywhereSubscriptionsTrait;
     use ListFargateProfiles\ListFargateProfilesTrait;
@@ -51,10 +56,12 @@ class EKSClient extends \Aws\EKS\EKSClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListUpdates\ListUpdatesTrait;
     use RegisterCluster\RegisterClusterTrait;
+    use StartInsightsRefresh\StartInsightsRefreshTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAccessEntry\UpdateAccessEntryTrait;
     use UpdateAddon\UpdateAddonTrait;
+    use UpdateCapability\UpdateCapabilityTrait;
     use UpdateClusterConfig\UpdateClusterConfigTrait;
     use UpdateClusterVersion\UpdateClusterVersionTrait;
     use UpdateEksAnywhereSubscription\UpdateEksAnywhereSubscriptionTrait;

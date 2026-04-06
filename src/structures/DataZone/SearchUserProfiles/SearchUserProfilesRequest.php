@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainIdentifier
+ * @property 'SSO_USER'|'DATAZONE_USER'|'DATAZONE_SSO_USER'|'DATAZONE_IAM_USER' $userType
+ * @property string|null $searchText
  * @property int<1, 50>|null $maxResults
  * @property string|null $nextToken
- * @property string|null $searchText
- * @property 'SSO_USER'|'DATAZONE_USER'|'DATAZONE_SSO_USER'|'DATAZONE_IAM_USER' $userType
  */
 class SearchUserProfilesRequest extends Request
 {
     /**
      * @param array{
      *     domainIdentifier: string,
-     *     maxResults?: int<1, 50>|null,
-     *     nextToken?: string|null,
+     *     userType: 'SSO_USER'|'DATAZONE_USER'|'DATAZONE_SSO_USER'|'DATAZONE_IAM_USER',
      *     searchText?: string|null,
-     *     userType: 'SSO_USER'|'DATAZONE_USER'|'DATAZONE_SSO_USER'|'DATAZONE_IAM_USER'
+     *     maxResults?: int<1, 50>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

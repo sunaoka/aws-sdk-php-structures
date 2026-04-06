@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Catalog
  * @property string $OpportunityIdentifier
+ * @property 'Solutions'|'AwsProducts'|'AwsMarketplaceOffers'|'AwsMarketplaceOfferSets' $RelatedEntityType
  * @property string $RelatedEntityIdentifier
- * @property 'Solutions'|'AwsProducts'|'AwsMarketplaceOffers' $RelatedEntityType
  */
 class AssociateOpportunityRequest extends Request
 {
@@ -16,8 +16,8 @@ class AssociateOpportunityRequest extends Request
      * @param array{
      *     Catalog: string,
      *     OpportunityIdentifier: string,
-     *     RelatedEntityIdentifier: string,
-     *     RelatedEntityType: 'Solutions'|'AwsProducts'|'AwsMarketplaceOffers'
+     *     RelatedEntityType: 'Solutions'|'AwsProducts'|'AwsMarketplaceOffers'|'AwsMarketplaceOfferSets',
+     *     RelatedEntityIdentifier: string
      * } $args
      */
     public function __construct(array $args)

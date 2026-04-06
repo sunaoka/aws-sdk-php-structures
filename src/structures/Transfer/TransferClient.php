@@ -57,6 +57,8 @@ class TransferClient extends \Aws\Transfer\TransferClient
     use SendWorkflowStepState\SendWorkflowStepStateTrait;
     use StartDirectoryListing\StartDirectoryListingTrait;
     use StartFileTransfer\StartFileTransferTrait;
+    use StartRemoteDelete\StartRemoteDeleteTrait;
+    use StartRemoteMove\StartRemoteMoveTrait;
     use StartServer\StartServerTrait;
     use StopServer\StopServerTrait;
     use TagResource\TagResourceTrait;

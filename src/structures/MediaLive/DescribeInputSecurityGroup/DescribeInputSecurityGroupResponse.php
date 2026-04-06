@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'IDLE'|'IN_USE'|'UPDATING'|'DELETED'|null $State
  * @property array<string, string>|null $Tags
  * @property list<Shapes\InputWhitelistRule>|null $WhitelistRules
+ * @property list<string>|null $Channels
  */
 class DescribeInputSecurityGroupResponse extends Response
 {

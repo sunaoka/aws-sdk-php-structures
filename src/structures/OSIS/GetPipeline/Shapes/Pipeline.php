@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ServiceVpcEndpoint>|null $ServiceVpcEndpoints
  * @property list<PipelineDestination>|null $Destinations
  * @property list<Tag>|null $Tags
+ * @property string|null $PipelineRoleArn
  */
 class Pipeline extends Shape
 {
@@ -45,7 +46,8 @@ class Pipeline extends Shape
      *     VpcEndpointService?: string|null,
      *     ServiceVpcEndpoints?: list<ServiceVpcEndpoint>|null,
      *     Destinations?: list<PipelineDestination>|null,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     PipelineRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

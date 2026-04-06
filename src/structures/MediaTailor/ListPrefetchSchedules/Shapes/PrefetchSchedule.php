@@ -6,10 +6,12 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Arn
- * @property PrefetchConsumption $Consumption
+ * @property PrefetchConsumption|null $Consumption
  * @property string $Name
  * @property string $PlaybackConfigurationName
- * @property PrefetchRetrieval $Retrieval
+ * @property PrefetchRetrieval|null $Retrieval
+ * @property 'SINGLE'|'RECURRING'|null $ScheduleType
+ * @property RecurringPrefetchConfiguration|null $RecurringPrefetchConfiguration
  * @property string|null $StreamId
  */
 class PrefetchSchedule extends Shape
@@ -17,10 +19,12 @@ class PrefetchSchedule extends Shape
     /**
      * @param array{
      *     Arn: string,
-     *     Consumption: PrefetchConsumption,
+     *     Consumption?: PrefetchConsumption|null,
      *     Name: string,
      *     PlaybackConfigurationName: string,
-     *     Retrieval: PrefetchRetrieval,
+     *     Retrieval?: PrefetchRetrieval|null,
+     *     ScheduleType?: 'SINGLE'|'RECURRING'|null,
+     *     RecurringPrefetchConfiguration?: RecurringPrefetchConfiguration|null,
      *     StreamId?: string|null
      * } $args
      */

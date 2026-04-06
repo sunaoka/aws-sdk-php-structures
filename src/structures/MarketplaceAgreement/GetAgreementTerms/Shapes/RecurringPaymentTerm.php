@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MarketplaceAgreement\GetAgreementTerms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $billingPeriod
- * @property string|null $currencyCode
- * @property string|null $price
  * @property string|null $type
+ * @property string|null $currencyCode
+ * @property string|null $billingPeriod
+ * @property string|null $price
  */
 class RecurringPaymentTerm extends Shape
 {
     /**
      * @param array{
-     *     billingPeriod?: string|null,
+     *     type?: string|null,
      *     currencyCode?: string|null,
-     *     price?: string|null,
-     *     type?: string|null
+     *     billingPeriod?: string|null,
+     *     price?: string|null
      * } $args
      */
     public function __construct(array $args = [])

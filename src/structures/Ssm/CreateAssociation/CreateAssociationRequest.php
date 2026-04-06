@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<array<string, list<string>>>|null $TargetMaps
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\AlarmConfiguration|null $AlarmConfiguration
+ * @property string|null $AssociationDispatchAssumeRole
  */
 class CreateAssociationRequest extends Request
 {
@@ -51,7 +52,8 @@ class CreateAssociationRequest extends Request
      *     Duration?: int<1, 24>|null,
      *     TargetMaps?: list<array<string, list<string>>>|null,
      *     Tags?: list<Shapes\Tag>|null,
-     *     AlarmConfiguration?: Shapes\AlarmConfiguration|null
+     *     AlarmConfiguration?: Shapes\AlarmConfiguration|null,
+     *     AssociationDispatchAssumeRole?: string|null
      * } $args
      */
     public function __construct(array $args)

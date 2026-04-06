@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $id
+ * @property string|null $externalId
  * @property string $arn
  * @property string $name
  * @property string $assetModelId
@@ -14,13 +15,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AssetStatus $status
  * @property list<AssetHierarchy> $hierarchies
  * @property string|null $description
- * @property string|null $externalId
  */
 class AssociatedAssetsSummary extends Shape
 {
     /**
      * @param array{
      *     id: string,
+     *     externalId?: string|null,
      *     arn: string,
      *     name: string,
      *     assetModelId: string,
@@ -28,8 +29,7 @@ class AssociatedAssetsSummary extends Shape
      *     lastUpdateDate: \Aws\Api\DateTimeResult,
      *     status: AssetStatus,
      *     hierarchies: list<AssetHierarchy>,
-     *     description?: string|null,
-     *     externalId?: string|null
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

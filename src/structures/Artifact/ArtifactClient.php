@@ -9,6 +9,7 @@ class ArtifactClient extends \Aws\Artifact\ArtifactClient
     use GetReportMetadata\GetReportMetadataTrait;
     use GetTermForReport\GetTermForReportTrait;
     use ListCustomerAgreements\ListCustomerAgreementsTrait;
+    use ListReportVersions\ListReportVersionsTrait;
     use ListReports\ListReportsTrait;
     use PutAccountSettings\PutAccountSettingsTrait;
 }

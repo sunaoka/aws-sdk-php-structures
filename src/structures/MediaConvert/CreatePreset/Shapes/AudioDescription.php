@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property AudioChannelTaggingSettings|null $AudioChannelTaggingSettings
  * @property AudioNormalizationSettings|null $AudioNormalizationSettings
+ * @property AudioPitchCorrectionSettings|null $AudioPitchCorrectionSettings
  * @property string|null $AudioSourceName
  * @property int<0, 255>|null $AudioType
  * @property 'FOLLOW_INPUT'|'USE_CONFIGURED'|null $AudioTypeControl
@@ -23,6 +24,7 @@ class AudioDescription extends Shape
      * @param array{
      *     AudioChannelTaggingSettings?: AudioChannelTaggingSettings|null,
      *     AudioNormalizationSettings?: AudioNormalizationSettings|null,
+     *     AudioPitchCorrectionSettings?: AudioPitchCorrectionSettings|null,
      *     AudioSourceName?: string|null,
      *     AudioType?: int<0, 255>|null,
      *     AudioTypeControl?: 'FOLLOW_INPUT'|'USE_CONFIGURED'|null,

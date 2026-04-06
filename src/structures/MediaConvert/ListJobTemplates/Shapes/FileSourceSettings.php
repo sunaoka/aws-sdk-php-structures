@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SourceFile
  * @property int<-2147483648, 2147483647>|null $TimeDelta
  * @property 'SECONDS'|'MILLISECONDS'|null $TimeDeltaUnits
+ * @property 'UPCONVERT'|'DISABLED'|null $UpconvertSTLToTeletext
  */
 class FileSourceSettings extends Shape
 {
@@ -23,7 +24,8 @@ class FileSourceSettings extends Shape
      *     Framerate?: CaptionSourceFramerate|null,
      *     SourceFile?: string|null,
      *     TimeDelta?: int<-2147483648, 2147483647>|null,
-     *     TimeDeltaUnits?: 'SECONDS'|'MILLISECONDS'|null
+     *     TimeDeltaUnits?: 'SECONDS'|'MILLISECONDS'|null,
+     *     UpconvertSTLToTeletext?: 'UPCONVERT'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

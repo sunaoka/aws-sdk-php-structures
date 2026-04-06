@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InventoryFilter|null $Filter
  * @property string $Id
  * @property 'All'|'Current' $IncludedObjectVersions
- * @property list<'Size'|'LastModifiedDate'|'StorageClass'|'ETag'|'IsMultipartUploaded'|'ReplicationStatus'|'EncryptionStatus'|'ObjectLockRetainUntilDate'|'ObjectLockMode'|'ObjectLockLegalHoldStatus'|'IntelligentTieringAccessTier'|'BucketKeyStatus'|'ChecksumAlgorithm'|'ObjectAccessControlList'|'ObjectOwner'>|null $OptionalFields
+ * @property list<'Size'|'LastModifiedDate'|'StorageClass'|'ETag'|'IsMultipartUploaded'|'ReplicationStatus'|'EncryptionStatus'|'ObjectLockRetainUntilDate'|'ObjectLockMode'|'ObjectLockLegalHoldStatus'|'IntelligentTieringAccessTier'|'BucketKeyStatus'|'ChecksumAlgorithm'|'ObjectAccessControlList'|'ObjectOwner'|'LifecycleExpirationDate'>|null $OptionalFields
  * @property InventorySchedule $Schedule
  */
 class InventoryConfiguration extends Shape
@@ -22,7 +22,7 @@ class InventoryConfiguration extends Shape
      *     Filter?: InventoryFilter|null,
      *     Id: string,
      *     IncludedObjectVersions: 'All'|'Current',
-     *     OptionalFields?: list<'Size'|'LastModifiedDate'|'StorageClass'|'ETag'|'IsMultipartUploaded'|'ReplicationStatus'|'EncryptionStatus'|'ObjectLockRetainUntilDate'|'ObjectLockMode'|'ObjectLockLegalHoldStatus'|'IntelligentTieringAccessTier'|'BucketKeyStatus'|'ChecksumAlgorithm'|'ObjectAccessControlList'|'ObjectOwner'>|null,
+     *     OptionalFields?: list<'Size'|'LastModifiedDate'|'StorageClass'|'ETag'|'IsMultipartUploaded'|'ReplicationStatus'|'EncryptionStatus'|'ObjectLockRetainUntilDate'|'ObjectLockMode'|'ObjectLockLegalHoldStatus'|'IntelligentTieringAccessTier'|'BucketKeyStatus'|'ChecksumAlgorithm'|'ObjectAccessControlList'|'ObjectOwner'|'LifecycleExpirationDate'>|null,
      *     Schedule: InventorySchedule
      * } $args
      */

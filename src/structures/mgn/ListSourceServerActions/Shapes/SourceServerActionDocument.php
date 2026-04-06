@@ -7,16 +7,16 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $actionID
  * @property string|null $actionName
- * @property bool|null $active
- * @property 'DISASTER_RECOVERY'|'OPERATING_SYSTEM'|'LICENSE_AND_SUBSCRIPTION'|'VALIDATION'|'OBSERVABILITY'|'REFACTORING'|'SECURITY'|'NETWORKING'|'CONFIGURATION'|'BACKUP'|'OTHER'|null $category
- * @property string|null $description
  * @property string|null $documentIdentifier
- * @property string|null $documentVersion
- * @property array<string, SsmExternalParameter>|null $externalParameters
- * @property bool|null $mustSucceedForCutover
  * @property int<1001, 10000>|null $order
- * @property array<string, list<SsmParameterStoreParameter>>|null $parameters
+ * @property string|null $documentVersion
+ * @property bool|null $active
  * @property int<1, max>|null $timeoutSeconds
+ * @property bool|null $mustSucceedForCutover
+ * @property array<string, list<SsmParameterStoreParameter>>|null $parameters
+ * @property array<string, SsmExternalParameter>|null $externalParameters
+ * @property string|null $description
+ * @property 'DISASTER_RECOVERY'|'OPERATING_SYSTEM'|'LICENSE_AND_SUBSCRIPTION'|'VALIDATION'|'OBSERVABILITY'|'REFACTORING'|'SECURITY'|'NETWORKING'|'CONFIGURATION'|'BACKUP'|'OTHER'|null $category
  */
 class SourceServerActionDocument extends Shape
 {
@@ -24,16 +24,16 @@ class SourceServerActionDocument extends Shape
      * @param array{
      *     actionID?: string|null,
      *     actionName?: string|null,
-     *     active?: bool|null,
-     *     category?: 'DISASTER_RECOVERY'|'OPERATING_SYSTEM'|'LICENSE_AND_SUBSCRIPTION'|'VALIDATION'|'OBSERVABILITY'|'REFACTORING'|'SECURITY'|'NETWORKING'|'CONFIGURATION'|'BACKUP'|'OTHER'|null,
-     *     description?: string|null,
      *     documentIdentifier?: string|null,
-     *     documentVersion?: string|null,
-     *     externalParameters?: array<string, SsmExternalParameter>|null,
-     *     mustSucceedForCutover?: bool|null,
      *     order?: int<1001, 10000>|null,
+     *     documentVersion?: string|null,
+     *     active?: bool|null,
+     *     timeoutSeconds?: int<1, max>|null,
+     *     mustSucceedForCutover?: bool|null,
      *     parameters?: array<string, list<SsmParameterStoreParameter>>|null,
-     *     timeoutSeconds?: int<1, max>|null
+     *     externalParameters?: array<string, SsmExternalParameter>|null,
+     *     description?: string|null,
+     *     category?: 'DISASTER_RECOVERY'|'OPERATING_SYSTEM'|'LICENSE_AND_SUBSCRIPTION'|'VALIDATION'|'OBSERVABILITY'|'REFACTORING'|'SECURITY'|'NETWORKING'|'CONFIGURATION'|'BACKUP'|'OTHER'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -42,6 +42,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $MasterPasswordSecretKmsKeyId
  * @property string|null $IpAddressType
  * @property bool|null $MultiAZ
+ * @property string|null $CatalogName
+ * @property string|null $RedshiftIdcApplicationArn
  */
 class RestoreFromClusterSnapshotRequest extends Request
 {
@@ -83,7 +85,9 @@ class RestoreFromClusterSnapshotRequest extends Request
      *     ManageMasterPassword?: bool|null,
      *     MasterPasswordSecretKmsKeyId?: string|null,
      *     IpAddressType?: string|null,
-     *     MultiAZ?: bool|null
+     *     MultiAZ?: bool|null,
+     *     CatalogName?: string|null,
+     *     RedshiftIdcApplicationArn?: string|null
      * } $args
      */
     public function __construct(array $args)

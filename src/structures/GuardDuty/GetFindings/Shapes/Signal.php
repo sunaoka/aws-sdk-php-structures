@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Uid
- * @property 'FINDING'|'CLOUD_TRAIL'|'S3_DATA_EVENTS' $Type
+ * @property 'FINDING'|'CLOUD_TRAIL'|'S3_DATA_EVENTS'|'EKS_AUDIT_LOGS'|'FLOW_LOGS'|'DNS_LOGS'|'RUNTIME_MONITORING' $Type
  * @property string|null $Description
  * @property string $Name
  * @property \Aws\Api\DateTimeResult $CreatedAt
@@ -25,7 +25,7 @@ class Signal extends Shape
     /**
      * @param array{
      *     Uid: string,
-     *     Type: 'FINDING'|'CLOUD_TRAIL'|'S3_DATA_EVENTS',
+     *     Type: 'FINDING'|'CLOUD_TRAIL'|'S3_DATA_EVENTS'|'EKS_AUDIT_LOGS'|'FLOW_LOGS'|'DNS_LOGS'|'RUNTIME_MONITORING',
      *     Description?: string|null,
      *     Name: string,
      *     CreatedAt: \Aws\Api\DateTimeResult,

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'disabled'|'enabled'|'no-preference'|null $HttpEndpoint
  * @property 'disabled'|'enabled'|'no-preference'|null $InstanceMetadataTags
  * @property bool|null $DryRun
+ * @property 'disabled'|'enabled'|'no-preference'|null $HttpTokensEnforced
  */
 class ModifyInstanceMetadataDefaultsRequest extends Request
 {
@@ -19,7 +20,8 @@ class ModifyInstanceMetadataDefaultsRequest extends Request
      *     HttpPutResponseHopLimit?: int|null,
      *     HttpEndpoint?: 'disabled'|'enabled'|'no-preference'|null,
      *     InstanceMetadataTags?: 'disabled'|'enabled'|'no-preference'|null,
-     *     DryRun?: bool|null
+     *     DryRun?: bool|null,
+     *     HttpTokensEnforced?: 'disabled'|'enabled'|'no-preference'|null
      * } $args
      */
     public function __construct(array $args = [])

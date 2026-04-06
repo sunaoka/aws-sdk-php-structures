@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'png'|'jpeg'|'gif'|'webp' $format
  * @property ImageSource $source
+ * @property ErrorBlock|null $error
  */
 class ImageBlock extends Shape
 {
     /**
      * @param array{
      *     format: 'png'|'jpeg'|'gif'|'webp',
-     *     source: ImageSource
+     *     source: ImageSource,
+     *     error?: ErrorBlock|null
      * } $args
      */
     public function __construct(array $args)

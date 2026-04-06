@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ApiPassthrough|null $ApiPassthrough
  * @property string $CertificateAuthorityArn
  * @property string|resource|\Psr\Http\Message\StreamInterface $Csr
- * @property 'SHA256WITHECDSA'|'SHA384WITHECDSA'|'SHA512WITHECDSA'|'SHA256WITHRSA'|'SHA384WITHRSA'|'SHA512WITHRSA'|'SM3WITHSM2' $SigningAlgorithm
+ * @property 'SHA256WITHECDSA'|'SHA384WITHECDSA'|'SHA512WITHECDSA'|'SHA256WITHRSA'|'SHA384WITHRSA'|'SHA512WITHRSA'|'SM3WITHSM2'|'ML_DSA_44'|'ML_DSA_65'|'ML_DSA_87' $SigningAlgorithm
  * @property string|null $TemplateArn
  * @property Shapes\Validity $Validity
  * @property Shapes\Validity|null $ValidityNotBefore
@@ -21,7 +21,7 @@ class IssueCertificateRequest extends Request
      *     ApiPassthrough?: Shapes\ApiPassthrough|null,
      *     CertificateAuthorityArn: string,
      *     Csr: string|resource|\Psr\Http\Message\StreamInterface,
-     *     SigningAlgorithm: 'SHA256WITHECDSA'|'SHA384WITHECDSA'|'SHA512WITHECDSA'|'SHA256WITHRSA'|'SHA384WITHRSA'|'SHA512WITHRSA'|'SM3WITHSM2',
+     *     SigningAlgorithm: 'SHA256WITHECDSA'|'SHA384WITHECDSA'|'SHA512WITHECDSA'|'SHA256WITHRSA'|'SHA384WITHRSA'|'SHA512WITHRSA'|'SM3WITHSM2'|'ML_DSA_44'|'ML_DSA_65'|'ML_DSA_87',
      *     TemplateArn?: string|null,
      *     Validity: Shapes\Validity,
      *     ValidityNotBefore?: Shapes\Validity|null,

@@ -10,6 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property IamPropertiesPatch|null $iamProperties
  * @property RedshiftPropertiesPatch|null $redshiftProperties
  * @property SparkEmrPropertiesPatch|null $sparkEmrProperties
+ * @property S3PropertiesPatch|null $s3Properties
+ * @property AmazonQPropertiesPatch|null $amazonQProperties
+ * @property MlflowPropertiesPatch|null $mlflowProperties
  */
 class ConnectionPropertiesPatch extends Shape
 {
@@ -19,7 +22,10 @@ class ConnectionPropertiesPatch extends Shape
      *     glueProperties?: GluePropertiesPatch|null,
      *     iamProperties?: IamPropertiesPatch|null,
      *     redshiftProperties?: RedshiftPropertiesPatch|null,
-     *     sparkEmrProperties?: SparkEmrPropertiesPatch|null
+     *     sparkEmrProperties?: SparkEmrPropertiesPatch|null,
+     *     s3Properties?: S3PropertiesPatch|null,
+     *     amazonQProperties?: AmazonQPropertiesPatch|null,
+     *     mlflowProperties?: MlflowPropertiesPatch|null
      * } $args
      */
     public function __construct(array $args = [])

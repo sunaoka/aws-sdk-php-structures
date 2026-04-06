@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\RedshiftDataAPIService\GetStatementResult\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Psr\Http\Message\StreamInterface|null $blobValue
- * @property bool|null $booleanValue
- * @property double|null $doubleValue
  * @property bool|null $isNull
+ * @property bool|null $booleanValue
  * @property int|null $longValue
+ * @property double|null $doubleValue
  * @property string|null $stringValue
+ * @property \Psr\Http\Message\StreamInterface|null $blobValue
  */
 class Field extends Shape
 {
     /**
      * @param array{
-     *     blobValue?: \Psr\Http\Message\StreamInterface|null,
-     *     booleanValue?: bool|null,
-     *     doubleValue?: double|null,
      *     isNull?: bool|null,
+     *     booleanValue?: bool|null,
      *     longValue?: int|null,
-     *     stringValue?: string|null
+     *     doubleValue?: double|null,
+     *     stringValue?: string|null,
+     *     blobValue?: \Psr\Http\Message\StreamInterface|null
      * } $args
      */
     public function __construct(array $args = [])

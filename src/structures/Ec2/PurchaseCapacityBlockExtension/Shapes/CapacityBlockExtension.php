@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CapacityBlockExtensionEndDate
  * @property string|null $UpfrontFee
  * @property string|null $CurrencyCode
+ * @property string|null $ZoneType
  */
 class CapacityBlockExtension extends Shape
 {
@@ -35,7 +36,8 @@ class CapacityBlockExtension extends Shape
      *     CapacityBlockExtensionStartDate?: \Aws\Api\DateTimeResult|null,
      *     CapacityBlockExtensionEndDate?: \Aws\Api\DateTimeResult|null,
      *     UpfrontFee?: string|null,
-     *     CurrencyCode?: string|null
+     *     CurrencyCode?: string|null,
+     *     ZoneType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

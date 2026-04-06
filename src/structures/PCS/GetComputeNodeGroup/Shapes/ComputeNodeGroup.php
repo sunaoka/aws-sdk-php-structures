@@ -11,10 +11,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $clusterId
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $modifiedAt
- * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|'UPDATE_FAILED'|'DELETED' $status
+ * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|'UPDATE_FAILED'|'DELETED'|'SUSPENDING'|'SUSPENDED'|'RESUMING' $status
  * @property string|null $amiId
  * @property list<string> $subnetIds
- * @property 'ONDEMAND'|'SPOT'|null $purchaseOption
+ * @property 'ONDEMAND'|'SPOT'|'CAPACITY_BLOCK'|null $purchaseOption
  * @property CustomLaunchTemplate $customLaunchTemplate
  * @property string $iamInstanceProfileArn
  * @property ScalingConfiguration $scalingConfiguration
@@ -33,10 +33,10 @@ class ComputeNodeGroup extends Shape
      *     clusterId: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     modifiedAt: \Aws\Api\DateTimeResult,
-     *     status: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|'UPDATE_FAILED'|'DELETED',
+     *     status: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|'UPDATE_FAILED'|'DELETED'|'SUSPENDING'|'SUSPENDED'|'RESUMING',
      *     amiId?: string|null,
      *     subnetIds: list<string>,
-     *     purchaseOption?: 'ONDEMAND'|'SPOT'|null,
+     *     purchaseOption?: 'ONDEMAND'|'SPOT'|'CAPACITY_BLOCK'|null,
      *     customLaunchTemplate: CustomLaunchTemplate,
      *     iamInstanceProfileArn: string,
      *     scalingConfiguration: ScalingConfiguration,

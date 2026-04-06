@@ -7,12 +7,19 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Subdirectory
  * @property string $ServerHostname
- * @property string $User
+ * @property string|null $User
  * @property string|null $Domain
- * @property string $Password
+ * @property string|null $Password
+ * @property Shapes\CmkSecretConfig|null $CmkSecretConfig
+ * @property Shapes\CustomSecretConfig|null $CustomSecretConfig
  * @property list<string> $AgentArns
  * @property Shapes\SmbMountOptions|null $MountOptions
  * @property list<Shapes\TagListEntry>|null $Tags
+ * @property 'NTLM'|'KERBEROS'|null $AuthenticationType
+ * @property list<string>|null $DnsIpAddresses
+ * @property string|null $KerberosPrincipal
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $KerberosKeytab
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $KerberosKrb5Conf
  */
 class CreateLocationSmbRequest extends Request
 {
@@ -20,12 +27,19 @@ class CreateLocationSmbRequest extends Request
      * @param array{
      *     Subdirectory: string,
      *     ServerHostname: string,
-     *     User: string,
+     *     User?: string|null,
      *     Domain?: string|null,
-     *     Password: string,
+     *     Password?: string|null,
+     *     CmkSecretConfig?: Shapes\CmkSecretConfig|null,
+     *     CustomSecretConfig?: Shapes\CustomSecretConfig|null,
      *     AgentArns: list<string>,
      *     MountOptions?: Shapes\SmbMountOptions|null,
-     *     Tags?: list<Shapes\TagListEntry>|null
+     *     Tags?: list<Shapes\TagListEntry>|null,
+     *     AuthenticationType?: 'NTLM'|'KERBEROS'|null,
+     *     DnsIpAddresses?: list<string>|null,
+     *     KerberosPrincipal?: string|null,
+     *     KerberosKeytab?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     KerberosKrb5Conf?: string|resource|\Psr\Http\Message\StreamInterface|null
      * } $args
      */
     public function __construct(array $args)

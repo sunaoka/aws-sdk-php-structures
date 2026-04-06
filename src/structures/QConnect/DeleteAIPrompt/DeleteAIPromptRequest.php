@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\DeleteAIPrompt;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $aiPromptId
  * @property string $assistantId
+ * @property string $aiPromptId
  */
 class DeleteAIPromptRequest extends Request
 {
     /**
      * @param array{
-     *     aiPromptId: string,
-     *     assistantId: string
+     *     assistantId: string,
+     *     aiPromptId: string
      * } $args
      */
     public function __construct(array $args)

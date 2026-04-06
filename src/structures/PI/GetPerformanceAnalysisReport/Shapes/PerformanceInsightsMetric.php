@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Metric
  * @property string|null $DisplayName
  * @property array<string, string>|null $Dimensions
+ * @property array<string, string>|null $Filter
  * @property double|null $Value
  */
 class PerformanceInsightsMetric extends Shape
@@ -17,6 +18,7 @@ class PerformanceInsightsMetric extends Shape
      *     Metric?: string|null,
      *     DisplayName?: string|null,
      *     Dimensions?: array<string, string>|null,
+     *     Filter?: array<string, string>|null,
      *     Value?: double|null
      * } $args
      */

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ServiceId
  * @property string|null $ServiceName
  * @property 'Pending'|'Available'|'Deleting'|'Deleted'|'Failed'|null $ServiceState
+ * @property list<string>|null $AvailabilityZoneIds
  * @property list<string>|null $AvailabilityZones
  * @property bool|null $AcceptanceRequired
  * @property bool|null $ManagesVpcEndpoints
@@ -31,6 +32,7 @@ class ServiceConfiguration extends Shape
      *     ServiceId?: string|null,
      *     ServiceName?: string|null,
      *     ServiceState?: 'Pending'|'Available'|'Deleting'|'Deleted'|'Failed'|null,
+     *     AvailabilityZoneIds?: list<string>|null,
      *     AvailabilityZones?: list<string>|null,
      *     AcceptanceRequired?: bool|null,
      *     ManagesVpcEndpoints?: bool|null,

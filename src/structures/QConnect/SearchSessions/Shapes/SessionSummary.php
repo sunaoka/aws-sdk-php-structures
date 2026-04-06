@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QConnect\SearchSessions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $assistantArn
- * @property string $assistantId
- * @property string $sessionArn
  * @property string $sessionId
+ * @property string $sessionArn
+ * @property string $assistantId
+ * @property string $assistantArn
  */
 class SessionSummary extends Shape
 {
     /**
      * @param array{
-     *     assistantArn: string,
-     *     assistantId: string,
+     *     sessionId: string,
      *     sessionArn: string,
-     *     sessionId: string
+     *     assistantId: string,
+     *     assistantArn: string
      * } $args
      */
     public function __construct(array $args)

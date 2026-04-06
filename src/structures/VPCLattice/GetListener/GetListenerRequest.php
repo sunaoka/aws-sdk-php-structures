@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\VPCLattice\GetListener;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $listenerIdentifier
  * @property string $serviceIdentifier
+ * @property string $listenerIdentifier
  */
 class GetListenerRequest extends Request
 {
     /**
      * @param array{
-     *     listenerIdentifier: string,
-     *     serviceIdentifier: string
+     *     serviceIdentifier: string,
+     *     listenerIdentifier: string
      * } $args
      */
     public function __construct(array $args)

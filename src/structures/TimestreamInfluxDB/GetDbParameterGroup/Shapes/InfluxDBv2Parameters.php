@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $noTasks
  * @property int<0, 256>|null $queryConcurrency
  * @property int<0, 256>|null $queryQueueSize
- * @property 'log'|'jaeger'|null $tracingType
+ * @property 'log'|'jaeger'|'disabled'|null $tracingType
  * @property bool|null $metricsDisabled
  * @property Duration|null $httpIdleTimeout
  * @property Duration|null $httpReadHeaderTimeout
@@ -49,7 +49,7 @@ class InfluxDBv2Parameters extends Shape
      *     noTasks?: bool|null,
      *     queryConcurrency?: int<0, 256>|null,
      *     queryQueueSize?: int<0, 256>|null,
-     *     tracingType?: 'log'|'jaeger'|null,
+     *     tracingType?: 'log'|'jaeger'|'disabled'|null,
      *     metricsDisabled?: bool|null,
      *     httpIdleTimeout?: Duration|null,
      *     httpReadHeaderTimeout?: Duration|null,

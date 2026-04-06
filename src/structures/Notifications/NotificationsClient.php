@@ -7,6 +7,7 @@ class NotificationsClient extends \Aws\Notifications\NotificationsClient
     use AssociateChannel\AssociateChannelTrait;
     use AssociateManagedNotificationAccountContact\AssociateManagedNotificationAccountContactTrait;
     use AssociateManagedNotificationAdditionalChannel\AssociateManagedNotificationAdditionalChannelTrait;
+    use AssociateOrganizationalUnit\AssociateOrganizationalUnitTrait;
     use CreateEventRule\CreateEventRuleTrait;
     use CreateNotificationConfiguration\CreateNotificationConfigurationTrait;
     use DeleteEventRule\DeleteEventRuleTrait;
@@ -16,6 +17,7 @@ class NotificationsClient extends \Aws\Notifications\NotificationsClient
     use DisassociateChannel\DisassociateChannelTrait;
     use DisassociateManagedNotificationAccountContact\DisassociateManagedNotificationAccountContactTrait;
     use DisassociateManagedNotificationAdditionalChannel\DisassociateManagedNotificationAdditionalChannelTrait;
+    use DisassociateOrganizationalUnit\DisassociateOrganizationalUnitTrait;
     use EnableNotificationsAccessForOrganization\EnableNotificationsAccessForOrganizationTrait;
     use GetEventRule\GetEventRuleTrait;
     use GetManagedNotificationChildEvent\GetManagedNotificationChildEventTrait;
@@ -30,9 +32,11 @@ class NotificationsClient extends \Aws\Notifications\NotificationsClient
     use ListManagedNotificationChildEvents\ListManagedNotificationChildEventsTrait;
     use ListManagedNotificationConfigurations\ListManagedNotificationConfigurationsTrait;
     use ListManagedNotificationEvents\ListManagedNotificationEventsTrait;
+    use ListMemberAccounts\ListMemberAccountsTrait;
     use ListNotificationConfigurations\ListNotificationConfigurationsTrait;
     use ListNotificationEvents\ListNotificationEventsTrait;
     use ListNotificationHubs\ListNotificationHubsTrait;
+    use ListOrganizationalUnits\ListOrganizationalUnitsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use RegisterNotificationHub\RegisterNotificationHubTrait;
     use TagResource\TagResourceTrait;

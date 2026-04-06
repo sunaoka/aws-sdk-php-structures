@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $Category
  * @property string|null $TransitGatewayId
+ * @property string|null $VpnConcentratorId
  * @property string|null $CoreNetworkArn
  * @property string|null $CoreNetworkAttachmentArn
  * @property 'associated'|'not-associated'|'associating'|'disassociating'|null $GatewayAssociationState
@@ -14,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<VpnStaticRoute>|null $Routes
  * @property list<Tag>|null $Tags
  * @property list<VgwTelemetry>|null $VgwTelemetry
+ * @property string|null $PreSharedKeyArn
  * @property string|null $VpnConnectionId
  * @property 'pending'|'available'|'deleting'|'deleted'|null $State
  * @property string|null $CustomerGatewayConfiguration
@@ -27,6 +29,7 @@ class VpnConnection extends Shape
      * @param array{
      *     Category?: string|null,
      *     TransitGatewayId?: string|null,
+     *     VpnConcentratorId?: string|null,
      *     CoreNetworkArn?: string|null,
      *     CoreNetworkAttachmentArn?: string|null,
      *     GatewayAssociationState?: 'associated'|'not-associated'|'associating'|'disassociating'|null,
@@ -34,6 +37,7 @@ class VpnConnection extends Shape
      *     Routes?: list<VpnStaticRoute>|null,
      *     Tags?: list<Tag>|null,
      *     VgwTelemetry?: list<VgwTelemetry>|null,
+     *     PreSharedKeyArn?: string|null,
      *     VpnConnectionId?: string|null,
      *     State?: 'pending'|'available'|'deleting'|'deleted'|null,
      *     CustomerGatewayConfiguration?: string|null,

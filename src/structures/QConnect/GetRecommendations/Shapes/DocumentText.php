@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\GetRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Highlight>|null $highlights
  * @property string|null $text
+ * @property list<Highlight>|null $highlights
  */
 class DocumentText extends Shape
 {
     /**
      * @param array{
-     *     highlights?: list<Highlight>|null,
-     *     text?: string|null
+     *     text?: string|null,
+     *     highlights?: list<Highlight>|null
      * } $args
      */
     public function __construct(array $args = [])

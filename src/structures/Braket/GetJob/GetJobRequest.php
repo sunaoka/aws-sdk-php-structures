@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Braket\GetJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<'QueueInfo'>|null $additionalAttributeNames
  * @property string $jobArn
+ * @property list<'QueueInfo'>|null $additionalAttributeNames
  */
 class GetJobRequest extends Request
 {
     /**
      * @param array{
-     *     additionalAttributeNames?: list<'QueueInfo'>|null,
-     *     jobArn: string
+     *     jobArn: string,
+     *     additionalAttributeNames?: list<'QueueInfo'>|null
      * } $args
      */
     public function __construct(array $args)

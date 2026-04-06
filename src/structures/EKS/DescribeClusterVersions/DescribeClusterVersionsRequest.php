@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $includeAll
  * @property list<string>|null $clusterVersions
  * @property 'unsupported'|'standard-support'|'extended-support'|null $status
+ * @property 'UNSUPPORTED'|'STANDARD_SUPPORT'|'EXTENDED_SUPPORT'|null $versionStatus
  */
 class DescribeClusterVersionsRequest extends Request
 {
@@ -23,7 +24,8 @@ class DescribeClusterVersionsRequest extends Request
      *     defaultOnly?: bool|null,
      *     includeAll?: bool|null,
      *     clusterVersions?: list<string>|null,
-     *     status?: 'unsupported'|'standard-support'|'extended-support'|null
+     *     status?: 'unsupported'|'standard-support'|'extended-support'|null,
+     *     versionStatus?: 'UNSUPPORTED'|'STANDARD_SUPPORT'|'EXTENDED_SUPPORT'|null
      * } $args
      */
     public function __construct(array $args = [])

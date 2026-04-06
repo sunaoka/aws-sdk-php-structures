@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $imageType
  * @property string|null $imageIdOverride
+ * @property string|null $batchImageStatus
  * @property string|null $imageKubernetesVersion
  */
 class Ec2Configuration extends Shape
@@ -15,6 +16,7 @@ class Ec2Configuration extends Shape
      * @param array{
      *     imageType: string,
      *     imageIdOverride?: string|null,
+     *     batchImageStatus?: string|null,
      *     imageKubernetesVersion?: string|null
      * } $args
      */

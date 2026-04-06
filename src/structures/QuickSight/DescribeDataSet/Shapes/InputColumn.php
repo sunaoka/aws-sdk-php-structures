@@ -6,7 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property 'STRING'|'INTEGER'|'DECIMAL'|'DATETIME'|'BIT'|'BOOLEAN'|'JSON' $Type
+ * @property string|null $Id
+ * @property 'STRING'|'INTEGER'|'DECIMAL'|'DATETIME'|'BIT'|'BOOLEAN'|'JSON'|'SEMISTRUCT' $Type
  * @property 'FLOAT'|'FIXED'|null $SubType
  */
 class InputColumn extends Shape
@@ -14,7 +15,8 @@ class InputColumn extends Shape
     /**
      * @param array{
      *     Name: string,
-     *     Type: 'STRING'|'INTEGER'|'DECIMAL'|'DATETIME'|'BIT'|'BOOLEAN'|'JSON',
+     *     Id?: string|null,
+     *     Type: 'STRING'|'INTEGER'|'DECIMAL'|'DATETIME'|'BIT'|'BOOLEAN'|'JSON'|'SEMISTRUCT',
      *     SubType?: 'FLOAT'|'FIXED'|null
      * } $args
      */

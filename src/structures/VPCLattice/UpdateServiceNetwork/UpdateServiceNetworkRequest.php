@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\VPCLattice\UpdateServiceNetwork;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'NONE'|'AWS_IAM' $authType
  * @property string $serviceNetworkIdentifier
+ * @property 'NONE'|'AWS_IAM' $authType
  */
 class UpdateServiceNetworkRequest extends Request
 {
     /**
      * @param array{
-     *     authType: 'NONE'|'AWS_IAM',
-     *     serviceNetworkIdentifier: string
+     *     serviceNetworkIdentifier: string,
+     *     authType: 'NONE'|'AWS_IAM'
      * } $args
      */
     public function __construct(array $args)

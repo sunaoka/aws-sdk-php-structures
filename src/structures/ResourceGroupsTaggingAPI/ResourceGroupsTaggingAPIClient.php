@@ -9,6 +9,7 @@ class ResourceGroupsTaggingAPIClient extends \Aws\ResourceGroupsTaggingAPI\Resou
     use GetResources\GetResourcesTrait;
     use GetTagKeys\GetTagKeysTrait;
     use GetTagValues\GetTagValuesTrait;
+    use ListRequiredTags\ListRequiredTagsTrait;
     use StartReportCreation\StartReportCreationTrait;
     use TagResources\TagResourcesTrait;
     use UntagResources\UntagResourcesTrait;

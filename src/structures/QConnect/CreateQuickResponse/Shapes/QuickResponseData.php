@@ -5,46 +5,46 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateQuickResponse\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string>|null $channels
- * @property string $contentType
- * @property QuickResponseContents|null $contents
- * @property \Aws\Api\DateTimeResult $createdTime
- * @property string|null $description
- * @property GroupingConfiguration|null $groupingConfiguration
- * @property bool|null $isActive
- * @property string $knowledgeBaseArn
- * @property string $knowledgeBaseId
- * @property string|null $language
- * @property string|null $lastModifiedBy
- * @property \Aws\Api\DateTimeResult $lastModifiedTime
- * @property string $name
  * @property string $quickResponseArn
  * @property string $quickResponseId
- * @property string|null $shortcutKey
+ * @property string $knowledgeBaseArn
+ * @property string $knowledgeBaseId
+ * @property string $name
+ * @property string $contentType
  * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED' $status
+ * @property \Aws\Api\DateTimeResult $createdTime
+ * @property \Aws\Api\DateTimeResult $lastModifiedTime
+ * @property QuickResponseContents|null $contents
+ * @property string|null $description
+ * @property GroupingConfiguration|null $groupingConfiguration
+ * @property string|null $shortcutKey
+ * @property string|null $lastModifiedBy
+ * @property bool|null $isActive
+ * @property list<string>|null $channels
+ * @property string|null $language
  * @property array<string, string>|null $tags
  */
 class QuickResponseData extends Shape
 {
     /**
      * @param array{
-     *     channels?: list<string>|null,
-     *     contentType: string,
-     *     contents?: QuickResponseContents|null,
-     *     createdTime: \Aws\Api\DateTimeResult,
-     *     description?: string|null,
-     *     groupingConfiguration?: GroupingConfiguration|null,
-     *     isActive?: bool|null,
-     *     knowledgeBaseArn: string,
-     *     knowledgeBaseId: string,
-     *     language?: string|null,
-     *     lastModifiedBy?: string|null,
-     *     lastModifiedTime: \Aws\Api\DateTimeResult,
-     *     name: string,
      *     quickResponseArn: string,
      *     quickResponseId: string,
-     *     shortcutKey?: string|null,
+     *     knowledgeBaseArn: string,
+     *     knowledgeBaseId: string,
+     *     name: string,
+     *     contentType: string,
      *     status: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED',
+     *     createdTime: \Aws\Api\DateTimeResult,
+     *     lastModifiedTime: \Aws\Api\DateTimeResult,
+     *     contents?: QuickResponseContents|null,
+     *     description?: string|null,
+     *     groupingConfiguration?: GroupingConfiguration|null,
+     *     shortcutKey?: string|null,
+     *     lastModifiedBy?: string|null,
+     *     isActive?: bool|null,
+     *     channels?: list<string>|null,
+     *     language?: string|null,
      *     tags?: array<string, string>|null
      * } $args
      */

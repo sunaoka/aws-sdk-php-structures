@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $content
  * @property string $formName
  * @property string|null $typeIdentifier
  * @property string|null $typeRevision
+ * @property string|null $content
  */
 class FormInput extends Shape
 {
     /**
      * @param array{
-     *     content?: string|null,
      *     formName: string,
      *     typeIdentifier?: string|null,
-     *     typeRevision?: string|null
+     *     typeRevision?: string|null,
+     *     content?: string|null
      * } $args
      */
     public function __construct(array $args)

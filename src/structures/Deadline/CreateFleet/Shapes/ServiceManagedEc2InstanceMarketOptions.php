@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Deadline\CreateFleet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'on-demand'|'spot' $type
+ * @property 'on-demand'|'spot'|'wait-and-save' $type
  */
 class ServiceManagedEc2InstanceMarketOptions extends Shape
 {
     /**
-     * @param array{type: 'on-demand'|'spot'} $args
+     * @param array{type: 'on-demand'|'spot'|'wait-and-save'} $args
      */
     public function __construct(array $args)
     {

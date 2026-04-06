@@ -8,6 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property string $trainedModelArn
+ * @property string|null $versionIdentifier
+ * @property list<IncrementalTrainingDataChannelOutput>|null $incrementalTrainingDataChannels
  * @property string $name
  * @property string|null $description
  * @property string $membershipIdentifier
@@ -22,6 +24,8 @@ class TrainedModelSummary extends Shape
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
      *     trainedModelArn: string,
+     *     versionIdentifier?: string|null,
+     *     incrementalTrainingDataChannels?: list<IncrementalTrainingDataChannelOutput>|null,
      *     name: string,
      *     description?: string|null,
      *     membershipIdentifier: string,

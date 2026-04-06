@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
  * @property string $ownerAccountId
+ * @property string|null $namespaceId
+ * @property string|null $tableBucketId
  */
 class GetNamespaceResponse extends Response
 {

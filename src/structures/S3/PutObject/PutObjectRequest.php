@@ -21,7 +21,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ChecksumCRC64NVME
  * @property string|null $ChecksumSHA1
  * @property string|null $ChecksumSHA256
- * @property \Aws\Api\DateTimeResult|null $Expires
+ * @property string|null $Expires
  * @property string|null $IfMatch
  * @property string|null $IfNoneMatch
  * @property string|null $GrantFullControl
@@ -31,8 +31,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Key
  * @property int|null $WriteOffsetBytes
  * @property array<string, string>|null $Metadata
- * @property 'AES256'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
- * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null $StorageClass
+ * @property 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
+ * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|'FSX_ONTAP'|null $StorageClass
  * @property string|null $WebsiteRedirectLocation
  * @property string|null $SSECustomerAlgorithm
  * @property string|null $SSECustomerKey
@@ -67,7 +67,7 @@ class PutObjectRequest extends Request
      *     ChecksumCRC64NVME?: string|null,
      *     ChecksumSHA1?: string|null,
      *     ChecksumSHA256?: string|null,
-     *     Expires?: \Aws\Api\DateTimeResult|null,
+     *     Expires?: string|null,
      *     IfMatch?: string|null,
      *     IfNoneMatch?: string|null,
      *     GrantFullControl?: string|null,
@@ -77,8 +77,8 @@ class PutObjectRequest extends Request
      *     Key: string,
      *     WriteOffsetBytes?: int|null,
      *     Metadata?: array<string, string>|null,
-     *     ServerSideEncryption?: 'AES256'|'aws:kms'|'aws:kms:dsse'|null,
-     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null,
+     *     ServerSideEncryption?: 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null,
+     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|'FSX_ONTAP'|null,
      *     WebsiteRedirectLocation?: string|null,
      *     SSECustomerAlgorithm?: string|null,
      *     SSECustomerKey?: string|null,

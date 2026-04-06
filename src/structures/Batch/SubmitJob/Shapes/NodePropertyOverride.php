@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EcsPropertiesOverride|null $ecsPropertiesOverride
  * @property list<string>|null $instanceTypes
  * @property EksPropertiesOverride|null $eksPropertiesOverride
+ * @property ConsumableResourceProperties|null $consumableResourcePropertiesOverride
  */
 class NodePropertyOverride extends Shape
 {
@@ -19,7 +20,8 @@ class NodePropertyOverride extends Shape
      *     containerOverrides?: ContainerOverrides|null,
      *     ecsPropertiesOverride?: EcsPropertiesOverride|null,
      *     instanceTypes?: list<string>|null,
-     *     eksPropertiesOverride?: EksPropertiesOverride|null
+     *     eksPropertiesOverride?: EksPropertiesOverride|null,
+     *     consumableResourcePropertiesOverride?: ConsumableResourceProperties|null
      * } $args
      */
     public function __construct(array $args)

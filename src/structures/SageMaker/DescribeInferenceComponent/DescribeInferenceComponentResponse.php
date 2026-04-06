@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  * @property 'InService'|'Creating'|'Updating'|'Failed'|'Deleting'|null $InferenceComponentStatus
+ * @property Shapes\InferenceComponentDeploymentConfig|null $LastDeploymentConfig
  */
 class DescribeInferenceComponentResponse extends Response
 {

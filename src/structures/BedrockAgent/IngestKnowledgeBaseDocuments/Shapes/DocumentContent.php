@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\IngestKnowledgeBaseDocuments\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CustomContent|null $custom
  * @property 'CUSTOM'|'S3' $dataSourceType
+ * @property CustomContent|null $custom
  * @property S3Content|null $s3
  */
 class DocumentContent extends Shape
 {
     /**
      * @param array{
-     *     custom?: CustomContent|null,
      *     dataSourceType: 'CUSTOM'|'S3',
+     *     custom?: CustomContent|null,
      *     s3?: S3Content|null
      * } $args
      */

@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property AnalysisRulePolicy $policy
+ * @property ConfiguredTableAssociationAnalysisRulePolicy|null $collaborationPolicy
+ * @property ConsolidatedPolicy|null $consolidatedPolicy
  */
 class AnalysisRule extends Shape
 {
@@ -21,7 +23,9 @@ class AnalysisRule extends Shape
      *     name: string,
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
-     *     policy: AnalysisRulePolicy
+     *     policy: AnalysisRulePolicy,
+     *     collaborationPolicy?: ConfiguredTableAssociationAnalysisRulePolicy|null,
+     *     consolidatedPolicy?: ConsolidatedPolicy|null
      * } $args
      */
     public function __construct(array $args)

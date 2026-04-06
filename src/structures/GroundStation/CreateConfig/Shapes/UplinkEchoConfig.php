@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GroundStation\CreateConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $antennaUplinkConfigArn
  * @property bool $enabled
+ * @property string $antennaUplinkConfigArn
  */
 class UplinkEchoConfig extends Shape
 {
     /**
      * @param array{
-     *     antennaUplinkConfigArn: string,
-     *     enabled: bool
+     *     enabled: bool,
+     *     antennaUplinkConfigArn: string
      * } $args
      */
     public function __construct(array $args)

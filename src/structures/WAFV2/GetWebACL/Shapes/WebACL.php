@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property list<Rule>|null $Rules
  * @property VisibilityConfig $VisibilityConfig
+ * @property DataProtectionConfig|null $DataProtectionConfig
  * @property int<0, max>|null $Capacity
  * @property list<FirewallManagerRuleGroup>|null $PreProcessFirewallManagerRuleGroups
  * @property list<FirewallManagerRuleGroup>|null $PostProcessFirewallManagerRuleGroups
@@ -23,6 +24,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $TokenDomains
  * @property AssociationConfig|null $AssociationConfig
  * @property bool|null $RetrofittedByFirewallManager
+ * @property OnSourceDDoSProtectionConfig|null $OnSourceDDoSProtectionConfig
+ * @property ApplicationConfig|null $ApplicationConfig
  */
 class WebACL extends Shape
 {
@@ -35,6 +38,7 @@ class WebACL extends Shape
      *     Description?: string|null,
      *     Rules?: list<Rule>|null,
      *     VisibilityConfig: VisibilityConfig,
+     *     DataProtectionConfig?: DataProtectionConfig|null,
      *     Capacity?: int<0, max>|null,
      *     PreProcessFirewallManagerRuleGroups?: list<FirewallManagerRuleGroup>|null,
      *     PostProcessFirewallManagerRuleGroups?: list<FirewallManagerRuleGroup>|null,
@@ -45,7 +49,9 @@ class WebACL extends Shape
      *     ChallengeConfig?: ChallengeConfig|null,
      *     TokenDomains?: list<string>|null,
      *     AssociationConfig?: AssociationConfig|null,
-     *     RetrofittedByFirewallManager?: bool|null
+     *     RetrofittedByFirewallManager?: bool|null,
+     *     OnSourceDDoSProtectionConfig?: OnSourceDDoSProtectionConfig|null,
+     *     ApplicationConfig?: ApplicationConfig|null
      * } $args
      */
     public function __construct(array $args)

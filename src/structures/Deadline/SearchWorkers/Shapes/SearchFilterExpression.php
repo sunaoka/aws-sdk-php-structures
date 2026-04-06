@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ParameterFilterExpression|null $parameterFilter
  * @property SearchTermFilterExpression|null $searchTermFilter
  * @property StringFilterExpression|null $stringFilter
+ * @property StringListFilterExpression|null $stringListFilter
  * @property SearchGroupedFilterExpressions|null $groupFilter
  */
 class SearchFilterExpression extends Shape
@@ -19,6 +20,7 @@ class SearchFilterExpression extends Shape
      *     parameterFilter?: ParameterFilterExpression|null,
      *     searchTermFilter?: SearchTermFilterExpression|null,
      *     stringFilter?: StringFilterExpression|null,
+     *     stringListFilter?: StringListFilterExpression|null,
      *     groupFilter?: SearchGroupedFilterExpressions|null
      * } $args
      */

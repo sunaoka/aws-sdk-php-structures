@@ -11,7 +11,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\TagListEntry>|null $Tags
  * @property string $User
  * @property string|null $Domain
- * @property string $Password
+ * @property string|null $Password
+ * @property Shapes\CmkSecretConfig|null $CmkSecretConfig
+ * @property Shapes\CustomSecretConfig|null $CustomSecretConfig
  */
 class CreateLocationFsxWindowsRequest extends Request
 {
@@ -23,7 +25,9 @@ class CreateLocationFsxWindowsRequest extends Request
      *     Tags?: list<Shapes\TagListEntry>|null,
      *     User: string,
      *     Domain?: string|null,
-     *     Password: string
+     *     Password?: string|null,
+     *     CmkSecretConfig?: Shapes\CmkSecretConfig|null,
+     *     CustomSecretConfig?: Shapes\CustomSecretConfig|null
      * } $args
      */
     public function __construct(array $args)

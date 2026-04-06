@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $StartTime
  * @property \Aws\Api\DateTimeResult|null $EndTime
  * @property double|null $PercentageCompleted
+ * @property 'FULL'|'PARTIAL'|null $ScanType
  */
 class ResourceScanSummary extends Shape
 {
@@ -21,7 +22,8 @@ class ResourceScanSummary extends Shape
      *     StatusReason?: string|null,
      *     StartTime?: \Aws\Api\DateTimeResult|null,
      *     EndTime?: \Aws\Api\DateTimeResult|null,
-     *     PercentageCompleted?: double|null
+     *     PercentageCompleted?: double|null,
+     *     ScanType?: 'FULL'|'PARTIAL'|null
      * } $args
      */
     public function __construct(array $args = [])

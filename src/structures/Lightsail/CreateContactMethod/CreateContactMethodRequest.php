@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'Email'|'SMS' $protocol
  * @property string $contactEndpoint
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateContactMethodRequest extends Request
 {
     /**
      * @param array{
      *     protocol: 'Email'|'SMS',
-     *     contactEndpoint: string
+     *     contactEndpoint: string,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ENABLED'|'DISABLED'|null $DeblockFilter
  * @property 'ENABLED'|'DISABLED'|null $DenoiseFilter
  * @property string|null $DolbyVisionMetadataXml
+ * @property array<string, DynamicAudioSelector>|null $DynamicAudioSelectors
  * @property 'AUTO'|'DISABLE'|'FORCE'|null $FilterEnable
  * @property int<0, 5>|null $FilterStrength
  * @property ImageInserter|null $ImageInserter
@@ -40,6 +41,7 @@ class InputTemplate extends Shape
      *     DeblockFilter?: 'ENABLED'|'DISABLED'|null,
      *     DenoiseFilter?: 'ENABLED'|'DISABLED'|null,
      *     DolbyVisionMetadataXml?: string|null,
+     *     DynamicAudioSelectors?: array<string, DynamicAudioSelector>|null,
      *     FilterEnable?: 'AUTO'|'DISABLE'|'FORCE'|null,
      *     FilterStrength?: int<0, 5>|null,
      *     ImageInserter?: ImageInserter|null,

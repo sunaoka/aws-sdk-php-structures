@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assetId
+ * @property string|null $assetExternalId
  * @property string $assetName
  * @property string|null $clientToken
  * @property string|null $assetDescription
- * @property string|null $assetExternalId
  */
 class UpdateAssetRequest extends Request
 {
     /**
      * @param array{
      *     assetId: string,
+     *     assetExternalId?: string|null,
      *     assetName: string,
      *     clientToken?: string|null,
-     *     assetDescription?: string|null,
-     *     assetExternalId?: string|null
+     *     assetDescription?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $name
  * @property 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'CANCEL_PENDING'|'CANCEL_IN_PROGRESS'|'CANCEL_FAILED'|'INACTIVE' $status
  * @property string $trainedModelArn
+ * @property string|null $trainedModelVersionIdentifier
  * @property Shapes\InferenceResourceConfig $resourceConfig
  * @property Shapes\InferenceOutputConfiguration $outputConfiguration
  * @property string $membershipIdentifier

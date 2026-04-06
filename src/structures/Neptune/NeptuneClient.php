@@ -73,4 +73,5 @@ class NeptuneClient extends \Aws\Neptune\NeptuneClient
     use RestoreDBClusterToPointInTime\RestoreDBClusterToPointInTimeTrait;
     use StartDBCluster\StartDBClusterTrait;
     use StopDBCluster\StopDBClusterTrait;
+    use SwitchoverGlobalCluster\SwitchoverGlobalClusterTrait;
 }

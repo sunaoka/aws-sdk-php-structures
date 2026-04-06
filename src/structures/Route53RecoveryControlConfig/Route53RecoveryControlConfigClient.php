@@ -25,6 +25,7 @@ class Route53RecoveryControlConfigClient extends \Aws\Route53RecoveryControlConf
     use ListTagsForResource\ListTagsForResourceTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateCluster\UpdateClusterTrait;
     use UpdateControlPanel\UpdateControlPanelTrait;
     use UpdateRoutingControl\UpdateRoutingControlTrait;
     use UpdateSafetyRule\UpdateSafetyRuleTrait;

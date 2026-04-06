@@ -26,13 +26,18 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $StorageEncrypted
  * @property string|null $KmsKeyId
  * @property string|null $PreSignedUrl
- * @property string|null $DestinationRegion
  * @property bool|null $EnableIAMDatabaseAuthentication
  * @property int|null $BacktrackWindow
  * @property list<string>|null $EnableCloudwatchLogsExports
  * @property string|null $EngineMode
  * @property Shapes\ScalingConfiguration|null $ScalingConfiguration
  * @property Shapes\RdsCustomClusterConfiguration|null $RdsCustomClusterConfiguration
+ * @property string|null $DBClusterInstanceClass
+ * @property int|null $AllocatedStorage
+ * @property string|null $StorageType
+ * @property int|null $Iops
+ * @property bool|null $PubliclyAccessible
+ * @property bool|null $AutoMinorVersionUpgrade
  * @property bool|null $DeletionProtection
  * @property string|null $GlobalClusterIdentifier
  * @property bool|null $EnableHttpEndpoint
@@ -40,12 +45,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Domain
  * @property string|null $DomainIAMRoleName
  * @property bool|null $EnableGlobalWriteForwarding
- * @property string|null $DBClusterInstanceClass
- * @property int|null $AllocatedStorage
- * @property string|null $StorageType
- * @property int|null $Iops
- * @property bool|null $PubliclyAccessible
- * @property bool|null $AutoMinorVersionUpgrade
+ * @property string|null $NetworkType
+ * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
  * @property int|null $MonitoringInterval
  * @property string|null $MonitoringRoleArn
  * @property 'standard'|'advanced'|null $DatabaseInsightsMode
@@ -53,15 +54,16 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
  * @property bool|null $EnableLimitlessDatabase
- * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
- * @property string|null $NetworkType
  * @property 'standard'|'limitless'|null $ClusterScalabilityType
  * @property string|null $DBSystemId
  * @property bool|null $ManageMasterUserPassword
- * @property string|null $MasterUserSecretKmsKeyId
  * @property bool|null $EnableLocalWriteForwarding
+ * @property string|null $MasterUserSecretKmsKeyId
  * @property string|null $CACertificateIdentifier
  * @property string|null $EngineLifecycleSupport
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property 'password'|'iam-db-auth'|null $MasterUserAuthenticationType
+ * @property bool|null $WithExpressConfiguration
  */
 class CreateDBClusterRequest extends Request
 {
@@ -88,13 +90,18 @@ class CreateDBClusterRequest extends Request
      *     StorageEncrypted?: bool|null,
      *     KmsKeyId?: string|null,
      *     PreSignedUrl?: string|null,
-     *     DestinationRegion?: string|null,
      *     EnableIAMDatabaseAuthentication?: bool|null,
      *     BacktrackWindow?: int|null,
      *     EnableCloudwatchLogsExports?: list<string>|null,
      *     EngineMode?: string|null,
      *     ScalingConfiguration?: Shapes\ScalingConfiguration|null,
      *     RdsCustomClusterConfiguration?: Shapes\RdsCustomClusterConfiguration|null,
+     *     DBClusterInstanceClass?: string|null,
+     *     AllocatedStorage?: int|null,
+     *     StorageType?: string|null,
+     *     Iops?: int|null,
+     *     PubliclyAccessible?: bool|null,
+     *     AutoMinorVersionUpgrade?: bool|null,
      *     DeletionProtection?: bool|null,
      *     GlobalClusterIdentifier?: string|null,
      *     EnableHttpEndpoint?: bool|null,
@@ -102,12 +109,8 @@ class CreateDBClusterRequest extends Request
      *     Domain?: string|null,
      *     DomainIAMRoleName?: string|null,
      *     EnableGlobalWriteForwarding?: bool|null,
-     *     DBClusterInstanceClass?: string|null,
-     *     AllocatedStorage?: int|null,
-     *     StorageType?: string|null,
-     *     Iops?: int|null,
-     *     PubliclyAccessible?: bool|null,
-     *     AutoMinorVersionUpgrade?: bool|null,
+     *     NetworkType?: string|null,
+     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
      *     MonitoringInterval?: int|null,
      *     MonitoringRoleArn?: string|null,
      *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
@@ -115,15 +118,16 @@ class CreateDBClusterRequest extends Request
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,
      *     EnableLimitlessDatabase?: bool|null,
-     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
-     *     NetworkType?: string|null,
      *     ClusterScalabilityType?: 'standard'|'limitless'|null,
      *     DBSystemId?: string|null,
      *     ManageMasterUserPassword?: bool|null,
-     *     MasterUserSecretKmsKeyId?: string|null,
      *     EnableLocalWriteForwarding?: bool|null,
+     *     MasterUserSecretKmsKeyId?: string|null,
      *     CACertificateIdentifier?: string|null,
-     *     EngineLifecycleSupport?: string|null
+     *     EngineLifecycleSupport?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     MasterUserAuthenticationType?: 'password'|'iam-db-auth'|null,
+     *     WithExpressConfiguration?: bool|null
      * } $args
      */
     public function __construct(array $args)

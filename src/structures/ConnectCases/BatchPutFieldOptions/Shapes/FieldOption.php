@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConnectCases\BatchPutFieldOptions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $active
  * @property string $name
  * @property string $value
+ * @property bool $active
  */
 class FieldOption extends Shape
 {
     /**
      * @param array{
-     *     active: bool,
      *     name: string,
-     *     value: string
+     *     value: string,
+     *     active: bool
      * } $args
      */
     public function __construct(array $args)

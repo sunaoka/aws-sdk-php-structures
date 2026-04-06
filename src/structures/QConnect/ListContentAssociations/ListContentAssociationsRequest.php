@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QConnect\ListContentAssociations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $contentId
- * @property string $knowledgeBaseId
- * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
+ * @property string $knowledgeBaseId
+ * @property string $contentId
  */
 class ListContentAssociationsRequest extends Request
 {
     /**
      * @param array{
-     *     contentId: string,
-     *     knowledgeBaseId: string,
+     *     nextToken?: string|null,
      *     maxResults?: int<1, 100>|null,
-     *     nextToken?: string|null
+     *     knowledgeBaseId: string,
+     *     contentId: string
      * } $args
      */
     public function __construct(array $args)

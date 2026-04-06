@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $WorkGroup
  * @property list<string>|null $ExecutionParameters
  * @property Shapes\ResultReuseConfiguration|null $ResultReuseConfiguration
+ * @property Shapes\EngineConfiguration|null $EngineConfiguration
  */
 class StartQueryExecutionRequest extends Request
 {
@@ -23,7 +24,8 @@ class StartQueryExecutionRequest extends Request
      *     ResultConfiguration?: Shapes\ResultConfiguration|null,
      *     WorkGroup?: string|null,
      *     ExecutionParameters?: list<string>|null,
-     *     ResultReuseConfiguration?: Shapes\ResultReuseConfiguration|null
+     *     ResultReuseConfiguration?: Shapes\ResultReuseConfiguration|null,
+     *     EngineConfiguration?: Shapes\EngineConfiguration|null
      * } $args
      */
     public function __construct(array $args)

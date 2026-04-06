@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\DescribeTrustedTokenIssuer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string $IssuerUrl
  * @property string $ClaimAttributePath
  * @property string $IdentityStoreAttributePath
- * @property string $IssuerUrl
  * @property 'OPEN_ID_DISCOVERY' $JwksRetrievalOption
  */
 class OidcJwtConfiguration extends Shape
 {
     /**
      * @param array{
+     *     IssuerUrl: string,
      *     ClaimAttributePath: string,
      *     IdentityStoreAttributePath: string,
-     *     IssuerUrl: string,
      *     JwksRetrievalOption: 'OPEN_ID_DISCOVERY'
      * } $args
      */

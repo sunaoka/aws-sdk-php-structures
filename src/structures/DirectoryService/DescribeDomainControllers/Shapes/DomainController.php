@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DirectoryId
  * @property string|null $DomainControllerId
  * @property string|null $DnsIpAddr
+ * @property string|null $DnsIpv6Addr
  * @property string|null $VpcId
  * @property string|null $SubnetId
  * @property string|null $AvailabilityZone
@@ -23,6 +24,7 @@ class DomainController extends Shape
      *     DirectoryId?: string|null,
      *     DomainControllerId?: string|null,
      *     DnsIpAddr?: string|null,
+     *     DnsIpv6Addr?: string|null,
      *     VpcId?: string|null,
      *     SubnetId?: string|null,
      *     AvailabilityZone?: string|null,

@@ -10,15 +10,16 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $password
  * @property string|null $organization
  * @property string|null $bucket
- * @property 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge' $dbInstanceType
+ * @property 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|'db.influx.24xlarge' $dbInstanceType
  * @property list<string> $vpcSubnetIds
  * @property list<string> $vpcSecurityGroupIds
  * @property bool|null $publiclyAccessible
  * @property 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null $dbStorageType
- * @property int<20, 16384> $allocatedStorage
+ * @property int<20, 15360> $allocatedStorage
  * @property string|null $dbParameterGroupIdentifier
  * @property 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|null $deploymentType
  * @property Shapes\LogDeliveryConfiguration|null $logDeliveryConfiguration
+ * @property Shapes\MaintenanceSchedule|null $maintenanceSchedule
  * @property array<string, string>|null $tags
  * @property int<1024, 65535>|null $port
  * @property 'IPV4'|'DUAL'|null $networkType
@@ -32,15 +33,16 @@ class CreateDbInstanceRequest extends Request
      *     password: string,
      *     organization?: string|null,
      *     bucket?: string|null,
-     *     dbInstanceType: 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge',
+     *     dbInstanceType: 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|'db.influx.24xlarge',
      *     vpcSubnetIds: list<string>,
      *     vpcSecurityGroupIds: list<string>,
      *     publiclyAccessible?: bool|null,
      *     dbStorageType?: 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null,
-     *     allocatedStorage: int<20, 16384>,
+     *     allocatedStorage: int<20, 15360>,
      *     dbParameterGroupIdentifier?: string|null,
      *     deploymentType?: 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|null,
      *     logDeliveryConfiguration?: Shapes\LogDeliveryConfiguration|null,
+     *     maintenanceSchedule?: Shapes\MaintenanceSchedule|null,
      *     tags?: array<string, string>|null,
      *     port?: int<1024, 65535>|null,
      *     networkType?: 'IPV4'|'DUAL'|null

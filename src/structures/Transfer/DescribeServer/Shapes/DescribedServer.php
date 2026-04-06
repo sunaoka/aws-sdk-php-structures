@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $StructuredLogDestinations
  * @property S3StorageOptions|null $S3StorageOptions
  * @property list<string>|null $As2ServiceManagedEgressIpAddresses
+ * @property 'IPV4'|'DUALSTACK'|null $IpAddressType
  */
 class DescribedServer extends Shape
 {
@@ -53,7 +54,8 @@ class DescribedServer extends Shape
      *     WorkflowDetails?: WorkflowDetails|null,
      *     StructuredLogDestinations?: list<string>|null,
      *     S3StorageOptions?: S3StorageOptions|null,
-     *     As2ServiceManagedEgressIpAddresses?: list<string>|null
+     *     As2ServiceManagedEgressIpAddresses?: list<string>|null,
+     *     IpAddressType?: 'IPV4'|'DUALSTACK'|null
      * } $args
      */
     public function __construct(array $args)

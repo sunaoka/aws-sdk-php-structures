@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RegisteredUserQSearchBarEmbeddingConfiguration|null $QSearchBar
  * @property RegisteredUserDashboardVisualEmbeddingConfiguration|null $DashboardVisual
  * @property RegisteredUserGenerativeQnAEmbeddingConfiguration|null $GenerativeQnA
+ * @property RegisteredUserQuickChatEmbeddingConfiguration|null $QuickChat
  */
 class RegisteredUserEmbeddingExperienceConfiguration extends Shape
 {
@@ -19,7 +20,8 @@ class RegisteredUserEmbeddingExperienceConfiguration extends Shape
      *     QuickSightConsole?: RegisteredUserQuickSightConsoleEmbeddingConfiguration|null,
      *     QSearchBar?: RegisteredUserQSearchBarEmbeddingConfiguration|null,
      *     DashboardVisual?: RegisteredUserDashboardVisualEmbeddingConfiguration|null,
-     *     GenerativeQnA?: RegisteredUserGenerativeQnAEmbeddingConfiguration|null
+     *     GenerativeQnA?: RegisteredUserGenerativeQnAEmbeddingConfiguration|null,
+     *     QuickChat?: RegisteredUserQuickChatEmbeddingConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

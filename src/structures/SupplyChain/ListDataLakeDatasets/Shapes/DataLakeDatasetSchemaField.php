@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property 'INT'|'DOUBLE'|'STRING'|'TIMESTAMP' $type
+ * @property 'INT'|'DOUBLE'|'STRING'|'TIMESTAMP'|'LONG' $type
  * @property bool $isRequired
  */
 class DataLakeDatasetSchemaField extends Shape
@@ -14,7 +14,7 @@ class DataLakeDatasetSchemaField extends Shape
     /**
      * @param array{
      *     name: string,
-     *     type: 'INT'|'DOUBLE'|'STRING'|'TIMESTAMP',
+     *     type: 'INT'|'DOUBLE'|'STRING'|'TIMESTAMP'|'LONG',
      *     isRequired: bool
      * } $args
      */

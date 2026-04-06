@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $ChannelClass
  * @property string|null $Codec
- * @property int<1, 1000>|null $MaxResults
+ * @property int|null $MaxResults
  * @property string|null $MaximumBitrate
  * @property string|null $MaximumFramerate
  * @property string|null $NextToken
@@ -22,7 +22,7 @@ class ListReservationsRequest extends Request
      * @param array{
      *     ChannelClass?: string|null,
      *     Codec?: string|null,
-     *     MaxResults?: int<1, 1000>|null,
+     *     MaxResults?: int|null,
      *     MaximumBitrate?: string|null,
      *     MaximumFramerate?: string|null,
      *     NextToken?: string|null,

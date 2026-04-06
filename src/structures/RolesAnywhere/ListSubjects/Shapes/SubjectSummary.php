@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\ListSubjects\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult|null $createdAt
- * @property bool|null $enabled
- * @property \Aws\Api\DateTimeResult|null $lastSeenAt
  * @property string|null $subjectArn
  * @property string|null $subjectId
- * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property bool|null $enabled
  * @property string|null $x509Subject
+ * @property \Aws\Api\DateTimeResult|null $lastSeenAt
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class SubjectSummary extends Shape
 {
     /**
      * @param array{
-     *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     enabled?: bool|null,
-     *     lastSeenAt?: \Aws\Api\DateTimeResult|null,
      *     subjectArn?: string|null,
      *     subjectId?: string|null,
-     *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     x509Subject?: string|null
+     *     enabled?: bool|null,
+     *     x509Subject?: string|null,
+     *     lastSeenAt?: \Aws\Api\DateTimeResult|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

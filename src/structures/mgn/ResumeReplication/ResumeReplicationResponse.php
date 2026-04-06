@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\mgn\ResumeReplication;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string|null $applicationID
- * @property string|null $arn
- * @property Shapes\SourceServerConnectorAction|null $connectorAction
- * @property Shapes\DataReplicationInfo|null $dataReplicationInfo
- * @property string|null $fqdnForActionFramework
- * @property bool|null $isArchived
- * @property Shapes\LaunchedInstance|null $launchedInstance
- * @property Shapes\LifeCycle|null $lifeCycle
- * @property 'AGENT_BASED'|'SNAPSHOT_SHIPPING'|null $replicationType
- * @property Shapes\SourceProperties|null $sourceProperties
  * @property string|null $sourceServerID
+ * @property string|null $arn
+ * @property bool|null $isArchived
  * @property array<string, string>|null $tags
- * @property string|null $userProvidedID
+ * @property Shapes\LaunchedInstance|null $launchedInstance
+ * @property Shapes\DataReplicationInfo|null $dataReplicationInfo
+ * @property Shapes\LifeCycle|null $lifeCycle
+ * @property Shapes\SourceProperties|null $sourceProperties
+ * @property 'AGENT_BASED'|'SNAPSHOT_SHIPPING'|null $replicationType
  * @property string|null $vcenterClientID
+ * @property string|null $applicationID
+ * @property string|null $userProvidedID
+ * @property string|null $fqdnForActionFramework
+ * @property Shapes\SourceServerConnectorAction|null $connectorAction
  */
 class ResumeReplicationResponse extends Response
 {

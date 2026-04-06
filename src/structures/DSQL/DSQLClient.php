@@ -5,12 +5,14 @@ namespace Sunaoka\Aws\Structures\DSQL;
 class DSQLClient extends \Aws\DSQL\DSQLClient
 {
     use CreateCluster\CreateClusterTrait;
-    use CreateMultiRegionClusters\CreateMultiRegionClustersTrait;
     use DeleteCluster\DeleteClusterTrait;
-    use DeleteMultiRegionClusters\DeleteMultiRegionClustersTrait;
+    use DeleteClusterPolicy\DeleteClusterPolicyTrait;
     use GetCluster\GetClusterTrait;
+    use GetClusterPolicy\GetClusterPolicyTrait;
+    use GetVpcEndpointServiceName\GetVpcEndpointServiceNameTrait;
     use ListClusters\ListClustersTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use PutClusterPolicy\PutClusterPolicyTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateCluster\UpdateClusterTrait;

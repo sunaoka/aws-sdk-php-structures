@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Notifications\GetNotificationsAccessForOrganiza
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED'|'PENDING' $accessStatus
+ * @property 'ENABLED'|'DISABLED'|'PENDING'|'FAILED' $accessStatus
  */
 class NotificationsAccessForOrganization extends Shape
 {
     /**
-     * @param array{accessStatus: 'ENABLED'|'DISABLED'|'PENDING'} $args
+     * @param array{accessStatus: 'ENABLED'|'DISABLED'|'PENDING'|'FAILED'} $args
      */
     public function __construct(array $args)
     {

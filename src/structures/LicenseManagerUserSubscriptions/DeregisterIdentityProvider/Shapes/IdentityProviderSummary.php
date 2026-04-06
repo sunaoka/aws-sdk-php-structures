@@ -5,23 +5,25 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\DeregisterIdent
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $FailureMessage
  * @property IdentityProvider $IdentityProvider
- * @property string|null $IdentityProviderArn
- * @property string $Product
  * @property Settings $Settings
+ * @property string $Product
  * @property string $Status
+ * @property string|null $IdentityProviderArn
+ * @property string|null $FailureMessage
+ * @property string|null $OwnerAccountId
  */
 class IdentityProviderSummary extends Shape
 {
     /**
      * @param array{
-     *     FailureMessage?: string|null,
      *     IdentityProvider: IdentityProvider,
-     *     IdentityProviderArn?: string|null,
-     *     Product: string,
      *     Settings: Settings,
-     *     Status: string
+     *     Product: string,
+     *     Status: string,
+     *     IdentityProviderArn?: string|null,
+     *     FailureMessage?: string|null,
+     *     OwnerAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

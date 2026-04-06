@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CertificateArn
  * @property string|null $DomainName
  * @property list<string>|null $SubjectAlternativeNames
+ * @property 'CLOUDFRONT'|null $ManagedBy
  * @property list<DomainValidation>|null $DomainValidationOptions
  * @property string|null $Serial
  * @property string|null $Subject
@@ -17,7 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $ImportedAt
  * @property 'PENDING_VALIDATION'|'ISSUED'|'INACTIVE'|'EXPIRED'|'VALIDATION_TIMED_OUT'|'REVOKED'|'FAILED'|null $Status
  * @property \Aws\Api\DateTimeResult|null $RevokedAt
- * @property 'UNSPECIFIED'|'KEY_COMPROMISE'|'CA_COMPROMISE'|'AFFILIATION_CHANGED'|'SUPERCEDED'|'CESSATION_OF_OPERATION'|'CERTIFICATE_HOLD'|'REMOVE_FROM_CRL'|'PRIVILEGE_WITHDRAWN'|'A_A_COMPROMISE'|null $RevocationReason
+ * @property 'UNSPECIFIED'|'KEY_COMPROMISE'|'CA_COMPROMISE'|'AFFILIATION_CHANGED'|'SUPERCEDED'|'SUPERSEDED'|'CESSATION_OF_OPERATION'|'CERTIFICATE_HOLD'|'REMOVE_FROM_CRL'|'PRIVILEGE_WITHDRAWN'|'A_A_COMPROMISE'|null $RevocationReason
  * @property \Aws\Api\DateTimeResult|null $NotBefore
  * @property \Aws\Api\DateTimeResult|null $NotAfter
  * @property 'RSA_1024'|'RSA_2048'|'RSA_3072'|'RSA_4096'|'EC_prime256v1'|'EC_secp384r1'|'EC_secp521r1'|null $KeyAlgorithm
@@ -39,6 +40,7 @@ class CertificateDetail extends Shape
      *     CertificateArn?: string|null,
      *     DomainName?: string|null,
      *     SubjectAlternativeNames?: list<string>|null,
+     *     ManagedBy?: 'CLOUDFRONT'|null,
      *     DomainValidationOptions?: list<DomainValidation>|null,
      *     Serial?: string|null,
      *     Subject?: string|null,
@@ -48,7 +50,7 @@ class CertificateDetail extends Shape
      *     ImportedAt?: \Aws\Api\DateTimeResult|null,
      *     Status?: 'PENDING_VALIDATION'|'ISSUED'|'INACTIVE'|'EXPIRED'|'VALIDATION_TIMED_OUT'|'REVOKED'|'FAILED'|null,
      *     RevokedAt?: \Aws\Api\DateTimeResult|null,
-     *     RevocationReason?: 'UNSPECIFIED'|'KEY_COMPROMISE'|'CA_COMPROMISE'|'AFFILIATION_CHANGED'|'SUPERCEDED'|'CESSATION_OF_OPERATION'|'CERTIFICATE_HOLD'|'REMOVE_FROM_CRL'|'PRIVILEGE_WITHDRAWN'|'A_A_COMPROMISE'|null,
+     *     RevocationReason?: 'UNSPECIFIED'|'KEY_COMPROMISE'|'CA_COMPROMISE'|'AFFILIATION_CHANGED'|'SUPERCEDED'|'SUPERSEDED'|'CESSATION_OF_OPERATION'|'CERTIFICATE_HOLD'|'REMOVE_FROM_CRL'|'PRIVILEGE_WITHDRAWN'|'A_A_COMPROMISE'|null,
      *     NotBefore?: \Aws\Api\DateTimeResult|null,
      *     NotAfter?: \Aws\Api\DateTimeResult|null,
      *     KeyAlgorithm?: 'RSA_1024'|'RSA_2048'|'RSA_3072'|'RSA_4096'|'EC_prime256v1'|'EC_secp384r1'|'EC_secp521r1'|null,

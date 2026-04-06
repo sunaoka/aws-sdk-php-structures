@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\ListEngagementInvitations
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'InvitationDate' $SortBy
  * @property 'ASCENDING'|'DESCENDING' $SortOrder
+ * @property 'InvitationDate' $SortBy
  */
 class OpportunityEngagementInvitationSort extends Shape
 {
     /**
      * @param array{
-     *     SortBy: 'InvitationDate',
-     *     SortOrder: 'ASCENDING'|'DESCENDING'
+     *     SortOrder: 'ASCENDING'|'DESCENDING',
+     *     SortBy: 'InvitationDate'
      * } $args
      */
     public function __construct(array $args)

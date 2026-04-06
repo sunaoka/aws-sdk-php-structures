@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\QConnect\UpdateAIGuardrail;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $aiGuardrailId
+ * @property string|null $clientToken
  * @property string $assistantId
+ * @property string $aiGuardrailId
+ * @property 'SAVED'|'PUBLISHED' $visibilityStatus
  * @property string $blockedInputMessaging
  * @property string $blockedOutputsMessaging
- * @property string|null $clientToken
- * @property Shapes\AIGuardrailContentPolicyConfig|null $contentPolicyConfig
- * @property Shapes\AIGuardrailContextualGroundingPolicyConfig|null $contextualGroundingPolicyConfig
  * @property string|null $description
- * @property Shapes\AIGuardrailSensitiveInformationPolicyConfig|null $sensitiveInformationPolicyConfig
  * @property Shapes\AIGuardrailTopicPolicyConfig|null $topicPolicyConfig
- * @property 'SAVED'|'PUBLISHED' $visibilityStatus
+ * @property Shapes\AIGuardrailContentPolicyConfig|null $contentPolicyConfig
  * @property Shapes\AIGuardrailWordPolicyConfig|null $wordPolicyConfig
+ * @property Shapes\AIGuardrailSensitiveInformationPolicyConfig|null $sensitiveInformationPolicyConfig
+ * @property Shapes\AIGuardrailContextualGroundingPolicyConfig|null $contextualGroundingPolicyConfig
  */
 class UpdateAIGuardrailRequest extends Request
 {
     /**
      * @param array{
-     *     aiGuardrailId: string,
+     *     clientToken?: string|null,
      *     assistantId: string,
+     *     aiGuardrailId: string,
+     *     visibilityStatus: 'SAVED'|'PUBLISHED',
      *     blockedInputMessaging: string,
      *     blockedOutputsMessaging: string,
-     *     clientToken?: string|null,
-     *     contentPolicyConfig?: Shapes\AIGuardrailContentPolicyConfig|null,
-     *     contextualGroundingPolicyConfig?: Shapes\AIGuardrailContextualGroundingPolicyConfig|null,
      *     description?: string|null,
-     *     sensitiveInformationPolicyConfig?: Shapes\AIGuardrailSensitiveInformationPolicyConfig|null,
      *     topicPolicyConfig?: Shapes\AIGuardrailTopicPolicyConfig|null,
-     *     visibilityStatus: 'SAVED'|'PUBLISHED',
-     *     wordPolicyConfig?: Shapes\AIGuardrailWordPolicyConfig|null
+     *     contentPolicyConfig?: Shapes\AIGuardrailContentPolicyConfig|null,
+     *     wordPolicyConfig?: Shapes\AIGuardrailWordPolicyConfig|null,
+     *     sensitiveInformationPolicyConfig?: Shapes\AIGuardrailSensitiveInformationPolicyConfig|null,
+     *     contextualGroundingPolicyConfig?: Shapes\AIGuardrailContextualGroundingPolicyConfig|null
      * } $args
      */
     public function __construct(array $args)

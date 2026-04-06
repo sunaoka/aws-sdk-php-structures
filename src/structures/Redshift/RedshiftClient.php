@@ -104,6 +104,7 @@ class RedshiftClient extends \Aws\Redshift\RedshiftClient
     use FailoverPrimaryCompute\FailoverPrimaryComputeTrait;
     use GetClusterCredentials\GetClusterCredentialsTrait;
     use GetClusterCredentialsWithIAM\GetClusterCredentialsWithIAMTrait;
+    use GetIdentityCenterAuthToken\GetIdentityCenterAuthTokenTrait;
     use GetReservedNodeExchangeConfigurationOptions\GetReservedNodeExchangeConfigurationOptionsTrait;
     use GetReservedNodeExchangeOfferings\GetReservedNodeExchangeOfferingsTrait;
     use GetResourcePolicy\GetResourcePolicyTrait;
@@ -122,6 +123,7 @@ class RedshiftClient extends \Aws\Redshift\RedshiftClient
     use ModifyEndpointAccess\ModifyEndpointAccessTrait;
     use ModifyEventSubscription\ModifyEventSubscriptionTrait;
     use ModifyIntegration\ModifyIntegrationTrait;
+    use ModifyLakehouseConfiguration\ModifyLakehouseConfigurationTrait;
     use ModifyRedshiftIdcApplication\ModifyRedshiftIdcApplicationTrait;
     use ModifyScheduledAction\ModifyScheduledActionTrait;
     use ModifySnapshotCopyRetentionPeriod\ModifySnapshotCopyRetentionPeriodTrait;

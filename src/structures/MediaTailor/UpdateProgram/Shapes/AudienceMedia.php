@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaTailor\UpdateProgram\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AlternateMedia>|null $AlternateMedia
  * @property string|null $Audience
+ * @property list<AlternateMedia>|null $AlternateMedia
  */
 class AudienceMedia extends Shape
 {
     /**
      * @param array{
-     *     AlternateMedia?: list<AlternateMedia>|null,
-     *     Audience?: string|null
+     *     Audience?: string|null,
+     *     AlternateMedia?: list<AlternateMedia>|null
      * } $args
      */
     public function __construct(array $args = [])

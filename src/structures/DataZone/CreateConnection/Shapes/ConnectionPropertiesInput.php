@@ -12,6 +12,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RedshiftPropertiesInput|null $redshiftProperties
  * @property SparkEmrPropertiesInput|null $sparkEmrProperties
  * @property SparkGluePropertiesInput|null $sparkGlueProperties
+ * @property S3PropertiesInput|null $s3Properties
+ * @property AmazonQPropertiesInput|null $amazonQProperties
+ * @property MlflowPropertiesInput|null $mlflowProperties
+ * @property WorkflowsMwaaPropertiesInput|null $workflowsMwaaProperties
+ * @property WorkflowsServerlessPropertiesInput|null $workflowsServerlessProperties
  */
 class ConnectionPropertiesInput extends Shape
 {
@@ -23,7 +28,12 @@ class ConnectionPropertiesInput extends Shape
      *     iamProperties?: IamPropertiesInput|null,
      *     redshiftProperties?: RedshiftPropertiesInput|null,
      *     sparkEmrProperties?: SparkEmrPropertiesInput|null,
-     *     sparkGlueProperties?: SparkGluePropertiesInput|null
+     *     sparkGlueProperties?: SparkGluePropertiesInput|null,
+     *     s3Properties?: S3PropertiesInput|null,
+     *     amazonQProperties?: AmazonQPropertiesInput|null,
+     *     mlflowProperties?: MlflowPropertiesInput|null,
+     *     workflowsMwaaProperties?: WorkflowsMwaaPropertiesInput|null,
+     *     workflowsServerlessProperties?: WorkflowsServerlessPropertiesInput|null
      * } $args
      */
     public function __construct(array $args = [])

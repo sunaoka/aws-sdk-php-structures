@@ -11,9 +11,14 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property string|null $FailureMessage
  * @property list<Shapes\ClusterInstanceGroupDetails> $InstanceGroups
+ * @property list<Shapes\ClusterRestrictedInstanceGroupDetails>|null $RestrictedInstanceGroups
  * @property Shapes\VpcConfig|null $VpcConfig
  * @property Shapes\ClusterOrchestrator|null $Orchestrator
+ * @property Shapes\ClusterTieredStorageConfig|null $TieredStorageConfig
  * @property 'Automatic'|'None'|null $NodeRecovery
+ * @property 'Continuous'|null $NodeProvisioningMode
+ * @property string|null $ClusterRole
+ * @property Shapes\ClusterAutoScalingConfigOutput|null $AutoScaling
  */
 class DescribeClusterResponse extends Response
 {

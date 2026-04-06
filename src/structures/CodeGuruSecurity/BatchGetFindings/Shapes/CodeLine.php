@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeGuruSecurity\BatchGetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $content
  * @property int|null $number
+ * @property string|null $content
  */
 class CodeLine extends Shape
 {
     /**
      * @param array{
-     *     content?: string|null,
-     *     number?: int|null
+     *     number?: int|null,
+     *     content?: string|null
      * } $args
      */
     public function __construct(array $args = [])

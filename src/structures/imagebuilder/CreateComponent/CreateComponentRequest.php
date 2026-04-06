@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $kmsKeyId
  * @property array<string, string>|null $tags
  * @property string $clientToken
+ * @property bool|null $dryRun
  */
 class CreateComponentRequest extends Request
 {
@@ -31,7 +32,8 @@ class CreateComponentRequest extends Request
      *     uri?: string|null,
      *     kmsKeyId?: string|null,
      *     tags?: array<string, string>|null,
-     *     clientToken: string
+     *     clientToken: string,
+     *     dryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

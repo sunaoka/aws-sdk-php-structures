@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $Id
+ * @property string|null $OwnerAccount
  * @property 'CREATE_NAMESPACE'|'DELETE_NAMESPACE'|'UPDATE_NAMESPACE'|'UPDATE_SERVICE'|'REGISTER_INSTANCE'|'DEREGISTER_INSTANCE'|null $Type
  * @property 'SUBMITTED'|'PENDING'|'SUCCESS'|'FAIL'|null $Status
  * @property string|null $ErrorMessage
@@ -19,6 +20,7 @@ class Operation extends Shape
     /**
      * @param array{
      *     Id?: string|null,
+     *     OwnerAccount?: string|null,
      *     Type?: 'CREATE_NAMESPACE'|'DELETE_NAMESPACE'|'UPDATE_NAMESPACE'|'UPDATE_SERVICE'|'REGISTER_INSTANCE'|'DEREGISTER_INSTANCE'|null,
      *     Status?: 'SUBMITTED'|'PENDING'|'SUCCESS'|'FAIL'|null,
      *     ErrorMessage?: string|null,

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\IngestKnowledgeBaseDocuments;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string $dataSourceId
- * @property list<Shapes\KnowledgeBaseDocument> $documents
  * @property string $knowledgeBaseId
+ * @property string $dataSourceId
+ * @property string|null $clientToken
+ * @property list<Shapes\KnowledgeBaseDocument> $documents
  */
 class IngestKnowledgeBaseDocumentsRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
+     *     knowledgeBaseId: string,
      *     dataSourceId: string,
-     *     documents: list<Shapes\KnowledgeBaseDocument>,
-     *     knowledgeBaseId: string
+     *     clientToken?: string|null,
+     *     documents: list<Shapes\KnowledgeBaseDocument>
      * } $args
      */
     public function __construct(array $args)

@@ -1,0 +1,43 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\QuickSight\DescribeActionConnector\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $Arn
+ * @property string $ActionConnectorId
+ * @property 'GENERIC_HTTP'|'SERVICENOW_NOW_PLATFORM'|'SALESFORCE_CRM'|'MICROSOFT_OUTLOOK'|'PAGERDUTY_ADVANCE'|'JIRA_CLOUD'|'ATLASSIAN_CONFLUENCE'|'AMAZON_S3'|'AMAZON_BEDROCK_AGENT_RUNTIME'|'AMAZON_BEDROCK_RUNTIME'|'AMAZON_BEDROCK_DATA_AUTOMATION_RUNTIME'|'AMAZON_TEXTRACT'|'AMAZON_COMPREHEND'|'AMAZON_COMPREHEND_MEDICAL'|'MICROSOFT_ONEDRIVE'|'MICROSOFT_SHAREPOINT'|'MICROSOFT_TEAMS'|'SAP_BUSINESSPARTNER'|'SAP_PRODUCTMASTERDATA'|'SAP_PHYSICALINVENTORY'|'SAP_BILLOFMATERIALS'|'SAP_MATERIALSTOCK'|'ZENDESK_SUITE'|'SMARTSHEET'|'SLACK'|'ASANA'|'BAMBOO_HR' $Type
+ * @property string $Name
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property \Aws\Api\DateTimeResult $LastUpdatedTime
+ * @property 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED'|null $Status
+ * @property ActionConnectorError|null $Error
+ * @property string|null $Description
+ * @property ReadAuthConfig|null $AuthenticationConfig
+ * @property list<string>|null $EnabledActions
+ * @property string|null $VpcConnectionArn
+ */
+class ActionConnector extends Shape
+{
+    /**
+     * @param array{
+     *     Arn: string,
+     *     ActionConnectorId: string,
+     *     Type: 'GENERIC_HTTP'|'SERVICENOW_NOW_PLATFORM'|'SALESFORCE_CRM'|'MICROSOFT_OUTLOOK'|'PAGERDUTY_ADVANCE'|'JIRA_CLOUD'|'ATLASSIAN_CONFLUENCE'|'AMAZON_S3'|'AMAZON_BEDROCK_AGENT_RUNTIME'|'AMAZON_BEDROCK_RUNTIME'|'AMAZON_BEDROCK_DATA_AUTOMATION_RUNTIME'|'AMAZON_TEXTRACT'|'AMAZON_COMPREHEND'|'AMAZON_COMPREHEND_MEDICAL'|'MICROSOFT_ONEDRIVE'|'MICROSOFT_SHAREPOINT'|'MICROSOFT_TEAMS'|'SAP_BUSINESSPARTNER'|'SAP_PRODUCTMASTERDATA'|'SAP_PHYSICALINVENTORY'|'SAP_BILLOFMATERIALS'|'SAP_MATERIALSTOCK'|'ZENDESK_SUITE'|'SMARTSHEET'|'SLACK'|'ASANA'|'BAMBOO_HR',
+     *     Name: string,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTime: \Aws\Api\DateTimeResult,
+     *     Status?: 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED'|null,
+     *     Error?: ActionConnectorError|null,
+     *     Description?: string|null,
+     *     AuthenticationConfig?: ReadAuthConfig|null,
+     *     EnabledActions?: list<string>|null,
+     *     VpcConnectionArn?: string|null
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MQ\CreateBroker;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'SIMPLE'|'LDAP'|null $AuthenticationStrategy
+ * @property 'SIMPLE'|'LDAP'|'CONFIG_MANAGED'|null $AuthenticationStrategy
  * @property bool|null $AutoMinorVersionUpgrade
  * @property string $BrokerName
  * @property Shapes\ConfigurationId|null $Configuration
@@ -23,7 +23,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'EBS'|'EFS'|null $StorageType
  * @property list<string>|null $SubnetIds
  * @property array<string, string>|null $Tags
- * @property list<Shapes\User> $Users
+ * @property list<Shapes\User>|null $Users
  * @property 'NONE'|'CRDR'|null $DataReplicationMode
  * @property string|null $DataReplicationPrimaryBrokerArn
  */
@@ -31,7 +31,7 @@ class CreateBrokerRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationStrategy?: 'SIMPLE'|'LDAP'|null,
+     *     AuthenticationStrategy?: 'SIMPLE'|'LDAP'|'CONFIG_MANAGED'|null,
      *     AutoMinorVersionUpgrade?: bool|null,
      *     BrokerName: string,
      *     Configuration?: Shapes\ConfigurationId|null,
@@ -49,7 +49,7 @@ class CreateBrokerRequest extends Request
      *     StorageType?: 'EBS'|'EFS'|null,
      *     SubnetIds?: list<string>|null,
      *     Tags?: array<string, string>|null,
-     *     Users: list<Shapes\User>,
+     *     Users?: list<Shapes\User>|null,
      *     DataReplicationMode?: 'NONE'|'CRDR'|null,
      *     DataReplicationPrimaryBrokerArn?: string|null
      * } $args

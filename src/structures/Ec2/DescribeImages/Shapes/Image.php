@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $ImageAllowed
  * @property string|null $SourceImageId
  * @property string|null $SourceImageRegion
+ * @property bool|null $FreeTierEligible
  * @property string|null $ImageId
  * @property string|null $ImageLocation
  * @property 'pending'|'available'|'invalid'|'deregistered'|'transient'|'failed'|'error'|'disabled'|null $State
@@ -70,6 +71,7 @@ class Image extends Shape
      *     ImageAllowed?: bool|null,
      *     SourceImageId?: string|null,
      *     SourceImageRegion?: string|null,
+     *     FreeTierEligible?: bool|null,
      *     ImageId?: string|null,
      *     ImageLocation?: string|null,
      *     State?: 'pending'|'available'|'invalid'|'deregistered'|'transient'|'failed'|'error'|'disabled'|null,

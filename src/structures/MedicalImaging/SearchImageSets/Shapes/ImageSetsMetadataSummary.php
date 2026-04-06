@@ -9,7 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $version
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property \Aws\Api\DateTimeResult|null $lastAccessedAt
+ * @property 'FREQUENT_ACCESS'|'ARCHIVE_INSTANT_ACCESS'|null $storageTier
  * @property DICOMTags|null $DICOMTags
+ * @property bool|null $isPrimary
  */
 class ImageSetsMetadataSummary extends Shape
 {
@@ -19,7 +22,10 @@ class ImageSetsMetadataSummary extends Shape
      *     version?: int|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     DICOMTags?: DICOMTags|null
+     *     lastAccessedAt?: \Aws\Api\DateTimeResult|null,
+     *     storageTier?: 'FREQUENT_ACCESS'|'ARCHIVE_INSTANT_ACCESS'|null,
+     *     DICOMTags?: DICOMTags|null,
+     *     isPrimary?: bool|null
      * } $args
      */
     public function __construct(array $args)

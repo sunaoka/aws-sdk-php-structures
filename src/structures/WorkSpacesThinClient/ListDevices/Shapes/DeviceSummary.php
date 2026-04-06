@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string|null $arn
+ * @property string|null $lastUserId
  */
 class DeviceSummary extends Shape
 {
@@ -39,7 +40,8 @@ class DeviceSummary extends Shape
      *     lastPostureAt?: \Aws\Api\DateTimeResult|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     arn?: string|null
+     *     arn?: string|null,
+     *     lastUserId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

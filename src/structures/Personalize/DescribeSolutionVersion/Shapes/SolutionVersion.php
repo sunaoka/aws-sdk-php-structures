@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $solutionArn
  * @property bool|null $performHPO
  * @property bool|null $performAutoML
+ * @property bool|null $performIncrementalUpdate
  * @property string|null $recipeArn
  * @property string|null $eventType
  * @property string|null $datasetGroupArn
@@ -32,6 +33,7 @@ class SolutionVersion extends Shape
      *     solutionArn?: string|null,
      *     performHPO?: bool|null,
      *     performAutoML?: bool|null,
+     *     performIncrementalUpdate?: bool|null,
      *     recipeArn?: string|null,
      *     eventType?: string|null,
      *     datasetGroupArn?: string|null,

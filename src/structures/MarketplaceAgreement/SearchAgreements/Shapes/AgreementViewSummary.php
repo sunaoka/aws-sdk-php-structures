@@ -5,28 +5,28 @@ namespace Sunaoka\Aws\Structures\MarketplaceAgreement\SearchAgreements\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult|null $acceptanceTime
- * @property Acceptor|null $acceptor
  * @property string|null $agreementId
- * @property string|null $agreementType
- * @property \Aws\Api\DateTimeResult|null $endTime
- * @property ProposalSummary|null $proposalSummary
- * @property Proposer|null $proposer
+ * @property \Aws\Api\DateTimeResult|null $acceptanceTime
  * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property string|null $agreementType
+ * @property Acceptor|null $acceptor
+ * @property Proposer|null $proposer
+ * @property ProposalSummary|null $proposalSummary
  * @property 'ACTIVE'|'ARCHIVED'|'CANCELLED'|'EXPIRED'|'RENEWED'|'REPLACED'|'ROLLED_BACK'|'SUPERSEDED'|'TERMINATED'|null $status
  */
 class AgreementViewSummary extends Shape
 {
     /**
      * @param array{
-     *     acceptanceTime?: \Aws\Api\DateTimeResult|null,
-     *     acceptor?: Acceptor|null,
      *     agreementId?: string|null,
-     *     agreementType?: string|null,
-     *     endTime?: \Aws\Api\DateTimeResult|null,
-     *     proposalSummary?: ProposalSummary|null,
-     *     proposer?: Proposer|null,
+     *     acceptanceTime?: \Aws\Api\DateTimeResult|null,
      *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
+     *     agreementType?: string|null,
+     *     acceptor?: Acceptor|null,
+     *     proposer?: Proposer|null,
+     *     proposalSummary?: ProposalSummary|null,
      *     status?: 'ACTIVE'|'ARCHIVED'|'CANCELLED'|'EXPIRED'|'RENEWED'|'REPLACED'|'ROLLED_BACK'|'SUPERSEDED'|'TERMINATED'|null
      * } $args
      */

@@ -21,6 +21,7 @@ class SyntheticsClient extends \Aws\Synthetics\SyntheticsClient
     use ListGroups\ListGroupsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use StartCanary\StartCanaryTrait;
+    use StartCanaryDryRun\StartCanaryDryRunTrait;
     use StopCanary\StopCanaryTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;

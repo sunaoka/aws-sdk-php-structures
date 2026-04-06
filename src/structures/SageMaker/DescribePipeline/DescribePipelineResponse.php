@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\UserContext|null $CreatedBy
  * @property Shapes\UserContext|null $LastModifiedBy
  * @property Shapes\ParallelismConfiguration|null $ParallelismConfiguration
+ * @property string|null $PipelineVersionDisplayName
+ * @property string|null $PipelineVersionDescription
  */
 class DescribePipelineResponse extends Response
 {

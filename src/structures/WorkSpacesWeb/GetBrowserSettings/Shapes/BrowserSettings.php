@@ -5,21 +5,23 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\GetBrowserSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string>|null $additionalEncryptionContext
+ * @property string $browserSettingsArn
  * @property list<string>|null $associatedPortalArns
  * @property string|null $browserPolicy
- * @property string $browserSettingsArn
  * @property string|null $customerManagedKey
+ * @property array<string, string>|null $additionalEncryptionContext
+ * @property WebContentFilteringPolicy|null $webContentFilteringPolicy
  */
 class BrowserSettings extends Shape
 {
     /**
      * @param array{
-     *     additionalEncryptionContext?: array<string, string>|null,
+     *     browserSettingsArn: string,
      *     associatedPortalArns?: list<string>|null,
      *     browserPolicy?: string|null,
-     *     browserSettingsArn: string,
-     *     customerManagedKey?: string|null
+     *     customerManagedKey?: string|null,
+     *     additionalEncryptionContext?: array<string, string>|null,
+     *     webContentFilteringPolicy?: WebContentFilteringPolicy|null
      * } $args
      */
     public function __construct(array $args)

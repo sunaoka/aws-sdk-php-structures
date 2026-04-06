@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterIdentifier
- * @property 'spectrum'|'concurrency-scaling'|'cross-region-datasharing' $FeatureType
+ * @property 'spectrum'|'concurrency-scaling'|'cross-region-datasharing'|'extra-compute-for-automatic-optimization' $FeatureType
  * @property 'time'|'data-scanned' $LimitType
  * @property int $Amount
  * @property 'daily'|'weekly'|'monthly'|null $Period
@@ -18,7 +18,7 @@ class CreateUsageLimitRequest extends Request
     /**
      * @param array{
      *     ClusterIdentifier: string,
-     *     FeatureType: 'spectrum'|'concurrency-scaling'|'cross-region-datasharing',
+     *     FeatureType: 'spectrum'|'concurrency-scaling'|'cross-region-datasharing'|'extra-compute-for-automatic-optimization',
      *     LimitType: 'time'|'data-scanned',
      *     Amount: int,
      *     Period?: 'daily'|'weekly'|'monthly'|null,

@@ -17,6 +17,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FirewallId
  * @property list<Tag>|null $Tags
  * @property EncryptionConfiguration|null $EncryptionConfiguration
+ * @property int|null $NumberOfAssociations
+ * @property list<'TLS_SNI'|'HTTP_HOST'>|null $EnabledAnalysisTypes
+ * @property string|null $TransitGatewayId
+ * @property string|null $TransitGatewayOwnerAccountId
+ * @property list<AvailabilityZoneMapping>|null $AvailabilityZoneMappings
+ * @property bool|null $AvailabilityZoneChangeProtection
  */
 class Firewall extends Shape
 {
@@ -33,7 +39,13 @@ class Firewall extends Shape
      *     Description?: string|null,
      *     FirewallId: string,
      *     Tags?: list<Tag>|null,
-     *     EncryptionConfiguration?: EncryptionConfiguration|null
+     *     EncryptionConfiguration?: EncryptionConfiguration|null,
+     *     NumberOfAssociations?: int|null,
+     *     EnabledAnalysisTypes?: list<'TLS_SNI'|'HTTP_HOST'>|null,
+     *     TransitGatewayId?: string|null,
+     *     TransitGatewayOwnerAccountId?: string|null,
+     *     AvailabilityZoneMappings?: list<AvailabilityZoneMapping>|null,
+     *     AvailabilityZoneChangeProtection?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,6 +10,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'NONE'|'LOW'|'MEDIUM'|'HIGH' $outputStrength
  * @property list<'TEXT'|'IMAGE'>|null $inputModalities
  * @property list<'TEXT'|'IMAGE'>|null $outputModalities
+ * @property 'BLOCK'|'NONE'|null $inputAction
+ * @property 'BLOCK'|'NONE'|null $outputAction
+ * @property bool|null $inputEnabled
+ * @property bool|null $outputEnabled
  */
 class GuardrailContentFilterConfig extends Shape
 {
@@ -19,7 +23,11 @@ class GuardrailContentFilterConfig extends Shape
      *     inputStrength: 'NONE'|'LOW'|'MEDIUM'|'HIGH',
      *     outputStrength: 'NONE'|'LOW'|'MEDIUM'|'HIGH',
      *     inputModalities?: list<'TEXT'|'IMAGE'>|null,
-     *     outputModalities?: list<'TEXT'|'IMAGE'>|null
+     *     outputModalities?: list<'TEXT'|'IMAGE'>|null,
+     *     inputAction?: 'BLOCK'|'NONE'|null,
+     *     outputAction?: 'BLOCK'|'NONE'|null,
+     *     inputEnabled?: bool|null,
+     *     outputEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

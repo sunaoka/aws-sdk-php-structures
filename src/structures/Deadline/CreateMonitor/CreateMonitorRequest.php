@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $identityCenterInstanceArn
  * @property string $subdomain
  * @property string $roleArn
+ * @property array<string, string>|null $tags
  */
 class CreateMonitorRequest extends Request
 {
@@ -19,7 +20,8 @@ class CreateMonitorRequest extends Request
      *     displayName: string,
      *     identityCenterInstanceArn: string,
      *     subdomain: string,
-     *     roleArn: string
+     *     roleArn: string,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

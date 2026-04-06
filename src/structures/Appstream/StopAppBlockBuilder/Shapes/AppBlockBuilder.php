@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ResourceError>|null $AppBlockBuilderErrors
  * @property AppBlockBuilderStateChangeReason|null $StateChangeReason
  * @property list<AccessEndpoint>|null $AccessEndpoints
+ * @property bool|null $DisableIMDSV1
  */
 class AppBlockBuilder extends Shape
 {
@@ -37,7 +38,8 @@ class AppBlockBuilder extends Shape
      *     CreatedTime?: \Aws\Api\DateTimeResult|null,
      *     AppBlockBuilderErrors?: list<ResourceError>|null,
      *     StateChangeReason?: AppBlockBuilderStateChangeReason|null,
-     *     AccessEndpoints?: list<AccessEndpoint>|null
+     *     AccessEndpoints?: list<AccessEndpoint>|null,
+     *     DisableIMDSV1?: bool|null
      * } $args
      */
     public function __construct(array $args)

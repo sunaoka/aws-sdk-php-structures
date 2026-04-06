@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $Identifier
  * @property string|null $Description
- * @property 'EBS_SNAPSHOT'|'EC2_IMAGE'|null $ResourceType
+ * @property 'EBS_SNAPSHOT'|'EC2_IMAGE'|'EBS_VOLUME'|null $ResourceType
  * @property Shapes\RetentionPeriod|null $RetentionPeriod
  * @property list<Shapes\ResourceTag>|null $ResourceTags
  * @property 'pending'|'available'|null $Status

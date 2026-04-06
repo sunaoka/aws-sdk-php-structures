@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $updateId
  * @property string|null $nodegroupName
  * @property string|null $addonName
+ * @property string|null $capabilityName
  */
 class DescribeUpdateRequest extends Request
 {
@@ -17,7 +18,8 @@ class DescribeUpdateRequest extends Request
      *     name: string,
      *     updateId: string,
      *     nodegroupName?: string|null,
-     *     addonName?: string|null
+     *     addonName?: string|null,
+     *     capabilityName?: string|null
      * } $args
      */
     public function __construct(array $args)

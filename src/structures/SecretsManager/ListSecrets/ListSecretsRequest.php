@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $NextToken
  * @property list<Shapes\Filter>|null $Filters
  * @property 'asc'|'desc'|null $SortOrder
+ * @property 'created-date'|'last-accessed-date'|'last-changed-date'|'name'|null $SortBy
  */
 class ListSecretsRequest extends Request
 {
@@ -19,7 +20,8 @@ class ListSecretsRequest extends Request
      *     MaxResults?: int<1, 100>|null,
      *     NextToken?: string|null,
      *     Filters?: list<Shapes\Filter>|null,
-     *     SortOrder?: 'asc'|'desc'|null
+     *     SortOrder?: 'asc'|'desc'|null,
+     *     SortBy?: 'created-date'|'last-accessed-date'|'last-changed-date'|'name'|null
      * } $args
      */
     public function __construct(array $args = [])

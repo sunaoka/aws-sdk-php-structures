@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AssociatedResource
  * @property string|null $VolumeOwnerId
  * @property OperatorResponse|null $Operator
+ * @property int|null $EbsCardIndex
  */
 class EbsInstanceBlockDevice extends Shape
 {
@@ -23,7 +24,8 @@ class EbsInstanceBlockDevice extends Shape
      *     VolumeId?: string|null,
      *     AssociatedResource?: string|null,
      *     VolumeOwnerId?: string|null,
-     *     Operator?: OperatorResponse|null
+     *     Operator?: OperatorResponse|null,
+     *     EbsCardIndex?: int|null
      * } $args
      */
     public function __construct(array $args = [])

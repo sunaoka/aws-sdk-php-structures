@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, max>|null $lastScanTime
  * @property int<0, max>|null $firstEventTime
  * @property int<0, max>|null $lastEventTime
+ * @property 'FACET'|'FIELD_INDEX'|null $type
  */
 class FieldIndex extends Shape
 {
@@ -19,7 +20,8 @@ class FieldIndex extends Shape
      *     fieldIndexName?: string|null,
      *     lastScanTime?: int<0, max>|null,
      *     firstEventTime?: int<0, max>|null,
-     *     lastEventTime?: int<0, max>|null
+     *     lastEventTime?: int<0, max>|null,
+     *     type?: 'FACET'|'FIELD_INDEX'|null
      * } $args
      */
     public function __construct(array $args = [])

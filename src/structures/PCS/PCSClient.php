@@ -20,6 +20,7 @@ class PCSClient extends \Aws\PCS\PCSClient
     use RegisterComputeNodeGroupInstance\RegisterComputeNodeGroupInstanceTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateCluster\UpdateClusterTrait;
     use UpdateComputeNodeGroup\UpdateComputeNodeGroupTrait;
     use UpdateQueue\UpdateQueueTrait;
 }

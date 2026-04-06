@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Braket\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $message
- * @property string $position
  * @property 'QUANTUM_TASKS_QUEUE'|'JOBS_QUEUE' $queue
+ * @property string $position
+ * @property string|null $message
  */
 class HybridJobQueueInfo extends Shape
 {
     /**
      * @param array{
-     *     message?: string|null,
+     *     queue: 'QUANTUM_TASKS_QUEUE'|'JOBS_QUEUE',
      *     position: string,
-     *     queue: 'QUANTUM_TASKS_QUEUE'|'JOBS_QUEUE'
+     *     message?: string|null
      * } $args
      */
     public function __construct(array $args)

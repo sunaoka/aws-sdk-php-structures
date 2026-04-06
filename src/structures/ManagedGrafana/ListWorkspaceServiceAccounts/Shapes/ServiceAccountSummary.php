@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\ListWorkspaceServiceAccounts\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ADMIN'|'EDITOR'|'VIEWER' $grafanaRole
  * @property string $id
- * @property string $isDisabled
  * @property string $name
+ * @property string $isDisabled
+ * @property 'ADMIN'|'EDITOR'|'VIEWER' $grafanaRole
  */
 class ServiceAccountSummary extends Shape
 {
     /**
      * @param array{
-     *     grafanaRole: 'ADMIN'|'EDITOR'|'VIEWER',
      *     id: string,
+     *     name: string,
      *     isDisabled: string,
-     *     name: string
+     *     grafanaRole: 'ADMIN'|'EDITOR'|'VIEWER'
      * } $args
      */
     public function __construct(array $args)

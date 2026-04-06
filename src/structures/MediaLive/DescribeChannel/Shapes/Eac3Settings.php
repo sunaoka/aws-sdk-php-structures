@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'COMMENTARY'|'COMPLETE_MAIN'|'EMERGENCY'|'HEARING_IMPAIRED'|'VISUALLY_IMPAIRED'|null $BitstreamMode
  * @property 'CODING_MODE_1_0'|'CODING_MODE_2_0'|'CODING_MODE_3_2'|null $CodingMode
  * @property 'DISABLED'|'ENABLED'|null $DcFilter
- * @property int<1, 31>|null $Dialnorm
+ * @property int|null $Dialnorm
  * @property 'FILM_LIGHT'|'FILM_STANDARD'|'MUSIC_LIGHT'|'MUSIC_STANDARD'|'NONE'|'SPEECH'|null $DrcLine
  * @property 'FILM_LIGHT'|'FILM_STANDARD'|'MUSIC_LIGHT'|'MUSIC_STANDARD'|'NONE'|'SPEECH'|null $DrcRf
  * @property 'LFE'|'NO_LFE'|null $LfeControl
@@ -35,7 +35,7 @@ class Eac3Settings extends Shape
      *     BitstreamMode?: 'COMMENTARY'|'COMPLETE_MAIN'|'EMERGENCY'|'HEARING_IMPAIRED'|'VISUALLY_IMPAIRED'|null,
      *     CodingMode?: 'CODING_MODE_1_0'|'CODING_MODE_2_0'|'CODING_MODE_3_2'|null,
      *     DcFilter?: 'DISABLED'|'ENABLED'|null,
-     *     Dialnorm?: int<1, 31>|null,
+     *     Dialnorm?: int|null,
      *     DrcLine?: 'FILM_LIGHT'|'FILM_STANDARD'|'MUSIC_LIGHT'|'MUSIC_STANDARD'|'NONE'|'SPEECH'|null,
      *     DrcRf?: 'FILM_LIGHT'|'FILM_STANDARD'|'MUSIC_LIGHT'|'MUSIC_STANDARD'|'NONE'|'SPEECH'|null,
      *     LfeControl?: 'LFE'|'NO_LFE'|null,

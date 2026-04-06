@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $CreateTime
  * @property list<Shapes\IntegrationError>|null $Errors
  * @property string|null $DataFilter
+ * @property Shapes\IntegrationConfig|null $IntegrationConfig
  */
 class ModifyIntegrationResponse extends Response
 {

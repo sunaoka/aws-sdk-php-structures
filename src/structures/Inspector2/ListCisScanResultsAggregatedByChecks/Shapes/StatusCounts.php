@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int|null $failed
- * @property int|null $passed
  * @property int|null $skipped
+ * @property int|null $passed
  */
 class StatusCounts extends Shape
 {
     /**
      * @param array{
      *     failed?: int|null,
-     *     passed?: int|null,
-     *     skipped?: int|null
+     *     skipped?: int|null,
+     *     passed?: int|null
      * } $args
      */
     public function __construct(array $args = [])

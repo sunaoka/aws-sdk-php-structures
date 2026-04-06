@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $modelArn
- * @property 'MULTIMODAL'|null $parsingModality
  * @property ParsingPrompt|null $parsingPrompt
+ * @property 'MULTIMODAL'|null $parsingModality
  */
 class BedrockFoundationModelConfiguration extends Shape
 {
     /**
      * @param array{
      *     modelArn: string,
-     *     parsingModality?: 'MULTIMODAL'|null,
-     *     parsingPrompt?: ParsingPrompt|null
+     *     parsingPrompt?: ParsingPrompt|null,
+     *     parsingModality?: 'MULTIMODAL'|null
      * } $args
      */
     public function __construct(array $args)

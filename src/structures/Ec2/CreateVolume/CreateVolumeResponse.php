@@ -5,7 +5,9 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateVolume;
 use Sunaoka\Aws\Structures\Response;
 
 /**
+ * @property string|null $AvailabilityZoneId
  * @property string|null $OutpostArn
+ * @property string|null $SourceVolumeId
  * @property int|null $Iops
  * @property list<Shapes\Tag>|null $Tags
  * @property 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null $VolumeType
@@ -14,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $Throughput
  * @property 'sse-ebs'|'sse-kms'|'none'|null $SseType
  * @property Shapes\OperatorResponse|null $Operator
+ * @property int|null $VolumeInitializationRate
  * @property string|null $VolumeId
  * @property int|null $Size
  * @property string|null $SnapshotId

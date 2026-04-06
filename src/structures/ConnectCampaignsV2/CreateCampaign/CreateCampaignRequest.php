@@ -7,7 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $name
  * @property string $connectInstanceId
- * @property Shapes\ChannelSubtypeConfig $channelSubtypeConfig
+ * @property Shapes\ChannelSubtypeConfig|null $channelSubtypeConfig
+ * @property 'MANAGED'|'JOURNEY'|null $type
  * @property Shapes\Source|null $source
  * @property string|null $connectCampaignFlowArn
  * @property Shapes\Schedule|null $schedule
@@ -21,7 +22,8 @@ class CreateCampaignRequest extends Request
      * @param array{
      *     name: string,
      *     connectInstanceId: string,
-     *     channelSubtypeConfig: Shapes\ChannelSubtypeConfig,
+     *     channelSubtypeConfig?: Shapes\ChannelSubtypeConfig|null,
+     *     type?: 'MANAGED'|'JOURNEY'|null,
      *     source?: Shapes\Source|null,
      *     connectCampaignFlowArn?: string|null,
      *     schedule?: Shapes\Schedule|null,

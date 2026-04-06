@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\GetFindingV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property InternalAccessDetails|null $internalAccessDetails
  * @property ExternalAccessDetails|null $externalAccessDetails
  * @property UnusedPermissionDetails|null $unusedPermissionDetails
  * @property UnusedIamUserAccessKeyDetails|null $unusedIamUserAccessKeyDetails
@@ -15,6 +16,7 @@ class FindingDetails extends Shape
 {
     /**
      * @param array{
+     *     internalAccessDetails?: InternalAccessDetails|null,
      *     externalAccessDetails?: ExternalAccessDetails|null,
      *     unusedPermissionDetails?: UnusedPermissionDetails|null,
      *     unusedIamUserAccessKeyDetails?: UnusedIamUserAccessKeyDetails|null,

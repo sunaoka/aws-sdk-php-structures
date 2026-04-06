@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ResourceId
  * @property string|null $ResourceName
  * @property string|null $ResourceCidr
- * @property 'vpc'|'subnet'|'eip'|'public-ipv4-pool'|'ipv6-pool'|'eni'|null $ResourceType
+ * @property 'vpc'|'subnet'|'eip'|'public-ipv4-pool'|'ipv6-pool'|'eni'|'anycast-ip-list'|null $ResourceType
  * @property list<IpamResourceTag>|null $ResourceTags
  * @property double|null $IpUsage
  * @property 'compliant'|'noncompliant'|'unmanaged'|'ignored'|null $ComplianceStatus
@@ -34,7 +34,7 @@ class IpamResourceCidr extends Shape
      *     ResourceId?: string|null,
      *     ResourceName?: string|null,
      *     ResourceCidr?: string|null,
-     *     ResourceType?: 'vpc'|'subnet'|'eip'|'public-ipv4-pool'|'ipv6-pool'|'eni'|null,
+     *     ResourceType?: 'vpc'|'subnet'|'eip'|'public-ipv4-pool'|'ipv6-pool'|'eni'|'anycast-ip-list'|null,
      *     ResourceTags?: list<IpamResourceTag>|null,
      *     IpUsage?: double|null,
      *     ComplianceStatus?: 'compliant'|'noncompliant'|'unmanaged'|'ignored'|null,

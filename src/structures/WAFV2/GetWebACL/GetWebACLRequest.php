@@ -5,20 +5,22 @@ namespace Sunaoka\Aws\Structures\WAFV2\GetWebACL;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Name
- * @property 'CLOUDFRONT'|'REGIONAL' $Scope
- * @property string $Id
+ * @property string|null $Name
+ * @property 'CLOUDFRONT'|'REGIONAL'|null $Scope
+ * @property string|null $Id
+ * @property string|null $ARN
  */
 class GetWebACLRequest extends Request
 {
     /**
      * @param array{
-     *     Name: string,
-     *     Scope: 'CLOUDFRONT'|'REGIONAL',
-     *     Id: string
+     *     Name?: string|null,
+     *     Scope?: 'CLOUDFRONT'|'REGIONAL'|null,
+     *     Id?: string|null,
+     *     ARN?: string|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

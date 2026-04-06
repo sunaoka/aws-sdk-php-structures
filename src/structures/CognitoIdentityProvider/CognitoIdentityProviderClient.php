@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider;
 class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\CognitoIdentityProviderClient
 {
     use AddCustomAttributes\AddCustomAttributesTrait;
+    use AddUserPoolClientSecret\AddUserPoolClientSecretTrait;
     use AdminAddUserToGroup\AdminAddUserToGroupTrait;
     use AdminConfirmSignUp\AdminConfirmSignUpTrait;
     use AdminCreateUser\AdminCreateUserTrait;
@@ -41,6 +42,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use CreateIdentityProvider\CreateIdentityProviderTrait;
     use CreateManagedLoginBranding\CreateManagedLoginBrandingTrait;
     use CreateResourceServer\CreateResourceServerTrait;
+    use CreateTerms\CreateTermsTrait;
     use CreateUserImportJob\CreateUserImportJobTrait;
     use CreateUserPool\CreateUserPoolTrait;
     use CreateUserPoolClient\CreateUserPoolClientTrait;
@@ -49,10 +51,12 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use DeleteIdentityProvider\DeleteIdentityProviderTrait;
     use DeleteManagedLoginBranding\DeleteManagedLoginBrandingTrait;
     use DeleteResourceServer\DeleteResourceServerTrait;
+    use DeleteTerms\DeleteTermsTrait;
     use DeleteUser\DeleteUserTrait;
     use DeleteUserAttributes\DeleteUserAttributesTrait;
     use DeleteUserPool\DeleteUserPoolTrait;
     use DeleteUserPoolClient\DeleteUserPoolClientTrait;
+    use DeleteUserPoolClientSecret\DeleteUserPoolClientSecretTrait;
     use DeleteUserPoolDomain\DeleteUserPoolDomainTrait;
     use DeleteWebAuthnCredential\DeleteWebAuthnCredentialTrait;
     use DescribeIdentityProvider\DescribeIdentityProviderTrait;
@@ -60,6 +64,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use DescribeManagedLoginBrandingByClient\DescribeManagedLoginBrandingByClientTrait;
     use DescribeResourceServer\DescribeResourceServerTrait;
     use DescribeRiskConfiguration\DescribeRiskConfigurationTrait;
+    use DescribeTerms\DescribeTermsTrait;
     use DescribeUserImportJob\DescribeUserImportJobTrait;
     use DescribeUserPool\DescribeUserPoolTrait;
     use DescribeUserPoolClient\DescribeUserPoolClientTrait;
@@ -72,6 +77,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use GetIdentityProviderByIdentifier\GetIdentityProviderByIdentifierTrait;
     use GetLogDeliveryConfiguration\GetLogDeliveryConfigurationTrait;
     use GetSigningCertificate\GetSigningCertificateTrait;
+    use GetTokensFromRefreshToken\GetTokensFromRefreshTokenTrait;
     use GetUICustomization\GetUICustomizationTrait;
     use GetUser\GetUserTrait;
     use GetUserAttributeVerificationCode\GetUserAttributeVerificationCodeTrait;
@@ -84,7 +90,9 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use ListIdentityProviders\ListIdentityProvidersTrait;
     use ListResourceServers\ListResourceServersTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use ListTerms\ListTermsTrait;
     use ListUserImportJobs\ListUserImportJobsTrait;
+    use ListUserPoolClientSecrets\ListUserPoolClientSecretsTrait;
     use ListUserPoolClients\ListUserPoolClientsTrait;
     use ListUserPools\ListUserPoolsTrait;
     use ListUsers\ListUsersTrait;
@@ -111,6 +119,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use UpdateIdentityProvider\UpdateIdentityProviderTrait;
     use UpdateManagedLoginBranding\UpdateManagedLoginBrandingTrait;
     use UpdateResourceServer\UpdateResourceServerTrait;
+    use UpdateTerms\UpdateTermsTrait;
     use UpdateUserAttributes\UpdateUserAttributesTrait;
     use UpdateUserPool\UpdateUserPoolTrait;
     use UpdateUserPoolClient\UpdateUserPoolClientTrait;

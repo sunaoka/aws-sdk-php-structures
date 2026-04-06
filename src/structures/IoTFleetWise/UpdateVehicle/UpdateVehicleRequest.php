@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Overwrite'|'Merge'|null $attributeUpdateMode
  * @property list<Shapes\StateTemplateAssociation>|null $stateTemplatesToAdd
  * @property list<string>|null $stateTemplatesToRemove
+ * @property list<Shapes\StateTemplateAssociation>|null $stateTemplatesToUpdate
  */
 class UpdateVehicleRequest extends Request
 {
@@ -23,7 +24,8 @@ class UpdateVehicleRequest extends Request
      *     attributes?: array<string, string>|null,
      *     attributeUpdateMode?: 'Overwrite'|'Merge'|null,
      *     stateTemplatesToAdd?: list<Shapes\StateTemplateAssociation>|null,
-     *     stateTemplatesToRemove?: list<string>|null
+     *     stateTemplatesToRemove?: list<string>|null,
+     *     stateTemplatesToUpdate?: list<Shapes\StateTemplateAssociation>|null
      * } $args
      */
     public function __construct(array $args)

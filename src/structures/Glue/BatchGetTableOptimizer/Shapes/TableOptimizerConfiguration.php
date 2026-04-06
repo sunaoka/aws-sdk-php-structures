@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $roleArn
  * @property bool|null $enabled
  * @property TableOptimizerVpcConfiguration|null $vpcConfiguration
+ * @property CompactionConfiguration|null $compactionConfiguration
  * @property RetentionConfiguration|null $retentionConfiguration
  * @property OrphanFileDeletionConfiguration|null $orphanFileDeletionConfiguration
  */
@@ -18,6 +19,7 @@ class TableOptimizerConfiguration extends Shape
      *     roleArn?: string|null,
      *     enabled?: bool|null,
      *     vpcConfiguration?: TableOptimizerVpcConfiguration|null,
+     *     compactionConfiguration?: CompactionConfiguration|null,
      *     retentionConfiguration?: RetentionConfiguration|null,
      *     orphanFileDeletionConfiguration?: OrphanFileDeletionConfiguration|null
      * } $args

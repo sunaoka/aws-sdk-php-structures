@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MailManager\ListTrafficPolicies\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ALLOW'|'DENY' $DefaultAction
- * @property string $TrafficPolicyId
  * @property string $TrafficPolicyName
+ * @property string $TrafficPolicyId
+ * @property 'ALLOW'|'DENY' $DefaultAction
  */
 class TrafficPolicy extends Shape
 {
     /**
      * @param array{
-     *     DefaultAction: 'ALLOW'|'DENY',
+     *     TrafficPolicyName: string,
      *     TrafficPolicyId: string,
-     *     TrafficPolicyName: string
+     *     DefaultAction: 'ALLOW'|'DENY'
      * } $args
      */
     public function __construct(array $args)

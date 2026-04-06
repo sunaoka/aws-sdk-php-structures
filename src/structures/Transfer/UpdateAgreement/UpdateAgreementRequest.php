@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $AccessRole
  * @property 'ENABLED'|'DISABLED'|null $PreserveFilename
  * @property 'ENABLED'|'DISABLED'|null $EnforceMessageSigning
+ * @property Shapes\CustomDirectoriesType|null $CustomDirectories
  */
 class UpdateAgreementRequest extends Request
 {
@@ -29,7 +30,8 @@ class UpdateAgreementRequest extends Request
      *     BaseDirectory?: string|null,
      *     AccessRole?: string|null,
      *     PreserveFilename?: 'ENABLED'|'DISABLED'|null,
-     *     EnforceMessageSigning?: 'ENABLED'|'DISABLED'|null
+     *     EnforceMessageSigning?: 'ENABLED'|'DISABLED'|null,
+     *     CustomDirectories?: Shapes\CustomDirectoriesType|null
      * } $args
      */
     public function __construct(array $args)

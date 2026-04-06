@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ProductionVariantServerlessConfig|null $DesiredServerlessConfig
  * @property ProductionVariantManagedInstanceScaling|null $ManagedInstanceScaling
  * @property ProductionVariantRoutingConfig|null $RoutingConfig
+ * @property ProductionVariantCapacityReservationSummary|null $CapacityReservationConfig
  */
 class ProductionVariantSummary extends Shape
 {
@@ -31,7 +32,8 @@ class ProductionVariantSummary extends Shape
      *     CurrentServerlessConfig?: ProductionVariantServerlessConfig|null,
      *     DesiredServerlessConfig?: ProductionVariantServerlessConfig|null,
      *     ManagedInstanceScaling?: ProductionVariantManagedInstanceScaling|null,
-     *     RoutingConfig?: ProductionVariantRoutingConfig|null
+     *     RoutingConfig?: ProductionVariantRoutingConfig|null,
+     *     CapacityReservationConfig?: ProductionVariantCapacityReservationSummary|null
      * } $args
      */
     public function __construct(array $args)

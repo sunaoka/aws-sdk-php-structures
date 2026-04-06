@@ -4,7 +4,6 @@ namespace Sunaoka\Aws\Structures\DataSync;
 
 class DataSyncClient extends \Aws\DataSync\DataSyncClient
 {
-    use AddStorageSystem\AddStorageSystemTrait;
     use CancelTaskExecution\CancelTaskExecutionTrait;
     use CreateAgent\CreateAgentTrait;
     use CreateLocationAzureBlob\CreateLocationAzureBlobTrait;
@@ -23,7 +22,6 @@ class DataSyncClient extends \Aws\DataSync\DataSyncClient
     use DeleteLocation\DeleteLocationTrait;
     use DeleteTask\DeleteTaskTrait;
     use DescribeAgent\DescribeAgentTrait;
-    use DescribeDiscoveryJob\DescribeDiscoveryJobTrait;
     use DescribeLocationAzureBlob\DescribeLocationAzureBlobTrait;
     use DescribeLocationEfs\DescribeLocationEfsTrait;
     use DescribeLocationFsxLustre\DescribeLocationFsxLustreTrait;
@@ -35,27 +33,17 @@ class DataSyncClient extends \Aws\DataSync\DataSyncClient
     use DescribeLocationObjectStorage\DescribeLocationObjectStorageTrait;
     use DescribeLocationS3\DescribeLocationS3Trait;
     use DescribeLocationSmb\DescribeLocationSmbTrait;
-    use DescribeStorageSystem\DescribeStorageSystemTrait;
-    use DescribeStorageSystemResourceMetrics\DescribeStorageSystemResourceMetricsTrait;
-    use DescribeStorageSystemResources\DescribeStorageSystemResourcesTrait;
     use DescribeTask\DescribeTaskTrait;
     use DescribeTaskExecution\DescribeTaskExecutionTrait;
-    use GenerateRecommendations\GenerateRecommendationsTrait;
     use ListAgents\ListAgentsTrait;
-    use ListDiscoveryJobs\ListDiscoveryJobsTrait;
     use ListLocations\ListLocationsTrait;
-    use ListStorageSystems\ListStorageSystemsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTaskExecutions\ListTaskExecutionsTrait;
     use ListTasks\ListTasksTrait;
-    use RemoveStorageSystem\RemoveStorageSystemTrait;
-    use StartDiscoveryJob\StartDiscoveryJobTrait;
     use StartTaskExecution\StartTaskExecutionTrait;
-    use StopDiscoveryJob\StopDiscoveryJobTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAgent\UpdateAgentTrait;
-    use UpdateDiscoveryJob\UpdateDiscoveryJobTrait;
     use UpdateLocationAzureBlob\UpdateLocationAzureBlobTrait;
     use UpdateLocationEfs\UpdateLocationEfsTrait;
     use UpdateLocationFsxLustre\UpdateLocationFsxLustreTrait;
@@ -67,7 +55,6 @@ class DataSyncClient extends \Aws\DataSync\DataSyncClient
     use UpdateLocationObjectStorage\UpdateLocationObjectStorageTrait;
     use UpdateLocationS3\UpdateLocationS3Trait;
     use UpdateLocationSmb\UpdateLocationSmbTrait;
-    use UpdateStorageSystem\UpdateStorageSystemTrait;
     use UpdateTask\UpdateTaskTrait;
     use UpdateTaskExecution\UpdateTaskExecutionTrait;
 }

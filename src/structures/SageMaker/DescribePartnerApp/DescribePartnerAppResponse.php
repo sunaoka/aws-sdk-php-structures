@@ -10,7 +10,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'lakera-guard'|'comet'|'deepchecks-llm-evaluation'|'fiddler'|null $Type
  * @property 'Creating'|'Updating'|'Deleting'|'Available'|'Failed'|'UpdateFailed'|'Deleted'|null $Status
  * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property string|null $ExecutionRoleArn
+ * @property string|null $KmsKeyId
  * @property string|null $BaseUrl
  * @property Shapes\PartnerAppMaintenanceConfig|null $MaintenanceConfig
  * @property string|null $Tier
@@ -19,6 +21,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'IAM'|null $AuthType
  * @property bool|null $EnableIamSessionBasedIdentity
  * @property Shapes\ErrorInfo|null $Error
+ * @property bool|null $EnableAutoMinorVersionUpgrade
+ * @property \Aws\Api\DateTimeResult|null $CurrentVersionEolDate
+ * @property Shapes\AvailableUpgrade|null $AvailableUpgrade
  */
 class DescribePartnerAppResponse extends Response
 {

@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $OutpostArn
  * @property string|null $OwnerId
  * @property string|null $PrivateDnsName
+ * @property string|null $PublicDnsName
+ * @property PublicIpDnsNameOptions|null $PublicIpDnsNameOptions
  * @property string|null $PrivateIpAddress
  * @property list<NetworkInterfacePrivateIpAddress>|null $PrivateIpAddresses
  * @property list<Ipv4PrefixSpecification>|null $Ipv4Prefixes
@@ -33,6 +35,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $Ipv6Native
  * @property string|null $Ipv6Address
  * @property OperatorResponse|null $Operator
+ * @property list<string>|null $AssociatedSubnets
+ * @property string|null $AvailabilityZoneId
  */
 class NetworkInterface extends Shape
 {
@@ -51,6 +55,8 @@ class NetworkInterface extends Shape
      *     OutpostArn?: string|null,
      *     OwnerId?: string|null,
      *     PrivateDnsName?: string|null,
+     *     PublicDnsName?: string|null,
+     *     PublicIpDnsNameOptions?: PublicIpDnsNameOptions|null,
      *     PrivateIpAddress?: string|null,
      *     PrivateIpAddresses?: list<NetworkInterfacePrivateIpAddress>|null,
      *     Ipv4Prefixes?: list<Ipv4PrefixSpecification>|null,
@@ -65,7 +71,9 @@ class NetworkInterface extends Shape
      *     DenyAllIgwTraffic?: bool|null,
      *     Ipv6Native?: bool|null,
      *     Ipv6Address?: string|null,
-     *     Operator?: OperatorResponse|null
+     *     Operator?: OperatorResponse|null,
+     *     AssociatedSubnets?: list<string>|null,
+     *     AvailabilityZoneId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<StringFilter>|null $repositories
- * @property 'CRITICAL'|'HIGH'|'ALL'|'AFFECTED_IMAGES'|null $sortBy
  * @property 'ASC'|'DESC'|null $sortOrder
+ * @property 'CRITICAL'|'HIGH'|'ALL'|'AFFECTED_IMAGES'|null $sortBy
  */
 class RepositoryAggregation extends Shape
 {
     /**
      * @param array{
      *     repositories?: list<StringFilter>|null,
-     *     sortBy?: 'CRITICAL'|'HIGH'|'ALL'|'AFFECTED_IMAGES'|null,
-     *     sortOrder?: 'ASC'|'DESC'|null
+     *     sortOrder?: 'ASC'|'DESC'|null,
+     *     sortBy?: 'CRITICAL'|'HIGH'|'ALL'|'AFFECTED_IMAGES'|null
      * } $args
      */
     public function __construct(array $args = [])

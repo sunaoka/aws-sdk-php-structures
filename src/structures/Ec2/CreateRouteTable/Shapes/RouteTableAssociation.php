@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $RouteTableId
  * @property string|null $SubnetId
  * @property string|null $GatewayId
+ * @property string|null $PublicIpv4Pool
  * @property RouteTableAssociationState|null $AssociationState
  */
 class RouteTableAssociation extends Shape
@@ -21,6 +22,7 @@ class RouteTableAssociation extends Shape
      *     RouteTableId?: string|null,
      *     SubnetId?: string|null,
      *     GatewayId?: string|null,
+     *     PublicIpv4Pool?: string|null,
      *     AssociationState?: RouteTableAssociationState|null
      * } $args
      */

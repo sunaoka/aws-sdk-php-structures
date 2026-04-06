@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'UNAVAILABLE'|'AVAILABLE'|'EXECUTE_IN_PROGRESS'|'EXECUTE_COMPLETE'|'EXECUTE_FAILED'|'OBSOLETE'|null $ExecutionStatus
  * @property 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_COMPLETE'|'DELETE_PENDING'|'DELETE_IN_PROGRESS'|'DELETE_COMPLETE'|'DELETE_FAILED'|'FAILED'|null $Status
  * @property string|null $StatusReason
+ * @property 'DRIFTED'|'IN_SYNC'|'UNKNOWN'|'NOT_CHECKED'|null $StackDriftStatus
  * @property list<string>|null $NotificationARNs
  * @property Shapes\RollbackConfiguration|null $RollbackConfiguration
  * @property list<'CAPABILITY_IAM'|'CAPABILITY_NAMED_IAM'|'CAPABILITY_AUTO_EXPAND'>|null $Capabilities
@@ -26,6 +27,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $RootChangeSetId
  * @property 'DO_NOTHING'|'ROLLBACK'|'DELETE'|null $OnStackFailure
  * @property bool|null $ImportExistingResources
+ * @property 'REVERT_DRIFT'|null $DeploymentMode
  */
 class DescribeChangeSetResponse extends Response
 {

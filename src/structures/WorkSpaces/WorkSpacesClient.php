@@ -41,6 +41,7 @@ class WorkSpacesClient extends \Aws\WorkSpaces\WorkSpacesClient
     use DescribeConnectClientAddIns\DescribeConnectClientAddInsTrait;
     use DescribeConnectionAliasPermissions\DescribeConnectionAliasPermissionsTrait;
     use DescribeConnectionAliases\DescribeConnectionAliasesTrait;
+    use DescribeCustomWorkspaceImageImport\DescribeCustomWorkspaceImageImportTrait;
     use DescribeImageAssociations\DescribeImageAssociationsTrait;
     use DescribeIpGroups\DescribeIpGroupsTrait;
     use DescribeTags\DescribeTagsTrait;
@@ -59,6 +60,7 @@ class WorkSpacesClient extends \Aws\WorkSpaces\WorkSpacesClient
     use DisassociateWorkspaceApplication\DisassociateWorkspaceApplicationTrait;
     use GetAccountLink\GetAccountLinkTrait;
     use ImportClientBranding\ImportClientBrandingTrait;
+    use ImportCustomWorkspaceImage\ImportCustomWorkspaceImageTrait;
     use ImportWorkspaceImage\ImportWorkspaceImageTrait;
     use ListAccountLinks\ListAccountLinksTrait;
     use ListAvailableManagementCidrRanges\ListAvailableManagementCidrRangesTrait;
@@ -66,6 +68,7 @@ class WorkSpacesClient extends \Aws\WorkSpaces\WorkSpacesClient
     use ModifyAccount\ModifyAccountTrait;
     use ModifyCertificateBasedAuthProperties\ModifyCertificateBasedAuthPropertiesTrait;
     use ModifyClientProperties\ModifyClientPropertiesTrait;
+    use ModifyEndpointEncryptionMode\ModifyEndpointEncryptionModeTrait;
     use ModifySamlProperties\ModifySamlPropertiesTrait;
     use ModifySelfservicePermissions\ModifySelfservicePermissionsTrait;
     use ModifyStreamingProperties\ModifyStreamingPropertiesTrait;

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property ResourceTargetDefinition|null $Target
  * @property 'Static'|'Dynamic'|null $Evaluation
- * @property 'ResourceReference'|'ParameterReference'|'ResourceAttribute'|'DirectModification'|'Automatic'|null $ChangeSource
+ * @property 'ResourceReference'|'ParameterReference'|'ResourceAttribute'|'DirectModification'|'Automatic'|'NoModification'|null $ChangeSource
  * @property string|null $CausingEntity
  */
 class ResourceChangeDetail extends Shape
@@ -16,7 +16,7 @@ class ResourceChangeDetail extends Shape
      * @param array{
      *     Target?: ResourceTargetDefinition|null,
      *     Evaluation?: 'Static'|'Dynamic'|null,
-     *     ChangeSource?: 'ResourceReference'|'ParameterReference'|'ResourceAttribute'|'DirectModification'|'Automatic'|null,
+     *     ChangeSource?: 'ResourceReference'|'ParameterReference'|'ResourceAttribute'|'DirectModification'|'Automatic'|'NoModification'|null,
      *     CausingEntity?: string|null
      * } $args
      */

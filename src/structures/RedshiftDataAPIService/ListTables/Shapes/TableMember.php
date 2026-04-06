@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $name
- * @property string|null $schema
  * @property string|null $type
+ * @property string|null $schema
  */
 class TableMember extends Shape
 {
     /**
      * @param array{
      *     name?: string|null,
-     *     schema?: string|null,
-     *     type?: string|null
+     *     type?: string|null,
+     *     schema?: string|null
      * } $args
      */
     public function __construct(array $args = [])

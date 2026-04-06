@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property Range|null $Range
- * @property int<1, 100>|null $ObjectCount
+ * @property int<1, max>|null $ObjectCount
  * @property Threshold|null $Threshold
  */
 class Conditions extends Shape
@@ -14,7 +14,7 @@ class Conditions extends Shape
     /**
      * @param array{
      *     Range?: Range|null,
-     *     ObjectCount?: int<1, 100>|null,
+     *     ObjectCount?: int<1, max>|null,
      *     Threshold?: Threshold|null
      * } $args
      */

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\DomainStats|null $Stats
  * @property Shapes\MatchingResponse|null $Matching
  * @property Shapes\RuleBasedMatchingResponse|null $RuleBasedMatching
+ * @property Shapes\DataStoreResponse|null $DataStore
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property \Aws\Api\DateTimeResult $LastUpdatedAt
  * @property array<string, string>|null $Tags

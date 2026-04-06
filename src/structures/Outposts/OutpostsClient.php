@@ -16,6 +16,7 @@ class OutpostsClient extends \Aws\Outposts\OutpostsClient
     use GetConnection\GetConnectionTrait;
     use GetOrder\GetOrderTrait;
     use GetOutpost\GetOutpostTrait;
+    use GetOutpostBillingInformation\GetOutpostBillingInformationTrait;
     use GetOutpostInstanceTypes\GetOutpostInstanceTypesTrait;
     use GetOutpostSupportedInstanceTypes\GetOutpostSupportedInstanceTypesTrait;
     use GetSite\GetSiteTrait;
@@ -31,6 +32,7 @@ class OutpostsClient extends \Aws\Outposts\OutpostsClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use StartCapacityTask\StartCapacityTaskTrait;
     use StartConnection\StartConnectionTrait;
+    use StartOutpostDecommission\StartOutpostDecommissionTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateOutpost\UpdateOutpostTrait;

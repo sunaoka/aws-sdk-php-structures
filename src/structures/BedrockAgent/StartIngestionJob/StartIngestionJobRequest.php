@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\StartIngestionJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string $dataSourceId
- * @property string|null $description
  * @property string $knowledgeBaseId
+ * @property string $dataSourceId
+ * @property string|null $clientToken
+ * @property string|null $description
  */
 class StartIngestionJobRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
+     *     knowledgeBaseId: string,
      *     dataSourceId: string,
-     *     description?: string|null,
-     *     knowledgeBaseId: string
+     *     clientToken?: string|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

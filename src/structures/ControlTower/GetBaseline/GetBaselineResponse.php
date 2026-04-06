@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $arn
- * @property string|null $description
  * @property string $name
+ * @property string|null $description
  */
 class GetBaselineResponse extends Response
 {

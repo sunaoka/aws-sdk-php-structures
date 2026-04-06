@@ -6,7 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $RegionName
- * @property 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|null $ReplicaStatus
+ * @property 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|'ARCHIVING'|'ARCHIVED'|'REPLICATION_NOT_AUTHORIZED'|null $ReplicaStatus
+ * @property string|null $ReplicaArn
  * @property string|null $ReplicaStatusDescription
  * @property string|null $ReplicaStatusPercentProgress
  * @property string|null $KMSMasterKeyId
@@ -16,13 +17,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ReplicaGlobalSecondaryIndexDescription>|null $GlobalSecondaryIndexes
  * @property \Aws\Api\DateTimeResult|null $ReplicaInaccessibleDateTime
  * @property TableClassSummary|null $ReplicaTableClassSummary
+ * @property 'ENABLED'|'DISABLED'|'ENABLED_WITH_OVERRIDES'|null $GlobalTableSettingsReplicationMode
  */
 class ReplicaDescription extends Shape
 {
     /**
      * @param array{
      *     RegionName?: string|null,
-     *     ReplicaStatus?: 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|null,
+     *     ReplicaStatus?: 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|'ARCHIVING'|'ARCHIVED'|'REPLICATION_NOT_AUTHORIZED'|null,
+     *     ReplicaArn?: string|null,
      *     ReplicaStatusDescription?: string|null,
      *     ReplicaStatusPercentProgress?: string|null,
      *     KMSMasterKeyId?: string|null,
@@ -31,7 +34,8 @@ class ReplicaDescription extends Shape
      *     WarmThroughput?: TableWarmThroughputDescription|null,
      *     GlobalSecondaryIndexes?: list<ReplicaGlobalSecondaryIndexDescription>|null,
      *     ReplicaInaccessibleDateTime?: \Aws\Api\DateTimeResult|null,
-     *     ReplicaTableClassSummary?: TableClassSummary|null
+     *     ReplicaTableClassSummary?: TableClassSummary|null,
+     *     GlobalTableSettingsReplicationMode?: 'ENABLED'|'DISABLED'|'ENABLED_WITH_OVERRIDES'|null
      * } $args
      */
     public function __construct(array $args = [])

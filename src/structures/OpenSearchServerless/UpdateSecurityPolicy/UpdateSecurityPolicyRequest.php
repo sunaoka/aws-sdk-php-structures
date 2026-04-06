@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\UpdateSecurityPolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string|null $description
- * @property string $name
- * @property string|null $policy
- * @property string $policyVersion
  * @property 'encryption'|'network' $type
+ * @property string $name
+ * @property string $policyVersion
+ * @property string|null $description
+ * @property string|null $policy
+ * @property string|null $clientToken
  */
 class UpdateSecurityPolicyRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
-     *     description?: string|null,
+     *     type: 'encryption'|'network',
      *     name: string,
-     *     policy?: string|null,
      *     policyVersion: string,
-     *     type: 'encryption'|'network'
+     *     description?: string|null,
+     *     policy?: string|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

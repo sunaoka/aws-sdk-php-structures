@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MailManager\GetIngressPoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult|null $PreviousSmtpPasswordExpiryTimestamp
- * @property string|null $PreviousSmtpPasswordVersion
  * @property string|null $SmtpPasswordVersion
+ * @property string|null $PreviousSmtpPasswordVersion
+ * @property \Aws\Api\DateTimeResult|null $PreviousSmtpPasswordExpiryTimestamp
  */
 class IngressPointPasswordConfiguration extends Shape
 {
     /**
      * @param array{
-     *     PreviousSmtpPasswordExpiryTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     SmtpPasswordVersion?: string|null,
      *     PreviousSmtpPasswordVersion?: string|null,
-     *     SmtpPasswordVersion?: string|null
+     *     PreviousSmtpPasswordExpiryTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

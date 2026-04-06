@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\ListWorkspaceServiceAccountToken
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string $id
+ * @property string $name
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $expiresAt
- * @property string $id
  * @property \Aws\Api\DateTimeResult|null $lastUsedAt
- * @property string $name
  */
 class ServiceAccountTokenSummary extends Shape
 {
     /**
      * @param array{
+     *     id: string,
+     *     name: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     expiresAt: \Aws\Api\DateTimeResult,
-     *     id: string,
-     *     lastUsedAt?: \Aws\Api\DateTimeResult|null,
-     *     name: string
+     *     lastUsedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

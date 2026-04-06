@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $region
  * @property string|null $namespace
  * @property int<5, 86400>|null $timeoutInMinutes
+ * @property list<EnvironmentVariable>|null $environmentVariables
  */
 class ActionDeclaration extends Shape
 {
@@ -33,7 +34,8 @@ class ActionDeclaration extends Shape
      *     roleArn?: string|null,
      *     region?: string|null,
      *     namespace?: string|null,
-     *     timeoutInMinutes?: int<5, 86400>|null
+     *     timeoutInMinutes?: int<5, 86400>|null,
+     *     environmentVariables?: list<EnvironmentVariable>|null
      * } $args
      */
     public function __construct(array $args)

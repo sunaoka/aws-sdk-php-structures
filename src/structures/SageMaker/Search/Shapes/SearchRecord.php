@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ModelPackageGroup|null $ModelPackageGroup
  * @property Pipeline|null $Pipeline
  * @property PipelineExecution|null $PipelineExecution
+ * @property PipelineVersion|null $PipelineVersion
  * @property FeatureGroup|null $FeatureGroup
  * @property FeatureMetadata|null $FeatureMetadata
  * @property Project|null $Project
@@ -34,6 +35,7 @@ class SearchRecord extends Shape
      *     ModelPackageGroup?: ModelPackageGroup|null,
      *     Pipeline?: Pipeline|null,
      *     PipelineExecution?: PipelineExecution|null,
+     *     PipelineVersion?: PipelineVersion|null,
      *     FeatureGroup?: FeatureGroup|null,
      *     FeatureMetadata?: FeatureMetadata|null,
      *     Project?: Project|null,

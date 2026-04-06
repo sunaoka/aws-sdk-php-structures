@@ -5,18 +5,20 @@ namespace Sunaoka\Aws\Structures\ControlTower\DisableControl;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $controlIdentifier
- * @property string $targetIdentifier
+ * @property string|null $controlIdentifier
+ * @property string|null $targetIdentifier
+ * @property string|null $enabledControlIdentifier
  */
 class DisableControlRequest extends Request
 {
     /**
      * @param array{
-     *     controlIdentifier: string,
-     *     targetIdentifier: string
+     *     controlIdentifier?: string|null,
+     *     targetIdentifier?: string|null,
+     *     enabledControlIdentifier?: string|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

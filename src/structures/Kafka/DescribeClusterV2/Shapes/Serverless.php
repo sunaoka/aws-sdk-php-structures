@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<VpcConfig> $VpcConfigs
  * @property ServerlessClientAuthentication|null $ClientAuthentication
+ * @property ServerlessConnectivityInfo|null $ConnectivityInfo
  */
 class Serverless extends Shape
 {
     /**
      * @param array{
      *     VpcConfigs: list<VpcConfig>,
-     *     ClientAuthentication?: ServerlessClientAuthentication|null
+     *     ClientAuthentication?: ServerlessClientAuthentication|null,
+     *     ConnectivityInfo?: ServerlessConnectivityInfo|null
      * } $args
      */
     public function __construct(array $args)

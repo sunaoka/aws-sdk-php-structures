@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RefreshPreferences|null $Preferences
  * @property DesiredConfiguration|null $DesiredConfiguration
  * @property RollbackDetails|null $RollbackDetails
+ * @property 'Rolling'|'ReplaceRootVolume'|null $Strategy
  */
 class InstanceRefresh extends Shape
 {
@@ -33,7 +34,8 @@ class InstanceRefresh extends Shape
      *     ProgressDetails?: InstanceRefreshProgressDetails|null,
      *     Preferences?: RefreshPreferences|null,
      *     DesiredConfiguration?: DesiredConfiguration|null,
-     *     RollbackDetails?: RollbackDetails|null
+     *     RollbackDetails?: RollbackDetails|null,
+     *     Strategy?: 'Rolling'|'ReplaceRootVolume'|null
      * } $args
      */
     public function __construct(array $args = [])

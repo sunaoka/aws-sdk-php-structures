@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\DataZone\ListProjectProfiles\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult|null $createdAt
- * @property string $createdBy
- * @property string|null $description
  * @property string $domainId
- * @property string|null $domainUnitId
  * @property string $id
- * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  * @property string $name
+ * @property string|null $description
  * @property 'ENABLED'|'DISABLED'|null $status
+ * @property string $createdBy
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property string|null $domainUnitId
  */
 class ProjectProfileSummary extends Shape
 {
     /**
      * @param array{
-     *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     createdBy: string,
-     *     description?: string|null,
      *     domainId: string,
-     *     domainUnitId?: string|null,
      *     id: string,
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
      *     name: string,
-     *     status?: 'ENABLED'|'DISABLED'|null
+     *     description?: string|null,
+     *     status?: 'ENABLED'|'DISABLED'|null,
+     *     createdBy: string,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     domainUnitId?: string|null
      * } $args
      */
     public function __construct(array $args)

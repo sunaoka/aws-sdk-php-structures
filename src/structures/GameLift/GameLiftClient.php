@@ -76,6 +76,7 @@ class GameLiftClient extends \Aws\GameLift\GameLiftClient
     use GetComputeAuthToken\GetComputeAuthTokenTrait;
     use GetGameSessionLogUrl\GetGameSessionLogUrlTrait;
     use GetInstanceAccess\GetInstanceAccessTrait;
+    use GetPlayerConnectionDetails\GetPlayerConnectionDetailsTrait;
     use ListAliases\ListAliasesTrait;
     use ListBuilds\ListBuildsTrait;
     use ListCompute\ListComputeTrait;

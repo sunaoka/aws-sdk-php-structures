@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $SourceIdentifier
- * @property 'db-instance'|'db-parameter-group'|'db-security-group'|'db-snapshot'|'db-cluster'|'db-cluster-snapshot'|'custom-engine-version'|'db-proxy'|'blue-green-deployment'|null $SourceType
+ * @property 'db-instance'|'db-parameter-group'|'db-security-group'|'db-snapshot'|'db-cluster'|'db-cluster-snapshot'|'custom-engine-version'|'db-proxy'|'blue-green-deployment'|'db-shard-group'|'zero-etl'|null $SourceType
  * @property \Aws\Api\DateTimeResult|null $StartTime
  * @property \Aws\Api\DateTimeResult|null $EndTime
  * @property int|null $Duration
@@ -20,7 +20,7 @@ class DescribeEventsRequest extends Request
     /**
      * @param array{
      *     SourceIdentifier?: string|null,
-     *     SourceType?: 'db-instance'|'db-parameter-group'|'db-security-group'|'db-snapshot'|'db-cluster'|'db-cluster-snapshot'|'custom-engine-version'|'db-proxy'|'blue-green-deployment'|null,
+     *     SourceType?: 'db-instance'|'db-parameter-group'|'db-security-group'|'db-snapshot'|'db-cluster'|'db-cluster-snapshot'|'custom-engine-version'|'db-proxy'|'blue-green-deployment'|'db-shard-group'|'zero-etl'|null,
      *     StartTime?: \Aws\Api\DateTimeResult|null,
      *     EndTime?: \Aws\Api\DateTimeResult|null,
      *     Duration?: int|null,

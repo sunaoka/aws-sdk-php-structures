@@ -9,12 +9,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $baseModelArn
  * @property string $jobName
  * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped' $status
+ * @property StatusDetails|null $statusDetails
  * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult|null $endTime
  * @property string|null $customModelArn
  * @property string|null $customModelName
- * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|null $customizationType
+ * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|'REINFORCEMENT_FINE_TUNING'|'IMPORTED'|null $customizationType
  */
 class ModelCustomizationJobSummary extends Shape
 {
@@ -24,12 +25,13 @@ class ModelCustomizationJobSummary extends Shape
      *     baseModelArn: string,
      *     jobName: string,
      *     status: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped',
+     *     statusDetails?: StatusDetails|null,
      *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
      *     creationTime: \Aws\Api\DateTimeResult,
      *     endTime?: \Aws\Api\DateTimeResult|null,
      *     customModelArn?: string|null,
      *     customModelName?: string|null,
-     *     customizationType?: 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|null
+     *     customizationType?: 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|'REINFORCEMENT_FINE_TUNING'|'IMPORTED'|null
      * } $args
      */
     public function __construct(array $args)

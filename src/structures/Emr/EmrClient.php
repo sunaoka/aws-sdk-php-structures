@@ -9,6 +9,7 @@ class EmrClient extends \Aws\Emr\EmrClient
     use AddJobFlowSteps\AddJobFlowStepsTrait;
     use AddTags\AddTagsTrait;
     use CancelSteps\CancelStepsTrait;
+    use CreatePersistentAppUI\CreatePersistentAppUITrait;
     use CreateSecurityConfiguration\CreateSecurityConfigurationTrait;
     use CreateStudio\CreateStudioTrait;
     use CreateStudioSessionMapping\CreateStudioSessionMappingTrait;
@@ -18,6 +19,7 @@ class EmrClient extends \Aws\Emr\EmrClient
     use DescribeCluster\DescribeClusterTrait;
     use DescribeJobFlows\DescribeJobFlowsTrait;
     use DescribeNotebookExecution\DescribeNotebookExecutionTrait;
+    use DescribePersistentAppUI\DescribePersistentAppUITrait;
     use DescribeReleaseLabel\DescribeReleaseLabelTrait;
     use DescribeSecurityConfiguration\DescribeSecurityConfigurationTrait;
     use DescribeStep\DescribeStepTrait;
@@ -26,6 +28,8 @@ class EmrClient extends \Aws\Emr\EmrClient
     use GetBlockPublicAccessConfiguration\GetBlockPublicAccessConfigurationTrait;
     use GetClusterSessionCredentials\GetClusterSessionCredentialsTrait;
     use GetManagedScalingPolicy\GetManagedScalingPolicyTrait;
+    use GetOnClusterAppUIPresignedURL\GetOnClusterAppUIPresignedURLTrait;
+    use GetPersistentAppUIPresignedURL\GetPersistentAppUIPresignedURLTrait;
     use GetStudioSessionMapping\GetStudioSessionMappingTrait;
     use ListBootstrapActions\ListBootstrapActionsTrait;
     use ListClusters\ListClustersTrait;

@@ -9,10 +9,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $contentType
  * @property string|null $accept
  * @property string $modelId
- * @property 'ENABLED'|'DISABLED'|null $trace
+ * @property 'ENABLED'|'DISABLED'|'ENABLED_FULL'|null $trace
  * @property string|null $guardrailIdentifier
  * @property string|null $guardrailVersion
  * @property 'standard'|'optimized'|null $performanceConfigLatency
+ * @property 'priority'|'default'|'flex'|'reserved'|null $serviceTier
  */
 class InvokeModelWithResponseStreamRequest extends Request
 {
@@ -22,10 +23,11 @@ class InvokeModelWithResponseStreamRequest extends Request
      *     contentType?: string|null,
      *     accept?: string|null,
      *     modelId: string,
-     *     trace?: 'ENABLED'|'DISABLED'|null,
+     *     trace?: 'ENABLED'|'DISABLED'|'ENABLED_FULL'|null,
      *     guardrailIdentifier?: string|null,
      *     guardrailVersion?: string|null,
-     *     performanceConfigLatency?: 'standard'|'optimized'|null
+     *     performanceConfigLatency?: 'standard'|'optimized'|null,
+     *     serviceTier?: 'priority'|'default'|'flex'|'reserved'|null
      * } $args
      */
     public function __construct(array $args)

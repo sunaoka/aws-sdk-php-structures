@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $StreamName
  * @property int $RetentionPeriodHours
  * @property string|null $StreamARN
+ * @property string|null $StreamId
  */
 class IncreaseStreamRetentionPeriodRequest extends Request
 {
@@ -15,7 +16,8 @@ class IncreaseStreamRetentionPeriodRequest extends Request
      * @param array{
      *     StreamName?: string|null,
      *     RetentionPeriodHours: int,
-     *     StreamARN?: string|null
+     *     StreamARN?: string|null,
+     *     StreamId?: string|null
      * } $args
      */
     public function __construct(array $args)

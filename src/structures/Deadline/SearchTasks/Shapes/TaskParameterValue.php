@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $float
  * @property string|null $string
  * @property string|null $path
+ * @property string|null $chunkInt
  */
 class TaskParameterValue extends Shape
 {
@@ -17,7 +18,8 @@ class TaskParameterValue extends Shape
      *     int?: string|null,
      *     float?: string|null,
      *     string?: string|null,
-     *     path?: string|null
+     *     path?: string|null,
+     *     chunkInt?: string|null
      * } $args
      */
     public function __construct(array $args = [])

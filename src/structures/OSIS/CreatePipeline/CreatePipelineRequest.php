@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\BufferOptions|null $BufferOptions
  * @property Shapes\EncryptionAtRestOptions|null $EncryptionAtRestOptions
  * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $PipelineRoleArn
  */
 class CreatePipelineRequest extends Request
 {
@@ -27,7 +28,8 @@ class CreatePipelineRequest extends Request
      *     VpcOptions?: Shapes\VpcOptions|null,
      *     BufferOptions?: Shapes\BufferOptions|null,
      *     EncryptionAtRestOptions?: Shapes\EncryptionAtRestOptions|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     PipelineRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

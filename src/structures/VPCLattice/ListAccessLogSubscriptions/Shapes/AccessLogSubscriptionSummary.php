@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\VPCLattice\ListAccessLogSubscriptions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $destinationArn
  * @property string $id
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property string $resourceArn
+ * @property string $arn
  * @property string $resourceId
+ * @property string $resourceArn
+ * @property string $destinationArn
  * @property 'SERVICE'|'RESOURCE'|null $serviceNetworkLogType
+ * @property \Aws\Api\DateTimeResult $createdAt
+ * @property \Aws\Api\DateTimeResult $lastUpdatedAt
  */
 class AccessLogSubscriptionSummary extends Shape
 {
     /**
      * @param array{
-     *     arn: string,
-     *     createdAt: \Aws\Api\DateTimeResult,
-     *     destinationArn: string,
      *     id: string,
-     *     lastUpdatedAt: \Aws\Api\DateTimeResult,
-     *     resourceArn: string,
+     *     arn: string,
      *     resourceId: string,
-     *     serviceNetworkLogType?: 'SERVICE'|'RESOURCE'|null
+     *     resourceArn: string,
+     *     destinationArn: string,
+     *     serviceNetworkLogType?: 'SERVICE'|'RESOURCE'|null,
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     lastUpdatedAt: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

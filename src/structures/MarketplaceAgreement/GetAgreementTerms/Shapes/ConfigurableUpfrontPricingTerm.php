@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MarketplaceAgreement\GetAgreementTerms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ConfigurableUpfrontPricingTermConfiguration|null $configuration
+ * @property string|null $type
  * @property string|null $currencyCode
  * @property list<ConfigurableUpfrontRateCardItem>|null $rateCards
- * @property string|null $type
+ * @property ConfigurableUpfrontPricingTermConfiguration|null $configuration
  */
 class ConfigurableUpfrontPricingTerm extends Shape
 {
     /**
      * @param array{
-     *     configuration?: ConfigurableUpfrontPricingTermConfiguration|null,
+     *     type?: string|null,
      *     currencyCode?: string|null,
      *     rateCards?: list<ConfigurableUpfrontRateCardItem>|null,
-     *     type?: string|null
+     *     configuration?: ConfigurableUpfrontPricingTermConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

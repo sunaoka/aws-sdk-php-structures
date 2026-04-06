@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MarketplaceAgreement\GetAgreementTerms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Dimension> $dimensions
  * @property string $selectorValue
+ * @property list<Dimension> $dimensions
  */
 class ConfigurableUpfrontPricingTermConfiguration extends Shape
 {
     /**
      * @param array{
-     *     dimensions: list<Dimension>,
-     *     selectorValue: string
+     *     selectorValue: string,
+     *     dimensions: list<Dimension>
      * } $args
      */
     public function __construct(array $args)

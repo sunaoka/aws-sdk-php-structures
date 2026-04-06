@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $DashboardId
  * @property string $SnapshotJobId
- * @property Shapes\SnapshotUserConfiguration $UserConfiguration
+ * @property Shapes\SnapshotUserConfiguration|null $UserConfiguration
  * @property Shapes\SnapshotConfiguration $SnapshotConfiguration
  */
 class StartDashboardSnapshotJobRequest extends Request
@@ -18,7 +18,7 @@ class StartDashboardSnapshotJobRequest extends Request
      *     AwsAccountId: string,
      *     DashboardId: string,
      *     SnapshotJobId: string,
-     *     UserConfiguration: Shapes\SnapshotUserConfiguration,
+     *     UserConfiguration?: Shapes\SnapshotUserConfiguration|null,
      *     SnapshotConfiguration: Shapes\SnapshotConfiguration
      * } $args
      */

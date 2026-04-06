@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<NetworkEndpoint>|null $Endpoints
  * @property list<Signal> $Signals
  * @property list<Indicator>|null $SequenceIndicators
+ * @property list<string>|null $AdditionalSequenceTypes
  */
 class Sequence extends Shape
 {
@@ -23,7 +24,8 @@ class Sequence extends Shape
      *     Resources?: list<ResourceV2>|null,
      *     Endpoints?: list<NetworkEndpoint>|null,
      *     Signals: list<Signal>,
-     *     SequenceIndicators?: list<Indicator>|null
+     *     SequenceIndicators?: list<Indicator>|null,
+     *     AdditionalSequenceTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

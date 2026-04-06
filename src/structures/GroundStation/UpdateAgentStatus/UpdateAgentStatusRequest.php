@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $agentId
+ * @property string $taskId
  * @property Shapes\AggregateStatus $aggregateStatus
  * @property list<Shapes\ComponentStatusData> $componentStatuses
- * @property string $taskId
  */
 class UpdateAgentStatusRequest extends Request
 {
     /**
      * @param array{
      *     agentId: string,
+     *     taskId: string,
      *     aggregateStatus: Shapes\AggregateStatus,
-     *     componentStatuses: list<Shapes\ComponentStatusData>,
-     *     taskId: string
+     *     componentStatuses: list<Shapes\ComponentStatusData>
      * } $args
      */
     public function __construct(array $args)

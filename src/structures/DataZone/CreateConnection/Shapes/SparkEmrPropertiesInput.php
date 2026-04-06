@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $pythonVirtualEnv
  * @property string|null $runtimeRole
  * @property string|null $trustedCertificatesS3Uri
+ * @property string|null $managedEndpointArn
  */
 class SparkEmrPropertiesInput extends Shape
 {
@@ -23,7 +24,8 @@ class SparkEmrPropertiesInput extends Shape
      *     logUri?: string|null,
      *     pythonVirtualEnv?: string|null,
      *     runtimeRole?: string|null,
-     *     trustedCertificatesS3Uri?: string|null
+     *     trustedCertificatesS3Uri?: string|null,
+     *     managedEndpointArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

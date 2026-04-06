@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $RegistrationId
+ * @property bool|null $AwsReview
  */
 class SubmitRegistrationVersionRequest extends Request
 {
     /**
-     * @param array{RegistrationId: string} $args
+     * @param array{
+     *     RegistrationId: string,
+     *     AwsReview?: bool|null
+     * } $args
      */
     public function __construct(array $args)
     {

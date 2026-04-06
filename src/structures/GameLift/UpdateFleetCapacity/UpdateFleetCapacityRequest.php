@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<0, max>|null $MinSize
  * @property int<0, max>|null $MaxSize
  * @property string|null $Location
+ * @property Shapes\ManagedCapacityConfiguration|null $ManagedCapacityConfiguration
  */
 class UpdateFleetCapacityRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateFleetCapacityRequest extends Request
      *     DesiredInstances?: int<0, max>|null,
      *     MinSize?: int<0, max>|null,
      *     MaxSize?: int<0, max>|null,
-     *     Location?: string|null
+     *     Location?: string|null,
+     *     ManagedCapacityConfiguration?: Shapes\ManagedCapacityConfiguration|null
      * } $args
      */
     public function __construct(array $args)

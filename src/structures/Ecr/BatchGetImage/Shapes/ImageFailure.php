@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ImageIdentifier|null $imageId
- * @property 'InvalidImageDigest'|'InvalidImageTag'|'ImageTagDoesNotMatchDigest'|'ImageNotFound'|'MissingDigestAndTag'|'ImageReferencedByManifestList'|'KmsError'|'UpstreamAccessDenied'|'UpstreamTooManyRequests'|'UpstreamUnavailable'|null $failureCode
+ * @property 'InvalidImageDigest'|'InvalidImageTag'|'ImageTagDoesNotMatchDigest'|'ImageNotFound'|'MissingDigestAndTag'|'ImageReferencedByManifestList'|'KmsError'|'UpstreamAccessDenied'|'UpstreamTooManyRequests'|'UpstreamUnavailable'|'ImageInaccessible'|null $failureCode
  * @property string|null $failureReason
  */
 class ImageFailure extends Shape
@@ -14,7 +14,7 @@ class ImageFailure extends Shape
     /**
      * @param array{
      *     imageId?: ImageIdentifier|null,
-     *     failureCode?: 'InvalidImageDigest'|'InvalidImageTag'|'ImageTagDoesNotMatchDigest'|'ImageNotFound'|'MissingDigestAndTag'|'ImageReferencedByManifestList'|'KmsError'|'UpstreamAccessDenied'|'UpstreamTooManyRequests'|'UpstreamUnavailable'|null,
+     *     failureCode?: 'InvalidImageDigest'|'InvalidImageTag'|'ImageTagDoesNotMatchDigest'|'ImageNotFound'|'MissingDigestAndTag'|'ImageReferencedByManifestList'|'KmsError'|'UpstreamAccessDenied'|'UpstreamTooManyRequests'|'UpstreamUnavailable'|'ImageInaccessible'|null,
      *     failureReason?: string|null
      * } $args
      */

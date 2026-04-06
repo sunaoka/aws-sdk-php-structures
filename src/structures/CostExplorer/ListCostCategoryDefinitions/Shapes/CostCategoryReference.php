@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<CostCategoryProcessingStatus>|null $ProcessingStatus
  * @property list<string>|null $Values
  * @property string|null $DefaultValue
+ * @property list<string>|null $SupportedResourceTypes
  */
 class CostCategoryReference extends Shape
 {
@@ -25,7 +26,8 @@ class CostCategoryReference extends Shape
      *     NumberOfRules?: int<0, max>|null,
      *     ProcessingStatus?: list<CostCategoryProcessingStatus>|null,
      *     Values?: list<string>|null,
-     *     DefaultValue?: string|null
+     *     DefaultValue?: string|null,
+     *     SupportedResourceTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

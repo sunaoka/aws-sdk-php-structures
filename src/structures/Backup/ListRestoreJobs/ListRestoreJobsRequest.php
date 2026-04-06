@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $ByCompleteBefore
  * @property \Aws\Api\DateTimeResult|null $ByCompleteAfter
  * @property string|null $ByRestoreTestingPlanArn
+ * @property string|null $ByParentJobId
  */
 class ListRestoreJobsRequest extends Request
 {
@@ -29,7 +30,8 @@ class ListRestoreJobsRequest extends Request
      *     ByStatus?: 'PENDING'|'RUNNING'|'COMPLETED'|'ABORTED'|'FAILED'|null,
      *     ByCompleteBefore?: \Aws\Api\DateTimeResult|null,
      *     ByCompleteAfter?: \Aws\Api\DateTimeResult|null,
-     *     ByRestoreTestingPlanArn?: string|null
+     *     ByRestoreTestingPlanArn?: string|null,
+     *     ByParentJobId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

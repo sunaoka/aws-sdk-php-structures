@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\PutRecommendationPreferences;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'Idle' $resourceType
+ * @property 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'AuroraDBClusterStorage'|'Idle' $resourceType
  * @property Shapes\Scope|null $scope
  * @property 'Active'|'Inactive'|null $enhancedInfrastructureMetrics
  * @property 'Active'|'Inactive'|null $inferredWorkloadTypes
@@ -19,7 +19,7 @@ class PutRecommendationPreferencesRequest extends Request
 {
     /**
      * @param array{
-     *     resourceType: 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'Idle',
+     *     resourceType: 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'AuroraDBClusterStorage'|'Idle',
      *     scope?: Shapes\Scope|null,
      *     enhancedInfrastructureMetrics?: 'Active'|'Inactive'|null,
      *     inferredWorkloadTypes?: 'Active'|'Inactive'|null,

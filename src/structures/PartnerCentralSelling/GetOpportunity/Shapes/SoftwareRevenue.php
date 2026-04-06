@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Contract'|'Pay-as-you-go'|'Subscription'|null $DeliveryModel
+ * @property MonetaryValue|null $Value
  * @property string|null $EffectiveDate
  * @property string|null $ExpirationDate
- * @property MonetaryValue|null $Value
  */
 class SoftwareRevenue extends Shape
 {
     /**
      * @param array{
      *     DeliveryModel?: 'Contract'|'Pay-as-you-go'|'Subscription'|null,
+     *     Value?: MonetaryValue|null,
      *     EffectiveDate?: string|null,
-     *     ExpirationDate?: string|null,
-     *     Value?: MonetaryValue|null
+     *     ExpirationDate?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\DataZone\ListDataSources;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $connectionIdentifier
  * @property string $domainIdentifier
+ * @property string $projectIdentifier
  * @property string|null $environmentIdentifier
- * @property int<1, 50>|null $maxResults
+ * @property string|null $connectionIdentifier
+ * @property string|null $type
+ * @property 'CREATING'|'FAILED_CREATION'|'READY'|'UPDATING'|'FAILED_UPDATE'|'RUNNING'|'DELETING'|'FAILED_DELETION'|null $status
  * @property string|null $name
  * @property string|null $nextToken
- * @property string $projectIdentifier
- * @property 'CREATING'|'FAILED_CREATION'|'READY'|'UPDATING'|'FAILED_UPDATE'|'RUNNING'|'DELETING'|'FAILED_DELETION'|null $status
- * @property string|null $type
+ * @property int<1, 50>|null $maxResults
  */
 class ListDataSourcesRequest extends Request
 {
     /**
      * @param array{
-     *     connectionIdentifier?: string|null,
      *     domainIdentifier: string,
+     *     projectIdentifier: string,
      *     environmentIdentifier?: string|null,
-     *     maxResults?: int<1, 50>|null,
+     *     connectionIdentifier?: string|null,
+     *     type?: string|null,
+     *     status?: 'CREATING'|'FAILED_CREATION'|'READY'|'UPDATING'|'FAILED_UPDATE'|'RUNNING'|'DELETING'|'FAILED_DELETION'|null,
      *     name?: string|null,
      *     nextToken?: string|null,
-     *     projectIdentifier: string,
-     *     status?: 'CREATING'|'FAILED_CREATION'|'READY'|'UPDATING'|'FAILED_UPDATE'|'RUNNING'|'DELETING'|'FAILED_DELETION'|null,
-     *     type?: string|null
+     *     maxResults?: int<1, 50>|null
      * } $args
      */
     public function __construct(array $args)

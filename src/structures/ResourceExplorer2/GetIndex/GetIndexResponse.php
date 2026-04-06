@@ -6,13 +6,13 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $Arn
- * @property \Aws\Api\DateTimeResult|null $CreatedAt
- * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
+ * @property 'LOCAL'|'AGGREGATOR'|null $Type
+ * @property 'CREATING'|'ACTIVE'|'DELETING'|'DELETED'|'UPDATING'|null $State
  * @property list<string>|null $ReplicatingFrom
  * @property list<string>|null $ReplicatingTo
- * @property 'CREATING'|'ACTIVE'|'DELETING'|'DELETED'|'UPDATING'|null $State
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
  * @property array<string, string>|null $Tags
- * @property 'LOCAL'|'AGGREGATOR'|null $Type
  */
 class GetIndexResponse extends Response
 {

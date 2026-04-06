@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ClientRequestToken
  * @property string|null $RotationLambdaARN
  * @property Shapes\RotationRulesType|null $RotationRules
+ * @property list<Shapes\ExternalSecretRotationMetadataItem>|null $ExternalSecretRotationMetadata
+ * @property string|null $ExternalSecretRotationRoleArn
  * @property bool|null $RotateImmediately
  */
 class RotateSecretRequest extends Request
@@ -19,6 +21,8 @@ class RotateSecretRequest extends Request
      *     ClientRequestToken?: string|null,
      *     RotationLambdaARN?: string|null,
      *     RotationRules?: Shapes\RotationRulesType|null,
+     *     ExternalSecretRotationMetadata?: list<Shapes\ExternalSecretRotationMetadataItem>|null,
+     *     ExternalSecretRotationRoleArn?: string|null,
      *     RotateImmediately?: bool|null
      * } $args
      */

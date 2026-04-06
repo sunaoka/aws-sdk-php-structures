@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $PrimaryIpv6
  * @property LaunchTemplateEnaSrdSpecification|null $EnaSrdSpecification
  * @property ConnectionTrackingSpecification|null $ConnectionTrackingSpecification
+ * @property int|null $EnaQueueCount
  */
 class LaunchTemplateInstanceNetworkInterfaceSpecification extends Shape
 {
@@ -53,7 +54,8 @@ class LaunchTemplateInstanceNetworkInterfaceSpecification extends Shape
      *     Ipv6PrefixCount?: int|null,
      *     PrimaryIpv6?: bool|null,
      *     EnaSrdSpecification?: LaunchTemplateEnaSrdSpecification|null,
-     *     ConnectionTrackingSpecification?: ConnectionTrackingSpecification|null
+     *     ConnectionTrackingSpecification?: ConnectionTrackingSpecification|null,
+     *     EnaQueueCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

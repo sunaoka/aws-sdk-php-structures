@@ -14,6 +14,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\Filter|null $Filter
  * @property Shapes\Conditions|null $Conditions
  * @property Shapes\AttributeDetails|null $AttributeDetails
+ * @property bool|null $UseHistoricalData
+ * @property 'PREPARING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|null $Status
+ * @property Shapes\Readiness|null $Readiness
  * @property array<string, string>|null $Tags
  */
 class GetCalculatedAttributeDefinitionResponse extends Response

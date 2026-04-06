@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MailManager\ListIngressPoints\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $ARecord
- * @property string $IngressPointId
  * @property string $IngressPointName
- * @property 'PROVISIONING'|'DEPROVISIONING'|'UPDATING'|'ACTIVE'|'CLOSED'|'FAILED' $Status
- * @property 'OPEN'|'AUTH' $Type
+ * @property string $IngressPointId
+ * @property 'PROVISIONING'|'DEPROVISIONING'|'UPDATING'|'ACTIVE'|'CLOSED'|'FAILED'|'ASSOCIATED_VPC_ENDPOINT_DOES_NOT_EXIST' $Status
+ * @property 'OPEN'|'AUTH'|'MTLS' $Type
+ * @property string|null $ARecord
  */
 class IngressPoint extends Shape
 {
     /**
      * @param array{
-     *     ARecord?: string|null,
-     *     IngressPointId: string,
      *     IngressPointName: string,
-     *     Status: 'PROVISIONING'|'DEPROVISIONING'|'UPDATING'|'ACTIVE'|'CLOSED'|'FAILED',
-     *     Type: 'OPEN'|'AUTH'
+     *     IngressPointId: string,
+     *     Status: 'PROVISIONING'|'DEPROVISIONING'|'UPDATING'|'ACTIVE'|'CLOSED'|'FAILED'|'ASSOCIATED_VPC_ENDPOINT_DOES_NOT_EXIST',
+     *     Type: 'OPEN'|'AUTH'|'MTLS',
+     *     ARecord?: string|null
      * } $args
      */
     public function __construct(array $args)

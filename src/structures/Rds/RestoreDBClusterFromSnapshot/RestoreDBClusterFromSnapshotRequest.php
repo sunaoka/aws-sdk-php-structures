@@ -31,15 +31,20 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $StorageType
  * @property int|null $Iops
  * @property bool|null $PubliclyAccessible
- * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
  * @property string|null $NetworkType
+ * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
  * @property Shapes\RdsCustomClusterConfiguration|null $RdsCustomClusterConfiguration
  * @property int|null $MonitoringInterval
  * @property string|null $MonitoringRoleArn
  * @property bool|null $EnablePerformanceInsights
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $PreferredBackupWindow
  * @property string|null $EngineLifecycleSupport
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $EnableVPCNetworking
+ * @property bool|null $EnableInternetAccessGateway
  */
 class RestoreDBClusterFromSnapshotRequest extends Request
 {
@@ -71,15 +76,20 @@ class RestoreDBClusterFromSnapshotRequest extends Request
      *     StorageType?: string|null,
      *     Iops?: int|null,
      *     PubliclyAccessible?: bool|null,
-     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
      *     NetworkType?: string|null,
+     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
      *     RdsCustomClusterConfiguration?: Shapes\RdsCustomClusterConfiguration|null,
      *     MonitoringInterval?: int|null,
      *     MonitoringRoleArn?: string|null,
      *     EnablePerformanceInsights?: bool|null,
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,
-     *     EngineLifecycleSupport?: string|null
+     *     BackupRetentionPeriod?: int|null,
+     *     PreferredBackupWindow?: string|null,
+     *     EngineLifecycleSupport?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     EnableVPCNetworking?: bool|null,
+     *     EnableInternetAccessGateway?: bool|null
      * } $args
      */
     public function __construct(array $args)

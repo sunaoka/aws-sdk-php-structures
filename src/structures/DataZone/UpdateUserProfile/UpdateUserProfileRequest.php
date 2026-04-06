@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainIdentifier
- * @property 'ASSIGNED'|'NOT_ASSIGNED'|'ACTIVATED'|'DEACTIVATED' $status
- * @property 'IAM'|'SSO'|null $type
  * @property string $userIdentifier
+ * @property 'IAM'|'SSO'|null $type
+ * @property 'ASSIGNED'|'NOT_ASSIGNED'|'ACTIVATED'|'DEACTIVATED' $status
  */
 class UpdateUserProfileRequest extends Request
 {
     /**
      * @param array{
      *     domainIdentifier: string,
-     *     status: 'ASSIGNED'|'NOT_ASSIGNED'|'ACTIVATED'|'DEACTIVATED',
+     *     userIdentifier: string,
      *     type?: 'IAM'|'SSO'|null,
-     *     userIdentifier: string
+     *     status: 'ASSIGNED'|'NOT_ASSIGNED'|'ACTIVATED'|'DEACTIVATED'
      * } $args
      */
     public function __construct(array $args)

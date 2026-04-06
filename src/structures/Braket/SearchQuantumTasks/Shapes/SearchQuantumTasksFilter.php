@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property 'LT'|'LTE'|'EQUAL'|'GT'|'GTE'|'BETWEEN' $operator
  * @property list<string> $values
+ * @property 'LT'|'LTE'|'EQUAL'|'GT'|'GTE'|'BETWEEN' $operator
  */
 class SearchQuantumTasksFilter extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     operator: 'LT'|'LTE'|'EQUAL'|'GT'|'GTE'|'BETWEEN',
-     *     values: list<string>
+     *     values: list<string>,
+     *     operator: 'LT'|'LTE'|'EQUAL'|'GT'|'GTE'|'BETWEEN'
      * } $args
      */
     public function __construct(array $args)

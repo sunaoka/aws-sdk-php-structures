@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\CloudWatchRUM\PutRumEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $id
  * @property string|null $name
+ * @property string|null $id
  * @property string|null $version
  */
 class AppMonitorDetails extends Shape
 {
     /**
      * @param array{
-     *     id?: string|null,
      *     name?: string|null,
+     *     id?: string|null,
      *     version?: string|null
      * } $args
      */

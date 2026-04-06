@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SharePointCrawlerConfiguration|null $crawlerConfiguration
  * @property SharePointSourceConfiguration $sourceConfiguration
+ * @property SharePointCrawlerConfiguration|null $crawlerConfiguration
  */
 class SharePointDataSourceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     crawlerConfiguration?: SharePointCrawlerConfiguration|null,
-     *     sourceConfiguration: SharePointSourceConfiguration
+     *     sourceConfiguration: SharePointSourceConfiguration,
+     *     crawlerConfiguration?: SharePointCrawlerConfiguration|null
      * } $args
      */
     public function __construct(array $args)

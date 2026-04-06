@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Deadline\UpdateQueue;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
  * @property string $farmId
  * @property string $queueId
+ * @property string|null $clientToken
  * @property string|null $displayName
  * @property string|null $description
  * @property 'NONE'|'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS'|null $defaultBudgetAction
@@ -18,14 +18,15 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $requiredFileSystemLocationNamesToRemove
  * @property list<string>|null $allowedStorageProfileIdsToAdd
  * @property list<string>|null $allowedStorageProfileIdsToRemove
+ * @property Shapes\SchedulingConfiguration|null $schedulingConfiguration
  */
 class UpdateQueueRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
      *     farmId: string,
      *     queueId: string,
+     *     clientToken?: string|null,
      *     displayName?: string|null,
      *     description?: string|null,
      *     defaultBudgetAction?: 'NONE'|'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS'|null,
@@ -35,7 +36,8 @@ class UpdateQueueRequest extends Request
      *     requiredFileSystemLocationNamesToAdd?: list<string>|null,
      *     requiredFileSystemLocationNamesToRemove?: list<string>|null,
      *     allowedStorageProfileIdsToAdd?: list<string>|null,
-     *     allowedStorageProfileIdsToRemove?: list<string>|null
+     *     allowedStorageProfileIdsToRemove?: list<string>|null,
+     *     schedulingConfiguration?: Shapes\SchedulingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ServiceCode
  * @property string $AttributeName
  * @property string|null $NextToken
- * @property int<1, 100>|null $MaxResults
+ * @property int<1, 10000>|null $MaxResults
  */
 class GetAttributeValuesRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetAttributeValuesRequest extends Request
      *     ServiceCode: string,
      *     AttributeName: string,
      *     NextToken?: string|null,
-     *     MaxResults?: int<1, 100>|null
+     *     MaxResults?: int<1, 10000>|null
      * } $args
      */
     public function __construct(array $args)

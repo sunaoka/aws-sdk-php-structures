@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 100>|null $maxResults
  * @property string $collaborationIdentifier
  * @property string|null $trainedModelArn
+ * @property string|null $trainedModelVersionIdentifier
  */
 class ListCollaborationTrainedModelInferenceJobsRequest extends Request
 {
@@ -17,7 +18,8 @@ class ListCollaborationTrainedModelInferenceJobsRequest extends Request
      *     nextToken?: string|null,
      *     maxResults?: int<1, 100>|null,
      *     collaborationIdentifier: string,
-     *     trainedModelArn?: string|null
+     *     trainedModelArn?: string|null,
+     *     trainedModelVersionIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

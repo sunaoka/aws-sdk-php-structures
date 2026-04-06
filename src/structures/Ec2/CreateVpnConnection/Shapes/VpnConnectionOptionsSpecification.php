@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $RemoteIpv6NetworkCidr
  * @property string|null $OutsideIpAddressType
  * @property string|null $TransportTransitGatewayAttachmentId
+ * @property 'standard'|'large'|null $TunnelBandwidth
  * @property bool|null $StaticRoutesOnly
  */
 class VpnConnectionOptionsSpecification extends Shape
@@ -29,6 +30,7 @@ class VpnConnectionOptionsSpecification extends Shape
      *     RemoteIpv6NetworkCidr?: string|null,
      *     OutsideIpAddressType?: string|null,
      *     TransportTransitGatewayAttachmentId?: string|null,
+     *     TunnelBandwidth?: 'standard'|'large'|null,
      *     StaticRoutesOnly?: bool|null
      * } $args
      */

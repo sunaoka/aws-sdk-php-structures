@@ -13,6 +13,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property int $CapacityDurationHours
  * @property string|null $NextToken
  * @property int<1, 1000>|null $MaxResults
+ * @property string|null $UltraserverType
+ * @property int|null $UltraserverCount
+ * @property bool|null $AllAvailabilityZones
  */
 class DescribeCapacityBlockOfferingsRequest extends Request
 {
@@ -25,7 +28,10 @@ class DescribeCapacityBlockOfferingsRequest extends Request
      *     EndDateRange?: \Aws\Api\DateTimeResult|null,
      *     CapacityDurationHours: int,
      *     NextToken?: string|null,
-     *     MaxResults?: int<1, 1000>|null
+     *     MaxResults?: int<1, 1000>|null,
+     *     UltraserverType?: string|null,
+     *     UltraserverCount?: int|null,
+     *     AllAvailabilityZones?: bool|null
      * } $args
      */
     public function __construct(array $args)

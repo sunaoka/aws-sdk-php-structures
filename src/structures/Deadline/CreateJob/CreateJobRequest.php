@@ -17,7 +17,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'READY'|'SUSPENDED'|null $targetTaskRunStatus
  * @property int<0, 2147483647>|null $maxFailedTasksCount
  * @property int<0, 2147483647>|null $maxRetriesPerTask
+ * @property int<-1, 2147483647>|null $maxWorkerCount
  * @property string|null $sourceJobId
+ * @property string|null $nameOverride
+ * @property string|null $descriptionOverride
+ * @property array<string, string>|null $tags
  */
 class CreateJobRequest extends Request
 {
@@ -35,7 +39,11 @@ class CreateJobRequest extends Request
      *     targetTaskRunStatus?: 'READY'|'SUSPENDED'|null,
      *     maxFailedTasksCount?: int<0, 2147483647>|null,
      *     maxRetriesPerTask?: int<0, 2147483647>|null,
-     *     sourceJobId?: string|null
+     *     maxWorkerCount?: int<-1, 2147483647>|null,
+     *     sourceJobId?: string|null,
+     *     nameOverride?: string|null,
+     *     descriptionOverride?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

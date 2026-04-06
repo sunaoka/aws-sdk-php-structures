@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $JobEngineVersionUsed
  * @property int|null $JobPercentComplete
  * @property string|null $JobTemplate
+ * @property string|null $LastShareDetails
  * @property JobMessages|null $Messages
  * @property list<OutputGroupDetail>|null $OutputGroupDetails
  * @property int<-50, 50>|null $Priority
@@ -28,6 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $RetryCount
  * @property string $Role
  * @property JobSettings $Settings
+ * @property 'NOT_SHARED'|'INITIATED'|'SHARED'|null $ShareStatus
  * @property 'DISABLED'|'ENABLED'|null $SimulateReservedQueue
  * @property 'SUBMITTED'|'PROGRESSING'|'COMPLETE'|'CANCELED'|'ERROR'|null $Status
  * @property 'SECONDS_10'|'SECONDS_12'|'SECONDS_15'|'SECONDS_20'|'SECONDS_30'|'SECONDS_60'|'SECONDS_120'|'SECONDS_180'|'SECONDS_240'|'SECONDS_300'|'SECONDS_360'|'SECONDS_420'|'SECONDS_480'|'SECONDS_540'|'SECONDS_600'|null $StatusUpdateInterval
@@ -54,6 +56,7 @@ class Job extends Shape
      *     JobEngineVersionUsed?: string|null,
      *     JobPercentComplete?: int|null,
      *     JobTemplate?: string|null,
+     *     LastShareDetails?: string|null,
      *     Messages?: JobMessages|null,
      *     OutputGroupDetails?: list<OutputGroupDetail>|null,
      *     Priority?: int<-50, 50>|null,
@@ -62,6 +65,7 @@ class Job extends Shape
      *     RetryCount?: int|null,
      *     Role: string,
      *     Settings: JobSettings,
+     *     ShareStatus?: 'NOT_SHARED'|'INITIATED'|'SHARED'|null,
      *     SimulateReservedQueue?: 'DISABLED'|'ENABLED'|null,
      *     Status?: 'SUBMITTED'|'PROGRESSING'|'COMPLETE'|'CANCELED'|'ERROR'|null,
      *     StatusUpdateInterval?: 'SECONDS_10'|'SECONDS_12'|'SECONDS_15'|'SECONDS_20'|'SECONDS_30'|'SECONDS_60'|'SECONDS_120'|'SECONDS_180'|'SECONDS_240'|'SECONDS_300'|'SECONDS_360'|'SECONDS_420'|'SECONDS_480'|'SECONDS_540'|'SECONDS_600'|null,

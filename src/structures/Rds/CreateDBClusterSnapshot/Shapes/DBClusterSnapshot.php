@@ -22,15 +22,18 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SnapshotType
  * @property int|null $PercentProgress
  * @property bool|null $StorageEncrypted
+ * @property 'none'|'sse-kms'|'sse-rds'|null $StorageEncryptionType
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $PreferredBackupWindow
  * @property string|null $KmsKeyId
  * @property string|null $DBClusterSnapshotArn
  * @property string|null $SourceDBClusterSnapshotArn
  * @property bool|null $IAMDatabaseAuthenticationEnabled
  * @property list<Tag>|null $TagList
- * @property string|null $DBSystemId
  * @property string|null $StorageType
- * @property string|null $DbClusterResourceId
  * @property int|null $StorageThroughput
+ * @property string|null $DbClusterResourceId
+ * @property string|null $DBSystemId
  */
 class DBClusterSnapshot extends Shape
 {
@@ -53,15 +56,18 @@ class DBClusterSnapshot extends Shape
      *     SnapshotType?: string|null,
      *     PercentProgress?: int|null,
      *     StorageEncrypted?: bool|null,
+     *     StorageEncryptionType?: 'none'|'sse-kms'|'sse-rds'|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     PreferredBackupWindow?: string|null,
      *     KmsKeyId?: string|null,
      *     DBClusterSnapshotArn?: string|null,
      *     SourceDBClusterSnapshotArn?: string|null,
      *     IAMDatabaseAuthenticationEnabled?: bool|null,
      *     TagList?: list<Tag>|null,
-     *     DBSystemId?: string|null,
      *     StorageType?: string|null,
+     *     StorageThroughput?: int|null,
      *     DbClusterResourceId?: string|null,
-     *     StorageThroughput?: int|null
+     *     DBSystemId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudTrail\ListInsightsMetricData;
 use Sunaoka\Aws\Structures\Response;
 
 /**
+ * @property string|null $TrailARN
  * @property string|null $EventSource
  * @property string|null $EventName
  * @property 'ApiCallRateInsight'|'ApiErrorRateInsight'|null $InsightType

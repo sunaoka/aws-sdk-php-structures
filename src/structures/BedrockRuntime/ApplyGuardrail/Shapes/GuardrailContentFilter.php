@@ -8,7 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'INSULTS'|'HATE'|'SEXUAL'|'VIOLENCE'|'MISCONDUCT'|'PROMPT_ATTACK' $type
  * @property 'NONE'|'LOW'|'MEDIUM'|'HIGH' $confidence
  * @property 'NONE'|'LOW'|'MEDIUM'|'HIGH'|null $filterStrength
- * @property 'BLOCKED' $action
+ * @property 'BLOCKED'|'NONE' $action
+ * @property bool|null $detected
  */
 class GuardrailContentFilter extends Shape
 {
@@ -17,7 +18,8 @@ class GuardrailContentFilter extends Shape
      *     type: 'INSULTS'|'HATE'|'SEXUAL'|'VIOLENCE'|'MISCONDUCT'|'PROMPT_ATTACK',
      *     confidence: 'NONE'|'LOW'|'MEDIUM'|'HIGH',
      *     filterStrength?: 'NONE'|'LOW'|'MEDIUM'|'HIGH'|null,
-     *     action: 'BLOCKED'
+     *     action: 'BLOCKED'|'NONE',
+     *     detected?: bool|null
      * } $args
      */
     public function __construct(array $args)

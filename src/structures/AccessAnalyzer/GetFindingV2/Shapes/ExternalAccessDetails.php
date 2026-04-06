@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $isPublic
  * @property array<string, string>|null $principal
  * @property list<FindingSource>|null $sources
- * @property 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'|null $resourceControlPolicyRestriction
+ * @property 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'|'APPLIED'|null $resourceControlPolicyRestriction
  */
 class ExternalAccessDetails extends Shape
 {
@@ -21,7 +21,7 @@ class ExternalAccessDetails extends Shape
      *     isPublic?: bool|null,
      *     principal?: array<string, string>|null,
      *     sources?: list<FindingSource>|null,
-     *     resourceControlPolicyRestriction?: 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'|null
+     *     resourceControlPolicyRestriction?: 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'|'APPLIED'|null
      * } $args
      */
     public function __construct(array $args)

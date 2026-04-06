@@ -26,7 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 128>|null $AllocationDefaultNetmaskLength
  * @property list<IpamResourceTag>|null $AllocationResourceTags
  * @property list<Tag>|null $Tags
- * @property 'ec2'|null $AwsService
+ * @property 'ec2'|'global-services'|null $AwsService
  * @property 'amazon'|'byoip'|null $PublicIpSource
  * @property IpamPoolSourceResource|null $SourceResource
  */
@@ -55,7 +55,7 @@ class IpamPool extends Shape
      *     AllocationDefaultNetmaskLength?: int<0, 128>|null,
      *     AllocationResourceTags?: list<IpamResourceTag>|null,
      *     Tags?: list<Tag>|null,
-     *     AwsService?: 'ec2'|null,
+     *     AwsService?: 'ec2'|'global-services'|null,
      *     PublicIpSource?: 'amazon'|'byoip'|null,
      *     SourceResource?: IpamPoolSourceResource|null
      * } $args

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $executionOutput
  * @property bool|null $executionTimeout
  * @property list<string>|null $files
+ * @property Metadata|null $metadata
  */
 class CodeInterpreterInvocationOutput extends Shape
 {
@@ -17,7 +18,8 @@ class CodeInterpreterInvocationOutput extends Shape
      *     executionError?: string|null,
      *     executionOutput?: string|null,
      *     executionTimeout?: bool|null,
-     *     files?: list<string>|null
+     *     files?: list<string>|null,
+     *     metadata?: Metadata|null
      * } $args
      */
     public function __construct(array $args = [])

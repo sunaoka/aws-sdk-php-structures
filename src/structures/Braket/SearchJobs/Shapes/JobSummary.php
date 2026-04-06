@@ -5,26 +5,26 @@ namespace Sunaoka\Aws\Structures\Braket\SearchJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $device
- * @property \Aws\Api\DateTimeResult|null $endedAt
+ * @property 'QUEUED'|'RUNNING'|'COMPLETED'|'FAILED'|'CANCELLING'|'CANCELLED' $status
  * @property string $jobArn
  * @property string $jobName
+ * @property string $device
+ * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult|null $startedAt
- * @property 'QUEUED'|'RUNNING'|'COMPLETED'|'FAILED'|'CANCELLING'|'CANCELLED' $status
+ * @property \Aws\Api\DateTimeResult|null $endedAt
  * @property array<string, string>|null $tags
  */
 class JobSummary extends Shape
 {
     /**
      * @param array{
-     *     createdAt: \Aws\Api\DateTimeResult,
-     *     device: string,
-     *     endedAt?: \Aws\Api\DateTimeResult|null,
+     *     status: 'QUEUED'|'RUNNING'|'COMPLETED'|'FAILED'|'CANCELLING'|'CANCELLED',
      *     jobArn: string,
      *     jobName: string,
+     *     device: string,
+     *     createdAt: \Aws\Api\DateTimeResult,
      *     startedAt?: \Aws\Api\DateTimeResult|null,
-     *     status: 'QUEUED'|'RUNNING'|'COMPLETED'|'FAILED'|'CANCELLING'|'CANCELLED',
+     *     endedAt?: \Aws\Api\DateTimeResult|null,
      *     tags?: array<string, string>|null
      * } $args
      */

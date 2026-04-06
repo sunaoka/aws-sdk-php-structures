@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ConnectCases\CreateTemplate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $templateArn
  * @property string $templateId
+ * @property string $templateArn
  */
 class CreateTemplateResponse extends Response
 {

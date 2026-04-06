@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $membershipIdentifier
  * @property string $privacyBudgetTemplateIdentifier
- * @property 'DIFFERENTIAL_PRIVACY' $privacyBudgetType
+ * @property 'DIFFERENTIAL_PRIVACY'|'ACCESS_BUDGET' $privacyBudgetType
  * @property Shapes\PrivacyBudgetTemplateUpdateParameters|null $parameters
  */
 class UpdatePrivacyBudgetTemplateRequest extends Request
@@ -16,7 +16,7 @@ class UpdatePrivacyBudgetTemplateRequest extends Request
      * @param array{
      *     membershipIdentifier: string,
      *     privacyBudgetTemplateIdentifier: string,
-     *     privacyBudgetType: 'DIFFERENTIAL_PRIVACY',
+     *     privacyBudgetType: 'DIFFERENTIAL_PRIVACY'|'ACCESS_BUDGET',
      *     parameters?: Shapes\PrivacyBudgetTemplateUpdateParameters|null
      * } $args
      */

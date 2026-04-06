@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $TaskArn
  * @property string|null $TagKey
  * @property string|null $TagValue
+ * @property Shapes\ResourceQuery|null $ResourceQuery
  * @property string|null $RoleArn
  */
 class StartTagSyncTaskResponse extends Response

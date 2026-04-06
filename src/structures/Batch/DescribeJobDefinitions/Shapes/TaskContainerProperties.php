@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<TaskContainerDependency>|null $dependsOn
  * @property list<KeyValuePair>|null $environment
  * @property bool|null $essential
+ * @property FirelensConfiguration|null $firelensConfiguration
  * @property string $image
  * @property LinuxParameters|null $linuxParameters
  * @property LogConfiguration|null $logConfiguration
@@ -30,6 +31,7 @@ class TaskContainerProperties extends Shape
      *     dependsOn?: list<TaskContainerDependency>|null,
      *     environment?: list<KeyValuePair>|null,
      *     essential?: bool|null,
+     *     firelensConfiguration?: FirelensConfiguration|null,
      *     image: string,
      *     linuxParameters?: LinuxParameters|null,
      *     logConfiguration?: LogConfiguration|null,

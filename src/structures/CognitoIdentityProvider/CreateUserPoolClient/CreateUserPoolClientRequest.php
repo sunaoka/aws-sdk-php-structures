@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UserPoolId
  * @property string $ClientName
  * @property bool|null $GenerateSecret
+ * @property string|null $ClientSecret
  * @property int<0, 315360000>|null $RefreshTokenValidity
  * @property int<1, 86400>|null $AccessTokenValidity
  * @property int<1, 86400>|null $IdTokenValidity
@@ -27,6 +28,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $EnableTokenRevocation
  * @property bool|null $EnablePropagateAdditionalUserContextData
  * @property int<3, 15>|null $AuthSessionValidity
+ * @property Shapes\RefreshTokenRotationType|null $RefreshTokenRotation
  */
 class CreateUserPoolClientRequest extends Request
 {
@@ -35,6 +37,7 @@ class CreateUserPoolClientRequest extends Request
      *     UserPoolId: string,
      *     ClientName: string,
      *     GenerateSecret?: bool|null,
+     *     ClientSecret?: string|null,
      *     RefreshTokenValidity?: int<0, 315360000>|null,
      *     AccessTokenValidity?: int<1, 86400>|null,
      *     IdTokenValidity?: int<1, 86400>|null,
@@ -53,7 +56,8 @@ class CreateUserPoolClientRequest extends Request
      *     PreventUserExistenceErrors?: 'LEGACY'|'ENABLED'|null,
      *     EnableTokenRevocation?: bool|null,
      *     EnablePropagateAdditionalUserContextData?: bool|null,
-     *     AuthSessionValidity?: int<3, 15>|null
+     *     AuthSessionValidity?: int<3, 15>|null,
+     *     RefreshTokenRotation?: Shapes\RefreshTokenRotationType|null
      * } $args
      */
     public function __construct(array $args)

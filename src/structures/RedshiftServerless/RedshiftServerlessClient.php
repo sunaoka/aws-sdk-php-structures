@@ -8,6 +8,7 @@ class RedshiftServerlessClient extends \Aws\RedshiftServerless\RedshiftServerles
     use CreateCustomDomainAssociation\CreateCustomDomainAssociationTrait;
     use CreateEndpointAccess\CreateEndpointAccessTrait;
     use CreateNamespace\CreateNamespaceTrait;
+    use CreateReservation\CreateReservationTrait;
     use CreateScheduledAction\CreateScheduledActionTrait;
     use CreateSnapshot\CreateSnapshotTrait;
     use CreateSnapshotCopyConfiguration\CreateSnapshotCopyConfigurationTrait;
@@ -24,12 +25,16 @@ class RedshiftServerlessClient extends \Aws\RedshiftServerless\RedshiftServerles
     use DeleteWorkgroup\DeleteWorkgroupTrait;
     use GetCustomDomainAssociation\GetCustomDomainAssociationTrait;
     use GetEndpointAccess\GetEndpointAccessTrait;
+    use GetIdentityCenterAuthToken\GetIdentityCenterAuthTokenTrait;
     use GetNamespace\GetNamespaceTrait;
     use GetRecoveryPoint\GetRecoveryPointTrait;
+    use GetReservation\GetReservationTrait;
+    use GetReservationOffering\GetReservationOfferingTrait;
     use GetResourcePolicy\GetResourcePolicyTrait;
     use GetScheduledAction\GetScheduledActionTrait;
     use GetSnapshot\GetSnapshotTrait;
     use GetTableRestoreStatus\GetTableRestoreStatusTrait;
+    use GetTrack\GetTrackTrait;
     use GetUsageLimit\GetUsageLimitTrait;
     use GetWorkgroup\GetWorkgroupTrait;
     use ListCustomDomainAssociations\ListCustomDomainAssociationsTrait;
@@ -37,11 +42,14 @@ class RedshiftServerlessClient extends \Aws\RedshiftServerless\RedshiftServerles
     use ListManagedWorkgroups\ListManagedWorkgroupsTrait;
     use ListNamespaces\ListNamespacesTrait;
     use ListRecoveryPoints\ListRecoveryPointsTrait;
+    use ListReservationOfferings\ListReservationOfferingsTrait;
+    use ListReservations\ListReservationsTrait;
     use ListScheduledActions\ListScheduledActionsTrait;
     use ListSnapshotCopyConfigurations\ListSnapshotCopyConfigurationsTrait;
     use ListSnapshots\ListSnapshotsTrait;
     use ListTableRestoreStatus\ListTableRestoreStatusTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use ListTracks\ListTracksTrait;
     use ListUsageLimits\ListUsageLimitsTrait;
     use ListWorkgroups\ListWorkgroupsTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;
@@ -53,10 +61,12 @@ class RedshiftServerlessClient extends \Aws\RedshiftServerless\RedshiftServerles
     use UntagResource\UntagResourceTrait;
     use UpdateCustomDomainAssociation\UpdateCustomDomainAssociationTrait;
     use UpdateEndpointAccess\UpdateEndpointAccessTrait;
+    use UpdateLakehouseConfiguration\UpdateLakehouseConfigurationTrait;
     use UpdateNamespace\UpdateNamespaceTrait;
     use UpdateScheduledAction\UpdateScheduledActionTrait;
     use UpdateSnapshot\UpdateSnapshotTrait;
     use UpdateSnapshotCopyConfiguration\UpdateSnapshotCopyConfigurationTrait;
     use UpdateUsageLimit\UpdateUsageLimitTrait;
     use UpdateWorkgroup\UpdateWorkgroupTrait;
+    use GetDbCredentials\GetDbCredentialsTrait;
 }

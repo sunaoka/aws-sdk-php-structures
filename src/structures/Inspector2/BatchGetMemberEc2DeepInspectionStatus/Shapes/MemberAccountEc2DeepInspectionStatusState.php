@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $accountId
- * @property string|null $errorMessage
  * @property 'ACTIVATED'|'DEACTIVATED'|'PENDING'|'FAILED'|null $status
+ * @property string|null $errorMessage
  */
 class MemberAccountEc2DeepInspectionStatusState extends Shape
 {
     /**
      * @param array{
      *     accountId: string,
-     *     errorMessage?: string|null,
-     *     status?: 'ACTIVATED'|'DEACTIVATED'|'PENDING'|'FAILED'|null
+     *     status?: 'ACTIVATED'|'DEACTIVATED'|'PENDING'|'FAILED'|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

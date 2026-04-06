@@ -20,11 +20,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $dateCreated
  * @property string|null $dateUpdated
  * @property string|null $dateLastRun
+ * @property 'PENDING'|'CREATING'|'BUILDING'|'TESTING'|'DISTRIBUTING'|'INTEGRATING'|'AVAILABLE'|'CANCELLED'|'FAILED'|'DEPRECATED'|'DELETED'|'DISABLED'|null $lastRunStatus
  * @property string|null $dateNextRun
  * @property array<string, string>|null $tags
  * @property ImageScanningConfiguration|null $imageScanningConfiguration
  * @property string|null $executionRole
  * @property list<WorkflowConfiguration>|null $workflows
+ * @property PipelineLoggingConfiguration|null $loggingConfiguration
+ * @property int<0, max>|null $consecutiveFailures
  */
 class ImagePipeline extends Shape
 {
@@ -45,11 +48,14 @@ class ImagePipeline extends Shape
      *     dateCreated?: string|null,
      *     dateUpdated?: string|null,
      *     dateLastRun?: string|null,
+     *     lastRunStatus?: 'PENDING'|'CREATING'|'BUILDING'|'TESTING'|'DISTRIBUTING'|'INTEGRATING'|'AVAILABLE'|'CANCELLED'|'FAILED'|'DEPRECATED'|'DELETED'|'DISABLED'|null,
      *     dateNextRun?: string|null,
      *     tags?: array<string, string>|null,
      *     imageScanningConfiguration?: ImageScanningConfiguration|null,
      *     executionRole?: string|null,
-     *     workflows?: list<WorkflowConfiguration>|null
+     *     workflows?: list<WorkflowConfiguration>|null,
+     *     loggingConfiguration?: PipelineLoggingConfiguration|null,
+     *     consecutiveFailures?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

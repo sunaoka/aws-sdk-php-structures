@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $awsAccountId
- * @property CodeVulnerabilityDetails|null $codeVulnerabilityDetails
- * @property string $description
- * @property EpssDetails|null $epss
- * @property 'YES'|'NO'|null $exploitAvailable
- * @property ExploitabilityDetails|null $exploitabilityDetails
  * @property string $findingArn
+ * @property string $awsAccountId
+ * @property 'NETWORK_REACHABILITY'|'PACKAGE_VULNERABILITY'|'CODE_VULNERABILITY' $type
+ * @property string $description
+ * @property string|null $title
+ * @property Remediation $remediation
+ * @property 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|'UNTRIAGED' $severity
  * @property \Aws\Api\DateTimeResult $firstObservedAt
- * @property 'YES'|'NO'|'PARTIAL'|null $fixAvailable
+ * @property \Aws\Api\DateTimeResult $lastObservedAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property 'ACTIVE'|'SUPPRESSED'|'CLOSED' $status
+ * @property list<ResourceShape> $resources
  * @property double|null $inspectorScore
  * @property InspectorScoreDetails|null $inspectorScoreDetails
- * @property \Aws\Api\DateTimeResult $lastObservedAt
  * @property NetworkReachabilityDetails|null $networkReachabilityDetails
  * @property PackageVulnerabilityDetails|null $packageVulnerabilityDetails
- * @property Remediation $remediation
- * @property list<ResourceShape> $resources
- * @property 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|'UNTRIAGED' $severity
- * @property 'ACTIVE'|'SUPPRESSED'|'CLOSED' $status
- * @property string|null $title
- * @property 'NETWORK_REACHABILITY'|'PACKAGE_VULNERABILITY'|'CODE_VULNERABILITY' $type
- * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property 'YES'|'NO'|'PARTIAL'|null $fixAvailable
+ * @property 'YES'|'NO'|null $exploitAvailable
+ * @property ExploitabilityDetails|null $exploitabilityDetails
+ * @property CodeVulnerabilityDetails|null $codeVulnerabilityDetails
+ * @property EpssDetails|null $epss
  */
 class Finding extends Shape
 {
     /**
      * @param array{
-     *     awsAccountId: string,
-     *     codeVulnerabilityDetails?: CodeVulnerabilityDetails|null,
-     *     description: string,
-     *     epss?: EpssDetails|null,
-     *     exploitAvailable?: 'YES'|'NO'|null,
-     *     exploitabilityDetails?: ExploitabilityDetails|null,
      *     findingArn: string,
+     *     awsAccountId: string,
+     *     type: 'NETWORK_REACHABILITY'|'PACKAGE_VULNERABILITY'|'CODE_VULNERABILITY',
+     *     description: string,
+     *     title?: string|null,
+     *     remediation: Remediation,
+     *     severity: 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|'UNTRIAGED',
      *     firstObservedAt: \Aws\Api\DateTimeResult,
-     *     fixAvailable?: 'YES'|'NO'|'PARTIAL'|null,
+     *     lastObservedAt: \Aws\Api\DateTimeResult,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     status: 'ACTIVE'|'SUPPRESSED'|'CLOSED',
+     *     resources: list<ResourceShape>,
      *     inspectorScore?: double|null,
      *     inspectorScoreDetails?: InspectorScoreDetails|null,
-     *     lastObservedAt: \Aws\Api\DateTimeResult,
      *     networkReachabilityDetails?: NetworkReachabilityDetails|null,
      *     packageVulnerabilityDetails?: PackageVulnerabilityDetails|null,
-     *     remediation: Remediation,
-     *     resources: list<ResourceShape>,
-     *     severity: 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|'UNTRIAGED',
-     *     status: 'ACTIVE'|'SUPPRESSED'|'CLOSED',
-     *     title?: string|null,
-     *     type: 'NETWORK_REACHABILITY'|'PACKAGE_VULNERABILITY'|'CODE_VULNERABILITY',
-     *     updatedAt?: \Aws\Api\DateTimeResult|null
+     *     fixAvailable?: 'YES'|'NO'|'PARTIAL'|null,
+     *     exploitAvailable?: 'YES'|'NO'|null,
+     *     exploitabilityDetails?: ExploitabilityDetails|null,
+     *     codeVulnerabilityDetails?: CodeVulnerabilityDetails|null,
+     *     epss?: EpssDetails|null
      * } $args
      */
     public function __construct(array $args)

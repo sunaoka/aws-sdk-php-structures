@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\DeleteRecommendationPreference
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'Idle' $resourceType
+ * @property 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'AuroraDBClusterStorage'|'Idle' $resourceType
  * @property Shapes\Scope|null $scope
  * @property list<'EnhancedInfrastructureMetrics'|'InferredWorkloadTypes'|'ExternalMetricsPreference'|'LookBackPeriodPreference'|'PreferredResources'|'UtilizationPreferences'> $recommendationPreferenceNames
  */
@@ -13,7 +13,7 @@ class DeleteRecommendationPreferencesRequest extends Request
 {
     /**
      * @param array{
-     *     resourceType: 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'Idle',
+     *     resourceType: 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'AuroraDBClusterStorage'|'Idle',
      *     scope?: Shapes\Scope|null,
      *     recommendationPreferenceNames: list<'EnhancedInfrastructureMetrics'|'InferredWorkloadTypes'|'ExternalMetricsPreference'|'LookBackPeriodPreference'|'PreferredResources'|'UtilizationPreferences'>
      * } $args

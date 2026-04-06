@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $RegistrationArn
  * @property string $RegistrationId
  * @property string $RegistrationType
- * @property 'CREATED'|'SUBMITTED'|'REVIEWING'|'REQUIRES_AUTHENTICATION'|'PROVISIONING'|'COMPLETE'|'REQUIRES_UPDATES'|'CLOSED'|'DELETED' $RegistrationStatus
+ * @property 'CREATED'|'SUBMITTED'|'AWS_REVIEWING'|'REVIEWING'|'REQUIRES_AUTHENTICATION'|'PROVISIONING'|'COMPLETE'|'REQUIRES_UPDATES'|'CLOSED'|'DELETED' $RegistrationStatus
  * @property int<1, 100000> $CurrentVersionNumber
  * @property int<1, 100000>|null $ApprovedVersionNumber
  * @property int<1, 100000>|null $LatestDeniedVersionNumber
@@ -22,7 +22,7 @@ class RegistrationInformation extends Shape
      *     RegistrationArn: string,
      *     RegistrationId: string,
      *     RegistrationType: string,
-     *     RegistrationStatus: 'CREATED'|'SUBMITTED'|'REVIEWING'|'REQUIRES_AUTHENTICATION'|'PROVISIONING'|'COMPLETE'|'REQUIRES_UPDATES'|'CLOSED'|'DELETED',
+     *     RegistrationStatus: 'CREATED'|'SUBMITTED'|'AWS_REVIEWING'|'REVIEWING'|'REQUIRES_AUTHENTICATION'|'PROVISIONING'|'COMPLETE'|'REQUIRES_UPDATES'|'CLOSED'|'DELETED',
      *     CurrentVersionNumber: int<1, 100000>,
      *     ApprovedVersionNumber?: int<1, 100000>|null,
      *     LatestDeniedVersionNumber?: int<1, 100000>|null,

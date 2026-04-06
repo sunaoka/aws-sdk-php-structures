@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $intentId
  * @property string|null $intentName
+ * @property string|null $intentDisplayName
  * @property string|null $description
  * @property string|null $parentIntentSignature
  * @property list<Shapes\SampleUtterance>|null $sampleUtterances
@@ -25,6 +26,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  * @property Shapes\InitialResponseSetting|null $initialResponseSetting
  * @property Shapes\QnAIntentConfiguration|null $qnAIntentConfiguration
+ * @property Shapes\QInConnectIntentConfiguration|null $qInConnectIntentConfiguration
  */
 class DescribeIntentResponse extends Response
 {

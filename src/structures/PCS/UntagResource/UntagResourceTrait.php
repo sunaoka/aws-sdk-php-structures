@@ -6,10 +6,11 @@ trait UntagResourceTrait
 {
     /**
      * @param UntagResourceRequest $args
-     * @return void
+     * @return UntagResourceResponse
      */
     public function untagResource(UntagResourceRequest $args)
     {
-        parent::untagResource($args->toArray());
+        $result = parent::untagResource($args->toArray());
+        return new UntagResourceResponse($result->toArray());
     }
 }

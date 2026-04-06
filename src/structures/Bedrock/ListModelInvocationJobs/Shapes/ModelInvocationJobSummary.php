@@ -20,6 +20,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VpcConfig|null $vpcConfig
  * @property int<24, 168>|null $timeoutDurationInHours
  * @property \Aws\Api\DateTimeResult|null $jobExpirationTime
+ * @property 'InvokeModel'|'Converse'|null $modelInvocationType
+ * @property int<0, max>|null $totalRecordCount
+ * @property int<0, max>|null $processedRecordCount
+ * @property int<0, max>|null $successRecordCount
+ * @property int<0, max>|null $errorRecordCount
  */
 class ModelInvocationJobSummary extends Shape
 {
@@ -39,7 +44,12 @@ class ModelInvocationJobSummary extends Shape
      *     outputDataConfig: ModelInvocationJobOutputDataConfig,
      *     vpcConfig?: VpcConfig|null,
      *     timeoutDurationInHours?: int<24, 168>|null,
-     *     jobExpirationTime?: \Aws\Api\DateTimeResult|null
+     *     jobExpirationTime?: \Aws\Api\DateTimeResult|null,
+     *     modelInvocationType?: 'InvokeModel'|'Converse'|null,
+     *     totalRecordCount?: int<0, max>|null,
+     *     processedRecordCount?: int<0, max>|null,
+     *     successRecordCount?: int<0, max>|null,
+     *     errorRecordCount?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args)

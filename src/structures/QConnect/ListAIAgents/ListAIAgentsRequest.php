@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assistantId
- * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  * @property 'SYSTEM'|'CUSTOMER'|null $origin
  */
 class ListAIAgentsRequest extends Request
@@ -15,8 +15,8 @@ class ListAIAgentsRequest extends Request
     /**
      * @param array{
      *     assistantId: string,
-     *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null,
      *     origin?: 'SYSTEM'|'CUSTOMER'|null
      * } $args
      */

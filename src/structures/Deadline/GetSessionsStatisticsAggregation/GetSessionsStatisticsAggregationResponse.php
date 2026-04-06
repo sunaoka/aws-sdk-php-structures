@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\Statistics>|null $statistics
- * @property string|null $nextToken
  * @property 'IN_PROGRESS'|'TIMEOUT'|'FAILED'|'COMPLETED' $status
  * @property string|null $statusMessage
+ * @property string|null $nextToken
  */
 class GetSessionsStatisticsAggregationResponse extends Response
 {

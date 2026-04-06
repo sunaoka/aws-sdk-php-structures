@@ -6,13 +6,13 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $ClusterIdentifier
- * @property string|null $ConnectedDatabase
- * @property string $Database
- * @property string|null $DbUser
- * @property int<0, 1000>|null $MaxResults
- * @property string|null $NextToken
- * @property string|null $SchemaPattern
  * @property string|null $SecretArn
+ * @property string|null $DbUser
+ * @property string $Database
+ * @property string|null $ConnectedDatabase
+ * @property string|null $SchemaPattern
+ * @property string|null $NextToken
+ * @property int<0, 1000>|null $MaxResults
  * @property string|null $WorkgroupName
  */
 class ListSchemasRequest extends Request
@@ -20,13 +20,13 @@ class ListSchemasRequest extends Request
     /**
      * @param array{
      *     ClusterIdentifier?: string|null,
-     *     ConnectedDatabase?: string|null,
-     *     Database: string,
-     *     DbUser?: string|null,
-     *     MaxResults?: int<0, 1000>|null,
-     *     NextToken?: string|null,
-     *     SchemaPattern?: string|null,
      *     SecretArn?: string|null,
+     *     DbUser?: string|null,
+     *     Database: string,
+     *     ConnectedDatabase?: string|null,
+     *     SchemaPattern?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<0, 1000>|null,
      *     WorkgroupName?: string|null
      * } $args
      */

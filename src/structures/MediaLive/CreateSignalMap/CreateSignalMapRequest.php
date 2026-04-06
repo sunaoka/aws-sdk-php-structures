@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $EventBridgeRuleTemplateGroupIdentifiers
  * @property string $Name
  * @property array<string, string>|null $Tags
+ * @property string|null $RequestId
  */
 class CreateSignalMapRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateSignalMapRequest extends Request
      *     DiscoveryEntryPointArn: string,
      *     EventBridgeRuleTemplateGroupIdentifiers?: list<string>|null,
      *     Name: string,
-     *     Tags?: array<string, string>|null
+     *     Tags?: array<string, string>|null,
+     *     RequestId?: string|null
      * } $args
      */
     public function __construct(array $args)

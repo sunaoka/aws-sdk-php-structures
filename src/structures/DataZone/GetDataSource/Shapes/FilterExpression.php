@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\GetDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $expression
  * @property 'INCLUDE'|'EXCLUDE' $type
+ * @property string $expression
  */
 class FilterExpression extends Shape
 {
     /**
      * @param array{
-     *     expression: string,
-     *     type: 'INCLUDE'|'EXCLUDE'
+     *     type: 'INCLUDE'|'EXCLUDE',
+     *     expression: string
      * } $args
      */
     public function __construct(array $args)

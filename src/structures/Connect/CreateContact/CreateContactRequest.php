@@ -14,10 +14,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'INBOUND'|'OUTBOUND'|'TRANSFER'|'QUEUE_TRANSFER'|'CALLBACK'|'API'|'DISCONNECT'|'MONITOR'|'EXTERNAL_OUTBOUND'|'WEBRTC_API'|'AGENT_REPLY'|'FLOW' $InitiationMethod
  * @property int|null $ExpiryDurationInMinutes
  * @property Shapes\UserInfo|null $UserInfo
- * @property 'CONNECTED_TO_USER'|null $InitiateAs
+ * @property 'CONNECTED_TO_USER'|'COMPLETED'|null $InitiateAs
  * @property string|null $Name
  * @property string|null $Description
  * @property array<string, Shapes\SegmentAttributeValue>|null $SegmentAttributes
+ * @property string|null $PreviousContactId
  */
 class CreateContactRequest extends Request
 {
@@ -32,10 +33,11 @@ class CreateContactRequest extends Request
      *     InitiationMethod: 'INBOUND'|'OUTBOUND'|'TRANSFER'|'QUEUE_TRANSFER'|'CALLBACK'|'API'|'DISCONNECT'|'MONITOR'|'EXTERNAL_OUTBOUND'|'WEBRTC_API'|'AGENT_REPLY'|'FLOW',
      *     ExpiryDurationInMinutes?: int|null,
      *     UserInfo?: Shapes\UserInfo|null,
-     *     InitiateAs?: 'CONNECTED_TO_USER'|null,
+     *     InitiateAs?: 'CONNECTED_TO_USER'|'COMPLETED'|null,
      *     Name?: string|null,
      *     Description?: string|null,
-     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>|null
+     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>|null,
+     *     PreviousContactId?: string|null
      * } $args
      */
     public function __construct(array $args)

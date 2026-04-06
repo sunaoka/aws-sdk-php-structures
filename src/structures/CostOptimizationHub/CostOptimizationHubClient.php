@@ -6,6 +6,7 @@ class CostOptimizationHubClient extends \Aws\CostOptimizationHub\CostOptimizatio
 {
     use GetPreferences\GetPreferencesTrait;
     use GetRecommendation\GetRecommendationTrait;
+    use ListEfficiencyMetrics\ListEfficiencyMetricsTrait;
     use ListEnrollmentStatuses\ListEnrollmentStatusesTrait;
     use ListRecommendationSummaries\ListRecommendationSummariesTrait;
     use ListRecommendations\ListRecommendationsTrait;

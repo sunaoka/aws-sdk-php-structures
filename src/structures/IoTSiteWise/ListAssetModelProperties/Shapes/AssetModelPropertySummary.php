@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PropertyType $type
  * @property string|null $assetModelCompositeModelId
  * @property list<AssetModelPropertyPathSegment>|null $path
+ * @property list<InterfaceSummary>|null $interfaceSummaries
  */
 class AssetModelPropertySummary extends Shape
 {
@@ -27,7 +28,8 @@ class AssetModelPropertySummary extends Shape
      *     unit?: string|null,
      *     type: PropertyType,
      *     assetModelCompositeModelId?: string|null,
-     *     path?: list<AssetModelPropertyPathSegment>|null
+     *     path?: list<AssetModelPropertyPathSegment>|null,
+     *     interfaceSummaries?: list<InterfaceSummary>|null
      * } $args
      */
     public function __construct(array $args)

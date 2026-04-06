@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Deadline\UpdateBudget;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
  * @property string $farmId
  * @property string $budgetId
+ * @property string|null $clientToken
  * @property string|null $displayName
  * @property string|null $description
  * @property 'ACTIVE'|'INACTIVE'|null $status
@@ -20,9 +20,9 @@ class UpdateBudgetRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
      *     farmId: string,
      *     budgetId: string,
+     *     clientToken?: string|null,
      *     displayName?: string|null,
      *     description?: string|null,
      *     status?: 'ACTIVE'|'INACTIVE'|null,

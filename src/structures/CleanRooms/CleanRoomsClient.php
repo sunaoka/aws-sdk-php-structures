@@ -9,6 +9,7 @@ class CleanRoomsClient extends \Aws\CleanRooms\CleanRoomsClient
     use BatchGetSchemaAnalysisRule\BatchGetSchemaAnalysisRuleTrait;
     use CreateAnalysisTemplate\CreateAnalysisTemplateTrait;
     use CreateCollaboration\CreateCollaborationTrait;
+    use CreateCollaborationChangeRequest\CreateCollaborationChangeRequestTrait;
     use CreateConfiguredAudienceModelAssociation\CreateConfiguredAudienceModelAssociationTrait;
     use CreateConfiguredTable\CreateConfiguredTableTrait;
     use CreateConfiguredTableAnalysisRule\CreateConfiguredTableAnalysisRuleTrait;
@@ -33,6 +34,7 @@ class CleanRoomsClient extends \Aws\CleanRooms\CleanRoomsClient
     use GetAnalysisTemplate\GetAnalysisTemplateTrait;
     use GetCollaboration\GetCollaborationTrait;
     use GetCollaborationAnalysisTemplate\GetCollaborationAnalysisTemplateTrait;
+    use GetCollaborationChangeRequest\GetCollaborationChangeRequestTrait;
     use GetCollaborationConfiguredAudienceModelAssociation\GetCollaborationConfiguredAudienceModelAssociationTrait;
     use GetCollaborationIdNamespaceAssociation\GetCollaborationIdNamespaceAssociationTrait;
     use GetCollaborationPrivacyBudgetTemplate\GetCollaborationPrivacyBudgetTemplateTrait;
@@ -45,11 +47,13 @@ class CleanRoomsClient extends \Aws\CleanRooms\CleanRoomsClient
     use GetIdNamespaceAssociation\GetIdNamespaceAssociationTrait;
     use GetMembership\GetMembershipTrait;
     use GetPrivacyBudgetTemplate\GetPrivacyBudgetTemplateTrait;
+    use GetProtectedJob\GetProtectedJobTrait;
     use GetProtectedQuery\GetProtectedQueryTrait;
     use GetSchema\GetSchemaTrait;
     use GetSchemaAnalysisRule\GetSchemaAnalysisRuleTrait;
     use ListAnalysisTemplates\ListAnalysisTemplatesTrait;
     use ListCollaborationAnalysisTemplates\ListCollaborationAnalysisTemplatesTrait;
+    use ListCollaborationChangeRequests\ListCollaborationChangeRequestsTrait;
     use ListCollaborationConfiguredAudienceModelAssociations\ListCollaborationConfiguredAudienceModelAssociationsTrait;
     use ListCollaborationIdNamespaceAssociations\ListCollaborationIdNamespaceAssociationsTrait;
     use ListCollaborationPrivacyBudgetTemplates\ListCollaborationPrivacyBudgetTemplatesTrait;
@@ -64,16 +68,19 @@ class CleanRoomsClient extends \Aws\CleanRooms\CleanRoomsClient
     use ListMemberships\ListMembershipsTrait;
     use ListPrivacyBudgetTemplates\ListPrivacyBudgetTemplatesTrait;
     use ListPrivacyBudgets\ListPrivacyBudgetsTrait;
+    use ListProtectedJobs\ListProtectedJobsTrait;
     use ListProtectedQueries\ListProtectedQueriesTrait;
     use ListSchemas\ListSchemasTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PopulateIdMappingTable\PopulateIdMappingTableTrait;
     use PreviewPrivacyImpact\PreviewPrivacyImpactTrait;
+    use StartProtectedJob\StartProtectedJobTrait;
     use StartProtectedQuery\StartProtectedQueryTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAnalysisTemplate\UpdateAnalysisTemplateTrait;
     use UpdateCollaboration\UpdateCollaborationTrait;
+    use UpdateCollaborationChangeRequest\UpdateCollaborationChangeRequestTrait;
     use UpdateConfiguredAudienceModelAssociation\UpdateConfiguredAudienceModelAssociationTrait;
     use UpdateConfiguredTable\UpdateConfiguredTableTrait;
     use UpdateConfiguredTableAnalysisRule\UpdateConfiguredTableAnalysisRuleTrait;
@@ -83,5 +90,6 @@ class CleanRoomsClient extends \Aws\CleanRooms\CleanRoomsClient
     use UpdateIdNamespaceAssociation\UpdateIdNamespaceAssociationTrait;
     use UpdateMembership\UpdateMembershipTrait;
     use UpdatePrivacyBudgetTemplate\UpdatePrivacyBudgetTemplateTrait;
+    use UpdateProtectedJob\UpdateProtectedJobTrait;
     use UpdateProtectedQuery\UpdateProtectedQueryTrait;
 }

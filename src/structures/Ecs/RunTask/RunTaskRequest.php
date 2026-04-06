@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $enableECSManagedTags
  * @property bool|null $enableExecuteCommand
  * @property string|null $group
- * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null $launchType
  * @property Shapes\NetworkConfiguration|null $networkConfiguration
  * @property Shapes\TaskOverride|null $overrides
  * @property list<Shapes\PlacementConstraint>|null $placementConstraints
@@ -35,7 +35,7 @@ class RunTaskRequest extends Request
      *     enableECSManagedTags?: bool|null,
      *     enableExecuteCommand?: bool|null,
      *     group?: string|null,
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null,
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null,
      *     networkConfiguration?: Shapes\NetworkConfiguration|null,
      *     overrides?: Shapes\TaskOverride|null,
      *     placementConstraints?: list<Shapes\PlacementConstraint>|null,

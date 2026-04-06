@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DeploymentDetails|null $DeploymentDetails
  * @property LogConfiguration|null $LogConfiguration
  * @property list<ContainerFleetLocationAttributes>|null $LocationAttributes
+ * @property 'DISABLED'|'ENABLED'|'REQUIRED'|null $PlayerGatewayMode
  */
 class ContainerFleet extends Shape
 {
@@ -53,7 +54,8 @@ class ContainerFleet extends Shape
      *     Status?: 'PENDING'|'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVE'|'UPDATING'|'DELETING'|null,
      *     DeploymentDetails?: DeploymentDetails|null,
      *     LogConfiguration?: LogConfiguration|null,
-     *     LocationAttributes?: list<ContainerFleetLocationAttributes>|null
+     *     LocationAttributes?: list<ContainerFleetLocationAttributes>|null,
+     *     PlayerGatewayMode?: 'DISABLED'|'ENABLED'|'REQUIRED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property 'EQUAL'|'NOT_EQUAL'|'GREATER_THAN_EQUAL_TO'|'GREATER_THAN'|'LESS_THAN_EQUAL_TO'|'LESS_THAN' $operator
+ * @property 'EQUAL'|'NOT_EQUAL'|'GREATER_THAN_EQUAL_TO'|'GREATER_THAN'|'LESS_THAN_EQUAL_TO'|'LESS_THAN'|'ANY_EQUALS'|'ALL_NOT_EQUALS' $operator
  * @property string $value
  */
 class ParameterFilterExpression extends Shape
@@ -14,7 +14,7 @@ class ParameterFilterExpression extends Shape
     /**
      * @param array{
      *     name: string,
-     *     operator: 'EQUAL'|'NOT_EQUAL'|'GREATER_THAN_EQUAL_TO'|'GREATER_THAN'|'LESS_THAN_EQUAL_TO'|'LESS_THAN',
+     *     operator: 'EQUAL'|'NOT_EQUAL'|'GREATER_THAN_EQUAL_TO'|'GREATER_THAN'|'LESS_THAN_EQUAL_TO'|'LESS_THAN'|'ANY_EQUALS'|'ALL_NOT_EQUALS',
      *     value: string
      * } $args
      */

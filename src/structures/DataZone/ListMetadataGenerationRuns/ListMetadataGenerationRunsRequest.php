@@ -6,20 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainIdentifier
- * @property int<1, 50>|null $maxResults
+ * @property 'SUBMITTED'|'IN_PROGRESS'|'CANCELED'|'SUCCEEDED'|'FAILED'|'PARTIALLY_SUCCEEDED'|null $status
+ * @property 'BUSINESS_DESCRIPTIONS'|'BUSINESS_NAMES'|'BUSINESS_GLOSSARY_ASSOCIATIONS'|null $type
  * @property string|null $nextToken
- * @property 'SUBMITTED'|'IN_PROGRESS'|'CANCELED'|'SUCCEEDED'|'FAILED'|null $status
- * @property 'BUSINESS_DESCRIPTIONS'|null $type
+ * @property int<1, 50>|null $maxResults
+ * @property string|null $targetIdentifier
  */
 class ListMetadataGenerationRunsRequest extends Request
 {
     /**
      * @param array{
      *     domainIdentifier: string,
-     *     maxResults?: int<1, 50>|null,
+     *     status?: 'SUBMITTED'|'IN_PROGRESS'|'CANCELED'|'SUCCEEDED'|'FAILED'|'PARTIALLY_SUCCEEDED'|null,
+     *     type?: 'BUSINESS_DESCRIPTIONS'|'BUSINESS_NAMES'|'BUSINESS_GLOSSARY_ASSOCIATIONS'|null,
      *     nextToken?: string|null,
-     *     status?: 'SUBMITTED'|'IN_PROGRESS'|'CANCELED'|'SUCCEEDED'|'FAILED'|null,
-     *     type?: 'BUSINESS_DESCRIPTIONS'|null
+     *     maxResults?: int<1, 50>|null,
+     *     targetIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

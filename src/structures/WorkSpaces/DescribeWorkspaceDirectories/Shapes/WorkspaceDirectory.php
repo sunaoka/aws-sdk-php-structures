@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $RegistrationCode
  * @property list<string>|null $SubnetIds
  * @property list<string>|null $DnsIpAddresses
+ * @property list<string>|null $DnsIpv6Addresses
  * @property string|null $CustomerUserName
  * @property string|null $IamRoleId
  * @property 'SIMPLE_AD'|'AD_CONNECTOR'|'CUSTOMER_MANAGED'|'AWS_IAM_IDENTITY_CENTER'|null $DirectoryType
@@ -23,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SelfservicePermissions|null $SelfservicePermissions
  * @property SamlProperties|null $SamlProperties
  * @property CertificateBasedAuthProperties|null $CertificateBasedAuthProperties
+ * @property 'STANDARD_TLS'|'FIPS_VALIDATED'|null $EndpointEncryptionMode
  * @property MicrosoftEntraConfig|null $MicrosoftEntraConfig
  * @property string|null $WorkspaceDirectoryName
  * @property string|null $WorkspaceDirectoryDescription
@@ -43,6 +45,7 @@ class WorkspaceDirectory extends Shape
      *     RegistrationCode?: string|null,
      *     SubnetIds?: list<string>|null,
      *     DnsIpAddresses?: list<string>|null,
+     *     DnsIpv6Addresses?: list<string>|null,
      *     CustomerUserName?: string|null,
      *     IamRoleId?: string|null,
      *     DirectoryType?: 'SIMPLE_AD'|'AD_CONNECTOR'|'CUSTOMER_MANAGED'|'AWS_IAM_IDENTITY_CENTER'|null,
@@ -55,6 +58,7 @@ class WorkspaceDirectory extends Shape
      *     SelfservicePermissions?: SelfservicePermissions|null,
      *     SamlProperties?: SamlProperties|null,
      *     CertificateBasedAuthProperties?: CertificateBasedAuthProperties|null,
+     *     EndpointEncryptionMode?: 'STANDARD_TLS'|'FIPS_VALIDATED'|null,
      *     MicrosoftEntraConfig?: MicrosoftEntraConfig|null,
      *     WorkspaceDirectoryName?: string|null,
      *     WorkspaceDirectoryDescription?: string|null,

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\DescribeBundleAssociations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ValidationError.InsufficientDiskSpace'|'ValidationError.InsufficientMemory'|'ValidationError.UnsupportedOperatingSystem'|'DeploymentError.InternalServerError'|'DeploymentError.WorkspaceUnreachable'|null $ErrorCode
+ * @property 'ValidationError.InsufficientDiskSpace'|'ValidationError.InsufficientMemory'|'ValidationError.UnsupportedOperatingSystem'|'DeploymentError.InternalServerError'|'DeploymentError.WorkspaceUnreachable'|'ValidationError.ApplicationOldVersionExists'|null $ErrorCode
  * @property string|null $ErrorMessage
  */
 class AssociationStateReason extends Shape
 {
     /**
      * @param array{
-     *     ErrorCode?: 'ValidationError.InsufficientDiskSpace'|'ValidationError.InsufficientMemory'|'ValidationError.UnsupportedOperatingSystem'|'DeploymentError.InternalServerError'|'DeploymentError.WorkspaceUnreachable'|null,
+     *     ErrorCode?: 'ValidationError.InsufficientDiskSpace'|'ValidationError.InsufficientMemory'|'ValidationError.UnsupportedOperatingSystem'|'DeploymentError.InternalServerError'|'DeploymentError.WorkspaceUnreachable'|'ValidationError.ApplicationOldVersionExists'|null,
      *     ErrorMessage?: string|null
      * } $args
      */

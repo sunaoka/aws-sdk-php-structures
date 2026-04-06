@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\Backup;
 
 class BackupClient extends \Aws\Backup\BackupClient
 {
+    use AssociateBackupVaultMpaApprovalTeam\AssociateBackupVaultMpaApprovalTeamTrait;
     use CancelLegalHold\CancelLegalHoldTrait;
     use CreateBackupPlan\CreateBackupPlanTrait;
     use CreateBackupSelection\CreateBackupSelectionTrait;
@@ -12,8 +13,10 @@ class BackupClient extends \Aws\Backup\BackupClient
     use CreateLegalHold\CreateLegalHoldTrait;
     use CreateLogicallyAirGappedBackupVault\CreateLogicallyAirGappedBackupVaultTrait;
     use CreateReportPlan\CreateReportPlanTrait;
+    use CreateRestoreAccessBackupVault\CreateRestoreAccessBackupVaultTrait;
     use CreateRestoreTestingPlan\CreateRestoreTestingPlanTrait;
     use CreateRestoreTestingSelection\CreateRestoreTestingSelectionTrait;
+    use CreateTieringConfiguration\CreateTieringConfigurationTrait;
     use DeleteBackupPlan\DeleteBackupPlanTrait;
     use DeleteBackupSelection\DeleteBackupSelectionTrait;
     use DeleteBackupVault\DeleteBackupVaultTrait;
@@ -25,6 +28,7 @@ class BackupClient extends \Aws\Backup\BackupClient
     use DeleteReportPlan\DeleteReportPlanTrait;
     use DeleteRestoreTestingPlan\DeleteRestoreTestingPlanTrait;
     use DeleteRestoreTestingSelection\DeleteRestoreTestingSelectionTrait;
+    use DeleteTieringConfiguration\DeleteTieringConfigurationTrait;
     use DescribeBackupJob\DescribeBackupJobTrait;
     use DescribeBackupVault\DescribeBackupVaultTrait;
     use DescribeCopyJob\DescribeCopyJobTrait;
@@ -36,6 +40,8 @@ class BackupClient extends \Aws\Backup\BackupClient
     use DescribeReportJob\DescribeReportJobTrait;
     use DescribeReportPlan\DescribeReportPlanTrait;
     use DescribeRestoreJob\DescribeRestoreJobTrait;
+    use DescribeScanJob\DescribeScanJobTrait;
+    use DisassociateBackupVaultMpaApprovalTeam\DisassociateBackupVaultMpaApprovalTeamTrait;
     use DisassociateRecoveryPoint\DisassociateRecoveryPointTrait;
     use DisassociateRecoveryPointFromParent\DisassociateRecoveryPointFromParentTrait;
     use ExportBackupPlanTemplate\ExportBackupPlanTemplateTrait;
@@ -53,6 +59,7 @@ class BackupClient extends \Aws\Backup\BackupClient
     use GetRestoreTestingPlan\GetRestoreTestingPlanTrait;
     use GetRestoreTestingSelection\GetRestoreTestingSelectionTrait;
     use GetSupportedResourceTypes\GetSupportedResourceTypesTrait;
+    use GetTieringConfiguration\GetTieringConfigurationTrait;
     use ListBackupJobSummaries\ListBackupJobSummariesTrait;
     use ListBackupJobs\ListBackupJobsTrait;
     use ListBackupPlanTemplates\ListBackupPlanTemplatesTrait;
@@ -72,20 +79,26 @@ class BackupClient extends \Aws\Backup\BackupClient
     use ListRecoveryPointsByResource\ListRecoveryPointsByResourceTrait;
     use ListReportJobs\ListReportJobsTrait;
     use ListReportPlans\ListReportPlansTrait;
+    use ListRestoreAccessBackupVaults\ListRestoreAccessBackupVaultsTrait;
     use ListRestoreJobSummaries\ListRestoreJobSummariesTrait;
     use ListRestoreJobs\ListRestoreJobsTrait;
     use ListRestoreJobsByProtectedResource\ListRestoreJobsByProtectedResourceTrait;
     use ListRestoreTestingPlans\ListRestoreTestingPlansTrait;
     use ListRestoreTestingSelections\ListRestoreTestingSelectionsTrait;
+    use ListScanJobSummaries\ListScanJobSummariesTrait;
+    use ListScanJobs\ListScanJobsTrait;
     use ListTags\ListTagsTrait;
+    use ListTieringConfigurations\ListTieringConfigurationsTrait;
     use PutBackupVaultAccessPolicy\PutBackupVaultAccessPolicyTrait;
     use PutBackupVaultLockConfiguration\PutBackupVaultLockConfigurationTrait;
     use PutBackupVaultNotifications\PutBackupVaultNotificationsTrait;
     use PutRestoreValidationResult\PutRestoreValidationResultTrait;
+    use RevokeRestoreAccessBackupVault\RevokeRestoreAccessBackupVaultTrait;
     use StartBackupJob\StartBackupJobTrait;
     use StartCopyJob\StartCopyJobTrait;
     use StartReportJob\StartReportJobTrait;
     use StartRestoreJob\StartRestoreJobTrait;
+    use StartScanJob\StartScanJobTrait;
     use StopBackupJob\StopBackupJobTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
@@ -98,4 +111,5 @@ class BackupClient extends \Aws\Backup\BackupClient
     use UpdateReportPlan\UpdateReportPlanTrait;
     use UpdateRestoreTestingPlan\UpdateRestoreTestingPlanTrait;
     use UpdateRestoreTestingSelection\UpdateRestoreTestingSelectionTrait;
+    use UpdateTieringConfiguration\UpdateTieringConfigurationTrait;
 }

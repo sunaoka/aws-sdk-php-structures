@@ -4,11 +4,13 @@ namespace Sunaoka\Aws\Structures\CloudWatch;
 
 class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
 {
+    use DeleteAlarmMuteRule\DeleteAlarmMuteRuleTrait;
     use DeleteAlarms\DeleteAlarmsTrait;
     use DeleteAnomalyDetector\DeleteAnomalyDetectorTrait;
     use DeleteDashboards\DeleteDashboardsTrait;
     use DeleteInsightRules\DeleteInsightRulesTrait;
     use DeleteMetricStream\DeleteMetricStreamTrait;
+    use DescribeAlarmContributors\DescribeAlarmContributorsTrait;
     use DescribeAlarmHistory\DescribeAlarmHistoryTrait;
     use DescribeAlarms\DescribeAlarmsTrait;
     use DescribeAlarmsForMetric\DescribeAlarmsForMetricTrait;
@@ -18,17 +20,21 @@ class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
     use DisableInsightRules\DisableInsightRulesTrait;
     use EnableAlarmActions\EnableAlarmActionsTrait;
     use EnableInsightRules\EnableInsightRulesTrait;
+    use GetAlarmMuteRule\GetAlarmMuteRuleTrait;
     use GetDashboard\GetDashboardTrait;
     use GetInsightRuleReport\GetInsightRuleReportTrait;
     use GetMetricData\GetMetricDataTrait;
     use GetMetricStatistics\GetMetricStatisticsTrait;
     use GetMetricStream\GetMetricStreamTrait;
     use GetMetricWidgetImage\GetMetricWidgetImageTrait;
+    use GetOTelEnrichment\GetOTelEnrichmentTrait;
+    use ListAlarmMuteRules\ListAlarmMuteRulesTrait;
     use ListDashboards\ListDashboardsTrait;
     use ListManagedInsightRules\ListManagedInsightRulesTrait;
     use ListMetricStreams\ListMetricStreamsTrait;
     use ListMetrics\ListMetricsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use PutAlarmMuteRule\PutAlarmMuteRuleTrait;
     use PutAnomalyDetector\PutAnomalyDetectorTrait;
     use PutCompositeAlarm\PutCompositeAlarmTrait;
     use PutDashboard\PutDashboardTrait;
@@ -39,7 +45,9 @@ class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
     use PutMetricStream\PutMetricStreamTrait;
     use SetAlarmState\SetAlarmStateTrait;
     use StartMetricStreams\StartMetricStreamsTrait;
+    use StartOTelEnrichment\StartOTelEnrichmentTrait;
     use StopMetricStreams\StopMetricStreamsTrait;
+    use StopOTelEnrichment\StopOTelEnrichmentTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
 }

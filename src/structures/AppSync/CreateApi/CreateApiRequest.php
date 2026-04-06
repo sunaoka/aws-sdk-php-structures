@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string|null $ownerContact
  * @property array<string, string>|null $tags
- * @property Shapes\EventConfig|null $eventConfig
+ * @property Shapes\EventConfig $eventConfig
  */
 class CreateApiRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateApiRequest extends Request
      *     name: string,
      *     ownerContact?: string|null,
      *     tags?: array<string, string>|null,
-     *     eventConfig?: Shapes\EventConfig|null
+     *     eventConfig: Shapes\EventConfig
      * } $args
      */
     public function __construct(array $args)

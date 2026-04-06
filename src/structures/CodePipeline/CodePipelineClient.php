@@ -22,6 +22,7 @@ class CodePipelineClient extends \Aws\CodePipeline\CodePipelineClient
     use GetThirdPartyJobDetails\GetThirdPartyJobDetailsTrait;
     use ListActionExecutions\ListActionExecutionsTrait;
     use ListActionTypes\ListActionTypesTrait;
+    use ListDeployActionExecutionTargets\ListDeployActionExecutionTargetsTrait;
     use ListPipelineExecutions\ListPipelineExecutionsTrait;
     use ListPipelines\ListPipelinesTrait;
     use ListRuleExecutions\ListRuleExecutionsTrait;

@@ -25,6 +25,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $Tags
  * @property string|null $TranscodeProfileName
  * @property string|null $VideoContentSourceUrl
+ * @property AdConditioningConfiguration|null $AdConditioningConfiguration
+ * @property AdDecisionServerConfiguration|null $AdDecisionServerConfiguration
  */
 class PlaybackConfiguration extends Shape
 {
@@ -49,7 +51,9 @@ class PlaybackConfiguration extends Shape
      *     SlateAdUrl?: string|null,
      *     Tags?: array<string, string>|null,
      *     TranscodeProfileName?: string|null,
-     *     VideoContentSourceUrl?: string|null
+     *     VideoContentSourceUrl?: string|null,
+     *     AdConditioningConfiguration?: AdConditioningConfiguration|null,
+     *     AdDecisionServerConfiguration?: AdDecisionServerConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

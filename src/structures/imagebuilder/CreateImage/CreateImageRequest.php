@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ImageScanningConfiguration|null $imageScanningConfiguration
  * @property list<Shapes\WorkflowConfiguration>|null $workflows
  * @property string|null $executionRole
+ * @property Shapes\ImageLoggingConfiguration|null $loggingConfiguration
  */
 class CreateImageRequest extends Request
 {
@@ -31,7 +32,8 @@ class CreateImageRequest extends Request
      *     clientToken: string,
      *     imageScanningConfiguration?: Shapes\ImageScanningConfiguration|null,
      *     workflows?: list<Shapes\WorkflowConfiguration>|null,
-     *     executionRole?: string|null
+     *     executionRole?: string|null,
+     *     loggingConfiguration?: Shapes\ImageLoggingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

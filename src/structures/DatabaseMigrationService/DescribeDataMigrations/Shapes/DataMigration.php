@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'full-load'|'cdc'|'full-load-and-cdc'|null $DataMigrationType
  * @property DataMigrationSettings|null $DataMigrationSettings
  * @property list<SourceDataSetting>|null $SourceDataSettings
+ * @property list<TargetDataSetting>|null $TargetDataSettings
  * @property DataMigrationStatistics|null $DataMigrationStatistics
  * @property string|null $DataMigrationStatus
  * @property list<string>|null $PublicIpAddresses
@@ -36,6 +37,7 @@ class DataMigration extends Shape
      *     DataMigrationType?: 'full-load'|'cdc'|'full-load-and-cdc'|null,
      *     DataMigrationSettings?: DataMigrationSettings|null,
      *     SourceDataSettings?: list<SourceDataSetting>|null,
+     *     TargetDataSettings?: list<TargetDataSetting>|null,
      *     DataMigrationStatistics?: DataMigrationStatistics|null,
      *     DataMigrationStatus?: string|null,
      *     PublicIpAddresses?: list<string>|null,

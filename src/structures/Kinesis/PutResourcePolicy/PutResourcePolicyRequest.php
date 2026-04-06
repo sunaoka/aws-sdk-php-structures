@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ResourceARN
+ * @property string|null $StreamId
  * @property string $Policy
  */
 class PutResourcePolicyRequest extends Request
@@ -13,6 +14,7 @@ class PutResourcePolicyRequest extends Request
     /**
      * @param array{
      *     ResourceARN: string,
+     *     StreamId?: string|null,
      *     Policy: string
      * } $args
      */

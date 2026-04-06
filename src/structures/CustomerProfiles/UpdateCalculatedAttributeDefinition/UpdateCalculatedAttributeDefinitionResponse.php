@@ -13,6 +13,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'FIRST_OCCURRENCE'|'LAST_OCCURRENCE'|'COUNT'|'SUM'|'MINIMUM'|'MAXIMUM'|'AVERAGE'|'MAX_OCCURRENCE'|null $Statistic
  * @property Shapes\Conditions|null $Conditions
  * @property Shapes\AttributeDetails|null $AttributeDetails
+ * @property bool|null $UseHistoricalData
+ * @property 'PREPARING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|null $Status
+ * @property Shapes\Readiness|null $Readiness
  * @property array<string, string>|null $Tags
  */
 class UpdateCalculatedAttributeDefinitionResponse extends Response

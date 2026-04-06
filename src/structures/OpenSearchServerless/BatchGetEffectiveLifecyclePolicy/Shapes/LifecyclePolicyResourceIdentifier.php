@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\BatchGetEffectiveLifecycle
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $resource
  * @property 'retention' $type
+ * @property string $resource
  */
 class LifecyclePolicyResourceIdentifier extends Shape
 {
     /**
      * @param array{
-     *     resource: string,
-     *     type: 'retention'
+     *     type: 'retention',
+     *     resource: string
      * } $args
      */
     public function __construct(array $args)

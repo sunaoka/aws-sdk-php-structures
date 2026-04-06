@@ -10,6 +10,7 @@ class KinesisClient extends \Aws\Kinesis\KinesisClient
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;
     use DeleteStream\DeleteStreamTrait;
     use DeregisterStreamConsumer\DeregisterStreamConsumerTrait;
+    use DescribeAccountSettings\DescribeAccountSettingsTrait;
     use DescribeLimits\DescribeLimitsTrait;
     use DescribeStream\DescribeStreamTrait;
     use DescribeStreamConsumer\DescribeStreamConsumerTrait;
@@ -23,6 +24,7 @@ class KinesisClient extends \Aws\Kinesis\KinesisClient
     use ListShards\ListShardsTrait;
     use ListStreamConsumers\ListStreamConsumersTrait;
     use ListStreams\ListStreamsTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
     use ListTagsForStream\ListTagsForStreamTrait;
     use MergeShards\MergeShardsTrait;
     use PutRecord\PutRecordTrait;
@@ -33,6 +35,11 @@ class KinesisClient extends \Aws\Kinesis\KinesisClient
     use SplitShard\SplitShardTrait;
     use StartStreamEncryption\StartStreamEncryptionTrait;
     use StopStreamEncryption\StopStreamEncryptionTrait;
+    use TagResource\TagResourceTrait;
+    use UntagResource\UntagResourceTrait;
+    use UpdateAccountSettings\UpdateAccountSettingsTrait;
+    use UpdateMaxRecordSize\UpdateMaxRecordSizeTrait;
     use UpdateShardCount\UpdateShardCountTrait;
     use UpdateStreamMode\UpdateStreamModeTrait;
+    use UpdateStreamWarmThroughput\UpdateStreamWarmThroughputTrait;
 }

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $jobName
  * @property string $datasetArn
  * @property Shapes\DataSource $dataSource
- * @property string $roleArn
+ * @property string|null $roleArn
  * @property list<Shapes\Tag>|null $tags
  * @property 'FULL'|'INCREMENTAL'|null $importMode
  * @property bool|null $publishAttributionMetricsToS3
@@ -20,7 +20,7 @@ class CreateDatasetImportJobRequest extends Request
      *     jobName: string,
      *     datasetArn: string,
      *     dataSource: Shapes\DataSource,
-     *     roleArn: string,
+     *     roleArn?: string|null,
      *     tags?: list<Shapes\Tag>|null,
      *     importMode?: 'FULL'|'INCREMENTAL'|null,
      *     publishAttributionMetricsToS3?: bool|null

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $TwoWayChannelRole
  * @property bool|null $SelfManagedOptOutsEnabled
  * @property string|null $OptOutListName
+ * @property bool|null $InternationalSendingEnabled
  * @property bool|null $DeletionProtectionEnabled
  */
 class UpdatePhoneNumberRequest extends Request
@@ -23,6 +24,7 @@ class UpdatePhoneNumberRequest extends Request
      *     TwoWayChannelRole?: string|null,
      *     SelfManagedOptOutsEnabled?: bool|null,
      *     OptOutListName?: string|null,
+     *     InternationalSendingEnabled?: bool|null,
      *     DeletionProtectionEnabled?: bool|null
      * } $args
      */

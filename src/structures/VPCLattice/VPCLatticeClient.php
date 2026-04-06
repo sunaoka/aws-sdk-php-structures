@@ -18,6 +18,7 @@ class VPCLatticeClient extends \Aws\VPCLattice\VPCLatticeClient
     use CreateTargetGroup\CreateTargetGroupTrait;
     use DeleteAccessLogSubscription\DeleteAccessLogSubscriptionTrait;
     use DeleteAuthPolicy\DeleteAuthPolicyTrait;
+    use DeleteDomainVerification\DeleteDomainVerificationTrait;
     use DeleteListener\DeleteListenerTrait;
     use DeleteResourceConfiguration\DeleteResourceConfigurationTrait;
     use DeleteResourceEndpointAssociation\DeleteResourceEndpointAssociationTrait;
@@ -33,6 +34,7 @@ class VPCLatticeClient extends \Aws\VPCLattice\VPCLatticeClient
     use DeregisterTargets\DeregisterTargetsTrait;
     use GetAccessLogSubscription\GetAccessLogSubscriptionTrait;
     use GetAuthPolicy\GetAuthPolicyTrait;
+    use GetDomainVerification\GetDomainVerificationTrait;
     use GetListener\GetListenerTrait;
     use GetResourceConfiguration\GetResourceConfigurationTrait;
     use GetResourceGateway\GetResourceGatewayTrait;
@@ -45,6 +47,7 @@ class VPCLatticeClient extends \Aws\VPCLattice\VPCLatticeClient
     use GetServiceNetworkVpcAssociation\GetServiceNetworkVpcAssociationTrait;
     use GetTargetGroup\GetTargetGroupTrait;
     use ListAccessLogSubscriptions\ListAccessLogSubscriptionsTrait;
+    use ListDomainVerifications\ListDomainVerificationsTrait;
     use ListListeners\ListListenersTrait;
     use ListResourceConfigurations\ListResourceConfigurationsTrait;
     use ListResourceEndpointAssociations\ListResourceEndpointAssociationsTrait;
@@ -62,6 +65,7 @@ class VPCLatticeClient extends \Aws\VPCLattice\VPCLatticeClient
     use PutAuthPolicy\PutAuthPolicyTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;
     use RegisterTargets\RegisterTargetsTrait;
+    use StartDomainVerification\StartDomainVerificationTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAccessLogSubscription\UpdateAccessLogSubscriptionTrait;

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $domainIdentifier
  * @property string $identifier
- * @property int<1, 50>|null $maxResults
  * @property string|null $nextToken
+ * @property int<1, 50>|null $maxResults
  */
 class ListAssetRevisionsRequest extends Request
 {
@@ -16,8 +16,8 @@ class ListAssetRevisionsRequest extends Request
      * @param array{
      *     domainIdentifier: string,
      *     identifier: string,
-     *     maxResults?: int<1, 50>|null,
-     *     nextToken?: string|null
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 50>|null
      * } $args
      */
     public function __construct(array $args)

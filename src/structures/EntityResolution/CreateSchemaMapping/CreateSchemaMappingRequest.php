@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\EntityResolution\CreateSchemaMapping;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string $schemaName
  * @property string|null $description
  * @property list<Shapes\SchemaInputAttribute> $mappedInputFields
- * @property string $schemaName
  * @property array<string, string>|null $tags
  */
 class CreateSchemaMappingRequest extends Request
 {
     /**
      * @param array{
+     *     schemaName: string,
      *     description?: string|null,
      *     mappedInputFields: list<Shapes\SchemaInputAttribute>,
-     *     schemaName: string,
      *     tags?: array<string, string>|null
      * } $args
      */

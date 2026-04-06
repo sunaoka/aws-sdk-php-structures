@@ -36,6 +36,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\FilterCriteriaError|null $FilterCriteriaError
  * @property string|null $EventSourceMappingArn
  * @property Shapes\EventSourceMappingMetricsConfig|null $MetricsConfig
+ * @property Shapes\EventSourceMappingLoggingConfig|null $LoggingConfig
  * @property Shapes\ProvisionedPollerConfig|null $ProvisionedPollerConfig
  */
 class DeleteEventSourceMappingResponse extends Response
