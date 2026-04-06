@@ -5,26 +5,27 @@ namespace Sunaoka\Aws\Structures\Deadline\GetJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Attachments|null $attachments
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property string|null $description
- * @property \Aws\Api\DateTimeResult|null $endedAt
  * @property string $jobId
+ * @property string $name
  * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATE_COMPLETE'|'UPLOAD_IN_PROGRESS'|'UPLOAD_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED'|'UPDATE_SUCCEEDED'|'ARCHIVED' $lifecycleStatus
  * @property string $lifecycleStatusMessage
- * @property int<0, 2147483647>|null $maxFailedTasksCount
- * @property int<0, 2147483647>|null $maxRetriesPerTask
- * @property string $name
- * @property array<string, Shapes\JobParameter>|null $parameters
  * @property int<0, 100> $priority
- * @property \Aws\Api\DateTimeResult|null $startedAt
- * @property string|null $storageProfileId
- * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null $targetTaskRunStatus
- * @property 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE'|null $taskRunStatus
- * @property array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int>|null $taskRunStatusCounts
+ * @property \Aws\Api\DateTimeResult $createdAt
+ * @property string $createdBy
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string|null $updatedBy
+ * @property \Aws\Api\DateTimeResult|null $startedAt
+ * @property \Aws\Api\DateTimeResult|null $endedAt
+ * @property 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE'|null $taskRunStatus
+ * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null $targetTaskRunStatus
+ * @property array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int>|null $taskRunStatusCounts
+ * @property string|null $storageProfileId
+ * @property int<0, 2147483647>|null $maxFailedTasksCount
+ * @property int<0, 2147483647>|null $maxRetriesPerTask
+ * @property array<string, Shapes\JobParameter>|null $parameters
+ * @property Shapes\Attachments|null $attachments
+ * @property string|null $description
+ * @property string|null $sourceJobId
  */
 class GetJobResponse extends Response
 {

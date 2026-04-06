@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeKeyPairs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\Filter>|null $Filters
  * @property list<string>|null $KeyNames
  * @property list<string>|null $KeyPairIds
- * @property bool|null $DryRun
  * @property bool|null $IncludePublicKey
+ * @property bool|null $DryRun
+ * @property list<Shapes\Filter>|null $Filters
  */
 class DescribeKeyPairsRequest extends Request
 {
     /**
      * @param array{
-     *     Filters?: list<Shapes\Filter>|null,
      *     KeyNames?: list<string>|null,
      *     KeyPairIds?: list<string>|null,
+     *     IncludePublicKey?: bool|null,
      *     DryRun?: bool|null,
-     *     IncludePublicKey?: bool|null
+     *     Filters?: list<Shapes\Filter>|null
      * } $args
      */
     public function __construct(array $args = [])

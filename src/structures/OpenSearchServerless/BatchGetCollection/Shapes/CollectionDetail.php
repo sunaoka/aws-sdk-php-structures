@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $createdDate
  * @property string|null $dashboardEndpoint
  * @property string|null $description
+ * @property string|null $failureCode
+ * @property string|null $failureMessage
  * @property string|null $id
  * @property string|null $kmsKeyArn
  * @property int|null $lastModifiedDate
@@ -27,6 +29,8 @@ class CollectionDetail extends Shape
      *     createdDate?: int|null,
      *     dashboardEndpoint?: string|null,
      *     description?: string|null,
+     *     failureCode?: string|null,
+     *     failureMessage?: string|null,
      *     id?: string|null,
      *     kmsKeyArn?: string|null,
      *     lastModifiedDate?: int|null,

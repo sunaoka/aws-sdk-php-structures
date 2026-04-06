@@ -13,6 +13,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property string|null $fallbackLocation
  * @property 'MD5up'|'SHA256up'|'SHA512up'|null $eTagAlgorithmFamily
+ * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'FAILED'|null $status
+ * @property string|null $statusMessage
+ * @property \Aws\Api\DateTimeResult|null $updateTime
  */
 class SequenceStoreDetail extends Shape
 {
@@ -25,7 +28,10 @@ class SequenceStoreDetail extends Shape
      *     sseConfig?: SseConfig|null,
      *     creationTime: \Aws\Api\DateTimeResult,
      *     fallbackLocation?: string|null,
-     *     eTagAlgorithmFamily?: 'MD5up'|'SHA256up'|'SHA512up'|null
+     *     eTagAlgorithmFamily?: 'MD5up'|'SHA256up'|'SHA512up'|null,
+     *     status?: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'FAILED'|null,
+     *     statusMessage?: string|null,
+     *     updateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

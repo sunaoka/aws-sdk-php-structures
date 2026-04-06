@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AssessmentRunName
  * @property list<string>|null $IncludeOnly
  * @property list<string>|null $Exclude
+ * @property list<Shapes\Tag>|null $Tags
  */
 class StartReplicationTaskAssessmentRunRequest extends Request
 {
@@ -27,7 +28,8 @@ class StartReplicationTaskAssessmentRunRequest extends Request
      *     ResultKmsKeyArn?: string|null,
      *     AssessmentRunName: string,
      *     IncludeOnly?: list<string>|null,
-     *     Exclude?: list<string>|null
+     *     Exclude?: list<string>|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

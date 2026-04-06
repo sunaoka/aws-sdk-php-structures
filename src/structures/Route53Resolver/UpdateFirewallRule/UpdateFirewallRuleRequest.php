@@ -6,7 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FirewallRuleGroupId
- * @property string $FirewallDomainListId
+ * @property string|null $FirewallDomainListId
+ * @property string|null $FirewallThreatProtectionId
  * @property int|null $Priority
  * @property 'ALLOW'|'BLOCK'|'ALERT'|null $Action
  * @property 'NODATA'|'NXDOMAIN'|'OVERRIDE'|null $BlockResponse
@@ -16,13 +17,16 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Name
  * @property 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN'|null $FirewallDomainRedirectionAction
  * @property string|null $Qtype
+ * @property 'DGA'|'DNS_TUNNELING'|null $DnsThreatProtection
+ * @property 'LOW'|'MEDIUM'|'HIGH'|null $ConfidenceThreshold
  */
 class UpdateFirewallRuleRequest extends Request
 {
     /**
      * @param array{
      *     FirewallRuleGroupId: string,
-     *     FirewallDomainListId: string,
+     *     FirewallDomainListId?: string|null,
+     *     FirewallThreatProtectionId?: string|null,
      *     Priority?: int|null,
      *     Action?: 'ALLOW'|'BLOCK'|'ALERT'|null,
      *     BlockResponse?: 'NODATA'|'NXDOMAIN'|'OVERRIDE'|null,
@@ -31,7 +35,9 @@ class UpdateFirewallRuleRequest extends Request
      *     BlockOverrideTtl?: int<0, 604800>|null,
      *     Name?: string|null,
      *     FirewallDomainRedirectionAction?: 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN'|null,
-     *     Qtype?: string|null
+     *     Qtype?: string|null,
+     *     DnsThreatProtection?: 'DGA'|'DNS_TUNNELING'|null,
+     *     ConfidenceThreshold?: 'LOW'|'MEDIUM'|'HIGH'|null
      * } $args
      */
     public function __construct(array $args)

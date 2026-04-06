@@ -5,7 +5,6 @@ namespace Sunaoka\Aws\Structures\Ec2\RunInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $AvailabilityZone
  * @property string|null $Affinity
  * @property string|null $GroupName
  * @property int|null $PartitionNumber
@@ -14,12 +13,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SpreadDomain
  * @property string|null $HostResourceGroupArn
  * @property string|null $GroupId
+ * @property string|null $AvailabilityZone
  */
 class Placement extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string|null,
      *     Affinity?: string|null,
      *     GroupName?: string|null,
      *     PartitionNumber?: int|null,
@@ -27,7 +26,8 @@ class Placement extends Shape
      *     Tenancy?: 'default'|'dedicated'|'host'|null,
      *     SpreadDomain?: string|null,
      *     HostResourceGroupArn?: string|null,
-     *     GroupId?: string|null
+     *     GroupId?: string|null,
+     *     AvailabilityZone?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Message
  * @property string $TrafficPolicyId
  * @property int<1, 1000> $TrafficPolicyVersion
- * @property 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS' $TrafficPolicyType
+ * @property 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|'TLSA'|'SSHFP'|'SVCB'|'HTTPS' $TrafficPolicyType
  */
 class TrafficPolicyInstance extends Shape
 {
@@ -27,7 +27,7 @@ class TrafficPolicyInstance extends Shape
      *     Message: string,
      *     TrafficPolicyId: string,
      *     TrafficPolicyVersion: int<1, 1000>,
-     *     TrafficPolicyType: 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'
+     *     TrafficPolicyType: 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|'TLSA'|'SSHFP'|'SVCB'|'HTTPS'
      * } $args
      */
     public function __construct(array $args)

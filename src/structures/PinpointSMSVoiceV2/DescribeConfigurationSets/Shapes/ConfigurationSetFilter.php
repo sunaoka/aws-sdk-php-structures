@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\DescribeConfigurationSets\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'event-destination-name'|'matching-event-types'|'default-message-type'|'default-sender-id'|'protect-configuration-id' $Name
+ * @property 'event-destination-name'|'matching-event-types'|'default-message-type'|'default-sender-id'|'default-message-feedback-enabled'|'protect-configuration-id' $Name
  * @property list<string> $Values
  */
 class ConfigurationSetFilter extends Shape
 {
     /**
      * @param array{
-     *     Name: 'event-destination-name'|'matching-event-types'|'default-message-type'|'default-sender-id'|'protect-configuration-id',
+     *     Name: 'event-destination-name'|'matching-event-types'|'default-message-type'|'default-sender-id'|'default-message-feedback-enabled'|'protect-configuration-id',
      *     Values: list<string>
      * } $args
      */

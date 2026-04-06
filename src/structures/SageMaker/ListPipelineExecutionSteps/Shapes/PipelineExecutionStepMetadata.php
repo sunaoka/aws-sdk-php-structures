@@ -19,6 +19,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ClarifyCheckStepMetadata|null $ClarifyCheck
  * @property FailStepMetadata|null $Fail
  * @property AutoMLJobStepMetadata|null $AutoMLJob
+ * @property EndpointStepMetadata|null $Endpoint
+ * @property EndpointConfigStepMetadata|null $EndpointConfig
  */
 class PipelineExecutionStepMetadata extends Shape
 {
@@ -37,7 +39,9 @@ class PipelineExecutionStepMetadata extends Shape
      *     QualityCheck?: QualityCheckStepMetadata|null,
      *     ClarifyCheck?: ClarifyCheckStepMetadata|null,
      *     Fail?: FailStepMetadata|null,
-     *     AutoMLJob?: AutoMLJobStepMetadata|null
+     *     AutoMLJob?: AutoMLJobStepMetadata|null,
+     *     Endpoint?: EndpointStepMetadata|null,
+     *     EndpointConfig?: EndpointConfigStepMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

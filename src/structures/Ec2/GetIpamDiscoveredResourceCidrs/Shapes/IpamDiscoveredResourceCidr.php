@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<IpamResourceTag>|null $ResourceTags
  * @property double|null $IpUsage
  * @property string|null $VpcId
+ * @property string|null $SubnetId
  * @property 'available'|'in-use'|null $NetworkInterfaceAttachmentStatus
  * @property \Aws\Api\DateTimeResult|null $SampleTime
  * @property string|null $AvailabilityZoneId
@@ -33,6 +34,7 @@ class IpamDiscoveredResourceCidr extends Shape
      *     ResourceTags?: list<IpamResourceTag>|null,
      *     IpUsage?: double|null,
      *     VpcId?: string|null,
+     *     SubnetId?: string|null,
      *     NetworkInterfaceAttachmentStatus?: 'available'|'in-use'|null,
      *     SampleTime?: \Aws\Api\DateTimeResult|null,
      *     AvailabilityZoneId?: string|null

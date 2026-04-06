@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $FileName
  * @property int<1, max> $FileSizeInBytes
  * @property int<5, 300>|null $UrlExpiryInSeconds
- * @property 'ATTACHMENT' $FileUseCaseType
+ * @property 'EMAIL_MESSAGE'|'ATTACHMENT' $FileUseCaseType
  * @property string $AssociatedResourceArn
  * @property Shapes\CreatedByInfo|null $CreatedBy
  * @property array<string, string>|null $Tags
@@ -24,7 +24,7 @@ class StartAttachedFileUploadRequest extends Request
      *     FileName: string,
      *     FileSizeInBytes: int<1, max>,
      *     UrlExpiryInSeconds?: int<5, 300>|null,
-     *     FileUseCaseType: 'ATTACHMENT',
+     *     FileUseCaseType: 'EMAIL_MESSAGE'|'ATTACHMENT',
      *     AssociatedResourceArn: string,
      *     CreatedBy?: Shapes\CreatedByInfo|null,
      *     Tags?: array<string, string>|null

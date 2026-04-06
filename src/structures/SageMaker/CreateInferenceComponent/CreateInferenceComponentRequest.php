@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InferenceComponentName
  * @property string $EndpointName
- * @property string $VariantName
+ * @property string|null $VariantName
  * @property Shapes\InferenceComponentSpecification $Specification
- * @property Shapes\InferenceComponentRuntimeConfig $RuntimeConfig
+ * @property Shapes\InferenceComponentRuntimeConfig|null $RuntimeConfig
  * @property list<Shapes\Tag>|null $Tags
  */
 class CreateInferenceComponentRequest extends Request
@@ -18,9 +18,9 @@ class CreateInferenceComponentRequest extends Request
      * @param array{
      *     InferenceComponentName: string,
      *     EndpointName: string,
-     *     VariantName: string,
+     *     VariantName?: string|null,
      *     Specification: Shapes\InferenceComponentSpecification,
-     *     RuntimeConfig: Shapes\InferenceComponentRuntimeConfig,
+     *     RuntimeConfig?: Shapes\InferenceComponentRuntimeConfig|null,
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */

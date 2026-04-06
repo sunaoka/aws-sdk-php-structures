@@ -10,8 +10,8 @@
         }
     ],
     "require": {
-        "php": "^7.2.5 || ^8.0",
-        "aws/aws-sdk-php": "<=3.319.4"
+        "php": "^8.0",
+        "aws/aws-sdk-php": "<=3.337.3"
     },
     "require-dev": {
         "composer/composer": "^1.0 || ^2.0",

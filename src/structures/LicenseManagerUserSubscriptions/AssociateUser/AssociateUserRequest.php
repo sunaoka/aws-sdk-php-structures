@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Domain
  * @property Shapes\IdentityProvider $IdentityProvider
  * @property string $InstanceId
+ * @property array<string, string>|null $Tags
  * @property string $Username
  */
 class AssociateUserRequest extends Request
@@ -17,6 +18,7 @@ class AssociateUserRequest extends Request
      *     Domain?: string|null,
      *     IdentityProvider: Shapes\IdentityProvider,
      *     InstanceId: string,
+     *     Tags?: array<string, string>|null,
      *     Username: string
      * } $args
      */

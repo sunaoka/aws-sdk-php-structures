@@ -8,8 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $assistantId
  * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
+ * @property 'HYBRID'|'SEMANTIC'|null $overrideKnowledgeBaseSearchType
  * @property list<Shapes\QueryCondition>|null $queryCondition
- * @property string $queryText
+ * @property Shapes\QueryInputData|null $queryInputData
+ * @property string|null $queryText
  * @property string|null $sessionId
  */
 class QueryAssistantRequest extends Request
@@ -19,8 +21,10 @@ class QueryAssistantRequest extends Request
      *     assistantId: string,
      *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null,
+     *     overrideKnowledgeBaseSearchType?: 'HYBRID'|'SEMANTIC'|null,
      *     queryCondition?: list<Shapes\QueryCondition>|null,
-     *     queryText: string,
+     *     queryInputData?: Shapes\QueryInputData|null,
+     *     queryText?: string|null,
      *     sessionId?: string|null
      * } $args
      */

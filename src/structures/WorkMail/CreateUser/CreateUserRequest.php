@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $FirstName
  * @property string|null $LastName
  * @property bool|null $HiddenFromGlobalAddressList
+ * @property string|null $IdentityProviderUserId
  */
 class CreateUserRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateUserRequest extends Request
      *     Role?: 'USER'|'RESOURCE'|'SYSTEM_USER'|'REMOTE_USER'|null,
      *     FirstName?: string|null,
      *     LastName?: string|null,
-     *     HiddenFromGlobalAddressList?: bool|null
+     *     HiddenFromGlobalAddressList?: bool|null,
+     *     IdentityProviderUserId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\QConnect\GetSession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', AIAgentConfigurationData>|null $aiAgentConfiguration
  * @property string|null $description
  * @property SessionIntegrationConfiguration|null $integrationConfiguration
  * @property string $name
@@ -17,6 +18,7 @@ class SessionData extends Shape
 {
     /**
      * @param array{
+     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', AIAgentConfigurationData>|null,
      *     description?: string|null,
      *     integrationConfiguration?: SessionIntegrationConfiguration|null,
      *     name: string,

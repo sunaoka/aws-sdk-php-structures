@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'POWER_5_KVA'|'POWER_10_KVA'|'POWER_15_KVA'|'POWER_30_KVA'|null $PowerDrawKva
  * @property 'SINGLE_PHASE'|'THREE_PHASE'|null $PowerPhase
- * @property 'L6_30P'|'IEC309'|'AH530P7W'|'AH532P6W'|null $PowerConnector
+ * @property 'L6_30P'|'IEC309'|'AH530P7W'|'AH532P6W'|'CS8365C'|null $PowerConnector
  * @property 'ABOVE_RACK'|'BELOW_RACK'|null $PowerFeedDrop
  * @property 'UPLINK_1G'|'UPLINK_10G'|'UPLINK_40G'|'UPLINK_100G'|null $UplinkGbps
  * @property 'UPLINK_COUNT_1'|'UPLINK_COUNT_2'|'UPLINK_COUNT_3'|'UPLINK_COUNT_4'|'UPLINK_COUNT_5'|'UPLINK_COUNT_6'|'UPLINK_COUNT_7'|'UPLINK_COUNT_8'|'UPLINK_COUNT_12'|'UPLINK_COUNT_16'|null $UplinkCount
@@ -21,7 +21,7 @@ class RackPhysicalProperties extends Shape
      * @param array{
      *     PowerDrawKva?: 'POWER_5_KVA'|'POWER_10_KVA'|'POWER_15_KVA'|'POWER_30_KVA'|null,
      *     PowerPhase?: 'SINGLE_PHASE'|'THREE_PHASE'|null,
-     *     PowerConnector?: 'L6_30P'|'IEC309'|'AH530P7W'|'AH532P6W'|null,
+     *     PowerConnector?: 'L6_30P'|'IEC309'|'AH530P7W'|'AH532P6W'|'CS8365C'|null,
      *     PowerFeedDrop?: 'ABOVE_RACK'|'BELOW_RACK'|null,
      *     UplinkGbps?: 'UPLINK_1G'|'UPLINK_10G'|'UPLINK_40G'|'UPLINK_100G'|null,
      *     UplinkCount?: 'UPLINK_COUNT_1'|'UPLINK_COUNT_2'|'UPLINK_COUNT_3'|'UPLINK_COUNT_4'|'UPLINK_COUNT_5'|'UPLINK_COUNT_6'|'UPLINK_COUNT_7'|'UPLINK_COUNT_8'|'UPLINK_COUNT_12'|'UPLINK_COUNT_16'|null,

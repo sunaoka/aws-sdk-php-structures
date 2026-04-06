@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SecurityConfiguration
  * @property int<1, max>|null $NumberOfWorkers
  * @property string|null $WorkerType
+ * @property 'FULL'|'INCREMENTAL'|null $ComputationType
  * @property 'STARTING'|'RUNNING'|'SUCCEEDED'|'FAILED'|'STOPPED'|null $Status
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property \Aws\Api\DateTimeResult|null $LastUpdated
@@ -39,6 +40,7 @@ class ColumnStatisticsTaskRun extends Shape
      *     SecurityConfiguration?: string|null,
      *     NumberOfWorkers?: int<1, max>|null,
      *     WorkerType?: string|null,
+     *     ComputationType?: 'FULL'|'INCREMENTAL'|null,
      *     Status?: 'STARTING'|'RUNNING'|'SUCCEEDED'|'FAILED'|'STOPPED'|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
      *     LastUpdated?: \Aws\Api\DateTimeResult|null,

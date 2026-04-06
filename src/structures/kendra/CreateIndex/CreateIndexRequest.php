@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property 'DEVELOPER_EDITION'|'ENTERPRISE_EDITION'|null $Edition
+ * @property 'DEVELOPER_EDITION'|'ENTERPRISE_EDITION'|'GEN_AI_ENTERPRISE_EDITION'|null $Edition
  * @property string $RoleArn
  * @property Shapes\ServerSideEncryptionConfiguration|null $ServerSideEncryptionConfiguration
  * @property string|null $Description
@@ -21,7 +21,7 @@ class CreateIndexRequest extends Request
     /**
      * @param array{
      *     Name: string,
-     *     Edition?: 'DEVELOPER_EDITION'|'ENTERPRISE_EDITION'|null,
+     *     Edition?: 'DEVELOPER_EDITION'|'ENTERPRISE_EDITION'|'GEN_AI_ENTERPRISE_EDITION'|null,
      *     RoleArn: string,
      *     ServerSideEncryptionConfiguration?: Shapes\ServerSideEncryptionConfiguration|null,
      *     Description?: string|null,

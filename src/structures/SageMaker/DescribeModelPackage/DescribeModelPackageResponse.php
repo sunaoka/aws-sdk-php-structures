@@ -34,6 +34,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $SourceUri
  * @property Shapes\ModelPackageSecurityConfig|null $SecurityConfig
  * @property Shapes\ModelPackageModelCard|null $ModelCard
+ * @property Shapes\ModelLifeCycle|null $ModelLifeCycle
  */
 class DescribeModelPackageResponse extends Response
 {

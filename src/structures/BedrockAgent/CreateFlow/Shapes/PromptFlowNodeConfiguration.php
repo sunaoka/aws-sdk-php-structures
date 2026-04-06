@@ -5,12 +5,16 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property GuardrailConfiguration|null $guardrailConfiguration
  * @property PromptFlowNodeSourceConfiguration $sourceConfiguration
  */
 class PromptFlowNodeConfiguration extends Shape
 {
     /**
-     * @param array{sourceConfiguration: PromptFlowNodeSourceConfiguration} $args
+     * @param array{
+     *     guardrailConfiguration?: GuardrailConfiguration|null,
+     *     sourceConfiguration: PromptFlowNodeSourceConfiguration
+     * } $args
      */
     public function __construct(array $args)
     {

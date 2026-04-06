@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TreeMapVisual|null $TreeMapVisual
  * @property GeospatialMapVisual|null $GeospatialMapVisual
  * @property FilledMapVisual|null $FilledMapVisual
+ * @property LayerMapVisual|null $LayerMapVisual
  * @property FunnelChartVisual|null $FunnelChartVisual
  * @property ScatterPlotVisual|null $ScatterPlotVisual
  * @property ComboChartVisual|null $ComboChartVisual
@@ -28,6 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CustomContentVisual|null $CustomContentVisual
  * @property EmptyVisual|null $EmptyVisual
  * @property RadarChartVisual|null $RadarChartVisual
+ * @property PluginVisual|null $PluginVisual
  */
 class Visual extends Shape
 {
@@ -44,6 +46,7 @@ class Visual extends Shape
      *     TreeMapVisual?: TreeMapVisual|null,
      *     GeospatialMapVisual?: GeospatialMapVisual|null,
      *     FilledMapVisual?: FilledMapVisual|null,
+     *     LayerMapVisual?: LayerMapVisual|null,
      *     FunnelChartVisual?: FunnelChartVisual|null,
      *     ScatterPlotVisual?: ScatterPlotVisual|null,
      *     ComboChartVisual?: ComboChartVisual|null,
@@ -55,7 +58,8 @@ class Visual extends Shape
      *     SankeyDiagramVisual?: SankeyDiagramVisual|null,
      *     CustomContentVisual?: CustomContentVisual|null,
      *     EmptyVisual?: EmptyVisual|null,
-     *     RadarChartVisual?: RadarChartVisual|null
+     *     RadarChartVisual?: RadarChartVisual|null,
+     *     PluginVisual?: PluginVisual|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $textDataDeliveryEnabled
  * @property bool|null $imageDataDeliveryEnabled
  * @property bool|null $embeddingDataDeliveryEnabled
+ * @property bool|null $videoDataDeliveryEnabled
  */
 class LoggingConfig extends Shape
 {
@@ -19,7 +20,8 @@ class LoggingConfig extends Shape
      *     s3Config?: S3Config|null,
      *     textDataDeliveryEnabled?: bool|null,
      *     imageDataDeliveryEnabled?: bool|null,
-     *     embeddingDataDeliveryEnabled?: bool|null
+     *     embeddingDataDeliveryEnabled?: bool|null,
+     *     videoDataDeliveryEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

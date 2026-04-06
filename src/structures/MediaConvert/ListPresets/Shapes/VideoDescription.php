@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DEFAULT'|'STRETCH_TO_OUTPUT'|'FIT'|'FIT_NO_UPSCALE'|'FILL'|null $ScalingBehavior
  * @property int<0, 100>|null $Sharpness
  * @property 'DISABLED'|'PIC_TIMING_SEI'|null $TimecodeInsertion
+ * @property 'DISABLED'|'ENABLED'|null $TimecodeTrack
  * @property VideoPreprocessor|null $VideoPreprocessors
  * @property int<32, 8192>|null $Width
  */
@@ -38,6 +39,7 @@ class VideoDescription extends Shape
      *     ScalingBehavior?: 'DEFAULT'|'STRETCH_TO_OUTPUT'|'FIT'|'FIT_NO_UPSCALE'|'FILL'|null,
      *     Sharpness?: int<0, 100>|null,
      *     TimecodeInsertion?: 'DISABLED'|'PIC_TIMING_SEI'|null,
+     *     TimecodeTrack?: 'DISABLED'|'ENABLED'|null,
      *     VideoPreprocessors?: VideoPreprocessor|null,
      *     Width?: int<32, 8192>|null
      * } $args

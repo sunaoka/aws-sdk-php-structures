@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Expression $Filter
  * @property list<string>|null $Metrics
  * @property list<Shapes\GroupDefinition>|null $GroupBy
+ * @property string|null $BillingViewArn
  * @property string|null $NextPageToken
  */
 class GetCostAndUsageWithResourcesRequest extends Request
@@ -21,6 +22,7 @@ class GetCostAndUsageWithResourcesRequest extends Request
      *     Filter: Shapes\Expression,
      *     Metrics?: list<string>|null,
      *     GroupBy?: list<Shapes\GroupDefinition>|null,
+     *     BillingViewArn?: string|null,
      *     NextPageToken?: string|null
      * } $args
      */

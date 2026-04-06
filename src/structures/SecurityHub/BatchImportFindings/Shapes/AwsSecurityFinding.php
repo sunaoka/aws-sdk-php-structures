@@ -49,6 +49,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property GeneratorDetails|null $GeneratorDetails
  * @property string|null $ProcessedAt
  * @property string|null $AwsAccountName
+ * @property Detection|null $Detection
  */
 class AwsSecurityFinding extends Shape
 {
@@ -97,7 +98,8 @@ class AwsSecurityFinding extends Shape
      *     Sample?: bool|null,
      *     GeneratorDetails?: GeneratorDetails|null,
      *     ProcessedAt?: string|null,
-     *     AwsAccountName?: string|null
+     *     AwsAccountName?: string|null,
+     *     Detection?: Detection|null
      * } $args
      */
     public function __construct(array $args)

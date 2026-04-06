@@ -37,8 +37,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DatabaseVpcEndpointService
  * @property string|null $CeleryExecutorQueue
  * @property 'CUSTOMER'|'SERVICE'|null $EndpointManagement
- * @property int<2, max>|null $MinWebservers
- * @property int<2, max>|null $MaxWebservers
+ * @property int<1, max>|null $MinWebservers
+ * @property int<1, max>|null $MaxWebservers
  */
 class Environment extends Shape
 {
@@ -76,8 +76,8 @@ class Environment extends Shape
      *     DatabaseVpcEndpointService?: string|null,
      *     CeleryExecutorQueue?: string|null,
      *     EndpointManagement?: 'CUSTOMER'|'SERVICE'|null,
-     *     MinWebservers?: int<2, max>|null,
-     *     MaxWebservers?: int<2, max>|null
+     *     MinWebservers?: int<1, max>|null,
+     *     MaxWebservers?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args = [])

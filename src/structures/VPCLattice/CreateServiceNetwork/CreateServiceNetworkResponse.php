@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'NONE'|'AWS_IAM'|null $authType
  * @property string|null $id
  * @property string|null $name
+ * @property Shapes\SharingConfig|null $sharingConfig
  */
 class CreateServiceNetworkResponse extends Response
 {

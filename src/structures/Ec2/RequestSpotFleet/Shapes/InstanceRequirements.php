@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property VCpuCountRange|null $VCpuCount
  * @property MemoryMiB|null $MemoryMiB
- * @property list<'intel'|'amd'|'amazon-web-services'>|null $CpuManufacturers
+ * @property list<'intel'|'amd'|'amazon-web-services'|'apple'>|null $CpuManufacturers
  * @property MemoryGiBPerVCpu|null $MemoryGiBPerVCpu
  * @property list<string>|null $ExcludedInstanceTypes
  * @property list<'current'|'previous'>|null $InstanceGenerations
@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property NetworkBandwidthGbps|null $NetworkBandwidthGbps
  * @property list<string>|null $AllowedInstanceTypes
  * @property int|null $MaxSpotPriceAsPercentageOfOptimalOnDemandPrice
+ * @property BaselinePerformanceFactors|null $BaselinePerformanceFactors
  */
 class InstanceRequirements extends Shape
 {
@@ -36,7 +37,7 @@ class InstanceRequirements extends Shape
      * @param array{
      *     VCpuCount?: VCpuCountRange|null,
      *     MemoryMiB?: MemoryMiB|null,
-     *     CpuManufacturers?: list<'intel'|'amd'|'amazon-web-services'>|null,
+     *     CpuManufacturers?: list<'intel'|'amd'|'amazon-web-services'|'apple'>|null,
      *     MemoryGiBPerVCpu?: MemoryGiBPerVCpu|null,
      *     ExcludedInstanceTypes?: list<string>|null,
      *     InstanceGenerations?: list<'current'|'previous'>|null,
@@ -57,7 +58,8 @@ class InstanceRequirements extends Shape
      *     AcceleratorTotalMemoryMiB?: AcceleratorTotalMemoryMiB|null,
      *     NetworkBandwidthGbps?: NetworkBandwidthGbps|null,
      *     AllowedInstanceTypes?: list<string>|null,
-     *     MaxSpotPriceAsPercentageOfOptimalOnDemandPrice?: int|null
+     *     MaxSpotPriceAsPercentageOfOptimalOnDemandPrice?: int|null,
+     *     BaselinePerformanceFactors?: BaselinePerformanceFactors|null
      * } $args
      */
     public function __construct(array $args = [])

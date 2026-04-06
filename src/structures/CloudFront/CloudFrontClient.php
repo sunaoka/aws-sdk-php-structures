@@ -6,6 +6,7 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
 {
     use AssociateAlias\AssociateAliasTrait;
     use CopyDistribution\CopyDistributionTrait;
+    use CreateAnycastIpList\CreateAnycastIpListTrait;
     use CreateCachePolicy\CreateCachePolicyTrait;
     use CreateCloudFrontOriginAccessIdentity\CreateCloudFrontOriginAccessIdentityTrait;
     use CreateContinuousDeploymentPolicy\CreateContinuousDeploymentPolicyTrait;
@@ -25,6 +26,8 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use CreateResponseHeadersPolicy\CreateResponseHeadersPolicyTrait;
     use CreateStreamingDistribution\CreateStreamingDistributionTrait;
     use CreateStreamingDistributionWithTags\CreateStreamingDistributionWithTagsTrait;
+    use CreateVpcOrigin\CreateVpcOriginTrait;
+    use DeleteAnycastIpList\DeleteAnycastIpListTrait;
     use DeleteCachePolicy\DeleteCachePolicyTrait;
     use DeleteCloudFrontOriginAccessIdentity\DeleteCloudFrontOriginAccessIdentityTrait;
     use DeleteContinuousDeploymentPolicy\DeleteContinuousDeploymentPolicyTrait;
@@ -41,8 +44,10 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use DeleteRealtimeLogConfig\DeleteRealtimeLogConfigTrait;
     use DeleteResponseHeadersPolicy\DeleteResponseHeadersPolicyTrait;
     use DeleteStreamingDistribution\DeleteStreamingDistributionTrait;
+    use DeleteVpcOrigin\DeleteVpcOriginTrait;
     use DescribeFunction\DescribeFunctionTrait;
     use DescribeKeyValueStore\DescribeKeyValueStoreTrait;
+    use GetAnycastIpList\GetAnycastIpListTrait;
     use GetCachePolicy\GetCachePolicyTrait;
     use GetCachePolicyConfig\GetCachePolicyConfigTrait;
     use GetCloudFrontOriginAccessIdentity\GetCloudFrontOriginAccessIdentityTrait;
@@ -71,16 +76,20 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use GetResponseHeadersPolicyConfig\GetResponseHeadersPolicyConfigTrait;
     use GetStreamingDistribution\GetStreamingDistributionTrait;
     use GetStreamingDistributionConfig\GetStreamingDistributionConfigTrait;
+    use GetVpcOrigin\GetVpcOriginTrait;
+    use ListAnycastIpLists\ListAnycastIpListsTrait;
     use ListCachePolicies\ListCachePoliciesTrait;
     use ListCloudFrontOriginAccessIdentities\ListCloudFrontOriginAccessIdentitiesTrait;
     use ListConflictingAliases\ListConflictingAliasesTrait;
     use ListContinuousDeploymentPolicies\ListContinuousDeploymentPoliciesTrait;
     use ListDistributions\ListDistributionsTrait;
+    use ListDistributionsByAnycastIpListId\ListDistributionsByAnycastIpListIdTrait;
     use ListDistributionsByCachePolicyId\ListDistributionsByCachePolicyIdTrait;
     use ListDistributionsByKeyGroup\ListDistributionsByKeyGroupTrait;
     use ListDistributionsByOriginRequestPolicyId\ListDistributionsByOriginRequestPolicyIdTrait;
     use ListDistributionsByRealtimeLogConfig\ListDistributionsByRealtimeLogConfigTrait;
     use ListDistributionsByResponseHeadersPolicyId\ListDistributionsByResponseHeadersPolicyIdTrait;
+    use ListDistributionsByVpcOriginId\ListDistributionsByVpcOriginIdTrait;
     use ListDistributionsByWebACLId\ListDistributionsByWebACLIdTrait;
     use ListFieldLevelEncryptionConfigs\ListFieldLevelEncryptionConfigsTrait;
     use ListFieldLevelEncryptionProfiles\ListFieldLevelEncryptionProfilesTrait;
@@ -95,6 +104,7 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use ListResponseHeadersPolicies\ListResponseHeadersPoliciesTrait;
     use ListStreamingDistributions\ListStreamingDistributionsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use ListVpcOrigins\ListVpcOriginsTrait;
     use PublishFunction\PublishFunctionTrait;
     use TagResource\TagResourceTrait;
     use TestFunction\TestFunctionTrait;
@@ -115,4 +125,5 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use UpdateRealtimeLogConfig\UpdateRealtimeLogConfigTrait;
     use UpdateResponseHeadersPolicy\UpdateResponseHeadersPolicyTrait;
     use UpdateStreamingDistribution\UpdateStreamingDistributionTrait;
+    use UpdateVpcOrigin\UpdateVpcOriginTrait;
 }

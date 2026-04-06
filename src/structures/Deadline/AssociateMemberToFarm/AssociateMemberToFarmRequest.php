@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $farmId
- * @property string $identityStoreId
- * @property 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'MANAGER' $membershipLevel
  * @property string $principalId
  * @property 'USER'|'GROUP' $principalType
+ * @property string $identityStoreId
+ * @property 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'MANAGER' $membershipLevel
  */
 class AssociateMemberToFarmRequest extends Request
 {
     /**
      * @param array{
      *     farmId: string,
-     *     identityStoreId: string,
-     *     membershipLevel: 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'MANAGER',
      *     principalId: string,
-     *     principalType: 'USER'|'GROUP'
+     *     principalType: 'USER'|'GROUP',
+     *     identityStoreId: string,
+     *     membershipLevel: 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'MANAGER'
      * } $args
      */
     public function __construct(array $args)

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Deadline\SearchWorkers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult|null $createdAt
- * @property string|null $createdBy
  * @property string|null $fleetId
- * @property HostPropertiesResponse|null $hostProperties
- * @property 'CREATED'|'STARTED'|'STOPPING'|'STOPPED'|'NOT_RESPONDING'|'NOT_COMPATIBLE'|'RUNNING'|'IDLE'|null $status
- * @property \Aws\Api\DateTimeResult|null $updatedAt
- * @property string|null $updatedBy
  * @property string|null $workerId
+ * @property 'CREATED'|'STARTED'|'STOPPING'|'STOPPED'|'NOT_RESPONDING'|'NOT_COMPATIBLE'|'RUNNING'|'IDLE'|null $status
+ * @property HostPropertiesResponse|null $hostProperties
+ * @property string|null $createdBy
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $updatedBy
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class WorkerSearchSummary extends Shape
 {
     /**
      * @param array{
-     *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     createdBy?: string|null,
      *     fleetId?: string|null,
-     *     hostProperties?: HostPropertiesResponse|null,
+     *     workerId?: string|null,
      *     status?: 'CREATED'|'STARTED'|'STOPPING'|'STOPPED'|'NOT_RESPONDING'|'NOT_COMPATIBLE'|'RUNNING'|'IDLE'|null,
-     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     hostProperties?: HostPropertiesResponse|null,
+     *     createdBy?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedBy?: string|null,
-     *     workerId?: string|null
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $farmId
  * @property string $fleetId
- * @property array<string, Shapes\UpdatedSessionActionInfo>|null $updatedSessionActions
  * @property string $workerId
+ * @property array<string, Shapes\UpdatedSessionActionInfo>|null $updatedSessionActions
  */
 class UpdateWorkerScheduleRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateWorkerScheduleRequest extends Request
      * @param array{
      *     farmId: string,
      *     fleetId: string,
-     *     updatedSessionActions?: array<string, Shapes\UpdatedSessionActionInfo>|null,
-     *     workerId: string
+     *     workerId: string,
+     *     updatedSessionActions?: array<string, Shapes\UpdatedSessionActionInfo>|null
      * } $args
      */
     public function __construct(array $args)

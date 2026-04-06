@@ -30,6 +30,7 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use GetFunctionConcurrency\GetFunctionConcurrencyTrait;
     use GetFunctionConfiguration\GetFunctionConfigurationTrait;
     use GetFunctionEventInvokeConfig\GetFunctionEventInvokeConfigTrait;
+    use GetFunctionRecursionConfig\GetFunctionRecursionConfigTrait;
     use GetFunctionUrlConfig\GetFunctionUrlConfigTrait;
     use GetLayerVersion\GetLayerVersionTrait;
     use GetLayerVersionByArn\GetLayerVersionByArnTrait;
@@ -57,6 +58,7 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use PutFunctionCodeSigningConfig\PutFunctionCodeSigningConfigTrait;
     use PutFunctionConcurrency\PutFunctionConcurrencyTrait;
     use PutFunctionEventInvokeConfig\PutFunctionEventInvokeConfigTrait;
+    use PutFunctionRecursionConfig\PutFunctionRecursionConfigTrait;
     use PutProvisionedConcurrencyConfig\PutProvisionedConcurrencyConfigTrait;
     use PutRuntimeManagementConfig\PutRuntimeManagementConfigTrait;
     use RemoveLayerVersionPermission\RemoveLayerVersionPermissionTrait;

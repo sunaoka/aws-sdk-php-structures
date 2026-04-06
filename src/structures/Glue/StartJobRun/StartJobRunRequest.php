@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $JobName
+ * @property bool|null $JobRunQueuingEnabled
  * @property string|null $JobRunId
  * @property array<string, string>|null $Arguments
  * @property int|null $AllocatedCapacity
@@ -22,6 +23,7 @@ class StartJobRunRequest extends Request
     /**
      * @param array{
      *     JobName: string,
+     *     JobRunQueuingEnabled?: bool|null,
      *     JobRunId?: string|null,
      *     Arguments?: array<string, string>|null,
      *     AllocatedCapacity?: int|null,

@@ -38,6 +38,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property H264QvbrSettings|null $QvbrSettings
  * @property 'VBR'|'CBR'|'QVBR'|null $RateControlMode
  * @property 'DISABLED'|'ENABLED'|null $RepeatPps
+ * @property 'DISABLED'|'PREFERRED'|null $SaliencyAwareEncoding
  * @property 'INTERLACED'|'INTERLACED_OPTIMIZE'|null $ScanTypeConversionMode
  * @property 'DISABLED'|'ENABLED'|'TRANSITION_DETECTION'|null $SceneChangeDetect
  * @property int<1, 32>|null $Slices
@@ -48,6 +49,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'NONE'|'SOFT'|'HARD'|null $Telecine
  * @property 'DISABLED'|'ENABLED'|null $TemporalAdaptiveQuantization
  * @property 'DISABLED'|'ENABLED'|null $UnregisteredSeiTimecode
+ * @property 'AVC1'|'AVC3'|null $WriteMp4PackagingType
  */
 class H264Settings extends Shape
 {
@@ -86,6 +88,7 @@ class H264Settings extends Shape
      *     QvbrSettings?: H264QvbrSettings|null,
      *     RateControlMode?: 'VBR'|'CBR'|'QVBR'|null,
      *     RepeatPps?: 'DISABLED'|'ENABLED'|null,
+     *     SaliencyAwareEncoding?: 'DISABLED'|'PREFERRED'|null,
      *     ScanTypeConversionMode?: 'INTERLACED'|'INTERLACED_OPTIMIZE'|null,
      *     SceneChangeDetect?: 'DISABLED'|'ENABLED'|'TRANSITION_DETECTION'|null,
      *     Slices?: int<1, 32>|null,
@@ -95,7 +98,8 @@ class H264Settings extends Shape
      *     Syntax?: 'DEFAULT'|'RP2027'|null,
      *     Telecine?: 'NONE'|'SOFT'|'HARD'|null,
      *     TemporalAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null,
-     *     UnregisteredSeiTimecode?: 'DISABLED'|'ENABLED'|null
+     *     UnregisteredSeiTimecode?: 'DISABLED'|'ENABLED'|null,
+     *     WriteMp4PackagingType?: 'AVC1'|'AVC3'|null
      * } $args
      */
     public function __construct(array $args = [])

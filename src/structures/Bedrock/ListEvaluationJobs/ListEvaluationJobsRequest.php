@@ -7,7 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property \Aws\Api\DateTimeResult|null $creationTimeAfter
  * @property \Aws\Api\DateTimeResult|null $creationTimeBefore
- * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null $statusEquals
+ * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'Deleting'|null $statusEquals
+ * @property 'ModelEvaluation'|'RagEvaluation'|null $applicationTypeEquals
  * @property string|null $nameContains
  * @property int<1, 1000>|null $maxResults
  * @property string|null $nextToken
@@ -20,7 +21,8 @@ class ListEvaluationJobsRequest extends Request
      * @param array{
      *     creationTimeAfter?: \Aws\Api\DateTimeResult|null,
      *     creationTimeBefore?: \Aws\Api\DateTimeResult|null,
-     *     statusEquals?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null,
+     *     statusEquals?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'Deleting'|null,
+     *     applicationTypeEquals?: 'ModelEvaluation'|'RagEvaluation'|null,
      *     nameContains?: string|null,
      *     maxResults?: int<1, 1000>|null,
      *     nextToken?: string|null,

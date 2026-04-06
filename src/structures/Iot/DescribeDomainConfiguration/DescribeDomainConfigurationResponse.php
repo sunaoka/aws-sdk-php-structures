@@ -16,6 +16,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $lastStatusChangeDate
  * @property Shapes\TlsConfig|null $tlsConfig
  * @property Shapes\ServerCertificateConfig|null $serverCertificateConfig
+ * @property 'CUSTOM_AUTH_X509'|'CUSTOM_AUTH'|'AWS_X509'|'AWS_SIGV4'|'DEFAULT'|null $authenticationType
+ * @property 'SECURE_MQTT'|'MQTT_WSS'|'HTTPS'|'DEFAULT'|null $applicationProtocol
+ * @property Shapes\ClientCertificateConfig|null $clientCertificateConfig
  */
 class DescribeDomainConfigurationResponse extends Response
 {

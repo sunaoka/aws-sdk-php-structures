@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<AssetBundleImportJobThemeOverridePermissions>|null $Themes
  * @property list<AssetBundleImportJobAnalysisOverridePermissions>|null $Analyses
  * @property list<AssetBundleImportJobDashboardOverridePermissions>|null $Dashboards
+ * @property list<AssetBundleImportJobFolderOverridePermissions>|null $Folders
  */
 class AssetBundleImportJobOverridePermissions extends Shape
 {
@@ -19,7 +20,8 @@ class AssetBundleImportJobOverridePermissions extends Shape
      *     DataSets?: list<AssetBundleImportJobDataSetOverridePermissions>|null,
      *     Themes?: list<AssetBundleImportJobThemeOverridePermissions>|null,
      *     Analyses?: list<AssetBundleImportJobAnalysisOverridePermissions>|null,
-     *     Dashboards?: list<AssetBundleImportJobDashboardOverridePermissions>|null
+     *     Dashboards?: list<AssetBundleImportJobDashboardOverridePermissions>|null,
+     *     Folders?: list<AssetBundleImportJobFolderOverridePermissions>|null
      * } $args
      */
     public function __construct(array $args = [])

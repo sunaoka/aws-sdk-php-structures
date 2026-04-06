@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<'INDEX_SLOW_LOGS'|'SEARCH_SLOW_LOGS'|'ES_APPLICATION_LOGS'|'AUDIT_LOGS', Shapes\LogPublishingOption>|null $LogPublishingOptions
  * @property Shapes\DomainEndpointOptions|null $DomainEndpointOptions
  * @property Shapes\AdvancedSecurityOptionsInput|null $AdvancedSecurityOptions
+ * @property Shapes\IdentityCenterOptionsInput|null $IdentityCenterOptions
  * @property list<Shapes\Tag>|null $TagList
  * @property Shapes\AutoTuneOptionsInput|null $AutoTuneOptions
  * @property Shapes\OffPeakWindowOptions|null $OffPeakWindowOptions
@@ -45,6 +46,7 @@ class CreateDomainRequest extends Request
      *     LogPublishingOptions?: array<'INDEX_SLOW_LOGS'|'SEARCH_SLOW_LOGS'|'ES_APPLICATION_LOGS'|'AUDIT_LOGS', Shapes\LogPublishingOption>|null,
      *     DomainEndpointOptions?: Shapes\DomainEndpointOptions|null,
      *     AdvancedSecurityOptions?: Shapes\AdvancedSecurityOptionsInput|null,
+     *     IdentityCenterOptions?: Shapes\IdentityCenterOptionsInput|null,
      *     TagList?: list<Shapes\Tag>|null,
      *     AutoTuneOptions?: Shapes\AutoTuneOptionsInput|null,
      *     OffPeakWindowOptions?: Shapes\OffPeakWindowOptions|null,

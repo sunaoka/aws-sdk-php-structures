@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $knowledgeBaseId
  * @property string $name
  * @property string $roleArn
- * @property Shapes\StorageConfiguration $storageConfiguration
+ * @property Shapes\StorageConfiguration|null $storageConfiguration
  */
 class UpdateKnowledgeBaseRequest extends Request
 {
@@ -21,7 +21,7 @@ class UpdateKnowledgeBaseRequest extends Request
      *     knowledgeBaseId: string,
      *     name: string,
      *     roleArn: string,
-     *     storageConfiguration: Shapes\StorageConfiguration
+     *     storageConfiguration?: Shapes\StorageConfiguration|null
      * } $args
      */
     public function __construct(array $args)

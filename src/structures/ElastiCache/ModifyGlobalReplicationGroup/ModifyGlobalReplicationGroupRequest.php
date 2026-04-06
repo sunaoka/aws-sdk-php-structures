@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $GlobalReplicationGroupId
  * @property bool $ApplyImmediately
  * @property string|null $CacheNodeType
+ * @property string|null $Engine
  * @property string|null $EngineVersion
  * @property string|null $CacheParameterGroupName
  * @property string|null $GlobalReplicationGroupDescription
@@ -20,6 +21,7 @@ class ModifyGlobalReplicationGroupRequest extends Request
      *     GlobalReplicationGroupId: string,
      *     ApplyImmediately: bool,
      *     CacheNodeType?: string|null,
+     *     Engine?: string|null,
      *     EngineVersion?: string|null,
      *     CacheParameterGroupName?: string|null,
      *     GlobalReplicationGroupDescription?: string|null,

@@ -8,8 +8,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $id
  * @property string $name
  * @property string $arn
- * @property 'CREATING'|'AVAILABLE'|'DELETING'|'MODIFYING'|'UPDATING'|'DELETED'|'FAILED'|null $status
+ * @property 'CREATING'|'AVAILABLE'|'DELETING'|'MODIFYING'|'UPDATING'|'DELETED'|'FAILED'|'UPDATING_DEPLOYMENT_TYPE'|'UPDATING_INSTANCE_TYPE'|null $status
  * @property string|null $endpoint
+ * @property int<1024, 65535>|null $port
+ * @property 'IPV4'|'DUAL'|null $networkType
  * @property 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|null $dbInstanceType
  * @property 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null $dbStorageType
  * @property int<20, 16384>|null $allocatedStorage

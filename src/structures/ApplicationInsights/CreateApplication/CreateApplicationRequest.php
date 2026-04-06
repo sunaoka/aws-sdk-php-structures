@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $OpsCenterEnabled
  * @property bool|null $CWEMonitorEnabled
  * @property string|null $OpsItemSNSTopicArn
+ * @property string|null $SNSNotificationArn
  * @property list<Shapes\Tag>|null $Tags
  * @property bool|null $AutoConfigEnabled
  * @property bool|null $AutoCreate
@@ -23,6 +24,7 @@ class CreateApplicationRequest extends Request
      *     OpsCenterEnabled?: bool|null,
      *     CWEMonitorEnabled?: bool|null,
      *     OpsItemSNSTopicArn?: string|null,
+     *     SNSNotificationArn?: string|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     AutoConfigEnabled?: bool|null,
      *     AutoCreate?: bool|null,

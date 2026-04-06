@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'wstring'|'clob'|'nclob'|null $MapLongVarcharAs
  * @property 'default'|'babelfish'|null $DatabaseMode
  * @property string|null $BabelfishDatabaseName
+ * @property bool|null $DisableUnicodeSourceFilter
  */
 class PostgreSQLSettings extends Shape
 {
@@ -57,7 +58,8 @@ class PostgreSQLSettings extends Shape
      *     MapJsonbAsClob?: bool|null,
      *     MapLongVarcharAs?: 'wstring'|'clob'|'nclob'|null,
      *     DatabaseMode?: 'default'|'babelfish'|null,
-     *     BabelfishDatabaseName?: string|null
+     *     BabelfishDatabaseName?: string|null,
+     *     DisableUnicodeSourceFilter?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

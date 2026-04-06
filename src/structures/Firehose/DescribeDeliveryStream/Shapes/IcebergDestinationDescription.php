@@ -6,6 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<DestinationTableConfiguration>|null $DestinationTableConfigurationList
+ * @property SchemaEvolutionConfiguration|null $SchemaEvolutionConfiguration
+ * @property TableCreationConfiguration|null $TableCreationConfiguration
  * @property BufferingHints|null $BufferingHints
  * @property CloudWatchLoggingOptions|null $CloudWatchLoggingOptions
  * @property ProcessingConfiguration|null $ProcessingConfiguration
@@ -20,6 +22,8 @@ class IcebergDestinationDescription extends Shape
     /**
      * @param array{
      *     DestinationTableConfigurationList?: list<DestinationTableConfiguration>|null,
+     *     SchemaEvolutionConfiguration?: SchemaEvolutionConfiguration|null,
+     *     TableCreationConfiguration?: TableCreationConfiguration|null,
      *     BufferingHints?: BufferingHints|null,
      *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions|null,
      *     ProcessingConfiguration?: ProcessingConfiguration|null,

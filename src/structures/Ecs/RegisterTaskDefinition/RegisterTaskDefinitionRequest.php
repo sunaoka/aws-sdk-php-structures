@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\InferenceAccelerator>|null $inferenceAccelerators
  * @property Shapes\EphemeralStorage|null $ephemeralStorage
  * @property Shapes\RuntimePlatform|null $runtimePlatform
+ * @property bool|null $enableFaultInjection
  */
 class RegisterTaskDefinitionRequest extends Request
 {
@@ -43,7 +44,8 @@ class RegisterTaskDefinitionRequest extends Request
      *     proxyConfiguration?: Shapes\ProxyConfiguration|null,
      *     inferenceAccelerators?: list<Shapes\InferenceAccelerator>|null,
      *     ephemeralStorage?: Shapes\EphemeralStorage|null,
-     *     runtimePlatform?: Shapes\RuntimePlatform|null
+     *     runtimePlatform?: Shapes\RuntimePlatform|null,
+     *     enableFaultInjection?: bool|null
      * } $args
      */
     public function __construct(array $args)

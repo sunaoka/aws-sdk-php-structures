@@ -5,7 +5,6 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstanceAttribute;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\GroupIdentifier>|null $Groups
  * @property list<Shapes\InstanceBlockDeviceMapping>|null $BlockDeviceMappings
  * @property Shapes\AttributeBooleanValue|null $DisableApiTermination
  * @property Shapes\AttributeBooleanValue|null $EnaSupport
@@ -22,6 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\AttributeValue|null $SriovNetSupport
  * @property Shapes\AttributeValue|null $UserData
  * @property Shapes\AttributeBooleanValue|null $DisableApiStop
+ * @property list<Shapes\GroupIdentifier>|null $Groups
  */
 class DescribeInstanceAttributeResponse extends Response
 {

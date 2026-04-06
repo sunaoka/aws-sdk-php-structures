@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $domainId
  * @property string $environmentId
  * @property string $id
- * @property string $manageAccessRole
+ * @property string|null $manageAccessRole
  * @property string $name
  * @property string $projectId
  * @property string $provider
@@ -32,7 +32,7 @@ class SubscriptionTargetSummary extends Shape
      *     domainId: string,
      *     environmentId: string,
      *     id: string,
-     *     manageAccessRole: string,
+     *     manageAccessRole?: string|null,
      *     name: string,
      *     projectId: string,
      *     provider: string,

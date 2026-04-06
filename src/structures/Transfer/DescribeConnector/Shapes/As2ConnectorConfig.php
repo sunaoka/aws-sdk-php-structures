@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'SHA256'|'SHA384'|'SHA512'|'SHA1'|'NONE'|'DEFAULT'|null $MdnSigningAlgorithm
  * @property 'SYNC'|'NONE'|null $MdnResponse
  * @property string|null $BasicAuthSecretId
+ * @property 'ENABLED'|'DISABLED'|null $PreserveContentType
  */
 class As2ConnectorConfig extends Shape
 {
@@ -27,7 +28,8 @@ class As2ConnectorConfig extends Shape
      *     SigningAlgorithm?: 'SHA256'|'SHA384'|'SHA512'|'SHA1'|'NONE'|null,
      *     MdnSigningAlgorithm?: 'SHA256'|'SHA384'|'SHA512'|'SHA1'|'NONE'|'DEFAULT'|null,
      *     MdnResponse?: 'SYNC'|'NONE'|null,
-     *     BasicAuthSecretId?: string|null
+     *     BasicAuthSecretId?: string|null,
+     *     PreserveContentType?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

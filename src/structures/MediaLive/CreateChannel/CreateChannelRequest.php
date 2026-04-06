@@ -19,6 +19,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $RoleArn
  * @property array<string, string>|null $Tags
  * @property Shapes\VpcOutputSettings|null $Vpc
+ * @property Shapes\AnywhereSettings|null $AnywhereSettings
+ * @property Shapes\ChannelEngineVersionRequest|null $ChannelEngineVersion
+ * @property bool|null $DryRun
  */
 class CreateChannelRequest extends Request
 {
@@ -37,7 +40,10 @@ class CreateChannelRequest extends Request
      *     Reserved?: string|null,
      *     RoleArn?: string|null,
      *     Tags?: array<string, string>|null,
-     *     Vpc?: Shapes\VpcOutputSettings|null
+     *     Vpc?: Shapes\VpcOutputSettings|null,
+     *     AnywhereSettings?: Shapes\AnywhereSettings|null,
+     *     ChannelEngineVersion?: Shapes\ChannelEngineVersionRequest|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

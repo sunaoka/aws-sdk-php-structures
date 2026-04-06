@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\SupplyChain\ListDataIntegrationFlows\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $query
+ */
+class DataIntegrationFlowSQLTransformationConfiguration extends Shape
+{
+    /**
+     * @param array{query: string} $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

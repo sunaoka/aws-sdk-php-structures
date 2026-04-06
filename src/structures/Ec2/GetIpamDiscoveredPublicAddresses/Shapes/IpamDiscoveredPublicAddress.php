@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AddressOwnerId
  * @property string|null $AddressAllocationId
  * @property 'associated'|'disassociated'|null $AssociationStatus
- * @property 'service-managed-ip'|'service-managed-byoip'|'amazon-owned-eip'|'byoip'|'ec2-public-ip'|null $AddressType
+ * @property 'service-managed-ip'|'service-managed-byoip'|'amazon-owned-eip'|'amazon-owned-contig'|'byoip'|'ec2-public-ip'|null $AddressType
  * @property 'nat-gateway'|'database-migration-service'|'redshift'|'elastic-container-service'|'relational-database-service'|'site-to-site-vpn'|'load-balancer'|'global-accelerator'|'other'|null $Service
  * @property string|null $ServiceResource
  * @property string|null $VpcId
@@ -35,7 +35,7 @@ class IpamDiscoveredPublicAddress extends Shape
      *     AddressOwnerId?: string|null,
      *     AddressAllocationId?: string|null,
      *     AssociationStatus?: 'associated'|'disassociated'|null,
-     *     AddressType?: 'service-managed-ip'|'service-managed-byoip'|'amazon-owned-eip'|'byoip'|'ec2-public-ip'|null,
+     *     AddressType?: 'service-managed-ip'|'service-managed-byoip'|'amazon-owned-eip'|'amazon-owned-contig'|'byoip'|'ec2-public-ip'|null,
      *     Service?: 'nat-gateway'|'database-migration-service'|'redshift'|'elastic-container-service'|'relational-database-service'|'site-to-site-vpn'|'load-balancer'|'global-accelerator'|'other'|null,
      *     ServiceResource?: string|null,
      *     VpcId?: string|null,

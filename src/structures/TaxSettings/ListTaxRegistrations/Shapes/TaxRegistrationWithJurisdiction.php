@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Jurisdiction $jurisdiction
  * @property string $legalName
  * @property string $registrationId
- * @property 'VAT'|'GST'|'CPF'|'CNPJ'|'SST' $registrationType
+ * @property 'VAT'|'GST'|'CPF'|'CNPJ'|'SST'|'TIN'|'NRIC' $registrationType
  * @property 'Business'|'Individual'|'Government'|null $sector
  * @property 'Verified'|'Pending'|'Deleted'|'Rejected' $status
  * @property list<TaxDocumentMetadata>|null $taxDocumentMetadatas
@@ -24,7 +24,7 @@ class TaxRegistrationWithJurisdiction extends Shape
      *     jurisdiction: Jurisdiction,
      *     legalName: string,
      *     registrationId: string,
-     *     registrationType: 'VAT'|'GST'|'CPF'|'CNPJ'|'SST',
+     *     registrationType: 'VAT'|'GST'|'CPF'|'CNPJ'|'SST'|'TIN'|'NRIC',
      *     sector?: 'Business'|'Individual'|'Government'|null,
      *     status: 'Verified'|'Pending'|'Deleted'|'Rejected',
      *     taxDocumentMetadatas?: list<TaxDocumentMetadata>|null

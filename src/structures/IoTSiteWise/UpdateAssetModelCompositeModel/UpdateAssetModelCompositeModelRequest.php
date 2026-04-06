@@ -12,6 +12,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $assetModelCompositeModelName
  * @property string|null $clientToken
  * @property list<Shapes\AssetModelProperty>|null $assetModelCompositeModelProperties
+ * @property string|null $ifMatch
+ * @property string|null $ifNoneMatch
+ * @property 'LATEST'|'ACTIVE'|null $matchForVersionType
  */
 class UpdateAssetModelCompositeModelRequest extends Request
 {
@@ -23,7 +26,10 @@ class UpdateAssetModelCompositeModelRequest extends Request
      *     assetModelCompositeModelDescription?: string|null,
      *     assetModelCompositeModelName: string,
      *     clientToken?: string|null,
-     *     assetModelCompositeModelProperties?: list<Shapes\AssetModelProperty>|null
+     *     assetModelCompositeModelProperties?: list<Shapes\AssetModelProperty>|null,
+     *     ifMatch?: string|null,
+     *     ifNoneMatch?: string|null,
+     *     matchForVersionType?: 'LATEST'|'ACTIVE'|null
      * } $args
      */
     public function __construct(array $args)

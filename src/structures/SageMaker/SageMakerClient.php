@@ -7,6 +7,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use AddAssociation\AddAssociationTrait;
     use AddTags\AddTagsTrait;
     use AssociateTrialComponent\AssociateTrialComponentTrait;
+    use BatchDeleteClusterNodes\BatchDeleteClusterNodesTrait;
     use BatchDescribeModelPackage\BatchDescribeModelPackageTrait;
     use CreateAction\CreateActionTrait;
     use CreateAlgorithm\CreateAlgorithmTrait;
@@ -16,8 +17,10 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use CreateAutoMLJob\CreateAutoMLJobTrait;
     use CreateAutoMLJobV2\CreateAutoMLJobV2Trait;
     use CreateCluster\CreateClusterTrait;
+    use CreateClusterSchedulerConfig\CreateClusterSchedulerConfigTrait;
     use CreateCodeRepository\CreateCodeRepositoryTrait;
     use CreateCompilationJob\CreateCompilationJobTrait;
+    use CreateComputeQuota\CreateComputeQuotaTrait;
     use CreateContext\CreateContextTrait;
     use CreateDataQualityJobDefinition\CreateDataQualityJobDefinitionTrait;
     use CreateDeviceFleet\CreateDeviceFleetTrait;
@@ -53,6 +56,8 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use CreateNotebookInstance\CreateNotebookInstanceTrait;
     use CreateNotebookInstanceLifecycleConfig\CreateNotebookInstanceLifecycleConfigTrait;
     use CreateOptimizationJob\CreateOptimizationJobTrait;
+    use CreatePartnerApp\CreatePartnerAppTrait;
+    use CreatePartnerAppPresignedUrl\CreatePartnerAppPresignedUrlTrait;
     use CreatePipeline\CreatePipelineTrait;
     use CreatePresignedDomainUrl\CreatePresignedDomainUrlTrait;
     use CreatePresignedMlflowTrackingServerUrl\CreatePresignedMlflowTrackingServerUrlTrait;
@@ -62,6 +67,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use CreateSpace\CreateSpaceTrait;
     use CreateStudioLifecycleConfig\CreateStudioLifecycleConfigTrait;
     use CreateTrainingJob\CreateTrainingJobTrait;
+    use CreateTrainingPlan\CreateTrainingPlanTrait;
     use CreateTransformJob\CreateTransformJobTrait;
     use CreateTrial\CreateTrialTrait;
     use CreateTrialComponent\CreateTrialComponentTrait;
@@ -75,8 +81,10 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DeleteArtifact\DeleteArtifactTrait;
     use DeleteAssociation\DeleteAssociationTrait;
     use DeleteCluster\DeleteClusterTrait;
+    use DeleteClusterSchedulerConfig\DeleteClusterSchedulerConfigTrait;
     use DeleteCodeRepository\DeleteCodeRepositoryTrait;
     use DeleteCompilationJob\DeleteCompilationJobTrait;
+    use DeleteComputeQuota\DeleteComputeQuotaTrait;
     use DeleteContext\DeleteContextTrait;
     use DeleteDataQualityJobDefinition\DeleteDataQualityJobDefinitionTrait;
     use DeleteDeviceFleet\DeleteDeviceFleetTrait;
@@ -110,6 +118,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DeleteNotebookInstance\DeleteNotebookInstanceTrait;
     use DeleteNotebookInstanceLifecycleConfig\DeleteNotebookInstanceLifecycleConfigTrait;
     use DeleteOptimizationJob\DeleteOptimizationJobTrait;
+    use DeletePartnerApp\DeletePartnerAppTrait;
     use DeletePipeline\DeletePipelineTrait;
     use DeleteProject\DeleteProjectTrait;
     use DeleteSpace\DeleteSpaceTrait;
@@ -130,8 +139,10 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DescribeAutoMLJobV2\DescribeAutoMLJobV2Trait;
     use DescribeCluster\DescribeClusterTrait;
     use DescribeClusterNode\DescribeClusterNodeTrait;
+    use DescribeClusterSchedulerConfig\DescribeClusterSchedulerConfigTrait;
     use DescribeCodeRepository\DescribeCodeRepositoryTrait;
     use DescribeCompilationJob\DescribeCompilationJobTrait;
+    use DescribeComputeQuota\DescribeComputeQuotaTrait;
     use DescribeContext\DescribeContextTrait;
     use DescribeDataQualityJobDefinition\DescribeDataQualityJobDefinitionTrait;
     use DescribeDevice\DescribeDeviceTrait;
@@ -169,6 +180,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DescribeNotebookInstance\DescribeNotebookInstanceTrait;
     use DescribeNotebookInstanceLifecycleConfig\DescribeNotebookInstanceLifecycleConfigTrait;
     use DescribeOptimizationJob\DescribeOptimizationJobTrait;
+    use DescribePartnerApp\DescribePartnerAppTrait;
     use DescribePipeline\DescribePipelineTrait;
     use DescribePipelineDefinitionForExecution\DescribePipelineDefinitionForExecutionTrait;
     use DescribePipelineExecution\DescribePipelineExecutionTrait;
@@ -178,6 +190,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DescribeStudioLifecycleConfig\DescribeStudioLifecycleConfigTrait;
     use DescribeSubscribedWorkteam\DescribeSubscribedWorkteamTrait;
     use DescribeTrainingJob\DescribeTrainingJobTrait;
+    use DescribeTrainingPlan\DescribeTrainingPlanTrait;
     use DescribeTransformJob\DescribeTransformJobTrait;
     use DescribeTrial\DescribeTrialTrait;
     use DescribeTrialComponent\DescribeTrialComponentTrait;
@@ -204,9 +217,11 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListAutoMLJobs\ListAutoMLJobsTrait;
     use ListCandidatesForAutoMLJob\ListCandidatesForAutoMLJobTrait;
     use ListClusterNodes\ListClusterNodesTrait;
+    use ListClusterSchedulerConfigs\ListClusterSchedulerConfigsTrait;
     use ListClusters\ListClustersTrait;
     use ListCodeRepositories\ListCodeRepositoriesTrait;
     use ListCompilationJobs\ListCompilationJobsTrait;
+    use ListComputeQuotas\ListComputeQuotasTrait;
     use ListContexts\ListContextsTrait;
     use ListDataQualityJobDefinitions\ListDataQualityJobDefinitionsTrait;
     use ListDeviceFleets\ListDeviceFleetsTrait;
@@ -251,6 +266,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListNotebookInstanceLifecycleConfigs\ListNotebookInstanceLifecycleConfigsTrait;
     use ListNotebookInstances\ListNotebookInstancesTrait;
     use ListOptimizationJobs\ListOptimizationJobsTrait;
+    use ListPartnerApps\ListPartnerAppsTrait;
     use ListPipelineExecutionSteps\ListPipelineExecutionStepsTrait;
     use ListPipelineExecutions\ListPipelineExecutionsTrait;
     use ListPipelineParametersForExecution\ListPipelineParametersForExecutionTrait;
@@ -265,6 +281,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListTags\ListTagsTrait;
     use ListTrainingJobs\ListTrainingJobsTrait;
     use ListTrainingJobsForHyperParameterTuningJob\ListTrainingJobsForHyperParameterTuningJobTrait;
+    use ListTrainingPlans\ListTrainingPlansTrait;
     use ListTransformJobs\ListTransformJobsTrait;
     use ListTrialComponents\ListTrialComponentsTrait;
     use ListTrials\ListTrialsTrait;
@@ -277,6 +294,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use RenderUiTemplate\RenderUiTemplateTrait;
     use RetryPipelineExecution\RetryPipelineExecutionTrait;
     use Search\SearchTrait;
+    use SearchTrainingPlanOfferings\SearchTrainingPlanOfferingsTrait;
     use SendPipelineExecutionStepFailure\SendPipelineExecutionStepFailureTrait;
     use SendPipelineExecutionStepSuccess\SendPipelineExecutionStepSuccessTrait;
     use StartEdgeDeploymentStage\StartEdgeDeploymentStageTrait;
@@ -305,8 +323,10 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use UpdateAppImageConfig\UpdateAppImageConfigTrait;
     use UpdateArtifact\UpdateArtifactTrait;
     use UpdateCluster\UpdateClusterTrait;
+    use UpdateClusterSchedulerConfig\UpdateClusterSchedulerConfigTrait;
     use UpdateClusterSoftware\UpdateClusterSoftwareTrait;
     use UpdateCodeRepository\UpdateCodeRepositoryTrait;
+    use UpdateComputeQuota\UpdateComputeQuotaTrait;
     use UpdateContext\UpdateContextTrait;
     use UpdateDeviceFleet\UpdateDeviceFleetTrait;
     use UpdateDevices\UpdateDevicesTrait;
@@ -329,6 +349,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use UpdateMonitoringSchedule\UpdateMonitoringScheduleTrait;
     use UpdateNotebookInstance\UpdateNotebookInstanceTrait;
     use UpdateNotebookInstanceLifecycleConfig\UpdateNotebookInstanceLifecycleConfigTrait;
+    use UpdatePartnerApp\UpdatePartnerAppTrait;
     use UpdatePipeline\UpdatePipelineTrait;
     use UpdatePipelineExecution\UpdatePipelineExecutionTrait;
     use UpdateProject\UpdateProjectTrait;

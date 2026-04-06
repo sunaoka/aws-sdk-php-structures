@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property list<string> $ResourceIds
- * @property 'VOICE_PHONE_NUMBER'|null $ResourceType
+ * @property 'WHATSAPP_MESSAGING_PHONE_NUMBER'|'VOICE_PHONE_NUMBER'|'INBOUND_EMAIL'|'OUTBOUND_EMAIL'|'ANALYTICS_CONNECTOR'|null $ResourceType
  */
 class BatchGetFlowAssociationRequest extends Request
 {
@@ -15,7 +15,7 @@ class BatchGetFlowAssociationRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     ResourceIds: list<string>,
-     *     ResourceType?: 'VOICE_PHONE_NUMBER'|null
+     *     ResourceType?: 'WHATSAPP_MESSAGING_PHONE_NUMBER'|'VOICE_PHONE_NUMBER'|'INBOUND_EMAIL'|'OUTBOUND_EMAIL'|'ANALYTICS_CONNECTOR'|null
      * } $args
      */
     public function __construct(array $args)

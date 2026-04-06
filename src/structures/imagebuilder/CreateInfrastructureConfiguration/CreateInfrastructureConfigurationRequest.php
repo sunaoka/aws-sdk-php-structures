@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $resourceTags
  * @property Shapes\InstanceMetadataOptions|null $instanceMetadataOptions
  * @property array<string, string>|null $tags
+ * @property Shapes\Placement|null $placement
  * @property string $clientToken
  */
 class CreateInfrastructureConfigurationRequest extends Request
@@ -37,6 +38,7 @@ class CreateInfrastructureConfigurationRequest extends Request
      *     resourceTags?: array<string, string>|null,
      *     instanceMetadataOptions?: Shapes\InstanceMetadataOptions|null,
      *     tags?: array<string, string>|null,
+     *     placement?: Shapes\Placement|null,
      *     clientToken: string
      * } $args
      */

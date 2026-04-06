@@ -31,6 +31,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SourceUri
  * @property ModelPackageSecurityConfig|null $SecurityConfig
  * @property ModelPackageModelCard|null $ModelCard
+ * @property ModelLifeCycle|null $ModelLifeCycle
  * @property list<Tag>|null $Tags
  * @property array<string, string>|null $CustomerMetadataProperties
  * @property DriftCheckBaselines|null $DriftCheckBaselines
@@ -66,6 +67,7 @@ class ModelPackage extends Shape
      *     SourceUri?: string|null,
      *     SecurityConfig?: ModelPackageSecurityConfig|null,
      *     ModelCard?: ModelPackageModelCard|null,
+     *     ModelLifeCycle?: ModelLifeCycle|null,
      *     Tags?: list<Tag>|null,
      *     CustomerMetadataProperties?: array<string, string>|null,
      *     DriftCheckBaselines?: DriftCheckBaselines|null,

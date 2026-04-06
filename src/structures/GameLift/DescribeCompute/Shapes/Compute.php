@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ComputeArn
  * @property string|null $IpAddress
  * @property string|null $DnsName
- * @property 'PENDING'|'ACTIVE'|'TERMINATING'|null $ComputeStatus
+ * @property 'PENDING'|'ACTIVE'|'TERMINATING'|'IMPAIRED'|null $ComputeStatus
  * @property string|null $Location
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023'|null $OperatingSystem
@@ -19,7 +19,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $GameLiftServiceSdkEndpoint
  * @property string|null $GameLiftAgentEndpoint
  * @property string|null $InstanceId
- * @property ContainerAttributes|null $ContainerAttributes
+ * @property list<ContainerAttribute>|null $ContainerAttributes
+ * @property string|null $GameServerContainerGroupDefinitionArn
  */
 class Compute extends Shape
 {
@@ -31,7 +32,7 @@ class Compute extends Shape
      *     ComputeArn?: string|null,
      *     IpAddress?: string|null,
      *     DnsName?: string|null,
-     *     ComputeStatus?: 'PENDING'|'ACTIVE'|'TERMINATING'|null,
+     *     ComputeStatus?: 'PENDING'|'ACTIVE'|'TERMINATING'|'IMPAIRED'|null,
      *     Location?: string|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
      *     OperatingSystem?: 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023'|null,
@@ -39,7 +40,8 @@ class Compute extends Shape
      *     GameLiftServiceSdkEndpoint?: string|null,
      *     GameLiftAgentEndpoint?: string|null,
      *     InstanceId?: string|null,
-     *     ContainerAttributes?: ContainerAttributes|null
+     *     ContainerAttributes?: list<ContainerAttribute>|null,
+     *     GameServerContainerGroupDefinitionArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

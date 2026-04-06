@@ -29,6 +29,7 @@ class DirectoryServiceClient extends \Aws\DirectoryService\DirectoryServiceClien
     use DescribeClientAuthenticationSettings\DescribeClientAuthenticationSettingsTrait;
     use DescribeConditionalForwarders\DescribeConditionalForwardersTrait;
     use DescribeDirectories\DescribeDirectoriesTrait;
+    use DescribeDirectoryDataAccess\DescribeDirectoryDataAccessTrait;
     use DescribeDomainControllers\DescribeDomainControllersTrait;
     use DescribeEventTopics\DescribeEventTopicsTrait;
     use DescribeLDAPSSettings\DescribeLDAPSSettingsTrait;
@@ -39,10 +40,12 @@ class DirectoryServiceClient extends \Aws\DirectoryService\DirectoryServiceClien
     use DescribeTrusts\DescribeTrustsTrait;
     use DescribeUpdateDirectory\DescribeUpdateDirectoryTrait;
     use DisableClientAuthentication\DisableClientAuthenticationTrait;
+    use DisableDirectoryDataAccess\DisableDirectoryDataAccessTrait;
     use DisableLDAPS\DisableLDAPSTrait;
     use DisableRadius\DisableRadiusTrait;
     use DisableSso\DisableSsoTrait;
     use EnableClientAuthentication\EnableClientAuthenticationTrait;
+    use EnableDirectoryDataAccess\EnableDirectoryDataAccessTrait;
     use EnableLDAPS\EnableLDAPSTrait;
     use EnableRadius\EnableRadiusTrait;
     use EnableSso\EnableSsoTrait;

@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'CANCELLED'|'FAILED'|null $status
  * @property string|null $name
  * @property int<1, max>|null $cpus
+ * @property bool|null $cacheHit
+ * @property string|null $cacheS3Uri
  * @property int<1, max>|null $memory
  * @property \Aws\Api\DateTimeResult|null $creationTime
  * @property \Aws\Api\DateTimeResult|null $startTime

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $recommendationId
  * @property 'HIGH'|'MEDIUM'|'LOW'|null $relevanceLevel
  * @property double|null $relevanceScore
- * @property 'KNOWLEDGE_CONTENT'|'GENERATIVE_RESPONSE'|'GENERATIVE_ANSWER'|null $type
+ * @property 'KNOWLEDGE_CONTENT'|'GENERATIVE_RESPONSE'|'GENERATIVE_ANSWER'|'DETECTED_INTENT'|null $type
  */
 class RecommendationData extends Shape
 {
@@ -21,7 +21,7 @@ class RecommendationData extends Shape
      *     recommendationId: string,
      *     relevanceLevel?: 'HIGH'|'MEDIUM'|'LOW'|null,
      *     relevanceScore?: double|null,
-     *     type?: 'KNOWLEDGE_CONTENT'|'GENERATIVE_RESPONSE'|'GENERATIVE_ANSWER'|null
+     *     type?: 'KNOWLEDGE_CONTENT'|'GENERATIVE_RESPONSE'|'GENERATIVE_ANSWER'|'DETECTED_INTENT'|null
      * } $args
      */
     public function __construct(array $args)

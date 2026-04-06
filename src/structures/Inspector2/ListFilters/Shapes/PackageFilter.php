@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property StringFilter|null $architecture
  * @property NumberFilter|null $epoch
+ * @property StringFilter|null $filePath
  * @property StringFilter|null $name
  * @property StringFilter|null $release
  * @property StringFilter|null $sourceLambdaLayerArn
@@ -19,6 +20,7 @@ class PackageFilter extends Shape
      * @param array{
      *     architecture?: StringFilter|null,
      *     epoch?: NumberFilter|null,
+     *     filePath?: StringFilter|null,
      *     name?: StringFilter|null,
      *     release?: StringFilter|null,
      *     sourceLambdaLayerArn?: StringFilter|null,

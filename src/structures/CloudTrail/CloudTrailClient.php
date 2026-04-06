@@ -7,9 +7,11 @@ class CloudTrailClient extends \Aws\CloudTrail\CloudTrailClient
     use AddTags\AddTagsTrait;
     use CancelQuery\CancelQueryTrait;
     use CreateChannel\CreateChannelTrait;
+    use CreateDashboard\CreateDashboardTrait;
     use CreateEventDataStore\CreateEventDataStoreTrait;
     use CreateTrail\CreateTrailTrait;
     use DeleteChannel\DeleteChannelTrait;
+    use DeleteDashboard\DeleteDashboardTrait;
     use DeleteEventDataStore\DeleteEventDataStoreTrait;
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;
     use DeleteTrail\DeleteTrailTrait;
@@ -18,7 +20,9 @@ class CloudTrailClient extends \Aws\CloudTrail\CloudTrailClient
     use DescribeTrails\DescribeTrailsTrait;
     use DisableFederation\DisableFederationTrait;
     use EnableFederation\EnableFederationTrait;
+    use GenerateQuery\GenerateQueryTrait;
     use GetChannel\GetChannelTrait;
+    use GetDashboard\GetDashboardTrait;
     use GetEventDataStore\GetEventDataStoreTrait;
     use GetEventSelectors\GetEventSelectorsTrait;
     use GetImport\GetImportTrait;
@@ -28,6 +32,7 @@ class CloudTrailClient extends \Aws\CloudTrail\CloudTrailClient
     use GetTrail\GetTrailTrait;
     use GetTrailStatus\GetTrailStatusTrait;
     use ListChannels\ListChannelsTrait;
+    use ListDashboards\ListDashboardsTrait;
     use ListEventDataStores\ListEventDataStoresTrait;
     use ListImportFailures\ListImportFailuresTrait;
     use ListImports\ListImportsTrait;
@@ -43,6 +48,7 @@ class CloudTrailClient extends \Aws\CloudTrail\CloudTrailClient
     use RegisterOrganizationDelegatedAdmin\RegisterOrganizationDelegatedAdminTrait;
     use RemoveTags\RemoveTagsTrait;
     use RestoreEventDataStore\RestoreEventDataStoreTrait;
+    use StartDashboardRefresh\StartDashboardRefreshTrait;
     use StartEventDataStoreIngestion\StartEventDataStoreIngestionTrait;
     use StartImport\StartImportTrait;
     use StartLogging\StartLoggingTrait;
@@ -51,6 +57,7 @@ class CloudTrailClient extends \Aws\CloudTrail\CloudTrailClient
     use StopImport\StopImportTrait;
     use StopLogging\StopLoggingTrait;
     use UpdateChannel\UpdateChannelTrait;
+    use UpdateDashboard\UpdateDashboardTrait;
     use UpdateEventDataStore\UpdateEventDataStoreTrait;
     use UpdateTrail\UpdateTrailTrait;
 }

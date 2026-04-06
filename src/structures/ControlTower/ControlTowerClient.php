@@ -25,6 +25,7 @@ class ControlTowerClient extends \Aws\ControlTower\ControlTowerClient
     use ListLandingZones\ListLandingZonesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ResetEnabledBaseline\ResetEnabledBaselineTrait;
+    use ResetEnabledControl\ResetEnabledControlTrait;
     use ResetLandingZone\ResetLandingZoneTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;

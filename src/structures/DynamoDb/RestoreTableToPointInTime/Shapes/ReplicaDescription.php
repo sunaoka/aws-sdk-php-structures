@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $KMSMasterKeyId
  * @property ProvisionedThroughputOverride|null $ProvisionedThroughputOverride
  * @property OnDemandThroughputOverride|null $OnDemandThroughputOverride
+ * @property TableWarmThroughputDescription|null $WarmThroughput
  * @property list<ReplicaGlobalSecondaryIndexDescription>|null $GlobalSecondaryIndexes
  * @property \Aws\Api\DateTimeResult|null $ReplicaInaccessibleDateTime
  * @property TableClassSummary|null $ReplicaTableClassSummary
@@ -27,6 +28,7 @@ class ReplicaDescription extends Shape
      *     KMSMasterKeyId?: string|null,
      *     ProvisionedThroughputOverride?: ProvisionedThroughputOverride|null,
      *     OnDemandThroughputOverride?: OnDemandThroughputOverride|null,
+     *     WarmThroughput?: TableWarmThroughputDescription|null,
      *     GlobalSecondaryIndexes?: list<ReplicaGlobalSecondaryIndexDescription>|null,
      *     ReplicaInaccessibleDateTime?: \Aws\Api\DateTimeResult|null,
      *     ReplicaTableClassSummary?: TableClassSummary|null

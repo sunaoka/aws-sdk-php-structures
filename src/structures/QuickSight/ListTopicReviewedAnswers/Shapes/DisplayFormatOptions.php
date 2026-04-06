@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $FractionDigits
  * @property string|null $Prefix
  * @property string|null $Suffix
- * @property 'NONE'|'AUTO'|'THOUSANDS'|'MILLIONS'|'BILLIONS'|'TRILLIONS'|null $UnitScaler
+ * @property 'NONE'|'AUTO'|'THOUSANDS'|'MILLIONS'|'BILLIONS'|'TRILLIONS'|'LAKHS'|'CRORES'|null $UnitScaler
  * @property NegativeFormat|null $NegativeFormat
  * @property string|null $CurrencySymbol
  */
@@ -31,7 +31,7 @@ class DisplayFormatOptions extends Shape
      *     FractionDigits?: int|null,
      *     Prefix?: string|null,
      *     Suffix?: string|null,
-     *     UnitScaler?: 'NONE'|'AUTO'|'THOUSANDS'|'MILLIONS'|'BILLIONS'|'TRILLIONS'|null,
+     *     UnitScaler?: 'NONE'|'AUTO'|'THOUSANDS'|'MILLIONS'|'BILLIONS'|'TRILLIONS'|'LAKHS'|'CRORES'|null,
      *     NegativeFormat?: NegativeFormat|null,
      *     CurrencySymbol?: string|null
      * } $args

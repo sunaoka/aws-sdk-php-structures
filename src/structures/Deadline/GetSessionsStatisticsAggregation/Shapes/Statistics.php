@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\Deadline\GetSessionsStatisticsAggregation\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult|null $aggregationEndTime
- * @property \Aws\Api\DateTimeResult|null $aggregationStartTime
- * @property Stats $costInUsd
- * @property int $count
+ * @property string|null $queueId
  * @property string|null $fleetId
- * @property string|null $instanceType
  * @property string|null $jobId
  * @property string|null $jobName
- * @property string|null $licenseProduct
- * @property string|null $queueId
- * @property Stats $runtimeInSeconds
- * @property 'COMPUTE'|'LICENSE'|null $usageType
  * @property string|null $userId
+ * @property 'COMPUTE'|'LICENSE'|null $usageType
+ * @property string|null $licenseProduct
+ * @property string|null $instanceType
+ * @property int $count
+ * @property Stats $costInUsd
+ * @property Stats $runtimeInSeconds
+ * @property \Aws\Api\DateTimeResult|null $aggregationStartTime
+ * @property \Aws\Api\DateTimeResult|null $aggregationEndTime
  */
 class Statistics extends Shape
 {
     /**
      * @param array{
-     *     aggregationEndTime?: \Aws\Api\DateTimeResult|null,
-     *     aggregationStartTime?: \Aws\Api\DateTimeResult|null,
-     *     costInUsd: Stats,
-     *     count: int,
+     *     queueId?: string|null,
      *     fleetId?: string|null,
-     *     instanceType?: string|null,
      *     jobId?: string|null,
      *     jobName?: string|null,
-     *     licenseProduct?: string|null,
-     *     queueId?: string|null,
-     *     runtimeInSeconds: Stats,
+     *     userId?: string|null,
      *     usageType?: 'COMPUTE'|'LICENSE'|null,
-     *     userId?: string|null
+     *     licenseProduct?: string|null,
+     *     instanceType?: string|null,
+     *     count: int,
+     *     costInUsd: Stats,
+     *     runtimeInSeconds: Stats,
+     *     aggregationStartTime?: \Aws\Api\DateTimeResult|null,
+     *     aggregationEndTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

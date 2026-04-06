@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $accessKeyId
- * @property \Aws\Api\DateTimeResult $expiration
  * @property string $secretAccessKey
  * @property string $sessionToken
+ * @property \Aws\Api\DateTimeResult $expiration
  */
 class AwsCredentials extends Shape
 {
     /**
      * @param array{
      *     accessKeyId: string,
-     *     expiration: \Aws\Api\DateTimeResult,
      *     secretAccessKey: string,
-     *     sessionToken: string
+     *     sessionToken: string,
+     *     expiration: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

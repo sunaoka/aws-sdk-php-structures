@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $IsIPV6Enabled
  * @property list<AliasICPRecordal>|null $AliasICPRecordals
  * @property bool $Staging
+ * @property string|null $AnycastIpListId
  */
 class DistributionSummary extends Shape
 {
@@ -51,7 +52,8 @@ class DistributionSummary extends Shape
      *     HttpVersion: 'http1.1'|'http2'|'http3'|'http2and3',
      *     IsIPV6Enabled: bool,
      *     AliasICPRecordals?: list<AliasICPRecordal>|null,
-     *     Staging: bool
+     *     Staging: bool,
+     *     AnycastIpListId?: string|null
      * } $args
      */
     public function __construct(array $args)

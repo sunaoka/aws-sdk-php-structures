@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $externalExecutionUrl
  * @property int<0, 100>|null $percentComplete
  * @property ErrorDetails|null $errorDetails
+ * @property string|null $logStreamARN
  */
 class ActionExecution extends Shape
 {
@@ -29,7 +30,8 @@ class ActionExecution extends Shape
      *     externalExecutionId?: string|null,
      *     externalExecutionUrl?: string|null,
      *     percentComplete?: int<0, 100>|null,
-     *     errorDetails?: ErrorDetails|null
+     *     errorDetails?: ErrorDetails|null,
+     *     logStreamARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

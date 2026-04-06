@@ -30,6 +30,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AutoBranchCreationConfig|null $autoBranchCreationConfig
  * @property 'SSH'|'TOKEN'|'SIGV4'|null $repositoryCloneMethod
  * @property CacheConfig|null $cacheConfig
+ * @property \Aws\Api\DateTimeResult|null $webhookCreateTime
+ * @property WafConfiguration|null $wafConfiguration
  */
 class App extends Shape
 {
@@ -59,7 +61,9 @@ class App extends Shape
      *     autoBranchCreationPatterns?: list<string>|null,
      *     autoBranchCreationConfig?: AutoBranchCreationConfig|null,
      *     repositoryCloneMethod?: 'SSH'|'TOKEN'|'SIGV4'|null,
-     *     cacheConfig?: CacheConfig|null
+     *     cacheConfig?: CacheConfig|null,
+     *     webhookCreateTime?: \Aws\Api\DateTimeResult|null,
+     *     wafConfiguration?: WafConfiguration|null
      * } $args
      */
     public function __construct(array $args)

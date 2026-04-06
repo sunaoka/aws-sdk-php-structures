@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SourceRegion
  * @property string $SourceSnapshotId
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property int<1, 2880>|null $CompletionDurationMinutes
  * @property bool|null $DryRun
  */
 class CopySnapshotRequest extends Request
@@ -29,6 +30,7 @@ class CopySnapshotRequest extends Request
      *     SourceRegion: string,
      *     SourceSnapshotId: string,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     CompletionDurationMinutes?: int<1, 2880>|null,
      *     DryRun?: bool|null
      * } $args
      */

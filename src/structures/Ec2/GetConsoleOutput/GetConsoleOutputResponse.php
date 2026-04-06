@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $InstanceId
- * @property string|null $Output
  * @property \Aws\Api\DateTimeResult|null $Timestamp
+ * @property string|null $Output
  */
 class GetConsoleOutputResponse extends Response
 {

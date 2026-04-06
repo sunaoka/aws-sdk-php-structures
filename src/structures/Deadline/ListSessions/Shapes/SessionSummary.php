@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Deadline\ListSessions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult|null $endedAt
- * @property string $fleetId
- * @property 'STARTED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCEEDED'|'UPDATE_FAILED'|'ENDED' $lifecycleStatus
  * @property string $sessionId
+ * @property string $fleetId
+ * @property string $workerId
  * @property \Aws\Api\DateTimeResult $startedAt
- * @property 'ENDED'|null $targetLifecycleStatus
+ * @property 'STARTED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCEEDED'|'UPDATE_FAILED'|'ENDED' $lifecycleStatus
+ * @property \Aws\Api\DateTimeResult|null $endedAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string|null $updatedBy
- * @property string $workerId
+ * @property 'ENDED'|null $targetLifecycleStatus
  */
 class SessionSummary extends Shape
 {
     /**
      * @param array{
-     *     endedAt?: \Aws\Api\DateTimeResult|null,
-     *     fleetId: string,
-     *     lifecycleStatus: 'STARTED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCEEDED'|'UPDATE_FAILED'|'ENDED',
      *     sessionId: string,
+     *     fleetId: string,
+     *     workerId: string,
      *     startedAt: \Aws\Api\DateTimeResult,
-     *     targetLifecycleStatus?: 'ENDED'|null,
+     *     lifecycleStatus: 'STARTED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCEEDED'|'UPDATE_FAILED'|'ENDED',
+     *     endedAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
      *     updatedBy?: string|null,
-     *     workerId: string
+     *     targetLifecycleStatus?: 'ENDED'|null
      * } $args
      */
     public function __construct(array $args)

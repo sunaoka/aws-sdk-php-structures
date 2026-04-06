@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ExperimentTemplateLogConfiguration|null $logConfiguration
  * @property ExperimentTemplateExperimentOptions|null $experimentOptions
  * @property int<0, max>|null $targetAccountConfigurationsCount
+ * @property ExperimentTemplateReportConfiguration|null $experimentReportConfiguration
  */
 class ExperimentTemplate extends Shape
 {
@@ -35,7 +36,8 @@ class ExperimentTemplate extends Shape
      *     tags?: array<string, string>|null,
      *     logConfiguration?: ExperimentTemplateLogConfiguration|null,
      *     experimentOptions?: ExperimentTemplateExperimentOptions|null,
-     *     targetAccountConfigurationsCount?: int<0, max>|null
+     *     targetAccountConfigurationsCount?: int<0, max>|null,
+     *     experimentReportConfiguration?: ExperimentTemplateReportConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

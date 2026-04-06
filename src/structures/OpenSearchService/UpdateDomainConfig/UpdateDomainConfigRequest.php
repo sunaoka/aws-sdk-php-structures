@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\DomainEndpointOptions|null $DomainEndpointOptions
  * @property Shapes\NodeToNodeEncryptionOptions|null $NodeToNodeEncryptionOptions
  * @property Shapes\AdvancedSecurityOptionsInput|null $AdvancedSecurityOptions
+ * @property Shapes\IdentityCenterOptionsInput|null $IdentityCenterOptions
  * @property Shapes\AutoTuneOptions|null $AutoTuneOptions
  * @property bool|null $DryRun
  * @property 'Basic'|'Verbose'|null $DryRunMode
@@ -44,6 +45,7 @@ class UpdateDomainConfigRequest extends Request
      *     DomainEndpointOptions?: Shapes\DomainEndpointOptions|null,
      *     NodeToNodeEncryptionOptions?: Shapes\NodeToNodeEncryptionOptions|null,
      *     AdvancedSecurityOptions?: Shapes\AdvancedSecurityOptionsInput|null,
+     *     IdentityCenterOptions?: Shapes\IdentityCenterOptionsInput|null,
      *     AutoTuneOptions?: Shapes\AutoTuneOptions|null,
      *     DryRun?: bool|null,
      *     DryRunMode?: 'Basic'|'Verbose'|null,

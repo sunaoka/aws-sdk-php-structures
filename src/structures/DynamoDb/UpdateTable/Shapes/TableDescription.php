@@ -29,6 +29,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TableClassSummary|null $TableClassSummary
  * @property bool|null $DeletionProtectionEnabled
  * @property OnDemandThroughput|null $OnDemandThroughput
+ * @property TableWarmThroughputDescription|null $WarmThroughput
+ * @property 'EVENTUAL'|'STRONG'|null $MultiRegionConsistency
  */
 class TableDescription extends Shape
 {
@@ -57,7 +59,9 @@ class TableDescription extends Shape
      *     ArchivalSummary?: ArchivalSummary|null,
      *     TableClassSummary?: TableClassSummary|null,
      *     DeletionProtectionEnabled?: bool|null,
-     *     OnDemandThroughput?: OnDemandThroughput|null
+     *     OnDemandThroughput?: OnDemandThroughput|null,
+     *     WarmThroughput?: TableWarmThroughputDescription|null,
+     *     MultiRegionConsistency?: 'EVENTUAL'|'STRONG'|null
      * } $args
      */
     public function __construct(array $args = [])

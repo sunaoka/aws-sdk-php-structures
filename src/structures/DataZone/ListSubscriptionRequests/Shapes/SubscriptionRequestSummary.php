@@ -9,7 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $createdBy
  * @property string|null $decisionComment
  * @property string $domainId
+ * @property string|null $existingSubscriptionId
  * @property string $id
+ * @property list<MetadataFormSummary>|null $metadataFormsSummary
  * @property string $requestReason
  * @property string|null $reviewerId
  * @property 'PENDING'|'ACCEPTED'|'REJECTED' $status
@@ -26,7 +28,9 @@ class SubscriptionRequestSummary extends Shape
      *     createdBy: string,
      *     decisionComment?: string|null,
      *     domainId: string,
+     *     existingSubscriptionId?: string|null,
      *     id: string,
+     *     metadataFormsSummary?: list<MetadataFormSummary>|null,
      *     requestReason: string,
      *     reviewerId?: string|null,
      *     status: 'PENDING'|'ACCEPTED'|'REJECTED',

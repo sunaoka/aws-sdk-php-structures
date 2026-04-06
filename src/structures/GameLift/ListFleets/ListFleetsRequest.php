@@ -7,7 +7,6 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $BuildId
  * @property string|null $ScriptId
- * @property string|null $ContainerGroupDefinitionName
  * @property int<1, max>|null $Limit
  * @property string|null $NextToken
  */
@@ -17,7 +16,6 @@ class ListFleetsRequest extends Request
      * @param array{
      *     BuildId?: string|null,
      *     ScriptId?: string|null,
-     *     ContainerGroupDefinitionName?: string|null,
      *     Limit?: int<1, max>|null,
      *     NextToken?: string|null
      * } $args

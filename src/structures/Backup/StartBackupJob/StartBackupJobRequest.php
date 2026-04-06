@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Lifecycle|null $Lifecycle
  * @property array<string, string>|null $RecoveryPointTags
  * @property array<string, string>|null $BackupOptions
+ * @property 'ENABLED'|'DISABLED'|null $Index
  */
 class StartBackupJobRequest extends Request
 {
@@ -27,7 +28,8 @@ class StartBackupJobRequest extends Request
      *     CompleteWindowMinutes?: int|null,
      *     Lifecycle?: Shapes\Lifecycle|null,
      *     RecoveryPointTags?: array<string, string>|null,
-     *     BackupOptions?: array<string, string>|null
+     *     BackupOptions?: array<string, string>|null,
+     *     Index?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

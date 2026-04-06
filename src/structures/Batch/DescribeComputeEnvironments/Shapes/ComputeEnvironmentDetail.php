@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EksConfiguration|null $eksConfiguration
  * @property 'ECS'|'EKS'|null $containerOrchestrationType
  * @property string|null $uuid
+ * @property string|null $context
  */
 class ComputeEnvironmentDetail extends Shape
 {
@@ -39,7 +40,8 @@ class ComputeEnvironmentDetail extends Shape
      *     updatePolicy?: UpdatePolicy|null,
      *     eksConfiguration?: EksConfiguration|null,
      *     containerOrchestrationType?: 'ECS'|'EKS'|null,
-     *     uuid?: string|null
+     *     uuid?: string|null,
+     *     context?: string|null
      * } $args
      */
     public function __construct(array $args)

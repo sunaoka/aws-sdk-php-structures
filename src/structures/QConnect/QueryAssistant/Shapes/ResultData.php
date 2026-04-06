@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Document|null $document
  * @property double|null $relevanceScore
  * @property string $resultId
- * @property 'KNOWLEDGE_CONTENT'|'GENERATIVE_ANSWER'|null $type
+ * @property 'KNOWLEDGE_CONTENT'|'INTENT_ANSWER'|'GENERATIVE_ANSWER'|null $type
  */
 class ResultData extends Shape
 {
@@ -19,7 +19,7 @@ class ResultData extends Shape
      *     document?: Document|null,
      *     relevanceScore?: double|null,
      *     resultId: string,
-     *     type?: 'KNOWLEDGE_CONTENT'|'GENERATIVE_ANSWER'|null
+     *     type?: 'KNOWLEDGE_CONTENT'|'INTENT_ANSWER'|'GENERATIVE_ANSWER'|null
      * } $args
      */
     public function __construct(array $args)

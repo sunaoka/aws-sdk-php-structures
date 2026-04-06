@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $taskDefinition
  * @property list<Shapes\CapacityProviderStrategyItem>|null $capacityProviderStrategy
  * @property Shapes\DeploymentConfiguration|null $deploymentConfiguration
+ * @property 'ENABLED'|'DISABLED'|null $availabilityZoneRebalancing
  * @property Shapes\NetworkConfiguration|null $networkConfiguration
  * @property list<Shapes\PlacementConstraint>|null $placementConstraints
  * @property list<Shapes\PlacementStrategy>|null $placementStrategy
@@ -24,6 +25,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ServiceRegistry>|null $serviceRegistries
  * @property Shapes\ServiceConnectConfiguration|null $serviceConnectConfiguration
  * @property list<Shapes\ServiceVolumeConfiguration>|null $volumeConfigurations
+ * @property list<Shapes\VpcLatticeConfiguration>|null $vpcLatticeConfigurations
  */
 class UpdateServiceRequest extends Request
 {
@@ -35,6 +37,7 @@ class UpdateServiceRequest extends Request
      *     taskDefinition?: string|null,
      *     capacityProviderStrategy?: list<Shapes\CapacityProviderStrategyItem>|null,
      *     deploymentConfiguration?: Shapes\DeploymentConfiguration|null,
+     *     availabilityZoneRebalancing?: 'ENABLED'|'DISABLED'|null,
      *     networkConfiguration?: Shapes\NetworkConfiguration|null,
      *     placementConstraints?: list<Shapes\PlacementConstraint>|null,
      *     placementStrategy?: list<Shapes\PlacementStrategy>|null,
@@ -47,7 +50,8 @@ class UpdateServiceRequest extends Request
      *     propagateTags?: 'TASK_DEFINITION'|'SERVICE'|'NONE'|null,
      *     serviceRegistries?: list<Shapes\ServiceRegistry>|null,
      *     serviceConnectConfiguration?: Shapes\ServiceConnectConfiguration|null,
-     *     volumeConfigurations?: list<Shapes\ServiceVolumeConfiguration>|null
+     *     volumeConfigurations?: list<Shapes\ServiceVolumeConfiguration>|null,
+     *     vpcLatticeConfigurations?: list<Shapes\VpcLatticeConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

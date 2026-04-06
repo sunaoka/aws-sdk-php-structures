@@ -8,6 +8,7 @@ class PaymentCryptographyDataClient extends \Aws\PaymentCryptographyData\Payment
     use EncryptData\EncryptDataTrait;
     use GenerateCardValidationData\GenerateCardValidationDataTrait;
     use GenerateMac\GenerateMacTrait;
+    use GenerateMacEmvPinChange\GenerateMacEmvPinChangeTrait;
     use GeneratePinData\GeneratePinDataTrait;
     use ReEncryptData\ReEncryptDataTrait;
     use TranslatePinData\TranslatePinDataTrait;

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\DescribePortal\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED' $state
+ * @property 'CREATING'|'PENDING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED' $state
  * @property MonitorErrorDetails|null $error
  */
 class PortalStatus extends Shape
 {
     /**
      * @param array{
-     *     state: 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED',
+     *     state: 'CREATING'|'PENDING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED',
      *     error?: MonitorErrorDetails|null
      * } $args
      */

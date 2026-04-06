@@ -13,6 +13,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property string|null $fallbackLocation
  * @property 'MD5up'|'SHA256up'|'SHA512up'|null $eTagAlgorithmFamily
+ * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'FAILED'|null $status
+ * @property string|null $statusMessage
+ * @property list<string>|null $propagatedSetLevelTags
+ * @property Shapes\SequenceStoreS3Access|null $s3Access
  */
 class CreateSequenceStoreResponse extends Response
 {

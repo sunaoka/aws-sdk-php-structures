@@ -18,6 +18,7 @@ class AppConfigClient extends \Aws\AppConfig\AppConfigClient
     use DeleteExtension\DeleteExtensionTrait;
     use DeleteExtensionAssociation\DeleteExtensionAssociationTrait;
     use DeleteHostedConfigurationVersion\DeleteHostedConfigurationVersionTrait;
+    use GetAccountSettings\GetAccountSettingsTrait;
     use GetApplication\GetApplicationTrait;
     use GetConfiguration\GetConfigurationTrait;
     use GetConfigurationProfile\GetConfigurationProfileTrait;
@@ -40,6 +41,7 @@ class AppConfigClient extends \Aws\AppConfig\AppConfigClient
     use StopDeployment\StopDeploymentTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateAccountSettings\UpdateAccountSettingsTrait;
     use UpdateApplication\UpdateApplicationTrait;
     use UpdateConfigurationProfile\UpdateConfigurationProfileTrait;
     use UpdateDeploymentStrategy\UpdateDeploymentStrategyTrait;

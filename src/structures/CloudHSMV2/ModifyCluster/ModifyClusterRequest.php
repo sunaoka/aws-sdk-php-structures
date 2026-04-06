@@ -5,14 +5,16 @@ namespace Sunaoka\Aws\Structures\CloudHSMV2\ModifyCluster;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\BackupRetentionPolicy $BackupRetentionPolicy
+ * @property string|null $HsmType
+ * @property Shapes\BackupRetentionPolicy|null $BackupRetentionPolicy
  * @property string $ClusterId
  */
 class ModifyClusterRequest extends Request
 {
     /**
      * @param array{
-     *     BackupRetentionPolicy: Shapes\BackupRetentionPolicy,
+     *     HsmType?: string|null,
+     *     BackupRetentionPolicy?: Shapes\BackupRetentionPolicy|null,
      *     ClusterId: string
      * } $args
      */

@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Deadline\BatchGetJobEntity\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AccessDeniedException'|'InternalServerException'|'ValidationException'|'ResourceNotFoundException'|'MaxPayloadSizeExceeded'|'ConflictException' $code
- * @property string $environmentId
  * @property string $jobId
+ * @property string $environmentId
+ * @property 'AccessDeniedException'|'InternalServerException'|'ValidationException'|'ResourceNotFoundException'|'MaxPayloadSizeExceeded'|'ConflictException' $code
  * @property string $message
  */
 class EnvironmentDetailsError extends Shape
 {
     /**
      * @param array{
-     *     code: 'AccessDeniedException'|'InternalServerException'|'ValidationException'|'ResourceNotFoundException'|'MaxPayloadSizeExceeded'|'ConflictException',
-     *     environmentId: string,
      *     jobId: string,
+     *     environmentId: string,
+     *     code: 'AccessDeniedException'|'InternalServerException'|'ValidationException'|'ResourceNotFoundException'|'MaxPayloadSizeExceeded'|'ConflictException',
      *     message: string
      * } $args
      */

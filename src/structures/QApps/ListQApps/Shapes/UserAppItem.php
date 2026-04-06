@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property bool|null $canEdit
  * @property string|null $status
+ * @property bool|null $isVerified
  */
 class UserAppItem extends Shape
 {
@@ -23,7 +24,8 @@ class UserAppItem extends Shape
      *     description?: string|null,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     canEdit?: bool|null,
-     *     status?: string|null
+     *     status?: string|null,
+     *     isVerified?: bool|null
      * } $args
      */
     public function __construct(array $args)

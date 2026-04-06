@@ -13,6 +13,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $subtitle
  * @property string|null $welcomeMessage
  * @property 'ENABLED'|'DISABLED'|null $samplePromptsControlMode
+ * @property Shapes\IdentityProviderConfiguration|null $identityProviderConfiguration
+ * @property list<string>|null $origins
+ * @property Shapes\BrowserExtensionConfiguration|null $browserExtensionConfiguration
+ * @property Shapes\CustomizationConfiguration|null $customizationConfiguration
  */
 class UpdateWebExperienceRequest extends Request
 {
@@ -25,7 +29,11 @@ class UpdateWebExperienceRequest extends Request
      *     title?: string|null,
      *     subtitle?: string|null,
      *     welcomeMessage?: string|null,
-     *     samplePromptsControlMode?: 'ENABLED'|'DISABLED'|null
+     *     samplePromptsControlMode?: 'ENABLED'|'DISABLED'|null,
+     *     identityProviderConfiguration?: Shapes\IdentityProviderConfiguration|null,
+     *     origins?: list<string>|null,
+     *     browserExtensionConfiguration?: Shapes\BrowserExtensionConfiguration|null,
+     *     customizationConfiguration?: Shapes\CustomizationConfiguration|null
      * } $args
      */
     public function __construct(array $args)

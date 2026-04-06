@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $PreSignedUrl
  * @property string|null $DestinationRegion
  * @property bool|null $EnableIAMDatabaseAuthentication
+ * @property 'standard'|'advanced'|null $DatabaseInsightsMode
  * @property bool|null $EnablePerformanceInsights
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
@@ -78,6 +79,7 @@ class CreateDBInstanceReadReplicaRequest extends Request
      *     PreSignedUrl?: string|null,
      *     DestinationRegion?: string|null,
      *     EnableIAMDatabaseAuthentication?: bool|null,
+     *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
      *     EnablePerformanceInsights?: bool|null,
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,

@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Title
  * @property string $Type
  * @property string $UpdatedAt
+ * @property string|null $AssociatedAttackSequenceArn
  */
 class Finding extends Shape
 {
@@ -39,7 +40,8 @@ class Finding extends Shape
      *     Severity: double,
      *     Title?: string|null,
      *     Type: string,
-     *     UpdatedAt: string
+     *     UpdatedAt: string,
+     *     AssociatedAttackSequenceArn?: string|null
      * } $args
      */
     public function __construct(array $args)

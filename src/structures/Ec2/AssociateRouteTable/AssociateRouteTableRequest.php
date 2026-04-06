@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\AssociateRouteTable;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool|null $DryRun
- * @property string $RouteTableId
- * @property string|null $SubnetId
  * @property string|null $GatewayId
+ * @property bool|null $DryRun
+ * @property string|null $SubnetId
+ * @property string $RouteTableId
  */
 class AssociateRouteTableRequest extends Request
 {
     /**
      * @param array{
+     *     GatewayId?: string|null,
      *     DryRun?: bool|null,
-     *     RouteTableId: string,
      *     SubnetId?: string|null,
-     *     GatewayId?: string|null
+     *     RouteTableId: string
      * } $args
      */
     public function __construct(array $args)

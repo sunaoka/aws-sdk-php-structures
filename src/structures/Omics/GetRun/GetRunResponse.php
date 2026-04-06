@@ -7,6 +7,9 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $arn
  * @property string|null $id
+ * @property string|null $cacheId
+ * @property 'CACHE_ON_FAILURE'|'CACHE_ALWAYS'|null $cacheBehavior
+ * @property string|null $engineVersion
  * @property 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'DELETED'|'CANCELLED'|'FAILED'|null $status
  * @property string|null $workflowId
  * @property 'PRIVATE'|'READY2RUN'|null $workflowType

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $filePath
  * @property string|null $fixedInVersion
  * @property string $name
- * @property 'BUNDLER'|'CARGO'|'COMPOSER'|'NPM'|'NUGET'|'PIPENV'|'POETRY'|'YARN'|'GOBINARY'|'GOMOD'|'JAR'|'OS'|'PIP'|'PYTHONPKG'|'NODEPKG'|'POM'|'GEMSPEC'|null $packageManager
+ * @property 'BUNDLER'|'CARGO'|'COMPOSER'|'NPM'|'NUGET'|'PIPENV'|'POETRY'|'YARN'|'GOBINARY'|'GOMOD'|'JAR'|'OS'|'PIP'|'PYTHONPKG'|'NODEPKG'|'POM'|'GEMSPEC'|'DOTNET_CORE'|null $packageManager
  * @property string|null $release
  * @property string|null $remediation
  * @property string|null $sourceLambdaLayerArn
@@ -26,7 +26,7 @@ class VulnerablePackage extends Shape
      *     filePath?: string|null,
      *     fixedInVersion?: string|null,
      *     name: string,
-     *     packageManager?: 'BUNDLER'|'CARGO'|'COMPOSER'|'NPM'|'NUGET'|'PIPENV'|'POETRY'|'YARN'|'GOBINARY'|'GOMOD'|'JAR'|'OS'|'PIP'|'PYTHONPKG'|'NODEPKG'|'POM'|'GEMSPEC'|null,
+     *     packageManager?: 'BUNDLER'|'CARGO'|'COMPOSER'|'NPM'|'NUGET'|'PIPENV'|'POETRY'|'YARN'|'GOBINARY'|'GOMOD'|'JAR'|'OS'|'PIP'|'PYTHONPKG'|'NODEPKG'|'POM'|'GEMSPEC'|'DOTNET_CORE'|null,
      *     release?: string|null,
      *     remediation?: string|null,
      *     sourceLambdaLayerArn?: string|null,

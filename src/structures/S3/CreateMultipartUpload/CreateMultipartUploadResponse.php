@@ -17,7 +17,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $SSEKMSEncryptionContext
  * @property bool|null $BucketKeyEnabled
  * @property 'requester'|null $RequestCharged
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null $ChecksumAlgorithm
+ * @property 'COMPOSITE'|'FULL_OBJECT'|null $ChecksumType
  */
 class CreateMultipartUploadResponse extends Response
 {

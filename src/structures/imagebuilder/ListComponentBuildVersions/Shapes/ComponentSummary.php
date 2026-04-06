@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $arn
  * @property string|null $name
  * @property string|null $version
- * @property 'Windows'|'Linux'|null $platform
+ * @property 'Windows'|'Linux'|'macOS'|null $platform
  * @property list<string>|null $supportedOsVersions
  * @property ComponentState|null $state
  * @property 'BUILD'|'TEST'|null $type
@@ -27,7 +27,7 @@ class ComponentSummary extends Shape
      *     arn?: string|null,
      *     name?: string|null,
      *     version?: string|null,
-     *     platform?: 'Windows'|'Linux'|null,
+     *     platform?: 'Windows'|'Linux'|'macOS'|null,
      *     supportedOsVersions?: list<string>|null,
      *     state?: ComponentState|null,
      *     type?: 'BUILD'|'TEST'|null,

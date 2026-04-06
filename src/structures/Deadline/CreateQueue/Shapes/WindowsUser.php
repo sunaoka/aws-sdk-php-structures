@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Deadline\CreateQueue\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $passwordArn
  * @property string $user
+ * @property string $passwordArn
  */
 class WindowsUser extends Shape
 {
     /**
      * @param array{
-     *     passwordArn: string,
-     *     user: string
+     *     user: string,
+     *     passwordArn: string
      * } $args
      */
     public function __construct(array $args)

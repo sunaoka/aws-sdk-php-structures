@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClusterName
  * @property string $NodeType
+ * @property string|null $MultiRegionClusterName
  * @property string|null $ParameterGroupName
  * @property string|null $Description
  * @property int|null $NumShards
@@ -24,6 +25,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $SnapshotWindow
  * @property string $ACLName
+ * @property string|null $Engine
  * @property string|null $EngineVersion
  * @property bool|null $AutoMinorVersionUpgrade
  * @property bool|null $DataTiering
@@ -34,6 +36,7 @@ class CreateClusterRequest extends Request
      * @param array{
      *     ClusterName: string,
      *     NodeType: string,
+     *     MultiRegionClusterName?: string|null,
      *     ParameterGroupName?: string|null,
      *     Description?: string|null,
      *     NumShards?: int|null,
@@ -51,6 +54,7 @@ class CreateClusterRequest extends Request
      *     Tags?: list<Shapes\Tag>|null,
      *     SnapshotWindow?: string|null,
      *     ACLName: string,
+     *     Engine?: string|null,
      *     EngineVersion?: string|null,
      *     AutoMinorVersionUpgrade?: bool|null,
      *     DataTiering?: bool|null

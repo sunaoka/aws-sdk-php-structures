@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'CREATING'|'AVAILABLE'|'DELETING'|'RESETTING'|'UPDATING'|'SNAPSHOTTING'|'FAILED'|'IMPORTING'|null $status
  * @property string|null $statusReason
  * @property \Aws\Api\DateTimeResult|null $createTime
- * @property int<32, 24576>|null $provisionedMemory
+ * @property int<16, 24576>|null $provisionedMemory
  * @property string|null $endpoint
  * @property bool|null $publicConnectivity
  * @property Shapes\VectorSearchConfiguration|null $vectorSearchConfiguration

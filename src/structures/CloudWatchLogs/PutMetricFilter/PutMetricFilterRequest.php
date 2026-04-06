@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $filterName
  * @property string $filterPattern
  * @property list<Shapes\MetricTransformation> $metricTransformations
+ * @property bool|null $applyOnTransformedLogs
  */
 class PutMetricFilterRequest extends Request
 {
@@ -17,7 +18,8 @@ class PutMetricFilterRequest extends Request
      *     logGroupName: string,
      *     filterName: string,
      *     filterPattern: string,
-     *     metricTransformations: list<Shapes\MetricTransformation>
+     *     metricTransformations: list<Shapes\MetricTransformation>,
+     *     applyOnTransformedLogs?: bool|null
      * } $args
      */
     public function __construct(array $args)

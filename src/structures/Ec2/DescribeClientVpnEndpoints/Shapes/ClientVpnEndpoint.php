@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ClientConnectResponseOptions|null $ClientConnectOptions
  * @property int|null $SessionTimeoutHours
  * @property ClientLoginBannerResponseOptions|null $ClientLoginBannerOptions
+ * @property bool|null $DisconnectOnSessionTimeout
  */
 class ClientVpnEndpoint extends Shape
 {
@@ -55,7 +56,8 @@ class ClientVpnEndpoint extends Shape
      *     SelfServicePortalUrl?: string|null,
      *     ClientConnectOptions?: ClientConnectResponseOptions|null,
      *     SessionTimeoutHours?: int|null,
-     *     ClientLoginBannerOptions?: ClientLoginBannerResponseOptions|null
+     *     ClientLoginBannerOptions?: ClientLoginBannerResponseOptions|null,
+     *     DisconnectOnSessionTimeout?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

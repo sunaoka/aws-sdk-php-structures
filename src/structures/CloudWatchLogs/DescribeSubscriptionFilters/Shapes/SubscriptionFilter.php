@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $destinationArn
  * @property string|null $roleArn
  * @property 'Random'|'ByLogStream'|null $distribution
+ * @property bool|null $applyOnTransformedLogs
  * @property int<0, max>|null $creationTime
  */
 class SubscriptionFilter extends Shape
@@ -23,6 +24,7 @@ class SubscriptionFilter extends Shape
      *     destinationArn?: string|null,
      *     roleArn?: string|null,
      *     distribution?: 'Random'|'ByLogStream'|null,
+     *     applyOnTransformedLogs?: bool|null,
      *     creationTime?: int<0, max>|null
      * } $args
      */

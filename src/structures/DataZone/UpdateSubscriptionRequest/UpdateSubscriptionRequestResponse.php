@@ -9,7 +9,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $createdBy
  * @property string|null $decisionComment
  * @property string $domainId
+ * @property string|null $existingSubscriptionId
  * @property string $id
+ * @property list<Shapes\FormOutput>|null $metadataForms
  * @property string $requestReason
  * @property string|null $reviewerId
  * @property 'PENDING'|'ACCEPTED'|'REJECTED' $status

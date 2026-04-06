@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $agentArn
+ * @property 'SUPERVISOR'|'SUPERVISOR_ROUTER'|'DISABLED'|null $agentCollaboration
  * @property string $agentId
  * @property string $agentName
  * @property string $agentResourceRoleArn
@@ -29,6 +30,7 @@ class AgentVersion extends Shape
     /**
      * @param array{
      *     agentArn: string,
+     *     agentCollaboration?: 'SUPERVISOR'|'SUPERVISOR_ROUTER'|'DISABLED'|null,
      *     agentId: string,
      *     agentName: string,
      *     agentResourceRoleArn: string,

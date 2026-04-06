@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $clientToken
  * @property string $farmId
- * @property string $jobId
  * @property string $queueId
+ * @property string $jobId
  * @property string $stepId
- * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING' $targetRunStatus
  * @property string $taskId
+ * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING' $targetRunStatus
  */
 class UpdateTaskRequest extends Request
 {
@@ -19,11 +19,11 @@ class UpdateTaskRequest extends Request
      * @param array{
      *     clientToken?: string|null,
      *     farmId: string,
-     *     jobId: string,
      *     queueId: string,
+     *     jobId: string,
      *     stepId: string,
-     *     targetRunStatus: 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING',
-     *     taskId: string
+     *     taskId: string,
+     *     targetRunStatus: 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'
      * } $args
      */
     public function __construct(array $args)

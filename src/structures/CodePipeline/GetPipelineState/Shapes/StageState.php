@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property StageConditionState|null $beforeEntryConditionState
  * @property StageConditionState|null $onSuccessConditionState
  * @property StageConditionState|null $onFailureConditionState
+ * @property RetryStageMetadata|null $retryStageMetadata
  */
 class StageState extends Shape
 {
@@ -27,7 +28,8 @@ class StageState extends Shape
      *     latestExecution?: StageExecution|null,
      *     beforeEntryConditionState?: StageConditionState|null,
      *     onSuccessConditionState?: StageConditionState|null,
-     *     onFailureConditionState?: StageConditionState|null
+     *     onFailureConditionState?: StageConditionState|null,
+     *     retryStageMetadata?: RetryStageMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

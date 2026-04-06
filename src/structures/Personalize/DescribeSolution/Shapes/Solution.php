@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $creationDateTime
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  * @property SolutionVersionSummary|null $latestSolutionVersion
+ * @property SolutionUpdateSummary|null $latestSolutionUpdate
  */
 class Solution extends Shape
 {
@@ -37,7 +38,8 @@ class Solution extends Shape
      *     status?: string|null,
      *     creationDateTime?: \Aws\Api\DateTimeResult|null,
      *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null,
-     *     latestSolutionVersion?: SolutionVersionSummary|null
+     *     latestSolutionVersion?: SolutionVersionSummary|null,
+     *     latestSolutionUpdate?: SolutionUpdateSummary|null
      * } $args
      */
     public function __construct(array $args = [])

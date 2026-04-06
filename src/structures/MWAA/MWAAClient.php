@@ -9,6 +9,7 @@ class MWAAClient extends \Aws\MWAA\MWAAClient
     use CreateWebLoginToken\CreateWebLoginTokenTrait;
     use DeleteEnvironment\DeleteEnvironmentTrait;
     use GetEnvironment\GetEnvironmentTrait;
+    use InvokeRestApi\InvokeRestApiTrait;
     use ListEnvironments\ListEnvironmentsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PublishMetrics\PublishMetricsTrait;

@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null $JobMode
+ * @property bool|null $JobRunQueuingEnabled
  * @property string|null $Description
  * @property string|null $LogUri
  * @property string|null $Role
@@ -33,6 +34,7 @@ class JobUpdate extends Shape
     /**
      * @param array{
      *     JobMode?: 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null,
+     *     JobRunQueuingEnabled?: bool|null,
      *     Description?: string|null,
      *     LogUri?: string|null,
      *     Role?: string|null,

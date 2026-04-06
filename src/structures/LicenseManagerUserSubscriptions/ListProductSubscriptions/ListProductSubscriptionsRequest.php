@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\IdentityProvider $IdentityProvider
  * @property int|null $MaxResults
  * @property string|null $NextToken
- * @property string $Product
+ * @property string|null $Product
  */
 class ListProductSubscriptionsRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListProductSubscriptionsRequest extends Request
      *     IdentityProvider: Shapes\IdentityProvider,
      *     MaxResults?: int|null,
      *     NextToken?: string|null,
-     *     Product: string
+     *     Product?: string|null
      * } $args
      */
     public function __construct(array $args)

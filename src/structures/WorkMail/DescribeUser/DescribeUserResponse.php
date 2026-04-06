@@ -28,6 +28,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Department
  * @property string|null $Country
  * @property string|null $Office
+ * @property string|null $IdentityProviderUserId
+ * @property string|null $IdentityProviderIdentityStoreId
  */
 class DescribeUserResponse extends Response
 {

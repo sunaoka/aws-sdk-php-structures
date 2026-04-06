@@ -32,6 +32,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ProgressCounters|null $ProgressCounters
  * @property AlarmConfiguration|null $AlarmConfiguration
  * @property list<AlarmStateInformation>|null $TriggeredAlarms
+ * @property string|null $TargetLocationsURL
  * @property 'ChangeRequest'|null $AutomationSubtype
  * @property \Aws\Api\DateTimeResult|null $ScheduledTime
  * @property list<Runbook>|null $Runbooks
@@ -71,6 +72,7 @@ class AutomationExecution extends Shape
      *     ProgressCounters?: ProgressCounters|null,
      *     AlarmConfiguration?: AlarmConfiguration|null,
      *     TriggeredAlarms?: list<AlarmStateInformation>|null,
+     *     TargetLocationsURL?: string|null,
      *     AutomationSubtype?: 'ChangeRequest'|null,
      *     ScheduledTime?: \Aws\Api\DateTimeResult|null,
      *     Runbooks?: list<Runbook>|null,

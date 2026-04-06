@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateSession;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', Shapes\AIAgentConfigurationData>|null $aiAgentConfiguration
  * @property string $assistantId
  * @property string|null $clientToken
  * @property string|null $description
@@ -16,6 +17,7 @@ class CreateSessionRequest extends Request
 {
     /**
      * @param array{
+     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', Shapes\AIAgentConfigurationData>|null,
      *     assistantId: string,
      *     clientToken?: string|null,
      *     description?: string|null,

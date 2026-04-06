@@ -17,15 +17,16 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
  * @property \Aws\Api\DateTimeResult|null $endTime
  * @property string $baseModelArn
- * @property array<string, string> $hyperParameters
+ * @property array<string, string>|null $hyperParameters
  * @property Shapes\TrainingDataConfig $trainingDataConfig
  * @property Shapes\ValidationDataConfig $validationDataConfig
  * @property Shapes\OutputDataConfig $outputDataConfig
- * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|null $customizationType
+ * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|null $customizationType
  * @property string|null $outputModelKmsKeyArn
  * @property Shapes\TrainingMetrics|null $trainingMetrics
  * @property list<Shapes\ValidatorMetric>|null $validationMetrics
  * @property Shapes\VpcConfig|null $vpcConfig
+ * @property Shapes\CustomizationConfig|null $customizationConfig
  */
 class GetModelCustomizationJobResponse extends Response
 {

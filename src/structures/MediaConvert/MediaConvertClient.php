@@ -26,6 +26,7 @@ class MediaConvertClient extends \Aws\MediaConvert\MediaConvertClient
     use ListPresets\ListPresetsTrait;
     use ListQueues\ListQueuesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use ListVersions\ListVersionsTrait;
     use PutPolicy\PutPolicyTrait;
     use SearchJobs\SearchJobsTrait;
     use TagResource\TagResourceTrait;

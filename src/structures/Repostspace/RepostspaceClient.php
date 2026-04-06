@@ -4,6 +4,8 @@ namespace Sunaoka\Aws\Structures\Repostspace;
 
 class RepostspaceClient extends \Aws\Repostspace\RepostspaceClient
 {
+    use BatchAddRole\BatchAddRoleTrait;
+    use BatchRemoveRole\BatchRemoveRoleTrait;
     use CreateSpace\CreateSpaceTrait;
     use DeleteSpace\DeleteSpaceTrait;
     use DeregisterAdmin\DeregisterAdminTrait;

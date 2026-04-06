@@ -4,8 +4,10 @@ namespace Sunaoka\Aws\Structures\MediaPackageV2;
 
 class MediaPackageV2Client extends \Aws\MediaPackageV2\MediaPackageV2Client
 {
+    use CancelHarvestJob\CancelHarvestJobTrait;
     use CreateChannel\CreateChannelTrait;
     use CreateChannelGroup\CreateChannelGroupTrait;
+    use CreateHarvestJob\CreateHarvestJobTrait;
     use CreateOriginEndpoint\CreateOriginEndpointTrait;
     use DeleteChannel\DeleteChannelTrait;
     use DeleteChannelGroup\DeleteChannelGroupTrait;
@@ -15,10 +17,12 @@ class MediaPackageV2Client extends \Aws\MediaPackageV2\MediaPackageV2Client
     use GetChannel\GetChannelTrait;
     use GetChannelGroup\GetChannelGroupTrait;
     use GetChannelPolicy\GetChannelPolicyTrait;
+    use GetHarvestJob\GetHarvestJobTrait;
     use GetOriginEndpoint\GetOriginEndpointTrait;
     use GetOriginEndpointPolicy\GetOriginEndpointPolicyTrait;
     use ListChannelGroups\ListChannelGroupsTrait;
     use ListChannels\ListChannelsTrait;
+    use ListHarvestJobs\ListHarvestJobsTrait;
     use ListOriginEndpoints\ListOriginEndpointsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PutChannelPolicy\PutChannelPolicyTrait;

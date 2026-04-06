@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'QUEUE'|'PRESET'|'JOB_TEMPLATE'|'JOB'|null $BillingTagsSource
  * @property string|null $ClientRequestToken
  * @property list<Shapes\HopDestination>|null $HopDestinations
+ * @property string|null $JobEngineVersion
  * @property string|null $JobTemplate
  * @property int<-50, 50>|null $Priority
  * @property string|null $Queue
@@ -27,6 +28,7 @@ class CreateJobRequest extends Request
      *     BillingTagsSource?: 'QUEUE'|'PRESET'|'JOB_TEMPLATE'|'JOB'|null,
      *     ClientRequestToken?: string|null,
      *     HopDestinations?: list<Shapes\HopDestination>|null,
+     *     JobEngineVersion?: string|null,
      *     JobTemplate?: string|null,
      *     Priority?: int<-50, 50>|null,
      *     Queue?: string|null,

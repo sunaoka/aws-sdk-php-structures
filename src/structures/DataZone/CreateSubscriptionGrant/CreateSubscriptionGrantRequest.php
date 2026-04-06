@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domainIdentifier
  * @property string $environmentIdentifier
  * @property Shapes\GrantedEntityInput $grantedEntity
- * @property string $subscriptionTargetIdentifier
+ * @property string|null $subscriptionTargetIdentifier
  */
 class CreateSubscriptionGrantRequest extends Request
 {
@@ -21,7 +21,7 @@ class CreateSubscriptionGrantRequest extends Request
      *     domainIdentifier: string,
      *     environmentIdentifier: string,
      *     grantedEntity: Shapes\GrantedEntityInput,
-     *     subscriptionTargetIdentifier: string
+     *     subscriptionTargetIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

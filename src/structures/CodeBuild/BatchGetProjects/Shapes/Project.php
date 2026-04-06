@@ -33,6 +33,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PUBLIC_READ'|'PRIVATE'|null $projectVisibility
  * @property string|null $publicProjectAlias
  * @property string|null $resourceAccessRole
+ * @property int|null $autoRetryLimit
  */
 class Project extends Shape
 {
@@ -65,7 +66,8 @@ class Project extends Shape
      *     concurrentBuildLimit?: int|null,
      *     projectVisibility?: 'PUBLIC_READ'|'PRIVATE'|null,
      *     publicProjectAlias?: string|null,
-     *     resourceAccessRole?: string|null
+     *     resourceAccessRole?: string|null,
+     *     autoRetryLimit?: int|null
      * } $args
      */
     public function __construct(array $args = [])

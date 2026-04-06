@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ElementId
- * @property 'VISUAL'|'FILTER_CONTROL'|'PARAMETER_CONTROL'|'TEXT_BOX' $ElementType
+ * @property 'VISUAL'|'FILTER_CONTROL'|'PARAMETER_CONTROL'|'TEXT_BOX'|'IMAGE' $ElementType
  * @property string $XAxisLocation
  * @property string $YAxisLocation
  * @property string $Width
@@ -23,7 +23,7 @@ class FreeFormLayoutElement extends Shape
     /**
      * @param array{
      *     ElementId: string,
-     *     ElementType: 'VISUAL'|'FILTER_CONTROL'|'PARAMETER_CONTROL'|'TEXT_BOX',
+     *     ElementType: 'VISUAL'|'FILTER_CONTROL'|'PARAMETER_CONTROL'|'TEXT_BOX'|'IMAGE',
      *     XAxisLocation: string,
      *     YAxisLocation: string,
      *     Width: string,

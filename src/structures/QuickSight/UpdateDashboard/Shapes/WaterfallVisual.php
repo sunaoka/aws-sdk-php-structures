@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property WaterfallChartConfiguration|null $ChartConfiguration
  * @property list<VisualCustomAction>|null $Actions
  * @property list<ColumnHierarchy>|null $ColumnHierarchies
+ * @property string|null $VisualContentAltText
  */
 class WaterfallVisual extends Shape
 {
@@ -21,7 +22,8 @@ class WaterfallVisual extends Shape
      *     Subtitle?: VisualSubtitleLabelOptions|null,
      *     ChartConfiguration?: WaterfallChartConfiguration|null,
      *     Actions?: list<VisualCustomAction>|null,
-     *     ColumnHierarchies?: list<ColumnHierarchy>|null
+     *     ColumnHierarchies?: list<ColumnHierarchy>|null,
+     *     VisualContentAltText?: string|null
      * } $args
      */
     public function __construct(array $args)

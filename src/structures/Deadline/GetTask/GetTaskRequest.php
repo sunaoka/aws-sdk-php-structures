@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $farmId
- * @property string $jobId
  * @property string $queueId
+ * @property string $jobId
  * @property string $stepId
  * @property string $taskId
  */
@@ -16,8 +16,8 @@ class GetTaskRequest extends Request
     /**
      * @param array{
      *     farmId: string,
-     *     jobId: string,
      *     queueId: string,
+     *     jobId: string,
      *     stepId: string,
      *     taskId: string
      * } $args

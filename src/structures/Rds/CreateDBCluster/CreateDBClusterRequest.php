@@ -48,12 +48,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $AutoMinorVersionUpgrade
  * @property int|null $MonitoringInterval
  * @property string|null $MonitoringRoleArn
+ * @property 'standard'|'advanced'|null $DatabaseInsightsMode
  * @property bool|null $EnablePerformanceInsights
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
  * @property bool|null $EnableLimitlessDatabase
  * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
  * @property string|null $NetworkType
+ * @property 'standard'|'limitless'|null $ClusterScalabilityType
  * @property string|null $DBSystemId
  * @property bool|null $ManageMasterUserPassword
  * @property string|null $MasterUserSecretKmsKeyId
@@ -108,12 +110,14 @@ class CreateDBClusterRequest extends Request
      *     AutoMinorVersionUpgrade?: bool|null,
      *     MonitoringInterval?: int|null,
      *     MonitoringRoleArn?: string|null,
+     *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
      *     EnablePerformanceInsights?: bool|null,
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,
      *     EnableLimitlessDatabase?: bool|null,
      *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
      *     NetworkType?: string|null,
+     *     ClusterScalabilityType?: 'standard'|'limitless'|null,
      *     DBSystemId?: string|null,
      *     ManageMasterUserPassword?: bool|null,
      *     MasterUserSecretKmsKeyId?: string|null,

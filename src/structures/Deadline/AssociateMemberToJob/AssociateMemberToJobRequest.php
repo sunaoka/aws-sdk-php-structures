@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $farmId
- * @property string $identityStoreId
+ * @property string $queueId
  * @property string $jobId
- * @property 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'MANAGER' $membershipLevel
  * @property string $principalId
  * @property 'USER'|'GROUP' $principalType
- * @property string $queueId
+ * @property string $identityStoreId
+ * @property 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'MANAGER' $membershipLevel
  */
 class AssociateMemberToJobRequest extends Request
 {
     /**
      * @param array{
      *     farmId: string,
-     *     identityStoreId: string,
+     *     queueId: string,
      *     jobId: string,
-     *     membershipLevel: 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'MANAGER',
      *     principalId: string,
      *     principalType: 'USER'|'GROUP',
-     *     queueId: string
+     *     identityStoreId: string,
+     *     membershipLevel: 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'MANAGER'
      * } $args
      */
     public function __construct(array $args)

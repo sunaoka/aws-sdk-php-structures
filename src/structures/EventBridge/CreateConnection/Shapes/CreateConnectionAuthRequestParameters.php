@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CreateConnectionOAuthRequestParameters|null $OAuthParameters
  * @property CreateConnectionApiKeyAuthRequestParameters|null $ApiKeyAuthParameters
  * @property ConnectionHttpParameters|null $InvocationHttpParameters
+ * @property ConnectivityResourceParameters|null $ConnectivityParameters
  */
 class CreateConnectionAuthRequestParameters extends Shape
 {
@@ -17,7 +18,8 @@ class CreateConnectionAuthRequestParameters extends Shape
      *     BasicAuthParameters?: CreateConnectionBasicAuthRequestParameters|null,
      *     OAuthParameters?: CreateConnectionOAuthRequestParameters|null,
      *     ApiKeyAuthParameters?: CreateConnectionApiKeyAuthRequestParameters|null,
-     *     InvocationHttpParameters?: ConnectionHttpParameters|null
+     *     InvocationHttpParameters?: ConnectionHttpParameters|null,
+     *     ConnectivityParameters?: ConnectivityResourceParameters|null
      * } $args
      */
     public function __construct(array $args = [])

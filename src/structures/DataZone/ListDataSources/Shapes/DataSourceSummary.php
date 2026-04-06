@@ -5,11 +5,13 @@ namespace Sunaoka\Aws\Structures\DataZone\ListDataSources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $connectionId
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string $dataSourceId
+ * @property string|null $description
  * @property string $domainId
  * @property 'ENABLED'|'DISABLED'|null $enableSetting
- * @property string $environmentId
+ * @property string|null $environmentId
  * @property int|null $lastRunAssetCount
  * @property \Aws\Api\DateTimeResult|null $lastRunAt
  * @property DataSourceErrorMessage|null $lastRunErrorMessage
@@ -24,11 +26,13 @@ class DataSourceSummary extends Shape
 {
     /**
      * @param array{
+     *     connectionId?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     dataSourceId: string,
+     *     description?: string|null,
      *     domainId: string,
      *     enableSetting?: 'ENABLED'|'DISABLED'|null,
-     *     environmentId: string,
+     *     environmentId?: string|null,
      *     lastRunAssetCount?: int|null,
      *     lastRunAt?: \Aws\Api\DateTimeResult|null,
      *     lastRunErrorMessage?: DataSourceErrorMessage|null,

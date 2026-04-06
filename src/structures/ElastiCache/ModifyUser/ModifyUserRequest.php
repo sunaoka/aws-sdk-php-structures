@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $Passwords
  * @property bool|null $NoPasswordRequired
  * @property Shapes\AuthenticationMode|null $AuthenticationMode
+ * @property string|null $Engine
  */
 class ModifyUserRequest extends Request
 {
@@ -21,7 +22,8 @@ class ModifyUserRequest extends Request
      *     AppendAccessString?: string|null,
      *     Passwords?: list<string>|null,
      *     NoPasswordRequired?: bool|null,
-     *     AuthenticationMode?: Shapes\AuthenticationMode|null
+     *     AuthenticationMode?: Shapes\AuthenticationMode|null,
+     *     Engine?: string|null
      * } $args
      */
     public function __construct(array $args)

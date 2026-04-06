@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string $roleArn
  * @property 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL' $status
- * @property StorageConfiguration $storageConfiguration
+ * @property StorageConfiguration|null $storageConfiguration
  * @property \Aws\Api\DateTimeResult $updatedAt
  */
 class KnowledgeBase extends Shape
@@ -30,7 +30,7 @@ class KnowledgeBase extends Shape
      *     name: string,
      *     roleArn: string,
      *     status: 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL',
-     *     storageConfiguration: StorageConfiguration,
+     *     storageConfiguration?: StorageConfiguration|null,
      *     updatedAt: \Aws\Api\DateTimeResult
      * } $args
      */

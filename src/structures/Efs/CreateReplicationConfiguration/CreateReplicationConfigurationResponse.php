@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $OriginalSourceFileSystemArn
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property list<Shapes\Destination> $Destinations
+ * @property string|null $SourceFileSystemOwnerId
  */
 class CreateReplicationConfigurationResponse extends Response
 {

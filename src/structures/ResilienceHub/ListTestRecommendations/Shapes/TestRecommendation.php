@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\ListTestRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $appComponentId
  * @property string|null $appComponentName
  * @property list<string>|null $dependsOnAlarms
  * @property string|null $description
@@ -22,6 +23,7 @@ class TestRecommendation extends Shape
 {
     /**
      * @param array{
+     *     appComponentId?: string|null,
      *     appComponentName?: string|null,
      *     dependsOnAlarms?: list<string>|null,
      *     description?: string|null,

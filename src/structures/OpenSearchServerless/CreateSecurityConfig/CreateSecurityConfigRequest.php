@@ -7,9 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $clientToken
  * @property string|null $description
+ * @property Shapes\CreateIamIdentityCenterConfigOptions|null $iamIdentityCenterOptions
  * @property string $name
  * @property Shapes\SamlConfigOptions|null $samlOptions
- * @property 'saml' $type
+ * @property 'saml'|'iamidentitycenter' $type
  */
 class CreateSecurityConfigRequest extends Request
 {
@@ -17,9 +18,10 @@ class CreateSecurityConfigRequest extends Request
      * @param array{
      *     clientToken?: string|null,
      *     description?: string|null,
+     *     iamIdentityCenterOptions?: Shapes\CreateIamIdentityCenterConfigOptions|null,
      *     name: string,
      *     samlOptions?: Shapes\SamlConfigOptions|null,
-     *     type: 'saml'
+     *     type: 'saml'|'iamidentitycenter'
      * } $args
      */
     public function __construct(array $args)

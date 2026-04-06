@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $enabledControlIdentifier
  * @property \Aws\Api\DateTimeResult|null $endTime
  * @property string|null $operationIdentifier
- * @property 'ENABLE_CONTROL'|'DISABLE_CONTROL'|'UPDATE_ENABLED_CONTROL'|null $operationType
+ * @property 'ENABLE_CONTROL'|'DISABLE_CONTROL'|'UPDATE_ENABLED_CONTROL'|'RESET_ENABLED_CONTROL'|null $operationType
  * @property \Aws\Api\DateTimeResult|null $startTime
  * @property 'SUCCEEDED'|'FAILED'|'IN_PROGRESS'|null $status
  * @property string|null $statusMessage
@@ -23,7 +23,7 @@ class ControlOperation extends Shape
      *     enabledControlIdentifier?: string|null,
      *     endTime?: \Aws\Api\DateTimeResult|null,
      *     operationIdentifier?: string|null,
-     *     operationType?: 'ENABLE_CONTROL'|'DISABLE_CONTROL'|'UPDATE_ENABLED_CONTROL'|null,
+     *     operationType?: 'ENABLE_CONTROL'|'DISABLE_CONTROL'|'UPDATE_ENABLED_CONTROL'|'RESET_ENABLED_CONTROL'|null,
      *     startTime?: \Aws\Api\DateTimeResult|null,
      *     status?: 'SUCCEEDED'|'FAILED'|'IN_PROGRESS'|null,
      *     statusMessage?: string|null,

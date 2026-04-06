@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property HeatMapConfiguration|null $ChartConfiguration
  * @property list<ColumnHierarchy>|null $ColumnHierarchies
  * @property list<VisualCustomAction>|null $Actions
+ * @property string|null $VisualContentAltText
  */
 class HeatMapVisual extends Shape
 {
@@ -21,7 +22,8 @@ class HeatMapVisual extends Shape
      *     Subtitle?: VisualSubtitleLabelOptions|null,
      *     ChartConfiguration?: HeatMapConfiguration|null,
      *     ColumnHierarchies?: list<ColumnHierarchy>|null,
-     *     Actions?: list<VisualCustomAction>|null
+     *     Actions?: list<VisualCustomAction>|null,
+     *     VisualContentAltText?: string|null
      * } $args
      */
     public function __construct(array $args)

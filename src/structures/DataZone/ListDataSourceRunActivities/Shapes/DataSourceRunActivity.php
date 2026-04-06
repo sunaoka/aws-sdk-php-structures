@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $dataSourceRunId
  * @property string $database
  * @property DataSourceErrorMessage|null $errorMessage
+ * @property LineageInfo|null $lineageSummary
  * @property string $projectId
  * @property string|null $technicalDescription
  * @property string $technicalName
@@ -26,6 +27,7 @@ class DataSourceRunActivity extends Shape
      *     dataSourceRunId: string,
      *     database: string,
      *     errorMessage?: DataSourceErrorMessage|null,
+     *     lineageSummary?: LineageInfo|null,
      *     projectId: string,
      *     technicalDescription?: string|null,
      *     technicalName: string,

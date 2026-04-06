@@ -27,6 +27,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OutpostConfigResponse|null $outpostConfig
  * @property AccessConfigResponse|null $accessConfig
  * @property UpgradePolicyResponse|null $upgradePolicy
+ * @property ZonalShiftConfigResponse|null $zonalShiftConfig
+ * @property RemoteNetworkConfigResponse|null $remoteNetworkConfig
+ * @property ComputeConfigResponse|null $computeConfig
+ * @property StorageConfigResponse|null $storageConfig
  */
 class Cluster extends Shape
 {
@@ -53,7 +57,11 @@ class Cluster extends Shape
      *     health?: ClusterHealth|null,
      *     outpostConfig?: OutpostConfigResponse|null,
      *     accessConfig?: AccessConfigResponse|null,
-     *     upgradePolicy?: UpgradePolicyResponse|null
+     *     upgradePolicy?: UpgradePolicyResponse|null,
+     *     zonalShiftConfig?: ZonalShiftConfigResponse|null,
+     *     remoteNetworkConfig?: RemoteNetworkConfigResponse|null,
+     *     computeConfig?: ComputeConfigResponse|null,
+     *     storageConfig?: StorageConfigResponse|null
      * } $args
      */
     public function __construct(array $args = [])

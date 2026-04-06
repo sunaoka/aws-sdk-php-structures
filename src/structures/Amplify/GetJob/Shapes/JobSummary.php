@@ -11,9 +11,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $commitMessage
  * @property \Aws\Api\DateTimeResult $commitTime
  * @property \Aws\Api\DateTimeResult $startTime
- * @property 'PENDING'|'PROVISIONING'|'RUNNING'|'FAILED'|'SUCCEED'|'CANCELLING'|'CANCELLED' $status
+ * @property 'CREATED'|'PENDING'|'PROVISIONING'|'RUNNING'|'FAILED'|'SUCCEED'|'CANCELLING'|'CANCELLED' $status
  * @property \Aws\Api\DateTimeResult|null $endTime
  * @property 'RELEASE'|'RETRY'|'MANUAL'|'WEB_HOOK' $jobType
+ * @property string|null $sourceUrl
+ * @property 'ZIP'|'BUCKET_PREFIX'|null $sourceUrlType
  */
 class JobSummary extends Shape
 {
@@ -25,9 +27,11 @@ class JobSummary extends Shape
      *     commitMessage: string,
      *     commitTime: \Aws\Api\DateTimeResult,
      *     startTime: \Aws\Api\DateTimeResult,
-     *     status: 'PENDING'|'PROVISIONING'|'RUNNING'|'FAILED'|'SUCCEED'|'CANCELLING'|'CANCELLED',
+     *     status: 'CREATED'|'PENDING'|'PROVISIONING'|'RUNNING'|'FAILED'|'SUCCEED'|'CANCELLING'|'CANCELLED',
      *     endTime?: \Aws\Api\DateTimeResult|null,
-     *     jobType: 'RELEASE'|'RETRY'|'MANUAL'|'WEB_HOOK'
+     *     jobType: 'RELEASE'|'RETRY'|'MANUAL'|'WEB_HOOK',
+     *     sourceUrl?: string|null,
+     *     sourceUrlType?: 'ZIP'|'BUCKET_PREFIX'|null
      * } $args
      */
     public function __construct(array $args)

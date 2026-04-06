@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $deregisteredAt
  * @property string|null $registeredBy
  * @property EphemeralStorage|null $ephemeralStorage
+ * @property bool|null $enableFaultInjection
  */
 class TaskDefinition extends Shape
 {
@@ -57,7 +58,8 @@ class TaskDefinition extends Shape
      *     registeredAt?: \Aws\Api\DateTimeResult|null,
      *     deregisteredAt?: \Aws\Api\DateTimeResult|null,
      *     registeredBy?: string|null,
-     *     ephemeralStorage?: EphemeralStorage|null
+     *     ephemeralStorage?: EphemeralStorage|null,
+     *     enableFaultInjection?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

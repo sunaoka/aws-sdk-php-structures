@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InsightConfiguration|null $InsightConfiguration
  * @property list<VisualCustomAction>|null $Actions
  * @property string $DataSetIdentifier
+ * @property string|null $VisualContentAltText
  */
 class InsightVisual extends Shape
 {
@@ -21,7 +22,8 @@ class InsightVisual extends Shape
      *     Subtitle?: VisualSubtitleLabelOptions|null,
      *     InsightConfiguration?: InsightConfiguration|null,
      *     Actions?: list<VisualCustomAction>|null,
-     *     DataSetIdentifier: string
+     *     DataSetIdentifier: string,
+     *     VisualContentAltText?: string|null
      * } $args
      */
     public function __construct(array $args)

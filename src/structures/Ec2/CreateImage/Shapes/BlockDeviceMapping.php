@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateImage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $DeviceName
- * @property string|null $VirtualName
  * @property EbsBlockDevice|null $Ebs
  * @property string|null $NoDevice
+ * @property string|null $DeviceName
+ * @property string|null $VirtualName
  */
 class BlockDeviceMapping extends Shape
 {
     /**
      * @param array{
-     *     DeviceName?: string|null,
-     *     VirtualName?: string|null,
      *     Ebs?: EbsBlockDevice|null,
-     *     NoDevice?: string|null
+     *     NoDevice?: string|null,
+     *     DeviceName?: string|null,
+     *     VirtualName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

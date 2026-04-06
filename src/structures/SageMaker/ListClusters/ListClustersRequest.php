@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $NextToken
  * @property 'CREATION_TIME'|'NAME'|null $SortBy
  * @property 'Ascending'|'Descending'|null $SortOrder
+ * @property string|null $TrainingPlanArn
  */
 class ListClustersRequest extends Request
 {
@@ -23,7 +24,8 @@ class ListClustersRequest extends Request
      *     NameContains?: string|null,
      *     NextToken?: string|null,
      *     SortBy?: 'CREATION_TIME'|'NAME'|null,
-     *     SortOrder?: 'Ascending'|'Descending'|null
+     *     SortOrder?: 'Ascending'|'Descending'|null,
+     *     TrainingPlanArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

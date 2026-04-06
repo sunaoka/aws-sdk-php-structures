@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $CopyTagsToBackups
  * @property 'NONE'|'READ'|null $DriveCacheType
  * @property 'NONE'|'LZ4'|null $DataCompressionType
+ * @property bool|null $EfaEnabled
  * @property LustreLogCreateConfiguration|null $LogConfiguration
  * @property LustreRootSquashConfiguration|null $RootSquashConfiguration
  * @property CreateFileSystemLustreMetadataConfiguration|null $MetadataConfiguration
@@ -37,6 +38,7 @@ class CreateFileSystemLustreConfiguration extends Shape
      *     CopyTagsToBackups?: bool|null,
      *     DriveCacheType?: 'NONE'|'READ'|null,
      *     DataCompressionType?: 'NONE'|'LZ4'|null,
+     *     EfaEnabled?: bool|null,
      *     LogConfiguration?: LustreLogCreateConfiguration|null,
      *     RootSquashConfiguration?: LustreRootSquashConfiguration|null,
      *     MetadataConfiguration?: CreateFileSystemLustreMetadataConfiguration|null

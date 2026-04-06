@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Deadline\UpdateWorkerSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, TaskParameterValue> $parameters
- * @property string $stepId
  * @property string $taskId
+ * @property string $stepId
+ * @property array<string, TaskParameterValue> $parameters
  */
 class AssignedTaskRunSessionActionDefinition extends Shape
 {
     /**
      * @param array{
-     *     parameters: array<string, TaskParameterValue>,
+     *     taskId: string,
      *     stepId: string,
-     *     taskId: string
+     *     parameters: array<string, TaskParameterValue>
      * } $args
      */
     public function __construct(array $args)

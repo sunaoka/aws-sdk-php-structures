@@ -14,10 +14,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $UserGroups
  * @property list<string>|null $UserIds
  * @property string|null $Value
- * @property bool|null $DryRun
  * @property list<string>|null $OrganizationArns
  * @property list<string>|null $OrganizationalUnitArns
  * @property Shapes\AttributeValue|null $ImdsSupport
+ * @property bool|null $DryRun
  */
 class ModifyImageAttributeRequest extends Request
 {
@@ -32,10 +32,10 @@ class ModifyImageAttributeRequest extends Request
      *     UserGroups?: list<string>|null,
      *     UserIds?: list<string>|null,
      *     Value?: string|null,
-     *     DryRun?: bool|null,
      *     OrganizationArns?: list<string>|null,
      *     OrganizationalUnitArns?: list<string>|null,
-     *     ImdsSupport?: Shapes\AttributeValue|null
+     *     ImdsSupport?: Shapes\AttributeValue|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

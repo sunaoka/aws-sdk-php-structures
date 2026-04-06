@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ClientToken
  * @property bool|null $DryRun
  * @property bool|null $FIPSEnabled
+ * @property string|null $CidrEndpointsCustomSubDomain
  */
 class CreateVerifiedAccessInstanceRequest extends Request
 {
@@ -19,7 +20,8 @@ class CreateVerifiedAccessInstanceRequest extends Request
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     ClientToken?: string|null,
      *     DryRun?: bool|null,
-     *     FIPSEnabled?: bool|null
+     *     FIPSEnabled?: bool|null,
+     *     CidrEndpointsCustomSubDomain?: string|null
      * } $args
      */
     public function __construct(array $args = [])

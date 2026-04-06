@@ -14,9 +14,12 @@ class ResourceExplorer2Client extends \Aws\ResourceExplorer2\ResourceExplorer2Cl
     use GetAccountLevelServiceConfiguration\GetAccountLevelServiceConfigurationTrait;
     use GetDefaultView\GetDefaultViewTrait;
     use GetIndex\GetIndexTrait;
+    use GetManagedView\GetManagedViewTrait;
     use GetView\GetViewTrait;
     use ListIndexes\ListIndexesTrait;
     use ListIndexesForMembers\ListIndexesForMembersTrait;
+    use ListManagedViews\ListManagedViewsTrait;
+    use ListResources\ListResourcesTrait;
     use ListSupportedResourceTypes\ListSupportedResourceTypesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListViews\ListViewsTrait;

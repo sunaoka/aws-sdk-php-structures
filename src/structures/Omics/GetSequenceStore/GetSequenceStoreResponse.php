@@ -14,6 +14,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $fallbackLocation
  * @property Shapes\SequenceStoreS3Access|null $s3Access
  * @property 'MD5up'|'SHA256up'|'SHA512up'|null $eTagAlgorithmFamily
+ * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'FAILED'|null $status
+ * @property string|null $statusMessage
+ * @property list<string>|null $propagatedSetLevelTags
+ * @property \Aws\Api\DateTimeResult|null $updateTime
  */
 class GetSequenceStoreResponse extends Response
 {

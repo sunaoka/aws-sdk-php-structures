@@ -8,6 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ContactFlowModuleSearchCriteria>|null $OrConditions
  * @property list<ContactFlowModuleSearchCriteria>|null $AndConditions
  * @property StringCondition|null $StringCondition
+ * @property 'ACTIVE'|'ARCHIVED'|null $StateCondition
+ * @property 'PUBLISHED'|'SAVED'|null $StatusCondition
  */
 class ContactFlowModuleSearchCriteria extends Shape
 {
@@ -15,7 +17,9 @@ class ContactFlowModuleSearchCriteria extends Shape
      * @param array{
      *     OrConditions?: list<ContactFlowModuleSearchCriteria>|null,
      *     AndConditions?: list<ContactFlowModuleSearchCriteria>|null,
-     *     StringCondition?: StringCondition|null
+     *     StringCondition?: StringCondition|null,
+     *     StateCondition?: 'ACTIVE'|'ARCHIVED'|null,
+     *     StatusCondition?: 'PUBLISHED'|'SAVED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,6 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $endTimestamp
  * @property RunMetrics|null $metrics
  * @property string|null $error
+ * @property CompactionMetrics|null $compactionMetrics
+ * @property RetentionMetrics|null $retentionMetrics
+ * @property OrphanFileDeletionMetrics|null $orphanFileDeletionMetrics
  */
 class TableOptimizerRun extends Shape
 {
@@ -19,7 +22,10 @@ class TableOptimizerRun extends Shape
      *     startTimestamp?: \Aws\Api\DateTimeResult|null,
      *     endTimestamp?: \Aws\Api\DateTimeResult|null,
      *     metrics?: RunMetrics|null,
-     *     error?: string|null
+     *     error?: string|null,
+     *     compactionMetrics?: CompactionMetrics|null,
+     *     retentionMetrics?: RetentionMetrics|null,
+     *     orphanFileDeletionMetrics?: OrphanFileDeletionMetrics|null
      * } $args
      */
     public function __construct(array $args = [])

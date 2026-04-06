@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ColumnConfiguration>|null $ColumnConfigurations
  * @property AnalysisDefaults|null $AnalysisDefaults
  * @property AssetOptions|null $Options
+ * @property QueryExecutionOptions|null $QueryExecutionOptions
+ * @property list<StaticFile>|null $StaticFiles
  */
 class AnalysisDefinition extends Shape
 {
@@ -25,7 +27,9 @@ class AnalysisDefinition extends Shape
      *     FilterGroups?: list<FilterGroup>|null,
      *     ColumnConfigurations?: list<ColumnConfiguration>|null,
      *     AnalysisDefaults?: AnalysisDefaults|null,
-     *     Options?: AssetOptions|null
+     *     Options?: AssetOptions|null,
+     *     QueryExecutionOptions?: QueryExecutionOptions|null,
+     *     StaticFiles?: list<StaticFile>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Deadline\SearchJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $float
  * @property string|null $int
- * @property string|null $path
+ * @property string|null $float
  * @property string|null $string
+ * @property string|null $path
  */
 class JobParameter extends Shape
 {
     /**
      * @param array{
-     *     float?: string|null,
      *     int?: string|null,
-     *     path?: string|null,
-     *     string?: string|null
+     *     float?: string|null,
+     *     string?: string|null,
+     *     path?: string|null
      * } $args
      */
     public function __construct(array $args = [])

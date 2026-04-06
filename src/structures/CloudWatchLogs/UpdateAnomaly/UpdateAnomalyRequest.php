@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $anomalyDetectorArn
  * @property 'LIMITED'|'INFINITE'|null $suppressionType
  * @property Shapes\SuppressionPeriod|null $suppressionPeriod
+ * @property bool|null $baseline
  */
 class UpdateAnomalyRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateAnomalyRequest extends Request
      *     patternId?: string|null,
      *     anomalyDetectorArn: string,
      *     suppressionType?: 'LIMITED'|'INFINITE'|null,
-     *     suppressionPeriod?: Shapes\SuppressionPeriod|null
+     *     suppressionPeriod?: Shapes\SuppressionPeriod|null,
+     *     baseline?: bool|null
      * } $args
      */
     public function __construct(array $args)

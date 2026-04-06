@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AccessUrl
  * @property string|null $Description
  * @property list<string>|null $DnsIpAddrs
- * @property 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|null $Stage
+ * @property 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|'Updating'|null $Stage
  * @property 'Shared'|'PendingAcceptance'|'Rejected'|'Rejecting'|'RejectFailed'|'Sharing'|'ShareFailed'|'Deleted'|'Deleting'|null $ShareStatus
  * @property 'ORGANIZATIONS'|'HANDSHAKE'|null $ShareMethod
  * @property string|null $ShareNotes
@@ -45,7 +45,7 @@ class DirectoryDescription extends Shape
      *     AccessUrl?: string|null,
      *     Description?: string|null,
      *     DnsIpAddrs?: list<string>|null,
-     *     Stage?: 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|null,
+     *     Stage?: 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|'Updating'|null,
      *     ShareStatus?: 'Shared'|'PendingAcceptance'|'Rejected'|'Rejecting'|'RejectFailed'|'Sharing'|'ShareFailed'|'Deleted'|'Deleting'|null,
      *     ShareMethod?: 'ORGANIZATIONS'|'HANDSHAKE'|null,
      *     ShareNotes?: string|null,

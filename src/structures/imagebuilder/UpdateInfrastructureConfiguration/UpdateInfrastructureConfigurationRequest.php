@@ -15,9 +15,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $keyPair
  * @property bool|null $terminateInstanceOnFailure
  * @property string|null $snsTopicArn
- * @property string $clientToken
  * @property array<string, string>|null $resourceTags
  * @property Shapes\InstanceMetadataOptions|null $instanceMetadataOptions
+ * @property Shapes\Placement|null $placement
+ * @property string $clientToken
  */
 class UpdateInfrastructureConfigurationRequest extends Request
 {
@@ -33,9 +34,10 @@ class UpdateInfrastructureConfigurationRequest extends Request
      *     keyPair?: string|null,
      *     terminateInstanceOnFailure?: bool|null,
      *     snsTopicArn?: string|null,
-     *     clientToken: string,
      *     resourceTags?: array<string, string>|null,
-     *     instanceMetadataOptions?: Shapes\InstanceMetadataOptions|null
+     *     instanceMetadataOptions?: Shapes\InstanceMetadataOptions|null,
+     *     placement?: Shapes\Placement|null,
+     *     clientToken: string
      * } $args
      */
     public function __construct(array $args)

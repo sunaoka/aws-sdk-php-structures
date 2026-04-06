@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeConversionTasks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string>|null $ConversionTaskIds
  * @property bool|null $DryRun
+ * @property list<string>|null $ConversionTaskIds
  */
 class DescribeConversionTasksRequest extends Request
 {
     /**
      * @param array{
-     *     ConversionTaskIds?: list<string>|null,
-     *     DryRun?: bool|null
+     *     DryRun?: bool|null,
+     *     ConversionTaskIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,10 +6,11 @@ trait DeleteSecurityGroupTrait
 {
     /**
      * @param DeleteSecurityGroupRequest $args
-     * @return void
+     * @return DeleteSecurityGroupResponse
      */
     public function deleteSecurityGroup(DeleteSecurityGroupRequest $args)
     {
-        parent::deleteSecurityGroup($args->toArray());
+        $result = parent::deleteSecurityGroup($args->toArray());
+        return new DeleteSecurityGroupResponse($result->toArray());
     }
 }

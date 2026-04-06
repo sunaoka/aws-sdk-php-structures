@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property StatePersistenceConfigurations|null $StatePersistence
+ * @property SharedViewConfigurations|null $SharedView
  * @property BookmarksConfigurations|null $Bookmarks
  */
 class RegisteredUserDashboardFeatureConfigurations extends Shape
@@ -13,6 +14,7 @@ class RegisteredUserDashboardFeatureConfigurations extends Shape
     /**
      * @param array{
      *     StatePersistence?: StatePersistenceConfigurations|null,
+     *     SharedView?: SharedViewConfigurations|null,
      *     Bookmarks?: BookmarksConfigurations|null
      * } $args
      */

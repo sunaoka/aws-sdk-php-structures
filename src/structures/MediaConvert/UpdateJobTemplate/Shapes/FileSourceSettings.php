@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaConvert\UpdateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property 'ENABLED'|'DISABLED'|null $ByteRateLimit
  * @property 'UPCONVERT'|'DISABLED'|null $Convert608To708
  * @property 'ENABLED'|'DISABLED'|null $ConvertPaintToPop
  * @property CaptionSourceFramerate|null $Framerate
@@ -16,6 +17,7 @@ class FileSourceSettings extends Shape
 {
     /**
      * @param array{
+     *     ByteRateLimit?: 'ENABLED'|'DISABLED'|null,
      *     Convert608To708?: 'UPCONVERT'|'DISABLED'|null,
      *     ConvertPaintToPop?: 'ENABLED'|'DISABLED'|null,
      *     Framerate?: CaptionSourceFramerate|null,

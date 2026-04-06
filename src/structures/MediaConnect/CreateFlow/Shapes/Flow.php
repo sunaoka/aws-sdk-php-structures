@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'STANDBY'|'ACTIVE'|'UPDATING'|'DELETING'|'STARTING'|'STOPPING'|'ERROR' $Status
  * @property list<VpcInterface>|null $VpcInterfaces
  * @property Maintenance|null $Maintenance
+ * @property MonitoringConfig|null $SourceMonitoringConfig
  */
 class Flow extends Shape
 {
@@ -37,7 +38,8 @@ class Flow extends Shape
      *     Sources?: list<Source>|null,
      *     Status: 'STANDBY'|'ACTIVE'|'UPDATING'|'DELETING'|'STARTING'|'STOPPING'|'ERROR',
      *     VpcInterfaces?: list<VpcInterface>|null,
-     *     Maintenance?: Maintenance|null
+     *     Maintenance?: Maintenance|null,
+     *     SourceMonitoringConfig?: MonitoringConfig|null
      * } $args
      */
     public function __construct(array $args)

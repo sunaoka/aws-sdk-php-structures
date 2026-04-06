@@ -5,29 +5,31 @@ namespace Sunaoka\Aws\Structures\Deadline\ListFleets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string>|null $allowedInstanceTypes
- * @property 'x86_64'|'arm64' $cpuArchitectureType
- * @property list<FleetAmountCapability>|null $customAmounts
- * @property list<FleetAttributeCapability>|null $customAttributes
- * @property list<string>|null $excludedInstanceTypes
+ * @property VCpuCountRange $vCpuCount
  * @property MemoryMiBRange $memoryMiB
  * @property 'WINDOWS'|'LINUX' $osFamily
+ * @property 'x86_64'|'arm64' $cpuArchitectureType
  * @property Ec2EbsVolume|null $rootEbsVolume
- * @property VCpuCountRange $vCpuCount
+ * @property AcceleratorCapabilities|null $acceleratorCapabilities
+ * @property list<string>|null $allowedInstanceTypes
+ * @property list<string>|null $excludedInstanceTypes
+ * @property list<FleetAmountCapability>|null $customAmounts
+ * @property list<FleetAttributeCapability>|null $customAttributes
  */
 class ServiceManagedEc2InstanceCapabilities extends Shape
 {
     /**
      * @param array{
-     *     allowedInstanceTypes?: list<string>|null,
-     *     cpuArchitectureType: 'x86_64'|'arm64',
-     *     customAmounts?: list<FleetAmountCapability>|null,
-     *     customAttributes?: list<FleetAttributeCapability>|null,
-     *     excludedInstanceTypes?: list<string>|null,
+     *     vCpuCount: VCpuCountRange,
      *     memoryMiB: MemoryMiBRange,
      *     osFamily: 'WINDOWS'|'LINUX',
+     *     cpuArchitectureType: 'x86_64'|'arm64',
      *     rootEbsVolume?: Ec2EbsVolume|null,
-     *     vCpuCount: VCpuCountRange
+     *     acceleratorCapabilities?: AcceleratorCapabilities|null,
+     *     allowedInstanceTypes?: list<string>|null,
+     *     excludedInstanceTypes?: list<string>|null,
+     *     customAmounts?: list<FleetAmountCapability>|null,
+     *     customAttributes?: list<FleetAttributeCapability>|null
      * } $args
      */
     public function __construct(array $args)

@@ -20,6 +20,8 @@ class ElasticLoadBalancingV2Client extends \Aws\ElasticLoadBalancingV2\ElasticLo
     use DeleteTrustStore\DeleteTrustStoreTrait;
     use DeregisterTargets\DeregisterTargetsTrait;
     use DescribeAccountLimits\DescribeAccountLimitsTrait;
+    use DescribeCapacityReservation\DescribeCapacityReservationTrait;
+    use DescribeListenerAttributes\DescribeListenerAttributesTrait;
     use DescribeListenerCertificates\DescribeListenerCertificatesTrait;
     use DescribeListeners\DescribeListenersTrait;
     use DescribeLoadBalancerAttributes\DescribeLoadBalancerAttributesTrait;
@@ -36,7 +38,9 @@ class ElasticLoadBalancingV2Client extends \Aws\ElasticLoadBalancingV2\ElasticLo
     use GetResourcePolicy\GetResourcePolicyTrait;
     use GetTrustStoreCaCertificatesBundle\GetTrustStoreCaCertificatesBundleTrait;
     use GetTrustStoreRevocationContent\GetTrustStoreRevocationContentTrait;
+    use ModifyCapacityReservation\ModifyCapacityReservationTrait;
     use ModifyListener\ModifyListenerTrait;
+    use ModifyListenerAttributes\ModifyListenerAttributesTrait;
     use ModifyLoadBalancerAttributes\ModifyLoadBalancerAttributesTrait;
     use ModifyRule\ModifyRuleTrait;
     use ModifyTargetGroup\ModifyTargetGroupTrait;

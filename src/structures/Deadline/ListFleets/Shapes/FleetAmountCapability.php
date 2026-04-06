@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Deadline\ListFleets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float|null $max
- * @property float $min
  * @property string $name
+ * @property float $min
+ * @property float|null $max
  */
 class FleetAmountCapability extends Shape
 {
     /**
      * @param array{
-     *     max?: float|null,
+     *     name: string,
      *     min: float,
-     *     name: string
+     *     max?: float|null
      * } $args
      */
     public function __construct(array $args)

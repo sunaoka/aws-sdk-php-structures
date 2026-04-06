@@ -8,8 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Service
  * @property string|null $Region
  * @property string|null $LinkedAccount
- * @property string|null $UsageType
  * @property string|null $LinkedAccountName
+ * @property string|null $UsageType
+ * @property RootCauseImpact|null $Impact
  */
 class RootCause extends Shape
 {
@@ -18,8 +19,9 @@ class RootCause extends Shape
      *     Service?: string|null,
      *     Region?: string|null,
      *     LinkedAccount?: string|null,
+     *     LinkedAccountName?: string|null,
      *     UsageType?: string|null,
-     *     LinkedAccountName?: string|null
+     *     Impact?: RootCauseImpact|null
      * } $args
      */
     public function __construct(array $args = [])

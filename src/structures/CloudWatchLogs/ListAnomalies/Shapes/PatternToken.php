@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $isDynamic
  * @property string|null $tokenString
  * @property array<string, int>|null $enumerations
+ * @property string|null $inferredTokenName
  */
 class PatternToken extends Shape
 {
@@ -17,7 +18,8 @@ class PatternToken extends Shape
      *     dynamicTokenPosition?: int|null,
      *     isDynamic?: bool|null,
      *     tokenString?: string|null,
-     *     enumerations?: array<string, int>|null
+     *     enumerations?: array<string, int>|null,
+     *     inferredTokenName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

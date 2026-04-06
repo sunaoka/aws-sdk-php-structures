@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DISABLED'|'AUTO'|'TRACK'|'FRAME'|null $AudioDurationCorrection
+ * @property 'DISABLED'|'AUTO'|'TRACK'|'FRAME'|'FORCE'|null $AudioDurationCorrection
  * @property string|null $CustomLanguageCode
  * @property 'DEFAULT'|'NOT_DEFAULT'|null $DefaultSelection
  * @property string|null $ExternalAudioFileInput
@@ -22,7 +22,7 @@ class AudioSelector extends Shape
 {
     /**
      * @param array{
-     *     AudioDurationCorrection?: 'DISABLED'|'AUTO'|'TRACK'|'FRAME'|null,
+     *     AudioDurationCorrection?: 'DISABLED'|'AUTO'|'TRACK'|'FRAME'|'FORCE'|null,
      *     CustomLanguageCode?: string|null,
      *     DefaultSelection?: 'DEFAULT'|'NOT_DEFAULT'|null,
      *     ExternalAudioFileInput?: string|null,

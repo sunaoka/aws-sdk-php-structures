@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Glue\GetConnections\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'BASIC'|'OAUTH2'|'CUSTOM'|null $AuthenticationType
+ * @property 'BASIC'|'OAUTH2'|'CUSTOM'|'IAM'|null $AuthenticationType
  * @property string|null $SecretArn
  * @property OAuth2Properties|null $OAuth2Properties
  */
@@ -13,7 +13,7 @@ class AuthenticationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     AuthenticationType?: 'BASIC'|'OAUTH2'|'CUSTOM'|null,
+     *     AuthenticationType?: 'BASIC'|'OAUTH2'|'CUSTOM'|'IAM'|null,
      *     SecretArn?: string|null,
      *     OAuth2Properties?: OAuth2Properties|null
      * } $args

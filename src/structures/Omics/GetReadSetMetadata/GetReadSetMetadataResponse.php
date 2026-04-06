@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $statusMessage
  * @property 'IMPORT'|'UPLOAD'|null $creationType
  * @property Shapes\ETag|null $etag
+ * @property string|null $creationJobId
  */
 class GetReadSetMetadataResponse extends Response
 {

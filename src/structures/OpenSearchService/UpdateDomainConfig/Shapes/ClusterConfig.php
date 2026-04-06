@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $WarmCount
  * @property ColdStorageOptions|null $ColdStorageOptions
  * @property bool|null $MultiAZWithStandbyEnabled
+ * @property list<NodeOption>|null $NodeOptions
  */
 class ClusterConfig extends Shape
 {
@@ -33,7 +34,8 @@ class ClusterConfig extends Shape
      *     WarmType?: 'ultrawarm1.medium.search'|'ultrawarm1.large.search'|'ultrawarm1.xlarge.search'|null,
      *     WarmCount?: int|null,
      *     ColdStorageOptions?: ColdStorageOptions|null,
-     *     MultiAZWithStandbyEnabled?: bool|null
+     *     MultiAZWithStandbyEnabled?: bool|null,
+     *     NodeOptions?: list<NodeOption>|null
      * } $args
      */
     public function __construct(array $args = [])

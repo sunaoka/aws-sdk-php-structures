@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Initializing'|'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped' $LabelingJobStatus
  * @property LabelCounters $LabelCounters
  * @property string $WorkteamArn
- * @property string $PreHumanTaskLambdaArn
+ * @property string|null $PreHumanTaskLambdaArn
  * @property string|null $AnnotationConsolidationLambdaArn
  * @property string|null $FailureReason
  * @property LabelingJobOutput|null $LabelingJobOutput
@@ -29,7 +29,7 @@ class LabelingJobSummary extends Shape
      *     LabelingJobStatus: 'Initializing'|'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped',
      *     LabelCounters: LabelCounters,
      *     WorkteamArn: string,
-     *     PreHumanTaskLambdaArn: string,
+     *     PreHumanTaskLambdaArn?: string|null,
      *     AnnotationConsolidationLambdaArn?: string|null,
      *     FailureReason?: string|null,
      *     LabelingJobOutput?: LabelingJobOutput|null,

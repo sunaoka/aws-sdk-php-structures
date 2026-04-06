@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $pipelineExecutionId
- * @property 'Cancelled'|'InProgress'|'Failed'|'Stopped'|'Stopping'|'Succeeded' $status
+ * @property 'Cancelled'|'InProgress'|'Failed'|'Stopped'|'Stopping'|'Succeeded'|'Skipped' $status
  * @property 'STANDARD'|'ROLLBACK'|null $type
  */
 class StageExecution extends Shape
@@ -14,7 +14,7 @@ class StageExecution extends Shape
     /**
      * @param array{
      *     pipelineExecutionId: string,
-     *     status: 'Cancelled'|'InProgress'|'Failed'|'Stopped'|'Stopping'|'Succeeded',
+     *     status: 'Cancelled'|'InProgress'|'Failed'|'Stopped'|'Stopping'|'Succeeded'|'Skipped',
      *     type?: 'STANDARD'|'ROLLBACK'|null
      * } $args
      */

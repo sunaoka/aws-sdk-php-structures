@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Deadline\BatchGetJobEntity\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Attachments $attachments
  * @property string $jobId
+ * @property Attachments $attachments
  */
 class JobAttachmentDetailsEntity extends Shape
 {
     /**
      * @param array{
-     *     attachments: Attachments,
-     *     jobId: string
+     *     jobId: string,
+     *     attachments: Attachments
      * } $args
      */
     public function __construct(array $args)

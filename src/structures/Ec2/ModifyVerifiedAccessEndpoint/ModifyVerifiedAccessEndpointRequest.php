@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property string|null $ClientToken
  * @property bool|null $DryRun
+ * @property Shapes\ModifyVerifiedAccessEndpointRdsOptions|null $RdsOptions
+ * @property Shapes\ModifyVerifiedAccessEndpointCidrOptions|null $CidrOptions
  */
 class ModifyVerifiedAccessEndpointRequest extends Request
 {
@@ -23,7 +25,9 @@ class ModifyVerifiedAccessEndpointRequest extends Request
      *     NetworkInterfaceOptions?: Shapes\ModifyVerifiedAccessEndpointEniOptions|null,
      *     Description?: string|null,
      *     ClientToken?: string|null,
-     *     DryRun?: bool|null
+     *     DryRun?: bool|null,
+     *     RdsOptions?: Shapes\ModifyVerifiedAccessEndpointRdsOptions|null,
+     *     CidrOptions?: Shapes\ModifyVerifiedAccessEndpointCidrOptions|null
      * } $args
      */
     public function __construct(array $args)

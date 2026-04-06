@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\DescribeQueries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property 'CWLI'|'SQL'|'PPL'|null $queryLanguage
  * @property string|null $queryId
  * @property string|null $queryString
  * @property 'Scheduled'|'Running'|'Complete'|'Failed'|'Cancelled'|'Timeout'|'Unknown'|null $status
@@ -15,6 +16,7 @@ class QueryInfo extends Shape
 {
     /**
      * @param array{
+     *     queryLanguage?: 'CWLI'|'SQL'|'PPL'|null,
      *     queryId?: string|null,
      *     queryString?: string|null,
      *     status?: 'Scheduled'|'Running'|'Complete'|'Failed'|'Cancelled'|'Timeout'|'Unknown'|null,

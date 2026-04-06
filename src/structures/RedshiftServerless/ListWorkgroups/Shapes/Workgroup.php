@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $namespaceName
  * @property string|null $patchVersion
  * @property int|null $port
+ * @property PerformanceTarget|null $pricePerformanceTarget
  * @property bool|null $publiclyAccessible
  * @property list<string>|null $securityGroupIds
  * @property 'CREATING'|'AVAILABLE'|'MODIFYING'|'DELETING'|null $status
@@ -46,6 +47,7 @@ class Workgroup extends Shape
      *     namespaceName?: string|null,
      *     patchVersion?: string|null,
      *     port?: int|null,
+     *     pricePerformanceTarget?: PerformanceTarget|null,
      *     publiclyAccessible?: bool|null,
      *     securityGroupIds?: list<string>|null,
      *     status?: 'CREATING'|'AVAILABLE'|'MODIFYING'|'DELETING'|null,

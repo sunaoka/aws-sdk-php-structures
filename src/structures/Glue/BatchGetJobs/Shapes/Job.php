@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $Name
  * @property 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null $JobMode
+ * @property bool|null $JobRunQueuingEnabled
  * @property string|null $Description
  * @property string|null $LogUri
  * @property string|null $Role
@@ -38,6 +39,7 @@ class Job extends Shape
      * @param array{
      *     Name?: string|null,
      *     JobMode?: 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null,
+     *     JobRunQueuingEnabled?: bool|null,
      *     Description?: string|null,
      *     LogUri?: string|null,
      *     Role?: string|null,

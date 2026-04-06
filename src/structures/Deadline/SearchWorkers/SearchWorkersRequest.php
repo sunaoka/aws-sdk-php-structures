@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $farmId
- * @property Shapes\SearchGroupedFilterExpressions|null $filterExpressions
  * @property list<string> $fleetIds
+ * @property Shapes\SearchGroupedFilterExpressions|null $filterExpressions
+ * @property list<Shapes\SearchSortExpression>|null $sortExpressions
  * @property int<0, 10000> $itemOffset
  * @property int<1, 100>|null $pageSize
- * @property list<Shapes\SearchSortExpression>|null $sortExpressions
  */
 class SearchWorkersRequest extends Request
 {
     /**
      * @param array{
      *     farmId: string,
-     *     filterExpressions?: Shapes\SearchGroupedFilterExpressions|null,
      *     fleetIds: list<string>,
+     *     filterExpressions?: Shapes\SearchGroupedFilterExpressions|null,
+     *     sortExpressions?: list<Shapes\SearchSortExpression>|null,
      *     itemOffset: int<0, 10000>,
-     *     pageSize?: int<1, 100>|null,
-     *     sortExpressions?: list<Shapes\SearchSortExpression>|null
+     *     pageSize?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $domainId
  * @property string $environmentId
  * @property string $id
- * @property string $manageAccessRole
+ * @property string|null $manageAccessRole
  * @property string $name
  * @property string $projectId
  * @property string $provider

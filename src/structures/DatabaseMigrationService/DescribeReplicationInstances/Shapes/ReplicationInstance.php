@@ -30,6 +30,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $FreeUntil
  * @property string|null $DnsNameServers
  * @property string|null $NetworkType
+ * @property KerberosAuthenticationSettings|null $KerberosAuthenticationSettings
  */
 class ReplicationInstance extends Shape
 {
@@ -59,7 +60,8 @@ class ReplicationInstance extends Shape
      *     SecondaryAvailabilityZone?: string|null,
      *     FreeUntil?: \Aws\Api\DateTimeResult|null,
      *     DnsNameServers?: string|null,
-     *     NetworkType?: string|null
+     *     NetworkType?: string|null,
+     *     KerberosAuthenticationSettings?: KerberosAuthenticationSettings|null
      * } $args
      */
     public function __construct(array $args = [])

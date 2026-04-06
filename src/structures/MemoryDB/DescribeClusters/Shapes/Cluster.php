@@ -9,11 +9,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property string|null $Status
  * @property ClusterPendingUpdates|null $PendingUpdates
+ * @property string|null $MultiRegionClusterName
  * @property int|null $NumberOfShards
  * @property list<Shard>|null $Shards
  * @property 'singleaz'|'multiaz'|null $AvailabilityMode
  * @property Endpoint|null $ClusterEndpoint
  * @property string|null $NodeType
+ * @property string|null $Engine
  * @property string|null $EngineVersion
  * @property string|null $EnginePatchVersion
  * @property string|null $ParameterGroupName
@@ -40,11 +42,13 @@ class Cluster extends Shape
      *     Description?: string|null,
      *     Status?: string|null,
      *     PendingUpdates?: ClusterPendingUpdates|null,
+     *     MultiRegionClusterName?: string|null,
      *     NumberOfShards?: int|null,
      *     Shards?: list<Shard>|null,
      *     AvailabilityMode?: 'singleaz'|'multiaz'|null,
      *     ClusterEndpoint?: Endpoint|null,
      *     NodeType?: string|null,
+     *     Engine?: string|null,
      *     EngineVersion?: string|null,
      *     EnginePatchVersion?: string|null,
      *     ParameterGroupName?: string|null,

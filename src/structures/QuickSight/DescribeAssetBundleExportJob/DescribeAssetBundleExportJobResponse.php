@@ -22,6 +22,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool|null $IncludeTags
  * @property Shapes\AssetBundleExportJobValidationStrategy|null $ValidationStrategy
  * @property list<Shapes\AssetBundleExportJobWarning>|null $Warnings
+ * @property bool|null $IncludeFolderMemberships
+ * @property 'RECURSE'|'ONE_LEVEL'|'NONE'|null $IncludeFolderMembers
  */
 class DescribeAssetBundleExportJobResponse extends Response
 {

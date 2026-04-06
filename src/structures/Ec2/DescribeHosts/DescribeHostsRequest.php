@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeHosts;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\Filter>|null $Filter
  * @property list<string>|null $HostIds
- * @property int|null $MaxResults
  * @property string|null $NextToken
+ * @property int|null $MaxResults
+ * @property list<Shapes\Filter>|null $Filter
  */
 class DescribeHostsRequest extends Request
 {
     /**
      * @param array{
-     *     Filter?: list<Shapes\Filter>|null,
      *     HostIds?: list<string>|null,
+     *     NextToken?: string|null,
      *     MaxResults?: int|null,
-     *     NextToken?: string|null
+     *     Filter?: list<Shapes\Filter>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $ProgramDateTimeIntervalSeconds
  * @property ScteHls|null $ScteHls
  * @property FilterConfiguration|null $FilterConfiguration
+ * @property StartTag|null $StartTag
  */
 class GetHlsManifestConfiguration extends Shape
 {
@@ -23,7 +24,8 @@ class GetHlsManifestConfiguration extends Shape
      *     ManifestWindowSeconds?: int|null,
      *     ProgramDateTimeIntervalSeconds?: int|null,
      *     ScteHls?: ScteHls|null,
-     *     FilterConfiguration?: FilterConfiguration|null
+     *     FilterConfiguration?: FilterConfiguration|null,
+     *     StartTag?: StartTag|null
      * } $args
      */
     public function __construct(array $args)

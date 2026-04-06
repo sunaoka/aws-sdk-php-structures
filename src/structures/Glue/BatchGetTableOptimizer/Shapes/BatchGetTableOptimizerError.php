@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $catalogId
  * @property string|null $databaseName
  * @property string|null $tableName
- * @property 'compaction'|null $type
+ * @property 'compaction'|'retention'|'orphan_file_deletion'|null $type
  */
 class BatchGetTableOptimizerError extends Shape
 {
@@ -19,7 +19,7 @@ class BatchGetTableOptimizerError extends Shape
      *     catalogId?: string|null,
      *     databaseName?: string|null,
      *     tableName?: string|null,
-     *     type?: 'compaction'|null
+     *     type?: 'compaction'|'retention'|'orphan_file_deletion'|null
      * } $args
      */
     public function __construct(array $args = [])

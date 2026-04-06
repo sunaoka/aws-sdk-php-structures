@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'INVITED'|'ACTIVE'|'LEFT'|'REMOVED' $status
  * @property string $displayName
  * @property list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'> $abilities
+ * @property MLMemberAbilities|null $mlAbilities
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property string|null $membershipId
@@ -23,6 +24,7 @@ class MemberSummary extends Shape
      *     status: 'INVITED'|'ACTIVE'|'LEFT'|'REMOVED',
      *     displayName: string,
      *     abilities: list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'>,
+     *     mlAbilities?: MLMemberAbilities|null,
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
      *     membershipId?: string|null,

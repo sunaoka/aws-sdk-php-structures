@@ -5,20 +5,8 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeImages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'i386'|'x86_64'|'arm64'|'x86_64_mac'|'arm64_mac'|null $Architecture
- * @property string|null $CreationDate
- * @property string|null $ImageId
- * @property string|null $ImageLocation
- * @property 'machine'|'kernel'|'ramdisk'|null $ImageType
- * @property bool|null $Public
- * @property string|null $KernelId
- * @property string|null $OwnerId
- * @property 'Windows'|null $Platform
  * @property string|null $PlatformDetails
  * @property string|null $UsageOperation
- * @property list<ProductCode>|null $ProductCodes
- * @property string|null $RamdiskId
- * @property 'pending'|'available'|'invalid'|'deregistered'|'transient'|'failed'|'error'|'disabled'|null $State
  * @property list<BlockDeviceMapping>|null $BlockDeviceMappings
  * @property string|null $Description
  * @property bool|null $EnaSupport
@@ -38,25 +26,28 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SourceInstanceId
  * @property string|null $DeregistrationProtection
  * @property string|null $LastLaunchedTime
+ * @property bool|null $ImageAllowed
+ * @property string|null $SourceImageId
+ * @property string|null $SourceImageRegion
+ * @property string|null $ImageId
+ * @property string|null $ImageLocation
+ * @property 'pending'|'available'|'invalid'|'deregistered'|'transient'|'failed'|'error'|'disabled'|null $State
+ * @property string|null $OwnerId
+ * @property string|null $CreationDate
+ * @property bool|null $Public
+ * @property list<ProductCode>|null $ProductCodes
+ * @property 'i386'|'x86_64'|'arm64'|'x86_64_mac'|'arm64_mac'|null $Architecture
+ * @property 'machine'|'kernel'|'ramdisk'|null $ImageType
+ * @property string|null $KernelId
+ * @property string|null $RamdiskId
+ * @property 'Windows'|null $Platform
  */
 class Image extends Shape
 {
     /**
      * @param array{
-     *     Architecture?: 'i386'|'x86_64'|'arm64'|'x86_64_mac'|'arm64_mac'|null,
-     *     CreationDate?: string|null,
-     *     ImageId?: string|null,
-     *     ImageLocation?: string|null,
-     *     ImageType?: 'machine'|'kernel'|'ramdisk'|null,
-     *     Public?: bool|null,
-     *     KernelId?: string|null,
-     *     OwnerId?: string|null,
-     *     Platform?: 'Windows'|null,
      *     PlatformDetails?: string|null,
      *     UsageOperation?: string|null,
-     *     ProductCodes?: list<ProductCode>|null,
-     *     RamdiskId?: string|null,
-     *     State?: 'pending'|'available'|'invalid'|'deregistered'|'transient'|'failed'|'error'|'disabled'|null,
      *     BlockDeviceMappings?: list<BlockDeviceMapping>|null,
      *     Description?: string|null,
      *     EnaSupport?: bool|null,
@@ -75,7 +66,22 @@ class Image extends Shape
      *     ImdsSupport?: 'v2.0'|null,
      *     SourceInstanceId?: string|null,
      *     DeregistrationProtection?: string|null,
-     *     LastLaunchedTime?: string|null
+     *     LastLaunchedTime?: string|null,
+     *     ImageAllowed?: bool|null,
+     *     SourceImageId?: string|null,
+     *     SourceImageRegion?: string|null,
+     *     ImageId?: string|null,
+     *     ImageLocation?: string|null,
+     *     State?: 'pending'|'available'|'invalid'|'deregistered'|'transient'|'failed'|'error'|'disabled'|null,
+     *     OwnerId?: string|null,
+     *     CreationDate?: string|null,
+     *     Public?: bool|null,
+     *     ProductCodes?: list<ProductCode>|null,
+     *     Architecture?: 'i386'|'x86_64'|'arm64'|'x86_64_mac'|'arm64_mac'|null,
+     *     ImageType?: 'machine'|'kernel'|'ramdisk'|null,
+     *     KernelId?: string|null,
+     *     RamdiskId?: string|null,
+     *     Platform?: 'Windows'|null
      * } $args
      */
     public function __construct(array $args = [])

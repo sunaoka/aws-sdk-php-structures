@@ -27,6 +27,7 @@ class EKSClient extends \Aws\EKS\EKSClient
     use DescribeAddonConfiguration\DescribeAddonConfigurationTrait;
     use DescribeAddonVersions\DescribeAddonVersionsTrait;
     use DescribeCluster\DescribeClusterTrait;
+    use DescribeClusterVersions\DescribeClusterVersionsTrait;
     use DescribeEksAnywhereSubscription\DescribeEksAnywhereSubscriptionTrait;
     use DescribeFargateProfile\DescribeFargateProfileTrait;
     use DescribeIdentityProviderConfig\DescribeIdentityProviderConfigTrait;

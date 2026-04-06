@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $QueueId
  * @property string|null $Description
  * @property OutboundCallerConfig|null $OutboundCallerConfig
+ * @property OutboundEmailConfig|null $OutboundEmailConfig
  * @property string|null $HoursOfOperationId
  * @property int<0, max>|null $MaxContacts
  * @property 'ENABLED'|'DISABLED'|null $Status
@@ -26,6 +27,7 @@ class Queue extends Shape
      *     QueueId?: string|null,
      *     Description?: string|null,
      *     OutboundCallerConfig?: OutboundCallerConfig|null,
+     *     OutboundEmailConfig?: OutboundEmailConfig|null,
      *     HoursOfOperationId?: string|null,
      *     MaxContacts?: int<0, max>|null,
      *     Status?: 'ENABLED'|'DISABLED'|null,

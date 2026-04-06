@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property Anomaly|null $Anomaly
+ * @property Sequence|null $Sequence
  */
 class Detection extends Shape
 {
     /**
-     * @param array{Anomaly?: Anomaly|null} $args
+     * @param array{
+     *     Anomaly?: Anomaly|null,
+     *     Sequence?: Sequence|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

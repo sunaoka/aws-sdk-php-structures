@@ -96,4 +96,27 @@ class MediaLiveClient extends \Aws\MediaLive\MediaLiveClient
     use UpdateCloudWatchAlarmTemplateGroup\UpdateCloudWatchAlarmTemplateGroupTrait;
     use UpdateEventBridgeRuleTemplate\UpdateEventBridgeRuleTemplateTrait;
     use UpdateEventBridgeRuleTemplateGroup\UpdateEventBridgeRuleTemplateGroupTrait;
+    use CreateChannelPlacementGroup\CreateChannelPlacementGroupTrait;
+    use CreateCluster\CreateClusterTrait;
+    use CreateNetwork\CreateNetworkTrait;
+    use CreateNode\CreateNodeTrait;
+    use CreateNodeRegistrationScript\CreateNodeRegistrationScriptTrait;
+    use DeleteChannelPlacementGroup\DeleteChannelPlacementGroupTrait;
+    use DeleteCluster\DeleteClusterTrait;
+    use DeleteNetwork\DeleteNetworkTrait;
+    use DeleteNode\DeleteNodeTrait;
+    use DescribeChannelPlacementGroup\DescribeChannelPlacementGroupTrait;
+    use DescribeCluster\DescribeClusterTrait;
+    use DescribeNetwork\DescribeNetworkTrait;
+    use DescribeNode\DescribeNodeTrait;
+    use ListChannelPlacementGroups\ListChannelPlacementGroupsTrait;
+    use ListClusters\ListClustersTrait;
+    use ListNetworks\ListNetworksTrait;
+    use ListNodes\ListNodesTrait;
+    use UpdateChannelPlacementGroup\UpdateChannelPlacementGroupTrait;
+    use UpdateCluster\UpdateClusterTrait;
+    use UpdateNetwork\UpdateNetworkTrait;
+    use UpdateNode\UpdateNodeTrait;
+    use UpdateNodeState\UpdateNodeStateTrait;
+    use ListVersions\ListVersionsTrait;
 }

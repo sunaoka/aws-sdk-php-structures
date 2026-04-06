@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property bool|null $DryRun
- * @property int|null $MaxResults
- * @property string|null $NextToken
  * @property list<string>|null $SpotFleetRequestIds
+ * @property string|null $NextToken
+ * @property int|null $MaxResults
  */
 class DescribeSpotFleetRequestsRequest extends Request
 {
     /**
      * @param array{
      *     DryRun?: bool|null,
-     *     MaxResults?: int|null,
+     *     SpotFleetRequestIds?: list<string>|null,
      *     NextToken?: string|null,
-     *     SpotFleetRequestIds?: list<string>|null
+     *     MaxResults?: int|null
      * } $args
      */
     public function __construct(array $args = [])

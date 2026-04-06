@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property list<Shapes\AddIpamOperatingRegion>|null $AddOperatingRegions
  * @property list<Shapes\RemoveIpamOperatingRegion>|null $RemoveOperatingRegions
+ * @property list<Shapes\AddIpamOrganizationalUnitExclusion>|null $AddOrganizationalUnitExclusions
+ * @property list<Shapes\RemoveIpamOrganizationalUnitExclusion>|null $RemoveOrganizationalUnitExclusions
  */
 class ModifyIpamResourceDiscoveryRequest extends Request
 {
@@ -19,7 +21,9 @@ class ModifyIpamResourceDiscoveryRequest extends Request
      *     IpamResourceDiscoveryId: string,
      *     Description?: string|null,
      *     AddOperatingRegions?: list<Shapes\AddIpamOperatingRegion>|null,
-     *     RemoveOperatingRegions?: list<Shapes\RemoveIpamOperatingRegion>|null
+     *     RemoveOperatingRegions?: list<Shapes\RemoveIpamOperatingRegion>|null,
+     *     AddOrganizationalUnitExclusions?: list<Shapes\AddIpamOrganizationalUnitExclusion>|null,
+     *     RemoveOrganizationalUnitExclusions?: list<Shapes\RemoveIpamOrganizationalUnitExclusion>|null
      * } $args
      */
     public function __construct(array $args)

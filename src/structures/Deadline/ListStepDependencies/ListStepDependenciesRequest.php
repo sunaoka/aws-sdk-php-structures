@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $farmId
- * @property string $jobId
- * @property int<1, 1000>|null $maxResults
- * @property string|null $nextToken
  * @property string $queueId
+ * @property string $jobId
  * @property string $stepId
+ * @property string|null $nextToken
+ * @property int<1, 1000>|null $maxResults
  */
 class ListStepDependenciesRequest extends Request
 {
     /**
      * @param array{
      *     farmId: string,
-     *     jobId: string,
-     *     maxResults?: int<1, 1000>|null,
-     *     nextToken?: string|null,
      *     queueId: string,
-     *     stepId: string
+     *     jobId: string,
+     *     stepId: string,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args)

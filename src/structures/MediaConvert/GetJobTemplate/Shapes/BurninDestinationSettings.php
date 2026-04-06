@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $HexFontColor
  * @property 'BLACK'|'WHITE'|'YELLOW'|'RED'|'GREEN'|'BLUE'|'AUTO'|null $OutlineColor
  * @property int<0, 10>|null $OutlineSize
+ * @property 'DISABLED'|'ENABLED'|null $RemoveRubyReserveAttributes
  * @property 'NONE'|'BLACK'|'WHITE'|'AUTO'|null $ShadowColor
  * @property int<0, 255>|null $ShadowOpacity
  * @property int<-2147483648, 2147483647>|null $ShadowXOffset
@@ -52,6 +53,7 @@ class BurninDestinationSettings extends Shape
      *     HexFontColor?: string|null,
      *     OutlineColor?: 'BLACK'|'WHITE'|'YELLOW'|'RED'|'GREEN'|'BLUE'|'AUTO'|null,
      *     OutlineSize?: int<0, 10>|null,
+     *     RemoveRubyReserveAttributes?: 'DISABLED'|'ENABLED'|null,
      *     ShadowColor?: 'NONE'|'BLACK'|'WHITE'|'AUTO'|null,
      *     ShadowOpacity?: int<0, 255>|null,
      *     ShadowXOffset?: int<-2147483648, 2147483647>|null,

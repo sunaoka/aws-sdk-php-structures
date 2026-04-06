@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $GuardrailPolicyArns
  * @property bool|null $UserAuthorizationRequired
  * @property list<Tag>|null $Tags
+ * @property string|null $State
+ * @property string|null $StateReason
  */
 class SlackChannelConfiguration extends Shape
 {
@@ -33,7 +35,9 @@ class SlackChannelConfiguration extends Shape
      *     LoggingLevel?: string|null,
      *     GuardrailPolicyArns?: list<string>|null,
      *     UserAuthorizationRequired?: bool|null,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     State?: string|null,
+     *     StateReason?: string|null
      * } $args
      */
     public function __construct(array $args)

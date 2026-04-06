@@ -36,6 +36,7 @@ class AccessAnalyzerClient extends \Aws\AccessAnalyzer\AccessAnalyzerClient
     use StartResourceScan\StartResourceScanTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateAnalyzer\UpdateAnalyzerTrait;
     use UpdateArchiveRule\UpdateArchiveRuleTrait;
     use UpdateFindings\UpdateFindingsTrait;
     use ValidatePolicy\ValidatePolicyTrait;

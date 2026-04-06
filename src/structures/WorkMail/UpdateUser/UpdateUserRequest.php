@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Department
  * @property string|null $Country
  * @property string|null $Office
+ * @property string|null $IdentityProviderUserId
  */
 class UpdateUserRequest extends Request
 {
@@ -43,7 +44,8 @@ class UpdateUserRequest extends Request
      *     ZipCode?: string|null,
      *     Department?: string|null,
      *     Country?: string|null,
-     *     Office?: string|null
+     *     Office?: string|null,
+     *     IdentityProviderUserId?: string|null
      * } $args
      */
     public function __construct(array $args)

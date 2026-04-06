@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $ProductId
+ * @property string|null $DataGrantId
  */
 class OriginDetails extends Shape
 {
     /**
-     * @param array{ProductId?: string|null} $args
+     * @param array{
+     *     ProductId?: string|null,
+     *     DataGrantId?: string|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

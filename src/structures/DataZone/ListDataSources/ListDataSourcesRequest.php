@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\ListDataSources;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string|null $connectionIdentifier
  * @property string $domainIdentifier
  * @property string|null $environmentIdentifier
  * @property int<1, 50>|null $maxResults
@@ -18,6 +19,7 @@ class ListDataSourcesRequest extends Request
 {
     /**
      * @param array{
+     *     connectionIdentifier?: string|null,
      *     domainIdentifier: string,
      *     environmentIdentifier?: string|null,
      *     maxResults?: int<1, 50>|null,

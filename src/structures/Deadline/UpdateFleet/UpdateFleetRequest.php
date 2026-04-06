@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $clientToken
- * @property Shapes\FleetConfiguration|null $configuration
- * @property string|null $description
- * @property string|null $displayName
  * @property string $farmId
  * @property string $fleetId
- * @property int<0, 2147483647>|null $maxWorkerCount
- * @property int<0, 2147483647>|null $minWorkerCount
+ * @property string|null $displayName
+ * @property string|null $description
  * @property string|null $roleArn
+ * @property int<0, 2147483647>|null $minWorkerCount
+ * @property int<0, 2147483647>|null $maxWorkerCount
+ * @property Shapes\FleetConfiguration|null $configuration
  */
 class UpdateFleetRequest extends Request
 {
     /**
      * @param array{
      *     clientToken?: string|null,
-     *     configuration?: Shapes\FleetConfiguration|null,
-     *     description?: string|null,
-     *     displayName?: string|null,
      *     farmId: string,
      *     fleetId: string,
-     *     maxWorkerCount?: int<0, 2147483647>|null,
+     *     displayName?: string|null,
+     *     description?: string|null,
+     *     roleArn?: string|null,
      *     minWorkerCount?: int<0, 2147483647>|null,
-     *     roleArn?: string|null
+     *     maxWorkerCount?: int<0, 2147483647>|null,
+     *     configuration?: Shapes\FleetConfiguration|null
      * } $args
      */
     public function __construct(array $args)

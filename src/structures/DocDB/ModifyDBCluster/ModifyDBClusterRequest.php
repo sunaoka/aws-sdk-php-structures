@@ -20,6 +20,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $AllowMajorVersionUpgrade
  * @property bool|null $DeletionProtection
  * @property string|null $StorageType
+ * @property bool|null $ManageMasterUserPassword
+ * @property string|null $MasterUserSecretKmsKeyId
+ * @property bool|null $RotateMasterUserPassword
  */
 class ModifyDBClusterRequest extends Request
 {
@@ -39,7 +42,10 @@ class ModifyDBClusterRequest extends Request
      *     EngineVersion?: string|null,
      *     AllowMajorVersionUpgrade?: bool|null,
      *     DeletionProtection?: bool|null,
-     *     StorageType?: string|null
+     *     StorageType?: string|null,
+     *     ManageMasterUserPassword?: bool|null,
+     *     MasterUserSecretKmsKeyId?: string|null,
+     *     RotateMasterUserPassword?: bool|null
      * } $args
      */
     public function __construct(array $args)

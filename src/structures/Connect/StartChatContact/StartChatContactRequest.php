@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\PersistentChat|null $PersistentChat
  * @property string|null $RelatedContactId
  * @property array<string, Shapes\SegmentAttributeValue>|null $SegmentAttributes
+ * @property string|null $CustomerId
  */
 class StartChatContactRequest extends Request
 {
@@ -31,7 +32,8 @@ class StartChatContactRequest extends Request
      *     SupportedMessagingContentTypes?: list<string>|null,
      *     PersistentChat?: Shapes\PersistentChat|null,
      *     RelatedContactId?: string|null,
-     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>|null
+     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>|null,
+     *     CustomerId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $AccessGrantsInstanceId
  * @property string|null $AccessGrantsInstanceArn
  * @property string|null $IdentityCenterArn
+ * @property string|null $IdentityCenterInstanceArn
+ * @property string|null $IdentityCenterApplicationArn
  */
 class CreateAccessGrantsInstanceResponse extends Response
 {

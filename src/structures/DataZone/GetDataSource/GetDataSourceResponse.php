@@ -7,11 +7,12 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property list<Shapes\FormOutput>|null $assetFormsOutput
  * @property Shapes\DataSourceConfigurationOutput|null $configuration
+ * @property string|null $connectionId
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $description
  * @property string $domainId
  * @property 'ENABLED'|'DISABLED'|null $enableSetting
- * @property string $environmentId
+ * @property string|null $environmentId
  * @property Shapes\DataSourceErrorMessage|null $errorMessage
  * @property string $id
  * @property int|null $lastRunAssetCount

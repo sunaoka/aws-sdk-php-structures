@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property bool|null $DryRun
- * @property string $InstanceType
- * @property int $InstanceCount
+ * @property string|null $InstanceType
+ * @property int|null $InstanceCount
  * @property \Aws\Api\DateTimeResult|null $StartDateRange
  * @property \Aws\Api\DateTimeResult|null $EndDateRange
  * @property int $CapacityDurationHours
@@ -19,8 +19,8 @@ class DescribeCapacityBlockOfferingsRequest extends Request
     /**
      * @param array{
      *     DryRun?: bool|null,
-     *     InstanceType: string,
-     *     InstanceCount: int,
+     *     InstanceType?: string|null,
+     *     InstanceCount?: int|null,
      *     StartDateRange?: \Aws\Api\DateTimeResult|null,
      *     EndDateRange?: \Aws\Api\DateTimeResult|null,
      *     CapacityDurationHours: int,

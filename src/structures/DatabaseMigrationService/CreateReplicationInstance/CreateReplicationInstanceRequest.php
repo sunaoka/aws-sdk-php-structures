@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DnsNameServers
  * @property string|null $ResourceIdentifier
  * @property string|null $NetworkType
+ * @property Shapes\KerberosAuthenticationSettings|null $KerberosAuthenticationSettings
  */
 class CreateReplicationInstanceRequest extends Request
 {
@@ -41,7 +42,8 @@ class CreateReplicationInstanceRequest extends Request
      *     PubliclyAccessible?: bool|null,
      *     DnsNameServers?: string|null,
      *     ResourceIdentifier?: string|null,
-     *     NetworkType?: string|null
+     *     NetworkType?: string|null,
+     *     KerberosAuthenticationSettings?: Shapes\KerberosAuthenticationSettings|null
      * } $args
      */
     public function __construct(array $args)

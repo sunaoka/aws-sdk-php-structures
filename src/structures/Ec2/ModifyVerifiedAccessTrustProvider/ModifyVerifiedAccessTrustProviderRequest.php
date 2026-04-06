@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DryRun
  * @property string|null $ClientToken
  * @property Shapes\VerifiedAccessSseSpecificationRequest|null $SseSpecification
+ * @property Shapes\ModifyVerifiedAccessNativeApplicationOidcOptions|null $NativeApplicationOidcOptions
  */
 class ModifyVerifiedAccessTrustProviderRequest extends Request
 {
@@ -23,7 +24,8 @@ class ModifyVerifiedAccessTrustProviderRequest extends Request
      *     Description?: string|null,
      *     DryRun?: bool|null,
      *     ClientToken?: string|null,
-     *     SseSpecification?: Shapes\VerifiedAccessSseSpecificationRequest|null
+     *     SseSpecification?: Shapes\VerifiedAccessSseSpecificationRequest|null,
+     *     NativeApplicationOidcOptions?: Shapes\ModifyVerifiedAccessNativeApplicationOidcOptions|null
      * } $args
      */
     public function __construct(array $args)

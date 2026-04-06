@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Deadline\UpdateWorkerSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $jobId
- * @property LogConfiguration $logConfiguration
  * @property string $queueId
+ * @property string $jobId
  * @property list<AssignedSessionAction> $sessionActions
+ * @property LogConfiguration $logConfiguration
  */
 class AssignedSession extends Shape
 {
     /**
      * @param array{
-     *     jobId: string,
-     *     logConfiguration: LogConfiguration,
      *     queueId: string,
-     *     sessionActions: list<AssignedSessionAction>
+     *     jobId: string,
+     *     sessionActions: list<AssignedSessionAction>,
+     *     logConfiguration: LogConfiguration
      * } $args
      */
     public function __construct(array $args)

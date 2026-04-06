@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ConverseMetrics $metrics
  * @property Shapes\Document|null $additionalModelResponseFields
  * @property Shapes\ConverseTrace|null $trace
+ * @property Shapes\PerformanceConfiguration|null $performanceConfig
  */
 class ConverseResponse extends Response
 {

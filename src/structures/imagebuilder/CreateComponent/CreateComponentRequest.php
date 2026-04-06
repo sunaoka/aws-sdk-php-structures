@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $semanticVersion
  * @property string|null $description
  * @property string|null $changeDescription
- * @property 'Windows'|'Linux' $platform
+ * @property 'Windows'|'Linux'|'macOS' $platform
  * @property list<string>|null $supportedOsVersions
  * @property string|null $data
  * @property string|null $uri
@@ -25,7 +25,7 @@ class CreateComponentRequest extends Request
      *     semanticVersion: string,
      *     description?: string|null,
      *     changeDescription?: string|null,
-     *     platform: 'Windows'|'Linux',
+     *     platform: 'Windows'|'Linux'|'macOS',
      *     supportedOsVersions?: list<string>|null,
      *     data?: string|null,
      *     uri?: string|null,

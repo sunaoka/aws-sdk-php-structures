@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ComputeArn
  * @property Shapes\AwsCredentials|null $Credentials
  * @property string|null $Target
+ * @property list<Shapes\ContainerIdentifier>|null $ContainerIdentifiers
  */
 class GetComputeAccessResponse extends Response
 {

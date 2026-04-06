@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'NO_SCALING'|'EVENT_BASED_AUTO_SCALING' $mode
- * @property string|null $storageProfileId
  * @property CustomerManagedWorkerCapabilities $workerCapabilities
+ * @property string|null $storageProfileId
  */
 class CustomerManagedFleetConfiguration extends Shape
 {
     /**
      * @param array{
      *     mode: 'NO_SCALING'|'EVENT_BASED_AUTO_SCALING',
-     *     storageProfileId?: string|null,
-     *     workerCapabilities: CustomerManagedWorkerCapabilities
+     *     workerCapabilities: CustomerManagedWorkerCapabilities,
+     *     storageProfileId?: string|null
      * } $args
      */
     public function __construct(array $args)

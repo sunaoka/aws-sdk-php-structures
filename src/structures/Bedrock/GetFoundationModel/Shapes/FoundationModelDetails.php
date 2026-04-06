@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'TEXT'|'IMAGE'|'EMBEDDING'>|null $inputModalities
  * @property list<'TEXT'|'IMAGE'|'EMBEDDING'>|null $outputModalities
  * @property bool|null $responseStreamingSupported
- * @property list<'FINE_TUNING'|'CONTINUED_PRE_TRAINING'>|null $customizationsSupported
+ * @property list<'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'>|null $customizationsSupported
  * @property list<'ON_DEMAND'|'PROVISIONED'>|null $inferenceTypesSupported
  * @property FoundationModelLifecycle|null $modelLifecycle
  */
@@ -27,7 +27,7 @@ class FoundationModelDetails extends Shape
      *     inputModalities?: list<'TEXT'|'IMAGE'|'EMBEDDING'>|null,
      *     outputModalities?: list<'TEXT'|'IMAGE'|'EMBEDDING'>|null,
      *     responseStreamingSupported?: bool|null,
-     *     customizationsSupported?: list<'FINE_TUNING'|'CONTINUED_PRE_TRAINING'>|null,
+     *     customizationsSupported?: list<'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'>|null,
      *     inferenceTypesSupported?: list<'ON_DEMAND'|'PROVISIONED'>|null,
      *     modelLifecycle?: FoundationModelLifecycle|null
      * } $args

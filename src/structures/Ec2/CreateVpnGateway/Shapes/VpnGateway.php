@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateVpnGateway\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $AvailabilityZone
- * @property 'pending'|'available'|'deleting'|'deleted'|null $State
- * @property 'ipsec.1'|null $Type
- * @property list<VpcAttachment>|null $VpcAttachments
- * @property string|null $VpnGatewayId
  * @property int|null $AmazonSideAsn
  * @property list<Tag>|null $Tags
+ * @property string|null $VpnGatewayId
+ * @property 'pending'|'available'|'deleting'|'deleted'|null $State
+ * @property 'ipsec.1'|null $Type
+ * @property string|null $AvailabilityZone
+ * @property list<VpcAttachment>|null $VpcAttachments
  */
 class VpnGateway extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string|null,
+     *     AmazonSideAsn?: int|null,
+     *     Tags?: list<Tag>|null,
+     *     VpnGatewayId?: string|null,
      *     State?: 'pending'|'available'|'deleting'|'deleted'|null,
      *     Type?: 'ipsec.1'|null,
-     *     VpcAttachments?: list<VpcAttachment>|null,
-     *     VpnGatewayId?: string|null,
-     *     AmazonSideAsn?: int|null,
-     *     Tags?: list<Tag>|null
+     *     AvailabilityZone?: string|null,
+     *     VpcAttachments?: list<VpcAttachment>|null
      * } $args
      */
     public function __construct(array $args = [])

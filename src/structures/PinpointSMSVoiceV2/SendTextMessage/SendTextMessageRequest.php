@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<'IN_TEMPLATE_ID'|'IN_ENTITY_ID', string>|null $DestinationCountryParameters
  * @property bool|null $DryRun
  * @property string|null $ProtectConfigurationId
+ * @property bool|null $MessageFeedbackEnabled
  */
 class SendTextMessageRequest extends Request
 {
@@ -33,7 +34,8 @@ class SendTextMessageRequest extends Request
      *     Context?: array<string, string>|null,
      *     DestinationCountryParameters?: array<'IN_TEMPLATE_ID'|'IN_ENTITY_ID', string>|null,
      *     DryRun?: bool|null,
-     *     ProtectConfigurationId?: string|null
+     *     ProtectConfigurationId?: string|null,
+     *     MessageFeedbackEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

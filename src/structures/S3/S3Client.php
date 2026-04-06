@@ -8,6 +8,7 @@ class S3Client extends \Aws\S3\S3Client
     use CompleteMultipartUpload\CompleteMultipartUploadTrait;
     use CopyObject\CopyObjectTrait;
     use CreateBucket\CreateBucketTrait;
+    use CreateBucketMetadataTableConfiguration\CreateBucketMetadataTableConfigurationTrait;
     use CreateMultipartUpload\CreateMultipartUploadTrait;
     use CreateSession\CreateSessionTrait;
     use DeleteBucket\DeleteBucketTrait;
@@ -17,6 +18,7 @@ class S3Client extends \Aws\S3\S3Client
     use DeleteBucketIntelligentTieringConfiguration\DeleteBucketIntelligentTieringConfigurationTrait;
     use DeleteBucketInventoryConfiguration\DeleteBucketInventoryConfigurationTrait;
     use DeleteBucketLifecycle\DeleteBucketLifecycleTrait;
+    use DeleteBucketMetadataTableConfiguration\DeleteBucketMetadataTableConfigurationTrait;
     use DeleteBucketMetricsConfiguration\DeleteBucketMetricsConfigurationTrait;
     use DeleteBucketOwnershipControls\DeleteBucketOwnershipControlsTrait;
     use DeleteBucketPolicy\DeleteBucketPolicyTrait;
@@ -38,6 +40,7 @@ class S3Client extends \Aws\S3\S3Client
     use GetBucketLifecycleConfiguration\GetBucketLifecycleConfigurationTrait;
     use GetBucketLocation\GetBucketLocationTrait;
     use GetBucketLogging\GetBucketLoggingTrait;
+    use GetBucketMetadataTableConfiguration\GetBucketMetadataTableConfigurationTrait;
     use GetBucketMetricsConfiguration\GetBucketMetricsConfigurationTrait;
     use GetBucketNotification\GetBucketNotificationTrait;
     use GetBucketNotificationConfiguration\GetBucketNotificationConfigurationTrait;

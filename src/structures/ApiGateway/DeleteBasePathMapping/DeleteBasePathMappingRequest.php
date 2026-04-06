@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainName
+ * @property string|null $domainNameId
  * @property string $basePath
  */
 class DeleteBasePathMappingRequest extends Request
@@ -13,6 +14,7 @@ class DeleteBasePathMappingRequest extends Request
     /**
      * @param array{
      *     domainName: string,
+     *     domainNameId?: string|null,
      *     basePath: string
      * } $args
      */

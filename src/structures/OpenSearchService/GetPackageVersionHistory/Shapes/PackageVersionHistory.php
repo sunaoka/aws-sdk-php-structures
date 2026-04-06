@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CommitMessage
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property PluginProperties|null $PluginProperties
+ * @property PackageConfiguration|null $PackageConfiguration
  */
 class PackageVersionHistory extends Shape
 {
@@ -17,7 +18,8 @@ class PackageVersionHistory extends Shape
      *     PackageVersion?: string|null,
      *     CommitMessage?: string|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
-     *     PluginProperties?: PluginProperties|null
+     *     PluginProperties?: PluginProperties|null,
+     *     PackageConfiguration?: PackageConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

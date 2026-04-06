@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property \Aws\Api\DateTimeResult $StartTime
- * @property 'DAY'|'MONTH' $DurationUnit
+ * @property 'MINUTE'|'HOUR'|'DAY'|'MONTH' $DurationUnit
  * @property int<1, max> $Duration
  */
 class CalendarInterval extends Shape
@@ -14,7 +14,7 @@ class CalendarInterval extends Shape
     /**
      * @param array{
      *     StartTime: \Aws\Api\DateTimeResult,
-     *     DurationUnit: 'DAY'|'MONTH',
+     *     DurationUnit: 'MINUTE'|'HOUR'|'DAY'|'MONTH',
      *     Duration: int<1, max>
      * } $args
      */

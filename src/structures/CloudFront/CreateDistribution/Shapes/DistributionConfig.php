@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $IsIPV6Enabled
  * @property string|null $ContinuousDeploymentPolicyId
  * @property bool|null $Staging
+ * @property string|null $AnycastIpListId
  */
 class DistributionConfig extends Shape
 {
@@ -47,7 +48,8 @@ class DistributionConfig extends Shape
      *     HttpVersion?: 'http1.1'|'http2'|'http3'|'http2and3'|null,
      *     IsIPV6Enabled?: bool|null,
      *     ContinuousDeploymentPolicyId?: string|null,
-     *     Staging?: bool|null
+     *     Staging?: bool|null,
+     *     AnycastIpListId?: string|null
      * } $args
      */
     public function __construct(array $args)

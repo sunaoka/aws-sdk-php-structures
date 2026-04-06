@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $diskSize
  * @property NodegroupHealth|null $health
  * @property NodegroupUpdateConfig|null $updateConfig
+ * @property NodeRepairConfig|null $nodeRepairConfig
  * @property LaunchTemplateSpecification|null $launchTemplate
  * @property array<string, string>|null $tags
  */
@@ -54,6 +55,7 @@ class Nodegroup extends Shape
      *     diskSize?: int|null,
      *     health?: NodegroupHealth|null,
      *     updateConfig?: NodegroupUpdateConfig|null,
+     *     nodeRepairConfig?: NodeRepairConfig|null,
      *     launchTemplate?: LaunchTemplateSpecification|null,
      *     tags?: array<string, string>|null
      * } $args

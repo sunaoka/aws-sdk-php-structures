@@ -29,5 +29,6 @@ class PrometheusServiceClient extends \Aws\PrometheusService\PrometheusServiceCl
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateLoggingConfiguration\UpdateLoggingConfigurationTrait;
+    use UpdateScraper\UpdateScraperTrait;
     use UpdateWorkspaceAlias\UpdateWorkspaceAliasTrait;
 }

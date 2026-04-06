@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ProtectedQueryResult|null $result
  * @property ProtectedQueryError|null $error
  * @property DifferentialPrivacyParameters|null $differentialPrivacy
+ * @property ComputeConfiguration|null $computeConfiguration
  */
 class ProtectedQuery extends Shape
 {
@@ -31,7 +32,8 @@ class ProtectedQuery extends Shape
      *     statistics?: ProtectedQueryStatistics|null,
      *     result?: ProtectedQueryResult|null,
      *     error?: ProtectedQueryError|null,
-     *     differentialPrivacy?: DifferentialPrivacyParameters|null
+     *     differentialPrivacy?: DifferentialPrivacyParameters|null,
+     *     computeConfiguration?: ComputeConfiguration|null
      * } $args
      */
     public function __construct(array $args)

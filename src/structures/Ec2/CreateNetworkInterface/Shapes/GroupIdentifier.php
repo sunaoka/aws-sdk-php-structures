@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateNetworkInterface\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $GroupName
  * @property string|null $GroupId
+ * @property string|null $GroupName
  */
 class GroupIdentifier extends Shape
 {
     /**
      * @param array{
-     *     GroupName?: string|null,
-     *     GroupId?: string|null
+     *     GroupId?: string|null,
+     *     GroupName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

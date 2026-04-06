@@ -20,6 +20,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PrivateDnsNameConfiguration|null $PrivateDnsNameConfiguration
  * @property 'ServiceOwner'|null $PayerResponsibility
  * @property list<Tag>|null $Tags
+ * @property list<SupportedRegionDetail>|null $SupportedRegions
+ * @property bool|null $RemoteAccessEnabled
  */
 class ServiceConfiguration extends Shape
 {
@@ -39,7 +41,9 @@ class ServiceConfiguration extends Shape
      *     PrivateDnsName?: string|null,
      *     PrivateDnsNameConfiguration?: PrivateDnsNameConfiguration|null,
      *     PayerResponsibility?: 'ServiceOwner'|null,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     SupportedRegions?: list<SupportedRegionDetail>|null,
+     *     RemoteAccessEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

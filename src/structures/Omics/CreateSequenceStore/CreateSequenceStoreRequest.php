@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientToken
  * @property string|null $fallbackLocation
  * @property 'MD5up'|'SHA256up'|'SHA512up'|null $eTagAlgorithmFamily
+ * @property list<string>|null $propagatedSetLevelTags
+ * @property Shapes\S3AccessConfig|null $s3AccessConfig
  */
 class CreateSequenceStoreRequest extends Request
 {
@@ -23,7 +25,9 @@ class CreateSequenceStoreRequest extends Request
      *     tags?: array<string, string>|null,
      *     clientToken?: string|null,
      *     fallbackLocation?: string|null,
-     *     eTagAlgorithmFamily?: 'MD5up'|'SHA256up'|'SHA512up'|null
+     *     eTagAlgorithmFamily?: 'MD5up'|'SHA256up'|'SHA512up'|null,
+     *     propagatedSetLevelTags?: list<string>|null,
+     *     s3AccessConfig?: Shapes\S3AccessConfig|null
      * } $args
      */
     public function __construct(array $args)

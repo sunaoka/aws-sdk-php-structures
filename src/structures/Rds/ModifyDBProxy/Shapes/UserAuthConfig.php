@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'SECRETS'|null $AuthScheme
  * @property string|null $SecretArn
  * @property 'DISABLED'|'REQUIRED'|'ENABLED'|null $IAMAuth
- * @property 'MYSQL_NATIVE_PASSWORD'|'POSTGRES_SCRAM_SHA_256'|'POSTGRES_MD5'|'SQL_SERVER_AUTHENTICATION'|null $ClientPasswordAuthType
+ * @property 'MYSQL_NATIVE_PASSWORD'|'MYSQL_CACHING_SHA2_PASSWORD'|'POSTGRES_SCRAM_SHA_256'|'POSTGRES_MD5'|'SQL_SERVER_AUTHENTICATION'|null $ClientPasswordAuthType
  */
 class UserAuthConfig extends Shape
 {
@@ -21,7 +21,7 @@ class UserAuthConfig extends Shape
      *     AuthScheme?: 'SECRETS'|null,
      *     SecretArn?: string|null,
      *     IAMAuth?: 'DISABLED'|'REQUIRED'|'ENABLED'|null,
-     *     ClientPasswordAuthType?: 'MYSQL_NATIVE_PASSWORD'|'POSTGRES_SCRAM_SHA_256'|'POSTGRES_MD5'|'SQL_SERVER_AUTHENTICATION'|null
+     *     ClientPasswordAuthType?: 'MYSQL_NATIVE_PASSWORD'|'MYSQL_CACHING_SHA2_PASSWORD'|'POSTGRES_SCRAM_SHA_256'|'POSTGRES_MD5'|'SQL_SERVER_AUTHENTICATION'|null
      * } $args
      */
     public function __construct(array $args = [])

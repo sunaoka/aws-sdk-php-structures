@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string|null $updatedBy
  * @property int $ratingCount
+ * @property bool|null $isVerified
  */
 class CreateLibraryItemResponse extends Response
 {

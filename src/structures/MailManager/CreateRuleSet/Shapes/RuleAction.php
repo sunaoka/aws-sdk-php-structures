@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AddHeaderAction|null $AddHeader
  * @property ArchiveAction|null $Archive
  * @property DeliverToMailboxAction|null $DeliverToMailbox
+ * @property DeliverToQBusinessAction|null $DeliverToQBusiness
  * @property DropAction|null $Drop
  * @property RelayAction|null $Relay
  * @property ReplaceRecipientAction|null $ReplaceRecipient
@@ -21,6 +22,7 @@ class RuleAction extends Shape
      *     AddHeader?: AddHeaderAction|null,
      *     Archive?: ArchiveAction|null,
      *     DeliverToMailbox?: DeliverToMailboxAction|null,
+     *     DeliverToQBusiness?: DeliverToQBusinessAction|null,
      *     Drop?: DropAction|null,
      *     Relay?: RelayAction|null,
      *     ReplaceRecipient?: ReplaceRecipientAction|null,

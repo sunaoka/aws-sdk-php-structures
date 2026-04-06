@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LastUpdatedTime
  * @property list<Tag>|null $Tags
  * @property VerifiedAccessSseSpecificationResponse|null $SseSpecification
+ * @property NativeApplicationOidcOptions|null $NativeApplicationOidcOptions
  */
 class VerifiedAccessTrustProvider extends Shape
 {
@@ -33,7 +34,8 @@ class VerifiedAccessTrustProvider extends Shape
      *     CreationTime?: string|null,
      *     LastUpdatedTime?: string|null,
      *     Tags?: list<Tag>|null,
-     *     SseSpecification?: VerifiedAccessSseSpecificationResponse|null
+     *     SseSpecification?: VerifiedAccessSseSpecificationResponse|null,
+     *     NativeApplicationOidcOptions?: NativeApplicationOidcOptions|null
      * } $args
      */
     public function __construct(array $args = [])

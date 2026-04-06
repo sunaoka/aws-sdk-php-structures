@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Volume>|null $Volumes
  * @property list<Container>|null $Containers
  * @property string|null $Group
+ * @property string|null $LaunchType
  */
 class EcsTaskDetails extends Shape
 {
@@ -29,7 +30,8 @@ class EcsTaskDetails extends Shape
      *     Tags?: list<Tag>|null,
      *     Volumes?: list<Volume>|null,
      *     Containers?: list<Container>|null,
-     *     Group?: string|null
+     *     Group?: string|null,
+     *     LaunchType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

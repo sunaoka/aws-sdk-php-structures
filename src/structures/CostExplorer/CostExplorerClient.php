@@ -15,6 +15,7 @@ class CostExplorerClient extends \Aws\CostExplorer\CostExplorerClient
     use GetAnomalyMonitors\GetAnomalyMonitorsTrait;
     use GetAnomalySubscriptions\GetAnomalySubscriptionsTrait;
     use GetApproximateUsageRecords\GetApproximateUsageRecordsTrait;
+    use GetCommitmentPurchaseAnalysis\GetCommitmentPurchaseAnalysisTrait;
     use GetCostAndUsage\GetCostAndUsageTrait;
     use GetCostAndUsageWithResources\GetCostAndUsageWithResourcesTrait;
     use GetCostCategories\GetCostCategoriesTrait;
@@ -31,12 +32,14 @@ class CostExplorerClient extends \Aws\CostExplorer\CostExplorerClient
     use GetSavingsPlansUtilizationDetails\GetSavingsPlansUtilizationDetailsTrait;
     use GetTags\GetTagsTrait;
     use GetUsageForecast\GetUsageForecastTrait;
+    use ListCommitmentPurchaseAnalyses\ListCommitmentPurchaseAnalysesTrait;
     use ListCostAllocationTagBackfillHistory\ListCostAllocationTagBackfillHistoryTrait;
     use ListCostAllocationTags\ListCostAllocationTagsTrait;
     use ListCostCategoryDefinitions\ListCostCategoryDefinitionsTrait;
     use ListSavingsPlansPurchaseRecommendationGeneration\ListSavingsPlansPurchaseRecommendationGenerationTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ProvideAnomalyFeedback\ProvideAnomalyFeedbackTrait;
+    use StartCommitmentPurchaseAnalysis\StartCommitmentPurchaseAnalysisTrait;
     use StartCostAllocationTagBackfill\StartCostAllocationTagBackfillTrait;
     use StartSavingsPlansPurchaseRecommendationGeneration\StartSavingsPlansPurchaseRecommendationGenerationTrait;
     use TagResource\TagResourceTrait;

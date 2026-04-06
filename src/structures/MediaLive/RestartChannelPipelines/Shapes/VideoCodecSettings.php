@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property H264Settings|null $H264Settings
  * @property H265Settings|null $H265Settings
  * @property Mpeg2Settings|null $Mpeg2Settings
+ * @property Av1Settings|null $Av1Settings
  */
 class VideoCodecSettings extends Shape
 {
@@ -17,7 +18,8 @@ class VideoCodecSettings extends Shape
      *     FrameCaptureSettings?: FrameCaptureSettings|null,
      *     H264Settings?: H264Settings|null,
      *     H265Settings?: H265Settings|null,
-     *     Mpeg2Settings?: Mpeg2Settings|null
+     *     Mpeg2Settings?: Mpeg2Settings|null,
+     *     Av1Settings?: Av1Settings|null
      * } $args
      */
     public function __construct(array $args = [])

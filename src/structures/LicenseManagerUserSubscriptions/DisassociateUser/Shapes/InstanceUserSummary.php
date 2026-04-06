@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Domain
  * @property IdentityProvider $IdentityProvider
  * @property string $InstanceId
+ * @property string|null $InstanceUserArn
  * @property string $Status
  * @property string|null $StatusMessage
  * @property string $Username
@@ -23,6 +24,7 @@ class InstanceUserSummary extends Shape
      *     Domain?: string|null,
      *     IdentityProvider: IdentityProvider,
      *     InstanceId: string,
+     *     InstanceUserArn?: string|null,
      *     Status: string,
      *     StatusMessage?: string|null,
      *     Username: string

@@ -29,6 +29,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FirewallSubnetMissingVPCEndpointViolation|null $FirewallSubnetMissingVPCEndpointViolation
  * @property InvalidNetworkAclEntriesViolation|null $InvalidNetworkAclEntriesViolation
  * @property PossibleRemediationActions|null $PossibleRemediationActions
+ * @property WebACLHasIncompatibleConfigurationViolation|null $WebACLHasIncompatibleConfigurationViolation
+ * @property WebACLHasOutOfScopeResourcesViolation|null $WebACLHasOutOfScopeResourcesViolation
  */
 class ResourceViolation extends Shape
 {
@@ -57,7 +59,9 @@ class ResourceViolation extends Shape
      *     ThirdPartyFirewallMissingExpectedRouteTableViolation?: ThirdPartyFirewallMissingExpectedRouteTableViolation|null,
      *     FirewallSubnetMissingVPCEndpointViolation?: FirewallSubnetMissingVPCEndpointViolation|null,
      *     InvalidNetworkAclEntriesViolation?: InvalidNetworkAclEntriesViolation|null,
-     *     PossibleRemediationActions?: PossibleRemediationActions|null
+     *     PossibleRemediationActions?: PossibleRemediationActions|null,
+     *     WebACLHasIncompatibleConfigurationViolation?: WebACLHasIncompatibleConfigurationViolation|null,
+     *     WebACLHasOutOfScopeResourcesViolation?: WebACLHasOutOfScopeResourcesViolation|null
      * } $args
      */
     public function __construct(array $args = [])

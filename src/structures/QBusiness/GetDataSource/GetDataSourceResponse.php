@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $roleArn
  * @property Shapes\ErrorDetail|null $error
  * @property Shapes\DocumentEnrichmentConfiguration|null $documentEnrichmentConfiguration
+ * @property Shapes\MediaExtractionConfiguration|null $mediaExtractionConfiguration
  */
 class GetDataSourceResponse extends Response
 {

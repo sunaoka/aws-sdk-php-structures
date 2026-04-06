@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<MetricTransformation>|null $metricTransformations
  * @property int<0, max>|null $creationTime
  * @property string|null $logGroupName
+ * @property bool|null $applyOnTransformedLogs
  */
 class MetricFilter extends Shape
 {
@@ -19,7 +20,8 @@ class MetricFilter extends Shape
      *     filterPattern?: string|null,
      *     metricTransformations?: list<MetricTransformation>|null,
      *     creationTime?: int<0, max>|null,
-     *     logGroupName?: string|null
+     *     logGroupName?: string|null,
+     *     applyOnTransformedLogs?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

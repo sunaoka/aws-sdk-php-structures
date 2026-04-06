@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property QQueryCardInput|null $qQuery
  * @property QPluginCardInput|null $qPlugin
  * @property FileUploadCardInput|null $fileUpload
+ * @property FormInputCardInput|null $formInput
  */
 class CardInput extends Shape
 {
@@ -17,7 +18,8 @@ class CardInput extends Shape
      *     textInput?: TextInputCardInput|null,
      *     qQuery?: QQueryCardInput|null,
      *     qPlugin?: QPluginCardInput|null,
-     *     fileUpload?: FileUploadCardInput|null
+     *     fileUpload?: FileUploadCardInput|null,
+     *     formInput?: FormInputCardInput|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property bool|null $DryRun
  * @property string|null $ClientToken
+ * @property string|null $CidrEndpointsCustomSubDomain
  */
 class ModifyVerifiedAccessInstanceRequest extends Request
 {
@@ -17,7 +18,8 @@ class ModifyVerifiedAccessInstanceRequest extends Request
      *     VerifiedAccessInstanceId: string,
      *     Description?: string|null,
      *     DryRun?: bool|null,
-     *     ClientToken?: string|null
+     *     ClientToken?: string|null,
+     *     CidrEndpointsCustomSubDomain?: string|null
      * } $args
      */
     public function __construct(array $args)

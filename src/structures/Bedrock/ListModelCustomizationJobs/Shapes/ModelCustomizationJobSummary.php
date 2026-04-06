@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $endTime
  * @property string|null $customModelArn
  * @property string|null $customModelName
- * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|null $customizationType
+ * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|null $customizationType
  */
 class ModelCustomizationJobSummary extends Shape
 {
@@ -29,7 +29,7 @@ class ModelCustomizationJobSummary extends Shape
      *     endTime?: \Aws\Api\DateTimeResult|null,
      *     customModelArn?: string|null,
      *     customModelName?: string|null,
-     *     customizationType?: 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|null
+     *     customizationType?: 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|null
      * } $args
      */
     public function __construct(array $args)

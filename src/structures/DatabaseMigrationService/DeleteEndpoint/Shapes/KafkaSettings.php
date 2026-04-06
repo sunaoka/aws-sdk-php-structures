@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $NoHexPrefix
  * @property 'scram-sha-512'|'plain'|null $SaslMechanism
  * @property 'none'|'https'|null $SslEndpointIdentificationAlgorithm
+ * @property bool|null $UseLargeIntegerValue
  */
 class KafkaSettings extends Shape
 {
@@ -49,7 +50,8 @@ class KafkaSettings extends Shape
      *     SaslPassword?: string|null,
      *     NoHexPrefix?: bool|null,
      *     SaslMechanism?: 'scram-sha-512'|'plain'|null,
-     *     SslEndpointIdentificationAlgorithm?: 'none'|'https'|null
+     *     SslEndpointIdentificationAlgorithm?: 'none'|'https'|null,
+     *     UseLargeIntegerValue?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

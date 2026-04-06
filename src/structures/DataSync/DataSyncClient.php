@@ -57,9 +57,15 @@ class DataSyncClient extends \Aws\DataSync\DataSyncClient
     use UpdateAgent\UpdateAgentTrait;
     use UpdateDiscoveryJob\UpdateDiscoveryJobTrait;
     use UpdateLocationAzureBlob\UpdateLocationAzureBlobTrait;
+    use UpdateLocationEfs\UpdateLocationEfsTrait;
+    use UpdateLocationFsxLustre\UpdateLocationFsxLustreTrait;
+    use UpdateLocationFsxOntap\UpdateLocationFsxOntapTrait;
+    use UpdateLocationFsxOpenZfs\UpdateLocationFsxOpenZfsTrait;
+    use UpdateLocationFsxWindows\UpdateLocationFsxWindowsTrait;
     use UpdateLocationHdfs\UpdateLocationHdfsTrait;
     use UpdateLocationNfs\UpdateLocationNfsTrait;
     use UpdateLocationObjectStorage\UpdateLocationObjectStorageTrait;
+    use UpdateLocationS3\UpdateLocationS3Trait;
     use UpdateLocationSmb\UpdateLocationSmbTrait;
     use UpdateStorageSystem\UpdateStorageSystemTrait;
     use UpdateTask\UpdateTaskTrait;

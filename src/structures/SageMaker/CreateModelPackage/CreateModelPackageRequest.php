@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $SourceUri
  * @property Shapes\ModelPackageSecurityConfig|null $SecurityConfig
  * @property Shapes\ModelPackageModelCard|null $ModelCard
+ * @property Shapes\ModelLifeCycle|null $ModelLifeCycle
  */
 class CreateModelPackageRequest extends Request
 {
@@ -53,7 +54,8 @@ class CreateModelPackageRequest extends Request
      *     SkipModelValidation?: 'All'|'None'|null,
      *     SourceUri?: string|null,
      *     SecurityConfig?: Shapes\ModelPackageSecurityConfig|null,
-     *     ModelCard?: Shapes\ModelPackageModelCard|null
+     *     ModelCard?: Shapes\ModelPackageModelCard|null,
+     *     ModelLifeCycle?: Shapes\ModelLifeCycle|null
      * } $args
      */
     public function __construct(array $args = [])

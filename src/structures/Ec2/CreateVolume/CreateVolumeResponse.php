@@ -5,16 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateVolume;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\VolumeAttachment>|null $Attachments
- * @property string|null $AvailabilityZone
- * @property \Aws\Api\DateTimeResult|null $CreateTime
- * @property bool|null $Encrypted
- * @property string|null $KmsKeyId
  * @property string|null $OutpostArn
- * @property int|null $Size
- * @property string|null $SnapshotId
- * @property 'creating'|'available'|'in-use'|'deleting'|'deleted'|'error'|null $State
- * @property string|null $VolumeId
  * @property int|null $Iops
  * @property list<Shapes\Tag>|null $Tags
  * @property 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null $VolumeType
@@ -22,6 +13,16 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool|null $MultiAttachEnabled
  * @property int|null $Throughput
  * @property 'sse-ebs'|'sse-kms'|'none'|null $SseType
+ * @property Shapes\OperatorResponse|null $Operator
+ * @property string|null $VolumeId
+ * @property int|null $Size
+ * @property string|null $SnapshotId
+ * @property string|null $AvailabilityZone
+ * @property 'creating'|'available'|'in-use'|'deleting'|'deleted'|'error'|null $State
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
+ * @property list<Shapes\VolumeAttachment>|null $Attachments
+ * @property bool|null $Encrypted
+ * @property string|null $KmsKeyId
  */
 class CreateVolumeResponse extends Response
 {

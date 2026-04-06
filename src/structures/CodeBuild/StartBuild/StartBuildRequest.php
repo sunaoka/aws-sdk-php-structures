@@ -21,9 +21,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $insecureSslOverride
  * @property bool|null $reportBuildStatusOverride
  * @property Shapes\BuildStatusConfig|null $buildStatusConfigOverride
- * @property 'WINDOWS_CONTAINER'|'LINUX_CONTAINER'|'LINUX_GPU_CONTAINER'|'ARM_CONTAINER'|'WINDOWS_SERVER_2019_CONTAINER'|'LINUX_LAMBDA_CONTAINER'|'ARM_LAMBDA_CONTAINER'|null $environmentTypeOverride
+ * @property 'WINDOWS_CONTAINER'|'LINUX_CONTAINER'|'LINUX_GPU_CONTAINER'|'ARM_CONTAINER'|'WINDOWS_SERVER_2019_CONTAINER'|'LINUX_LAMBDA_CONTAINER'|'ARM_LAMBDA_CONTAINER'|'LINUX_EC2'|'ARM_EC2'|'WINDOWS_EC2'|'MAC_ARM'|null $environmentTypeOverride
  * @property string|null $imageOverride
- * @property 'BUILD_GENERAL1_SMALL'|'BUILD_GENERAL1_MEDIUM'|'BUILD_GENERAL1_LARGE'|'BUILD_GENERAL1_XLARGE'|'BUILD_GENERAL1_2XLARGE'|'BUILD_LAMBDA_1GB'|'BUILD_LAMBDA_2GB'|'BUILD_LAMBDA_4GB'|'BUILD_LAMBDA_8GB'|'BUILD_LAMBDA_10GB'|null $computeTypeOverride
+ * @property 'BUILD_GENERAL1_SMALL'|'BUILD_GENERAL1_MEDIUM'|'BUILD_GENERAL1_LARGE'|'BUILD_GENERAL1_XLARGE'|'BUILD_GENERAL1_2XLARGE'|'BUILD_LAMBDA_1GB'|'BUILD_LAMBDA_2GB'|'BUILD_LAMBDA_4GB'|'BUILD_LAMBDA_8GB'|'BUILD_LAMBDA_10GB'|'ATTRIBUTE_BASED_COMPUTE'|null $computeTypeOverride
  * @property string|null $certificateOverride
  * @property Shapes\ProjectCache|null $cacheOverride
  * @property string|null $serviceRoleOverride
@@ -37,6 +37,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CODEBUILD'|'SERVICE_ROLE'|null $imagePullCredentialsTypeOverride
  * @property bool|null $debugSessionEnabled
  * @property Shapes\ProjectFleet|null $fleetOverride
+ * @property int|null $autoRetryLimitOverride
  */
 class StartBuildRequest extends Request
 {
@@ -58,9 +59,9 @@ class StartBuildRequest extends Request
      *     insecureSslOverride?: bool|null,
      *     reportBuildStatusOverride?: bool|null,
      *     buildStatusConfigOverride?: Shapes\BuildStatusConfig|null,
-     *     environmentTypeOverride?: 'WINDOWS_CONTAINER'|'LINUX_CONTAINER'|'LINUX_GPU_CONTAINER'|'ARM_CONTAINER'|'WINDOWS_SERVER_2019_CONTAINER'|'LINUX_LAMBDA_CONTAINER'|'ARM_LAMBDA_CONTAINER'|null,
+     *     environmentTypeOverride?: 'WINDOWS_CONTAINER'|'LINUX_CONTAINER'|'LINUX_GPU_CONTAINER'|'ARM_CONTAINER'|'WINDOWS_SERVER_2019_CONTAINER'|'LINUX_LAMBDA_CONTAINER'|'ARM_LAMBDA_CONTAINER'|'LINUX_EC2'|'ARM_EC2'|'WINDOWS_EC2'|'MAC_ARM'|null,
      *     imageOverride?: string|null,
-     *     computeTypeOverride?: 'BUILD_GENERAL1_SMALL'|'BUILD_GENERAL1_MEDIUM'|'BUILD_GENERAL1_LARGE'|'BUILD_GENERAL1_XLARGE'|'BUILD_GENERAL1_2XLARGE'|'BUILD_LAMBDA_1GB'|'BUILD_LAMBDA_2GB'|'BUILD_LAMBDA_4GB'|'BUILD_LAMBDA_8GB'|'BUILD_LAMBDA_10GB'|null,
+     *     computeTypeOverride?: 'BUILD_GENERAL1_SMALL'|'BUILD_GENERAL1_MEDIUM'|'BUILD_GENERAL1_LARGE'|'BUILD_GENERAL1_XLARGE'|'BUILD_GENERAL1_2XLARGE'|'BUILD_LAMBDA_1GB'|'BUILD_LAMBDA_2GB'|'BUILD_LAMBDA_4GB'|'BUILD_LAMBDA_8GB'|'BUILD_LAMBDA_10GB'|'ATTRIBUTE_BASED_COMPUTE'|null,
      *     certificateOverride?: string|null,
      *     cacheOverride?: Shapes\ProjectCache|null,
      *     serviceRoleOverride?: string|null,
@@ -73,7 +74,8 @@ class StartBuildRequest extends Request
      *     registryCredentialOverride?: Shapes\RegistryCredential|null,
      *     imagePullCredentialsTypeOverride?: 'CODEBUILD'|'SERVICE_ROLE'|null,
      *     debugSessionEnabled?: bool|null,
-     *     fleetOverride?: Shapes\ProjectFleet|null
+     *     fleetOverride?: Shapes\ProjectFleet|null,
+     *     autoRetryLimitOverride?: int|null
      * } $args
      */
     public function __construct(array $args)

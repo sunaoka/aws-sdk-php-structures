@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $arn
  * @property string|null $name
  * @property string|null $description
- * @property 'Windows'|'Linux'|null $platform
+ * @property 'Windows'|'Linux'|'macOS'|null $platform
  * @property bool|null $enhancedImageMetadataEnabled
  * @property string|null $imageRecipeArn
  * @property string|null $containerRecipeArn
@@ -33,7 +33,7 @@ class ImagePipeline extends Shape
      *     arn?: string|null,
      *     name?: string|null,
      *     description?: string|null,
-     *     platform?: 'Windows'|'Linux'|null,
+     *     platform?: 'Windows'|'Linux'|'macOS'|null,
      *     enhancedImageMetadataEnabled?: bool|null,
      *     imageRecipeArn?: string|null,
      *     containerRecipeArn?: string|null,

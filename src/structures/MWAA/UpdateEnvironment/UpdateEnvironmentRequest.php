@@ -25,8 +25,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'PRIVATE_ONLY'|'PUBLIC_ONLY'|null $WebserverAccessMode
  * @property int<1, max>|null $MinWorkers
  * @property int<min, 5>|null $Schedulers
- * @property int<2, max>|null $MinWebservers
- * @property int<2, max>|null $MaxWebservers
+ * @property int<1, max>|null $MinWebservers
+ * @property int<1, max>|null $MaxWebservers
  */
 class UpdateEnvironmentRequest extends Request
 {
@@ -52,8 +52,8 @@ class UpdateEnvironmentRequest extends Request
      *     WebserverAccessMode?: 'PRIVATE_ONLY'|'PUBLIC_ONLY'|null,
      *     MinWorkers?: int<1, max>|null,
      *     Schedulers?: int<min, 5>|null,
-     *     MinWebservers?: int<2, max>|null,
-     *     MaxWebservers?: int<2, max>|null
+     *     MinWebservers?: int<1, max>|null,
+     *     MaxWebservers?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args)

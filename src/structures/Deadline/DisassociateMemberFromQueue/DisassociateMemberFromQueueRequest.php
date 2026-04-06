@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $farmId
- * @property string $principalId
  * @property string $queueId
+ * @property string $principalId
  */
 class DisassociateMemberFromQueueRequest extends Request
 {
     /**
      * @param array{
      *     farmId: string,
-     *     principalId: string,
-     *     queueId: string
+     *     queueId: string,
+     *     principalId: string
      * } $args
      */
     public function __construct(array $args)

@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property Shapes\PipeLogConfiguration|null $LogConfiguration
+ * @property string|null $KmsKeyIdentifier
  */
 class DescribePipeResponse extends Response
 {

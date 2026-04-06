@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\BulkEmailContent $DefaultContent
  * @property list<Shapes\BulkEmailEntry> $BulkEmailEntries
  * @property string|null $ConfigurationSetName
+ * @property string|null $EndpointId
  */
 class SendBulkEmailRequest extends Request
 {
@@ -27,7 +28,8 @@ class SendBulkEmailRequest extends Request
      *     DefaultEmailTags?: list<Shapes\MessageTag>|null,
      *     DefaultContent: Shapes\BulkEmailContent,
      *     BulkEmailEntries: list<Shapes\BulkEmailEntry>,
-     *     ConfigurationSetName?: string|null
+     *     ConfigurationSetName?: string|null,
+     *     EndpointId?: string|null
      * } $args
      */
     public function __construct(array $args)

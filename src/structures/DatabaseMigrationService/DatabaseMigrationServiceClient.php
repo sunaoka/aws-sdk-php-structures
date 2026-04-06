@@ -8,6 +8,7 @@ class DatabaseMigrationServiceClient extends \Aws\DatabaseMigrationService\Datab
     use ApplyPendingMaintenanceAction\ApplyPendingMaintenanceActionTrait;
     use BatchStartRecommendations\BatchStartRecommendationsTrait;
     use CancelReplicationTaskAssessmentRun\CancelReplicationTaskAssessmentRunTrait;
+    use CreateDataMigration\CreateDataMigrationTrait;
     use CreateDataProvider\CreateDataProviderTrait;
     use CreateEndpoint\CreateEndpointTrait;
     use CreateEventSubscription\CreateEventSubscriptionTrait;
@@ -20,6 +21,7 @@ class DatabaseMigrationServiceClient extends \Aws\DatabaseMigrationService\Datab
     use CreateReplicationTask\CreateReplicationTaskTrait;
     use DeleteCertificate\DeleteCertificateTrait;
     use DeleteConnection\DeleteConnectionTrait;
+    use DeleteDataMigration\DeleteDataMigrationTrait;
     use DeleteDataProvider\DeleteDataProviderTrait;
     use DeleteEndpoint\DeleteEndpointTrait;
     use DeleteEventSubscription\DeleteEventSubscriptionTrait;
@@ -37,6 +39,7 @@ class DatabaseMigrationServiceClient extends \Aws\DatabaseMigrationService\Datab
     use DescribeCertificates\DescribeCertificatesTrait;
     use DescribeConnections\DescribeConnectionsTrait;
     use DescribeConversionConfiguration\DescribeConversionConfigurationTrait;
+    use DescribeDataMigrations\DescribeDataMigrationsTrait;
     use DescribeDataProviders\DescribeDataProvidersTrait;
     use DescribeEndpointSettings\DescribeEndpointSettingsTrait;
     use DescribeEndpointTypes\DescribeEndpointTypesTrait;
@@ -79,6 +82,7 @@ class DatabaseMigrationServiceClient extends \Aws\DatabaseMigrationService\Datab
     use ImportCertificate\ImportCertificateTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ModifyConversionConfiguration\ModifyConversionConfigurationTrait;
+    use ModifyDataMigration\ModifyDataMigrationTrait;
     use ModifyDataProvider\ModifyDataProviderTrait;
     use ModifyEndpoint\ModifyEndpointTrait;
     use ModifyEventSubscription\ModifyEventSubscriptionTrait;
@@ -95,6 +99,7 @@ class DatabaseMigrationServiceClient extends \Aws\DatabaseMigrationService\Datab
     use ReloadTables\ReloadTablesTrait;
     use RemoveTagsFromResource\RemoveTagsFromResourceTrait;
     use RunFleetAdvisorLsaAnalysis\RunFleetAdvisorLsaAnalysisTrait;
+    use StartDataMigration\StartDataMigrationTrait;
     use StartExtensionPackAssociation\StartExtensionPackAssociationTrait;
     use StartMetadataModelAssessment\StartMetadataModelAssessmentTrait;
     use StartMetadataModelConversion\StartMetadataModelConversionTrait;
@@ -106,6 +111,7 @@ class DatabaseMigrationServiceClient extends \Aws\DatabaseMigrationService\Datab
     use StartReplicationTask\StartReplicationTaskTrait;
     use StartReplicationTaskAssessment\StartReplicationTaskAssessmentTrait;
     use StartReplicationTaskAssessmentRun\StartReplicationTaskAssessmentRunTrait;
+    use StopDataMigration\StopDataMigrationTrait;
     use StopReplication\StopReplicationTrait;
     use StopReplicationTask\StopReplicationTaskTrait;
     use TestConnection\TestConnectionTrait;

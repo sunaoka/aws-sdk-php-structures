@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $InstanceRefreshId
  * @property string|null $AutoScalingGroupName
- * @property 'Pending'|'InProgress'|'Successful'|'Failed'|'Cancelling'|'Cancelled'|'RollbackInProgress'|'RollbackFailed'|'RollbackSuccessful'|null $Status
+ * @property 'Pending'|'InProgress'|'Successful'|'Failed'|'Cancelling'|'Cancelled'|'RollbackInProgress'|'RollbackFailed'|'RollbackSuccessful'|'Baking'|null $Status
  * @property string|null $StatusReason
  * @property \Aws\Api\DateTimeResult|null $StartTime
  * @property \Aws\Api\DateTimeResult|null $EndTime
@@ -24,7 +24,7 @@ class InstanceRefresh extends Shape
      * @param array{
      *     InstanceRefreshId?: string|null,
      *     AutoScalingGroupName?: string|null,
-     *     Status?: 'Pending'|'InProgress'|'Successful'|'Failed'|'Cancelling'|'Cancelled'|'RollbackInProgress'|'RollbackFailed'|'RollbackSuccessful'|null,
+     *     Status?: 'Pending'|'InProgress'|'Successful'|'Failed'|'Cancelling'|'Cancelled'|'RollbackInProgress'|'RollbackFailed'|'RollbackSuccessful'|'Baking'|null,
      *     StatusReason?: string|null,
      *     StartTime?: \Aws\Api\DateTimeResult|null,
      *     EndTime?: \Aws\Api\DateTimeResult|null,

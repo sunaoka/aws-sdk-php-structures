@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $domainExecutionRole
  * @property string $identifier
  * @property string|null $name
+ * @property string|null $serviceRole
  * @property Shapes\SingleSignOn|null $singleSignOn
  */
 class UpdateDomainRequest extends Request
@@ -21,6 +22,7 @@ class UpdateDomainRequest extends Request
      *     domainExecutionRole?: string|null,
      *     identifier: string,
      *     name?: string|null,
+     *     serviceRole?: string|null,
      *     singleSignOn?: Shapes\SingleSignOn|null
      * } $args
      */

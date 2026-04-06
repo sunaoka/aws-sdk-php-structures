@@ -69,6 +69,7 @@ class S3ControlClient extends \Aws\S3Control\S3ControlClient
     use ListAccessGrantsLocations\ListAccessGrantsLocationsTrait;
     use ListAccessPoints\ListAccessPointsTrait;
     use ListAccessPointsForObjectLambda\ListAccessPointsForObjectLambdaTrait;
+    use ListCallerAccessGrants\ListCallerAccessGrantsTrait;
     use ListJobs\ListJobsTrait;
     use ListMultiRegionAccessPoints\ListMultiRegionAccessPointsTrait;
     use ListRegionalBuckets\ListRegionalBucketsTrait;

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $RoleArn
  * @property list<Shapes\InputSourceRequest>|null $Sources
  * @property Shapes\SrtSettingsRequest|null $SrtSettings
+ * @property Shapes\MulticastSettingsUpdateRequest|null $MulticastSettings
  */
 class UpdateInputRequest extends Request
 {
@@ -27,7 +28,8 @@ class UpdateInputRequest extends Request
      *     Name?: string|null,
      *     RoleArn?: string|null,
      *     Sources?: list<Shapes\InputSourceRequest>|null,
-     *     SrtSettings?: Shapes\SrtSettingsRequest|null
+     *     SrtSettings?: Shapes\SrtSettingsRequest|null,
+     *     MulticastSettings?: Shapes\MulticastSettingsUpdateRequest|null
      * } $args
      */
     public function __construct(array $args)

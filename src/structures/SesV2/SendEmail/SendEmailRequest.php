@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\EmailContent $Content
  * @property list<Shapes\MessageTag>|null $EmailTags
  * @property string|null $ConfigurationSetName
+ * @property string|null $EndpointId
  * @property Shapes\ListManagementOptions|null $ListManagementOptions
  */
 class SendEmailRequest extends Request
@@ -29,6 +30,7 @@ class SendEmailRequest extends Request
      *     Content: Shapes\EmailContent,
      *     EmailTags?: list<Shapes\MessageTag>|null,
      *     ConfigurationSetName?: string|null,
+     *     EndpointId?: string|null,
      *     ListManagementOptions?: Shapes\ListManagementOptions|null
      * } $args
      */

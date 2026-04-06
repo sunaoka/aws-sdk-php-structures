@@ -28,8 +28,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, max>|null $MinWorkers
  * @property int<min, 5>|null $Schedulers
  * @property 'CUSTOMER'|'SERVICE'|null $EndpointManagement
- * @property int<2, max>|null $MinWebservers
- * @property int<2, max>|null $MaxWebservers
+ * @property int<1, max>|null $MinWebservers
+ * @property int<1, max>|null $MaxWebservers
  */
 class CreateEnvironmentRequest extends Request
 {
@@ -58,8 +58,8 @@ class CreateEnvironmentRequest extends Request
      *     MinWorkers?: int<1, max>|null,
      *     Schedulers?: int<min, 5>|null,
      *     EndpointManagement?: 'CUSTOMER'|'SERVICE'|null,
-     *     MinWebservers?: int<2, max>|null,
-     *     MaxWebservers?: int<2, max>|null
+     *     MinWebservers?: int<1, max>|null,
+     *     MaxWebservers?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args)

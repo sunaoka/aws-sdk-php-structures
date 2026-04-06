@@ -46,6 +46,7 @@ class BackupClient extends \Aws\Backup\BackupClient
     use GetBackupVaultAccessPolicy\GetBackupVaultAccessPolicyTrait;
     use GetBackupVaultNotifications\GetBackupVaultNotificationsTrait;
     use GetLegalHold\GetLegalHoldTrait;
+    use GetRecoveryPointIndexDetails\GetRecoveryPointIndexDetailsTrait;
     use GetRecoveryPointRestoreMetadata\GetRecoveryPointRestoreMetadataTrait;
     use GetRestoreJobMetadata\GetRestoreJobMetadataTrait;
     use GetRestoreTestingInferredMetadata\GetRestoreTestingInferredMetadataTrait;
@@ -62,6 +63,7 @@ class BackupClient extends \Aws\Backup\BackupClient
     use ListCopyJobSummaries\ListCopyJobSummariesTrait;
     use ListCopyJobs\ListCopyJobsTrait;
     use ListFrameworks\ListFrameworksTrait;
+    use ListIndexedRecoveryPoints\ListIndexedRecoveryPointsTrait;
     use ListLegalHolds\ListLegalHoldsTrait;
     use ListProtectedResources\ListProtectedResourcesTrait;
     use ListProtectedResourcesByBackupVault\ListProtectedResourcesByBackupVaultTrait;
@@ -90,6 +92,7 @@ class BackupClient extends \Aws\Backup\BackupClient
     use UpdateBackupPlan\UpdateBackupPlanTrait;
     use UpdateFramework\UpdateFrameworkTrait;
     use UpdateGlobalSettings\UpdateGlobalSettingsTrait;
+    use UpdateRecoveryPointIndexSettings\UpdateRecoveryPointIndexSettingsTrait;
     use UpdateRecoveryPointLifecycle\UpdateRecoveryPointLifecycleTrait;
     use UpdateRegionSettings\UpdateRegionSettingsTrait;
     use UpdateReportPlan\UpdateReportPlanTrait;

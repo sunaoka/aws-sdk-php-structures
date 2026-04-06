@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property ConversationHistory|null $conversationHistory
  * @property list<InputFile>|null $files
  * @property string|null $invocationId
  * @property list<KnowledgeBaseConfiguration>|null $knowledgeBaseConfigurations
@@ -16,6 +17,7 @@ class SessionState extends Shape
 {
     /**
      * @param array{
+     *     conversationHistory?: ConversationHistory|null,
      *     files?: list<InputFile>|null,
      *     invocationId?: string|null,
      *     knowledgeBaseConfigurations?: list<KnowledgeBaseConfiguration>|null,

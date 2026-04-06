@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DiskIopsConfiguration|null $DiskIopsConfiguration
  * @property list<string>|null $AddRouteTableIds
  * @property list<string>|null $RemoveRouteTableIds
+ * @property OpenZFSReadCacheConfiguration|null $ReadCacheConfiguration
  */
 class UpdateFileSystemOpenZFSConfiguration extends Shape
 {
@@ -27,7 +28,8 @@ class UpdateFileSystemOpenZFSConfiguration extends Shape
      *     WeeklyMaintenanceStartTime?: string|null,
      *     DiskIopsConfiguration?: DiskIopsConfiguration|null,
      *     AddRouteTableIds?: list<string>|null,
-     *     RemoveRouteTableIds?: list<string>|null
+     *     RemoveRouteTableIds?: list<string>|null,
+     *     ReadCacheConfiguration?: OpenZFSReadCacheConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

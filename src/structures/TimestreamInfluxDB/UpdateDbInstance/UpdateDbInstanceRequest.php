@@ -8,6 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $identifier
  * @property Shapes\LogDeliveryConfiguration|null $logDeliveryConfiguration
  * @property string|null $dbParameterGroupIdentifier
+ * @property int<1024, 65535>|null $port
+ * @property 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|null $dbInstanceType
+ * @property 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|null $deploymentType
  */
 class UpdateDbInstanceRequest extends Request
 {
@@ -15,7 +18,10 @@ class UpdateDbInstanceRequest extends Request
      * @param array{
      *     identifier: string,
      *     logDeliveryConfiguration?: Shapes\LogDeliveryConfiguration|null,
-     *     dbParameterGroupIdentifier?: string|null
+     *     dbParameterGroupIdentifier?: string|null,
+     *     port?: int<1024, 65535>|null,
+     *     dbInstanceType?: 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|null,
+     *     deploymentType?: 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|null
      * } $args
      */
     public function __construct(array $args)

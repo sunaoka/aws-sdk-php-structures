@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Terminate'|'Ignore'|'Wait'|null $StandbyInstances
  * @property AlarmSpecification|null $AlarmSpecification
  * @property int<100, 200>|null $MaxHealthyPercentage
+ * @property int<0, 172800>|null $BakeTime
  */
 class RefreshPreferences extends Shape
 {
@@ -29,7 +30,8 @@ class RefreshPreferences extends Shape
      *     ScaleInProtectedInstances?: 'Refresh'|'Ignore'|'Wait'|null,
      *     StandbyInstances?: 'Terminate'|'Ignore'|'Wait'|null,
      *     AlarmSpecification?: AlarmSpecification|null,
-     *     MaxHealthyPercentage?: int<100, 200>|null
+     *     MaxHealthyPercentage?: int<100, 200>|null,
+     *     BakeTime?: int<0, 172800>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ipAddressType
  * @property int|null $maxCapacity
  * @property int|null $port
+ * @property Shapes\PerformanceTarget|null $pricePerformanceTarget
  * @property bool|null $publiclyAccessible
  * @property list<string>|null $securityGroupIds
  * @property list<string>|null $subnetIds
@@ -26,6 +27,7 @@ class UpdateWorkgroupRequest extends Request
      *     ipAddressType?: string|null,
      *     maxCapacity?: int|null,
      *     port?: int|null,
+     *     pricePerformanceTarget?: Shapes\PerformanceTarget|null,
      *     publiclyAccessible?: bool|null,
      *     securityGroupIds?: list<string>|null,
      *     subnetIds?: list<string>|null,

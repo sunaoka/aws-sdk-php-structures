@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $appArn
  * @property 'Disabled'|'Daily'|null $assessmentSchedule
+ * @property string|null $awsApplicationArn
  * @property 'PolicyBreached'|'PolicyMet'|'NotAssessed'|'ChangesDetected'|'NotApplicable'|'MissingPolicy'|null $complianceStatus
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property string|null $description
@@ -30,6 +31,7 @@ class App extends Shape
      * @param array{
      *     appArn: string,
      *     assessmentSchedule?: 'Disabled'|'Daily'|null,
+     *     awsApplicationArn?: string|null,
      *     complianceStatus?: 'PolicyBreached'|'PolicyMet'|'NotAssessed'|'ChangesDetected'|'NotApplicable'|'MissingPolicy'|null,
      *     creationTime: \Aws\Api\DateTimeResult,
      *     description?: string|null,

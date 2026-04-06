@@ -21,6 +21,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DryRun
  * @property string|null $OutpostArn
  * @property string|null $PlacementGroupArn
+ * @property \Aws\Api\DateTimeResult|null $StartDate
+ * @property int<1, 200000000>|null $CommitmentDuration
+ * @property 'fixed'|'incremental'|null $DeliveryPreference
  */
 class CreateCapacityReservationRequest extends Request
 {
@@ -41,7 +44,10 @@ class CreateCapacityReservationRequest extends Request
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     DryRun?: bool|null,
      *     OutpostArn?: string|null,
-     *     PlacementGroupArn?: string|null
+     *     PlacementGroupArn?: string|null,
+     *     StartDate?: \Aws\Api\DateTimeResult|null,
+     *     CommitmentDuration?: int<1, 200000000>|null,
+     *     DeliveryPreference?: 'fixed'|'incremental'|null
      * } $args
      */
     public function __construct(array $args)

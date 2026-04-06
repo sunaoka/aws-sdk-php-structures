@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RetentionPeriod|null $retentionPeriod
  * @property 'ENABLED'|'DISABLED'|null $warmTier
  * @property Shapes\WarmTierRetentionPeriod|null $warmTierRetentionPeriod
+ * @property bool|null $disallowIngestNullNaN
  */
 class PutStorageConfigurationRequest extends Request
 {
@@ -21,7 +22,8 @@ class PutStorageConfigurationRequest extends Request
      *     disassociatedDataStorage?: 'ENABLED'|'DISABLED'|null,
      *     retentionPeriod?: Shapes\RetentionPeriod|null,
      *     warmTier?: 'ENABLED'|'DISABLED'|null,
-     *     warmTierRetentionPeriod?: Shapes\WarmTierRetentionPeriod|null
+     *     warmTierRetentionPeriod?: Shapes\WarmTierRetentionPeriod|null,
+     *     disallowIngestNullNaN?: bool|null
      * } $args
      */
     public function __construct(array $args)

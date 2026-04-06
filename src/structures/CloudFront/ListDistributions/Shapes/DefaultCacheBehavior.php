@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CachePolicyId
  * @property string|null $OriginRequestPolicyId
  * @property string|null $ResponseHeadersPolicyId
+ * @property GrpcConfig|null $GrpcConfig
  * @property ForwardedValues|null $ForwardedValues
  * @property int|null $MinTTL
  * @property int|null $DefaultTTL
@@ -42,6 +43,7 @@ class DefaultCacheBehavior extends Shape
      *     CachePolicyId?: string|null,
      *     OriginRequestPolicyId?: string|null,
      *     ResponseHeadersPolicyId?: string|null,
+     *     GrpcConfig?: GrpcConfig|null,
      *     ForwardedValues?: ForwardedValues|null,
      *     MinTTL?: int|null,
      *     DefaultTTL?: int|null,

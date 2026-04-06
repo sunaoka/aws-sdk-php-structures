@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Deadline\StartSessionsStatisticsAggregation\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string>|null $fleetIds
  * @property list<string>|null $queueIds
+ * @property list<string>|null $fleetIds
  */
 class SessionsStatisticsResources extends Shape
 {
     /**
      * @param array{
-     *     fleetIds?: list<string>|null,
-     *     queueIds?: list<string>|null
+     *     queueIds?: list<string>|null,
+     *     fleetIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

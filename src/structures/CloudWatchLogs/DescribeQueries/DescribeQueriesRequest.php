@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Scheduled'|'Running'|'Complete'|'Failed'|'Cancelled'|'Timeout'|'Unknown'|null $status
  * @property int<1, 1000>|null $maxResults
  * @property string|null $nextToken
+ * @property 'CWLI'|'SQL'|'PPL'|null $queryLanguage
  */
 class DescribeQueriesRequest extends Request
 {
@@ -17,7 +18,8 @@ class DescribeQueriesRequest extends Request
      *     logGroupName?: string|null,
      *     status?: 'Scheduled'|'Running'|'Complete'|'Failed'|'Cancelled'|'Timeout'|'Unknown'|null,
      *     maxResults?: int<1, 1000>|null,
-     *     nextToken?: string|null
+     *     nextToken?: string|null,
+     *     queryLanguage?: 'CWLI'|'SQL'|'PPL'|null
      * } $args
      */
     public function __construct(array $args = [])

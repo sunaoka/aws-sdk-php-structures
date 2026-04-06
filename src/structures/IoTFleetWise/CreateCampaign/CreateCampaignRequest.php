@@ -21,6 +21,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $dataExtraDimensions
  * @property list<Shapes\Tag>|null $tags
  * @property list<Shapes\DataDestinationConfig>|null $dataDestinationConfigs
+ * @property list<Shapes\DataPartition>|null $dataPartitions
+ * @property list<Shapes\SignalFetchInformation>|null $signalsToFetch
  */
 class CreateCampaignRequest extends Request
 {
@@ -41,7 +43,9 @@ class CreateCampaignRequest extends Request
      *     collectionScheme: Shapes\CollectionScheme,
      *     dataExtraDimensions?: list<string>|null,
      *     tags?: list<Shapes\Tag>|null,
-     *     dataDestinationConfigs?: list<Shapes\DataDestinationConfig>|null
+     *     dataDestinationConfigs?: list<Shapes\DataDestinationConfig>|null,
+     *     dataPartitions?: list<Shapes\DataPartition>|null,
+     *     signalsToFetch?: list<Shapes\SignalFetchInformation>|null
      * } $args
      */
     public function __construct(array $args)

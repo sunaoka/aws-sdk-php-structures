@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\InferenceSpecification|null $InferenceSpecification
  * @property string|null $SourceUri
  * @property Shapes\ModelPackageModelCard|null $ModelCard
+ * @property Shapes\ModelLifeCycle|null $ModelLifeCycle
+ * @property string|null $ClientToken
  */
 class UpdateModelPackageRequest extends Request
 {
@@ -27,7 +29,9 @@ class UpdateModelPackageRequest extends Request
      *     AdditionalInferenceSpecificationsToAdd?: list<Shapes\AdditionalInferenceSpecificationDefinition>|null,
      *     InferenceSpecification?: Shapes\InferenceSpecification|null,
      *     SourceUri?: string|null,
-     *     ModelCard?: Shapes\ModelPackageModelCard|null
+     *     ModelCard?: Shapes\ModelPackageModelCard|null,
+     *     ModelLifeCycle?: Shapes\ModelLifeCycle|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

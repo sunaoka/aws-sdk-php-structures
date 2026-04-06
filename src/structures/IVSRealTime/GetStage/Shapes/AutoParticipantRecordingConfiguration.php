@@ -6,14 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $storageConfigurationArn
- * @property list<'AUDIO_VIDEO'|'AUDIO_ONLY'>|null $mediaTypes
+ * @property list<'AUDIO_VIDEO'|'AUDIO_ONLY'|'NONE'>|null $mediaTypes
+ * @property ParticipantThumbnailConfiguration|null $thumbnailConfiguration
  */
 class AutoParticipantRecordingConfiguration extends Shape
 {
     /**
      * @param array{
      *     storageConfigurationArn: string,
-     *     mediaTypes?: list<'AUDIO_VIDEO'|'AUDIO_ONLY'>|null
+     *     mediaTypes?: list<'AUDIO_VIDEO'|'AUDIO_ONLY'|'NONE'>|null,
+     *     thumbnailConfiguration?: ParticipantThumbnailConfiguration|null
      * } $args
      */
     public function __construct(array $args)

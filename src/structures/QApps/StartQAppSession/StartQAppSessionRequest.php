@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $appId
  * @property int<0, 2147483647> $appVersion
  * @property list<Shapes\CardValue>|null $initialValues
+ * @property string|null $sessionId
  * @property array<string, string>|null $tags
  */
 class StartQAppSessionRequest extends Request
@@ -19,6 +20,7 @@ class StartQAppSessionRequest extends Request
      *     appId: string,
      *     appVersion: int<0, 2147483647>,
      *     initialValues?: list<Shapes\CardValue>|null,
+     *     sessionId?: string|null,
      *     tags?: array<string, string>|null
      * } $args
      */

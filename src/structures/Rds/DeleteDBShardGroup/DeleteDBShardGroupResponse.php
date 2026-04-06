@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Status
  * @property bool|null $PubliclyAccessible
  * @property string|null $Endpoint
+ * @property string|null $DBShardGroupArn
+ * @property list<Shapes\Tag>|null $TagList
  */
 class DeleteDBShardGroupResponse extends Response
 {

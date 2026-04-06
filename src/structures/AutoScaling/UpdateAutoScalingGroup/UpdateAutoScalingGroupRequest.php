@@ -27,6 +27,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DesiredCapacityType
  * @property int|null $DefaultInstanceWarmup
  * @property Shapes\InstanceMaintenancePolicy|null $InstanceMaintenancePolicy
+ * @property Shapes\AvailabilityZoneDistribution|null $AvailabilityZoneDistribution
+ * @property Shapes\AvailabilityZoneImpairmentPolicy|null $AvailabilityZoneImpairmentPolicy
+ * @property bool|null $SkipZonalShiftValidation
+ * @property Shapes\CapacityReservationSpecification|null $CapacityReservationSpecification
  */
 class UpdateAutoScalingGroupRequest extends Request
 {
@@ -53,7 +57,11 @@ class UpdateAutoScalingGroupRequest extends Request
      *     Context?: string|null,
      *     DesiredCapacityType?: string|null,
      *     DefaultInstanceWarmup?: int|null,
-     *     InstanceMaintenancePolicy?: Shapes\InstanceMaintenancePolicy|null
+     *     InstanceMaintenancePolicy?: Shapes\InstanceMaintenancePolicy|null,
+     *     AvailabilityZoneDistribution?: Shapes\AvailabilityZoneDistribution|null,
+     *     AvailabilityZoneImpairmentPolicy?: Shapes\AvailabilityZoneImpairmentPolicy|null,
+     *     SkipZonalShiftValidation?: bool|null,
+     *     CapacityReservationSpecification?: Shapes\CapacityReservationSpecification|null
      * } $args
      */
     public function __construct(array $args)

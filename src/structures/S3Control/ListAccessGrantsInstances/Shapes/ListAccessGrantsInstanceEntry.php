@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AccessGrantsInstanceArn
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property string|null $IdentityCenterArn
+ * @property string|null $IdentityCenterInstanceArn
+ * @property string|null $IdentityCenterApplicationArn
  */
 class ListAccessGrantsInstanceEntry extends Shape
 {
@@ -17,7 +19,9 @@ class ListAccessGrantsInstanceEntry extends Shape
      *     AccessGrantsInstanceId?: string|null,
      *     AccessGrantsInstanceArn?: string|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
-     *     IdentityCenterArn?: string|null
+     *     IdentityCenterArn?: string|null,
+     *     IdentityCenterInstanceArn?: string|null,
+     *     IdentityCenterApplicationArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

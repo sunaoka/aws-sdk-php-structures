@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $domainId
  * @property list<string>|null $enabledRegions
  * @property string $environmentBlueprintId
+ * @property string|null $environmentRolePermissionBoundary
  * @property string|null $manageAccessRoleArn
  * @property list<ProvisioningConfiguration>|null $provisioningConfigurations
  * @property string|null $provisioningRoleArn
@@ -23,6 +24,7 @@ class EnvironmentBlueprintConfigurationItem extends Shape
      *     domainId: string,
      *     enabledRegions?: list<string>|null,
      *     environmentBlueprintId: string,
+     *     environmentRolePermissionBoundary?: string|null,
      *     manageAccessRoleArn?: string|null,
      *     provisioningConfigurations?: list<ProvisioningConfiguration>|null,
      *     provisioningRoleArn?: string|null,

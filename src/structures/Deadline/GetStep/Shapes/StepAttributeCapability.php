@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Deadline\GetStep\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string>|null $allOf
- * @property list<string>|null $anyOf
  * @property string $name
+ * @property list<string>|null $anyOf
+ * @property list<string>|null $allOf
  */
 class StepAttributeCapability extends Shape
 {
     /**
      * @param array{
-     *     allOf?: list<string>|null,
+     *     name: string,
      *     anyOf?: list<string>|null,
-     *     name: string
+     *     allOf?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

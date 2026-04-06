@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\SetSourceRequest>|null $Sources
  * @property list<Shapes\VpcInterfaceRequest>|null $VpcInterfaces
  * @property Shapes\AddMaintenance|null $Maintenance
+ * @property Shapes\MonitoringConfig|null $SourceMonitoringConfig
  */
 class CreateFlowRequest extends Request
 {
@@ -29,7 +30,8 @@ class CreateFlowRequest extends Request
      *     SourceFailoverConfig?: Shapes\FailoverConfig|null,
      *     Sources?: list<Shapes\SetSourceRequest>|null,
      *     VpcInterfaces?: list<Shapes\VpcInterfaceRequest>|null,
-     *     Maintenance?: Shapes\AddMaintenance|null
+     *     Maintenance?: Shapes\AddMaintenance|null,
+     *     SourceMonitoringConfig?: Shapes\MonitoringConfig|null
      * } $args
      */
     public function __construct(array $args)

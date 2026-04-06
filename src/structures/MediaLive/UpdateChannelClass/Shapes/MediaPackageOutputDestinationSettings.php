@@ -6,11 +6,17 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $ChannelId
+ * @property string|null $ChannelGroup
+ * @property string|null $ChannelName
  */
 class MediaPackageOutputDestinationSettings extends Shape
 {
     /**
-     * @param array{ChannelId?: string|null} $args
+     * @param array{
+     *     ChannelId?: string|null,
+     *     ChannelGroup?: string|null,
+     *     ChannelName?: string|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

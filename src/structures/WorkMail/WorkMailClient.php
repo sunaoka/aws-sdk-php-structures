@@ -11,6 +11,7 @@ class WorkMailClient extends \Aws\WorkMail\WorkMailClient
     use CreateAlias\CreateAliasTrait;
     use CreateAvailabilityConfiguration\CreateAvailabilityConfigurationTrait;
     use CreateGroup\CreateGroupTrait;
+    use CreateIdentityCenterApplication\CreateIdentityCenterApplicationTrait;
     use CreateImpersonationRole\CreateImpersonationRoleTrait;
     use CreateMobileDeviceAccessRule\CreateMobileDeviceAccessRuleTrait;
     use CreateOrganization\CreateOrganizationTrait;
@@ -21,11 +22,14 @@ class WorkMailClient extends \Aws\WorkMail\WorkMailClient
     use DeleteAvailabilityConfiguration\DeleteAvailabilityConfigurationTrait;
     use DeleteEmailMonitoringConfiguration\DeleteEmailMonitoringConfigurationTrait;
     use DeleteGroup\DeleteGroupTrait;
+    use DeleteIdentityCenterApplication\DeleteIdentityCenterApplicationTrait;
+    use DeleteIdentityProviderConfiguration\DeleteIdentityProviderConfigurationTrait;
     use DeleteImpersonationRole\DeleteImpersonationRoleTrait;
     use DeleteMailboxPermissions\DeleteMailboxPermissionsTrait;
     use DeleteMobileDeviceAccessOverride\DeleteMobileDeviceAccessOverrideTrait;
     use DeleteMobileDeviceAccessRule\DeleteMobileDeviceAccessRuleTrait;
     use DeleteOrganization\DeleteOrganizationTrait;
+    use DeletePersonalAccessToken\DeletePersonalAccessTokenTrait;
     use DeleteResource\DeleteResourceTrait;
     use DeleteRetentionPolicy\DeleteRetentionPolicyTrait;
     use DeleteUser\DeleteUserTrait;
@@ -34,6 +38,7 @@ class WorkMailClient extends \Aws\WorkMail\WorkMailClient
     use DescribeEmailMonitoringConfiguration\DescribeEmailMonitoringConfigurationTrait;
     use DescribeEntity\DescribeEntityTrait;
     use DescribeGroup\DescribeGroupTrait;
+    use DescribeIdentityProviderConfiguration\DescribeIdentityProviderConfigurationTrait;
     use DescribeInboundDmarcSettings\DescribeInboundDmarcSettingsTrait;
     use DescribeMailboxExportJob\DescribeMailboxExportJobTrait;
     use DescribeOrganization\DescribeOrganizationTrait;
@@ -49,6 +54,7 @@ class WorkMailClient extends \Aws\WorkMail\WorkMailClient
     use GetMailboxDetails\GetMailboxDetailsTrait;
     use GetMobileDeviceAccessEffect\GetMobileDeviceAccessEffectTrait;
     use GetMobileDeviceAccessOverride\GetMobileDeviceAccessOverrideTrait;
+    use GetPersonalAccessTokenMetadata\GetPersonalAccessTokenMetadataTrait;
     use ListAccessControlRules\ListAccessControlRulesTrait;
     use ListAliases\ListAliasesTrait;
     use ListAvailabilityConfigurations\ListAvailabilityConfigurationsTrait;
@@ -62,12 +68,14 @@ class WorkMailClient extends \Aws\WorkMail\WorkMailClient
     use ListMobileDeviceAccessOverrides\ListMobileDeviceAccessOverridesTrait;
     use ListMobileDeviceAccessRules\ListMobileDeviceAccessRulesTrait;
     use ListOrganizations\ListOrganizationsTrait;
+    use ListPersonalAccessTokens\ListPersonalAccessTokensTrait;
     use ListResourceDelegates\ListResourceDelegatesTrait;
     use ListResources\ListResourcesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListUsers\ListUsersTrait;
     use PutAccessControlRule\PutAccessControlRuleTrait;
     use PutEmailMonitoringConfiguration\PutEmailMonitoringConfigurationTrait;
+    use PutIdentityProviderConfiguration\PutIdentityProviderConfigurationTrait;
     use PutInboundDmarcSettings\PutInboundDmarcSettingsTrait;
     use PutMailboxPermissions\PutMailboxPermissionsTrait;
     use PutMobileDeviceAccessOverride\PutMobileDeviceAccessOverrideTrait;

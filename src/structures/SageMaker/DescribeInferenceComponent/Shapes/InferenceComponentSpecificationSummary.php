@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InferenceComponentContainerSpecificationSummary|null $Container
  * @property InferenceComponentStartupParameters|null $StartupParameters
  * @property InferenceComponentComputeResourceRequirements|null $ComputeResourceRequirements
+ * @property string|null $BaseInferenceComponentName
  */
 class InferenceComponentSpecificationSummary extends Shape
 {
@@ -17,7 +18,8 @@ class InferenceComponentSpecificationSummary extends Shape
      *     ModelName?: string|null,
      *     Container?: InferenceComponentContainerSpecificationSummary|null,
      *     StartupParameters?: InferenceComponentStartupParameters|null,
-     *     ComputeResourceRequirements?: InferenceComponentComputeResourceRequirements|null
+     *     ComputeResourceRequirements?: InferenceComponentComputeResourceRequirements|null,
+     *     BaseInferenceComponentName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

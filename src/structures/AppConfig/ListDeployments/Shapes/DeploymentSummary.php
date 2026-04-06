@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'LINEAR'|'EXPONENTIAL'|null $GrowthType
  * @property float|null $GrowthFactor
  * @property int<0, 1440>|null $FinalBakeTimeInMinutes
- * @property 'BAKING'|'VALIDATING'|'DEPLOYING'|'COMPLETE'|'ROLLING_BACK'|'ROLLED_BACK'|null $State
+ * @property 'BAKING'|'VALIDATING'|'DEPLOYING'|'COMPLETE'|'ROLLING_BACK'|'ROLLED_BACK'|'REVERTED'|null $State
  * @property float|null $PercentageComplete
  * @property \Aws\Api\DateTimeResult|null $StartedAt
  * @property \Aws\Api\DateTimeResult|null $CompletedAt
@@ -29,7 +29,7 @@ class DeploymentSummary extends Shape
      *     GrowthType?: 'LINEAR'|'EXPONENTIAL'|null,
      *     GrowthFactor?: float|null,
      *     FinalBakeTimeInMinutes?: int<0, 1440>|null,
-     *     State?: 'BAKING'|'VALIDATING'|'DEPLOYING'|'COMPLETE'|'ROLLING_BACK'|'ROLLED_BACK'|null,
+     *     State?: 'BAKING'|'VALIDATING'|'DEPLOYING'|'COMPLETE'|'ROLLING_BACK'|'ROLLED_BACK'|'REVERTED'|null,
      *     PercentageComplete?: float|null,
      *     StartedAt?: \Aws\Api\DateTimeResult|null,
      *     CompletedAt?: \Aws\Api\DateTimeResult|null,

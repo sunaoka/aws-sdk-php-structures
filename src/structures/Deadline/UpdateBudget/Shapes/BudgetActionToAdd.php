@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Deadline\UpdateBudget\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $description
- * @property float $thresholdPercentage
  * @property 'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS' $type
+ * @property float $thresholdPercentage
+ * @property string|null $description
  */
 class BudgetActionToAdd extends Shape
 {
     /**
      * @param array{
-     *     description?: string|null,
+     *     type: 'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS',
      *     thresholdPercentage: float,
-     *     type: 'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS'
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

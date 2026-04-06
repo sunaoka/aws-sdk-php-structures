@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null $JobMode
+ * @property bool|null $JobRunQueuingEnabled
  * @property string|null $Description
  * @property string|null $LogUri
  * @property string $Role
@@ -36,6 +37,7 @@ class CreateJobRequest extends Request
      * @param array{
      *     Name: string,
      *     JobMode?: 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null,
+     *     JobRunQueuingEnabled?: bool|null,
      *     Description?: string|null,
      *     LogUri?: string|null,
      *     Role: string,

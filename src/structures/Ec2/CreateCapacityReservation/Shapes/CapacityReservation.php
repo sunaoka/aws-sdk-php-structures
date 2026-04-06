@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $AvailableInstanceCount
  * @property bool|null $EbsOptimized
  * @property bool|null $EphemeralStorage
- * @property 'active'|'expired'|'cancelled'|'pending'|'failed'|'scheduled'|'payment-pending'|'payment-failed'|null $State
+ * @property 'active'|'expired'|'cancelled'|'pending'|'failed'|'scheduled'|'payment-pending'|'payment-failed'|'assessing'|'delayed'|'unsupported'|null $State
  * @property \Aws\Api\DateTimeResult|null $StartDate
  * @property \Aws\Api\DateTimeResult|null $EndDate
  * @property 'unlimited'|'limited'|null $EndDateType
@@ -29,6 +29,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PlacementGroupArn
  * @property list<CapacityAllocation>|null $CapacityAllocations
  * @property 'default'|'capacity-block'|null $ReservationType
+ * @property string|null $UnusedReservationBillingOwnerId
+ * @property CapacityReservationCommitmentInfo|null $CommitmentInfo
+ * @property 'fixed'|'incremental'|null $DeliveryPreference
  */
 class CapacityReservation extends Shape
 {
@@ -46,7 +49,7 @@ class CapacityReservation extends Shape
      *     AvailableInstanceCount?: int|null,
      *     EbsOptimized?: bool|null,
      *     EphemeralStorage?: bool|null,
-     *     State?: 'active'|'expired'|'cancelled'|'pending'|'failed'|'scheduled'|'payment-pending'|'payment-failed'|null,
+     *     State?: 'active'|'expired'|'cancelled'|'pending'|'failed'|'scheduled'|'payment-pending'|'payment-failed'|'assessing'|'delayed'|'unsupported'|null,
      *     StartDate?: \Aws\Api\DateTimeResult|null,
      *     EndDate?: \Aws\Api\DateTimeResult|null,
      *     EndDateType?: 'unlimited'|'limited'|null,
@@ -57,7 +60,10 @@ class CapacityReservation extends Shape
      *     CapacityReservationFleetId?: string|null,
      *     PlacementGroupArn?: string|null,
      *     CapacityAllocations?: list<CapacityAllocation>|null,
-     *     ReservationType?: 'default'|'capacity-block'|null
+     *     ReservationType?: 'default'|'capacity-block'|null,
+     *     UnusedReservationBillingOwnerId?: string|null,
+     *     CommitmentInfo?: CapacityReservationCommitmentInfo|null,
+     *     DeliveryPreference?: 'fixed'|'incremental'|null
      * } $args
      */
     public function __construct(array $args = [])

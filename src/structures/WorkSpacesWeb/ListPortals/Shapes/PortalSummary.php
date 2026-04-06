@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $browserSettingsArn
  * @property 'Chrome'|null $browserType
  * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property string|null $dataProtectionSettingsArn
  * @property string|null $displayName
  * @property 'standard.regular'|'standard.large'|'standard.xlarge'|null $instanceType
  * @property string|null $ipAccessSettingsArn
@@ -30,6 +31,7 @@ class PortalSummary extends Shape
      *     browserSettingsArn?: string|null,
      *     browserType?: 'Chrome'|null,
      *     creationDate?: \Aws\Api\DateTimeResult|null,
+     *     dataProtectionSettingsArn?: string|null,
      *     displayName?: string|null,
      *     instanceType?: 'standard.regular'|'standard.large'|'standard.xlarge'|null,
      *     ipAccessSettingsArn?: string|null,

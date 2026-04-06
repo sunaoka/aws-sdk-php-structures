@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $email
  * @property string|null $phone
  * @property list<string> $capabilities
+ * @property Shapes\CapabilityOptions|null $capabilityOptions
  * @property string|null $clientToken
  * @property list<Shapes\Tag>|null $tags
  */
@@ -22,6 +23,7 @@ class CreatePartnershipRequest extends Request
      *     email: string,
      *     phone?: string|null,
      *     capabilities: list<string>,
+     *     capabilityOptions?: Shapes\CapabilityOptions|null,
      *     clientToken?: string|null,
      *     tags?: list<Shapes\Tag>|null
      * } $args

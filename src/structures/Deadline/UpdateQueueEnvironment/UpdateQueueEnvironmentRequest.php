@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $clientToken
  * @property string $farmId
- * @property int<0, 10000>|null $priority
- * @property string $queueEnvironmentId
  * @property string $queueId
- * @property string|null $template
+ * @property string $queueEnvironmentId
+ * @property int<0, 10000>|null $priority
  * @property 'JSON'|'YAML'|null $templateType
+ * @property string|null $template
  */
 class UpdateQueueEnvironmentRequest extends Request
 {
@@ -19,11 +19,11 @@ class UpdateQueueEnvironmentRequest extends Request
      * @param array{
      *     clientToken?: string|null,
      *     farmId: string,
-     *     priority?: int<0, 10000>|null,
-     *     queueEnvironmentId: string,
      *     queueId: string,
-     *     template?: string|null,
-     *     templateType?: 'JSON'|'YAML'|null
+     *     queueEnvironmentId: string,
+     *     priority?: int<0, 10000>|null,
+     *     templateType?: 'JSON'|'YAML'|null,
+     *     template?: string|null
      * } $args
      */
     public function __construct(array $args)

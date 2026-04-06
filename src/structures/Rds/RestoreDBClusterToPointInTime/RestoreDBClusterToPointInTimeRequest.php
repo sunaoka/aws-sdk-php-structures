@@ -34,6 +34,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $NetworkType
  * @property string|null $SourceDbClusterResourceId
  * @property Shapes\RdsCustomClusterConfiguration|null $RdsCustomClusterConfiguration
+ * @property int|null $MonitoringInterval
+ * @property string|null $MonitoringRoleArn
+ * @property bool|null $EnablePerformanceInsights
+ * @property string|null $PerformanceInsightsKMSKeyId
+ * @property int|null $PerformanceInsightsRetentionPeriod
  * @property string|null $EngineLifecycleSupport
  */
 class RestoreDBClusterToPointInTimeRequest extends Request
@@ -69,6 +74,11 @@ class RestoreDBClusterToPointInTimeRequest extends Request
      *     NetworkType?: string|null,
      *     SourceDbClusterResourceId?: string|null,
      *     RdsCustomClusterConfiguration?: Shapes\RdsCustomClusterConfiguration|null,
+     *     MonitoringInterval?: int|null,
+     *     MonitoringRoleArn?: string|null,
+     *     EnablePerformanceInsights?: bool|null,
+     *     PerformanceInsightsKMSKeyId?: string|null,
+     *     PerformanceInsightsRetentionPeriod?: int|null,
      *     EngineLifecycleSupport?: string|null
      * } $args
      */

@@ -25,10 +25,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\CertificateConfiguration|null $CertificateConfiguration
  * @property list<Shapes\LocationConfiguration>|null $Locations
  * @property list<Shapes\Tag>|null $Tags
- * @property 'EC2'|'ANYWHERE'|'CONTAINER'|null $ComputeType
+ * @property 'EC2'|'ANYWHERE'|null $ComputeType
  * @property Shapes\AnywhereConfiguration|null $AnywhereConfiguration
  * @property 'SHARED_CREDENTIAL_FILE'|null $InstanceRoleCredentialsProvider
- * @property Shapes\ContainerGroupsConfiguration|null $ContainerGroupsConfiguration
  */
 class CreateFleetRequest extends Request
 {
@@ -54,10 +53,9 @@ class CreateFleetRequest extends Request
      *     CertificateConfiguration?: Shapes\CertificateConfiguration|null,
      *     Locations?: list<Shapes\LocationConfiguration>|null,
      *     Tags?: list<Shapes\Tag>|null,
-     *     ComputeType?: 'EC2'|'ANYWHERE'|'CONTAINER'|null,
+     *     ComputeType?: 'EC2'|'ANYWHERE'|null,
      *     AnywhereConfiguration?: Shapes\AnywhereConfiguration|null,
-     *     InstanceRoleCredentialsProvider?: 'SHARED_CREDENTIAL_FILE'|null,
-     *     ContainerGroupsConfiguration?: Shapes\ContainerGroupsConfiguration|null
+     *     InstanceRoleCredentialsProvider?: 'SHARED_CREDENTIAL_FILE'|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $name
  * @property string|null $mountPath
+ * @property string|null $subPath
  * @property bool|null $readOnly
  */
 class EksContainerVolumeMount extends Shape
@@ -15,6 +16,7 @@ class EksContainerVolumeMount extends Shape
      * @param array{
      *     name?: string|null,
      *     mountPath?: string|null,
+     *     subPath?: string|null,
      *     readOnly?: bool|null
      * } $args
      */

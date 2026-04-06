@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PUBLIC'|'PRIVATE'|'SHARED'|null $Visibility
  * @property bool|null $ImageBuilderSupported
  * @property string|null $ImageBuilderName
- * @property 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|null $Platform
+ * @property 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'|null $Platform
  * @property string|null $Description
  * @property ImageStateChangeReason|null $StateChangeReason
  * @property list<Application>|null $Applications
@@ -39,7 +39,7 @@ class Image extends Shape
      *     Visibility?: 'PUBLIC'|'PRIVATE'|'SHARED'|null,
      *     ImageBuilderSupported?: bool|null,
      *     ImageBuilderName?: string|null,
-     *     Platform?: 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|null,
+     *     Platform?: 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'|null,
      *     Description?: string|null,
      *     StateChangeReason?: ImageStateChangeReason|null,
      *     Applications?: list<Application>|null,

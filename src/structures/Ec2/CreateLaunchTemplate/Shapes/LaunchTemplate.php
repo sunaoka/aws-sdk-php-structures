@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $DefaultVersionNumber
  * @property int|null $LatestVersionNumber
  * @property list<Tag>|null $Tags
+ * @property OperatorResponse|null $Operator
  */
 class LaunchTemplate extends Shape
 {
@@ -23,7 +24,8 @@ class LaunchTemplate extends Shape
      *     CreatedBy?: string|null,
      *     DefaultVersionNumber?: int|null,
      *     LatestVersionNumber?: int|null,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     Operator?: OperatorResponse|null
      * } $args
      */
     public function __construct(array $args = [])

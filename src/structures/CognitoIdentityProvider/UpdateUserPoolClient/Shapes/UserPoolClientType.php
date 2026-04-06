@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TokenValidityUnitsType|null $TokenValidityUnits
  * @property list<string>|null $ReadAttributes
  * @property list<string>|null $WriteAttributes
- * @property list<'ADMIN_NO_SRP_AUTH'|'CUSTOM_AUTH_FLOW_ONLY'|'USER_PASSWORD_AUTH'|'ALLOW_ADMIN_USER_PASSWORD_AUTH'|'ALLOW_CUSTOM_AUTH'|'ALLOW_USER_PASSWORD_AUTH'|'ALLOW_USER_SRP_AUTH'|'ALLOW_REFRESH_TOKEN_AUTH'>|null $ExplicitAuthFlows
+ * @property list<'ADMIN_NO_SRP_AUTH'|'CUSTOM_AUTH_FLOW_ONLY'|'USER_PASSWORD_AUTH'|'ALLOW_ADMIN_USER_PASSWORD_AUTH'|'ALLOW_CUSTOM_AUTH'|'ALLOW_USER_PASSWORD_AUTH'|'ALLOW_USER_SRP_AUTH'|'ALLOW_REFRESH_TOKEN_AUTH'|'ALLOW_USER_AUTH'>|null $ExplicitAuthFlows
  * @property list<string>|null $SupportedIdentityProviders
  * @property list<string>|null $CallbackURLs
  * @property list<string>|null $LogoutURLs
@@ -47,7 +47,7 @@ class UserPoolClientType extends Shape
      *     TokenValidityUnits?: TokenValidityUnitsType|null,
      *     ReadAttributes?: list<string>|null,
      *     WriteAttributes?: list<string>|null,
-     *     ExplicitAuthFlows?: list<'ADMIN_NO_SRP_AUTH'|'CUSTOM_AUTH_FLOW_ONLY'|'USER_PASSWORD_AUTH'|'ALLOW_ADMIN_USER_PASSWORD_AUTH'|'ALLOW_CUSTOM_AUTH'|'ALLOW_USER_PASSWORD_AUTH'|'ALLOW_USER_SRP_AUTH'|'ALLOW_REFRESH_TOKEN_AUTH'>|null,
+     *     ExplicitAuthFlows?: list<'ADMIN_NO_SRP_AUTH'|'CUSTOM_AUTH_FLOW_ONLY'|'USER_PASSWORD_AUTH'|'ALLOW_ADMIN_USER_PASSWORD_AUTH'|'ALLOW_CUSTOM_AUTH'|'ALLOW_USER_PASSWORD_AUTH'|'ALLOW_USER_SRP_AUTH'|'ALLOW_REFRESH_TOKEN_AUTH'|'ALLOW_USER_AUTH'>|null,
      *     SupportedIdentityProviders?: list<string>|null,
      *     CallbackURLs?: list<string>|null,
      *     LogoutURLs?: list<string>|null,

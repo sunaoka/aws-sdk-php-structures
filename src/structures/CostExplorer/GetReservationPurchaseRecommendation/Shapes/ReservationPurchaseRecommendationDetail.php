@@ -24,6 +24,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $EstimatedReservationCostForLookbackPeriod
  * @property string|null $UpfrontCost
  * @property string|null $RecurringStandardMonthlyCost
+ * @property ReservedCapacityDetails|null $ReservedCapacityDetails
+ * @property string|null $RecommendedNumberOfCapacityUnitsToPurchase
+ * @property string|null $MinimumNumberOfCapacityUnitsUsedPerHour
+ * @property string|null $MaximumNumberOfCapacityUnitsUsedPerHour
+ * @property string|null $AverageNumberOfCapacityUnitsUsedPerHour
  */
 class ReservationPurchaseRecommendationDetail extends Shape
 {
@@ -47,7 +52,12 @@ class ReservationPurchaseRecommendationDetail extends Shape
      *     EstimatedMonthlyOnDemandCost?: string|null,
      *     EstimatedReservationCostForLookbackPeriod?: string|null,
      *     UpfrontCost?: string|null,
-     *     RecurringStandardMonthlyCost?: string|null
+     *     RecurringStandardMonthlyCost?: string|null,
+     *     ReservedCapacityDetails?: ReservedCapacityDetails|null,
+     *     RecommendedNumberOfCapacityUnitsToPurchase?: string|null,
+     *     MinimumNumberOfCapacityUnitsUsedPerHour?: string|null,
+     *     MaximumNumberOfCapacityUnitsUsedPerHour?: string|null,
+     *     AverageNumberOfCapacityUnitsUsedPerHour?: string|null
      * } $args
      */
     public function __construct(array $args = [])

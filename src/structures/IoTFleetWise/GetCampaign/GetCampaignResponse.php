@@ -24,6 +24,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $creationTime
  * @property \Aws\Api\DateTimeResult|null $lastModificationTime
  * @property list<Shapes\DataDestinationConfig>|null $dataDestinationConfigs
+ * @property list<Shapes\DataPartition>|null $dataPartitions
+ * @property list<Shapes\SignalFetchInformation>|null $signalsToFetch
  */
 class GetCampaignResponse extends Response
 {

@@ -8,7 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UserPoolId
  * @property Shapes\SmsMfaConfigType|null $SmsMfaConfiguration
  * @property Shapes\SoftwareTokenMfaConfigType|null $SoftwareTokenMfaConfiguration
+ * @property Shapes\EmailMfaConfigType|null $EmailMfaConfiguration
  * @property 'OFF'|'ON'|'OPTIONAL'|null $MfaConfiguration
+ * @property Shapes\WebAuthnConfigurationType|null $WebAuthnConfiguration
  */
 class SetUserPoolMfaConfigRequest extends Request
 {
@@ -17,7 +19,9 @@ class SetUserPoolMfaConfigRequest extends Request
      *     UserPoolId: string,
      *     SmsMfaConfiguration?: Shapes\SmsMfaConfigType|null,
      *     SoftwareTokenMfaConfiguration?: Shapes\SoftwareTokenMfaConfigType|null,
-     *     MfaConfiguration?: 'OFF'|'ON'|'OPTIONAL'|null
+     *     EmailMfaConfiguration?: Shapes\EmailMfaConfigType|null,
+     *     MfaConfiguration?: 'OFF'|'ON'|'OPTIONAL'|null,
+     *     WebAuthnConfiguration?: Shapes\WebAuthnConfigurationType|null
      * } $args
      */
     public function __construct(array $args)

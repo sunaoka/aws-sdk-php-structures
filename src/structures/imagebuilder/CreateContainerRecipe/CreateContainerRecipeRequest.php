@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\InstanceConfiguration|null $instanceConfiguration
  * @property string|null $dockerfileTemplateData
  * @property string|null $dockerfileTemplateUri
- * @property 'Windows'|'Linux'|null $platformOverride
+ * @property 'Windows'|'Linux'|'macOS'|null $platformOverride
  * @property string|null $imageOsVersionOverride
  * @property string $parentImage
  * @property array<string, string>|null $tags
@@ -34,7 +34,7 @@ class CreateContainerRecipeRequest extends Request
      *     instanceConfiguration?: Shapes\InstanceConfiguration|null,
      *     dockerfileTemplateData?: string|null,
      *     dockerfileTemplateUri?: string|null,
-     *     platformOverride?: 'Windows'|'Linux'|null,
+     *     platformOverride?: 'Windows'|'Linux'|'macOS'|null,
      *     imageOsVersionOverride?: string|null,
      *     parentImage: string,
      *     tags?: array<string, string>|null,

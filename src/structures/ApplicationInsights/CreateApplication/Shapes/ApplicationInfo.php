@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ResourceGroupName
  * @property string|null $LifeCycle
  * @property string|null $OpsItemSNSTopicArn
+ * @property string|null $SNSNotificationArn
  * @property bool|null $OpsCenterEnabled
  * @property bool|null $CWEMonitorEnabled
  * @property string|null $Remarks
@@ -24,6 +25,7 @@ class ApplicationInfo extends Shape
      *     ResourceGroupName?: string|null,
      *     LifeCycle?: string|null,
      *     OpsItemSNSTopicArn?: string|null,
+     *     SNSNotificationArn?: string|null,
      *     OpsCenterEnabled?: bool|null,
      *     CWEMonitorEnabled?: bool|null,
      *     Remarks?: string|null,

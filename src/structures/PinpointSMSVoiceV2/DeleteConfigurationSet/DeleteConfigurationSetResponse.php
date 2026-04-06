@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\EventDestination>|null $EventDestinations
  * @property 'TRANSACTIONAL'|'PROMOTIONAL'|null $DefaultMessageType
  * @property string|null $DefaultSenderId
+ * @property bool|null $DefaultMessageFeedbackEnabled
  * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
  */
 class DeleteConfigurationSetResponse extends Response

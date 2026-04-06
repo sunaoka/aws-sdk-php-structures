@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Deadline\BatchGetJobEntity\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $dependencies
  * @property string $jobId
- * @property string $schemaVersion
  * @property string $stepId
+ * @property string $schemaVersion
  * @property Document $template
+ * @property list<string> $dependencies
  */
 class StepDetailsEntity extends Shape
 {
     /**
      * @param array{
-     *     dependencies: list<string>,
      *     jobId: string,
-     *     schemaVersion: string,
      *     stepId: string,
-     *     template: Document
+     *     schemaVersion: string,
+     *     template: Document,
+     *     dependencies: list<string>
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Deadline\SearchWorkers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
  * @property 'ASCENDING'|'DESCENDING' $sortOrder
+ * @property string $name
  */
 class FieldSortExpression extends Shape
 {
     /**
      * @param array{
-     *     name: string,
-     *     sortOrder: 'ASCENDING'|'DESCENDING'
+     *     sortOrder: 'ASCENDING'|'DESCENDING',
+     *     name: string
      * } $args
      */
     public function __construct(array $args)

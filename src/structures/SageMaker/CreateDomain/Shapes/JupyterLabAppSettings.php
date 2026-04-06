@@ -9,7 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<CustomImage>|null $CustomImages
  * @property list<string>|null $LifecycleConfigArns
  * @property list<CodeRepository>|null $CodeRepositories
+ * @property AppLifecycleManagement|null $AppLifecycleManagement
  * @property EmrSettings|null $EmrSettings
+ * @property string|null $BuiltInLifecycleConfigArn
  */
 class JupyterLabAppSettings extends Shape
 {
@@ -19,7 +21,9 @@ class JupyterLabAppSettings extends Shape
      *     CustomImages?: list<CustomImage>|null,
      *     LifecycleConfigArns?: list<string>|null,
      *     CodeRepositories?: list<CodeRepository>|null,
-     *     EmrSettings?: EmrSettings|null
+     *     AppLifecycleManagement?: AppLifecycleManagement|null,
+     *     EmrSettings?: EmrSettings|null,
+     *     BuiltInLifecycleConfigArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

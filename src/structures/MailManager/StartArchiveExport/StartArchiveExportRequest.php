@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ExportDestinationConfiguration $ExportDestinationConfiguration
  * @property Shapes\ArchiveFilters|null $Filters
  * @property \Aws\Api\DateTimeResult $FromTimestamp
+ * @property bool|null $IncludeMetadata
  * @property int|null $MaxResults
  * @property \Aws\Api\DateTimeResult $ToTimestamp
  */
@@ -20,6 +21,7 @@ class StartArchiveExportRequest extends Request
      *     ExportDestinationConfiguration: Shapes\ExportDestinationConfiguration,
      *     Filters?: Shapes\ArchiveFilters|null,
      *     FromTimestamp: \Aws\Api\DateTimeResult,
+     *     IncludeMetadata?: bool|null,
      *     MaxResults?: int|null,
      *     ToTimestamp: \Aws\Api\DateTimeResult
      * } $args

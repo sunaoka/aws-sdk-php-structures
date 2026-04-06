@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ActiveMotionGraphicsActionName
  * @property string|null $ActiveMotionGraphicsUri
  * @property string|null $PipelineId
+ * @property ChannelEngineVersionResponse|null $ChannelEngineVersion
  */
 class PipelineDetail extends Shape
 {
@@ -19,7 +20,8 @@ class PipelineDetail extends Shape
      *     ActiveInputSwitchActionName?: string|null,
      *     ActiveMotionGraphicsActionName?: string|null,
      *     ActiveMotionGraphicsUri?: string|null,
-     *     PipelineId?: string|null
+     *     PipelineId?: string|null,
+     *     ChannelEngineVersion?: ChannelEngineVersionResponse|null
      * } $args
      */
     public function __construct(array $args = [])

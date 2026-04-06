@@ -7,16 +7,20 @@ class AppSyncClient extends \Aws\AppSync\AppSyncClient
     use AssociateApi\AssociateApiTrait;
     use AssociateMergedGraphqlApi\AssociateMergedGraphqlApiTrait;
     use AssociateSourceGraphqlApi\AssociateSourceGraphqlApiTrait;
+    use CreateApi\CreateApiTrait;
     use CreateApiCache\CreateApiCacheTrait;
     use CreateApiKey\CreateApiKeyTrait;
+    use CreateChannelNamespace\CreateChannelNamespaceTrait;
     use CreateDataSource\CreateDataSourceTrait;
     use CreateDomainName\CreateDomainNameTrait;
     use CreateFunction\CreateFunctionTrait;
     use CreateGraphqlApi\CreateGraphqlApiTrait;
     use CreateResolver\CreateResolverTrait;
     use CreateType\CreateTypeTrait;
+    use DeleteApi\DeleteApiTrait;
     use DeleteApiCache\DeleteApiCacheTrait;
     use DeleteApiKey\DeleteApiKeyTrait;
+    use DeleteChannelNamespace\DeleteChannelNamespaceTrait;
     use DeleteDataSource\DeleteDataSourceTrait;
     use DeleteDomainName\DeleteDomainNameTrait;
     use DeleteFunction\DeleteFunctionTrait;
@@ -31,6 +35,7 @@ class AppSyncClient extends \Aws\AppSync\AppSyncClient
     use FlushApiCache\FlushApiCacheTrait;
     use GetApiAssociation\GetApiAssociationTrait;
     use GetApiCache\GetApiCacheTrait;
+    use GetChannelNamespace\GetChannelNamespaceTrait;
     use GetDataSource\GetDataSourceTrait;
     use GetDataSourceIntrospection\GetDataSourceIntrospectionTrait;
     use GetDomainName\GetDomainNameTrait;
@@ -43,6 +48,8 @@ class AppSyncClient extends \Aws\AppSync\AppSyncClient
     use GetSourceApiAssociation\GetSourceApiAssociationTrait;
     use GetType\GetTypeTrait;
     use ListApiKeys\ListApiKeysTrait;
+    use ListApis\ListApisTrait;
+    use ListChannelNamespaces\ListChannelNamespacesTrait;
     use ListDataSources\ListDataSourcesTrait;
     use ListDomainNames\ListDomainNamesTrait;
     use ListFunctions\ListFunctionsTrait;
@@ -59,8 +66,10 @@ class AppSyncClient extends \Aws\AppSync\AppSyncClient
     use StartSchemaMerge\StartSchemaMergeTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateApi\UpdateApiTrait;
     use UpdateApiCache\UpdateApiCacheTrait;
     use UpdateApiKey\UpdateApiKeyTrait;
+    use UpdateChannelNamespace\UpdateChannelNamespaceTrait;
     use UpdateDataSource\UpdateDataSourceTrait;
     use UpdateDomainName\UpdateDomainNameTrait;
     use UpdateFunction\UpdateFunctionTrait;

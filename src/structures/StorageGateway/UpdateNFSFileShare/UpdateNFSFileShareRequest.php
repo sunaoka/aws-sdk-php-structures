@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FileShareARN
+ * @property 'SseS3'|'SseKms'|'DsseKms'|null $EncryptionType
  * @property bool|null $KMSEncrypted
  * @property string|null $KMSKey
  * @property Shapes\NFSFileShareDefaults|null $NFSFileShareDefaults
@@ -26,6 +27,7 @@ class UpdateNFSFileShareRequest extends Request
     /**
      * @param array{
      *     FileShareARN: string,
+     *     EncryptionType?: 'SseS3'|'SseKms'|'DsseKms'|null,
      *     KMSEncrypted?: bool|null,
      *     KMSKey?: string|null,
      *     NFSFileShareDefaults?: Shapes\NFSFileShareDefaults|null,

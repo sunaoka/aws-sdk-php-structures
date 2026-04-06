@@ -25,6 +25,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $FilesVerified
  * @property Shapes\ReportResult|null $ReportResult
  * @property int|null $EstimatedFilesToDelete
+ * @property 'BASIC'|'ENHANCED'|null $TaskMode
+ * @property int|null $FilesPrepared
+ * @property Shapes\TaskExecutionFilesListedDetail|null $FilesListed
+ * @property Shapes\TaskExecutionFilesFailedDetail|null $FilesFailed
  */
 class DescribeTaskExecutionResponse extends Response
 {

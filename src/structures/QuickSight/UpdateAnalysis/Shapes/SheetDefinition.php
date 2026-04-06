@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<FilterControl>|null $FilterControls
  * @property list<Visual>|null $Visuals
  * @property list<SheetTextBox>|null $TextBoxes
+ * @property list<SheetImage>|null $Images
  * @property list<Layout>|null $Layouts
  * @property list<SheetControlLayout>|null $SheetControlLayouts
  * @property 'PAGINATED'|'INTERACTIVE'|null $ContentType
@@ -29,6 +30,7 @@ class SheetDefinition extends Shape
      *     FilterControls?: list<FilterControl>|null,
      *     Visuals?: list<Visual>|null,
      *     TextBoxes?: list<SheetTextBox>|null,
+     *     Images?: list<SheetImage>|null,
      *     Layouts?: list<Layout>|null,
      *     SheetControlLayouts?: list<SheetControlLayout>|null,
      *     ContentType?: 'PAGINATED'|'INTERACTIVE'|null

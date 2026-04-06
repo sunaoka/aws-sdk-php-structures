@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AccessRole
  * @property 'ACTIVE'|'INACTIVE'|null $Status
  * @property list<Shapes\Tag>|null $Tags
+ * @property 'ENABLED'|'DISABLED'|null $PreserveFilename
+ * @property 'ENABLED'|'DISABLED'|null $EnforceMessageSigning
  */
 class CreateAgreementRequest extends Request
 {
@@ -25,7 +27,9 @@ class CreateAgreementRequest extends Request
      *     BaseDirectory: string,
      *     AccessRole: string,
      *     Status?: 'ACTIVE'|'INACTIVE'|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     PreserveFilename?: 'ENABLED'|'DISABLED'|null,
+     *     EnforceMessageSigning?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

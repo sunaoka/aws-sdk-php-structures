@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Iam\GetLoginProfile;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $UserName
+ * @property string|null $UserName
  */
 class GetLoginProfileRequest extends Request
 {
     /**
-     * @param array{UserName: string} $args
+     * @param array{UserName?: string|null} $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

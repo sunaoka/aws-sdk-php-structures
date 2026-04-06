@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\ConfigService;
 
 class ConfigServiceClient extends \Aws\ConfigService\ConfigServiceClient
 {
+    use AssociateResourceTypes\AssociateResourceTypesTrait;
     use BatchGetAggregateResourceConfig\BatchGetAggregateResourceConfigTrait;
     use BatchGetResourceConfig\BatchGetResourceConfigTrait;
     use DeleteAggregationAuthorization\DeleteAggregationAuthorizationTrait;
@@ -20,6 +21,7 @@ class ConfigServiceClient extends \Aws\ConfigService\ConfigServiceClient
     use DeleteRemediationExceptions\DeleteRemediationExceptionsTrait;
     use DeleteResourceConfig\DeleteResourceConfigTrait;
     use DeleteRetentionConfiguration\DeleteRetentionConfigurationTrait;
+    use DeleteServiceLinkedConfigurationRecorder\DeleteServiceLinkedConfigurationRecorderTrait;
     use DeleteStoredQuery\DeleteStoredQueryTrait;
     use DeliverConfigSnapshot\DeliverConfigSnapshotTrait;
     use DescribeAggregateComplianceByConfigRules\DescribeAggregateComplianceByConfigRulesTrait;
@@ -47,6 +49,7 @@ class ConfigServiceClient extends \Aws\ConfigService\ConfigServiceClient
     use DescribeRemediationExceptions\DescribeRemediationExceptionsTrait;
     use DescribeRemediationExecutionStatus\DescribeRemediationExecutionStatusTrait;
     use DescribeRetentionConfigurations\DescribeRetentionConfigurationsTrait;
+    use DisassociateResourceTypes\DisassociateResourceTypesTrait;
     use GetAggregateComplianceDetailsByConfigRule\GetAggregateComplianceDetailsByConfigRuleTrait;
     use GetAggregateConfigRuleComplianceSummary\GetAggregateConfigRuleComplianceSummaryTrait;
     use GetAggregateConformancePackComplianceSummary\GetAggregateConformancePackComplianceSummaryTrait;
@@ -67,6 +70,7 @@ class ConfigServiceClient extends \Aws\ConfigService\ConfigServiceClient
     use GetResourceEvaluationSummary\GetResourceEvaluationSummaryTrait;
     use GetStoredQuery\GetStoredQueryTrait;
     use ListAggregateDiscoveredResources\ListAggregateDiscoveredResourcesTrait;
+    use ListConfigurationRecorders\ListConfigurationRecordersTrait;
     use ListConformancePackComplianceScores\ListConformancePackComplianceScoresTrait;
     use ListDiscoveredResources\ListDiscoveredResourcesTrait;
     use ListResourceEvaluations\ListResourceEvaluationsTrait;
@@ -86,6 +90,7 @@ class ConfigServiceClient extends \Aws\ConfigService\ConfigServiceClient
     use PutRemediationExceptions\PutRemediationExceptionsTrait;
     use PutResourceConfig\PutResourceConfigTrait;
     use PutRetentionConfiguration\PutRetentionConfigurationTrait;
+    use PutServiceLinkedConfigurationRecorder\PutServiceLinkedConfigurationRecorderTrait;
     use PutStoredQuery\PutStoredQueryTrait;
     use SelectAggregateResourceConfig\SelectAggregateResourceConfigTrait;
     use SelectResourceConfig\SelectResourceConfigTrait;

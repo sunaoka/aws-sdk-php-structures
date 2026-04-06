@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $BucketName
  * @property string|null $ObjectKeyPrefix
  * @property string|null $KmsKeyArn
+ * @property string|null $IamRoleArn
  */
 class S3Action extends Shape
 {
@@ -17,7 +18,8 @@ class S3Action extends Shape
      *     TopicArn?: string|null,
      *     BucketName: string,
      *     ObjectKeyPrefix?: string|null,
-     *     KmsKeyArn?: string|null
+     *     KmsKeyArn?: string|null,
+     *     IamRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

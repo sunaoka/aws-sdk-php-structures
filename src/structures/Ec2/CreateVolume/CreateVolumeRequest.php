@@ -13,11 +13,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $Size
  * @property string|null $SnapshotId
  * @property 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null $VolumeType
- * @property bool|null $DryRun
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property bool|null $MultiAttachEnabled
  * @property int|null $Throughput
  * @property string|null $ClientToken
+ * @property Shapes\OperatorRequest|null $Operator
+ * @property bool|null $DryRun
  */
 class CreateVolumeRequest extends Request
 {
@@ -31,11 +32,12 @@ class CreateVolumeRequest extends Request
      *     Size?: int|null,
      *     SnapshotId?: string|null,
      *     VolumeType?: 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null,
-     *     DryRun?: bool|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     MultiAttachEnabled?: bool|null,
      *     Throughput?: int|null,
-     *     ClientToken?: string|null
+     *     ClientToken?: string|null,
+     *     Operator?: Shapes\OperatorRequest|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

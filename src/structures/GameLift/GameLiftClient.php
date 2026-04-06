@@ -8,6 +8,7 @@ class GameLiftClient extends \Aws\GameLift\GameLiftClient
     use ClaimGameServer\ClaimGameServerTrait;
     use CreateAlias\CreateAliasTrait;
     use CreateBuild\CreateBuildTrait;
+    use CreateContainerFleet\CreateContainerFleetTrait;
     use CreateContainerGroupDefinition\CreateContainerGroupDefinitionTrait;
     use CreateFleet\CreateFleetTrait;
     use CreateFleetLocations\CreateFleetLocationsTrait;
@@ -24,6 +25,7 @@ class GameLiftClient extends \Aws\GameLift\GameLiftClient
     use CreateVpcPeeringConnection\CreateVpcPeeringConnectionTrait;
     use DeleteAlias\DeleteAliasTrait;
     use DeleteBuild\DeleteBuildTrait;
+    use DeleteContainerFleet\DeleteContainerFleetTrait;
     use DeleteContainerGroupDefinition\DeleteContainerGroupDefinitionTrait;
     use DeleteFleet\DeleteFleetTrait;
     use DeleteFleetLocations\DeleteFleetLocationsTrait;
@@ -41,10 +43,12 @@ class GameLiftClient extends \Aws\GameLift\GameLiftClient
     use DescribeAlias\DescribeAliasTrait;
     use DescribeBuild\DescribeBuildTrait;
     use DescribeCompute\DescribeComputeTrait;
+    use DescribeContainerFleet\DescribeContainerFleetTrait;
     use DescribeContainerGroupDefinition\DescribeContainerGroupDefinitionTrait;
     use DescribeEC2InstanceLimits\DescribeEC2InstanceLimitsTrait;
     use DescribeFleetAttributes\DescribeFleetAttributesTrait;
     use DescribeFleetCapacity\DescribeFleetCapacityTrait;
+    use DescribeFleetDeployment\DescribeFleetDeploymentTrait;
     use DescribeFleetEvents\DescribeFleetEventsTrait;
     use DescribeFleetLocationAttributes\DescribeFleetLocationAttributesTrait;
     use DescribeFleetLocationCapacity\DescribeFleetLocationCapacityTrait;
@@ -75,7 +79,10 @@ class GameLiftClient extends \Aws\GameLift\GameLiftClient
     use ListAliases\ListAliasesTrait;
     use ListBuilds\ListBuildsTrait;
     use ListCompute\ListComputeTrait;
+    use ListContainerFleets\ListContainerFleetsTrait;
+    use ListContainerGroupDefinitionVersions\ListContainerGroupDefinitionVersionsTrait;
     use ListContainerGroupDefinitions\ListContainerGroupDefinitionsTrait;
+    use ListFleetDeployments\ListFleetDeploymentsTrait;
     use ListFleets\ListFleetsTrait;
     use ListGameServerGroups\ListGameServerGroupsTrait;
     use ListGameServers\ListGameServersTrait;
@@ -98,9 +105,12 @@ class GameLiftClient extends \Aws\GameLift\GameLiftClient
     use StopMatchmaking\StopMatchmakingTrait;
     use SuspendGameServerGroup\SuspendGameServerGroupTrait;
     use TagResource\TagResourceTrait;
+    use TerminateGameSession\TerminateGameSessionTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAlias\UpdateAliasTrait;
     use UpdateBuild\UpdateBuildTrait;
+    use UpdateContainerFleet\UpdateContainerFleetTrait;
+    use UpdateContainerGroupDefinition\UpdateContainerGroupDefinitionTrait;
     use UpdateFleetAttributes\UpdateFleetAttributesTrait;
     use UpdateFleetCapacity\UpdateFleetCapacityTrait;
     use UpdateFleetPortSettings\UpdateFleetPortSettingsTrait;

@@ -16,9 +16,13 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $subtitle
  * @property string|null $welcomeMessage
  * @property 'ENABLED'|'DISABLED'|null $samplePromptsControlMode
+ * @property list<string>|null $origins
  * @property string|null $roleArn
+ * @property Shapes\IdentityProviderConfiguration|null $identityProviderConfiguration
  * @property Shapes\WebExperienceAuthConfiguration|null $authenticationConfiguration
  * @property Shapes\ErrorDetail|null $error
+ * @property Shapes\BrowserExtensionConfiguration|null $browserExtensionConfiguration
+ * @property Shapes\CustomizationConfiguration|null $customizationConfiguration
  */
 class GetWebExperienceResponse extends Response
 {

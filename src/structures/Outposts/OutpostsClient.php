@@ -20,7 +20,9 @@ class OutpostsClient extends \Aws\Outposts\OutpostsClient
     use GetOutpostSupportedInstanceTypes\GetOutpostSupportedInstanceTypesTrait;
     use GetSite\GetSiteTrait;
     use GetSiteAddress\GetSiteAddressTrait;
+    use ListAssetInstances\ListAssetInstancesTrait;
     use ListAssets\ListAssetsTrait;
+    use ListBlockingInstancesForCapacityTask\ListBlockingInstancesForCapacityTaskTrait;
     use ListCapacityTasks\ListCapacityTasksTrait;
     use ListCatalogItems\ListCatalogItemsTrait;
     use ListOrders\ListOrdersTrait;

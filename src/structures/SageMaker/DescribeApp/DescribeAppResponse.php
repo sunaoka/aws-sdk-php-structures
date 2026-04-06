@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property string|null $FailureReason
  * @property Shapes\ResourceSpec|null $ResourceSpec
+ * @property string|null $BuiltInLifecycleConfigArn
  */
 class DescribeAppResponse extends Response
 {

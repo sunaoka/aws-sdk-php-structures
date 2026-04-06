@@ -27,6 +27,7 @@ class ResilienceHubClient extends \Aws\ResilienceHub\ResilienceHubClient
     use DescribeAppVersionResourcesResolutionStatus\DescribeAppVersionResourcesResolutionStatusTrait;
     use DescribeAppVersionTemplate\DescribeAppVersionTemplateTrait;
     use DescribeDraftAppVersionResourcesImportStatus\DescribeDraftAppVersionResourcesImportStatusTrait;
+    use DescribeMetricsExport\DescribeMetricsExportTrait;
     use DescribeResiliencyPolicy\DescribeResiliencyPolicyTrait;
     use DescribeResourceGroupingRecommendationTask\DescribeResourceGroupingRecommendationTaskTrait;
     use ImportResourcesToDraftAppVersion\ImportResourcesToDraftAppVersionTrait;
@@ -42,6 +43,7 @@ class ResilienceHubClient extends \Aws\ResilienceHub\ResilienceHubClient
     use ListAppVersionResources\ListAppVersionResourcesTrait;
     use ListAppVersions\ListAppVersionsTrait;
     use ListApps\ListAppsTrait;
+    use ListMetrics\ListMetricsTrait;
     use ListRecommendationTemplates\ListRecommendationTemplatesTrait;
     use ListResiliencyPolicies\ListResiliencyPoliciesTrait;
     use ListResourceGroupingRecommendations\ListResourceGroupingRecommendationsTrait;
@@ -56,6 +58,7 @@ class ResilienceHubClient extends \Aws\ResilienceHub\ResilienceHubClient
     use RemoveDraftAppVersionResourceMappings\RemoveDraftAppVersionResourceMappingsTrait;
     use ResolveAppVersionResources\ResolveAppVersionResourcesTrait;
     use StartAppAssessment\StartAppAssessmentTrait;
+    use StartMetricsExport\StartMetricsExportTrait;
     use StartResourceGroupingRecommendationTask\StartResourceGroupingRecommendationTaskTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;

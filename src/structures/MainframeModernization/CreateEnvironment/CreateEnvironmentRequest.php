@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $instanceType
  * @property string|null $kmsKeyId
  * @property string $name
+ * @property 'ipv4'|'dual'|null $networkType
  * @property string|null $preferredMaintenanceWindow
  * @property bool|null $publiclyAccessible
  * @property list<string>|null $securityGroupIds
@@ -32,6 +33,7 @@ class CreateEnvironmentRequest extends Request
      *     instanceType: string,
      *     kmsKeyId?: string|null,
      *     name: string,
+     *     networkType?: 'ipv4'|'dual'|null,
      *     preferredMaintenanceWindow?: string|null,
      *     publiclyAccessible?: bool|null,
      *     securityGroupIds?: list<string>|null,

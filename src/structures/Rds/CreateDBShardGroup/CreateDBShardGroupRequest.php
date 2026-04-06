@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property double $MaxACU
  * @property double|null $MinACU
  * @property bool|null $PubliclyAccessible
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateDBShardGroupRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateDBShardGroupRequest extends Request
      *     ComputeRedundancy?: int|null,
      *     MaxACU: double,
      *     MinACU?: double|null,
-     *     PubliclyAccessible?: bool|null
+     *     PubliclyAccessible?: bool|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

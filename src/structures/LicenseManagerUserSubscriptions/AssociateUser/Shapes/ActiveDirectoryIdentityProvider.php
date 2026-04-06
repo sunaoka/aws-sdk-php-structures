@@ -5,12 +5,18 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\AssociateUser\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property ActiveDirectorySettings|null $ActiveDirectorySettings
+ * @property 'SELF_MANAGED'|'AWS_MANAGED'|null $ActiveDirectoryType
  * @property string|null $DirectoryId
  */
 class ActiveDirectoryIdentityProvider extends Shape
 {
     /**
-     * @param array{DirectoryId?: string|null} $args
+     * @param array{
+     *     ActiveDirectorySettings?: ActiveDirectorySettings|null,
+     *     ActiveDirectoryType?: 'SELF_MANAGED'|'AWS_MANAGED'|null,
+     *     DirectoryId?: string|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

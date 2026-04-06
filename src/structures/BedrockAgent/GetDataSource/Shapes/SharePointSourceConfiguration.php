@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'OAUTH2_CLIENT_CREDENTIALS' $authType
+ * @property 'OAUTH2_CLIENT_CREDENTIALS'|'OAUTH2_SHAREPOINT_APP_ONLY_CLIENT_CREDENTIALS' $authType
  * @property string $credentialsSecretArn
  * @property string $domain
  * @property 'ONLINE' $hostType
@@ -16,7 +16,7 @@ class SharePointSourceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     authType: 'OAUTH2_CLIENT_CREDENTIALS',
+     *     authType: 'OAUTH2_CLIENT_CREDENTIALS'|'OAUTH2_SHAREPOINT_APP_ONLY_CLIENT_CREDENTIALS',
      *     credentialsSecretArn: string,
      *     domain: string,
      *     hostType: 'ONLINE',

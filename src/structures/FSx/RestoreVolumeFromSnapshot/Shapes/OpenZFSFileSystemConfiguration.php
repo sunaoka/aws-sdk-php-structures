@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $EndpointIpAddressRange
  * @property list<string>|null $RouteTableIds
  * @property string|null $EndpointIpAddress
+ * @property OpenZFSReadCacheConfiguration|null $ReadCacheConfiguration
  */
 class OpenZFSFileSystemConfiguration extends Shape
 {
@@ -35,7 +36,8 @@ class OpenZFSFileSystemConfiguration extends Shape
      *     PreferredSubnetId?: string|null,
      *     EndpointIpAddressRange?: string|null,
      *     RouteTableIds?: list<string>|null,
-     *     EndpointIpAddress?: string|null
+     *     EndpointIpAddress?: string|null,
+     *     ReadCacheConfiguration?: OpenZFSReadCacheConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

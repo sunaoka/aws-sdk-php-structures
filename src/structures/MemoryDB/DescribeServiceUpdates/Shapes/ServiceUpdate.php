@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property 'available'|'in-progress'|'complete'|'scheduled'|null $Status
  * @property 'security-update'|null $Type
+ * @property string|null $Engine
  * @property string|null $NodesUpdated
  * @property \Aws\Api\DateTimeResult|null $AutoUpdateStartDate
  */
@@ -24,6 +25,7 @@ class ServiceUpdate extends Shape
      *     Description?: string|null,
      *     Status?: 'available'|'in-progress'|'complete'|'scheduled'|null,
      *     Type?: 'security-update'|null,
+     *     Engine?: string|null,
      *     NodesUpdated?: string|null,
      *     AutoUpdateStartDate?: \Aws\Api\DateTimeResult|null
      * } $args

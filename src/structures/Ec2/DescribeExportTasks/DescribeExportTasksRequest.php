@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeExportTasks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string>|null $ExportTaskIds
  * @property list<Shapes\Filter>|null $Filters
+ * @property list<string>|null $ExportTaskIds
  */
 class DescribeExportTasksRequest extends Request
 {
     /**
      * @param array{
-     *     ExportTaskIds?: list<string>|null,
-     *     Filters?: list<Shapes\Filter>|null
+     *     Filters?: list<Shapes\Filter>|null,
+     *     ExportTaskIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

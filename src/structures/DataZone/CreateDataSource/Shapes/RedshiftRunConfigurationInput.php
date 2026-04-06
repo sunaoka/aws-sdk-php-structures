@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $dataAccessRole
- * @property RedshiftCredentialConfiguration $redshiftCredentialConfiguration
- * @property RedshiftStorage $redshiftStorage
+ * @property RedshiftCredentialConfiguration|null $redshiftCredentialConfiguration
+ * @property RedshiftStorage|null $redshiftStorage
  * @property list<RelationalFilterConfiguration> $relationalFilterConfigurations
  */
 class RedshiftRunConfigurationInput extends Shape
@@ -15,8 +15,8 @@ class RedshiftRunConfigurationInput extends Shape
     /**
      * @param array{
      *     dataAccessRole?: string|null,
-     *     redshiftCredentialConfiguration: RedshiftCredentialConfiguration,
-     *     redshiftStorage: RedshiftStorage,
+     *     redshiftCredentialConfiguration?: RedshiftCredentialConfiguration|null,
+     *     redshiftStorage?: RedshiftStorage|null,
      *     relationalFilterConfigurations: list<RelationalFilterConfiguration>
      * } $args
      */

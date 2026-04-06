@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $dataSourceArn
  * @property string|null $name
  * @property string|null $description
- * @property 'AWS_LAMBDA'|'AMAZON_DYNAMODB'|'AMAZON_ELASTICSEARCH'|'NONE'|'HTTP'|'RELATIONAL_DATABASE'|'AMAZON_OPENSEARCH_SERVICE'|'AMAZON_EVENTBRIDGE'|null $type
+ * @property 'AWS_LAMBDA'|'AMAZON_DYNAMODB'|'AMAZON_ELASTICSEARCH'|'NONE'|'HTTP'|'RELATIONAL_DATABASE'|'AMAZON_OPENSEARCH_SERVICE'|'AMAZON_EVENTBRIDGE'|'AMAZON_BEDROCK_RUNTIME'|null $type
  * @property string|null $serviceRoleArn
  * @property DynamodbDataSourceConfig|null $dynamodbConfig
  * @property LambdaDataSourceConfig|null $lambdaConfig
@@ -26,7 +26,7 @@ class DataSource extends Shape
      *     dataSourceArn?: string|null,
      *     name?: string|null,
      *     description?: string|null,
-     *     type?: 'AWS_LAMBDA'|'AMAZON_DYNAMODB'|'AMAZON_ELASTICSEARCH'|'NONE'|'HTTP'|'RELATIONAL_DATABASE'|'AMAZON_OPENSEARCH_SERVICE'|'AMAZON_EVENTBRIDGE'|null,
+     *     type?: 'AWS_LAMBDA'|'AMAZON_DYNAMODB'|'AMAZON_ELASTICSEARCH'|'NONE'|'HTTP'|'RELATIONAL_DATABASE'|'AMAZON_OPENSEARCH_SERVICE'|'AMAZON_EVENTBRIDGE'|'AMAZON_BEDROCK_RUNTIME'|null,
      *     serviceRoleArn?: string|null,
      *     dynamodbConfig?: DynamodbDataSourceConfig|null,
      *     lambdaConfig?: LambdaDataSourceConfig|null,

@@ -20,6 +20,7 @@ class MediaConnectClient extends \Aws\MediaConnect\MediaConnectClient
     use DescribeBridge\DescribeBridgeTrait;
     use DescribeFlow\DescribeFlowTrait;
     use DescribeFlowSourceMetadata\DescribeFlowSourceMetadataTrait;
+    use DescribeFlowSourceThumbnail\DescribeFlowSourceThumbnailTrait;
     use DescribeGateway\DescribeGatewayTrait;
     use DescribeGatewayInstance\DescribeGatewayInstanceTrait;
     use DescribeOffering\DescribeOfferingTrait;

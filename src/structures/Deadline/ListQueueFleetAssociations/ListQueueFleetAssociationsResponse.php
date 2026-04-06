@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Deadline\ListQueueFleetAssociations;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string|null $nextToken
  * @property list<Shapes\QueueFleetAssociationSummary> $queueFleetAssociations
+ * @property string|null $nextToken
  */
 class ListQueueFleetAssociationsResponse extends Response
 {

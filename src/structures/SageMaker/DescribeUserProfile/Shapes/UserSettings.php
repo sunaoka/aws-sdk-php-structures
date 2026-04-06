@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CustomPosixUserConfig|null $CustomPosixUserConfig
  * @property list<CustomFileSystemConfig>|null $CustomFileSystemConfigs
  * @property StudioWebPortalSettings|null $StudioWebPortalSettings
+ * @property 'Enabled'|'Disabled'|'DefaultAsDomain'|null $AutoMountHomeEFS
  */
 class UserSettings extends Shape
 {
@@ -43,7 +44,8 @@ class UserSettings extends Shape
      *     StudioWebPortal?: 'ENABLED'|'DISABLED'|null,
      *     CustomPosixUserConfig?: CustomPosixUserConfig|null,
      *     CustomFileSystemConfigs?: list<CustomFileSystemConfig>|null,
-     *     StudioWebPortalSettings?: StudioWebPortalSettings|null
+     *     StudioWebPortalSettings?: StudioWebPortalSettings|null,
+     *     AutoMountHomeEFS?: 'Enabled'|'Disabled'|'DefaultAsDomain'|null
      * } $args
      */
     public function __construct(array $args = [])

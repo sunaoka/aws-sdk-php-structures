@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ConfigurationStatus $configurationStatus
  * @property 'ENABLED'|'DISABLED'|null $warmTier
  * @property Shapes\WarmTierRetentionPeriod|null $warmTierRetentionPeriod
+ * @property bool|null $disallowIngestNullNaN
  */
 class PutStorageConfigurationResponse extends Response
 {

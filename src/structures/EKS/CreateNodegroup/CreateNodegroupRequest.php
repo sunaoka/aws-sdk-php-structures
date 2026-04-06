@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientRequestToken
  * @property Shapes\LaunchTemplateSpecification|null $launchTemplate
  * @property Shapes\NodegroupUpdateConfig|null $updateConfig
+ * @property Shapes\NodeRepairConfig|null $nodeRepairConfig
  * @property 'ON_DEMAND'|'SPOT'|'CAPACITY_BLOCK'|null $capacityType
  * @property string|null $version
  * @property string|null $releaseVersion
@@ -43,6 +44,7 @@ class CreateNodegroupRequest extends Request
      *     clientRequestToken?: string|null,
      *     launchTemplate?: Shapes\LaunchTemplateSpecification|null,
      *     updateConfig?: Shapes\NodegroupUpdateConfig|null,
+     *     nodeRepairConfig?: Shapes\NodeRepairConfig|null,
      *     capacityType?: 'ON_DEMAND'|'SPOT'|'CAPACITY_BLOCK'|null,
      *     version?: string|null,
      *     releaseVersion?: string|null

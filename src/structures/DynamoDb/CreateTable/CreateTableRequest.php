@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property 'STANDARD'|'STANDARD_INFREQUENT_ACCESS'|null $TableClass
  * @property bool|null $DeletionProtectionEnabled
+ * @property Shapes\WarmThroughput|null $WarmThroughput
  * @property string|null $ResourcePolicy
  * @property Shapes\OnDemandThroughput|null $OnDemandThroughput
  */
@@ -36,6 +37,7 @@ class CreateTableRequest extends Request
      *     Tags?: list<Shapes\Tag>|null,
      *     TableClass?: 'STANDARD'|'STANDARD_INFREQUENT_ACCESS'|null,
      *     DeletionProtectionEnabled?: bool|null,
+     *     WarmThroughput?: Shapes\WarmThroughput|null,
      *     ResourcePolicy?: string|null,
      *     OnDemandThroughput?: Shapes\OnDemandThroughput|null
      * } $args

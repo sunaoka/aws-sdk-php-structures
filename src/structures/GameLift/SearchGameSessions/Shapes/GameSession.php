@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, max>|null $CurrentPlayerSessionCount
  * @property int<0, max>|null $MaximumPlayerSessionCount
  * @property 'ACTIVE'|'ACTIVATING'|'TERMINATED'|'TERMINATING'|'ERROR'|null $Status
- * @property 'INTERRUPTED'|null $StatusReason
+ * @property 'INTERRUPTED'|'TRIGGERED_ON_PROCESS_TERMINATE'|'FORCE_TERMINATED'|null $StatusReason
  * @property list<GameProperty>|null $GameProperties
  * @property string|null $IpAddress
  * @property string|null $DnsName
@@ -38,7 +38,7 @@ class GameSession extends Shape
      *     CurrentPlayerSessionCount?: int<0, max>|null,
      *     MaximumPlayerSessionCount?: int<0, max>|null,
      *     Status?: 'ACTIVE'|'ACTIVATING'|'TERMINATED'|'TERMINATING'|'ERROR'|null,
-     *     StatusReason?: 'INTERRUPTED'|null,
+     *     StatusReason?: 'INTERRUPTED'|'TRIGGERED_ON_PROCESS_TERMINATE'|'FORCE_TERMINATED'|null,
      *     GameProperties?: list<GameProperty>|null,
      *     IpAddress?: string|null,
      *     DnsName?: string|null,

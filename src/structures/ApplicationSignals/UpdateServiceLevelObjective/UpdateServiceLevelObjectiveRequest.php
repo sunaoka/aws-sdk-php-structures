@@ -8,7 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Id
  * @property string|null $Description
  * @property Shapes\ServiceLevelIndicatorConfig|null $SliConfig
+ * @property Shapes\RequestBasedServiceLevelIndicatorConfig|null $RequestBasedSliConfig
  * @property Shapes\Goal|null $Goal
+ * @property list<Shapes\BurnRateConfiguration>|null $BurnRateConfigurations
  */
 class UpdateServiceLevelObjectiveRequest extends Request
 {
@@ -17,7 +19,9 @@ class UpdateServiceLevelObjectiveRequest extends Request
      *     Id: string,
      *     Description?: string|null,
      *     SliConfig?: Shapes\ServiceLevelIndicatorConfig|null,
-     *     Goal?: Shapes\Goal|null
+     *     RequestBasedSliConfig?: Shapes\RequestBasedServiceLevelIndicatorConfig|null,
+     *     Goal?: Shapes\Goal|null,
+     *     BurnRateConfigurations?: list<Shapes\BurnRateConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

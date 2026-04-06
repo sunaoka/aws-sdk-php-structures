@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DependencyFailedException|null $dependencyFailedException
  * @property FlowCompletionEvent|null $flowCompletionEvent
  * @property FlowOutputEvent|null $flowOutputEvent
+ * @property FlowTraceEvent|null $flowTraceEvent
  * @property InternalServerException|null $internalServerException
  * @property ResourceNotFoundException|null $resourceNotFoundException
  * @property ServiceQuotaExceededException|null $serviceQuotaExceededException
@@ -27,6 +28,7 @@ class FlowResponseStream extends Shape
      *     dependencyFailedException?: DependencyFailedException|null,
      *     flowCompletionEvent?: FlowCompletionEvent|null,
      *     flowOutputEvent?: FlowOutputEvent|null,
+     *     flowTraceEvent?: FlowTraceEvent|null,
      *     internalServerException?: InternalServerException|null,
      *     resourceNotFoundException?: ResourceNotFoundException|null,
      *     serviceQuotaExceededException?: ServiceQuotaExceededException|null,

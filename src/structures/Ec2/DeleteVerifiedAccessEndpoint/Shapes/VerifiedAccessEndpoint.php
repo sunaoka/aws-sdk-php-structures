@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VerifiedAccessGroupId
  * @property string|null $VerifiedAccessEndpointId
  * @property string|null $ApplicationDomain
- * @property 'load-balancer'|'network-interface'|null $EndpointType
+ * @property 'load-balancer'|'network-interface'|'rds'|'cidr'|null $EndpointType
  * @property 'vpc'|null $AttachmentType
  * @property string|null $DomainCertificateArn
  * @property string|null $EndpointDomain
@@ -24,6 +24,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DeletionTime
  * @property list<Tag>|null $Tags
  * @property VerifiedAccessSseSpecificationResponse|null $SseSpecification
+ * @property VerifiedAccessEndpointRdsOptions|null $RdsOptions
+ * @property VerifiedAccessEndpointCidrOptions|null $CidrOptions
  */
 class VerifiedAccessEndpoint extends Shape
 {
@@ -33,7 +35,7 @@ class VerifiedAccessEndpoint extends Shape
      *     VerifiedAccessGroupId?: string|null,
      *     VerifiedAccessEndpointId?: string|null,
      *     ApplicationDomain?: string|null,
-     *     EndpointType?: 'load-balancer'|'network-interface'|null,
+     *     EndpointType?: 'load-balancer'|'network-interface'|'rds'|'cidr'|null,
      *     AttachmentType?: 'vpc'|null,
      *     DomainCertificateArn?: string|null,
      *     EndpointDomain?: string|null,
@@ -47,7 +49,9 @@ class VerifiedAccessEndpoint extends Shape
      *     LastUpdatedTime?: string|null,
      *     DeletionTime?: string|null,
      *     Tags?: list<Tag>|null,
-     *     SseSpecification?: VerifiedAccessSseSpecificationResponse|null
+     *     SseSpecification?: VerifiedAccessSseSpecificationResponse|null,
+     *     RdsOptions?: VerifiedAccessEndpointRdsOptions|null,
+     *     CidrOptions?: VerifiedAccessEndpointCidrOptions|null
      * } $args
      */
     public function __construct(array $args = [])

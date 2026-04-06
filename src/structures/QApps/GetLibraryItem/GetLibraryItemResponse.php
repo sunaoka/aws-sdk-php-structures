@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int $ratingCount
  * @property bool|null $isRatedByUser
  * @property int|null $userCount
+ * @property bool|null $isVerified
  */
 class GetLibraryItemResponse extends Response
 {

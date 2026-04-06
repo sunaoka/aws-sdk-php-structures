@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property bool|null $DryRun
- * @property list<string> $Groups
  * @property string $InstanceId
  * @property string $VpcId
+ * @property list<string> $Groups
  */
 class AttachClassicLinkVpcRequest extends Request
 {
     /**
      * @param array{
      *     DryRun?: bool|null,
-     *     Groups: list<string>,
      *     InstanceId: string,
-     *     VpcId: string
+     *     VpcId: string,
+     *     Groups: list<string>
      * } $args
      */
     public function __construct(array $args)

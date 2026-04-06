@@ -21,6 +21,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'ReportBatchItemFailures'>|null $FunctionResponseTypes
  * @property Shapes\ScalingConfig|null $ScalingConfig
  * @property Shapes\DocumentDBEventSourceConfig|null $DocumentDBEventSourceConfig
+ * @property string|null $KMSKeyArn
+ * @property Shapes\EventSourceMappingMetricsConfig|null $MetricsConfig
+ * @property Shapes\ProvisionedPollerConfig|null $ProvisionedPollerConfig
  */
 class UpdateEventSourceMappingRequest extends Request
 {
@@ -41,7 +44,10 @@ class UpdateEventSourceMappingRequest extends Request
      *     TumblingWindowInSeconds?: int<0, 900>|null,
      *     FunctionResponseTypes?: list<'ReportBatchItemFailures'>|null,
      *     ScalingConfig?: Shapes\ScalingConfig|null,
-     *     DocumentDBEventSourceConfig?: Shapes\DocumentDBEventSourceConfig|null
+     *     DocumentDBEventSourceConfig?: Shapes\DocumentDBEventSourceConfig|null,
+     *     KMSKeyArn?: string|null,
+     *     MetricsConfig?: Shapes\EventSourceMappingMetricsConfig|null,
+     *     ProvisionedPollerConfig?: Shapes\ProvisionedPollerConfig|null
      * } $args
      */
     public function __construct(array $args)

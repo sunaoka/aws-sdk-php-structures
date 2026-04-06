@@ -26,6 +26,7 @@ class RedshiftClient extends \Aws\Redshift\RedshiftClient
     use CreateEventSubscription\CreateEventSubscriptionTrait;
     use CreateHsmClientCertificate\CreateHsmClientCertificateTrait;
     use CreateHsmConfiguration\CreateHsmConfigurationTrait;
+    use CreateIntegration\CreateIntegrationTrait;
     use CreateRedshiftIdcApplication\CreateRedshiftIdcApplicationTrait;
     use CreateScheduledAction\CreateScheduledActionTrait;
     use CreateSnapshotCopyGrant\CreateSnapshotCopyGrantTrait;
@@ -44,6 +45,7 @@ class RedshiftClient extends \Aws\Redshift\RedshiftClient
     use DeleteEventSubscription\DeleteEventSubscriptionTrait;
     use DeleteHsmClientCertificate\DeleteHsmClientCertificateTrait;
     use DeleteHsmConfiguration\DeleteHsmConfigurationTrait;
+    use DeleteIntegration\DeleteIntegrationTrait;
     use DeletePartner\DeletePartnerTrait;
     use DeleteRedshiftIdcApplication\DeleteRedshiftIdcApplicationTrait;
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;
@@ -52,6 +54,7 @@ class RedshiftClient extends \Aws\Redshift\RedshiftClient
     use DeleteSnapshotSchedule\DeleteSnapshotScheduleTrait;
     use DeleteTags\DeleteTagsTrait;
     use DeleteUsageLimit\DeleteUsageLimitTrait;
+    use DeregisterNamespace\DeregisterNamespaceTrait;
     use DescribeAccountAttributes\DescribeAccountAttributesTrait;
     use DescribeAuthenticationProfiles\DescribeAuthenticationProfilesTrait;
     use DescribeClusterDbRevisions\DescribeClusterDbRevisionsTrait;
@@ -76,6 +79,7 @@ class RedshiftClient extends \Aws\Redshift\RedshiftClient
     use DescribeHsmClientCertificates\DescribeHsmClientCertificatesTrait;
     use DescribeHsmConfigurations\DescribeHsmConfigurationsTrait;
     use DescribeInboundIntegrations\DescribeInboundIntegrationsTrait;
+    use DescribeIntegrations\DescribeIntegrationsTrait;
     use DescribeLoggingStatus\DescribeLoggingStatusTrait;
     use DescribeNodeConfigurationOptions\DescribeNodeConfigurationOptionsTrait;
     use DescribeOrderableClusterOptions\DescribeOrderableClusterOptionsTrait;
@@ -117,6 +121,7 @@ class RedshiftClient extends \Aws\Redshift\RedshiftClient
     use ModifyCustomDomainAssociation\ModifyCustomDomainAssociationTrait;
     use ModifyEndpointAccess\ModifyEndpointAccessTrait;
     use ModifyEventSubscription\ModifyEventSubscriptionTrait;
+    use ModifyIntegration\ModifyIntegrationTrait;
     use ModifyRedshiftIdcApplication\ModifyRedshiftIdcApplicationTrait;
     use ModifyScheduledAction\ModifyScheduledActionTrait;
     use ModifySnapshotCopyRetentionPeriod\ModifySnapshotCopyRetentionPeriodTrait;
@@ -126,6 +131,7 @@ class RedshiftClient extends \Aws\Redshift\RedshiftClient
     use PurchaseReservedNodeOffering\PurchaseReservedNodeOfferingTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;
     use RebootCluster\RebootClusterTrait;
+    use RegisterNamespace\RegisterNamespaceTrait;
     use RejectDataShare\RejectDataShareTrait;
     use ResetClusterParameterGroup\ResetClusterParameterGroupTrait;
     use ResizeCluster\ResizeClusterTrait;

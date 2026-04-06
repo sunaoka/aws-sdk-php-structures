@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Deadline\GetStep\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<StepAmountCapability> $amounts
  * @property list<StepAttributeCapability> $attributes
+ * @property list<StepAmountCapability> $amounts
  */
 class StepRequiredCapabilities extends Shape
 {
     /**
      * @param array{
-     *     amounts: list<StepAmountCapability>,
-     *     attributes: list<StepAttributeCapability>
+     *     attributes: list<StepAttributeCapability>,
+     *     amounts: list<StepAmountCapability>
      * } $args
      */
     public function __construct(array $args)

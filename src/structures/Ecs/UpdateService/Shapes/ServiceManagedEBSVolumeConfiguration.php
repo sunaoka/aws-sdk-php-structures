@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $throughput
  * @property list<EBSTagSpecification>|null $tagSpecifications
  * @property string $roleArn
- * @property 'ext3'|'ext4'|'xfs'|null $filesystemType
+ * @property 'ext3'|'ext4'|'xfs'|'ntfs'|null $filesystemType
  */
 class ServiceManagedEBSVolumeConfiguration extends Shape
 {
@@ -29,7 +29,7 @@ class ServiceManagedEBSVolumeConfiguration extends Shape
      *     throughput?: int|null,
      *     tagSpecifications?: list<EBSTagSpecification>|null,
      *     roleArn: string,
-     *     filesystemType?: 'ext3'|'ext4'|'xfs'|null
+     *     filesystemType?: 'ext3'|'ext4'|'xfs'|'ntfs'|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $arn
  * @property string|null $name
- * @property 'Windows'|'Linux'|null $platform
+ * @property 'Windows'|'Linux'|'macOS'|null $platform
  * @property string|null $owner
  * @property string|null $parentImage
  * @property string|null $dateCreated
@@ -19,7 +19,7 @@ class ImageRecipeSummary extends Shape
      * @param array{
      *     arn?: string|null,
      *     name?: string|null,
-     *     platform?: 'Windows'|'Linux'|null,
+     *     platform?: 'Windows'|'Linux'|'macOS'|null,
      *     owner?: string|null,
      *     parentImage?: string|null,
      *     dateCreated?: string|null,

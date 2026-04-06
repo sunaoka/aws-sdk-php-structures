@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TokenUrl
  * @property array<string, string>|null $TokenUrlParametersMap
  * @property AuthorizationCodeProperties|null $AuthorizationCodeProperties
+ * @property OAuth2Credentials|null $OAuth2Credentials
  */
 class OAuth2PropertiesInput extends Shape
 {
@@ -19,7 +20,8 @@ class OAuth2PropertiesInput extends Shape
      *     OAuth2ClientApplication?: OAuth2ClientApplication|null,
      *     TokenUrl?: string|null,
      *     TokenUrlParametersMap?: array<string, string>|null,
-     *     AuthorizationCodeProperties?: AuthorizationCodeProperties|null
+     *     AuthorizationCodeProperties?: AuthorizationCodeProperties|null,
+     *     OAuth2Credentials?: OAuth2Credentials|null
      * } $args
      */
     public function __construct(array $args = [])

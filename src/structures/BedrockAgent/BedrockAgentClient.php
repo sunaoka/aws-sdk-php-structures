@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\BedrockAgent;
 
 class BedrockAgentClient extends \Aws\BedrockAgent\BedrockAgentClient
 {
+    use AssociateAgentCollaborator\AssociateAgentCollaboratorTrait;
     use AssociateAgentKnowledgeBase\AssociateAgentKnowledgeBaseTrait;
     use CreateAgent\CreateAgentTrait;
     use CreateAgentActionGroup\CreateAgentActionGroupTrait;
@@ -24,11 +25,14 @@ class BedrockAgentClient extends \Aws\BedrockAgent\BedrockAgentClient
     use DeleteFlowAlias\DeleteFlowAliasTrait;
     use DeleteFlowVersion\DeleteFlowVersionTrait;
     use DeleteKnowledgeBase\DeleteKnowledgeBaseTrait;
+    use DeleteKnowledgeBaseDocuments\DeleteKnowledgeBaseDocumentsTrait;
     use DeletePrompt\DeletePromptTrait;
+    use DisassociateAgentCollaborator\DisassociateAgentCollaboratorTrait;
     use DisassociateAgentKnowledgeBase\DisassociateAgentKnowledgeBaseTrait;
     use GetAgent\GetAgentTrait;
     use GetAgentActionGroup\GetAgentActionGroupTrait;
     use GetAgentAlias\GetAgentAliasTrait;
+    use GetAgentCollaborator\GetAgentCollaboratorTrait;
     use GetAgentKnowledgeBase\GetAgentKnowledgeBaseTrait;
     use GetAgentVersion\GetAgentVersionTrait;
     use GetDataSource\GetDataSourceTrait;
@@ -37,9 +41,12 @@ class BedrockAgentClient extends \Aws\BedrockAgent\BedrockAgentClient
     use GetFlowVersion\GetFlowVersionTrait;
     use GetIngestionJob\GetIngestionJobTrait;
     use GetKnowledgeBase\GetKnowledgeBaseTrait;
+    use GetKnowledgeBaseDocuments\GetKnowledgeBaseDocumentsTrait;
     use GetPrompt\GetPromptTrait;
+    use IngestKnowledgeBaseDocuments\IngestKnowledgeBaseDocumentsTrait;
     use ListAgentActionGroups\ListAgentActionGroupsTrait;
     use ListAgentAliases\ListAgentAliasesTrait;
+    use ListAgentCollaborators\ListAgentCollaboratorsTrait;
     use ListAgentKnowledgeBases\ListAgentKnowledgeBasesTrait;
     use ListAgentVersions\ListAgentVersionsTrait;
     use ListAgents\ListAgentsTrait;
@@ -48,21 +55,25 @@ class BedrockAgentClient extends \Aws\BedrockAgent\BedrockAgentClient
     use ListFlowVersions\ListFlowVersionsTrait;
     use ListFlows\ListFlowsTrait;
     use ListIngestionJobs\ListIngestionJobsTrait;
+    use ListKnowledgeBaseDocuments\ListKnowledgeBaseDocumentsTrait;
     use ListKnowledgeBases\ListKnowledgeBasesTrait;
     use ListPrompts\ListPromptsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PrepareAgent\PrepareAgentTrait;
     use PrepareFlow\PrepareFlowTrait;
     use StartIngestionJob\StartIngestionJobTrait;
+    use StopIngestionJob\StopIngestionJobTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAgent\UpdateAgentTrait;
     use UpdateAgentActionGroup\UpdateAgentActionGroupTrait;
     use UpdateAgentAlias\UpdateAgentAliasTrait;
+    use UpdateAgentCollaborator\UpdateAgentCollaboratorTrait;
     use UpdateAgentKnowledgeBase\UpdateAgentKnowledgeBaseTrait;
     use UpdateDataSource\UpdateDataSourceTrait;
     use UpdateFlow\UpdateFlowTrait;
     use UpdateFlowAlias\UpdateFlowAliasTrait;
     use UpdateKnowledgeBase\UpdateKnowledgeBaseTrait;
     use UpdatePrompt\UpdatePromptTrait;
+    use ValidateFlowDefinition\ValidateFlowDefinitionTrait;
 }

@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ManifestConfig|null $ManifestConfig
  * @property Shapes\TaskReportConfig|null $TaskReportConfig
  * @property Shapes\TaskScheduleDetails|null $ScheduleDetails
+ * @property 'BASIC'|'ENHANCED'|null $TaskMode
  */
 class DescribeTaskResponse extends Response
 {

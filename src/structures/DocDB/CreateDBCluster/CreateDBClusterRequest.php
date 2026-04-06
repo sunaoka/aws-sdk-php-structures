@@ -26,6 +26,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DeletionProtection
  * @property string|null $GlobalClusterIdentifier
  * @property string|null $StorageType
+ * @property bool|null $ManageMasterUserPassword
+ * @property string|null $MasterUserSecretKmsKeyId
  */
 class CreateDBClusterRequest extends Request
 {
@@ -51,7 +53,9 @@ class CreateDBClusterRequest extends Request
      *     EnableCloudwatchLogsExports?: list<string>|null,
      *     DeletionProtection?: bool|null,
      *     GlobalClusterIdentifier?: string|null,
-     *     StorageType?: string|null
+     *     StorageType?: string|null,
+     *     ManageMasterUserPassword?: bool|null,
+     *     MasterUserSecretKmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

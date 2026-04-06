@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyInstanceAttribute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool|null $DeleteOnTermination
  * @property string|null $VolumeId
+ * @property bool|null $DeleteOnTermination
  */
 class EbsInstanceBlockDeviceSpecification extends Shape
 {
     /**
      * @param array{
-     *     DeleteOnTermination?: bool|null,
-     *     VolumeId?: string|null
+     *     VolumeId?: string|null,
+     *     DeleteOnTermination?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

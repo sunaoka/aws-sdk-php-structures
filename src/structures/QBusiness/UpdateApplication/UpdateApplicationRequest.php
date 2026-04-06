@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AttachmentsConfiguration|null $attachmentsConfiguration
  * @property Shapes\QAppsConfiguration|null $qAppsConfiguration
  * @property Shapes\PersonalizationConfiguration|null $personalizationConfiguration
+ * @property Shapes\AutoSubscriptionConfiguration|null $autoSubscriptionConfiguration
  */
 class UpdateApplicationRequest extends Request
 {
@@ -25,7 +26,8 @@ class UpdateApplicationRequest extends Request
      *     roleArn?: string|null,
      *     attachmentsConfiguration?: Shapes\AttachmentsConfiguration|null,
      *     qAppsConfiguration?: Shapes\QAppsConfiguration|null,
-     *     personalizationConfiguration?: Shapes\PersonalizationConfiguration|null
+     *     personalizationConfiguration?: Shapes\PersonalizationConfiguration|null,
+     *     autoSubscriptionConfiguration?: Shapes\AutoSubscriptionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

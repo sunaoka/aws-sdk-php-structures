@@ -74,4 +74,5 @@ class PersonalizeClient extends \Aws\Personalize\PersonalizeClient
     use UpdateDataset\UpdateDatasetTrait;
     use UpdateMetricAttribution\UpdateMetricAttributionTrait;
     use UpdateRecommender\UpdateRecommenderTrait;
+    use UpdateSolution\UpdateSolutionTrait;
 }

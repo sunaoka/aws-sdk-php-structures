@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\VisualReferenceInput|null $VisualReference
  * @property string|null $ArtifactS3Location
  * @property Shapes\ArtifactConfigInput|null $ArtifactConfig
+ * @property 'AUTOMATIC'|'OFF'|null $ProvisionedResourceCleanup
  */
 class UpdateCanaryRequest extends Request
 {
@@ -33,7 +34,8 @@ class UpdateCanaryRequest extends Request
      *     VpcConfig?: Shapes\VpcConfigInput|null,
      *     VisualReference?: Shapes\VisualReferenceInput|null,
      *     ArtifactS3Location?: string|null,
-     *     ArtifactConfig?: Shapes\ArtifactConfigInput|null
+     *     ArtifactConfig?: Shapes\ArtifactConfigInput|null,
+     *     ProvisionedResourceCleanup?: 'AUTOMATIC'|'OFF'|null
      * } $args
      */
     public function __construct(array $args)

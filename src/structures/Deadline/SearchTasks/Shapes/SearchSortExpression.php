@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Deadline\SearchTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property UserJobsFirst|null $userJobsFirst
  * @property FieldSortExpression|null $fieldSort
  * @property ParameterSortExpression|null $parameterSort
- * @property UserJobsFirst|null $userJobsFirst
  */
 class SearchSortExpression extends Shape
 {
     /**
      * @param array{
+     *     userJobsFirst?: UserJobsFirst|null,
      *     fieldSort?: FieldSortExpression|null,
-     *     parameterSort?: ParameterSortExpression|null,
-     *     userJobsFirst?: UserJobsFirst|null
+     *     parameterSort?: ParameterSortExpression|null
      * } $args
      */
     public function __construct(array $args = [])

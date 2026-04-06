@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ColumnLevelPermissionRule>|null $ColumnLevelPermissionRules
  * @property Shapes\DataSetUsageConfiguration|null $DataSetUsageConfiguration
  * @property list<Shapes\DatasetParameter>|null $DatasetParameters
+ * @property Shapes\PerformanceConfiguration|null $PerformanceConfiguration
  */
 class UpdateDataSetRequest extends Request
 {
@@ -35,7 +36,8 @@ class UpdateDataSetRequest extends Request
      *     RowLevelPermissionTagConfiguration?: Shapes\RowLevelPermissionTagConfiguration|null,
      *     ColumnLevelPermissionRules?: list<Shapes\ColumnLevelPermissionRule>|null,
      *     DataSetUsageConfiguration?: Shapes\DataSetUsageConfiguration|null,
-     *     DatasetParameters?: list<Shapes\DatasetParameter>|null
+     *     DatasetParameters?: list<Shapes\DatasetParameter>|null,
+     *     PerformanceConfiguration?: Shapes\PerformanceConfiguration|null
      * } $args
      */
     public function __construct(array $args)

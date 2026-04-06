@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $HealthCheckPort
  * @property TargetHealth|null $TargetHealth
  * @property AnomalyDetection|null $AnomalyDetection
+ * @property AdministrativeOverride|null $AdministrativeOverride
  */
 class TargetHealthDescription extends Shape
 {
@@ -17,7 +18,8 @@ class TargetHealthDescription extends Shape
      *     Target?: TargetDescription|null,
      *     HealthCheckPort?: string|null,
      *     TargetHealth?: TargetHealth|null,
-     *     AnomalyDetection?: AnomalyDetection|null
+     *     AnomalyDetection?: AnomalyDetection|null,
+     *     AdministrativeOverride?: AdministrativeOverride|null
      * } $args
      */
     public function __construct(array $args = [])

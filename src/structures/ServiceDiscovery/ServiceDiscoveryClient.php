@@ -10,6 +10,7 @@ class ServiceDiscoveryClient extends \Aws\ServiceDiscovery\ServiceDiscoveryClien
     use CreateService\CreateServiceTrait;
     use DeleteNamespace\DeleteNamespaceTrait;
     use DeleteService\DeleteServiceTrait;
+    use DeleteServiceAttributes\DeleteServiceAttributesTrait;
     use DeregisterInstance\DeregisterInstanceTrait;
     use DiscoverInstances\DiscoverInstancesTrait;
     use DiscoverInstancesRevision\DiscoverInstancesRevisionTrait;
@@ -18,6 +19,7 @@ class ServiceDiscoveryClient extends \Aws\ServiceDiscovery\ServiceDiscoveryClien
     use GetNamespace\GetNamespaceTrait;
     use GetOperation\GetOperationTrait;
     use GetService\GetServiceTrait;
+    use GetServiceAttributes\GetServiceAttributesTrait;
     use ListInstances\ListInstancesTrait;
     use ListNamespaces\ListNamespacesTrait;
     use ListOperations\ListOperationsTrait;
@@ -31,4 +33,5 @@ class ServiceDiscoveryClient extends \Aws\ServiceDiscovery\ServiceDiscoveryClien
     use UpdatePrivateDnsNamespace\UpdatePrivateDnsNamespaceTrait;
     use UpdatePublicDnsNamespace\UpdatePublicDnsNamespaceTrait;
     use UpdateService\UpdateServiceTrait;
+    use UpdateServiceAttributes\UpdateServiceAttributesTrait;
 }

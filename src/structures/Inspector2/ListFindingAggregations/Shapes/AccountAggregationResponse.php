@@ -6,6 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $accountId
+ * @property int|null $exploitAvailableCount
+ * @property int|null $fixAvailableCount
  * @property SeverityCounts|null $severityCounts
  */
 class AccountAggregationResponse extends Shape
@@ -13,6 +15,8 @@ class AccountAggregationResponse extends Shape
     /**
      * @param array{
      *     accountId?: string|null,
+     *     exploitAvailableCount?: int|null,
+     *     fixAvailableCount?: int|null,
      *     severityCounts?: SeverityCounts|null
      * } $args
      */

@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property ContentDataDetails|null $contentData
  * @property GenerativeDataDetails|null $generativeData
+ * @property IntentDetectedDataDetails|null $intentDetectedData
  * @property SourceContentDataDetails|null $sourceContentData
  */
 class DataDetails extends Shape
@@ -15,6 +16,7 @@ class DataDetails extends Shape
      * @param array{
      *     contentData?: ContentDataDetails|null,
      *     generativeData?: GenerativeDataDetails|null,
+     *     intentDetectedData?: IntentDetectedDataDetails|null,
      *     sourceContentData?: SourceContentDataDetails|null
      * } $args
      */

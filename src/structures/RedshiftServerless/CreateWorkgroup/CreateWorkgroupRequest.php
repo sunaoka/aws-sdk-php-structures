@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $maxCapacity
  * @property string $namespaceName
  * @property int|null $port
+ * @property Shapes\PerformanceTarget|null $pricePerformanceTarget
  * @property bool|null $publiclyAccessible
  * @property list<string>|null $securityGroupIds
  * @property list<string>|null $subnetIds
@@ -29,6 +30,7 @@ class CreateWorkgroupRequest extends Request
      *     maxCapacity?: int|null,
      *     namespaceName: string,
      *     port?: int|null,
+     *     pricePerformanceTarget?: Shapes\PerformanceTarget|null,
      *     publiclyAccessible?: bool|null,
      *     securityGroupIds?: list<string>|null,
      *     subnetIds?: list<string>|null,

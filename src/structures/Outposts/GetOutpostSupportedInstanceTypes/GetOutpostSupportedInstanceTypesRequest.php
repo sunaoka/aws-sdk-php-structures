@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OutpostIdentifier
- * @property string $OrderId
+ * @property string|null $OrderId
  * @property int<1, 1000>|null $MaxResults
  * @property string|null $NextToken
  */
@@ -15,7 +15,7 @@ class GetOutpostSupportedInstanceTypesRequest extends Request
     /**
      * @param array{
      *     OutpostIdentifier: string,
-     *     OrderId: string,
+     *     OrderId?: string|null,
      *     MaxResults?: int<1, 1000>|null,
      *     NextToken?: string|null
      * } $args

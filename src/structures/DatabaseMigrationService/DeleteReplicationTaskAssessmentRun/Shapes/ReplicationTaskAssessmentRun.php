@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ResultEncryptionMode
  * @property string|null $ResultKmsKeyArn
  * @property string|null $AssessmentRunName
+ * @property bool|null $IsLatestTaskAssessmentRun
+ * @property ReplicationTaskAssessmentRunResultStatistic|null $ResultStatistic
  */
 class ReplicationTaskAssessmentRun extends Shape
 {
@@ -33,7 +35,9 @@ class ReplicationTaskAssessmentRun extends Shape
      *     ResultLocationFolder?: string|null,
      *     ResultEncryptionMode?: string|null,
      *     ResultKmsKeyArn?: string|null,
-     *     AssessmentRunName?: string|null
+     *     AssessmentRunName?: string|null,
+     *     IsLatestTaskAssessmentRun?: bool|null,
+     *     ResultStatistic?: ReplicationTaskAssessmentRunResultStatistic|null
      * } $args
      */
     public function __construct(array $args = [])

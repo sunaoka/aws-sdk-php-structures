@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string>|null $Queues
- * @property list<'VOICE'|'CHAT'|'TASK'>|null $Channels
+ * @property list<'VOICE'|'CHAT'|'TASK'|'EMAIL'>|null $Channels
  * @property list<string>|null $RoutingProfiles
  * @property list<string>|null $RoutingStepExpressions
  */
@@ -15,7 +15,7 @@ class Filters extends Shape
     /**
      * @param array{
      *     Queues?: list<string>|null,
-     *     Channels?: list<'VOICE'|'CHAT'|'TASK'>|null,
+     *     Channels?: list<'VOICE'|'CHAT'|'TASK'|'EMAIL'>|null,
      *     RoutingProfiles?: list<string>|null,
      *     RoutingStepExpressions?: list<string>|null
      * } $args

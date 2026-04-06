@@ -20,6 +20,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $title
  * @property string|null $type
  * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $fixAvailable
+ * @property string|null $exploitAvailable
  */
 class EnhancedImageScanFinding extends Shape
 {
@@ -39,7 +41,9 @@ class EnhancedImageScanFinding extends Shape
      *     status?: string|null,
      *     title?: string|null,
      *     type?: string|null,
-     *     updatedAt?: \Aws\Api\DateTimeResult|null
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     fixAvailable?: string|null,
+     *     exploitAvailable?: string|null
      * } $args
      */
     public function __construct(array $args = [])

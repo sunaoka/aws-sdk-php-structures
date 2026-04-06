@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\NeptuneGraph;
 
 class NeptuneGraphClient extends \Aws\NeptuneGraph\NeptuneGraphClient
 {
+    use CancelExportTask\CancelExportTaskTrait;
     use CancelImportTask\CancelImportTaskTrait;
     use CancelQuery\CancelQueryTrait;
     use CreateGraph\CreateGraphTrait;
@@ -14,12 +15,14 @@ class NeptuneGraphClient extends \Aws\NeptuneGraph\NeptuneGraphClient
     use DeleteGraphSnapshot\DeleteGraphSnapshotTrait;
     use DeletePrivateGraphEndpoint\DeletePrivateGraphEndpointTrait;
     use ExecuteQuery\ExecuteQueryTrait;
+    use GetExportTask\GetExportTaskTrait;
     use GetGraph\GetGraphTrait;
     use GetGraphSnapshot\GetGraphSnapshotTrait;
     use GetGraphSummary\GetGraphSummaryTrait;
     use GetImportTask\GetImportTaskTrait;
     use GetPrivateGraphEndpoint\GetPrivateGraphEndpointTrait;
     use GetQuery\GetQueryTrait;
+    use ListExportTasks\ListExportTasksTrait;
     use ListGraphSnapshots\ListGraphSnapshotsTrait;
     use ListGraphs\ListGraphsTrait;
     use ListImportTasks\ListImportTasksTrait;
@@ -28,6 +31,7 @@ class NeptuneGraphClient extends \Aws\NeptuneGraph\NeptuneGraphClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use ResetGraph\ResetGraphTrait;
     use RestoreGraphFromSnapshot\RestoreGraphFromSnapshotTrait;
+    use StartExportTask\StartExportTaskTrait;
     use StartImportTask\StartImportTaskTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;

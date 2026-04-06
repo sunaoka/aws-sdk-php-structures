@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DependencyFailedException|null $dependencyFailedException
  * @property FilePart|null $files
  * @property InternalServerException|null $internalServerException
+ * @property ModelNotReadyException|null $modelNotReadyException
  * @property ResourceNotFoundException|null $resourceNotFoundException
  * @property ReturnControlPayload|null $returnControl
  * @property ServiceQuotaExceededException|null $serviceQuotaExceededException
@@ -30,6 +31,7 @@ class ResponseStream extends Shape
      *     dependencyFailedException?: DependencyFailedException|null,
      *     files?: FilePart|null,
      *     internalServerException?: InternalServerException|null,
+     *     modelNotReadyException?: ModelNotReadyException|null,
      *     resourceNotFoundException?: ResourceNotFoundException|null,
      *     returnControl?: ReturnControlPayload|null,
      *     serviceQuotaExceededException?: ServiceQuotaExceededException|null,

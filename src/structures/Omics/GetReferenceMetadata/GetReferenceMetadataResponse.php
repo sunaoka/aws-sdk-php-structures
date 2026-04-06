@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property Shapes\ReferenceFiles|null $files
+ * @property 'IMPORT'|null $creationType
+ * @property string|null $creationJobId
  */
 class GetReferenceMetadataResponse extends Response
 {

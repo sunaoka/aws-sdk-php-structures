@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\DataSetUsageConfiguration|null $DataSetUsageConfiguration
  * @property list<Shapes\DatasetParameter>|null $DatasetParameters
  * @property list<string>|null $FolderArns
+ * @property Shapes\PerformanceConfiguration|null $PerformanceConfiguration
  */
 class CreateDataSetRequest extends Request
 {
@@ -41,7 +42,8 @@ class CreateDataSetRequest extends Request
      *     Tags?: list<Shapes\Tag>|null,
      *     DataSetUsageConfiguration?: Shapes\DataSetUsageConfiguration|null,
      *     DatasetParameters?: list<Shapes\DatasetParameter>|null,
-     *     FolderArns?: list<string>|null
+     *     FolderArns?: list<string>|null,
+     *     PerformanceConfiguration?: Shapes\PerformanceConfiguration|null
      * } $args
      */
     public function __construct(array $args)

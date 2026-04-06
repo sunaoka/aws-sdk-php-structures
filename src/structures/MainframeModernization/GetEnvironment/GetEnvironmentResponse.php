@@ -17,11 +17,12 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $kmsKeyId
  * @property string|null $loadBalancerArn
  * @property string $name
+ * @property 'ipv4'|'dual'|null $networkType
  * @property Shapes\PendingMaintenance|null $pendingMaintenance
  * @property string|null $preferredMaintenanceWindow
  * @property bool|null $publiclyAccessible
  * @property list<string> $securityGroupIds
- * @property 'Creating'|'Available'|'Updating'|'Deleting'|'Failed' $status
+ * @property 'Creating'|'Available'|'Updating'|'Deleting'|'Failed'|'UnHealthy' $status
  * @property string|null $statusReason
  * @property list<Shapes\StorageConfiguration>|null $storageConfigurations
  * @property list<string> $subnetIds

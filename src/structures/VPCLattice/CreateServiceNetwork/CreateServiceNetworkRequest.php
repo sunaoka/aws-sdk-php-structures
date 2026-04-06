@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'NONE'|'AWS_IAM'|null $authType
  * @property string|null $clientToken
  * @property string $name
+ * @property Shapes\SharingConfig|null $sharingConfig
  * @property array<string, string>|null $tags
  */
 class CreateServiceNetworkRequest extends Request
@@ -17,6 +18,7 @@ class CreateServiceNetworkRequest extends Request
      *     authType?: 'NONE'|'AWS_IAM'|null,
      *     clientToken?: string|null,
      *     name: string,
+     *     sharingConfig?: Shapes\SharingConfig|null,
      *     tags?: array<string, string>|null
      * } $args
      */

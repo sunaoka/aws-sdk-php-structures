@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $name
  * @property int|null $numberOfAssociatedServices
  * @property int|null $numberOfAssociatedVPCs
+ * @property Shapes\SharingConfig|null $sharingConfig
  */
 class GetServiceNetworkResponse extends Response
 {

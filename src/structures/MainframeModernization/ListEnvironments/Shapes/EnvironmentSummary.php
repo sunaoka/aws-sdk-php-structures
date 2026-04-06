@@ -12,7 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $environmentId
  * @property string $instanceType
  * @property string $name
- * @property 'Creating'|'Available'|'Updating'|'Deleting'|'Failed' $status
+ * @property 'ipv4'|'dual'|null $networkType
+ * @property 'Creating'|'Available'|'Updating'|'Deleting'|'Failed'|'UnHealthy' $status
  */
 class EnvironmentSummary extends Shape
 {
@@ -25,7 +26,8 @@ class EnvironmentSummary extends Shape
      *     environmentId: string,
      *     instanceType: string,
      *     name: string,
-     *     status: 'Creating'|'Available'|'Updating'|'Deleting'|'Failed'
+     *     networkType?: 'ipv4'|'dual'|null,
+     *     status: 'Creating'|'Available'|'Updating'|'Deleting'|'Failed'|'UnHealthy'
      * } $args
      */
     public function __construct(array $args)

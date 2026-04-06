@@ -20,8 +20,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\LogDeliveryDescription|null $logDelivery
  * @property list<Shapes\PluginDescription>|null $plugins
  * @property string|null $serviceExecutionRoleArn
- * @property Shapes\StateDescription|null $stateDescription
  * @property Shapes\WorkerConfigurationDescription|null $workerConfiguration
+ * @property Shapes\StateDescription|null $stateDescription
  */
 class DescribeConnectorResponse extends Response
 {

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $email
  * @property string|null $phone
  * @property list<string>|null $capabilities
+ * @property Shapes\CapabilityOptions|null $capabilityOptions
  * @property string|null $tradingPartnerId
  * @property \Aws\Api\DateTimeResult $createdAt
  */

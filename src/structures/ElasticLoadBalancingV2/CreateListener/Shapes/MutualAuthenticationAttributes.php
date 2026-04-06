@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TrustStoreArn
  * @property bool|null $IgnoreClientCertificateExpiry
  * @property 'active'|'removed'|null $TrustStoreAssociationStatus
+ * @property 'on'|'off'|null $AdvertiseTrustStoreCaNames
  */
 class MutualAuthenticationAttributes extends Shape
 {
@@ -17,7 +18,8 @@ class MutualAuthenticationAttributes extends Shape
      *     Mode?: string|null,
      *     TrustStoreArn?: string|null,
      *     IgnoreClientCertificateExpiry?: bool|null,
-     *     TrustStoreAssociationStatus?: 'active'|'removed'|null
+     *     TrustStoreAssociationStatus?: 'active'|'removed'|null,
+     *     AdvertiseTrustStoreCaNames?: 'on'|'off'|null
      * } $args
      */
     public function __construct(array $args = [])

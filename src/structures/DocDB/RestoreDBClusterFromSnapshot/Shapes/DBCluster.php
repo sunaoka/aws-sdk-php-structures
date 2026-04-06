@@ -38,6 +38,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $EnabledCloudwatchLogsExports
  * @property bool|null $DeletionProtection
  * @property string|null $StorageType
+ * @property ClusterMasterUserSecret|null $MasterUserSecret
  */
 class DBCluster extends Shape
 {
@@ -75,7 +76,8 @@ class DBCluster extends Shape
      *     ClusterCreateTime?: \Aws\Api\DateTimeResult|null,
      *     EnabledCloudwatchLogsExports?: list<string>|null,
      *     DeletionProtection?: bool|null,
-     *     StorageType?: string|null
+     *     StorageType?: string|null,
+     *     MasterUserSecret?: ClusterMasterUserSecret|null
      * } $args
      */
     public function __construct(array $args = [])

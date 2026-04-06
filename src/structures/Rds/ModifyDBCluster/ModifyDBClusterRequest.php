@@ -36,6 +36,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $AutoMinorVersionUpgrade
  * @property int|null $MonitoringInterval
  * @property string|null $MonitoringRoleArn
+ * @property 'standard'|'advanced'|null $DatabaseInsightsMode
  * @property bool|null $EnablePerformanceInsights
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
@@ -86,6 +87,7 @@ class ModifyDBClusterRequest extends Request
      *     AutoMinorVersionUpgrade?: bool|null,
      *     MonitoringInterval?: int|null,
      *     MonitoringRoleArn?: string|null,
+     *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
      *     EnablePerformanceInsights?: bool|null,
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,

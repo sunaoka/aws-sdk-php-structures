@@ -9,9 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CoreNetworkArn
  * @property string|null $AttachmentId
  * @property string|null $OwnerAccountId
- * @property 'CONNECT'|'SITE_TO_SITE_VPN'|'VPC'|'TRANSIT_GATEWAY_ROUTE_TABLE'|null $AttachmentType
+ * @property 'CONNECT'|'SITE_TO_SITE_VPN'|'VPC'|'DIRECT_CONNECT_GATEWAY'|'TRANSIT_GATEWAY_ROUTE_TABLE'|null $AttachmentType
  * @property 'REJECTED'|'PENDING_ATTACHMENT_ACCEPTANCE'|'CREATING'|'FAILED'|'AVAILABLE'|'UPDATING'|'PENDING_NETWORK_UPDATE'|'PENDING_TAG_ACCEPTANCE'|'DELETING'|null $State
  * @property string|null $EdgeLocation
+ * @property list<string>|null $EdgeLocations
  * @property string|null $ResourceArn
  * @property int|null $AttachmentPolicyRuleNumber
  * @property string|null $SegmentName
@@ -31,9 +32,10 @@ class Attachment extends Shape
      *     CoreNetworkArn?: string|null,
      *     AttachmentId?: string|null,
      *     OwnerAccountId?: string|null,
-     *     AttachmentType?: 'CONNECT'|'SITE_TO_SITE_VPN'|'VPC'|'TRANSIT_GATEWAY_ROUTE_TABLE'|null,
+     *     AttachmentType?: 'CONNECT'|'SITE_TO_SITE_VPN'|'VPC'|'DIRECT_CONNECT_GATEWAY'|'TRANSIT_GATEWAY_ROUTE_TABLE'|null,
      *     State?: 'REJECTED'|'PENDING_ATTACHMENT_ACCEPTANCE'|'CREATING'|'FAILED'|'AVAILABLE'|'UPDATING'|'PENDING_NETWORK_UPDATE'|'PENDING_TAG_ACCEPTANCE'|'DELETING'|null,
      *     EdgeLocation?: string|null,
+     *     EdgeLocations?: list<string>|null,
      *     ResourceArn?: string|null,
      *     AttachmentPolicyRuleNumber?: int|null,
      *     SegmentName?: string|null,

@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Type
  * @property string|null $VpnGatewayId
  * @property string|null $TransitGatewayId
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property bool|null $DryRun
  * @property Shapes\VpnConnectionOptionsSpecification|null $Options
- * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class CreateVpnConnectionRequest extends Request
 {
@@ -21,9 +21,9 @@ class CreateVpnConnectionRequest extends Request
      *     Type: string,
      *     VpnGatewayId?: string|null,
      *     TransitGatewayId?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     DryRun?: bool|null,
-     *     Options?: Shapes\VpnConnectionOptionsSpecification|null,
-     *     TagSpecifications?: list<Shapes\TagSpecification>|null
+     *     Options?: Shapes\VpnConnectionOptionsSpecification|null
      * } $args
      */
     public function __construct(array $args)

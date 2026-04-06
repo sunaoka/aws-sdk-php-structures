@@ -31,6 +31,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ServiceSoftwareOptions|null $ServiceSoftwareOptions
  * @property DomainEndpointOptions|null $DomainEndpointOptions
  * @property AdvancedSecurityOptions|null $AdvancedSecurityOptions
+ * @property IdentityCenterOptions|null $IdentityCenterOptions
  * @property AutoTuneOptionsOutput|null $AutoTuneOptions
  * @property ChangeProgressDetails|null $ChangeProgressDetails
  * @property OffPeakWindowOptions|null $OffPeakWindowOptions
@@ -69,6 +70,7 @@ class DomainStatus extends Shape
      *     ServiceSoftwareOptions?: ServiceSoftwareOptions|null,
      *     DomainEndpointOptions?: DomainEndpointOptions|null,
      *     AdvancedSecurityOptions?: AdvancedSecurityOptions|null,
+     *     IdentityCenterOptions?: IdentityCenterOptions|null,
      *     AutoTuneOptions?: AutoTuneOptionsOutput|null,
      *     ChangeProgressDetails?: ChangeProgressDetails|null,
      *     OffPeakWindowOptions?: OffPeakWindowOptions|null,

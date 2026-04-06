@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $FrameworkVersion
  * @property string|null $NearestModelName
  * @property AdditionalS3DataSource|null $AdditionalS3DataSource
+ * @property string|null $ModelDataETag
  */
 class ModelPackageContainerDefinition extends Shape
 {
@@ -33,7 +34,8 @@ class ModelPackageContainerDefinition extends Shape
      *     Framework?: string|null,
      *     FrameworkVersion?: string|null,
      *     NearestModelName?: string|null,
-     *     AdditionalS3DataSource?: AdditionalS3DataSource|null
+     *     AdditionalS3DataSource?: AdditionalS3DataSource|null,
+     *     ModelDataETag?: string|null
      * } $args
      */
     public function __construct(array $args)

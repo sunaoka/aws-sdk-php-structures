@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\MessageTag>|null $DefaultTags
  * @property string $Template
  * @property string|null $TemplateArn
- * @property string|null $DefaultTemplateData
+ * @property string $DefaultTemplateData
  * @property list<Shapes\BulkEmailDestination> $Destinations
  */
 class SendBulkTemplatedEmailRequest extends Request
@@ -30,7 +30,7 @@ class SendBulkTemplatedEmailRequest extends Request
      *     DefaultTags?: list<Shapes\MessageTag>|null,
      *     Template: string,
      *     TemplateArn?: string|null,
-     *     DefaultTemplateData?: string|null,
+     *     DefaultTemplateData: string,
      *     Destinations: list<Shapes\BulkEmailDestination>
      * } $args
      */

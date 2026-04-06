@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $DnsIpAddresses
  * @property string|null $CustomerUserName
  * @property string|null $IamRoleId
- * @property 'SIMPLE_AD'|'AD_CONNECTOR'|'CUSTOMER_MANAGED'|null $DirectoryType
+ * @property 'SIMPLE_AD'|'AD_CONNECTOR'|'CUSTOMER_MANAGED'|'AWS_IAM_IDENTITY_CENTER'|null $DirectoryType
  * @property string|null $WorkspaceSecurityGroupId
  * @property 'REGISTERING'|'REGISTERED'|'DEREGISTERING'|'DEREGISTERED'|'ERROR'|null $State
  * @property DefaultWorkspaceCreationProperties|null $WorkspaceCreationProperties
@@ -23,10 +23,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SelfservicePermissions|null $SelfservicePermissions
  * @property SamlProperties|null $SamlProperties
  * @property CertificateBasedAuthProperties|null $CertificateBasedAuthProperties
+ * @property MicrosoftEntraConfig|null $MicrosoftEntraConfig
  * @property string|null $WorkspaceDirectoryName
  * @property string|null $WorkspaceDirectoryDescription
- * @property 'CUSTOMER_MANAGED'|'AWS_DIRECTORY_SERVICE'|null $UserIdentityType
+ * @property 'CUSTOMER_MANAGED'|'AWS_DIRECTORY_SERVICE'|'AWS_IAM_IDENTITY_CENTER'|null $UserIdentityType
  * @property 'PERSONAL'|'POOLS'|null $WorkspaceType
+ * @property IDCConfig|null $IDCConfig
  * @property ActiveDirectoryConfig|null $ActiveDirectoryConfig
  * @property StreamingProperties|null $StreamingProperties
  * @property string|null $ErrorMessage
@@ -43,7 +45,7 @@ class WorkspaceDirectory extends Shape
      *     DnsIpAddresses?: list<string>|null,
      *     CustomerUserName?: string|null,
      *     IamRoleId?: string|null,
-     *     DirectoryType?: 'SIMPLE_AD'|'AD_CONNECTOR'|'CUSTOMER_MANAGED'|null,
+     *     DirectoryType?: 'SIMPLE_AD'|'AD_CONNECTOR'|'CUSTOMER_MANAGED'|'AWS_IAM_IDENTITY_CENTER'|null,
      *     WorkspaceSecurityGroupId?: string|null,
      *     State?: 'REGISTERING'|'REGISTERED'|'DEREGISTERING'|'DEREGISTERED'|'ERROR'|null,
      *     WorkspaceCreationProperties?: DefaultWorkspaceCreationProperties|null,
@@ -53,10 +55,12 @@ class WorkspaceDirectory extends Shape
      *     SelfservicePermissions?: SelfservicePermissions|null,
      *     SamlProperties?: SamlProperties|null,
      *     CertificateBasedAuthProperties?: CertificateBasedAuthProperties|null,
+     *     MicrosoftEntraConfig?: MicrosoftEntraConfig|null,
      *     WorkspaceDirectoryName?: string|null,
      *     WorkspaceDirectoryDescription?: string|null,
-     *     UserIdentityType?: 'CUSTOMER_MANAGED'|'AWS_DIRECTORY_SERVICE'|null,
+     *     UserIdentityType?: 'CUSTOMER_MANAGED'|'AWS_DIRECTORY_SERVICE'|'AWS_IAM_IDENTITY_CENTER'|null,
      *     WorkspaceType?: 'PERSONAL'|'POOLS'|null,
+     *     IDCConfig?: IDCConfig|null,
      *     ActiveDirectoryConfig?: ActiveDirectoryConfig|null,
      *     StreamingProperties?: StreamingProperties|null,
      *     ErrorMessage?: string|null

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $S3Key
  * @property string|null $S3ObjectVersion
  * @property string|null $ImageUri
+ * @property string|null $SourceKMSKeyArn
  */
 class FunctionCode extends Shape
 {
@@ -19,7 +20,8 @@ class FunctionCode extends Shape
      *     S3Bucket?: string|null,
      *     S3Key?: string|null,
      *     S3ObjectVersion?: string|null,
-     *     ImageUri?: string|null
+     *     ImageUri?: string|null,
+     *     SourceKMSKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

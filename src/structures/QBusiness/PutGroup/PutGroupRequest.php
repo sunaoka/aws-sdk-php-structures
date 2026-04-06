@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $dataSourceId
  * @property 'INDEX'|'DATASOURCE' $type
  * @property Shapes\GroupMembers $groupMembers
+ * @property string|null $roleArn
  */
 class PutGroupRequest extends Request
 {
@@ -21,7 +22,8 @@ class PutGroupRequest extends Request
      *     groupName: string,
      *     dataSourceId?: string|null,
      *     type: 'INDEX'|'DATASOURCE',
-     *     groupMembers: Shapes\GroupMembers
+     *     groupMembers: Shapes\GroupMembers,
+     *     roleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

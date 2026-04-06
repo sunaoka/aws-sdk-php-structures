@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $TargetContainerHostname
  * @property string|null $InferenceId
  * @property string|null $InferenceComponentName
+ * @property string|null $SessionId
  */
 class InvokeEndpointWithResponseStreamRequest extends Request
 {
@@ -27,7 +28,8 @@ class InvokeEndpointWithResponseStreamRequest extends Request
      *     TargetVariant?: string|null,
      *     TargetContainerHostname?: string|null,
      *     InferenceId?: string|null,
-     *     InferenceComponentName?: string|null
+     *     InferenceComponentName?: string|null,
+     *     SessionId?: string|null
      * } $args
      */
     public function __construct(array $args)

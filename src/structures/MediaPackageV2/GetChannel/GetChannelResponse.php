@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'HLS'|'CMAF'|null $InputType
  * @property string|null $ETag
  * @property array<string, string>|null $Tags
+ * @property Shapes\InputSwitchConfiguration|null $InputSwitchConfiguration
+ * @property Shapes\OutputHeaderConfiguration|null $OutputHeaderConfiguration
  */
 class GetChannelResponse extends Response
 {

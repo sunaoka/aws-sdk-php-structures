@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $arn
- * @property string|null $name
  * @property DestinationConfiguration $destinationConfiguration
+ * @property string|null $name
  * @property 'CREATING'|'CREATE_FAILED'|'ACTIVE' $state
  * @property array<string, string>|null $tags
  */
@@ -16,8 +16,8 @@ class RecordingConfigurationSummary extends Shape
     /**
      * @param array{
      *     arn: string,
-     *     name?: string|null,
      *     destinationConfiguration: DestinationConfiguration,
+     *     name?: string|null,
      *     state: 'CREATING'|'CREATE_FAILED'|'ACTIVE',
      *     tags?: array<string, string>|null
      * } $args

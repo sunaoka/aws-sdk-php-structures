@@ -6,13 +6,13 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $clientToken
- * @property Shapes\FleetConfiguration $configuration
- * @property string|null $description
- * @property string $displayName
  * @property string $farmId
- * @property int<0, 2147483647> $maxWorkerCount
- * @property int<0, 2147483647>|null $minWorkerCount
+ * @property string $displayName
+ * @property string|null $description
  * @property string $roleArn
+ * @property int<0, 2147483647>|null $minWorkerCount
+ * @property int<0, 2147483647> $maxWorkerCount
+ * @property Shapes\FleetConfiguration $configuration
  * @property array<string, string>|null $tags
  */
 class CreateFleetRequest extends Request
@@ -20,13 +20,13 @@ class CreateFleetRequest extends Request
     /**
      * @param array{
      *     clientToken?: string|null,
-     *     configuration: Shapes\FleetConfiguration,
-     *     description?: string|null,
-     *     displayName: string,
      *     farmId: string,
-     *     maxWorkerCount: int<0, 2147483647>,
-     *     minWorkerCount?: int<0, 2147483647>|null,
+     *     displayName: string,
+     *     description?: string|null,
      *     roleArn: string,
+     *     minWorkerCount?: int<0, 2147483647>|null,
+     *     maxWorkerCount: int<0, 2147483647>,
+     *     configuration: Shapes\FleetConfiguration,
      *     tags?: array<string, string>|null
      * } $args
      */

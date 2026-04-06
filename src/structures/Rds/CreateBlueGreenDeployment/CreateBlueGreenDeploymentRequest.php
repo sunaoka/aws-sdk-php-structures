@@ -13,6 +13,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $TargetDBInstanceClass
  * @property bool|null $UpgradeTargetStorageConfig
+ * @property int|null $TargetIops
+ * @property string|null $TargetStorageType
+ * @property int|null $TargetAllocatedStorage
+ * @property int|null $TargetStorageThroughput
  */
 class CreateBlueGreenDeploymentRequest extends Request
 {
@@ -25,7 +29,11 @@ class CreateBlueGreenDeploymentRequest extends Request
      *     TargetDBClusterParameterGroupName?: string|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     TargetDBInstanceClass?: string|null,
-     *     UpgradeTargetStorageConfig?: bool|null
+     *     UpgradeTargetStorageConfig?: bool|null,
+     *     TargetIops?: int|null,
+     *     TargetStorageType?: string|null,
+     *     TargetAllocatedStorage?: int|null,
+     *     TargetStorageThroughput?: int|null
      * } $args
      */
     public function __construct(array $args)

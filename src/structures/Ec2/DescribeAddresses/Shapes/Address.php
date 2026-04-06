@@ -5,8 +5,6 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeAddresses\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $InstanceId
- * @property string|null $PublicIp
  * @property string|null $AllocationId
  * @property string|null $AssociationId
  * @property 'vpc'|'standard'|null $Domain
@@ -19,13 +17,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CustomerOwnedIp
  * @property string|null $CustomerOwnedIpv4Pool
  * @property string|null $CarrierIp
+ * @property string|null $InstanceId
+ * @property string|null $PublicIp
  */
 class Address extends Shape
 {
     /**
      * @param array{
-     *     InstanceId?: string|null,
-     *     PublicIp?: string|null,
      *     AllocationId?: string|null,
      *     AssociationId?: string|null,
      *     Domain?: 'vpc'|'standard'|null,
@@ -37,7 +35,9 @@ class Address extends Shape
      *     NetworkBorderGroup?: string|null,
      *     CustomerOwnedIp?: string|null,
      *     CustomerOwnedIpv4Pool?: string|null,
-     *     CarrierIp?: string|null
+     *     CarrierIp?: string|null,
+     *     InstanceId?: string|null,
+     *     PublicIp?: string|null
      * } $args
      */
     public function __construct(array $args = [])

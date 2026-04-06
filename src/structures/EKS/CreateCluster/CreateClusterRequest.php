@@ -18,6 +18,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\CreateAccessConfigRequest|null $accessConfig
  * @property bool|null $bootstrapSelfManagedAddons
  * @property Shapes\UpgradePolicyRequest|null $upgradePolicy
+ * @property Shapes\ZonalShiftConfigRequest|null $zonalShiftConfig
+ * @property Shapes\RemoteNetworkConfigRequest|null $remoteNetworkConfig
+ * @property Shapes\ComputeConfigRequest|null $computeConfig
+ * @property Shapes\StorageConfigRequest|null $storageConfig
  */
 class CreateClusterRequest extends Request
 {
@@ -35,7 +39,11 @@ class CreateClusterRequest extends Request
      *     outpostConfig?: Shapes\OutpostConfigRequest|null,
      *     accessConfig?: Shapes\CreateAccessConfigRequest|null,
      *     bootstrapSelfManagedAddons?: bool|null,
-     *     upgradePolicy?: Shapes\UpgradePolicyRequest|null
+     *     upgradePolicy?: Shapes\UpgradePolicyRequest|null,
+     *     zonalShiftConfig?: Shapes\ZonalShiftConfigRequest|null,
+     *     remoteNetworkConfig?: Shapes\RemoteNetworkConfigRequest|null,
+     *     computeConfig?: Shapes\ComputeConfigRequest|null,
+     *     storageConfig?: Shapes\StorageConfigRequest|null
      * } $args
      */
     public function __construct(array $args)

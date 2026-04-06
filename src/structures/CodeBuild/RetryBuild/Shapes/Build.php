@@ -37,6 +37,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ProjectFileSystemLocation>|null $fileSystemLocations
  * @property DebugSession|null $debugSession
  * @property string|null $buildBatchArn
+ * @property AutoRetryConfig|null $autoRetryConfig
  */
 class Build extends Shape
 {
@@ -73,7 +74,8 @@ class Build extends Shape
      *     reportArns?: list<string>|null,
      *     fileSystemLocations?: list<ProjectFileSystemLocation>|null,
      *     debugSession?: DebugSession|null,
-     *     buildBatchArn?: string|null
+     *     buildBatchArn?: string|null,
+     *     autoRetryConfig?: AutoRetryConfig|null
      * } $args
      */
     public function __construct(array $args = [])

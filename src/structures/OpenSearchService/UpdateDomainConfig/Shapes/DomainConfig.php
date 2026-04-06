@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LogPublishingOptionsStatus|null $LogPublishingOptions
  * @property DomainEndpointOptionsStatus|null $DomainEndpointOptions
  * @property AdvancedSecurityOptionsStatus|null $AdvancedSecurityOptions
+ * @property IdentityCenterOptionsStatus|null $IdentityCenterOptions
  * @property AutoTuneOptionsStatus|null $AutoTuneOptions
  * @property ChangeProgressDetails|null $ChangeProgressDetails
  * @property OffPeakWindowOptionsStatus|null $OffPeakWindowOptions
@@ -44,6 +45,7 @@ class DomainConfig extends Shape
      *     LogPublishingOptions?: LogPublishingOptionsStatus|null,
      *     DomainEndpointOptions?: DomainEndpointOptionsStatus|null,
      *     AdvancedSecurityOptions?: AdvancedSecurityOptionsStatus|null,
+     *     IdentityCenterOptions?: IdentityCenterOptionsStatus|null,
      *     AutoTuneOptions?: AutoTuneOptionsStatus|null,
      *     ChangeProgressDetails?: ChangeProgressDetails|null,
      *     OffPeakWindowOptions?: OffPeakWindowOptionsStatus|null,

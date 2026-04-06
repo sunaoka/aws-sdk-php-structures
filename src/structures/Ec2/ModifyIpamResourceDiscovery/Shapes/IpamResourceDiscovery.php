@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $IsDefault
  * @property 'create-in-progress'|'create-complete'|'create-failed'|'modify-in-progress'|'modify-complete'|'modify-failed'|'delete-in-progress'|'delete-complete'|'delete-failed'|'isolate-in-progress'|'isolate-complete'|'restore-in-progress'|null $State
  * @property list<Tag>|null $Tags
+ * @property list<IpamOrganizationalUnitExclusion>|null $OrganizationalUnitExclusions
  */
 class IpamResourceDiscovery extends Shape
 {
@@ -27,7 +28,8 @@ class IpamResourceDiscovery extends Shape
      *     OperatingRegions?: list<IpamOperatingRegion>|null,
      *     IsDefault?: bool|null,
      *     State?: 'create-in-progress'|'create-complete'|'create-failed'|'modify-in-progress'|'modify-complete'|'modify-failed'|'delete-in-progress'|'delete-complete'|'delete-failed'|'isolate-in-progress'|'isolate-complete'|'restore-in-progress'|null,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     OrganizationalUnitExclusions?: list<IpamOrganizationalUnitExclusion>|null
      * } $args
      */
     public function __construct(array $args = [])

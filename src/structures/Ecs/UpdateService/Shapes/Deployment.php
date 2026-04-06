@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ServiceConnectServiceResource>|null $serviceConnectResources
  * @property list<ServiceVolumeConfiguration>|null $volumeConfigurations
  * @property DeploymentEphemeralStorage|null $fargateEphemeralStorage
+ * @property list<VpcLatticeConfiguration>|null $vpcLatticeConfigurations
  */
 class Deployment extends Shape
 {
@@ -49,7 +50,8 @@ class Deployment extends Shape
      *     serviceConnectConfiguration?: ServiceConnectConfiguration|null,
      *     serviceConnectResources?: list<ServiceConnectServiceResource>|null,
      *     volumeConfigurations?: list<ServiceVolumeConfiguration>|null,
-     *     fargateEphemeralStorage?: DeploymentEphemeralStorage|null
+     *     fargateEphemeralStorage?: DeploymentEphemeralStorage|null,
+     *     vpcLatticeConfigurations?: list<VpcLatticeConfiguration>|null
      * } $args
      */
     public function __construct(array $args = [])

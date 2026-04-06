@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeSecurityGroups;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\SecurityGroup>|null $SecurityGroups
  * @property string|null $NextToken
+ * @property list<Shapes\SecurityGroup>|null $SecurityGroups
  */
 class DescribeSecurityGroupsResponse extends Response
 {

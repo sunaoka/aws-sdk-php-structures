@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateReservedInstancesListing\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'USD'|null $CurrencyCode
- * @property double|null $Price
  * @property int|null $Term
+ * @property double|null $Price
+ * @property 'USD'|null $CurrencyCode
  */
 class PriceScheduleSpecification extends Shape
 {
     /**
      * @param array{
-     *     CurrencyCode?: 'USD'|null,
+     *     Term?: int|null,
      *     Price?: double|null,
-     *     Term?: int|null
+     *     CurrencyCode?: 'USD'|null
      * } $args
      */
     public function __construct(array $args = [])

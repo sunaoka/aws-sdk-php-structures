@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListClusterNodes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Running'|'Failure'|'Pending'|'ShuttingDown'|'SystemUpdating' $Status
+ * @property 'Running'|'Failure'|'Pending'|'ShuttingDown'|'SystemUpdating'|'DeepHealthCheckInProgress' $Status
  * @property string|null $Message
  */
 class ClusterInstanceStatusDetails extends Shape
 {
     /**
      * @param array{
-     *     Status: 'Running'|'Failure'|'Pending'|'ShuttingDown'|'SystemUpdating',
+     *     Status: 'Running'|'Failure'|'Pending'|'ShuttingDown'|'SystemUpdating'|'DeepHealthCheckInProgress',
      *     Message?: string|null
      * } $args
      */

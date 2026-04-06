@@ -10,8 +10,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property \Aws\Api\DateTimeResult $LastUpdatedTime
- * @property ServiceLevelIndicator $Sli
+ * @property ServiceLevelIndicator|null $Sli
+ * @property RequestBasedServiceLevelIndicator|null $RequestBasedSli
+ * @property 'PeriodBased'|'RequestBased'|null $EvaluationType
  * @property Goal $Goal
+ * @property list<BurnRateConfiguration>|null $BurnRateConfigurations
  */
 class ServiceLevelObjective extends Shape
 {
@@ -22,8 +25,11 @@ class ServiceLevelObjective extends Shape
      *     Description?: string|null,
      *     CreatedTime: \Aws\Api\DateTimeResult,
      *     LastUpdatedTime: \Aws\Api\DateTimeResult,
-     *     Sli: ServiceLevelIndicator,
-     *     Goal: Goal
+     *     Sli?: ServiceLevelIndicator|null,
+     *     RequestBasedSli?: RequestBasedServiceLevelIndicator|null,
+     *     EvaluationType?: 'PeriodBased'|'RequestBased'|null,
+     *     Goal: Goal,
+     *     BurnRateConfigurations?: list<BurnRateConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $knowledgeBaseId
  * @property \Aws\Api\DateTimeResult $startedAt
  * @property IngestionJobStatistics|null $statistics
- * @property 'STARTING'|'IN_PROGRESS'|'COMPLETE'|'FAILED' $status
+ * @property 'STARTING'|'IN_PROGRESS'|'COMPLETE'|'FAILED'|'STOPPING'|'STOPPED' $status
  * @property \Aws\Api\DateTimeResult $updatedAt
  */
 class IngestionJobSummary extends Shape
@@ -24,7 +24,7 @@ class IngestionJobSummary extends Shape
      *     knowledgeBaseId: string,
      *     startedAt: \Aws\Api\DateTimeResult,
      *     statistics?: IngestionJobStatistics|null,
-     *     status: 'STARTING'|'IN_PROGRESS'|'COMPLETE'|'FAILED',
+     *     status: 'STARTING'|'IN_PROGRESS'|'COMPLETE'|'FAILED'|'STOPPING'|'STOPPED',
      *     updatedAt: \Aws\Api\DateTimeResult
      * } $args
      */

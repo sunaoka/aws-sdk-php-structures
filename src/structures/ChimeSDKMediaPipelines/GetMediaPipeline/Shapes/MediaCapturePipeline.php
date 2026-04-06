@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
  * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
  * @property ChimeSdkMeetingConfiguration|null $ChimeSdkMeetingConfiguration
+ * @property SseAwsKeyManagementParams|null $SseAwsKeyManagementParams
+ * @property string|null $SinkIamRoleArn
  */
 class MediaCapturePipeline extends Shape
 {
@@ -29,7 +31,9 @@ class MediaCapturePipeline extends Shape
      *     SinkArn?: string|null,
      *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
      *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null,
-     *     ChimeSdkMeetingConfiguration?: ChimeSdkMeetingConfiguration|null
+     *     ChimeSdkMeetingConfiguration?: ChimeSdkMeetingConfiguration|null,
+     *     SseAwsKeyManagementParams?: SseAwsKeyManagementParams|null,
+     *     SinkIamRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

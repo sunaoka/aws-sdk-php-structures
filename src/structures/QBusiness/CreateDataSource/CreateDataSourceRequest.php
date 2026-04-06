@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $roleArn
  * @property string|null $clientToken
  * @property Shapes\DocumentEnrichmentConfiguration|null $documentEnrichmentConfiguration
+ * @property Shapes\MediaExtractionConfiguration|null $mediaExtractionConfiguration
  */
 class CreateDataSourceRequest extends Request
 {
@@ -31,7 +32,8 @@ class CreateDataSourceRequest extends Request
      *     syncSchedule?: string|null,
      *     roleArn?: string|null,
      *     clientToken?: string|null,
-     *     documentEnrichmentConfiguration?: Shapes\DocumentEnrichmentConfiguration|null
+     *     documentEnrichmentConfiguration?: Shapes\DocumentEnrichmentConfiguration|null,
+     *     mediaExtractionConfiguration?: Shapes\MediaExtractionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

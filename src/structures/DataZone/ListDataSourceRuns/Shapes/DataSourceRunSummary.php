@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $dataSourceId
  * @property DataSourceErrorMessage|null $errorMessage
  * @property string $id
+ * @property DataSourceRunLineageSummary|null $lineageSummary
  * @property string $projectId
  * @property RunStatisticsForAssets|null $runStatisticsForAssets
  * @property \Aws\Api\DateTimeResult|null $startedAt
@@ -25,6 +26,7 @@ class DataSourceRunSummary extends Shape
      *     dataSourceId: string,
      *     errorMessage?: DataSourceErrorMessage|null,
      *     id: string,
+     *     lineageSummary?: DataSourceRunLineageSummary|null,
      *     projectId: string,
      *     runStatisticsForAssets?: RunStatisticsForAssets|null,
      *     startedAt?: \Aws\Api\DateTimeResult|null,

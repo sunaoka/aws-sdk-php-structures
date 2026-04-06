@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $FailureMessage
  * @property list<Shapes\ClusterInstanceGroupDetails> $InstanceGroups
  * @property Shapes\VpcConfig|null $VpcConfig
+ * @property Shapes\ClusterOrchestrator|null $Orchestrator
+ * @property 'Automatic'|'None'|null $NodeRecovery
  */
 class DescribeClusterResponse extends Response
 {

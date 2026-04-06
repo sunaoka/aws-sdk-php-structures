@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\IVS\ImportPlaybackKeyPair;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $publicKeyMaterial
  * @property string|null $name
+ * @property string $publicKeyMaterial
  * @property array<string, string>|null $tags
  */
 class ImportPlaybackKeyPairRequest extends Request
 {
     /**
      * @param array{
-     *     publicKeyMaterial: string,
      *     name?: string|null,
+     *     publicKeyMaterial: string,
      *     tags?: array<string, string>|null
      * } $args
      */

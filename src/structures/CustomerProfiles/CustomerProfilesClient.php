@@ -5,19 +5,27 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles;
 class CustomerProfilesClient extends \Aws\CustomerProfiles\CustomerProfilesClient
 {
     use AddProfileKey\AddProfileKeyTrait;
+    use BatchGetCalculatedAttributeForProfile\BatchGetCalculatedAttributeForProfileTrait;
+    use BatchGetProfile\BatchGetProfileTrait;
     use CreateCalculatedAttributeDefinition\CreateCalculatedAttributeDefinitionTrait;
     use CreateDomain\CreateDomainTrait;
     use CreateEventStream\CreateEventStreamTrait;
+    use CreateEventTrigger\CreateEventTriggerTrait;
     use CreateIntegrationWorkflow\CreateIntegrationWorkflowTrait;
     use CreateProfile\CreateProfileTrait;
+    use CreateSegmentDefinition\CreateSegmentDefinitionTrait;
+    use CreateSegmentEstimate\CreateSegmentEstimateTrait;
+    use CreateSegmentSnapshot\CreateSegmentSnapshotTrait;
     use DeleteCalculatedAttributeDefinition\DeleteCalculatedAttributeDefinitionTrait;
     use DeleteDomain\DeleteDomainTrait;
     use DeleteEventStream\DeleteEventStreamTrait;
+    use DeleteEventTrigger\DeleteEventTriggerTrait;
     use DeleteIntegration\DeleteIntegrationTrait;
     use DeleteProfile\DeleteProfileTrait;
     use DeleteProfileKey\DeleteProfileKeyTrait;
     use DeleteProfileObject\DeleteProfileObjectTrait;
     use DeleteProfileObjectType\DeleteProfileObjectTypeTrait;
+    use DeleteSegmentDefinition\DeleteSegmentDefinitionTrait;
     use DeleteWorkflow\DeleteWorkflowTrait;
     use DetectProfileObjectType\DetectProfileObjectTypeTrait;
     use GetAutoMergingPreview\GetAutoMergingPreviewTrait;
@@ -25,11 +33,16 @@ class CustomerProfilesClient extends \Aws\CustomerProfiles\CustomerProfilesClien
     use GetCalculatedAttributeForProfile\GetCalculatedAttributeForProfileTrait;
     use GetDomain\GetDomainTrait;
     use GetEventStream\GetEventStreamTrait;
+    use GetEventTrigger\GetEventTriggerTrait;
     use GetIdentityResolutionJob\GetIdentityResolutionJobTrait;
     use GetIntegration\GetIntegrationTrait;
     use GetMatches\GetMatchesTrait;
     use GetProfileObjectType\GetProfileObjectTypeTrait;
     use GetProfileObjectTypeTemplate\GetProfileObjectTypeTemplateTrait;
+    use GetSegmentDefinition\GetSegmentDefinitionTrait;
+    use GetSegmentEstimate\GetSegmentEstimateTrait;
+    use GetSegmentMembership\GetSegmentMembershipTrait;
+    use GetSegmentSnapshot\GetSegmentSnapshotTrait;
     use GetSimilarProfiles\GetSimilarProfilesTrait;
     use GetWorkflow\GetWorkflowTrait;
     use GetWorkflowSteps\GetWorkflowStepsTrait;
@@ -38,12 +51,16 @@ class CustomerProfilesClient extends \Aws\CustomerProfiles\CustomerProfilesClien
     use ListCalculatedAttributesForProfile\ListCalculatedAttributesForProfileTrait;
     use ListDomains\ListDomainsTrait;
     use ListEventStreams\ListEventStreamsTrait;
+    use ListEventTriggers\ListEventTriggersTrait;
     use ListIdentityResolutionJobs\ListIdentityResolutionJobsTrait;
     use ListIntegrations\ListIntegrationsTrait;
+    use ListObjectTypeAttributes\ListObjectTypeAttributesTrait;
+    use ListProfileAttributeValues\ListProfileAttributeValuesTrait;
     use ListProfileObjectTypeTemplates\ListProfileObjectTypeTemplatesTrait;
     use ListProfileObjectTypes\ListProfileObjectTypesTrait;
     use ListProfileObjects\ListProfileObjectsTrait;
     use ListRuleBasedMatches\ListRuleBasedMatchesTrait;
+    use ListSegmentDefinitions\ListSegmentDefinitionsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListWorkflows\ListWorkflowsTrait;
     use MergeProfiles\MergeProfilesTrait;
@@ -55,5 +72,6 @@ class CustomerProfilesClient extends \Aws\CustomerProfiles\CustomerProfilesClien
     use UntagResource\UntagResourceTrait;
     use UpdateCalculatedAttributeDefinition\UpdateCalculatedAttributeDefinitionTrait;
     use UpdateDomain\UpdateDomainTrait;
+    use UpdateEventTrigger\UpdateEventTriggerTrait;
     use UpdateProfile\UpdateProfileTrait;
 }

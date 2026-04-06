@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $CopyTopicConfigurations
  * @property bool|null $DetectAndCopyNewTopics
  * @property ReplicationStartingPosition|null $StartingPosition
+ * @property ReplicationTopicNameConfiguration|null $TopicNameConfiguration
  * @property list<string>|null $TopicsToExclude
  * @property list<string> $TopicsToReplicate
  */
@@ -20,6 +21,7 @@ class TopicReplication extends Shape
      *     CopyTopicConfigurations?: bool|null,
      *     DetectAndCopyNewTopics?: bool|null,
      *     StartingPosition?: ReplicationStartingPosition|null,
+     *     TopicNameConfiguration?: ReplicationTopicNameConfiguration|null,
      *     TopicsToExclude?: list<string>|null,
      *     TopicsToReplicate: list<string>
      * } $args

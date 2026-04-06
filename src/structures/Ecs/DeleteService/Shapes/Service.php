@@ -36,6 +36,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $enableECSManagedTags
  * @property 'TASK_DEFINITION'|'SERVICE'|'NONE'|null $propagateTags
  * @property bool|null $enableExecuteCommand
+ * @property 'ENABLED'|'DISABLED'|null $availabilityZoneRebalancing
  */
 class Service extends Shape
 {
@@ -71,7 +72,8 @@ class Service extends Shape
      *     createdBy?: string|null,
      *     enableECSManagedTags?: bool|null,
      *     propagateTags?: 'TASK_DEFINITION'|'SERVICE'|'NONE'|null,
-     *     enableExecuteCommand?: bool|null
+     *     enableExecuteCommand?: bool|null,
+     *     availabilityZoneRebalancing?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

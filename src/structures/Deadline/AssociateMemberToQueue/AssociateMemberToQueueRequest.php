@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $farmId
- * @property string $identityStoreId
- * @property 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'MANAGER' $membershipLevel
+ * @property string $queueId
  * @property string $principalId
  * @property 'USER'|'GROUP' $principalType
- * @property string $queueId
+ * @property string $identityStoreId
+ * @property 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'MANAGER' $membershipLevel
  */
 class AssociateMemberToQueueRequest extends Request
 {
     /**
      * @param array{
      *     farmId: string,
-     *     identityStoreId: string,
-     *     membershipLevel: 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'MANAGER',
+     *     queueId: string,
      *     principalId: string,
      *     principalType: 'USER'|'GROUP',
-     *     queueId: string
+     *     identityStoreId: string,
+     *     membershipLevel: 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'MANAGER'
      * } $args
      */
     public function __construct(array $args)

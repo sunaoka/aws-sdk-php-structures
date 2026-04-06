@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ErrorMessage
  * @property list<HopDestination>|null $HopDestinations
  * @property string|null $Id
+ * @property string|null $JobEngineVersionRequested
+ * @property string|null $JobEngineVersionUsed
  * @property int|null $JobPercentComplete
  * @property string|null $JobTemplate
  * @property JobMessages|null $Messages
@@ -48,6 +50,8 @@ class Job extends Shape
      *     ErrorMessage?: string|null,
      *     HopDestinations?: list<HopDestination>|null,
      *     Id?: string|null,
+     *     JobEngineVersionRequested?: string|null,
+     *     JobEngineVersionUsed?: string|null,
      *     JobPercentComplete?: int|null,
      *     JobTemplate?: string|null,
      *     Messages?: JobMessages|null,

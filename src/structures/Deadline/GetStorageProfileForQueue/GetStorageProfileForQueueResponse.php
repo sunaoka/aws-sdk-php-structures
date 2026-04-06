@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Deadline\GetStorageProfileForQueue;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $displayName
- * @property list<Shapes\FileSystemLocation>|null $fileSystemLocations
- * @property 'WINDOWS'|'LINUX'|'MACOS' $osFamily
  * @property string $storageProfileId
+ * @property string $displayName
+ * @property 'WINDOWS'|'LINUX'|'MACOS' $osFamily
+ * @property list<Shapes\FileSystemLocation>|null $fileSystemLocations
  */
 class GetStorageProfileForQueueResponse extends Response
 {

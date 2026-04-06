@@ -41,6 +41,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'NONE'|'PADDED'|null $TilePadding
  * @property int<256, 3840>|null $TileWidth
  * @property 'AUTO'|'TREE_SIZE_32X32'|null $TreeblockSize
+ * @property int<1, 51>|null $MinQp
+ * @property 'DISABLED'|'ENABLED'|null $Deblocking
  */
 class H265Settings extends Shape
 {
@@ -81,7 +83,9 @@ class H265Settings extends Shape
      *     TileHeight?: int<64, 2160>|null,
      *     TilePadding?: 'NONE'|'PADDED'|null,
      *     TileWidth?: int<256, 3840>|null,
-     *     TreeblockSize?: 'AUTO'|'TREE_SIZE_32X32'|null
+     *     TreeblockSize?: 'AUTO'|'TREE_SIZE_32X32'|null,
+     *     MinQp?: int<1, 51>|null,
+     *     Deblocking?: 'DISABLED'|'ENABLED'|null
      * } $args
      */
     public function __construct(array $args)

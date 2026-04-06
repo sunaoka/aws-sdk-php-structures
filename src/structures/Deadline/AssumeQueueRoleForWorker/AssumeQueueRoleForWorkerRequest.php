@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $farmId
  * @property string $fleetId
- * @property string $queueId
  * @property string $workerId
+ * @property string $queueId
  */
 class AssumeQueueRoleForWorkerRequest extends Request
 {
@@ -16,8 +16,8 @@ class AssumeQueueRoleForWorkerRequest extends Request
      * @param array{
      *     farmId: string,
      *     fleetId: string,
-     *     queueId: string,
-     *     workerId: string
+     *     workerId: string,
+     *     queueId: string
      * } $args
      */
     public function __construct(array $args)

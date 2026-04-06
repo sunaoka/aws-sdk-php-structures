@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AMI'|'DOCKER'|null $type
  * @property string|null $name
  * @property string|null $description
- * @property 'Windows'|'Linux'|null $platform
+ * @property 'Windows'|'Linux'|'macOS'|null $platform
  * @property string|null $owner
  * @property string|null $version
  * @property list<ComponentConfiguration>|null $components
@@ -28,7 +28,7 @@ class ImageRecipe extends Shape
      *     type?: 'AMI'|'DOCKER'|null,
      *     name?: string|null,
      *     description?: string|null,
-     *     platform?: 'Windows'|'Linux'|null,
+     *     platform?: 'Windows'|'Linux'|'macOS'|null,
      *     owner?: string|null,
      *     version?: string|null,
      *     components?: list<ComponentConfiguration>|null,

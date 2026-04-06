@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 1000> $TrafficPolicyVersion
  * @property string|null $HostedZoneIdMarker
  * @property string|null $TrafficPolicyInstanceNameMarker
- * @property 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|null $TrafficPolicyInstanceTypeMarker
+ * @property 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|'TLSA'|'SSHFP'|'SVCB'|'HTTPS'|null $TrafficPolicyInstanceTypeMarker
  * @property string|null $MaxItems
  */
 class ListTrafficPolicyInstancesByPolicyRequest extends Request
@@ -20,7 +20,7 @@ class ListTrafficPolicyInstancesByPolicyRequest extends Request
      *     TrafficPolicyVersion: int<1, 1000>,
      *     HostedZoneIdMarker?: string|null,
      *     TrafficPolicyInstanceNameMarker?: string|null,
-     *     TrafficPolicyInstanceTypeMarker?: 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|null,
+     *     TrafficPolicyInstanceTypeMarker?: 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|'TLSA'|'SSHFP'|'SVCB'|'HTTPS'|null,
      *     MaxItems?: string|null
      * } $args
      */

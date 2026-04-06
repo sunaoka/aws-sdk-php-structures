@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'EBS_SNAPSHOT'|'EC2_IMAGE' $ResourceType
  * @property list<Shapes\ResourceTag>|null $ResourceTags
  * @property 'locked'|'pending_unlock'|'unlocked'|null $LockState
+ * @property list<Shapes\ResourceTag>|null $ExcludeResourceTags
  */
 class ListRulesRequest extends Request
 {
@@ -19,7 +20,8 @@ class ListRulesRequest extends Request
      *     NextToken?: string|null,
      *     ResourceType: 'EBS_SNAPSHOT'|'EC2_IMAGE',
      *     ResourceTags?: list<Shapes\ResourceTag>|null,
-     *     LockState?: 'locked'|'pending_unlock'|'unlocked'|null
+     *     LockState?: 'locked'|'pending_unlock'|'unlocked'|null,
+     *     ExcludeResourceTags?: list<Shapes\ResourceTag>|null
      * } $args
      */
     public function __construct(array $args)

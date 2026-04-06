@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\FilterRule>|null $Includes
  * @property Shapes\ManifestConfig|null $ManifestConfig
  * @property Shapes\TaskReportConfig|null $TaskReportConfig
+ * @property 'BASIC'|'ENHANCED'|null $TaskMode
  */
 class CreateTaskRequest extends Request
 {
@@ -31,7 +32,8 @@ class CreateTaskRequest extends Request
      *     Tags?: list<Shapes\TagListEntry>|null,
      *     Includes?: list<Shapes\FilterRule>|null,
      *     ManifestConfig?: Shapes\ManifestConfig|null,
-     *     TaskReportConfig?: Shapes\TaskReportConfig|null
+     *     TaskReportConfig?: Shapes\TaskReportConfig|null,
+     *     TaskMode?: 'BASIC'|'ENHANCED'|null
      * } $args
      */
     public function __construct(array $args)

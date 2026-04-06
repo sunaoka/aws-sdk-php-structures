@@ -74,6 +74,7 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use GetDefaultPatchBaseline\GetDefaultPatchBaselineTrait;
     use GetDeployablePatchSnapshotForInstance\GetDeployablePatchSnapshotForInstanceTrait;
     use GetDocument\GetDocumentTrait;
+    use GetExecutionPreview\GetExecutionPreviewTrait;
     use GetInventory\GetInventoryTrait;
     use GetInventorySchema\GetInventorySchemaTrait;
     use GetMaintenanceWindow\GetMaintenanceWindowTrait;
@@ -103,6 +104,8 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use ListDocumentVersions\ListDocumentVersionsTrait;
     use ListDocuments\ListDocumentsTrait;
     use ListInventoryEntries\ListInventoryEntriesTrait;
+    use ListNodes\ListNodesTrait;
+    use ListNodesSummary\ListNodesSummaryTrait;
     use ListOpsItemEvents\ListOpsItemEventsTrait;
     use ListOpsItemRelatedItems\ListOpsItemRelatedItemsTrait;
     use ListOpsMetadata\ListOpsMetadataTrait;
@@ -126,6 +129,7 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use StartAssociationsOnce\StartAssociationsOnceTrait;
     use StartAutomationExecution\StartAutomationExecutionTrait;
     use StartChangeRequestExecution\StartChangeRequestExecutionTrait;
+    use StartExecutionPreview\StartExecutionPreviewTrait;
     use StartSession\StartSessionTrait;
     use StopAutomationExecution\StopAutomationExecutionTrait;
     use TerminateSession\TerminateSessionTrait;

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SubnetId
  * @property string|null $OutpostId
  * @property list<LoadBalancerAddress>|null $LoadBalancerAddresses
+ * @property list<string>|null $SourceNatIpv6Prefixes
  */
 class AvailabilityZone extends Shape
 {
@@ -17,7 +18,8 @@ class AvailabilityZone extends Shape
      *     ZoneName?: string|null,
      *     SubnetId?: string|null,
      *     OutpostId?: string|null,
-     *     LoadBalancerAddresses?: list<LoadBalancerAddress>|null
+     *     LoadBalancerAddresses?: list<LoadBalancerAddress>|null,
+     *     SourceNatIpv6Prefixes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

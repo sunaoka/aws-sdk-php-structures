@@ -34,6 +34,7 @@ class RedshiftServerlessClient extends \Aws\RedshiftServerless\RedshiftServerles
     use GetWorkgroup\GetWorkgroupTrait;
     use ListCustomDomainAssociations\ListCustomDomainAssociationsTrait;
     use ListEndpointAccess\ListEndpointAccessTrait;
+    use ListManagedWorkgroups\ListManagedWorkgroupsTrait;
     use ListNamespaces\ListNamespacesTrait;
     use ListRecoveryPoints\ListRecoveryPointsTrait;
     use ListScheduledActions\ListScheduledActionsTrait;

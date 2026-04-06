@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Deadline\GetSessionsStatisticsAggregation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string|null $nextToken
  * @property list<Shapes\Statistics>|null $statistics
+ * @property string|null $nextToken
  * @property 'IN_PROGRESS'|'TIMEOUT'|'FAILED'|'COMPLETED' $status
  * @property string|null $statusMessage
  */

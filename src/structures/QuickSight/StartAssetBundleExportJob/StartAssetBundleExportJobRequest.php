@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $IncludePermissions
  * @property bool|null $IncludeTags
  * @property Shapes\AssetBundleExportJobValidationStrategy|null $ValidationStrategy
+ * @property bool|null $IncludeFolderMemberships
+ * @property 'RECURSE'|'ONE_LEVEL'|'NONE'|null $IncludeFolderMembers
  */
 class StartAssetBundleExportJobRequest extends Request
 {
@@ -27,7 +29,9 @@ class StartAssetBundleExportJobRequest extends Request
      *     CloudFormationOverridePropertyConfiguration?: Shapes\AssetBundleCloudFormationOverridePropertyConfiguration|null,
      *     IncludePermissions?: bool|null,
      *     IncludeTags?: bool|null,
-     *     ValidationStrategy?: Shapes\AssetBundleExportJobValidationStrategy|null
+     *     ValidationStrategy?: Shapes\AssetBundleExportJobValidationStrategy|null,
+     *     IncludeFolderMemberships?: bool|null,
+     *     IncludeFolderMembers?: 'RECURSE'|'ONE_LEVEL'|'NONE'|null
      * } $args
      */
     public function __construct(array $args)

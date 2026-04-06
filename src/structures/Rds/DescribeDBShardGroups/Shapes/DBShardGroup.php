@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Status
  * @property bool|null $PubliclyAccessible
  * @property string|null $Endpoint
+ * @property string|null $DBShardGroupArn
+ * @property list<Tag>|null $TagList
  */
 class DBShardGroup extends Shape
 {
@@ -27,7 +29,9 @@ class DBShardGroup extends Shape
      *     ComputeRedundancy?: int|null,
      *     Status?: string|null,
      *     PubliclyAccessible?: bool|null,
-     *     Endpoint?: string|null
+     *     Endpoint?: string|null,
+     *     DBShardGroupArn?: string|null,
+     *     TagList?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FilledMapConditionalFormatting|null $ConditionalFormatting
  * @property list<ColumnHierarchy>|null $ColumnHierarchies
  * @property list<VisualCustomAction>|null $Actions
+ * @property string|null $VisualContentAltText
  */
 class FilledMapVisual extends Shape
 {
@@ -23,7 +24,8 @@ class FilledMapVisual extends Shape
      *     ChartConfiguration?: FilledMapConfiguration|null,
      *     ConditionalFormatting?: FilledMapConditionalFormatting|null,
      *     ColumnHierarchies?: list<ColumnHierarchy>|null,
-     *     Actions?: list<VisualCustomAction>|null
+     *     Actions?: list<VisualCustomAction>|null,
+     *     VisualContentAltText?: string|null
      * } $args
      */
     public function __construct(array $args)

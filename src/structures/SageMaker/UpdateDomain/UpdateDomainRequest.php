@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\DefaultSpaceSettings|null $DefaultSpaceSettings
  * @property list<string>|null $SubnetIds
  * @property 'PublicInternetOnly'|'VpcOnly'|null $AppNetworkAccessType
+ * @property 'ENABLED'|'DISABLED'|null $TagPropagation
  */
 class UpdateDomainRequest extends Request
 {
@@ -23,7 +24,8 @@ class UpdateDomainRequest extends Request
      *     AppSecurityGroupManagement?: 'Service'|'Customer'|null,
      *     DefaultSpaceSettings?: Shapes\DefaultSpaceSettings|null,
      *     SubnetIds?: list<string>|null,
-     *     AppNetworkAccessType?: 'PublicInternetOnly'|'VpcOnly'|null
+     *     AppNetworkAccessType?: 'PublicInternetOnly'|'VpcOnly'|null,
+     *     TagPropagation?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

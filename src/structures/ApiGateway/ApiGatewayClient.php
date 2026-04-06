@@ -11,6 +11,7 @@ class ApiGatewayClient extends \Aws\ApiGateway\ApiGatewayClient
     use CreateDocumentationPart\CreateDocumentationPartTrait;
     use CreateDocumentationVersion\CreateDocumentationVersionTrait;
     use CreateDomainName\CreateDomainNameTrait;
+    use CreateDomainNameAccessAssociation\CreateDomainNameAccessAssociationTrait;
     use CreateModel\CreateModelTrait;
     use CreateRequestValidator\CreateRequestValidatorTrait;
     use CreateResource\CreateResourceTrait;
@@ -27,6 +28,7 @@ class ApiGatewayClient extends \Aws\ApiGateway\ApiGatewayClient
     use DeleteDocumentationPart\DeleteDocumentationPartTrait;
     use DeleteDocumentationVersion\DeleteDocumentationVersionTrait;
     use DeleteDomainName\DeleteDomainNameTrait;
+    use DeleteDomainNameAccessAssociation\DeleteDomainNameAccessAssociationTrait;
     use DeleteGatewayResponse\DeleteGatewayResponseTrait;
     use DeleteIntegration\DeleteIntegrationTrait;
     use DeleteIntegrationResponse\DeleteIntegrationResponseTrait;
@@ -59,6 +61,7 @@ class ApiGatewayClient extends \Aws\ApiGateway\ApiGatewayClient
     use GetDocumentationVersion\GetDocumentationVersionTrait;
     use GetDocumentationVersions\GetDocumentationVersionsTrait;
     use GetDomainName\GetDomainNameTrait;
+    use GetDomainNameAccessAssociations\GetDomainNameAccessAssociationsTrait;
     use GetDomainNames\GetDomainNamesTrait;
     use GetExport\GetExportTrait;
     use GetGatewayResponse\GetGatewayResponseTrait;
@@ -98,6 +101,7 @@ class ApiGatewayClient extends \Aws\ApiGateway\ApiGatewayClient
     use PutMethod\PutMethodTrait;
     use PutMethodResponse\PutMethodResponseTrait;
     use PutRestApi\PutRestApiTrait;
+    use RejectDomainNameAccessAssociation\RejectDomainNameAccessAssociationTrait;
     use TagResource\TagResourceTrait;
     use TestInvokeAuthorizer\TestInvokeAuthorizerTrait;
     use TestInvokeMethod\TestInvokeMethodTrait;

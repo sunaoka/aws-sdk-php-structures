@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $label
  * @property string|null $revisionId
  * @property Shapes\EncryptionConfiguration|null $encryptionConfiguration
+ * @property array<string, list<string>>|null $variableReferences
  */
 class DescribeStateMachineForExecutionResponse extends Response
 {

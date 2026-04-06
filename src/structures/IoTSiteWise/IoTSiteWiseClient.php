@@ -18,6 +18,7 @@ class IoTSiteWiseClient extends \Aws\IoTSiteWise\IoTSiteWiseClient
     use CreateAssetModelCompositeModel\CreateAssetModelCompositeModelTrait;
     use CreateBulkImportJob\CreateBulkImportJobTrait;
     use CreateDashboard\CreateDashboardTrait;
+    use CreateDataset\CreateDatasetTrait;
     use CreateGateway\CreateGatewayTrait;
     use CreatePortal\CreatePortalTrait;
     use CreateProject\CreateProjectTrait;
@@ -26,6 +27,7 @@ class IoTSiteWiseClient extends \Aws\IoTSiteWise\IoTSiteWiseClient
     use DeleteAssetModel\DeleteAssetModelTrait;
     use DeleteAssetModelCompositeModel\DeleteAssetModelCompositeModelTrait;
     use DeleteDashboard\DeleteDashboardTrait;
+    use DeleteDataset\DeleteDatasetTrait;
     use DeleteGateway\DeleteGatewayTrait;
     use DeletePortal\DeletePortalTrait;
     use DeleteProject\DeleteProjectTrait;
@@ -39,6 +41,7 @@ class IoTSiteWiseClient extends \Aws\IoTSiteWise\IoTSiteWiseClient
     use DescribeAssetProperty\DescribeAssetPropertyTrait;
     use DescribeBulkImportJob\DescribeBulkImportJobTrait;
     use DescribeDashboard\DescribeDashboardTrait;
+    use DescribeDataset\DescribeDatasetTrait;
     use DescribeDefaultEncryptionConfiguration\DescribeDefaultEncryptionConfigurationTrait;
     use DescribeGateway\DescribeGatewayTrait;
     use DescribeGatewayCapabilityConfiguration\DescribeGatewayCapabilityConfigurationTrait;
@@ -55,6 +58,7 @@ class IoTSiteWiseClient extends \Aws\IoTSiteWise\IoTSiteWiseClient
     use GetAssetPropertyValue\GetAssetPropertyValueTrait;
     use GetAssetPropertyValueHistory\GetAssetPropertyValueHistoryTrait;
     use GetInterpolatedAssetPropertyValues\GetInterpolatedAssetPropertyValuesTrait;
+    use InvokeAssistant\InvokeAssistantTrait;
     use ListAccessPolicies\ListAccessPoliciesTrait;
     use ListActions\ListActionsTrait;
     use ListAssetModelCompositeModels\ListAssetModelCompositeModelsTrait;
@@ -67,6 +71,7 @@ class IoTSiteWiseClient extends \Aws\IoTSiteWise\IoTSiteWiseClient
     use ListBulkImportJobs\ListBulkImportJobsTrait;
     use ListCompositionRelationships\ListCompositionRelationshipsTrait;
     use ListDashboards\ListDashboardsTrait;
+    use ListDatasets\ListDatasetsTrait;
     use ListGateways\ListGatewaysTrait;
     use ListPortals\ListPortalsTrait;
     use ListProjectAssets\ListProjectAssetsTrait;
@@ -84,6 +89,7 @@ class IoTSiteWiseClient extends \Aws\IoTSiteWise\IoTSiteWiseClient
     use UpdateAssetModelCompositeModel\UpdateAssetModelCompositeModelTrait;
     use UpdateAssetProperty\UpdateAssetPropertyTrait;
     use UpdateDashboard\UpdateDashboardTrait;
+    use UpdateDataset\UpdateDatasetTrait;
     use UpdateGateway\UpdateGatewayTrait;
     use UpdateGatewayCapabilityConfiguration\UpdateGatewayCapabilityConfigurationTrait;
     use UpdatePortal\UpdatePortalTrait;

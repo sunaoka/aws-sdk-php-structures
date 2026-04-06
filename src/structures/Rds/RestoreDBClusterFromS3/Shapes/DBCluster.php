@@ -71,6 +71,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $AutoMinorVersionUpgrade
  * @property int|null $MonitoringInterval
  * @property string|null $MonitoringRoleArn
+ * @property 'standard'|'advanced'|null $DatabaseInsightsMode
  * @property bool|null $PerformanceInsightsEnabled
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
@@ -83,6 +84,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AwsBackupRecoveryPointArn
  * @property LimitlessDatabase|null $LimitlessDatabase
  * @property int|null $StorageThroughput
+ * @property 'standard'|'limitless'|null $ClusterScalabilityType
  * @property CertificateDetails|null $CertificateDetails
  * @property string|null $EngineLifecycleSupport
  */
@@ -156,6 +158,7 @@ class DBCluster extends Shape
      *     AutoMinorVersionUpgrade?: bool|null,
      *     MonitoringInterval?: int|null,
      *     MonitoringRoleArn?: string|null,
+     *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
      *     PerformanceInsightsEnabled?: bool|null,
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,
@@ -168,6 +171,7 @@ class DBCluster extends Shape
      *     AwsBackupRecoveryPointArn?: string|null,
      *     LimitlessDatabase?: LimitlessDatabase|null,
      *     StorageThroughput?: int|null,
+     *     ClusterScalabilityType?: 'standard'|'limitless'|null,
      *     CertificateDetails?: CertificateDetails|null,
      *     EngineLifecycleSupport?: string|null
      * } $args

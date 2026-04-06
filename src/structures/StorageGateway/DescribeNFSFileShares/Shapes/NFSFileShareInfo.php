@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $FileShareId
  * @property string|null $FileShareStatus
  * @property string|null $GatewayARN
+ * @property 'SseS3'|'SseKms'|'DsseKms'|null $EncryptionType
  * @property bool|null $KMSEncrypted
  * @property string|null $KMSKey
  * @property string|null $Path
@@ -39,6 +40,7 @@ class NFSFileShareInfo extends Shape
      *     FileShareId?: string|null,
      *     FileShareStatus?: string|null,
      *     GatewayARN?: string|null,
+     *     EncryptionType?: 'SseS3'|'SseKms'|'DsseKms'|null,
      *     KMSEncrypted?: bool|null,
      *     KMSKey?: string|null,
      *     Path?: string|null,

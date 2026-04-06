@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $ratingCount
  * @property bool|null $isRatedByUser
  * @property int|null $userCount
+ * @property bool|null $isVerified
  */
 class LibraryItemMember extends Shape
 {
@@ -33,7 +34,8 @@ class LibraryItemMember extends Shape
      *     updatedBy?: string|null,
      *     ratingCount: int,
      *     isRatedByUser?: bool|null,
-     *     userCount?: int|null
+     *     userCount?: int|null,
+     *     isVerified?: bool|null
      * } $args
      */
     public function __construct(array $args)

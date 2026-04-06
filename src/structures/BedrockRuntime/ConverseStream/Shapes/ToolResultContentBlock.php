@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $text
  * @property ImageBlock|null $image
  * @property DocumentBlock|null $document
+ * @property VideoBlock|null $video
  */
 class ToolResultContentBlock extends Shape
 {
@@ -17,7 +18,8 @@ class ToolResultContentBlock extends Shape
      *     json?: Document|null,
      *     text?: string|null,
      *     image?: ImageBlock|null,
-     *     document?: DocumentBlock|null
+     *     document?: DocumentBlock|null,
+     *     video?: VideoBlock|null
      * } $args
      */
     public function __construct(array $args = [])

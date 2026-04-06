@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property AssignedEnvironmentEnterSessionActionDefinition|null $envEnter
  * @property AssignedEnvironmentExitSessionActionDefinition|null $envExit
- * @property AssignedSyncInputJobAttachmentsSessionActionDefinition|null $syncInputJobAttachments
  * @property AssignedTaskRunSessionActionDefinition|null $taskRun
+ * @property AssignedSyncInputJobAttachmentsSessionActionDefinition|null $syncInputJobAttachments
  */
 class AssignedSessionActionDefinition extends Shape
 {
@@ -16,8 +16,8 @@ class AssignedSessionActionDefinition extends Shape
      * @param array{
      *     envEnter?: AssignedEnvironmentEnterSessionActionDefinition|null,
      *     envExit?: AssignedEnvironmentExitSessionActionDefinition|null,
-     *     syncInputJobAttachments?: AssignedSyncInputJobAttachmentsSessionActionDefinition|null,
-     *     taskRun?: AssignedTaskRunSessionActionDefinition|null
+     *     taskRun?: AssignedTaskRunSessionActionDefinition|null,
+     *     syncInputJobAttachments?: AssignedSyncInputJobAttachmentsSessionActionDefinition|null
      * } $args
      */
     public function __construct(array $args = [])

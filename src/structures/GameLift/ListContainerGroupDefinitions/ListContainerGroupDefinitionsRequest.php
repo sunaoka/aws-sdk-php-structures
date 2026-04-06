@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\GameLift\ListContainerGroupDefinitions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'REPLICA'|'DAEMON'|null $SchedulingStrategy
- * @property int<1, 10>|null $Limit
+ * @property 'GAME_SERVER'|'PER_INSTANCE'|null $ContainerGroupType
+ * @property int<1, 100>|null $Limit
  * @property string|null $NextToken
  */
 class ListContainerGroupDefinitionsRequest extends Request
 {
     /**
      * @param array{
-     *     SchedulingStrategy?: 'REPLICA'|'DAEMON'|null,
-     *     Limit?: int<1, 10>|null,
+     *     ContainerGroupType?: 'GAME_SERVER'|'PER_INSTANCE'|null,
+     *     Limit?: int<1, 100>|null,
      *     NextToken?: string|null
      * } $args
      */

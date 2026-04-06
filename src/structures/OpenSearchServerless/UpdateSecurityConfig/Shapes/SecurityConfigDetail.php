@@ -8,10 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $configVersion
  * @property int|null $createdDate
  * @property string|null $description
+ * @property IamIdentityCenterConfigOptions|null $iamIdentityCenterOptions
  * @property string|null $id
  * @property int|null $lastModifiedDate
  * @property SamlConfigOptions|null $samlOptions
- * @property 'saml'|null $type
+ * @property 'saml'|'iamidentitycenter'|null $type
  */
 class SecurityConfigDetail extends Shape
 {
@@ -20,10 +21,11 @@ class SecurityConfigDetail extends Shape
      *     configVersion?: string|null,
      *     createdDate?: int|null,
      *     description?: string|null,
+     *     iamIdentityCenterOptions?: IamIdentityCenterConfigOptions|null,
      *     id?: string|null,
      *     lastModifiedDate?: int|null,
      *     samlOptions?: SamlConfigOptions|null,
-     *     type?: 'saml'|null
+     *     type?: 'saml'|'iamidentitycenter'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\DescribeQueryDefinitions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property 'CWLI'|'SQL'|'PPL'|null $queryLanguage
  * @property string|null $queryDefinitionId
  * @property string|null $name
  * @property string|null $queryString
@@ -15,6 +16,7 @@ class QueryDefinition extends Shape
 {
     /**
      * @param array{
+     *     queryLanguage?: 'CWLI'|'SQL'|'PPL'|null,
      *     queryDefinitionId?: string|null,
      *     name?: string|null,
      *     queryString?: string|null,

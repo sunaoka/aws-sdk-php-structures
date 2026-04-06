@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $Components
  * @property \Aws\Api\DateTimeResult|null $LastUpdated
  * @property string|null $StatusMessage
+ * @property list<string>|null $AssociatedApplicationArns
  */
 class Application extends Shape
 {
@@ -27,7 +28,8 @@ class Application extends Shape
      *     DiscoveryStatus?: 'SUCCESS'|'REGISTRATION_FAILED'|'REFRESH_FAILED'|'REGISTERING'|'DELETING'|null,
      *     Components?: list<string>|null,
      *     LastUpdated?: \Aws\Api\DateTimeResult|null,
-     *     StatusMessage?: string|null
+     *     StatusMessage?: string|null,
+     *     AssociatedApplicationArns?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

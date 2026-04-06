@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'MARKETING'|'TRANSACTIONAL' $MailType
  * @property string $WebsiteURL
  * @property 'EN'|'JA'|null $ContactLanguage
- * @property string $UseCaseDescription
+ * @property string|null $UseCaseDescription
  * @property list<string>|null $AdditionalContactEmailAddresses
  * @property bool|null $ProductionAccessEnabled
  */
@@ -19,7 +19,7 @@ class PutAccountDetailsRequest extends Request
      *     MailType: 'MARKETING'|'TRANSACTIONAL',
      *     WebsiteURL: string,
      *     ContactLanguage?: 'EN'|'JA'|null,
-     *     UseCaseDescription: string,
+     *     UseCaseDescription?: string|null,
      *     AdditionalContactEmailAddresses?: list<string>|null,
      *     ProductionAccessEnabled?: bool|null
      * } $args

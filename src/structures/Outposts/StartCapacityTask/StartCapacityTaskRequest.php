@@ -6,18 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OutpostIdentifier
- * @property string $OrderId
+ * @property string|null $OrderId
  * @property list<Shapes\InstanceTypeCapacity> $InstancePools
+ * @property Shapes\InstancesToExclude|null $InstancesToExclude
  * @property bool|null $DryRun
+ * @property 'WAIT_FOR_EVACUATION'|'FAIL_TASK'|null $TaskActionOnBlockingInstances
  */
 class StartCapacityTaskRequest extends Request
 {
     /**
      * @param array{
      *     OutpostIdentifier: string,
-     *     OrderId: string,
+     *     OrderId?: string|null,
      *     InstancePools: list<Shapes\InstanceTypeCapacity>,
-     *     DryRun?: bool|null
+     *     InstancesToExclude?: Shapes\InstancesToExclude|null,
+     *     DryRun?: bool|null,
+     *     TaskActionOnBlockingInstances?: 'WAIT_FOR_EVACUATION'|'FAIL_TASK'|null
      * } $args
      */
     public function __construct(array $args)

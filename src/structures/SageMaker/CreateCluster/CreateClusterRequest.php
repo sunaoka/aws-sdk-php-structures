@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ClusterInstanceGroupSpecification> $InstanceGroups
  * @property Shapes\VpcConfig|null $VpcConfig
  * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\ClusterOrchestrator|null $Orchestrator
+ * @property 'Automatic'|'None'|null $NodeRecovery
  */
 class CreateClusterRequest extends Request
 {
@@ -17,7 +19,9 @@ class CreateClusterRequest extends Request
      *     ClusterName: string,
      *     InstanceGroups: list<Shapes\ClusterInstanceGroupSpecification>,
      *     VpcConfig?: Shapes\VpcConfig|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     Orchestrator?: Shapes\ClusterOrchestrator|null,
+     *     NodeRecovery?: 'Automatic'|'None'|null
      * } $args
      */
     public function __construct(array $args)

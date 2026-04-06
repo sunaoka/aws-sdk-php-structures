@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifySnapshotAttribute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'all'|null $Group
  * @property string|null $UserId
+ * @property 'all'|null $Group
  */
 class CreateVolumePermission extends Shape
 {
     /**
      * @param array{
-     *     Group?: 'all'|null,
-     *     UserId?: string|null
+     *     UserId?: string|null,
+     *     Group?: 'all'|null
      * } $args
      */
     public function __construct(array $args = [])

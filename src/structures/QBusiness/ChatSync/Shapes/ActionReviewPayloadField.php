@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ActionPayloadFieldValue|null $value
  * @property list<ActionReviewPayloadFieldAllowedValue>|null $allowedValues
  * @property string|null $allowedFormat
+ * @property ActionReviewPayloadFieldArrayItemJsonSchema|null $arrayItemJsonSchema
  * @property bool|null $required
  */
 class ActionReviewPayloadField extends Shape
@@ -25,6 +26,7 @@ class ActionReviewPayloadField extends Shape
      *     value?: ActionPayloadFieldValue|null,
      *     allowedValues?: list<ActionReviewPayloadFieldAllowedValue>|null,
      *     allowedFormat?: string|null,
+     *     arrayItemJsonSchema?: ActionReviewPayloadFieldArrayItemJsonSchema|null,
      *     required?: bool|null
      * } $args
      */

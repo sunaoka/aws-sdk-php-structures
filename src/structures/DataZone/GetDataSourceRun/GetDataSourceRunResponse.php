@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $domainId
  * @property Shapes\DataSourceErrorMessage|null $errorMessage
  * @property string $id
+ * @property Shapes\DataSourceRunLineageSummary|null $lineageSummary
  * @property string $projectId
  * @property Shapes\RunStatisticsForAssets|null $runStatisticsForAssets
  * @property \Aws\Api\DateTimeResult|null $startedAt

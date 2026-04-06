@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $CatalogId
  * @property string $DatabaseName
  * @property string $TableName
- * @property 'compaction' $Type
+ * @property 'compaction'|'retention'|'orphan_file_deletion' $Type
  * @property Shapes\TableOptimizerConfiguration $TableOptimizerConfiguration
  */
 class CreateTableOptimizerRequest extends Request
@@ -18,7 +18,7 @@ class CreateTableOptimizerRequest extends Request
      *     CatalogId: string,
      *     DatabaseName: string,
      *     TableName: string,
-     *     Type: 'compaction',
+     *     Type: 'compaction'|'retention'|'orphan_file_deletion',
      *     TableOptimizerConfiguration: Shapes\TableOptimizerConfiguration
      * } $args
      */

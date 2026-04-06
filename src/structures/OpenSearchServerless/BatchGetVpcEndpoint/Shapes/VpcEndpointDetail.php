@@ -6,6 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int|null $createdDate
+ * @property string|null $failureCode
+ * @property string|null $failureMessage
  * @property string|null $id
  * @property string|null $name
  * @property list<string>|null $securityGroupIds
@@ -18,6 +20,8 @@ class VpcEndpointDetail extends Shape
     /**
      * @param array{
      *     createdDate?: int|null,
+     *     failureCode?: string|null,
+     *     failureMessage?: string|null,
      *     id?: string|null,
      *     name?: string|null,
      *     securityGroupIds?: list<string>|null,

@@ -10,6 +10,7 @@ class ComputeOptimizerClient extends \Aws\ComputeOptimizer\ComputeOptimizerClien
     use ExportEBSVolumeRecommendations\ExportEBSVolumeRecommendationsTrait;
     use ExportEC2InstanceRecommendations\ExportEC2InstanceRecommendationsTrait;
     use ExportECSServiceRecommendations\ExportECSServiceRecommendationsTrait;
+    use ExportIdleRecommendations\ExportIdleRecommendationsTrait;
     use ExportLambdaFunctionRecommendations\ExportLambdaFunctionRecommendationsTrait;
     use ExportLicenseRecommendations\ExportLicenseRecommendationsTrait;
     use ExportRDSDatabaseRecommendations\ExportRDSDatabaseRecommendationsTrait;
@@ -22,6 +23,7 @@ class ComputeOptimizerClient extends \Aws\ComputeOptimizer\ComputeOptimizerClien
     use GetEffectiveRecommendationPreferences\GetEffectiveRecommendationPreferencesTrait;
     use GetEnrollmentStatus\GetEnrollmentStatusTrait;
     use GetEnrollmentStatusesForOrganization\GetEnrollmentStatusesForOrganizationTrait;
+    use GetIdleRecommendations\GetIdleRecommendationsTrait;
     use GetLambdaFunctionRecommendations\GetLambdaFunctionRecommendationsTrait;
     use GetLicenseRecommendations\GetLicenseRecommendationsTrait;
     use GetRDSDatabaseRecommendationProjectedMetrics\GetRDSDatabaseRecommendationProjectedMetricsTrait;

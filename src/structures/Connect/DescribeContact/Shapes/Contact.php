@@ -9,10 +9,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Id
  * @property string|null $InitialContactId
  * @property string|null $PreviousContactId
- * @property 'INBOUND'|'OUTBOUND'|'TRANSFER'|'QUEUE_TRANSFER'|'CALLBACK'|'API'|'DISCONNECT'|'MONITOR'|'EXTERNAL_OUTBOUND'|null $InitiationMethod
+ * @property string|null $ContactAssociationId
+ * @property 'INBOUND'|'OUTBOUND'|'TRANSFER'|'QUEUE_TRANSFER'|'CALLBACK'|'API'|'DISCONNECT'|'MONITOR'|'EXTERNAL_OUTBOUND'|'WEBRTC_API'|'AGENT_REPLY'|'FLOW'|null $InitiationMethod
  * @property string|null $Name
  * @property string|null $Description
- * @property 'VOICE'|'CHAT'|'TASK'|null $Channel
+ * @property 'VOICE'|'CHAT'|'TASK'|'EMAIL'|null $Channel
  * @property QueueInfo|null $QueueInfo
  * @property AgentInfo|null $AgentInfo
  * @property \Aws\Api\DateTimeResult|null $InitiationTimestamp
@@ -25,6 +26,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $ScheduledTimestamp
  * @property string|null $RelatedContactId
  * @property WisdomInfo|null $WisdomInfo
+ * @property string|null $CustomerId
+ * @property EndpointInfo|null $CustomerEndpoint
+ * @property EndpointInfo|null $SystemEndpoint
  * @property int|null $QueueTimeAdjustmentSeconds
  * @property int<1, 9223372036854775807>|null $QueuePriority
  * @property array<string, string>|null $Tags
@@ -36,6 +40,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CustomerVoiceActivity|null $CustomerVoiceActivity
  * @property QualityMetrics|null $QualityMetrics
  * @property DisconnectDetails|null $DisconnectDetails
+ * @property AdditionalEmailRecipients|null $AdditionalEmailRecipients
  * @property array<string, SegmentAttributeValue>|null $SegmentAttributes
  */
 class Contact extends Shape
@@ -46,10 +51,11 @@ class Contact extends Shape
      *     Id?: string|null,
      *     InitialContactId?: string|null,
      *     PreviousContactId?: string|null,
-     *     InitiationMethod?: 'INBOUND'|'OUTBOUND'|'TRANSFER'|'QUEUE_TRANSFER'|'CALLBACK'|'API'|'DISCONNECT'|'MONITOR'|'EXTERNAL_OUTBOUND'|null,
+     *     ContactAssociationId?: string|null,
+     *     InitiationMethod?: 'INBOUND'|'OUTBOUND'|'TRANSFER'|'QUEUE_TRANSFER'|'CALLBACK'|'API'|'DISCONNECT'|'MONITOR'|'EXTERNAL_OUTBOUND'|'WEBRTC_API'|'AGENT_REPLY'|'FLOW'|null,
      *     Name?: string|null,
      *     Description?: string|null,
-     *     Channel?: 'VOICE'|'CHAT'|'TASK'|null,
+     *     Channel?: 'VOICE'|'CHAT'|'TASK'|'EMAIL'|null,
      *     QueueInfo?: QueueInfo|null,
      *     AgentInfo?: AgentInfo|null,
      *     InitiationTimestamp?: \Aws\Api\DateTimeResult|null,
@@ -62,6 +68,9 @@ class Contact extends Shape
      *     ScheduledTimestamp?: \Aws\Api\DateTimeResult|null,
      *     RelatedContactId?: string|null,
      *     WisdomInfo?: WisdomInfo|null,
+     *     CustomerId?: string|null,
+     *     CustomerEndpoint?: EndpointInfo|null,
+     *     SystemEndpoint?: EndpointInfo|null,
      *     QueueTimeAdjustmentSeconds?: int|null,
      *     QueuePriority?: int<1, 9223372036854775807>|null,
      *     Tags?: array<string, string>|null,
@@ -73,6 +82,7 @@ class Contact extends Shape
      *     CustomerVoiceActivity?: CustomerVoiceActivity|null,
      *     QualityMetrics?: QualityMetrics|null,
      *     DisconnectDetails?: DisconnectDetails|null,
+     *     AdditionalEmailRecipients?: AdditionalEmailRecipients|null,
      *     SegmentAttributes?: array<string, SegmentAttributeValue>|null
      * } $args
      */

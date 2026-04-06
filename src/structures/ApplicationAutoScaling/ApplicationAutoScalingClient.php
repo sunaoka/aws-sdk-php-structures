@@ -11,6 +11,7 @@ class ApplicationAutoScalingClient extends \Aws\ApplicationAutoScaling\Applicati
     use DescribeScalingActivities\DescribeScalingActivitiesTrait;
     use DescribeScalingPolicies\DescribeScalingPoliciesTrait;
     use DescribeScheduledActions\DescribeScheduledActionsTrait;
+    use GetPredictiveScalingForecast\GetPredictiveScalingForecastTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PutScalingPolicy\PutScalingPolicyTrait;
     use PutScheduledAction\PutScheduledActionTrait;

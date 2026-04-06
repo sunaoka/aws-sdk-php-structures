@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ServiceName
  * @property string|null $ServiceId
  * @property list<ServiceTypeDetail>|null $ServiceType
+ * @property string|null $ServiceRegion
  * @property list<string>|null $AvailabilityZones
  * @property string|null $Owner
  * @property list<string>|null $BaseEndpointDnsNames
@@ -28,6 +29,7 @@ class ServiceDetail extends Shape
      *     ServiceName?: string|null,
      *     ServiceId?: string|null,
      *     ServiceType?: list<ServiceTypeDetail>|null,
+     *     ServiceRegion?: string|null,
      *     AvailabilityZones?: list<string>|null,
      *     Owner?: string|null,
      *     BaseEndpointDnsNames?: list<string>|null,

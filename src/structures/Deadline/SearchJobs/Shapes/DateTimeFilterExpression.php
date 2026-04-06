@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Deadline\SearchJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $dateTime
  * @property string $name
  * @property 'EQUAL'|'NOT_EQUAL'|'GREATER_THAN_EQUAL_TO'|'GREATER_THAN'|'LESS_THAN_EQUAL_TO'|'LESS_THAN' $operator
+ * @property \Aws\Api\DateTimeResult $dateTime
  */
 class DateTimeFilterExpression extends Shape
 {
     /**
      * @param array{
-     *     dateTime: \Aws\Api\DateTimeResult,
      *     name: string,
-     *     operator: 'EQUAL'|'NOT_EQUAL'|'GREATER_THAN_EQUAL_TO'|'GREATER_THAN'|'LESS_THAN_EQUAL_TO'|'LESS_THAN'
+     *     operator: 'EQUAL'|'NOT_EQUAL'|'GREATER_THAN_EQUAL_TO'|'GREATER_THAN'|'LESS_THAN_EQUAL_TO'|'LESS_THAN',
+     *     dateTime: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ConfigurationName
  * @property string|null $LoggingLevel
  * @property list<Tag>|null $Tags
+ * @property string|null $State
+ * @property string|null $StateReason
  */
 class ChimeWebhookConfiguration extends Shape
 {
@@ -23,7 +25,9 @@ class ChimeWebhookConfiguration extends Shape
      *     SnsTopicArns: list<string>,
      *     ConfigurationName?: string|null,
      *     LoggingLevel?: string|null,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     State?: string|null,
+     *     StateReason?: string|null
      * } $args
      */
     public function __construct(array $args)

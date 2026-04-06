@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $description
  * @property string|null $changeDescription
  * @property 'BUILD'|'TEST'|null $type
- * @property 'Windows'|'Linux'|null $platform
+ * @property 'Windows'|'Linux'|'macOS'|null $platform
  * @property list<string>|null $supportedOsVersions
  * @property ComponentState|null $state
  * @property list<ComponentParameterDetail>|null $parameters
@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $tags
  * @property string|null $publisher
  * @property bool|null $obfuscate
+ * @property list<ProductCodeListItem>|null $productCodes
  */
 class Component extends Shape
 {
@@ -34,7 +35,7 @@ class Component extends Shape
      *     description?: string|null,
      *     changeDescription?: string|null,
      *     type?: 'BUILD'|'TEST'|null,
-     *     platform?: 'Windows'|'Linux'|null,
+     *     platform?: 'Windows'|'Linux'|'macOS'|null,
      *     supportedOsVersions?: list<string>|null,
      *     state?: ComponentState|null,
      *     parameters?: list<ComponentParameterDetail>|null,
@@ -45,7 +46,8 @@ class Component extends Shape
      *     dateCreated?: string|null,
      *     tags?: array<string, string>|null,
      *     publisher?: string|null,
-     *     obfuscate?: bool|null
+     *     obfuscate?: bool|null,
+     *     productCodes?: list<ProductCodeListItem>|null
      * } $args
      */
     public function __construct(array $args = [])

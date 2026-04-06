@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Name'|'CreationTime'|'Status'|null $SortBy
  * @property 'Ascending'|'Descending'|null $SortOrder
  * @property 'Available'|'Terminated'|'Reused'|'InUse'|null $WarmPoolStatusEquals
+ * @property string|null $TrainingPlanArnEquals
  */
 class ListTrainingJobsRequest extends Request
 {
@@ -31,7 +32,8 @@ class ListTrainingJobsRequest extends Request
      *     StatusEquals?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null,
      *     SortBy?: 'Name'|'CreationTime'|'Status'|null,
      *     SortOrder?: 'Ascending'|'Descending'|null,
-     *     WarmPoolStatusEquals?: 'Available'|'Terminated'|'Reused'|'InUse'|null
+     *     WarmPoolStatusEquals?: 'Available'|'Terminated'|'Reused'|'InUse'|null,
+     *     TrainingPlanArnEquals?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $CostCategoryName
  * @property Shapes\Expression|null $Filter
  * @property list<Shapes\SortDefinition>|null $SortBy
+ * @property string|null $BillingViewArn
  * @property int<1, max>|null $MaxResults
  * @property string|null $NextPageToken
  */
@@ -22,6 +23,7 @@ class GetCostCategoriesRequest extends Request
      *     CostCategoryName?: string|null,
      *     Filter?: Shapes\Expression|null,
      *     SortBy?: list<Shapes\SortDefinition>|null,
+     *     BillingViewArn?: string|null,
      *     MaxResults?: int<1, max>|null,
      *     NextPageToken?: string|null
      * } $args

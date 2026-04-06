@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Configuration>|null $runtimeConfiguration
  * @property MonitoringConfiguration|null $monitoringConfiguration
  * @property InteractiveConfiguration|null $interactiveConfiguration
+ * @property SchedulerConfiguration|null $schedulerConfiguration
  */
 class Application extends Shape
 {
@@ -51,7 +52,8 @@ class Application extends Shape
      *     workerTypeSpecifications?: array<string, WorkerTypeSpecification>|null,
      *     runtimeConfiguration?: list<Configuration>|null,
      *     monitoringConfiguration?: MonitoringConfiguration|null,
-     *     interactiveConfiguration?: InteractiveConfiguration|null
+     *     interactiveConfiguration?: InteractiveConfiguration|null,
+     *     schedulerConfiguration?: SchedulerConfiguration|null
      * } $args
      */
     public function __construct(array $args)

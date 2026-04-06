@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
  * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
  * @property string|null $VoiceConnectorArn
+ * @property 'CONNECT_CALL_TRANSFER_CONNECTOR'|'CONNECT_ANALYTICS_CONNECTOR'|null $IntegrationType
  */
 class VoiceConnector extends Shape
 {
@@ -25,7 +26,8 @@ class VoiceConnector extends Shape
      *     RequireEncryption?: bool|null,
      *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
      *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null,
-     *     VoiceConnectorArn?: string|null
+     *     VoiceConnectorArn?: string|null,
+     *     IntegrationType?: 'CONNECT_CALL_TRANSFER_CONNECTOR'|'CONNECT_ANALYTICS_CONNECTOR'|null
      * } $args
      */
     public function __construct(array $args = [])

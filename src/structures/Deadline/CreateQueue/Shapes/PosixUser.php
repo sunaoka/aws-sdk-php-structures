@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Deadline\CreateQueue\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $group
  * @property string $user
+ * @property string $group
  */
 class PosixUser extends Shape
 {
     /**
      * @param array{
-     *     group: string,
-     *     user: string
+     *     user: string,
+     *     group: string
      * } $args
      */
     public function __construct(array $args)

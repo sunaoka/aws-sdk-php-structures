@@ -29,6 +29,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool|null $IsParent
  * @property string|null $ResourceName
  * @property 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|null $VaultType
+ * @property 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|null $IndexStatus
+ * @property string|null $IndexStatusMessage
  */
 class DescribeRecoveryPointResponse extends Response
 {

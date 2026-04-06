@@ -27,9 +27,11 @@ class PinpointSMSVoiceV2Client extends \Aws\PinpointSMSVoiceV2\PinpointSMSVoiceV
     use DeleteOptedOutNumber\DeleteOptedOutNumberTrait;
     use DeletePool\DeletePoolTrait;
     use DeleteProtectConfiguration\DeleteProtectConfigurationTrait;
+    use DeleteProtectConfigurationRuleSetNumberOverride\DeleteProtectConfigurationRuleSetNumberOverrideTrait;
     use DeleteRegistration\DeleteRegistrationTrait;
     use DeleteRegistrationAttachment\DeleteRegistrationAttachmentTrait;
     use DeleteRegistrationFieldValue\DeleteRegistrationFieldValueTrait;
+    use DeleteResourcePolicy\DeleteResourcePolicyTrait;
     use DeleteTextMessageSpendLimitOverride\DeleteTextMessageSpendLimitOverrideTrait;
     use DeleteVerifiedDestinationNumber\DeleteVerifiedDestinationNumberTrait;
     use DeleteVoiceMessageSpendLimitOverride\DeleteVoiceMessageSpendLimitOverrideTrait;
@@ -56,12 +58,17 @@ class PinpointSMSVoiceV2Client extends \Aws\PinpointSMSVoiceV2\PinpointSMSVoiceV
     use DisassociateProtectConfiguration\DisassociateProtectConfigurationTrait;
     use DiscardRegistrationVersion\DiscardRegistrationVersionTrait;
     use GetProtectConfigurationCountryRuleSet\GetProtectConfigurationCountryRuleSetTrait;
+    use GetResourcePolicy\GetResourcePolicyTrait;
     use ListPoolOriginationIdentities\ListPoolOriginationIdentitiesTrait;
+    use ListProtectConfigurationRuleSetNumberOverrides\ListProtectConfigurationRuleSetNumberOverridesTrait;
     use ListRegistrationAssociations\ListRegistrationAssociationsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PutKeyword\PutKeywordTrait;
+    use PutMessageFeedback\PutMessageFeedbackTrait;
     use PutOptedOutNumber\PutOptedOutNumberTrait;
+    use PutProtectConfigurationRuleSetNumberOverride\PutProtectConfigurationRuleSetNumberOverrideTrait;
     use PutRegistrationFieldValue\PutRegistrationFieldValueTrait;
+    use PutResourcePolicy\PutResourcePolicyTrait;
     use ReleasePhoneNumber\ReleasePhoneNumberTrait;
     use ReleaseSenderId\ReleaseSenderIdTrait;
     use RequestPhoneNumber\RequestPhoneNumberTrait;
@@ -71,6 +78,7 @@ class PinpointSMSVoiceV2Client extends \Aws\PinpointSMSVoiceV2\PinpointSMSVoiceV
     use SendTextMessage\SendTextMessageTrait;
     use SendVoiceMessage\SendVoiceMessageTrait;
     use SetAccountDefaultProtectConfiguration\SetAccountDefaultProtectConfigurationTrait;
+    use SetDefaultMessageFeedbackEnabled\SetDefaultMessageFeedbackEnabledTrait;
     use SetDefaultMessageType\SetDefaultMessageTypeTrait;
     use SetDefaultSenderId\SetDefaultSenderIdTrait;
     use SetMediaMessageSpendLimitOverride\SetMediaMessageSpendLimitOverrideTrait;

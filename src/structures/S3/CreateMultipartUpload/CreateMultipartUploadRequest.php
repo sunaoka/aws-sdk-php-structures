@@ -34,7 +34,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $ObjectLockRetainUntilDate
  * @property 'ON'|'OFF'|null $ObjectLockLegalHoldStatus
  * @property string|null $ExpectedBucketOwner
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null $ChecksumAlgorithm
+ * @property 'COMPOSITE'|'FULL_OBJECT'|null $ChecksumType
  */
 class CreateMultipartUploadRequest extends Request
 {
@@ -69,7 +70,8 @@ class CreateMultipartUploadRequest extends Request
      *     ObjectLockRetainUntilDate?: \Aws\Api\DateTimeResult|null,
      *     ObjectLockLegalHoldStatus?: 'ON'|'OFF'|null,
      *     ExpectedBucketOwner?: string|null,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null,
+     *     ChecksumType?: 'COMPOSITE'|'FULL_OBJECT'|null
      * } $args
      */
     public function __construct(array $args)

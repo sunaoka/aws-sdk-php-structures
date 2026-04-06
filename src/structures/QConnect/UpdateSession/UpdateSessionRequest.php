@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\QConnect\UpdateSession;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', Shapes\AIAgentConfigurationData>|null $aiAgentConfiguration
  * @property string $assistantId
  * @property string|null $description
  * @property string $sessionId
@@ -14,6 +15,7 @@ class UpdateSessionRequest extends Request
 {
     /**
      * @param array{
+     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', Shapes\AIAgentConfigurationData>|null,
      *     assistantId: string,
      *     description?: string|null,
      *     sessionId: string,

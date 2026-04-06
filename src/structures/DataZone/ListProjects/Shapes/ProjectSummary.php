@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $createdBy
  * @property string|null $description
  * @property string $domainId
+ * @property string|null $domainUnitId
  * @property list<ProjectDeletionError>|null $failureReasons
  * @property string $id
  * @property string $name
@@ -23,6 +24,7 @@ class ProjectSummary extends Shape
      *     createdBy: string,
      *     description?: string|null,
      *     domainId: string,
+     *     domainUnitId?: string|null,
      *     failureReasons?: list<ProjectDeletionError>|null,
      *     id: string,
      *     name: string,

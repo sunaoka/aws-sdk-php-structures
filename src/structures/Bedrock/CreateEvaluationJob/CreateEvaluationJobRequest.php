@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $roleArn
  * @property string|null $customerEncryptionKeyId
  * @property list<Shapes\Tag>|null $jobTags
+ * @property 'ModelEvaluation'|'RagEvaluation'|null $applicationType
  * @property Shapes\EvaluationConfig $evaluationConfig
  * @property Shapes\EvaluationInferenceConfig $inferenceConfig
  * @property Shapes\EvaluationOutputDataConfig $outputDataConfig
@@ -25,6 +26,7 @@ class CreateEvaluationJobRequest extends Request
      *     roleArn: string,
      *     customerEncryptionKeyId?: string|null,
      *     jobTags?: list<Shapes\Tag>|null,
+     *     applicationType?: 'ModelEvaluation'|'RagEvaluation'|null,
      *     evaluationConfig: Shapes\EvaluationConfig,
      *     inferenceConfig: Shapes\EvaluationInferenceConfig,
      *     outputDataConfig: Shapes\EvaluationOutputDataConfig

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $title
  * @property AccessConfiguration|null $accessConfiguration
  * @property DocumentEnrichmentConfiguration|null $documentEnrichmentConfiguration
+ * @property MediaExtractionConfiguration|null $mediaExtractionConfiguration
  */
 class Document extends Shape
 {
@@ -23,7 +24,8 @@ class Document extends Shape
      *     contentType?: 'PDF'|'HTML'|'MS_WORD'|'PLAIN_TEXT'|'PPT'|'RTF'|'XML'|'XSLT'|'MS_EXCEL'|'CSV'|'JSON'|'MD'|null,
      *     title?: string|null,
      *     accessConfiguration?: AccessConfiguration|null,
-     *     documentEnrichmentConfiguration?: DocumentEnrichmentConfiguration|null
+     *     documentEnrichmentConfiguration?: DocumentEnrichmentConfiguration|null,
+     *     mediaExtractionConfiguration?: MediaExtractionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

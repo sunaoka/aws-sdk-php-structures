@@ -7,6 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $BackupVaultName
  * @property string|null $BackupVaultArn
+ * @property 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|null $VaultType
+ * @property 'CREATING'|'AVAILABLE'|'FAILED'|null $VaultState
  * @property \Aws\Api\DateTimeResult|null $CreationDate
  * @property string|null $EncryptionKeyArn
  * @property string|null $CreatorRequestId
@@ -22,6 +24,8 @@ class BackupVaultListMember extends Shape
      * @param array{
      *     BackupVaultName?: string|null,
      *     BackupVaultArn?: string|null,
+     *     VaultType?: 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|null,
+     *     VaultState?: 'CREATING'|'AVAILABLE'|'FAILED'|null,
      *     CreationDate?: \Aws\Api\DateTimeResult|null,
      *     EncryptionKeyArn?: string|null,
      *     CreatorRequestId?: string|null,

@@ -23,6 +23,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'CREATING'|'CREATE_FAILED'|'IDLE'|'STARTING'|'RUNNING'|'RECOVERING'|'STOPPING'|'DELETING'|'DELETED'|'UPDATING'|'UPDATE_FAILED'|null $State
  * @property array<string, string>|null $Tags
  * @property Shapes\VpcOutputSettingsDescription|null $Vpc
+ * @property Shapes\DescribeAnywhereSettings|null $AnywhereSettings
+ * @property Shapes\ChannelEngineVersionResponse|null $ChannelEngineVersion
  */
 class DeleteChannelResponse extends Response
 {

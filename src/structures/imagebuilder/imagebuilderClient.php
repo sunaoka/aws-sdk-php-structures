@@ -37,10 +37,12 @@ class imagebuilderClient extends \Aws\imagebuilder\imagebuilderClient
     use GetInfrastructureConfiguration\GetInfrastructureConfigurationTrait;
     use GetLifecycleExecution\GetLifecycleExecutionTrait;
     use GetLifecyclePolicy\GetLifecyclePolicyTrait;
+    use GetMarketplaceResource\GetMarketplaceResourceTrait;
     use GetWorkflow\GetWorkflowTrait;
     use GetWorkflowExecution\GetWorkflowExecutionTrait;
     use GetWorkflowStepExecution\GetWorkflowStepExecutionTrait;
     use ImportComponent\ImportComponentTrait;
+    use ImportDiskImage\ImportDiskImageTrait;
     use ImportVmImage\ImportVmImageTrait;
     use ListComponentBuildVersions\ListComponentBuildVersionsTrait;
     use ListComponents\ListComponentsTrait;

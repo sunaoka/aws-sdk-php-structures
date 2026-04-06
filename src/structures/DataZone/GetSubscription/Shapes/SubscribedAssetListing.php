@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\GetSubscription\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property AssetScope|null $assetScope
  * @property string|null $entityId
  * @property string|null $entityRevision
  * @property string|null $entityType
@@ -15,6 +16,7 @@ class SubscribedAssetListing extends Shape
 {
     /**
      * @param array{
+     *     assetScope?: AssetScope|null,
      *     entityId?: string|null,
      *     entityRevision?: string|null,
      *     entityType?: string|null,

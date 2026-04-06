@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Deadline\BatchGetJobEntity\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AccessDeniedException'|'InternalServerException'|'ValidationException'|'ResourceNotFoundException'|'MaxPayloadSizeExceeded'|'ConflictException' $code
  * @property string $jobId
+ * @property 'AccessDeniedException'|'InternalServerException'|'ValidationException'|'ResourceNotFoundException'|'MaxPayloadSizeExceeded'|'ConflictException' $code
  * @property string $message
  */
 class JobAttachmentDetailsError extends Shape
 {
     /**
      * @param array{
-     *     code: 'AccessDeniedException'|'InternalServerException'|'ValidationException'|'ResourceNotFoundException'|'MaxPayloadSizeExceeded'|'ConflictException',
      *     jobId: string,
+     *     code: 'AccessDeniedException'|'InternalServerException'|'ValidationException'|'ResourceNotFoundException'|'MaxPayloadSizeExceeded'|'ConflictException',
      *     message: string
      * } $args
      */

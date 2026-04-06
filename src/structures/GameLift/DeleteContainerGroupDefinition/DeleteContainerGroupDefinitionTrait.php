@@ -6,10 +6,11 @@ trait DeleteContainerGroupDefinitionTrait
 {
     /**
      * @param DeleteContainerGroupDefinitionRequest $args
-     * @return void
+     * @return DeleteContainerGroupDefinitionResponse
      */
     public function deleteContainerGroupDefinition(DeleteContainerGroupDefinitionRequest $args)
     {
-        parent::deleteContainerGroupDefinition($args->toArray());
+        $result = parent::deleteContainerGroupDefinition($args->toArray());
+        return new DeleteContainerGroupDefinitionResponse($result->toArray());
     }
 }

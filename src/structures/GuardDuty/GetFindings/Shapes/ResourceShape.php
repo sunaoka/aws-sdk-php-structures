@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EcsClusterDetails|null $EcsClusterDetails
  * @property Container|null $ContainerDetails
  * @property RdsDbInstanceDetails|null $RdsDbInstanceDetails
+ * @property RdsLimitlessDbDetails|null $RdsLimitlessDbDetails
  * @property RdsDbUserDetails|null $RdsDbUserDetails
  * @property LambdaDetails|null $LambdaDetails
  */
@@ -32,6 +33,7 @@ class ResourceShape extends Shape
      *     EcsClusterDetails?: EcsClusterDetails|null,
      *     ContainerDetails?: Container|null,
      *     RdsDbInstanceDetails?: RdsDbInstanceDetails|null,
+     *     RdsLimitlessDbDetails?: RdsLimitlessDbDetails|null,
      *     RdsDbUserDetails?: RdsDbUserDetails|null,
      *     LambdaDetails?: LambdaDetails|null
      * } $args

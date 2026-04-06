@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ChallengeConfig|null $ChallengeConfig
  * @property list<string>|null $TokenDomains
  * @property AssociationConfig|null $AssociationConfig
+ * @property bool|null $RetrofittedByFirewallManager
  */
 class WebACL extends Shape
 {
@@ -43,7 +44,8 @@ class WebACL extends Shape
      *     CaptchaConfig?: CaptchaConfig|null,
      *     ChallengeConfig?: ChallengeConfig|null,
      *     TokenDomains?: list<string>|null,
-     *     AssociationConfig?: AssociationConfig|null
+     *     AssociationConfig?: AssociationConfig|null,
+     *     RetrofittedByFirewallManager?: bool|null
      * } $args
      */
     public function __construct(array $args)

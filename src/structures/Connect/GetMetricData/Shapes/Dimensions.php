@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property QueueReference|null $Queue
- * @property 'VOICE'|'CHAT'|'TASK'|null $Channel
+ * @property 'VOICE'|'CHAT'|'TASK'|'EMAIL'|null $Channel
  * @property RoutingProfileReference|null $RoutingProfile
  * @property string|null $RoutingStepExpression
  */
@@ -15,7 +15,7 @@ class Dimensions extends Shape
     /**
      * @param array{
      *     Queue?: QueueReference|null,
-     *     Channel?: 'VOICE'|'CHAT'|'TASK'|null,
+     *     Channel?: 'VOICE'|'CHAT'|'TASK'|'EMAIL'|null,
      *     RoutingProfile?: RoutingProfileReference|null,
      *     RoutingStepExpression?: string|null
      * } $args

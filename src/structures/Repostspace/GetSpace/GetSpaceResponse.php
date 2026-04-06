@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<string>|null $groupAdmins
  * @property string $name
  * @property string $randomDomain
+ * @property array<string, list<'EXPERT'|'MODERATOR'|'ADMINISTRATOR'|'SUPPORTREQUESTOR'>>|null $roles
  * @property string $spaceId
  * @property string $status
  * @property int $storageLimit

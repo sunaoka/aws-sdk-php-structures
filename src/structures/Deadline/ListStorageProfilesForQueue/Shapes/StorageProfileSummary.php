@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Deadline\ListStorageProfilesForQueue\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string $storageProfileId
  * @property string $displayName
  * @property 'WINDOWS'|'LINUX'|'MACOS' $osFamily
- * @property string $storageProfileId
  */
 class StorageProfileSummary extends Shape
 {
     /**
      * @param array{
+     *     storageProfileId: string,
      *     displayName: string,
-     *     osFamily: 'WINDOWS'|'LINUX'|'MACOS',
-     *     storageProfileId: string
+     *     osFamily: 'WINDOWS'|'LINUX'|'MACOS'
      * } $args
      */
     public function __construct(array $args)

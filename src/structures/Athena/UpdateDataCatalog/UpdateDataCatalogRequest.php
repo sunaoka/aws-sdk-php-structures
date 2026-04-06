@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property 'LAMBDA'|'GLUE'|'HIVE' $Type
+ * @property 'LAMBDA'|'GLUE'|'HIVE'|'FEDERATED' $Type
  * @property string|null $Description
  * @property array<string, string>|null $Parameters
  */
@@ -15,7 +15,7 @@ class UpdateDataCatalogRequest extends Request
     /**
      * @param array{
      *     Name: string,
-     *     Type: 'LAMBDA'|'GLUE'|'HIVE',
+     *     Type: 'LAMBDA'|'GLUE'|'HIVE'|'FEDERATED',
      *     Description?: string|null,
      *     Parameters?: array<string, string>|null
      * } $args

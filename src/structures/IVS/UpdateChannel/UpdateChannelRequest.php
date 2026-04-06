@@ -6,28 +6,32 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property string|null $name
- * @property 'NORMAL'|'LOW'|null $latencyMode
- * @property 'BASIC'|'STANDARD'|'ADVANCED_SD'|'ADVANCED_HD'|null $type
  * @property bool|null $authorized
- * @property string|null $recordingConfigurationArn
+ * @property 'TS'|'FRAGMENTED_MP4'|null $containerFormat
  * @property bool|null $insecureIngest
- * @property 'HIGHER_BANDWIDTH_DELIVERY'|'CONSTRAINED_BANDWIDTH_DELIVERY'|null $preset
+ * @property 'NORMAL'|'LOW'|null $latencyMode
+ * @property Shapes\MultitrackInputConfiguration|null $multitrackInputConfiguration
+ * @property string|null $name
  * @property string|null $playbackRestrictionPolicyArn
+ * @property 'HIGHER_BANDWIDTH_DELIVERY'|'CONSTRAINED_BANDWIDTH_DELIVERY'|null $preset
+ * @property string|null $recordingConfigurationArn
+ * @property 'BASIC'|'STANDARD'|'ADVANCED_SD'|'ADVANCED_HD'|null $type
  */
 class UpdateChannelRequest extends Request
 {
     /**
      * @param array{
      *     arn: string,
-     *     name?: string|null,
-     *     latencyMode?: 'NORMAL'|'LOW'|null,
-     *     type?: 'BASIC'|'STANDARD'|'ADVANCED_SD'|'ADVANCED_HD'|null,
      *     authorized?: bool|null,
-     *     recordingConfigurationArn?: string|null,
+     *     containerFormat?: 'TS'|'FRAGMENTED_MP4'|null,
      *     insecureIngest?: bool|null,
+     *     latencyMode?: 'NORMAL'|'LOW'|null,
+     *     multitrackInputConfiguration?: Shapes\MultitrackInputConfiguration|null,
+     *     name?: string|null,
+     *     playbackRestrictionPolicyArn?: string|null,
      *     preset?: 'HIGHER_BANDWIDTH_DELIVERY'|'CONSTRAINED_BANDWIDTH_DELIVERY'|null,
-     *     playbackRestrictionPolicyArn?: string|null
+     *     recordingConfigurationArn?: string|null,
+     *     type?: 'BASIC'|'STANDARD'|'ADVANCED_SD'|'ADVANCED_HD'|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,7 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SubnetId
  * @property string|null $EniId
  * @property string|null $EniIp
+ * @property string|null $EniIpV6
  * @property string $HsmId
+ * @property string|null $HsmType
  * @property 'CREATE_IN_PROGRESS'|'ACTIVE'|'DEGRADED'|'DELETE_IN_PROGRESS'|'DELETED'|null $State
  * @property string|null $StateMessage
  */
@@ -23,7 +25,9 @@ class Hsm extends Shape
      *     SubnetId?: string|null,
      *     EniId?: string|null,
      *     EniIp?: string|null,
+     *     EniIpV6?: string|null,
      *     HsmId: string,
+     *     HsmType?: string|null,
      *     State?: 'CREATE_IN_PROGRESS'|'ACTIVE'|'DEGRADED'|'DELETE_IN_PROGRESS'|'DELETED'|null,
      *     StateMessage?: string|null
      * } $args

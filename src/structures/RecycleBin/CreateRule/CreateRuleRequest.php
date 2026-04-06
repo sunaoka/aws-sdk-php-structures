@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'EBS_SNAPSHOT'|'EC2_IMAGE' $ResourceType
  * @property list<Shapes\ResourceTag>|null $ResourceTags
  * @property Shapes\LockConfiguration|null $LockConfiguration
+ * @property list<Shapes\ResourceTag>|null $ExcludeResourceTags
  */
 class CreateRuleRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateRuleRequest extends Request
      *     Tags?: list<Shapes\Tag>|null,
      *     ResourceType: 'EBS_SNAPSHOT'|'EC2_IMAGE',
      *     ResourceTags?: list<Shapes\ResourceTag>|null,
-     *     LockConfiguration?: Shapes\LockConfiguration|null
+     *     LockConfiguration?: Shapes\LockConfiguration|null,
+     *     ExcludeResourceTags?: list<Shapes\ResourceTag>|null
      * } $args
      */
     public function __construct(array $args)

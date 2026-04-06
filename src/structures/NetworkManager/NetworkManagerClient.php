@@ -14,6 +14,7 @@ class NetworkManagerClient extends \Aws\NetworkManager\NetworkManagerClient
     use CreateConnection\CreateConnectionTrait;
     use CreateCoreNetwork\CreateCoreNetworkTrait;
     use CreateDevice\CreateDeviceTrait;
+    use CreateDirectConnectGatewayAttachment\CreateDirectConnectGatewayAttachmentTrait;
     use CreateGlobalNetwork\CreateGlobalNetworkTrait;
     use CreateLink\CreateLinkTrait;
     use CreateSite\CreateSiteTrait;
@@ -49,6 +50,7 @@ class NetworkManagerClient extends \Aws\NetworkManager\NetworkManagerClient
     use GetCoreNetworkPolicy\GetCoreNetworkPolicyTrait;
     use GetCustomerGatewayAssociations\GetCustomerGatewayAssociationsTrait;
     use GetDevices\GetDevicesTrait;
+    use GetDirectConnectGatewayAttachment\GetDirectConnectGatewayAttachmentTrait;
     use GetLinkAssociations\GetLinkAssociationsTrait;
     use GetLinks\GetLinksTrait;
     use GetNetworkResourceCounts\GetNetworkResourceCountsTrait;
@@ -84,6 +86,7 @@ class NetworkManagerClient extends \Aws\NetworkManager\NetworkManagerClient
     use UpdateConnection\UpdateConnectionTrait;
     use UpdateCoreNetwork\UpdateCoreNetworkTrait;
     use UpdateDevice\UpdateDeviceTrait;
+    use UpdateDirectConnectGatewayAttachment\UpdateDirectConnectGatewayAttachmentTrait;
     use UpdateGlobalNetwork\UpdateGlobalNetworkTrait;
     use UpdateLink\UpdateLinkTrait;
     use UpdateNetworkResourceMetadata\UpdateNetworkResourceMetadataTrait;

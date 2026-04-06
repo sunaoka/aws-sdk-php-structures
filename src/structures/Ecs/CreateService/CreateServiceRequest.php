@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $cluster
  * @property string $serviceName
  * @property string|null $taskDefinition
+ * @property 'ENABLED'|'DISABLED'|null $availabilityZoneRebalancing
  * @property list<Shapes\LoadBalancer>|null $loadBalancers
  * @property list<Shapes\ServiceRegistry>|null $serviceRegistries
  * @property int|null $desiredCount
@@ -29,6 +30,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $enableExecuteCommand
  * @property Shapes\ServiceConnectConfiguration|null $serviceConnectConfiguration
  * @property list<Shapes\ServiceVolumeConfiguration>|null $volumeConfigurations
+ * @property list<Shapes\VpcLatticeConfiguration>|null $vpcLatticeConfigurations
  */
 class CreateServiceRequest extends Request
 {
@@ -37,6 +39,7 @@ class CreateServiceRequest extends Request
      *     cluster?: string|null,
      *     serviceName: string,
      *     taskDefinition?: string|null,
+     *     availabilityZoneRebalancing?: 'ENABLED'|'DISABLED'|null,
      *     loadBalancers?: list<Shapes\LoadBalancer>|null,
      *     serviceRegistries?: list<Shapes\ServiceRegistry>|null,
      *     desiredCount?: int|null,
@@ -57,7 +60,8 @@ class CreateServiceRequest extends Request
      *     propagateTags?: 'TASK_DEFINITION'|'SERVICE'|'NONE'|null,
      *     enableExecuteCommand?: bool|null,
      *     serviceConnectConfiguration?: Shapes\ServiceConnectConfiguration|null,
-     *     volumeConfigurations?: list<Shapes\ServiceVolumeConfiguration>|null
+     *     volumeConfigurations?: list<Shapes\ServiceVolumeConfiguration>|null,
+     *     vpcLatticeConfigurations?: list<Shapes\VpcLatticeConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

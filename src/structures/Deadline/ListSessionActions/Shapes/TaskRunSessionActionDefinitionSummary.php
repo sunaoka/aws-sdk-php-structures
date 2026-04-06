@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Deadline\ListSessionActions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $stepId
  * @property string $taskId
+ * @property string $stepId
  */
 class TaskRunSessionActionDefinitionSummary extends Shape
 {
     /**
      * @param array{
-     *     stepId: string,
-     *     taskId: string
+     *     taskId: string,
+     *     stepId: string
      * } $args
      */
     public function __construct(array $args)

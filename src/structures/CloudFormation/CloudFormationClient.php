@@ -53,6 +53,7 @@ class CloudFormationClient extends \Aws\CloudFormation\CloudFormationClient
     use ListChangeSets\ListChangeSetsTrait;
     use ListExports\ListExportsTrait;
     use ListGeneratedTemplates\ListGeneratedTemplatesTrait;
+    use ListHookResults\ListHookResultsTrait;
     use ListImports\ListImportsTrait;
     use ListResourceScanRelatedResources\ListResourceScanRelatedResourcesTrait;
     use ListResourceScanResources\ListResourceScanResourcesTrait;

@@ -57,6 +57,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DBInstanceArn
  * @property string|null $Timezone
  * @property bool|null $IAMDatabaseAuthenticationEnabled
+ * @property 'standard'|'advanced'|null $DatabaseInsightsMode
  * @property bool|null $PerformanceInsightsEnabled
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
@@ -148,6 +149,7 @@ class DBInstance extends Shape
      *     DBInstanceArn?: string|null,
      *     Timezone?: string|null,
      *     IAMDatabaseAuthenticationEnabled?: bool|null,
+     *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
      *     PerformanceInsightsEnabled?: bool|null,
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,

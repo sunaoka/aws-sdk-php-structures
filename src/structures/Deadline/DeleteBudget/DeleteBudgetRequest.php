@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Deadline\DeleteBudget;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $budgetId
  * @property string $farmId
+ * @property string $budgetId
  */
 class DeleteBudgetRequest extends Request
 {
     /**
      * @param array{
-     *     budgetId: string,
-     *     farmId: string
+     *     farmId: string,
+     *     budgetId: string
      * } $args
      */
     public function __construct(array $args)

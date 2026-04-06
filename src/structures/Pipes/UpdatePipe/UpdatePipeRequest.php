@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\PipeTargetParameters|null $TargetParameters
  * @property string $RoleArn
  * @property Shapes\PipeLogConfigurationParameters|null $LogConfiguration
+ * @property string|null $KmsKeyIdentifier
  */
 class UpdatePipeRequest extends Request
 {
@@ -29,7 +30,8 @@ class UpdatePipeRequest extends Request
      *     Target?: string|null,
      *     TargetParameters?: Shapes\PipeTargetParameters|null,
      *     RoleArn: string,
-     *     LogConfiguration?: Shapes\PipeLogConfigurationParameters|null
+     *     LogConfiguration?: Shapes\PipeLogConfigurationParameters|null,
+     *     KmsKeyIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

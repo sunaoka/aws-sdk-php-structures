@@ -6,6 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $domainName
+ * @property string|null $domainNameId
+ * @property string|null $domainNameArn
  * @property string|null $certificateName
  * @property string|null $certificateArn
  * @property \Aws\Api\DateTimeResult|null $certificateUploadDate
@@ -22,6 +24,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $tags
  * @property Shapes\MutualTlsAuthentication|null $mutualTlsAuthentication
  * @property string|null $ownershipVerificationCertificateArn
+ * @property string|null $managementPolicy
+ * @property string|null $policy
  */
 class UpdateDomainNameResponse extends Response
 {

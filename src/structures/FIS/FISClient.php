@@ -12,6 +12,7 @@ class FISClient extends \Aws\FIS\FISClient
     use GetExperiment\GetExperimentTrait;
     use GetExperimentTargetAccountConfiguration\GetExperimentTargetAccountConfigurationTrait;
     use GetExperimentTemplate\GetExperimentTemplateTrait;
+    use GetSafetyLever\GetSafetyLeverTrait;
     use GetTargetAccountConfiguration\GetTargetAccountConfigurationTrait;
     use GetTargetResourceType\GetTargetResourceTypeTrait;
     use ListActions\ListActionsTrait;
@@ -27,5 +28,6 @@ class FISClient extends \Aws\FIS\FISClient
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateExperimentTemplate\UpdateExperimentTemplateTrait;
+    use UpdateSafetyLeverState\UpdateSafetyLeverStateTrait;
     use UpdateTargetAccountConfiguration\UpdateTargetAccountConfigurationTrait;
 }

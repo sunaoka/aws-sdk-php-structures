@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Deadline\ListStepDependencies\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'RESOLVED'|'UNRESOLVED' $status
  * @property string $stepId
+ * @property 'RESOLVED'|'UNRESOLVED' $status
  */
 class StepDependency extends Shape
 {
     /**
      * @param array{
-     *     status: 'RESOLVED'|'UNRESOLVED',
-     *     stepId: string
+     *     stepId: string,
+     *     status: 'RESOLVED'|'UNRESOLVED'
      * } $args
      */
     public function __construct(array $args)

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Deadline\BatchGetJobEntity\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property JobAttachmentSettings|null $jobAttachmentSettings
  * @property string $jobId
+ * @property JobAttachmentSettings|null $jobAttachmentSettings
  * @property JobRunAsUser|null $jobRunAsUser
  * @property string $logGroupName
- * @property array<string, JobParameter>|null $parameters
- * @property list<PathMappingRule>|null $pathMappingRules
  * @property string|null $queueRoleArn
+ * @property array<string, JobParameter>|null $parameters
  * @property string $schemaVersion
+ * @property list<PathMappingRule>|null $pathMappingRules
  */
 class JobDetailsEntity extends Shape
 {
     /**
      * @param array{
-     *     jobAttachmentSettings?: JobAttachmentSettings|null,
      *     jobId: string,
+     *     jobAttachmentSettings?: JobAttachmentSettings|null,
      *     jobRunAsUser?: JobRunAsUser|null,
      *     logGroupName: string,
-     *     parameters?: array<string, JobParameter>|null,
-     *     pathMappingRules?: list<PathMappingRule>|null,
      *     queueRoleArn?: string|null,
-     *     schemaVersion: string
+     *     parameters?: array<string, JobParameter>|null,
+     *     schemaVersion: string,
+     *     pathMappingRules?: list<PathMappingRule>|null
      * } $args
      */
     public function __construct(array $args)

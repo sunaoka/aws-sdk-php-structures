@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property 'BASIC'|'OAUTH_CLIENT_CREDENTIALS'|'API_KEY' $AuthorizationType
  * @property Shapes\CreateConnectionAuthRequestParameters $AuthParameters
+ * @property Shapes\ConnectivityResourceParameters|null $InvocationConnectivityParameters
  */
 class CreateConnectionRequest extends Request
 {
@@ -17,7 +18,8 @@ class CreateConnectionRequest extends Request
      *     Name: string,
      *     Description?: string|null,
      *     AuthorizationType: 'BASIC'|'OAUTH_CLIENT_CREDENTIALS'|'API_KEY',
-     *     AuthParameters: Shapes\CreateConnectionAuthRequestParameters
+     *     AuthParameters: Shapes\CreateConnectionAuthRequestParameters,
+     *     InvocationConnectivityParameters?: Shapes\ConnectivityResourceParameters|null
      * } $args
      */
     public function __construct(array $args)

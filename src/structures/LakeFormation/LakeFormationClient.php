@@ -12,10 +12,12 @@ class LakeFormationClient extends \Aws\LakeFormation\LakeFormationClient
     use CommitTransaction\CommitTransactionTrait;
     use CreateDataCellsFilter\CreateDataCellsFilterTrait;
     use CreateLFTag\CreateLFTagTrait;
+    use CreateLFTagExpression\CreateLFTagExpressionTrait;
     use CreateLakeFormationIdentityCenterConfiguration\CreateLakeFormationIdentityCenterConfigurationTrait;
     use CreateLakeFormationOptIn\CreateLakeFormationOptInTrait;
     use DeleteDataCellsFilter\DeleteDataCellsFilterTrait;
     use DeleteLFTag\DeleteLFTagTrait;
+    use DeleteLFTagExpression\DeleteLFTagExpressionTrait;
     use DeleteLakeFormationIdentityCenterConfiguration\DeleteLakeFormationIdentityCenterConfigurationTrait;
     use DeleteLakeFormationOptIn\DeleteLakeFormationOptInTrait;
     use DeleteObjectsOnCancel\DeleteObjectsOnCancelTrait;
@@ -29,6 +31,7 @@ class LakeFormationClient extends \Aws\LakeFormation\LakeFormationClient
     use GetDataLakeSettings\GetDataLakeSettingsTrait;
     use GetEffectivePermissionsForPath\GetEffectivePermissionsForPathTrait;
     use GetLFTag\GetLFTagTrait;
+    use GetLFTagExpression\GetLFTagExpressionTrait;
     use GetQueryState\GetQueryStateTrait;
     use GetQueryStatistics\GetQueryStatisticsTrait;
     use GetResourceLFTags\GetResourceLFTagsTrait;
@@ -39,6 +42,7 @@ class LakeFormationClient extends \Aws\LakeFormation\LakeFormationClient
     use GetWorkUnits\GetWorkUnitsTrait;
     use GrantPermissions\GrantPermissionsTrait;
     use ListDataCellsFilter\ListDataCellsFilterTrait;
+    use ListLFTagExpressions\ListLFTagExpressionsTrait;
     use ListLFTags\ListLFTagsTrait;
     use ListLakeFormationOptIns\ListLakeFormationOptInsTrait;
     use ListPermissions\ListPermissionsTrait;
@@ -55,6 +59,7 @@ class LakeFormationClient extends \Aws\LakeFormation\LakeFormationClient
     use StartTransaction\StartTransactionTrait;
     use UpdateDataCellsFilter\UpdateDataCellsFilterTrait;
     use UpdateLFTag\UpdateLFTagTrait;
+    use UpdateLFTagExpression\UpdateLFTagExpressionTrait;
     use UpdateLakeFormationIdentityCenterConfiguration\UpdateLakeFormationIdentityCenterConfigurationTrait;
     use UpdateResource\UpdateResourceTrait;
     use UpdateTableObjects\UpdateTableObjectsTrait;

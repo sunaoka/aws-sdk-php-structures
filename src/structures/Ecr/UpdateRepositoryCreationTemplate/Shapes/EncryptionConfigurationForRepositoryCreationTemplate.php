@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ecr\UpdateRepositoryCreationTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AES256'|'KMS' $encryptionType
+ * @property 'AES256'|'KMS'|'KMS_DSSE' $encryptionType
  * @property string|null $kmsKey
  */
 class EncryptionConfigurationForRepositoryCreationTemplate extends Shape
 {
     /**
      * @param array{
-     *     encryptionType: 'AES256'|'KMS',
+     *     encryptionType: 'AES256'|'KMS'|'KMS_DSSE',
      *     kmsKey?: string|null
      * } $args
      */

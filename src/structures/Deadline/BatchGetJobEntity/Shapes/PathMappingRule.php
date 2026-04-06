@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Deadline\BatchGetJobEntity\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $destinationPath
- * @property string $sourcePath
  * @property 'windows'|'posix' $sourcePathFormat
+ * @property string $sourcePath
+ * @property string $destinationPath
  */
 class PathMappingRule extends Shape
 {
     /**
      * @param array{
-     *     destinationPath: string,
+     *     sourcePathFormat: 'windows'|'posix',
      *     sourcePath: string,
-     *     sourcePathFormat: 'windows'|'posix'
+     *     destinationPath: string
      * } $args
      */
     public function __construct(array $args)

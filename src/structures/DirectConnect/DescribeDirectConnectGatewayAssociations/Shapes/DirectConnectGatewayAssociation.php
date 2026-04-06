@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AssociatedGateway|null $associatedGateway
  * @property string|null $associationId
  * @property list<RouteFilterPrefix>|null $allowedPrefixesToDirectConnectGateway
+ * @property AssociatedCoreNetwork|null $associatedCoreNetwork
  * @property string|null $virtualGatewayId
  * @property string|null $virtualGatewayRegion
  * @property string|null $virtualGatewayOwnerAccount
@@ -27,6 +28,7 @@ class DirectConnectGatewayAssociation extends Shape
      *     associatedGateway?: AssociatedGateway|null,
      *     associationId?: string|null,
      *     allowedPrefixesToDirectConnectGateway?: list<RouteFilterPrefix>|null,
+     *     associatedCoreNetwork?: AssociatedCoreNetwork|null,
      *     virtualGatewayId?: string|null,
      *     virtualGatewayRegion?: string|null,
      *     virtualGatewayOwnerAccount?: string|null

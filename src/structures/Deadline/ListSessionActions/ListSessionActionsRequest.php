@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $farmId
- * @property string $jobId
- * @property int<1, 100>|null $maxResults
- * @property string|null $nextToken
  * @property string $queueId
+ * @property string $jobId
  * @property string|null $sessionId
  * @property string|null $taskId
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListSessionActionsRequest extends Request
 {
     /**
      * @param array{
      *     farmId: string,
-     *     jobId: string,
-     *     maxResults?: int<1, 100>|null,
-     *     nextToken?: string|null,
      *     queueId: string,
+     *     jobId: string,
      *     sessionId?: string|null,
-     *     taskId?: string|null
+     *     taskId?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

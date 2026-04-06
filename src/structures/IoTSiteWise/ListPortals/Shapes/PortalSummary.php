@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $lastUpdateDate
  * @property string|null $roleArn
  * @property PortalStatus $status
+ * @property 'SITEWISE_PORTAL_V1'|'SITEWISE_PORTAL_V2'|null $portalType
  */
 class PortalSummary extends Shape
 {
@@ -25,7 +26,8 @@ class PortalSummary extends Shape
      *     creationDate?: \Aws\Api\DateTimeResult|null,
      *     lastUpdateDate?: \Aws\Api\DateTimeResult|null,
      *     roleArn?: string|null,
-     *     status: PortalStatus
+     *     status: PortalStatus,
+     *     portalType?: 'SITEWISE_PORTAL_V1'|'SITEWISE_PORTAL_V2'|null
      * } $args
      */
     public function __construct(array $args)

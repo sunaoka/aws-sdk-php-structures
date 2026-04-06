@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TriggerName
  * @property string|null $JobName
  * @property 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null $JobMode
+ * @property bool|null $JobRunQueuingEnabled
  * @property \Aws\Api\DateTimeResult|null $StartedOn
  * @property \Aws\Api\DateTimeResult|null $LastModifiedOn
  * @property \Aws\Api\DateTimeResult|null $CompletedOn
@@ -32,6 +33,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'FLEX'|'STANDARD'|null $ExecutionClass
  * @property string|null $MaintenanceWindow
  * @property string|null $ProfileName
+ * @property string|null $StateDetail
  */
 class JobRun extends Shape
 {
@@ -43,6 +45,7 @@ class JobRun extends Shape
      *     TriggerName?: string|null,
      *     JobName?: string|null,
      *     JobMode?: 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null,
+     *     JobRunQueuingEnabled?: bool|null,
      *     StartedOn?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedOn?: \Aws\Api\DateTimeResult|null,
      *     CompletedOn?: \Aws\Api\DateTimeResult|null,
@@ -63,7 +66,8 @@ class JobRun extends Shape
      *     DPUSeconds?: double|null,
      *     ExecutionClass?: 'FLEX'|'STANDARD'|null,
      *     MaintenanceWindow?: string|null,
-     *     ProfileName?: string|null
+     *     ProfileName?: string|null,
+     *     StateDetail?: string|null
      * } $args
      */
     public function __construct(array $args = [])

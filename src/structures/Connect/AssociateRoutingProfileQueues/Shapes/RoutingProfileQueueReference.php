@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $QueueId
- * @property 'VOICE'|'CHAT'|'TASK' $Channel
+ * @property 'VOICE'|'CHAT'|'TASK'|'EMAIL' $Channel
  */
 class RoutingProfileQueueReference extends Shape
 {
     /**
      * @param array{
      *     QueueId: string,
-     *     Channel: 'VOICE'|'CHAT'|'TASK'
+     *     Channel: 'VOICE'|'CHAT'|'TASK'|'EMAIL'
      * } $args
      */
     public function __construct(array $args)

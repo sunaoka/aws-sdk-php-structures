@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AVAILABLE'|'CREATING'|'FAILED'|'DELETING'|'MISCONFIGURED'|'UPDATING'|'MISCONFIGURED_UNAVAILABLE'|null $Lifecycle
  * @property FileSystemFailureDetails|null $FailureDetails
  * @property int<0, 2147483647>|null $StorageCapacity
- * @property 'SSD'|'HDD'|null $StorageType
+ * @property 'SSD'|'HDD'|'INTELLIGENT_TIERING'|null $StorageType
  * @property string|null $VpcId
  * @property list<string>|null $SubnetIds
  * @property list<string>|null $NetworkInterfaceIds
@@ -38,7 +38,7 @@ class FileSystem extends Shape
      *     Lifecycle?: 'AVAILABLE'|'CREATING'|'FAILED'|'DELETING'|'MISCONFIGURED'|'UPDATING'|'MISCONFIGURED_UNAVAILABLE'|null,
      *     FailureDetails?: FileSystemFailureDetails|null,
      *     StorageCapacity?: int<0, 2147483647>|null,
-     *     StorageType?: 'SSD'|'HDD'|null,
+     *     StorageType?: 'SSD'|'HDD'|'INTELLIGENT_TIERING'|null,
      *     VpcId?: string|null,
      *     SubnetIds?: list<string>|null,
      *     NetworkInterfaceIds?: list<string>|null,

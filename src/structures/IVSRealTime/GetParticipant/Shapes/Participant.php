@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $recordingS3BucketName
  * @property string|null $recordingS3Prefix
  * @property 'STARTING'|'ACTIVE'|'STOPPING'|'STOPPED'|'FAILED'|'DISABLED'|null $recordingState
+ * @property 'UNKNOWN'|'WHIP'|'RTMP'|'RTMPS'|null $protocol
  */
 class Participant extends Shape
 {
@@ -39,7 +40,8 @@ class Participant extends Shape
      *     sdkVersion?: string|null,
      *     recordingS3BucketName?: string|null,
      *     recordingS3Prefix?: string|null,
-     *     recordingState?: 'STARTING'|'ACTIVE'|'STOPPING'|'STOPPED'|'FAILED'|'DISABLED'|null
+     *     recordingState?: 'STARTING'|'ACTIVE'|'STOPPING'|'STOPPED'|'FAILED'|'DISABLED'|null,
+     *     protocol?: 'UNKNOWN'|'WHIP'|'RTMP'|'RTMPS'|null
      * } $args
      */
     public function __construct(array $args = [])

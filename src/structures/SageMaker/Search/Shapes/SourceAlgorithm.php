@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $ModelDataUrl
  * @property ModelDataSource|null $ModelDataSource
+ * @property string|null $ModelDataETag
  * @property string $AlgorithmName
  */
 class SourceAlgorithm extends Shape
@@ -15,6 +16,7 @@ class SourceAlgorithm extends Shape
      * @param array{
      *     ModelDataUrl?: string|null,
      *     ModelDataSource?: ModelDataSource|null,
+     *     ModelDataETag?: string|null,
      *     AlgorithmName: string
      * } $args
      */

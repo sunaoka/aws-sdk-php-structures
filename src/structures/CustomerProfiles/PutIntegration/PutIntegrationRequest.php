@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $Tags
  * @property Shapes\FlowDefinition|null $FlowDefinition
  * @property array<string, string>|null $ObjectTypeNames
+ * @property string|null $RoleArn
+ * @property list<string>|null $EventTriggerNames
  */
 class PutIntegrationRequest extends Request
 {
@@ -21,7 +23,9 @@ class PutIntegrationRequest extends Request
      *     ObjectTypeName?: string|null,
      *     Tags?: array<string, string>|null,
      *     FlowDefinition?: Shapes\FlowDefinition|null,
-     *     ObjectTypeNames?: array<string, string>|null
+     *     ObjectTypeNames?: array<string, string>|null,
+     *     RoleArn?: string|null,
+     *     EventTriggerNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

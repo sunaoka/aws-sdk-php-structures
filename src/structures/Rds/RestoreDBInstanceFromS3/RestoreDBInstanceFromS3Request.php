@@ -41,6 +41,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $S3BucketName
  * @property string|null $S3Prefix
  * @property string $S3IngestionRoleArn
+ * @property 'standard'|'advanced'|null $DatabaseInsightsMode
  * @property bool|null $EnablePerformanceInsights
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
@@ -97,6 +98,7 @@ class RestoreDBInstanceFromS3Request extends Request
      *     S3BucketName: string,
      *     S3Prefix?: string|null,
      *     S3IngestionRoleArn: string,
+     *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
      *     EnablePerformanceInsights?: bool|null,
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,

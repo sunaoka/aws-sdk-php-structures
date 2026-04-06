@@ -7,11 +7,13 @@ class B2biClient extends \Aws\B2bi\B2biClient
     use CreateCapability\CreateCapabilityTrait;
     use CreatePartnership\CreatePartnershipTrait;
     use CreateProfile\CreateProfileTrait;
+    use CreateStarterMappingTemplate\CreateStarterMappingTemplateTrait;
     use CreateTransformer\CreateTransformerTrait;
     use DeleteCapability\DeleteCapabilityTrait;
     use DeletePartnership\DeletePartnershipTrait;
     use DeleteProfile\DeleteProfileTrait;
     use DeleteTransformer\DeleteTransformerTrait;
+    use GenerateMapping\GenerateMappingTrait;
     use GetCapability\GetCapabilityTrait;
     use GetPartnership\GetPartnershipTrait;
     use GetProfile\GetProfileTrait;
@@ -24,6 +26,7 @@ class B2biClient extends \Aws\B2bi\B2biClient
     use ListTransformers\ListTransformersTrait;
     use StartTransformerJob\StartTransformerJobTrait;
     use TagResource\TagResourceTrait;
+    use TestConversion\TestConversionTrait;
     use TestMapping\TestMappingTrait;
     use TestParsing\TestParsingTrait;
     use UntagResource\UntagResourceTrait;

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CodeBuild\StartBuild\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'OAUTH'|'CODECONNECTIONS' $type
+ * @property 'OAUTH'|'CODECONNECTIONS'|'SECRETS_MANAGER' $type
  * @property string|null $resource
  */
 class SourceAuth extends Shape
 {
     /**
      * @param array{
-     *     type: 'OAUTH'|'CODECONNECTIONS',
+     *     type: 'OAUTH'|'CODECONNECTIONS'|'SECRETS_MANAGER',
      *     resource?: string|null
      * } $args
      */

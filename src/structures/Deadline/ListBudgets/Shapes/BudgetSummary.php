@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Deadline\ListBudgets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $approximateDollarLimit
  * @property string $budgetId
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property string|null $description
- * @property string $displayName
- * @property 'ACTIVE'|'INACTIVE' $status
- * @property \Aws\Api\DateTimeResult|null $updatedAt
- * @property string|null $updatedBy
  * @property UsageTrackingResource $usageTrackingResource
+ * @property 'ACTIVE'|'INACTIVE' $status
+ * @property string $displayName
+ * @property string|null $description
+ * @property float $approximateDollarLimit
  * @property ConsumedUsages $usages
+ * @property string $createdBy
+ * @property \Aws\Api\DateTimeResult $createdAt
+ * @property string|null $updatedBy
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class BudgetSummary extends Shape
 {
     /**
      * @param array{
-     *     approximateDollarLimit: float,
      *     budgetId: string,
-     *     createdAt: \Aws\Api\DateTimeResult,
-     *     createdBy: string,
-     *     description?: string|null,
-     *     displayName: string,
-     *     status: 'ACTIVE'|'INACTIVE',
-     *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     updatedBy?: string|null,
      *     usageTrackingResource: UsageTrackingResource,
-     *     usages: ConsumedUsages
+     *     status: 'ACTIVE'|'INACTIVE',
+     *     displayName: string,
+     *     description?: string|null,
+     *     approximateDollarLimit: float,
+     *     usages: ConsumedUsages,
+     *     createdBy: string,
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     updatedBy?: string|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

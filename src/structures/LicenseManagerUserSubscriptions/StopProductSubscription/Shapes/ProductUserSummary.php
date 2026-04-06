@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Domain
  * @property IdentityProvider $IdentityProvider
  * @property string $Product
+ * @property string|null $ProductUserArn
  * @property string $Status
  * @property string|null $StatusMessage
  * @property string|null $SubscriptionEndDate
@@ -21,6 +22,7 @@ class ProductUserSummary extends Shape
      *     Domain?: string|null,
      *     IdentityProvider: IdentityProvider,
      *     Product: string,
+     *     ProductUserArn?: string|null,
      *     Status: string,
      *     StatusMessage?: string|null,
      *     SubscriptionEndDate?: string|null,

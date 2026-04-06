@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<0, 100>|null $RedundancyPercent
  * @property int<1, max>|null $FragmentSizeBytes
  * @property int<1, max>|null $FragmentIntervalMS
+ * @property string|null $Descriptor
  */
 class UpdateFuotaTaskRequest extends Request
 {
@@ -27,7 +28,8 @@ class UpdateFuotaTaskRequest extends Request
      *     FirmwareUpdateRole?: string|null,
      *     RedundancyPercent?: int<0, 100>|null,
      *     FragmentSizeBytes?: int<1, max>|null,
-     *     FragmentIntervalMS?: int<1, max>|null
+     *     FragmentIntervalMS?: int<1, max>|null,
+     *     Descriptor?: string|null
      * } $args
      */
     public function __construct(array $args)

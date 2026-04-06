@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $baselineIdentifier
  * @property string|null $baselineVersion
  * @property list<EnabledBaselineParameterSummary>|null $parameters
+ * @property string|null $parentIdentifier
  * @property EnablementStatusSummary $statusSummary
  * @property string $targetIdentifier
  */
@@ -20,6 +21,7 @@ class EnabledBaselineDetails extends Shape
      *     baselineIdentifier: string,
      *     baselineVersion?: string|null,
      *     parameters?: list<EnabledBaselineParameterSummary>|null,
+     *     parentIdentifier?: string|null,
      *     statusSummary: EnablementStatusSummary,
      *     targetIdentifier: string
      * } $args

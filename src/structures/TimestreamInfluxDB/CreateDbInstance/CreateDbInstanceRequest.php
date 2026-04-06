@@ -20,6 +20,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|null $deploymentType
  * @property Shapes\LogDeliveryConfiguration|null $logDeliveryConfiguration
  * @property array<string, string>|null $tags
+ * @property int<1024, 65535>|null $port
+ * @property 'IPV4'|'DUAL'|null $networkType
  */
 class CreateDbInstanceRequest extends Request
 {
@@ -39,7 +41,9 @@ class CreateDbInstanceRequest extends Request
      *     dbParameterGroupIdentifier?: string|null,
      *     deploymentType?: 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|null,
      *     logDeliveryConfiguration?: Shapes\LogDeliveryConfiguration|null,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     port?: int<1024, 65535>|null,
+     *     networkType?: 'IPV4'|'DUAL'|null
      * } $args
      */
     public function __construct(array $args)

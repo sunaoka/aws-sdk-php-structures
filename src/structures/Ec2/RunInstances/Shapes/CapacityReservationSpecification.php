@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\RunInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'open'|'none'|null $CapacityReservationPreference
+ * @property 'capacity-reservations-only'|'open'|'none'|null $CapacityReservationPreference
  * @property CapacityReservationTarget|null $CapacityReservationTarget
  */
 class CapacityReservationSpecification extends Shape
 {
     /**
      * @param array{
-     *     CapacityReservationPreference?: 'open'|'none'|null,
+     *     CapacityReservationPreference?: 'capacity-reservations-only'|'open'|'none'|null,
      *     CapacityReservationTarget?: CapacityReservationTarget|null
      * } $args
      */

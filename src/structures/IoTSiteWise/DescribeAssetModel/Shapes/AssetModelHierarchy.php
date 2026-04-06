@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $id
+ * @property string|null $externalId
  * @property string $name
  * @property string $childAssetModelId
- * @property string|null $externalId
  */
 class AssetModelHierarchy extends Shape
 {
     /**
      * @param array{
      *     id?: string|null,
+     *     externalId?: string|null,
      *     name: string,
-     *     childAssetModelId: string,
-     *     externalId?: string|null
+     *     childAssetModelId: string
      * } $args
      */
     public function __construct(array $args)

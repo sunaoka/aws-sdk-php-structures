@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PrimaryHost
  * @property int|null $SQLPort
  * @property \Aws\Api\DateTimeResult|null $LastUpdated
+ * @property list<string>|null $ConnectedComponentArns
  */
 class Database extends Shape
 {
@@ -31,7 +32,8 @@ class Database extends Shape
      *     Status?: 'RUNNING'|'STARTING'|'STOPPED'|'WARNING'|'UNKNOWN'|'ERROR'|null,
      *     PrimaryHost?: string|null,
      *     SQLPort?: int|null,
-     *     LastUpdated?: \Aws\Api\DateTimeResult|null
+     *     LastUpdated?: \Aws\Api\DateTimeResult|null,
+     *     ConnectedComponentArns?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

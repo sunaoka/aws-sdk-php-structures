@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ApplicationSignals\CreateServiceLevelObjective\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DAY'|'MONTH' $DurationUnit
+ * @property 'MINUTE'|'HOUR'|'DAY'|'MONTH' $DurationUnit
  * @property int<1, max> $Duration
  */
 class RollingInterval extends Shape
 {
     /**
      * @param array{
-     *     DurationUnit: 'DAY'|'MONTH',
+     *     DurationUnit: 'MINUTE'|'HOUR'|'DAY'|'MONTH',
      *     Duration: int<1, max>
      * } $args
      */

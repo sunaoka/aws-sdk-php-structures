@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $destinationArn
  * @property string|null $roleArn
  * @property 'Random'|'ByLogStream'|null $distribution
+ * @property bool|null $applyOnTransformedLogs
  */
 class PutSubscriptionFilterRequest extends Request
 {
@@ -21,7 +22,8 @@ class PutSubscriptionFilterRequest extends Request
      *     filterPattern: string,
      *     destinationArn: string,
      *     roleArn?: string|null,
-     *     distribution?: 'Random'|'ByLogStream'|null
+     *     distribution?: 'Random'|'ByLogStream'|null,
+     *     applyOnTransformedLogs?: bool|null
      * } $args
      */
     public function __construct(array $args)

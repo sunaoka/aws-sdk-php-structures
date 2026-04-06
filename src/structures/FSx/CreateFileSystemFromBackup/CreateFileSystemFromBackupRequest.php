@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\CreateFileSystemWindowsConfiguration|null $WindowsConfiguration
  * @property Shapes\CreateFileSystemLustreConfiguration|null $LustreConfiguration
- * @property 'SSD'|'HDD'|null $StorageType
+ * @property 'SSD'|'HDD'|'INTELLIGENT_TIERING'|null $StorageType
  * @property string|null $KmsKeyId
  * @property string|null $FileSystemTypeVersion
  * @property Shapes\CreateFileSystemOpenZFSConfiguration|null $OpenZFSConfiguration
@@ -29,7 +29,7 @@ class CreateFileSystemFromBackupRequest extends Request
      *     Tags?: list<Shapes\Tag>|null,
      *     WindowsConfiguration?: Shapes\CreateFileSystemWindowsConfiguration|null,
      *     LustreConfiguration?: Shapes\CreateFileSystemLustreConfiguration|null,
-     *     StorageType?: 'SSD'|'HDD'|null,
+     *     StorageType?: 'SSD'|'HDD'|'INTELLIGENT_TIERING'|null,
      *     KmsKeyId?: string|null,
      *     FileSystemTypeVersion?: string|null,
      *     OpenZFSConfiguration?: Shapes\CreateFileSystemOpenZFSConfiguration|null,

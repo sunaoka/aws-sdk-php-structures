@@ -18,6 +18,7 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use CreateEmailTemplate\CreateEmailTemplateTrait;
     use CreateExportJob\CreateExportJobTrait;
     use CreateImportJob\CreateImportJobTrait;
+    use CreateMultiRegionEndpoint\CreateMultiRegionEndpointTrait;
     use DeleteConfigurationSet\DeleteConfigurationSetTrait;
     use DeleteConfigurationSetEventDestination\DeleteConfigurationSetEventDestinationTrait;
     use DeleteContact\DeleteContactTrait;
@@ -27,6 +28,7 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use DeleteEmailIdentity\DeleteEmailIdentityTrait;
     use DeleteEmailIdentityPolicy\DeleteEmailIdentityPolicyTrait;
     use DeleteEmailTemplate\DeleteEmailTemplateTrait;
+    use DeleteMultiRegionEndpoint\DeleteMultiRegionEndpointTrait;
     use DeleteSuppressedDestination\DeleteSuppressedDestinationTrait;
     use GetAccount\GetAccountTrait;
     use GetBlacklistReports\GetBlacklistReportsTrait;
@@ -48,6 +50,7 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use GetExportJob\GetExportJobTrait;
     use GetImportJob\GetImportJobTrait;
     use GetMessageInsights\GetMessageInsightsTrait;
+    use GetMultiRegionEndpoint\GetMultiRegionEndpointTrait;
     use GetSuppressedDestination\GetSuppressedDestinationTrait;
     use ListConfigurationSets\ListConfigurationSetsTrait;
     use ListContactLists\ListContactListsTrait;
@@ -60,6 +63,7 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use ListEmailTemplates\ListEmailTemplatesTrait;
     use ListExportJobs\ListExportJobsTrait;
     use ListImportJobs\ListImportJobsTrait;
+    use ListMultiRegionEndpoints\ListMultiRegionEndpointsTrait;
     use ListRecommendations\ListRecommendationsTrait;
     use ListSuppressedDestinations\ListSuppressedDestinationsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;

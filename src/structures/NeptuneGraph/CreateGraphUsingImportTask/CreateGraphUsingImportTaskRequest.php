@@ -13,11 +13,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<0, 2>|null $replicaCount
  * @property bool|null $deletionProtection
  * @property Shapes\ImportOptions|null $importOptions
- * @property int<32, 24576>|null $maxProvisionedMemory
- * @property int<32, 24576>|null $minProvisionedMemory
+ * @property int<16, 24576>|null $maxProvisionedMemory
+ * @property int<16, 24576>|null $minProvisionedMemory
  * @property bool|null $failOnError
  * @property string $source
- * @property 'CSV'|'OPEN_CYPHER'|'NTRIPLES'|null $format
+ * @property 'CSV'|'OPEN_CYPHER'|'PARQUET'|'NTRIPLES'|null $format
+ * @property 'COLUMNAR'|null $parquetType
  * @property 'convertToIri'|null $blankNodeHandling
  * @property string $roleArn
  */
@@ -33,11 +34,12 @@ class CreateGraphUsingImportTaskRequest extends Request
      *     replicaCount?: int<0, 2>|null,
      *     deletionProtection?: bool|null,
      *     importOptions?: Shapes\ImportOptions|null,
-     *     maxProvisionedMemory?: int<32, 24576>|null,
-     *     minProvisionedMemory?: int<32, 24576>|null,
+     *     maxProvisionedMemory?: int<16, 24576>|null,
+     *     minProvisionedMemory?: int<16, 24576>|null,
      *     failOnError?: bool|null,
      *     source: string,
-     *     format?: 'CSV'|'OPEN_CYPHER'|'NTRIPLES'|null,
+     *     format?: 'CSV'|'OPEN_CYPHER'|'PARQUET'|'NTRIPLES'|null,
+     *     parquetType?: 'COLUMNAR'|null,
      *     blankNodeHandling?: 'convertToIri'|null,
      *     roleArn: string
      * } $args

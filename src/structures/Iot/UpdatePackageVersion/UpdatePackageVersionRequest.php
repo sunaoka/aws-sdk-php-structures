@@ -9,7 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $versionName
  * @property string|null $description
  * @property array<string, string>|null $attributes
+ * @property Shapes\PackageVersionArtifact|null $artifact
  * @property 'PUBLISH'|'DEPRECATE'|null $action
+ * @property string|null $recipe
  * @property string|null $clientToken
  */
 class UpdatePackageVersionRequest extends Request
@@ -20,7 +22,9 @@ class UpdatePackageVersionRequest extends Request
      *     versionName: string,
      *     description?: string|null,
      *     attributes?: array<string, string>|null,
+     *     artifact?: Shapes\PackageVersionArtifact|null,
      *     action?: 'PUBLISH'|'DEPRECATE'|null,
+     *     recipe?: string|null,
      *     clientToken?: string|null
      * } $args
      */

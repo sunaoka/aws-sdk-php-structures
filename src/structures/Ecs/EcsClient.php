@@ -20,6 +20,8 @@ class EcsClient extends \Aws\Ecs\EcsClient
     use DescribeCapacityProviders\DescribeCapacityProvidersTrait;
     use DescribeClusters\DescribeClustersTrait;
     use DescribeContainerInstances\DescribeContainerInstancesTrait;
+    use DescribeServiceDeployments\DescribeServiceDeploymentsTrait;
+    use DescribeServiceRevisions\DescribeServiceRevisionsTrait;
     use DescribeServices\DescribeServicesTrait;
     use DescribeTaskDefinition\DescribeTaskDefinitionTrait;
     use DescribeTaskSets\DescribeTaskSetsTrait;
@@ -31,6 +33,7 @@ class EcsClient extends \Aws\Ecs\EcsClient
     use ListAttributes\ListAttributesTrait;
     use ListClusters\ListClustersTrait;
     use ListContainerInstances\ListContainerInstancesTrait;
+    use ListServiceDeployments\ListServiceDeploymentsTrait;
     use ListServices\ListServicesTrait;
     use ListServicesByNamespace\ListServicesByNamespaceTrait;
     use ListTagsForResource\ListTagsForResourceTrait;

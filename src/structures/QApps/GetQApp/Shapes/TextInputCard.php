@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $id
  * @property string $title
  * @property list<string> $dependencies
- * @property 'text-input'|'q-query'|'file-upload'|'q-plugin' $type
+ * @property 'text-input'|'q-query'|'file-upload'|'q-plugin'|'form-input' $type
  * @property string|null $placeholder
  * @property string|null $defaultValue
  */
@@ -19,7 +19,7 @@ class TextInputCard extends Shape
      *     id: string,
      *     title: string,
      *     dependencies: list<string>,
-     *     type: 'text-input'|'q-query'|'file-upload'|'q-plugin',
+     *     type: 'text-input'|'q-query'|'file-upload'|'q-plugin'|'form-input',
      *     placeholder?: string|null,
      *     defaultValue?: string|null
      * } $args

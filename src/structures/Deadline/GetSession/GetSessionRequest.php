@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $farmId
- * @property string $jobId
  * @property string $queueId
+ * @property string $jobId
  * @property string $sessionId
  */
 class GetSessionRequest extends Request
@@ -15,8 +15,8 @@ class GetSessionRequest extends Request
     /**
      * @param array{
      *     farmId: string,
-     *     jobId: string,
      *     queueId: string,
+     *     jobId: string,
      *     sessionId: string
      * } $args
      */

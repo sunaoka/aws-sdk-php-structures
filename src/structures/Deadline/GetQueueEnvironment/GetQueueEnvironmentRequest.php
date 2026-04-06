@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $farmId
- * @property string $queueEnvironmentId
  * @property string $queueId
+ * @property string $queueEnvironmentId
  */
 class GetQueueEnvironmentRequest extends Request
 {
     /**
      * @param array{
      *     farmId: string,
-     *     queueEnvironmentId: string,
-     *     queueId: string
+     *     queueId: string,
+     *     queueEnvironmentId: string
      * } $args
      */
     public function __construct(array $args)

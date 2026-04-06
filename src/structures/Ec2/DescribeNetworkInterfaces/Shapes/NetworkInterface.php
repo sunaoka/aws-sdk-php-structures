@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ConnectionTrackingConfiguration|null $ConnectionTrackingConfiguration
  * @property string|null $Description
  * @property list<GroupIdentifier>|null $Groups
- * @property 'interface'|'natGateway'|'efa'|'trunk'|'load_balancer'|'network_load_balancer'|'vpc_endpoint'|'branch'|'transit_gateway'|'lambda'|'quicksight'|'global_accelerator_managed'|'api_gateway_managed'|'gateway_load_balancer'|'gateway_load_balancer_endpoint'|'iot_rules_managed'|'aws_codestar_connections_managed'|null $InterfaceType
+ * @property 'interface'|'natGateway'|'efa'|'efa-only'|'trunk'|'load_balancer'|'network_load_balancer'|'vpc_endpoint'|'branch'|'transit_gateway'|'lambda'|'quicksight'|'global_accelerator_managed'|'api_gateway_managed'|'gateway_load_balancer'|'gateway_load_balancer_endpoint'|'iot_rules_managed'|'aws_codestar_connections_managed'|null $InterfaceType
  * @property list<NetworkInterfaceIpv6Address>|null $Ipv6Addresses
  * @property string|null $MacAddress
  * @property string|null $NetworkInterfaceId
@@ -32,6 +32,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $DenyAllIgwTraffic
  * @property bool|null $Ipv6Native
  * @property string|null $Ipv6Address
+ * @property OperatorResponse|null $Operator
  */
 class NetworkInterface extends Shape
 {
@@ -43,7 +44,7 @@ class NetworkInterface extends Shape
      *     ConnectionTrackingConfiguration?: ConnectionTrackingConfiguration|null,
      *     Description?: string|null,
      *     Groups?: list<GroupIdentifier>|null,
-     *     InterfaceType?: 'interface'|'natGateway'|'efa'|'trunk'|'load_balancer'|'network_load_balancer'|'vpc_endpoint'|'branch'|'transit_gateway'|'lambda'|'quicksight'|'global_accelerator_managed'|'api_gateway_managed'|'gateway_load_balancer'|'gateway_load_balancer_endpoint'|'iot_rules_managed'|'aws_codestar_connections_managed'|null,
+     *     InterfaceType?: 'interface'|'natGateway'|'efa'|'efa-only'|'trunk'|'load_balancer'|'network_load_balancer'|'vpc_endpoint'|'branch'|'transit_gateway'|'lambda'|'quicksight'|'global_accelerator_managed'|'api_gateway_managed'|'gateway_load_balancer'|'gateway_load_balancer_endpoint'|'iot_rules_managed'|'aws_codestar_connections_managed'|null,
      *     Ipv6Addresses?: list<NetworkInterfaceIpv6Address>|null,
      *     MacAddress?: string|null,
      *     NetworkInterfaceId?: string|null,
@@ -63,7 +64,8 @@ class NetworkInterface extends Shape
      *     VpcId?: string|null,
      *     DenyAllIgwTraffic?: bool|null,
      *     Ipv6Native?: bool|null,
-     *     Ipv6Address?: string|null
+     *     Ipv6Address?: string|null,
+     *     Operator?: OperatorResponse|null
      * } $args
      */
     public function __construct(array $args = [])

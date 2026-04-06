@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $InputAttachmentName
  * @property string|null $InputId
  * @property InputSettings|null $InputSettings
+ * @property list<string>|null $LogicalInterfaceNames
  */
 class InputAttachment extends Shape
 {
@@ -17,7 +18,8 @@ class InputAttachment extends Shape
      *     AutomaticInputFailoverSettings?: AutomaticInputFailoverSettings|null,
      *     InputAttachmentName?: string|null,
      *     InputId?: string|null,
-     *     InputSettings?: InputSettings|null
+     *     InputSettings?: InputSettings|null,
+     *     LogicalInterfaceNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\VerifiedPermissions;
 
 class VerifiedPermissionsClient extends \Aws\VerifiedPermissions\VerifiedPermissionsClient
 {
+    use BatchGetPolicy\BatchGetPolicyTrait;
     use BatchIsAuthorized\BatchIsAuthorizedTrait;
     use BatchIsAuthorizedWithToken\BatchIsAuthorizedWithTokenTrait;
     use CreateIdentitySource\CreateIdentitySourceTrait;

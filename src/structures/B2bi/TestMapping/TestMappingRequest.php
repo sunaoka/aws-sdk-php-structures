@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $inputFileContent
  * @property string $mappingTemplate
- * @property 'XML'|'JSON' $fileFormat
+ * @property 'XML'|'JSON'|'NOT_USED' $fileFormat
  */
 class TestMappingRequest extends Request
 {
@@ -15,7 +15,7 @@ class TestMappingRequest extends Request
      * @param array{
      *     inputFileContent: string,
      *     mappingTemplate: string,
-     *     fileFormat: 'XML'|'JSON'
+     *     fileFormat: 'XML'|'JSON'|'NOT_USED'
      * } $args
      */
     public function __construct(array $args)

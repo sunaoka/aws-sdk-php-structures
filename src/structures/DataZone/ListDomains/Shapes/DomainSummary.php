@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string|null $description
+ * @property 'V1'|'V2'|null $domainVersion
  * @property string $id
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  * @property string $managedAccountId
@@ -22,6 +23,7 @@ class DomainSummary extends Shape
      *     arn: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     description?: string|null,
+     *     domainVersion?: 'V1'|'V2'|null,
      *     id: string,
      *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
      *     managedAccountId: string,

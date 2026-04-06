@@ -28,10 +28,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'AUTO_SCALING'>|null $StoppedActions
  * @property string|null $InstanceRoleArn
  * @property CertificateConfiguration|null $CertificateConfiguration
- * @property 'EC2'|'ANYWHERE'|'CONTAINER'|null $ComputeType
+ * @property 'EC2'|'ANYWHERE'|null $ComputeType
  * @property AnywhereConfiguration|null $AnywhereConfiguration
  * @property 'SHARED_CREDENTIAL_FILE'|null $InstanceRoleCredentialsProvider
- * @property ContainerGroupsAttributes|null $ContainerGroupsAttributes
  */
 class FleetAttributes extends Shape
 {
@@ -60,10 +59,9 @@ class FleetAttributes extends Shape
      *     StoppedActions?: list<'AUTO_SCALING'>|null,
      *     InstanceRoleArn?: string|null,
      *     CertificateConfiguration?: CertificateConfiguration|null,
-     *     ComputeType?: 'EC2'|'ANYWHERE'|'CONTAINER'|null,
+     *     ComputeType?: 'EC2'|'ANYWHERE'|null,
      *     AnywhereConfiguration?: AnywhereConfiguration|null,
-     *     InstanceRoleCredentialsProvider?: 'SHARED_CREDENTIAL_FILE'|null,
-     *     ContainerGroupsAttributes?: ContainerGroupsAttributes|null
+     *     InstanceRoleCredentialsProvider?: 'SHARED_CREDENTIAL_FILE'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property string $executionRole
- * @property 'SUBMITTED'|'PENDING'|'SCHEDULED'|'RUNNING'|'SUCCESS'|'FAILED'|'CANCELLING'|'CANCELLED' $state
+ * @property 'SUBMITTED'|'PENDING'|'SCHEDULED'|'RUNNING'|'SUCCESS'|'FAILED'|'CANCELLING'|'CANCELLED'|'QUEUED' $state
  * @property string $stateDetails
  * @property string $releaseLabel
  * @property ConfigurationOverrides|null $configurationOverrides
@@ -29,6 +29,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, max>|null $attempt
  * @property \Aws\Api\DateTimeResult|null $attemptCreatedAt
  * @property \Aws\Api\DateTimeResult|null $attemptUpdatedAt
+ * @property \Aws\Api\DateTimeResult|null $startedAt
+ * @property \Aws\Api\DateTimeResult|null $endedAt
+ * @property int|null $queuedDurationMilliseconds
  */
 class JobRun extends Shape
 {
@@ -42,7 +45,7 @@ class JobRun extends Shape
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     executionRole: string,
-     *     state: 'SUBMITTED'|'PENDING'|'SCHEDULED'|'RUNNING'|'SUCCESS'|'FAILED'|'CANCELLING'|'CANCELLED',
+     *     state: 'SUBMITTED'|'PENDING'|'SCHEDULED'|'RUNNING'|'SUCCESS'|'FAILED'|'CANCELLING'|'CANCELLED'|'QUEUED',
      *     stateDetails: string,
      *     releaseLabel: string,
      *     configurationOverrides?: ConfigurationOverrides|null,
@@ -57,7 +60,10 @@ class JobRun extends Shape
      *     retryPolicy?: RetryPolicy|null,
      *     attempt?: int<1, max>|null,
      *     attemptCreatedAt?: \Aws\Api\DateTimeResult|null,
-     *     attemptUpdatedAt?: \Aws\Api\DateTimeResult|null
+     *     attemptUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     startedAt?: \Aws\Api\DateTimeResult|null,
+     *     endedAt?: \Aws\Api\DateTimeResult|null,
+     *     queuedDurationMilliseconds?: int|null
      * } $args
      */
     public function __construct(array $args)

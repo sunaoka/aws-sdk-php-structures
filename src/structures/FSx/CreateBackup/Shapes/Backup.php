@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SourceBackupRegion
  * @property 'FILE_SYSTEM'|'VOLUME'|null $ResourceType
  * @property Volume|null $Volume
+ * @property int<0, max>|null $SizeInBytes
  */
 class Backup extends Shape
 {
@@ -41,7 +42,8 @@ class Backup extends Shape
      *     SourceBackupId?: string|null,
      *     SourceBackupRegion?: string|null,
      *     ResourceType?: 'FILE_SYSTEM'|'VOLUME'|null,
-     *     Volume?: Volume|null
+     *     Volume?: Volume|null,
+     *     SizeInBytes?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args)

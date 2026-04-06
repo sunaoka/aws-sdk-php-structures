@@ -65,6 +65,7 @@ class DeadlineClient extends \Aws\Deadline\DeadlineClient
     use ListFleetMembers\ListFleetMembersTrait;
     use ListFleets\ListFleetsTrait;
     use ListJobMembers\ListJobMembersTrait;
+    use ListJobParameterDefinitions\ListJobParameterDefinitionsTrait;
     use ListJobs\ListJobsTrait;
     use ListLicenseEndpoints\ListLicenseEndpointsTrait;
     use ListMeteredProducts\ListMeteredProductsTrait;

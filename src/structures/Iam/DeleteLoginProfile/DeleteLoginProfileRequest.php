@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Iam\DeleteLoginProfile;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $UserName
+ * @property string|null $UserName
  */
 class DeleteLoginProfileRequest extends Request
 {
     /**
-     * @param array{UserName: string} $args
+     * @param array{UserName?: string|null} $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

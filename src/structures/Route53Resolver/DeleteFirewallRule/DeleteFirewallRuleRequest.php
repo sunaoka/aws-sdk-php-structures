@@ -6,7 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FirewallRuleGroupId
- * @property string $FirewallDomainListId
+ * @property string|null $FirewallDomainListId
+ * @property string|null $FirewallThreatProtectionId
  * @property string|null $Qtype
  */
 class DeleteFirewallRuleRequest extends Request
@@ -14,7 +15,8 @@ class DeleteFirewallRuleRequest extends Request
     /**
      * @param array{
      *     FirewallRuleGroupId: string,
-     *     FirewallDomainListId: string,
+     *     FirewallDomainListId?: string|null,
+     *     FirewallThreatProtectionId?: string|null,
      *     Qtype?: string|null
      * } $args
      */

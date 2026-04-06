@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $domainId
  * @property list<string>|null $enabledRegions
  * @property string $environmentBlueprintId
+ * @property string|null $environmentRolePermissionBoundary
  * @property string|null $manageAccessRoleArn
  * @property list<Shapes\ProvisioningConfiguration>|null $provisioningConfigurations
  * @property string|null $provisioningRoleArn

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $stepName
  * @property \Aws\Api\DateTimeResult $startTime
- * @property 'PENDING'|'PROVISIONING'|'RUNNING'|'FAILED'|'SUCCEED'|'CANCELLING'|'CANCELLED' $status
+ * @property 'CREATED'|'PENDING'|'PROVISIONING'|'RUNNING'|'FAILED'|'SUCCEED'|'CANCELLING'|'CANCELLED' $status
  * @property \Aws\Api\DateTimeResult $endTime
  * @property string|null $logUrl
  * @property string|null $artifactsUrl
@@ -23,7 +23,7 @@ class Step extends Shape
      * @param array{
      *     stepName: string,
      *     startTime: \Aws\Api\DateTimeResult,
-     *     status: 'PENDING'|'PROVISIONING'|'RUNNING'|'FAILED'|'SUCCEED'|'CANCELLING'|'CANCELLED',
+     *     status: 'CREATED'|'PENDING'|'PROVISIONING'|'RUNNING'|'FAILED'|'SUCCEED'|'CANCELLING'|'CANCELLED',
      *     endTime: \Aws\Api\DateTimeResult,
      *     logUrl?: string|null,
      *     artifactsUrl?: string|null,

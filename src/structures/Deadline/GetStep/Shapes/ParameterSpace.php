@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Deadline\GetStep\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $combination
  * @property list<StepParameter> $parameters
+ * @property string|null $combination
  */
 class ParameterSpace extends Shape
 {
     /**
      * @param array{
-     *     combination?: string|null,
-     *     parameters: list<StepParameter>
+     *     parameters: list<StepParameter>,
+     *     combination?: string|null
      * } $args
      */
     public function __construct(array $args)

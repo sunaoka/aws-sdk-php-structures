@@ -39,6 +39,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<string>|null $SupportedCACertificateIdentifiers
  * @property bool|null $SupportsLocalWriteForwarding
  * @property bool|null $SupportsIntegrations
+ * @property Shapes\ServerlessV2FeaturesSupport|null $ServerlessV2FeaturesSupport
  */
 class DeleteCustomDBEngineVersionResponse extends Response
 {

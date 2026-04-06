@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Deadline\UpdateFarm;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $description
- * @property string|null $displayName
  * @property string $farmId
+ * @property string|null $displayName
+ * @property string|null $description
  */
 class UpdateFarmRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string|null,
+     *     farmId: string,
      *     displayName?: string|null,
-     *     farmId: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

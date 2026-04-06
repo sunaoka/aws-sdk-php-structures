@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\ListIdentityPro
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property list<Shapes\Filter>|null $Filters
  * @property int|null $MaxResults
  * @property string|null $NextToken
  */
@@ -12,6 +13,7 @@ class ListIdentityProvidersRequest extends Request
 {
     /**
      * @param array{
+     *     Filters?: list<Shapes\Filter>|null,
      *     MaxResults?: int|null,
      *     NextToken?: string|null
      * } $args

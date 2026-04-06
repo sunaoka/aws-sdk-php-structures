@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LastUpdatedTime
  * @property list<Tag>|null $Tags
  * @property bool|null $FipsEnabled
+ * @property VerifiedAccessInstanceCustomSubDomain|null $CidrEndpointsCustomSubDomain
  */
 class VerifiedAccessInstance extends Shape
 {
@@ -23,7 +24,8 @@ class VerifiedAccessInstance extends Shape
      *     CreationTime?: string|null,
      *     LastUpdatedTime?: string|null,
      *     Tags?: list<Tag>|null,
-     *     FipsEnabled?: bool|null
+     *     FipsEnabled?: bool|null,
+     *     CidrEndpointsCustomSubDomain?: VerifiedAccessInstanceCustomSubDomain|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PreferredSubnetId
  * @property string|null $EndpointIpAddressRange
  * @property list<string>|null $RouteTableIds
+ * @property OpenZFSReadCacheConfiguration|null $ReadCacheConfiguration
  */
 class CreateFileSystemOpenZFSConfiguration extends Shape
 {
@@ -33,7 +34,8 @@ class CreateFileSystemOpenZFSConfiguration extends Shape
      *     RootVolumeConfiguration?: OpenZFSCreateRootVolumeConfiguration|null,
      *     PreferredSubnetId?: string|null,
      *     EndpointIpAddressRange?: string|null,
-     *     RouteTableIds?: list<string>|null
+     *     RouteTableIds?: list<string>|null,
+     *     ReadCacheConfiguration?: OpenZFSReadCacheConfiguration|null
      * } $args
      */
     public function __construct(array $args)

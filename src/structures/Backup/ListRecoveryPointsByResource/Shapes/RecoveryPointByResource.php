@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ParentRecoveryPointArn
  * @property string|null $ResourceName
  * @property 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|null $VaultType
+ * @property 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|null $IndexStatus
+ * @property string|null $IndexStatusMessage
  */
 class RecoveryPointByResource extends Shape
 {
@@ -31,7 +33,9 @@ class RecoveryPointByResource extends Shape
      *     IsParent?: bool|null,
      *     ParentRecoveryPointArn?: string|null,
      *     ResourceName?: string|null,
-     *     VaultType?: 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|null
+     *     VaultType?: 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|null,
+     *     IndexStatus?: 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|null,
+     *     IndexStatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

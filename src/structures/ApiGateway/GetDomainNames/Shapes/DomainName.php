@@ -6,6 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $domainName
+ * @property string|null $domainNameId
+ * @property string|null $domainNameArn
  * @property string|null $certificateName
  * @property string|null $certificateArn
  * @property \Aws\Api\DateTimeResult|null $certificateUploadDate
@@ -22,12 +24,16 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $tags
  * @property MutualTlsAuthentication|null $mutualTlsAuthentication
  * @property string|null $ownershipVerificationCertificateArn
+ * @property string|null $managementPolicy
+ * @property string|null $policy
  */
 class DomainName extends Shape
 {
     /**
      * @param array{
      *     domainName?: string|null,
+     *     domainNameId?: string|null,
+     *     domainNameArn?: string|null,
      *     certificateName?: string|null,
      *     certificateArn?: string|null,
      *     certificateUploadDate?: \Aws\Api\DateTimeResult|null,
@@ -43,7 +49,9 @@ class DomainName extends Shape
      *     securityPolicy?: 'TLS_1_0'|'TLS_1_2'|null,
      *     tags?: array<string, string>|null,
      *     mutualTlsAuthentication?: MutualTlsAuthentication|null,
-     *     ownershipVerificationCertificateArn?: string|null
+     *     ownershipVerificationCertificateArn?: string|null,
+     *     managementPolicy?: string|null,
+     *     policy?: string|null
      * } $args
      */
     public function __construct(array $args = [])

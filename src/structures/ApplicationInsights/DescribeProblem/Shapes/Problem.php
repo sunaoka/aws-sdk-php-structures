@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $Id
  * @property string|null $Title
+ * @property string|null $ShortName
  * @property string|null $Insights
  * @property 'IGNORE'|'RESOLVED'|'PENDING'|'RECURRING'|'RECOVERING'|null $Status
  * @property string|null $AffectedResource
@@ -27,6 +28,7 @@ class Problem extends Shape
      * @param array{
      *     Id?: string|null,
      *     Title?: string|null,
+     *     ShortName?: string|null,
      *     Insights?: string|null,
      *     Status?: 'IGNORE'|'RESOLVED'|'PENDING'|'RECURRING'|'RECOVERING'|null,
      *     AffectedResource?: string|null,

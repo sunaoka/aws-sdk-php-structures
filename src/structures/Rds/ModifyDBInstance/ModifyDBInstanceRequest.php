@@ -43,6 +43,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DisableDomain
  * @property int|null $PromotionTier
  * @property bool|null $EnableIAMDatabaseAuthentication
+ * @property 'standard'|'advanced'|null $DatabaseInsightsMode
  * @property bool|null $EnablePerformanceInsights
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
@@ -108,6 +109,7 @@ class ModifyDBInstanceRequest extends Request
      *     DisableDomain?: bool|null,
      *     PromotionTier?: int|null,
      *     EnableIAMDatabaseAuthentication?: bool|null,
+     *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
      *     EnablePerformanceInsights?: bool|null,
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,

@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\QConnect\ListAssistants\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', AIAgentConfigurationData>|null $aiAgentConfiguration
  * @property string $assistantArn
  * @property string $assistantId
  * @property AssistantCapabilityConfiguration|null $capabilityConfiguration
@@ -20,6 +21,7 @@ class AssistantSummary extends Shape
 {
     /**
      * @param array{
+     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', AIAgentConfigurationData>|null,
      *     assistantArn: string,
      *     assistantId: string,
      *     capabilityConfiguration?: AssistantCapabilityConfiguration|null,

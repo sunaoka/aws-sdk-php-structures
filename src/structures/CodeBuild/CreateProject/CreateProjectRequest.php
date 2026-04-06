@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ProjectFileSystemLocation>|null $fileSystemLocations
  * @property Shapes\ProjectBuildBatchConfig|null $buildBatchConfig
  * @property int|null $concurrentBuildLimit
+ * @property int|null $autoRetryLimit
  */
 class CreateProjectRequest extends Request
 {
@@ -51,7 +52,8 @@ class CreateProjectRequest extends Request
      *     logsConfig?: Shapes\LogsConfig|null,
      *     fileSystemLocations?: list<Shapes\ProjectFileSystemLocation>|null,
      *     buildBatchConfig?: Shapes\ProjectBuildBatchConfig|null,
-     *     concurrentBuildLimit?: int|null
+     *     concurrentBuildLimit?: int|null,
+     *     autoRetryLimit?: int|null
      * } $args
      */
     public function __construct(array $args)

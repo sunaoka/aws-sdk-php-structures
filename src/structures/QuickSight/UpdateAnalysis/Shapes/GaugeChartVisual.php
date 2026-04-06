@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property GaugeChartConfiguration|null $ChartConfiguration
  * @property GaugeChartConditionalFormatting|null $ConditionalFormatting
  * @property list<VisualCustomAction>|null $Actions
+ * @property string|null $VisualContentAltText
  */
 class GaugeChartVisual extends Shape
 {
@@ -21,7 +22,8 @@ class GaugeChartVisual extends Shape
      *     Subtitle?: VisualSubtitleLabelOptions|null,
      *     ChartConfiguration?: GaugeChartConfiguration|null,
      *     ConditionalFormatting?: GaugeChartConditionalFormatting|null,
-     *     Actions?: list<VisualCustomAction>|null
+     *     Actions?: list<VisualCustomAction>|null,
+     *     VisualContentAltText?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,6 +7,7 @@ class IotClient extends \Aws\Iot\IotClient
     use AcceptCertificateTransfer\AcceptCertificateTransferTrait;
     use AddThingToBillingGroup\AddThingToBillingGroupTrait;
     use AddThingToThingGroup\AddThingToThingGroupTrait;
+    use AssociateSbomWithPackageVersion\AssociateSbomWithPackageVersionTrait;
     use AssociateTargetsWithJob\AssociateTargetsWithJobTrait;
     use AttachPolicy\AttachPolicyTrait;
     use AttachPrincipalPolicy\AttachPrincipalPolicyTrait;
@@ -25,6 +26,7 @@ class IotClient extends \Aws\Iot\IotClient
     use CreateBillingGroup\CreateBillingGroupTrait;
     use CreateCertificateFromCsr\CreateCertificateFromCsrTrait;
     use CreateCertificateProvider\CreateCertificateProviderTrait;
+    use CreateCommand\CreateCommandTrait;
     use CreateCustomMetric\CreateCustomMetricTrait;
     use CreateDimension\CreateDimensionTrait;
     use CreateDomainConfiguration\CreateDomainConfigurationTrait;
@@ -58,6 +60,8 @@ class IotClient extends \Aws\Iot\IotClient
     use DeleteCACertificate\DeleteCACertificateTrait;
     use DeleteCertificate\DeleteCertificateTrait;
     use DeleteCertificateProvider\DeleteCertificateProviderTrait;
+    use DeleteCommand\DeleteCommandTrait;
+    use DeleteCommandExecution\DeleteCommandExecutionTrait;
     use DeleteCustomMetric\DeleteCustomMetricTrait;
     use DeleteDimension\DeleteDimensionTrait;
     use DeleteDomainConfiguration\DeleteDomainConfigurationTrait;
@@ -125,10 +129,12 @@ class IotClient extends \Aws\Iot\IotClient
     use DetachSecurityProfile\DetachSecurityProfileTrait;
     use DetachThingPrincipal\DetachThingPrincipalTrait;
     use DisableTopicRule\DisableTopicRuleTrait;
+    use DisassociateSbomFromPackageVersion\DisassociateSbomFromPackageVersionTrait;
     use EnableTopicRule\EnableTopicRuleTrait;
     use GetBehaviorModelTrainingSummaries\GetBehaviorModelTrainingSummariesTrait;
     use GetBucketsAggregation\GetBucketsAggregationTrait;
     use GetCardinality\GetCardinalityTrait;
+    use GetCommandExecution\GetCommandExecutionTrait;
     use GetEffectivePolicies\GetEffectivePoliciesTrait;
     use GetIndexingConfiguration\GetIndexingConfigurationTrait;
     use GetJobDocument\GetJobDocumentTrait;
@@ -142,6 +148,7 @@ class IotClient extends \Aws\Iot\IotClient
     use GetPolicyVersion\GetPolicyVersionTrait;
     use GetRegistrationCode\GetRegistrationCodeTrait;
     use GetStatistics\GetStatisticsTrait;
+    use GetThingConnectivityData\GetThingConnectivityDataTrait;
     use GetTopicRule\GetTopicRuleTrait;
     use GetTopicRuleDestination\GetTopicRuleDestinationTrait;
     use GetV2LoggingOptions\GetV2LoggingOptionsTrait;
@@ -158,6 +165,8 @@ class IotClient extends \Aws\Iot\IotClient
     use ListCertificateProviders\ListCertificateProvidersTrait;
     use ListCertificates\ListCertificatesTrait;
     use ListCertificatesByCA\ListCertificatesByCATrait;
+    use ListCommandExecutions\ListCommandExecutionsTrait;
+    use ListCommands\ListCommandsTrait;
     use ListCustomMetrics\ListCustomMetricsTrait;
     use ListDetectMitigationActionsExecutions\ListDetectMitigationActionsExecutionsTrait;
     use ListDetectMitigationActionsTasks\ListDetectMitigationActionsTasksTrait;
@@ -181,10 +190,12 @@ class IotClient extends \Aws\Iot\IotClient
     use ListPolicyVersions\ListPolicyVersionsTrait;
     use ListPrincipalPolicies\ListPrincipalPoliciesTrait;
     use ListPrincipalThings\ListPrincipalThingsTrait;
+    use ListPrincipalThingsV2\ListPrincipalThingsV2Trait;
     use ListProvisioningTemplateVersions\ListProvisioningTemplateVersionsTrait;
     use ListProvisioningTemplates\ListProvisioningTemplatesTrait;
     use ListRelatedResourcesForAuditFinding\ListRelatedResourcesForAuditFindingTrait;
     use ListRoleAliases\ListRoleAliasesTrait;
+    use ListSbomValidationResults\ListSbomValidationResultsTrait;
     use ListScheduledAudits\ListScheduledAuditsTrait;
     use ListSecurityProfiles\ListSecurityProfilesTrait;
     use ListSecurityProfilesForTarget\ListSecurityProfilesForTargetTrait;
@@ -195,6 +206,7 @@ class IotClient extends \Aws\Iot\IotClient
     use ListThingGroups\ListThingGroupsTrait;
     use ListThingGroupsForThing\ListThingGroupsForThingTrait;
     use ListThingPrincipals\ListThingPrincipalsTrait;
+    use ListThingPrincipalsV2\ListThingPrincipalsV2Trait;
     use ListThingRegistrationTaskReports\ListThingRegistrationTaskReportsTrait;
     use ListThingRegistrationTasks\ListThingRegistrationTasksTrait;
     use ListThingTypes\ListThingTypesTrait;
@@ -237,6 +249,7 @@ class IotClient extends \Aws\Iot\IotClient
     use UpdateCACertificate\UpdateCACertificateTrait;
     use UpdateCertificate\UpdateCertificateTrait;
     use UpdateCertificateProvider\UpdateCertificateProviderTrait;
+    use UpdateCommand\UpdateCommandTrait;
     use UpdateCustomMetric\UpdateCustomMetricTrait;
     use UpdateDimension\UpdateDimensionTrait;
     use UpdateDomainConfiguration\UpdateDomainConfigurationTrait;
@@ -257,6 +270,7 @@ class IotClient extends \Aws\Iot\IotClient
     use UpdateThing\UpdateThingTrait;
     use UpdateThingGroup\UpdateThingGroupTrait;
     use UpdateThingGroupsForThing\UpdateThingGroupsForThingTrait;
+    use UpdateThingType\UpdateThingTypeTrait;
     use UpdateTopicRuleDestination\UpdateTopicRuleDestinationTrait;
     use ValidateSecurityProfileBehaviors\ValidateSecurityProfileBehaviorsTrait;
 }

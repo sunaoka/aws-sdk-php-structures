@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientToken
  * @property string $displayName
  * @property string $identityCenterInstanceArn
- * @property string $roleArn
  * @property string $subdomain
+ * @property string $roleArn
  */
 class CreateMonitorRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateMonitorRequest extends Request
      *     clientToken?: string|null,
      *     displayName: string,
      *     identityCenterInstanceArn: string,
-     *     roleArn: string,
-     *     subdomain: string
+     *     subdomain: string,
+     *     roleArn: string
      * } $args
      */
     public function __construct(array $args)

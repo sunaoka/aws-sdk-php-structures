@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $voiceId
- * @property 'standard'|'neural'|null $engine
+ * @property 'standard'|'neural'|'long-form'|'generative'|null $engine
  */
 class VoiceSettings extends Shape
 {
     /**
      * @param array{
      *     voiceId: string,
-     *     engine?: 'standard'|'neural'|null
+     *     engine?: 'standard'|'neural'|'long-form'|'generative'|null
      * } $args
      */
     public function __construct(array $args)

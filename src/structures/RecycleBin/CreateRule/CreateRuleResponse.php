@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\LockConfiguration|null $LockConfiguration
  * @property 'locked'|'pending_unlock'|'unlocked'|null $LockState
  * @property string|null $RuleArn
+ * @property list<Shapes\ResourceTag>|null $ExcludeResourceTags
  */
 class CreateRuleResponse extends Response
 {

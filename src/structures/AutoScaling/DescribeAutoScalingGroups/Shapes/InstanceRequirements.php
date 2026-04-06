@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AcceleratorTotalMemoryMiBRequest|null $AcceleratorTotalMemoryMiB
  * @property NetworkBandwidthGbpsRequest|null $NetworkBandwidthGbps
  * @property list<string>|null $AllowedInstanceTypes
+ * @property BaselinePerformanceFactorsRequest|null $BaselinePerformanceFactors
  */
 class InstanceRequirements extends Shape
 {
@@ -57,7 +58,8 @@ class InstanceRequirements extends Shape
      *     AcceleratorNames?: list<'a100'|'v100'|'k80'|'t4'|'m60'|'radeon-pro-v520'|'vu9p'>|null,
      *     AcceleratorTotalMemoryMiB?: AcceleratorTotalMemoryMiBRequest|null,
      *     NetworkBandwidthGbps?: NetworkBandwidthGbpsRequest|null,
-     *     AllowedInstanceTypes?: list<string>|null
+     *     AllowedInstanceTypes?: list<string>|null,
+     *     BaselinePerformanceFactors?: BaselinePerformanceFactorsRequest|null
      * } $args
      */
     public function __construct(array $args)
