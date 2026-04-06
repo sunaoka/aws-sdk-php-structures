@@ -45,14 +45,8 @@ jobs:
       - name: Run test suite
         run: vendor/bin/phpunit --coverage-clover=coverage.xml --log-junit junit.xml
 
-      - name: Upload test results to Codecov
-        uses: codecov/test-results-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-        if: matrix.php == env.latest_php
-
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: ./coverage.xml
