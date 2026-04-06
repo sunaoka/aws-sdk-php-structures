@@ -11,6 +11,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Scheduled'|'Running'|'Complete'|'Failed'|'Cancelled'|'Timeout'|'Unknown'|null $status
  * @property int<0, max>|null $createTime
  * @property string|null $logGroupName
+ * @property int|null $queryDuration
+ * @property double|null $bytesScanned
+ * @property string|null $userIdentity
  */
 class QueryInfo extends Shape
 {
@@ -21,7 +24,10 @@ class QueryInfo extends Shape
      *     queryString?: string|null,
      *     status?: 'Scheduled'|'Running'|'Complete'|'Failed'|'Cancelled'|'Timeout'|'Unknown'|null,
      *     createTime?: int<0, max>|null,
-     *     logGroupName?: string|null
+     *     logGroupName?: string|null,
+     *     queryDuration?: int|null,
+     *     bytesScanned?: double|null,
+     *     userIdentity?: string|null
      * } $args
      */
     public function __construct(array $args = [])

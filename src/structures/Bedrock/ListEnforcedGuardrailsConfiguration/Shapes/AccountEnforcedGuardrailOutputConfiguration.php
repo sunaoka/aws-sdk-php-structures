@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $guardrailArn
  * @property string|null $guardrailId
  * @property 'HONOR'|'IGNORE'|null $inputTags
+ * @property SelectiveContentGuarding|null $selectiveContentGuarding
  * @property string|null $guardrailVersion
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $createdBy
@@ -25,6 +26,7 @@ class AccountEnforcedGuardrailOutputConfiguration extends Shape
      *     guardrailArn?: string|null,
      *     guardrailId?: string|null,
      *     inputTags?: 'HONOR'|'IGNORE'|null,
+     *     selectiveContentGuarding?: SelectiveContentGuarding|null,
      *     guardrailVersion?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     createdBy?: string|null,
