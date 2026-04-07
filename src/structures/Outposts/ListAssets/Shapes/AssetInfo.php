@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $AssetId
  * @property string|null $RackId
- * @property 'COMPUTE'|null $AssetType
+ * @property 'COMPUTE'|'STORAGE'|'POWERSHELF'|'SWITCH'|'NETWORKING'|null $AssetType
  * @property ComputeAttributes|null $ComputeAttributes
  * @property AssetLocation|null $AssetLocation
  */
@@ -17,7 +17,7 @@ class AssetInfo extends Shape
      * @param array{
      *     AssetId?: string|null,
      *     RackId?: string|null,
-     *     AssetType?: 'COMPUTE'|null,
+     *     AssetType?: 'COMPUTE'|'STORAGE'|'POWERSHELF'|'SWITCH'|'NETWORKING'|null,
      *     ComputeAttributes?: ComputeAttributes|null,
      *     AssetLocation?: AssetLocation|null
      * } $args

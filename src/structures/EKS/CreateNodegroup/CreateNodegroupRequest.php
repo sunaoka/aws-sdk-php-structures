@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ON_DEMAND'|'SPOT'|'CAPACITY_BLOCK'|null $capacityType
  * @property string|null $version
  * @property string|null $releaseVersion
+ * @property Shapes\WarmPoolConfig|null $warmPoolConfig
  */
 class CreateNodegroupRequest extends Request
 {
@@ -47,7 +48,8 @@ class CreateNodegroupRequest extends Request
      *     nodeRepairConfig?: Shapes\NodeRepairConfig|null,
      *     capacityType?: 'ON_DEMAND'|'SPOT'|'CAPACITY_BLOCK'|null,
      *     version?: string|null,
-     *     releaseVersion?: string|null
+     *     releaseVersion?: string|null,
+     *     warmPoolConfig?: Shapes\WarmPoolConfig|null
      * } $args
      */
     public function __construct(array $args)

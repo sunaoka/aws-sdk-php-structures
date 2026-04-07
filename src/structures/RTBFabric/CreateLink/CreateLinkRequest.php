@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $httpResponderAllowed
  * @property array<string, string>|null $tags
  * @property Shapes\LinkLogSettings $logSettings
+ * @property int<100, 5000>|null $timeoutInMillis
  */
 class CreateLinkRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateLinkRequest extends Request
      *     attributes?: Shapes\LinkAttributes|null,
      *     httpResponderAllowed?: bool|null,
      *     tags?: array<string, string>|null,
-     *     logSettings: Shapes\LinkLogSettings
+     *     logSettings: Shapes\LinkLogSettings,
+     *     timeoutInMillis?: int<100, 5000>|null
      * } $args
      */
     public function __construct(array $args)

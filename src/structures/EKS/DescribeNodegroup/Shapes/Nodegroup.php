@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property NodeRepairConfig|null $nodeRepairConfig
  * @property LaunchTemplateSpecification|null $launchTemplate
  * @property array<string, string>|null $tags
+ * @property WarmPoolConfig|null $warmPoolConfig
  */
 class Nodegroup extends Shape
 {
@@ -57,7 +58,8 @@ class Nodegroup extends Shape
      *     updateConfig?: NodegroupUpdateConfig|null,
      *     nodeRepairConfig?: NodeRepairConfig|null,
      *     launchTemplate?: LaunchTemplateSpecification|null,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     warmPoolConfig?: WarmPoolConfig|null
      * } $args
      */
     public function __construct(array $args = [])

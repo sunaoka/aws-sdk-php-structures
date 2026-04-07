@@ -14,8 +14,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ModuleConfiguration>|null $flowModules
  * @property list<ModuleConfiguration>|null $pendingFlowModules
  * @property LinkAttributes|null $attributes
+ * @property LinkLogSettings|null $logSettings
+ * @property 'DEFAULT'|'PUBLIC_INGRESS'|'PUBLIC_EGRESS'|'EXTERNAL_INBOUND'|null $connectivityType
  * @property string $linkId
  * @property array<string, string>|null $tags
+ * @property string|null $publicEndpoint
  */
 class ListLinksResponseStructure extends Shape
 {
@@ -30,8 +33,11 @@ class ListLinksResponseStructure extends Shape
      *     flowModules?: list<ModuleConfiguration>|null,
      *     pendingFlowModules?: list<ModuleConfiguration>|null,
      *     attributes?: LinkAttributes|null,
+     *     logSettings?: LinkLogSettings|null,
+     *     connectivityType?: 'DEFAULT'|'PUBLIC_INGRESS'|'PUBLIC_EGRESS'|'EXTERNAL_INBOUND'|null,
      *     linkId: string,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     publicEndpoint?: string|null
      * } $args
      */
     public function __construct(array $args)

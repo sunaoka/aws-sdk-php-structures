@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $s3Uri
  * @property string|null $s3AccessGrantLocationId
+ * @property bool|null $registerS3AccessGrantLocation
  * @property 'CREATING'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED'|'READY'|'UPDATING'|'UPDATE_FAILED'|'DELETED'|null $status
  * @property string|null $errorMessage
  */
@@ -16,6 +17,7 @@ class S3PropertiesOutput extends Shape
      * @param array{
      *     s3Uri: string,
      *     s3AccessGrantLocationId?: string|null,
+     *     registerS3AccessGrantLocation?: bool|null,
      *     status?: 'CREATING'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED'|'READY'|'UPDATING'|'UPDATE_FAILED'|'DELETED'|null,
      *     errorMessage?: string|null
      * } $args

@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $connectionId
+ * @property list<Shapes\Configuration>|null $configurations
  * @property string|null $description
  * @property string $domainId
  * @property string $domainUnitId

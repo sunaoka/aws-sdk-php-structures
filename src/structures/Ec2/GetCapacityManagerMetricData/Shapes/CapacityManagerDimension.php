@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ResourceRegion
  * @property string|null $AvailabilityZoneId
  * @property string|null $AccountId
+ * @property string|null $AccountName
  * @property string|null $InstanceFamily
  * @property string|null $InstanceType
  * @property string|null $InstancePlatform
@@ -22,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'active'|'expired'|'cancelled'|'scheduled'|'pending'|'failed'|'delayed'|'unsupported'|'payment-pending'|'payment-failed'|'retired'|null $ReservationState
  * @property string|null $ReservationInstanceMatchCriteria
  * @property string|null $ReservationUnusedFinancialOwner
+ * @property list<CapacityManagerTagDimension>|null $Tags
  */
 class CapacityManagerDimension extends Shape
 {
@@ -30,6 +32,7 @@ class CapacityManagerDimension extends Shape
      *     ResourceRegion?: string|null,
      *     AvailabilityZoneId?: string|null,
      *     AccountId?: string|null,
+     *     AccountName?: string|null,
      *     InstanceFamily?: string|null,
      *     InstanceType?: string|null,
      *     InstancePlatform?: string|null,
@@ -43,7 +46,8 @@ class CapacityManagerDimension extends Shape
      *     Tenancy?: 'default'|'dedicated'|null,
      *     ReservationState?: 'active'|'expired'|'cancelled'|'scheduled'|'pending'|'failed'|'delayed'|'unsupported'|'payment-pending'|'payment-failed'|'retired'|null,
      *     ReservationInstanceMatchCriteria?: string|null,
-     *     ReservationUnusedFinancialOwner?: string|null
+     *     ReservationUnusedFinancialOwner?: string|null,
+     *     Tags?: list<CapacityManagerTagDimension>|null
      * } $args
      */
     public function __construct(array $args = [])

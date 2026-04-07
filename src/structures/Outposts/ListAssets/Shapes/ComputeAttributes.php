@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $HostId
- * @property 'ACTIVE'|'ISOLATED'|'RETIRING'|null $State
+ * @property 'ACTIVE'|'ISOLATED'|'RETIRING'|'INSTALLING'|null $State
  * @property list<string>|null $InstanceFamilies
  * @property list<AssetInstanceTypeCapacity>|null $InstanceTypeCapacities
  * @property int|null $MaxVcpus
@@ -16,7 +16,7 @@ class ComputeAttributes extends Shape
     /**
      * @param array{
      *     HostId?: string|null,
-     *     State?: 'ACTIVE'|'ISOLATED'|'RETIRING'|null,
+     *     State?: 'ACTIVE'|'ISOLATED'|'RETIRING'|'INSTALLING'|null,
      *     InstanceFamilies?: list<string>|null,
      *     InstanceTypeCapacities?: list<AssetInstanceTypeCapacity>|null,
      *     MaxVcpus?: int|null

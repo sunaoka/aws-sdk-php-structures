@@ -9,7 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $HostIdFilter
  * @property int<1, 1000>|null $MaxResults
  * @property string|null $NextToken
- * @property list<'ACTIVE'|'RETIRING'|'ISOLATED'>|null $StatusFilter
+ * @property list<'ACTIVE'|'RETIRING'|'ISOLATED'|'INSTALLING'>|null $StatusFilter
+ * @property list<'COMPUTE'|'STORAGE'|'POWERSHELF'|'SWITCH'|'NETWORKING'>|null $AssetTypeFilter
  */
 class ListAssetsRequest extends Request
 {
@@ -19,7 +20,8 @@ class ListAssetsRequest extends Request
      *     HostIdFilter?: list<string>|null,
      *     MaxResults?: int<1, 1000>|null,
      *     NextToken?: string|null,
-     *     StatusFilter?: list<'ACTIVE'|'RETIRING'|'ISOLATED'>|null
+     *     StatusFilter?: list<'ACTIVE'|'RETIRING'|'ISOLATED'|'INSTALLING'>|null,
+     *     AssetTypeFilter?: list<'COMPUTE'|'STORAGE'|'POWERSHELF'|'SWITCH'|'NETWORKING'>|null
      * } $args
      */
     public function __construct(array $args)

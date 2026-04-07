@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property AwsLocation|null $awsLocation
  * @property string|null $glueConnectionName
+ * @property list<string>|null $glueConnectionNames
  * @property GlueConnection|null $glueConnection
  * @property bool|null $enableTrustedIdentityPropagation
  * @property string|null $host
@@ -20,6 +21,7 @@ class PhysicalEndpoint extends Shape
      * @param array{
      *     awsLocation?: AwsLocation|null,
      *     glueConnectionName?: string|null,
+     *     glueConnectionNames?: list<string>|null,
      *     glueConnection?: GlueConnection|null,
      *     enableTrustedIdentityPropagation?: bool|null,
      *     host?: string|null,

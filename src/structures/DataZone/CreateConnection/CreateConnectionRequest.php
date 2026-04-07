@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\AwsLocation|null $awsLocation
  * @property string|null $clientToken
+ * @property list<Shapes\Configuration>|null $configurations
  * @property string|null $description
  * @property string $domainIdentifier
  * @property string|null $environmentIdentifier
@@ -21,6 +22,7 @@ class CreateConnectionRequest extends Request
      * @param array{
      *     awsLocation?: Shapes\AwsLocation|null,
      *     clientToken?: string|null,
+     *     configurations?: list<Shapes\Configuration>|null,
      *     description?: string|null,
      *     domainIdentifier: string,
      *     environmentIdentifier?: string|null,

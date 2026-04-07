@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property array<string, string>|null $tags
  * @property Shapes\LinkLogSettings|null $logSettings
+ * @property 'DEFAULT'|'PUBLIC_INGRESS'|'PUBLIC_EGRESS'|'EXTERNAL_INBOUND'|null $connectivityType
  */
 class GetInboundExternalLinkResponse extends Response
 {

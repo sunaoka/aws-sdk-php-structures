@@ -535,6 +535,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetCapacityManagerAttributes\GetCapacityManagerAttributesTrait;
     use GetCapacityManagerMetricData\GetCapacityManagerMetricDataTrait;
     use GetCapacityManagerMetricDimensions\GetCapacityManagerMetricDimensionsTrait;
+    use GetCapacityManagerMonitoredTagKeys\GetCapacityManagerMonitoredTagKeysTrait;
     use GetCapacityReservationUsage\GetCapacityReservationUsageTrait;
     use GetCoipPoolUsage\GetCoipPoolUsageTrait;
     use GetConsoleOutput\GetConsoleOutputTrait;
@@ -755,6 +756,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use UnassignPrivateNatGatewayAddress\UnassignPrivateNatGatewayAddressTrait;
     use UnlockSnapshot\UnlockSnapshotTrait;
     use UnmonitorInstances\UnmonitorInstancesTrait;
+    use UpdateCapacityManagerMonitoredTagKeys\UpdateCapacityManagerMonitoredTagKeysTrait;
     use UpdateCapacityManagerOrganizationsAccess\UpdateCapacityManagerOrganizationsAccessTrait;
     use UpdateInterruptibleCapacityReservationAllocation\UpdateInterruptibleCapacityReservationAllocationTrait;
     use UpdateSecurityGroupRuleDescriptionsEgress\UpdateSecurityGroupRuleDescriptionsEgressTrait;

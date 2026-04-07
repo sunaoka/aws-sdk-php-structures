@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\NodegroupScalingConfig|null $scalingConfig
  * @property Shapes\NodegroupUpdateConfig|null $updateConfig
  * @property Shapes\NodeRepairConfig|null $nodeRepairConfig
+ * @property Shapes\WarmPoolConfig|null $warmPoolConfig
  * @property string|null $clientRequestToken
  */
 class UpdateNodegroupConfigRequest extends Request
@@ -25,6 +26,7 @@ class UpdateNodegroupConfigRequest extends Request
      *     scalingConfig?: Shapes\NodegroupScalingConfig|null,
      *     updateConfig?: Shapes\NodegroupUpdateConfig|null,
      *     nodeRepairConfig?: Shapes\NodeRepairConfig|null,
+     *     warmPoolConfig?: Shapes\WarmPoolConfig|null,
      *     clientRequestToken?: string|null
      * } $args
      */

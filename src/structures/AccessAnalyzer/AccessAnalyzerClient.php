@@ -6,17 +6,14 @@ class AccessAnalyzerClient extends \Aws\AccessAnalyzer\AccessAnalyzerClient
 {
     use ApplyArchiveRule\ApplyArchiveRuleTrait;
     use CancelPolicyGeneration\CancelPolicyGenerationTrait;
-    use CancelPolicyPreviewJob\CancelPolicyPreviewJobTrait;
     use CheckAccessNotGranted\CheckAccessNotGrantedTrait;
     use CheckNoNewAccess\CheckNoNewAccessTrait;
     use CheckNoPublicAccess\CheckNoPublicAccessTrait;
     use CreateAccessPreview\CreateAccessPreviewTrait;
     use CreateAnalyzer\CreateAnalyzerTrait;
     use CreateArchiveRule\CreateArchiveRuleTrait;
-    use CreatePolicyPreviewConfiguration\CreatePolicyPreviewConfigurationTrait;
     use DeleteAnalyzer\DeleteAnalyzerTrait;
     use DeleteArchiveRule\DeleteArchiveRuleTrait;
-    use DeletePolicyPreviewConfiguration\DeletePolicyPreviewConfigurationTrait;
     use GenerateFindingRecommendation\GenerateFindingRecommendationTrait;
     use GetAccessPreview\GetAccessPreviewTrait;
     use GetAnalyzedResource\GetAnalyzedResourceTrait;
@@ -27,8 +24,6 @@ class AccessAnalyzerClient extends \Aws\AccessAnalyzer\AccessAnalyzerClient
     use GetFindingV2\GetFindingV2Trait;
     use GetFindingsStatistics\GetFindingsStatisticsTrait;
     use GetGeneratedPolicy\GetGeneratedPolicyTrait;
-    use GetPolicyPreviewConfiguration\GetPolicyPreviewConfigurationTrait;
-    use GetPolicyPreviewJob\GetPolicyPreviewJobTrait;
     use ListAccessPreviewFindings\ListAccessPreviewFindingsTrait;
     use ListAccessPreviews\ListAccessPreviewsTrait;
     use ListAnalyzedResources\ListAnalyzedResourcesTrait;
@@ -37,10 +32,8 @@ class AccessAnalyzerClient extends \Aws\AccessAnalyzer\AccessAnalyzerClient
     use ListFindings\ListFindingsTrait;
     use ListFindingsV2\ListFindingsV2Trait;
     use ListPolicyGenerations\ListPolicyGenerationsTrait;
-    use ListPolicyPreviewJobs\ListPolicyPreviewJobsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use StartPolicyGeneration\StartPolicyGenerationTrait;
-    use StartPolicyPreviewJob\StartPolicyPreviewJobTrait;
     use StartResourceScan\StartResourceScanTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;

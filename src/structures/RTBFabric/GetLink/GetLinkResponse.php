@@ -14,9 +14,12 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\ModuleConfiguration>|null $flowModules
  * @property list<Shapes\ModuleConfiguration>|null $pendingFlowModules
  * @property Shapes\LinkAttributes|null $attributes
+ * @property Shapes\LinkLogSettings|null $logSettings
+ * @property 'DEFAULT'|'PUBLIC_INGRESS'|'PUBLIC_EGRESS'|'EXTERNAL_INBOUND'|null $connectivityType
  * @property string $linkId
  * @property array<string, string>|null $tags
- * @property Shapes\LinkLogSettings|null $logSettings
+ * @property bool|null $httpResponderAllowed
+ * @property int<100, 5000>|null $timeoutInMillis
  */
 class GetLinkResponse extends Response
 {

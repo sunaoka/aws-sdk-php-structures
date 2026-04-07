@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateConnection;
 use Sunaoka\Aws\Structures\Response;
 
 /**
+ * @property list<Shapes\Configuration>|null $configurations
  * @property string $connectionId
  * @property string|null $description
  * @property string $domainId

@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\ListConnections\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property list<Configuration>|null $configurations
  * @property string $connectionId
  * @property string $domainId
  * @property string $domainUnitId
@@ -20,6 +21,7 @@ class ConnectionSummary extends Shape
 {
     /**
      * @param array{
+     *     configurations?: list<Configuration>|null,
      *     connectionId: string,
      *     domainId: string,
      *     domainUnitId: string,

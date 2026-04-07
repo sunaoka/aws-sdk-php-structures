@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
  * @property int<3600, max> $Period
- * @property list<'resource-region'|'availability-zone-id'|'account-id'|'instance-family'|'instance-type'|'instance-platform'|'reservation-arn'|'reservation-id'|'reservation-type'|'reservation-create-timestamp'|'reservation-start-timestamp'|'reservation-end-timestamp'|'reservation-end-date-type'|'tenancy'|'reservation-state'|'reservation-instance-match-criteria'|'reservation-unused-financial-owner'>|null $GroupBy
+ * @property list<'resource-region'|'availability-zone-id'|'account-id'|'account-name'|'instance-family'|'instance-type'|'instance-platform'|'reservation-arn'|'reservation-id'|'reservation-type'|'reservation-create-timestamp'|'reservation-start-timestamp'|'reservation-end-timestamp'|'reservation-end-date-type'|'tenancy'|'reservation-state'|'reservation-instance-match-criteria'|'reservation-unused-financial-owner'>|null $GroupBy
  * @property list<Shapes\CapacityManagerCondition>|null $FilterBy
  * @property int|null $MaxResults
  * @property string|null $NextToken
@@ -23,7 +23,7 @@ class GetCapacityManagerMetricDataRequest extends Request
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
      *     Period: int<3600, max>,
-     *     GroupBy?: list<'resource-region'|'availability-zone-id'|'account-id'|'instance-family'|'instance-type'|'instance-platform'|'reservation-arn'|'reservation-id'|'reservation-type'|'reservation-create-timestamp'|'reservation-start-timestamp'|'reservation-end-timestamp'|'reservation-end-date-type'|'tenancy'|'reservation-state'|'reservation-instance-match-criteria'|'reservation-unused-financial-owner'>|null,
+     *     GroupBy?: list<'resource-region'|'availability-zone-id'|'account-id'|'account-name'|'instance-family'|'instance-type'|'instance-platform'|'reservation-arn'|'reservation-id'|'reservation-type'|'reservation-create-timestamp'|'reservation-start-timestamp'|'reservation-end-timestamp'|'reservation-end-date-type'|'tenancy'|'reservation-state'|'reservation-instance-match-criteria'|'reservation-unused-financial-owner'>|null,
      *     FilterBy?: list<Shapes\CapacityManagerCondition>|null,
      *     MaxResults?: int|null,
      *     NextToken?: string|null,

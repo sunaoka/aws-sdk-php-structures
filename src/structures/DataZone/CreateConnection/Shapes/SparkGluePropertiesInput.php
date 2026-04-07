@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property SparkGlueArgs|null $additionalArgs
  * @property string|null $glueConnectionName
+ * @property list<string>|null $glueConnectionNames
  * @property string|null $glueVersion
  * @property int|null $idleTimeout
  * @property string|null $javaVirtualEnv
@@ -20,6 +21,7 @@ class SparkGluePropertiesInput extends Shape
      * @param array{
      *     additionalArgs?: SparkGlueArgs|null,
      *     glueConnectionName?: string|null,
+     *     glueConnectionNames?: list<string>|null,
      *     glueVersion?: string|null,
      *     idleTimeout?: int|null,
      *     javaVirtualEnv?: string|null,

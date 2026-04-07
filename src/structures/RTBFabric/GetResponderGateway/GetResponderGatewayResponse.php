@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $domainName
  * @property int<1, 65535> $port
  * @property 'HTTP'|'HTTPS' $protocol
+ * @property Shapes\ListenerConfig|null $listenerConfig
  * @property Shapes\TrustStoreConfiguration|null $trustStoreConfiguration
  * @property Shapes\ManagedEndpointConfiguration|null $managedEndpointConfiguration
  * @property string $gatewayId
@@ -22,6 +23,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $activeLinksCount
  * @property int|null $totalLinksCount
  * @property int|null $inboundLinksCount
+ * @property 'EXTERNAL'|'INTERNAL'|null $gatewayType
+ * @property string|null $externalInboundEndpoint
  */
 class GetResponderGatewayResponse extends Response
 {

@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $domainName
  * @property int<1, 65535> $port
  * @property 'HTTP'|'HTTPS' $protocol
+ * @property Shapes\ListenerConfig|null $listenerConfig
  * @property Shapes\TrustStoreConfiguration|null $trustStoreConfiguration
  * @property Shapes\ManagedEndpointConfiguration|null $managedEndpointConfiguration
  * @property string $clientToken
@@ -21,6 +22,7 @@ class UpdateResponderGatewayRequest extends Request
      *     domainName?: string|null,
      *     port: int<1, 65535>,
      *     protocol: 'HTTP'|'HTTPS',
+     *     listenerConfig?: Shapes\ListenerConfig|null,
      *     trustStoreConfiguration?: Shapes\TrustStoreConfiguration|null,
      *     managedEndpointConfiguration?: Shapes\ManagedEndpointConfiguration|null,
      *     clientToken: string,

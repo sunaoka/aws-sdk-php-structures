@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateConnection;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property list<Shapes\Configuration>|null $configurations
  * @property string $domainIdentifier
  * @property string $identifier
  * @property string|null $description
@@ -15,6 +16,7 @@ class UpdateConnectionRequest extends Request
 {
     /**
      * @param array{
+     *     configurations?: list<Shapes\Configuration>|null,
      *     domainIdentifier: string,
      *     identifier: string,
      *     description?: string|null,

@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $AfterContactWorkEndTimestamp
  * @property int<0, max>|null $AgentInitiatedHoldDuration
  * @property list<StateTransition>|null $StateTransitions
+ * @property 'VOICE_ISOLATION'|'NOISE_SUPPRESSION'|'NONE'|null $VoiceEnhancementMode
  */
 class AgentInfo extends Shape
 {
@@ -35,7 +36,8 @@ class AgentInfo extends Shape
      *     AfterContactWorkStartTimestamp?: \Aws\Api\DateTimeResult|null,
      *     AfterContactWorkEndTimestamp?: \Aws\Api\DateTimeResult|null,
      *     AgentInitiatedHoldDuration?: int<0, max>|null,
-     *     StateTransitions?: list<StateTransition>|null
+     *     StateTransitions?: list<StateTransition>|null,
+     *     VoiceEnhancementMode?: 'VOICE_ISOLATION'|'NOISE_SUPPRESSION'|'NONE'|null
      * } $args
      */
     public function __construct(array $args = [])

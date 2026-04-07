@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\GetCapacityManagerMetricDimensions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<'resource-region'|'availability-zone-id'|'account-id'|'instance-family'|'instance-type'|'instance-platform'|'reservation-arn'|'reservation-id'|'reservation-type'|'reservation-create-timestamp'|'reservation-start-timestamp'|'reservation-end-timestamp'|'reservation-end-date-type'|'tenancy'|'reservation-state'|'reservation-instance-match-criteria'|'reservation-unused-financial-owner'> $GroupBy
+ * @property list<'resource-region'|'availability-zone-id'|'account-id'|'account-name'|'instance-family'|'instance-type'|'instance-platform'|'reservation-arn'|'reservation-id'|'reservation-type'|'reservation-create-timestamp'|'reservation-start-timestamp'|'reservation-end-timestamp'|'reservation-end-date-type'|'tenancy'|'reservation-state'|'reservation-instance-match-criteria'|'reservation-unused-financial-owner'> $GroupBy
  * @property list<Shapes\CapacityManagerCondition>|null $FilterBy
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
@@ -18,7 +18,7 @@ class GetCapacityManagerMetricDimensionsRequest extends Request
 {
     /**
      * @param array{
-     *     GroupBy: list<'resource-region'|'availability-zone-id'|'account-id'|'instance-family'|'instance-type'|'instance-platform'|'reservation-arn'|'reservation-id'|'reservation-type'|'reservation-create-timestamp'|'reservation-start-timestamp'|'reservation-end-timestamp'|'reservation-end-date-type'|'tenancy'|'reservation-state'|'reservation-instance-match-criteria'|'reservation-unused-financial-owner'>,
+     *     GroupBy: list<'resource-region'|'availability-zone-id'|'account-id'|'account-name'|'instance-family'|'instance-type'|'instance-platform'|'reservation-arn'|'reservation-id'|'reservation-type'|'reservation-create-timestamp'|'reservation-start-timestamp'|'reservation-end-timestamp'|'reservation-end-date-type'|'tenancy'|'reservation-state'|'reservation-instance-match-criteria'|'reservation-unused-financial-owner'>,
      *     FilterBy?: list<Shapes\CapacityManagerCondition>|null,
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
