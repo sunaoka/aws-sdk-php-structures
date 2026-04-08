@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $attributes
  * @property 'RTMP'|'RTMPS' $ingestProtocol
  * @property bool|null $insecureIngest
+ * @property bool|null $redundantIngest
  * @property array<string, string>|null $tags
  */
 class CreateIngestConfigurationRequest extends Request
@@ -23,6 +24,7 @@ class CreateIngestConfigurationRequest extends Request
      *     attributes?: array<string, string>|null,
      *     ingestProtocol: 'RTMP'|'RTMPS',
      *     insecureIngest?: bool|null,
+     *     redundantIngest?: bool|null,
      *     tags?: array<string, string>|null
      * } $args
      */

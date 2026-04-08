@@ -25,6 +25,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ACTIVE'|'STOPPED'|null $replicationState
  * @property string|null $sourceStageArn
  * @property string|null $sourceSessionId
+ * @property bool|null $redundantIngest
+ * @property string|null $ingestConfigurationArn
  */
 class Participant extends Shape
 {
@@ -49,7 +51,9 @@ class Participant extends Shape
      *     replicationType?: 'SOURCE'|'REPLICA'|'NONE'|null,
      *     replicationState?: 'ACTIVE'|'STOPPED'|null,
      *     sourceStageArn?: string|null,
-     *     sourceSessionId?: string|null
+     *     sourceSessionId?: string|null,
+     *     redundantIngest?: bool|null,
+     *     ingestConfigurationArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

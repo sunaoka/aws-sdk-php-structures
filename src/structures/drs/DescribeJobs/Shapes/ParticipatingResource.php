@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\drs\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED'|null $launchStatus
  * @property ParticipatingResourceID|null $participatingResourceID
+ * @property 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED'|null $launchStatus
  */
 class ParticipatingResource extends Shape
 {
     /**
      * @param array{
-     *     launchStatus?: 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED'|null,
-     *     participatingResourceID?: ParticipatingResourceID|null
+     *     participatingResourceID?: ParticipatingResourceID|null,
+     *     launchStatus?: 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED'|null
      * } $args
      */
     public function __construct(array $args = [])

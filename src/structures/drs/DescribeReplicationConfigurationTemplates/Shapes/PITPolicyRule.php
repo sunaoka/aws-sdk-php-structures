@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\drs\DescribeReplicationConfigurationTemplates\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool|null $enabled
- * @property int<1, max> $interval
- * @property int<1, max> $retentionDuration
  * @property int<0, max>|null $ruleID
  * @property 'MINUTE'|'HOUR'|'DAY' $units
+ * @property int<1, max> $interval
+ * @property int<1, max> $retentionDuration
+ * @property bool|null $enabled
  */
 class PITPolicyRule extends Shape
 {
     /**
      * @param array{
-     *     enabled?: bool|null,
+     *     ruleID?: int<0, max>|null,
+     *     units: 'MINUTE'|'HOUR'|'DAY',
      *     interval: int<1, max>,
      *     retentionDuration: int<1, max>,
-     *     ruleID?: int<0, max>|null,
-     *     units: 'MINUTE'|'HOUR'|'DAY'
+     *     enabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

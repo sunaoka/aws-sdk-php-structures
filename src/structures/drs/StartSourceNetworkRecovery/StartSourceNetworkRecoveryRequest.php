@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\drs\StartSourceNetworkRecovery;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool|null $deployAsNew
  * @property list<Shapes\StartSourceNetworkRecoveryRequestNetworkEntry> $sourceNetworks
+ * @property bool|null $deployAsNew
  * @property array<string, string>|null $tags
  */
 class StartSourceNetworkRecoveryRequest extends Request
 {
     /**
      * @param array{
-     *     deployAsNew?: bool|null,
      *     sourceNetworks: list<Shapes\StartSourceNetworkRecoveryRequestNetworkEntry>,
+     *     deployAsNew?: bool|null,
      *     tags?: array<string, string>|null
      * } $args
      */

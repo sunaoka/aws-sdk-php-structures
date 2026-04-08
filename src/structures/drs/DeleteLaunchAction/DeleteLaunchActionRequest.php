@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\drs\DeleteLaunchAction;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $actionId
  * @property string $resourceId
+ * @property string $actionId
  */
 class DeleteLaunchActionRequest extends Request
 {
     /**
      * @param array{
-     *     actionId: string,
-     *     resourceId: string
+     *     resourceId: string,
+     *     actionId: string
      * } $args
      */
     public function __construct(array $args)

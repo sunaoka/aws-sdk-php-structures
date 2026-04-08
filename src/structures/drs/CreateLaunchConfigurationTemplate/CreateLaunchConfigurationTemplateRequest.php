@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\drs\CreateLaunchConfigurationTemplate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property array<string, string>|null $tags
+ * @property 'STOPPED'|'STARTED'|null $launchDisposition
+ * @property 'NONE'|'BASIC'|'IN_AWS'|null $targetInstanceTypeRightSizingMethod
  * @property bool|null $copyPrivateIp
  * @property bool|null $copyTags
- * @property string|null $exportBucketArn
- * @property 'STOPPED'|'STARTED'|null $launchDisposition
- * @property bool|null $launchIntoSourceInstance
  * @property Shapes\Licensing|null $licensing
+ * @property string|null $exportBucketArn
  * @property bool|null $postLaunchEnabled
- * @property array<string, string>|null $tags
- * @property 'NONE'|'BASIC'|'IN_AWS'|null $targetInstanceTypeRightSizingMethod
+ * @property bool|null $launchIntoSourceInstance
  */
 class CreateLaunchConfigurationTemplateRequest extends Request
 {
     /**
      * @param array{
+     *     tags?: array<string, string>|null,
+     *     launchDisposition?: 'STOPPED'|'STARTED'|null,
+     *     targetInstanceTypeRightSizingMethod?: 'NONE'|'BASIC'|'IN_AWS'|null,
      *     copyPrivateIp?: bool|null,
      *     copyTags?: bool|null,
-     *     exportBucketArn?: string|null,
-     *     launchDisposition?: 'STOPPED'|'STARTED'|null,
-     *     launchIntoSourceInstance?: bool|null,
      *     licensing?: Shapes\Licensing|null,
+     *     exportBucketArn?: string|null,
      *     postLaunchEnabled?: bool|null,
-     *     tags?: array<string, string>|null,
-     *     targetInstanceTypeRightSizingMethod?: 'NONE'|'BASIC'|'IN_AWS'|null
+     *     launchIntoSourceInstance?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

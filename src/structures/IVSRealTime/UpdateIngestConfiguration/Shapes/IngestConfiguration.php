@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $participantId
  * @property 'ACTIVE'|'INACTIVE' $state
  * @property string|null $userId
+ * @property bool|null $redundantIngest
+ * @property list<RedundantIngestCredential>|null $redundantIngestCredentials
  * @property array<string, string>|null $attributes
  * @property array<string, string>|null $tags
  */
@@ -28,6 +30,8 @@ class IngestConfiguration extends Shape
      *     participantId: string,
      *     state: 'ACTIVE'|'INACTIVE',
      *     userId?: string|null,
+     *     redundantIngest?: bool|null,
+     *     redundantIngestCredentials?: list<RedundantIngestCredential>|null,
      *     attributes?: array<string, string>|null,
      *     tags?: array<string, string>|null
      * } $args

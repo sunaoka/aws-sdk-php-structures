@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\drs\StartRecovery;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool|null $isDrill
  * @property list<Shapes\StartRecoveryRequestSourceServer> $sourceServers
+ * @property bool|null $isDrill
  * @property array<string, string>|null $tags
  */
 class StartRecoveryRequest extends Request
 {
     /**
      * @param array{
-     *     isDrill?: bool|null,
      *     sourceServers: list<Shapes\StartRecoveryRequestSourceServer>,
+     *     isDrill?: bool|null,
      *     tags?: array<string, string>|null
      * } $args
      */

@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\drs\DescribeSourceServers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $hardwareId
  * @property list<string>|null $sourceServerIDs
+ * @property string|null $hardwareId
  * @property list<string>|null $stagingAccountIDs
  */
 class DescribeSourceServersRequestFilters extends Shape
 {
     /**
      * @param array{
-     *     hardwareId?: string|null,
      *     sourceServerIDs?: list<string>|null,
+     *     hardwareId?: string|null,
      *     stagingAccountIDs?: list<string>|null
      * } $args
      */

@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\drs\CreateExtendedSourceServer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $agentVersion
+ * @property string|null $sourceServerID
  * @property string|null $arn
- * @property DataReplicationInfo|null $dataReplicationInfo
- * @property 'NOT_STARTED'|'PENDING'|'SUCCEEDED'|'FAILED'|null $lastLaunchResult
- * @property LifeCycle|null $lifeCycle
+ * @property array<string, string>|null $tags
  * @property string|null $recoveryInstanceId
+ * @property 'NOT_STARTED'|'PENDING'|'SUCCEEDED'|'FAILED'|null $lastLaunchResult
+ * @property DataReplicationInfo|null $dataReplicationInfo
+ * @property LifeCycle|null $lifeCycle
+ * @property SourceProperties|null $sourceProperties
+ * @property StagingArea|null $stagingArea
+ * @property SourceCloudProperties|null $sourceCloudProperties
  * @property 'FAILOVER'|'FAILBACK'|null $replicationDirection
  * @property string|null $reversedDirectionSourceServerArn
- * @property SourceCloudProperties|null $sourceCloudProperties
  * @property string|null $sourceNetworkID
- * @property SourceProperties|null $sourceProperties
- * @property string|null $sourceServerID
- * @property StagingArea|null $stagingArea
- * @property array<string, string>|null $tags
+ * @property string|null $agentVersion
  */
 class SourceServer extends Shape
 {
     /**
      * @param array{
-     *     agentVersion?: string|null,
+     *     sourceServerID?: string|null,
      *     arn?: string|null,
-     *     dataReplicationInfo?: DataReplicationInfo|null,
-     *     lastLaunchResult?: 'NOT_STARTED'|'PENDING'|'SUCCEEDED'|'FAILED'|null,
-     *     lifeCycle?: LifeCycle|null,
+     *     tags?: array<string, string>|null,
      *     recoveryInstanceId?: string|null,
+     *     lastLaunchResult?: 'NOT_STARTED'|'PENDING'|'SUCCEEDED'|'FAILED'|null,
+     *     dataReplicationInfo?: DataReplicationInfo|null,
+     *     lifeCycle?: LifeCycle|null,
+     *     sourceProperties?: SourceProperties|null,
+     *     stagingArea?: StagingArea|null,
+     *     sourceCloudProperties?: SourceCloudProperties|null,
      *     replicationDirection?: 'FAILOVER'|'FAILBACK'|null,
      *     reversedDirectionSourceServerArn?: string|null,
-     *     sourceCloudProperties?: SourceCloudProperties|null,
      *     sourceNetworkID?: string|null,
-     *     sourceProperties?: SourceProperties|null,
-     *     sourceServerID?: string|null,
-     *     stagingArea?: StagingArea|null,
-     *     tags?: array<string, string>|null
+     *     agentVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

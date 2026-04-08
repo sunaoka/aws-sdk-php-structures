@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $originAccountID
- * @property string|null $originAvailabilityZone
  * @property string|null $originRegion
+ * @property string|null $originAvailabilityZone
  * @property string|null $sourceOutpostArn
  */
 class SourceCloudProperties extends Shape
@@ -15,8 +15,8 @@ class SourceCloudProperties extends Shape
     /**
      * @param array{
      *     originAccountID?: string|null,
-     *     originAvailabilityZone?: string|null,
      *     originRegion?: string|null,
+     *     originAvailabilityZone?: string|null,
      *     sourceOutpostArn?: string|null
      * } $args
      */

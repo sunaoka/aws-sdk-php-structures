@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\drs\AssociateSourceNetworkStack\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LaunchActionsStatus|null $launchActionsStatus
- * @property 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED'|null $launchStatus
- * @property string|null $recoveryInstanceID
  * @property string|null $sourceServerID
+ * @property string|null $recoveryInstanceID
+ * @property 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED'|null $launchStatus
+ * @property LaunchActionsStatus|null $launchActionsStatus
  */
 class ParticipatingServer extends Shape
 {
     /**
      * @param array{
-     *     launchActionsStatus?: LaunchActionsStatus|null,
-     *     launchStatus?: 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED'|null,
+     *     sourceServerID?: string|null,
      *     recoveryInstanceID?: string|null,
-     *     sourceServerID?: string|null
+     *     launchStatus?: 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED'|null,
+     *     launchActionsStatus?: LaunchActionsStatus|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\drs\PutLaunchAction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SSM_STORE'|'DYNAMIC'|null $type
  * @property string|null $value
+ * @property 'SSM_STORE'|'DYNAMIC'|null $type
  */
 class LaunchActionParameter extends Shape
 {
     /**
      * @param array{
-     *     type?: 'SSM_STORE'|'DYNAMIC'|null,
-     *     value?: string|null
+     *     value?: string|null,
+     *     type?: 'SSM_STORE'|'DYNAMIC'|null
      * } $args
      */
     public function __construct(array $args = [])

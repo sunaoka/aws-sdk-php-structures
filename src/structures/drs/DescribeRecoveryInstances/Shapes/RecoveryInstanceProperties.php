@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\drs\DescribeRecoveryInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<CPU>|null $cpus
- * @property list<RecoveryInstanceDisk>|null $disks
- * @property IdentificationHints|null $identificationHints
  * @property string|null $lastUpdatedDateTime
+ * @property IdentificationHints|null $identificationHints
  * @property list<NetworkInterface>|null $networkInterfaces
- * @property OS|null $os
+ * @property list<RecoveryInstanceDisk>|null $disks
+ * @property list<CPU>|null $cpus
  * @property int<0, max>|null $ramBytes
+ * @property OS|null $os
  */
 class RecoveryInstanceProperties extends Shape
 {
     /**
      * @param array{
-     *     cpus?: list<CPU>|null,
-     *     disks?: list<RecoveryInstanceDisk>|null,
-     *     identificationHints?: IdentificationHints|null,
      *     lastUpdatedDateTime?: string|null,
+     *     identificationHints?: IdentificationHints|null,
      *     networkInterfaces?: list<NetworkInterface>|null,
-     *     os?: OS|null,
-     *     ramBytes?: int<0, max>|null
+     *     disks?: list<RecoveryInstanceDisk>|null,
+     *     cpus?: list<CPU>|null,
+     *     ramBytes?: int<0, max>|null,
+     *     os?: OS|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property LaunchAction|null $action
- * @property string|null $failureReason
  * @property string|null $runId
  * @property 'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|null $status
+ * @property string|null $failureReason
  */
 class LaunchActionRun extends Shape
 {
     /**
      * @param array{
      *     action?: LaunchAction|null,
-     *     failureReason?: string|null,
      *     runId?: string|null,
-     *     status?: 'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|null
+     *     status?: 'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|null,
+     *     failureReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

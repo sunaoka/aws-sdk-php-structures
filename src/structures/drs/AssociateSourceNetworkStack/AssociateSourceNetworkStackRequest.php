@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\drs\AssociateSourceNetworkStack;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $cfnStackName
  * @property string $sourceNetworkID
+ * @property string $cfnStackName
  */
 class AssociateSourceNetworkStackRequest extends Request
 {
     /**
      * @param array{
-     *     cfnStackName: string,
-     *     sourceNetworkID: string
+     *     sourceNetworkID: string,
+     *     cfnStackName: string
      * } $args
      */
     public function __construct(array $args)

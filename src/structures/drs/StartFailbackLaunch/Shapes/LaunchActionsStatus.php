@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\drs\StartFailbackLaunch\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<LaunchActionRun>|null $runs
  * @property string|null $ssmAgentDiscoveryDatetime
+ * @property list<LaunchActionRun>|null $runs
  */
 class LaunchActionsStatus extends Shape
 {
     /**
      * @param array{
-     *     runs?: list<LaunchActionRun>|null,
-     *     ssmAgentDiscoveryDatetime?: string|null
+     *     ssmAgentDiscoveryDatetime?: string|null,
+     *     runs?: list<LaunchActionRun>|null
      * } $args
      */
     public function __construct(array $args = [])

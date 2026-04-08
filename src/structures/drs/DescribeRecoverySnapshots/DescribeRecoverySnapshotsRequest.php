@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\drs\DescribeRecoverySnapshots;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string $sourceServerID
  * @property Shapes\DescribeRecoverySnapshotsRequestFilters|null $filters
+ * @property 'ASC'|'DESC'|null $order
  * @property int<1, max>|null $maxResults
  * @property string|null $nextToken
- * @property 'ASC'|'DESC'|null $order
- * @property string $sourceServerID
  */
 class DescribeRecoverySnapshotsRequest extends Request
 {
     /**
      * @param array{
+     *     sourceServerID: string,
      *     filters?: Shapes\DescribeRecoverySnapshotsRequestFilters|null,
-     *     maxResults?: int<1, max>|null,
-     *     nextToken?: string|null,
      *     order?: 'ASC'|'DESC'|null,
-     *     sourceServerID: string
+     *     maxResults?: int<1, max>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

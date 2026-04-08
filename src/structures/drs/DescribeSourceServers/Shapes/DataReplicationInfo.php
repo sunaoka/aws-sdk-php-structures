@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\drs\DescribeSourceServers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DataReplicationError|null $dataReplicationError
- * @property DataReplicationInitiation|null $dataReplicationInitiation
- * @property 'STOPPED'|'INITIATING'|'INITIAL_SYNC'|'BACKLOG'|'CREATING_SNAPSHOT'|'CONTINUOUS'|'PAUSED'|'RESCAN'|'STALLED'|'DISCONNECTED'|null $dataReplicationState
- * @property string|null $etaDateTime
  * @property string|null $lagDuration
+ * @property string|null $etaDateTime
  * @property list<DataReplicationInfoReplicatedDisk>|null $replicatedDisks
+ * @property 'STOPPED'|'INITIATING'|'INITIAL_SYNC'|'BACKLOG'|'CREATING_SNAPSHOT'|'CONTINUOUS'|'PAUSED'|'RESCAN'|'STALLED'|'DISCONNECTED'|null $dataReplicationState
+ * @property DataReplicationInitiation|null $dataReplicationInitiation
+ * @property DataReplicationError|null $dataReplicationError
  * @property string|null $stagingAvailabilityZone
  * @property string|null $stagingOutpostArn
  */
@@ -18,12 +18,12 @@ class DataReplicationInfo extends Shape
 {
     /**
      * @param array{
-     *     dataReplicationError?: DataReplicationError|null,
-     *     dataReplicationInitiation?: DataReplicationInitiation|null,
-     *     dataReplicationState?: 'STOPPED'|'INITIATING'|'INITIAL_SYNC'|'BACKLOG'|'CREATING_SNAPSHOT'|'CONTINUOUS'|'PAUSED'|'RESCAN'|'STALLED'|'DISCONNECTED'|null,
-     *     etaDateTime?: string|null,
      *     lagDuration?: string|null,
+     *     etaDateTime?: string|null,
      *     replicatedDisks?: list<DataReplicationInfoReplicatedDisk>|null,
+     *     dataReplicationState?: 'STOPPED'|'INITIATING'|'INITIAL_SYNC'|'BACKLOG'|'CREATING_SNAPSHOT'|'CONTINUOUS'|'PAUSED'|'RESCAN'|'STALLED'|'DISCONNECTED'|null,
+     *     dataReplicationInitiation?: DataReplicationInitiation|null,
+     *     dataReplicationError?: DataReplicationError|null,
      *     stagingAvailabilityZone?: string|null,
      *     stagingOutpostArn?: string|null
      * } $args

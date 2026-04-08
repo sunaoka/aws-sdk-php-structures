@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $addedToServiceDateTime
- * @property string|null $elapsedReplicationDuration
  * @property string|null $firstByteDateTime
- * @property LifeCycleLastLaunch|null $lastLaunch
+ * @property string|null $elapsedReplicationDuration
  * @property string|null $lastSeenByServiceDateTime
+ * @property LifeCycleLastLaunch|null $lastLaunch
  */
 class LifeCycle extends Shape
 {
     /**
      * @param array{
      *     addedToServiceDateTime?: string|null,
-     *     elapsedReplicationDuration?: string|null,
      *     firstByteDateTime?: string|null,
-     *     lastLaunch?: LifeCycleLastLaunch|null,
-     *     lastSeenByServiceDateTime?: string|null
+     *     elapsedReplicationDuration?: string|null,
+     *     lastSeenByServiceDateTime?: string|null,
+     *     lastLaunch?: LifeCycleLastLaunch|null
      * } $args
      */
     public function __construct(array $args = [])

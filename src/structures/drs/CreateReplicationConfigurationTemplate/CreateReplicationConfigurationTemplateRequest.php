@@ -5,41 +5,43 @@ namespace Sunaoka\Aws\Structures\drs\CreateReplicationConfigurationTemplate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $associateDefaultSecurityGroup
- * @property bool|null $autoReplicateNewDisks
- * @property int<0, max> $bandwidthThrottling
- * @property bool $createPublicIP
- * @property 'PRIVATE_IP'|'PUBLIC_IP' $dataPlaneRouting
- * @property 'GP2'|'GP3'|'ST1'|'AUTO' $defaultLargeStagingDiskType
+ * @property string $stagingAreaSubnetId
+ * @property bool|null $associateDefaultSecurityGroup
+ * @property list<string> $replicationServersSecurityGroupsIDs
+ * @property string|null $replicationServerInstanceType
+ * @property bool|null $useDedicatedReplicationServer
+ * @property 'GP2'|'GP3'|'ST1'|'AUTO'|null $defaultLargeStagingDiskType
  * @property 'DEFAULT'|'CUSTOM'|'NONE' $ebsEncryption
  * @property string|null $ebsEncryptionKeyArn
- * @property list<Shapes\PITPolicyRule> $pitPolicy
- * @property string $replicationServerInstanceType
- * @property list<string> $replicationServersSecurityGroupsIDs
- * @property string $stagingAreaSubnetId
+ * @property int<0, max> $bandwidthThrottling
+ * @property 'PRIVATE_IP'|'PUBLIC_IP'|null $dataPlaneRouting
+ * @property bool|null $createPublicIP
  * @property array<string, string> $stagingAreaTags
+ * @property list<Shapes\PITPolicyRule> $pitPolicy
  * @property array<string, string>|null $tags
- * @property bool $useDedicatedReplicationServer
+ * @property bool|null $autoReplicateNewDisks
+ * @property 'IPV4'|'IPV6'|null $internetProtocol
  */
 class CreateReplicationConfigurationTemplateRequest extends Request
 {
     /**
      * @param array{
-     *     associateDefaultSecurityGroup: bool,
-     *     autoReplicateNewDisks?: bool|null,
-     *     bandwidthThrottling: int<0, max>,
-     *     createPublicIP: bool,
-     *     dataPlaneRouting: 'PRIVATE_IP'|'PUBLIC_IP',
-     *     defaultLargeStagingDiskType: 'GP2'|'GP3'|'ST1'|'AUTO',
+     *     stagingAreaSubnetId: string,
+     *     associateDefaultSecurityGroup?: bool|null,
+     *     replicationServersSecurityGroupsIDs: list<string>,
+     *     replicationServerInstanceType?: string|null,
+     *     useDedicatedReplicationServer?: bool|null,
+     *     defaultLargeStagingDiskType?: 'GP2'|'GP3'|'ST1'|'AUTO'|null,
      *     ebsEncryption: 'DEFAULT'|'CUSTOM'|'NONE',
      *     ebsEncryptionKeyArn?: string|null,
-     *     pitPolicy: list<Shapes\PITPolicyRule>,
-     *     replicationServerInstanceType: string,
-     *     replicationServersSecurityGroupsIDs: list<string>,
-     *     stagingAreaSubnetId: string,
+     *     bandwidthThrottling: int<0, max>,
+     *     dataPlaneRouting?: 'PRIVATE_IP'|'PUBLIC_IP'|null,
+     *     createPublicIP?: bool|null,
      *     stagingAreaTags: array<string, string>,
+     *     pitPolicy: list<Shapes\PITPolicyRule>,
      *     tags?: array<string, string>|null,
-     *     useDedicatedReplicationServer: bool
+     *     autoReplicateNewDisks?: bool|null,
+     *     internetProtocol?: 'IPV4'|'IPV6'|null
      * } $args
      */
     public function __construct(array $args)

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<OutputDestinationSettings>|null $Settings
  * @property list<SrtOutputDestinationSettings>|null $SrtSettings
  * @property list<string>|null $LogicalInterfaceNames
+ * @property list<MediaConnectRouterOutputDestinationSettings>|null $MediaConnectRouterSettings
  */
 class OutputDestination extends Shape
 {
@@ -21,7 +22,8 @@ class OutputDestination extends Shape
      *     MultiplexSettings?: MultiplexProgramChannelDestinationSettings|null,
      *     Settings?: list<OutputDestinationSettings>|null,
      *     SrtSettings?: list<SrtOutputDestinationSettings>|null,
-     *     LogicalInterfaceNames?: list<string>|null
+     *     LogicalInterfaceNames?: list<string>|null,
+     *     MediaConnectRouterSettings?: list<MediaConnectRouterOutputDestinationSettings>|null
      * } $args
      */
     public function __construct(array $args = [])

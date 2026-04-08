@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property UdpOutputSettings|null $UdpOutputSettings
  * @property CmafIngestOutputSettings|null $CmafIngestOutputSettings
  * @property SrtOutputSettings|null $SrtOutputSettings
+ * @property MediaConnectRouterOutputSettings|null $MediaConnectRouterOutputSettings
  */
 class OutputSettings extends Shape
 {
@@ -29,7 +30,8 @@ class OutputSettings extends Shape
      *     RtmpOutputSettings?: RtmpOutputSettings|null,
      *     UdpOutputSettings?: UdpOutputSettings|null,
      *     CmafIngestOutputSettings?: CmafIngestOutputSettings|null,
-     *     SrtOutputSettings?: SrtOutputSettings|null
+     *     SrtOutputSettings?: SrtOutputSettings|null,
+     *     MediaConnectRouterOutputSettings?: MediaConnectRouterOutputSettings|null
      * } $args
      */
     public function __construct(array $args = [])

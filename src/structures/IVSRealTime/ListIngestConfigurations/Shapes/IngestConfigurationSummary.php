@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $participantId
  * @property 'ACTIVE'|'INACTIVE' $state
  * @property string|null $userId
+ * @property bool|null $redundantIngest
  */
 class IngestConfigurationSummary extends Shape
 {
@@ -23,7 +24,8 @@ class IngestConfigurationSummary extends Shape
      *     stageArn: string,
      *     participantId: string,
      *     state: 'ACTIVE'|'INACTIVE',
-     *     userId?: string|null
+     *     userId?: string|null,
+     *     redundantIngest?: bool|null
      * } $args
      */
     public function __construct(array $args)
