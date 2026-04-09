@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $Arn
  * @property string $Id
- * @property 'STANDARD'|'FAILOVER'|'MERGE'|'MEDIACONNECT_FLOW' $InputType
+ * @property 'STANDARD'|'FAILOVER'|'MERGE'|'MEDIACONNECT_FLOW'|'MEDIALIVE_CHANNEL' $InputType
  * @property 'CREATING'|'STANDBY'|'STARTING'|'ACTIVE'|'STOPPING'|'DELETING'|'UPDATING'|'ERROR'|'RECOVERING'|'MIGRATING' $State
  * @property int $RoutedOutputs
  * @property string $RegionName
@@ -29,7 +29,7 @@ class ListedRouterInput extends Shape
      *     Name: string,
      *     Arn: string,
      *     Id: string,
-     *     InputType: 'STANDARD'|'FAILOVER'|'MERGE'|'MEDIACONNECT_FLOW',
+     *     InputType: 'STANDARD'|'FAILOVER'|'MERGE'|'MEDIACONNECT_FLOW'|'MEDIALIVE_CHANNEL',
      *     State: 'CREATING'|'STANDBY'|'STARTING'|'ACTIVE'|'STOPPING'|'DELETING'|'UPDATING'|'ERROR'|'RECOVERING'|'MIGRATING',
      *     RoutedOutputs: int,
      *     RegionName: string,

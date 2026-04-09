@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DestinationAddress
- * @property int<0, 65531> $DestinationPort
+ * @property int<1024, 65531> $DestinationPort
  * @property 'ENABLED'|'DISABLED'|null $ForwardErrorCorrection
  */
 class RtpRouterOutputConfiguration extends Shape
@@ -14,7 +14,7 @@ class RtpRouterOutputConfiguration extends Shape
     /**
      * @param array{
      *     DestinationAddress: string,
-     *     DestinationPort: int<0, 65531>,
+     *     DestinationPort: int<1024, 65531>,
      *     ForwardErrorCorrection?: 'ENABLED'|'DISABLED'|null
      * } $args
      */

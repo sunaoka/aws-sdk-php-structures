@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property string|null $name
+ * @property string $name
  * @property string|null $description
  * @property list<Shapes\Widget>|null $widgets
  */
@@ -15,7 +15,7 @@ class UpdateDashboardRequest extends Request
     /**
      * @param array{
      *     arn: string,
-     *     name?: string|null,
+     *     name: string,
      *     description?: string|null,
      *     widgets?: list<Shapes\Widget>|null
      * } $args

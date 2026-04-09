@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Arn
  * @property string $Id
  * @property 'CREATING'|'STANDBY'|'STARTING'|'ACTIVE'|'STOPPING'|'DELETING'|'UPDATING'|'ERROR'|'RECOVERING'|'MIGRATING' $State
- * @property 'STANDARD'|'FAILOVER'|'MERGE'|'MEDIACONNECT_FLOW' $InputType
+ * @property 'STANDARD'|'FAILOVER'|'MERGE'|'MEDIACONNECT_FLOW'|'MEDIALIVE_CHANNEL' $InputType
  * @property RouterInputConfiguration $Configuration
  * @property int $RoutedOutputs
  * @property int|null $MaximumRoutedOutputs
@@ -38,7 +38,7 @@ class RouterInput extends Shape
      *     Arn: string,
      *     Id: string,
      *     State: 'CREATING'|'STANDBY'|'STARTING'|'ACTIVE'|'STOPPING'|'DELETING'|'UPDATING'|'ERROR'|'RECOVERING'|'MIGRATING',
-     *     InputType: 'STANDARD'|'FAILOVER'|'MERGE'|'MEDIACONNECT_FLOW',
+     *     InputType: 'STANDARD'|'FAILOVER'|'MERGE'|'MEDIACONNECT_FLOW'|'MEDIALIVE_CHANNEL',
      *     Configuration: RouterInputConfiguration,
      *     RoutedOutputs: int,
      *     MaximumRoutedOutputs?: int|null,

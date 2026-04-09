@@ -18,6 +18,8 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use CreateOnlineEvaluationConfig\CreateOnlineEvaluationConfigTrait;
     use CreatePolicy\CreatePolicyTrait;
     use CreatePolicyEngine\CreatePolicyEngineTrait;
+    use CreateRegistry\CreateRegistryTrait;
+    use CreateRegistryRecord\CreateRegistryRecordTrait;
     use CreateWorkloadIdentity\CreateWorkloadIdentityTrait;
     use DeleteAgentRuntime\DeleteAgentRuntimeTrait;
     use DeleteAgentRuntimeEndpoint\DeleteAgentRuntimeEndpointTrait;
@@ -33,6 +35,8 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use DeleteOnlineEvaluationConfig\DeleteOnlineEvaluationConfigTrait;
     use DeletePolicy\DeletePolicyTrait;
     use DeletePolicyEngine\DeletePolicyEngineTrait;
+    use DeleteRegistry\DeleteRegistryTrait;
+    use DeleteRegistryRecord\DeleteRegistryRecordTrait;
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;
     use DeleteWorkloadIdentity\DeleteWorkloadIdentityTrait;
     use GetAgentRuntime\GetAgentRuntimeTrait;
@@ -50,6 +54,8 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use GetPolicy\GetPolicyTrait;
     use GetPolicyEngine\GetPolicyEngineTrait;
     use GetPolicyGeneration\GetPolicyGenerationTrait;
+    use GetRegistry\GetRegistryTrait;
+    use GetRegistryRecord\GetRegistryRecordTrait;
     use GetResourcePolicy\GetResourcePolicyTrait;
     use GetTokenVault\GetTokenVaultTrait;
     use GetWorkloadIdentity\GetWorkloadIdentityTrait;
@@ -70,11 +76,14 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use ListPolicyEngines\ListPolicyEnginesTrait;
     use ListPolicyGenerationAssets\ListPolicyGenerationAssetsTrait;
     use ListPolicyGenerations\ListPolicyGenerationsTrait;
+    use ListRegistries\ListRegistriesTrait;
+    use ListRegistryRecords\ListRegistryRecordsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListWorkloadIdentities\ListWorkloadIdentitiesTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;
     use SetTokenVaultCMK\SetTokenVaultCMKTrait;
     use StartPolicyGeneration\StartPolicyGenerationTrait;
+    use SubmitRegistryRecordForApproval\SubmitRegistryRecordForApprovalTrait;
     use SynchronizeGatewayTargets\SynchronizeGatewayTargetsTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
@@ -89,5 +98,8 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use UpdateOnlineEvaluationConfig\UpdateOnlineEvaluationConfigTrait;
     use UpdatePolicy\UpdatePolicyTrait;
     use UpdatePolicyEngine\UpdatePolicyEngineTrait;
+    use UpdateRegistry\UpdateRegistryTrait;
+    use UpdateRegistryRecord\UpdateRegistryRecordTrait;
+    use UpdateRegistryRecordStatus\UpdateRegistryRecordStatusTrait;
     use UpdateWorkloadIdentity\UpdateWorkloadIdentityTrait;
 }

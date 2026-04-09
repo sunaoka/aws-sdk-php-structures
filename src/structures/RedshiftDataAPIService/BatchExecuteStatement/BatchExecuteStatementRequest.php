@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Database
  * @property bool|null $WithEvent
  * @property string|null $StatementName
+ * @property list<Shapes\SqlParameter>|null $Parameters
  * @property string|null $WorkgroupName
  * @property string|null $ClientToken
  * @property 'JSON'|'CSV'|null $ResultFormat
@@ -29,6 +30,7 @@ class BatchExecuteStatementRequest extends Request
      *     Database?: string|null,
      *     WithEvent?: bool|null,
      *     StatementName?: string|null,
+     *     Parameters?: list<Shapes\SqlParameter>|null,
      *     WorkgroupName?: string|null,
      *     ClientToken?: string|null,
      *     ResultFormat?: 'JSON'|'CSV'|null,

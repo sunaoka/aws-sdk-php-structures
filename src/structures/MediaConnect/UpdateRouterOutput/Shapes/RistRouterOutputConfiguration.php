@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DestinationAddress
- * @property int<0, 65535> $DestinationPort
+ * @property int<1024, 65535> $DestinationPort
  */
 class RistRouterOutputConfiguration extends Shape
 {
     /**
      * @param array{
      *     DestinationAddress: string,
-     *     DestinationPort: int<0, 65535>
+     *     DestinationPort: int<1024, 65535>
      * } $args
      */
     public function __construct(array $args)

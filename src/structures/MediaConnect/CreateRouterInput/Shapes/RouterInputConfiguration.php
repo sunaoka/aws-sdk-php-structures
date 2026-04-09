@@ -6,18 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property StandardRouterInputConfiguration|null $Standard
+ * @property MediaLiveChannelRouterInputConfiguration|null $MediaLiveChannel
  * @property FailoverRouterInputConfiguration|null $Failover
- * @property MergeRouterInputConfiguration|null $Merge
  * @property MediaConnectFlowRouterInputConfiguration|null $MediaConnectFlow
+ * @property MergeRouterInputConfiguration|null $Merge
  */
 class RouterInputConfiguration extends Shape
 {
     /**
      * @param array{
      *     Standard?: StandardRouterInputConfiguration|null,
+     *     MediaLiveChannel?: MediaLiveChannelRouterInputConfiguration|null,
      *     Failover?: FailoverRouterInputConfiguration|null,
-     *     Merge?: MergeRouterInputConfiguration|null,
-     *     MediaConnectFlow?: MediaConnectFlowRouterInputConfiguration|null
+     *     MediaConnectFlow?: MediaConnectFlowRouterInputConfiguration|null,
+     *     Merge?: MergeRouterInputConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])
