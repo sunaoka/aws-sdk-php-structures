@@ -5,10 +5,11 @@ namespace Sunaoka\Aws\Structures\ObservabilityAdmin\StartTelemetryEvaluationForO
 trait StartTelemetryEvaluationForOrganizationTrait
 {
     /**
+     * @param StartTelemetryEvaluationForOrganizationRequest $args
      * @return void
      */
-    public function startTelemetryEvaluationForOrganization()
+    public function startTelemetryEvaluationForOrganization(StartTelemetryEvaluationForOrganizationRequest $args)
     {
-        parent::startTelemetryEvaluationForOrganization();
+        parent::startTelemetryEvaluationForOrganization($args->toArray());
     }
 }

@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $dateNextRun
  * @property array<string, string>|null $tags
  * @property ImageScanningConfiguration|null $imageScanningConfiguration
+ * @property array<string, string>|null $imageTags
  * @property string|null $executionRole
  * @property list<WorkflowConfiguration>|null $workflows
  * @property PipelineLoggingConfiguration|null $loggingConfiguration
@@ -52,6 +53,7 @@ class ImagePipeline extends Shape
      *     dateNextRun?: string|null,
      *     tags?: array<string, string>|null,
      *     imageScanningConfiguration?: ImageScanningConfiguration|null,
+     *     imageTags?: array<string, string>|null,
      *     executionRole?: string|null,
      *     workflows?: list<WorkflowConfiguration>|null,
      *     loggingConfiguration?: PipelineLoggingConfiguration|null,

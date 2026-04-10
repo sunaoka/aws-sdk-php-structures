@@ -317,6 +317,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use SearchTrainingPlanOfferings\SearchTrainingPlanOfferingsTrait;
     use SendPipelineExecutionStepFailure\SendPipelineExecutionStepFailureTrait;
     use SendPipelineExecutionStepSuccess\SendPipelineExecutionStepSuccessTrait;
+    use StartClusterHealthCheck\StartClusterHealthCheckTrait;
     use StartEdgeDeploymentStage\StartEdgeDeploymentStageTrait;
     use StartInferenceExperiment\StartInferenceExperimentTrait;
     use StartMlflowTrackingServer\StartMlflowTrackingServerTrait;

@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ImageInserter|null $ImageInserter
  * @property list<InputClipping>|null $InputClippings
  * @property 'AUTO'|'PSF'|null $InputScanType
+ * @property list<MultiViewSettings>|null $MultiViewSettings
  * @property Rectangle|null $Position
  * @property int<1, 2147483647>|null $ProgramNumber
  * @property 'IGNORE_PSI'|'USE_PSI'|null $PsiControl
@@ -47,6 +48,7 @@ class InputTemplate extends Shape
      *     ImageInserter?: ImageInserter|null,
      *     InputClippings?: list<InputClipping>|null,
      *     InputScanType?: 'AUTO'|'PSF'|null,
+     *     MultiViewSettings?: list<MultiViewSettings>|null,
      *     Position?: Rectangle|null,
      *     ProgramNumber?: int<1, 2147483647>|null,
      *     PsiControl?: 'IGNORE_PSI'|'USE_PSI'|null,

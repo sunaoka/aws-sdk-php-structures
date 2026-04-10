@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, max> $FileSizeInBytes
  * @property 'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED' $FileStatus
  * @property CreatedByInfo|null $CreatedBy
- * @property 'EMAIL_MESSAGE'|'ATTACHMENT'|null $FileUseCaseType
+ * @property 'CONTACT_ANALYSIS'|'EMAIL_MESSAGE'|'EMAIL_MESSAGE_PLAIN_TEXT'|'EMAIL_MESSAGE_REDACTED'|'EMAIL_MESSAGE_PLAIN_TEXT_REDACTED'|'ATTACHMENT'|null $FileUseCaseType
  * @property string|null $AssociatedResourceArn
  * @property array<string, string>|null $Tags
  */
@@ -27,7 +27,7 @@ class AttachedFile extends Shape
      *     FileSizeInBytes: int<1, max>,
      *     FileStatus: 'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED',
      *     CreatedBy?: CreatedByInfo|null,
-     *     FileUseCaseType?: 'EMAIL_MESSAGE'|'ATTACHMENT'|null,
+     *     FileUseCaseType?: 'CONTACT_ANALYSIS'|'EMAIL_MESSAGE'|'EMAIL_MESSAGE_PLAIN_TEXT'|'EMAIL_MESSAGE_REDACTED'|'EMAIL_MESSAGE_PLAIN_TEXT_REDACTED'|'ATTACHMENT'|null,
      *     AssociatedResourceArn?: string|null,
      *     Tags?: array<string, string>|null
      * } $args

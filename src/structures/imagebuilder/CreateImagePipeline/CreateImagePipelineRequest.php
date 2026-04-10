@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Schedule|null $schedule
  * @property 'DISABLED'|'ENABLED'|null $status
  * @property array<string, string>|null $tags
+ * @property array<string, string>|null $imageTags
  * @property string $clientToken
  * @property Shapes\ImageScanningConfiguration|null $imageScanningConfiguration
  * @property list<Shapes\WorkflowConfiguration>|null $workflows
@@ -37,6 +38,7 @@ class CreateImagePipelineRequest extends Request
      *     schedule?: Shapes\Schedule|null,
      *     status?: 'DISABLED'|'ENABLED'|null,
      *     tags?: array<string, string>|null,
+     *     imageTags?: array<string, string>|null,
      *     clientToken: string,
      *     imageScanningConfiguration?: Shapes\ImageScanningConfiguration|null,
      *     workflows?: list<Shapes\WorkflowConfiguration>|null,

@@ -12,7 +12,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DynatraceConfiguration|null $dynatrace
  * @property ServiceNowConfiguration|null $servicenow
  * @property MCPServerNewRelicConfiguration|null $mcpservernewrelic
+ * @property MCPServerDatadogConfiguration|null $mcpserverdatadog
+ * @property MCPServerConfiguration|null $mcpserver
  * @property GitLabConfiguration|null $gitlab
+ * @property MCPServerSplunkConfiguration|null $mcpserversplunk
  * @property EventChannelConfiguration|null $eventChannel
  * @property AzureConfiguration|null $azure
  * @property AzureDevOpsConfiguration|null $azuredevops
@@ -30,7 +33,10 @@ class ServiceConfiguration extends Shape
      *     dynatrace?: DynatraceConfiguration|null,
      *     servicenow?: ServiceNowConfiguration|null,
      *     mcpservernewrelic?: MCPServerNewRelicConfiguration|null,
+     *     mcpserverdatadog?: MCPServerDatadogConfiguration|null,
+     *     mcpserver?: MCPServerConfiguration|null,
      *     gitlab?: GitLabConfiguration|null,
+     *     mcpserversplunk?: MCPServerSplunkConfiguration|null,
      *     eventChannel?: EventChannelConfiguration|null,
      *     azure?: AzureConfiguration|null,
      *     azuredevops?: AzureDevOpsConfiguration|null,

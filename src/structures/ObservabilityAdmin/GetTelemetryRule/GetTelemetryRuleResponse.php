@@ -10,6 +10,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $CreatedTimeStamp
  * @property int|null $LastUpdateTimeStamp
  * @property Shapes\TelemetryRule|null $TelemetryRule
+ * @property string|null $HomeRegion
+ * @property bool|null $IsReplicated
+ * @property list<Shapes\RegionStatus>|null $RegionStatuses
  */
 class GetTelemetryRuleResponse extends Response
 {

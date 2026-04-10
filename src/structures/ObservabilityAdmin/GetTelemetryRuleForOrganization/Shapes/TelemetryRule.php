@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TelemetryDestinationConfiguration|null $DestinationConfiguration
  * @property string|null $Scope
  * @property string|null $SelectionCriteria
+ * @property list<string>|null $Regions
+ * @property bool|null $AllRegions
  */
 class TelemetryRule extends Shape
 {
@@ -21,7 +23,9 @@ class TelemetryRule extends Shape
      *     TelemetrySourceTypes?: list<'VPC_FLOW_LOGS'|'ROUTE53_RESOLVER_QUERY_LOGS'|'EKS_AUDIT_LOGS'|'EKS_AUTHENTICATOR_LOGS'|'EKS_CONTROLLER_MANAGER_LOGS'|'EKS_SCHEDULER_LOGS'|'EKS_API_LOGS'>|null,
      *     DestinationConfiguration?: TelemetryDestinationConfiguration|null,
      *     Scope?: string|null,
-     *     SelectionCriteria?: string|null
+     *     SelectionCriteria?: string|null,
+     *     Regions?: list<string>|null,
+     *     AllRegions?: bool|null
      * } $args
      */
     public function __construct(array $args)

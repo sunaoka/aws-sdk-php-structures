@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $FileName
  * @property int<1, max> $FileSizeInBytes
  * @property string|null $AssociatedResourceArn
- * @property 'EMAIL_MESSAGE'|'ATTACHMENT'|null $FileUseCaseType
+ * @property 'CONTACT_ANALYSIS'|'EMAIL_MESSAGE'|'EMAIL_MESSAGE_PLAIN_TEXT'|'EMAIL_MESSAGE_REDACTED'|'EMAIL_MESSAGE_PLAIN_TEXT_REDACTED'|'ATTACHMENT'|null $FileUseCaseType
  * @property Shapes\CreatedByInfo|null $CreatedBy
  * @property Shapes\DownloadUrlMetadata|null $DownloadUrlMetadata
  * @property array<string, string>|null $Tags
