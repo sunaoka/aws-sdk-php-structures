@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property Shapes\SegmentGroup|null $SegmentGroups
  * @property string|null $SegmentSqlQuery
+ * @property Shapes\SegmentSort|null $SegmentSort
  * @property array<string, string>|null $Tags
  */
 class CreateSegmentDefinitionRequest extends Request
@@ -23,6 +24,7 @@ class CreateSegmentDefinitionRequest extends Request
      *     Description?: string|null,
      *     SegmentGroups?: Shapes\SegmentGroup|null,
      *     SegmentSqlQuery?: string|null,
+     *     SegmentSort?: Shapes\SegmentSort|null,
      *     Tags?: array<string, string>|null
      * } $args
      */

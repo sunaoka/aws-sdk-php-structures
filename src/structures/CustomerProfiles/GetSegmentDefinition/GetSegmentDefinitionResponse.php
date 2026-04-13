@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $DisplayName
  * @property string|null $Description
  * @property Shapes\SegmentGroup|null $SegmentGroups
+ * @property Shapes\SegmentSort|null $SegmentSort
  * @property string $SegmentDefinitionArn
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property array<string, string>|null $Tags

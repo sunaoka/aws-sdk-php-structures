@@ -60,6 +60,7 @@ class DeadlineClient extends \Aws\Deadline\DeadlineClient
     use GetLicenseEndpoint\GetLicenseEndpointTrait;
     use GetLimit\GetLimitTrait;
     use GetMonitor\GetMonitorTrait;
+    use GetMonitorSettings\GetMonitorSettingsTrait;
     use GetQueue\GetQueueTrait;
     use GetQueueEnvironment\GetQueueEnvironmentTrait;
     use GetQueueFleetAssociation\GetQueueFleetAssociationTrait;
@@ -115,6 +116,7 @@ class DeadlineClient extends \Aws\Deadline\DeadlineClient
     use UpdateJob\UpdateJobTrait;
     use UpdateLimit\UpdateLimitTrait;
     use UpdateMonitor\UpdateMonitorTrait;
+    use UpdateMonitorSettings\UpdateMonitorSettingsTrait;
     use UpdateQueue\UpdateQueueTrait;
     use UpdateQueueEnvironment\UpdateQueueEnvironmentTrait;
     use UpdateQueueFleetAssociation\UpdateQueueFleetAssociationTrait;

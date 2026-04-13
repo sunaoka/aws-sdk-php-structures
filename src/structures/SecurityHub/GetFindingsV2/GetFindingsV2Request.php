@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\OcsfFindingFilters|null $Filters
+ * @property Shapes\FindingScopes|null $Scopes
  * @property list<Shapes\SortCriterion>|null $SortCriteria
  * @property string|null $NextToken
  * @property int<1, 100>|null $MaxResults
@@ -15,6 +16,7 @@ class GetFindingsV2Request extends Request
     /**
      * @param array{
      *     Filters?: Shapes\OcsfFindingFilters|null,
+     *     Scopes?: Shapes\FindingScopes|null,
      *     SortCriteria?: list<Shapes\SortCriterion>|null,
      *     NextToken?: string|null,
      *     MaxResults?: int<1, 100>|null
