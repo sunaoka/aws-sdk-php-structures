@@ -4,7 +4,6 @@ namespace Sunaoka\Aws\Structures\DevOpsAgent;
 
 class DevOpsAgentClient extends \Aws\DevOpsAgent\DevOpsAgentClient
 {
-    use AllowVendedLogDeliveryForResource\AllowVendedLogDeliveryForResourceTrait;
     use AssociateService\AssociateServiceTrait;
     use CreateAgentSpace\CreateAgentSpaceTrait;
     use CreateBacklogTask\CreateBacklogTaskTrait;

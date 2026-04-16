@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DomainName
  * @property string $RecommenderFilterName
  * @property string $RecommenderFilterExpression
+ * @property string|null $RecommenderSchemaName
  * @property string|null $Description
  * @property array<string, string>|null $Tags
  */
@@ -18,6 +19,7 @@ class CreateRecommenderFilterRequest extends Request
      *     DomainName: string,
      *     RecommenderFilterName: string,
      *     RecommenderFilterExpression: string,
+     *     RecommenderSchemaName?: string|null,
      *     Description?: string|null,
      *     Tags?: array<string, string>|null
      * } $args

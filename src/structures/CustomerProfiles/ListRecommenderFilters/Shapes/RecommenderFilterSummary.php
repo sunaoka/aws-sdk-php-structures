@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $RecommenderFilterName
+ * @property string|null $RecommenderSchemaName
  * @property string|null $RecommenderFilterExpression
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property string|null $Description
@@ -18,6 +19,7 @@ class RecommenderFilterSummary extends Shape
     /**
      * @param array{
      *     RecommenderFilterName?: string|null,
+     *     RecommenderSchemaName?: string|null,
      *     RecommenderFilterExpression?: string|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     Description?: string|null,

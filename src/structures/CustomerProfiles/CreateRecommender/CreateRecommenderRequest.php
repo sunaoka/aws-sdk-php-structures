@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'recommended-for-you'|'similar-items'|'frequently-paired-items'|'popular-items'|'trending-now'|'personalized-ranking' $RecommenderRecipeName
  * @property Shapes\RecommenderConfig|null $RecommenderConfig
  * @property string|null $Description
+ * @property string|null $RecommenderSchemaName
  * @property array<string, string>|null $Tags
  */
 class CreateRecommenderRequest extends Request
@@ -21,6 +22,7 @@ class CreateRecommenderRequest extends Request
      *     RecommenderRecipeName: 'recommended-for-you'|'similar-items'|'frequently-paired-items'|'popular-items'|'trending-now'|'personalized-ranking',
      *     RecommenderConfig?: Shapes\RecommenderConfig|null,
      *     Description?: string|null,
+     *     RecommenderSchemaName?: string|null,
      *     Tags?: array<string, string>|null
      * } $args
      */

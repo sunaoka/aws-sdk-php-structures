@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $InstanceId
  * @property string|null $InstanceType
  * @property string $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
  * @property 'Pending'|'Pending:Wait'|'Pending:Proceed'|'Quarantined'|'InService'|'Terminating'|'Terminating:Wait'|'Terminating:Proceed'|'Terminating:Retained'|'Terminated'|'Detaching'|'Detached'|'EnteringStandby'|'Standby'|'ReplacingRootVolume'|'ReplacingRootVolume:Wait'|'ReplacingRootVolume:Proceed'|'RootVolumeReplaced'|'Warmed:Pending'|'Warmed:Pending:Wait'|'Warmed:Pending:Proceed'|'Warmed:Pending:Retained'|'Warmed:Terminating'|'Warmed:Terminating:Wait'|'Warmed:Terminating:Proceed'|'Warmed:Terminating:Retained'|'Warmed:Terminated'|'Warmed:Stopped'|'Warmed:Running'|'Warmed:Hibernated' $LifecycleState
  * @property string $HealthStatus
  * @property string|null $LaunchConfigurationName
@@ -23,6 +24,7 @@ class Instance extends Shape
      *     InstanceId: string,
      *     InstanceType?: string|null,
      *     AvailabilityZone: string,
+     *     AvailabilityZoneId?: string|null,
      *     LifecycleState: 'Pending'|'Pending:Wait'|'Pending:Proceed'|'Quarantined'|'InService'|'Terminating'|'Terminating:Wait'|'Terminating:Proceed'|'Terminating:Retained'|'Terminated'|'Detaching'|'Detached'|'EnteringStandby'|'Standby'|'ReplacingRootVolume'|'ReplacingRootVolume:Wait'|'ReplacingRootVolume:Proceed'|'RootVolumeReplaced'|'Warmed:Pending'|'Warmed:Pending:Wait'|'Warmed:Pending:Proceed'|'Warmed:Pending:Retained'|'Warmed:Terminating'|'Warmed:Terminating:Wait'|'Warmed:Terminating:Proceed'|'Warmed:Terminating:Retained'|'Warmed:Terminated'|'Warmed:Stopped'|'Warmed:Running'|'Warmed:Hibernated',
      *     HealthStatus: string,
      *     LaunchConfigurationName?: string|null,

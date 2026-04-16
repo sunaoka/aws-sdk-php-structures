@@ -6,7 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainIdentifier
- * @property string $groupIdentifier
+ * @property string|null $groupIdentifier
+ * @property string|null $rolePrincipalArn
  * @property string|null $clientToken
  */
 class CreateGroupProfileRequest extends Request
@@ -14,7 +15,8 @@ class CreateGroupProfileRequest extends Request
     /**
      * @param array{
      *     domainIdentifier: string,
-     *     groupIdentifier: string,
+     *     groupIdentifier?: string|null,
+     *     rolePrincipalArn?: string|null,
      *     clientToken?: string|null
      * } $args
      */

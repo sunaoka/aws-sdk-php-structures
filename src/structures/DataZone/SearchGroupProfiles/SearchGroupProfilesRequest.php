@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainIdentifier
- * @property 'SSO_GROUP'|'DATAZONE_SSO_GROUP' $groupType
+ * @property 'SSO_GROUP'|'DATAZONE_SSO_GROUP'|'IAM_ROLE_SESSION_GROUP' $groupType
  * @property string|null $searchText
  * @property int<1, 50>|null $maxResults
  * @property string|null $nextToken
@@ -16,7 +16,7 @@ class SearchGroupProfilesRequest extends Request
     /**
      * @param array{
      *     domainIdentifier: string,
-     *     groupType: 'SSO_GROUP'|'DATAZONE_SSO_GROUP',
+     *     groupType: 'SSO_GROUP'|'DATAZONE_SSO_GROUP'|'IAM_ROLE_SESSION_GROUP',
      *     searchText?: string|null,
      *     maxResults?: int<1, 50>|null,
      *     nextToken?: string|null

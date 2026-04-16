@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $userIdentifier
  * @property 'IAM'|'SSO'|null $type
  * @property 'ASSIGNED'|'NOT_ASSIGNED'|'ACTIVATED'|'DEACTIVATED' $status
+ * @property string|null $sessionName
  */
 class UpdateUserProfileRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateUserProfileRequest extends Request
      *     domainIdentifier: string,
      *     userIdentifier: string,
      *     type?: 'IAM'|'SSO'|null,
-     *     status: 'ASSIGNED'|'NOT_ASSIGNED'|'ACTIVATED'|'DEACTIVATED'
+     *     status: 'ASSIGNED'|'NOT_ASSIGNED'|'ACTIVATED'|'DEACTIVATED',
+     *     sessionName?: string|null
      * } $args
      */
     public function __construct(array $args)

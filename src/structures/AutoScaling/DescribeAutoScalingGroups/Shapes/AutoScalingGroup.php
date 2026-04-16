@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $PredictedCapacity
  * @property int $DefaultCooldown
  * @property list<string> $AvailabilityZones
+ * @property list<string>|null $AvailabilityZoneIds
  * @property list<string>|null $LoadBalancerNames
  * @property list<string>|null $TargetGroupARNs
  * @property string $HealthCheckType
@@ -61,6 +62,7 @@ class AutoScalingGroup extends Shape
      *     PredictedCapacity?: int|null,
      *     DefaultCooldown: int,
      *     AvailabilityZones: list<string>,
+     *     AvailabilityZoneIds?: list<string>|null,
      *     LoadBalancerNames?: list<string>|null,
      *     TargetGroupARNs?: list<string>|null,
      *     HealthCheckType: string,

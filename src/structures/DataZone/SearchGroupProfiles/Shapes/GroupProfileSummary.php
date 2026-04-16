@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $id
  * @property 'ASSIGNED'|'NOT_ASSIGNED'|null $status
  * @property string|null $groupName
+ * @property string|null $rolePrincipalArn
+ * @property string|null $rolePrincipalId
  */
 class GroupProfileSummary extends Shape
 {
@@ -17,7 +19,9 @@ class GroupProfileSummary extends Shape
      *     domainId?: string|null,
      *     id?: string|null,
      *     status?: 'ASSIGNED'|'NOT_ASSIGNED'|null,
-     *     groupName?: string|null
+     *     groupName?: string|null,
+     *     rolePrincipalArn?: string|null,
+     *     rolePrincipalId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

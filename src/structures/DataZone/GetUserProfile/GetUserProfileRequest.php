@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domainIdentifier
  * @property string $userIdentifier
  * @property 'IAM'|'SSO'|null $type
+ * @property string|null $sessionName
  */
 class GetUserProfileRequest extends Request
 {
@@ -15,7 +16,8 @@ class GetUserProfileRequest extends Request
      * @param array{
      *     domainIdentifier: string,
      *     userIdentifier: string,
-     *     type?: 'IAM'|'SSO'|null
+     *     type?: 'IAM'|'SSO'|null,
+     *     sessionName?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $DesiredCapacity
  * @property int|null $DefaultCooldown
  * @property list<string>|null $AvailabilityZones
+ * @property list<string>|null $AvailabilityZoneIds
  * @property list<string>|null $LoadBalancerNames
  * @property list<string>|null $TargetGroupARNs
  * @property string|null $HealthCheckType
@@ -54,6 +55,7 @@ class CreateAutoScalingGroupRequest extends Request
      *     DesiredCapacity?: int|null,
      *     DefaultCooldown?: int|null,
      *     AvailabilityZones?: list<string>|null,
+     *     AvailabilityZoneIds?: list<string>|null,
      *     LoadBalancerNames?: list<string>|null,
      *     TargetGroupARNs?: list<string>|null,
      *     HealthCheckType?: string|null,

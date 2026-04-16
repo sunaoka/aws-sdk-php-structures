@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property string|null $Description
  * @property \Aws\Api\DateTimeResult|null $LastUpdated
+ * @property int<0, max>|null $MaximumConcurrentFeeds
  * @property string $Name
  * @property 'ON_DEMAND'|'RESERVED'|null $PricingPlan
  * @property int|null $ProgressingJobsCount
@@ -28,6 +29,7 @@ class Queue extends Shape
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     Description?: string|null,
      *     LastUpdated?: \Aws\Api\DateTimeResult|null,
+     *     MaximumConcurrentFeeds?: int<0, max>|null,
      *     Name: string,
      *     PricingPlan?: 'ON_DEMAND'|'RESERVED'|null,
      *     ProgressingJobsCount?: int|null,

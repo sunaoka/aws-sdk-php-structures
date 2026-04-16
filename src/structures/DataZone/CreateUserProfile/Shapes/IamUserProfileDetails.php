@@ -7,13 +7,17 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $arn
  * @property string|null $principalId
+ * @property string|null $sessionName
+ * @property string|null $groupProfileId
  */
 class IamUserProfileDetails extends Shape
 {
     /**
      * @param array{
      *     arn?: string|null,
-     *     principalId?: string|null
+     *     principalId?: string|null,
+     *     sessionName?: string|null,
+     *     groupProfileId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

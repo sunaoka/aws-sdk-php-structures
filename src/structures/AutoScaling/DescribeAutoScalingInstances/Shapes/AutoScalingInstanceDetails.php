@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $InstanceType
  * @property string $AutoScalingGroupName
  * @property string $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
  * @property string $LifecycleState
  * @property string $HealthStatus
  * @property string|null $LaunchConfigurationName
@@ -25,6 +26,7 @@ class AutoScalingInstanceDetails extends Shape
      *     InstanceType?: string|null,
      *     AutoScalingGroupName: string,
      *     AvailabilityZone: string,
+     *     AvailabilityZoneId?: string|null,
      *     LifecycleState: string,
      *     HealthStatus: string,
      *     LaunchConfigurationName?: string|null,

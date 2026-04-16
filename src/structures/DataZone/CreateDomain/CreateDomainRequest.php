@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string|null $description
  * @property Shapes\SingleSignOn|null $singleSignOn
- * @property string $domainExecutionRole
+ * @property string|null $domainExecutionRole
  * @property string|null $kmsKeyIdentifier
  * @property array<string, string>|null $tags
  * @property 'V1'|'V2'|null $domainVersion
@@ -22,7 +22,7 @@ class CreateDomainRequest extends Request
      *     name: string,
      *     description?: string|null,
      *     singleSignOn?: Shapes\SingleSignOn|null,
-     *     domainExecutionRole: string,
+     *     domainExecutionRole?: string|null,
      *     kmsKeyIdentifier?: string|null,
      *     tags?: array<string, string>|null,
      *     domainVersion?: 'V1'|'V2'|null,

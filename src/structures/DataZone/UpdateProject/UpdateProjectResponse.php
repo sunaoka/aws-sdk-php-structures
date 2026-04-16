@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $projectProfileId
  * @property list<Shapes\EnvironmentConfigurationUserParameter>|null $userParameters
  * @property Shapes\EnvironmentDeploymentDetails|null $environmentDeploymentDetails
+ * @property string|null $projectCategory
  */
 class UpdateProjectResponse extends Response
 {

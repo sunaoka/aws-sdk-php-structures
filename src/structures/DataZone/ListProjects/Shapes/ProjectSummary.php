@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string|null $domainUnitId
+ * @property string|null $projectCategory
  */
 class ProjectSummary extends Shape
 {
@@ -29,7 +30,8 @@ class ProjectSummary extends Shape
      *     createdBy: string,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     domainUnitId?: string|null
+     *     domainUnitId?: string|null,
+     *     projectCategory?: string|null
      * } $args
      */
     public function __construct(array $args)

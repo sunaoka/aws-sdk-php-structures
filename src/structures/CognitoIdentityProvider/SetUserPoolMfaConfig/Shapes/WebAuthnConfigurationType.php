@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $RelyingPartyId
  * @property 'required'|'preferred'|null $UserVerification
+ * @property 'SINGLE_FACTOR'|'MULTI_FACTOR_WITH_USER_VERIFICATION'|null $FactorConfiguration
  */
 class WebAuthnConfigurationType extends Shape
 {
     /**
      * @param array{
      *     RelyingPartyId?: string|null,
-     *     UserVerification?: 'required'|'preferred'|null
+     *     UserVerification?: 'required'|'preferred'|null,
+     *     FactorConfiguration?: 'SINGLE_FACTOR'|'MULTI_FACTOR_WITH_USER_VERIFICATION'|null
      * } $args
      */
     public function __construct(array $args = [])

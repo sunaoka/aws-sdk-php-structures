@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $agentSpaceId
- * @property string $userId
+ * @property string|null $userId
  * @property 'IAM'|'IDC'|'IDP'|null $userType
  */
 class CreateChatRequest extends Request
@@ -14,7 +14,7 @@ class CreateChatRequest extends Request
     /**
      * @param array{
      *     agentSpaceId: string,
-     *     userId: string,
+     *     userId?: string|null,
      *     userType?: 'IAM'|'IDC'|'IDP'|null
      * } $args
      */

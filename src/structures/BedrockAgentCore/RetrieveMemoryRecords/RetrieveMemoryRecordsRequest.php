@@ -6,7 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $memoryId
- * @property string $namespace
+ * @property string|null $namespace
+ * @property string|null $namespacePath
  * @property Shapes\SearchCriteria $searchCriteria
  * @property string|null $nextToken
  * @property int<1, 100>|null $maxResults
@@ -16,7 +17,8 @@ class RetrieveMemoryRecordsRequest extends Request
     /**
      * @param array{
      *     memoryId: string,
-     *     namespace: string,
+     *     namespace?: string|null,
+     *     namespacePath?: string|null,
      *     searchCriteria: Shapes\SearchCriteria,
      *     nextToken?: string|null,
      *     maxResults?: int<1, 100>|null

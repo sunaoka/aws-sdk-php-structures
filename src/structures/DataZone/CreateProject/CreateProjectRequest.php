@@ -13,6 +13,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $domainUnitId
  * @property string|null $projectProfileId
  * @property list<Shapes\EnvironmentConfigurationUserParameter>|null $userParameters
+ * @property string|null $projectCategory
+ * @property string|null $projectExecutionRole
+ * @property list<Shapes\ProjectMembershipAssignment>|null $membershipAssignments
  */
 class CreateProjectRequest extends Request
 {
@@ -25,7 +28,10 @@ class CreateProjectRequest extends Request
      *     glossaryTerms?: list<string>|null,
      *     domainUnitId?: string|null,
      *     projectProfileId?: string|null,
-     *     userParameters?: list<Shapes\EnvironmentConfigurationUserParameter>|null
+     *     userParameters?: list<Shapes\EnvironmentConfigurationUserParameter>|null,
+     *     projectCategory?: string|null,
+     *     projectExecutionRole?: string|null,
+     *     membershipAssignments?: list<Shapes\ProjectMembershipAssignment>|null
      * } $args
      */
     public function __construct(array $args)

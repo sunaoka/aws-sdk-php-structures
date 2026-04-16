@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $userIdentifier
  * @property string|null $groupIdentifier
  * @property string|null $name
+ * @property string|null $projectCategory
  * @property string|null $nextToken
  * @property int<1, 50>|null $maxResults
  */
@@ -20,6 +21,7 @@ class ListProjectsRequest extends Request
      *     userIdentifier?: string|null,
      *     groupIdentifier?: string|null,
      *     name?: string|null,
+     *     projectCategory?: string|null,
      *     nextToken?: string|null,
      *     maxResults?: int<1, 50>|null
      * } $args

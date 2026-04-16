@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $RecommenderFilterName
  * @property string $RecommenderFilterExpression
+ * @property string|null $RecommenderSchemaName
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property 'ACTIVE'|'PENDING'|'IN_PROGRESS'|'FAILED'|'DELETING' $Status
  * @property string|null $Description

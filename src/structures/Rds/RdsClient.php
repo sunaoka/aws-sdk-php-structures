@@ -102,6 +102,7 @@ class RdsClient extends \Aws\Rds\RdsClient
     use DescribePendingMaintenanceActions\DescribePendingMaintenanceActionsTrait;
     use DescribeReservedDBInstances\DescribeReservedDBInstancesTrait;
     use DescribeReservedDBInstancesOfferings\DescribeReservedDBInstancesOfferingsTrait;
+    use DescribeServerlessV2PlatformVersions\DescribeServerlessV2PlatformVersionsTrait;
     use DescribeSourceRegions\DescribeSourceRegionsTrait;
     use DescribeTenantDatabases\DescribeTenantDatabasesTrait;
     use DescribeValidDBInstanceModifications\DescribeValidDBInstanceModificationsTrait;
