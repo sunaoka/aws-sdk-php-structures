@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SchedulesConfigurations|null $Schedules
  * @property RecentSnapshotsConfigurations|null $RecentSnapshots
  * @property ThresholdAlertsConfigurations|null $ThresholdAlerts
+ * @property DashboardCustomizationSummaryConfigurations|null $DashboardCustomizationSummary
  */
 class RegisteredUserConsoleFeatureConfigurations extends Shape
 {
@@ -21,7 +22,8 @@ class RegisteredUserConsoleFeatureConfigurations extends Shape
      *     AmazonQInQuickSight?: AmazonQInQuickSightConsoleConfigurations|null,
      *     Schedules?: SchedulesConfigurations|null,
      *     RecentSnapshots?: RecentSnapshotsConfigurations|null,
-     *     ThresholdAlerts?: ThresholdAlertsConfigurations|null
+     *     ThresholdAlerts?: ThresholdAlertsConfigurations|null,
+     *     DashboardCustomizationSummary?: DashboardCustomizationSummaryConfigurations|null
      * } $args
      */
     public function __construct(array $args = [])

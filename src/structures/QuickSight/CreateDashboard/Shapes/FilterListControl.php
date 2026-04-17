@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'MULTI_SELECT'|'SINGLE_SELECT'|null $Type
  * @property FilterSelectableValues|null $SelectableValues
  * @property CascadingControlConfiguration|null $CascadingControlConfiguration
+ * @property list<ControlSortConfiguration>|null $ControlSortConfigurations
  */
 class FilterListControl extends Shape
 {
@@ -23,7 +24,8 @@ class FilterListControl extends Shape
      *     DisplayOptions?: ListControlDisplayOptions|null,
      *     Type?: 'MULTI_SELECT'|'SINGLE_SELECT'|null,
      *     SelectableValues?: FilterSelectableValues|null,
-     *     CascadingControlConfiguration?: CascadingControlConfiguration|null
+     *     CascadingControlConfiguration?: CascadingControlConfiguration|null,
+     *     ControlSortConfigurations?: list<ControlSortConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ListControlDisplayOptions|null $DisplayOptions
  * @property 'MULTI_SELECT'|'SINGLE_SELECT'|null $Type
  * @property FilterSelectableValues|null $SelectableValues
+ * @property list<ControlSortConfiguration>|null $ControlSortConfigurations
  */
 class DefaultFilterListControlOptions extends Shape
 {
@@ -15,7 +16,8 @@ class DefaultFilterListControlOptions extends Shape
      * @param array{
      *     DisplayOptions?: ListControlDisplayOptions|null,
      *     Type?: 'MULTI_SELECT'|'SINGLE_SELECT'|null,
-     *     SelectableValues?: FilterSelectableValues|null
+     *     SelectableValues?: FilterSelectableValues|null,
+     *     ControlSortConfigurations?: list<ControlSortConfiguration>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'TELEPHONY'|'SMS'|'EMAIL'|'WHATSAPP'> $channelSubtypes
  * @property 'MANAGED'|'JOURNEY'|null $type
  * @property Schedule|null $schedule
+ * @property EntryLimitsConfig|null $entryLimitsConfig
  * @property string|null $connectCampaignFlowArn
  */
 class CampaignSummary extends Shape
@@ -25,6 +26,7 @@ class CampaignSummary extends Shape
      *     channelSubtypes: list<'TELEPHONY'|'SMS'|'EMAIL'|'WHATSAPP'>,
      *     type?: 'MANAGED'|'JOURNEY'|null,
      *     schedule?: Schedule|null,
+     *     entryLimitsConfig?: EntryLimitsConfig|null,
      *     connectCampaignFlowArn?: string|null
      * } $args
      */

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Source|null $source
  * @property string|null $connectCampaignFlowArn
  * @property Schedule|null $schedule
+ * @property EntryLimitsConfig|null $entryLimitsConfig
  * @property CommunicationTimeConfig|null $communicationTimeConfig
  * @property CommunicationLimitsConfig|null $communicationLimitsOverride
  * @property array<string, string>|null $tags
@@ -31,6 +32,7 @@ class Campaign extends Shape
      *     source?: Source|null,
      *     connectCampaignFlowArn?: string|null,
      *     schedule?: Schedule|null,
+     *     entryLimitsConfig?: EntryLimitsConfig|null,
      *     communicationTimeConfig?: CommunicationTimeConfig|null,
      *     communicationLimitsOverride?: CommunicationLimitsConfig|null,
      *     tags?: array<string, string>|null

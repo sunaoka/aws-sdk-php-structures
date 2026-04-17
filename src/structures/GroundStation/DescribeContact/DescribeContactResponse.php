@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $visibilityEndTime
  * @property Shapes\TrackingOverrides|null $trackingOverrides
  * @property Shapes\EphemerisResponseData|null $ephemeris
+ * @property Shapes\ContactVersion|null $version
  */
 class DescribeContactResponse extends Response
 {

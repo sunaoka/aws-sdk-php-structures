@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Source|null $source
  * @property string|null $connectCampaignFlowArn
  * @property Shapes\Schedule|null $schedule
+ * @property Shapes\EntryLimitsConfig|null $entryLimitsConfig
  * @property Shapes\CommunicationTimeConfig|null $communicationTimeConfig
  * @property Shapes\CommunicationLimitsConfig|null $communicationLimitsOverride
  * @property array<string, string>|null $tags
@@ -27,6 +28,7 @@ class CreateCampaignRequest extends Request
      *     source?: Shapes\Source|null,
      *     connectCampaignFlowArn?: string|null,
      *     schedule?: Shapes\Schedule|null,
+     *     entryLimitsConfig?: Shapes\EntryLimitsConfig|null,
      *     communicationTimeConfig?: Shapes\CommunicationTimeConfig|null,
      *     communicationLimitsOverride?: Shapes\CommunicationLimitsConfig|null,
      *     tags?: array<string, string>|null

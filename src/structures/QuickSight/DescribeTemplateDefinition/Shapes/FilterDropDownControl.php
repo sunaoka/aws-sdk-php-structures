@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FilterSelectableValues|null $SelectableValues
  * @property CascadingControlConfiguration|null $CascadingControlConfiguration
  * @property 'AUTO'|'MANUAL'|null $CommitMode
+ * @property list<ControlSortConfiguration>|null $ControlSortConfigurations
  */
 class FilterDropDownControl extends Shape
 {
@@ -25,7 +26,8 @@ class FilterDropDownControl extends Shape
      *     Type?: 'MULTI_SELECT'|'SINGLE_SELECT'|null,
      *     SelectableValues?: FilterSelectableValues|null,
      *     CascadingControlConfiguration?: CascadingControlConfiguration|null,
-     *     CommitMode?: 'AUTO'|'MANUAL'|null
+     *     CommitMode?: 'AUTO'|'MANUAL'|null,
+     *     ControlSortConfigurations?: list<ControlSortConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

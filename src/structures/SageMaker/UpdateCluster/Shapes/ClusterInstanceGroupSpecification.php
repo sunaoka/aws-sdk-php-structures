@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ClusterKubernetesConfig|null $KubernetesConfig
  * @property ClusterSlurmConfig|null $SlurmConfig
  * @property ClusterCapacityRequirements|null $CapacityRequirements
+ * @property ClusterNetworkInterface|null $NetworkInterface
  */
 class ClusterInstanceGroupSpecification extends Shape
 {
@@ -43,7 +44,8 @@ class ClusterInstanceGroupSpecification extends Shape
      *     ImageId?: string|null,
      *     KubernetesConfig?: ClusterKubernetesConfig|null,
      *     SlurmConfig?: ClusterSlurmConfig|null,
-     *     CapacityRequirements?: ClusterCapacityRequirements|null
+     *     CapacityRequirements?: ClusterCapacityRequirements|null,
+     *     NetworkInterface?: ClusterNetworkInterface|null
      * } $args
      */
     public function __construct(array $args)

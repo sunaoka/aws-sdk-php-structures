@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RdsParameters|null $RdsParameters
  * @property RedshiftParameters|null $RedshiftParameters
  * @property S3Parameters|null $S3Parameters
+ * @property S3TablesParameters|null $S3TablesParameters
  * @property S3KnowledgeBaseParameters|null $S3KnowledgeBaseParameters
  * @property ServiceNowParameters|null $ServiceNowParameters
  * @property SnowflakeParameters|null $SnowflakeParameters
@@ -56,6 +57,7 @@ class DataSourceParameters extends Shape
      *     RdsParameters?: RdsParameters|null,
      *     RedshiftParameters?: RedshiftParameters|null,
      *     S3Parameters?: S3Parameters|null,
+     *     S3TablesParameters?: S3TablesParameters|null,
      *     S3KnowledgeBaseParameters?: S3KnowledgeBaseParameters|null,
      *     ServiceNowParameters?: ServiceNowParameters|null,
      *     SnowflakeParameters?: SnowflakeParameters|null,

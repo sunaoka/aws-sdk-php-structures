@@ -15,6 +15,7 @@ class GroundStationClient extends \Aws\GroundStation\GroundStationClient
     use DeleteEphemeris\DeleteEphemerisTrait;
     use DeleteMissionProfile\DeleteMissionProfileTrait;
     use DescribeContact\DescribeContactTrait;
+    use DescribeContactVersion\DescribeContactVersionTrait;
     use DescribeEphemeris\DescribeEphemerisTrait;
     use GetAgentConfiguration\GetAgentConfigurationTrait;
     use GetAgentTaskResponseUrl\GetAgentTaskResponseUrlTrait;
@@ -22,10 +23,13 @@ class GroundStationClient extends \Aws\GroundStation\GroundStationClient
     use GetMinuteUsage\GetMinuteUsageTrait;
     use GetMissionProfile\GetMissionProfileTrait;
     use GetSatellite\GetSatelliteTrait;
+    use ListAntennas\ListAntennasTrait;
     use ListConfigs\ListConfigsTrait;
+    use ListContactVersions\ListContactVersionsTrait;
     use ListContacts\ListContactsTrait;
     use ListDataflowEndpointGroups\ListDataflowEndpointGroupsTrait;
     use ListEphemerides\ListEphemeridesTrait;
+    use ListGroundStationReservations\ListGroundStationReservationsTrait;
     use ListGroundStations\ListGroundStationsTrait;
     use ListMissionProfiles\ListMissionProfilesTrait;
     use ListSatellites\ListSatellitesTrait;
@@ -36,6 +40,7 @@ class GroundStationClient extends \Aws\GroundStation\GroundStationClient
     use UntagResource\UntagResourceTrait;
     use UpdateAgentStatus\UpdateAgentStatusTrait;
     use UpdateConfig\UpdateConfigTrait;
+    use UpdateContact\UpdateContactTrait;
     use UpdateEphemeris\UpdateEphemerisTrait;
     use UpdateMissionProfile\UpdateMissionProfileTrait;
     use GetMissionProfileConfig\GetMissionProfileConfigTrait;

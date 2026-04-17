@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $WorkGroup
  * @property string|null $RoleArn
+ * @property string|null $ConsumerAccountRoleArn
  * @property IdentityCenterConfiguration|null $IdentityCenterConfiguration
  */
 class AthenaParameters extends Shape
@@ -15,6 +16,7 @@ class AthenaParameters extends Shape
      * @param array{
      *     WorkGroup?: string|null,
      *     RoleArn?: string|null,
+     *     ConsumerAccountRoleArn?: string|null,
      *     IdentityCenterConfiguration?: IdentityCenterConfiguration|null
      * } $args
      */

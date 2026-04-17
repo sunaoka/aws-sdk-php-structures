@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'MULTI_SELECT'|'SINGLE_SELECT'|null $Type
  * @property FilterSelectableValues|null $SelectableValues
  * @property 'AUTO'|'MANUAL'|null $CommitMode
+ * @property list<ControlSortConfiguration>|null $ControlSortConfigurations
  */
 class DefaultFilterDropDownControlOptions extends Shape
 {
@@ -17,7 +18,8 @@ class DefaultFilterDropDownControlOptions extends Shape
      *     DisplayOptions?: DropDownControlDisplayOptions|null,
      *     Type?: 'MULTI_SELECT'|'SINGLE_SELECT'|null,
      *     SelectableValues?: FilterSelectableValues|null,
-     *     CommitMode?: 'AUTO'|'MANUAL'|null
+     *     CommitMode?: 'AUTO'|'MANUAL'|null,
+     *     ControlSortConfigurations?: list<ControlSortConfiguration>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -225,6 +225,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DENY'|null $SelfUpgradeUserRole
  * @property 'DENY'|null $Extension
  * @property 'DENY'|null $ManageSharedFolders
+ * @property 'DENY'|null $GenerateAnalyses
  */
 class Capabilities extends Shape
 {
@@ -449,7 +450,8 @@ class Capabilities extends Shape
      *     Research?: 'DENY'|null,
      *     SelfUpgradeUserRole?: 'DENY'|null,
      *     Extension?: 'DENY'|null,
-     *     ManageSharedFolders?: 'DENY'|null
+     *     ManageSharedFolders?: 'DENY'|null,
+     *     GenerateAnalyses?: 'DENY'|null
      * } $args
      */
     public function __construct(array $args = [])

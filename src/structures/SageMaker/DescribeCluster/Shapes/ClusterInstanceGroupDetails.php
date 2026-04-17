@@ -31,6 +31,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Pending'|'InProgress'|'Succeeded'|'Failed'|'RollbackInProgress'|'RollbackComplete'|null $SoftwareUpdateStatus
  * @property DeploymentConfiguration|null $ActiveSoftwareUpdateConfig
  * @property ClusterSlurmConfigDetails|null $SlurmConfig
+ * @property ClusterNetworkInterfaceDetails|null $NetworkInterface
  */
 class ClusterInstanceGroupDetails extends Shape
 {
@@ -61,7 +62,8 @@ class ClusterInstanceGroupDetails extends Shape
      *     TargetStateCount?: int<0, 6758>|null,
      *     SoftwareUpdateStatus?: 'Pending'|'InProgress'|'Succeeded'|'Failed'|'RollbackInProgress'|'RollbackComplete'|null,
      *     ActiveSoftwareUpdateConfig?: DeploymentConfiguration|null,
-     *     SlurmConfig?: ClusterSlurmConfigDetails|null
+     *     SlurmConfig?: ClusterSlurmConfigDetails|null,
+     *     NetworkInterface?: ClusterNetworkInterfaceDetails|null
      * } $args
      */
     public function __construct(array $args = [])

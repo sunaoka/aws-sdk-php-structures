@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $visibilityStartTime
  * @property \Aws\Api\DateTimeResult|null $visibilityEndTime
  * @property EphemerisResponseData|null $ephemeris
+ * @property ContactVersion|null $version
  */
 class ContactData extends Shape
 {
@@ -41,7 +42,8 @@ class ContactData extends Shape
      *     tags?: array<string, string>|null,
      *     visibilityStartTime?: \Aws\Api\DateTimeResult|null,
      *     visibilityEndTime?: \Aws\Api\DateTimeResult|null,
-     *     ephemeris?: EphemerisResponseData|null
+     *     ephemeris?: EphemerisResponseData|null,
+     *     version?: ContactVersion|null
      * } $args
      */
     public function __construct(array $args = [])

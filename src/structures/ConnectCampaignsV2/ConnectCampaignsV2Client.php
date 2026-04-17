@@ -9,6 +9,7 @@ class ConnectCampaignsV2Client extends \Aws\ConnectCampaignsV2\ConnectCampaignsV
     use DeleteCampaignChannelSubtypeConfig\DeleteCampaignChannelSubtypeConfigTrait;
     use DeleteCampaignCommunicationLimits\DeleteCampaignCommunicationLimitsTrait;
     use DeleteCampaignCommunicationTime\DeleteCampaignCommunicationTimeTrait;
+    use DeleteCampaignEntryLimits\DeleteCampaignEntryLimitsTrait;
     use DeleteConnectInstanceConfig\DeleteConnectInstanceConfigTrait;
     use DeleteConnectInstanceIntegration\DeleteConnectInstanceIntegrationTrait;
     use DeleteInstanceOnboardingJob\DeleteInstanceOnboardingJobTrait;
@@ -35,6 +36,7 @@ class ConnectCampaignsV2Client extends \Aws\ConnectCampaignsV2\ConnectCampaignsV
     use UpdateCampaignChannelSubtypeConfig\UpdateCampaignChannelSubtypeConfigTrait;
     use UpdateCampaignCommunicationLimits\UpdateCampaignCommunicationLimitsTrait;
     use UpdateCampaignCommunicationTime\UpdateCampaignCommunicationTimeTrait;
+    use UpdateCampaignEntryLimits\UpdateCampaignEntryLimitsTrait;
     use UpdateCampaignFlowAssociation\UpdateCampaignFlowAssociationTrait;
     use UpdateCampaignName\UpdateCampaignNameTrait;
     use UpdateCampaignSchedule\UpdateCampaignScheduleTrait;
