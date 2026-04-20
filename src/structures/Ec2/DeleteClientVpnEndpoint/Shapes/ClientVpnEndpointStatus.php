@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteClientVpnEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'pending-associate'|'available'|'deleting'|'deleted'|null $Code
+ * @property 'pending-associate'|'available'|'deleting'|'deleted'|'pending'|null $Code
  * @property string|null $Message
  */
 class ClientVpnEndpointStatus extends Shape
 {
     /**
      * @param array{
-     *     Code?: 'pending-associate'|'available'|'deleting'|'deleted'|null,
+     *     Code?: 'pending-associate'|'available'|'deleting'|'deleted'|'pending'|null,
      *     Message?: string|null
      * } $args
      */

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $CurrentVersion
  * @property bool|null $IsReplicatorReference
  * @property list<Shapes\KafkaClusterDescription>|null $KafkaClusters
+ * @property Shapes\LogDelivery|null $LogDelivery
  * @property list<Shapes\ReplicationInfoDescription>|null $ReplicationInfoList
  * @property string|null $ReplicatorArn
  * @property string|null $ReplicatorDescription

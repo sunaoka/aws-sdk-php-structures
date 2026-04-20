@@ -13,6 +13,7 @@ class LocationServiceClient extends \Aws\LocationService\LocationServiceClient
     use BatchUpdateDevicePosition\BatchUpdateDevicePositionTrait;
     use CalculateRoute\CalculateRouteTrait;
     use CalculateRouteMatrix\CalculateRouteMatrixTrait;
+    use CancelJob\CancelJobTrait;
     use CreateGeofenceCollection\CreateGeofenceCollectionTrait;
     use CreateKey\CreateKeyTrait;
     use CreateMap\CreateMapTrait;
@@ -36,6 +37,7 @@ class LocationServiceClient extends \Aws\LocationService\LocationServiceClient
     use GetDevicePosition\GetDevicePositionTrait;
     use GetDevicePositionHistory\GetDevicePositionHistoryTrait;
     use GetGeofence\GetGeofenceTrait;
+    use GetJob\GetJobTrait;
     use GetMapGlyphs\GetMapGlyphsTrait;
     use GetMapSprites\GetMapSpritesTrait;
     use GetMapStyleDescriptor\GetMapStyleDescriptorTrait;
@@ -44,6 +46,7 @@ class LocationServiceClient extends \Aws\LocationService\LocationServiceClient
     use ListDevicePositions\ListDevicePositionsTrait;
     use ListGeofenceCollections\ListGeofenceCollectionsTrait;
     use ListGeofences\ListGeofencesTrait;
+    use ListJobs\ListJobsTrait;
     use ListKeys\ListKeysTrait;
     use ListMaps\ListMapsTrait;
     use ListPlaceIndexes\ListPlaceIndexesTrait;
@@ -55,6 +58,7 @@ class LocationServiceClient extends \Aws\LocationService\LocationServiceClient
     use SearchPlaceIndexForPosition\SearchPlaceIndexForPositionTrait;
     use SearchPlaceIndexForSuggestions\SearchPlaceIndexForSuggestionsTrait;
     use SearchPlaceIndexForText\SearchPlaceIndexForTextTrait;
+    use StartJob\StartJobTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateGeofenceCollection\UpdateGeofenceCollectionTrait;

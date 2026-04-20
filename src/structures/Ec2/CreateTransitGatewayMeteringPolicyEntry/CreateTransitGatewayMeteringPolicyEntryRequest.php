@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $TransitGatewayMeteringPolicyId
  * @property int $PolicyRuleNumber
  * @property string|null $SourceTransitGatewayAttachmentId
- * @property 'vpc'|'vpn'|'vpn-concentrator'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|'network-function'|null $SourceTransitGatewayAttachmentType
+ * @property 'vpc'|'vpn'|'vpn-concentrator'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|'network-function'|'client-vpn'|null $SourceTransitGatewayAttachmentType
  * @property string|null $SourceCidrBlock
  * @property string|null $SourcePortRange
  * @property string|null $DestinationTransitGatewayAttachmentId
- * @property 'vpc'|'vpn'|'vpn-concentrator'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|'network-function'|null $DestinationTransitGatewayAttachmentType
+ * @property 'vpc'|'vpn'|'vpn-concentrator'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|'network-function'|'client-vpn'|null $DestinationTransitGatewayAttachmentType
  * @property string|null $DestinationCidrBlock
  * @property string|null $DestinationPortRange
  * @property string|null $Protocol
@@ -26,11 +26,11 @@ class CreateTransitGatewayMeteringPolicyEntryRequest extends Request
      *     TransitGatewayMeteringPolicyId: string,
      *     PolicyRuleNumber: int,
      *     SourceTransitGatewayAttachmentId?: string|null,
-     *     SourceTransitGatewayAttachmentType?: 'vpc'|'vpn'|'vpn-concentrator'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|'network-function'|null,
+     *     SourceTransitGatewayAttachmentType?: 'vpc'|'vpn'|'vpn-concentrator'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|'network-function'|'client-vpn'|null,
      *     SourceCidrBlock?: string|null,
      *     SourcePortRange?: string|null,
      *     DestinationTransitGatewayAttachmentId?: string|null,
-     *     DestinationTransitGatewayAttachmentType?: 'vpc'|'vpn'|'vpn-concentrator'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|'network-function'|null,
+     *     DestinationTransitGatewayAttachmentType?: 'vpc'|'vpn'|'vpn-concentrator'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|'network-function'|'client-vpn'|null,
      *     DestinationCidrBlock?: string|null,
      *     DestinationPortRange?: string|null,
      *     Protocol?: string|null,

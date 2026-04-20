@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ClientVpnEndpointId
  * @property AssociationStatus|null $Status
  * @property list<string>|null $SecurityGroups
+ * @property list<string>|null $AvailabilityZones
+ * @property list<string>|null $AvailabilityZoneIds
  */
 class TargetNetwork extends Shape
 {
@@ -21,7 +23,9 @@ class TargetNetwork extends Shape
      *     TargetNetworkId?: string|null,
      *     ClientVpnEndpointId?: string|null,
      *     Status?: AssociationStatus|null,
-     *     SecurityGroups?: list<string>|null
+     *     SecurityGroups?: list<string>|null,
+     *     AvailabilityZones?: list<string>|null,
+     *     AvailabilityZoneIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

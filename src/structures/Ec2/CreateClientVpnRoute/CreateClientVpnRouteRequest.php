@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClientVpnEndpointId
  * @property string $DestinationCidrBlock
- * @property string $TargetVpcSubnetId
+ * @property string|null $TargetVpcSubnetId
  * @property string|null $Description
  * @property string|null $ClientToken
  * @property bool|null $DryRun
@@ -18,7 +18,7 @@ class CreateClientVpnRouteRequest extends Request
      * @param array{
      *     ClientVpnEndpointId: string,
      *     DestinationCidrBlock: string,
-     *     TargetVpcSubnetId: string,
+     *     TargetVpcSubnetId?: string|null,
      *     Description?: string|null,
      *     ClientToken?: string|null,
      *     DryRun?: bool|null

@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $Description
  * @property list<Shapes\KafkaCluster> $KafkaClusters
+ * @property Shapes\LogDelivery|null $LogDelivery
  * @property list<Shapes\ReplicationInfo> $ReplicationInfoList
  * @property string $ReplicatorName
  * @property string $ServiceExecutionRoleArn
@@ -18,6 +19,7 @@ class CreateReplicatorRequest extends Request
      * @param array{
      *     Description?: string|null,
      *     KafkaClusters: list<Shapes\KafkaCluster>,
+     *     LogDelivery?: Shapes\LogDelivery|null,
      *     ReplicationInfoList: list<Shapes\ReplicationInfo>,
      *     ReplicatorName: string,
      *     ServiceExecutionRoleArn: string,

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Origin
  * @property ClientVpnRouteStatus|null $Status
  * @property string|null $Description
+ * @property string|null $TransitGatewayAttachmentId
  */
 class ClientVpnRoute extends Shape
 {
@@ -23,7 +24,8 @@ class ClientVpnRoute extends Shape
      *     Type?: string|null,
      *     Origin?: string|null,
      *     Status?: ClientVpnRouteStatus|null,
-     *     Description?: string|null
+     *     Description?: string|null,
+     *     TransitGatewayAttachmentId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

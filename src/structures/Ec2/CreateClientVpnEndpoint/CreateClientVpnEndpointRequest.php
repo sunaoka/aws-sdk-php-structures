@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DisconnectOnSessionTimeout
  * @property 'ipv4'|'ipv6'|'dual-stack'|null $EndpointIpAddressType
  * @property 'ipv4'|'ipv6'|'dual-stack'|null $TrafficIpAddressType
+ * @property Shapes\TransitGatewayConfigurationInputStructure|null $TransitGatewayConfiguration
  */
 class CreateClientVpnEndpointRequest extends Request
 {
@@ -53,7 +54,8 @@ class CreateClientVpnEndpointRequest extends Request
      *     ClientRouteEnforcementOptions?: Shapes\ClientRouteEnforcementOptions|null,
      *     DisconnectOnSessionTimeout?: bool|null,
      *     EndpointIpAddressType?: 'ipv4'|'ipv6'|'dual-stack'|null,
-     *     TrafficIpAddressType?: 'ipv4'|'ipv6'|'dual-stack'|null
+     *     TrafficIpAddressType?: 'ipv4'|'ipv6'|'dual-stack'|null,
+     *     TransitGatewayConfiguration?: Shapes\TransitGatewayConfigurationInputStructure|null
      * } $args
      */
     public function __construct(array $args)

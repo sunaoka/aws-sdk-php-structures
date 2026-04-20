@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Evs\CreateEnvironment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'KEY_REUSE'|'KEY_COVERAGE'|'REACHABILITY'|'HOST_COUNT'|null $type
+ * @property 'KEY_REUSE'|'KEY_COVERAGE'|'REACHABILITY'|'HOST_COUNT'|'VCENTER_REACHABILITY'|'VCENTER_VM_SYNC'|'VCENTER_VM_EVENT'|null $type
  * @property 'PASSED'|'FAILED'|'UNKNOWN'|null $result
  * @property \Aws\Api\DateTimeResult|null $impairedSince
  */
@@ -13,7 +13,7 @@ class Check extends Shape
 {
     /**
      * @param array{
-     *     type?: 'KEY_REUSE'|'KEY_COVERAGE'|'REACHABILITY'|'HOST_COUNT'|null,
+     *     type?: 'KEY_REUSE'|'KEY_COVERAGE'|'REACHABILITY'|'HOST_COUNT'|'VCENTER_REACHABILITY'|'VCENTER_VM_SYNC'|'VCENTER_VM_EVENT'|null,
      *     result?: 'PASSED'|'FAILED'|'UNKNOWN'|null,
      *     impairedSince?: \Aws\Api\DateTimeResult|null
      * } $args

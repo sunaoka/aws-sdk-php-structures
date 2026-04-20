@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property AmazonMskCluster|null $AmazonMskCluster
+ * @property ApacheKafkaCluster|null $ApacheKafkaCluster
  * @property string|null $KafkaClusterAlias
  */
 class KafkaClusterSummary extends Shape
@@ -13,6 +14,7 @@ class KafkaClusterSummary extends Shape
     /**
      * @param array{
      *     AmazonMskCluster?: AmazonMskCluster|null,
+     *     ApacheKafkaCluster?: ApacheKafkaCluster|null,
      *     KafkaClusterAlias?: string|null
      * } $args
      */

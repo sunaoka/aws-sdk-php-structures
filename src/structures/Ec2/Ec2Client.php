@@ -7,6 +7,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use AcceptAddressTransfer\AcceptAddressTransferTrait;
     use AcceptCapacityReservationBillingOwnership\AcceptCapacityReservationBillingOwnershipTrait;
     use AcceptReservedInstancesExchangeQuote\AcceptReservedInstancesExchangeQuoteTrait;
+    use AcceptTransitGatewayClientVpnAttachment\AcceptTransitGatewayClientVpnAttachmentTrait;
     use AcceptTransitGatewayMulticastDomainAssociations\AcceptTransitGatewayMulticastDomainAssociationsTrait;
     use AcceptTransitGatewayPeeringAttachment\AcceptTransitGatewayPeeringAttachmentTrait;
     use AcceptTransitGatewayVpcAttachment\AcceptTransitGatewayVpcAttachmentTrait;
@@ -233,6 +234,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeleteTrafficMirrorSession\DeleteTrafficMirrorSessionTrait;
     use DeleteTrafficMirrorTarget\DeleteTrafficMirrorTargetTrait;
     use DeleteTransitGateway\DeleteTransitGatewayTrait;
+    use DeleteTransitGatewayClientVpnAttachment\DeleteTransitGatewayClientVpnAttachmentTrait;
     use DeleteTransitGatewayConnect\DeleteTransitGatewayConnectTrait;
     use DeleteTransitGatewayConnectPeer\DeleteTransitGatewayConnectPeerTrait;
     use DeleteTransitGatewayMeteringPolicy\DeleteTransitGatewayMeteringPolicyTrait;
@@ -702,6 +704,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use RegisterTransitGatewayMulticastGroupMembers\RegisterTransitGatewayMulticastGroupMembersTrait;
     use RegisterTransitGatewayMulticastGroupSources\RegisterTransitGatewayMulticastGroupSourcesTrait;
     use RejectCapacityReservationBillingOwnership\RejectCapacityReservationBillingOwnershipTrait;
+    use RejectTransitGatewayClientVpnAttachment\RejectTransitGatewayClientVpnAttachmentTrait;
     use RejectTransitGatewayMulticastDomainAssociations\RejectTransitGatewayMulticastDomainAssociationsTrait;
     use RejectTransitGatewayPeeringAttachment\RejectTransitGatewayPeeringAttachmentTrait;
     use RejectTransitGatewayVpcAttachment\RejectTransitGatewayVpcAttachmentTrait;

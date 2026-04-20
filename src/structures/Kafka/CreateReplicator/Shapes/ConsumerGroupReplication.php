@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $ConsumerGroupsToReplicate
  * @property bool|null $DetectAndCopyNewConsumerGroups
  * @property bool|null $SynchroniseConsumerGroupOffsets
+ * @property 'LEGACY'|'ENHANCED'|null $ConsumerGroupOffsetSyncMode
  */
 class ConsumerGroupReplication extends Shape
 {
@@ -17,7 +18,8 @@ class ConsumerGroupReplication extends Shape
      *     ConsumerGroupsToExclude?: list<string>|null,
      *     ConsumerGroupsToReplicate: list<string>,
      *     DetectAndCopyNewConsumerGroups?: bool|null,
-     *     SynchroniseConsumerGroupOffsets?: bool|null
+     *     SynchroniseConsumerGroupOffsets?: bool|null,
+     *     ConsumerGroupOffsetSyncMode?: 'LEGACY'|'ENHANCED'|null
      * } $args
      */
     public function __construct(array $args)

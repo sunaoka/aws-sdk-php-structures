@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Goal|null $Goal
  * @property list<Shapes\Tag>|null $Tags
  * @property list<Shapes\BurnRateConfiguration>|null $BurnRateConfigurations
+ * @property bool|null $CreateRecommendedSlo
  */
 class CreateServiceLevelObjectiveRequest extends Request
 {
@@ -23,7 +24,8 @@ class CreateServiceLevelObjectiveRequest extends Request
      *     RequestBasedSliConfig?: Shapes\RequestBasedServiceLevelIndicatorConfig|null,
      *     Goal?: Shapes\Goal|null,
      *     Tags?: list<Shapes\Tag>|null,
-     *     BurnRateConfigurations?: list<Shapes\BurnRateConfiguration>|null
+     *     BurnRateConfigurations?: list<Shapes\BurnRateConfiguration>|null,
+     *     CreateRecommendedSlo?: bool|null
      * } $args
      */
     public function __construct(array $args)
