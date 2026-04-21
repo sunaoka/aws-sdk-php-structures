@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $RuleGroupName
  * @property Shapes\RuleGroup|null $RuleGroup
  * @property string|null $Rules
- * @property 'STATELESS'|'STATEFUL'|null $Type
+ * @property 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN'|null $Type
  * @property string|null $Description
  * @property bool|null $DryRun
  * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
@@ -27,7 +27,7 @@ class UpdateRuleGroupRequest extends Request
      *     RuleGroupName?: string|null,
      *     RuleGroup?: Shapes\RuleGroup|null,
      *     Rules?: string|null,
-     *     Type?: 'STATELESS'|'STATEFUL'|null,
+     *     Type?: 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN'|null,
      *     Description?: string|null,
      *     DryRun?: bool|null,
      *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null,

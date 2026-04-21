@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $RuleGroupName
  * @property Shapes\RuleGroup|null $RuleGroup
  * @property string|null $Rules
- * @property 'STATELESS'|'STATEFUL' $Type
+ * @property 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN' $Type
  * @property string|null $Description
  * @property int $Capacity
  * @property list<Shapes\Tag>|null $Tags
@@ -25,7 +25,7 @@ class CreateRuleGroupRequest extends Request
      *     RuleGroupName: string,
      *     RuleGroup?: Shapes\RuleGroup|null,
      *     Rules?: string|null,
-     *     Type: 'STATELESS'|'STATEFUL',
+     *     Type: 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN',
      *     Description?: string|null,
      *     Capacity: int,
      *     Tags?: list<Shapes\Tag>|null,

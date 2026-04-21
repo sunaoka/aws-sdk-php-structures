@@ -13,6 +13,9 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use BatchDescribeModelPackage\BatchDescribeModelPackageTrait;
     use BatchRebootClusterNodes\BatchRebootClusterNodesTrait;
     use BatchReplaceClusterNodes\BatchReplaceClusterNodesTrait;
+    use CreateAIBenchmarkJob\CreateAIBenchmarkJobTrait;
+    use CreateAIRecommendationJob\CreateAIRecommendationJobTrait;
+    use CreateAIWorkloadConfig\CreateAIWorkloadConfigTrait;
     use CreateAction\CreateActionTrait;
     use CreateAlgorithm\CreateAlgorithmTrait;
     use CreateApp\CreateAppTrait;
@@ -81,6 +84,9 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use CreateUserProfile\CreateUserProfileTrait;
     use CreateWorkforce\CreateWorkforceTrait;
     use CreateWorkteam\CreateWorkteamTrait;
+    use DeleteAIBenchmarkJob\DeleteAIBenchmarkJobTrait;
+    use DeleteAIRecommendationJob\DeleteAIRecommendationJobTrait;
+    use DeleteAIWorkloadConfig\DeleteAIWorkloadConfigTrait;
     use DeleteAction\DeleteActionTrait;
     use DeleteAlgorithm\DeleteAlgorithmTrait;
     use DeleteApp\DeleteAppTrait;
@@ -140,6 +146,9 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DeleteWorkforce\DeleteWorkforceTrait;
     use DeleteWorkteam\DeleteWorkteamTrait;
     use DeregisterDevices\DeregisterDevicesTrait;
+    use DescribeAIBenchmarkJob\DescribeAIBenchmarkJobTrait;
+    use DescribeAIRecommendationJob\DescribeAIRecommendationJobTrait;
+    use DescribeAIWorkloadConfig\DescribeAIWorkloadConfigTrait;
     use DescribeAction\DescribeActionTrait;
     use DescribeAlgorithm\DescribeAlgorithmTrait;
     use DescribeApp\DescribeAppTrait;
@@ -223,6 +232,9 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use GetScalingConfigurationRecommendation\GetScalingConfigurationRecommendationTrait;
     use GetSearchSuggestions\GetSearchSuggestionsTrait;
     use ImportHubContent\ImportHubContentTrait;
+    use ListAIBenchmarkJobs\ListAIBenchmarkJobsTrait;
+    use ListAIRecommendationJobs\ListAIRecommendationJobsTrait;
+    use ListAIWorkloadConfigs\ListAIWorkloadConfigsTrait;
     use ListActions\ListActionsTrait;
     use ListAlgorithms\ListAlgorithmsTrait;
     use ListAliases\ListAliasesTrait;
@@ -325,6 +337,8 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use StartNotebookInstance\StartNotebookInstanceTrait;
     use StartPipelineExecution\StartPipelineExecutionTrait;
     use StartSession\StartSessionTrait;
+    use StopAIBenchmarkJob\StopAIBenchmarkJobTrait;
+    use StopAIRecommendationJob\StopAIRecommendationJobTrait;
     use StopAutoMLJob\StopAutoMLJobTrait;
     use StopCompilationJob\StopCompilationJobTrait;
     use StopEdgeDeploymentStage\StopEdgeDeploymentStageTrait;

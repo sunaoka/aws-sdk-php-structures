@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Tag>|null $Tags
  * @property int|null $ConsumedStatelessRuleCapacity
  * @property int|null $ConsumedStatefulRuleCapacity
+ * @property int|null $ConsumedStatefulDomainCapacity
  * @property int|null $NumberOfAssociations
  * @property EncryptionConfiguration|null $EncryptionConfiguration
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
@@ -29,6 +30,7 @@ class FirewallPolicyResponse extends Shape
      *     Tags?: list<Tag>|null,
      *     ConsumedStatelessRuleCapacity?: int|null,
      *     ConsumedStatefulRuleCapacity?: int|null,
+     *     ConsumedStatefulDomainCapacity?: int|null,
      *     NumberOfAssociations?: int|null,
      *     EncryptionConfiguration?: EncryptionConfiguration|null,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult|null

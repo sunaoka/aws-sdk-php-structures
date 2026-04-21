@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'MANAGED'|'ACCOUNT'|null $Scope
  * @property 'AWS_MANAGED_THREAT_SIGNATURES'|'AWS_MANAGED_DOMAIN_LISTS'|'ACTIVE_THREAT_DEFENSE'|'PARTNER_MANAGED'|null $ManagedType
  * @property 'NOT_SUBSCRIBED'|'SUBSCRIBED'|null $SubscriptionStatus
- * @property 'STATELESS'|'STATEFUL'|null $Type
+ * @property 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN'|null $Type
  */
 class ListRuleGroupsRequest extends Request
 {
@@ -21,7 +21,7 @@ class ListRuleGroupsRequest extends Request
      *     Scope?: 'MANAGED'|'ACCOUNT'|null,
      *     ManagedType?: 'AWS_MANAGED_THREAT_SIGNATURES'|'AWS_MANAGED_DOMAIN_LISTS'|'ACTIVE_THREAT_DEFENSE'|'PARTNER_MANAGED'|null,
      *     SubscriptionStatus?: 'NOT_SUBSCRIBED'|'SUBSCRIBED'|null,
-     *     Type?: 'STATELESS'|'STATEFUL'|null
+     *     Type?: 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN'|null
      * } $args
      */
     public function __construct(array $args = [])

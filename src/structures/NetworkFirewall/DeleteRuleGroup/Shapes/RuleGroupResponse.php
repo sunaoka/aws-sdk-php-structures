@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $RuleGroupName
  * @property string $RuleGroupId
  * @property string|null $Description
- * @property 'STATELESS'|'STATEFUL'|null $Type
+ * @property 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN'|null $Type
  * @property int|null $Capacity
  * @property 'ACTIVE'|'DELETING'|'ERROR'|null $RuleGroupStatus
  * @property list<Tag>|null $Tags
@@ -30,7 +30,7 @@ class RuleGroupResponse extends Shape
      *     RuleGroupName: string,
      *     RuleGroupId: string,
      *     Description?: string|null,
-     *     Type?: 'STATELESS'|'STATEFUL'|null,
+     *     Type?: 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN'|null,
      *     Capacity?: int|null,
      *     RuleGroupStatus?: 'ACTIVE'|'DELETING'|'ERROR'|null,
      *     Tags?: list<Tag>|null,

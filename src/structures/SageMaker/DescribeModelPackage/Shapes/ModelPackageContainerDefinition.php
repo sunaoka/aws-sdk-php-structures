@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Framework
  * @property string|null $FrameworkVersion
  * @property string|null $NearestModelName
+ * @property list<AdditionalModelDataSource>|null $AdditionalModelDataSources
  * @property AdditionalS3DataSource|null $AdditionalS3DataSource
  * @property string|null $ModelDataETag
  * @property bool|null $IsCheckpoint
@@ -36,6 +37,7 @@ class ModelPackageContainerDefinition extends Shape
      *     Framework?: string|null,
      *     FrameworkVersion?: string|null,
      *     NearestModelName?: string|null,
+     *     AdditionalModelDataSources?: list<AdditionalModelDataSource>|null,
      *     AdditionalS3DataSource?: AdditionalS3DataSource|null,
      *     ModelDataETag?: string|null,
      *     IsCheckpoint?: bool|null,
