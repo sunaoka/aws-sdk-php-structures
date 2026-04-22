@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $onlineEvaluationConfigId
  * @property string $onlineEvaluationConfigName
  * @property string|null $description
- * @property 'ACTIVE'|'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'DELETING' $status
+ * @property 'ACTIVE'|'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'DELETING'|'ERROR' $status
  * @property 'ENABLED'|'DISABLED' $executionStatus
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
@@ -23,7 +23,7 @@ class OnlineEvaluationConfigSummary extends Shape
      *     onlineEvaluationConfigId: string,
      *     onlineEvaluationConfigName: string,
      *     description?: string|null,
-     *     status: 'ACTIVE'|'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'DELETING',
+     *     status: 'ACTIVE'|'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'DELETING'|'ERROR',
      *     executionStatus: 'ENABLED'|'DISABLED',
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,

@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $Progress
  * @property \Aws\Api\DateTimeResult|null $StartTime
  * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property OperatorResponse|null $Operator
  */
 class VolumeModification extends Shape
 {
@@ -41,7 +42,8 @@ class VolumeModification extends Shape
      *     OriginalMultiAttachEnabled?: bool|null,
      *     Progress?: int|null,
      *     StartTime?: \Aws\Api\DateTimeResult|null,
-     *     EndTime?: \Aws\Api\DateTimeResult|null
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     Operator?: OperatorResponse|null
      * } $args
      */
     public function __construct(array $args = [])

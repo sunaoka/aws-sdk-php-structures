@@ -13,6 +13,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ChecksumCRC64NVME
  * @property string|null $ChecksumSHA1
  * @property string|null $ChecksumSHA256
+ * @property string|null $ChecksumSHA512
+ * @property string|null $ChecksumMD5
+ * @property string|null $ChecksumXXHASH64
+ * @property string|null $ChecksumXXHASH3
+ * @property string|null $ChecksumXXHASH128
  */
 class CopyObjectResult extends Shape
 {
@@ -25,7 +30,12 @@ class CopyObjectResult extends Shape
      *     ChecksumCRC32C?: string|null,
      *     ChecksumCRC64NVME?: string|null,
      *     ChecksumSHA1?: string|null,
-     *     ChecksumSHA256?: string|null
+     *     ChecksumSHA256?: string|null,
+     *     ChecksumSHA512?: string|null,
+     *     ChecksumMD5?: string|null,
+     *     ChecksumXXHASH64?: string|null,
+     *     ChecksumXXHASH3?: string|null,
+     *     ChecksumXXHASH128?: string|null
      * } $args
      */
     public function __construct(array $args = [])

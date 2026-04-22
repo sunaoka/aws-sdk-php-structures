@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\EvaluatorReference> $evaluators
  * @property Shapes\OutputConfig|null $outputConfig
  * @property string|null $evaluationExecutionRoleArn
- * @property 'ACTIVE'|'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'DELETING' $status
+ * @property 'ACTIVE'|'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'DELETING'|'ERROR' $status
  * @property 'ENABLED'|'DISABLED' $executionStatus
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt

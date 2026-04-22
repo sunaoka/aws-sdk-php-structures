@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\S3Control\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CRC32'|'CRC32C'|'CRC64NVME'|'MD5'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property 'CRC32'|'CRC32C'|'CRC64NVME'|'MD5'|'SHA1'|'SHA256'|'SHA512'|'XXHASH64'|'XXHASH3'|'XXHASH128'|null $ChecksumAlgorithm
  * @property 'FULL_OBJECT'|'COMPOSITE'|null $ChecksumType
  */
 class S3ComputeObjectChecksumOperation extends Shape
 {
     /**
      * @param array{
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'CRC64NVME'|'MD5'|'SHA1'|'SHA256'|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'CRC64NVME'|'MD5'|'SHA1'|'SHA256'|'SHA512'|'XXHASH64'|'XXHASH3'|'XXHASH128'|null,
      *     ChecksumType?: 'FULL_OBJECT'|'COMPOSITE'|null
      * } $args
      */

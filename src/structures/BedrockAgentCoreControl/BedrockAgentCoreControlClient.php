@@ -13,6 +13,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use CreateEvaluator\CreateEvaluatorTrait;
     use CreateGateway\CreateGatewayTrait;
     use CreateGatewayTarget\CreateGatewayTargetTrait;
+    use CreateHarness\CreateHarnessTrait;
     use CreateMemory\CreateMemoryTrait;
     use CreateOauth2CredentialProvider\CreateOauth2CredentialProviderTrait;
     use CreateOnlineEvaluationConfig\CreateOnlineEvaluationConfigTrait;
@@ -30,6 +31,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use DeleteEvaluator\DeleteEvaluatorTrait;
     use DeleteGateway\DeleteGatewayTrait;
     use DeleteGatewayTarget\DeleteGatewayTargetTrait;
+    use DeleteHarness\DeleteHarnessTrait;
     use DeleteMemory\DeleteMemoryTrait;
     use DeleteOauth2CredentialProvider\DeleteOauth2CredentialProviderTrait;
     use DeleteOnlineEvaluationConfig\DeleteOnlineEvaluationConfigTrait;
@@ -48,6 +50,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use GetEvaluator\GetEvaluatorTrait;
     use GetGateway\GetGatewayTrait;
     use GetGatewayTarget\GetGatewayTargetTrait;
+    use GetHarness\GetHarnessTrait;
     use GetMemory\GetMemoryTrait;
     use GetOauth2CredentialProvider\GetOauth2CredentialProviderTrait;
     use GetOnlineEvaluationConfig\GetOnlineEvaluationConfigTrait;
@@ -69,6 +72,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use ListEvaluators\ListEvaluatorsTrait;
     use ListGatewayTargets\ListGatewayTargetsTrait;
     use ListGateways\ListGatewaysTrait;
+    use ListHarnesses\ListHarnessesTrait;
     use ListMemories\ListMemoriesTrait;
     use ListOauth2CredentialProviders\ListOauth2CredentialProvidersTrait;
     use ListOnlineEvaluationConfigs\ListOnlineEvaluationConfigsTrait;
@@ -93,6 +97,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use UpdateEvaluator\UpdateEvaluatorTrait;
     use UpdateGateway\UpdateGatewayTrait;
     use UpdateGatewayTarget\UpdateGatewayTargetTrait;
+    use UpdateHarness\UpdateHarnessTrait;
     use UpdateMemory\UpdateMemoryTrait;
     use UpdateOauth2CredentialProvider\UpdateOauth2CredentialProviderTrait;
     use UpdateOnlineEvaluationConfig\UpdateOnlineEvaluationConfigTrait;

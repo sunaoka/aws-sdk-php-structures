@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InstanceLaunchTemplate $instanceLaunchTemplate
  * @property 'CAPACITY_PROVIDER'|'NONE'|null $propagateTags
  * @property InfrastructureOptimization|null $infrastructureOptimization
+ * @property AutoRepairConfiguration|null $autoRepairConfiguration
  */
 class CreateManagedInstancesProviderConfiguration extends Shape
 {
@@ -17,7 +18,8 @@ class CreateManagedInstancesProviderConfiguration extends Shape
      *     infrastructureRoleArn: string,
      *     instanceLaunchTemplate: InstanceLaunchTemplate,
      *     propagateTags?: 'CAPACITY_PROVIDER'|'NONE'|null,
-     *     infrastructureOptimization?: InfrastructureOptimization|null
+     *     infrastructureOptimization?: InfrastructureOptimization|null,
+     *     autoRepairConfiguration?: AutoRepairConfiguration|null
      * } $args
      */
     public function __construct(array $args)

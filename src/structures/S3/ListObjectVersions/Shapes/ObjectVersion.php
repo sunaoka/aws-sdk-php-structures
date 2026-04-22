@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $ETag
- * @property list<'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'>|null $ChecksumAlgorithm
+ * @property list<'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|'SHA512'|'MD5'|'XXHASH64'|'XXHASH3'|'XXHASH128'>|null $ChecksumAlgorithm
  * @property 'COMPOSITE'|'FULL_OBJECT'|null $ChecksumType
  * @property int|null $Size
  * @property 'STANDARD'|null $StorageClass
@@ -22,7 +22,7 @@ class ObjectVersion extends Shape
     /**
      * @param array{
      *     ETag?: string|null,
-     *     ChecksumAlgorithm?: list<'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'>|null,
+     *     ChecksumAlgorithm?: list<'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|'SHA512'|'MD5'|'XXHASH64'|'XXHASH3'|'XXHASH128'>|null,
      *     ChecksumType?: 'COMPOSITE'|'FULL_OBJECT'|null,
      *     Size?: int|null,
      *     StorageClass?: 'STANDARD'|null,

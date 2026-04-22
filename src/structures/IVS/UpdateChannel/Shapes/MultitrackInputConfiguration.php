@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool|null $enabled
- * @property 'SD'|'HD'|'FULL_HD'|null $maximumResolution
  * @property 'ALLOW'|'REQUIRE'|null $policy
+ * @property 'SD'|'HD'|'FULL_HD'|null $maximumResolution
  */
 class MultitrackInputConfiguration extends Shape
 {
     /**
      * @param array{
      *     enabled?: bool|null,
-     *     maximumResolution?: 'SD'|'HD'|'FULL_HD'|null,
-     *     policy?: 'ALLOW'|'REQUIRE'|null
+     *     policy?: 'ALLOW'|'REQUIRE'|null,
+     *     maximumResolution?: 'SD'|'HD'|'FULL_HD'|null
      * } $args
      */
     public function __construct(array $args = [])

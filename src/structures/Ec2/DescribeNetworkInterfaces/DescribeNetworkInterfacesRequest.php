@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $NextToken
  * @property int<5, 1000>|null $MaxResults
+ * @property bool|null $IncludeManagedResources
  * @property bool|null $DryRun
  * @property list<string>|null $NetworkInterfaceIds
  * @property list<Shapes\Filter>|null $Filters
@@ -17,6 +18,7 @@ class DescribeNetworkInterfacesRequest extends Request
      * @param array{
      *     NextToken?: string|null,
      *     MaxResults?: int<5, 1000>|null,
+     *     IncludeManagedResources?: bool|null,
      *     DryRun?: bool|null,
      *     NetworkInterfaceIds?: list<string>|null,
      *     Filters?: list<Shapes\Filter>|null

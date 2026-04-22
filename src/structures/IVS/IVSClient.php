@@ -7,15 +7,18 @@ class IVSClient extends \Aws\IVS\IVSClient
     use BatchGetChannel\BatchGetChannelTrait;
     use BatchGetStreamKey\BatchGetStreamKeyTrait;
     use BatchStartViewerSessionRevocation\BatchStartViewerSessionRevocationTrait;
+    use CreateAdConfiguration\CreateAdConfigurationTrait;
     use CreateChannel\CreateChannelTrait;
     use CreatePlaybackRestrictionPolicy\CreatePlaybackRestrictionPolicyTrait;
     use CreateRecordingConfiguration\CreateRecordingConfigurationTrait;
     use CreateStreamKey\CreateStreamKeyTrait;
+    use DeleteAdConfiguration\DeleteAdConfigurationTrait;
     use DeleteChannel\DeleteChannelTrait;
     use DeletePlaybackKeyPair\DeletePlaybackKeyPairTrait;
     use DeletePlaybackRestrictionPolicy\DeletePlaybackRestrictionPolicyTrait;
     use DeleteRecordingConfiguration\DeleteRecordingConfigurationTrait;
     use DeleteStreamKey\DeleteStreamKeyTrait;
+    use GetAdConfiguration\GetAdConfigurationTrait;
     use GetChannel\GetChannelTrait;
     use GetPlaybackKeyPair\GetPlaybackKeyPairTrait;
     use GetPlaybackRestrictionPolicy\GetPlaybackRestrictionPolicyTrait;
@@ -24,6 +27,8 @@ class IVSClient extends \Aws\IVS\IVSClient
     use GetStreamKey\GetStreamKeyTrait;
     use GetStreamSession\GetStreamSessionTrait;
     use ImportPlaybackKeyPair\ImportPlaybackKeyPairTrait;
+    use InsertAdBreak\InsertAdBreakTrait;
+    use ListAdConfigurations\ListAdConfigurationsTrait;
     use ListChannels\ListChannelsTrait;
     use ListPlaybackKeyPairs\ListPlaybackKeyPairsTrait;
     use ListPlaybackRestrictionPolicies\ListPlaybackRestrictionPoliciesTrait;

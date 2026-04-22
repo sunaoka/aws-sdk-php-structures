@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $VersionId
  * @property bool|null $BypassGovernanceRetention
  * @property string|null $ContentMD5
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null $ChecksumAlgorithm
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|'SHA512'|'MD5'|'XXHASH64'|'XXHASH3'|'XXHASH128'|null $ChecksumAlgorithm
  * @property string|null $ExpectedBucketOwner
  */
 class PutObjectRetentionRequest extends Request
@@ -26,7 +26,7 @@ class PutObjectRetentionRequest extends Request
      *     VersionId?: string|null,
      *     BypassGovernanceRetention?: bool|null,
      *     ContentMD5?: string|null,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|'SHA512'|'MD5'|'XXHASH64'|'XXHASH3'|'XXHASH128'|null,
      *     ExpectedBucketOwner?: string|null
      * } $args
      */

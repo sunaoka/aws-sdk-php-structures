@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Bucket
  * @property string|null $ContentMD5
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null $ChecksumAlgorithm
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|'SHA512'|'MD5'|'XXHASH64'|'XXHASH3'|'XXHASH128'|null $ChecksumAlgorithm
  * @property Shapes\MetadataConfiguration $MetadataConfiguration
  * @property string|null $ExpectedBucketOwner
  */
@@ -17,7 +17,7 @@ class CreateBucketMetadataConfigurationRequest extends Request
      * @param array{
      *     Bucket: string,
      *     ContentMD5?: string|null,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|'SHA512'|'MD5'|'XXHASH64'|'XXHASH3'|'XXHASH128'|null,
      *     MetadataConfiguration: Shapes\MetadataConfiguration,
      *     ExpectedBucketOwner?: string|null
      * } $args

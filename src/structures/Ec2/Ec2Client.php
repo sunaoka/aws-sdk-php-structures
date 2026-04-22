@@ -571,6 +571,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetLaunchTemplateData\GetLaunchTemplateDataTrait;
     use GetManagedPrefixListAssociations\GetManagedPrefixListAssociationsTrait;
     use GetManagedPrefixListEntries\GetManagedPrefixListEntriesTrait;
+    use GetManagedResourceVisibility\GetManagedResourceVisibilityTrait;
     use GetNetworkInsightsAccessScopeAnalysisFindings\GetNetworkInsightsAccessScopeAnalysisFindingsTrait;
     use GetNetworkInsightsAccessScopeContent\GetNetworkInsightsAccessScopeContentTrait;
     use GetPasswordData\GetPasswordDataTrait;
@@ -644,6 +645,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ModifyLaunchTemplate\ModifyLaunchTemplateTrait;
     use ModifyLocalGatewayRoute\ModifyLocalGatewayRouteTrait;
     use ModifyManagedPrefixList\ModifyManagedPrefixListTrait;
+    use ModifyManagedResourceVisibility\ModifyManagedResourceVisibilityTrait;
     use ModifyNetworkInterfaceAttribute\ModifyNetworkInterfaceAttributeTrait;
     use ModifyPrivateDnsNameOptions\ModifyPrivateDnsNameOptionsTrait;
     use ModifyPublicIpDnsNameOptions\ModifyPublicIpDnsNameOptionsTrait;

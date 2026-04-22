@@ -22,6 +22,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Secret>|null $secrets
  * @property list<Ulimit>|null $ulimits
  * @property string|null $user
+ * @property int|null $startTimeout
+ * @property int|null $stopTimeout
  * @property int|null $exitCode
  * @property string|null $reason
  * @property string|null $logStreamName
@@ -48,6 +50,8 @@ class TaskContainerDetails extends Shape
      *     secrets?: list<Secret>|null,
      *     ulimits?: list<Ulimit>|null,
      *     user?: string|null,
+     *     startTimeout?: int|null,
+     *     stopTimeout?: int|null,
      *     exitCode?: int|null,
      *     reason?: string|null,
      *     logStreamName?: string|null,

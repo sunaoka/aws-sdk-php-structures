@@ -14,6 +14,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ChecksumCRC64NVME
  * @property string|null $ChecksumSHA1
  * @property string|null $ChecksumSHA256
+ * @property string|null $ChecksumSHA512
+ * @property string|null $ChecksumMD5
+ * @property string|null $ChecksumXXHASH64
+ * @property string|null $ChecksumXXHASH3
+ * @property string|null $ChecksumXXHASH128
  * @property 'COMPOSITE'|'FULL_OBJECT'|null $ChecksumType
  * @property int|null $MpuObjectSize
  * @property 'requester'|null $RequestPayer
@@ -37,6 +42,11 @@ class CompleteMultipartUploadRequest extends Request
      *     ChecksumCRC64NVME?: string|null,
      *     ChecksumSHA1?: string|null,
      *     ChecksumSHA256?: string|null,
+     *     ChecksumSHA512?: string|null,
+     *     ChecksumMD5?: string|null,
+     *     ChecksumXXHASH64?: string|null,
+     *     ChecksumXXHASH3?: string|null,
+     *     ChecksumXXHASH128?: string|null,
      *     ChecksumType?: 'COMPOSITE'|'FULL_OBJECT'|null,
      *     MpuObjectSize?: int|null,
      *     RequestPayer?: 'requester'|null,

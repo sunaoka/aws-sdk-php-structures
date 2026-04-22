@@ -24,6 +24,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ChecksumCRC64NVME
  * @property string|null $ChecksumSHA1
  * @property string|null $ChecksumSHA256
+ * @property string|null $ChecksumSHA512
+ * @property string|null $ChecksumMD5
+ * @property string|null $ChecksumXXHASH64
+ * @property string|null $ChecksumXXHASH3
+ * @property string|null $ChecksumXXHASH128
  * @property bool|null $DeleteMarker
  * @property string|null $ETag
  * @property string|null $Expires
@@ -70,6 +75,11 @@ class WriteGetObjectResponseRequest extends Request
      *     ChecksumCRC64NVME?: string|null,
      *     ChecksumSHA1?: string|null,
      *     ChecksumSHA256?: string|null,
+     *     ChecksumSHA512?: string|null,
+     *     ChecksumMD5?: string|null,
+     *     ChecksumXXHASH64?: string|null,
+     *     ChecksumXXHASH3?: string|null,
+     *     ChecksumXXHASH128?: string|null,
      *     DeleteMarker?: bool|null,
      *     ETag?: string|null,
      *     Expires?: string|null,

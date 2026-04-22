@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $InstanceIds
  * @property int|null $MaxResults
  * @property string|null $NextToken
+ * @property bool|null $IncludeManagedResources
  * @property bool|null $DryRun
  * @property list<Shapes\Filter>|null $Filters
  * @property bool|null $IncludeAllInstances
@@ -19,6 +20,7 @@ class DescribeInstanceStatusRequest extends Request
      *     InstanceIds?: list<string>|null,
      *     MaxResults?: int|null,
      *     NextToken?: string|null,
+     *     IncludeManagedResources?: bool|null,
      *     DryRun?: bool|null,
      *     Filters?: list<Shapes\Filter>|null,
      *     IncludeAllInstances?: bool|null

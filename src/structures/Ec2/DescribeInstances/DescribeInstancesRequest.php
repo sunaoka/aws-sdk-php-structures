@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string>|null $InstanceIds
+ * @property bool|null $IncludeManagedResources
  * @property bool|null $DryRun
  * @property list<Shapes\Filter>|null $Filters
  * @property string|null $NextToken
@@ -16,6 +17,7 @@ class DescribeInstancesRequest extends Request
     /**
      * @param array{
      *     InstanceIds?: list<string>|null,
+     *     IncludeManagedResources?: bool|null,
      *     DryRun?: bool|null,
      *     Filters?: list<Shapes\Filter>|null,
      *     NextToken?: string|null,

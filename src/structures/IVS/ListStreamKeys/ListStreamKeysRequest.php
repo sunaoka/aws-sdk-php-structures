@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $channelArn
- * @property int<1, 50>|null $maxResults
  * @property string|null $nextToken
+ * @property int<1, 50>|null $maxResults
  */
 class ListStreamKeysRequest extends Request
 {
     /**
      * @param array{
      *     channelArn: string,
-     *     maxResults?: int<1, 50>|null,
-     *     nextToken?: string|null
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 50>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool|null $AutoSoftwareUpdateEnabled
+ * @property bool|null $UseLatestServiceSoftwareForBlueGreen
  */
 class SoftwareUpdateOptions extends Shape
 {
     /**
-     * @param array{AutoSoftwareUpdateEnabled?: bool|null} $args
+     * @param array{
+     *     AutoSoftwareUpdateEnabled?: bool|null,
+     *     UseLatestServiceSoftwareForBlueGreen?: bool|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

@@ -79,6 +79,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use RejectInboundConnection\RejectInboundConnectionTrait;
     use RemoveTags\RemoveTagsTrait;
     use RevokeVpcEndpointAccess\RevokeVpcEndpointAccessTrait;
+    use RollbackServiceSoftwareUpdate\RollbackServiceSoftwareUpdateTrait;
     use StartDomainMaintenance\StartDomainMaintenanceTrait;
     use StartServiceSoftwareUpdate\StartServiceSoftwareUpdateTrait;
     use UpdateApplication\UpdateApplicationTrait;

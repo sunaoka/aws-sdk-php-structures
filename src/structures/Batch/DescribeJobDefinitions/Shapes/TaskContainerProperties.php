@@ -22,6 +22,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Secret>|null $secrets
  * @property list<Ulimit>|null $ulimits
  * @property string|null $user
+ * @property int|null $startTimeout
+ * @property int|null $stopTimeout
  */
 class TaskContainerProperties extends Shape
 {
@@ -43,7 +45,9 @@ class TaskContainerProperties extends Shape
      *     resourceRequirements?: list<ResourceRequirement>|null,
      *     secrets?: list<Secret>|null,
      *     ulimits?: list<Ulimit>|null,
-     *     user?: string|null
+     *     user?: string|null,
+     *     startTimeout?: int|null,
+     *     stopTimeout?: int|null
      * } $args
      */
     public function __construct(array $args)

@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $MaxResults
  * @property list<Shapes\Filter>|null $Filters
  * @property bool|null $ResolveAlias
+ * @property bool|null $IncludeManagedResources
  */
 class DescribeLaunchTemplateVersionsRequest extends Request
 {
@@ -29,7 +30,8 @@ class DescribeLaunchTemplateVersionsRequest extends Request
      *     NextToken?: string|null,
      *     MaxResults?: int|null,
      *     Filters?: list<Shapes\Filter>|null,
-     *     ResolveAlias?: bool|null
+     *     ResolveAlias?: bool|null,
+     *     IncludeManagedResources?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

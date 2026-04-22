@@ -15,12 +15,17 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $ContentLength
  * @property string|null $ContentMD5
  * @property string|null $ContentType
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null $ChecksumAlgorithm
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|'SHA512'|'MD5'|'XXHASH64'|'XXHASH3'|'XXHASH128'|null $ChecksumAlgorithm
  * @property string|null $ChecksumCRC32
  * @property string|null $ChecksumCRC32C
  * @property string|null $ChecksumCRC64NVME
  * @property string|null $ChecksumSHA1
  * @property string|null $ChecksumSHA256
+ * @property string|null $ChecksumSHA512
+ * @property string|null $ChecksumMD5
+ * @property string|null $ChecksumXXHASH64
+ * @property string|null $ChecksumXXHASH3
+ * @property string|null $ChecksumXXHASH128
  * @property string|null $Expires
  * @property string|null $IfMatch
  * @property string|null $IfNoneMatch
@@ -61,12 +66,17 @@ class PutObjectRequest extends Request
      *     ContentLength?: int|null,
      *     ContentMD5?: string|null,
      *     ContentType?: string|null,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|'SHA512'|'MD5'|'XXHASH64'|'XXHASH3'|'XXHASH128'|null,
      *     ChecksumCRC32?: string|null,
      *     ChecksumCRC32C?: string|null,
      *     ChecksumCRC64NVME?: string|null,
      *     ChecksumSHA1?: string|null,
      *     ChecksumSHA256?: string|null,
+     *     ChecksumSHA512?: string|null,
+     *     ChecksumMD5?: string|null,
+     *     ChecksumXXHASH64?: string|null,
+     *     ChecksumXXHASH3?: string|null,
+     *     ChecksumXXHASH128?: string|null,
      *     Expires?: string|null,
      *     IfMatch?: string|null,
      *     IfNoneMatch?: string|null,
