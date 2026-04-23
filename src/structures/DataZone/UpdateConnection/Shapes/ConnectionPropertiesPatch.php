@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property S3PropertiesPatch|null $s3Properties
  * @property AmazonQPropertiesPatch|null $amazonQProperties
  * @property MlflowPropertiesPatch|null $mlflowProperties
+ * @property LakehousePropertiesPatch|null $lakehouseProperties
  */
 class ConnectionPropertiesPatch extends Shape
 {
@@ -25,7 +26,8 @@ class ConnectionPropertiesPatch extends Shape
      *     sparkEmrProperties?: SparkEmrPropertiesPatch|null,
      *     s3Properties?: S3PropertiesPatch|null,
      *     amazonQProperties?: AmazonQPropertiesPatch|null,
-     *     mlflowProperties?: MlflowPropertiesPatch|null
+     *     mlflowProperties?: MlflowPropertiesPatch|null,
+     *     lakehouseProperties?: LakehousePropertiesPatch|null
      * } $args
      */
     public function __construct(array $args = [])

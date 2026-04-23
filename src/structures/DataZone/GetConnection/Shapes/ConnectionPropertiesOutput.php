@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MlflowPropertiesOutput|null $mlflowProperties
  * @property WorkflowsMwaaPropertiesOutput|null $workflowsMwaaProperties
  * @property WorkflowsServerlessPropertiesOutput|null $workflowsServerlessProperties
+ * @property LakehousePropertiesOutput|null $lakehouseProperties
  */
 class ConnectionPropertiesOutput extends Shape
 {
@@ -33,7 +34,8 @@ class ConnectionPropertiesOutput extends Shape
      *     amazonQProperties?: AmazonQPropertiesOutput|null,
      *     mlflowProperties?: MlflowPropertiesOutput|null,
      *     workflowsMwaaProperties?: WorkflowsMwaaPropertiesOutput|null,
-     *     workflowsServerlessProperties?: WorkflowsServerlessPropertiesOutput|null
+     *     workflowsServerlessProperties?: WorkflowsServerlessPropertiesOutput|null,
+     *     lakehouseProperties?: LakehousePropertiesOutput|null
      * } $args
      */
     public function __construct(array $args = [])

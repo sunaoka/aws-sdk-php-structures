@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Id
  * @property string|null $Arn
  * @property 'FLEET_PROVISIONING'|'JITR'|null $ProvisioningType
+ * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|null $Status
  */
 class ProvisioningProfileSummary extends Shape
 {
@@ -17,7 +18,8 @@ class ProvisioningProfileSummary extends Shape
      *     Name?: string|null,
      *     Id?: string|null,
      *     Arn?: string|null,
-     *     ProvisioningType?: 'FLEET_PROVISIONING'|'JITR'|null
+     *     ProvisioningType?: 'FLEET_PROVISIONING'|'JITR'|null,
+     *     Status?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|null
      * } $args
      */
     public function __construct(array $args = [])
