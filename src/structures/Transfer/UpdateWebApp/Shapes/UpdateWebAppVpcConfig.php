@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string>|null $SubnetIds
+ * @property 'IPV4'|'DUALSTACK'|null $IpAddressType
  */
 class UpdateWebAppVpcConfig extends Shape
 {
     /**
-     * @param array{SubnetIds?: list<string>|null} $args
+     * @param array{
+     *     SubnetIds?: list<string>|null,
+     *     IpAddressType?: 'IPV4'|'DUALSTACK'|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\Oauth2ProviderConfigOutput $oauth2ProviderConfigOutput
  * @property \Aws\Api\DateTimeResult $createdTime
  * @property \Aws\Api\DateTimeResult $lastUpdatedTime
+ * @property 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING'|'DELETE_FAILED'|null $status
  */
 class UpdateOauth2CredentialProviderResponse extends Response
 {

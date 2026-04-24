@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $allowedClients
  * @property list<string>|null $allowedScopes
  * @property list<CustomClaimValidationType>|null $customClaims
+ * @property PrivateEndpoint|null $privateEndpoint
+ * @property list<PrivateEndpointOverride>|null $privateEndpointOverrides
  */
 class CustomJWTAuthorizerConfiguration extends Shape
 {
@@ -19,7 +21,9 @@ class CustomJWTAuthorizerConfiguration extends Shape
      *     allowedAudience?: list<string>|null,
      *     allowedClients?: list<string>|null,
      *     allowedScopes?: list<string>|null,
-     *     customClaims?: list<CustomClaimValidationType>|null
+     *     customClaims?: list<CustomClaimValidationType>|null,
+     *     privateEndpoint?: PrivateEndpoint|null,
+     *     privateEndpointOverrides?: list<PrivateEndpointOverride>|null
      * } $args
      */
     public function __construct(array $args)

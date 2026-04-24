@@ -111,6 +111,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DeleteWorkspaceMedia\DeleteWorkspaceMediaTrait;
     use DeleteWorkspacePage\DeleteWorkspacePageTrait;
     use DescribeAgentStatus\DescribeAgentStatusTrait;
+    use DescribeAttachedFilesConfiguration\DescribeAttachedFilesConfigurationTrait;
     use DescribeAuthenticationProfile\DescribeAuthenticationProfileTrait;
     use DescribeContact\DescribeContactTrait;
     use DescribeContactEvaluation\DescribeContactEvaluationTrait;
@@ -184,6 +185,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ListAnalyticsDataLakeDataSets\ListAnalyticsDataLakeDataSetsTrait;
     use ListApprovedOrigins\ListApprovedOriginsTrait;
     use ListAssociatedContacts\ListAssociatedContactsTrait;
+    use ListAttachedFilesConfigurations\ListAttachedFilesConfigurationsTrait;
     use ListAuthenticationProfiles\ListAuthenticationProfilesTrait;
     use ListBots\ListBotsTrait;
     use ListChildHoursOfOperations\ListChildHoursOfOperationsTrait;
@@ -309,6 +311,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use UntagContact\UntagContactTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAgentStatus\UpdateAgentStatusTrait;
+    use UpdateAttachedFilesConfiguration\UpdateAttachedFilesConfigurationTrait;
     use UpdateAuthenticationProfile\UpdateAuthenticationProfileTrait;
     use UpdateContact\UpdateContactTrait;
     use UpdateContactAttributes\UpdateContactAttributesTrait;

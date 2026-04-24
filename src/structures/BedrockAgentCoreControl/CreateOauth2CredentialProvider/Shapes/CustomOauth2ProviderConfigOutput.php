@@ -7,13 +7,17 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property Oauth2Discovery $oauthDiscovery
  * @property string|null $clientId
+ * @property PrivateEndpoint|null $privateEndpoint
+ * @property list<PrivateEndpointOverride>|null $privateEndpointOverrides
  */
 class CustomOauth2ProviderConfigOutput extends Shape
 {
     /**
      * @param array{
      *     oauthDiscovery: Oauth2Discovery,
-     *     clientId?: string|null
+     *     clientId?: string|null,
+     *     privateEndpoint?: PrivateEndpoint|null,
+     *     privateEndpointOverrides?: list<PrivateEndpointOverride>|null
      * } $args
      */
     public function __construct(array $args)

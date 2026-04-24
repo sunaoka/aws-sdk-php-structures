@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\QueryStatistics|null $statistics
  * @property 'Scheduled'|'Running'|'Complete'|'Failed'|'Cancelled'|'Timeout'|'Unknown'|null $status
  * @property string|null $encryptionKey
+ * @property string|null $nextToken
  */
 class GetQueryResultsResponse extends Response
 {

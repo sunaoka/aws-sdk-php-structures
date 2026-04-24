@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property SelfManagedLatticeResource|null $selfManagedLatticeResource
- * @property ManagedLatticeResource|null $managedLatticeResource
+ * @property ManagedVpcResource|null $managedVpcResource
  */
 class PrivateEndpoint extends Shape
 {
     /**
      * @param array{
      *     selfManagedLatticeResource?: SelfManagedLatticeResource|null,
-     *     managedLatticeResource?: ManagedLatticeResource|null
+     *     managedVpcResource?: ManagedVpcResource|null
      * } $args
      */
     public function __construct(array $args = [])

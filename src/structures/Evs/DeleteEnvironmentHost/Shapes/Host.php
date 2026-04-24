@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $hostName
  * @property string|null $ipAddress
  * @property string|null $keyName
- * @property 'i4i.metal'|null $instanceType
+ * @property 'i4i.metal'|'i7i.metal-24xl'|null $instanceType
  * @property string|null $placementGroupId
  * @property string|null $dedicatedHostId
  * @property \Aws\Api\DateTimeResult|null $createdAt
@@ -25,7 +25,7 @@ class Host extends Shape
      *     hostName?: string|null,
      *     ipAddress?: string|null,
      *     keyName?: string|null,
-     *     instanceType?: 'i4i.metal'|null,
+     *     instanceType?: 'i4i.metal'|'i7i.metal-24xl'|null,
      *     placementGroupId?: string|null,
      *     dedicatedHostId?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,

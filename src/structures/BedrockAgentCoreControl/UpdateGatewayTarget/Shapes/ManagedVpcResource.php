@@ -1,6 +1,6 @@
 <?php
 
-namespace Sunaoka\Aws\Structures\BedrockAgentCoreControl\SynchronizeGatewayTargets\Shapes;
+namespace Sunaoka\Aws\Structures\BedrockAgentCoreControl\UpdateGatewayTarget\Shapes;
 
 use Sunaoka\Aws\Structures\Shape;
 
@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $tags
  * @property string|null $routingDomain
  */
-class ManagedLatticeResource extends Shape
+class ManagedVpcResource extends Shape
 {
     /**
      * @param array{
