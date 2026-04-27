@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PeriodBased'|'RequestBased'|null $EvaluationType
  * @property 'ServiceOperation'|'CloudWatchMetric'|'ServiceDependency'|'AppMonitor'|'Canary'|'Service'|null $MetricSourceType
  * @property MetricSource|null $MetricSource
+ * @property CompositeSliConfig|null $CompositeSliConfig
  */
 class ServiceLevelObjectiveSummary extends Shape
 {
@@ -27,7 +28,8 @@ class ServiceLevelObjectiveSummary extends Shape
      *     CreatedTime?: \Aws\Api\DateTimeResult|null,
      *     EvaluationType?: 'PeriodBased'|'RequestBased'|null,
      *     MetricSourceType?: 'ServiceOperation'|'CloudWatchMetric'|'ServiceDependency'|'AppMonitor'|'Canary'|'Service'|null,
-     *     MetricSource?: MetricSource|null
+     *     MetricSource?: MetricSource|null,
+     *     CompositeSliConfig?: CompositeSliConfig|null
      * } $args
      */
     public function __construct(array $args)

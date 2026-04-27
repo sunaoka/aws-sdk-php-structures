@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $arn
  * @property string|null $uuid
  * @property string|null $name
- * @property 'PENDING'|'SUBMITTING'|'INPROGRESS'|'STOPPING'|'CANCELLED'|'FAILED'|'PROCESSED'|'RUNS_DELETING'|'RUNS_DELETED'|null $status
+ * @property 'CREATING'|'PENDING'|'SUBMITTING'|'INPROGRESS'|'STOPPING'|'CANCELLED'|'FAILED'|'PROCESSED'|'RUNS_DELETING'|'RUNS_DELETED'|null $status
  * @property array<string, string>|null $tags
  * @property int|null $totalRuns
  * @property Shapes\DefaultRunSetting|null $defaultRunSetting

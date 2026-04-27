@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $name
  * @property string|null $description
  * @property string|null $logicalID
+ * @property bool|null $excluded
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property array<string, string>|null $properties
@@ -23,6 +24,7 @@ class NetworkMigrationMapperSegmentConstruct extends Shape
      *     name?: string|null,
      *     description?: string|null,
      *     logicalID?: string|null,
+     *     excluded?: bool|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
      *     properties?: array<string, string>|null

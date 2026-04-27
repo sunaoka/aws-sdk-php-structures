@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $TableName
  * @property string|null $NextToken
  * @property int<1, 100>|null $MaxResults
+ * @property Shapes\AuditContext|null $AuditContext
  */
 class GetTableVersionsRequest extends Request
 {
@@ -19,7 +20,8 @@ class GetTableVersionsRequest extends Request
      *     DatabaseName: string,
      *     TableName: string,
      *     NextToken?: string|null,
-     *     MaxResults?: int<1, 100>|null
+     *     MaxResults?: int<1, 100>|null,
+     *     AuditContext?: Shapes\AuditContext|null
      * } $args
      */
     public function __construct(array $args)

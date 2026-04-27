@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ACTIVE'|'UNHEALTHY'|'FAILED'|'DATA_SOURCE_DELETE_IN_PROGRESS'|null $status
  * @property string|null $statusReason
  * @property int<0, max>|null $createdTimeStamp
+ * @property string|null $parentSourceIdentifier
  */
 class S3TableIntegrationSource extends Shape
 {
@@ -19,7 +20,8 @@ class S3TableIntegrationSource extends Shape
      *     dataSource?: DataSource|null,
      *     status?: 'ACTIVE'|'UNHEALTHY'|'FAILED'|'DATA_SOURCE_DELETE_IN_PROGRESS'|null,
      *     statusReason?: string|null,
-     *     createdTimeStamp?: int<0, max>|null
+     *     createdTimeStamp?: int<0, max>|null,
+     *     parentSourceIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RequestBasedServiceLevelIndicatorConfig|null $RequestBasedSliConfig
  * @property Shapes\Goal|null $Goal
  * @property list<Shapes\BurnRateConfiguration>|null $BurnRateConfigurations
+ * @property bool|null $AutoInvestigationEnabled
  */
 class UpdateServiceLevelObjectiveRequest extends Request
 {
@@ -21,7 +22,8 @@ class UpdateServiceLevelObjectiveRequest extends Request
      *     SliConfig?: Shapes\ServiceLevelIndicatorConfig|null,
      *     RequestBasedSliConfig?: Shapes\RequestBasedServiceLevelIndicatorConfig|null,
      *     Goal?: Shapes\Goal|null,
-     *     BurnRateConfigurations?: list<Shapes\BurnRateConfiguration>|null
+     *     BurnRateConfigurations?: list<Shapes\BurnRateConfiguration>|null,
+     *     AutoInvestigationEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

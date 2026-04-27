@@ -23,6 +23,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $workflowOwnerId
  * @property string|null $outputBucketOwnerId
  * @property string|null $workflowVersionName
+ * @property 'RESTRICTED'|'VPC'|null $networkingMode
+ * @property string|null $configurationName
  */
 class DefaultRunSetting extends Shape
 {
@@ -45,7 +47,9 @@ class DefaultRunSetting extends Shape
      *     storageType?: 'STATIC'|'DYNAMIC'|null,
      *     workflowOwnerId?: string|null,
      *     outputBucketOwnerId?: string|null,
-     *     workflowVersionName?: string|null
+     *     workflowVersionName?: string|null,
+     *     networkingMode?: 'RESTRICTED'|'VPC'|null,
+     *     configurationName?: string|null
      * } $args
      */
     public function __construct(array $args)

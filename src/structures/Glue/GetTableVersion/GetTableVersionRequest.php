@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DatabaseName
  * @property string $TableName
  * @property string|null $VersionId
+ * @property Shapes\AuditContext|null $AuditContext
  */
 class GetTableVersionRequest extends Request
 {
@@ -17,7 +18,8 @@ class GetTableVersionRequest extends Request
      *     CatalogId?: string|null,
      *     DatabaseName: string,
      *     TableName: string,
-     *     VersionId?: string|null
+     *     VersionId?: string|null,
+     *     AuditContext?: Shapes\AuditContext|null
      * } $args
      */
     public function __construct(array $args)

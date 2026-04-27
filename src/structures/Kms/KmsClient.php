@@ -29,6 +29,7 @@ class KmsClient extends \Aws\Kms\KmsClient
     use GenerateDataKeyWithoutPlaintext\GenerateDataKeyWithoutPlaintextTrait;
     use GenerateMac\GenerateMacTrait;
     use GenerateRandom\GenerateRandomTrait;
+    use GetKeyLastUsage\GetKeyLastUsageTrait;
     use GetKeyPolicy\GetKeyPolicyTrait;
     use GetKeyRotationStatus\GetKeyRotationStatusTrait;
     use GetParametersForImport\GetParametersForImportTrait;

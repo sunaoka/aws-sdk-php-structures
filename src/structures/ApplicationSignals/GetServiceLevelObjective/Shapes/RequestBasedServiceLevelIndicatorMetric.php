@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MonitoredRequestCountMetricDataQueries $MonitoredRequestCountMetric
  * @property DependencyConfig|null $DependencyConfig
  * @property MetricSource|null $MetricSource
+ * @property CompositeSliConfig|null $CompositeSliConfig
  */
 class RequestBasedServiceLevelIndicatorMetric extends Shape
 {
@@ -23,7 +24,8 @@ class RequestBasedServiceLevelIndicatorMetric extends Shape
      *     TotalRequestCountMetric: list<MetricDataQuery>,
      *     MonitoredRequestCountMetric: MonitoredRequestCountMetricDataQueries,
      *     DependencyConfig?: DependencyConfig|null,
-     *     MetricSource?: MetricSource|null
+     *     MetricSource?: MetricSource|null,
+     *     CompositeSliConfig?: CompositeSliConfig|null
      * } $args
      */
     public function __construct(array $args)

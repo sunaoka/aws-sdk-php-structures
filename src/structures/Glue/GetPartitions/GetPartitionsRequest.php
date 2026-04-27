@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $ExcludeColumnSchema
  * @property string|null $TransactionId
  * @property \Aws\Api\DateTimeResult|null $QueryAsOfTime
+ * @property Shapes\AuditContext|null $AuditContext
  */
 class GetPartitionsRequest extends Request
 {
@@ -29,7 +30,8 @@ class GetPartitionsRequest extends Request
      *     MaxResults?: int<1, 1000>|null,
      *     ExcludeColumnSchema?: bool|null,
      *     TransactionId?: string|null,
-     *     QueryAsOfTime?: \Aws\Api\DateTimeResult|null
+     *     QueryAsOfTime?: \Aws\Api\DateTimeResult|null,
+     *     AuditContext?: Shapes\AuditContext|null
      * } $args
      */
     public function __construct(array $args)
