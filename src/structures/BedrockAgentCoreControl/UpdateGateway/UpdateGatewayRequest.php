@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string|null $description
  * @property string $roleArn
- * @property 'MCP' $protocolType
+ * @property 'MCP'|null $protocolType
  * @property Shapes\GatewayProtocolConfiguration|null $protocolConfiguration
- * @property 'CUSTOM_JWT'|'AWS_IAM'|'NONE' $authorizerType
+ * @property 'CUSTOM_JWT'|'AWS_IAM'|'NONE'|'AUTHENTICATE_ONLY' $authorizerType
  * @property Shapes\AuthorizerConfiguration|null $authorizerConfiguration
  * @property string|null $kmsKeyArn
  * @property list<Shapes\GatewayInterceptorConfiguration>|null $interceptorConfigurations
@@ -26,9 +26,9 @@ class UpdateGatewayRequest extends Request
      *     name: string,
      *     description?: string|null,
      *     roleArn: string,
-     *     protocolType: 'MCP',
+     *     protocolType?: 'MCP'|null,
      *     protocolConfiguration?: Shapes\GatewayProtocolConfiguration|null,
-     *     authorizerType: 'CUSTOM_JWT'|'AWS_IAM'|'NONE',
+     *     authorizerType: 'CUSTOM_JWT'|'AWS_IAM'|'NONE'|'AUTHENTICATE_ONLY',
      *     authorizerConfiguration?: Shapes\AuthorizerConfiguration|null,
      *     kmsKeyArn?: string|null,
      *     interceptorConfigurations?: list<Shapes\GatewayInterceptorConfiguration>|null,

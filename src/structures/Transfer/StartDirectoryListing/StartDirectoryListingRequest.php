@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ConnectorId
  * @property string $RemoteDirectoryPath
- * @property int<1, 10000>|null $MaxItems
+ * @property int<1, max>|null $MaxItems
  * @property string $OutputDirectoryPath
  */
 class StartDirectoryListingRequest extends Request
@@ -16,7 +16,7 @@ class StartDirectoryListingRequest extends Request
      * @param array{
      *     ConnectorId: string,
      *     RemoteDirectoryPath: string,
-     *     MaxItems?: int<1, 10000>|null,
+     *     MaxItems?: int<1, max>|null,
      *     OutputDirectoryPath: string
      * } $args
      */

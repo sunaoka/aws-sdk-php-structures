@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AccountId
- * @property string $Otp
  * @property string $PrimaryEmail
+ * @property string $Otp
  */
 class AcceptPrimaryEmailUpdateRequest extends Request
 {
     /**
      * @param array{
      *     AccountId: string,
-     *     Otp: string,
-     *     PrimaryEmail: string
+     *     PrimaryEmail: string,
+     *     Otp: string
      * } $args
      */
     public function __construct(array $args)

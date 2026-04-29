@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\PrivateEndpoint|null $privateEndpoint
  * @property list<Shapes\ManagedResourceDetails>|null $privateEndpointManagedResources
  * @property Shapes\AuthorizationData|null $authorizationData
+ * @property 'MCP'|'HTTP'|null $protocolType
  */
 class UpdateGatewayTargetResponse extends Response
 {

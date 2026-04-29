@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'DATERANGE'|'SCTE35_ENHANCED'|null $AdMarkerHls
+ * @property 'ALL'|'MATCHES_FILTER'|null $ScteInManifests
  */
 class ScteHls extends Shape
 {
     /**
-     * @param array{AdMarkerHls?: 'DATERANGE'|'SCTE35_ENHANCED'|null} $args
+     * @param array{
+     *     AdMarkerHls?: 'DATERANGE'|'SCTE35_ENHANCED'|null,
+     *     ScteInManifests?: 'ALL'|'MATCHES_FILTER'|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

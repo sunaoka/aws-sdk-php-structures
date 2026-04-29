@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PrivateEndpoint|null $privateEndpoint
  * @property list<ManagedResourceDetails>|null $privateEndpointManagedResources
  * @property AuthorizationData|null $authorizationData
+ * @property 'MCP'|'HTTP'|null $protocolType
  */
 class GatewayTarget extends Shape
 {
@@ -39,7 +40,8 @@ class GatewayTarget extends Shape
      *     metadataConfiguration?: MetadataConfiguration|null,
      *     privateEndpoint?: PrivateEndpoint|null,
      *     privateEndpointManagedResources?: list<ManagedResourceDetails>|null,
-     *     authorizationData?: AuthorizationData|null
+     *     authorizationData?: AuthorizationData|null,
+     *     protocolType?: 'MCP'|'HTTP'|null
      * } $args
      */
     public function __construct(array $args)

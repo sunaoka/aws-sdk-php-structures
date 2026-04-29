@@ -45,6 +45,7 @@ class GameLiftClient extends \Aws\GameLift\GameLiftClient
     use DescribeCompute\DescribeComputeTrait;
     use DescribeContainerFleet\DescribeContainerFleetTrait;
     use DescribeContainerGroupDefinition\DescribeContainerGroupDefinitionTrait;
+    use DescribeContainerGroupPortMappings\DescribeContainerGroupPortMappingsTrait;
     use DescribeEC2InstanceLimits\DescribeEC2InstanceLimitsTrait;
     use DescribeFleetAttributes\DescribeFleetAttributesTrait;
     use DescribeFleetCapacity\DescribeFleetCapacityTrait;

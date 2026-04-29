@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $evaluatorId
+ * @property 'ALL_DATA'|'METADATA_ONLY'|null $includedData
  */
 class GetEvaluatorRequest extends Request
 {
     /**
-     * @param array{evaluatorId: string} $args
+     * @param array{
+     *     evaluatorId: string,
+     *     includedData?: 'ALL_DATA'|'METADATA_ONLY'|null
+     * } $args
      */
     public function __construct(array $args)
     {

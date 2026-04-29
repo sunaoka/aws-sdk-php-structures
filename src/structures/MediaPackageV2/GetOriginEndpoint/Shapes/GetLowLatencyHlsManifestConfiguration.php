@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FilterConfiguration|null $FilterConfiguration
  * @property StartTag|null $StartTag
  * @property bool|null $UrlEncodeChildManifest
+ * @property 'LEAF'|'ROOT'|null $UriPathType
  */
 class GetLowLatencyHlsManifestConfiguration extends Shape
 {
@@ -27,7 +28,8 @@ class GetLowLatencyHlsManifestConfiguration extends Shape
      *     ScteHls?: ScteHls|null,
      *     FilterConfiguration?: FilterConfiguration|null,
      *     StartTag?: StartTag|null,
-     *     UrlEncodeChildManifest?: bool|null
+     *     UrlEncodeChildManifest?: bool|null,
+     *     UriPathType?: 'LEAF'|'ROOT'|null
      * } $args
      */
     public function __construct(array $args)

@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\CreateDashManifestConfiguration>|null $DashManifests
  * @property list<Shapes\CreateMssManifestConfiguration>|null $MssManifests
  * @property Shapes\ForceEndpointErrorConfiguration|null $ForceEndpointErrorConfiguration
+ * @property 'UNDERSCORE'|'HYPHEN'|null $UriSeparator
  * @property string|null $ETag
  */
 class UpdateOriginEndpointRequest extends Request
@@ -35,6 +36,7 @@ class UpdateOriginEndpointRequest extends Request
      *     DashManifests?: list<Shapes\CreateDashManifestConfiguration>|null,
      *     MssManifests?: list<Shapes\CreateMssManifestConfiguration>|null,
      *     ForceEndpointErrorConfiguration?: Shapes\ForceEndpointErrorConfiguration|null,
+     *     UriSeparator?: 'UNDERSCORE'|'HYPHEN'|null,
      *     ETag?: string|null
      * } $args
      */

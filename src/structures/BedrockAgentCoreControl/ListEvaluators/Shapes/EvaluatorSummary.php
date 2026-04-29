@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property bool|null $lockedForModification
+ * @property string|null $kmsKeyArn
  */
 class EvaluatorSummary extends Shape
 {
@@ -29,7 +30,8 @@ class EvaluatorSummary extends Shape
      *     status: 'ACTIVE'|'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'DELETING',
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
-     *     lockedForModification?: bool|null
+     *     lockedForModification?: bool|null,
+     *     kmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DashDvbSettings|null $DvbSettings
  * @property 'STANDARD'|'NONE'|null $Compactness
  * @property DashSubtitleConfiguration|null $SubtitleConfiguration
+ * @property 'LEAF'|'ROOT'|null $UriPathType
  */
 class GetDashManifestConfiguration extends Shape
 {
@@ -45,7 +46,8 @@ class GetDashManifestConfiguration extends Shape
      *     ProgramInformation?: DashProgramInformation|null,
      *     DvbSettings?: DashDvbSettings|null,
      *     Compactness?: 'STANDARD'|'NONE'|null,
-     *     SubtitleConfiguration?: DashSubtitleConfiguration|null
+     *     SubtitleConfiguration?: DashSubtitleConfiguration|null,
+     *     UriPathType?: 'LEAF'|'ROOT'|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,8 +10,10 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use CreateBrowser\CreateBrowserTrait;
     use CreateBrowserProfile\CreateBrowserProfileTrait;
     use CreateCodeInterpreter\CreateCodeInterpreterTrait;
+    use CreateConfigurationBundle\CreateConfigurationBundleTrait;
     use CreateEvaluator\CreateEvaluatorTrait;
     use CreateGateway\CreateGatewayTrait;
+    use CreateGatewayRule\CreateGatewayRuleTrait;
     use CreateGatewayTarget\CreateGatewayTargetTrait;
     use CreateHarness\CreateHarnessTrait;
     use CreateMemory\CreateMemoryTrait;
@@ -28,8 +30,10 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use DeleteBrowser\DeleteBrowserTrait;
     use DeleteBrowserProfile\DeleteBrowserProfileTrait;
     use DeleteCodeInterpreter\DeleteCodeInterpreterTrait;
+    use DeleteConfigurationBundle\DeleteConfigurationBundleTrait;
     use DeleteEvaluator\DeleteEvaluatorTrait;
     use DeleteGateway\DeleteGatewayTrait;
+    use DeleteGatewayRule\DeleteGatewayRuleTrait;
     use DeleteGatewayTarget\DeleteGatewayTargetTrait;
     use DeleteHarness\DeleteHarnessTrait;
     use DeleteMemory\DeleteMemoryTrait;
@@ -47,8 +51,11 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use GetBrowser\GetBrowserTrait;
     use GetBrowserProfile\GetBrowserProfileTrait;
     use GetCodeInterpreter\GetCodeInterpreterTrait;
+    use GetConfigurationBundle\GetConfigurationBundleTrait;
+    use GetConfigurationBundleVersion\GetConfigurationBundleVersionTrait;
     use GetEvaluator\GetEvaluatorTrait;
     use GetGateway\GetGatewayTrait;
+    use GetGatewayRule\GetGatewayRuleTrait;
     use GetGatewayTarget\GetGatewayTargetTrait;
     use GetHarness\GetHarnessTrait;
     use GetMemory\GetMemoryTrait;
@@ -69,7 +76,10 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use ListBrowserProfiles\ListBrowserProfilesTrait;
     use ListBrowsers\ListBrowsersTrait;
     use ListCodeInterpreters\ListCodeInterpretersTrait;
+    use ListConfigurationBundleVersions\ListConfigurationBundleVersionsTrait;
+    use ListConfigurationBundles\ListConfigurationBundlesTrait;
     use ListEvaluators\ListEvaluatorsTrait;
+    use ListGatewayRules\ListGatewayRulesTrait;
     use ListGatewayTargets\ListGatewayTargetsTrait;
     use ListGateways\ListGatewaysTrait;
     use ListHarnesses\ListHarnessesTrait;
@@ -94,8 +104,10 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use UpdateAgentRuntime\UpdateAgentRuntimeTrait;
     use UpdateAgentRuntimeEndpoint\UpdateAgentRuntimeEndpointTrait;
     use UpdateApiKeyCredentialProvider\UpdateApiKeyCredentialProviderTrait;
+    use UpdateConfigurationBundle\UpdateConfigurationBundleTrait;
     use UpdateEvaluator\UpdateEvaluatorTrait;
     use UpdateGateway\UpdateGatewayTrait;
+    use UpdateGatewayRule\UpdateGatewayRuleTrait;
     use UpdateGatewayTarget\UpdateGatewayTargetTrait;
     use UpdateHarness\UpdateHarnessTrait;
     use UpdateMemory\UpdateMemoryTrait;

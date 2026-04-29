@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property bool|null $lockedForModification
+ * @property string|null $kmsKeyArn
  */
 class GetEvaluatorResponse extends Response
 {

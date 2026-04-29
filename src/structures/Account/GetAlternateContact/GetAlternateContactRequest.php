@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Account\GetAlternateContact;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $AccountId
  * @property 'BILLING'|'OPERATIONS'|'SECURITY' $AlternateContactType
+ * @property string|null $AccountId
  */
 class GetAlternateContactRequest extends Request
 {
     /**
      * @param array{
-     *     AccountId?: string|null,
-     *     AlternateContactType: 'BILLING'|'OPERATIONS'|'SECURITY'
+     *     AlternateContactType: 'BILLING'|'OPERATIONS'|'SECURITY',
+     *     AccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

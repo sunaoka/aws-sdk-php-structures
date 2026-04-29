@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ListDashManifestConfiguration>|null $DashManifests
  * @property list<ListMssManifestConfiguration>|null $MssManifests
  * @property ForceEndpointErrorConfiguration|null $ForceEndpointErrorConfiguration
+ * @property 'UNDERSCORE'|'HYPHEN'|null $UriSeparator
  */
 class OriginEndpointListConfiguration extends Shape
 {
@@ -35,7 +36,8 @@ class OriginEndpointListConfiguration extends Shape
      *     LowLatencyHlsManifests?: list<ListLowLatencyHlsManifestConfiguration>|null,
      *     DashManifests?: list<ListDashManifestConfiguration>|null,
      *     MssManifests?: list<ListMssManifestConfiguration>|null,
-     *     ForceEndpointErrorConfiguration?: ForceEndpointErrorConfiguration|null
+     *     ForceEndpointErrorConfiguration?: ForceEndpointErrorConfiguration|null,
+     *     UriSeparator?: 'UNDERSCORE'|'HYPHEN'|null
      * } $args
      */
     public function __construct(array $args)

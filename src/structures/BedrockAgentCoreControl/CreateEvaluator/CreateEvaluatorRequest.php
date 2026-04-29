@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property Shapes\EvaluatorConfig $evaluatorConfig
  * @property 'TOOL_CALL'|'TRACE'|'SESSION' $level
+ * @property string|null $kmsKeyArn
  * @property array<string, string>|null $tags
  */
 class CreateEvaluatorRequest extends Request
@@ -21,6 +22,7 @@ class CreateEvaluatorRequest extends Request
      *     description?: string|null,
      *     evaluatorConfig: Shapes\EvaluatorConfig,
      *     level: 'TOOL_CALL'|'TRACE'|'SESSION',
+     *     kmsKeyArn?: string|null,
      *     tags?: array<string, string>|null
      * } $args
      */

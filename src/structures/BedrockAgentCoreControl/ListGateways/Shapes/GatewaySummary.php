@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $description
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
- * @property 'CUSTOM_JWT'|'AWS_IAM'|'NONE' $authorizerType
- * @property 'MCP' $protocolType
+ * @property 'CUSTOM_JWT'|'AWS_IAM'|'NONE'|'AUTHENTICATE_ONLY' $authorizerType
+ * @property 'MCP'|null $protocolType
  */
 class GatewaySummary extends Shape
 {
@@ -24,8 +24,8 @@ class GatewaySummary extends Shape
      *     description?: string|null,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
-     *     authorizerType: 'CUSTOM_JWT'|'AWS_IAM'|'NONE',
-     *     protocolType: 'MCP'
+     *     authorizerType: 'CUSTOM_JWT'|'AWS_IAM'|'NONE'|'AUTHENTICATE_ONLY',
+     *     protocolType?: 'MCP'|null
      * } $args
      */
     public function __construct(array $args)

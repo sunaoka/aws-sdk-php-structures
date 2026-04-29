@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'direct'|'tenant-only'|null $ConnectionMode
  * @property ViewerMtlsConfig|null $ViewerMtlsConfig
  * @property ConnectionFunctionAssociation|null $ConnectionFunctionAssociation
+ * @property CacheTagConfig|null $CacheTagConfig
  */
 class DistributionConfig extends Shape
 {
@@ -57,7 +58,8 @@ class DistributionConfig extends Shape
      *     TenantConfig?: TenantConfig|null,
      *     ConnectionMode?: 'direct'|'tenant-only'|null,
      *     ViewerMtlsConfig?: ViewerMtlsConfig|null,
-     *     ConnectionFunctionAssociation?: ConnectionFunctionAssociation|null
+     *     ConnectionFunctionAssociation?: ConnectionFunctionAssociation|null,
+     *     CacheTagConfig?: CacheTagConfig|null
      * } $args
      */
     public function __construct(array $args)

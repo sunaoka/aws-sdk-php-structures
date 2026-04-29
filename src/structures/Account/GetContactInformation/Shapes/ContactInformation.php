@@ -5,34 +5,34 @@ namespace Sunaoka\Aws\Structures\Account\GetContactInformation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string $FullName
  * @property string $AddressLine1
  * @property string|null $AddressLine2
  * @property string|null $AddressLine3
  * @property string $City
- * @property string|null $CompanyName
- * @property string $CountryCode
- * @property string|null $DistrictOrCounty
- * @property string $FullName
- * @property string $PhoneNumber
- * @property string $PostalCode
  * @property string|null $StateOrRegion
+ * @property string|null $DistrictOrCounty
+ * @property string $PostalCode
+ * @property string $CountryCode
+ * @property string $PhoneNumber
+ * @property string|null $CompanyName
  * @property string|null $WebsiteUrl
  */
 class ContactInformation extends Shape
 {
     /**
      * @param array{
+     *     FullName: string,
      *     AddressLine1: string,
      *     AddressLine2?: string|null,
      *     AddressLine3?: string|null,
      *     City: string,
-     *     CompanyName?: string|null,
-     *     CountryCode: string,
-     *     DistrictOrCounty?: string|null,
-     *     FullName: string,
-     *     PhoneNumber: string,
-     *     PostalCode: string,
      *     StateOrRegion?: string|null,
+     *     DistrictOrCounty?: string|null,
+     *     PostalCode: string,
+     *     CountryCode: string,
+     *     PhoneNumber: string,
+     *     CompanyName?: string|null,
      *     WebsiteUrl?: string|null
      * } $args
      */

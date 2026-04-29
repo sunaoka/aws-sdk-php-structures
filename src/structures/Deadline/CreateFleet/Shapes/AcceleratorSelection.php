@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Deadline\CreateFleet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 't4'|'a10g'|'l4'|'l40s' $name
+ * @property 't4'|'a10g'|'l4'|'l40s'|'rtx-pro-server-6000' $name
  * @property string|null $runtime
  */
 class AcceleratorSelection extends Shape
 {
     /**
      * @param array{
-     *     name: 't4'|'a10g'|'l4'|'l40s',
+     *     name: 't4'|'a10g'|'l4'|'l40s'|'rtx-pro-server-6000',
      *     runtime?: string|null
      * } $args
      */

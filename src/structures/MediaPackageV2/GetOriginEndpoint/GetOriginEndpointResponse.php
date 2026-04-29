@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\GetDashManifestConfiguration>|null $DashManifests
  * @property list<Shapes\GetMssManifestConfiguration>|null $MssManifests
  * @property Shapes\ForceEndpointErrorConfiguration|null $ForceEndpointErrorConfiguration
+ * @property 'UNDERSCORE'|'HYPHEN'|null $UriSeparator
  * @property string|null $ETag
  * @property array<string, string>|null $Tags
  */

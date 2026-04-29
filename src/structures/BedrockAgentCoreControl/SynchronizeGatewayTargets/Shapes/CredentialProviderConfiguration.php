@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\BedrockAgentCoreControl\SynchronizeGatewayTarge
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'GATEWAY_IAM_ROLE'|'OAUTH'|'API_KEY' $credentialProviderType
+ * @property 'GATEWAY_IAM_ROLE'|'OAUTH'|'API_KEY'|'CALLER_IAM_CREDENTIALS'|'JWT_PASSTHROUGH' $credentialProviderType
  * @property CredentialProvider|null $credentialProvider
  */
 class CredentialProviderConfiguration extends Shape
 {
     /**
      * @param array{
-     *     credentialProviderType: 'GATEWAY_IAM_ROLE'|'OAUTH'|'API_KEY',
+     *     credentialProviderType: 'GATEWAY_IAM_ROLE'|'OAUTH'|'API_KEY'|'CALLER_IAM_CREDENTIALS'|'JWT_PASSTHROUGH',
      *     credentialProvider?: CredentialProvider|null
      * } $args
      */
