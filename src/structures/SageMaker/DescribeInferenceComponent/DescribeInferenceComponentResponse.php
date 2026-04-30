@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $VariantName
  * @property string|null $FailureReason
  * @property Shapes\InferenceComponentSpecificationSummary|null $Specification
+ * @property list<Shapes\InferenceComponentSpecificationSummary>|null $Specifications
  * @property Shapes\InferenceComponentRuntimeConfigSummary|null $RuntimeConfig
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime

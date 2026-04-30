@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Name
  * @property string|null $ApplicationAccount
  * @property string|null $InstanceArn
+ * @property string|null $IdentityStoreArn
  * @property 'ENABLED'|'DISABLED'|null $Status
  * @property PortalOptions|null $PortalOptions
  * @property string|null $Description
@@ -25,6 +26,7 @@ class Application extends Shape
      *     Name?: string|null,
      *     ApplicationAccount?: string|null,
      *     InstanceArn?: string|null,
+     *     IdentityStoreArn?: string|null,
      *     Status?: 'ENABLED'|'DISABLED'|null,
      *     PortalOptions?: PortalOptions|null,
      *     Description?: string|null,

@@ -1,13 +1,13 @@
 <?php
 
-namespace Sunaoka\Aws\Structures\BedrockAgentCore\RetrieveMemoryRecords\Shapes;
+namespace Sunaoka\Aws\Structures\BedrockAgentCore\ListMemoryRecords\Shapes;
 
 use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $metadataKey
  */
-class LeftExpression extends Shape
+class MemoryRecordLeftExpression extends Shape
 {
     /**
      * @param array{metadataKey?: string|null} $args

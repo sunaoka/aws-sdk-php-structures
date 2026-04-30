@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|null $status
+ * @property MemoryRecordSchema|null $memoryRecordSchema
  */
 class MemoryStrategy extends Shape
 {
@@ -29,7 +30,8 @@ class MemoryStrategy extends Shape
      *     namespaceTemplates: list<string>,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     status?: 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|null
+     *     status?: 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|null,
+     *     memoryRecordSchema?: MemoryRecordSchema|null
      * } $args
      */
     public function __construct(array $args)

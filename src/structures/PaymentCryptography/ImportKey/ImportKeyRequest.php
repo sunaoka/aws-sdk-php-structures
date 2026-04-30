@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $Enabled
  * @property list<Shapes\Tag>|null $Tags
  * @property list<string>|null $ReplicationRegions
+ * @property string|null $RequesterComment
  */
 class ImportKeyRequest extends Request
 {
@@ -19,7 +20,8 @@ class ImportKeyRequest extends Request
      *     KeyCheckValueAlgorithm?: 'CMAC'|'ANSI_X9_24'|'HMAC'|'SHA_1'|null,
      *     Enabled?: bool|null,
      *     Tags?: list<Shapes\Tag>|null,
-     *     ReplicationRegions?: list<string>|null
+     *     ReplicationRegions?: list<string>|null,
+     *     RequesterComment?: string|null
      * } $args
      */
     public function __construct(array $args)

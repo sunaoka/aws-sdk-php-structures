@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $namespaces
  * @property list<string>|null $namespaceTemplates
  * @property CustomConfigurationInput|null $configuration
+ * @property MemoryRecordSchema|null $memoryRecordSchema
  */
 class CustomMemoryStrategyInput extends Shape
 {
@@ -19,7 +20,8 @@ class CustomMemoryStrategyInput extends Shape
      *     description?: string|null,
      *     namespaces?: list<string>|null,
      *     namespaceTemplates?: list<string>|null,
-     *     configuration?: CustomConfigurationInput|null
+     *     configuration?: CustomConfigurationInput|null,
+     *     memoryRecordSchema?: MemoryRecordSchema|null
      * } $args
      */
     public function __construct(array $args)

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ELBLoadBalancerLoggingParameters|null $ELBLoadBalancerLoggingParameters
  * @property WAFLoggingParameters|null $WAFLoggingParameters
  * @property LogDeliveryParameters|null $LogDeliveryParameters
+ * @property MskMonitoringParameters|null $MskMonitoringParameters
  */
 class TelemetryDestinationConfiguration extends Shape
 {
@@ -25,7 +26,8 @@ class TelemetryDestinationConfiguration extends Shape
      *     CloudtrailParameters?: CloudtrailParameters|null,
      *     ELBLoadBalancerLoggingParameters?: ELBLoadBalancerLoggingParameters|null,
      *     WAFLoggingParameters?: WAFLoggingParameters|null,
-     *     LogDeliveryParameters?: LogDeliveryParameters|null
+     *     LogDeliveryParameters?: LogDeliveryParameters|null,
+     *     MskMonitoringParameters?: MskMonitoringParameters|null
      * } $args
      */
     public function __construct(array $args = [])

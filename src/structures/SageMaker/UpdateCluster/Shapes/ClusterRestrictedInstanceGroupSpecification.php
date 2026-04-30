@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TrainingPlanArn
  * @property VpcConfig|null $OverrideVpcConfig
  * @property ScheduledUpdateConfig|null $ScheduledUpdateConfig
- * @property EnvironmentConfig $EnvironmentConfig
+ * @property EnvironmentConfig|null $EnvironmentConfig
  */
 class ClusterRestrictedInstanceGroupSpecification extends Shape
 {
@@ -31,7 +31,7 @@ class ClusterRestrictedInstanceGroupSpecification extends Shape
      *     TrainingPlanArn?: string|null,
      *     OverrideVpcConfig?: VpcConfig|null,
      *     ScheduledUpdateConfig?: ScheduledUpdateConfig|null,
-     *     EnvironmentConfig: EnvironmentConfig
+     *     EnvironmentConfig?: EnvironmentConfig|null
      * } $args
      */
     public function __construct(array $args)

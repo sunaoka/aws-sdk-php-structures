@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgentCore\RetrieveMemoryRecords\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MetadataValue|null $metadataValue
+ * @property MemoryRecordMetadataValue|null $metadataValue
  */
-class RightExpression extends Shape
+class MemoryRecordRightExpression extends Shape
 {
     /**
-     * @param array{metadataValue?: MetadataValue|null} $args
+     * @param array{metadataValue?: MemoryRecordMetadataValue|null} $args
      */
     public function __construct(array $args = [])
     {

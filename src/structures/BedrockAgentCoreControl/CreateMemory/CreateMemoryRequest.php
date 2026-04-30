@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $memoryExecutionRoleArn
  * @property int<3, 365> $eventExpiryDuration
  * @property list<Shapes\MemoryStrategyInput>|null $memoryStrategies
+ * @property list<Shapes\IndexedKey>|null $indexedKeys
  * @property Shapes\StreamDeliveryResources|null $streamDeliveryResources
  * @property array<string, string>|null $tags
  */
@@ -26,6 +27,7 @@ class CreateMemoryRequest extends Request
      *     memoryExecutionRoleArn?: string|null,
      *     eventExpiryDuration: int<3, 365>,
      *     memoryStrategies?: list<Shapes\MemoryStrategyInput>|null,
+     *     indexedKeys?: list<Shapes\IndexedKey>|null,
      *     streamDeliveryResources?: Shapes\StreamDeliveryResources|null,
      *     tags?: array<string, string>|null
      * } $args

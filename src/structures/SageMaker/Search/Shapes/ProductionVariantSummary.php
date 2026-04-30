@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property float|null $DesiredWeight
  * @property int<0, max>|null $CurrentInstanceCount
  * @property int<0, max>|null $DesiredInstanceCount
+ * @property list<InstancePoolSummary>|null $InstancePools
  * @property list<ProductionVariantStatus>|null $VariantStatus
  * @property ProductionVariantServerlessConfig|null $CurrentServerlessConfig
  * @property ProductionVariantServerlessConfig|null $DesiredServerlessConfig
@@ -28,6 +29,7 @@ class ProductionVariantSummary extends Shape
      *     DesiredWeight?: float|null,
      *     CurrentInstanceCount?: int<0, max>|null,
      *     DesiredInstanceCount?: int<0, max>|null,
+     *     InstancePools?: list<InstancePoolSummary>|null,
      *     VariantStatus?: list<ProductionVariantStatus>|null,
      *     CurrentServerlessConfig?: ProductionVariantServerlessConfig|null,
      *     DesiredServerlessConfig?: ProductionVariantServerlessConfig|null,

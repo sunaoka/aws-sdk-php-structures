@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $providerArn
  * @property list<string> $scopes
  * @property array<string, string>|null $customParameters
- * @property 'CLIENT_CREDENTIALS'|'AUTHORIZATION_CODE'|null $grantType
+ * @property 'CLIENT_CREDENTIALS'|'AUTHORIZATION_CODE'|'TOKEN_EXCHANGE'|null $grantType
  * @property string|null $defaultReturnUrl
  */
 class OAuthCredentialProvider extends Shape
@@ -18,7 +18,7 @@ class OAuthCredentialProvider extends Shape
      *     providerArn: string,
      *     scopes: list<string>,
      *     customParameters?: array<string, string>|null,
-     *     grantType?: 'CLIENT_CREDENTIALS'|'AUTHORIZATION_CODE'|null,
+     *     grantType?: 'CLIENT_CREDENTIALS'|'AUTHORIZATION_CODE'|'TOKEN_EXCHANGE'|null,
      *     defaultReturnUrl?: string|null
      * } $args
      */

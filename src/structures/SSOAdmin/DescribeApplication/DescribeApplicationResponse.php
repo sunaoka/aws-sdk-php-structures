@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Name
  * @property string|null $ApplicationAccount
  * @property string|null $InstanceArn
+ * @property string|null $IdentityStoreArn
  * @property 'ENABLED'|'DISABLED'|null $Status
  * @property Shapes\PortalOptions|null $PortalOptions
  * @property string|null $Description

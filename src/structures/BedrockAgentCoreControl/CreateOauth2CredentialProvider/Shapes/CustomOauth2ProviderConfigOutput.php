@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $clientId
  * @property PrivateEndpoint|null $privateEndpoint
  * @property list<PrivateEndpointOverride>|null $privateEndpointOverrides
+ * @property OnBehalfOfTokenExchangeConfigType|null $onBehalfOfTokenExchangeConfig
+ * @property 'CLIENT_SECRET_BASIC'|'CLIENT_SECRET_POST'|'AWS_IAM_ID_TOKEN_JWT'|null $clientAuthenticationMethod
  */
 class CustomOauth2ProviderConfigOutput extends Shape
 {
@@ -17,7 +19,9 @@ class CustomOauth2ProviderConfigOutput extends Shape
      *     oauthDiscovery: Oauth2Discovery,
      *     clientId?: string|null,
      *     privateEndpoint?: PrivateEndpoint|null,
-     *     privateEndpointOverrides?: list<PrivateEndpointOverride>|null
+     *     privateEndpointOverrides?: list<PrivateEndpointOverride>|null,
+     *     onBehalfOfTokenExchangeConfig?: OnBehalfOfTokenExchangeConfigType|null,
+     *     clientAuthenticationMethod?: 'CLIENT_SECRET_BASIC'|'CLIENT_SECRET_POST'|'AWS_IAM_ID_TOKEN_JWT'|null
      * } $args
      */
     public function __construct(array $args)

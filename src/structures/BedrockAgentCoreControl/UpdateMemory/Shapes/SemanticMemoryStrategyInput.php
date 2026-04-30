@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $description
  * @property list<string>|null $namespaces
  * @property list<string>|null $namespaceTemplates
+ * @property MemoryRecordSchema|null $memoryRecordSchema
  */
 class SemanticMemoryStrategyInput extends Shape
 {
@@ -17,7 +18,8 @@ class SemanticMemoryStrategyInput extends Shape
      *     name: string,
      *     description?: string|null,
      *     namespaces?: list<string>|null,
-     *     namespaceTemplates?: list<string>|null
+     *     namespaceTemplates?: list<string>|null,
+     *     memoryRecordSchema?: MemoryRecordSchema|null
      * } $args
      */
     public function __construct(array $args)

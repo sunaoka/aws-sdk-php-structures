@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ClientAuthentication|null $ClientAuthentication
  * @property EncryptionInfo|null $EncryptionInfo
  * @property ConnectivityInfo|null $ConnectivityInfo
+ * @property ZookeeperAccess|null $ZookeeperAccess
  * @property 'LOCAL'|'TIERED'|null $StorageMode
  * @property BrokerCountUpdateInfo|null $BrokerCountUpdateInfo
  * @property Rebalancing|null $Rebalancing
@@ -35,6 +36,7 @@ class MutableClusterInfo extends Shape
      *     ClientAuthentication?: ClientAuthentication|null,
      *     EncryptionInfo?: EncryptionInfo|null,
      *     ConnectivityInfo?: ConnectivityInfo|null,
+     *     ZookeeperAccess?: ZookeeperAccess|null,
      *     StorageMode?: 'LOCAL'|'TIERED'|null,
      *     BrokerCountUpdateInfo?: BrokerCountUpdateInfo|null,
      *     Rebalancing?: Rebalancing|null

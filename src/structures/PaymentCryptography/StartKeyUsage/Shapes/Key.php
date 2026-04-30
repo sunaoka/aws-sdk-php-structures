@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PrimaryRegion
  * @property array<string, ReplicationStatusType>|null $ReplicationStatus
  * @property bool|null $UsingDefaultReplicationRegions
+ * @property MpaStatus|null $MpaStatus
  */
 class Key extends Shape
 {
@@ -45,7 +46,8 @@ class Key extends Shape
      *     MultiRegionKeyType?: 'PRIMARY'|'REPLICA'|null,
      *     PrimaryRegion?: string|null,
      *     ReplicationStatus?: array<string, ReplicationStatusType>|null,
-     *     UsingDefaultReplicationRegions?: bool|null
+     *     UsingDefaultReplicationRegions?: bool|null,
+     *     MpaStatus?: MpaStatus|null
      * } $args
      */
     public function __construct(array $args)

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $memoryStrategyId
  * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
+ * @property list<Shapes\MemoryMetadataFilterExpression>|null $metadataFilters
  */
 class ListMemoryRecordsRequest extends Request
 {
@@ -21,7 +22,8 @@ class ListMemoryRecordsRequest extends Request
      *     namespacePath?: string|null,
      *     memoryStrategyId?: string|null,
      *     maxResults?: int<1, 100>|null,
-     *     nextToken?: string|null
+     *     nextToken?: string|null,
+     *     metadataFilters?: list<Shapes\MemoryMetadataFilterExpression>|null
      * } $args
      */
     public function __construct(array $args)

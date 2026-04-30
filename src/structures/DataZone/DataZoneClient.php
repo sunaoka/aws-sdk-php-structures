@@ -98,6 +98,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use GetLineageNode\GetLineageNodeTrait;
     use GetListing\GetListingTrait;
     use GetMetadataGenerationRun\GetMetadataGenerationRunTrait;
+    use GetNotebookRun\GetNotebookRunTrait;
     use GetProject\GetProjectTrait;
     use GetProjectProfile\GetProjectProfileTrait;
     use GetRule\GetRuleTrait;
@@ -128,6 +129,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use ListLineageEvents\ListLineageEventsTrait;
     use ListLineageNodeHistory\ListLineageNodeHistoryTrait;
     use ListMetadataGenerationRuns\ListMetadataGenerationRunsTrait;
+    use ListNotebookRuns\ListNotebookRunsTrait;
     use ListNotifications\ListNotificationsTrait;
     use ListPolicyGrants\ListPolicyGrantsTrait;
     use ListProjectMemberships\ListProjectMembershipsTrait;
@@ -157,6 +159,8 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use SearchUserProfiles\SearchUserProfilesTrait;
     use StartDataSourceRun\StartDataSourceRunTrait;
     use StartMetadataGenerationRun\StartMetadataGenerationRunTrait;
+    use StartNotebookRun\StartNotebookRunTrait;
+    use StopNotebookRun\StopNotebookRunTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAccountPool\UpdateAccountPoolTrait;
