@@ -6,20 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ParameterControlId
- * @property string $Title
+ * @property string|null $Title
  * @property string $SourceParameterName
  * @property string|null $Delimiter
  * @property TextAreaControlDisplayOptions|null $DisplayOptions
+ * @property ControlTitleFormatText|null $ControlTitleFormatText
  */
 class ParameterTextAreaControl extends Shape
 {
     /**
      * @param array{
      *     ParameterControlId: string,
-     *     Title: string,
+     *     Title?: string|null,
      *     SourceParameterName: string,
      *     Delimiter?: string|null,
-     *     DisplayOptions?: TextAreaControlDisplayOptions|null
+     *     DisplayOptions?: TextAreaControlDisplayOptions|null,
+     *     ControlTitleFormatText?: ControlTitleFormatText|null
      * } $args
      */
     public function __construct(array $args)

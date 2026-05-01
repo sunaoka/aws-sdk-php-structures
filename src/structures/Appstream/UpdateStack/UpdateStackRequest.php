@@ -12,13 +12,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DeleteStorageConnectors
  * @property string|null $RedirectURL
  * @property string|null $FeedbackURL
- * @property list<'STORAGE_CONNECTORS'|'STORAGE_CONNECTOR_HOMEFOLDERS'|'STORAGE_CONNECTOR_GOOGLE_DRIVE'|'STORAGE_CONNECTOR_ONE_DRIVE'|'REDIRECT_URL'|'FEEDBACK_URL'|'THEME_NAME'|'USER_SETTINGS'|'EMBED_HOST_DOMAINS'|'IAM_ROLE_ARN'|'ACCESS_ENDPOINTS'|'STREAMING_EXPERIENCE_SETTINGS'|'CONTENT_REDIRECTION'>|null $AttributesToDelete
+ * @property list<'STORAGE_CONNECTORS'|'STORAGE_CONNECTOR_HOMEFOLDERS'|'STORAGE_CONNECTOR_GOOGLE_DRIVE'|'STORAGE_CONNECTOR_ONE_DRIVE'|'REDIRECT_URL'|'FEEDBACK_URL'|'THEME_NAME'|'USER_SETTINGS'|'EMBED_HOST_DOMAINS'|'IAM_ROLE_ARN'|'ACCESS_ENDPOINTS'|'STREAMING_EXPERIENCE_SETTINGS'|'CONTENT_REDIRECTION'|'AGENT_ACCESS_CONFIG'>|null $AttributesToDelete
  * @property list<Shapes\UserSetting>|null $UserSettings
  * @property Shapes\ApplicationSettings|null $ApplicationSettings
  * @property list<Shapes\AccessEndpoint>|null $AccessEndpoints
  * @property list<string>|null $EmbedHostDomains
  * @property Shapes\StreamingExperienceSettings|null $StreamingExperienceSettings
  * @property Shapes\ContentRedirection|null $ContentRedirection
+ * @property Shapes\AgentAccessConfigForUpdate|null $AgentAccessConfig
  */
 class UpdateStackRequest extends Request
 {
@@ -31,13 +32,14 @@ class UpdateStackRequest extends Request
      *     DeleteStorageConnectors?: bool|null,
      *     RedirectURL?: string|null,
      *     FeedbackURL?: string|null,
-     *     AttributesToDelete?: list<'STORAGE_CONNECTORS'|'STORAGE_CONNECTOR_HOMEFOLDERS'|'STORAGE_CONNECTOR_GOOGLE_DRIVE'|'STORAGE_CONNECTOR_ONE_DRIVE'|'REDIRECT_URL'|'FEEDBACK_URL'|'THEME_NAME'|'USER_SETTINGS'|'EMBED_HOST_DOMAINS'|'IAM_ROLE_ARN'|'ACCESS_ENDPOINTS'|'STREAMING_EXPERIENCE_SETTINGS'|'CONTENT_REDIRECTION'>|null,
+     *     AttributesToDelete?: list<'STORAGE_CONNECTORS'|'STORAGE_CONNECTOR_HOMEFOLDERS'|'STORAGE_CONNECTOR_GOOGLE_DRIVE'|'STORAGE_CONNECTOR_ONE_DRIVE'|'REDIRECT_URL'|'FEEDBACK_URL'|'THEME_NAME'|'USER_SETTINGS'|'EMBED_HOST_DOMAINS'|'IAM_ROLE_ARN'|'ACCESS_ENDPOINTS'|'STREAMING_EXPERIENCE_SETTINGS'|'CONTENT_REDIRECTION'|'AGENT_ACCESS_CONFIG'>|null,
      *     UserSettings?: list<Shapes\UserSetting>|null,
      *     ApplicationSettings?: Shapes\ApplicationSettings|null,
      *     AccessEndpoints?: list<Shapes\AccessEndpoint>|null,
      *     EmbedHostDomains?: list<string>|null,
      *     StreamingExperienceSettings?: Shapes\StreamingExperienceSettings|null,
-     *     ContentRedirection?: Shapes\ContentRedirection|null
+     *     ContentRedirection?: Shapes\ContentRedirection|null,
+     *     AgentAccessConfig?: Shapes\AgentAccessConfigForUpdate|null
      * } $args
      */
     public function __construct(array $args)

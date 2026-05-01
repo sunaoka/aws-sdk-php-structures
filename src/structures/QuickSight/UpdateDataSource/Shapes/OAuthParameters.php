@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $OAuthScope
  * @property VpcConnectionProperties|null $IdentityProviderVpcConnectionProperties
  * @property string|null $IdentityProviderResourceUri
+ * @property string|null $IdentityProviderCACertificatesBundleS3Uri
  */
 class OAuthParameters extends Shape
 {
@@ -17,7 +18,8 @@ class OAuthParameters extends Shape
      *     TokenProviderUrl: string,
      *     OAuthScope?: string|null,
      *     IdentityProviderVpcConnectionProperties?: VpcConnectionProperties|null,
-     *     IdentityProviderResourceUri?: string|null
+     *     IdentityProviderResourceUri?: string|null,
+     *     IdentityProviderCACertificatesBundleS3Uri?: string|null
      * } $args
      */
     public function __construct(array $args)

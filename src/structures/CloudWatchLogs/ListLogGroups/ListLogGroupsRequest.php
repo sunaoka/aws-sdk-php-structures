@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 1000>|null $limit
  * @property list<Shapes\DataSourceFilter>|null $dataSources
  * @property list<string>|null $fieldIndexNames
+ * @property list<Shapes\TagFilter>|null $logGroupTags
  */
 class ListLogGroupsRequest extends Request
 {
@@ -25,7 +26,8 @@ class ListLogGroupsRequest extends Request
      *     nextToken?: string|null,
      *     limit?: int<1, 1000>|null,
      *     dataSources?: list<Shapes\DataSourceFilter>|null,
-     *     fieldIndexNames?: list<string>|null
+     *     fieldIndexNames?: list<string>|null,
+     *     logGroupTags?: list<Shapes\TagFilter>|null
      * } $args
      */
     public function __construct(array $args = [])

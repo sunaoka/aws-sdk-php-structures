@@ -5,15 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Title
+ * @property string|null $Title
  * @property DefaultFilterControlOptions $ControlOptions
+ * @property ControlTitleFormatText|null $ControlTitleFormatText
  */
 class DefaultFilterControlConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Title: string,
-     *     ControlOptions: DefaultFilterControlOptions
+     *     Title?: string|null,
+     *     ControlOptions: DefaultFilterControlOptions,
+     *     ControlTitleFormatText?: ControlTitleFormatText|null
      * } $args
      */
     public function __construct(array $args)

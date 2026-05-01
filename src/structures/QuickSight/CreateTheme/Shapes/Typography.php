@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FontConfiguration|null $DataLabelFontConfiguration
  * @property VisualTitleFontConfiguration|null $VisualTitleFontConfiguration
  * @property VisualSubtitleFontConfiguration|null $VisualSubtitleFontConfiguration
+ * @property ControlTitleFontConfiguration|null $ControlTitleFontConfiguration
  */
 class Typography extends Shape
 {
@@ -25,7 +26,8 @@ class Typography extends Shape
      *     LegendValueFontConfiguration?: FontConfiguration|null,
      *     DataLabelFontConfiguration?: FontConfiguration|null,
      *     VisualTitleFontConfiguration?: VisualTitleFontConfiguration|null,
-     *     VisualSubtitleFontConfiguration?: VisualSubtitleFontConfiguration|null
+     *     VisualSubtitleFontConfiguration?: VisualSubtitleFontConfiguration|null,
+     *     ControlTitleFontConfiguration?: ControlTitleFontConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

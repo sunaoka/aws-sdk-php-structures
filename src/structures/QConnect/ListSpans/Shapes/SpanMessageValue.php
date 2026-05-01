@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SpanTextValue|null $text
  * @property SpanToolUseValue|null $toolUse
  * @property SpanToolResultValue|null $toolResult
+ * @property SpanReasoningValue|null $reasoning
  */
 class SpanMessageValue extends Shape
 {
@@ -15,7 +16,8 @@ class SpanMessageValue extends Shape
      * @param array{
      *     text?: SpanTextValue|null,
      *     toolUse?: SpanToolUseValue|null,
-     *     toolResult?: SpanToolResultValue|null
+     *     toolResult?: SpanToolResultValue|null,
+     *     reasoning?: SpanReasoningValue|null
      * } $args
      */
     public function __construct(array $args = [])

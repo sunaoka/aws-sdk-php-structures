@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $startTimestamp
  * @property \Aws\Api\DateTimeResult $endTimestamp
  * @property 'OK'|'ERROR'|'TIMEOUT' $status
+ * @property string|null $statusDescription
  * @property string $requestId
  * @property string|null $originRequestId
  * @property SpanAttributes $attributes
@@ -31,6 +32,7 @@ class Span extends Shape
      *     startTimestamp: \Aws\Api\DateTimeResult,
      *     endTimestamp: \Aws\Api\DateTimeResult,
      *     status: 'OK'|'ERROR'|'TIMEOUT',
+     *     statusDescription?: string|null,
      *     requestId: string,
      *     originRequestId?: string|null,
      *     attributes: SpanAttributes
