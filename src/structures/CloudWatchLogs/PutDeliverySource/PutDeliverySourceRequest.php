@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $resourceArn
  * @property string $logType
  * @property array<string, string>|null $tags
+ * @property array<string, string>|null $deliverySourceConfiguration
  */
 class PutDeliverySourceRequest extends Request
 {
@@ -17,7 +18,8 @@ class PutDeliverySourceRequest extends Request
      *     name: string,
      *     resourceArn: string,
      *     logType: string,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     deliverySourceConfiguration?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property \Aws\Api\DateTimeResult|null $verifiedAt
  * @property 'PENDING'|'VERIFIED'|'FAILED'|'UNREACHABLE'|null $status
+ * @property string|null $verificationStatusReason
  */
 class VerifyTargetDomainResponse extends Response
 {

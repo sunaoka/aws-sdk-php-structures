@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $targetDomainId
  * @property string $domainName
  * @property 'PENDING'|'VERIFIED'|'FAILED'|'UNREACHABLE' $verificationStatus
+ * @property string|null $verificationStatusReason
  * @property Shapes\VerificationDetails|null $verificationDetails
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $verifiedAt

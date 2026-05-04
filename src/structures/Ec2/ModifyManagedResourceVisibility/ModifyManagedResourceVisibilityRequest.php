@@ -6,17 +6,17 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property bool|null $DryRun
- * @property 'hidden'|'visible'|null $DefaultVisibility
+ * @property 'hidden'|'visible' $DefaultVisibility
  */
 class ModifyManagedResourceVisibilityRequest extends Request
 {
     /**
      * @param array{
      *     DryRun?: bool|null,
-     *     DefaultVisibility?: 'hidden'|'visible'|null
+     *     DefaultVisibility: 'hidden'|'visible'
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

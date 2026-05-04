@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\OptimizeWaypoints\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 4294967295> $DrivingDistance
+ * @property int<5, 50000> $DrivingDistance
  */
 class WaypointOptimizationDrivingDistanceOptions extends Shape
 {
     /**
-     * @param array{DrivingDistance: int<0, 4294967295>} $args
+     * @param array{DrivingDistance: int<5, 50000>} $args
      */
     public function __construct(array $args)
     {

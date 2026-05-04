@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $targetDomainId
- * @property 'DNS_TXT'|'HTTP_ROUTE' $verificationMethod
+ * @property 'DNS_TXT'|'HTTP_ROUTE'|'PRIVATE_VPC' $verificationMethod
  */
 class UpdateTargetDomainRequest extends Request
 {
     /**
      * @param array{
      *     targetDomainId: string,
-     *     verificationMethod: 'DNS_TXT'|'HTTP_ROUTE'
+     *     verificationMethod: 'DNS_TXT'|'HTTP_ROUTE'|'PRIVATE_VPC'
      * } $args
      */
     public function __construct(array $args)

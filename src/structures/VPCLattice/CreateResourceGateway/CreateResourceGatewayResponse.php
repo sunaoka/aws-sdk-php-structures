@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<string>|null $securityGroupIds
  * @property 'IPV4'|'IPV6'|'DUALSTACK'|null $ipAddressType
  * @property int<1, 62>|null $ipv4AddressesPerEni
+ * @property 'IN_VPC'|'PUBLIC'|null $resourceConfigDnsResolution
  */
 class CreateResourceGatewayResponse extends Response
 {

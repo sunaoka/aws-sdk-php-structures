@@ -11,6 +11,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $service
  * @property string|null $logType
  * @property array<string, string>|null $tags
+ * @property array<string, string>|null $deliverySourceConfiguration
+ * @property 'ACTIVE'|'INACTIVE'|null $status
+ * @property 'RESOURCE_DELETED'|null $statusReason
  */
 class DeliverySource extends Shape
 {
@@ -21,7 +24,10 @@ class DeliverySource extends Shape
      *     resourceArns?: list<string>|null,
      *     service?: string|null,
      *     logType?: string|null,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     deliverySourceConfiguration?: array<string, string>|null,
+     *     status?: 'ACTIVE'|'INACTIVE'|null,
+     *     statusReason?: 'RESOURCE_DELETED'|null
      * } $args
      */
     public function __construct(array $args = [])

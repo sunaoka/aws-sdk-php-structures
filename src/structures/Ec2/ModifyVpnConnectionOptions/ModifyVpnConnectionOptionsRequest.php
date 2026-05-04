@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $RemoteIpv4NetworkCidr
  * @property string|null $LocalIpv6NetworkCidr
  * @property string|null $RemoteIpv6NetworkCidr
+ * @property 'standard'|'large'|null $TunnelBandwidth
  * @property bool|null $DryRun
  */
 class ModifyVpnConnectionOptionsRequest extends Request
@@ -21,6 +22,7 @@ class ModifyVpnConnectionOptionsRequest extends Request
      *     RemoteIpv4NetworkCidr?: string|null,
      *     LocalIpv6NetworkCidr?: string|null,
      *     RemoteIpv6NetworkCidr?: string|null,
+     *     TunnelBandwidth?: 'standard'|'large'|null,
      *     DryRun?: bool|null
      * } $args
      */

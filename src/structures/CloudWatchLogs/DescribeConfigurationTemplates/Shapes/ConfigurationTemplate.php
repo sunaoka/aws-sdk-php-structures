@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $allowedActionForAllowVendedLogsDeliveryForResource
  * @property list<string>|null $allowedFieldDelimiters
  * @property list<string>|null $allowedSuffixPathFields
+ * @property list<DeliverySourceConfigurationSchema>|null $deliverySourceConfiguration
+ * @property S3TablesIntegration|null $s3TablesIntegration
  */
 class ConfigurationTemplate extends Shape
 {
@@ -29,7 +31,9 @@ class ConfigurationTemplate extends Shape
      *     allowedOutputFormats?: list<'json'|'plain'|'w3c'|'raw'|'parquet'>|null,
      *     allowedActionForAllowVendedLogsDeliveryForResource?: string|null,
      *     allowedFieldDelimiters?: list<string>|null,
-     *     allowedSuffixPathFields?: list<string>|null
+     *     allowedSuffixPathFields?: list<string>|null,
+     *     deliverySourceConfiguration?: list<DeliverySourceConfigurationSchema>|null,
+     *     s3TablesIntegration?: S3TablesIntegration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $securityGroupIds
  * @property 'IPV4'|'IPV6'|'DUALSTACK'|null $ipAddressType
  * @property int<1, 62>|null $ipv4AddressesPerEni
+ * @property 'IN_VPC'|'PUBLIC'|null $resourceConfigDnsResolution
  * @property array<string, string>|null $tags
  */
 class CreateResourceGatewayRequest extends Request
@@ -25,6 +26,7 @@ class CreateResourceGatewayRequest extends Request
      *     securityGroupIds?: list<string>|null,
      *     ipAddressType?: 'IPV4'|'IPV6'|'DUALSTACK'|null,
      *     ipv4AddressesPerEni?: int<1, 62>|null,
+     *     resourceConfigDnsResolution?: 'IN_VPC'|'PUBLIC'|null,
      *     tags?: array<string, string>|null
      * } $args
      */

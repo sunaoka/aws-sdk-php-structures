@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AccuratePolylineUnavailable'|'NoSchedule'|'Other'|'ViolatedAvoidFerry'|'ViolatedAvoidRailFerry'|'SeasonalClosure'|'PotentialViolatedVehicleRestrictionUsage' $Code
+ * @property 'AccuratePolylineUnavailable'|'NoSchedule'|'Other'|'ViolatedAvoidFerry'|'ViolatedAvoidRailFerry'|'SeasonalClosure'|'PotentialViolatedVehicleRestrictionUsage'|'ViolatedAvoidAreas'|'ViolatedVehicleRestriction' $Code
  * @property 'High'|'Low'|null $Impact
  */
 class RouteFerryNotice extends Shape
 {
     /**
      * @param array{
-     *     Code: 'AccuratePolylineUnavailable'|'NoSchedule'|'Other'|'ViolatedAvoidFerry'|'ViolatedAvoidRailFerry'|'SeasonalClosure'|'PotentialViolatedVehicleRestrictionUsage',
+     *     Code: 'AccuratePolylineUnavailable'|'NoSchedule'|'Other'|'ViolatedAvoidFerry'|'ViolatedAvoidRailFerry'|'SeasonalClosure'|'PotentialViolatedVehicleRestrictionUsage'|'ViolatedAvoidAreas'|'ViolatedVehicleRestriction',
      *     Impact?: 'High'|'Low'|null
      * } $args
      */

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $securityGroupIds
  * @property 'IPV4'|'IPV6'|'DUALSTACK'|null $ipAddressType
  * @property int<1, 62>|null $ipv4AddressesPerEni
+ * @property 'IN_VPC'|'PUBLIC'|null $resourceConfigDnsResolution
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  */
@@ -30,6 +31,7 @@ class ResourceGatewaySummary extends Shape
      *     securityGroupIds?: list<string>|null,
      *     ipAddressType?: 'IPV4'|'IPV6'|'DUALSTACK'|null,
      *     ipv4AddressesPerEni?: int<1, 62>|null,
+     *     resourceConfigDnsResolution?: 'IN_VPC'|'PUBLIC'|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null
      * } $args

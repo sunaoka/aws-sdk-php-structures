@@ -11,9 +11,12 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'ACTIVE'|'CREATE_IN_PROGRESS'|'UPDATE_IN_PROGRESS'|'DELETE_IN_PROGRESS'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED'|null $status
  * @property string|null $vpcId
  * @property list<string>|null $subnetIds
+ * @property bool|null $serviceManaged
+ * @property string|null $managedBy
  * @property list<string>|null $securityGroupIds
  * @property 'IPV4'|'IPV6'|'DUALSTACK'|null $ipAddressType
  * @property int<1, 62>|null $ipv4AddressesPerEni
+ * @property 'IN_VPC'|'PUBLIC'|null $resourceConfigDnsResolution
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  */
