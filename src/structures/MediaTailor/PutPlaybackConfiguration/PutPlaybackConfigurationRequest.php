@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $VideoContentSourceUrl
  * @property Shapes\AdConditioningConfiguration|null $AdConditioningConfiguration
  * @property Shapes\AdDecisionServerConfiguration|null $AdDecisionServerConfiguration
+ * @property array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST', string>|null $FunctionMapping
  */
 class PutPlaybackConfigurationRequest extends Request
 {
@@ -43,7 +44,8 @@ class PutPlaybackConfigurationRequest extends Request
      *     TranscodeProfileName?: string|null,
      *     VideoContentSourceUrl?: string|null,
      *     AdConditioningConfiguration?: Shapes\AdConditioningConfiguration|null,
-     *     AdDecisionServerConfiguration?: Shapes\AdDecisionServerConfiguration|null
+     *     AdDecisionServerConfiguration?: Shapes\AdDecisionServerConfiguration|null,
+     *     FunctionMapping?: array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST', string>|null
      * } $args
      */
     public function __construct(array $args)

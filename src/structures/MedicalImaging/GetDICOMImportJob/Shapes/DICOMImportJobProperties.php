@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $inputS3Uri
  * @property string $outputS3Uri
  * @property string|null $message
+ * @property ImportConfiguration|null $importConfiguration
  */
 class DICOMImportJobProperties extends Shape
 {
@@ -29,7 +30,8 @@ class DICOMImportJobProperties extends Shape
      *     submittedAt?: \Aws\Api\DateTimeResult|null,
      *     inputS3Uri: string,
      *     outputS3Uri: string,
-     *     message?: string|null
+     *     message?: string|null,
+     *     importConfiguration?: ImportConfiguration|null
      * } $args
      */
     public function __construct(array $args)

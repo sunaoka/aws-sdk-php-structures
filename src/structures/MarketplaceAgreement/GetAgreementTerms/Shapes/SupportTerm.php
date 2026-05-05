@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $type
+ * @property string|null $id
  * @property string|null $refundPolicy
  */
 class SupportTerm extends Shape
@@ -13,6 +14,7 @@ class SupportTerm extends Shape
     /**
      * @param array{
      *     type?: string|null,
+     *     id?: string|null,
      *     refundPolicy?: string|null
      * } $args
      */

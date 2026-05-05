@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $VideoContentSourceUrl
  * @property Shapes\AdConditioningConfiguration|null $AdConditioningConfiguration
  * @property Shapes\AdDecisionServerConfiguration|null $AdDecisionServerConfiguration
+ * @property array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST', string>|null $FunctionMapping
  */
 class GetPlaybackConfigurationResponse extends Response
 {

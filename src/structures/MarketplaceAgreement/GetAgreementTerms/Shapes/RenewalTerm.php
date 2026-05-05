@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $type
+ * @property string|null $id
  * @property RenewalTermConfiguration|null $configuration
  */
 class RenewalTerm extends Shape
@@ -13,6 +14,7 @@ class RenewalTerm extends Shape
     /**
      * @param array{
      *     type?: string|null,
+     *     id?: string|null,
      *     configuration?: RenewalTermConfiguration|null
      * } $args
      */

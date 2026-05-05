@@ -14,6 +14,7 @@ class MediaTailorClient extends \Aws\MediaTailor\MediaTailorClient
     use CreateVodSource\CreateVodSourceTrait;
     use DeleteChannel\DeleteChannelTrait;
     use DeleteChannelPolicy\DeleteChannelPolicyTrait;
+    use DeleteFunction\DeleteFunctionTrait;
     use DeleteLiveSource\DeleteLiveSourceTrait;
     use DeletePlaybackConfiguration\DeletePlaybackConfigurationTrait;
     use DeletePrefetchSchedule\DeletePrefetchScheduleTrait;
@@ -27,10 +28,12 @@ class MediaTailorClient extends \Aws\MediaTailor\MediaTailorClient
     use DescribeVodSource\DescribeVodSourceTrait;
     use GetChannelPolicy\GetChannelPolicyTrait;
     use GetChannelSchedule\GetChannelScheduleTrait;
+    use GetFunction\GetFunctionTrait;
     use GetPlaybackConfiguration\GetPlaybackConfigurationTrait;
     use GetPrefetchSchedule\GetPrefetchScheduleTrait;
     use ListAlerts\ListAlertsTrait;
     use ListChannels\ListChannelsTrait;
+    use ListFunctions\ListFunctionsTrait;
     use ListLiveSources\ListLiveSourcesTrait;
     use ListPlaybackConfigurations\ListPlaybackConfigurationsTrait;
     use ListPrefetchSchedules\ListPrefetchSchedulesTrait;
@@ -38,6 +41,7 @@ class MediaTailorClient extends \Aws\MediaTailor\MediaTailorClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListVodSources\ListVodSourcesTrait;
     use PutChannelPolicy\PutChannelPolicyTrait;
+    use PutFunction\PutFunctionTrait;
     use PutPlaybackConfiguration\PutPlaybackConfigurationTrait;
     use StartChannel\StartChannelTrait;
     use StopChannel\StopChannelTrait;

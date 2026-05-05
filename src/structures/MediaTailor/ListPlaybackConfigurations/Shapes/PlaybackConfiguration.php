@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VideoContentSourceUrl
  * @property AdConditioningConfiguration|null $AdConditioningConfiguration
  * @property AdDecisionServerConfiguration|null $AdDecisionServerConfiguration
+ * @property array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST', string>|null $FunctionMapping
  */
 class PlaybackConfiguration extends Shape
 {
@@ -53,7 +54,8 @@ class PlaybackConfiguration extends Shape
      *     TranscodeProfileName?: string|null,
      *     VideoContentSourceUrl?: string|null,
      *     AdConditioningConfiguration?: AdConditioningConfiguration|null,
-     *     AdDecisionServerConfiguration?: AdDecisionServerConfiguration|null
+     *     AdDecisionServerConfiguration?: AdDecisionServerConfiguration|null,
+     *     FunctionMapping?: array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST', string>|null
      * } $args
      */
     public function __construct(array $args = [])

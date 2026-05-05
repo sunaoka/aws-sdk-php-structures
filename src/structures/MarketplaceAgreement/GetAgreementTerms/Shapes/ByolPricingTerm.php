@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $type
+ * @property string|null $id
  */
 class ByolPricingTerm extends Shape
 {
     /**
-     * @param array{type?: string|null} $args
+     * @param array{
+     *     type?: string|null,
+     *     id?: string|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

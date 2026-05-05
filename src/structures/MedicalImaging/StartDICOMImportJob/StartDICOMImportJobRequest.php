@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $inputS3Uri
  * @property string $outputS3Uri
  * @property string|null $inputOwnerAccountId
+ * @property Shapes\ImportConfiguration|null $importConfiguration
  */
 class StartDICOMImportJobRequest extends Request
 {
@@ -23,7 +24,8 @@ class StartDICOMImportJobRequest extends Request
      *     datastoreId: string,
      *     inputS3Uri: string,
      *     outputS3Uri: string,
-     *     inputOwnerAccountId?: string|null
+     *     inputOwnerAccountId?: string|null,
+     *     importConfiguration?: Shapes\ImportConfiguration|null
      * } $args
      */
     public function __construct(array $args)
