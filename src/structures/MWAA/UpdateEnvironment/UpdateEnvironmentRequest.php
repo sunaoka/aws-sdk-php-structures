@@ -26,7 +26,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $SourceBucketArn
  * @property string|null $StartupScriptS3Path
  * @property string|null $StartupScriptS3ObjectVersion
- * @property 'PRIVATE_ONLY'|'PUBLIC_ONLY'|null $WebserverAccessMode
+ * @property 'PRIVATE_ONLY'|'PUBLIC_ONLY'|'PUBLIC_AND_PRIVATE'|null $WebserverAccessMode
  * @property string|null $WeeklyMaintenanceWindowStart
  */
 class UpdateEnvironmentRequest extends Request
@@ -54,7 +54,7 @@ class UpdateEnvironmentRequest extends Request
      *     SourceBucketArn?: string|null,
      *     StartupScriptS3Path?: string|null,
      *     StartupScriptS3ObjectVersion?: string|null,
-     *     WebserverAccessMode?: 'PRIVATE_ONLY'|'PUBLIC_ONLY'|null,
+     *     WebserverAccessMode?: 'PRIVATE_ONLY'|'PUBLIC_ONLY'|'PUBLIC_AND_PRIVATE'|null,
      *     WeeklyMaintenanceWindowStart?: string|null
      * } $args
      */

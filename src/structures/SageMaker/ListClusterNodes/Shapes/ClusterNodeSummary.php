@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ClusterInstanceStatusDetails $InstanceStatus
  * @property UltraServerInfo|null $UltraServerInfo
  * @property string|null $PrivateDnsHostname
+ * @property 'UpToDate'|'UpdateAvailable'|null $ImageVersionStatus
  */
 class ClusterNodeSummary extends Shape
 {
@@ -27,7 +28,8 @@ class ClusterNodeSummary extends Shape
      *     LastSoftwareUpdateTime?: \Aws\Api\DateTimeResult|null,
      *     InstanceStatus: ClusterInstanceStatusDetails,
      *     UltraServerInfo?: UltraServerInfo|null,
-     *     PrivateDnsHostname?: string|null
+     *     PrivateDnsHostname?: string|null,
+     *     ImageVersionStatus?: 'UpToDate'|'UpdateAvailable'|null
      * } $args
      */
     public function __construct(array $args)

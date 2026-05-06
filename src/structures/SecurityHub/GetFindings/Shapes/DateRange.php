@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int|null $Value
  * @property 'DAYS'|null $Unit
+ * @property 'WITHIN'|'OLDER_THAN'|null $Comparison
  */
 class DateRange extends Shape
 {
     /**
      * @param array{
      *     Value?: int|null,
-     *     Unit?: 'DAYS'|null
+     *     Unit?: 'DAYS'|null,
+     *     Comparison?: 'WITHIN'|'OLDER_THAN'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ClusterInstancePlacement|null $Placement
  * @property string|null $CurrentImageId
  * @property string|null $DesiredImageId
+ * @property 'UpToDate'|'UpdateAvailable'|null $ImageVersionStatus
  * @property UltraServerInfo|null $UltraServerInfo
  * @property ClusterKubernetesConfigNodeDetails|null $KubernetesConfig
  * @property 'Spot'|'OnDemand'|null $CapacityType
@@ -48,6 +49,7 @@ class ClusterNodeDetails extends Shape
      *     Placement?: ClusterInstancePlacement|null,
      *     CurrentImageId?: string|null,
      *     DesiredImageId?: string|null,
+     *     ImageVersionStatus?: 'UpToDate'|'UpdateAvailable'|null,
      *     UltraServerInfo?: UltraServerInfo|null,
      *     KubernetesConfig?: ClusterKubernetesConfigNodeDetails|null,
      *     CapacityType?: 'Spot'|'OnDemand'|null,

@@ -24,7 +24,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\LoggingConfigurationInput|null $LoggingConfiguration
  * @property string|null $WeeklyMaintenanceWindowStart
  * @property array<string, string>|null $Tags
- * @property 'PRIVATE_ONLY'|'PUBLIC_ONLY'|null $WebserverAccessMode
+ * @property 'PRIVATE_ONLY'|'PUBLIC_ONLY'|'PUBLIC_AND_PRIVATE'|null $WebserverAccessMode
  * @property int<1, max>|null $MinWorkers
  * @property int<min, 5>|null $Schedulers
  * @property 'CUSTOMER'|'SERVICE'|null $EndpointManagement
@@ -54,7 +54,7 @@ class CreateEnvironmentRequest extends Request
      *     LoggingConfiguration?: Shapes\LoggingConfigurationInput|null,
      *     WeeklyMaintenanceWindowStart?: string|null,
      *     Tags?: array<string, string>|null,
-     *     WebserverAccessMode?: 'PRIVATE_ONLY'|'PUBLIC_ONLY'|null,
+     *     WebserverAccessMode?: 'PRIVATE_ONLY'|'PUBLIC_ONLY'|'PUBLIC_AND_PRIVATE'|null,
      *     MinWorkers?: int<1, max>|null,
      *     Schedulers?: int<min, 5>|null,
      *     EndpointManagement?: 'CUSTOMER'|'SERVICE'|null,

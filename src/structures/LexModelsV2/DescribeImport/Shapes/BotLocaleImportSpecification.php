@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SpeechRecognitionSettings|null $speechRecognitionSettings
  * @property 'Default'|'HighNoiseTolerance'|'MaximumNoiseTolerance'|null $speechDetectionSensitivity
  * @property UnifiedSpeechSettings|null $unifiedSpeechSettings
+ * @property AudioFillerSettings|null $audioFillerSettings
  */
 class BotLocaleImportSpecification extends Shape
 {
@@ -25,7 +26,8 @@ class BotLocaleImportSpecification extends Shape
      *     voiceSettings?: VoiceSettings|null,
      *     speechRecognitionSettings?: SpeechRecognitionSettings|null,
      *     speechDetectionSensitivity?: 'Default'|'HighNoiseTolerance'|'MaximumNoiseTolerance'|null,
-     *     unifiedSpeechSettings?: UnifiedSpeechSettings|null
+     *     unifiedSpeechSettings?: UnifiedSpeechSettings|null,
+     *     audioFillerSettings?: AudioFillerSettings|null
      * } $args
      */
     public function __construct(array $args)

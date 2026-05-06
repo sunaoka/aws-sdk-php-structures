@@ -30,7 +30,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LastUpdate|null $LastUpdate
  * @property string|null $WeeklyMaintenanceWindowStart
  * @property array<string, string>|null $Tags
- * @property 'PRIVATE_ONLY'|'PUBLIC_ONLY'|null $WebserverAccessMode
+ * @property 'PRIVATE_ONLY'|'PUBLIC_ONLY'|'PUBLIC_AND_PRIVATE'|null $WebserverAccessMode
  * @property int<1, max>|null $MinWorkers
  * @property int<min, 5>|null $Schedulers
  * @property string|null $WebserverVpcEndpointService
@@ -69,7 +69,7 @@ class Environment extends Shape
      *     LastUpdate?: LastUpdate|null,
      *     WeeklyMaintenanceWindowStart?: string|null,
      *     Tags?: array<string, string>|null,
-     *     WebserverAccessMode?: 'PRIVATE_ONLY'|'PUBLIC_ONLY'|null,
+     *     WebserverAccessMode?: 'PRIVATE_ONLY'|'PUBLIC_ONLY'|'PUBLIC_AND_PRIVATE'|null,
      *     MinWorkers?: int<1, max>|null,
      *     Schedulers?: int<min, 5>|null,
      *     WebserverVpcEndpointService?: string|null,

@@ -57,6 +57,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use EnableOrganizationAdminAccount\EnableOrganizationAdminAccountTrait;
     use EnableSecurityHub\EnableSecurityHubTrait;
     use EnableSecurityHubV2\EnableSecurityHubV2Trait;
+    use GenerateRecommendedPolicyV2\GenerateRecommendedPolicyV2Trait;
     use GetAdministratorAccount\GetAdministratorAccountTrait;
     use GetAggregatorV2\GetAggregatorV2Trait;
     use GetAutomationRuleV2\GetAutomationRuleV2Trait;
@@ -75,6 +76,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use GetInvitationsCount\GetInvitationsCountTrait;
     use GetMasterAccount\GetMasterAccountTrait;
     use GetMembers\GetMembersTrait;
+    use GetRecommendedPolicyV2\GetRecommendedPolicyV2Trait;
     use GetResourcesStatisticsV2\GetResourcesStatisticsV2Trait;
     use GetResourcesTrendsV2\GetResourcesTrendsV2Trait;
     use GetResourcesV2\GetResourcesV2Trait;

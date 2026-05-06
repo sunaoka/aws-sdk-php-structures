@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property double|null $nluIntentConfidenceThreshold
  * @property Shapes\VoiceSettings|null $voiceSettings
  * @property Shapes\UnifiedSpeechSettings|null $unifiedSpeechSettings
+ * @property Shapes\AudioFillerSettings|null $audioFillerSettings
  * @property Shapes\SpeechRecognitionSettings|null $speechRecognitionSettings
  * @property int|null $intentsCount
  * @property int|null $slotTypesCount
