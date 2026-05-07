@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'DoH'|'Do53'|'DoH-FIPS'>|null $Protocols
  * @property bool|null $RniEnhancedMetricsEnabled
  * @property bool|null $TargetNameServerMetricsEnabled
+ * @property bool|null $Dns64Enabled
+ * @property bool|null $Ipv6InternetAccessEnabled
  */
 class UpdateResolverEndpointRequest extends Request
 {
@@ -23,7 +25,9 @@ class UpdateResolverEndpointRequest extends Request
      *     UpdateIpAddresses?: list<Shapes\UpdateIpAddress>|null,
      *     Protocols?: list<'DoH'|'Do53'|'DoH-FIPS'>|null,
      *     RniEnhancedMetricsEnabled?: bool|null,
-     *     TargetNameServerMetricsEnabled?: bool|null
+     *     TargetNameServerMetricsEnabled?: bool|null,
+     *     Dns64Enabled?: bool|null,
+     *     Ipv6InternetAccessEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

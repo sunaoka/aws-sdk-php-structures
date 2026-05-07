@@ -19,6 +19,9 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use CreateMemory\CreateMemoryTrait;
     use CreateOauth2CredentialProvider\CreateOauth2CredentialProviderTrait;
     use CreateOnlineEvaluationConfig\CreateOnlineEvaluationConfigTrait;
+    use CreatePaymentConnector\CreatePaymentConnectorTrait;
+    use CreatePaymentCredentialProvider\CreatePaymentCredentialProviderTrait;
+    use CreatePaymentManager\CreatePaymentManagerTrait;
     use CreatePolicy\CreatePolicyTrait;
     use CreatePolicyEngine\CreatePolicyEngineTrait;
     use CreateRegistry\CreateRegistryTrait;
@@ -39,6 +42,9 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use DeleteMemory\DeleteMemoryTrait;
     use DeleteOauth2CredentialProvider\DeleteOauth2CredentialProviderTrait;
     use DeleteOnlineEvaluationConfig\DeleteOnlineEvaluationConfigTrait;
+    use DeletePaymentConnector\DeletePaymentConnectorTrait;
+    use DeletePaymentCredentialProvider\DeletePaymentCredentialProviderTrait;
+    use DeletePaymentManager\DeletePaymentManagerTrait;
     use DeletePolicy\DeletePolicyTrait;
     use DeletePolicyEngine\DeletePolicyEngineTrait;
     use DeleteRegistry\DeleteRegistryTrait;
@@ -61,6 +67,9 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use GetMemory\GetMemoryTrait;
     use GetOauth2CredentialProvider\GetOauth2CredentialProviderTrait;
     use GetOnlineEvaluationConfig\GetOnlineEvaluationConfigTrait;
+    use GetPaymentConnector\GetPaymentConnectorTrait;
+    use GetPaymentCredentialProvider\GetPaymentCredentialProviderTrait;
+    use GetPaymentManager\GetPaymentManagerTrait;
     use GetPolicy\GetPolicyTrait;
     use GetPolicyEngine\GetPolicyEngineTrait;
     use GetPolicyGeneration\GetPolicyGenerationTrait;
@@ -86,6 +95,9 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use ListMemories\ListMemoriesTrait;
     use ListOauth2CredentialProviders\ListOauth2CredentialProvidersTrait;
     use ListOnlineEvaluationConfigs\ListOnlineEvaluationConfigsTrait;
+    use ListPaymentConnectors\ListPaymentConnectorsTrait;
+    use ListPaymentCredentialProviders\ListPaymentCredentialProvidersTrait;
+    use ListPaymentManagers\ListPaymentManagersTrait;
     use ListPolicies\ListPoliciesTrait;
     use ListPolicyEngines\ListPolicyEnginesTrait;
     use ListPolicyGenerationAssets\ListPolicyGenerationAssetsTrait;
@@ -113,6 +125,9 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use UpdateMemory\UpdateMemoryTrait;
     use UpdateOauth2CredentialProvider\UpdateOauth2CredentialProviderTrait;
     use UpdateOnlineEvaluationConfig\UpdateOnlineEvaluationConfigTrait;
+    use UpdatePaymentConnector\UpdatePaymentConnectorTrait;
+    use UpdatePaymentCredentialProvider\UpdatePaymentCredentialProviderTrait;
+    use UpdatePaymentManager\UpdatePaymentManagerTrait;
     use UpdatePolicy\UpdatePolicyTrait;
     use UpdatePolicyEngine\UpdatePolicyEngineTrait;
     use UpdateRegistry\UpdateRegistryTrait;

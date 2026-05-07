@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BCMDataExports\GetExecution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CUSTOM' $OutputType
+ * @property 'CUSTOM'|'ATHENA'|'REDSHIFT' $OutputType
  * @property 'TEXT_OR_CSV'|'PARQUET' $Format
  * @property 'GZIP'|'PARQUET' $Compression
  * @property 'CREATE_NEW_REPORT'|'OVERWRITE_REPORT' $Overwrite
@@ -14,7 +14,7 @@ class S3OutputConfigurations extends Shape
 {
     /**
      * @param array{
-     *     OutputType: 'CUSTOM',
+     *     OutputType: 'CUSTOM'|'ATHENA'|'REDSHIFT',
      *     Format: 'TEXT_OR_CSV'|'PARQUET',
      *     Compression: 'GZIP'|'PARQUET',
      *     Overwrite: 'CREATE_NEW_REPORT'|'OVERWRITE_REPORT'

@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DateInterval|null $TimeInterval
  * @property BillingPeriod|null $BillingPeriod
  * @property string|null $InvoicingEntity
+ * @property 'SELLER'|'RESELLER'|'BUYER'|null $ReceiverRole
  */
 class InvoiceSummariesFilter extends Shape
 {
@@ -15,7 +16,8 @@ class InvoiceSummariesFilter extends Shape
      * @param array{
      *     TimeInterval?: DateInterval|null,
      *     BillingPeriod?: BillingPeriod|null,
-     *     InvoicingEntity?: string|null
+     *     InvoicingEntity?: string|null,
+     *     ReceiverRole?: 'SELLER'|'RESELLER'|'BUYER'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $InvoicingEntity
+ * @property 'AWS'|'AWS_MARKETPLACE'|null $BillingEntity
  */
 class Entity extends Shape
 {
     /**
-     * @param array{InvoicingEntity?: string|null} $args
+     * @param array{
+     *     InvoicingEntity?: string|null,
+     *     BillingEntity?: 'AWS'|'AWS_MARKETPLACE'|null
+     * } $args
      */
     public function __construct(array $args = [])
     {
