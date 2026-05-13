@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property Shapes\UserContext $CreatedBy
  * @property 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting'|'DeleteFailed' $ModelPackageGroupStatus
+ * @property Shapes\ManagedConfiguration|null $ManagedConfiguration
  */
 class DescribeModelPackageGroupResponse extends Response
 {

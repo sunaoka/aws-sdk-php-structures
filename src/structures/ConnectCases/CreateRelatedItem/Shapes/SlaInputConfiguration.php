@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CaseField' $type
  * @property string|null $fieldId
  * @property list<FieldValueUnion>|null $targetFieldValues
- * @property int<1, 129600> $targetSlaMinutes
+ * @property int<1, 1051200> $targetSlaMinutes
  */
 class SlaInputConfiguration extends Shape
 {
@@ -19,7 +19,7 @@ class SlaInputConfiguration extends Shape
      *     type: 'CaseField',
      *     fieldId?: string|null,
      *     targetFieldValues?: list<FieldValueUnion>|null,
-     *     targetSlaMinutes: int<1, 129600>
+     *     targetSlaMinutes: int<1, 1051200>
      * } $args
      */
     public function __construct(array $args)

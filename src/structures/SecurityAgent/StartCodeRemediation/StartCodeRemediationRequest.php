@@ -6,7 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $agentSpaceId
- * @property string $pentestJobId
+ * @property string|null $pentestJobId
+ * @property string|null $codeReviewJobId
  * @property list<string> $findingIds
  */
 class StartCodeRemediationRequest extends Request
@@ -14,7 +15,8 @@ class StartCodeRemediationRequest extends Request
     /**
      * @param array{
      *     agentSpaceId: string,
-     *     pentestJobId: string,
+     *     pentestJobId?: string|null,
+     *     codeReviewJobId?: string|null,
      *     findingIds: list<string>
      * } $args
      */

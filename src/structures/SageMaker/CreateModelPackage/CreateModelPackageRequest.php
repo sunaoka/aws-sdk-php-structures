@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ModelPackageSecurityConfig|null $SecurityConfig
  * @property Shapes\ModelPackageModelCard|null $ModelCard
  * @property Shapes\ModelLifeCycle|null $ModelLifeCycle
+ * @property 'Restricted'|null $ManagedStorageType
  */
 class CreateModelPackageRequest extends Request
 {
@@ -57,7 +58,8 @@ class CreateModelPackageRequest extends Request
      *     SourceUri?: string|null,
      *     SecurityConfig?: Shapes\ModelPackageSecurityConfig|null,
      *     ModelCard?: Shapes\ModelPackageModelCard|null,
-     *     ModelLifeCycle?: Shapes\ModelLifeCycle|null
+     *     ModelLifeCycle?: Shapes\ModelLifeCycle|null,
+     *     ManagedStorageType?: 'Restricted'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property int|null $maxResults
- * @property string $pentestJobId
+ * @property string|null $pentestJobId
+ * @property string|null $codeReviewJobId
  * @property string $agentSpaceId
  * @property string|null $nextToken
  * @property string|null $riskType
@@ -20,7 +21,8 @@ class ListFindingsRequest extends Request
     /**
      * @param array{
      *     maxResults?: int|null,
-     *     pentestJobId: string,
+     *     pentestJobId?: string|null,
+     *     codeReviewJobId?: string|null,
      *     agentSpaceId: string,
      *     nextToken?: string|null,
      *     riskType?: string|null,

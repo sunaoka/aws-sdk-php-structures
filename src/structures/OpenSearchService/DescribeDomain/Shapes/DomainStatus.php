@@ -40,6 +40,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ModifyingProperties>|null $ModifyingProperties
  * @property AIMLOptionsOutput|null $AIMLOptions
  * @property DeploymentStrategyOptions|null $DeploymentStrategyOptions
+ * @property AutomatedSnapshotPauseOptions|null $AutomatedSnapshotPauseOptions
  */
 class DomainStatus extends Shape
 {
@@ -79,7 +80,8 @@ class DomainStatus extends Shape
      *     DomainProcessingStatus?: 'Creating'|'Active'|'Modifying'|'UpgradingEngineVersion'|'UpdatingServiceSoftware'|'Isolated'|'Deleting'|null,
      *     ModifyingProperties?: list<ModifyingProperties>|null,
      *     AIMLOptions?: AIMLOptionsOutput|null,
-     *     DeploymentStrategyOptions?: DeploymentStrategyOptions|null
+     *     DeploymentStrategyOptions?: DeploymentStrategyOptions|null,
+     *     AutomatedSnapshotPauseOptions?: AutomatedSnapshotPauseOptions|null
      * } $args
      */
     public function __construct(array $args)

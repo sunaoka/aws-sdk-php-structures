@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ModelPackageGroupDescription
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting'|'DeleteFailed' $ModelPackageGroupStatus
+ * @property ManagedConfiguration|null $ManagedConfiguration
  */
 class ModelPackageGroupSummary extends Shape
 {
@@ -19,7 +20,8 @@ class ModelPackageGroupSummary extends Shape
      *     ModelPackageGroupArn: string,
      *     ModelPackageGroupDescription?: string|null,
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     ModelPackageGroupStatus: 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting'|'DeleteFailed'
+     *     ModelPackageGroupStatus: 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting'|'DeleteFailed',
+     *     ManagedConfiguration?: ManagedConfiguration|null
      * } $args
      */
     public function __construct(array $args)

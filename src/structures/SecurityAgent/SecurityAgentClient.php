@@ -5,9 +5,13 @@ namespace Sunaoka\Aws\Structures\SecurityAgent;
 class SecurityAgentClient extends \Aws\SecurityAgent\SecurityAgentClient
 {
     use AddArtifact\AddArtifactTrait;
+    use BatchDeleteCodeReviews\BatchDeleteCodeReviewsTrait;
     use BatchDeletePentests\BatchDeletePentestsTrait;
     use BatchGetAgentSpaces\BatchGetAgentSpacesTrait;
     use BatchGetArtifactMetadata\BatchGetArtifactMetadataTrait;
+    use BatchGetCodeReviewJobTasks\BatchGetCodeReviewJobTasksTrait;
+    use BatchGetCodeReviewJobs\BatchGetCodeReviewJobsTrait;
+    use BatchGetCodeReviews\BatchGetCodeReviewsTrait;
     use BatchGetFindings\BatchGetFindingsTrait;
     use BatchGetPentestJobTasks\BatchGetPentestJobTasksTrait;
     use BatchGetPentestJobs\BatchGetPentestJobsTrait;
@@ -15,6 +19,7 @@ class SecurityAgentClient extends \Aws\SecurityAgent\SecurityAgentClient
     use BatchGetTargetDomains\BatchGetTargetDomainsTrait;
     use CreateAgentSpace\CreateAgentSpaceTrait;
     use CreateApplication\CreateApplicationTrait;
+    use CreateCodeReview\CreateCodeReviewTrait;
     use CreateIntegration\CreateIntegrationTrait;
     use CreateMembership\CreateMembershipTrait;
     use CreatePentest\CreatePentestTrait;
@@ -32,6 +37,9 @@ class SecurityAgentClient extends \Aws\SecurityAgent\SecurityAgentClient
     use ListAgentSpaces\ListAgentSpacesTrait;
     use ListApplications\ListApplicationsTrait;
     use ListArtifacts\ListArtifactsTrait;
+    use ListCodeReviewJobTasks\ListCodeReviewJobTasksTrait;
+    use ListCodeReviewJobsForCodeReview\ListCodeReviewJobsForCodeReviewTrait;
+    use ListCodeReviews\ListCodeReviewsTrait;
     use ListDiscoveredEndpoints\ListDiscoveredEndpointsTrait;
     use ListFindings\ListFindingsTrait;
     use ListIntegratedResources\ListIntegratedResourcesTrait;
@@ -43,12 +51,15 @@ class SecurityAgentClient extends \Aws\SecurityAgent\SecurityAgentClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTargetDomains\ListTargetDomainsTrait;
     use StartCodeRemediation\StartCodeRemediationTrait;
+    use StartCodeReviewJob\StartCodeReviewJobTrait;
     use StartPentestJob\StartPentestJobTrait;
+    use StopCodeReviewJob\StopCodeReviewJobTrait;
     use StopPentestJob\StopPentestJobTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAgentSpace\UpdateAgentSpaceTrait;
     use UpdateApplication\UpdateApplicationTrait;
+    use UpdateCodeReview\UpdateCodeReviewTrait;
     use UpdateFinding\UpdateFindingTrait;
     use UpdateIntegratedResources\UpdateIntegratedResourcesTrait;
     use UpdatePentest\UpdatePentestTrait;

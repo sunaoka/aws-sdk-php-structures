@@ -13,8 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property 'GENERATING'|'GENERATED'|'GENERATE_FAILED'|'DELETE_FAILED' $status
- * @property list<string> $statusReasons
  * @property string|null $findings
+ * @property list<string> $statusReasons
  */
 class PolicyGeneration extends Shape
 {
@@ -28,8 +28,8 @@ class PolicyGeneration extends Shape
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     status: 'GENERATING'|'GENERATED'|'GENERATE_FAILED'|'DELETE_FAILED',
-     *     statusReasons: list<string>,
-     *     findings?: string|null
+     *     findings?: string|null,
+     *     statusReasons: list<string>
      * } $args
      */
     public function __construct(array $args)

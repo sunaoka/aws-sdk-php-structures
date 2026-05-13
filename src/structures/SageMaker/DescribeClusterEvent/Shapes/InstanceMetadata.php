@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $CustomerEni
  * @property AdditionalEnis|null $AdditionalEnis
+ * @property list<InstanceRequirementsEniConfiguration>|null $InstanceRequirementsEniConfigurations
  * @property CapacityReservation|null $CapacityReservation
  * @property string|null $FailureMessage
  * @property string|null $LcsExecutionState
@@ -18,6 +19,7 @@ class InstanceMetadata extends Shape
      * @param array{
      *     CustomerEni?: string|null,
      *     AdditionalEnis?: AdditionalEnis|null,
+     *     InstanceRequirementsEniConfigurations?: list<InstanceRequirementsEniConfiguration>|null,
      *     CapacityReservation?: CapacityReservation|null,
      *     FailureMessage?: string|null,
      *     LcsExecutionState?: string|null,

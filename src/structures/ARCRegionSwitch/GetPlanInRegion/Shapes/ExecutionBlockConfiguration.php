@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DocumentDbConfiguration|null $documentDbConfig
  * @property RdsPromoteReadReplicaConfiguration|null $rdsPromoteReadReplicaConfig
  * @property RdsCreateCrossRegionReplicaConfiguration|null $rdsCreateCrossRegionReadReplicaConfig
+ * @property LambdaEventSourceMappingConfiguration|null $lambdaEventSourceMappingConfig
  */
 class ExecutionBlockConfiguration extends Shape
 {
@@ -35,7 +36,8 @@ class ExecutionBlockConfiguration extends Shape
      *     route53HealthCheckConfig?: Route53HealthCheckConfiguration|null,
      *     documentDbConfig?: DocumentDbConfiguration|null,
      *     rdsPromoteReadReplicaConfig?: RdsPromoteReadReplicaConfiguration|null,
-     *     rdsCreateCrossRegionReadReplicaConfig?: RdsCreateCrossRegionReplicaConfiguration|null
+     *     rdsCreateCrossRegionReadReplicaConfig?: RdsCreateCrossRegionReplicaConfiguration|null,
+     *     lambdaEventSourceMappingConfig?: LambdaEventSourceMappingConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

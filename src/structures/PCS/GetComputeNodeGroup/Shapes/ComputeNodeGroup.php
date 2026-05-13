@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|'UPDATE_FAILED'|'DELETED'|'SUSPENDING'|'SUSPENDED'|'RESUMING' $status
  * @property string|null $amiId
  * @property list<string> $subnetIds
- * @property 'ONDEMAND'|'SPOT'|'CAPACITY_BLOCK'|null $purchaseOption
+ * @property 'ONDEMAND'|'SPOT'|'CAPACITY_BLOCK'|'INTERRUPTIBLE_CAPACITY_RESERVATION'|null $purchaseOption
  * @property CustomLaunchTemplate $customLaunchTemplate
  * @property string $iamInstanceProfileArn
  * @property ScalingConfiguration $scalingConfiguration
@@ -36,7 +36,7 @@ class ComputeNodeGroup extends Shape
      *     status: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|'UPDATE_FAILED'|'DELETED'|'SUSPENDING'|'SUSPENDED'|'RESUMING',
      *     amiId?: string|null,
      *     subnetIds: list<string>,
-     *     purchaseOption?: 'ONDEMAND'|'SPOT'|'CAPACITY_BLOCK'|null,
+     *     purchaseOption?: 'ONDEMAND'|'SPOT'|'CAPACITY_BLOCK'|'INTERRUPTIBLE_CAPACITY_RESERVATION'|null,
      *     customLaunchTemplate: CustomLaunchTemplate,
      *     iamInstanceProfileArn: string,
      *     scalingConfiguration: ScalingConfiguration,

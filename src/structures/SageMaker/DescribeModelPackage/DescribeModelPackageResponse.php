@@ -36,6 +36,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ModelPackageSecurityConfig|null $SecurityConfig
  * @property Shapes\ModelPackageModelCard|null $ModelCard
  * @property Shapes\ModelLifeCycle|null $ModelLifeCycle
+ * @property 'Restricted'|null $ManagedStorageType
  */
 class DescribeModelPackageResponse extends Response
 {

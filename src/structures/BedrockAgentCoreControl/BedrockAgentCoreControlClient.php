@@ -72,7 +72,10 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use GetPaymentManager\GetPaymentManagerTrait;
     use GetPolicy\GetPolicyTrait;
     use GetPolicyEngine\GetPolicyEngineTrait;
+    use GetPolicyEngineSummary\GetPolicyEngineSummaryTrait;
     use GetPolicyGeneration\GetPolicyGenerationTrait;
+    use GetPolicyGenerationSummary\GetPolicyGenerationSummaryTrait;
+    use GetPolicySummary\GetPolicySummaryTrait;
     use GetRegistry\GetRegistryTrait;
     use GetRegistryRecord\GetRegistryRecordTrait;
     use GetResourcePolicy\GetResourcePolicyTrait;
@@ -99,9 +102,12 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use ListPaymentCredentialProviders\ListPaymentCredentialProvidersTrait;
     use ListPaymentManagers\ListPaymentManagersTrait;
     use ListPolicies\ListPoliciesTrait;
+    use ListPolicyEngineSummaries\ListPolicyEngineSummariesTrait;
     use ListPolicyEngines\ListPolicyEnginesTrait;
     use ListPolicyGenerationAssets\ListPolicyGenerationAssetsTrait;
+    use ListPolicyGenerationSummaries\ListPolicyGenerationSummariesTrait;
     use ListPolicyGenerations\ListPolicyGenerationsTrait;
+    use ListPolicySummaries\ListPolicySummariesTrait;
     use ListRegistries\ListRegistriesTrait;
     use ListRegistryRecords\ListRegistryRecordsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;

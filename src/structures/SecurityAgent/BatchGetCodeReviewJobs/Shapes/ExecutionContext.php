@@ -1,0 +1,25 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\SecurityAgent\BatchGetCodeReviewJobs\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property 'ERROR'|'CLIENT_ERROR'|'WARNING'|'INFO'|null $contextType
+ * @property string|null $context
+ * @property \Aws\Api\DateTimeResult|null $timestamp
+ */
+class ExecutionContext extends Shape
+{
+    /**
+     * @param array{
+     *     contextType?: 'ERROR'|'CLIENT_ERROR'|'WARNING'|'INFO'|null,
+     *     context?: string|null,
+     *     timestamp?: \Aws\Api\DateTimeResult|null
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

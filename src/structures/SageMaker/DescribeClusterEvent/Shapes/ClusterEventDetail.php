@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $EventTime
  * @property EventDetails|null $EventDetails
  * @property string|null $Description
+ * @property 'Info'|'Warn'|'Error'|null $EventLevel
  */
 class ClusterEventDetail extends Shape
 {
@@ -27,7 +28,8 @@ class ClusterEventDetail extends Shape
      *     ResourceType: 'Cluster'|'InstanceGroup'|'Instance',
      *     EventTime: \Aws\Api\DateTimeResult,
      *     EventDetails?: EventDetails|null,
-     *     Description?: string|null
+     *     Description?: string|null,
+     *     EventLevel?: 'Info'|'Warn'|'Error'|null
      * } $args
      */
     public function __construct(array $args)

@@ -13,8 +13,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property 'GENERATING'|'GENERATED'|'GENERATE_FAILED'|'DELETE_FAILED' $status
- * @property list<string> $statusReasons
  * @property string|null $findings
+ * @property list<string> $statusReasons
  */
 class GetPolicyGenerationResponse extends Response
 {

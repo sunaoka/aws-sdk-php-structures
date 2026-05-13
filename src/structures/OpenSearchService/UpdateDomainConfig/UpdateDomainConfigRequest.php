@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\SoftwareUpdateOptions|null $SoftwareUpdateOptions
  * @property Shapes\AIMLOptionsInput|null $AIMLOptions
  * @property Shapes\DeploymentStrategyOptions|null $DeploymentStrategyOptions
+ * @property Shapes\AutomatedSnapshotPauseRequestOptions|null $AutomatedSnapshotPauseOptions
  */
 class UpdateDomainConfigRequest extends Request
 {
@@ -53,7 +54,8 @@ class UpdateDomainConfigRequest extends Request
      *     OffPeakWindowOptions?: Shapes\OffPeakWindowOptions|null,
      *     SoftwareUpdateOptions?: Shapes\SoftwareUpdateOptions|null,
      *     AIMLOptions?: Shapes\AIMLOptionsInput|null,
-     *     DeploymentStrategyOptions?: Shapes\DeploymentStrategyOptions|null
+     *     DeploymentStrategyOptions?: Shapes\DeploymentStrategyOptions|null,
+     *     AutomatedSnapshotPauseOptions?: Shapes\AutomatedSnapshotPauseRequestOptions|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $RuleId
  * @property string $RuleArn
- * @property 'OnPostCallAnalysisAvailable'|'OnRealTimeCallAnalysisAvailable'|'OnRealTimeChatAnalysisAvailable'|'OnPostChatAnalysisAvailable'|'OnEmailAnalysisAvailable'|'OnZendeskTicketCreate'|'OnZendeskTicketStatusUpdate'|'OnSalesforceCaseCreate'|'OnContactEvaluationSubmit'|'OnMetricDataUpdate'|'OnCaseCreate'|'OnCaseUpdate'|'OnSlaBreach' $EventSourceName
+ * @property 'OnPostCallAnalysisAvailable'|'OnRealTimeCallAnalysisAvailable'|'OnRealTimeChatAnalysisAvailable'|'OnPostChatAnalysisAvailable'|'OnEmailAnalysisAvailable'|'OnZendeskTicketCreate'|'OnZendeskTicketStatusUpdate'|'OnSalesforceCaseCreate'|'OnContactEvaluationSubmit'|'OnMetricDataUpdate'|'OnCaseCreate'|'OnCaseUpdate'|'OnSlaBreach'|'OnAlertUpdate'|'OnSchedulePublish'|'OnScheduleUpdate'|'OnScheduleTimeOffRequestActivity' $EventSourceName
  * @property 'DRAFT'|'PUBLISHED' $PublishStatus
  * @property list<ActionSummary> $ActionSummaries
  * @property \Aws\Api\DateTimeResult $CreatedTime
@@ -21,7 +21,7 @@ class RuleSummary extends Shape
      *     Name: string,
      *     RuleId: string,
      *     RuleArn: string,
-     *     EventSourceName: 'OnPostCallAnalysisAvailable'|'OnRealTimeCallAnalysisAvailable'|'OnRealTimeChatAnalysisAvailable'|'OnPostChatAnalysisAvailable'|'OnEmailAnalysisAvailable'|'OnZendeskTicketCreate'|'OnZendeskTicketStatusUpdate'|'OnSalesforceCaseCreate'|'OnContactEvaluationSubmit'|'OnMetricDataUpdate'|'OnCaseCreate'|'OnCaseUpdate'|'OnSlaBreach',
+     *     EventSourceName: 'OnPostCallAnalysisAvailable'|'OnRealTimeCallAnalysisAvailable'|'OnRealTimeChatAnalysisAvailable'|'OnPostChatAnalysisAvailable'|'OnEmailAnalysisAvailable'|'OnZendeskTicketCreate'|'OnZendeskTicketStatusUpdate'|'OnSalesforceCaseCreate'|'OnContactEvaluationSubmit'|'OnMetricDataUpdate'|'OnCaseCreate'|'OnCaseUpdate'|'OnSlaBreach'|'OnAlertUpdate'|'OnSchedulePublish'|'OnScheduleUpdate'|'OnScheduleTimeOffRequestActivity',
      *     PublishStatus: 'DRAFT'|'PUBLISHED',
      *     ActionSummaries: list<ActionSummary>,
      *     CreatedTime: \Aws\Api\DateTimeResult,

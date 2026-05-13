@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property Shapes\WhatsAppSignupCallbackResult|null $signupCallbackResult
  * @property int|null $statusCode
+ * @property string|null $linkedWhatsAppBusinessAccountId
  */
 class AssociateWhatsAppBusinessAccountResponse extends Response
 {

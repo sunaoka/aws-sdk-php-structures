@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Channel>|null $InputDataConfig
  * @property OutputDataConfig|null $OutputDataConfig
  * @property ResourceConfig|null $ResourceConfig
+ * @property WarmPoolStatus|null $WarmPoolStatus
  * @property VpcConfig|null $VpcConfig
  * @property StoppingCondition|null $StoppingCondition
  * @property \Aws\Api\DateTimeResult|null $CreationTime
@@ -65,6 +66,7 @@ class TrainingJob extends Shape
      *     InputDataConfig?: list<Channel>|null,
      *     OutputDataConfig?: OutputDataConfig|null,
      *     ResourceConfig?: ResourceConfig|null,
+     *     WarmPoolStatus?: WarmPoolStatus|null,
      *     VpcConfig?: VpcConfig|null,
      *     StoppingCondition?: StoppingCondition|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,

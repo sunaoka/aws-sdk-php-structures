@@ -32,6 +32,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DENY'|null $Analysis
  * @property 'DENY'|null $Automate
  * @property 'DENY'|null $Flow
+ * @property 'DENY'|null $Apps
+ * @property 'DENY'|null $CreateAndUpdateApps
+ * @property 'DENY'|null $ShareApps
+ * @property 'DENY'|null $InvokeAppsAIInference
+ * @property 'DENY'|null $AccessAppsNativeDataStore
  * @property 'DENY'|null $PublishWithoutApproval
  * @property 'DENY'|null $UseBedrockModels
  * @property 'DENY'|null $PerformFlowUiTask
@@ -260,6 +265,11 @@ class Capabilities extends Shape
      *     Analysis?: 'DENY'|null,
      *     Automate?: 'DENY'|null,
      *     Flow?: 'DENY'|null,
+     *     Apps?: 'DENY'|null,
+     *     CreateAndUpdateApps?: 'DENY'|null,
+     *     ShareApps?: 'DENY'|null,
+     *     InvokeAppsAIInference?: 'DENY'|null,
+     *     AccessAppsNativeDataStore?: 'DENY'|null,
      *     PublishWithoutApproval?: 'DENY'|null,
      *     UseBedrockModels?: 'DENY'|null,
      *     PerformFlowUiTask?: 'DENY'|null,

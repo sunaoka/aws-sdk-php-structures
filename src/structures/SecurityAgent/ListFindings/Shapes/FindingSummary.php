@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $agentSpaceId
  * @property string|null $pentestId
  * @property string|null $pentestJobId
+ * @property string|null $codeReviewId
+ * @property string|null $codeReviewJobId
  * @property string|null $name
  * @property 'ACTIVE'|'RESOLVED'|'ACCEPTED'|'FALSE_POSITIVE'|null $status
  * @property string|null $riskType
@@ -25,6 +27,8 @@ class FindingSummary extends Shape
      *     agentSpaceId: string,
      *     pentestId?: string|null,
      *     pentestJobId?: string|null,
+     *     codeReviewId?: string|null,
+     *     codeReviewJobId?: string|null,
      *     name?: string|null,
      *     status?: 'ACTIVE'|'RESOLVED'|'ACCEPTED'|'FALSE_POSITIVE'|null,
      *     riskType?: string|null,

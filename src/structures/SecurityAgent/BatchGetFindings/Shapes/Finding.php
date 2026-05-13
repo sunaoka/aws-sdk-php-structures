@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $agentSpaceId
  * @property string|null $pentestId
  * @property string|null $pentestJobId
+ * @property string|null $codeReviewId
+ * @property string|null $codeReviewJobId
  * @property string|null $taskId
  * @property string|null $name
  * @property string|null $description
@@ -21,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $attackScript
  * @property CodeRemediationTask|null $codeRemediationTask
  * @property string|null $lastUpdatedBy
+ * @property list<CodeLocation>|null $codeLocations
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
@@ -32,6 +35,8 @@ class Finding extends Shape
      *     agentSpaceId: string,
      *     pentestId?: string|null,
      *     pentestJobId?: string|null,
+     *     codeReviewId?: string|null,
+     *     codeReviewJobId?: string|null,
      *     taskId?: string|null,
      *     name?: string|null,
      *     description?: string|null,
@@ -44,6 +49,7 @@ class Finding extends Shape
      *     attackScript?: string|null,
      *     codeRemediationTask?: CodeRemediationTask|null,
      *     lastUpdatedBy?: string|null,
+     *     codeLocations?: list<CodeLocation>|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args

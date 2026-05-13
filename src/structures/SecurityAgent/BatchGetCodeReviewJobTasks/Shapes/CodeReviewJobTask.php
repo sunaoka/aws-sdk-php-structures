@@ -1,0 +1,43 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\SecurityAgent\BatchGetCodeReviewJobTasks\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $taskId
+ * @property string|null $codeReviewId
+ * @property string|null $codeReviewJobId
+ * @property string|null $agentSpaceId
+ * @property string|null $title
+ * @property string|null $description
+ * @property list<Category>|null $categories
+ * @property 'CROSS_SITE_SCRIPTING'|'DEFAULT_CREDENTIALS'|'INSECURE_DIRECT_OBJECT_REFERENCE'|'PRIVILEGE_ESCALATION'|'SERVER_SIDE_TEMPLATE_INJECTION'|'COMMAND_INJECTION'|'CODE_INJECTION'|'SQL_INJECTION'|'ARBITRARY_FILE_UPLOAD'|'INSECURE_DESERIALIZATION'|'LOCAL_FILE_INCLUSION'|'INFORMATION_DISCLOSURE'|'PATH_TRAVERSAL'|'SERVER_SIDE_REQUEST_FORGERY'|'JSON_WEB_TOKEN_VULNERABILITIES'|'XML_EXTERNAL_ENTITY'|'FILE_DELETION'|'OTHER'|'GRAPHQL_VULNERABILITIES'|'BUSINESS_LOGIC_VULNERABILITIES'|'CRYPTOGRAPHIC_VULNERABILITIES'|'DENIAL_OF_SERVICE'|'FILE_ACCESS'|'FILE_CREATION'|'DATABASE_MODIFICATION'|'DATABASE_ACCESS'|'OUTBOUND_SERVICE_REQUEST'|'UNKNOWN'|null $riskType
+ * @property 'IN_PROGRESS'|'ABORTED'|'COMPLETED'|'INTERNAL_ERROR'|'FAILED'|null $executionStatus
+ * @property LogLocation|null $logsLocation
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ */
+class CodeReviewJobTask extends Shape
+{
+    /**
+     * @param array{
+     *     taskId: string,
+     *     codeReviewId?: string|null,
+     *     codeReviewJobId?: string|null,
+     *     agentSpaceId?: string|null,
+     *     title?: string|null,
+     *     description?: string|null,
+     *     categories?: list<Category>|null,
+     *     riskType?: 'CROSS_SITE_SCRIPTING'|'DEFAULT_CREDENTIALS'|'INSECURE_DIRECT_OBJECT_REFERENCE'|'PRIVILEGE_ESCALATION'|'SERVER_SIDE_TEMPLATE_INJECTION'|'COMMAND_INJECTION'|'CODE_INJECTION'|'SQL_INJECTION'|'ARBITRARY_FILE_UPLOAD'|'INSECURE_DESERIALIZATION'|'LOCAL_FILE_INCLUSION'|'INFORMATION_DISCLOSURE'|'PATH_TRAVERSAL'|'SERVER_SIDE_REQUEST_FORGERY'|'JSON_WEB_TOKEN_VULNERABILITIES'|'XML_EXTERNAL_ENTITY'|'FILE_DELETION'|'OTHER'|'GRAPHQL_VULNERABILITIES'|'BUSINESS_LOGIC_VULNERABILITIES'|'CRYPTOGRAPHIC_VULNERABILITIES'|'DENIAL_OF_SERVICE'|'FILE_ACCESS'|'FILE_CREATION'|'DATABASE_MODIFICATION'|'DATABASE_ACCESS'|'OUTBOUND_SERVICE_REQUEST'|'UNKNOWN'|null,
+     *     executionStatus?: 'IN_PROGRESS'|'ABORTED'|'COMPLETED'|'INTERNAL_ERROR'|'FAILED'|null,
+     *     logsLocation?: LogLocation|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}
