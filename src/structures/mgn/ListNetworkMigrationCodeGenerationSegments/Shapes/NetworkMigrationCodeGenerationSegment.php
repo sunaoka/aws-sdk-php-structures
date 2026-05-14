@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $logicalID
  * @property string|null $mapperSegmentID
  * @property list<NetworkMigrationCodeGenerationArtifact>|null $artifacts
+ * @property list<string>|null $referencedSegments
  * @property \Aws\Api\DateTimeResult|null $createdAt
  */
 class NetworkMigrationCodeGenerationSegment extends Shape
@@ -27,6 +28,7 @@ class NetworkMigrationCodeGenerationSegment extends Shape
      *     logicalID?: string|null,
      *     mapperSegmentID?: string|null,
      *     artifacts?: list<NetworkMigrationCodeGenerationArtifact>|null,
+     *     referencedSegments?: list<string>|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */

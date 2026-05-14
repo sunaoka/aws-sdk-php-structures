@@ -67,6 +67,7 @@ class QConnectClient extends \Aws\QConnect\QConnectClient
     use ListMessageTemplateVersions\ListMessageTemplateVersionsTrait;
     use ListMessageTemplates\ListMessageTemplatesTrait;
     use ListMessages\ListMessagesTrait;
+    use ListModels\ListModelsTrait;
     use ListQuickResponses\ListQuickResponsesTrait;
     use ListSpans\ListSpansTrait;
     use ListTagsForResource\ListTagsForResourceTrait;

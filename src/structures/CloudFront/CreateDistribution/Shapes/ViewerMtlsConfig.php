@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CloudFront\CreateDistribution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'required'|'optional'|null $Mode
+ * @property 'required'|'optional'|'passthrough'|null $Mode
  * @property TrustStoreConfig|null $TrustStoreConfig
  */
 class ViewerMtlsConfig extends Shape
 {
     /**
      * @param array{
-     *     Mode?: 'required'|'optional'|null,
+     *     Mode?: 'required'|'optional'|'passthrough'|null,
      *     TrustStoreConfig?: TrustStoreConfig|null
      * } $args
      */

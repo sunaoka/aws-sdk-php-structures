@@ -6,7 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property Shapes\CaCertificatesBundleSource $CaCertificatesBundleSource
+ * @property Shapes\CaCertificatesBundleSource|null $CaCertificatesBundleSource
+ * @property bool|null $UseClientCertificateOCSPEndpoint
  * @property string $IfMatch
  */
 class UpdateTrustStoreRequest extends Request
@@ -14,7 +15,8 @@ class UpdateTrustStoreRequest extends Request
     /**
      * @param array{
      *     Id: string,
-     *     CaCertificatesBundleSource: Shapes\CaCertificatesBundleSource,
+     *     CaCertificatesBundleSource?: Shapes\CaCertificatesBundleSource|null,
+     *     UseClientCertificateOCSPEndpoint?: bool|null,
      *     IfMatch: string
      * } $args
      */

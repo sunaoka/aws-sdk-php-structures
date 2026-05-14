@@ -4,8 +4,10 @@ namespace Sunaoka\Aws\Structures\Bedrock;
 
 class BedrockClient extends \Aws\Bedrock\BedrockClient
 {
+    use BatchDeleteAdvancedPromptOptimizationJob\BatchDeleteAdvancedPromptOptimizationJobTrait;
     use BatchDeleteEvaluationJob\BatchDeleteEvaluationJobTrait;
     use CancelAutomatedReasoningPolicyBuildWorkflow\CancelAutomatedReasoningPolicyBuildWorkflowTrait;
+    use CreateAdvancedPromptOptimizationJob\CreateAdvancedPromptOptimizationJobTrait;
     use CreateAutomatedReasoningPolicy\CreateAutomatedReasoningPolicyTrait;
     use CreateAutomatedReasoningPolicyTestCase\CreateAutomatedReasoningPolicyTestCaseTrait;
     use CreateAutomatedReasoningPolicyVersion\CreateAutomatedReasoningPolicyVersionTrait;
@@ -40,6 +42,7 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;
     use DeregisterMarketplaceModelEndpoint\DeregisterMarketplaceModelEndpointTrait;
     use ExportAutomatedReasoningPolicyVersion\ExportAutomatedReasoningPolicyVersionTrait;
+    use GetAdvancedPromptOptimizationJob\GetAdvancedPromptOptimizationJobTrait;
     use GetAutomatedReasoningPolicy\GetAutomatedReasoningPolicyTrait;
     use GetAutomatedReasoningPolicyAnnotations\GetAutomatedReasoningPolicyAnnotationsTrait;
     use GetAutomatedReasoningPolicyBuildWorkflow\GetAutomatedReasoningPolicyBuildWorkflowTrait;
@@ -65,6 +68,7 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use GetProvisionedModelThroughput\GetProvisionedModelThroughputTrait;
     use GetResourcePolicy\GetResourcePolicyTrait;
     use GetUseCaseForModelAccess\GetUseCaseForModelAccessTrait;
+    use ListAdvancedPromptOptimizationJobs\ListAdvancedPromptOptimizationJobsTrait;
     use ListAutomatedReasoningPolicies\ListAutomatedReasoningPoliciesTrait;
     use ListAutomatedReasoningPolicyBuildWorkflows\ListAutomatedReasoningPolicyBuildWorkflowsTrait;
     use ListAutomatedReasoningPolicyTestCases\ListAutomatedReasoningPolicyTestCasesTrait;
@@ -93,6 +97,7 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use RegisterMarketplaceModelEndpoint\RegisterMarketplaceModelEndpointTrait;
     use StartAutomatedReasoningPolicyBuildWorkflow\StartAutomatedReasoningPolicyBuildWorkflowTrait;
     use StartAutomatedReasoningPolicyTestWorkflow\StartAutomatedReasoningPolicyTestWorkflowTrait;
+    use StopAdvancedPromptOptimizationJob\StopAdvancedPromptOptimizationJobTrait;
     use StopEvaluationJob\StopEvaluationJobTrait;
     use StopModelCustomizationJob\StopModelCustomizationJobTrait;
     use StopModelInvocationJob\StopModelInvocationJobTrait;

@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $removeVpcConfiguration
  * @property Shapes\NetworkAccessConfiguration|null $networkAccessControl
  * @property bool|null $removeNetworkAccessConfiguration
+ * @property 'IPv4'|'DualStack'|null $ipAddressType
  */
 class UpdateWorkspaceRequest extends Request
 {
@@ -39,7 +40,8 @@ class UpdateWorkspaceRequest extends Request
      *     vpcConfiguration?: Shapes\VpcConfiguration|null,
      *     removeVpcConfiguration?: bool|null,
      *     networkAccessControl?: Shapes\NetworkAccessConfiguration|null,
-     *     removeNetworkAccessConfiguration?: bool|null
+     *     removeNetworkAccessConfiguration?: bool|null,
+     *     ipAddressType?: 'IPv4'|'DualStack'|null
      * } $args
      */
     public function __construct(array $args)

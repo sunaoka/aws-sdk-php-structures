@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 1000>|null $MaxResults
  * @property bool|null $Recursive
  * @property bool|null $IncludeRoot
+ * @property bool|null $HasDatabases
  */
 class GetCatalogsRequest extends Request
 {
@@ -19,7 +20,8 @@ class GetCatalogsRequest extends Request
      *     NextToken?: string|null,
      *     MaxResults?: int<1, 1000>|null,
      *     Recursive?: bool|null,
-     *     IncludeRoot?: bool|null
+     *     IncludeRoot?: bool|null,
+     *     HasDatabases?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

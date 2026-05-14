@@ -30,6 +30,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VpcConfiguration|null $vpcConfiguration
  * @property NetworkAccessConfiguration|null $networkAccessControl
  * @property string|null $grafanaToken
+ * @property 'IPv4'|'DualStack'|null $ipAddressType
  * @property string|null $kmsKeyId
  */
 class WorkspaceDescription extends Shape
@@ -61,6 +62,7 @@ class WorkspaceDescription extends Shape
      *     vpcConfiguration?: VpcConfiguration|null,
      *     networkAccessControl?: NetworkAccessConfiguration|null,
      *     grafanaToken?: string|null,
+     *     ipAddressType?: 'IPv4'|'DualStack'|null,
      *     kmsKeyId?: string|null
      * } $args
      */

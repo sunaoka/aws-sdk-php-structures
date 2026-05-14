@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $NumberOfCaCertificates
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property string|null $Reason
+ * @property bool|null $UseClientCertificateOCSPEndpoint
  */
 class TrustStore extends Shape
 {
@@ -23,7 +24,8 @@ class TrustStore extends Shape
      *     Status?: 'pending'|'active'|'failed'|null,
      *     NumberOfCaCertificates?: int|null,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
-     *     Reason?: string|null
+     *     Reason?: string|null,
+     *     UseClientCertificateOCSPEndpoint?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

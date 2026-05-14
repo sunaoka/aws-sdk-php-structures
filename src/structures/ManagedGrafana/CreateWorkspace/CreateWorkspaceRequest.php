@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $configuration
  * @property Shapes\NetworkAccessConfiguration|null $networkAccessControl
  * @property string|null $grafanaVersion
+ * @property 'IPv4'|'DualStack'|null $ipAddressType
  * @property string|null $kmsKeyId
  */
 class CreateWorkspaceRequest extends Request
@@ -45,6 +46,7 @@ class CreateWorkspaceRequest extends Request
      *     configuration?: string|null,
      *     networkAccessControl?: Shapes\NetworkAccessConfiguration|null,
      *     grafanaVersion?: string|null,
+     *     ipAddressType?: 'IPv4'|'DualStack'|null,
      *     kmsKeyId?: string|null
      * } $args
      */

@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property Shapes\CaCertificatesBundleSource $CaCertificatesBundleSource
+ * @property bool|null $UseClientCertificateOCSPEndpoint
  * @property Shapes\Tags|null $Tags
  */
 class CreateTrustStoreRequest extends Request
@@ -15,6 +16,7 @@ class CreateTrustStoreRequest extends Request
      * @param array{
      *     Name: string,
      *     CaCertificatesBundleSource: Shapes\CaCertificatesBundleSource,
+     *     UseClientCertificateOCSPEndpoint?: bool|null,
      *     Tags?: Shapes\Tags|null
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $networkMigrationExecutionID
  * @property string $networkMigrationDefinitionID
- * @property 'MAP'|'SKIP'|null $securityGroupMappingStrategy
+ * @property 'MAP'|'SKIP'|'MAP_DHCP'|null $securityGroupMappingStrategy
  */
 class StartNetworkMigrationMappingRequest extends Request
 {
@@ -15,7 +15,7 @@ class StartNetworkMigrationMappingRequest extends Request
      * @param array{
      *     networkMigrationExecutionID: string,
      *     networkMigrationDefinitionID: string,
-     *     securityGroupMappingStrategy?: 'MAP'|'SKIP'|null
+     *     securityGroupMappingStrategy?: 'MAP'|'SKIP'|'MAP_DHCP'|null
      * } $args
      */
     public function __construct(array $args)

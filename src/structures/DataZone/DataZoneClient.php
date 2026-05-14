@@ -34,6 +34,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use CreateGlossaryTerm\CreateGlossaryTermTrait;
     use CreateGroupProfile\CreateGroupProfileTrait;
     use CreateListingChangeSet\CreateListingChangeSetTrait;
+    use CreateNotebook\CreateNotebookTrait;
     use CreateProject\CreateProjectTrait;
     use CreateProjectMembership\CreateProjectMembershipTrait;
     use CreateProjectProfile\CreateProjectProfileTrait;
@@ -61,6 +62,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use DeleteGlossary\DeleteGlossaryTrait;
     use DeleteGlossaryTerm\DeleteGlossaryTermTrait;
     use DeleteListing\DeleteListingTrait;
+    use DeleteNotebook\DeleteNotebookTrait;
     use DeleteProject\DeleteProjectTrait;
     use DeleteProjectMembership\DeleteProjectMembershipTrait;
     use DeleteProjectProfile\DeleteProjectProfileTrait;
@@ -98,6 +100,8 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use GetLineageNode\GetLineageNodeTrait;
     use GetListing\GetListingTrait;
     use GetMetadataGenerationRun\GetMetadataGenerationRunTrait;
+    use GetNotebook\GetNotebookTrait;
+    use GetNotebookExport\GetNotebookExportTrait;
     use GetNotebookRun\GetNotebookRunTrait;
     use GetProject\GetProjectTrait;
     use GetProjectProfile\GetProjectProfileTrait;
@@ -130,6 +134,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use ListLineageNodeHistory\ListLineageNodeHistoryTrait;
     use ListMetadataGenerationRuns\ListMetadataGenerationRunsTrait;
     use ListNotebookRuns\ListNotebookRunsTrait;
+    use ListNotebooks\ListNotebooksTrait;
     use ListNotifications\ListNotificationsTrait;
     use ListPolicyGrants\ListPolicyGrantsTrait;
     use ListProjectMemberships\ListProjectMembershipsTrait;
@@ -159,6 +164,8 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use SearchUserProfiles\SearchUserProfilesTrait;
     use StartDataSourceRun\StartDataSourceRunTrait;
     use StartMetadataGenerationRun\StartMetadataGenerationRunTrait;
+    use StartNotebookExport\StartNotebookExportTrait;
+    use StartNotebookImport\StartNotebookImportTrait;
     use StartNotebookRun\StartNotebookRunTrait;
     use StopNotebookRun\StopNotebookRunTrait;
     use TagResource\TagResourceTrait;
@@ -176,6 +183,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use UpdateGlossary\UpdateGlossaryTrait;
     use UpdateGlossaryTerm\UpdateGlossaryTermTrait;
     use UpdateGroupProfile\UpdateGroupProfileTrait;
+    use UpdateNotebook\UpdateNotebookTrait;
     use UpdateProject\UpdateProjectTrait;
     use UpdateProjectProfile\UpdateProjectProfileTrait;
     use UpdateRootDomainUnitOwner\UpdateRootDomainUnitOwnerTrait;
