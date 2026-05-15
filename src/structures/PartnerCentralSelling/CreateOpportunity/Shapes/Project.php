@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<'SaaS or PaaS'|'BYOL or AMI'|'Managed Services'|'Professional Services'|'Resell'|'Other'>|null $DeliveryModels
  * @property list<ExpectedCustomerSpend>|null $ExpectedCustomerSpend
+ * @property ExpectedContractDuration|null $ExpectedContractDuration
  * @property string|null $Title
  * @property list<string>|null $ApnPrograms
  * @property string|null $CustomerBusinessProblem
@@ -25,6 +26,7 @@ class Project extends Shape
      * @param array{
      *     DeliveryModels?: list<'SaaS or PaaS'|'BYOL or AMI'|'Managed Services'|'Professional Services'|'Resell'|'Other'>|null,
      *     ExpectedCustomerSpend?: list<ExpectedCustomerSpend>|null,
+     *     ExpectedContractDuration?: ExpectedContractDuration|null,
      *     Title?: string|null,
      *     ApnPrograms?: list<string>|null,
      *     CustomerBusinessProblem?: string|null,

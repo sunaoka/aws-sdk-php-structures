@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<0, max> $startTime
  * @property int<0, max> $endTime
  * @property string $queryString
- * @property int<1, 10000>|null $limit
+ * @property int<1, 100000>|null $limit
  */
 class StartQueryRequest extends Request
 {
@@ -25,7 +25,7 @@ class StartQueryRequest extends Request
      *     startTime: int<0, max>,
      *     endTime: int<0, max>,
      *     queryString: string,
-     *     limit?: int<1, 10000>|null
+     *     limit?: int<1, 100000>|null
      * } $args
      */
     public function __construct(array $args)

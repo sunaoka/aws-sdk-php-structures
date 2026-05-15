@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<'SaaS or PaaS'|'BYOL or AMI'|'Managed Services'|'Professional Services'|'Resell'|'Other'>|null $DeliveryModels
  * @property list<ExpectedCustomerSpend>|null $ExpectedCustomerSpend
+ * @property ExpectedContractDuration|null $ExpectedContractDuration
  */
 class ProjectSummary extends Shape
 {
     /**
      * @param array{
      *     DeliveryModels?: list<'SaaS or PaaS'|'BYOL or AMI'|'Managed Services'|'Professional Services'|'Resell'|'Other'>|null,
-     *     ExpectedCustomerSpend?: list<ExpectedCustomerSpend>|null
+     *     ExpectedCustomerSpend?: list<ExpectedCustomerSpend>|null,
+     *     ExpectedContractDuration?: ExpectedContractDuration|null
      * } $args
      */
     public function __construct(array $args = [])
