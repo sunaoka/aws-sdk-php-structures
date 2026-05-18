@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PENDING'|'SUCCESSFUL'|'STOPPED'|'STOP_REQUESTED'|'IN_PROGRESS'|'ROLLBACK_REQUESTED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_SUCCESSFUL'|'ROLLBACK_FAILED'|null $status
  * @property string|null $statusReason
  * @property 'RECONCILE_SERVICE'|'PRE_SCALE_UP'|'SCALE_UP'|'POST_SCALE_UP'|'TEST_TRAFFIC_SHIFT'|'POST_TEST_TRAFFIC_SHIFT'|'PRODUCTION_TRAFFIC_SHIFT'|'POST_PRODUCTION_TRAFFIC_SHIFT'|'BAKE_TIME'|'CLEAN_UP'|null $lifecycleStage
+ * @property list<DeploymentLifecycleHookDetail>|null $lifecycleHookDetails
  * @property DeploymentConfiguration|null $deploymentConfiguration
  * @property Rollback|null $rollback
  * @property ServiceDeploymentCircuitBreaker|null $deploymentCircuitBreaker
@@ -40,6 +41,7 @@ class ServiceDeployment extends Shape
      *     status?: 'PENDING'|'SUCCESSFUL'|'STOPPED'|'STOP_REQUESTED'|'IN_PROGRESS'|'ROLLBACK_REQUESTED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_SUCCESSFUL'|'ROLLBACK_FAILED'|null,
      *     statusReason?: string|null,
      *     lifecycleStage?: 'RECONCILE_SERVICE'|'PRE_SCALE_UP'|'SCALE_UP'|'POST_SCALE_UP'|'TEST_TRAFFIC_SHIFT'|'POST_TEST_TRAFFIC_SHIFT'|'PRODUCTION_TRAFFIC_SHIFT'|'POST_PRODUCTION_TRAFFIC_SHIFT'|'BAKE_TIME'|'CLEAN_UP'|null,
+     *     lifecycleHookDetails?: list<DeploymentLifecycleHookDetail>|null,
      *     deploymentConfiguration?: DeploymentConfiguration|null,
      *     rollback?: Rollback|null,
      *     deploymentCircuitBreaker?: ServiceDeploymentCircuitBreaker|null,

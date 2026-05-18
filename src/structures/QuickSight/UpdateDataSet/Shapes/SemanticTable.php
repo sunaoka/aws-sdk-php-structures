@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Alias
  * @property string $DestinationTableId
  * @property RowLevelPermissionConfiguration|null $RowLevelPermissionConfiguration
+ * @property TableSemanticMetadata|null $SemanticMetadata
  */
 class SemanticTable extends Shape
 {
@@ -15,7 +16,8 @@ class SemanticTable extends Shape
      * @param array{
      *     Alias: string,
      *     DestinationTableId: string,
-     *     RowLevelPermissionConfiguration?: RowLevelPermissionConfiguration|null
+     *     RowLevelPermissionConfiguration?: RowLevelPermissionConfiguration|null,
+     *     SemanticMetadata?: TableSemanticMetadata|null
      * } $args
      */
     public function __construct(array $args)

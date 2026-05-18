@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ipam-pool'|'vpc'|'ec2-public-ipv4-pool'|'custom'|'subnet'|'eip'|'anycast-ip-list'|null $ResourceType
  * @property string|null $ResourceRegion
  * @property string|null $ResourceOwner
+ * @property list<Tag>|null $Tags
  */
 class IpamPoolAllocation extends Shape
 {
@@ -23,7 +24,8 @@ class IpamPoolAllocation extends Shape
      *     ResourceId?: string|null,
      *     ResourceType?: 'ipam-pool'|'vpc'|'ec2-public-ipv4-pool'|'custom'|'subnet'|'eip'|'anycast-ip-list'|null,
      *     ResourceRegion?: string|null,
-     *     ResourceOwner?: string|null
+     *     ResourceOwner?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

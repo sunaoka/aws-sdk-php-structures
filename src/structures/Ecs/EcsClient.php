@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\Ecs;
 
 class EcsClient extends \Aws\Ecs\EcsClient
 {
+    use ContinueServiceDeployment\ContinueServiceDeploymentTrait;
     use CreateCapacityProvider\CreateCapacityProviderTrait;
     use CreateCluster\CreateClusterTrait;
     use CreateDaemon\CreateDaemonTrait;

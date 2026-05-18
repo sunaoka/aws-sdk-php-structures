@@ -12,8 +12,10 @@ class AccessAnalyzerClient extends \Aws\AccessAnalyzer\AccessAnalyzerClient
     use CreateAccessPreview\CreateAccessPreviewTrait;
     use CreateAnalyzer\CreateAnalyzerTrait;
     use CreateArchiveRule\CreateArchiveRuleTrait;
+    use CreateServiceLinkedAnalyzer\CreateServiceLinkedAnalyzerTrait;
     use DeleteAnalyzer\DeleteAnalyzerTrait;
     use DeleteArchiveRule\DeleteArchiveRuleTrait;
+    use DeleteServiceLinkedAnalyzer\DeleteServiceLinkedAnalyzerTrait;
     use GenerateFindingRecommendation\GenerateFindingRecommendationTrait;
     use GetAccessPreview\GetAccessPreviewTrait;
     use GetAnalyzedResource\GetAnalyzedResourceTrait;

@@ -344,6 +344,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeIpamByoasn\DescribeIpamByoasnTrait;
     use DescribeIpamExternalResourceVerificationTokens\DescribeIpamExternalResourceVerificationTokensTrait;
     use DescribeIpamPolicies\DescribeIpamPoliciesTrait;
+    use DescribeIpamPoolAllocations\DescribeIpamPoolAllocationsTrait;
     use DescribeIpamPools\DescribeIpamPoolsTrait;
     use DescribeIpamPrefixListResolverTargets\DescribeIpamPrefixListResolverTargetsTrait;
     use DescribeIpamPrefixListResolvers\DescribeIpamPrefixListResolversTrait;
@@ -637,6 +638,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ModifyIpam\ModifyIpamTrait;
     use ModifyIpamPolicyAllocationRules\ModifyIpamPolicyAllocationRulesTrait;
     use ModifyIpamPool\ModifyIpamPoolTrait;
+    use ModifyIpamPoolAllocation\ModifyIpamPoolAllocationTrait;
     use ModifyIpamPrefixListResolver\ModifyIpamPrefixListResolverTrait;
     use ModifyIpamPrefixListResolverTarget\ModifyIpamPrefixListResolverTargetTrait;
     use ModifyIpamResourceCidr\ModifyIpamResourceCidrTrait;

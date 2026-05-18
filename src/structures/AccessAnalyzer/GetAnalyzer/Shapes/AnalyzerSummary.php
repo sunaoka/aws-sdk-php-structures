@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ACTIVE'|'CREATING'|'DISABLED'|'FAILED' $status
  * @property StatusReason|null $statusReason
  * @property AnalyzerConfiguration|null $configuration
+ * @property string|null $managedBy
  */
 class AnalyzerSummary extends Shape
 {
@@ -29,7 +30,8 @@ class AnalyzerSummary extends Shape
      *     tags?: array<string, string>|null,
      *     status: 'ACTIVE'|'CREATING'|'DISABLED'|'FAILED',
      *     statusReason?: StatusReason|null,
-     *     configuration?: AnalyzerConfiguration|null
+     *     configuration?: AnalyzerConfiguration|null,
+     *     managedBy?: string|null
      * } $args
      */
     public function __construct(array $args)

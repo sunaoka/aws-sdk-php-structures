@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $PreviewNextCidr
  * @property list<string>|null $AllowedCidrs
  * @property list<string>|null $DisallowedCidrs
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class AllocateIpamPoolCidrRequest extends Request
 {
@@ -27,7 +28,8 @@ class AllocateIpamPoolCidrRequest extends Request
      *     Description?: string|null,
      *     PreviewNextCidr?: bool|null,
      *     AllowedCidrs?: list<string>|null,
-     *     DisallowedCidrs?: list<string>|null
+     *     DisallowedCidrs?: list<string>|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args)
