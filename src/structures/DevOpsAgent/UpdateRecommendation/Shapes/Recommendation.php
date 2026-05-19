@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'HIGH'|'MEDIUM'|'LOW' $priority
  * @property int|null $goalVersion
  * @property string|null $additionalContext
+ * @property int<1, max>|null $rankPosition
+ * @property \Aws\Api\DateTimeResult|null $rankedAt
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property int $version
@@ -33,6 +35,8 @@ class Recommendation extends Shape
      *     priority: 'HIGH'|'MEDIUM'|'LOW',
      *     goalVersion?: int|null,
      *     additionalContext?: string|null,
+     *     rankPosition?: int<1, max>|null,
+     *     rankedAt?: \Aws\Api\DateTimeResult|null,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     version: int

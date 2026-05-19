@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $organizationalUnits
  * @property 'CUSTOMER_MANAGED'|'SERVICE_MANAGED'|null $permissionType
  * @property string|null $stackSetName
- * @property 'ACTIVE'|'CREATING'|'DELETING'|'FAILED'|'UPDATING'|'UPGRADING'|'DELETION_FAILED'|'CREATION_FAILED'|'UPDATE_FAILED'|'UPGRADE_FAILED'|'LICENSE_REMOVAL_FAILED'|'VERSION_UPDATING'|'VERSION_UPDATE_FAILED' $status
+ * @property 'ACTIVE'|'CREATING'|'DELETING'|'FAILED'|'UPDATING'|'UPGRADING'|'DELETION_FAILED'|'CREATION_FAILED'|'UPDATE_FAILED'|'UPGRADE_FAILED'|'LICENSE_REMOVAL_FAILED'|'VERSION_UPDATING'|'VERSION_UPDATE_FAILED'|'DEGRADED' $status
  * @property string|null $workspaceRoleArn
  * @property 'ENTERPRISE'|'ENTERPRISE_FREE_TRIAL'|null $licenseType
  * @property bool|null $freeTrialConsumed
@@ -32,6 +32,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $grafanaToken
  * @property 'IPv4'|'DualStack'|null $ipAddressType
  * @property string|null $kmsKeyId
+ * @property string|null $degradedWorkspaceReason
  */
 class WorkspaceDescription extends Shape
 {
@@ -51,7 +52,7 @@ class WorkspaceDescription extends Shape
      *     organizationalUnits?: list<string>|null,
      *     permissionType?: 'CUSTOMER_MANAGED'|'SERVICE_MANAGED'|null,
      *     stackSetName?: string|null,
-     *     status: 'ACTIVE'|'CREATING'|'DELETING'|'FAILED'|'UPDATING'|'UPGRADING'|'DELETION_FAILED'|'CREATION_FAILED'|'UPDATE_FAILED'|'UPGRADE_FAILED'|'LICENSE_REMOVAL_FAILED'|'VERSION_UPDATING'|'VERSION_UPDATE_FAILED',
+     *     status: 'ACTIVE'|'CREATING'|'DELETING'|'FAILED'|'UPDATING'|'UPGRADING'|'DELETION_FAILED'|'CREATION_FAILED'|'UPDATE_FAILED'|'UPGRADE_FAILED'|'LICENSE_REMOVAL_FAILED'|'VERSION_UPDATING'|'VERSION_UPDATE_FAILED'|'DEGRADED',
      *     workspaceRoleArn?: string|null,
      *     licenseType?: 'ENTERPRISE'|'ENTERPRISE_FREE_TRIAL'|null,
      *     freeTrialConsumed?: bool|null,
@@ -63,7 +64,8 @@ class WorkspaceDescription extends Shape
      *     networkAccessControl?: NetworkAccessConfiguration|null,
      *     grafanaToken?: string|null,
      *     ipAddressType?: 'IPv4'|'DualStack'|null,
-     *     kmsKeyId?: string|null
+     *     kmsKeyId?: string|null,
+     *     degradedWorkspaceReason?: string|null
      * } $args
      */
     public function __construct(array $args)

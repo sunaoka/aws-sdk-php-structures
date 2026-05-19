@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $modified
  * @property string|null $name
  * @property list<'SNS'>|null $notificationDestinations
- * @property 'ACTIVE'|'CREATING'|'DELETING'|'FAILED'|'UPDATING'|'UPGRADING'|'DELETION_FAILED'|'CREATION_FAILED'|'UPDATE_FAILED'|'UPGRADE_FAILED'|'LICENSE_REMOVAL_FAILED'|'VERSION_UPDATING'|'VERSION_UPDATE_FAILED' $status
+ * @property 'ACTIVE'|'CREATING'|'DELETING'|'FAILED'|'UPDATING'|'UPGRADING'|'DELETION_FAILED'|'CREATION_FAILED'|'UPDATE_FAILED'|'UPGRADE_FAILED'|'LICENSE_REMOVAL_FAILED'|'VERSION_UPDATING'|'VERSION_UPDATE_FAILED'|'DEGRADED' $status
  * @property AuthenticationSummary $authentication
  * @property array<string, string>|null $tags
  * @property 'ENTERPRISE'|'ENTERPRISE_FREE_TRIAL'|null $licenseType
@@ -31,7 +31,7 @@ class WorkspaceSummary extends Shape
      *     modified: \Aws\Api\DateTimeResult,
      *     name?: string|null,
      *     notificationDestinations?: list<'SNS'>|null,
-     *     status: 'ACTIVE'|'CREATING'|'DELETING'|'FAILED'|'UPDATING'|'UPGRADING'|'DELETION_FAILED'|'CREATION_FAILED'|'UPDATE_FAILED'|'UPGRADE_FAILED'|'LICENSE_REMOVAL_FAILED'|'VERSION_UPDATING'|'VERSION_UPDATE_FAILED',
+     *     status: 'ACTIVE'|'CREATING'|'DELETING'|'FAILED'|'UPDATING'|'UPGRADING'|'DELETION_FAILED'|'CREATION_FAILED'|'UPDATE_FAILED'|'UPGRADE_FAILED'|'LICENSE_REMOVAL_FAILED'|'VERSION_UPDATING'|'VERSION_UPDATE_FAILED'|'DEGRADED',
      *     authentication: AuthenticationSummary,
      *     tags?: array<string, string>|null,
      *     licenseType?: 'ENTERPRISE'|'ENTERPRISE_FREE_TRIAL'|null,
