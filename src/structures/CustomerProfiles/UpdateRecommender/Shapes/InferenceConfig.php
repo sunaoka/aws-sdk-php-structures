@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\UpdateRecommender\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 500>|null $MinProvisionedTPS
+ * @property int<1, 1000>|null $MinProvisionedTPS
  */
 class InferenceConfig extends Shape
 {
     /**
-     * @param array{MinProvisionedTPS?: int<1, 500>|null} $args
+     * @param array{MinProvisionedTPS?: int<1, 1000>|null} $args
      */
     public function __construct(array $args = [])
     {

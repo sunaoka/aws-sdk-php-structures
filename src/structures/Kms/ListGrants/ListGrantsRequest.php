@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $KeyId
  * @property string|null $GrantId
  * @property string|null $GranteePrincipal
+ * @property string|null $GranteeServicePrincipal
  */
 class ListGrantsRequest extends Request
 {
@@ -19,7 +20,8 @@ class ListGrantsRequest extends Request
      *     Marker?: string|null,
      *     KeyId: string,
      *     GrantId?: string|null,
-     *     GranteePrincipal?: string|null
+     *     GranteePrincipal?: string|null,
+     *     GranteeServicePrincipal?: string|null
      * } $args
      */
     public function __construct(array $args)

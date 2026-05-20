@@ -7,7 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property int<1, 1000>|null $Limit
  * @property string|null $Marker
- * @property string $RetiringPrincipal
+ * @property string|null $RetiringPrincipal
+ * @property string|null $RetiringServicePrincipal
  */
 class ListRetirableGrantsRequest extends Request
 {
@@ -15,10 +16,11 @@ class ListRetirableGrantsRequest extends Request
      * @param array{
      *     Limit?: int<1, 1000>|null,
      *     Marker?: string|null,
-     *     RetiringPrincipal: string
+     *     RetiringPrincipal?: string|null,
+     *     RetiringServicePrincipal?: string|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

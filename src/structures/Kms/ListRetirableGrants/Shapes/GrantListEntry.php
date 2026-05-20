@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $IssuingAccount
  * @property list<'Decrypt'|'Encrypt'|'GenerateDataKey'|'GenerateDataKeyWithoutPlaintext'|'ReEncryptFrom'|'ReEncryptTo'|'Sign'|'Verify'|'GetPublicKey'|'CreateGrant'|'RetireGrant'|'DescribeKey'|'GenerateDataKeyPair'|'GenerateDataKeyPairWithoutPlaintext'|'GenerateMac'|'VerifyMac'|'DeriveSharedSecret'>|null $Operations
  * @property GrantConstraints|null $Constraints
+ * @property string|null $GranteeServicePrincipal
+ * @property string|null $RetiringServicePrincipal
  */
 class GrantListEntry extends Shape
 {
@@ -27,7 +29,9 @@ class GrantListEntry extends Shape
      *     RetiringPrincipal?: string|null,
      *     IssuingAccount?: string|null,
      *     Operations?: list<'Decrypt'|'Encrypt'|'GenerateDataKey'|'GenerateDataKeyWithoutPlaintext'|'ReEncryptFrom'|'ReEncryptTo'|'Sign'|'Verify'|'GetPublicKey'|'CreateGrant'|'RetireGrant'|'DescribeKey'|'GenerateDataKeyPair'|'GenerateDataKeyPairWithoutPlaintext'|'GenerateMac'|'VerifyMac'|'DeriveSharedSecret'>|null,
-     *     Constraints?: GrantConstraints|null
+     *     Constraints?: GrantConstraints|null,
+     *     GranteeServicePrincipal?: string|null,
+     *     RetiringServicePrincipal?: string|null
      * } $args
      */
     public function __construct(array $args = [])
