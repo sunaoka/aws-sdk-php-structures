@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property string|null $kmsKeyArn
  * @property array<string, string>|null $tags
+ * @property Shapes\PayerConfiguration|null $payerConfiguration
  */
 class CreateMLInputChannelRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateMLInputChannelRequest extends Request
      *     retentionInDays: int<1, 30>,
      *     description?: string|null,
      *     kmsKeyArn?: string|null,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     payerConfiguration?: Shapes\PayerConfiguration|null
      * } $args
      */
     public function __construct(array $args)

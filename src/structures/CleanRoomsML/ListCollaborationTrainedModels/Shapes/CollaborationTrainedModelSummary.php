@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_PENDING'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'INACTIVE'|'CANCEL_PENDING'|'CANCEL_IN_PROGRESS'|'CANCEL_FAILED' $status
  * @property string $configuredModelAlgorithmAssociationArn
  * @property string $creatorAccountId
+ * @property string|null $mlModelTrainingPayerAccountId
  */
 class CollaborationTrainedModelSummary extends Shape
 {
@@ -33,7 +34,8 @@ class CollaborationTrainedModelSummary extends Shape
      *     collaborationIdentifier: string,
      *     status: 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_PENDING'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'INACTIVE'|'CANCEL_PENDING'|'CANCEL_IN_PROGRESS'|'CANCEL_FAILED',
      *     configuredModelAlgorithmAssociationArn: string,
-     *     creatorAccountId: string
+     *     creatorAccountId: string,
+     *     mlModelTrainingPayerAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

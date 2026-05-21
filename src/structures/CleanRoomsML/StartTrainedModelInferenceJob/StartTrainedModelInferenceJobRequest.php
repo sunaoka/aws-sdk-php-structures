@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $environment
  * @property string|null $kmsKeyArn
  * @property array<string, string>|null $tags
+ * @property string|null $mlModelInferencePayerAccountId
  */
 class StartTrainedModelInferenceJobRequest extends Request
 {
@@ -35,7 +36,8 @@ class StartTrainedModelInferenceJobRequest extends Request
      *     containerExecutionParameters?: Shapes\InferenceContainerExecutionParameters|null,
      *     environment?: array<string, string>|null,
      *     kmsKeyArn?: string|null,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     mlModelInferencePayerAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ProtectedQuerySQLParameters $sqlParameters
  * @property Shapes\ProtectedQueryResultConfiguration|null $resultConfiguration
  * @property Shapes\ComputeConfiguration|null $computeConfiguration
+ * @property string|null $queryComputePayerAccountId
  */
 class StartProtectedQueryRequest extends Request
 {
@@ -19,7 +20,8 @@ class StartProtectedQueryRequest extends Request
      *     membershipIdentifier: string,
      *     sqlParameters: Shapes\ProtectedQuerySQLParameters,
      *     resultConfiguration?: Shapes\ProtectedQueryResultConfiguration|null,
-     *     computeConfiguration?: Shapes\ComputeConfiguration|null
+     *     computeConfiguration?: Shapes\ComputeConfiguration|null,
+     *     queryComputePayerAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

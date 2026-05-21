@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $HomeEfsFileSystemKmsKeyId
  * @property string|null $KmsKeyId
  * @property 'Service'|'Customer'|null $AppSecurityGroupManagement
+ * @property 'Enabled'|'Disabled'|null $HomeEfsFileSystemCreation
  * @property 'ENABLED'|'DISABLED'|null $TagPropagation
  * @property Shapes\DefaultSpaceSettings|null $DefaultSpaceSettings
  */
@@ -34,6 +35,7 @@ class CreateDomainRequest extends Request
      *     HomeEfsFileSystemKmsKeyId?: string|null,
      *     KmsKeyId?: string|null,
      *     AppSecurityGroupManagement?: 'Service'|'Customer'|null,
+     *     HomeEfsFileSystemCreation?: 'Enabled'|'Disabled'|null,
      *     TagPropagation?: 'ENABLED'|'DISABLED'|null,
      *     DefaultSpaceSettings?: Shapes\DefaultSpaceSettings|null
      * } $args

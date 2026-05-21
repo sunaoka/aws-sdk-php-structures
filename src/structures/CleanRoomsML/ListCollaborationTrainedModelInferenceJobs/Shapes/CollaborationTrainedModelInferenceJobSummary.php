@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $metricsStatusDetails
  * @property 'PUBLISH_SUCCEEDED'|'PUBLISH_FAILED'|null $logsStatus
  * @property string|null $logsStatusDetails
+ * @property string|null $mlModelInferencePayerAccountId
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property string $creatorAccountId
@@ -41,6 +42,7 @@ class CollaborationTrainedModelInferenceJobSummary extends Shape
      *     metricsStatusDetails?: string|null,
      *     logsStatus?: 'PUBLISH_SUCCEEDED'|'PUBLISH_FAILED'|null,
      *     logsStatusDetails?: string|null,
+     *     mlModelInferencePayerAccountId?: string|null,
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
      *     creatorAccountId: string

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ENABLED'|'DISABLED'|null $jobLogStatus
  * @property Shapes\MembershipProtectedQueryResultConfiguration|null $defaultResultConfiguration
  * @property Shapes\MembershipProtectedJobResultConfiguration|null $defaultJobResultConfiguration
+ * @property Shapes\UpdateMembershipPaymentConfiguration|null $membershipPaymentConfiguration
  */
 class UpdateMembershipRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateMembershipRequest extends Request
      *     queryLogStatus?: 'ENABLED'|'DISABLED'|null,
      *     jobLogStatus?: 'ENABLED'|'DISABLED'|null,
      *     defaultResultConfiguration?: Shapes\MembershipProtectedQueryResultConfiguration|null,
-     *     defaultJobResultConfiguration?: Shapes\MembershipProtectedJobResultConfiguration|null
+     *     defaultJobResultConfiguration?: Shapes\MembershipProtectedJobResultConfiguration|null,
+     *     membershipPaymentConfiguration?: Shapes\UpdateMembershipPaymentConfiguration|null
      * } $args
      */
     public function __construct(array $args)

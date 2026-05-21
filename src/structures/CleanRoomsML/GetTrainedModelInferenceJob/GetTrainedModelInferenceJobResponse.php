@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'PUBLISH_SUCCEEDED'|'PUBLISH_FAILED'|null $logsStatus
  * @property string|null $logsStatusDetails
  * @property array<string, string>|null $tags
+ * @property string|null $mlModelInferencePayerAccountId
  */
 class GetTrainedModelInferenceJobResponse extends Response
 {

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ProtectedJobParameters $jobParameters
  * @property Shapes\ProtectedJobResultConfigurationInput|null $resultConfiguration
  * @property Shapes\ProtectedJobComputeConfiguration|null $computeConfiguration
+ * @property string|null $jobComputePayerAccountId
  */
 class StartProtectedJobRequest extends Request
 {
@@ -19,7 +20,8 @@ class StartProtectedJobRequest extends Request
      *     membershipIdentifier: string,
      *     jobParameters: Shapes\ProtectedJobParameters,
      *     resultConfiguration?: Shapes\ProtectedJobResultConfigurationInput|null,
-     *     computeConfiguration?: Shapes\ProtectedJobComputeConfiguration|null
+     *     computeConfiguration?: Shapes\ProtectedJobComputeConfiguration|null,
+     *     jobComputePayerAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

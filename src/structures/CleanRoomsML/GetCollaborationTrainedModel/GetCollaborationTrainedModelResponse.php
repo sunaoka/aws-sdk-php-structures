@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'PUBLISH_SUCCEEDED'|'PUBLISH_FAILED'|null $logsStatus
  * @property string|null $logsStatusDetails
  * @property string|null $trainingContainerImageDigest
+ * @property string|null $mlModelTrainingPayerAccountId
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property string $creatorAccountId

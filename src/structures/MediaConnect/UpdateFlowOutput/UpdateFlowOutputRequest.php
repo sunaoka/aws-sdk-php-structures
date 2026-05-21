@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $NdiSpeedHqQuality
  * @property 'ENABLED'|'DISABLED'|null $RouterIntegrationState
  * @property Shapes\FlowTransitEncryption|null $RouterIntegrationTransitEncryption
+ * @property 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null $NdiOutputTimecodeSource
  */
 class UpdateFlowOutputRequest extends Request
 {
@@ -53,7 +54,8 @@ class UpdateFlowOutputRequest extends Request
      *     NdiProgramName?: string|null,
      *     NdiSpeedHqQuality?: int|null,
      *     RouterIntegrationState?: 'ENABLED'|'DISABLED'|null,
-     *     RouterIntegrationTransitEncryption?: Shapes\FlowTransitEncryption|null
+     *     RouterIntegrationTransitEncryption?: Shapes\FlowTransitEncryption|null,
+     *     NdiOutputTimecodeSource?: 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null
      * } $args
      */
     public function __construct(array $args)

@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $VpcId
  * @property string|null $KmsKeyId
  * @property 'Service'|'Customer'|null $AppSecurityGroupManagement
+ * @property 'Enabled'|'Disabled'|null $HomeEfsFileSystemCreation
  * @property 'ENABLED'|'DISABLED'|null $TagPropagation
  * @property Shapes\DefaultSpaceSettings|null $DefaultSpaceSettings
  */

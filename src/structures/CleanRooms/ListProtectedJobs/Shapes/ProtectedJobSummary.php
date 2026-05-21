@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createTime
  * @property 'SUBMITTED'|'STARTED'|'CANCELLED'|'CANCELLING'|'FAILED'|'SUCCESS' $status
  * @property list<ProtectedJobReceiverConfiguration> $receiverConfigurations
+ * @property string|null $jobComputePayerAccountId
  */
 class ProtectedJobSummary extends Shape
 {
@@ -21,7 +22,8 @@ class ProtectedJobSummary extends Shape
      *     membershipArn: string,
      *     createTime: \Aws\Api\DateTimeResult,
      *     status: 'SUBMITTED'|'STARTED'|'CANCELLED'|'CANCELLING'|'FAILED'|'SUCCESS',
-     *     receiverConfigurations: list<ProtectedJobReceiverConfiguration>
+     *     receiverConfigurations: list<ProtectedJobReceiverConfiguration>,
+     *     jobComputePayerAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

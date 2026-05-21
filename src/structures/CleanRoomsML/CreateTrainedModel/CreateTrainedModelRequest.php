@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property string|null $kmsKeyArn
  * @property array<string, string>|null $tags
+ * @property string|null $mlModelTrainingPayerAccountId
  */
 class CreateTrainedModelRequest extends Request
 {
@@ -35,7 +36,8 @@ class CreateTrainedModelRequest extends Request
      *     trainingInputMode?: 'File'|'FastFile'|'Pipe'|null,
      *     description?: string|null,
      *     kmsKeyArn?: string|null,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     mlModelTrainingPayerAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

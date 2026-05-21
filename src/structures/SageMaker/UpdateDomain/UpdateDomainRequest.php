@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $SubnetIds
  * @property 'PublicInternetOnly'|'VpcOnly'|null $AppNetworkAccessType
  * @property 'ENABLED'|'DISABLED'|null $TagPropagation
+ * @property 'Enabled'|'Disabled'|null $HomeEfsFileSystemCreation
  * @property string|null $VpcId
  */
 class UpdateDomainRequest extends Request
@@ -27,6 +28,7 @@ class UpdateDomainRequest extends Request
      *     SubnetIds?: list<string>|null,
      *     AppNetworkAccessType?: 'PublicInternetOnly'|'VpcOnly'|null,
      *     TagPropagation?: 'ENABLED'|'DISABLED'|null,
+     *     HomeEfsFileSystemCreation?: 'Enabled'|'Disabled'|null,
      *     VpcId?: string|null
      * } $args
      */

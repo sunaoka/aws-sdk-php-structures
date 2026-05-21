@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createTime
  * @property 'SUBMITTED'|'STARTED'|'CANCELLED'|'CANCELLING'|'FAILED'|'SUCCESS'|'TIMED_OUT' $status
  * @property list<ReceiverConfiguration> $receiverConfigurations
+ * @property string|null $queryComputePayerAccountId
  */
 class ProtectedQuerySummary extends Shape
 {
@@ -21,7 +22,8 @@ class ProtectedQuerySummary extends Shape
      *     membershipArn: string,
      *     createTime: \Aws\Api\DateTimeResult,
      *     status: 'SUBMITTED'|'STARTED'|'CANCELLED'|'CANCELLING'|'FAILED'|'SUCCESS'|'TIMED_OUT',
-     *     receiverConfigurations: list<ReceiverConfiguration>
+     *     receiverConfigurations: list<ReceiverConfiguration>,
+     *     queryComputePayerAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

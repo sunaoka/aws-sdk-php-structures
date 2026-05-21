@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\BedrockAgentCoreControl;
 
 class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\BedrockAgentCoreControlClient
 {
+    use AddDatasetExamples\AddDatasetExamplesTrait;
     use CreateAgentRuntime\CreateAgentRuntimeTrait;
     use CreateAgentRuntimeEndpoint\CreateAgentRuntimeEndpointTrait;
     use CreateApiKeyCredentialProvider\CreateApiKeyCredentialProviderTrait;
@@ -11,6 +12,8 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use CreateBrowserProfile\CreateBrowserProfileTrait;
     use CreateCodeInterpreter\CreateCodeInterpreterTrait;
     use CreateConfigurationBundle\CreateConfigurationBundleTrait;
+    use CreateDataset\CreateDatasetTrait;
+    use CreateDatasetVersion\CreateDatasetVersionTrait;
     use CreateEvaluator\CreateEvaluatorTrait;
     use CreateGateway\CreateGatewayTrait;
     use CreateGatewayRule\CreateGatewayRuleTrait;
@@ -34,6 +37,8 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use DeleteBrowserProfile\DeleteBrowserProfileTrait;
     use DeleteCodeInterpreter\DeleteCodeInterpreterTrait;
     use DeleteConfigurationBundle\DeleteConfigurationBundleTrait;
+    use DeleteDataset\DeleteDatasetTrait;
+    use DeleteDatasetExamples\DeleteDatasetExamplesTrait;
     use DeleteEvaluator\DeleteEvaluatorTrait;
     use DeleteGateway\DeleteGatewayTrait;
     use DeleteGatewayRule\DeleteGatewayRuleTrait;
@@ -59,6 +64,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use GetCodeInterpreter\GetCodeInterpreterTrait;
     use GetConfigurationBundle\GetConfigurationBundleTrait;
     use GetConfigurationBundleVersion\GetConfigurationBundleVersionTrait;
+    use GetDataset\GetDatasetTrait;
     use GetEvaluator\GetEvaluatorTrait;
     use GetGateway\GetGatewayTrait;
     use GetGatewayRule\GetGatewayRuleTrait;
@@ -90,6 +96,9 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use ListCodeInterpreters\ListCodeInterpretersTrait;
     use ListConfigurationBundleVersions\ListConfigurationBundleVersionsTrait;
     use ListConfigurationBundles\ListConfigurationBundlesTrait;
+    use ListDatasetExamples\ListDatasetExamplesTrait;
+    use ListDatasetVersions\ListDatasetVersionsTrait;
+    use ListDatasets\ListDatasetsTrait;
     use ListEvaluators\ListEvaluatorsTrait;
     use ListGatewayRules\ListGatewayRulesTrait;
     use ListGatewayTargets\ListGatewayTargetsTrait;
@@ -123,6 +132,8 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use UpdateAgentRuntimeEndpoint\UpdateAgentRuntimeEndpointTrait;
     use UpdateApiKeyCredentialProvider\UpdateApiKeyCredentialProviderTrait;
     use UpdateConfigurationBundle\UpdateConfigurationBundleTrait;
+    use UpdateDataset\UpdateDatasetTrait;
+    use UpdateDatasetExamples\UpdateDatasetExamplesTrait;
     use UpdateEvaluator\UpdateEvaluatorTrait;
     use UpdateGateway\UpdateGatewayTrait;
     use UpdateGatewayRule\UpdateGatewayRuleTrait;
