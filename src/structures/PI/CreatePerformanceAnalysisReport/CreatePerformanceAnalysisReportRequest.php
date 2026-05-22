@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'RDS'|'DOCDB' $ServiceType
  * @property string $Identifier
  * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
  * @property list<Shapes\Tag>|null $Tags
  */
 class CreatePerformanceAnalysisReportRequest extends Request
@@ -18,7 +18,7 @@ class CreatePerformanceAnalysisReportRequest extends Request
      *     ServiceType: 'RDS'|'DOCDB',
      *     Identifier: string,
      *     StartTime: \Aws\Api\DateTimeResult,
-     *     EndTime: \Aws\Api\DateTimeResult,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */

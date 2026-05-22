@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $EinvoiceDeliveryPreferenceStatusReason
  * @property 'PENDING_VERIFICATION'|'TEST_INITIALIZED'|'TEST_INITIALIZATION_FAILED'|'TEST_FAILED'|'ACTIVE'|'SUSPENDED'|null $PurchaseOrderRetrievalPreferenceStatus
  * @property string|null $PurchaseOrderRetrievalPreferenceStatusReason
+ * @property string|null $ClientToken
  */
 class UpdateProcurementPortalPreferenceStatusRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateProcurementPortalPreferenceStatusRequest extends Request
      *     EinvoiceDeliveryPreferenceStatus?: 'PENDING_VERIFICATION'|'TEST_INITIALIZED'|'TEST_INITIALIZATION_FAILED'|'TEST_FAILED'|'ACTIVE'|'SUSPENDED'|null,
      *     EinvoiceDeliveryPreferenceStatusReason?: string|null,
      *     PurchaseOrderRetrievalPreferenceStatus?: 'PENDING_VERIFICATION'|'TEST_INITIALIZED'|'TEST_INITIALIZATION_FAILED'|'TEST_FAILED'|'ACTIVE'|'SUSPENDED'|null,
-     *     PurchaseOrderRetrievalPreferenceStatusReason?: string|null
+     *     PurchaseOrderRetrievalPreferenceStatusReason?: string|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

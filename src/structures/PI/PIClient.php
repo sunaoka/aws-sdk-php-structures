@@ -13,6 +13,7 @@ class PIClient extends \Aws\PI\PIClient
     use GetResourceMetrics\GetResourceMetricsTrait;
     use ListAvailableResourceDimensions\ListAvailableResourceDimensionsTrait;
     use ListAvailableResourceMetrics\ListAvailableResourceMetricsTrait;
+    use ListPerformanceAnalysisReportRecommendations\ListPerformanceAnalysisReportRecommendationsTrait;
     use ListPerformanceAnalysisReports\ListPerformanceAnalysisReportsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use TagResource\TagResourceTrait;

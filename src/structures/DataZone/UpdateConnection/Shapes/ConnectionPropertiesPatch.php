@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AmazonQPropertiesPatch|null $amazonQProperties
  * @property MlflowPropertiesPatch|null $mlflowProperties
  * @property LakehousePropertiesPatch|null $lakehouseProperties
+ * @property VpcPropertiesPatch|null $vpcProperties
  */
 class ConnectionPropertiesPatch extends Shape
 {
@@ -27,7 +28,8 @@ class ConnectionPropertiesPatch extends Shape
      *     s3Properties?: S3PropertiesPatch|null,
      *     amazonQProperties?: AmazonQPropertiesPatch|null,
      *     mlflowProperties?: MlflowPropertiesPatch|null,
-     *     lakehouseProperties?: LakehousePropertiesPatch|null
+     *     lakehouseProperties?: LakehousePropertiesPatch|null,
+     *     vpcProperties?: VpcPropertiesPatch|null
      * } $args
      */
     public function __construct(array $args = [])

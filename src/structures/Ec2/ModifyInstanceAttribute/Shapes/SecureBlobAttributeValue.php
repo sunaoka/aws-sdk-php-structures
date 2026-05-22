@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|resource|\Psr\Http\Message\StreamInterface|null $Value
  */
-class BlobAttributeValue extends Shape
+class SecureBlobAttributeValue extends Shape
 {
     /**
      * @param array{Value?: string|resource|\Psr\Http\Message\StreamInterface|null} $args

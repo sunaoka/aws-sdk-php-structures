@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InvoiceUnitArn
+ * @property string|null $ClientToken
  */
 class DeleteInvoiceUnitRequest extends Request
 {
     /**
-     * @param array{InvoiceUnitArn: string} $args
+     * @param array{
+     *     InvoiceUnitArn: string,
+     *     ClientToken?: string|null
+     * } $args
      */
     public function __construct(array $args)
     {

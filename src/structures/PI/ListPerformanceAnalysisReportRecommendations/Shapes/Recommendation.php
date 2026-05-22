@@ -1,6 +1,6 @@
 <?php
 
-namespace Sunaoka\Aws\Structures\PI\GetPerformanceAnalysisReport\Shapes;
+namespace Sunaoka\Aws\Structures\PI\ListPerformanceAnalysisReportRecommendations\Shapes;
 
 use Sunaoka\Aws\Structures\Shape;
 

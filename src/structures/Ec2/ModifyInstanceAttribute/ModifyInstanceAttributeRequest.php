@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\AttributeBooleanValue|null $SourceDestCheck
+ * @property Shapes\EnclaveOptionsRequest|null $EnclaveOptions
  * @property Shapes\AttributeBooleanValue|null $DisableApiStop
  * @property bool|null $DryRun
  * @property string $InstanceId
@@ -16,7 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AttributeValue|null $InstanceType
  * @property Shapes\AttributeValue|null $Kernel
  * @property Shapes\AttributeValue|null $Ramdisk
- * @property Shapes\BlobAttributeValue|null $UserData
+ * @property Shapes\SecureBlobAttributeValue|null $UserData
  * @property Shapes\AttributeValue|null $InstanceInitiatedShutdownBehavior
  * @property list<string>|null $Groups
  * @property Shapes\AttributeBooleanValue|null $EbsOptimized
@@ -28,6 +29,7 @@ class ModifyInstanceAttributeRequest extends Request
     /**
      * @param array{
      *     SourceDestCheck?: Shapes\AttributeBooleanValue|null,
+     *     EnclaveOptions?: Shapes\EnclaveOptionsRequest|null,
      *     DisableApiStop?: Shapes\AttributeBooleanValue|null,
      *     DryRun?: bool|null,
      *     InstanceId: string,
@@ -38,7 +40,7 @@ class ModifyInstanceAttributeRequest extends Request
      *     InstanceType?: Shapes\AttributeValue|null,
      *     Kernel?: Shapes\AttributeValue|null,
      *     Ramdisk?: Shapes\AttributeValue|null,
-     *     UserData?: Shapes\BlobAttributeValue|null,
+     *     UserData?: Shapes\SecureBlobAttributeValue|null,
      *     InstanceInitiatedShutdownBehavior?: Shapes\AttributeValue|null,
      *     Groups?: list<string>|null,
      *     EbsOptimized?: Shapes\AttributeBooleanValue|null,

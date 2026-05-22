@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $TaxInheritanceDisabled
  * @property Shapes\InvoiceUnitRule $Rule
  * @property list<Shapes\ResourceTag>|null $ResourceTags
+ * @property string|null $ClientToken
  */
 class CreateInvoiceUnitRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateInvoiceUnitRequest extends Request
      *     Description?: string|null,
      *     TaxInheritanceDisabled?: bool|null,
      *     Rule: Shapes\InvoiceUnitRule,
-     *     ResourceTags?: list<Shapes\ResourceTag>|null
+     *     ResourceTags?: list<Shapes\ResourceTag>|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

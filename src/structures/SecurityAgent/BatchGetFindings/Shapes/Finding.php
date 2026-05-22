@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CodeRemediationTask|null $codeRemediationTask
  * @property string|null $lastUpdatedBy
  * @property list<CodeLocation>|null $codeLocations
+ * @property VerificationScript|null $verificationScript
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
@@ -50,6 +51,7 @@ class Finding extends Shape
      *     codeRemediationTask?: CodeRemediationTask|null,
      *     lastUpdatedBy?: string|null,
      *     codeLocations?: list<CodeLocation>|null,
+     *     verificationScript?: VerificationScript|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args

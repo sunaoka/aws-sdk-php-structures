@@ -40,6 +40,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $promptName
  * @property int|null $promptVersion
  * @property int|null $timeToFirstTokenMs
+ * @property list<SpanGuardrailAssessment>|null $guardrailAssessments
  */
 class SpanAttributes extends Shape
 {
@@ -79,7 +80,8 @@ class SpanAttributes extends Shape
      *     promptType?: 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'EMAIL_QUERY_REFORMULATION'|'ORCHESTRATION'|'NOTE_TAKING'|'CASE_SUMMARIZATION'|null,
      *     promptName?: string|null,
      *     promptVersion?: int|null,
-     *     timeToFirstTokenMs?: int|null
+     *     timeToFirstTokenMs?: int|null,
+     *     guardrailAssessments?: list<SpanGuardrailAssessment>|null
      * } $args
      */
     public function __construct(array $args = [])
