@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BackupVaultName
+ * @property \Aws\Api\DateTimeResult|null $ContinuousScanEndTime
  * @property string $IamRoleArn
  * @property string|null $IdempotencyToken
  * @property 'GUARDDUTY' $MalwareScanner
@@ -19,6 +20,7 @@ class StartScanJobRequest extends Request
     /**
      * @param array{
      *     BackupVaultName: string,
+     *     ContinuousScanEndTime?: \Aws\Api\DateTimeResult|null,
      *     IamRoleArn: string,
      *     IdempotencyToken?: string|null,
      *     MalwareScanner: 'GUARDDUTY',

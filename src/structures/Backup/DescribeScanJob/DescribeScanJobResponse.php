@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $BackupVaultArn
  * @property string $BackupVaultName
  * @property \Aws\Api\DateTimeResult|null $CompletionDate
+ * @property \Aws\Api\DateTimeResult|null $ContinuousScanEndTime
+ * @property \Aws\Api\DateTimeResult|null $ContinuousScanStartTime
  * @property Shapes\ScanJobCreator $CreatedBy
  * @property \Aws\Api\DateTimeResult $CreationDate
  * @property string $IamRoleArn

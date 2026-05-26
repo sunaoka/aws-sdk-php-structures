@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $AccountId
  * @property string|null $ResourceType
  * @property 'GUARDDUTY'|null $MalwareScanner
- * @property 'NO_THREATS_FOUND'|'THREATS_FOUND'|null $ScanResultStatus
+ * @property 'NO_THREATS_FOUND'|'THREATS_FOUND'|'UNKNOWN'|null $ScanResultStatus
  * @property 'CREATED'|'COMPLETED'|'COMPLETED_WITH_ISSUES'|'RUNNING'|'FAILED'|'CANCELED'|'AGGREGATE_ALL'|'ANY'|null $State
  * @property 'ONE_DAY'|'SEVEN_DAYS'|'FOURTEEN_DAYS'|null $AggregationPeriod
  * @property int<1, 1000>|null $MaxResults
@@ -21,7 +21,7 @@ class ListScanJobSummariesRequest extends Request
      *     AccountId?: string|null,
      *     ResourceType?: string|null,
      *     MalwareScanner?: 'GUARDDUTY'|null,
-     *     ScanResultStatus?: 'NO_THREATS_FOUND'|'THREATS_FOUND'|null,
+     *     ScanResultStatus?: 'NO_THREATS_FOUND'|'THREATS_FOUND'|'UNKNOWN'|null,
      *     State?: 'CREATED'|'COMPLETED'|'COMPLETED_WITH_ISSUES'|'RUNNING'|'FAILED'|'CANCELED'|'AGGREGATE_ALL'|'ANY'|null,
      *     AggregationPeriod?: 'ONE_DAY'|'SEVEN_DAYS'|'FOURTEEN_DAYS'|null,
      *     MaxResults?: int<1, 1000>|null,

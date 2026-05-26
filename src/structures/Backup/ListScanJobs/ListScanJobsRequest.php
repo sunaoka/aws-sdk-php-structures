@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ByRecoveryPointArn
  * @property string|null $ByResourceArn
  * @property 'EBS'|'EC2'|'S3'|null $ByResourceType
- * @property 'NO_THREATS_FOUND'|'THREATS_FOUND'|null $ByScanResultStatus
+ * @property 'NO_THREATS_FOUND'|'THREATS_FOUND'|'UNKNOWN'|null $ByScanResultStatus
  * @property 'CANCELED'|'COMPLETED'|'COMPLETED_WITH_ISSUES'|'CREATED'|'FAILED'|'RUNNING'|null $ByState
  * @property int<1, 1000>|null $MaxResults
  * @property string|null $NextToken
@@ -30,7 +30,7 @@ class ListScanJobsRequest extends Request
      *     ByRecoveryPointArn?: string|null,
      *     ByResourceArn?: string|null,
      *     ByResourceType?: 'EBS'|'EC2'|'S3'|null,
-     *     ByScanResultStatus?: 'NO_THREATS_FOUND'|'THREATS_FOUND'|null,
+     *     ByScanResultStatus?: 'NO_THREATS_FOUND'|'THREATS_FOUND'|'UNKNOWN'|null,
      *     ByState?: 'CANCELED'|'COMPLETED'|'COMPLETED_WITH_ISSUES'|'CREATED'|'FAILED'|'RUNNING'|null,
      *     MaxResults?: int<1, 1000>|null,
      *     NextToken?: string|null

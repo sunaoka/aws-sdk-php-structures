@@ -52,6 +52,7 @@ class BackupClient extends \Aws\Backup\BackupClient
     use GetBackupVaultAccessPolicy\GetBackupVaultAccessPolicyTrait;
     use GetBackupVaultNotifications\GetBackupVaultNotificationsTrait;
     use GetLegalHold\GetLegalHoldTrait;
+    use GetPITRMalwareScanResults\GetPITRMalwareScanResultsTrait;
     use GetRecoveryPointIndexDetails\GetRecoveryPointIndexDetailsTrait;
     use GetRecoveryPointRestoreMetadata\GetRecoveryPointRestoreMetadataTrait;
     use GetRestoreJobMetadata\GetRestoreJobMetadataTrait;

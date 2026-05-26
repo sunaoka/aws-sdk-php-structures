@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $environmentRolePermissionBoundary
  * @property list<string> $enabledRegions
  * @property array<string, array<string, string>>|null $regionalParameters
+ * @property list<Shapes\PutResourceConfiguration>|null $resourceConfigurations
+ * @property bool|null $allowUserProvidedConfigurations
  * @property array<string, string>|null $globalParameters
  * @property list<Shapes\ProvisioningConfiguration>|null $provisioningConfigurations
  */
@@ -26,6 +28,8 @@ class PutEnvironmentBlueprintConfigurationRequest extends Request
      *     environmentRolePermissionBoundary?: string|null,
      *     enabledRegions: list<string>,
      *     regionalParameters?: array<string, array<string, string>>|null,
+     *     resourceConfigurations?: list<Shapes\PutResourceConfiguration>|null,
+     *     allowUserProvidedConfigurations?: bool|null,
      *     globalParameters?: array<string, string>|null,
      *     provisioningConfigurations?: list<Shapes\ProvisioningConfiguration>|null
      * } $args

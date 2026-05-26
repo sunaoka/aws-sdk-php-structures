@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $StartTime
  * @property \Aws\Api\DateTimeResult|null $EndTime
  * @property 'GUARDDUTY'|null $MalwareScanner
- * @property 'NO_THREATS_FOUND'|'THREATS_FOUND'|null $ScanResultStatus
+ * @property 'NO_THREATS_FOUND'|'THREATS_FOUND'|'UNKNOWN'|null $ScanResultStatus
  */
 class ScanJobSummary extends Shape
 {
@@ -27,7 +27,7 @@ class ScanJobSummary extends Shape
      *     StartTime?: \Aws\Api\DateTimeResult|null,
      *     EndTime?: \Aws\Api\DateTimeResult|null,
      *     MalwareScanner?: 'GUARDDUTY'|null,
-     *     ScanResultStatus?: 'NO_THREATS_FOUND'|'THREATS_FOUND'|null
+     *     ScanResultStatus?: 'NO_THREATS_FOUND'|'THREATS_FOUND'|'UNKNOWN'|null
      * } $args
      */
     public function __construct(array $args = [])

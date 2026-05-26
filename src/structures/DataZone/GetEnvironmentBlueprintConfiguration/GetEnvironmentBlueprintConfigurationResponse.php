@@ -12,8 +12,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $manageAccessRoleArn
  * @property list<string>|null $enabledRegions
  * @property array<string, array<string, string>>|null $regionalParameters
+ * @property bool|null $allowUserProvidedConfigurations
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property list<Shapes\ResourceConfiguration>|null $resourceConfigurations
  * @property list<Shapes\ProvisioningConfiguration>|null $provisioningConfigurations
  */
 class GetEnvironmentBlueprintConfigurationResponse extends Response

@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $BackupVaultArn
  * @property string $BackupVaultName
  * @property \Aws\Api\DateTimeResult|null $CompletionDate
+ * @property \Aws\Api\DateTimeResult|null $ContinuousScanEndTime
+ * @property \Aws\Api\DateTimeResult|null $ContinuousScanStartTime
  * @property ScanJobCreator $CreatedBy
  * @property \Aws\Api\DateTimeResult $CreationDate
  * @property string $IamRoleArn
@@ -34,6 +36,8 @@ class ScanJob extends Shape
      *     BackupVaultArn: string,
      *     BackupVaultName: string,
      *     CompletionDate?: \Aws\Api\DateTimeResult|null,
+     *     ContinuousScanEndTime?: \Aws\Api\DateTimeResult|null,
+     *     ContinuousScanStartTime?: \Aws\Api\DateTimeResult|null,
      *     CreatedBy: ScanJobCreator,
      *     CreationDate: \Aws\Api\DateTimeResult,
      *     IamRoleArn: string,
