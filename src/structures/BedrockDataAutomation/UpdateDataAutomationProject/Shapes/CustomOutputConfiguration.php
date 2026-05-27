@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<BlueprintItem>|null $blueprints
+ * @property DocumentCustomOutputConfiguration|null $document
  */
 class CustomOutputConfiguration extends Shape
 {
     /**
-     * @param array{blueprints?: list<BlueprintItem>|null} $args
+     * @param array{
+     *     blueprints?: list<BlueprintItem>|null,
+     *     document?: DocumentCustomOutputConfiguration|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

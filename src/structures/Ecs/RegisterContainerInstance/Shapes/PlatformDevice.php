@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $id
- * @property 'GPU' $type
+ * @property 'GPU'|'NEURON_DEVICE' $type
  */
 class PlatformDevice extends Shape
 {
     /**
      * @param array{
      *     id: string,
-     *     type: 'GPU'
+     *     type: 'GPU'|'NEURON_DEVICE'
      * } $args
      */
     public function __construct(array $args)

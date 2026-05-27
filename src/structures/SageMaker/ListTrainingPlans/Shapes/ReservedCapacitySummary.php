@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, max> $TotalInstanceCount
  * @property 'Pending'|'Active'|'Scheduled'|'Expired'|'Failed' $Status
  * @property string|null $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
  * @property int<0, 87600>|null $DurationHours
  * @property int<0, 59>|null $DurationMinutes
  * @property \Aws\Api\DateTimeResult|null $StartTime
@@ -30,6 +31,7 @@ class ReservedCapacitySummary extends Shape
      *     TotalInstanceCount: int<0, max>,
      *     Status: 'Pending'|'Active'|'Scheduled'|'Expired'|'Failed',
      *     AvailabilityZone?: string|null,
+     *     AvailabilityZoneId?: string|null,
      *     DurationHours?: int<0, 87600>|null,
      *     DurationMinutes?: int<0, 59>|null,
      *     StartTime?: \Aws\Api\DateTimeResult|null,

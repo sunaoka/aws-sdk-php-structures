@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Scte20SourceSettings|null $Scte20SourceSettings
  * @property Scte27SourceSettings|null $Scte27SourceSettings
  * @property TeletextSourceSettings|null $TeletextSourceSettings
+ * @property SmartSubtitleSourceSettings|null $SmartSubtitleSourceSettings
  */
 class CaptionSelectorSettings extends Shape
 {
@@ -23,7 +24,8 @@ class CaptionSelectorSettings extends Shape
      *     EmbeddedSourceSettings?: EmbeddedSourceSettings|null,
      *     Scte20SourceSettings?: Scte20SourceSettings|null,
      *     Scte27SourceSettings?: Scte27SourceSettings|null,
-     *     TeletextSourceSettings?: TeletextSourceSettings|null
+     *     TeletextSourceSettings?: TeletextSourceSettings|null,
+     *     SmartSubtitleSourceSettings?: SmartSubtitleSourceSettings|null
      * } $args
      */
     public function __construct(array $args = [])

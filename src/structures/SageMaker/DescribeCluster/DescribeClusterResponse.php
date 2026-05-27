@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $FailureMessage
  * @property list<Shapes\ClusterInstanceGroupDetails> $InstanceGroups
  * @property list<Shapes\ClusterRestrictedInstanceGroupDetails>|null $RestrictedInstanceGroups
+ * @property Shapes\ClusterRestrictedInstanceGroupsConfigOutput|null $RestrictedInstanceGroupsConfig
  * @property Shapes\VpcConfig|null $VpcConfig
  * @property Shapes\ClusterOrchestrator|null $Orchestrator
  * @property Shapes\ClusterTieredStorageConfig|null $TieredStorageConfig
