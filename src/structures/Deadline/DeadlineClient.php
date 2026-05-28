@@ -48,6 +48,7 @@ class DeadlineClient extends \Aws\Deadline\DeadlineClient
     use DeleteQueueFleetAssociation\DeleteQueueFleetAssociationTrait;
     use DeleteQueueLimitAssociation\DeleteQueueLimitAssociationTrait;
     use DeleteStorageProfile\DeleteStorageProfileTrait;
+    use DeleteVolume\DeleteVolumeTrait;
     use DeleteWorker\DeleteWorkerTrait;
     use DisassociateMemberFromFarm\DisassociateMemberFromFarmTrait;
     use DisassociateMemberFromFleet\DisassociateMemberFromFleetTrait;
@@ -72,6 +73,7 @@ class DeadlineClient extends \Aws\Deadline\DeadlineClient
     use GetStorageProfile\GetStorageProfileTrait;
     use GetStorageProfileForQueue\GetStorageProfileForQueueTrait;
     use GetTask\GetTaskTrait;
+    use GetVolume\GetVolumeTrait;
     use GetWorker\GetWorkerTrait;
     use ListAvailableMeteredProducts\ListAvailableMeteredProductsTrait;
     use ListBudgets\ListBudgetsTrait;
@@ -101,6 +103,7 @@ class DeadlineClient extends \Aws\Deadline\DeadlineClient
     use ListStorageProfilesForQueue\ListStorageProfilesForQueueTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTasks\ListTasksTrait;
+    use ListVolumes\ListVolumesTrait;
     use ListWorkers\ListWorkersTrait;
     use PutMeteredProduct\PutMeteredProductTrait;
     use SearchJobs\SearchJobsTrait;

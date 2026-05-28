@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\VectorOptions|null $vectorOptions
  * @property string|null $collectionGroupName
  * @property Shapes\EncryptionConfig|null $encryptionConfig
+ * @property 'ENABLED'|'DISABLED'|null $deletionProtection
  * @property string|null $clientToken
  */
 class CreateCollectionRequest extends Request
@@ -27,6 +28,7 @@ class CreateCollectionRequest extends Request
      *     vectorOptions?: Shapes\VectorOptions|null,
      *     collectionGroupName?: string|null,
      *     encryptionConfig?: Shapes\EncryptionConfig|null,
+     *     deletionProtection?: 'ENABLED'|'DISABLED'|null,
      *     clientToken?: string|null
      * } $args
      */

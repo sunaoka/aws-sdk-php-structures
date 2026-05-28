@@ -1,0 +1,25 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Resiliencehubv2\ImportApp\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string|null $value
+ * @property string|null $policyName
+ * @property 'SELF'|'CROSS_ACCOUNT'|null $source
+ */
+class DisasterRecoverySource extends Shape
+{
+    /**
+     * @param array{
+     *     value?: string|null,
+     *     policyName?: string|null,
+     *     source?: 'SELF'|'CROSS_ACCOUNT'|null
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

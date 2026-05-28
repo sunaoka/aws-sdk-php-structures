@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $thingName
+ * @property bool|null $includeSocketInformation
  */
 class GetThingConnectivityDataRequest extends Request
 {
     /**
-     * @param array{thingName: string} $args
+     * @param array{
+     *     thingName: string,
+     *     includeSocketInformation?: bool|null
+     * } $args
      */
     public function __construct(array $args)
     {

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ServiceManagedEc2InstanceMarketOptions $instanceMarketOptions
  * @property VpcConfiguration|null $vpcConfiguration
  * @property string|null $storageProfileId
+ * @property PersistentVolumeConfiguration|null $persistentVolumeConfiguration
  * @property ServiceManagedEc2AutoScalingConfiguration|null $autoScalingConfiguration
  */
 class ServiceManagedEc2FleetConfiguration extends Shape
@@ -19,6 +20,7 @@ class ServiceManagedEc2FleetConfiguration extends Shape
      *     instanceMarketOptions: ServiceManagedEc2InstanceMarketOptions,
      *     vpcConfiguration?: VpcConfiguration|null,
      *     storageProfileId?: string|null,
+     *     persistentVolumeConfiguration?: PersistentVolumeConfiguration|null,
      *     autoScalingConfiguration?: ServiceManagedEc2AutoScalingConfiguration|null
      * } $args
      */

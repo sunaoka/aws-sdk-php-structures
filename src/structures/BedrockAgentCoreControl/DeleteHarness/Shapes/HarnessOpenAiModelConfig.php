@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, max>|null $maxTokens
  * @property float|null $temperature
  * @property float|null $topP
+ * @property 'chat_completions'|'responses'|null $apiFormat
+ * @property Document|null $additionalParams
  */
 class HarnessOpenAiModelConfig extends Shape
 {
@@ -19,7 +21,9 @@ class HarnessOpenAiModelConfig extends Shape
      *     apiKeyArn: string,
      *     maxTokens?: int<1, max>|null,
      *     temperature?: float|null,
-     *     topP?: float|null
+     *     topP?: float|null,
+     *     apiFormat?: 'chat_completions'|'responses'|null,
+     *     additionalParams?: Document|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $bundleId
  * @property string $bundleName
  * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $createdAt
  */
 class ConfigurationBundleSummary extends Shape
 {
@@ -17,7 +18,8 @@ class ConfigurationBundleSummary extends Shape
      *     bundleArn: string,
      *     bundleId: string,
      *     bundleName: string,
-     *     description?: string|null
+     *     description?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CollectionGroupCapacityLimits|null $capacityLimits
  * @property int|null $createdDate
  * @property int|null $lastModifiedDate
+ * @property 'CLASSIC'|'NEXTGEN'|null $generation
  */
 class UpdateCollectionGroupDetail extends Shape
 {
@@ -23,7 +24,8 @@ class UpdateCollectionGroupDetail extends Shape
      *     description?: string|null,
      *     capacityLimits?: CollectionGroupCapacityLimits|null,
      *     createdDate?: int|null,
-     *     lastModifiedDate?: int|null
+     *     lastModifiedDate?: int|null,
+     *     generation?: 'CLASSIC'|'NEXTGEN'|null
      * } $args
      */
     public function __construct(array $args = [])

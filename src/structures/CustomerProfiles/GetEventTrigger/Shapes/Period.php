@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\GetEventTrigger\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HOURS'|'DAYS'|'WEEKS'|'MONTHS' $Unit
- * @property int<1, 24> $Value
+ * @property 'MINUTES'|'HOURS'|'DAYS'|'WEEKS'|'MONTHS' $Unit
+ * @property int<1, 60> $Value
  * @property int<1, 1000>|null $MaxInvocationsPerProfile
  * @property bool|null $Unlimited
  */
@@ -14,8 +14,8 @@ class Period extends Shape
 {
     /**
      * @param array{
-     *     Unit: 'HOURS'|'DAYS'|'WEEKS'|'MONTHS',
-     *     Value: int<1, 24>,
+     *     Unit: 'MINUTES'|'HOURS'|'DAYS'|'WEEKS'|'MONTHS',
+     *     Value: int<1, 60>,
      *     MaxInvocationsPerProfile?: int<1, 1000>|null,
      *     Unlimited?: bool|null
      * } $args

@@ -6,8 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $SourceAmiId
- * @property string $IamRoleArn
+ * @property string|null $SourceAmiId
+ * @property string|null $WorkspaceImageId
+ * @property string|null $IamRoleArn
  * @property string|null $Description
  * @property string|null $DisplayName
  * @property array<string, string>|null $Tags
@@ -21,8 +22,9 @@ class CreateImportedImageRequest extends Request
     /**
      * @param array{
      *     Name: string,
-     *     SourceAmiId: string,
-     *     IamRoleArn: string,
+     *     SourceAmiId?: string|null,
+     *     WorkspaceImageId?: string|null,
+     *     IamRoleArn?: string|null,
      *     Description?: string|null,
      *     DisplayName?: string|null,
      *     Tags?: array<string, string>|null,

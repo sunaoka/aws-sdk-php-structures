@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $arn
  * @property string|null $kmsKeyArn
  * @property 'ENABLED'|'DISABLED'|null $standbyReplicas
+ * @property 'ENABLED'|'DISABLED'|null $deletionProtection
  * @property VectorOptions|null $vectorOptions
  * @property int|null $createdDate
  * @property int|null $lastModifiedDate
@@ -35,6 +36,7 @@ class CollectionDetail extends Shape
      *     arn?: string|null,
      *     kmsKeyArn?: string|null,
      *     standbyReplicas?: 'ENABLED'|'DISABLED'|null,
+     *     deletionProtection?: 'ENABLED'|'DISABLED'|null,
      *     vectorOptions?: VectorOptions|null,
      *     createdDate?: int|null,
      *     lastModifiedDate?: int|null,

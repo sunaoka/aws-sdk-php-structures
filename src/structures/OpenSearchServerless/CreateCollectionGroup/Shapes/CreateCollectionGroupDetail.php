@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Tag>|null $tags
  * @property int|null $createdDate
  * @property CollectionGroupCapacityLimits|null $capacityLimits
+ * @property 'CLASSIC'|'NEXTGEN'|null $generation
  */
 class CreateCollectionGroupDetail extends Shape
 {
@@ -25,7 +26,8 @@ class CreateCollectionGroupDetail extends Shape
      *     description?: string|null,
      *     tags?: list<Tag>|null,
      *     createdDate?: int|null,
-     *     capacityLimits?: CollectionGroupCapacityLimits|null
+     *     capacityLimits?: CollectionGroupCapacityLimits|null,
+     *     generation?: 'CLASSIC'|'NEXTGEN'|null
      * } $args
      */
     public function __construct(array $args = [])

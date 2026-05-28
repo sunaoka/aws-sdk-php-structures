@@ -13,9 +13,11 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|null $Severity
  * @property Shapes\RegionConfiguration $RegionConfiguration
  * @property Shapes\ImplementationDetails|null $Implementation
+ * @property 'REQUIRED'|'OPTIONAL'|'NONE'|null $ParameterRequirementSummary
  * @property list<Shapes\ControlParameter>|null $Parameters
  * @property \Aws\Api\DateTimeResult|null $CreateTime
  * @property list<string>|null $GovernedResources
+ * @property list<string>|null $GovernedProviders
  */
 class GetControlResponse extends Response
 {

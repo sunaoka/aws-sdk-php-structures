@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $harnessArn
  * @property string $runtimeSessionId
+ * @property string|null $runtimeUserId
  * @property list<Shapes\HarnessMessage> $messages
  * @property Shapes\HarnessModelConfiguration|null $model
  * @property list<Shapes\HarnessSystemContentBlock>|null $systemPrompt
@@ -24,6 +25,7 @@ class InvokeHarnessRequest extends Request
      * @param array{
      *     harnessArn: string,
      *     runtimeSessionId: string,
+     *     runtimeUserId?: string|null,
      *     messages: list<Shapes\HarnessMessage>,
      *     model?: Shapes\HarnessModelConfiguration|null,
      *     systemPrompt?: list<Shapes\HarnessSystemContentBlock>|null,

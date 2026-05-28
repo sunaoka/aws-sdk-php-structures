@@ -6,11 +6,17 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $path
+ * @property HarnessSkillS3Source|null $s3
+ * @property HarnessSkillGitSource|null $git
  */
 class HarnessSkill extends Shape
 {
     /**
-     * @param array{path?: string|null} $args
+     * @param array{
+     *     path?: string|null,
+     *     s3?: HarnessSkillS3Source|null,
+     *     git?: HarnessSkillGitSource|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

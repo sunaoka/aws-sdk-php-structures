@@ -6,7 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $modelName
- * @property Shapes\ModelDataSource $modelSourceConfig
+ * @property Shapes\ModelDataSource|null $modelSourceConfig
+ * @property Shapes\CustomModelDataSource|null $customModelDataSource
  * @property string|null $modelKmsKeyArn
  * @property string|null $roleArn
  * @property list<Shapes\Tag>|null $modelTags
@@ -17,7 +18,8 @@ class CreateCustomModelRequest extends Request
     /**
      * @param array{
      *     modelName: string,
-     *     modelSourceConfig: Shapes\ModelDataSource,
+     *     modelSourceConfig?: Shapes\ModelDataSource|null,
+     *     customModelDataSource?: Shapes\CustomModelDataSource|null,
      *     modelKmsKeyArn?: string|null,
      *     roleArn?: string|null,
      *     modelTags?: list<Shapes\Tag>|null,

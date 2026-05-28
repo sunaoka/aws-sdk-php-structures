@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $id
  * @property string|null $description
  * @property Shapes\VectorOptions|null $vectorOptions
+ * @property 'ENABLED'|'DISABLED'|null $deletionProtection
  * @property string|null $clientToken
  */
 class UpdateCollectionRequest extends Request
@@ -17,6 +18,7 @@ class UpdateCollectionRequest extends Request
      *     id: string,
      *     description?: string|null,
      *     vectorOptions?: Shapes\VectorOptions|null,
+     *     deletionProtection?: 'ENABLED'|'DISABLED'|null,
      *     clientToken?: string|null
      * } $args
      */

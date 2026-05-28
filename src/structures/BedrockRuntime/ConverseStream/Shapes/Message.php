@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\BedrockRuntime\ConverseStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'user'|'assistant' $role
+ * @property 'user'|'assistant'|'system' $role
  * @property list<ContentBlock> $content
  */
 class Message extends Shape
 {
     /**
      * @param array{
-     *     role: 'user'|'assistant',
+     *     role: 'user'|'assistant'|'system',
      *     content: list<ContentBlock>
      * } $args
      */

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $arn
  * @property int|null $createdDate
  * @property int|null $lastModifiedDate
+ * @property 'ENABLED'|'DISABLED'|null $deletionProtection
  */
 class UpdateCollectionDetail extends Shape
 {
@@ -27,7 +28,8 @@ class UpdateCollectionDetail extends Shape
      *     vectorOptions?: VectorOptions|null,
      *     arn?: string|null,
      *     createdDate?: int|null,
-     *     lastModifiedDate?: int|null
+     *     lastModifiedDate?: int|null,
+     *     deletionProtection?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, max>|null $maxTokens
  * @property float|null $temperature
  * @property float|null $topP
+ * @property 'converse_stream'|'responses'|'chat_completions'|null $apiFormat
+ * @property Document|null $additionalParams
  */
 class HarnessBedrockModelConfig extends Shape
 {
@@ -17,7 +19,9 @@ class HarnessBedrockModelConfig extends Shape
      *     modelId: string,
      *     maxTokens?: int<1, max>|null,
      *     temperature?: float|null,
-     *     topP?: float|null
+     *     topP?: float|null,
+     *     apiFormat?: 'converse_stream'|'responses'|'chat_completions'|null,
+     *     additionalParams?: Document|null
      * } $args
      */
     public function __construct(array $args)

@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Resiliencehubv2\ListServiceEvents\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string|null $policyName
+ * @property string|null $policyArn
+ */
+class ServicePolicyDisassociatedMetadata extends Shape
+{
+    /**
+     * @param array{
+     *     policyName?: string|null,
+     *     policyArn?: string|null
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

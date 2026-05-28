@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property list<Shapes\Tag>|null $tags
  * @property Shapes\CollectionGroupCapacityLimits|null $capacityLimits
+ * @property 'CLASSIC'|'NEXTGEN'|null $generation
  * @property string|null $clientToken
  */
 class CreateCollectionGroupRequest extends Request
@@ -21,6 +22,7 @@ class CreateCollectionGroupRequest extends Request
      *     description?: string|null,
      *     tags?: list<Shapes\Tag>|null,
      *     capacityLimits?: Shapes\CollectionGroupCapacityLimits|null,
+     *     generation?: 'CLASSIC'|'NEXTGEN'|null,
      *     clientToken?: string|null
      * } $args
      */

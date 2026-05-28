@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $numberOfCollections
  * @property int|null $createdDate
  * @property CollectionGroupCapacityLimits|null $capacityLimits
+ * @property 'CLASSIC'|'NEXTGEN'|null $generation
  */
 class CollectionGroupSummary extends Shape
 {
@@ -21,7 +22,8 @@ class CollectionGroupSummary extends Shape
      *     name?: string|null,
      *     numberOfCollections?: int|null,
      *     createdDate?: int|null,
-     *     capacityLimits?: CollectionGroupCapacityLimits|null
+     *     capacityLimits?: CollectionGroupCapacityLimits|null,
+     *     generation?: 'CLASSIC'|'NEXTGEN'|null
      * } $args
      */
     public function __construct(array $args = [])

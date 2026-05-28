@@ -7,6 +7,7 @@ class CustomerProfilesClient extends \Aws\CustomerProfiles\CustomerProfilesClien
     use AddProfileKey\AddProfileKeyTrait;
     use BatchGetCalculatedAttributeForProfile\BatchGetCalculatedAttributeForProfileTrait;
     use BatchGetProfile\BatchGetProfileTrait;
+    use BatchPutProfileObject\BatchPutProfileObjectTrait;
     use CreateCalculatedAttributeDefinition\CreateCalculatedAttributeDefinitionTrait;
     use CreateDomain\CreateDomainTrait;
     use CreateDomainLayout\CreateDomainLayoutTrait;
