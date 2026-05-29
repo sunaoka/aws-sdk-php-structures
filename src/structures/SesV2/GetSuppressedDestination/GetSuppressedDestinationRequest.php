@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $EmailAddress
+ * @property string|null $TenantName
  */
 class GetSuppressedDestinationRequest extends Request
 {
     /**
-     * @param array{EmailAddress: string} $args
+     * @param array{
+     *     EmailAddress: string,
+     *     TenantName?: string|null
+     * } $args
      */
     public function __construct(array $args)
     {

@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Name
  * @property string|null $CreatorRequestId
  * @property string|null $ManagedOwnerName
+ * @property 'THREAT'|'CONTENT'|null $ManagedListType
+ * @property string|null $Category
  */
 class FirewallDomainListMetadata extends Shape
 {
@@ -19,7 +21,9 @@ class FirewallDomainListMetadata extends Shape
      *     Arn?: string|null,
      *     Name?: string|null,
      *     CreatorRequestId?: string|null,
-     *     ManagedOwnerName?: string|null
+     *     ManagedOwnerName?: string|null,
+     *     ManagedListType?: 'THREAT'|'CONTENT'|null,
+     *     Category?: string|null
      * } $args
      */
     public function __construct(array $args = [])

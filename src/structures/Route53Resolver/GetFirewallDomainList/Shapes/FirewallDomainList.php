@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CreatorRequestId
  * @property string|null $CreationTime
  * @property string|null $ModificationTime
+ * @property string|null $Category
+ * @property 'THREAT'|'CONTENT'|null $ManagedListType
  */
 class FirewallDomainList extends Shape
 {
@@ -29,7 +31,9 @@ class FirewallDomainList extends Shape
      *     ManagedOwnerName?: string|null,
      *     CreatorRequestId?: string|null,
      *     CreationTime?: string|null,
-     *     ModificationTime?: string|null
+     *     ModificationTime?: string|null,
+     *     Category?: string|null,
+     *     ManagedListType?: 'THREAT'|'CONTENT'|null
      * } $args
      */
     public function __construct(array $args = [])

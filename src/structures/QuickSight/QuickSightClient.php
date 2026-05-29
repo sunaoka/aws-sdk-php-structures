@@ -23,6 +23,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use CreateIAMPolicyAssignment\CreateIAMPolicyAssignmentTrait;
     use CreateIngestion\CreateIngestionTrait;
     use CreateNamespace\CreateNamespaceTrait;
+    use CreateOAuthClientApplication\CreateOAuthClientApplicationTrait;
     use CreateRefreshSchedule\CreateRefreshScheduleTrait;
     use CreateRoleMembership\CreateRoleMembershipTrait;
     use CreateTemplate\CreateTemplateTrait;
@@ -52,6 +53,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DeleteIAMPolicyAssignment\DeleteIAMPolicyAssignmentTrait;
     use DeleteIdentityPropagationConfig\DeleteIdentityPropagationConfigTrait;
     use DeleteNamespace\DeleteNamespaceTrait;
+    use DeleteOAuthClientApplication\DeleteOAuthClientApplicationTrait;
     use DeleteRefreshSchedule\DeleteRefreshScheduleTrait;
     use DeleteRoleCustomPermission\DeleteRoleCustomPermissionTrait;
     use DeleteRoleMembership\DeleteRoleMembershipTrait;
@@ -103,6 +105,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DescribeIpRestriction\DescribeIpRestrictionTrait;
     use DescribeKeyRegistration\DescribeKeyRegistrationTrait;
     use DescribeNamespace\DescribeNamespaceTrait;
+    use DescribeOAuthClientApplication\DescribeOAuthClientApplicationTrait;
     use DescribeQPersonalizationConfiguration\DescribeQPersonalizationConfigurationTrait;
     use DescribeQuickSightQSearchConfiguration\DescribeQuickSightQSearchConfigurationTrait;
     use DescribeRefreshSchedule\DescribeRefreshScheduleTrait;
@@ -150,6 +153,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use ListIdentityPropagationConfigs\ListIdentityPropagationConfigsTrait;
     use ListIngestions\ListIngestionsTrait;
     use ListNamespaces\ListNamespacesTrait;
+    use ListOAuthClientApplications\ListOAuthClientApplicationsTrait;
     use ListRefreshSchedules\ListRefreshSchedulesTrait;
     use ListRoleMemberships\ListRoleMembershipsTrait;
     use ListSelfUpgrades\ListSelfUpgradesTrait;
@@ -216,6 +220,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateIdentityPropagationConfig\UpdateIdentityPropagationConfigTrait;
     use UpdateIpRestriction\UpdateIpRestrictionTrait;
     use UpdateKeyRegistration\UpdateKeyRegistrationTrait;
+    use UpdateOAuthClientApplication\UpdateOAuthClientApplicationTrait;
     use UpdatePublicSharingSettings\UpdatePublicSharingSettingsTrait;
     use UpdateQPersonalizationConfiguration\UpdateQPersonalizationConfigurationTrait;
     use UpdateQuickSightQSearchConfiguration\UpdateQuickSightQSearchConfigurationTrait;

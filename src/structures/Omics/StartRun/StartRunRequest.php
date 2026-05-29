@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $workflowVersionName
  * @property 'RESTRICTED'|'VPC'|null $networkingMode
  * @property string|null $configurationName
+ * @property Shapes\EngineSettings|null $engineSettings
  */
 class StartRunRequest extends Request
 {
@@ -51,7 +52,8 @@ class StartRunRequest extends Request
      *     workflowOwnerId?: string|null,
      *     workflowVersionName?: string|null,
      *     networkingMode?: 'RESTRICTED'|'VPC'|null,
-     *     configurationName?: string|null
+     *     configurationName?: string|null,
+     *     engineSettings?: Shapes\EngineSettings|null
      * } $args
      */
     public function __construct(array $args)

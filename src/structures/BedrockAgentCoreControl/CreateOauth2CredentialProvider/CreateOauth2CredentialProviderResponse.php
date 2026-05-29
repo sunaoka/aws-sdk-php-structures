@@ -6,6 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\Secret $clientSecretArn
+ * @property string|null $clientSecretJsonKey
+ * @property 'MANAGED'|'EXTERNAL'|null $clientSecretSource
  * @property string $name
  * @property string $credentialProviderArn
  * @property string|null $callbackUrl

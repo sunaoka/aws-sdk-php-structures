@@ -6,7 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $clientId
- * @property string $clientSecret
+ * @property string|null $clientSecret
+ * @property SecretReference|null $clientSecretConfig
+ * @property 'MANAGED'|'EXTERNAL'|null $clientSecretSource
  * @property string|null $tenantId
  */
 class MicrosoftOauth2ProviderConfigInput extends Shape
@@ -14,7 +16,9 @@ class MicrosoftOauth2ProviderConfigInput extends Shape
     /**
      * @param array{
      *     clientId: string,
-     *     clientSecret: string,
+     *     clientSecret?: string|null,
+     *     clientSecretConfig?: SecretReference|null,
+     *     clientSecretSource?: 'MANAGED'|'EXTERNAL'|null,
      *     tenantId?: string|null
      * } $args
      */

@@ -100,6 +100,7 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use PutEmailIdentityFeedbackAttributes\PutEmailIdentityFeedbackAttributesTrait;
     use PutEmailIdentityMailFromAttributes\PutEmailIdentityMailFromAttributesTrait;
     use PutSuppressedDestination\PutSuppressedDestinationTrait;
+    use PutTenantSuppressionAttributes\PutTenantSuppressionAttributesTrait;
     use SendBulkEmail\SendBulkEmailTrait;
     use SendCustomVerificationEmail\SendCustomVerificationEmailTrait;
     use SendEmail\SendEmailTrait;

@@ -29,6 +29,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $readme
  * @property Shapes\DefinitionRepositoryDetails|null $definitionRepositoryDetails
  * @property string|null $readmePath
+ * @property list<string>|null $profiles
+ * @property array<string, array<string, Shapes\WorkflowParameter>>|null $profileParameterTemplates
  */
 class GetWorkflowVersionResponse extends Response
 {

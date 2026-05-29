@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
  * @property list<Shapes\Tag>|null $Tags
  * @property 'ENABLED'|'REINSTATED'|'DISABLED'|null $SendingStatus
+ * @property Shapes\TenantSuppressionAttributes|null $SuppressionAttributes
  */
 class CreateTenantResponse extends Response
 {

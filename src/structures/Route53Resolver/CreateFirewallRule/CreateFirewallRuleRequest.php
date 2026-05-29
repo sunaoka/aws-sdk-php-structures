@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Qtype
  * @property 'DGA'|'DNS_TUNNELING'|'DICTIONARY_DGA'|null $DnsThreatProtection
  * @property 'LOW'|'MEDIUM'|'HIGH'|null $ConfidenceThreshold
+ * @property Shapes\FirewallRuleType|null $FirewallRuleType
  */
 class CreateFirewallRuleRequest extends Request
 {
@@ -37,7 +38,8 @@ class CreateFirewallRuleRequest extends Request
      *     FirewallDomainRedirectionAction?: 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN'|null,
      *     Qtype?: string|null,
      *     DnsThreatProtection?: 'DGA'|'DNS_TUNNELING'|'DICTIONARY_DGA'|null,
-     *     ConfidenceThreshold?: 'LOW'|'MEDIUM'|'HIGH'|null
+     *     ConfidenceThreshold?: 'LOW'|'MEDIUM'|'HIGH'|null,
+     *     FirewallRuleType?: Shapes\FirewallRuleType|null
      * } $args
      */
     public function __construct(array $args)

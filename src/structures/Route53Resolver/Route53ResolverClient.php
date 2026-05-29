@@ -8,6 +8,9 @@ class Route53ResolverClient extends \Aws\Route53Resolver\Route53ResolverClient
     use AssociateResolverEndpointIpAddress\AssociateResolverEndpointIpAddressTrait;
     use AssociateResolverQueryLogConfig\AssociateResolverQueryLogConfigTrait;
     use AssociateResolverRule\AssociateResolverRuleTrait;
+    use BatchCreateFirewallRule\BatchCreateFirewallRuleTrait;
+    use BatchDeleteFirewallRule\BatchDeleteFirewallRuleTrait;
+    use BatchUpdateFirewallRule\BatchUpdateFirewallRuleTrait;
     use CreateFirewallDomainList\CreateFirewallDomainListTrait;
     use CreateFirewallRule\CreateFirewallRuleTrait;
     use CreateFirewallRuleGroup\CreateFirewallRuleGroupTrait;
@@ -47,6 +50,7 @@ class Route53ResolverClient extends \Aws\Route53Resolver\Route53ResolverClient
     use ListFirewallDomains\ListFirewallDomainsTrait;
     use ListFirewallRuleGroupAssociations\ListFirewallRuleGroupAssociationsTrait;
     use ListFirewallRuleGroups\ListFirewallRuleGroupsTrait;
+    use ListFirewallRuleTypes\ListFirewallRuleTypesTrait;
     use ListFirewallRules\ListFirewallRulesTrait;
     use ListOutpostResolvers\ListOutpostResolversTrait;
     use ListResolverConfigs\ListResolverConfigsTrait;

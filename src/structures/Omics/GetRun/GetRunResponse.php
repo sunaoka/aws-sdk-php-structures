@@ -45,6 +45,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'RESTRICTED'|'VPC'|null $networkingMode
  * @property Shapes\ConfigurationDetails|null $configuration
  * @property Shapes\VpcConfigResponse|null $vpcConfig
+ * @property Shapes\EngineSettings|null $engineSettings
  */
 class GetRunResponse extends Response
 {

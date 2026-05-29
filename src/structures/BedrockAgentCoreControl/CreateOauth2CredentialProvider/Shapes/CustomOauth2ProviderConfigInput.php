@@ -8,10 +8,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Oauth2Discovery $oauthDiscovery
  * @property string|null $clientId
  * @property string|null $clientSecret
- * @property PrivateEndpoint|null $privateEndpoint
- * @property list<PrivateEndpointOverride>|null $privateEndpointOverrides
+ * @property SecretReference|null $clientSecretConfig
+ * @property 'MANAGED'|'EXTERNAL'|null $clientSecretSource
  * @property OnBehalfOfTokenExchangeConfigType|null $onBehalfOfTokenExchangeConfig
  * @property 'CLIENT_SECRET_BASIC'|'CLIENT_SECRET_POST'|'AWS_IAM_ID_TOKEN_JWT'|null $clientAuthenticationMethod
+ * @property PrivateEndpoint|null $privateEndpoint
+ * @property list<PrivateEndpointOverride>|null $privateEndpointOverrides
  */
 class CustomOauth2ProviderConfigInput extends Shape
 {
@@ -20,10 +22,12 @@ class CustomOauth2ProviderConfigInput extends Shape
      *     oauthDiscovery: Oauth2Discovery,
      *     clientId?: string|null,
      *     clientSecret?: string|null,
-     *     privateEndpoint?: PrivateEndpoint|null,
-     *     privateEndpointOverrides?: list<PrivateEndpointOverride>|null,
+     *     clientSecretConfig?: SecretReference|null,
+     *     clientSecretSource?: 'MANAGED'|'EXTERNAL'|null,
      *     onBehalfOfTokenExchangeConfig?: OnBehalfOfTokenExchangeConfigType|null,
-     *     clientAuthenticationMethod?: 'CLIENT_SECRET_BASIC'|'CLIENT_SECRET_POST'|'AWS_IAM_ID_TOKEN_JWT'|null
+     *     clientAuthenticationMethod?: 'CLIENT_SECRET_BASIC'|'CLIENT_SECRET_POST'|'AWS_IAM_ID_TOKEN_JWT'|null,
+     *     privateEndpoint?: PrivateEndpoint|null,
+     *     privateEndpointOverrides?: list<PrivateEndpointOverride>|null
      * } $args
      */
     public function __construct(array $args)

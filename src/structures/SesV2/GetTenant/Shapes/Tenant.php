@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
  * @property list<Tag>|null $Tags
  * @property 'ENABLED'|'REINSTATED'|'DISABLED'|null $SendingStatus
+ * @property TenantSuppressionAttributes|null $SuppressionAttributes
  */
 class Tenant extends Shape
 {
@@ -21,7 +22,8 @@ class Tenant extends Shape
      *     TenantArn?: string|null,
      *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
      *     Tags?: list<Tag>|null,
-     *     SendingStatus?: 'ENABLED'|'REINSTATED'|'DISABLED'|null
+     *     SendingStatus?: 'ENABLED'|'REINSTATED'|'DISABLED'|null,
+     *     SuppressionAttributes?: TenantSuppressionAttributes|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $satelliteId
  * @property string|null $satelliteArn
- * @property int<0, 99999>|null $noradSatelliteID
+ * @property int<0, 339999>|null $noradSatelliteID
  * @property list<string>|null $groundStations
  * @property EphemerisMetaData|null $currentEphemeris
  */
@@ -17,7 +17,7 @@ class SatelliteListItem extends Shape
      * @param array{
      *     satelliteId?: string|null,
      *     satelliteArn?: string|null,
-     *     noradSatelliteID?: int<0, 99999>|null,
+     *     noradSatelliteID?: int<0, 339999>|null,
      *     groundStations?: list<string>|null,
      *     currentEphemeris?: EphemerisMetaData|null
      * } $args
