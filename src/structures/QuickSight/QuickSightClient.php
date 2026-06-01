@@ -10,12 +10,14 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use CreateAccountCustomization\CreateAccountCustomizationTrait;
     use CreateAccountSubscription\CreateAccountSubscriptionTrait;
     use CreateActionConnector\CreateActionConnectorTrait;
+    use CreateAgent\CreateAgentTrait;
     use CreateAnalysis\CreateAnalysisTrait;
     use CreateBrand\CreateBrandTrait;
     use CreateCustomPermissions\CreateCustomPermissionsTrait;
     use CreateDashboard\CreateDashboardTrait;
     use CreateDataSet\CreateDataSetTrait;
     use CreateDataSource\CreateDataSourceTrait;
+    use CreateFlow\CreateFlowTrait;
     use CreateFolder\CreateFolderTrait;
     use CreateFolderMembership\CreateFolderMembershipTrait;
     use CreateGroup\CreateGroupTrait;
@@ -26,6 +28,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use CreateOAuthClientApplication\CreateOAuthClientApplicationTrait;
     use CreateRefreshSchedule\CreateRefreshScheduleTrait;
     use CreateRoleMembership\CreateRoleMembershipTrait;
+    use CreateSpace\CreateSpaceTrait;
     use CreateTemplate\CreateTemplateTrait;
     use CreateTemplateAlias\CreateTemplateAliasTrait;
     use CreateTheme\CreateThemeTrait;
@@ -37,6 +40,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DeleteAccountCustomization\DeleteAccountCustomizationTrait;
     use DeleteAccountSubscription\DeleteAccountSubscriptionTrait;
     use DeleteActionConnector\DeleteActionConnectorTrait;
+    use DeleteAgent\DeleteAgentTrait;
     use DeleteAnalysis\DeleteAnalysisTrait;
     use DeleteBrand\DeleteBrandTrait;
     use DeleteBrandAssignment\DeleteBrandAssignmentTrait;
@@ -46,6 +50,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DeleteDataSetRefreshProperties\DeleteDataSetRefreshPropertiesTrait;
     use DeleteDataSource\DeleteDataSourceTrait;
     use DeleteDefaultQBusinessApplication\DeleteDefaultQBusinessApplicationTrait;
+    use DeleteFlow\DeleteFlowTrait;
     use DeleteFolder\DeleteFolderTrait;
     use DeleteFolderMembership\DeleteFolderMembershipTrait;
     use DeleteGroup\DeleteGroupTrait;
@@ -57,6 +62,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DeleteRefreshSchedule\DeleteRefreshScheduleTrait;
     use DeleteRoleCustomPermission\DeleteRoleCustomPermissionTrait;
     use DeleteRoleMembership\DeleteRoleMembershipTrait;
+    use DeleteSpace\DeleteSpaceTrait;
     use DeleteTemplate\DeleteTemplateTrait;
     use DeleteTemplateAlias\DeleteTemplateAliasTrait;
     use DeleteTheme\DeleteThemeTrait;
@@ -73,6 +79,8 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DescribeAccountSubscription\DescribeAccountSubscriptionTrait;
     use DescribeActionConnector\DescribeActionConnectorTrait;
     use DescribeActionConnectorPermissions\DescribeActionConnectorPermissionsTrait;
+    use DescribeAgent\DescribeAgentTrait;
+    use DescribeAgentPermissions\DescribeAgentPermissionsTrait;
     use DescribeAnalysis\DescribeAnalysisTrait;
     use DescribeAnalysisDefinition\DescribeAnalysisDefinitionTrait;
     use DescribeAnalysisPermissions\DescribeAnalysisPermissionsTrait;
@@ -95,6 +103,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DescribeDataSource\DescribeDataSourceTrait;
     use DescribeDataSourcePermissions\DescribeDataSourcePermissionsTrait;
     use DescribeDefaultQBusinessApplication\DescribeDefaultQBusinessApplicationTrait;
+    use DescribeFlow\DescribeFlowTrait;
     use DescribeFolder\DescribeFolderTrait;
     use DescribeFolderPermissions\DescribeFolderPermissionsTrait;
     use DescribeFolderResolvedPermissions\DescribeFolderResolvedPermissionsTrait;
@@ -111,6 +120,8 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DescribeRefreshSchedule\DescribeRefreshScheduleTrait;
     use DescribeRoleCustomPermission\DescribeRoleCustomPermissionTrait;
     use DescribeSelfUpgradeConfiguration\DescribeSelfUpgradeConfigurationTrait;
+    use DescribeSpace\DescribeSpaceTrait;
+    use DescribeSpacePermissions\DescribeSpacePermissionsTrait;
     use DescribeTemplate\DescribeTemplateTrait;
     use DescribeTemplateAlias\DescribeTemplateAliasTrait;
     use DescribeTemplateDefinition\DescribeTemplateDefinitionTrait;
@@ -133,6 +144,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use GetIdentityContext\GetIdentityContextTrait;
     use GetSessionEmbedUrl\GetSessionEmbedUrlTrait;
     use ListActionConnectors\ListActionConnectorsTrait;
+    use ListAgents\ListAgentsTrait;
     use ListAnalyses\ListAnalysesTrait;
     use ListAssetBundleExportJobs\ListAssetBundleExportJobsTrait;
     use ListAssetBundleImportJobs\ListAssetBundleImportJobsTrait;
@@ -157,6 +169,8 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use ListRefreshSchedules\ListRefreshSchedulesTrait;
     use ListRoleMemberships\ListRoleMembershipsTrait;
     use ListSelfUpgrades\ListSelfUpgradesTrait;
+    use ListSpaceResources\ListSpaceResourcesTrait;
+    use ListSpaces\ListSpacesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTemplateAliases\ListTemplateAliasesTrait;
     use ListTemplateVersions\ListTemplateVersionsTrait;
@@ -175,6 +189,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use RegisterUser\RegisterUserTrait;
     use RestoreAnalysis\RestoreAnalysisTrait;
     use SearchActionConnectors\SearchActionConnectorsTrait;
+    use SearchAgents\SearchAgentsTrait;
     use SearchAnalyses\SearchAnalysesTrait;
     use SearchDashboards\SearchDashboardsTrait;
     use SearchDataSets\SearchDataSetsTrait;
@@ -182,6 +197,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use SearchFlows\SearchFlowsTrait;
     use SearchFolders\SearchFoldersTrait;
     use SearchGroups\SearchGroupsTrait;
+    use SearchSpaces\SearchSpacesTrait;
     use SearchTopics\SearchTopicsTrait;
     use StartAssetBundleExportJob\StartAssetBundleExportJobTrait;
     use StartAssetBundleImportJob\StartAssetBundleImportJobTrait;
@@ -195,6 +211,8 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateAccountSettings\UpdateAccountSettingsTrait;
     use UpdateActionConnector\UpdateActionConnectorTrait;
     use UpdateActionConnectorPermissions\UpdateActionConnectorPermissionsTrait;
+    use UpdateAgent\UpdateAgentTrait;
+    use UpdateAgentPermissions\UpdateAgentPermissionsTrait;
     use UpdateAnalysis\UpdateAnalysisTrait;
     use UpdateAnalysisPermissions\UpdateAnalysisPermissionsTrait;
     use UpdateApplicationWithTokenExchangeGrant\UpdateApplicationWithTokenExchangeGrantTrait;
@@ -212,6 +230,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateDataSource\UpdateDataSourceTrait;
     use UpdateDataSourcePermissions\UpdateDataSourcePermissionsTrait;
     use UpdateDefaultQBusinessApplication\UpdateDefaultQBusinessApplicationTrait;
+    use UpdateFlow\UpdateFlowTrait;
     use UpdateFlowPermissions\UpdateFlowPermissionsTrait;
     use UpdateFolder\UpdateFolderTrait;
     use UpdateFolderPermissions\UpdateFolderPermissionsTrait;
@@ -229,6 +248,9 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateSPICECapacityConfiguration\UpdateSPICECapacityConfigurationTrait;
     use UpdateSelfUpgrade\UpdateSelfUpgradeTrait;
     use UpdateSelfUpgradeConfiguration\UpdateSelfUpgradeConfigurationTrait;
+    use UpdateSpace\UpdateSpaceTrait;
+    use UpdateSpacePermissions\UpdateSpacePermissionsTrait;
+    use UpdateSpaceResources\UpdateSpaceResourcesTrait;
     use UpdateTemplate\UpdateTemplateTrait;
     use UpdateTemplateAlias\UpdateTemplateAliasTrait;
     use UpdateTemplatePermissions\UpdateTemplatePermissionsTrait;

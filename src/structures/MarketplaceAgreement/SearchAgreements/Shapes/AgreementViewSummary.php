@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Proposer|null $proposer
  * @property ProposalSummary|null $proposalSummary
  * @property 'ACTIVE'|'ARCHIVED'|'CANCELLED'|'EXPIRED'|'RENEWED'|'REPLACED'|'ROLLED_BACK'|'SUPERSEDED'|'TERMINATED'|null $status
+ * @property list<Entitlement>|null $entitlements
  */
 class AgreementViewSummary extends Shape
 {
@@ -27,7 +28,8 @@ class AgreementViewSummary extends Shape
      *     acceptor?: Acceptor|null,
      *     proposer?: Proposer|null,
      *     proposalSummary?: ProposalSummary|null,
-     *     status?: 'ACTIVE'|'ARCHIVED'|'CANCELLED'|'EXPIRED'|'RENEWED'|'REPLACED'|'ROLLED_BACK'|'SUPERSEDED'|'TERMINATED'|null
+     *     status?: 'ACTIVE'|'ARCHIVED'|'CANCELLED'|'EXPIRED'|'RENEWED'|'REPLACED'|'ROLLED_BACK'|'SUPERSEDED'|'TERMINATED'|null,
+     *     entitlements?: list<Entitlement>|null
      * } $args
      */
     public function __construct(array $args = [])

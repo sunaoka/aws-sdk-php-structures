@@ -39,6 +39,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Arn
  * @property AccountRecoverySettingType|null $AccountRecoverySetting
  * @property 'LITE'|'ESSENTIALS'|'PLUS'|null $UserPoolTier
+ * @property KeyConfigurationType|null $KeyConfiguration
+ * @property IssuerConfigurationType|null $IssuerConfiguration
  */
 class UserPoolType extends Shape
 {
@@ -77,7 +79,9 @@ class UserPoolType extends Shape
      *     UsernameConfiguration?: UsernameConfigurationType|null,
      *     Arn?: string|null,
      *     AccountRecoverySetting?: AccountRecoverySettingType|null,
-     *     UserPoolTier?: 'LITE'|'ESSENTIALS'|'PLUS'|null
+     *     UserPoolTier?: 'LITE'|'ESSENTIALS'|'PLUS'|null,
+     *     KeyConfiguration?: KeyConfigurationType|null,
+     *     IssuerConfiguration?: IssuerConfigurationType|null
      * } $args
      */
     public function __construct(array $args = [])

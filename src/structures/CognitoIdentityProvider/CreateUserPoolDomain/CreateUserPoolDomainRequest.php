@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UserPoolId
  * @property int|null $ManagedLoginVersion
  * @property Shapes\CustomDomainConfigType|null $CustomDomainConfig
+ * @property Shapes\RoutingType|null $Routing
  */
 class CreateUserPoolDomainRequest extends Request
 {
@@ -17,7 +18,8 @@ class CreateUserPoolDomainRequest extends Request
      *     Domain: string,
      *     UserPoolId: string,
      *     ManagedLoginVersion?: int|null,
-     *     CustomDomainConfig?: Shapes\CustomDomainConfigType|null
+     *     CustomDomainConfig?: Shapes\CustomDomainConfigType|null,
+     *     Routing?: Shapes\RoutingType|null
      * } $args
      */
     public function __construct(array $args)

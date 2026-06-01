@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Enabled'|'Disabled'|null $Status
  * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
  * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property list<string>|null $ReplicaRegions
  */
 class UserPoolDescriptionType extends Shape
 {
@@ -21,7 +22,8 @@ class UserPoolDescriptionType extends Shape
      *     LambdaConfig?: LambdaConfigType|null,
      *     Status?: 'Enabled'|'Disabled'|null,
      *     LastModifiedDate?: \Aws\Api\DateTimeResult|null,
-     *     CreationDate?: \Aws\Api\DateTimeResult|null
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     ReplicaRegions?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

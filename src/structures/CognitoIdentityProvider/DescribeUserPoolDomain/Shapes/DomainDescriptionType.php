@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CREATING'|'DELETING'|'UPDATING'|'ACTIVE'|'FAILED'|null $Status
  * @property CustomDomainConfigType|null $CustomDomainConfig
  * @property int|null $ManagedLoginVersion
+ * @property RoutingType|null $Routing
  */
 class DomainDescriptionType extends Shape
 {
@@ -27,7 +28,8 @@ class DomainDescriptionType extends Shape
      *     Version?: string|null,
      *     Status?: 'CREATING'|'DELETING'|'UPDATING'|'ACTIVE'|'FAILED'|null,
      *     CustomDomainConfig?: CustomDomainConfigType|null,
-     *     ManagedLoginVersion?: int|null
+     *     ManagedLoginVersion?: int|null,
+     *     Routing?: RoutingType|null
      * } $args
      */
     public function __construct(array $args = [])

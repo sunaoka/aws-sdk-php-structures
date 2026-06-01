@@ -1,0 +1,9 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\QuickSight\UpdateFlow\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+class SensitiveDocument extends Shape
+{
+}
