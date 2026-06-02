@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Metric'|'Imperial'|null $InstructionsMeasurementSystem
  * @property string|null $Key
  * @property list<string>|null $Languages
- * @property list<'Elevation'|'Incidents'|'PassThroughWaypoints'|'Summary'|'Tolls'|'TravelStepInstructions'|'TruckRoadTypes'|'TypicalDuration'|'Zones'>|null $LegAdditionalFeatures
+ * @property list<'Elevation'|'Incidents'|'PassThroughWaypoints'|'Summary'|'Tolls'|'TravelStepInstructions'|'TruckRoadTypes'|'TypicalDuration'|'Zones'|'Bookings'|'IntermediateStops'|'NextDepartures'>|null $LegAdditionalFeatures
  * @property 'FlexiblePolyline'|'Simple'|null $LegGeometryFormat
  * @property int<0, 5>|null $MaxAlternatives
  * @property 'FastestRoute'|'ShortestRoute'|null $OptimizeRoutingFor
@@ -26,7 +26,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'BestCaseDuration'|'CarAccess'|'Country'|'Distance'|'Duration'|'DynamicSpeed'|'FunctionalClassification'|'Gates'|'Incidents'|'Names'|'Notices'|'PedestrianAccess'|'RailwayCrossings'|'Region'|'RoadAttributes'|'RouteNumbers'|'ScooterAccess'|'SpeedLimit'|'TollSystems'|'TruckAccess'|'TruckRoadTypes'|'TypicalDuration'|'Zones'|'Consumption'>|null $SpanAdditionalFeatures
  * @property Shapes\RouteTollOptions|null $Tolls
  * @property Shapes\RouteTrafficOptions|null $Traffic
- * @property 'Car'|'Pedestrian'|'Scooter'|'Truck'|null $TravelMode
+ * @property 'Car'|'Pedestrian'|'Scooter'|'Truck'|'Intermodal'|'Transit'|null $TravelMode
  * @property Shapes\RouteTravelModeOptions|null $TravelModeOptions
  * @property 'Default'|'TurnByTurn'|null $TravelStepType
  * @property list<Shapes\RouteWaypoint>|null $Waypoints
@@ -47,7 +47,7 @@ class CalculateRoutesRequest extends Request
      *     InstructionsMeasurementSystem?: 'Metric'|'Imperial'|null,
      *     Key?: string|null,
      *     Languages?: list<string>|null,
-     *     LegAdditionalFeatures?: list<'Elevation'|'Incidents'|'PassThroughWaypoints'|'Summary'|'Tolls'|'TravelStepInstructions'|'TruckRoadTypes'|'TypicalDuration'|'Zones'>|null,
+     *     LegAdditionalFeatures?: list<'Elevation'|'Incidents'|'PassThroughWaypoints'|'Summary'|'Tolls'|'TravelStepInstructions'|'TruckRoadTypes'|'TypicalDuration'|'Zones'|'Bookings'|'IntermediateStops'|'NextDepartures'>|null,
      *     LegGeometryFormat?: 'FlexiblePolyline'|'Simple'|null,
      *     MaxAlternatives?: int<0, 5>|null,
      *     OptimizeRoutingFor?: 'FastestRoute'|'ShortestRoute'|null,
@@ -56,7 +56,7 @@ class CalculateRoutesRequest extends Request
      *     SpanAdditionalFeatures?: list<'BestCaseDuration'|'CarAccess'|'Country'|'Distance'|'Duration'|'DynamicSpeed'|'FunctionalClassification'|'Gates'|'Incidents'|'Names'|'Notices'|'PedestrianAccess'|'RailwayCrossings'|'Region'|'RoadAttributes'|'RouteNumbers'|'ScooterAccess'|'SpeedLimit'|'TollSystems'|'TruckAccess'|'TruckRoadTypes'|'TypicalDuration'|'Zones'|'Consumption'>|null,
      *     Tolls?: Shapes\RouteTollOptions|null,
      *     Traffic?: Shapes\RouteTrafficOptions|null,
-     *     TravelMode?: 'Car'|'Pedestrian'|'Scooter'|'Truck'|null,
+     *     TravelMode?: 'Car'|'Pedestrian'|'Scooter'|'Truck'|'Intermodal'|'Transit'|null,
      *     TravelModeOptions?: Shapes\RouteTravelModeOptions|null,
      *     TravelStepType?: 'Default'|'TurnByTurn'|null,
      *     Waypoints?: list<Shapes\RouteWaypoint>|null

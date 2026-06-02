@@ -30,6 +30,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ServiceName
  * @property string|null $CommandLineExample
  * @property string|null $ThreatFilePath
+ * @property string|null $FileOperation
+ * @property string|null $FilePath
+ * @property list<string>|null $RelatedFilePaths
  */
 class RuntimeContext extends Shape
 {
@@ -59,7 +62,10 @@ class RuntimeContext extends Shape
      *     ToolCategory?: string|null,
      *     ServiceName?: string|null,
      *     CommandLineExample?: string|null,
-     *     ThreatFilePath?: string|null
+     *     ThreatFilePath?: string|null,
+     *     FileOperation?: string|null,
+     *     FilePath?: string|null,
+     *     RelatedFilePaths?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

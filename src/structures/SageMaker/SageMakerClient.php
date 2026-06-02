@@ -50,6 +50,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use CreateInferenceComponent\CreateInferenceComponentTrait;
     use CreateInferenceExperiment\CreateInferenceExperimentTrait;
     use CreateInferenceRecommendationsJob\CreateInferenceRecommendationsJobTrait;
+    use CreateJob\CreateJobTrait;
     use CreateLabelingJob\CreateLabelingJobTrait;
     use CreateMlflowApp\CreateMlflowAppTrait;
     use CreateMlflowTrackingServer\CreateMlflowTrackingServerTrait;
@@ -118,6 +119,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DeleteImageVersion\DeleteImageVersionTrait;
     use DeleteInferenceComponent\DeleteInferenceComponentTrait;
     use DeleteInferenceExperiment\DeleteInferenceExperimentTrait;
+    use DeleteJob\DeleteJobTrait;
     use DeleteMlflowApp\DeleteMlflowAppTrait;
     use DeleteMlflowTrackingServer\DeleteMlflowTrackingServerTrait;
     use DeleteModel\DeleteModelTrait;
@@ -185,6 +187,8 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DescribeInferenceComponent\DescribeInferenceComponentTrait;
     use DescribeInferenceExperiment\DescribeInferenceExperimentTrait;
     use DescribeInferenceRecommendationsJob\DescribeInferenceRecommendationsJobTrait;
+    use DescribeJob\DescribeJobTrait;
+    use DescribeJobSchemaVersion\DescribeJobSchemaVersionTrait;
     use DescribeLabelingJob\DescribeLabelingJobTrait;
     use DescribeLineageGroup\DescribeLineageGroupTrait;
     use DescribeMlflowApp\DescribeMlflowAppTrait;
@@ -274,6 +278,8 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListInferenceExperiments\ListInferenceExperimentsTrait;
     use ListInferenceRecommendationsJobSteps\ListInferenceRecommendationsJobStepsTrait;
     use ListInferenceRecommendationsJobs\ListInferenceRecommendationsJobsTrait;
+    use ListJobSchemaVersions\ListJobSchemaVersionsTrait;
+    use ListJobs\ListJobsTrait;
     use ListLabelingJobs\ListLabelingJobsTrait;
     use ListLabelingJobsForWorkteam\ListLabelingJobsForWorkteamTrait;
     use ListLineageGroups\ListLineageGroupsTrait;
@@ -346,6 +352,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use StopHyperParameterTuningJob\StopHyperParameterTuningJobTrait;
     use StopInferenceExperiment\StopInferenceExperimentTrait;
     use StopInferenceRecommendationsJob\StopInferenceRecommendationsJobTrait;
+    use StopJob\StopJobTrait;
     use StopLabelingJob\StopLabelingJobTrait;
     use StopMlflowTrackingServer\StopMlflowTrackingServerTrait;
     use StopMonitoringSchedule\StopMonitoringScheduleTrait;

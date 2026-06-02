@@ -35,6 +35,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $TransitEncryptionEnabled
  * @property 'preferred'|'required'|null $TransitEncryptionMode
  * @property 'enabled'|'disabled'|'compatible'|null $ClusterMode
+ * @property 'default'|'async'|'sync'|'disabled'|null $Durability
  */
 class ModifyReplicationGroupRequest extends Request
 {
@@ -69,7 +70,8 @@ class ModifyReplicationGroupRequest extends Request
      *     IpDiscovery?: 'ipv4'|'ipv6'|null,
      *     TransitEncryptionEnabled?: bool|null,
      *     TransitEncryptionMode?: 'preferred'|'required'|null,
-     *     ClusterMode?: 'enabled'|'disabled'|'compatible'|null
+     *     ClusterMode?: 'enabled'|'disabled'|'compatible'|null,
+     *     Durability?: 'default'|'async'|'sync'|'disabled'|null
      * } $args
      */
     public function __construct(array $args)

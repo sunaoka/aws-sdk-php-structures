@@ -33,6 +33,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $KmsKeyId
  * @property string|null $ARN
  * @property 'enabled'|'disabled'|null $DataTiering
+ * @property 'default'|'async'|'sync'|'disabled'|null $Durability
  */
 class Snapshot extends Shape
 {
@@ -65,7 +66,8 @@ class Snapshot extends Shape
      *     NodeSnapshots?: list<NodeSnapshot>|null,
      *     KmsKeyId?: string|null,
      *     ARN?: string|null,
-     *     DataTiering?: 'enabled'|'disabled'|null
+     *     DataTiering?: 'enabled'|'disabled'|null,
+     *     Durability?: 'default'|'async'|'sync'|'disabled'|null
      * } $args
      */
     public function __construct(array $args = [])

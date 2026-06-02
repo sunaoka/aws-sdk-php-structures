@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $FullEngineVersion
  * @property CacheUsageLimits|null $CacheUsageLimits
  * @property string|null $KmsKeyId
+ * @property 'none'|'sse-elasticache'|'sse-kms'|null $StorageEncryptionType
  * @property list<string>|null $SecurityGroupIds
  * @property Endpoint|null $Endpoint
  * @property Endpoint|null $ReaderEndpoint
@@ -37,6 +38,7 @@ class ServerlessCache extends Shape
      *     FullEngineVersion?: string|null,
      *     CacheUsageLimits?: CacheUsageLimits|null,
      *     KmsKeyId?: string|null,
+     *     StorageEncryptionType?: 'none'|'sse-elasticache'|'sse-kms'|null,
      *     SecurityGroupIds?: list<string>|null,
      *     Endpoint?: Endpoint|null,
      *     ReaderEndpoint?: Endpoint|null,

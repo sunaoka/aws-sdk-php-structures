@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $AtRestEncryptionEnabled
  * @property list<string>|null $MemberClustersOutpostArns
  * @property string|null $KmsKeyId
+ * @property 'none'|'sse-elasticache'|'sse-kms'|null $StorageEncryptionType
  * @property string|null $ARN
  * @property list<string>|null $UserGroupIds
  * @property list<LogDeliveryConfiguration>|null $LogDeliveryConfigurations
@@ -37,6 +38,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'preferred'|'required'|null $TransitEncryptionMode
  * @property 'enabled'|'disabled'|'compatible'|null $ClusterMode
  * @property string|null $Engine
+ * @property 'default'|'async'|'sync'|'disabled'|null $Durability
+ * @property 'async'|'sync'|'disabled'|null $EffectiveDurability
  */
 class ReplicationGroup extends Shape
 {
@@ -63,6 +66,7 @@ class ReplicationGroup extends Shape
      *     AtRestEncryptionEnabled?: bool|null,
      *     MemberClustersOutpostArns?: list<string>|null,
      *     KmsKeyId?: string|null,
+     *     StorageEncryptionType?: 'none'|'sse-elasticache'|'sse-kms'|null,
      *     ARN?: string|null,
      *     UserGroupIds?: list<string>|null,
      *     LogDeliveryConfigurations?: list<LogDeliveryConfiguration>|null,
@@ -73,7 +77,9 @@ class ReplicationGroup extends Shape
      *     IpDiscovery?: 'ipv4'|'ipv6'|null,
      *     TransitEncryptionMode?: 'preferred'|'required'|null,
      *     ClusterMode?: 'enabled'|'disabled'|'compatible'|null,
-     *     Engine?: string|null
+     *     Engine?: string|null,
+     *     Durability?: 'default'|'async'|'sync'|'disabled'|null,
+     *     EffectiveDurability?: 'async'|'sync'|'disabled'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property BedrockModelImportMetadata|null $BedrockModelImport
  * @property InferenceComponentMetadata|null $InferenceComponent
  * @property LineageMetadata|null $Lineage
+ * @property JobStepMetadata|null $Job
  */
 class PipelineExecutionStepMetadata extends Shape
 {
@@ -53,7 +54,8 @@ class PipelineExecutionStepMetadata extends Shape
      *     BedrockProvisionedModelThroughput?: BedrockProvisionedModelThroughputMetadata|null,
      *     BedrockModelImport?: BedrockModelImportMetadata|null,
      *     InferenceComponent?: InferenceComponentMetadata|null,
-     *     Lineage?: LineageMetadata|null
+     *     Lineage?: LineageMetadata|null,
+     *     Job?: JobStepMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

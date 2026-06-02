@@ -10,6 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<double> $Position
  * @property 'Left'|'Right'|null $SideOfStreet
  * @property int<0, max>|null $WaypointIndex
+ * @property RouteAccessPointDetails|null $AccessPointDetails
+ * @property RouteStationDetails|null $StationDetails
+ * @property 'AccessPoint'|'DockingStation'|'ParkingLot'|'Station'|null $Type
  */
 class RouteVehiclePlace extends Shape
 {
@@ -19,7 +22,10 @@ class RouteVehiclePlace extends Shape
      *     OriginalPosition?: list<double>|null,
      *     Position: list<double>,
      *     SideOfStreet?: 'Left'|'Right'|null,
-     *     WaypointIndex?: int<0, max>|null
+     *     WaypointIndex?: int<0, max>|null,
+     *     AccessPointDetails?: RouteAccessPointDetails|null,
+     *     StationDetails?: RouteStationDetails|null,
+     *     Type?: 'AccessPoint'|'DockingStation'|'ParkingLot'|'Station'|null
      * } $args
      */
     public function __construct(array $args)

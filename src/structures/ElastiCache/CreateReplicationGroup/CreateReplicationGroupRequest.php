@@ -44,6 +44,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'preferred'|'required'|null $TransitEncryptionMode
  * @property 'enabled'|'disabled'|'compatible'|null $ClusterMode
  * @property string|null $ServerlessCacheSnapshotName
+ * @property 'default'|'async'|'sync'|'disabled'|null $Durability
  */
 class CreateReplicationGroupRequest extends Request
 {
@@ -87,7 +88,8 @@ class CreateReplicationGroupRequest extends Request
      *     IpDiscovery?: 'ipv4'|'ipv6'|null,
      *     TransitEncryptionMode?: 'preferred'|'required'|null,
      *     ClusterMode?: 'enabled'|'disabled'|'compatible'|null,
-     *     ServerlessCacheSnapshotName?: string|null
+     *     ServerlessCacheSnapshotName?: string|null,
+     *     Durability?: 'default'|'async'|'sync'|'disabled'|null
      * } $args
      */
     public function __construct(array $args)

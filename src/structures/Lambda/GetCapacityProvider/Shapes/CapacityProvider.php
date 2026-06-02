@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CapacityProviderScalingConfig|null $CapacityProviderScalingConfig
  * @property string|null $KmsKeyArn
  * @property string|null $LastModified
+ * @property PropagateTags|null $PropagateTags
  */
 class CapacityProvider extends Shape
 {
@@ -25,7 +26,8 @@ class CapacityProvider extends Shape
      *     InstanceRequirements?: InstanceRequirements|null,
      *     CapacityProviderScalingConfig?: CapacityProviderScalingConfig|null,
      *     KmsKeyArn?: string|null,
-     *     LastModified?: string|null
+     *     LastModified?: string|null,
+     *     PropagateTags?: PropagateTags|null
      * } $args
      */
     public function __construct(array $args)

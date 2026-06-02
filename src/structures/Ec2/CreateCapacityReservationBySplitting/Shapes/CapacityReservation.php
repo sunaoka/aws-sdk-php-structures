@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $AvailableInstanceCount
  * @property bool|null $EbsOptimized
  * @property bool|null $EphemeralStorage
- * @property 'active'|'expired'|'cancelled'|'pending'|'failed'|'scheduled'|'payment-pending'|'payment-failed'|'assessing'|'delayed'|'unsupported'|'unavailable'|null $State
+ * @property 'active'|'expired'|'cancelled'|'pending'|'failed'|'scheduled'|'payment-pending'|'payment-failed'|'assessing'|'delayed'|'unsupported'|'cancelling'|'unavailable'|null $State
  * @property \Aws\Api\DateTimeResult|null $StartDate
  * @property \Aws\Api\DateTimeResult|null $EndDate
  * @property 'unlimited'|'limited'|null $EndDateType
@@ -53,7 +53,7 @@ class CapacityReservation extends Shape
      *     AvailableInstanceCount?: int|null,
      *     EbsOptimized?: bool|null,
      *     EphemeralStorage?: bool|null,
-     *     State?: 'active'|'expired'|'cancelled'|'pending'|'failed'|'scheduled'|'payment-pending'|'payment-failed'|'assessing'|'delayed'|'unsupported'|'unavailable'|null,
+     *     State?: 'active'|'expired'|'cancelled'|'pending'|'failed'|'scheduled'|'payment-pending'|'payment-failed'|'assessing'|'delayed'|'unsupported'|'cancelling'|'unavailable'|null,
      *     StartDate?: \Aws\Api\DateTimeResult|null,
      *     EndDate?: \Aws\Api\DateTimeResult|null,
      *     EndDateType?: 'unlimited'|'limited'|null,

@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property list<RouteVehicleAfterTravelStep> $AfterTravelSteps
  * @property RouteVehicleArrival $Arrival
  * @property RouteVehicleDeparture $Departure
  * @property list<RouteVehicleIncident> $Incidents
@@ -22,6 +23,7 @@ class RouteVehicleLegDetails extends Shape
 {
     /**
      * @param array{
+     *     AfterTravelSteps: list<RouteVehicleAfterTravelStep>,
      *     Arrival: RouteVehicleArrival,
      *     Departure: RouteVehicleDeparture,
      *     Incidents: list<RouteVehicleIncident>,

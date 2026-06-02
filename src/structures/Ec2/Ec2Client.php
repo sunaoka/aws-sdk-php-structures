@@ -69,6 +69,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateCapacityManagerDataExport\CreateCapacityManagerDataExportTrait;
     use CreateCapacityReservation\CreateCapacityReservationTrait;
     use CreateCapacityReservationBySplitting\CreateCapacityReservationBySplittingTrait;
+    use CreateCapacityReservationCancellationQuote\CreateCapacityReservationCancellationQuoteTrait;
     use CreateCapacityReservationFleet\CreateCapacityReservationFleetTrait;
     use CreateCarrierGateway\CreateCarrierGatewayTrait;
     use CreateClientVpnEndpoint\CreateClientVpnEndpointTrait;
@@ -287,6 +288,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeCapacityBlocks\DescribeCapacityBlocksTrait;
     use DescribeCapacityManagerDataExports\DescribeCapacityManagerDataExportsTrait;
     use DescribeCapacityReservationBillingRequests\DescribeCapacityReservationBillingRequestsTrait;
+    use DescribeCapacityReservationCancellationQuotes\DescribeCapacityReservationCancellationQuotesTrait;
     use DescribeCapacityReservationFleets\DescribeCapacityReservationFleetsTrait;
     use DescribeCapacityReservationTopology\DescribeCapacityReservationTopologyTrait;
     use DescribeCapacityReservations\DescribeCapacityReservationsTrait;
