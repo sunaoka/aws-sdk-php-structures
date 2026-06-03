@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ScanStatus|null $scanStatus
  * @property ResourceScanMetadata|null $resourceMetadata
  * @property \Aws\Api\DateTimeResult|null $lastScannedAt
- * @property 'EC2_SSM_AGENT_BASED'|'EC2_AGENTLESS'|null $scanMode
+ * @property 'EC2_SSM_AGENT_BASED'|'EC2_AGENTLESS'|'EC2_INSPECTOR_AGENT_BASED'|null $scanMode
  */
 class CoveredResource extends Shape
 {
@@ -25,7 +25,7 @@ class CoveredResource extends Shape
      *     scanStatus?: ScanStatus|null,
      *     resourceMetadata?: ResourceScanMetadata|null,
      *     lastScannedAt?: \Aws\Api\DateTimeResult|null,
-     *     scanMode?: 'EC2_SSM_AGENT_BASED'|'EC2_AGENTLESS'|null
+     *     scanMode?: 'EC2_SSM_AGENT_BASED'|'EC2_AGENTLESS'|'EC2_INSPECTOR_AGENT_BASED'|null
      * } $args
      */
     public function __construct(array $args)

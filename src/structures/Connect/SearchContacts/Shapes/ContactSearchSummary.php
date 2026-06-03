@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RoutingCriteria|null $RoutingCriteria
  * @property array<string, string>|null $Tags
  * @property GlobalResiliencyMetadata|null $GlobalResiliencyMetadata
+ * @property list<ContactSearchSummaryAiAgentInfo>|null $AiAgentInfo
  */
 class ContactSearchSummary extends Shape
 {
@@ -41,7 +42,8 @@ class ContactSearchSummary extends Shape
      *     Name?: string|null,
      *     RoutingCriteria?: RoutingCriteria|null,
      *     Tags?: array<string, string>|null,
-     *     GlobalResiliencyMetadata?: GlobalResiliencyMetadata|null
+     *     GlobalResiliencyMetadata?: GlobalResiliencyMetadata|null,
+     *     AiAgentInfo?: list<ContactSearchSummaryAiAgentInfo>|null
      * } $args
      */
     public function __construct(array $args = [])

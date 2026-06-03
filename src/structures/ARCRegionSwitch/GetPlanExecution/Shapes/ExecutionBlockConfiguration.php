@@ -19,6 +19,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RdsPromoteReadReplicaConfiguration|null $rdsPromoteReadReplicaConfig
  * @property RdsCreateCrossRegionReplicaConfiguration|null $rdsCreateCrossRegionReadReplicaConfig
  * @property LambdaEventSourceMappingConfiguration|null $lambdaEventSourceMappingConfig
+ * @property AuroraServerlessScalingConfiguration|null $auroraServerlessScalingConfig
+ * @property AuroraProvisionedScalingConfiguration|null $auroraProvisionedScalingConfig
+ * @property NeptuneGlobalDatabaseConfiguration|null $neptuneGlobalDatabaseConfig
  */
 class ExecutionBlockConfiguration extends Shape
 {
@@ -37,7 +40,10 @@ class ExecutionBlockConfiguration extends Shape
      *     documentDbConfig?: DocumentDbConfiguration|null,
      *     rdsPromoteReadReplicaConfig?: RdsPromoteReadReplicaConfiguration|null,
      *     rdsCreateCrossRegionReadReplicaConfig?: RdsCreateCrossRegionReplicaConfiguration|null,
-     *     lambdaEventSourceMappingConfig?: LambdaEventSourceMappingConfiguration|null
+     *     lambdaEventSourceMappingConfig?: LambdaEventSourceMappingConfiguration|null,
+     *     auroraServerlessScalingConfig?: AuroraServerlessScalingConfiguration|null,
+     *     auroraProvisionedScalingConfig?: AuroraProvisionedScalingConfiguration|null,
+     *     neptuneGlobalDatabaseConfig?: NeptuneGlobalDatabaseConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $arn
  * @property string|null $hostedZoneId
  * @property string|null $recordName
- * @property int<10, 100>|null $maxResults
+ * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
  */
 class ListRoute53HealthChecksRequest extends Request
@@ -18,7 +18,7 @@ class ListRoute53HealthChecksRequest extends Request
      *     arn: string,
      *     hostedZoneId?: string|null,
      *     recordName?: string|null,
-     *     maxResults?: int<10, 100>|null,
+     *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null
      * } $args
      */
