@@ -35,6 +35,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $showMasterRecoveryKey
  * @property ShredderSettings|null $shredder
  * @property int|null $ssoMaxIdleMinutes
+ * @property int<0, 525600>|null $maxNonSsoSessionMinutes
  * @property int|null $federationMode
  * @property int|null $lockoutThreshold
  * @property list<string>|null $permittedNetworks
@@ -75,6 +76,7 @@ class SecurityGroupSettings extends Shape
      *     showMasterRecoveryKey?: bool|null,
      *     shredder?: ShredderSettings|null,
      *     ssoMaxIdleMinutes?: int|null,
+     *     maxNonSsoSessionMinutes?: int<0, 525600>|null,
      *     federationMode?: int|null,
      *     lockoutThreshold?: int|null,
      *     permittedNetworks?: list<string>|null,

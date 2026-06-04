@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ACTIVE'|'DELETING'|'DELETING_RESULTS'|'EVALUATING'|null $ConfigRuleState
  * @property string|null $CreatedBy
  * @property list<EvaluationModeConfiguration>|null $EvaluationModes
+ * @property 'EXTERNAL'|'INTERNAL'|null $RuleEvaluationVisibility
  */
 class ConfigRule extends Shape
 {
@@ -31,7 +32,8 @@ class ConfigRule extends Shape
      *     MaximumExecutionFrequency?: 'One_Hour'|'Three_Hours'|'Six_Hours'|'Twelve_Hours'|'TwentyFour_Hours'|null,
      *     ConfigRuleState?: 'ACTIVE'|'DELETING'|'DELETING_RESULTS'|'EVALUATING'|null,
      *     CreatedBy?: string|null,
-     *     EvaluationModes?: list<EvaluationModeConfiguration>|null
+     *     EvaluationModes?: list<EvaluationModeConfiguration>|null,
+     *     RuleEvaluationVisibility?: 'EXTERNAL'|'INTERNAL'|null
      * } $args
      */
     public function __construct(array $args)

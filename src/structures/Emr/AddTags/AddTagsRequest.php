@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ResourceId
  * @property list<Shapes\Tag> $Tags
+ * @property string|null $ClusterId
  */
 class AddTagsRequest extends Request
 {
     /**
      * @param array{
      *     ResourceId: string,
-     *     Tags: list<Shapes\Tag>
+     *     Tags: list<Shapes\Tag>,
+     *     ClusterId?: string|null
      * } $args
      */
     public function __construct(array $args)

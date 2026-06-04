@@ -39,6 +39,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $EbsRootVolumeThroughput
  * @property bool|null $ExtendedSupport
  * @property Shapes\MonitoringConfiguration|null $MonitoringConfiguration
+ * @property bool|null $SessionEnabled
  */
 class RunJobFlowRequest extends Request
 {
@@ -77,7 +78,8 @@ class RunJobFlowRequest extends Request
      *     EbsRootVolumeIops?: int|null,
      *     EbsRootVolumeThroughput?: int|null,
      *     ExtendedSupport?: bool|null,
-     *     MonitoringConfiguration?: Shapes\MonitoringConfiguration|null
+     *     MonitoringConfiguration?: Shapes\MonitoringConfiguration|null,
+     *     SessionEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

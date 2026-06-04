@@ -42,6 +42,7 @@ class IVSClient extends \Aws\IVS\IVSClient
     use StopStream\StopStreamTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateAdConfiguration\UpdateAdConfigurationTrait;
     use UpdateChannel\UpdateChannelTrait;
     use UpdatePlaybackRestrictionPolicy\UpdatePlaybackRestrictionPolicyTrait;
 }

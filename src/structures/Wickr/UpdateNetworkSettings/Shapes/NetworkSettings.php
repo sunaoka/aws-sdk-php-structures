@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ReadReceiptConfig|null $readReceiptConfig
  * @property bool|null $dataRetention
  * @property bool|null $enableTrustedDataFormat
+ * @property ConsentPopupConfig|null $consentPopup
  */
 class NetworkSettings extends Shape
 {
@@ -17,7 +18,8 @@ class NetworkSettings extends Shape
      *     enableClientMetrics?: bool|null,
      *     readReceiptConfig?: ReadReceiptConfig|null,
      *     dataRetention?: bool|null,
-     *     enableTrustedDataFormat?: bool|null
+     *     enableTrustedDataFormat?: bool|null,
+     *     consentPopup?: ConsentPopupConfig|null
      * } $args
      */
     public function __construct(array $args = [])

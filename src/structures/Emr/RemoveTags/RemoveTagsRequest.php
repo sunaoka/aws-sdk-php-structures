@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ResourceId
  * @property list<string> $TagKeys
+ * @property string|null $ClusterId
  */
 class RemoveTagsRequest extends Request
 {
     /**
      * @param array{
      *     ResourceId: string,
-     *     TagKeys: list<string>
+     *     TagKeys: list<string>,
+     *     ClusterId?: string|null
      * } $args
      */
     public function __construct(array $args)

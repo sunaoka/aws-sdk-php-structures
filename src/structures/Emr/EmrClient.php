@@ -30,6 +30,8 @@ class EmrClient extends \Aws\Emr\EmrClient
     use GetManagedScalingPolicy\GetManagedScalingPolicyTrait;
     use GetOnClusterAppUIPresignedURL\GetOnClusterAppUIPresignedURLTrait;
     use GetPersistentAppUIPresignedURL\GetPersistentAppUIPresignedURLTrait;
+    use GetSession\GetSessionTrait;
+    use GetSessionEndpoint\GetSessionEndpointTrait;
     use GetStudioSessionMapping\GetStudioSessionMappingTrait;
     use ListBootstrapActions\ListBootstrapActionsTrait;
     use ListClusters\ListClustersTrait;
@@ -39,6 +41,7 @@ class EmrClient extends \Aws\Emr\EmrClient
     use ListNotebookExecutions\ListNotebookExecutionsTrait;
     use ListReleaseLabels\ListReleaseLabelsTrait;
     use ListSecurityConfigurations\ListSecurityConfigurationsTrait;
+    use ListSessions\ListSessionsTrait;
     use ListSteps\ListStepsTrait;
     use ListStudioSessionMappings\ListStudioSessionMappingsTrait;
     use ListStudios\ListStudiosTrait;
@@ -60,8 +63,10 @@ class EmrClient extends \Aws\Emr\EmrClient
     use SetUnhealthyNodeReplacement\SetUnhealthyNodeReplacementTrait;
     use SetVisibleToAllUsers\SetVisibleToAllUsersTrait;
     use StartNotebookExecution\StartNotebookExecutionTrait;
+    use StartSession\StartSessionTrait;
     use StopNotebookExecution\StopNotebookExecutionTrait;
     use TerminateJobFlows\TerminateJobFlowsTrait;
+    use TerminateSession\TerminateSessionTrait;
     use UpdateStudio\UpdateStudioTrait;
     use UpdateStudioSessionMapping\UpdateStudioSessionMappingTrait;
 }

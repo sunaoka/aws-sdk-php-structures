@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $GlueVersion
  * @property array<string, string>|null $Tags
  * @property string|null $RequestOrigin
+ * @property 'LIVY'|'SPARK_CONNECT'|null $SessionType
  */
 class CreateSessionRequest extends Request
 {
@@ -39,7 +40,8 @@ class CreateSessionRequest extends Request
      *     SecurityConfiguration?: string|null,
      *     GlueVersion?: string|null,
      *     Tags?: array<string, string>|null,
-     *     RequestOrigin?: string|null
+     *     RequestOrigin?: string|null,
+     *     SessionType?: 'LIVY'|'SPARK_CONNECT'|null
      * } $args
      */
     public function __construct(array $args)

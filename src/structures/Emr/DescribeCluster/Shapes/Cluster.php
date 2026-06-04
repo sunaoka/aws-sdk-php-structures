@@ -41,6 +41,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $EbsRootVolumeThroughput
  * @property bool|null $ExtendedSupport
  * @property MonitoringConfiguration|null $MonitoringConfiguration
+ * @property bool|null $SessionEnabled
  */
 class Cluster extends Shape
 {
@@ -81,7 +82,8 @@ class Cluster extends Shape
      *     EbsRootVolumeIops?: int|null,
      *     EbsRootVolumeThroughput?: int|null,
      *     ExtendedSupport?: bool|null,
-     *     MonitoringConfiguration?: MonitoringConfiguration|null
+     *     MonitoringConfiguration?: MonitoringConfiguration|null,
+     *     SessionEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TagKey
  * @property string|null $TagValue
  * @property string|null $ComplianceResourceId
+ * @property list<string>|null $ServicePrincipals
  */
 class Scope extends Shape
 {
@@ -17,7 +18,8 @@ class Scope extends Shape
      *     ComplianceResourceTypes?: list<string>|null,
      *     TagKey?: string|null,
      *     TagValue?: string|null,
-     *     ComplianceResourceId?: string|null
+     *     ComplianceResourceId?: string|null,
+     *     ServicePrincipals?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

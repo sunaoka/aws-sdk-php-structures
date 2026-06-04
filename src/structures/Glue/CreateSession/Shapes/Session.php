@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double|null $DPUSeconds
  * @property int|null $IdleTimeout
  * @property string|null $ProfileName
+ * @property 'LIVY'|'SPARK_CONNECT'|null $SessionType
  */
 class Session extends Shape
 {
@@ -49,7 +50,8 @@ class Session extends Shape
      *     ExecutionTime?: double|null,
      *     DPUSeconds?: double|null,
      *     IdleTimeout?: int|null,
-     *     ProfileName?: string|null
+     *     ProfileName?: string|null,
+     *     SessionType?: 'LIVY'|'SPARK_CONNECT'|null
      * } $args
      */
     public function __construct(array $args = [])

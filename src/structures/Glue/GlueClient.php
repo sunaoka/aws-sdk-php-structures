@@ -113,6 +113,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetCrawlerMetrics\GetCrawlerMetricsTrait;
     use GetCrawlers\GetCrawlersTrait;
     use GetCustomEntityType\GetCustomEntityTypeTrait;
+    use GetDashboardUrl\GetDashboardUrlTrait;
     use GetDataCatalogEncryptionSettings\GetDataCatalogEncryptionSettingsTrait;
     use GetDataQualityModel\GetDataQualityModelTrait;
     use GetDataQualityModelResult\GetDataQualityModelResultTrait;
@@ -154,6 +155,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetSecurityConfiguration\GetSecurityConfigurationTrait;
     use GetSecurityConfigurations\GetSecurityConfigurationsTrait;
     use GetSession\GetSessionTrait;
+    use GetSessionEndpoint\GetSessionEndpointTrait;
     use GetStatement\GetStatementTrait;
     use GetTable\GetTableTrait;
     use GetTableOptimizer\GetTableOptimizerTrait;
