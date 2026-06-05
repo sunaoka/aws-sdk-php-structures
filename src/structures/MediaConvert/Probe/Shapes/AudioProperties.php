@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $Channels
  * @property FrameRate|null $FrameRate
  * @property string|null $LanguageCode
+ * @property int|null $ObjectCount
  * @property int|null $SampleRate
  */
 class AudioProperties extends Shape
@@ -21,6 +22,7 @@ class AudioProperties extends Shape
      *     Channels?: int|null,
      *     FrameRate?: FrameRate|null,
      *     LanguageCode?: string|null,
+     *     ObjectCount?: int|null,
      *     SampleRate?: int|null
      * } $args
      */

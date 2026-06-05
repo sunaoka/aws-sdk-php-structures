@@ -15,8 +15,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DashIsoEncryptionSettings|null $Encryption
  * @property int<1, 2147483647>|null $FragmentLength
  * @property 'HBBTV_1_5'|'NONE'|null $HbbtvCompliance
- * @property 'NONE'|'THUMBNAIL'|'THUMBNAIL_AND_FULLFRAME'|'ADVANCED'|null $ImageBasedTrickPlay
+ * @property 'NONE'|'THUMBNAIL'|'THUMBNAIL_AND_FULLFRAME'|'ADVANCED'|'VARIANTS'|null $ImageBasedTrickPlay
  * @property DashIsoImageBasedTrickPlaySettings|null $ImageBasedTrickPlaySettings
+ * @property list<DashIsoImageBasedTrickPlayVariant>|null $ImageBasedTrickPlayVariants
  * @property int<0, 2147483647>|null $MinBufferTime
  * @property double|null $MinFinalSegmentLength
  * @property 'AVERAGE'|'MAX'|null $MpdManifestBandwidthType
@@ -42,8 +43,9 @@ class DashIsoGroupSettings extends Shape
      *     Encryption?: DashIsoEncryptionSettings|null,
      *     FragmentLength?: int<1, 2147483647>|null,
      *     HbbtvCompliance?: 'HBBTV_1_5'|'NONE'|null,
-     *     ImageBasedTrickPlay?: 'NONE'|'THUMBNAIL'|'THUMBNAIL_AND_FULLFRAME'|'ADVANCED'|null,
+     *     ImageBasedTrickPlay?: 'NONE'|'THUMBNAIL'|'THUMBNAIL_AND_FULLFRAME'|'ADVANCED'|'VARIANTS'|null,
      *     ImageBasedTrickPlaySettings?: DashIsoImageBasedTrickPlaySettings|null,
+     *     ImageBasedTrickPlayVariants?: list<DashIsoImageBasedTrickPlayVariant>|null,
      *     MinBufferTime?: int<0, 2147483647>|null,
      *     MinFinalSegmentLength?: double|null,
      *     MpdManifestBandwidthType?: 'AVERAGE'|'MAX'|null,

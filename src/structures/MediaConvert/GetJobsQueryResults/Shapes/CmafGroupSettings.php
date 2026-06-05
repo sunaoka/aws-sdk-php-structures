@@ -15,8 +15,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DestinationSettings|null $DestinationSettings
  * @property CmafEncryptionSettings|null $Encryption
  * @property int<1, 2147483647>|null $FragmentLength
- * @property 'NONE'|'THUMBNAIL'|'THUMBNAIL_AND_FULLFRAME'|'ADVANCED'|null $ImageBasedTrickPlay
+ * @property 'NONE'|'THUMBNAIL'|'THUMBNAIL_AND_FULLFRAME'|'ADVANCED'|'VARIANTS'|null $ImageBasedTrickPlay
  * @property CmafImageBasedTrickPlaySettings|null $ImageBasedTrickPlaySettings
+ * @property list<CmafImageBasedTrickPlayVariant>|null $ImageBasedTrickPlayVariants
  * @property 'GZIP'|'NONE'|null $ManifestCompression
  * @property 'FLOATING_POINT'|'INTEGER'|null $ManifestDurationFormat
  * @property int<0, 2147483647>|null $MinBufferTime
@@ -48,8 +49,9 @@ class CmafGroupSettings extends Shape
      *     DestinationSettings?: DestinationSettings|null,
      *     Encryption?: CmafEncryptionSettings|null,
      *     FragmentLength?: int<1, 2147483647>|null,
-     *     ImageBasedTrickPlay?: 'NONE'|'THUMBNAIL'|'THUMBNAIL_AND_FULLFRAME'|'ADVANCED'|null,
+     *     ImageBasedTrickPlay?: 'NONE'|'THUMBNAIL'|'THUMBNAIL_AND_FULLFRAME'|'ADVANCED'|'VARIANTS'|null,
      *     ImageBasedTrickPlaySettings?: CmafImageBasedTrickPlaySettings|null,
+     *     ImageBasedTrickPlayVariants?: list<CmafImageBasedTrickPlayVariant>|null,
      *     ManifestCompression?: 'GZIP'|'NONE'|null,
      *     ManifestDurationFormat?: 'FLOATING_POINT'|'INTEGER'|null,
      *     MinBufferTime?: int<0, 2147483647>|null,

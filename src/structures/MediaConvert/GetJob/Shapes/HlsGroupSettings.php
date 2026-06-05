@@ -18,8 +18,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DestinationSettings|null $DestinationSettings
  * @property 'SINGLE_DIRECTORY'|'SUBDIRECTORY_PER_STREAM'|null $DirectoryStructure
  * @property HlsEncryptionSettings|null $Encryption
- * @property 'NONE'|'THUMBNAIL'|'THUMBNAIL_AND_FULLFRAME'|'ADVANCED'|null $ImageBasedTrickPlay
+ * @property 'NONE'|'THUMBNAIL'|'THUMBNAIL_AND_FULLFRAME'|'ADVANCED'|'VARIANTS'|null $ImageBasedTrickPlay
  * @property HlsImageBasedTrickPlaySettings|null $ImageBasedTrickPlaySettings
+ * @property list<HlsImageBasedTrickPlayVariant>|null $ImageBasedTrickPlayVariants
  * @property 'GZIP'|'NONE'|null $ManifestCompression
  * @property 'FLOATING_POINT'|'INTEGER'|null $ManifestDurationFormat
  * @property double|null $MinFinalSegmentLength
@@ -55,8 +56,9 @@ class HlsGroupSettings extends Shape
      *     DestinationSettings?: DestinationSettings|null,
      *     DirectoryStructure?: 'SINGLE_DIRECTORY'|'SUBDIRECTORY_PER_STREAM'|null,
      *     Encryption?: HlsEncryptionSettings|null,
-     *     ImageBasedTrickPlay?: 'NONE'|'THUMBNAIL'|'THUMBNAIL_AND_FULLFRAME'|'ADVANCED'|null,
+     *     ImageBasedTrickPlay?: 'NONE'|'THUMBNAIL'|'THUMBNAIL_AND_FULLFRAME'|'ADVANCED'|'VARIANTS'|null,
      *     ImageBasedTrickPlaySettings?: HlsImageBasedTrickPlaySettings|null,
+     *     ImageBasedTrickPlayVariants?: list<HlsImageBasedTrickPlayVariant>|null,
      *     ManifestCompression?: 'GZIP'|'NONE'|null,
      *     ManifestDurationFormat?: 'FLOATING_POINT'|'INTEGER'|null,
      *     MinFinalSegmentLength?: double|null,

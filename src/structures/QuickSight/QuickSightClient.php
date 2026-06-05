@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\QuickSight;
 class QuickSightClient extends \Aws\QuickSight\QuickSightClient
 {
     use BatchCreateTopicReviewedAnswer\BatchCreateTopicReviewedAnswerTrait;
+    use BatchDeleteKnowledgeBase\BatchDeleteKnowledgeBaseTrait;
     use BatchDeleteTopicReviewedAnswer\BatchDeleteTopicReviewedAnswerTrait;
     use CancelIngestion\CancelIngestionTrait;
     use CreateAccountCustomization\CreateAccountCustomizationTrait;
@@ -57,6 +58,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DeleteGroupMembership\DeleteGroupMembershipTrait;
     use DeleteIAMPolicyAssignment\DeleteIAMPolicyAssignmentTrait;
     use DeleteIdentityPropagationConfig\DeleteIdentityPropagationConfigTrait;
+    use DeleteKnowledgeBase\DeleteKnowledgeBaseTrait;
     use DeleteNamespace\DeleteNamespaceTrait;
     use DeleteOAuthClientApplication\DeleteOAuthClientApplicationTrait;
     use DeleteRefreshSchedule\DeleteRefreshScheduleTrait;
@@ -113,6 +115,8 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DescribeIngestion\DescribeIngestionTrait;
     use DescribeIpRestriction\DescribeIpRestrictionTrait;
     use DescribeKeyRegistration\DescribeKeyRegistrationTrait;
+    use DescribeKnowledgeBase\DescribeKnowledgeBaseTrait;
+    use DescribeKnowledgeBasePermissions\DescribeKnowledgeBasePermissionsTrait;
     use DescribeNamespace\DescribeNamespaceTrait;
     use DescribeOAuthClientApplication\DescribeOAuthClientApplicationTrait;
     use DescribeQPersonalizationConfiguration\DescribeQPersonalizationConfigurationTrait;
@@ -164,6 +168,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use ListIAMPolicyAssignmentsForUser\ListIAMPolicyAssignmentsForUserTrait;
     use ListIdentityPropagationConfigs\ListIdentityPropagationConfigsTrait;
     use ListIngestions\ListIngestionsTrait;
+    use ListKnowledgeBases\ListKnowledgeBasesTrait;
     use ListNamespaces\ListNamespacesTrait;
     use ListOAuthClientApplications\ListOAuthClientApplicationsTrait;
     use ListRefreshSchedules\ListRefreshSchedulesTrait;
@@ -183,6 +188,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use ListTopics\ListTopicsTrait;
     use ListUserGroups\ListUserGroupsTrait;
     use ListUsers\ListUsersTrait;
+    use ListUsersIndexCapacity\ListUsersIndexCapacityTrait;
     use ListVPCConnections\ListVPCConnectionsTrait;
     use PredictQAResults\PredictQAResultsTrait;
     use PutDataSetRefreshProperties\PutDataSetRefreshPropertiesTrait;
@@ -197,6 +203,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use SearchFlows\SearchFlowsTrait;
     use SearchFolders\SearchFoldersTrait;
     use SearchGroups\SearchGroupsTrait;
+    use SearchKnowledgeBases\SearchKnowledgeBasesTrait;
     use SearchSpaces\SearchSpacesTrait;
     use SearchTopics\SearchTopicsTrait;
     use StartAssetBundleExportJob\StartAssetBundleExportJobTrait;
@@ -239,6 +246,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateIdentityPropagationConfig\UpdateIdentityPropagationConfigTrait;
     use UpdateIpRestriction\UpdateIpRestrictionTrait;
     use UpdateKeyRegistration\UpdateKeyRegistrationTrait;
+    use UpdateKnowledgeBasePermissions\UpdateKnowledgeBasePermissionsTrait;
     use UpdateOAuthClientApplication\UpdateOAuthClientApplicationTrait;
     use UpdatePublicSharingSettings\UpdatePublicSharingSettingsTrait;
     use UpdateQPersonalizationConfiguration\UpdateQPersonalizationConfigurationTrait;
