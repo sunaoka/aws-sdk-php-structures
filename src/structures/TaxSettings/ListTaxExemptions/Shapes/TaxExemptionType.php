@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\TaxSettings\ListTaxExemptions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Authority>|null $applicableJurisdictions
- * @property string|null $description
  * @property string|null $displayName
+ * @property string|null $description
+ * @property list<Authority>|null $applicableJurisdictions
  */
 class TaxExemptionType extends Shape
 {
     /**
      * @param array{
-     *     applicableJurisdictions?: list<Authority>|null,
+     *     displayName?: string|null,
      *     description?: string|null,
-     *     displayName?: string|null
+     *     applicableJurisdictions?: list<Authority>|null
      * } $args
      */
     public function __construct(array $args = [])

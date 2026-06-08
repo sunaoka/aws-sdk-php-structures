@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $businessRepresentativeName
- * @property string $itemOfBusiness
  * @property string $lineOfBusiness
+ * @property string $itemOfBusiness
  */
 class SouthKoreaAdditionalInfo extends Shape
 {
     /**
      * @param array{
      *     businessRepresentativeName: string,
-     *     itemOfBusiness: string,
-     *     lineOfBusiness: string
+     *     lineOfBusiness: string,
+     *     itemOfBusiness: string
      * } $args
      */
     public function __construct(array $args)

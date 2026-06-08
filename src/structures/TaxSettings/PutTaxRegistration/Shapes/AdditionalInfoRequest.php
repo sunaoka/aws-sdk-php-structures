@@ -5,49 +5,57 @@ namespace Sunaoka\Aws\Structures\TaxSettings\PutTaxRegistration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CanadaAdditionalInfo|null $canadaAdditionalInfo
- * @property EgyptAdditionalInfo|null $egyptAdditionalInfo
- * @property EstoniaAdditionalInfo|null $estoniaAdditionalInfo
- * @property GeorgiaAdditionalInfo|null $georgiaAdditionalInfo
- * @property GreeceAdditionalInfo|null $greeceAdditionalInfo
- * @property IndonesiaAdditionalInfo|null $indonesiaAdditionalInfo
- * @property IsraelAdditionalInfo|null $israelAdditionalInfo
- * @property ItalyAdditionalInfo|null $italyAdditionalInfo
- * @property KenyaAdditionalInfo|null $kenyaAdditionalInfo
  * @property MalaysiaAdditionalInfo|null $malaysiaAdditionalInfo
- * @property PolandAdditionalInfo|null $polandAdditionalInfo
- * @property RomaniaAdditionalInfo|null $romaniaAdditionalInfo
- * @property SaudiArabiaAdditionalInfo|null $saudiArabiaAdditionalInfo
- * @property SouthKoreaAdditionalInfo|null $southKoreaAdditionalInfo
+ * @property IsraelAdditionalInfo|null $israelAdditionalInfo
+ * @property EstoniaAdditionalInfo|null $estoniaAdditionalInfo
+ * @property CanadaAdditionalInfo|null $canadaAdditionalInfo
  * @property SpainAdditionalInfo|null $spainAdditionalInfo
+ * @property KenyaAdditionalInfo|null $kenyaAdditionalInfo
+ * @property SouthKoreaAdditionalInfo|null $southKoreaAdditionalInfo
  * @property TurkeyAdditionalInfo|null $turkeyAdditionalInfo
+ * @property GeorgiaAdditionalInfo|null $georgiaAdditionalInfo
+ * @property ItalyAdditionalInfo|null $italyAdditionalInfo
+ * @property RomaniaAdditionalInfo|null $romaniaAdditionalInfo
  * @property UkraineAdditionalInfo|null $ukraineAdditionalInfo
- * @property UzbekistanAdditionalInfo|null $uzbekistanAdditionalInfo
+ * @property PolandAdditionalInfo|null $polandAdditionalInfo
+ * @property SaudiArabiaAdditionalInfo|null $saudiArabiaAdditionalInfo
+ * @property IndonesiaAdditionalInfo|null $indonesiaAdditionalInfo
  * @property VietnamAdditionalInfo|null $vietnamAdditionalInfo
+ * @property EgyptAdditionalInfo|null $egyptAdditionalInfo
+ * @property GreeceAdditionalInfo|null $greeceAdditionalInfo
+ * @property UzbekistanAdditionalInfo|null $uzbekistanAdditionalInfo
+ * @property PhilippinesAdditionalInfo|null $philippinesAdditionalInfo
+ * @property BelgiumAdditionalInfo|null $belgiumAdditionalInfo
+ * @property ChileAdditionalInfo|null $chileAdditionalInfo
+ * @property FranceAdditionalInfo|null $franceAdditionalInfo
  */
 class AdditionalInfoRequest extends Shape
 {
     /**
      * @param array{
-     *     canadaAdditionalInfo?: CanadaAdditionalInfo|null,
-     *     egyptAdditionalInfo?: EgyptAdditionalInfo|null,
-     *     estoniaAdditionalInfo?: EstoniaAdditionalInfo|null,
-     *     georgiaAdditionalInfo?: GeorgiaAdditionalInfo|null,
-     *     greeceAdditionalInfo?: GreeceAdditionalInfo|null,
-     *     indonesiaAdditionalInfo?: IndonesiaAdditionalInfo|null,
-     *     israelAdditionalInfo?: IsraelAdditionalInfo|null,
-     *     italyAdditionalInfo?: ItalyAdditionalInfo|null,
-     *     kenyaAdditionalInfo?: KenyaAdditionalInfo|null,
      *     malaysiaAdditionalInfo?: MalaysiaAdditionalInfo|null,
-     *     polandAdditionalInfo?: PolandAdditionalInfo|null,
-     *     romaniaAdditionalInfo?: RomaniaAdditionalInfo|null,
-     *     saudiArabiaAdditionalInfo?: SaudiArabiaAdditionalInfo|null,
-     *     southKoreaAdditionalInfo?: SouthKoreaAdditionalInfo|null,
+     *     israelAdditionalInfo?: IsraelAdditionalInfo|null,
+     *     estoniaAdditionalInfo?: EstoniaAdditionalInfo|null,
+     *     canadaAdditionalInfo?: CanadaAdditionalInfo|null,
      *     spainAdditionalInfo?: SpainAdditionalInfo|null,
+     *     kenyaAdditionalInfo?: KenyaAdditionalInfo|null,
+     *     southKoreaAdditionalInfo?: SouthKoreaAdditionalInfo|null,
      *     turkeyAdditionalInfo?: TurkeyAdditionalInfo|null,
+     *     georgiaAdditionalInfo?: GeorgiaAdditionalInfo|null,
+     *     italyAdditionalInfo?: ItalyAdditionalInfo|null,
+     *     romaniaAdditionalInfo?: RomaniaAdditionalInfo|null,
      *     ukraineAdditionalInfo?: UkraineAdditionalInfo|null,
+     *     polandAdditionalInfo?: PolandAdditionalInfo|null,
+     *     saudiArabiaAdditionalInfo?: SaudiArabiaAdditionalInfo|null,
+     *     indonesiaAdditionalInfo?: IndonesiaAdditionalInfo|null,
+     *     vietnamAdditionalInfo?: VietnamAdditionalInfo|null,
+     *     egyptAdditionalInfo?: EgyptAdditionalInfo|null,
+     *     greeceAdditionalInfo?: GreeceAdditionalInfo|null,
      *     uzbekistanAdditionalInfo?: UzbekistanAdditionalInfo|null,
-     *     vietnamAdditionalInfo?: VietnamAdditionalInfo|null
+     *     philippinesAdditionalInfo?: PhilippinesAdditionalInfo|null,
+     *     belgiumAdditionalInfo?: BelgiumAdditionalInfo|null,
+     *     chileAdditionalInfo?: ChileAdditionalInfo|null,
+     *     franceAdditionalInfo?: FranceAdditionalInfo|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RunParameters|null $parameters
  * @property string|null $outputBucketOwnerId
  * @property array<string, string>|null $runTags
+ * @property EngineSettings|null $engineSettings
  */
 class InlineSetting extends Shape
 {
@@ -23,7 +24,8 @@ class InlineSetting extends Shape
      *     priority?: int<0, 100000>|null,
      *     parameters?: RunParameters|null,
      *     outputBucketOwnerId?: string|null,
-     *     runTags?: array<string, string>|null
+     *     runTags?: array<string, string>|null,
+     *     engineSettings?: EngineSettings|null
      * } $args
      */
     public function __construct(array $args)

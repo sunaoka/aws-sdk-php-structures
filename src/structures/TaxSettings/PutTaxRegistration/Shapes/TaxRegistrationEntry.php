@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\TaxSettings\PutTaxRegistration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AdditionalInfoRequest|null $additionalTaxInformation
- * @property string|null $certifiedEmailId
- * @property Address|null $legalAddress
- * @property string|null $legalName
  * @property string $registrationId
- * @property 'VAT'|'GST'|'CPF'|'CNPJ'|'SST'|'TIN'|'NRIC' $registrationType
+ * @property 'VAT'|'GST'|'CPF'|'CNPJ'|'SST'|'TIN'|'NRIC'|'PAN'|'NIP' $registrationType
+ * @property string|null $legalName
+ * @property Address|null $legalAddress
  * @property 'Business'|'Individual'|'Government'|null $sector
+ * @property AdditionalInfoRequest|null $additionalTaxInformation
  * @property VerificationDetails|null $verificationDetails
+ * @property string|null $certifiedEmailId
  */
 class TaxRegistrationEntry extends Shape
 {
     /**
      * @param array{
-     *     additionalTaxInformation?: AdditionalInfoRequest|null,
-     *     certifiedEmailId?: string|null,
-     *     legalAddress?: Address|null,
-     *     legalName?: string|null,
      *     registrationId: string,
-     *     registrationType: 'VAT'|'GST'|'CPF'|'CNPJ'|'SST'|'TIN'|'NRIC',
+     *     registrationType: 'VAT'|'GST'|'CPF'|'CNPJ'|'SST'|'TIN'|'NRIC'|'PAN'|'NIP',
+     *     legalName?: string|null,
+     *     legalAddress?: Address|null,
      *     sector?: 'Business'|'Individual'|'Government'|null,
-     *     verificationDetails?: VerificationDetails|null
+     *     additionalTaxInformation?: AdditionalInfoRequest|null,
+     *     verificationDetails?: VerificationDetails|null,
+     *     certifiedEmailId?: string|null
      * } $args
      */
     public function __construct(array $args)

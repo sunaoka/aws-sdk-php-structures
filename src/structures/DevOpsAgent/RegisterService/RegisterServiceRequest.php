@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ServiceDetails $serviceDetails
  * @property string|null $kmsKeyArn
  * @property string|null $privateConnectionName
+ * @property string|null $targetUrlPrivateConnectionName
+ * @property string|null $exchangeUrlPrivateConnectionName
  * @property string|null $name
  * @property array<string, string>|null $tags
  */
@@ -20,6 +22,8 @@ class RegisterServiceRequest extends Request
      *     serviceDetails: Shapes\ServiceDetails,
      *     kmsKeyArn?: string|null,
      *     privateConnectionName?: string|null,
+     *     targetUrlPrivateConnectionName?: string|null,
+     *     exchangeUrlPrivateConnectionName?: string|null,
      *     name?: string|null,
      *     tags?: array<string, string>|null
      * } $args

@@ -6,10 +6,14 @@ class DevOpsAgentClient extends \Aws\DevOpsAgent\DevOpsAgentClient
 {
     use AssociateService\AssociateServiceTrait;
     use CreateAgentSpace\CreateAgentSpaceTrait;
+    use CreateAsset\CreateAssetTrait;
+    use CreateAssetFile\CreateAssetFileTrait;
     use CreateBacklogTask\CreateBacklogTaskTrait;
     use CreateChat\CreateChatTrait;
     use CreatePrivateConnection\CreatePrivateConnectionTrait;
     use DeleteAgentSpace\DeleteAgentSpaceTrait;
+    use DeleteAsset\DeleteAssetTrait;
+    use DeleteAssetFile\DeleteAssetFileTrait;
     use DeletePrivateConnection\DeletePrivateConnectionTrait;
     use DeregisterService\DeregisterServiceTrait;
     use DescribePrivateConnection\DescribePrivateConnectionTrait;
@@ -18,12 +22,19 @@ class DevOpsAgentClient extends \Aws\DevOpsAgent\DevOpsAgentClient
     use EnableOperatorApp\EnableOperatorAppTrait;
     use GetAccountUsage\GetAccountUsageTrait;
     use GetAgentSpace\GetAgentSpaceTrait;
+    use GetAsset\GetAssetTrait;
+    use GetAssetContent\GetAssetContentTrait;
+    use GetAssetFile\GetAssetFileTrait;
     use GetAssociation\GetAssociationTrait;
     use GetBacklogTask\GetBacklogTaskTrait;
     use GetOperatorApp\GetOperatorAppTrait;
     use GetRecommendation\GetRecommendationTrait;
     use GetService\GetServiceTrait;
     use ListAgentSpaces\ListAgentSpacesTrait;
+    use ListAssetFiles\ListAssetFilesTrait;
+    use ListAssetTypes\ListAssetTypesTrait;
+    use ListAssetVersions\ListAssetVersionsTrait;
+    use ListAssets\ListAssetsTrait;
     use ListAssociations\ListAssociationsTrait;
     use ListBacklogTasks\ListBacklogTasksTrait;
     use ListChats\ListChatsTrait;
@@ -41,6 +52,8 @@ class DevOpsAgentClient extends \Aws\DevOpsAgent\DevOpsAgentClient
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAgentSpace\UpdateAgentSpaceTrait;
+    use UpdateAsset\UpdateAssetTrait;
+    use UpdateAssetFile\UpdateAssetFileTrait;
     use UpdateAssociation\UpdateAssociationTrait;
     use UpdateBacklogTask\UpdateBacklogTaskTrait;
     use UpdateGoal\UpdateGoalTrait;

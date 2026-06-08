@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $region
  * @property string $service
  * @property string $roleArn
+ * @property string|null $mcpRoleArn
  * @property array<string, string>|null $customHeaders
  */
 class RegisteredMCPServerSigV4Details extends Shape
@@ -23,6 +24,7 @@ class RegisteredMCPServerSigV4Details extends Shape
      *     region: string,
      *     service: string,
      *     roleArn: string,
+     *     mcpRoleArn?: string|null,
      *     customHeaders?: array<string, string>|null
      * } $args
      */

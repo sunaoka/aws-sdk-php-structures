@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\TaxSettings\PutTaxRegistration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CirculatingOrg'|'ProfessionalOrg'|'Banks'|'Insurance'|'PensionAndBenefitFunds'|'DevelopmentAgencies'|null $industries
+ * @property string|null $taxOffice
  * @property string|null $kepEmailId
  * @property string|null $secondaryTaxId
- * @property string|null $taxOffice
+ * @property 'CirculatingOrg'|'ProfessionalOrg'|'Banks'|'Insurance'|'PensionAndBenefitFunds'|'DevelopmentAgencies'|null $industries
  */
 class TurkeyAdditionalInfo extends Shape
 {
     /**
      * @param array{
-     *     industries?: 'CirculatingOrg'|'ProfessionalOrg'|'Banks'|'Insurance'|'PensionAndBenefitFunds'|'DevelopmentAgencies'|null,
+     *     taxOffice?: string|null,
      *     kepEmailId?: string|null,
      *     secondaryTaxId?: string|null,
-     *     taxOffice?: string|null
+     *     industries?: 'CirculatingOrg'|'ProfessionalOrg'|'Banks'|'Insurance'|'PensionAndBenefitFunds'|'DevelopmentAgencies'|null
      * } $args
      */
     public function __construct(array $args = [])

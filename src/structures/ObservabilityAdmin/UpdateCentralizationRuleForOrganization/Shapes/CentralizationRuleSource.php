@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $Regions
  * @property string|null $Scope
  * @property SourceLogsConfiguration|null $SourceLogsConfiguration
+ * @property SourceMetricsConfiguration|null $SourceMetricsConfiguration
  */
 class CentralizationRuleSource extends Shape
 {
@@ -15,7 +16,8 @@ class CentralizationRuleSource extends Shape
      * @param array{
      *     Regions: list<string>,
      *     Scope?: string|null,
-     *     SourceLogsConfiguration?: SourceLogsConfiguration|null
+     *     SourceLogsConfiguration?: SourceLogsConfiguration|null,
+     *     SourceMetricsConfiguration?: SourceMetricsConfiguration|null
      * } $args
      */
     public function __construct(array $args)

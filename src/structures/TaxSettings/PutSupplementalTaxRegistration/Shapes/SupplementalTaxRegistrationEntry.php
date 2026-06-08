@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\TaxSettings\PutSupplementalTaxRegistration\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Address $address
- * @property string $legalName
  * @property string $registrationId
  * @property 'VAT' $registrationType
+ * @property string $legalName
+ * @property Address $address
  */
 class SupplementalTaxRegistrationEntry extends Shape
 {
     /**
      * @param array{
-     *     address: Address,
-     *     legalName: string,
      *     registrationId: string,
-     *     registrationType: 'VAT'
+     *     registrationType: 'VAT',
+     *     legalName: string,
+     *     address: Address
      * } $args
      */
     public function __construct(array $args)

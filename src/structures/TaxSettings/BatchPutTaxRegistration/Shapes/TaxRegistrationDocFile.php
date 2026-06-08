@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\TaxSettings\BatchPutTaxRegistration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|resource|\Psr\Http\Message\StreamInterface $fileContent
  * @property string $fileName
+ * @property string|resource|\Psr\Http\Message\StreamInterface $fileContent
  */
 class TaxRegistrationDocFile extends Shape
 {
     /**
      * @param array{
-     *     fileContent: string|resource|\Psr\Http\Message\StreamInterface,
-     *     fileName: string
+     *     fileName: string,
+     *     fileContent: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\TaxSettings\BatchPutTaxRegistration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $electronicTransactionCodeNumber
  * @property string|null $enterpriseIdentificationNumber
+ * @property string|null $electronicTransactionCodeNumber
  * @property string|null $paymentVoucherNumber
  * @property string|null $paymentVoucherNumberDate
  */
@@ -14,8 +14,8 @@ class VietnamAdditionalInfo extends Shape
 {
     /**
      * @param array{
-     *     electronicTransactionCodeNumber?: string|null,
      *     enterpriseIdentificationNumber?: string|null,
+     *     electronicTransactionCodeNumber?: string|null,
      *     paymentVoucherNumber?: string|null,
      *     paymentVoucherNumberDate?: string|null
      * } $args

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, 62>|null $ipv4AddressesPerEni
  * @property list<string>|null $portRanges
  * @property string|null $certificate
+ * @property 'PUBLIC'|'IN_VPC'|null $dnsResolution
  */
 class ServiceManagedInput extends Shape
 {
@@ -25,7 +26,8 @@ class ServiceManagedInput extends Shape
      *     ipAddressType?: 'IPV4'|'IPV6'|'DUAL_STACK'|null,
      *     ipv4AddressesPerEni?: int<1, 62>|null,
      *     portRanges?: list<string>|null,
-     *     certificate?: string|null
+     *     certificate?: string|null,
+     *     dnsResolution?: 'PUBLIC'|'IN_VPC'|null
      * } $args
      */
     public function __construct(array $args)

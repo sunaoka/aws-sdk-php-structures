@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $groupBy
  * @property 'Daily'|'Monthly' $granularity
  * @property Shapes\TimePeriod $timePeriod
- * @property int<0, 100>|null $maxResults
+ * @property int<0, 1000>|null $maxResults
  * @property Shapes\OrderBy|null $orderBy
  * @property string|null $nextToken
  */
@@ -19,7 +19,7 @@ class ListEfficiencyMetricsRequest extends Request
      *     groupBy?: string|null,
      *     granularity: 'Daily'|'Monthly',
      *     timePeriod: Shapes\TimePeriod,
-     *     maxResults?: int<0, 100>|null,
+     *     maxResults?: int<0, 1000>|null,
      *     orderBy?: Shapes\OrderBy|null,
      *     nextToken?: string|null
      * } $args

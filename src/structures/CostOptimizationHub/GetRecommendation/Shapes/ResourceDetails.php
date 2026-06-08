@@ -24,6 +24,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DynamoDbReservedCapacity|null $dynamoDbReservedCapacity
  * @property MemoryDbReservedInstances|null $memoryDbReservedInstances
  * @property NatGateway|null $natGateway
+ * @property DynamoDbTable|null $dynamoDbTable
+ * @property ElastiCacheCluster|null $elastiCacheCluster
+ * @property MemoryDbCluster|null $memoryDbCluster
+ * @property DocumentDbCluster|null $documentDbCluster
+ * @property WorkSpaces|null $workSpaces
+ * @property SageMakerEndpoint|null $sageMakerEndpoint
  */
 class ResourceDetails extends Shape
 {
@@ -47,7 +53,13 @@ class ResourceDetails extends Shape
      *     auroraDbClusterStorage?: AuroraDbClusterStorage|null,
      *     dynamoDbReservedCapacity?: DynamoDbReservedCapacity|null,
      *     memoryDbReservedInstances?: MemoryDbReservedInstances|null,
-     *     natGateway?: NatGateway|null
+     *     natGateway?: NatGateway|null,
+     *     dynamoDbTable?: DynamoDbTable|null,
+     *     elastiCacheCluster?: ElastiCacheCluster|null,
+     *     memoryDbCluster?: MemoryDbCluster|null,
+     *     documentDbCluster?: DocumentDbCluster|null,
+     *     workSpaces?: WorkSpaces|null,
+     *     sageMakerEndpoint?: SageMakerEndpoint|null
      * } $args
      */
     public function __construct(array $args = [])

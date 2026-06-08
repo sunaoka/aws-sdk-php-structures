@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $resourceConfigurationId
  * @property 'ACTIVE'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED' $status
  * @property \Aws\Api\DateTimeResult|null $certificateExpiryTime
+ * @property 'PUBLIC'|'IN_VPC'|null $dnsResolution
+ * @property string|null $failureMessage
  */
 class PrivateConnectionSummary extends Shape
 {
@@ -25,7 +27,9 @@ class PrivateConnectionSummary extends Shape
      *     vpcId?: string|null,
      *     resourceConfigurationId?: string|null,
      *     status: 'ACTIVE'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED',
-     *     certificateExpiryTime?: \Aws\Api\DateTimeResult|null
+     *     certificateExpiryTime?: \Aws\Api\DateTimeResult|null,
+     *     dnsResolution?: 'PUBLIC'|'IN_VPC'|null,
+     *     failureMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

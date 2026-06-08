@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $resourceArn
  * @property string|null $resourceId
- * @property 'EC2Instance'|'AutoScalingGroup'|'EBSVolume'|'ECSService'|'RDSDBInstance'|'NatGateway'|null $resourceType
+ * @property 'EC2Instance'|'AutoScalingGroup'|'EBSVolume'|'ECSService'|'RDSDBInstance'|'NatGateway'|'DynamoDBTable'|'ElastiCacheCluster'|'MemoryDBCluster'|'DocumentDBCluster'|'WorkSpaces'|'SageMakerEndpoint'|null $resourceType
  * @property string|null $accountId
  * @property 'Idle'|'Unattached'|'Unused'|null $finding
  * @property string|null $findingDescription
@@ -24,7 +24,7 @@ class IdleRecommendation extends Shape
      * @param array{
      *     resourceArn?: string|null,
      *     resourceId?: string|null,
-     *     resourceType?: 'EC2Instance'|'AutoScalingGroup'|'EBSVolume'|'ECSService'|'RDSDBInstance'|'NatGateway'|null,
+     *     resourceType?: 'EC2Instance'|'AutoScalingGroup'|'EBSVolume'|'ECSService'|'RDSDBInstance'|'NatGateway'|'DynamoDBTable'|'ElastiCacheCluster'|'MemoryDBCluster'|'DocumentDBCluster'|'WorkSpaces'|'SageMakerEndpoint'|null,
      *     accountId?: string|null,
      *     finding?: 'Idle'|'Unattached'|'Unused'|null,
      *     findingDescription?: string|null,

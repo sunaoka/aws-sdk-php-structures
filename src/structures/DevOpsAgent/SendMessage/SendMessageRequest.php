@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $content
  * @property Shapes\SendMessageContext|null $context
  * @property string|null $userId
+ * @property list<string>|null $assetIds
  */
 class SendMessageRequest extends Request
 {
@@ -19,7 +20,8 @@ class SendMessageRequest extends Request
      *     executionId: string,
      *     content: string,
      *     context?: Shapes\SendMessageContext|null,
-     *     userId?: string|null
+     *     userId?: string|null,
+     *     assetIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

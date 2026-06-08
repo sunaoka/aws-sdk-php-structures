@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $accountId
- * @property AccountMetaData|null $accountMetaData
- * @property TaxInheritanceDetails|null $taxInheritanceDetails
  * @property TaxRegistrationWithJurisdiction|null $taxRegistration
+ * @property TaxInheritanceDetails|null $taxInheritanceDetails
+ * @property AccountMetaData|null $accountMetaData
  */
 class AccountDetails extends Shape
 {
     /**
      * @param array{
      *     accountId?: string|null,
-     *     accountMetaData?: AccountMetaData|null,
+     *     taxRegistration?: TaxRegistrationWithJurisdiction|null,
      *     taxInheritanceDetails?: TaxInheritanceDetails|null,
-     *     taxRegistration?: TaxRegistrationWithJurisdiction|null
+     *     accountMetaData?: AccountMetaData|null
      * } $args
      */
     public function __construct(array $args = [])

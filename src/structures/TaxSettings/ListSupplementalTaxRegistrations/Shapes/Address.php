@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\TaxSettings\ListSupplementalTaxRegistrations\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $addressLine1
+ * @property string|null $addressLine1
  * @property string|null $addressLine2
  * @property string|null $addressLine3
- * @property string $city
- * @property string $countryCode
  * @property string|null $districtOrCounty
- * @property string $postalCode
+ * @property string|null $city
  * @property string|null $stateOrRegion
+ * @property string $postalCode
+ * @property string $countryCode
  */
 class Address extends Shape
 {
     /**
      * @param array{
-     *     addressLine1: string,
+     *     addressLine1?: string|null,
      *     addressLine2?: string|null,
      *     addressLine3?: string|null,
-     *     city: string,
-     *     countryCode: string,
      *     districtOrCounty?: string|null,
+     *     city?: string|null,
+     *     stateOrRegion?: string|null,
      *     postalCode: string,
-     *     stateOrRegion?: string|null
+     *     countryCode: string
      * } $args
      */
     public function __construct(array $args)

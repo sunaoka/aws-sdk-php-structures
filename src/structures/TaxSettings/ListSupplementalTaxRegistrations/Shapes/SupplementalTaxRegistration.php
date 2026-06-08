@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\TaxSettings\ListSupplementalTaxRegistrations\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Address $address
- * @property string $authorityId
- * @property string $legalName
  * @property string $registrationId
  * @property 'VAT' $registrationType
+ * @property string $legalName
+ * @property Address $address
+ * @property string $authorityId
  * @property 'Verified'|'Pending'|'Deleted'|'Rejected' $status
  */
 class SupplementalTaxRegistration extends Shape
 {
     /**
      * @param array{
-     *     address: Address,
-     *     authorityId: string,
-     *     legalName: string,
      *     registrationId: string,
      *     registrationType: 'VAT',
+     *     legalName: string,
+     *     address: Address,
+     *     authorityId: string,
      *     status: 'Verified'|'Pending'|'Deleted'|'Rejected'
      * } $args
      */

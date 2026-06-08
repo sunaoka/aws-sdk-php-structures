@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\TaxSettings\ListTaxRegistrations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $countryCode
  * @property string|null $stateOrRegion
+ * @property string $countryCode
  */
 class Jurisdiction extends Shape
 {
     /**
      * @param array{
-     *     countryCode: string,
-     *     stateOrRegion?: string|null
+     *     stateOrRegion?: string|null,
+     *     countryCode: string
      * } $args
      */
     public function __construct(array $args)

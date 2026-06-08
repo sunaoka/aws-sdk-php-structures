@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\mgn\UpdateNetworkMigrationDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'NSX'|'VSPHERE'|'FORTIGATE_FIREWALL'|'PALO_ALTO_FIREWALL'|'CISCO_ACI'|'LOGICAL_MODEL'|'MODELIZE_IT' $sourceEnvironment
+ * @property 'NSX'|'VSPHERE'|'FORTIGATE_FIREWALL'|'PALO_ALTO_FIREWALL'|'CISCO_ACI'|'LOGICAL_MODEL'|'MODELIZE_IT'|'AWS_DISCOVERY_COLLECTOR' $sourceEnvironment
  * @property SourceS3Configuration $sourceS3Configuration
  */
 class SourceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     sourceEnvironment: 'NSX'|'VSPHERE'|'FORTIGATE_FIREWALL'|'PALO_ALTO_FIREWALL'|'CISCO_ACI'|'LOGICAL_MODEL'|'MODELIZE_IT',
+     *     sourceEnvironment: 'NSX'|'VSPHERE'|'FORTIGATE_FIREWALL'|'PALO_ALTO_FIREWALL'|'CISCO_ACI'|'LOGICAL_MODEL'|'MODELIZE_IT'|'AWS_DISCOVERY_COLLECTOR',
      *     sourceS3Configuration: SourceS3Configuration
      * } $args
      */

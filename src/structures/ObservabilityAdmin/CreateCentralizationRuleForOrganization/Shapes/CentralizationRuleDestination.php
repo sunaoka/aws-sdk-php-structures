@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Region
  * @property string|null $Account
  * @property DestinationLogsConfiguration|null $DestinationLogsConfiguration
+ * @property DestinationMetricsConfiguration|null $DestinationMetricsConfiguration
  */
 class CentralizationRuleDestination extends Shape
 {
@@ -15,7 +16,8 @@ class CentralizationRuleDestination extends Shape
      * @param array{
      *     Region: string,
      *     Account?: string|null,
-     *     DestinationLogsConfiguration?: DestinationLogsConfiguration|null
+     *     DestinationLogsConfiguration?: DestinationLogsConfiguration|null,
+     *     DestinationMetricsConfiguration?: DestinationMetricsConfiguration|null
      * } $args
      */
     public function __construct(array $args)

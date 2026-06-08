@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $accountIds
  * @property Shapes\Authority $authority
- * @property Shapes\ExemptionCertificate $exemptionCertificate
  * @property string $exemptionType
+ * @property Shapes\ExemptionCertificate $exemptionCertificate
  */
 class PutTaxExemptionRequest extends Request
 {
@@ -16,8 +16,8 @@ class PutTaxExemptionRequest extends Request
      * @param array{
      *     accountIds: list<string>,
      *     authority: Shapes\Authority,
-     *     exemptionCertificate: Shapes\ExemptionCertificate,
-     *     exemptionType: string
+     *     exemptionType: string,
+     *     exemptionCertificate: Shapes\ExemptionCertificate
      * } $args
      */
     public function __construct(array $args)

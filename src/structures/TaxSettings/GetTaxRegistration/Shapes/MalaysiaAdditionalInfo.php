@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\TaxSettings\GetTaxRegistration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $businessRegistrationNumber
  * @property list<'Consultancy'|'Digital Service And Electronic Medium'|'IT Services'|'Training Or Coaching'>|null $serviceTaxCodes
  * @property string|null $taxInformationNumber
+ * @property string|null $businessRegistrationNumber
  */
 class MalaysiaAdditionalInfo extends Shape
 {
     /**
      * @param array{
-     *     businessRegistrationNumber?: string|null,
      *     serviceTaxCodes?: list<'Consultancy'|'Digital Service And Electronic Medium'|'IT Services'|'Training Or Coaching'>|null,
-     *     taxInformationNumber?: string|null
+     *     taxInformationNumber?: string|null,
+     *     businessRegistrationNumber?: string|null
      * } $args
      */
     public function __construct(array $args = [])

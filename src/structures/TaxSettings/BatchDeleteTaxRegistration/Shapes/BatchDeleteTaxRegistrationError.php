@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $accountId
- * @property string|null $code
  * @property string $message
+ * @property string|null $code
  */
 class BatchDeleteTaxRegistrationError extends Shape
 {
     /**
      * @param array{
      *     accountId: string,
-     *     code?: string|null,
-     *     message: string
+     *     message: string,
+     *     code?: string|null
      * } $args
      */
     public function __construct(array $args)
