@@ -9,6 +9,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $existingTenancyActivationLink
  * @property string|null $newTenancyActivationLink
  * @property Shapes\OciIdentityDomain|null $ociIdentityDomain
+ * @property list<Shapes\OciIamRole>|null $autonomousDatabaseOciIntegrationIamRoles
+ * @property string|null $linkedOciTenancyId
+ * @property string|null $linkedOciCompartmentId
+ * @property list<Shapes\SubscriptionError>|null $subscriptionErrors
  */
 class GetOciOnboardingStatusResponse extends Response
 {

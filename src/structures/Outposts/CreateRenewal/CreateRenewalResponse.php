@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $OutpostId
  * @property float|null $UpfrontPrice
  * @property float|null $MonthlyRecurringPrice
+ * @property 'USD'|null $Currency
  */
 class CreateRenewalResponse extends Response
 {

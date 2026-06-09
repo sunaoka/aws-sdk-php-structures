@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $OrderIds
  * @property \Aws\Api\DateTimeResult|null $BeginDate
  * @property \Aws\Api\DateTimeResult|null $EndDate
+ * @property 'USD'|null $Currency
  * @property double|null $MonthlyRecurringPrice
  * @property double|null $UpfrontPrice
  */
@@ -24,6 +25,7 @@ class Subscription extends Shape
      *     OrderIds?: list<string>|null,
      *     BeginDate?: \Aws\Api\DateTimeResult|null,
      *     EndDate?: \Aws\Api\DateTimeResult|null,
+     *     Currency?: 'USD'|null,
      *     MonthlyRecurringPrice?: double|null,
      *     UpfrontPrice?: double|null
      * } $args

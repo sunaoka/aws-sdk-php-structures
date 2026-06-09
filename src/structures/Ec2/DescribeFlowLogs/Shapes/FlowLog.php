@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Tag>|null $Tags
  * @property int|null $MaxAggregationInterval
  * @property DestinationOptionsResponse|null $DestinationOptions
+ * @property list<TagFieldSpecificationResponse>|null $TagFieldSpecifications
  */
 class FlowLog extends Shape
 {
@@ -41,7 +42,8 @@ class FlowLog extends Shape
      *     LogFormat?: string|null,
      *     Tags?: list<Tag>|null,
      *     MaxAggregationInterval?: int|null,
-     *     DestinationOptions?: DestinationOptionsResponse|null
+     *     DestinationOptions?: DestinationOptionsResponse|null,
+     *     TagFieldSpecifications?: list<TagFieldSpecificationResponse>|null
      * } $args
      */
     public function __construct(array $args = [])

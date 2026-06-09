@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property int|null $MaxAggregationInterval
  * @property Shapes\DestinationOptionsRequest|null $DestinationOptions
+ * @property list<Shapes\TagFieldSpecificationRequest>|null $TagFieldSpecifications
  */
 class CreateFlowLogsRequest extends Request
 {
@@ -37,7 +38,8 @@ class CreateFlowLogsRequest extends Request
      *     LogFormat?: string|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     MaxAggregationInterval?: int|null,
-     *     DestinationOptions?: Shapes\DestinationOptionsRequest|null
+     *     DestinationOptions?: Shapes\DestinationOptionsRequest|null,
+     *     TagFieldSpecifications?: list<Shapes\TagFieldSpecificationRequest>|null
      * } $args
      */
     public function __construct(array $args)

@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\CloudWatch;
 
 class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
 {
+    use AssociateDatasetKmsKey\AssociateDatasetKmsKeyTrait;
     use DeleteAlarmMuteRule\DeleteAlarmMuteRuleTrait;
     use DeleteAlarms\DeleteAlarmsTrait;
     use DeleteAnomalyDetector\DeleteAnomalyDetectorTrait;
@@ -18,10 +19,12 @@ class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
     use DescribeInsightRules\DescribeInsightRulesTrait;
     use DisableAlarmActions\DisableAlarmActionsTrait;
     use DisableInsightRules\DisableInsightRulesTrait;
+    use DisassociateDatasetKmsKey\DisassociateDatasetKmsKeyTrait;
     use EnableAlarmActions\EnableAlarmActionsTrait;
     use EnableInsightRules\EnableInsightRulesTrait;
     use GetAlarmMuteRule\GetAlarmMuteRuleTrait;
     use GetDashboard\GetDashboardTrait;
+    use GetDataset\GetDatasetTrait;
     use GetInsightRuleReport\GetInsightRuleReportTrait;
     use GetMetricData\GetMetricDataTrait;
     use GetMetricStatistics\GetMetricStatisticsTrait;

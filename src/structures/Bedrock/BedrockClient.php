@@ -42,6 +42,7 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;
     use DeregisterMarketplaceModelEndpoint\DeregisterMarketplaceModelEndpointTrait;
     use ExportAutomatedReasoningPolicyVersion\ExportAutomatedReasoningPolicyVersionTrait;
+    use GetAccountDataRetention\GetAccountDataRetentionTrait;
     use GetAdvancedPromptOptimizationJob\GetAdvancedPromptOptimizationJobTrait;
     use GetAutomatedReasoningPolicy\GetAutomatedReasoningPolicyTrait;
     use GetAutomatedReasoningPolicyAnnotations\GetAutomatedReasoningPolicyAnnotationsTrait;
@@ -90,6 +91,7 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use ListPromptRouters\ListPromptRoutersTrait;
     use ListProvisionedModelThroughputs\ListProvisionedModelThroughputsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use PutAccountDataRetention\PutAccountDataRetentionTrait;
     use PutEnforcedGuardrailConfiguration\PutEnforcedGuardrailConfigurationTrait;
     use PutModelInvocationLoggingConfiguration\PutModelInvocationLoggingConfigurationTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;
