@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DeprecationTime
  * @property bool|null $ImageAllowed
  * @property bool|null $IsPublic
+ * @property list<ImageWatermark>|null $ImageWatermarks
  */
 class ImageMetadata extends Shape
 {
@@ -27,7 +28,8 @@ class ImageMetadata extends Shape
      *     CreationDate?: string|null,
      *     DeprecationTime?: string|null,
      *     ImageAllowed?: bool|null,
-     *     IsPublic?: bool|null
+     *     IsPublic?: bool|null,
+     *     ImageWatermarks?: list<ImageWatermark>|null
      * } $args
      */
     public function __construct(array $args = [])

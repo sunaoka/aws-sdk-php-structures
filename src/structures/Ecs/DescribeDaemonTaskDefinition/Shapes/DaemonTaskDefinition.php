@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $registeredAt
  * @property \Aws\Api\DateTimeResult|null $deleteRequestedAt
  * @property string|null $registeredBy
+ * @property 'none'|'shared'|null $pidMode
+ * @property 'none'|'shared'|null $ipcMode
  */
 class DaemonTaskDefinition extends Shape
 {
@@ -35,7 +37,9 @@ class DaemonTaskDefinition extends Shape
      *     status?: 'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETED'|null,
      *     registeredAt?: \Aws\Api\DateTimeResult|null,
      *     deleteRequestedAt?: \Aws\Api\DateTimeResult|null,
-     *     registeredBy?: string|null
+     *     registeredBy?: string|null,
+     *     pidMode?: 'none'|'shared'|null,
+     *     ipcMode?: 'none'|'shared'|null
      * } $args
      */
     public function __construct(array $args = [])

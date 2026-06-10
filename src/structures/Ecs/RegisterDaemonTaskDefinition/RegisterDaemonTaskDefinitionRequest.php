@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $memory
  * @property list<Shapes\DaemonVolume>|null $volumes
  * @property list<Shapes\Tag>|null $tags
+ * @property 'none'|'shared'|null $pidMode
+ * @property 'none'|'shared'|null $ipcMode
  */
 class RegisterDaemonTaskDefinitionRequest extends Request
 {
@@ -25,7 +27,9 @@ class RegisterDaemonTaskDefinitionRequest extends Request
      *     cpu?: string|null,
      *     memory?: string|null,
      *     volumes?: list<Shapes\DaemonVolume>|null,
-     *     tags?: list<Shapes\Tag>|null
+     *     tags?: list<Shapes\Tag>|null,
+     *     pidMode?: 'none'|'shared'|null,
+     *     ipcMode?: 'none'|'shared'|null
      * } $args
      */
     public function __construct(array $args)

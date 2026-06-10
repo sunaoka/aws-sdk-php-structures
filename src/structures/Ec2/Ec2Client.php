@@ -41,6 +41,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use AssociateTrunkInterface\AssociateTrunkInterfaceTrait;
     use AssociateVpcCidrBlock\AssociateVpcCidrBlockTrait;
     use AttachClassicLinkVpc\AttachClassicLinkVpcTrait;
+    use AttachImageWatermark\AttachImageWatermarkTrait;
     use AttachInternetGateway\AttachInternetGatewayTrait;
     use AttachNetworkInterface\AttachNetworkInterfaceTrait;
     use AttachVerifiedAccessTrustProvider\AttachVerifiedAccessTrustProviderTrait;
@@ -460,6 +461,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeVpnConnections\DescribeVpnConnectionsTrait;
     use DescribeVpnGateways\DescribeVpnGatewaysTrait;
     use DetachClassicLinkVpc\DetachClassicLinkVpcTrait;
+    use DetachImageWatermark\DetachImageWatermarkTrait;
     use DetachInternetGateway\DetachInternetGatewayTrait;
     use DetachNetworkInterface\DetachNetworkInterfaceTrait;
     use DetachVerifiedAccessTrustProvider\DetachVerifiedAccessTrustProviderTrait;
