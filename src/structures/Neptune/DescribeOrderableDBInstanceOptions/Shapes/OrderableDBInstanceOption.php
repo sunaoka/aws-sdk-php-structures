@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double|null $MinIopsPerGib
  * @property double|null $MaxIopsPerGib
  * @property bool|null $SupportsGlobalDatabases
+ * @property list<string>|null $SupportedNetworkTypes
  */
 class OrderableDBInstanceOption extends Shape
 {
@@ -51,7 +52,8 @@ class OrderableDBInstanceOption extends Shape
      *     MaxIopsPerDbInstance?: int|null,
      *     MinIopsPerGib?: double|null,
      *     MaxIopsPerGib?: double|null,
-     *     SupportsGlobalDatabases?: bool|null
+     *     SupportsGlobalDatabases?: bool|null,
+     *     SupportedNetworkTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

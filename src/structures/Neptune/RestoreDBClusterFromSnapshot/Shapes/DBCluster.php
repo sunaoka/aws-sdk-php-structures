@@ -50,6 +50,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $GlobalClusterIdentifier
  * @property \Aws\Api\DateTimeResult|null $IOOptimizedNextAllowedModificationTime
  * @property string|null $StorageType
+ * @property string|null $NetworkType
  */
 class DBCluster extends Shape
 {
@@ -99,7 +100,8 @@ class DBCluster extends Shape
      *     ServerlessV2ScalingConfiguration?: ServerlessV2ScalingConfigurationInfo|null,
      *     GlobalClusterIdentifier?: string|null,
      *     IOOptimizedNextAllowedModificationTime?: \Aws\Api\DateTimeResult|null,
-     *     StorageType?: string|null
+     *     StorageType?: string|null,
+     *     NetworkType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

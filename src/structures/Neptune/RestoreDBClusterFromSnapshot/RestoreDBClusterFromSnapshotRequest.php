@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $CopyTagsToSnapshot
  * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
  * @property string|null $StorageType
+ * @property string|null $NetworkType
  */
 class RestoreDBClusterFromSnapshotRequest extends Request
 {
@@ -47,7 +48,8 @@ class RestoreDBClusterFromSnapshotRequest extends Request
      *     DeletionProtection?: bool|null,
      *     CopyTagsToSnapshot?: bool|null,
      *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
-     *     StorageType?: string|null
+     *     StorageType?: string|null,
+     *     NetworkType?: string|null
      * } $args
      */
     public function __construct(array $args)

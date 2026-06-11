@@ -8,6 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $outpostArns
  * @property string $controlPlaneInstanceType
  * @property ControlPlanePlacementRequest|null $controlPlanePlacement
+ * @property string|null $etcdInstanceType
+ * @property EtcdPlacementRequest|null $etcdPlacement
  */
 class OutpostConfigRequest extends Shape
 {
@@ -15,7 +17,9 @@ class OutpostConfigRequest extends Shape
      * @param array{
      *     outpostArns: list<string>,
      *     controlPlaneInstanceType: string,
-     *     controlPlanePlacement?: ControlPlanePlacementRequest|null
+     *     controlPlanePlacement?: ControlPlanePlacementRequest|null,
+     *     etcdInstanceType?: string|null,
+     *     etcdPlacement?: EtcdPlacementRequest|null
      * } $args
      */
     public function __construct(array $args)

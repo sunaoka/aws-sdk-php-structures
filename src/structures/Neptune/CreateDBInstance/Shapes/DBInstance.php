@@ -58,6 +58,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property list<string>|null $EnabledCloudwatchLogsExports
  * @property bool|null $DeletionProtection
+ * @property string|null $NetworkType
  */
 class DBInstance extends Shape
 {
@@ -115,7 +116,8 @@ class DBInstance extends Shape
      *     PerformanceInsightsEnabled?: bool|null,
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     EnabledCloudwatchLogsExports?: list<string>|null,
-     *     DeletionProtection?: bool|null
+     *     DeletionProtection?: bool|null,
+     *     NetworkType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -17,4 +17,5 @@ class HealthLakeClient extends \Aws\HealthLake\HealthLakeClient
     use StartFHIRImportJob\StartFHIRImportJobTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateFHIRDatastore\UpdateFHIRDatastoreTrait;
 }

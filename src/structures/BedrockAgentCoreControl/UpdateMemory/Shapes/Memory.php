@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $encryptionKeyArn
  * @property string|null $memoryExecutionRoleArn
  * @property int<1, 365> $eventExpiryDuration
- * @property 'CREATING'|'ACTIVE'|'FAILED'|'DELETING' $status
+ * @property 'CREATING'|'ACTIVE'|'FAILED'|'DELETING'|'UPDATING' $status
  * @property string|null $failureReason
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
@@ -31,7 +31,7 @@ class Memory extends Shape
      *     encryptionKeyArn?: string|null,
      *     memoryExecutionRoleArn?: string|null,
      *     eventExpiryDuration: int<1, 365>,
-     *     status: 'CREATING'|'ACTIVE'|'FAILED'|'DELETING',
+     *     status: 'CREATING'|'ACTIVE'|'FAILED'|'DELETING'|'UPDATING',
      *     failureReason?: string|null,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,

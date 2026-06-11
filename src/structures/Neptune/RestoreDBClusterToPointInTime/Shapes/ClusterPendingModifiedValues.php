@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $StorageType
  * @property int|null $AllocatedStorage
  * @property int|null $Iops
+ * @property string|null $NetworkType
  */
 class ClusterPendingModifiedValues extends Shape
 {
@@ -25,7 +26,8 @@ class ClusterPendingModifiedValues extends Shape
      *     BackupRetentionPeriod?: int|null,
      *     StorageType?: string|null,
      *     AllocatedStorage?: int|null,
-     *     Iops?: int|null
+     *     Iops?: int|null,
+     *     NetworkType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

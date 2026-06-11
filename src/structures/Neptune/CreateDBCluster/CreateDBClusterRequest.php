@@ -33,6 +33,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
  * @property string|null $GlobalClusterIdentifier
  * @property string|null $StorageType
+ * @property string|null $NetworkType
  */
 class CreateDBClusterRequest extends Request
 {
@@ -65,7 +66,8 @@ class CreateDBClusterRequest extends Request
      *     DeletionProtection?: bool|null,
      *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
      *     GlobalClusterIdentifier?: string|null,
-     *     StorageType?: string|null
+     *     StorageType?: string|null,
+     *     NetworkType?: string|null
      * } $args
      */
     public function __construct(array $args)

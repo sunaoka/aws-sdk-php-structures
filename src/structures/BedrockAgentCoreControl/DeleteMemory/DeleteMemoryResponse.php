@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $memoryId
- * @property 'CREATING'|'ACTIVE'|'FAILED'|'DELETING'|null $status
+ * @property 'CREATING'|'ACTIVE'|'FAILED'|'DELETING'|'UPDATING'|null $status
  */
 class DeleteMemoryResponse extends Response
 {
