@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property Shapes\RecommendationResult|null $recommendationResult
+ * @property string|null $kmsKeyArn
  */
 class GetRecommendationResponse extends Response
 {

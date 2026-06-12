@@ -12,8 +12,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string|null $description
  * @property list<Evaluator>|null $evaluators
+ * @property list<Insight>|null $insights
  * @property EvaluationJobResults|null $evaluationResults
  * @property list<string>|null $errorDetails
+ * @property string|null $kmsKeyArn
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class BatchEvaluationSummary extends Shape
@@ -27,8 +29,10 @@ class BatchEvaluationSummary extends Shape
      *     createdAt: \Aws\Api\DateTimeResult,
      *     description?: string|null,
      *     evaluators?: list<Evaluator>|null,
+     *     insights?: list<Insight>|null,
      *     evaluationResults?: EvaluationJobResults|null,
      *     errorDetails?: list<string>|null,
+     *     kmsKeyArn?: string|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */

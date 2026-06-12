@@ -11,7 +11,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $description
  * @property Shapes\Rule $rule
  * @property Shapes\DataSourceConfig $dataSourceConfig
- * @property list<Shapes\EvaluatorReference> $evaluators
+ * @property list<Shapes\EvaluatorReference>|null $evaluators
+ * @property list<Shapes\Insight>|null $insights
+ * @property Shapes\ClusteringConfig|null $clusteringConfig
  * @property Shapes\OutputConfig|null $outputConfig
  * @property string|null $evaluationExecutionRoleArn
  * @property 'ACTIVE'|'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'DELETING'|'ERROR' $status

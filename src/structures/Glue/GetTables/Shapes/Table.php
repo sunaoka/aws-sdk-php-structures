@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ViewDefinition|null $ViewDefinition
  * @property bool|null $IsMultiDialectView
  * @property bool|null $IsMaterializedView
+ * @property IcebergTableMetadata|null $IcebergTableMetadata
  * @property TableStatus|null $Status
  */
 class Table extends Shape
@@ -59,6 +60,7 @@ class Table extends Shape
      *     ViewDefinition?: ViewDefinition|null,
      *     IsMultiDialectView?: bool|null,
      *     IsMaterializedView?: bool|null,
+     *     IcebergTableMetadata?: IcebergTableMetadata|null,
      *     Status?: TableStatus|null
      * } $args
      */

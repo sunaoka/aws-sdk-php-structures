@@ -9,7 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property 'SYSTEM_PROMPT_RECOMMENDATION'|'TOOL_DESCRIPTION_RECOMMENDATION' $type
  * @property Shapes\RecommendationConfig $recommendationConfig
+ * @property string|null $kmsKeyArn
  * @property string|null $clientToken
+ * @property array<string, string>|null $tags
  */
 class StartRecommendationRequest extends Request
 {
@@ -19,7 +21,9 @@ class StartRecommendationRequest extends Request
      *     description?: string|null,
      *     type: 'SYSTEM_PROMPT_RECOMMENDATION'|'TOOL_DESCRIPTION_RECOMMENDATION',
      *     recommendationConfig: Shapes\RecommendationConfig,
-     *     clientToken?: string|null
+     *     kmsKeyArn?: string|null,
+     *     clientToken?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

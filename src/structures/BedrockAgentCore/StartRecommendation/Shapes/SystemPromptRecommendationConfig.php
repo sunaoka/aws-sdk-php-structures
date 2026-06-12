@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property SystemPromptConfig $systemPrompt
  * @property AgentTracesConfig $agentTraces
- * @property RecommendationEvaluationConfig $evaluationConfig
+ * @property RecommendationEvaluationConfig|null $evaluationConfig
  */
 class SystemPromptRecommendationConfig extends Shape
 {
@@ -15,7 +15,7 @@ class SystemPromptRecommendationConfig extends Shape
      * @param array{
      *     systemPrompt: SystemPromptConfig,
      *     agentTraces: AgentTracesConfig,
-     *     evaluationConfig: RecommendationEvaluationConfig
+     *     evaluationConfig?: RecommendationEvaluationConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\VersionLineageMetadata|null $lineageMetadata
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string|null $kmsKeyArn
  */
 class GetConfigurationBundleResponse extends Response
 {

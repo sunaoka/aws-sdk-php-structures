@@ -10,11 +10,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Accept
  * @property string|null $CustomAttributes
  * @property string|null $InferenceId
- * @property string $InputLocation
+ * @property string|null $InputLocation
  * @property string|null $S3OutputPathExtension
  * @property string|null $Filename
  * @property int<60, 21600>|null $RequestTTLSeconds
  * @property int<1, 3600>|null $InvocationTimeoutSeconds
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $Body
  */
 class InvokeEndpointAsyncRequest extends Request
 {
@@ -25,11 +26,12 @@ class InvokeEndpointAsyncRequest extends Request
      *     Accept?: string|null,
      *     CustomAttributes?: string|null,
      *     InferenceId?: string|null,
-     *     InputLocation: string,
+     *     InputLocation?: string|null,
      *     S3OutputPathExtension?: string|null,
      *     Filename?: string|null,
      *     RequestTTLSeconds?: int<60, 21600>|null,
-     *     InvocationTimeoutSeconds?: int<1, 3600>|null
+     *     InvocationTimeoutSeconds?: int<1, 3600>|null,
+     *     Body?: string|resource|\Psr\Http\Message\StreamInterface|null
      * } $args
      */
     public function __construct(array $args)

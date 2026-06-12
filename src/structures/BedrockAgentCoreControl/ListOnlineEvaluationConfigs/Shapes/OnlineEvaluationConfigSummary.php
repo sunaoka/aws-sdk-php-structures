@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property string|null $failureReason
+ * @property list<Insight>|null $insights
+ * @property ClusteringConfig|null $clusteringConfig
  */
 class OnlineEvaluationConfigSummary extends Shape
 {
@@ -27,7 +29,9 @@ class OnlineEvaluationConfigSummary extends Shape
      *     executionStatus: 'ENABLED'|'DISABLED',
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
-     *     failureReason?: string|null
+     *     failureReason?: string|null,
+     *     insights?: list<Insight>|null,
+     *     clusteringConfig?: ClusteringConfig|null
      * } $args
      */
     public function __construct(array $args)

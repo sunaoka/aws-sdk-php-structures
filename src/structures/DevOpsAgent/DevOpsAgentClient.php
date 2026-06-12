@@ -11,10 +11,12 @@ class DevOpsAgentClient extends \Aws\DevOpsAgent\DevOpsAgentClient
     use CreateBacklogTask\CreateBacklogTaskTrait;
     use CreateChat\CreateChatTrait;
     use CreatePrivateConnection\CreatePrivateConnectionTrait;
+    use CreateTrigger\CreateTriggerTrait;
     use DeleteAgentSpace\DeleteAgentSpaceTrait;
     use DeleteAsset\DeleteAssetTrait;
     use DeleteAssetFile\DeleteAssetFileTrait;
     use DeletePrivateConnection\DeletePrivateConnectionTrait;
+    use DeleteTrigger\DeleteTriggerTrait;
     use DeregisterService\DeregisterServiceTrait;
     use DescribePrivateConnection\DescribePrivateConnectionTrait;
     use DisableOperatorApp\DisableOperatorAppTrait;
@@ -30,6 +32,7 @@ class DevOpsAgentClient extends \Aws\DevOpsAgent\DevOpsAgentClient
     use GetOperatorApp\GetOperatorAppTrait;
     use GetRecommendation\GetRecommendationTrait;
     use GetService\GetServiceTrait;
+    use GetTrigger\GetTriggerTrait;
     use ListAgentSpaces\ListAgentSpacesTrait;
     use ListAssetFiles\ListAssetFilesTrait;
     use ListAssetTypes\ListAssetTypesTrait;
@@ -46,6 +49,7 @@ class DevOpsAgentClient extends \Aws\DevOpsAgent\DevOpsAgentClient
     use ListRecommendations\ListRecommendationsTrait;
     use ListServices\ListServicesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use ListTriggers\ListTriggersTrait;
     use ListWebhooks\ListWebhooksTrait;
     use RegisterService\RegisterServiceTrait;
     use SendMessage\SendMessageTrait;
@@ -60,5 +64,6 @@ class DevOpsAgentClient extends \Aws\DevOpsAgent\DevOpsAgentClient
     use UpdateOperatorAppIdpConfig\UpdateOperatorAppIdpConfigTrait;
     use UpdatePrivateConnectionCertificate\UpdatePrivateConnectionCertificateTrait;
     use UpdateRecommendation\UpdateRecommendationTrait;
+    use UpdateTrigger\UpdateTriggerTrait;
     use ValidateAwsAssociations\ValidateAwsAssociationsTrait;
 }

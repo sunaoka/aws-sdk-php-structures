@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property CloudWatchLogsSource|null $cloudWatchLogs
+ * @property OnlineEvaluationConfigSource|null $onlineEvaluationConfigSource
  */
 class DataSourceConfig extends Shape
 {
     /**
-     * @param array{cloudWatchLogs?: CloudWatchLogsSource|null} $args
+     * @param array{
+     *     cloudWatchLogs?: CloudWatchLogsSource|null,
+     *     onlineEvaluationConfigSource?: OnlineEvaluationConfigSource|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

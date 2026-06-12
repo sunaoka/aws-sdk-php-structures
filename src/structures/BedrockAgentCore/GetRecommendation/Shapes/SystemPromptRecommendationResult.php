@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $recommendedSystemPrompt
  * @property RecommendationResultConfigurationBundle|null $configurationBundle
+ * @property string|null $explanation
  * @property string|null $errorCode
  * @property string|null $errorMessage
  */
@@ -16,6 +17,7 @@ class SystemPromptRecommendationResult extends Shape
      * @param array{
      *     recommendedSystemPrompt?: string|null,
      *     configurationBundle?: RecommendationResultConfigurationBundle|null,
+     *     explanation?: string|null,
      *     errorCode?: string|null,
      *     errorMessage?: string|null
      * } $args

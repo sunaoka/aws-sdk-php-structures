@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $QueryAsOfTime
  * @property Shapes\AuditContext|null $AuditContext
  * @property bool|null $IncludeStatusDetails
- * @property list<'NAME'|'TABLE_TYPE'>|null $AttributesToGet
+ * @property list<'NAME'|'TABLE_TYPE'|'DEFAULT'|'LATEST_ICEBERG_METADATA'>|null $AttributesToGet
  */
 class GetTablesRequest extends Request
 {
@@ -29,7 +29,7 @@ class GetTablesRequest extends Request
      *     QueryAsOfTime?: \Aws\Api\DateTimeResult|null,
      *     AuditContext?: Shapes\AuditContext|null,
      *     IncludeStatusDetails?: bool|null,
-     *     AttributesToGet?: list<'NAME'|'TABLE_TYPE'>|null
+     *     AttributesToGet?: list<'NAME'|'TABLE_TYPE'|'DEFAULT'|'LATEST_ICEBERG_METADATA'>|null
      * } $args
      */
     public function __construct(array $args)

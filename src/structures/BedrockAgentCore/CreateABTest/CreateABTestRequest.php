@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $roleArn
  * @property bool|null $enableOnCreate
  * @property string|null $clientToken
+ * @property array<string, string>|null $tags
  */
 class CreateABTestRequest extends Request
 {
@@ -27,7 +28,8 @@ class CreateABTestRequest extends Request
      *     evaluationConfig: Shapes\ABTestEvaluationConfig,
      *     roleArn: string,
      *     enableOnCreate?: bool|null,
-     *     clientToken?: string|null
+     *     clientToken?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)
