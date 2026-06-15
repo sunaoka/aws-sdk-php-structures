@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AssociationConfig|null $AssociationConfig
  * @property Shapes\OnSourceDDoSProtectionConfig|null $OnSourceDDoSProtectionConfig
  * @property Shapes\ApplicationConfig|null $ApplicationConfig
+ * @property Shapes\MonetizationConfig|null $MonetizationConfig
  */
 class CreateWebACLRequest extends Request
 {
@@ -39,7 +40,8 @@ class CreateWebACLRequest extends Request
      *     TokenDomains?: list<string>|null,
      *     AssociationConfig?: Shapes\AssociationConfig|null,
      *     OnSourceDDoSProtectionConfig?: Shapes\OnSourceDDoSProtectionConfig|null,
-     *     ApplicationConfig?: Shapes\ApplicationConfig|null
+     *     ApplicationConfig?: Shapes\ApplicationConfig|null,
+     *     MonetizationConfig?: Shapes\MonetizationConfig|null
      * } $args
      */
     public function __construct(array $args)

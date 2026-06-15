@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $scheduleExpression
  * @property string|null $timezone
  * @property int|null $startTimeOffset
+ * @property int|null $endTimeOffset
  * @property Shapes\DestinationConfiguration|null $destinationConfiguration
  * @property int<0, max>|null $scheduleStartTime
  * @property int<0, max>|null $scheduleEndTime
@@ -31,6 +32,7 @@ class UpdateScheduledQueryRequest extends Request
      *     scheduleExpression: string,
      *     timezone?: string|null,
      *     startTimeOffset?: int|null,
+     *     endTimeOffset?: int|null,
      *     destinationConfiguration?: Shapes\DestinationConfiguration|null,
      *     scheduleStartTime?: int<0, max>|null,
      *     scheduleEndTime?: int<0, max>|null,

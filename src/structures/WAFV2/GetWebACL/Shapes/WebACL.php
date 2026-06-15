@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $RetrofittedByFirewallManager
  * @property OnSourceDDoSProtectionConfig|null $OnSourceDDoSProtectionConfig
  * @property ApplicationConfig|null $ApplicationConfig
+ * @property MonetizationConfig|null $MonetizationConfig
  */
 class WebACL extends Shape
 {
@@ -51,7 +52,8 @@ class WebACL extends Shape
      *     AssociationConfig?: AssociationConfig|null,
      *     RetrofittedByFirewallManager?: bool|null,
      *     OnSourceDDoSProtectionConfig?: OnSourceDDoSProtectionConfig|null,
-     *     ApplicationConfig?: ApplicationConfig|null
+     *     ApplicationConfig?: ApplicationConfig|null,
+     *     MonetizationConfig?: MonetizationConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -14,8 +14,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $scheduleExpression
  * @property string|null $timezone
  * @property int|null $startTimeOffset
+ * @property int|null $endTimeOffset
  * @property Shapes\DestinationConfiguration|null $destinationConfiguration
  * @property 'ENABLED'|'DISABLED'|null $state
+ * @property 'CUSTOMER_MANAGED'|'AWS_MANAGED'|null $scheduleType
  * @property int<0, max>|null $lastTriggeredTime
  * @property 'Running'|'InvalidQuery'|'Complete'|'Failed'|'Timeout'|null $lastExecutionStatus
  * @property int<0, max>|null $scheduleStartTime

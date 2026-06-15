@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, CustomResponseBody>|null $CustomResponseBodies
  * @property list<LabelSummary>|null $AvailableLabels
  * @property list<LabelSummary>|null $ConsumedLabels
+ * @property MonetizationConfig|null $MonetizationConfig
  */
 class RuleGroup extends Shape
 {
@@ -31,7 +32,8 @@ class RuleGroup extends Shape
      *     LabelNamespace?: string|null,
      *     CustomResponseBodies?: array<string, CustomResponseBody>|null,
      *     AvailableLabels?: list<LabelSummary>|null,
-     *     ConsumedLabels?: list<LabelSummary>|null
+     *     ConsumedLabels?: list<LabelSummary>|null,
+     *     MonetizationConfig?: MonetizationConfig|null
      * } $args
      */
     public function __construct(array $args)

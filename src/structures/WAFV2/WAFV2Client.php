@@ -32,6 +32,9 @@ class WAFV2Client extends \Aws\WAFV2\WAFV2Client
     use GetPermissionPolicy\GetPermissionPolicyTrait;
     use GetRateBasedStatementManagedKeys\GetRateBasedStatementManagedKeysTrait;
     use GetRegexPatternSet\GetRegexPatternSetTrait;
+    use GetRevenueStatistics\GetRevenueStatisticsTrait;
+    use GetRevenueStatisticsSummary\GetRevenueStatisticsSummaryTrait;
+    use GetRevenueStatisticsTimeSeries\GetRevenueStatisticsTimeSeriesTrait;
     use GetRuleGroup\GetRuleGroupTrait;
     use GetSampledRequests\GetSampledRequestsTrait;
     use GetTopPathStatisticsByTraffic\GetTopPathStatisticsByTrafficTrait;
@@ -47,6 +50,7 @@ class WAFV2Client extends \Aws\WAFV2\WAFV2Client
     use ListRegexPatternSets\ListRegexPatternSetsTrait;
     use ListResourcesForWebACL\ListResourcesForWebACLTrait;
     use ListRuleGroups\ListRuleGroupsTrait;
+    use ListSettlementRecords\ListSettlementRecordsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListWebACLs\ListWebACLsTrait;
     use PutLoggingConfiguration\PutLoggingConfigurationTrait;

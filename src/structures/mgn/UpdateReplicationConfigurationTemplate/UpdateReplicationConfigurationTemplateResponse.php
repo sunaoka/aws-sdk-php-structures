@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $tags
  * @property 'IPV4'|'IPV6'|null $internetProtocol
  * @property bool|null $storeSnapshotOnLocalZone
+ * @property Shapes\StorageConfiguration|null $storageConfiguration
  */
 class UpdateReplicationConfigurationTemplateResponse extends Response
 {

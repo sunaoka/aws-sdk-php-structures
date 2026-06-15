@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CountAction|null $Count
  * @property CaptchaAction|null $Captcha
  * @property ChallengeAction|null $Challenge
+ * @property MonetizeAction|null $Monetize
  */
 class RuleAction extends Shape
 {
@@ -19,7 +20,8 @@ class RuleAction extends Shape
      *     Allow?: AllowAction|null,
      *     Count?: CountAction|null,
      *     Captcha?: CaptchaAction|null,
-     *     Challenge?: ChallengeAction|null
+     *     Challenge?: ChallengeAction|null,
+     *     Monetize?: MonetizeAction|null
      * } $args
      */
     public function __construct(array $args = [])

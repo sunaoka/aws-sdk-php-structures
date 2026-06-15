@@ -61,6 +61,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use DeleteFormType\DeleteFormTypeTrait;
     use DeleteGlossary\DeleteGlossaryTrait;
     use DeleteGlossaryTerm\DeleteGlossaryTermTrait;
+    use DeleteLineageEvent\DeleteLineageEventTrait;
     use DeleteListing\DeleteListingTrait;
     use DeleteNotebook\DeleteNotebookTrait;
     use DeleteProject\DeleteProjectTrait;

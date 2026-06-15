@@ -9,6 +9,7 @@ class BedrockRuntimeClient extends \Aws\BedrockRuntime\BedrockRuntimeClient
     use ConverseStream\ConverseStreamTrait;
     use CountTokens\CountTokensTrait;
     use GetAsyncInvoke\GetAsyncInvokeTrait;
+    use InvokeGuardrailChecks\InvokeGuardrailChecksTrait;
     use InvokeModel\InvokeModelTrait;
     use InvokeModelWithResponseStream\InvokeModelWithResponseStreamTrait;
     use ListAsyncInvokes\ListAsyncInvokesTrait;

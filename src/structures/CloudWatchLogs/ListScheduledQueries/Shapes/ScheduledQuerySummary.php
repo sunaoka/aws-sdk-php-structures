@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $scheduledQueryArn
  * @property string|null $name
  * @property 'ENABLED'|'DISABLED'|null $state
+ * @property 'CUSTOMER_MANAGED'|'AWS_MANAGED'|null $scheduleType
  * @property int<0, max>|null $lastTriggeredTime
  * @property 'Running'|'InvalidQuery'|'Complete'|'Failed'|'Timeout'|null $lastExecutionStatus
  * @property string|null $scheduleExpression
@@ -23,6 +24,7 @@ class ScheduledQuerySummary extends Shape
      *     scheduledQueryArn?: string|null,
      *     name?: string|null,
      *     state?: 'ENABLED'|'DISABLED'|null,
+     *     scheduleType?: 'CUSTOMER_MANAGED'|'AWS_MANAGED'|null,
      *     lastTriggeredTime?: int<0, max>|null,
      *     lastExecutionStatus?: 'Running'|'InvalidQuery'|'Complete'|'Failed'|'Timeout'|null,
      *     scheduleExpression?: string|null,

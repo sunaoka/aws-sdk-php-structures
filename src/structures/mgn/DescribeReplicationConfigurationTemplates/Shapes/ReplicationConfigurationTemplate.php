@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $tags
  * @property 'IPV4'|'IPV6'|null $internetProtocol
  * @property bool|null $storeSnapshotOnLocalZone
+ * @property StorageConfiguration|null $storageConfiguration
  */
 class ReplicationConfigurationTemplate extends Shape
 {
@@ -45,7 +46,8 @@ class ReplicationConfigurationTemplate extends Shape
      *     useFipsEndpoint?: bool|null,
      *     tags?: array<string, string>|null,
      *     internetProtocol?: 'IPV4'|'IPV6'|null,
-     *     storeSnapshotOnLocalZone?: bool|null
+     *     storeSnapshotOnLocalZone?: bool|null,
+     *     storageConfiguration?: StorageConfiguration|null
      * } $args
      */
     public function __construct(array $args)

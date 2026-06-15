@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\VisibilityConfig $VisibilityConfig
  * @property string $LockToken
  * @property array<string, Shapes\CustomResponseBody>|null $CustomResponseBodies
+ * @property Shapes\MonetizationConfig|null $MonetizationConfig
  */
 class UpdateRuleGroupRequest extends Request
 {
@@ -25,7 +26,8 @@ class UpdateRuleGroupRequest extends Request
      *     Rules?: list<Shapes\Rule>|null,
      *     VisibilityConfig: Shapes\VisibilityConfig,
      *     LockToken: string,
-     *     CustomResponseBodies?: array<string, Shapes\CustomResponseBody>|null
+     *     CustomResponseBodies?: array<string, Shapes\CustomResponseBody>|null,
+     *     MonetizationConfig?: Shapes\MonetizationConfig|null
      * } $args
      */
     public function __construct(array $args)
