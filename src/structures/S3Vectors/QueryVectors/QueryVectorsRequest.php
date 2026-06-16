@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Document|null $filter
  * @property bool|null $returnMetadata
  * @property bool|null $returnDistance
+ * @property string|null $nextToken
  */
 class QueryVectorsRequest extends Request
 {
@@ -25,7 +26,8 @@ class QueryVectorsRequest extends Request
      *     queryVector: Shapes\VectorData,
      *     filter?: Shapes\Document|null,
      *     returnMetadata?: bool|null,
-     *     returnDistance?: bool|null
+     *     returnDistance?: bool|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

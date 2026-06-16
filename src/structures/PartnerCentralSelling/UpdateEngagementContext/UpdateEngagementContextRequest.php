@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EngagementIdentifier
  * @property string $ContextIdentifier
  * @property \Aws\Api\DateTimeResult $EngagementLastModifiedAt
- * @property 'CustomerProject'|'Lead' $Type
+ * @property 'CustomerProject'|'Lead'|'ProspectingResult' $Type
  * @property Shapes\UpdateEngagementContextPayload $Payload
  */
 class UpdateEngagementContextRequest extends Request
@@ -20,7 +20,7 @@ class UpdateEngagementContextRequest extends Request
      *     EngagementIdentifier: string,
      *     ContextIdentifier: string,
      *     EngagementLastModifiedAt: \Aws\Api\DateTimeResult,
-     *     Type: 'CustomerProject'|'Lead',
+     *     Type: 'CustomerProject'|'Lead'|'ProspectingResult',
      *     Payload: Shapes\UpdateEngagementContextPayload
      * } $args
      */

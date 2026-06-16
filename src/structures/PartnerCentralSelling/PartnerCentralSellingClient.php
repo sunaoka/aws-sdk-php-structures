@@ -19,6 +19,7 @@ class PartnerCentralSellingClient extends \Aws\PartnerCentralSelling\PartnerCent
     use GetEngagement\GetEngagementTrait;
     use GetEngagementInvitation\GetEngagementInvitationTrait;
     use GetOpportunity\GetOpportunityTrait;
+    use GetProspectingFromEngagementTask\GetProspectingFromEngagementTaskTrait;
     use GetResourceSnapshot\GetResourceSnapshotTrait;
     use GetResourceSnapshotJob\GetResourceSnapshotJobTrait;
     use GetSellingSystemSettings\GetSellingSystemSettingsTrait;
@@ -30,6 +31,7 @@ class PartnerCentralSellingClient extends \Aws\PartnerCentralSelling\PartnerCent
     use ListEngagements\ListEngagementsTrait;
     use ListOpportunities\ListOpportunitiesTrait;
     use ListOpportunityFromEngagementTasks\ListOpportunityFromEngagementTasksTrait;
+    use ListProspectingFromEngagementTasks\ListProspectingFromEngagementTasksTrait;
     use ListResourceSnapshotJobs\ListResourceSnapshotJobsTrait;
     use ListResourceSnapshots\ListResourceSnapshotsTrait;
     use ListSolutions\ListSolutionsTrait;
@@ -39,6 +41,7 @@ class PartnerCentralSellingClient extends \Aws\PartnerCentralSelling\PartnerCent
     use StartEngagementByAcceptingInvitationTask\StartEngagementByAcceptingInvitationTaskTrait;
     use StartEngagementFromOpportunityTask\StartEngagementFromOpportunityTaskTrait;
     use StartOpportunityFromEngagementTask\StartOpportunityFromEngagementTaskTrait;
+    use StartProspectingFromEngagementTask\StartProspectingFromEngagementTaskTrait;
     use StartResourceSnapshotJob\StartResourceSnapshotJobTrait;
     use StopResourceSnapshotJob\StopResourceSnapshotJobTrait;
     use SubmitOpportunity\SubmitOpportunityTrait;

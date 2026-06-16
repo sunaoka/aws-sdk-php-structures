@@ -26,7 +26,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ChecksumXXHASH64
  * @property string|null $ChecksumXXHASH3
  * @property string|null $ChecksumXXHASH128
- * @property string|null $Expires
+ * @property \Aws\Api\DateTimeResult|null $Expires
  * @property string|null $IfMatch
  * @property string|null $IfNoneMatch
  * @property string|null $GrantFullControl
@@ -77,7 +77,7 @@ class PutObjectRequest extends Request
      *     ChecksumXXHASH64?: string|null,
      *     ChecksumXXHASH3?: string|null,
      *     ChecksumXXHASH128?: string|null,
-     *     Expires?: string|null,
+     *     Expires?: \Aws\Api\DateTimeResult|null,
      *     IfMatch?: string|null,
      *     IfNoneMatch?: string|null,
      *     GrantFullControl?: string|null,

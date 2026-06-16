@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $customerAddress
  * @property 'ipv4'|'ipv6'|null $addressFamily
  * @property list<Tag>|null $tags
+ * @property string|null $rateLimit
  */
 class NewTransitVirtualInterfaceAllocation extends Shape
 {
@@ -29,7 +30,8 @@ class NewTransitVirtualInterfaceAllocation extends Shape
      *     amazonAddress?: string|null,
      *     customerAddress?: string|null,
      *     addressFamily?: 'ipv4'|'ipv6'|null,
-     *     tags?: list<Tag>|null
+     *     tags?: list<Tag>|null,
+     *     rateLimit?: string|null
      * } $args
      */
     public function __construct(array $args = [])

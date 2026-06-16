@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $MemberCount
  * @property \Aws\Api\DateTimeResult|null $ModifiedAt
  * @property string|null $ModifiedBy
- * @property list<'CustomerProject'|'Lead'>|null $ContextTypes
+ * @property list<'CustomerProject'|'Lead'|'ProspectingResult'>|null $ContextTypes
  */
 class EngagementSummary extends Shape
 {
@@ -27,7 +27,7 @@ class EngagementSummary extends Shape
      *     MemberCount?: int|null,
      *     ModifiedAt?: \Aws\Api\DateTimeResult|null,
      *     ModifiedBy?: string|null,
-     *     ContextTypes?: list<'CustomerProject'|'Lead'>|null
+     *     ContextTypes?: list<'CustomerProject'|'Lead'|'ProspectingResult'>|null
      * } $args
      */
     public function __construct(array $args = [])

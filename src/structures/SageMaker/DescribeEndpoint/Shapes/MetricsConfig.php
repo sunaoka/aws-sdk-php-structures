@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool|null $EnableEnhancedMetrics
+ * @property bool|null $EnableDetailedObservability
  * @property int|null $MetricPublishFrequencyInSeconds
  */
 class MetricsConfig extends Shape
@@ -13,6 +14,7 @@ class MetricsConfig extends Shape
     /**
      * @param array{
      *     EnableEnhancedMetrics?: bool|null,
+     *     EnableDetailedObservability?: bool|null,
      *     MetricPublishFrequencyInSeconds?: int|null
      * } $args
      */

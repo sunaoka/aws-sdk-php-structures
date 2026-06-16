@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property JournalTableConfiguration $JournalTableConfiguration
  * @property InventoryTableConfiguration|null $InventoryTableConfiguration
+ * @property AnnotationTableConfiguration|null $AnnotationTableConfiguration
  */
 class MetadataConfiguration extends Shape
 {
     /**
      * @param array{
      *     JournalTableConfiguration: JournalTableConfiguration,
-     *     InventoryTableConfiguration?: InventoryTableConfiguration|null
+     *     InventoryTableConfiguration?: InventoryTableConfiguration|null,
+     *     AnnotationTableConfiguration?: AnnotationTableConfiguration|null
      * } $args
      */
     public function __construct(array $args)

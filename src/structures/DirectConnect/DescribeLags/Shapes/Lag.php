@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $macSecCapable
  * @property string|null $encryptionMode
  * @property list<MacSecKey>|null $macSecKeys
+ * @property RateLimiterStatus|null $rateLimiterStatus
  */
 class Lag extends Shape
 {
@@ -51,7 +52,8 @@ class Lag extends Shape
      *     providerName?: string|null,
      *     macSecCapable?: bool|null,
      *     encryptionMode?: string|null,
-     *     macSecKeys?: list<MacSecKey>|null
+     *     macSecKeys?: list<MacSecKey>|null,
+     *     rateLimiterStatus?: RateLimiterStatus|null
      * } $args
      */
     public function __construct(array $args = [])

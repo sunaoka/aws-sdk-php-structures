@@ -28,6 +28,7 @@ class S3Client extends \Aws\S3\S3Client
     use DeleteBucketTagging\DeleteBucketTaggingTrait;
     use DeleteBucketWebsite\DeleteBucketWebsiteTrait;
     use DeleteObject\DeleteObjectTrait;
+    use DeleteObjectAnnotation\DeleteObjectAnnotationTrait;
     use DeleteObjectTagging\DeleteObjectTaggingTrait;
     use DeleteObjects\DeleteObjectsTrait;
     use DeletePublicAccessBlock\DeletePublicAccessBlockTrait;
@@ -58,6 +59,7 @@ class S3Client extends \Aws\S3\S3Client
     use GetBucketWebsite\GetBucketWebsiteTrait;
     use GetObject\GetObjectTrait;
     use GetObjectAcl\GetObjectAclTrait;
+    use GetObjectAnnotation\GetObjectAnnotationTrait;
     use GetObjectAttributes\GetObjectAttributesTrait;
     use GetObjectLegalHold\GetObjectLegalHoldTrait;
     use GetObjectLockConfiguration\GetObjectLockConfigurationTrait;
@@ -74,6 +76,7 @@ class S3Client extends \Aws\S3\S3Client
     use ListBuckets\ListBucketsTrait;
     use ListDirectoryBuckets\ListDirectoryBucketsTrait;
     use ListMultipartUploads\ListMultipartUploadsTrait;
+    use ListObjectAnnotations\ListObjectAnnotationsTrait;
     use ListObjectVersions\ListObjectVersionsTrait;
     use ListObjects\ListObjectsTrait;
     use ListObjectsV2\ListObjectsV2Trait;
@@ -101,6 +104,7 @@ class S3Client extends \Aws\S3\S3Client
     use PutBucketWebsite\PutBucketWebsiteTrait;
     use PutObject\PutObjectTrait;
     use PutObjectAcl\PutObjectAclTrait;
+    use PutObjectAnnotation\PutObjectAnnotationTrait;
     use PutObjectLegalHold\PutObjectLegalHoldTrait;
     use PutObjectLockConfiguration\PutObjectLockConfigurationTrait;
     use PutObjectRetention\PutObjectRetentionTrait;
@@ -109,6 +113,7 @@ class S3Client extends \Aws\S3\S3Client
     use RenameObject\RenameObjectTrait;
     use RestoreObject\RestoreObjectTrait;
     use SelectObjectContent\SelectObjectContentTrait;
+    use UpdateBucketMetadataAnnotationTableConfiguration\UpdateBucketMetadataAnnotationTableConfigurationTrait;
     use UpdateBucketMetadataInventoryTableConfiguration\UpdateBucketMetadataInventoryTableConfigurationTrait;
     use UpdateBucketMetadataJournalTableConfiguration\UpdateBucketMetadataJournalTableConfigurationTrait;
     use UpdateObjectEncryption\UpdateObjectEncryptionTrait;

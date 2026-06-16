@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $QualificationStatus
  * @property LeadCustomer $Customer
  * @property LeadInteraction|null $Interaction
+ * @property LeadInsights|null $Insights
  */
 class UpdateLeadContext extends Shape
 {
@@ -15,7 +16,8 @@ class UpdateLeadContext extends Shape
      * @param array{
      *     QualificationStatus?: string|null,
      *     Customer: LeadCustomer,
-     *     Interaction?: LeadInteraction|null
+     *     Interaction?: LeadInteraction|null,
+     *     Insights?: LeadInsights|null
      * } $args
      */
     public function __construct(array $args)

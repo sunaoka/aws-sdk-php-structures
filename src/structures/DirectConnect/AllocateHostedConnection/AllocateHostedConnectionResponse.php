@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $portEncryptionStatus
  * @property string|null $encryptionMode
  * @property list<Shapes\MacSecKey>|null $macSecKeys
+ * @property Shapes\RateLimiterStatus|null $rateLimiterStatus
  * @property bool|null $partnerInterconnectMacSecCapable
  */
 class AllocateHostedConnectionResponse extends Response

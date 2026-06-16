@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ModelPackageName
  * @property string|null $InferenceSpecificationName
  * @property MultiModelConfig|null $MultiModelConfig
+ * @property ContainerMetricsConfig|null $ContainerMetricsConfig
  */
 class ContainerDefinition extends Shape
 {
@@ -31,7 +32,8 @@ class ContainerDefinition extends Shape
      *     Environment?: array<string, string>|null,
      *     ModelPackageName?: string|null,
      *     InferenceSpecificationName?: string|null,
-     *     MultiModelConfig?: MultiModelConfig|null
+     *     MultiModelConfig?: MultiModelConfig|null,
+     *     ContainerMetricsConfig?: ContainerMetricsConfig|null
      * } $args
      */
     public function __construct(array $args = [])

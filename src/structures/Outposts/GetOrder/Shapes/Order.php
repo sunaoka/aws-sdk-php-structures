@@ -6,6 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $OutpostId
+ * @property string|null $QuoteIdentifier
+ * @property string|null $QuoteOptionIdentifier
  * @property string|null $OrderId
  * @property 'RECEIVED'|'PENDING'|'PROCESSING'|'INSTALLING'|'FULFILLED'|'CANCELLED'|'PREPARING'|'IN_PROGRESS'|'DELIVERED'|'COMPLETED'|'ERROR'|null $Status
  * @property list<LineItem>|null $LineItems
@@ -20,6 +22,8 @@ class Order extends Shape
     /**
      * @param array{
      *     OutpostId?: string|null,
+     *     QuoteIdentifier?: string|null,
+     *     QuoteOptionIdentifier?: string|null,
      *     OrderId?: string|null,
      *     Status?: 'RECEIVED'|'PENDING'|'PROCESSING'|'INSTALLING'|'FULFILLED'|'CANCELLED'|'PREPARING'|'IN_PROGRESS'|'DELIVERED'|'COMPLETED'|'ERROR'|null,
      *     LineItems?: list<LineItem>|null,

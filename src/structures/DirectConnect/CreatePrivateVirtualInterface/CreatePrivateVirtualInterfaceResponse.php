@@ -32,6 +32,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $awsLogicalDeviceId
  * @property list<Shapes\Tag>|null $tags
  * @property bool|null $siteLinkEnabled
+ * @property string|null $rateLimit
  */
 class CreatePrivateVirtualInterfaceResponse extends Response
 {

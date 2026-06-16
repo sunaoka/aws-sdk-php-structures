@@ -31,7 +31,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ChecksumXXHASH128
  * @property bool|null $DeleteMarker
  * @property string|null $ETag
- * @property string|null $Expires
+ * @property \Aws\Api\DateTimeResult|null $Expires
  * @property string|null $Expiration
  * @property \Aws\Api\DateTimeResult|null $LastModified
  * @property int|null $MissingMeta
@@ -82,7 +82,7 @@ class WriteGetObjectResponseRequest extends Request
      *     ChecksumXXHASH128?: string|null,
      *     DeleteMarker?: bool|null,
      *     ETag?: string|null,
-     *     Expires?: string|null,
+     *     Expires?: \Aws\Api\DateTimeResult|null,
      *     Expiration?: string|null,
      *     LastModified?: \Aws\Api\DateTimeResult|null,
      *     MissingMeta?: int|null,

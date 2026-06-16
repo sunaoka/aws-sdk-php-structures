@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $Id
- * @property 'CustomerProject'|'Lead' $Type
+ * @property 'CustomerProject'|'Lead'|'ProspectingResult' $Type
  * @property EngagementContextPayload|null $Payload
  */
 class EngagementContextDetails extends Shape
@@ -14,7 +14,7 @@ class EngagementContextDetails extends Shape
     /**
      * @param array{
      *     Id?: string|null,
-     *     Type: 'CustomerProject'|'Lead',
+     *     Type: 'CustomerProject'|'Lead'|'ProspectingResult',
      *     Payload?: EngagementContextPayload|null
      * } $args
      */

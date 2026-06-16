@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $CopySourceIfModifiedSince
  * @property string|null $CopySourceIfNoneMatch
  * @property \Aws\Api\DateTimeResult|null $CopySourceIfUnmodifiedSince
- * @property string|null $Expires
+ * @property \Aws\Api\DateTimeResult|null $Expires
  * @property string|null $GrantFullControl
  * @property string|null $GrantRead
  * @property string|null $GrantReadACP
@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $Metadata
  * @property 'COPY'|'REPLACE'|null $MetadataDirective
  * @property 'COPY'|'REPLACE'|null $TaggingDirective
+ * @property 'COPY'|'EXCLUDE'|null $AnnotationDirective
  * @property 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
  * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|'FSX_ONTAP'|null $StorageClass
  * @property string|null $WebsiteRedirectLocation
@@ -66,7 +67,7 @@ class CopyObjectRequest extends Request
      *     CopySourceIfModifiedSince?: \Aws\Api\DateTimeResult|null,
      *     CopySourceIfNoneMatch?: string|null,
      *     CopySourceIfUnmodifiedSince?: \Aws\Api\DateTimeResult|null,
-     *     Expires?: string|null,
+     *     Expires?: \Aws\Api\DateTimeResult|null,
      *     GrantFullControl?: string|null,
      *     GrantRead?: string|null,
      *     GrantReadACP?: string|null,
@@ -77,6 +78,7 @@ class CopyObjectRequest extends Request
      *     Metadata?: array<string, string>|null,
      *     MetadataDirective?: 'COPY'|'REPLACE'|null,
      *     TaggingDirective?: 'COPY'|'REPLACE'|null,
+     *     AnnotationDirective?: 'COPY'|'EXCLUDE'|null,
      *     ServerSideEncryption?: 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null,
      *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|'FSX_ONTAP'|null,
      *     WebsiteRedirectLocation?: string|null,

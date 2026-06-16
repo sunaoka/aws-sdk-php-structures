@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Value
  * @property string|null $DisplayName
  * @property string|null $Description
+ * @property SubscriptionInfo|null $SubscriptionInfo
  */
 class FirewallRuleTypeDefinition extends Shape
 {
@@ -17,7 +18,8 @@ class FirewallRuleTypeDefinition extends Shape
      *     RuleType?: string|null,
      *     Value?: string|null,
      *     DisplayName?: string|null,
-     *     Description?: string|null
+     *     Description?: string|null,
+     *     SubscriptionInfo?: SubscriptionInfo|null
      * } $args
      */
     public function __construct(array $args = [])

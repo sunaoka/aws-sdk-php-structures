@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $mtu
  * @property bool|null $enableSiteLink
  * @property string|null $virtualInterfaceName
+ * @property string|null $rateLimit
  */
 class UpdateVirtualInterfaceAttributesRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateVirtualInterfaceAttributesRequest extends Request
      *     virtualInterfaceId: string,
      *     mtu?: int|null,
      *     enableSiteLink?: bool|null,
-     *     virtualInterfaceName?: string|null
+     *     virtualInterfaceName?: string|null,
+     *     rateLimit?: string|null
      * } $args
      */
     public function __construct(array $args)

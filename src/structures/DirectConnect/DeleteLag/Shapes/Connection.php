@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $portEncryptionStatus
  * @property string|null $encryptionMode
  * @property list<MacSecKey>|null $macSecKeys
+ * @property RateLimiterStatus|null $rateLimiterStatus
  * @property bool|null $partnerInterconnectMacSecCapable
  */
 class Connection extends Shape
@@ -55,6 +56,7 @@ class Connection extends Shape
      *     portEncryptionStatus?: string|null,
      *     encryptionMode?: string|null,
      *     macSecKeys?: list<MacSecKey>|null,
+     *     rateLimiterStatus?: RateLimiterStatus|null,
      *     partnerInterconnectMacSecCapable?: bool|null
      * } $args
      */

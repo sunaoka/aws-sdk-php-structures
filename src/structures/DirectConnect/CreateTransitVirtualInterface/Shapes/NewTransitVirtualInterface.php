@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $directConnectGatewayId
  * @property list<Tag>|null $tags
  * @property bool|null $enableSiteLink
+ * @property string|null $rateLimit
  */
 class NewTransitVirtualInterface extends Shape
 {
@@ -33,7 +34,8 @@ class NewTransitVirtualInterface extends Shape
      *     addressFamily?: 'ipv4'|'ipv6'|null,
      *     directConnectGatewayId?: string|null,
      *     tags?: list<Tag>|null,
-     *     enableSiteLink?: bool|null
+     *     enableSiteLink?: bool|null,
+     *     rateLimit?: string|null
      * } $args
      */
     public function __construct(array $args = [])

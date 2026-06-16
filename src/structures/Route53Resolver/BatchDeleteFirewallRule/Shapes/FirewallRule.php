@@ -23,6 +23,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DGA'|'DNS_TUNNELING'|'DICTIONARY_DGA'|null $DnsThreatProtection
  * @property 'LOW'|'MEDIUM'|'HIGH'|null $ConfidenceThreshold
  * @property FirewallRuleType|null $FirewallRuleType
+ * @property string|null $Status
+ * @property string|null $StatusMessage
  */
 class FirewallRule extends Shape
 {
@@ -45,7 +47,9 @@ class FirewallRule extends Shape
      *     Qtype?: string|null,
      *     DnsThreatProtection?: 'DGA'|'DNS_TUNNELING'|'DICTIONARY_DGA'|null,
      *     ConfidenceThreshold?: 'LOW'|'MEDIUM'|'HIGH'|null,
-     *     FirewallRuleType?: FirewallRuleType|null
+     *     FirewallRuleType?: FirewallRuleType|null,
+     *     Status?: string|null,
+     *     StatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

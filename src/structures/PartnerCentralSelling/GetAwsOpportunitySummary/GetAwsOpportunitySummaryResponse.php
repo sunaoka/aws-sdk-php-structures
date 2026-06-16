@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\AwsOpportunityRelatedEntities|null $RelatedEntityIds
  * @property Shapes\AwsOpportunityCustomer|null $Customer
  * @property Shapes\AwsOpportunityProject|null $Project
+ * @property string|null $CosellMotion
  * @property string $Catalog
  */
 class GetAwsOpportunitySummaryResponse extends Response

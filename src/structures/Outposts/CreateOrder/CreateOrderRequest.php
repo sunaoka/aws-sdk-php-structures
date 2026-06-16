@@ -6,6 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OutpostIdentifier
+ * @property string|null $QuoteIdentifier
+ * @property string|null $QuoteOptionIdentifier
  * @property list<Shapes\LineItemRequest>|null $LineItems
  * @property 'ALL_UPFRONT'|'NO_UPFRONT'|'PARTIAL_UPFRONT' $PaymentOption
  * @property 'THREE_YEARS'|'ONE_YEAR'|'FIVE_YEARS'|null $PaymentTerm
@@ -15,6 +17,8 @@ class CreateOrderRequest extends Request
     /**
      * @param array{
      *     OutpostIdentifier: string,
+     *     QuoteIdentifier?: string|null,
+     *     QuoteOptionIdentifier?: string|null,
      *     LineItems?: list<Shapes\LineItemRequest>|null,
      *     PaymentOption: 'ALL_UPFRONT'|'NO_UPFRONT'|'PARTIAL_UPFRONT',
      *     PaymentTerm?: 'THREE_YEARS'|'ONE_YEAR'|'FIVE_YEARS'|null

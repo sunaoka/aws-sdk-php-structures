@@ -32,6 +32,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $awsLogicalDeviceId
  * @property list<Tag>|null $tags
  * @property bool|null $siteLinkEnabled
+ * @property string|null $rateLimit
  */
 class VirtualInterface extends Shape
 {
@@ -63,7 +64,8 @@ class VirtualInterface extends Shape
      *     awsDeviceV2?: string|null,
      *     awsLogicalDeviceId?: string|null,
      *     tags?: list<Tag>|null,
-     *     siteLinkEnabled?: bool|null
+     *     siteLinkEnabled?: bool|null,
+     *     rateLimit?: string|null
      * } $args
      */
     public function __construct(array $args = [])
