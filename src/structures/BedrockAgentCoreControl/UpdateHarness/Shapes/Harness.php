@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $harnessName
  * @property string $arn
  * @property 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING'|'DELETE_FAILED' $status
+ * @property string|null $harnessVersion
  * @property string $executionRoleArn
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
@@ -36,6 +37,7 @@ class Harness extends Shape
      *     harnessName: string,
      *     arn: string,
      *     status: 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING'|'DELETE_FAILED',
+     *     harnessVersion?: string|null,
      *     executionRoleArn: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,

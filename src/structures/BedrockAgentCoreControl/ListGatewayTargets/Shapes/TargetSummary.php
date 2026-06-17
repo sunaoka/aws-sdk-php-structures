@@ -12,6 +12,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property int<0, 1000>|null $resourcePriority
+ * @property \Aws\Api\DateTimeResult|null $lastSynchronizedAt
+ * @property AuthorizationData|null $authorizationData
+ * @property 'OPEN_API_SCHEMA'|'SMITHY_MODEL'|'MCP_SERVER'|'LAMBDA'|'API_GATEWAY'|'CONNECTOR'|'AGENTCORE_RUNTIME'|'PASSTHROUGH'|'PROVIDER'|null $targetType
+ * @property 'DEFAULT'|'DYNAMIC'|null $listingMode
  */
 class TargetSummary extends Shape
 {
@@ -23,7 +27,11 @@ class TargetSummary extends Shape
      *     description?: string|null,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
-     *     resourcePriority?: int<0, 1000>|null
+     *     resourcePriority?: int<0, 1000>|null,
+     *     lastSynchronizedAt?: \Aws\Api\DateTimeResult|null,
+     *     authorizationData?: AuthorizationData|null,
+     *     targetType?: 'OPEN_API_SCHEMA'|'SMITHY_MODEL'|'MCP_SERVER'|'LAMBDA'|'API_GATEWAY'|'CONNECTOR'|'AGENTCORE_RUNTIME'|'PASSTHROUGH'|'PROVIDER'|null,
+     *     listingMode?: 'DEFAULT'|'DYNAMIC'|null
      * } $args
      */
     public function __construct(array $args)

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $title
  * @property string|null $description
  * @property ReferenceOutput|null $reference
- * @property 'INVESTIGATION'|'EVALUATION' $taskType
+ * @property 'INVESTIGATION'|'EVALUATION'|'RELEASE_READINESS_REVIEW'|'RELEASE_TESTING' $taskType
  * @property 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'MINIMAL' $priority
  * @property 'PENDING_TRIAGE'|'LINKED'|'PENDING_START'|'IN_PROGRESS'|'PENDING_CUSTOMER_APPROVAL'|'COMPLETED'|'FAILED'|'TIMED_OUT'|'CANCELED'|'SKIPPED' $status
  * @property \Aws\Api\DateTimeResult $createdAt
@@ -33,7 +33,7 @@ class Task extends Shape
      *     title: string,
      *     description?: string|null,
      *     reference?: ReferenceOutput|null,
-     *     taskType: 'INVESTIGATION'|'EVALUATION',
+     *     taskType: 'INVESTIGATION'|'EVALUATION'|'RELEASE_READINESS_REVIEW'|'RELEASE_TESTING',
      *     priority: 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'MINIMAL',
      *     status: 'PENDING_TRIAGE'|'LINKED'|'PENDING_START'|'IN_PROGRESS'|'PENDING_CUSTOMER_APPROVAL'|'COMPLETED'|'FAILED'|'TIMED_OUT'|'CANCELED'|'SKIPPED',
      *     createdAt: \Aws\Api\DateTimeResult,

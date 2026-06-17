@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING'|'DELETE_FAILED' $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string|null $harnessVersion
  */
 class HarnessSummary extends Shape
 {
@@ -21,7 +22,8 @@ class HarnessSummary extends Shape
      *     arn: string,
      *     status: 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING'|'DELETE_FAILED',
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     updatedAt: \Aws\Api\DateTimeResult
+     *     updatedAt: \Aws\Api\DateTimeResult,
+     *     harnessVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

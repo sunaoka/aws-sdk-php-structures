@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $agentSpaceId
  * @property Shapes\ReferenceInput|null $reference
- * @property 'INVESTIGATION'|'EVALUATION' $taskType
+ * @property 'INVESTIGATION'|'EVALUATION'|'RELEASE_READINESS_REVIEW'|'RELEASE_TESTING' $taskType
  * @property string $title
  * @property string|null $description
  * @property 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'MINIMAL' $priority
@@ -19,7 +19,7 @@ class CreateBacklogTaskRequest extends Request
      * @param array{
      *     agentSpaceId: string,
      *     reference?: Shapes\ReferenceInput|null,
-     *     taskType: 'INVESTIGATION'|'EVALUATION',
+     *     taskType: 'INVESTIGATION'|'EVALUATION'|'RELEASE_READINESS_REVIEW'|'RELEASE_TESTING',
      *     title: string,
      *     description?: string|null,
      *     priority: 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'MINIMAL',

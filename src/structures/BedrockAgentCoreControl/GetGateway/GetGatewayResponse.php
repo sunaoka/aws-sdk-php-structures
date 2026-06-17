@@ -20,10 +20,13 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'CUSTOM_JWT'|'AWS_IAM'|'NONE'|'AUTHENTICATE_ONLY' $authorizerType
  * @property Shapes\AuthorizerConfiguration|null $authorizerConfiguration
  * @property string|null $kmsKeyArn
+ * @property Shapes\CustomTransformConfiguration|null $customTransformConfiguration
  * @property list<Shapes\GatewayInterceptorConfiguration>|null $interceptorConfigurations
  * @property Shapes\GatewayPolicyEngineConfiguration|null $policyEngineConfiguration
  * @property Shapes\WorkloadIdentityDetails|null $workloadIdentityDetails
  * @property 'DEBUG'|null $exceptionLevel
+ * @property string|null $webAclArn
+ * @property Shapes\WafConfiguration|null $wafConfiguration
  */
 class GetGatewayResponse extends Response
 {

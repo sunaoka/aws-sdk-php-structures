@@ -14,9 +14,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CUSTOM_JWT'|'AWS_IAM'|'NONE'|'AUTHENTICATE_ONLY' $authorizerType
  * @property Shapes\AuthorizerConfiguration|null $authorizerConfiguration
  * @property string|null $kmsKeyArn
+ * @property Shapes\CustomTransformConfiguration|null $customTransformConfiguration
  * @property list<Shapes\GatewayInterceptorConfiguration>|null $interceptorConfigurations
  * @property Shapes\GatewayPolicyEngineConfiguration|null $policyEngineConfiguration
  * @property 'DEBUG'|null $exceptionLevel
+ * @property Shapes\WafConfiguration|null $wafConfiguration
  */
 class UpdateGatewayRequest extends Request
 {
@@ -31,9 +33,11 @@ class UpdateGatewayRequest extends Request
      *     authorizerType: 'CUSTOM_JWT'|'AWS_IAM'|'NONE'|'AUTHENTICATE_ONLY',
      *     authorizerConfiguration?: Shapes\AuthorizerConfiguration|null,
      *     kmsKeyArn?: string|null,
+     *     customTransformConfiguration?: Shapes\CustomTransformConfiguration|null,
      *     interceptorConfigurations?: list<Shapes\GatewayInterceptorConfiguration>|null,
      *     policyEngineConfiguration?: Shapes\GatewayPolicyEngineConfiguration|null,
-     *     exceptionLevel?: 'DEBUG'|null
+     *     exceptionLevel?: 'DEBUG'|null,
+     *     wafConfiguration?: Shapes\WafConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $numberOfMetadataDocumentsModified
  * @property int|null $numberOfDocumentsDeleted
  * @property int|null $numberOfDocumentsFailed
+ * @property int|null $numberOfDocumentsSkipped
  */
 class IngestionJobStatistics extends Shape
 {
@@ -23,7 +24,8 @@ class IngestionJobStatistics extends Shape
      *     numberOfModifiedDocumentsIndexed?: int|null,
      *     numberOfMetadataDocumentsModified?: int|null,
      *     numberOfDocumentsDeleted?: int|null,
-     *     numberOfDocumentsFailed?: int|null
+     *     numberOfDocumentsFailed?: int|null,
+     *     numberOfDocumentsSkipped?: int|null
      * } $args
      */
     public function __construct(array $args = [])

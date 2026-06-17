@@ -17,6 +17,7 @@ class MQClient extends \Aws\MQ\MQClient
     use DescribeBrokerInstanceOptions\DescribeBrokerInstanceOptionsTrait;
     use DescribeConfiguration\DescribeConfigurationTrait;
     use DescribeConfigurationRevision\DescribeConfigurationRevisionTrait;
+    use DescribeSharedResources\DescribeSharedResourcesTrait;
     use DescribeUser\DescribeUserTrait;
     use ListBrokers\ListBrokersTrait;
     use ListConfigurationRevisions\ListConfigurationRevisionsTrait;

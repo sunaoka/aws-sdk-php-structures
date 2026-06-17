@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $riskType
  * @property 'UNKNOWN'|'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|null $riskLevel
  * @property 'FALSE_POSITIVE'|'UNCONFIRMED'|'LOW'|'MEDIUM'|'HIGH'|null $confidence
+ * @property 'CONFIRMED'|'NOT_REPRODUCED'|'VALIDATION_FAILED'|'VALIDATING'|'NOT_VALIDATED'|null $validationStatus
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
@@ -34,6 +35,7 @@ class FindingSummary extends Shape
      *     riskType?: string|null,
      *     riskLevel?: 'UNKNOWN'|'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|null,
      *     confidence?: 'FALSE_POSITIVE'|'UNCONFIRMED'|'LOW'|'MEDIUM'|'HIGH'|null,
+     *     validationStatus?: 'CONFIRMED'|'NOT_REPRODUCED'|'VALIDATION_FAILED'|'VALIDATING'|'NOT_VALIDATED'|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args

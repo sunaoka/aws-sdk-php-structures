@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $knowledgeBaseId
  * @property string $name
  * @property string|null $description
- * @property 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL' $status
+ * @property 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL'|'UPDATE_UNSUCCESSFUL' $status
  * @property \Aws\Api\DateTimeResult $updatedAt
  */
 class KnowledgeBaseSummary extends Shape
@@ -18,7 +18,7 @@ class KnowledgeBaseSummary extends Shape
      *     knowledgeBaseId: string,
      *     name: string,
      *     description?: string|null,
-     *     status: 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL',
+     *     status: 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL'|'UPDATE_UNSUCCESSFUL',
      *     updatedAt: \Aws\Api\DateTimeResult
      * } $args
      */

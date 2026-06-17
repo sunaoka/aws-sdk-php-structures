@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $serviceRole
  * @property Shapes\CloudWatchLog|null $logConfig
  * @property 'AUTOMATIC'|'DISABLED'|null $codeRemediationStrategy
+ * @property 'DISABLED'|'SIMULATED'|null $validationMode
  */
 class CreateCodeReviewRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateCodeReviewRequest extends Request
      *     assets: Shapes\Assets,
      *     serviceRole?: string|null,
      *     logConfig?: Shapes\CloudWatchLog|null,
-     *     codeRemediationStrategy?: 'AUTOMATIC'|'DISABLED'|null
+     *     codeRemediationStrategy?: 'AUTOMATIC'|'DISABLED'|null,
+     *     validationMode?: 'DISABLED'|'SIMULATED'|null
      * } $args
      */
     public function __construct(array $args)

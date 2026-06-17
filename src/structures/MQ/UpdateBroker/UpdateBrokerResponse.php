@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\LdapServerMetadataOutput|null $LdapServerMetadata
  * @property Shapes\Logs|null $Logs
  * @property Shapes\WeeklyStartTime|null $MaintenanceWindowStartTime
+ * @property list<string>|null $ResourceShareArns
  * @property list<string>|null $SecurityGroups
  * @property Shapes\DataReplicationMetadataOutput|null $DataReplicationMetadata
  * @property 'NONE'|'CRDR'|null $DataReplicationMode

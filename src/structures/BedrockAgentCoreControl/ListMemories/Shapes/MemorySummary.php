@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CREATING'|'ACTIVE'|'FAILED'|'DELETING'|'UPDATING'|null $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string|null $managedByResourceArn
  */
 class MemorySummary extends Shape
 {
@@ -19,7 +20,8 @@ class MemorySummary extends Shape
      *     id?: string|null,
      *     status?: 'CREATING'|'ACTIVE'|'FAILED'|'DELETING'|'UPDATING'|null,
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     updatedAt: \Aws\Api\DateTimeResult
+     *     updatedAt: \Aws\Api\DateTimeResult,
+     *     managedByResourceArn?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $knowledgeBaseId
  * @property string $dataSourceId
  * @property string $name
- * @property 'AVAILABLE'|'DELETING'|'DELETE_UNSUCCESSFUL' $status
+ * @property 'AVAILABLE'|'DELETING'|'DELETE_UNSUCCESSFUL'|'CREATING'|'UPDATING'|'FAILED' $status
  * @property string|null $description
  * @property DataSourceConfiguration $dataSourceConfiguration
  * @property ServerSideEncryptionConfiguration|null $serverSideEncryptionConfiguration
@@ -25,7 +25,7 @@ class DataSource extends Shape
      *     knowledgeBaseId: string,
      *     dataSourceId: string,
      *     name: string,
-     *     status: 'AVAILABLE'|'DELETING'|'DELETE_UNSUCCESSFUL',
+     *     status: 'AVAILABLE'|'DELETING'|'DELETE_UNSUCCESSFUL'|'CREATING'|'UPDATING'|'FAILED',
      *     description?: string|null,
      *     dataSourceConfiguration: DataSourceConfiguration,
      *     serverSideEncryptionConfiguration?: ServerSideEncryptionConfiguration|null,

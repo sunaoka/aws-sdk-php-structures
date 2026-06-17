@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $id
  * @property list<Shapes\DataSource>|null $dataSources
  * @property list<Shapes\AppConfig>|null $appConfigs
+ * @property Shapes\IamIdentityCenterOptionsInput|null $iamIdentityCenterOptions
  */
 class UpdateApplicationRequest extends Request
 {
@@ -15,7 +16,8 @@ class UpdateApplicationRequest extends Request
      * @param array{
      *     id: string,
      *     dataSources?: list<Shapes\DataSource>|null,
-     *     appConfigs?: list<Shapes\AppConfig>|null
+     *     appConfigs?: list<Shapes\AppConfig>|null,
+     *     iamIdentityCenterOptions?: Shapes\IamIdentityCenterOptionsInput|null
      * } $args
      */
     public function __construct(array $args)

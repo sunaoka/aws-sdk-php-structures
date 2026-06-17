@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $harnessId
  * @property string|null $clientToken
+ * @property bool|null $deleteManagedMemory
  */
 class DeleteHarnessRequest extends Request
 {
     /**
      * @param array{
      *     harnessId: string,
-     *     clientToken?: string|null
+     *     clientToken?: string|null,
+     *     deleteManagedMemory?: bool|null
      * } $args
      */
     public function __construct(array $args)

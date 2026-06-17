@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\UpdatedDescription|null $description
  * @property Shapes\PolicyDefinition|null $definition
  * @property 'FAIL_ON_ANY_FINDINGS'|'IGNORE_ALL_FINDINGS'|null $validationMode
+ * @property 'ACTIVE'|'LOG_ONLY'|null $enforcementMode
  */
 class UpdatePolicyRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdatePolicyRequest extends Request
      *     policyId: string,
      *     description?: Shapes\UpdatedDescription|null,
      *     definition?: Shapes\PolicyDefinition|null,
-     *     validationMode?: 'FAIL_ON_ANY_FINDINGS'|'IGNORE_ALL_FINDINGS'|null
+     *     validationMode?: 'FAIL_ON_ANY_FINDINGS'|'IGNORE_ALL_FINDINGS'|null,
+     *     enforcementMode?: 'ACTIVE'|'LOG_ONLY'|null
      * } $args
      */
     public function __construct(array $args)

@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\Glue;
 
 class GlueClient extends \Aws\Glue\GlueClient
 {
+    use AssociateGlossaryTerms\AssociateGlossaryTermsTrait;
     use BatchCreatePartition\BatchCreatePartitionTrait;
     use BatchDeleteConnection\BatchDeleteConnectionTrait;
     use BatchDeletePartition\BatchDeletePartitionTrait;
@@ -14,6 +15,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use BatchGetCustomEntityTypes\BatchGetCustomEntityTypesTrait;
     use BatchGetDataQualityResult\BatchGetDataQualityResultTrait;
     use BatchGetDevEndpoints\BatchGetDevEndpointsTrait;
+    use BatchGetIterableForms\BatchGetIterableFormsTrait;
     use BatchGetJobs\BatchGetJobsTrait;
     use BatchGetPartition\BatchGetPartitionTrait;
     use BatchGetTableOptimizer\BatchGetTableOptimizerTrait;
@@ -37,6 +39,8 @@ class GlueClient extends \Aws\Glue\GlueClient
     use CreateDataQualityRuleset\CreateDataQualityRulesetTrait;
     use CreateDatabase\CreateDatabaseTrait;
     use CreateDevEndpoint\CreateDevEndpointTrait;
+    use CreateGlossary\CreateGlossaryTrait;
+    use CreateGlossaryTerm\CreateGlossaryTermTrait;
     use CreateGlueIdentityCenterConfiguration\CreateGlueIdentityCenterConfigurationTrait;
     use CreateIntegration\CreateIntegrationTrait;
     use CreateIntegrationResourceProperty\CreateIntegrationResourcePropertyTrait;
@@ -56,6 +60,9 @@ class GlueClient extends \Aws\Glue\GlueClient
     use CreateUsageProfile\CreateUsageProfileTrait;
     use CreateUserDefinedFunction\CreateUserDefinedFunctionTrait;
     use CreateWorkflow\CreateWorkflowTrait;
+    use DeleteAsset\DeleteAssetTrait;
+    use DeleteAssetType\DeleteAssetTypeTrait;
+    use DeleteAttachment\DeleteAttachmentTrait;
     use DeleteBlueprint\DeleteBlueprintTrait;
     use DeleteCatalog\DeleteCatalogTrait;
     use DeleteClassifier\DeleteClassifierTrait;
@@ -69,6 +76,9 @@ class GlueClient extends \Aws\Glue\GlueClient
     use DeleteDataQualityRuleset\DeleteDataQualityRulesetTrait;
     use DeleteDatabase\DeleteDatabaseTrait;
     use DeleteDevEndpoint\DeleteDevEndpointTrait;
+    use DeleteFormType\DeleteFormTypeTrait;
+    use DeleteGlossary\DeleteGlossaryTrait;
+    use DeleteGlossaryTerm\DeleteGlossaryTermTrait;
     use DeleteGlueIdentityCenterConfiguration\DeleteGlueIdentityCenterConfigurationTrait;
     use DeleteIntegration\DeleteIntegrationTrait;
     use DeleteIntegrationResourceProperty\DeleteIntegrationResourcePropertyTrait;
@@ -94,6 +104,9 @@ class GlueClient extends \Aws\Glue\GlueClient
     use DescribeEntity\DescribeEntityTrait;
     use DescribeInboundIntegrations\DescribeInboundIntegrationsTrait;
     use DescribeIntegrations\DescribeIntegrationsTrait;
+    use DisassociateGlossaryTerms\DisassociateGlossaryTermsTrait;
+    use GetAsset\GetAssetTrait;
+    use GetAssetType\GetAssetTypeTrait;
     use GetBlueprint\GetBlueprintTrait;
     use GetBlueprintRun\GetBlueprintRunTrait;
     use GetBlueprintRuns\GetBlueprintRunsTrait;
@@ -127,6 +140,9 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetDevEndpoint\GetDevEndpointTrait;
     use GetDevEndpoints\GetDevEndpointsTrait;
     use GetEntityRecords\GetEntityRecordsTrait;
+    use GetFormType\GetFormTypeTrait;
+    use GetGlossary\GetGlossaryTrait;
+    use GetGlossaryTerm\GetGlossaryTermTrait;
     use GetGlueIdentityCenterConfiguration\GetGlueIdentityCenterConfigurationTrait;
     use GetIntegrationResourceProperty\GetIntegrationResourcePropertyTrait;
     use GetIntegrationTableProperties\GetIntegrationTablePropertiesTrait;
@@ -176,6 +192,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetWorkflowRunProperties\GetWorkflowRunPropertiesTrait;
     use GetWorkflowRuns\GetWorkflowRunsTrait;
     use ImportCatalogToGlue\ImportCatalogToGlueTrait;
+    use ListAssetTypes\ListAssetTypesTrait;
     use ListBlueprints\ListBlueprintsTrait;
     use ListColumnStatisticsTaskRuns\ListColumnStatisticsTaskRunsTrait;
     use ListConnectionTypes\ListConnectionTypesTrait;
@@ -190,7 +207,11 @@ class GlueClient extends \Aws\Glue\GlueClient
     use ListDataQualityStatistics\ListDataQualityStatisticsTrait;
     use ListDevEndpoints\ListDevEndpointsTrait;
     use ListEntities\ListEntitiesTrait;
+    use ListFormTypes\ListFormTypesTrait;
+    use ListGlossaries\ListGlossariesTrait;
+    use ListGlossaryTerms\ListGlossaryTermsTrait;
     use ListIntegrationResourceProperties\ListIntegrationResourcePropertiesTrait;
+    use ListIterableForms\ListIterableFormsTrait;
     use ListJobs\ListJobsTrait;
     use ListMLTransforms\ListMLTransformsTrait;
     use ListMaterializedViewRefreshTaskRuns\ListMaterializedViewRefreshTaskRunsTrait;
@@ -204,8 +225,12 @@ class GlueClient extends \Aws\Glue\GlueClient
     use ListUsageProfiles\ListUsageProfilesTrait;
     use ListWorkflows\ListWorkflowsTrait;
     use ModifyIntegration\ModifyIntegrationTrait;
+    use PutAsset\PutAssetTrait;
+    use PutAssetType\PutAssetTypeTrait;
+    use PutAttachment\PutAttachmentTrait;
     use PutDataCatalogEncryptionSettings\PutDataCatalogEncryptionSettingsTrait;
     use PutDataQualityProfileAnnotation\PutDataQualityProfileAnnotationTrait;
+    use PutFormType\PutFormTypeTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;
     use PutSchemaVersionMetadata\PutSchemaVersionMetadataTrait;
     use PutWorkflowRunProperties\PutWorkflowRunPropertiesTrait;
@@ -216,6 +241,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use ResetJobBookmark\ResetJobBookmarkTrait;
     use ResumeWorkflowRun\ResumeWorkflowRunTrait;
     use RunStatement\RunStatementTrait;
+    use Search\SearchTrait;
     use SearchTables\SearchTablesTrait;
     use StartBlueprintRun\StartBlueprintRunTrait;
     use StartColumnStatisticsTaskRun\StartColumnStatisticsTaskRunTrait;
@@ -255,6 +281,8 @@ class GlueClient extends \Aws\Glue\GlueClient
     use UpdateDataQualityRuleset\UpdateDataQualityRulesetTrait;
     use UpdateDatabase\UpdateDatabaseTrait;
     use UpdateDevEndpoint\UpdateDevEndpointTrait;
+    use UpdateGlossary\UpdateGlossaryTrait;
+    use UpdateGlossaryTerm\UpdateGlossaryTermTrait;
     use UpdateGlueIdentityCenterConfiguration\UpdateGlueIdentityCenterConfigurationTrait;
     use UpdateIntegrationResourceProperty\UpdateIntegrationResourcePropertyTrait;
     use UpdateIntegrationTableProperties\UpdateIntegrationTablePropertiesTrait;

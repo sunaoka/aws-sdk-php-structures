@@ -6,11 +6,19 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property GitHubRepositoryResource|null $githubRepository
+ * @property GitLabRepositoryResource|null $gitlabRepository
+ * @property BitbucketRepositoryResource|null $bitbucketRepository
+ * @property ConfluenceDocumentResource|null $confluenceDocument
  */
 class IntegratedResource extends Shape
 {
     /**
-     * @param array{githubRepository?: GitHubRepositoryResource|null} $args
+     * @param array{
+     *     githubRepository?: GitHubRepositoryResource|null,
+     *     gitlabRepository?: GitLabRepositoryResource|null,
+     *     bitbucketRepository?: BitbucketRepositoryResource|null,
+     *     confluenceDocument?: ConfluenceDocumentResource|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

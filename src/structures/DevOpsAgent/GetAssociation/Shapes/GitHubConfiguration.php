@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $owner
  * @property 'organization'|'user' $ownerType
  * @property string|null $instanceIdentifier
+ * @property string|null $runtimeRoleArn
  */
 class GitHubConfiguration extends Shape
 {
@@ -19,7 +20,8 @@ class GitHubConfiguration extends Shape
      *     repoId: string,
      *     owner: string,
      *     ownerType: 'organization'|'user',
-     *     instanceIdentifier?: string|null
+     *     instanceIdentifier?: string|null,
+     *     runtimeRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

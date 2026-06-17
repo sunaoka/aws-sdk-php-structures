@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RegisteredGrafanaServerDetails|null $mcpservergrafana
  * @property RegisteredPagerDutyDetails|null $pagerduty
  * @property RegisteredMCPServerSigV4Details|null $mcpserversigv4
+ * @property RegisteredRemoteAgentDetails|null $remoteagent
+ * @property RegisteredRemoteAgentSigV4Details|null $remoteagentsigv4
  */
 class AdditionalServiceDetails extends Shape
 {
@@ -35,7 +37,9 @@ class AdditionalServiceDetails extends Shape
      *     azureidentity?: RegisteredAzureIdentityDetails|null,
      *     mcpservergrafana?: RegisteredGrafanaServerDetails|null,
      *     pagerduty?: RegisteredPagerDutyDetails|null,
-     *     mcpserversigv4?: RegisteredMCPServerSigV4Details|null
+     *     mcpserversigv4?: RegisteredMCPServerSigV4Details|null,
+     *     remoteagent?: RegisteredRemoteAgentDetails|null,
+     *     remoteagentsigv4?: RegisteredRemoteAgentSigV4Details|null
      * } $args
      */
     public function __construct(array $args = [])

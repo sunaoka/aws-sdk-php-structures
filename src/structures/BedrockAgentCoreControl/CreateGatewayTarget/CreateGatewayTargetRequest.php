@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $gatewayIdentifier
- * @property string $name
+ * @property string|null $name
  * @property string|null $description
  * @property string|null $clientToken
  * @property Shapes\TargetConfiguration $targetConfiguration
@@ -19,7 +19,7 @@ class CreateGatewayTargetRequest extends Request
     /**
      * @param array{
      *     gatewayIdentifier: string,
-     *     name: string,
+     *     name?: string|null,
      *     description?: string|null,
      *     clientToken?: string|null,
      *     targetConfiguration: Shapes\TargetConfiguration,

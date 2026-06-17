@@ -20,11 +20,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $riskScore
  * @property string|null $reasoning
  * @property 'FALSE_POSITIVE'|'UNCONFIRMED'|'LOW'|'MEDIUM'|'HIGH'|null $confidence
+ * @property 'CONFIRMED'|'NOT_REPRODUCED'|'VALIDATION_FAILED'|'VALIDATING'|'NOT_VALIDATED'|null $validationStatus
  * @property string|null $attackScript
  * @property CodeRemediationTask|null $codeRemediationTask
  * @property string|null $lastUpdatedBy
+ * @property string|null $customerNote
  * @property list<CodeLocation>|null $codeLocations
  * @property VerificationScript|null $verificationScript
+ * @property string|null $alignmentRationale
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
@@ -47,11 +50,14 @@ class Finding extends Shape
      *     riskScore?: string|null,
      *     reasoning?: string|null,
      *     confidence?: 'FALSE_POSITIVE'|'UNCONFIRMED'|'LOW'|'MEDIUM'|'HIGH'|null,
+     *     validationStatus?: 'CONFIRMED'|'NOT_REPRODUCED'|'VALIDATION_FAILED'|'VALIDATING'|'NOT_VALIDATED'|null,
      *     attackScript?: string|null,
      *     codeRemediationTask?: CodeRemediationTask|null,
      *     lastUpdatedBy?: string|null,
+     *     customerNote?: string|null,
      *     codeLocations?: list<CodeLocation>|null,
      *     verificationScript?: VerificationScript|null,
+     *     alignmentRationale?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args

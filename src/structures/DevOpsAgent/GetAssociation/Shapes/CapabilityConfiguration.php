@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\DevOpsAgent\GetAssociation\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property bool|null $enabled
+ */
+class CapabilityConfiguration extends Shape
+{
+    /**
+     * @param array{enabled?: bool|null} $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

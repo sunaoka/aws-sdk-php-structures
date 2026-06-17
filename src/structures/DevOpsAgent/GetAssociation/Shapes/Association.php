@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $associationId
  * @property string $serviceId
  * @property ServiceConfiguration $configuration
+ * @property array<'RELEASE_READINESS_REVIEW'|'RELEASE_READINESS_REVIEW_AUTOMATED_TESTING', CapabilityConfiguration>|null $capabilities
  */
 class Association extends Shape
 {
@@ -23,7 +24,8 @@ class Association extends Shape
      *     status?: 'valid'|'invalid'|'pending-confirmation'|null,
      *     associationId: string,
      *     serviceId: string,
-     *     configuration: ServiceConfiguration
+     *     configuration: ServiceConfiguration,
+     *     capabilities?: array<'RELEASE_READINESS_REVIEW'|'RELEASE_READINESS_REVIEW_AUTOMATED_TESTING', CapabilityConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

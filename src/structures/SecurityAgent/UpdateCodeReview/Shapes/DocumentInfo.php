@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $s3Location
  * @property string|null $artifactId
+ * @property IntegratedDocument|null $integratedDocument
  */
 class DocumentInfo extends Shape
 {
     /**
      * @param array{
      *     s3Location?: string|null,
-     *     artifactId?: string|null
+     *     artifactId?: string|null,
+     *     integratedDocument?: IntegratedDocument|null
      * } $args
      */
     public function __construct(array $args = [])

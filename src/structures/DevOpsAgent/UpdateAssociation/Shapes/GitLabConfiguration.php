@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $projectId
  * @property string $projectPath
  * @property string|null $instanceIdentifier
+ * @property string|null $runtimeRoleArn
  */
 class GitLabConfiguration extends Shape
 {
@@ -15,7 +16,8 @@ class GitLabConfiguration extends Shape
      * @param array{
      *     projectId: string,
      *     projectPath: string,
-     *     instanceIdentifier?: string|null
+     *     instanceIdentifier?: string|null,
+     *     runtimeRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

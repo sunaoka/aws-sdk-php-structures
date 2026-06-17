@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property string $policyArn
  * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED' $status
+ * @property 'ACTIVE'|'LOG_ONLY'|null $enforcementMode
  * @property PolicyDefinition $definition
  * @property string|null $description
  * @property list<string> $statusReasons
@@ -27,6 +28,7 @@ class Policy extends Shape
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     policyArn: string,
      *     status: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED',
+     *     enforcementMode?: 'ACTIVE'|'LOG_ONLY'|null,
      *     definition: PolicyDefinition,
      *     description?: string|null,
      *     statusReasons: list<string>

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $agentSpaceId
  * @property string|null $integrationId
- * @property 'CODE_REPOSITORY'|null $resourceType
+ * @property 'CODE_REPOSITORY'|'DOCUMENT'|null $resourceType
  * @property string|null $nextToken
  * @property int|null $maxResults
  */
@@ -17,7 +17,7 @@ class ListIntegratedResourcesRequest extends Request
      * @param array{
      *     agentSpaceId: string,
      *     integrationId?: string|null,
-     *     resourceType?: 'CODE_REPOSITORY'|null,
+     *     resourceType?: 'CODE_REPOSITORY'|'DOCUMENT'|null,
      *     nextToken?: string|null,
      *     maxResults?: int|null
      * } $args

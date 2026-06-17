@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property string $policyArn
  * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED' $status
+ * @property 'ACTIVE'|'LOG_ONLY'|null $enforcementMode
  * @property Shapes\PolicyDefinition $definition
  * @property string|null $description
  * @property list<string> $statusReasons

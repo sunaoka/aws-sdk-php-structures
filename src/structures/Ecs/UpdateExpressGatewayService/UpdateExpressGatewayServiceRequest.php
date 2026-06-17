@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $cpu
  * @property string|null $memory
  * @property Shapes\ExpressGatewayScalingTarget|null $scalingTarget
+ * @property string|null $taskDefinitionArn
  */
 class UpdateExpressGatewayServiceRequest extends Request
 {
@@ -27,7 +28,8 @@ class UpdateExpressGatewayServiceRequest extends Request
      *     networkConfiguration?: Shapes\ExpressGatewayServiceNetworkConfiguration|null,
      *     cpu?: string|null,
      *     memory?: string|null,
-     *     scalingTarget?: Shapes\ExpressGatewayScalingTarget|null
+     *     scalingTarget?: Shapes\ExpressGatewayScalingTarget|null,
+     *     taskDefinitionArn?: string|null
      * } $args
      */
     public function __construct(array $args)

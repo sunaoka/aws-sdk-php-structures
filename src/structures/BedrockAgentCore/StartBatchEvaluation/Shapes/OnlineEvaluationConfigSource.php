@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $onlineEvaluationConfigArn
- * @property SessionFilterConfig|null $sessionFilterConfig
+ * @property SessionFilterConfig|null $timeRange
  */
 class OnlineEvaluationConfigSource extends Shape
 {
     /**
      * @param array{
      *     onlineEvaluationConfigArn: string,
-     *     sessionFilterConfig?: SessionFilterConfig|null
+     *     timeRange?: SessionFilterConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $nextToken
  * @property Shapes\KnowledgeBaseRetrievalConfiguration|null $retrievalConfiguration
  * @property Shapes\KnowledgeBaseQuery $retrievalQuery
+ * @property Shapes\UserContext|null $userContext
  */
 class RetrieveRequest extends Request
 {
@@ -19,7 +20,8 @@ class RetrieveRequest extends Request
      *     knowledgeBaseId: string,
      *     nextToken?: string|null,
      *     retrievalConfiguration?: Shapes\KnowledgeBaseRetrievalConfiguration|null,
-     *     retrievalQuery: Shapes\KnowledgeBaseQuery
+     *     retrievalQuery: Shapes\KnowledgeBaseQuery,
+     *     userContext?: Shapes\UserContext|null
      * } $args
      */
     public function __construct(array $args)

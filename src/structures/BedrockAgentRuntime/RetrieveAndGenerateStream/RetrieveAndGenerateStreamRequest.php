@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RetrieveAndGenerateConfiguration|null $retrieveAndGenerateConfiguration
  * @property Shapes\RetrieveAndGenerateSessionConfiguration|null $sessionConfiguration
  * @property string|null $sessionId
+ * @property Shapes\UserContext|null $userContext
  */
 class RetrieveAndGenerateStreamRequest extends Request
 {
@@ -17,7 +18,8 @@ class RetrieveAndGenerateStreamRequest extends Request
      *     input: Shapes\RetrieveAndGenerateInput,
      *     retrieveAndGenerateConfiguration?: Shapes\RetrieveAndGenerateConfiguration|null,
      *     sessionConfiguration?: Shapes\RetrieveAndGenerateSessionConfiguration|null,
-     *     sessionId?: string|null
+     *     sessionId?: string|null,
+     *     userContext?: Shapes\UserContext|null
      * } $args
      */
     public function __construct(array $args)

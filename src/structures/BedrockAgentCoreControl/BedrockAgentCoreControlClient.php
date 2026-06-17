@@ -19,6 +19,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use CreateGatewayRule\CreateGatewayRuleTrait;
     use CreateGatewayTarget\CreateGatewayTargetTrait;
     use CreateHarness\CreateHarnessTrait;
+    use CreateHarnessEndpoint\CreateHarnessEndpointTrait;
     use CreateMemory\CreateMemoryTrait;
     use CreateOauth2CredentialProvider\CreateOauth2CredentialProviderTrait;
     use CreateOnlineEvaluationConfig\CreateOnlineEvaluationConfigTrait;
@@ -44,6 +45,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use DeleteGatewayRule\DeleteGatewayRuleTrait;
     use DeleteGatewayTarget\DeleteGatewayTargetTrait;
     use DeleteHarness\DeleteHarnessTrait;
+    use DeleteHarnessEndpoint\DeleteHarnessEndpointTrait;
     use DeleteMemory\DeleteMemoryTrait;
     use DeleteOauth2CredentialProvider\DeleteOauth2CredentialProviderTrait;
     use DeleteOnlineEvaluationConfig\DeleteOnlineEvaluationConfigTrait;
@@ -70,6 +72,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use GetGatewayRule\GetGatewayRuleTrait;
     use GetGatewayTarget\GetGatewayTargetTrait;
     use GetHarness\GetHarnessTrait;
+    use GetHarnessEndpoint\GetHarnessEndpointTrait;
     use GetMemory\GetMemoryTrait;
     use GetOauth2CredentialProvider\GetOauth2CredentialProviderTrait;
     use GetOnlineEvaluationConfig\GetOnlineEvaluationConfigTrait;
@@ -103,6 +106,8 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use ListGatewayRules\ListGatewayRulesTrait;
     use ListGatewayTargets\ListGatewayTargetsTrait;
     use ListGateways\ListGatewaysTrait;
+    use ListHarnessEndpoints\ListHarnessEndpointsTrait;
+    use ListHarnessVersions\ListHarnessVersionsTrait;
     use ListHarnesses\ListHarnessesTrait;
     use ListMemories\ListMemoriesTrait;
     use ListOauth2CredentialProviders\ListOauth2CredentialProvidersTrait;
@@ -139,6 +144,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use UpdateGatewayRule\UpdateGatewayRuleTrait;
     use UpdateGatewayTarget\UpdateGatewayTargetTrait;
     use UpdateHarness\UpdateHarnessTrait;
+    use UpdateHarnessEndpoint\UpdateHarnessEndpointTrait;
     use UpdateMemory\UpdateMemoryTrait;
     use UpdateOauth2CredentialProvider\UpdateOauth2CredentialProviderTrait;
     use UpdateOnlineEvaluationConfig\UpdateOnlineEvaluationConfigTrait;

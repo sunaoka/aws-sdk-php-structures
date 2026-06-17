@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\PolicyDefinition $definition
  * @property string|null $description
  * @property 'FAIL_ON_ANY_FINDINGS'|'IGNORE_ALL_FINDINGS'|null $validationMode
+ * @property 'ACTIVE'|'LOG_ONLY'|null $enforcementMode
  * @property string $policyEngineId
  * @property string|null $clientToken
  */
@@ -20,6 +21,7 @@ class CreatePolicyRequest extends Request
      *     definition: Shapes\PolicyDefinition,
      *     description?: string|null,
      *     validationMode?: 'FAIL_ON_ANY_FINDINGS'|'IGNORE_ALL_FINDINGS'|null,
+     *     enforcementMode?: 'ACTIVE'|'LOG_ONLY'|null,
      *     policyEngineId: string,
      *     clientToken?: string|null
      * } $args

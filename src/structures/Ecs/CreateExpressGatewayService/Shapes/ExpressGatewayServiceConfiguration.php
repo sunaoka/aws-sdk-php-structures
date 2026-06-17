@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $serviceRevisionArn
  * @property string|null $executionRoleArn
  * @property string|null $taskRoleArn
+ * @property string|null $taskDefinitionArn
  * @property string|null $cpu
  * @property string|null $memory
  * @property ExpressGatewayServiceNetworkConfiguration|null $networkConfiguration
@@ -24,6 +25,7 @@ class ExpressGatewayServiceConfiguration extends Shape
      *     serviceRevisionArn?: string|null,
      *     executionRoleArn?: string|null,
      *     taskRoleArn?: string|null,
+     *     taskDefinitionArn?: string|null,
      *     cpu?: string|null,
      *     memory?: string|null,
      *     networkConfiguration?: ExpressGatewayServiceNetworkConfiguration|null,

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $agentSpaceId
  * @property int|null $maxResults
  * @property string|null $codeReviewJobId
- * @property 'PREFLIGHT'|'STATIC_ANALYSIS'|'PENTEST'|'FINALIZING'|null $stepName
+ * @property 'PREFLIGHT'|'STATIC_ANALYSIS'|'PENTEST'|'FINALIZING'|'VALIDATION'|null $stepName
  * @property string|null $categoryName
  * @property string|null $nextToken
  */
@@ -19,7 +19,7 @@ class ListCodeReviewJobTasksRequest extends Request
      *     agentSpaceId: string,
      *     maxResults?: int|null,
      *     codeReviewJobId?: string|null,
-     *     stepName?: 'PREFLIGHT'|'STATIC_ANALYSIS'|'PENTEST'|'FINALIZING'|null,
+     *     stepName?: 'PREFLIGHT'|'STATIC_ANALYSIS'|'PENTEST'|'FINALIZING'|'VALIDATION'|null,
      *     categoryName?: string|null,
      *     nextToken?: string|null
      * } $args

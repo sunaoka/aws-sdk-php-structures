@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\LdapServerMetadataInput|null $LdapServerMetadata
  * @property Shapes\Logs|null $Logs
  * @property Shapes\WeeklyStartTime|null $MaintenanceWindowStartTime
+ * @property list<string>|null $ResourceShareArns
  * @property list<string>|null $SecurityGroups
  * @property 'NONE'|'CRDR'|null $DataReplicationMode
  */
@@ -30,6 +31,7 @@ class UpdateBrokerRequest extends Request
      *     LdapServerMetadata?: Shapes\LdapServerMetadataInput|null,
      *     Logs?: Shapes\Logs|null,
      *     MaintenanceWindowStartTime?: Shapes\WeeklyStartTime|null,
+     *     ResourceShareArns?: list<string>|null,
      *     SecurityGroups?: list<string>|null,
      *     DataReplicationMode?: 'NONE'|'CRDR'|null
      * } $args

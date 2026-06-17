@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $knowledgeBaseId
  * @property string $dataSourceId
- * @property 'AVAILABLE'|'DELETING'|'DELETE_UNSUCCESSFUL' $status
+ * @property 'AVAILABLE'|'DELETING'|'DELETE_UNSUCCESSFUL'|'CREATING'|'UPDATING'|'FAILED' $status
  */
 class DeleteDataSourceResponse extends Response
 {

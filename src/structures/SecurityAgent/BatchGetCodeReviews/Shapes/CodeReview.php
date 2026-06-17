@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $serviceRole
  * @property CloudWatchLog|null $logConfig
  * @property 'AUTOMATIC'|'DISABLED'|null $codeRemediationStrategy
+ * @property 'DISABLED'|'SIMULATED'|null $validationMode
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
@@ -26,6 +27,7 @@ class CodeReview extends Shape
      *     serviceRole?: string|null,
      *     logConfig?: CloudWatchLog|null,
      *     codeRemediationStrategy?: 'AUTOMATIC'|'DISABLED'|null,
+     *     validationMode?: 'DISABLED'|'SIMULATED'|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args

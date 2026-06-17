@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $roleArn
  * @property KnowledgeBaseConfiguration $knowledgeBaseConfiguration
  * @property StorageConfiguration|null $storageConfiguration
- * @property 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL' $status
+ * @property 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL'|'UPDATE_UNSUCCESSFUL' $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property list<string>|null $failureReasons
@@ -28,7 +28,7 @@ class KnowledgeBase extends Shape
      *     roleArn: string,
      *     knowledgeBaseConfiguration: KnowledgeBaseConfiguration,
      *     storageConfiguration?: StorageConfiguration|null,
-     *     status: 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL',
+     *     status: 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL'|'UPDATE_UNSUCCESSFUL',
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     failureReasons?: list<string>|null
