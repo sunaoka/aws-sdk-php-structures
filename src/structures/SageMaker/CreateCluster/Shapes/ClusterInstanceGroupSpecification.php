@@ -19,6 +19,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VpcConfig|null $OverrideVpcConfig
  * @property ScheduledUpdateConfig|null $ScheduledUpdateConfig
  * @property string|null $ImageId
+ * @property ClusterAutoPatchConfig|null $AutoPatchConfig
+ * @property string|null $ImageReleaseVersion
  * @property ClusterKubernetesConfig|null $KubernetesConfig
  * @property ClusterSlurmConfig|null $SlurmConfig
  * @property ClusterCapacityRequirements|null $CapacityRequirements
@@ -42,6 +44,8 @@ class ClusterInstanceGroupSpecification extends Shape
      *     OverrideVpcConfig?: VpcConfig|null,
      *     ScheduledUpdateConfig?: ScheduledUpdateConfig|null,
      *     ImageId?: string|null,
+     *     AutoPatchConfig?: ClusterAutoPatchConfig|null,
+     *     ImageReleaseVersion?: string|null,
      *     KubernetesConfig?: ClusterKubernetesConfig|null,
      *     SlurmConfig?: ClusterSlurmConfig|null,
      *     CapacityRequirements?: ClusterCapacityRequirements|null,

@@ -22,9 +22,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TrainingPlanStatus
  * @property VpcConfig|null $OverrideVpcConfig
  * @property ScheduledUpdateConfig|null $ScheduledUpdateConfig
+ * @property ClusterAutoPatchConfigDetails|null $AutoPatchConfig
  * @property string|null $CurrentImageId
  * @property string|null $DesiredImageId
- * @property 'UpToDate'|'UpdateAvailable'|null $ImageVersionStatus
+ * @property string|null $CurrentImageReleaseVersion
+ * @property string|null $DesiredImageReleaseVersion
+ * @property 'UpToDate'|'UpdateAvailable'|'SecurityUpdateRequired'|'EndOfLife'|null $ImageVersionStatus
  * @property array<'Scaling', int<1, max>>|null $ActiveOperations
  * @property ClusterKubernetesConfigDetails|null $KubernetesConfig
  * @property ClusterCapacityRequirements|null $CapacityRequirements
@@ -55,9 +58,12 @@ class ClusterInstanceGroupDetails extends Shape
      *     TrainingPlanStatus?: string|null,
      *     OverrideVpcConfig?: VpcConfig|null,
      *     ScheduledUpdateConfig?: ScheduledUpdateConfig|null,
+     *     AutoPatchConfig?: ClusterAutoPatchConfigDetails|null,
      *     CurrentImageId?: string|null,
      *     DesiredImageId?: string|null,
-     *     ImageVersionStatus?: 'UpToDate'|'UpdateAvailable'|null,
+     *     CurrentImageReleaseVersion?: string|null,
+     *     DesiredImageReleaseVersion?: string|null,
+     *     ImageVersionStatus?: 'UpToDate'|'UpdateAvailable'|'SecurityUpdateRequired'|'EndOfLife'|null,
      *     ActiveOperations?: array<'Scaling', int<1, max>>|null,
      *     KubernetesConfig?: ClusterKubernetesConfigDetails|null,
      *     CapacityRequirements?: ClusterCapacityRequirements|null,

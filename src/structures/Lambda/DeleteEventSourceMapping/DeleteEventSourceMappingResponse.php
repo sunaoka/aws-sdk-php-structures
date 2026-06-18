@@ -13,6 +13,11 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<1, 10>|null $ParallelizationFactor
  * @property string|null $EventSourceArn
  * @property Shapes\FilterCriteria|null $FilterCriteria
+ * @property Shapes\FilterCriteriaError|null $FilterCriteriaError
+ * @property string|null $KMSKeyArn
+ * @property Shapes\EventSourceMappingMetricsConfig|null $MetricsConfig
+ * @property Shapes\EventSourceMappingLoggingConfig|null $LoggingConfig
+ * @property Shapes\ScalingConfig|null $ScalingConfig
  * @property string|null $FunctionArn
  * @property \Aws\Api\DateTimeResult|null $LastModified
  * @property string|null $LastProcessingResult
@@ -30,13 +35,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<'ReportBatchItemFailures'>|null $FunctionResponseTypes
  * @property Shapes\AmazonManagedKafkaEventSourceConfig|null $AmazonManagedKafkaEventSourceConfig
  * @property Shapes\SelfManagedKafkaEventSourceConfig|null $SelfManagedKafkaEventSourceConfig
- * @property Shapes\ScalingConfig|null $ScalingConfig
  * @property Shapes\DocumentDBEventSourceConfig|null $DocumentDBEventSourceConfig
- * @property string|null $KMSKeyArn
- * @property Shapes\FilterCriteriaError|null $FilterCriteriaError
  * @property string|null $EventSourceMappingArn
- * @property Shapes\EventSourceMappingMetricsConfig|null $MetricsConfig
- * @property Shapes\EventSourceMappingLoggingConfig|null $LoggingConfig
  * @property Shapes\ProvisionedPollerConfig|null $ProvisionedPollerConfig
  */
 class DeleteEventSourceMappingResponse extends Response

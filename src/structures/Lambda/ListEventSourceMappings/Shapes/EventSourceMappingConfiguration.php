@@ -13,6 +13,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, 10>|null $ParallelizationFactor
  * @property string|null $EventSourceArn
  * @property FilterCriteria|null $FilterCriteria
+ * @property FilterCriteriaError|null $FilterCriteriaError
+ * @property string|null $KMSKeyArn
+ * @property EventSourceMappingMetricsConfig|null $MetricsConfig
+ * @property EventSourceMappingLoggingConfig|null $LoggingConfig
+ * @property ScalingConfig|null $ScalingConfig
  * @property string|null $FunctionArn
  * @property \Aws\Api\DateTimeResult|null $LastModified
  * @property string|null $LastProcessingResult
@@ -30,13 +35,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'ReportBatchItemFailures'>|null $FunctionResponseTypes
  * @property AmazonManagedKafkaEventSourceConfig|null $AmazonManagedKafkaEventSourceConfig
  * @property SelfManagedKafkaEventSourceConfig|null $SelfManagedKafkaEventSourceConfig
- * @property ScalingConfig|null $ScalingConfig
  * @property DocumentDBEventSourceConfig|null $DocumentDBEventSourceConfig
- * @property string|null $KMSKeyArn
- * @property FilterCriteriaError|null $FilterCriteriaError
  * @property string|null $EventSourceMappingArn
- * @property EventSourceMappingMetricsConfig|null $MetricsConfig
- * @property EventSourceMappingLoggingConfig|null $LoggingConfig
  * @property ProvisionedPollerConfig|null $ProvisionedPollerConfig
  */
 class EventSourceMappingConfiguration extends Shape
@@ -51,6 +51,11 @@ class EventSourceMappingConfiguration extends Shape
      *     ParallelizationFactor?: int<1, 10>|null,
      *     EventSourceArn?: string|null,
      *     FilterCriteria?: FilterCriteria|null,
+     *     FilterCriteriaError?: FilterCriteriaError|null,
+     *     KMSKeyArn?: string|null,
+     *     MetricsConfig?: EventSourceMappingMetricsConfig|null,
+     *     LoggingConfig?: EventSourceMappingLoggingConfig|null,
+     *     ScalingConfig?: ScalingConfig|null,
      *     FunctionArn?: string|null,
      *     LastModified?: \Aws\Api\DateTimeResult|null,
      *     LastProcessingResult?: string|null,
@@ -68,13 +73,8 @@ class EventSourceMappingConfiguration extends Shape
      *     FunctionResponseTypes?: list<'ReportBatchItemFailures'>|null,
      *     AmazonManagedKafkaEventSourceConfig?: AmazonManagedKafkaEventSourceConfig|null,
      *     SelfManagedKafkaEventSourceConfig?: SelfManagedKafkaEventSourceConfig|null,
-     *     ScalingConfig?: ScalingConfig|null,
      *     DocumentDBEventSourceConfig?: DocumentDBEventSourceConfig|null,
-     *     KMSKeyArn?: string|null,
-     *     FilterCriteriaError?: FilterCriteriaError|null,
      *     EventSourceMappingArn?: string|null,
-     *     MetricsConfig?: EventSourceMappingMetricsConfig|null,
-     *     LoggingConfig?: EventSourceMappingLoggingConfig|null,
      *     ProvisionedPollerConfig?: ProvisionedPollerConfig|null
      * } $args
      */

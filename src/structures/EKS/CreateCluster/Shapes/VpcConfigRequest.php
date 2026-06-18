@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $endpointPublicAccess
  * @property bool|null $endpointPrivateAccess
  * @property list<string>|null $publicAccessCidrs
+ * @property 'AWS_MANAGED'|'CUSTOMER_ROUTED'|'CUSTOMER_ISOLATED'|null $controlPlaneEgressMode
  */
 class VpcConfigRequest extends Shape
 {
@@ -19,7 +20,8 @@ class VpcConfigRequest extends Shape
      *     securityGroupIds?: list<string>|null,
      *     endpointPublicAccess?: bool|null,
      *     endpointPrivateAccess?: bool|null,
-     *     publicAccessCidrs?: list<string>|null
+     *     publicAccessCidrs?: list<string>|null,
+     *     controlPlaneEgressMode?: 'AWS_MANAGED'|'CUSTOMER_ROUTED'|'CUSTOMER_ISOLATED'|null
      * } $args
      */
     public function __construct(array $args = [])

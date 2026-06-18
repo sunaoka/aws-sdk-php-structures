@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $desiredvCpus
  * @property list<string>|null $subnets
  * @property list<string>|null $securityGroupIds
- * @property 'BEST_FIT_PROGRESSIVE'|'SPOT_CAPACITY_OPTIMIZED'|'SPOT_PRICE_CAPACITY_OPTIMIZED'|null $allocationStrategy
+ * @property 'BEST_FIT_PROGRESSIVE'|'BEST_FIT_PROGRESSIVE_ORDERED'|'SPOT_CAPACITY_OPTIMIZED'|'SPOT_PRICE_CAPACITY_OPTIMIZED'|'SPOT_CAPACITY_OPTIMIZED_PRIORITIZED'|null $allocationStrategy
  * @property list<string>|null $instanceTypes
  * @property string|null $ec2KeyPair
  * @property string|null $instanceRole
@@ -33,7 +33,7 @@ class ComputeResourceUpdate extends Shape
      *     desiredvCpus?: int|null,
      *     subnets?: list<string>|null,
      *     securityGroupIds?: list<string>|null,
-     *     allocationStrategy?: 'BEST_FIT_PROGRESSIVE'|'SPOT_CAPACITY_OPTIMIZED'|'SPOT_PRICE_CAPACITY_OPTIMIZED'|null,
+     *     allocationStrategy?: 'BEST_FIT_PROGRESSIVE'|'BEST_FIT_PROGRESSIVE_ORDERED'|'SPOT_CAPACITY_OPTIMIZED'|'SPOT_PRICE_CAPACITY_OPTIMIZED'|'SPOT_CAPACITY_OPTIMIZED_PRIORITIZED'|null,
      *     instanceTypes?: list<string>|null,
      *     ec2KeyPair?: string|null,
      *     instanceRole?: string|null,

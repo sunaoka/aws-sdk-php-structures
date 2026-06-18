@@ -12,6 +12,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ClientToken
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\IdentityProviderConfiguration|null $IdentityProviderConfiguration
+ * @property Shapes\AnalyticsConfiguration|null $AnalyticsConfiguration
+ * @property Shapes\NlpConfiguration|null $NlpConfiguration
+ * @property Shapes\ProfileConfiguration|null $ProfileConfiguration
  */
 class CreateFHIRDatastoreRequest extends Request
 {
@@ -23,7 +26,10 @@ class CreateFHIRDatastoreRequest extends Request
      *     PreloadDataConfig?: Shapes\PreloadDataConfig|null,
      *     ClientToken?: string|null,
      *     Tags?: list<Shapes\Tag>|null,
-     *     IdentityProviderConfiguration?: Shapes\IdentityProviderConfiguration|null
+     *     IdentityProviderConfiguration?: Shapes\IdentityProviderConfiguration|null,
+     *     AnalyticsConfiguration?: Shapes\AnalyticsConfiguration|null,
+     *     NlpConfiguration?: Shapes\NlpConfiguration|null,
+     *     ProfileConfiguration?: Shapes\ProfileConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<BrowserConfig>|null $BrowserConfigs
  * @property list<EngineConfig>|null $EngineConfigs
  * @property list<VisualReferenceOutput>|null $VisualReferences
+ * @property MultiLocationConfig|null $MultiLocationConfig
  * @property array<string, string>|null $Tags
  * @property ArtifactConfigOutput|null $ArtifactConfig
  * @property DryRunConfigOutput|null $DryRunConfig
@@ -51,6 +52,7 @@ class Canary extends Shape
      *     BrowserConfigs?: list<BrowserConfig>|null,
      *     EngineConfigs?: list<EngineConfig>|null,
      *     VisualReferences?: list<VisualReferenceOutput>|null,
+     *     MultiLocationConfig?: MultiLocationConfig|null,
      *     Tags?: array<string, string>|null,
      *     ArtifactConfig?: ArtifactConfigOutput|null,
      *     DryRunConfig?: DryRunConfigOutput|null

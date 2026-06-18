@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<4, 1024000>|null $MemoryHardLimitMebibytes
  * @property ContainerPortConfiguration|null $PortConfiguration
  * @property double|null $Vcpu
+ * @property LinuxCapabilities|null $LinuxCapabilities
  */
 class SupportContainerDefinitionInput extends Shape
 {
@@ -29,7 +30,8 @@ class SupportContainerDefinitionInput extends Shape
      *     ImageUri: string,
      *     MemoryHardLimitMebibytes?: int<4, 1024000>|null,
      *     PortConfiguration?: ContainerPortConfiguration|null,
-     *     Vcpu?: double|null
+     *     Vcpu?: double|null,
+     *     LinuxCapabilities?: LinuxCapabilities|null
      * } $args
      */
     public function __construct(array $args)

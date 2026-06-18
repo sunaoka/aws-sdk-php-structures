@@ -11,12 +11,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $S3Key
  * @property string|null $S3ObjectVersion
  * @property string|null $ImageUri
+ * @property list<'x86_64'|'arm64'>|null $Architectures
  * @property bool|null $Publish
+ * @property 'LATEST_PUBLISHED'|null $PublishTo
  * @property bool|null $DryRun
  * @property string|null $RevisionId
- * @property list<'x86_64'|'arm64'>|null $Architectures
  * @property string|null $SourceKMSKeyArn
- * @property 'LATEST_PUBLISHED'|null $PublishTo
  */
 class UpdateFunctionCodeRequest extends Request
 {
@@ -28,12 +28,12 @@ class UpdateFunctionCodeRequest extends Request
      *     S3Key?: string|null,
      *     S3ObjectVersion?: string|null,
      *     ImageUri?: string|null,
+     *     Architectures?: list<'x86_64'|'arm64'>|null,
      *     Publish?: bool|null,
+     *     PublishTo?: 'LATEST_PUBLISHED'|null,
      *     DryRun?: bool|null,
      *     RevisionId?: string|null,
-     *     Architectures?: list<'x86_64'|'arm64'>|null,
-     *     SourceKMSKeyArn?: string|null,
-     *     PublishTo?: 'LATEST_PUBLISHED'|null
+     *     SourceKMSKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

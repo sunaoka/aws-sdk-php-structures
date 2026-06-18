@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetEBSVolumeRecommendations\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'VolumeReadOpsPerSecond'|'VolumeWriteOpsPerSecond'|'VolumeReadBytesPerSecond'|'VolumeWriteBytesPerSecond'|null $name
+ * @property 'VolumeReadOpsPerSecond'|'VolumeWriteOpsPerSecond'|'VolumeReadBytesPerSecond'|'VolumeWriteBytesPerSecond'|'VolumeIOPSExceeded'|'VolumeThroughputExceeded'|null $name
  * @property 'Maximum'|'Average'|null $statistic
  * @property double|null $value
  */
@@ -13,7 +13,7 @@ class EBSUtilizationMetric extends Shape
 {
     /**
      * @param array{
-     *     name?: 'VolumeReadOpsPerSecond'|'VolumeWriteOpsPerSecond'|'VolumeReadBytesPerSecond'|'VolumeWriteBytesPerSecond'|null,
+     *     name?: 'VolumeReadOpsPerSecond'|'VolumeWriteOpsPerSecond'|'VolumeReadBytesPerSecond'|'VolumeWriteBytesPerSecond'|'VolumeIOPSExceeded'|'VolumeThroughputExceeded'|null,
      *     statistic?: 'Maximum'|'Average'|null,
      *     value?: double|null
      * } $args

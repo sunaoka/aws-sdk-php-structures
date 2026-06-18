@@ -21,6 +21,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DryRunId
  * @property list<Shapes\VisualReferenceInput>|null $VisualReferences
  * @property list<Shapes\BrowserConfig>|null $BrowserConfigs
+ * @property list<Shapes\AddReplicaLocationInput>|null $AddReplicaLocations
+ * @property list<string>|null $RemoveReplicaLocations
  */
 class UpdateCanaryRequest extends Request
 {
@@ -41,7 +43,9 @@ class UpdateCanaryRequest extends Request
      *     ProvisionedResourceCleanup?: 'AUTOMATIC'|'OFF'|null,
      *     DryRunId?: string|null,
      *     VisualReferences?: list<Shapes\VisualReferenceInput>|null,
-     *     BrowserConfigs?: list<Shapes\BrowserConfig>|null
+     *     BrowserConfigs?: list<Shapes\BrowserConfig>|null,
+     *     AddReplicaLocations?: list<Shapes\AddReplicaLocationInput>|null,
+     *     RemoveReplicaLocations?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

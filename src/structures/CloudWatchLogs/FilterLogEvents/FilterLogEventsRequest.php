@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $filterPattern
  * @property string|null $nextToken
  * @property int<1, 10000>|null $limit
+ * @property bool|null $startFromHead
  * @property bool|null $interleaved
  * @property bool|null $unmask
  */
@@ -30,6 +31,7 @@ class FilterLogEventsRequest extends Request
      *     filterPattern?: string|null,
      *     nextToken?: string|null,
      *     limit?: int<1, 10000>|null,
+     *     startFromHead?: bool|null,
      *     interleaved?: bool|null,
      *     unmask?: bool|null
      * } $args

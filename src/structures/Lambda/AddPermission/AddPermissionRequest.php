@@ -10,13 +10,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Action
  * @property string $Principal
  * @property string|null $SourceArn
+ * @property 'NONE'|'AWS_IAM'|null $FunctionUrlAuthType
+ * @property bool|null $InvokedViaFunctionUrl
  * @property string|null $SourceAccount
  * @property string|null $EventSourceToken
  * @property string|null $Qualifier
  * @property string|null $RevisionId
  * @property string|null $PrincipalOrgID
- * @property 'NONE'|'AWS_IAM'|null $FunctionUrlAuthType
- * @property bool|null $InvokedViaFunctionUrl
  */
 class AddPermissionRequest extends Request
 {
@@ -27,13 +27,13 @@ class AddPermissionRequest extends Request
      *     Action: string,
      *     Principal: string,
      *     SourceArn?: string|null,
+     *     FunctionUrlAuthType?: 'NONE'|'AWS_IAM'|null,
+     *     InvokedViaFunctionUrl?: bool|null,
      *     SourceAccount?: string|null,
      *     EventSourceToken?: string|null,
      *     Qualifier?: string|null,
      *     RevisionId?: string|null,
-     *     PrincipalOrgID?: string|null,
-     *     FunctionUrlAuthType?: 'NONE'|'AWS_IAM'|null,
-     *     InvokedViaFunctionUrl?: bool|null
+     *     PrincipalOrgID?: string|null
      * } $args
      */
     public function __construct(array $args)

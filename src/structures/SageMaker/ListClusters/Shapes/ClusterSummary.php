@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property 'Creating'|'Deleting'|'Failed'|'InService'|'RollingBack'|'SystemUpdating'|'Updating' $ClusterStatus
  * @property list<string>|null $TrainingPlanArns
+ * @property 'UpToDate'|'UpdateAvailable'|'SecurityUpdateRequired'|'EndOfLife'|null $ImageVersionStatus
  */
 class ClusterSummary extends Shape
 {
@@ -19,7 +20,8 @@ class ClusterSummary extends Shape
      *     ClusterName: string,
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     ClusterStatus: 'Creating'|'Deleting'|'Failed'|'InService'|'RollingBack'|'SystemUpdating'|'Updating',
-     *     TrainingPlanArns?: list<string>|null
+     *     TrainingPlanArns?: list<string>|null,
+     *     ImageVersionStatus?: 'UpToDate'|'UpdateAvailable'|'SecurityUpdateRequired'|'EndOfLife'|null
      * } $args
      */
     public function __construct(array $args)

@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'lambda-function'>|null $ResourcesToReplicateTags
  * @property 'AUTOMATIC'|'OFF'|null $ProvisionedResourceCleanup
  * @property list<Shapes\BrowserConfig>|null $BrowserConfigs
+ * @property list<Shapes\AddReplicaLocationInput>|null $AddReplicaLocations
  * @property array<string, string>|null $Tags
  * @property Shapes\ArtifactConfigInput|null $ArtifactConfig
  */
@@ -38,6 +39,7 @@ class CreateCanaryRequest extends Request
      *     ResourcesToReplicateTags?: list<'lambda-function'>|null,
      *     ProvisionedResourceCleanup?: 'AUTOMATIC'|'OFF'|null,
      *     BrowserConfigs?: list<Shapes\BrowserConfig>|null,
+     *     AddReplicaLocations?: list<Shapes\AddReplicaLocationInput>|null,
      *     Tags?: array<string, string>|null,
      *     ArtifactConfig?: Shapes\ArtifactConfigInput|null
      * } $args

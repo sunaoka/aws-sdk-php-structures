@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ServiceConnectConfiguration|null $serviceConnectConfiguration
  * @property list<Shapes\ServiceVolumeConfiguration>|null $volumeConfigurations
  * @property list<Shapes\VpcLatticeConfiguration>|null $vpcLatticeConfigurations
+ * @property Shapes\MonitoringConfiguration|null $monitoring
  */
 class UpdateServiceRequest extends Request
 {
@@ -53,7 +54,8 @@ class UpdateServiceRequest extends Request
      *     serviceRegistries?: list<Shapes\ServiceRegistry>|null,
      *     serviceConnectConfiguration?: Shapes\ServiceConnectConfiguration|null,
      *     volumeConfigurations?: list<Shapes\ServiceVolumeConfiguration>|null,
-     *     vpcLatticeConfigurations?: list<Shapes\VpcLatticeConfiguration>|null
+     *     vpcLatticeConfigurations?: list<Shapes\VpcLatticeConfiguration>|null,
+     *     monitoring?: Shapes\MonitoringConfiguration|null
      * } $args
      */
     public function __construct(array $args)

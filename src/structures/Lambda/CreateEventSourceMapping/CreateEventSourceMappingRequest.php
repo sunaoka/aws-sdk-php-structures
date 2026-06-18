@@ -10,6 +10,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $Enabled
  * @property int<1, 10000>|null $BatchSize
  * @property Shapes\FilterCriteria|null $FilterCriteria
+ * @property string|null $KMSKeyArn
+ * @property Shapes\EventSourceMappingMetricsConfig|null $MetricsConfig
+ * @property Shapes\EventSourceMappingLoggingConfig|null $LoggingConfig
+ * @property Shapes\ScalingConfig|null $ScalingConfig
  * @property int<0, 300>|null $MaximumBatchingWindowInSeconds
  * @property int<1, 10>|null $ParallelizationFactor
  * @property 'TRIM_HORIZON'|'LATEST'|'AT_TIMESTAMP'|null $StartingPosition
@@ -27,11 +31,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'ReportBatchItemFailures'>|null $FunctionResponseTypes
  * @property Shapes\AmazonManagedKafkaEventSourceConfig|null $AmazonManagedKafkaEventSourceConfig
  * @property Shapes\SelfManagedKafkaEventSourceConfig|null $SelfManagedKafkaEventSourceConfig
- * @property Shapes\ScalingConfig|null $ScalingConfig
  * @property Shapes\DocumentDBEventSourceConfig|null $DocumentDBEventSourceConfig
- * @property string|null $KMSKeyArn
- * @property Shapes\EventSourceMappingMetricsConfig|null $MetricsConfig
- * @property Shapes\EventSourceMappingLoggingConfig|null $LoggingConfig
  * @property Shapes\ProvisionedPollerConfig|null $ProvisionedPollerConfig
  */
 class CreateEventSourceMappingRequest extends Request
@@ -43,6 +43,10 @@ class CreateEventSourceMappingRequest extends Request
      *     Enabled?: bool|null,
      *     BatchSize?: int<1, 10000>|null,
      *     FilterCriteria?: Shapes\FilterCriteria|null,
+     *     KMSKeyArn?: string|null,
+     *     MetricsConfig?: Shapes\EventSourceMappingMetricsConfig|null,
+     *     LoggingConfig?: Shapes\EventSourceMappingLoggingConfig|null,
+     *     ScalingConfig?: Shapes\ScalingConfig|null,
      *     MaximumBatchingWindowInSeconds?: int<0, 300>|null,
      *     ParallelizationFactor?: int<1, 10>|null,
      *     StartingPosition?: 'TRIM_HORIZON'|'LATEST'|'AT_TIMESTAMP'|null,
@@ -60,11 +64,7 @@ class CreateEventSourceMappingRequest extends Request
      *     FunctionResponseTypes?: list<'ReportBatchItemFailures'>|null,
      *     AmazonManagedKafkaEventSourceConfig?: Shapes\AmazonManagedKafkaEventSourceConfig|null,
      *     SelfManagedKafkaEventSourceConfig?: Shapes\SelfManagedKafkaEventSourceConfig|null,
-     *     ScalingConfig?: Shapes\ScalingConfig|null,
      *     DocumentDBEventSourceConfig?: Shapes\DocumentDBEventSourceConfig|null,
-     *     KMSKeyArn?: string|null,
-     *     MetricsConfig?: Shapes\EventSourceMappingMetricsConfig|null,
-     *     LoggingConfig?: Shapes\EventSourceMappingLoggingConfig|null,
      *     ProvisionedPollerConfig?: Shapes\ProvisionedPollerConfig|null
      * } $args
      */
