@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $ScreenshotsUploadEnabled
  * @property 'W_1280xH_720' $ScreenResolution
  * @property 'PNG'|'JPEG' $ScreenImageFormat
+ * @property 'VIEW_ONLY'|'VIEW_STOP'|'DISABLED'|null $UserControlMode
  */
 class AgentAccessConfig extends Shape
 {
@@ -19,7 +20,8 @@ class AgentAccessConfig extends Shape
      *     S3BucketArn?: string|null,
      *     ScreenshotsUploadEnabled?: bool|null,
      *     ScreenResolution: 'W_1280xH_720',
-     *     ScreenImageFormat: 'PNG'|'JPEG'
+     *     ScreenImageFormat: 'PNG'|'JPEG',
+     *     UserControlMode?: 'VIEW_ONLY'|'VIEW_STOP'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

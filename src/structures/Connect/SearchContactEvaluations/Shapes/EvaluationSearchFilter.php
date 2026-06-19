@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ControlPlaneAttributeFilter|null $AttributeFilter
+ * @property ContactEvaluationAttributeFilter|null $ContactEvaluationAttributeFilter
  */
 class EvaluationSearchFilter extends Shape
 {
     /**
-     * @param array{AttributeFilter?: ControlPlaneAttributeFilter|null} $args
+     * @param array{
+     *     AttributeFilter?: ControlPlaneAttributeFilter|null,
+     *     ContactEvaluationAttributeFilter?: ContactEvaluationAttributeFilter|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

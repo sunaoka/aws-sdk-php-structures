@@ -7,13 +7,21 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $RefId
  * @property string $Text
+ * @property int|null $Score
+ * @property bool|null $AutomaticFail
+ * @property AutomaticFailConfiguration|null $AutomaticFailConfiguration
+ * @property QuestionOptionPointsConfiguration|null $PointsConfiguration
  */
 class EvaluationFormMultiSelectQuestionOption extends Shape
 {
     /**
      * @param array{
      *     RefId: string,
-     *     Text: string
+     *     Text: string,
+     *     Score?: int|null,
+     *     AutomaticFail?: bool|null,
+     *     AutomaticFailConfiguration?: AutomaticFailConfiguration|null,
+     *     PointsConfiguration?: QuestionOptionPointsConfiguration|null
      * } $args
      */
     public function __construct(array $args)

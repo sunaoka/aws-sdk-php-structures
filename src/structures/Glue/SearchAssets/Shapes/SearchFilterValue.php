@@ -1,6 +1,6 @@
 <?php
 
-namespace Sunaoka\Aws\Structures\Glue\Search\Shapes;
+namespace Sunaoka\Aws\Structures\Glue\SearchAssets\Shapes;
 
 use Sunaoka\Aws\Structures\Shape;
 

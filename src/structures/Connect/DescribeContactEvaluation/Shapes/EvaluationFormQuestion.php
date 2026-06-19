@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EvaluationFormQuestionTypeProperties|null $QuestionTypeProperties
  * @property EvaluationFormItemEnablementConfiguration|null $Enablement
  * @property double|null $Weight
+ * @property EvaluationFormQuestionScoringConfiguration|null $ScoringConfiguration
  */
 class EvaluationFormQuestion extends Shape
 {
@@ -25,7 +26,8 @@ class EvaluationFormQuestion extends Shape
      *     QuestionType: 'TEXT'|'SINGLESELECT'|'NUMERIC'|'MULTISELECT'|'DATETIME',
      *     QuestionTypeProperties?: EvaluationFormQuestionTypeProperties|null,
      *     Enablement?: EvaluationFormItemEnablementConfiguration|null,
-     *     Weight?: double|null
+     *     Weight?: double|null,
+     *     ScoringConfiguration?: EvaluationFormQuestionScoringConfiguration|null
      * } $args
      */
     public function __construct(array $args)

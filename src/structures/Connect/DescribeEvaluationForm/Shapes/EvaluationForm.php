@@ -23,6 +23,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $Tags
  * @property EvaluationFormTargetConfiguration|null $TargetConfiguration
  * @property EvaluationFormLanguageConfiguration|null $LanguageConfiguration
+ * @property 'IN_PROGRESS'|'COMPLETED'|'FAILED'|null $LatestValidationStatus
+ * @property \Aws\Api\DateTimeResult|null $LastValidationTime
  */
 class EvaluationForm extends Shape
 {
@@ -45,7 +47,9 @@ class EvaluationForm extends Shape
      *     ReviewConfiguration?: EvaluationReviewConfiguration|null,
      *     Tags?: array<string, string>|null,
      *     TargetConfiguration?: EvaluationFormTargetConfiguration|null,
-     *     LanguageConfiguration?: EvaluationFormLanguageConfiguration|null
+     *     LanguageConfiguration?: EvaluationFormLanguageConfiguration|null,
+     *     LatestValidationStatus?: 'IN_PROGRESS'|'COMPLETED'|'FAILED'|null,
+     *     LastValidationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

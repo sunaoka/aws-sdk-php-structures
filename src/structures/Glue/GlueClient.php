@@ -241,7 +241,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use ResetJobBookmark\ResetJobBookmarkTrait;
     use ResumeWorkflowRun\ResumeWorkflowRunTrait;
     use RunStatement\RunStatementTrait;
-    use Search\SearchTrait;
+    use SearchAssets\SearchAssetsTrait;
     use SearchTables\SearchTablesTrait;
     use StartBlueprintRun\StartBlueprintRunTrait;
     use StartColumnStatisticsTaskRun\StartColumnStatisticsTaskRunTrait;

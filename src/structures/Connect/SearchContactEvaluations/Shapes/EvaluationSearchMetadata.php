@@ -21,6 +21,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ReviewId
  * @property 'AGENT'|'SYSTEM'|'CUSTOM_BOT'|'CUSTOMER'|null $ContactParticipantRole
  * @property string|null $ContactParticipantId
+ * @property int|null $EarnedPoints
+ * @property int|null $MaxBasePoint
+ * @property 'NEEDS_IMPROVEMENT'|'EXCEEDS_EXPECTATIONS'|null $PerformanceCategory
  */
 class EvaluationSearchMetadata extends Shape
 {
@@ -41,7 +44,10 @@ class EvaluationSearchMetadata extends Shape
      *     SamplingJobId?: string|null,
      *     ReviewId?: string|null,
      *     ContactParticipantRole?: 'AGENT'|'SYSTEM'|'CUSTOM_BOT'|'CUSTOMER'|null,
-     *     ContactParticipantId?: string|null
+     *     ContactParticipantId?: string|null,
+     *     EarnedPoints?: int|null,
+     *     MaxBasePoint?: int|null,
+     *     PerformanceCategory?: 'NEEDS_IMPROVEMENT'|'EXCEEDS_EXPECTATIONS'|null
      * } $args
      */
     public function __construct(array $args)

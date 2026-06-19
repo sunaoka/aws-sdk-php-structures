@@ -1,6 +1,6 @@
 <?php
 
-namespace Sunaoka\Aws\Structures\Glue\Search;
+namespace Sunaoka\Aws\Structures\Glue\SearchAssets;
 
 use Sunaoka\Aws\Structures\Request;
 
@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\SearchSort|null $Sort
  * @property Shapes\SearchFilterClause|null $FilterClause
  */
-class SearchRequest extends Request
+class SearchAssetsRequest extends Request
 {
     /**
      * @param array{

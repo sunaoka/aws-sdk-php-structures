@@ -10,6 +10,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use AddTags\AddTagsTrait;
     use AssociatePackage\AssociatePackageTrait;
     use AssociatePackages\AssociatePackagesTrait;
+    use AttachDataSource\AttachDataSourceTrait;
     use AuthorizeVpcEndpointAccess\AuthorizeVpcEndpointAccessTrait;
     use CancelDomainConfigChange\CancelDomainConfigChangeTrait;
     use CancelServiceSoftwareUpdate\CancelServiceSoftwareUpdateTrait;
@@ -29,6 +30,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use DeletePackage\DeletePackageTrait;
     use DeleteVpcEndpoint\DeleteVpcEndpointTrait;
     use DeregisterCapability\DeregisterCapabilityTrait;
+    use DescribeDataSourceAttachment\DescribeDataSourceAttachmentTrait;
     use DescribeDomain\DescribeDomainTrait;
     use DescribeDomainAutoTunes\DescribeDomainAutoTunesTrait;
     use DescribeDomainChangeProgress\DescribeDomainChangeProgressTrait;
@@ -45,6 +47,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use DescribeReservedInstanceOfferings\DescribeReservedInstanceOfferingsTrait;
     use DescribeReservedInstances\DescribeReservedInstancesTrait;
     use DescribeVpcEndpoints\DescribeVpcEndpointsTrait;
+    use DetachDataSource\DetachDataSourceTrait;
     use DissociatePackage\DissociatePackageTrait;
     use DissociatePackages\DissociatePackagesTrait;
     use GetApplication\GetApplicationTrait;
@@ -59,6 +62,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use GetUpgradeHistory\GetUpgradeHistoryTrait;
     use GetUpgradeStatus\GetUpgradeStatusTrait;
     use ListApplications\ListApplicationsTrait;
+    use ListDataSourceAttachments\ListDataSourceAttachmentsTrait;
     use ListDataSources\ListDataSourcesTrait;
     use ListDirectQueryDataSources\ListDirectQueryDataSourcesTrait;
     use ListDomainMaintenances\ListDomainMaintenancesTrait;

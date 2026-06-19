@@ -1,6 +1,6 @@
 <?php
 
-namespace Sunaoka\Aws\Structures\Glue\Search;
+namespace Sunaoka\Aws\Structures\Glue\SearchAssets;
 
 use Sunaoka\Aws\Structures\Response;
 
@@ -8,6 +8,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\SearchResultItem>|null $Items
  * @property string|null $NextToken
  */
-class SearchResponse extends Response
+class SearchAssetsResponse extends Response
 {
 }

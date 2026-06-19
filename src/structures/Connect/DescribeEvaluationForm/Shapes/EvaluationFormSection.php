@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Instructions
  * @property list<EvaluationFormItem> $Items
  * @property double|null $Weight
+ * @property bool|null $IsExcludedFromScoring
+ * @property list<EvaluationFormScoreThreshold>|null $ScoreThresholds
  */
 class EvaluationFormSection extends Shape
 {
@@ -19,7 +21,9 @@ class EvaluationFormSection extends Shape
      *     RefId: string,
      *     Instructions?: string|null,
      *     Items: list<EvaluationFormItem>,
-     *     Weight?: double|null
+     *     Weight?: double|null,
+     *     IsExcludedFromScoring?: bool|null,
+     *     ScoreThresholds?: list<EvaluationFormScoreThreshold>|null
      * } $args
      */
     public function __construct(array $args)

@@ -170,6 +170,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use GetCurrentMetricData\GetCurrentMetricDataTrait;
     use GetCurrentUserData\GetCurrentUserDataTrait;
     use GetEffectiveHoursOfOperations\GetEffectiveHoursOfOperationsTrait;
+    use GetEvaluationFormValidation\GetEvaluationFormValidationTrait;
     use GetFederationToken\GetFederationTokenTrait;
     use GetFlowAssociation\GetFlowAssociationTrait;
     use GetMetricData\GetMetricDataTrait;
@@ -291,6 +292,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use StartContactRecording\StartContactRecordingTrait;
     use StartContactStreaming\StartContactStreamingTrait;
     use StartEmailContact\StartEmailContactTrait;
+    use StartEvaluationFormValidation\StartEvaluationFormValidationTrait;
     use StartOutboundChatContact\StartOutboundChatContactTrait;
     use StartOutboundEmailContact\StartOutboundEmailContactTrait;
     use StartOutboundVoiceContact\StartOutboundVoiceContactTrait;
