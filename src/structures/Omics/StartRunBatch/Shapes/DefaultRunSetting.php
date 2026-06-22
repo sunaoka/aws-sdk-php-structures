@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'RESTRICTED'|'VPC'|null $networkingMode
  * @property string|null $configurationName
  * @property EngineSettings|null $engineSettings
+ * @property 'LOCAL'|'SHARED'|null $scratchStorageMode
  */
 class DefaultRunSetting extends Shape
 {
@@ -51,7 +52,8 @@ class DefaultRunSetting extends Shape
      *     workflowVersionName?: string|null,
      *     networkingMode?: 'RESTRICTED'|'VPC'|null,
      *     configurationName?: string|null,
-     *     engineSettings?: EngineSettings|null
+     *     engineSettings?: EngineSettings|null,
+     *     scratchStorageMode?: 'LOCAL'|'SHARED'|null
      * } $args
      */
     public function __construct(array $args)

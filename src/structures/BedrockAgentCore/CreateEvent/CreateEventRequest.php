@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Branch|null $branch
  * @property string|null $clientToken
  * @property array<string, Shapes\MetadataValue>|null $metadata
+ * @property 'SKIP'|null $extractionMode
  */
 class CreateEventRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateEventRequest extends Request
      *     payload: list<Shapes\PayloadType>,
      *     branch?: Shapes\Branch|null,
      *     clientToken?: string|null,
-     *     metadata?: array<string, Shapes\MetadataValue>|null
+     *     metadata?: array<string, Shapes\MetadataValue>|null,
+     *     extractionMode?: 'SKIP'|null
      * } $args
      */
     public function __construct(array $args)

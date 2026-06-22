@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\MaintenanceConfiguration|null $MaintenanceConfiguration
  * @property array<string, string>|null $Tags
  * @property string|null $ClientToken
+ * @property Shapes\RouterContentQualityAnalysisConfiguration|null $ContentQualityAnalysisConfiguration
  */
 class CreateRouterInputRequest extends Request
 {
@@ -31,7 +32,8 @@ class CreateRouterInputRequest extends Request
      *     TransitEncryption?: Shapes\RouterInputTransitEncryption|null,
      *     MaintenanceConfiguration?: Shapes\MaintenanceConfiguration|null,
      *     Tags?: array<string, string>|null,
-     *     ClientToken?: string|null
+     *     ClientToken?: string|null,
+     *     ContentQualityAnalysisConfiguration?: Shapes\RouterContentQualityAnalysisConfiguration|null
      * } $args
      */
     public function __construct(array $args)

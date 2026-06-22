@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $ImageNames
  * @property DeprecationTimeConditionRequest|null $DeprecationTimeCondition
  * @property CreationDateConditionRequest|null $CreationDateCondition
+ * @property list<ImageWatermarkFilterRequest>|null $ImageWatermarks
  */
 class ImageCriterionRequest extends Shape
 {
@@ -19,7 +20,8 @@ class ImageCriterionRequest extends Shape
      *     MarketplaceProductCodes?: list<string>|null,
      *     ImageNames?: list<string>|null,
      *     DeprecationTimeCondition?: DeprecationTimeConditionRequest|null,
-     *     CreationDateCondition?: CreationDateConditionRequest|null
+     *     CreationDateCondition?: CreationDateConditionRequest|null,
+     *     ImageWatermarks?: list<ImageWatermarkFilterRequest>|null
      * } $args
      */
     public function __construct(array $args = [])

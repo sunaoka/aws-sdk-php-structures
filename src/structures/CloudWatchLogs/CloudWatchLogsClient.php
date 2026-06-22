@@ -35,6 +35,7 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use DeleteRetentionPolicy\DeleteRetentionPolicyTrait;
     use DeleteScheduledQuery\DeleteScheduledQueryTrait;
     use DeleteSubscriptionFilter\DeleteSubscriptionFilterTrait;
+    use DeleteSyslogConfiguration\DeleteSyslogConfigurationTrait;
     use DeleteTransformer\DeleteTransformerTrait;
     use DescribeAccountPolicies\DescribeAccountPoliciesTrait;
     use DescribeConfigurationTemplates\DescribeConfigurationTemplatesTrait;
@@ -83,6 +84,7 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use ListLogGroupsForQuery\ListLogGroupsForQueryTrait;
     use ListScheduledQueries\ListScheduledQueriesTrait;
     use ListSourcesForS3TableIntegration\ListSourcesForS3TableIntegrationTrait;
+    use ListSyslogConfigurations\ListSyslogConfigurationsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTagsLogGroup\ListTagsLogGroupTrait;
     use PutAccountPolicy\PutAccountPolicyTrait;
@@ -102,6 +104,7 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use PutResourcePolicy\PutResourcePolicyTrait;
     use PutRetentionPolicy\PutRetentionPolicyTrait;
     use PutSubscriptionFilter\PutSubscriptionFilterTrait;
+    use PutSyslogConfiguration\PutSyslogConfigurationTrait;
     use PutTransformer\PutTransformerTrait;
     use StartLiveTail\StartLiveTailTrait;
     use StartQuery\StartQueryTrait;

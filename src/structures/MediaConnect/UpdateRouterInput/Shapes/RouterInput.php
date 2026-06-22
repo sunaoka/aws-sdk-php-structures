@@ -29,6 +29,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MaintenanceConfiguration $MaintenanceConfiguration
  * @property 'WINDOW'|null $MaintenanceScheduleType
  * @property MaintenanceSchedule|null $MaintenanceSchedule
+ * @property 'CONTENT_LEVEL' $ContentQualityAnalysisType
+ * @property RouterContentQualityAnalysisConfiguration $ContentQualityAnalysisConfiguration
  */
 class RouterInput extends Shape
 {
@@ -57,7 +59,9 @@ class RouterInput extends Shape
      *     MaintenanceType: 'PREFERRED_DAY_TIME'|'DEFAULT',
      *     MaintenanceConfiguration: MaintenanceConfiguration,
      *     MaintenanceScheduleType?: 'WINDOW'|null,
-     *     MaintenanceSchedule?: MaintenanceSchedule|null
+     *     MaintenanceSchedule?: MaintenanceSchedule|null,
+     *     ContentQualityAnalysisType: 'CONTENT_LEVEL',
+     *     ContentQualityAnalysisConfiguration: RouterContentQualityAnalysisConfiguration
      * } $args
      */
     public function __construct(array $args)

@@ -43,6 +43,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $workflowVersionName
  * @property string|null $workflowUuid
  * @property 'RESTRICTED'|'VPC'|null $networkingMode
+ * @property 'LOCAL'|'SHARED'|null $scratchStorageMode
  * @property Shapes\ConfigurationDetails|null $configuration
  * @property Shapes\VpcConfigResponse|null $vpcConfig
  * @property Shapes\EngineSettings|null $engineSettings

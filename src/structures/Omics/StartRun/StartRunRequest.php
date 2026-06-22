@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $workflowOwnerId
  * @property string|null $workflowVersionName
  * @property 'RESTRICTED'|'VPC'|null $networkingMode
+ * @property 'LOCAL'|'SHARED'|null $scratchStorageMode
  * @property string|null $configurationName
  * @property Shapes\EngineSettings|null $engineSettings
  */
@@ -52,6 +53,7 @@ class StartRunRequest extends Request
      *     workflowOwnerId?: string|null,
      *     workflowVersionName?: string|null,
      *     networkingMode?: 'RESTRICTED'|'VPC'|null,
+     *     scratchStorageMode?: 'LOCAL'|'SHARED'|null,
      *     configurationName?: string|null,
      *     engineSettings?: Shapes\EngineSettings|null
      * } $args

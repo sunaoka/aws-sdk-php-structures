@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'INPUT_100'|'INPUT_50'|'INPUT_20'|null $Tier
  * @property Shapes\RouterInputTransitEncryption|null $TransitEncryption
  * @property Shapes\MaintenanceConfiguration|null $MaintenanceConfiguration
+ * @property Shapes\RouterContentQualityAnalysisConfiguration|null $ContentQualityAnalysisConfiguration
  */
 class UpdateRouterInputRequest extends Request
 {
@@ -25,7 +26,8 @@ class UpdateRouterInputRequest extends Request
      *     RoutingScope?: 'REGIONAL'|'GLOBAL'|null,
      *     Tier?: 'INPUT_100'|'INPUT_50'|'INPUT_20'|null,
      *     TransitEncryption?: Shapes\RouterInputTransitEncryption|null,
-     *     MaintenanceConfiguration?: Shapes\MaintenanceConfiguration|null
+     *     MaintenanceConfiguration?: Shapes\MaintenanceConfiguration|null,
+     *     ContentQualityAnalysisConfiguration?: Shapes\RouterContentQualityAnalysisConfiguration|null
      * } $args
      */
     public function __construct(array $args)
