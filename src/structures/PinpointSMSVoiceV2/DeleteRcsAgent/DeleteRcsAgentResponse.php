@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $TwoWayChannelArn
  * @property string|null $TwoWayChannelRole
  * @property bool $TwoWayEnabled
+ * @property list<string>|null $TwoWayRcsEventsEnabled
  */
 class DeleteRcsAgentResponse extends Response
 {

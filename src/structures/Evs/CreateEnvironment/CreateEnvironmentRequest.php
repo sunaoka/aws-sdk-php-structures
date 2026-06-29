@@ -12,14 +12,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ServiceAccessSecurityGroups|null $serviceAccessSecurityGroups
  * @property string $vpcId
  * @property string $serviceAccessSubnetId
- * @property 'VCF-5.2.1'|'VCF-5.2.2' $vcfVersion
+ * @property 'VCF-5.2.1'|'VCF-5.2.2'|'SELF_DEPLOYED' $vcfVersion
  * @property bool $termsAccepted
- * @property list<Shapes\LicenseInfo> $licenseInfo
  * @property Shapes\InitialVlans $initialVlans
- * @property list<Shapes\HostInfoForCreate> $hosts
- * @property Shapes\ConnectivityInfo $connectivityInfo
- * @property Shapes\VcfHostnames $vcfHostnames
- * @property string $siteId
+ * @property Shapes\ConnectivityInfo|null $connectivityInfo
+ * @property list<Shapes\LicenseInfo>|null $licenseInfo
+ * @property list<Shapes\HostInfoForCreate>|null $hosts
+ * @property Shapes\VcfHostnames|null $vcfHostnames
+ * @property string|null $siteId
  */
 class CreateEnvironmentRequest extends Request
 {
@@ -32,14 +32,14 @@ class CreateEnvironmentRequest extends Request
      *     serviceAccessSecurityGroups?: Shapes\ServiceAccessSecurityGroups|null,
      *     vpcId: string,
      *     serviceAccessSubnetId: string,
-     *     vcfVersion: 'VCF-5.2.1'|'VCF-5.2.2',
+     *     vcfVersion: 'VCF-5.2.1'|'VCF-5.2.2'|'SELF_DEPLOYED',
      *     termsAccepted: bool,
-     *     licenseInfo: list<Shapes\LicenseInfo>,
      *     initialVlans: Shapes\InitialVlans,
-     *     hosts: list<Shapes\HostInfoForCreate>,
-     *     connectivityInfo: Shapes\ConnectivityInfo,
-     *     vcfHostnames: Shapes\VcfHostnames,
-     *     siteId: string
+     *     connectivityInfo?: Shapes\ConnectivityInfo|null,
+     *     licenseInfo?: list<Shapes\LicenseInfo>|null,
+     *     hosts?: list<Shapes\HostInfoForCreate>|null,
+     *     vcfHostnames?: Shapes\VcfHostnames|null,
+     *     siteId?: string|null
      * } $args
      */
     public function __construct(array $args)

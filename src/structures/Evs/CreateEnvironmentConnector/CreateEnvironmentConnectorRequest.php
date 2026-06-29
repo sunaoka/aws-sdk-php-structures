@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $clientToken
  * @property string $environmentId
- * @property 'VCENTER' $type
+ * @property 'OPERATIONS_MANAGER'|'SDDC_MANAGER'|'VCENTER' $type
  * @property string $applianceFqdn
  * @property string $secretIdentifier
  */
@@ -17,7 +17,7 @@ class CreateEnvironmentConnectorRequest extends Request
      * @param array{
      *     clientToken?: string|null,
      *     environmentId: string,
-     *     type: 'VCENTER',
+     *     type: 'OPERATIONS_MANAGER'|'SDDC_MANAGER'|'VCENTER',
      *     applianceFqdn: string,
      *     secretIdentifier: string
      * } $args

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Region
  * @property string|null $ResourceType
  * @property string|null $Service
+ * @property string|null $CfnResourceType
  * @property \Aws\Api\DateTimeResult|null $LastReportedAt
  * @property list<ResourceProperty>|null $Properties
  */
@@ -22,6 +23,7 @@ class ResourceShape extends Shape
      *     Region?: string|null,
      *     ResourceType?: string|null,
      *     Service?: string|null,
+     *     CfnResourceType?: string|null,
      *     LastReportedAt?: \Aws\Api\DateTimeResult|null,
      *     Properties?: list<ResourceProperty>|null
      * } $args

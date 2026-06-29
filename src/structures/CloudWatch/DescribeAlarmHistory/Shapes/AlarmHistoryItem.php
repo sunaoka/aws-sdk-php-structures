@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $AlarmName
  * @property string|null $AlarmContributorId
- * @property 'CompositeAlarm'|'MetricAlarm'|null $AlarmType
+ * @property 'CompositeAlarm'|'MetricAlarm'|'LogAlarm'|null $AlarmType
  * @property \Aws\Api\DateTimeResult|null $Timestamp
  * @property 'ConfigurationUpdate'|'StateUpdate'|'Action'|'AlarmContributorStateUpdate'|'AlarmContributorAction'|null $HistoryItemType
  * @property string|null $HistorySummary
@@ -20,7 +20,7 @@ class AlarmHistoryItem extends Shape
      * @param array{
      *     AlarmName?: string|null,
      *     AlarmContributorId?: string|null,
-     *     AlarmType?: 'CompositeAlarm'|'MetricAlarm'|null,
+     *     AlarmType?: 'CompositeAlarm'|'MetricAlarm'|'LogAlarm'|null,
      *     Timestamp?: \Aws\Api\DateTimeResult|null,
      *     HistoryItemType?: 'ConfigurationUpdate'|'StateUpdate'|'Action'|'AlarmContributorStateUpdate'|'AlarmContributorAction'|null,
      *     HistorySummary?: string|null,

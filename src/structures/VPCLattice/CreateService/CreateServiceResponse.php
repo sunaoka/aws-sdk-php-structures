@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $certificateArn
  * @property 'ACTIVE'|'CREATE_IN_PROGRESS'|'DELETE_IN_PROGRESS'|'CREATE_FAILED'|'DELETE_FAILED'|null $status
  * @property 'NONE'|'AWS_IAM'|null $authType
+ * @property int<60, 600>|null $idleTimeoutSeconds
  * @property Shapes\DnsEntry|null $dnsEntry
  */
 class CreateServiceResponse extends Response

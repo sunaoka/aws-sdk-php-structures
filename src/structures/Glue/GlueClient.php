@@ -269,6 +269,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use TagResource\TagResourceTrait;
     use TestConnection\TestConnectionTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateAsset\UpdateAssetTrait;
     use UpdateBlueprint\UpdateBlueprintTrait;
     use UpdateCatalog\UpdateCatalogTrait;
     use UpdateClassifier\UpdateClassifierTrait;

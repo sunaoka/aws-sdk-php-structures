@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $S3Bucket
  * @property string|null $S3Key
  * @property string|null $S3ObjectVersion
+ * @property 'COPY'|'REFERENCE'|null $S3ObjectStorageMode
  * @property string|resource|\Psr\Http\Message\StreamInterface|null $ZipFile
  */
 class LayerVersionContentInput extends Shape
@@ -17,6 +18,7 @@ class LayerVersionContentInput extends Shape
      *     S3Bucket?: string|null,
      *     S3Key?: string|null,
      *     S3ObjectVersion?: string|null,
+     *     S3ObjectStorageMode?: 'COPY'|'REFERENCE'|null,
      *     ZipFile?: string|resource|\Psr\Http\Message\StreamInterface|null
      * } $args
      */

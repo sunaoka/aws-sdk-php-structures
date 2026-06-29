@@ -34,6 +34,7 @@ class PinpointSMSVoiceV2Client extends \Aws\PinpointSMSVoiceV2\PinpointSMSVoiceV
     use DeleteProtectConfiguration\DeleteProtectConfigurationTrait;
     use DeleteProtectConfigurationRuleSetNumberOverride\DeleteProtectConfigurationRuleSetNumberOverrideTrait;
     use DeleteRcsAgent\DeleteRcsAgentTrait;
+    use DeleteRcsMessageSpendLimitOverride\DeleteRcsMessageSpendLimitOverrideTrait;
     use DeleteRegistration\DeleteRegistrationTrait;
     use DeleteRegistrationAttachment\DeleteRegistrationAttachmentTrait;
     use DeleteRegistrationFieldValue\DeleteRegistrationFieldValueTrait;
@@ -88,6 +89,7 @@ class PinpointSMSVoiceV2Client extends \Aws\PinpointSMSVoiceV2\PinpointSMSVoiceV
     use SendMediaMessage\SendMediaMessageTrait;
     use SendNotifyTextMessage\SendNotifyTextMessageTrait;
     use SendNotifyVoiceMessage\SendNotifyVoiceMessageTrait;
+    use SendRcsMessage\SendRcsMessageTrait;
     use SendTextMessage\SendTextMessageTrait;
     use SendVoiceMessage\SendVoiceMessageTrait;
     use SetAccountDefaultProtectConfiguration\SetAccountDefaultProtectConfigurationTrait;
@@ -96,6 +98,7 @@ class PinpointSMSVoiceV2Client extends \Aws\PinpointSMSVoiceV2\PinpointSMSVoiceV
     use SetDefaultSenderId\SetDefaultSenderIdTrait;
     use SetMediaMessageSpendLimitOverride\SetMediaMessageSpendLimitOverrideTrait;
     use SetNotifyMessageSpendLimitOverride\SetNotifyMessageSpendLimitOverrideTrait;
+    use SetRcsMessageSpendLimitOverride\SetRcsMessageSpendLimitOverrideTrait;
     use SetTextMessageSpendLimitOverride\SetTextMessageSpendLimitOverrideTrait;
     use SetVoiceMessageSpendLimitOverride\SetVoiceMessageSpendLimitOverrideTrait;
     use SubmitRegistrationVersion\SubmitRegistrationVersionTrait;

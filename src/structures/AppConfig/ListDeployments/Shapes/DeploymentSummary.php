@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int|null $DeploymentNumber
+ * @property string|null $ConfigurationProfileId
  * @property string|null $ConfigurationName
  * @property string|null $ConfigurationVersion
  * @property int<0, 1440>|null $DeploymentDurationInMinutes
@@ -17,12 +18,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $StartedAt
  * @property \Aws\Api\DateTimeResult|null $CompletedAt
  * @property string|null $VersionLabel
+ * @property 'USER'|'MANAGED'|null $Type
  */
 class DeploymentSummary extends Shape
 {
     /**
      * @param array{
      *     DeploymentNumber?: int|null,
+     *     ConfigurationProfileId?: string|null,
      *     ConfigurationName?: string|null,
      *     ConfigurationVersion?: string|null,
      *     DeploymentDurationInMinutes?: int<0, 1440>|null,
@@ -33,7 +36,8 @@ class DeploymentSummary extends Shape
      *     PercentageComplete?: float|null,
      *     StartedAt?: \Aws\Api\DateTimeResult|null,
      *     CompletedAt?: \Aws\Api\DateTimeResult|null,
-     *     VersionLabel?: string|null
+     *     VersionLabel?: string|null,
+     *     Type?: 'USER'|'MANAGED'|null
      * } $args
      */
     public function __construct(array $args = [])

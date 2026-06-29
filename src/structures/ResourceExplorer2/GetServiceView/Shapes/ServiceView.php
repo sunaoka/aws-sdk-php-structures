@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<IncludedProperty>|null $IncludedProperties
  * @property string|null $StreamingAccessForService
  * @property string|null $ScopeType
+ * @property ServiceLinkedRecorderInfo|null $ServiceLinkedRecorder
  */
 class ServiceView extends Shape
 {
@@ -21,7 +22,8 @@ class ServiceView extends Shape
      *     Filters?: SearchFilter|null,
      *     IncludedProperties?: list<IncludedProperty>|null,
      *     StreamingAccessForService?: string|null,
-     *     ScopeType?: string|null
+     *     ScopeType?: string|null,
+     *     ServiceLinkedRecorder?: ServiceLinkedRecorderInfo|null
      * } $args
      */
     public function __construct(array $args)

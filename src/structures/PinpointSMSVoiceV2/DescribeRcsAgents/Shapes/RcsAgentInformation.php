@@ -16,6 +16,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TwoWayChannelRole
  * @property bool $TwoWayEnabled
  * @property string|null $PoolId
+ * @property string|null $TwoWayMediaS3BucketName
+ * @property string|null $TwoWayMediaS3KeyPrefix
+ * @property string|null $TwoWayMediaS3Role
+ * @property list<string>|null $TwoWayRcsEventsEnabled
  * @property TestingAgentInformation|null $TestingAgent
  */
 class RcsAgentInformation extends Shape
@@ -33,6 +37,10 @@ class RcsAgentInformation extends Shape
      *     TwoWayChannelRole?: string|null,
      *     TwoWayEnabled: bool,
      *     PoolId?: string|null,
+     *     TwoWayMediaS3BucketName?: string|null,
+     *     TwoWayMediaS3KeyPrefix?: string|null,
+     *     TwoWayMediaS3Role?: string|null,
+     *     TwoWayRcsEventsEnabled?: list<string>|null,
      *     TestingAgent?: TestingAgentInformation|null
      * } $args
      */

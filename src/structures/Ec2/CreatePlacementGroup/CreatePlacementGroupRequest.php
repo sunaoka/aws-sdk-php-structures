@@ -10,9 +10,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'host'|'rack'|null $SpreadLevel
  * @property string|null $LinkedGroupId
  * @property Shapes\OperatorRequest|null $Operator
+ * @property string|null $ParentGroupId
  * @property bool|null $DryRun
  * @property string|null $GroupName
- * @property 'cluster'|'spread'|'partition'|null $Strategy
+ * @property 'cluster'|'spread'|'partition'|'precision-time'|null $Strategy
  */
 class CreatePlacementGroupRequest extends Request
 {
@@ -23,9 +24,10 @@ class CreatePlacementGroupRequest extends Request
      *     SpreadLevel?: 'host'|'rack'|null,
      *     LinkedGroupId?: string|null,
      *     Operator?: Shapes\OperatorRequest|null,
+     *     ParentGroupId?: string|null,
      *     DryRun?: bool|null,
      *     GroupName?: string|null,
-     *     Strategy?: 'cluster'|'spread'|'partition'|null
+     *     Strategy?: 'cluster'|'spread'|'partition'|'precision-time'|null
      * } $args
      */
     public function __construct(array $args = [])

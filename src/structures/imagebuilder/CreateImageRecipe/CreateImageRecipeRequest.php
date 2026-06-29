@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $workingDirectory
  * @property Shapes\AdditionalInstanceConfiguration|null $additionalInstanceConfiguration
  * @property array<string, string>|null $amiTags
+ * @property list<string>|null $amiWatermarks
  * @property string $clientToken
  */
 class CreateImageRecipeRequest extends Request
@@ -31,6 +32,7 @@ class CreateImageRecipeRequest extends Request
      *     workingDirectory?: string|null,
      *     additionalInstanceConfiguration?: Shapes\AdditionalInstanceConfiguration|null,
      *     amiTags?: array<string, string>|null,
+     *     amiWatermarks?: list<string>|null,
      *     clientToken: string
      * } $args
      */

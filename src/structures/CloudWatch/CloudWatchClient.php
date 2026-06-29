@@ -42,6 +42,7 @@ class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
     use PutCompositeAlarm\PutCompositeAlarmTrait;
     use PutDashboard\PutDashboardTrait;
     use PutInsightRule\PutInsightRuleTrait;
+    use PutLogAlarm\PutLogAlarmTrait;
     use PutManagedInsightRules\PutManagedInsightRulesTrait;
     use PutMetricAlarm\PutMetricAlarmTrait;
     use PutMetricData\PutMetricDataTrait;

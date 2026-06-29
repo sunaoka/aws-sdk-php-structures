@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $S3Bucket
  * @property string|null $S3Key
  * @property string|null $S3ObjectVersion
+ * @property 'COPY'|'REFERENCE'|null $S3ObjectStorageMode
  * @property string|null $ImageUri
  * @property list<'x86_64'|'arm64'>|null $Architectures
  * @property bool|null $Publish
@@ -27,6 +28,7 @@ class UpdateFunctionCodeRequest extends Request
      *     S3Bucket?: string|null,
      *     S3Key?: string|null,
      *     S3ObjectVersion?: string|null,
+     *     S3ObjectStorageMode?: 'COPY'|'REFERENCE'|null,
      *     ImageUri?: string|null,
      *     Architectures?: list<'x86_64'|'arm64'>|null,
      *     Publish?: bool|null,

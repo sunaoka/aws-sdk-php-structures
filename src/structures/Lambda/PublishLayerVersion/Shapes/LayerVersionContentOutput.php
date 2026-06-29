@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $CodeSize
  * @property string|null $SigningProfileVersionArn
  * @property string|null $SigningJobArn
+ * @property ResolvedS3Object|null $ResolvedS3Object
  */
 class LayerVersionContentOutput extends Shape
 {
@@ -19,7 +20,8 @@ class LayerVersionContentOutput extends Shape
      *     CodeSha256?: string|null,
      *     CodeSize?: int|null,
      *     SigningProfileVersionArn?: string|null,
-     *     SigningJobArn?: string|null
+     *     SigningJobArn?: string|null,
+     *     ResolvedS3Object?: ResolvedS3Object|null
      * } $args
      */
     public function __construct(array $args = [])

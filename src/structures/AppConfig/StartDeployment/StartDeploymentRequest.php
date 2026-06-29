@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $Tags
  * @property string|null $KmsKeyIdentifier
  * @property array<string, string>|null $DynamicExtensionParameters
+ * @property int|null $LatestDeploymentNumber
  */
 class StartDeploymentRequest extends Request
 {
@@ -27,7 +28,8 @@ class StartDeploymentRequest extends Request
      *     Description?: string|null,
      *     Tags?: array<string, string>|null,
      *     KmsKeyIdentifier?: string|null,
-     *     DynamicExtensionParameters?: array<string, string>|null
+     *     DynamicExtensionParameters?: array<string, string>|null,
+     *     LatestDeploymentNumber?: int|null
      * } $args
      */
     public function __construct(array $args)

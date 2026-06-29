@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $clusterIdentifier
  * @property string|null $clientToken
  * @property Shapes\UpdateClusterSlurmConfigurationRequest|null $slurmConfiguration
+ * @property Shapes\UpdateSchedulerRequest|null $scheduler
  */
 class UpdateClusterRequest extends Request
 {
@@ -15,7 +16,8 @@ class UpdateClusterRequest extends Request
      * @param array{
      *     clusterIdentifier: string,
      *     clientToken?: string|null,
-     *     slurmConfiguration?: Shapes\UpdateClusterSlurmConfigurationRequest|null
+     *     slurmConfiguration?: Shapes\UpdateClusterSlurmConfigurationRequest|null,
+     *     scheduler?: Shapes\UpdateSchedulerRequest|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $environmentId
  * @property string|null $connectorId
- * @property 'VCENTER'|null $type
+ * @property 'OPERATIONS_MANAGER'|'SDDC_MANAGER'|'VCENTER'|null $type
  * @property string|null $applianceFqdn
  * @property string|null $secretArn
  * @property 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'UPDATING'|'UPDATE_FAILED'|'DELETING'|'DELETED'|null $state
@@ -23,7 +23,7 @@ class Connector extends Shape
      * @param array{
      *     environmentId?: string|null,
      *     connectorId?: string|null,
-     *     type?: 'VCENTER'|null,
+     *     type?: 'OPERATIONS_MANAGER'|'SDDC_MANAGER'|'VCENTER'|null,
      *     applianceFqdn?: string|null,
      *     secretArn?: string|null,
      *     state?: 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'UPDATING'|'UPDATE_FAILED'|'DELETING'|'DELETED'|null,

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $S3Bucket
  * @property string|null $S3Key
  * @property string|null $S3ObjectVersion
+ * @property 'COPY'|'REFERENCE'|null $S3ObjectStorageMode
  * @property string|null $ImageUri
  * @property string|null $SourceKMSKeyArn
  */
@@ -20,6 +21,7 @@ class FunctionCode extends Shape
      *     S3Bucket?: string|null,
      *     S3Key?: string|null,
      *     S3ObjectVersion?: string|null,
+     *     S3ObjectStorageMode?: 'COPY'|'REFERENCE'|null,
      *     ImageUri?: string|null,
      *     SourceKMSKeyArn?: string|null
      * } $args
