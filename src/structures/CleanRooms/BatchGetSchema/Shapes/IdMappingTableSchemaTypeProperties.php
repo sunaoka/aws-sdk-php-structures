@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<IdMappingTableInputSource> $idMappingTableInputSource
+ * @property string|null $idMappingTableId
  */
 class IdMappingTableSchemaTypeProperties extends Shape
 {
     /**
-     * @param array{idMappingTableInputSource: list<IdMappingTableInputSource>} $args
+     * @param array{
+     *     idMappingTableInputSource: list<IdMappingTableInputSource>,
+     *     idMappingTableId?: string|null
+     * } $args
      */
     public function __construct(array $args)
     {

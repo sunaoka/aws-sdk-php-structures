@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RegistryCredential|null $registryCredential
  * @property 'CODEBUILD'|'SERVICE_ROLE'|null $imagePullCredentialsType
  * @property DockerServer|null $dockerServer
+ * @property 'LINUX_KERNEL_4'|'LINUX_KERNEL_6'|'LINUX_KERNEL_LATEST'|null $hostKernel
  */
 class ProjectEnvironment extends Shape
 {
@@ -31,7 +32,8 @@ class ProjectEnvironment extends Shape
      *     certificate?: string|null,
      *     registryCredential?: RegistryCredential|null,
      *     imagePullCredentialsType?: 'CODEBUILD'|'SERVICE_ROLE'|null,
-     *     dockerServer?: DockerServer|null
+     *     dockerServer?: DockerServer|null,
+     *     hostKernel?: 'LINUX_KERNEL_4'|'LINUX_KERNEL_6'|'LINUX_KERNEL_LATEST'|null
      * } $args
      */
     public function __construct(array $args)

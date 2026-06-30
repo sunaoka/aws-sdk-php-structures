@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RedshiftPropertiesPatch|null $redshiftProperties
  * @property SparkEmrPropertiesPatch|null $sparkEmrProperties
  * @property S3PropertiesPatch|null $s3Properties
+ * @property SnowflakePropertiesPatch|null $snowflakeProperties
  * @property AmazonQPropertiesPatch|null $amazonQProperties
  * @property MlflowPropertiesPatch|null $mlflowProperties
  * @property LakehousePropertiesPatch|null $lakehouseProperties
@@ -26,6 +27,7 @@ class ConnectionPropertiesPatch extends Shape
      *     redshiftProperties?: RedshiftPropertiesPatch|null,
      *     sparkEmrProperties?: SparkEmrPropertiesPatch|null,
      *     s3Properties?: S3PropertiesPatch|null,
+     *     snowflakeProperties?: SnowflakePropertiesPatch|null,
      *     amazonQProperties?: AmazonQPropertiesPatch|null,
      *     mlflowProperties?: MlflowPropertiesPatch|null,
      *     lakehouseProperties?: LakehousePropertiesPatch|null,

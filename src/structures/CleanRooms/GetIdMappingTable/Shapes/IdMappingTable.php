@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property IdMappingTableInputReferenceProperties $inputReferenceProperties
  * @property string|null $kmsKeyArn
+ * @property list<ChildResource>|null $childResources
  */
 class IdMappingTable extends Shape
 {
@@ -35,7 +36,8 @@ class IdMappingTable extends Shape
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
      *     inputReferenceProperties: IdMappingTableInputReferenceProperties,
-     *     kmsKeyArn?: string|null
+     *     kmsKeyArn?: string|null,
+     *     childResources?: list<ChildResource>|null
      * } $args
      */
     public function __construct(array $args)

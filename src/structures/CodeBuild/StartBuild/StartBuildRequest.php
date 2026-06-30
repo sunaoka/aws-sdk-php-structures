@@ -38,6 +38,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $debugSessionEnabled
  * @property Shapes\ProjectFleet|null $fleetOverride
  * @property int|null $autoRetryLimitOverride
+ * @property 'LINUX_KERNEL_4'|'LINUX_KERNEL_6'|'LINUX_KERNEL_LATEST'|null $hostKernelOverride
  */
 class StartBuildRequest extends Request
 {
@@ -75,7 +76,8 @@ class StartBuildRequest extends Request
      *     imagePullCredentialsTypeOverride?: 'CODEBUILD'|'SERVICE_ROLE'|null,
      *     debugSessionEnabled?: bool|null,
      *     fleetOverride?: Shapes\ProjectFleet|null,
-     *     autoRetryLimitOverride?: int|null
+     *     autoRetryLimitOverride?: int|null,
+     *     hostKernelOverride?: 'LINUX_KERNEL_4'|'LINUX_KERNEL_6'|'LINUX_KERNEL_LATEST'|null
      * } $args
      */
     public function __construct(array $args)

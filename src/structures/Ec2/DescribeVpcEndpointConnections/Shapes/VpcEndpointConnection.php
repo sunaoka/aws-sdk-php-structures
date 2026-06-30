@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VpcEndpointConnectionId
  * @property list<Tag>|null $Tags
  * @property string|null $VpcEndpointRegion
+ * @property list<PayerResponsibilityEntry>|null $PayerResponsibilities
  */
 class VpcEndpointConnection extends Shape
 {
@@ -33,7 +34,8 @@ class VpcEndpointConnection extends Shape
      *     IpAddressType?: 'ipv4'|'dualstack'|'ipv6'|null,
      *     VpcEndpointConnectionId?: string|null,
      *     Tags?: list<Tag>|null,
-     *     VpcEndpointRegion?: string|null
+     *     VpcEndpointRegion?: string|null,
+     *     PayerResponsibilities?: list<PayerResponsibilityEntry>|null
      * } $args
      */
     public function __construct(array $args = [])

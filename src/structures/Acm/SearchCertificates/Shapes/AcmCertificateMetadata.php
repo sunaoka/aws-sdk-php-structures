@@ -18,6 +18,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ENABLED'|'DISABLED'|null $ExportOption
  * @property 'CLOUDFRONT'|null $ManagedBy
  * @property 'EMAIL'|'DNS'|'HTTP'|null $ValidationMethod
+ * @property 'AWS_MANAGED'|'ACME'|'CUSTOMER_PROVIDED'|null $CertificateKeyPairOrigin
+ * @property string|null $AcmeEndpointArn
+ * @property string|null $AcmeAccountId
  */
 class AcmCertificateMetadata extends Shape
 {
@@ -35,7 +38,10 @@ class AcmCertificateMetadata extends Shape
      *     Type?: 'IMPORTED'|'AMAZON_ISSUED'|'PRIVATE'|null,
      *     ExportOption?: 'ENABLED'|'DISABLED'|null,
      *     ManagedBy?: 'CLOUDFRONT'|null,
-     *     ValidationMethod?: 'EMAIL'|'DNS'|'HTTP'|null
+     *     ValidationMethod?: 'EMAIL'|'DNS'|'HTTP'|null,
+     *     CertificateKeyPairOrigin?: 'AWS_MANAGED'|'ACME'|'CUSTOMER_PROVIDED'|null,
+     *     AcmeEndpointArn?: string|null,
+     *     AcmeAccountId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

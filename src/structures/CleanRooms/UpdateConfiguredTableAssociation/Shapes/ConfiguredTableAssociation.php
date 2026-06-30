@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'AGGREGATION'|'LIST'|'CUSTOM'>|null $analysisRuleTypes
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
+ * @property list<ChildResource>|null $childResources
  */
 class ConfiguredTableAssociation extends Shape
 {
@@ -33,7 +34,8 @@ class ConfiguredTableAssociation extends Shape
      *     description?: string|null,
      *     analysisRuleTypes?: list<'AGGREGATION'|'LIST'|'CUSTOM'>|null,
      *     createTime: \Aws\Api\DateTimeResult,
-     *     updateTime: \Aws\Api\DateTimeResult
+     *     updateTime: \Aws\Api\DateTimeResult,
+     *     childResources?: list<ChildResource>|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,6 +7,7 @@ class EKSClient extends \Aws\EKS\EKSClient
     use AssociateAccessPolicy\AssociateAccessPolicyTrait;
     use AssociateEncryptionConfig\AssociateEncryptionConfigTrait;
     use AssociateIdentityProviderConfig\AssociateIdentityProviderConfigTrait;
+    use CancelUpdate\CancelUpdateTrait;
     use CreateAccessEntry\CreateAccessEntryTrait;
     use CreateAddon\CreateAddonTrait;
     use CreateCapability\CreateCapabilityTrait;

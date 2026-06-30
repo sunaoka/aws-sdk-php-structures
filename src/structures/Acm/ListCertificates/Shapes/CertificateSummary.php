@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $ImportedAt
  * @property \Aws\Api\DateTimeResult|null $RevokedAt
  * @property 'CLOUDFRONT'|null $ManagedBy
+ * @property 'AWS_MANAGED'|'ACME'|'CUSTOMER_PROVIDED'|null $CertificateKeyPairOrigin
  */
 class CertificateSummary extends Shape
 {
@@ -49,7 +50,8 @@ class CertificateSummary extends Shape
      *     IssuedAt?: \Aws\Api\DateTimeResult|null,
      *     ImportedAt?: \Aws\Api\DateTimeResult|null,
      *     RevokedAt?: \Aws\Api\DateTimeResult|null,
-     *     ManagedBy?: 'CLOUDFRONT'|null
+     *     ManagedBy?: 'CLOUDFRONT'|null,
+     *     CertificateKeyPairOrigin?: 'AWS_MANAGED'|'ACME'|'CUSTOMER_PROVIDED'|null
      * } $args
      */
     public function __construct(array $args = [])

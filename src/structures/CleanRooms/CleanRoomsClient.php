@@ -17,6 +17,8 @@ class CleanRoomsClient extends \Aws\CleanRooms\CleanRoomsClient
     use CreateConfiguredTableAssociationAnalysisRule\CreateConfiguredTableAssociationAnalysisRuleTrait;
     use CreateIdMappingTable\CreateIdMappingTableTrait;
     use CreateIdNamespaceAssociation\CreateIdNamespaceAssociationTrait;
+    use CreateIntermediateTable\CreateIntermediateTableTrait;
+    use CreateIntermediateTableAnalysisRule\CreateIntermediateTableAnalysisRuleTrait;
     use CreateMembership\CreateMembershipTrait;
     use CreatePrivacyBudgetTemplate\CreatePrivacyBudgetTemplateTrait;
     use DeleteAnalysisTemplate\DeleteAnalysisTemplateTrait;
@@ -28,9 +30,12 @@ class CleanRoomsClient extends \Aws\CleanRooms\CleanRoomsClient
     use DeleteConfiguredTableAssociationAnalysisRule\DeleteConfiguredTableAssociationAnalysisRuleTrait;
     use DeleteIdMappingTable\DeleteIdMappingTableTrait;
     use DeleteIdNamespaceAssociation\DeleteIdNamespaceAssociationTrait;
+    use DeleteIntermediateTable\DeleteIntermediateTableTrait;
+    use DeleteIntermediateTableAnalysisRule\DeleteIntermediateTableAnalysisRuleTrait;
     use DeleteMember\DeleteMemberTrait;
     use DeleteMembership\DeleteMembershipTrait;
     use DeletePrivacyBudgetTemplate\DeletePrivacyBudgetTemplateTrait;
+    use DisallowIntermediateTable\DisallowIntermediateTableTrait;
     use GetAnalysisTemplate\GetAnalysisTemplateTrait;
     use GetCollaboration\GetCollaborationTrait;
     use GetCollaborationAnalysisTemplate\GetCollaborationAnalysisTemplateTrait;
@@ -45,6 +50,8 @@ class CleanRoomsClient extends \Aws\CleanRooms\CleanRoomsClient
     use GetConfiguredTableAssociationAnalysisRule\GetConfiguredTableAssociationAnalysisRuleTrait;
     use GetIdMappingTable\GetIdMappingTableTrait;
     use GetIdNamespaceAssociation\GetIdNamespaceAssociationTrait;
+    use GetIntermediateTable\GetIntermediateTableTrait;
+    use GetIntermediateTableAnalysisRule\GetIntermediateTableAnalysisRuleTrait;
     use GetMembership\GetMembershipTrait;
     use GetPrivacyBudgetTemplate\GetPrivacyBudgetTemplateTrait;
     use GetProtectedJob\GetProtectedJobTrait;
@@ -64,6 +71,8 @@ class CleanRoomsClient extends \Aws\CleanRooms\CleanRoomsClient
     use ListConfiguredTables\ListConfiguredTablesTrait;
     use ListIdMappingTables\ListIdMappingTablesTrait;
     use ListIdNamespaceAssociations\ListIdNamespaceAssociationsTrait;
+    use ListIntermediateTableVersions\ListIntermediateTableVersionsTrait;
+    use ListIntermediateTables\ListIntermediateTablesTrait;
     use ListMembers\ListMembersTrait;
     use ListMemberships\ListMembershipsTrait;
     use ListPrivacyBudgetTemplates\ListPrivacyBudgetTemplatesTrait;
@@ -73,6 +82,7 @@ class CleanRoomsClient extends \Aws\CleanRooms\CleanRoomsClient
     use ListSchemas\ListSchemasTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PopulateIdMappingTable\PopulateIdMappingTableTrait;
+    use PopulateIntermediateTable\PopulateIntermediateTableTrait;
     use PreviewPrivacyImpact\PreviewPrivacyImpactTrait;
     use StartProtectedJob\StartProtectedJobTrait;
     use StartProtectedQuery\StartProtectedQueryTrait;
@@ -88,6 +98,8 @@ class CleanRoomsClient extends \Aws\CleanRooms\CleanRoomsClient
     use UpdateConfiguredTableAssociationAnalysisRule\UpdateConfiguredTableAssociationAnalysisRuleTrait;
     use UpdateIdMappingTable\UpdateIdMappingTableTrait;
     use UpdateIdNamespaceAssociation\UpdateIdNamespaceAssociationTrait;
+    use UpdateIntermediateTable\UpdateIntermediateTableTrait;
+    use UpdateIntermediateTableAnalysisRule\UpdateIntermediateTableAnalysisRuleTrait;
     use UpdateMembership\UpdateMembershipTrait;
     use UpdatePrivacyBudgetTemplate\UpdatePrivacyBudgetTemplateTrait;
     use UpdateProtectedJob\UpdateProtectedJobTrait;

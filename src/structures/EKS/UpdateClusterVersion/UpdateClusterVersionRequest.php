@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $version
  * @property string|null $clientRequestToken
  * @property bool|null $force
+ * @property Shapes\RollbackConfig|null $rollbackConfig
  */
 class UpdateClusterVersionRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateClusterVersionRequest extends Request
      *     name: string,
      *     version: string,
      *     clientRequestToken?: string|null,
-     *     force?: bool|null
+     *     force?: bool|null,
+     *     rollbackConfig?: Shapes\RollbackConfig|null
      * } $args
      */
     public function __construct(array $args)

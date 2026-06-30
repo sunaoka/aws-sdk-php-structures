@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'Active'|'Inactive'|'Draft'>|null $Status
  * @property list<string>|null $Identifier
  * @property list<string>|null $Category
+ * @property list<string>|null $AwsMarketplaceSolutionArn
  */
 class ListSolutionsRequest extends Request
 {
@@ -23,7 +24,8 @@ class ListSolutionsRequest extends Request
      *     Sort?: Shapes\SolutionSort|null,
      *     Status?: list<'Active'|'Inactive'|'Draft'>|null,
      *     Identifier?: list<string>|null,
-     *     Category?: list<string>|null
+     *     Category?: list<string>|null,
+     *     AwsMarketplaceSolutionArn?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

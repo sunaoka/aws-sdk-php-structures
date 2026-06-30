@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<Shapes\MemberSpecification> $members
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'|'CAN_RUN_JOB'> $creatorMemberAbilities
  * @property Shapes\MLMemberAbilities|null $creatorMLMemberAbilities
  * @property string $creatorDisplayName
@@ -27,7 +27,7 @@ class CreateCollaborationRequest extends Request
      * @param array{
      *     members: list<Shapes\MemberSpecification>,
      *     name: string,
-     *     description: string,
+     *     description?: string|null,
      *     creatorMemberAbilities: list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'|'CAN_RUN_JOB'>,
      *     creatorMLMemberAbilities?: Shapes\MLMemberAbilities|null,
      *     creatorDisplayName: string,

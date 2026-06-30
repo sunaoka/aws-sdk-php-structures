@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'SUBMITTED'|'STARTED'|'CANCELLED'|'CANCELLING'|'FAILED'|'SUCCESS'|'TIMED_OUT' $status
  * @property list<ReceiverConfiguration> $receiverConfigurations
  * @property string|null $queryComputePayerAccountId
+ * @property IntermediateTableOutputConfiguration|null $intermediateTableConfiguration
  */
 class ProtectedQuerySummary extends Shape
 {
@@ -23,7 +24,8 @@ class ProtectedQuerySummary extends Shape
      *     createTime: \Aws\Api\DateTimeResult,
      *     status: 'SUBMITTED'|'STARTED'|'CANCELLED'|'CANCELLING'|'FAILED'|'SUCCESS'|'TIMED_OUT',
      *     receiverConfigurations: list<ReceiverConfiguration>,
-     *     queryComputePayerAccountId?: string|null
+     *     queryComputePayerAccountId?: string|null,
+     *     intermediateTableConfiguration?: IntermediateTableOutputConfiguration|null
      * } $args
      */
     public function __construct(array $args)

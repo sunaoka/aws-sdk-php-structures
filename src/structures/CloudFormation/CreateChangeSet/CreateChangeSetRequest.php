@@ -25,6 +25,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'DO_NOTHING'|'ROLLBACK'|'DELETE'|null $OnStackFailure
  * @property bool|null $ImportExistingResources
  * @property 'REVERT_DRIFT'|null $DeploymentMode
+ * @property Shapes\DeploymentConfig|null $DeploymentConfig
+ * @property bool|null $DisableValidation
  */
 class CreateChangeSetRequest extends Request
 {
@@ -49,7 +51,9 @@ class CreateChangeSetRequest extends Request
      *     IncludeNestedStacks?: bool|null,
      *     OnStackFailure?: 'DO_NOTHING'|'ROLLBACK'|'DELETE'|null,
      *     ImportExistingResources?: bool|null,
-     *     DeploymentMode?: 'REVERT_DRIFT'|null
+     *     DeploymentMode?: 'REVERT_DRIFT'|null,
+     *     DeploymentConfig?: Shapes\DeploymentConfig|null,
+     *     DisableValidation?: bool|null
      * } $args
      */
     public function __construct(array $args)

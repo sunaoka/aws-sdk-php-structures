@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SparkEmrPropertiesOutput|null $sparkEmrProperties
  * @property SparkGluePropertiesOutput|null $sparkGlueProperties
  * @property S3PropertiesOutput|null $s3Properties
+ * @property SnowflakePropertiesOutput|null $snowflakeProperties
  * @property AmazonQPropertiesOutput|null $amazonQProperties
  * @property MlflowPropertiesOutput|null $mlflowProperties
  * @property WorkflowsMwaaPropertiesOutput|null $workflowsMwaaProperties
@@ -32,6 +33,7 @@ class ConnectionPropertiesOutput extends Shape
      *     sparkEmrProperties?: SparkEmrPropertiesOutput|null,
      *     sparkGlueProperties?: SparkGluePropertiesOutput|null,
      *     s3Properties?: S3PropertiesOutput|null,
+     *     snowflakeProperties?: SnowflakePropertiesOutput|null,
      *     amazonQProperties?: AmazonQPropertiesOutput|null,
      *     mlflowProperties?: MlflowPropertiesOutput|null,
      *     workflowsMwaaProperties?: WorkflowsMwaaPropertiesOutput|null,

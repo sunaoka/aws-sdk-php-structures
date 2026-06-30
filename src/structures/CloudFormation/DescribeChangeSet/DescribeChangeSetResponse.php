@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'DO_NOTHING'|'ROLLBACK'|'DELETE'|null $OnStackFailure
  * @property bool|null $ImportExistingResources
  * @property 'REVERT_DRIFT'|null $DeploymentMode
+ * @property Shapes\DeploymentConfig|null $DeploymentConfig
  */
 class DescribeChangeSetResponse extends Response
 {

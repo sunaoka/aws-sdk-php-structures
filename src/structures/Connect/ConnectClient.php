@@ -37,6 +37,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ClaimPhoneNumber\ClaimPhoneNumberTrait;
     use CompleteAttachedFileUpload\CompleteAttachedFileUploadTrait;
     use CreateAgentStatus\CreateAgentStatusTrait;
+    use CreateAttachedFile\CreateAttachedFileTrait;
     use CreateContact\CreateContactTrait;
     use CreateContactFlow\CreateContactFlowTrait;
     use CreateContactFlowModule\CreateContactFlowModuleTrait;
@@ -287,6 +288,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use SendOutboundEmail\SendOutboundEmailTrait;
     use StartAttachedFileUpload\StartAttachedFileUploadTrait;
     use StartChatContact\StartChatContactTrait;
+    use StartContactConversationalAnalyticsJob\StartContactConversationalAnalyticsJobTrait;
     use StartContactEvaluation\StartContactEvaluationTrait;
     use StartContactMediaProcessing\StartContactMediaProcessingTrait;
     use StartContactRecording\StartContactRecordingTrait;

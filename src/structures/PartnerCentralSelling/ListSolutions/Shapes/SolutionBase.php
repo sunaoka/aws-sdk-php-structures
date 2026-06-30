@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Active'|'Inactive'|'Draft' $Status
  * @property string $Category
  * @property \Aws\Api\DateTimeResult $CreatedDate
+ * @property string|null $AwsMarketplaceSolutionArn
  */
 class SolutionBase extends Shape
 {
@@ -23,7 +24,8 @@ class SolutionBase extends Shape
      *     Name: string,
      *     Status: 'Active'|'Inactive'|'Draft',
      *     Category: string,
-     *     CreatedDate: \Aws\Api\DateTimeResult
+     *     CreatedDate: \Aws\Api\DateTimeResult,
+     *     AwsMarketplaceSolutionArn?: string|null
      * } $args
      */
     public function __construct(array $args)

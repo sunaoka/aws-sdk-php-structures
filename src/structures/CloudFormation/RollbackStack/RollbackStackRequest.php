@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $RoleARN
  * @property string|null $ClientRequestToken
  * @property bool|null $RetainExceptOnCreate
+ * @property Shapes\DeploymentConfig|null $DeploymentConfig
  */
 class RollbackStackRequest extends Request
 {
@@ -17,7 +18,8 @@ class RollbackStackRequest extends Request
      *     StackName: string,
      *     RoleARN?: string|null,
      *     ClientRequestToken?: string|null,
-     *     RetainExceptOnCreate?: bool|null
+     *     RetainExceptOnCreate?: bool|null,
+     *     DeploymentConfig?: Shapes\DeploymentConfig|null
      * } $args
      */
     public function __construct(array $args)

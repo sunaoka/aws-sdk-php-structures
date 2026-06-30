@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreatedDate
  * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'DELETE_IN_PROGRESS'|'ACTIVE'|null $Status
  * @property string|null $StatusReason
+ * @property string|null $PrimaryRegion
+ * @property list<RegionMetadata>|null $Regions
  */
 class InstanceMetadata extends Shape
 {
@@ -23,7 +25,9 @@ class InstanceMetadata extends Shape
      *     Name?: string|null,
      *     CreatedDate?: \Aws\Api\DateTimeResult|null,
      *     Status?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'DELETE_IN_PROGRESS'|'ACTIVE'|null,
-     *     StatusReason?: string|null
+     *     StatusReason?: string|null,
+     *     PrimaryRegion?: string|null,
+     *     Regions?: list<RegionMetadata>|null
      * } $args
      */
     public function __construct(array $args = [])

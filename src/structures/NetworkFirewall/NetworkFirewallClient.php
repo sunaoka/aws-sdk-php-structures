@@ -9,6 +9,7 @@ class NetworkFirewallClient extends \Aws\NetworkFirewall\NetworkFirewallClient
     use AssociateFirewallPolicy\AssociateFirewallPolicyTrait;
     use AssociateSubnets\AssociateSubnetsTrait;
     use AttachRuleGroupsToProxyConfiguration\AttachRuleGroupsToProxyConfigurationTrait;
+    use CreateContainerAssociation\CreateContainerAssociationTrait;
     use CreateFirewall\CreateFirewallTrait;
     use CreateFirewallPolicy\CreateFirewallPolicyTrait;
     use CreateProxy\CreateProxyTrait;
@@ -18,6 +19,7 @@ class NetworkFirewallClient extends \Aws\NetworkFirewall\NetworkFirewallClient
     use CreateRuleGroup\CreateRuleGroupTrait;
     use CreateTLSInspectionConfiguration\CreateTLSInspectionConfigurationTrait;
     use CreateVpcEndpointAssociation\CreateVpcEndpointAssociationTrait;
+    use DeleteContainerAssociation\DeleteContainerAssociationTrait;
     use DeleteFirewall\DeleteFirewallTrait;
     use DeleteFirewallPolicy\DeleteFirewallPolicyTrait;
     use DeleteNetworkFirewallTransitGatewayAttachment\DeleteNetworkFirewallTransitGatewayAttachmentTrait;
@@ -29,6 +31,7 @@ class NetworkFirewallClient extends \Aws\NetworkFirewall\NetworkFirewallClient
     use DeleteRuleGroup\DeleteRuleGroupTrait;
     use DeleteTLSInspectionConfiguration\DeleteTLSInspectionConfigurationTrait;
     use DeleteVpcEndpointAssociation\DeleteVpcEndpointAssociationTrait;
+    use DescribeContainerAssociation\DescribeContainerAssociationTrait;
     use DescribeFirewall\DescribeFirewallTrait;
     use DescribeFirewallMetadata\DescribeFirewallMetadataTrait;
     use DescribeFirewallPolicy\DescribeFirewallPolicyTrait;
@@ -49,6 +52,7 @@ class NetworkFirewallClient extends \Aws\NetworkFirewall\NetworkFirewallClient
     use DisassociateSubnets\DisassociateSubnetsTrait;
     use GetAnalysisReportResults\GetAnalysisReportResultsTrait;
     use ListAnalysisReports\ListAnalysisReportsTrait;
+    use ListContainerAssociations\ListContainerAssociationsTrait;
     use ListFirewallPolicies\ListFirewallPoliciesTrait;
     use ListFirewalls\ListFirewallsTrait;
     use ListFlowOperationResults\ListFlowOperationResultsTrait;
@@ -68,6 +72,7 @@ class NetworkFirewallClient extends \Aws\NetworkFirewall\NetworkFirewallClient
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAvailabilityZoneChangeProtection\UpdateAvailabilityZoneChangeProtectionTrait;
+    use UpdateContainerAssociation\UpdateContainerAssociationTrait;
     use UpdateFirewallAnalysisSettings\UpdateFirewallAnalysisSettingsTrait;
     use UpdateFirewallDeleteProtection\UpdateFirewallDeleteProtectionTrait;
     use UpdateFirewallDescription\UpdateFirewallDescriptionTrait;

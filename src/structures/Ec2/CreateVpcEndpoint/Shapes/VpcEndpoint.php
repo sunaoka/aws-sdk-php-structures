@@ -30,6 +30,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ServiceNetworkArn
  * @property string|null $ResourceConfigurationArn
  * @property string|null $ServiceRegion
+ * @property list<PayerResponsibilityEntry>|null $PayerResponsibilities
  */
 class VpcEndpoint extends Shape
 {
@@ -59,7 +60,8 @@ class VpcEndpoint extends Shape
      *     FailureReason?: string|null,
      *     ServiceNetworkArn?: string|null,
      *     ResourceConfigurationArn?: string|null,
-     *     ServiceRegion?: string|null
+     *     ServiceRegion?: string|null,
+     *     PayerResponsibilities?: list<PayerResponsibilityEntry>|null
      * } $args
      */
     public function __construct(array $args = [])

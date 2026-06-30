@@ -23,6 +23,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ClientRequestToken
  * @property bool|null $EnableTerminationProtection
  * @property bool|null $RetainExceptOnCreate
+ * @property Shapes\DeploymentConfig|null $DeploymentConfig
+ * @property bool|null $DisableValidation
  */
 class CreateStackRequest extends Request
 {
@@ -45,7 +47,9 @@ class CreateStackRequest extends Request
      *     Tags?: list<Shapes\Tag>|null,
      *     ClientRequestToken?: string|null,
      *     EnableTerminationProtection?: bool|null,
-     *     RetainExceptOnCreate?: bool|null
+     *     RetainExceptOnCreate?: bool|null,
+     *     DeploymentConfig?: Shapes\DeploymentConfig|null,
+     *     DisableValidation?: bool|null
      * } $args
      */
     public function __construct(array $args)

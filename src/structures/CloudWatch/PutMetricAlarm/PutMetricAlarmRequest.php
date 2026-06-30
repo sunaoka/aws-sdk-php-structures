@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\MetricDataQuery>|null $Metrics
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $ThresholdMetricId
+ * @property Shapes\EvaluationWindow|null $EvaluationWindow
  * @property Shapes\EvaluationCriteria|null $EvaluationCriteria
  * @property int<10, 3600>|null $EvaluationInterval
  */
@@ -56,6 +57,7 @@ class PutMetricAlarmRequest extends Request
      *     Metrics?: list<Shapes\MetricDataQuery>|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     ThresholdMetricId?: string|null,
+     *     EvaluationWindow?: Shapes\EvaluationWindow|null,
      *     EvaluationCriteria?: Shapes\EvaluationCriteria|null,
      *     EvaluationInterval?: int<10, 3600>|null
      * } $args

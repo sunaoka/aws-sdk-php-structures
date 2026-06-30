@@ -684,6 +684,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ModifyVpcEncryptionControl\ModifyVpcEncryptionControlTrait;
     use ModifyVpcEndpoint\ModifyVpcEndpointTrait;
     use ModifyVpcEndpointConnectionNotification\ModifyVpcEndpointConnectionNotificationTrait;
+    use ModifyVpcEndpointPayerResponsibility\ModifyVpcEndpointPayerResponsibilityTrait;
     use ModifyVpcEndpointServiceConfiguration\ModifyVpcEndpointServiceConfigurationTrait;
     use ModifyVpcEndpointServicePayerResponsibility\ModifyVpcEndpointServicePayerResponsibilityTrait;
     use ModifyVpcEndpointServicePermissions\ModifyVpcEndpointServicePermissionsTrait;
