@@ -61,6 +61,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use GetPackageVersionHistory\GetPackageVersionHistoryTrait;
     use GetUpgradeHistory\GetUpgradeHistoryTrait;
     use GetUpgradeStatus\GetUpgradeStatusTrait;
+    use InsightFeedback\InsightFeedbackTrait;
     use ListApplications\ListApplicationsTrait;
     use ListDataSourceAttachments\ListDataSourceAttachmentsTrait;
     use ListDataSources\ListDataSourcesTrait;

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CustomSql|null $CustomSql
  * @property S3Source|null $S3Source
  * @property SaaSTable|null $SaaSTable
+ * @property FileSource|null $FileSource
  */
 class PhysicalTable extends Shape
 {
@@ -17,7 +18,8 @@ class PhysicalTable extends Shape
      *     RelationalTable?: RelationalTable|null,
      *     CustomSql?: CustomSql|null,
      *     S3Source?: S3Source|null,
-     *     SaaSTable?: SaaSTable|null
+     *     SaaSTable?: SaaSTable|null,
+     *     FileSource?: FileSource|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ADAPTIVE'|'STATIC'|null $DynamicSubGop
  * @property 'INCLUDE'|'SUPPRESS'|null $EndOfStreamMarkers
  * @property 'CABAC'|'CAVLC'|null $EntropyEncoding
+ * @property 'DISABLED'|'ENABLED'|null $ExplicitWeightedPrediction
  * @property 'PAFF'|'FORCE_FIELD'|'MBAFF'|null $FieldEncoding
  * @property 'DISABLED'|'ENABLED'|null $FlickerAdaptiveQuantization
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $FramerateControl
@@ -64,6 +65,7 @@ class H264Settings extends Shape
      *     DynamicSubGop?: 'ADAPTIVE'|'STATIC'|null,
      *     EndOfStreamMarkers?: 'INCLUDE'|'SUPPRESS'|null,
      *     EntropyEncoding?: 'CABAC'|'CAVLC'|null,
+     *     ExplicitWeightedPrediction?: 'DISABLED'|'ENABLED'|null,
      *     FieldEncoding?: 'PAFF'|'FORCE_FIELD'|'MBAFF'|null,
      *     FlickerAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null,
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,

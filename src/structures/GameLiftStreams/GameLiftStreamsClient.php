@@ -8,6 +8,7 @@ class GameLiftStreamsClient extends \Aws\GameLiftStreams\GameLiftStreamsClient
     use AssociateApplications\AssociateApplicationsTrait;
     use CreateApplication\CreateApplicationTrait;
     use CreateStreamGroup\CreateStreamGroupTrait;
+    use CreateStreamSessionAdminShell\CreateStreamSessionAdminShellTrait;
     use CreateStreamSessionConnection\CreateStreamSessionConnectionTrait;
     use DeleteApplication\DeleteApplicationTrait;
     use DeleteStreamGroup\DeleteStreamGroupTrait;

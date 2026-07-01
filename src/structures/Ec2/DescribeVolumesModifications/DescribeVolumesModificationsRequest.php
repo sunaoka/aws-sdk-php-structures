@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Filter>|null $Filters
  * @property string|null $NextToken
  * @property int|null $MaxResults
+ * @property bool|null $IncludeManagedResources
  */
 class DescribeVolumesModificationsRequest extends Request
 {
@@ -19,7 +20,8 @@ class DescribeVolumesModificationsRequest extends Request
      *     VolumeIds?: list<string>|null,
      *     Filters?: list<Shapes\Filter>|null,
      *     NextToken?: string|null,
-     *     MaxResults?: int|null
+     *     MaxResults?: int|null,
+     *     IncludeManagedResources?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

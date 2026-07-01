@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ColorCorrector|null $ColorCorrector
  * @property Deinterlacer|null $Deinterlacer
  * @property DolbyVision|null $DolbyVision
+ * @property DurationControl|null $DurationControl
  * @property Hdr10Plus|null $Hdr10Plus
  * @property ImageInserter|null $ImageInserter
  * @property NoiseReducer|null $NoiseReducer
@@ -21,6 +22,7 @@ class VideoPreprocessor extends Shape
      *     ColorCorrector?: ColorCorrector|null,
      *     Deinterlacer?: Deinterlacer|null,
      *     DolbyVision?: DolbyVision|null,
+     *     DurationControl?: DurationControl|null,
      *     Hdr10Plus?: Hdr10Plus|null,
      *     ImageInserter?: ImageInserter|null,
      *     NoiseReducer?: NoiseReducer|null,

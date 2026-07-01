@@ -28,6 +28,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AIMLOptionsStatus|null $AIMLOptions
  * @property DeploymentStrategyOptionsStatus|null $DeploymentStrategyOptions
  * @property AutomatedSnapshotPauseOptionsStatus|null $AutomatedSnapshotPauseOptions
+ * @property UseCaseStatus|null $UseCase
+ * @property EngineModeStatus|null $EngineMode
  */
 class DomainConfig extends Shape
 {
@@ -55,7 +57,9 @@ class DomainConfig extends Shape
      *     ModifyingProperties?: list<ModifyingProperties>|null,
      *     AIMLOptions?: AIMLOptionsStatus|null,
      *     DeploymentStrategyOptions?: DeploymentStrategyOptionsStatus|null,
-     *     AutomatedSnapshotPauseOptions?: AutomatedSnapshotPauseOptionsStatus|null
+     *     AutomatedSnapshotPauseOptions?: AutomatedSnapshotPauseOptionsStatus|null,
+     *     UseCase?: UseCaseStatus|null,
+     *     EngineMode?: EngineModeStatus|null
      * } $args
      */
     public function __construct(array $args = [])

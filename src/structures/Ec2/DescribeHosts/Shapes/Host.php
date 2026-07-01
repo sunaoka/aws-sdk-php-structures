@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property HostProperties|null $HostProperties
  * @property string|null $HostReservationId
  * @property list<HostInstance>|null $Instances
- * @property 'available'|'under-assessment'|'permanent-failure'|'released'|'released-permanent-failure'|'pending'|null $State
+ * @property 'available'|'under-assessment'|'permanent-failure'|'released'|'released-permanent-failure'|'pending'|'configuring'|null $State
  * @property \Aws\Api\DateTimeResult|null $AllocationTime
  * @property \Aws\Api\DateTimeResult|null $ReleaseTime
  * @property list<Tag>|null $Tags
@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $OutpostArn
  * @property 'on'|'off'|null $HostMaintenance
  * @property string|null $AssetId
+ * @property HostCpuOptions|null $CpuOptions
  */
 class Host extends Shape
 {
@@ -38,7 +39,7 @@ class Host extends Shape
      *     HostProperties?: HostProperties|null,
      *     HostReservationId?: string|null,
      *     Instances?: list<HostInstance>|null,
-     *     State?: 'available'|'under-assessment'|'permanent-failure'|'released'|'released-permanent-failure'|'pending'|null,
+     *     State?: 'available'|'under-assessment'|'permanent-failure'|'released'|'released-permanent-failure'|'pending'|'configuring'|null,
      *     AllocationTime?: \Aws\Api\DateTimeResult|null,
      *     ReleaseTime?: \Aws\Api\DateTimeResult|null,
      *     Tags?: list<Tag>|null,
@@ -49,7 +50,8 @@ class Host extends Shape
      *     MemberOfServiceLinkedResourceGroup?: bool|null,
      *     OutpostArn?: string|null,
      *     HostMaintenance?: 'on'|'off'|null,
-     *     AssetId?: string|null
+     *     AssetId?: string|null,
+     *     CpuOptions?: HostCpuOptions|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -286,6 +286,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use SearchWorkspaces\SearchWorkspacesTrait;
     use SendChatIntegrationEvent\SendChatIntegrationEventTrait;
     use SendOutboundEmail\SendOutboundEmailTrait;
+    use SendOutboundWebNotification\SendOutboundWebNotificationTrait;
     use StartAttachedFileUpload\StartAttachedFileUploadTrait;
     use StartChatContact\StartChatContactTrait;
     use StartContactConversationalAnalyticsJob\StartContactConversationalAnalyticsJobTrait;

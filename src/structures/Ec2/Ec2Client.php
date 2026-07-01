@@ -274,6 +274,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeregisterTransitGatewayMulticastGroupMembers\DeregisterTransitGatewayMulticastGroupMembersTrait;
     use DeregisterTransitGatewayMulticastGroupSources\DeregisterTransitGatewayMulticastGroupSourcesTrait;
     use DescribeAccountAttributes\DescribeAccountAttributesTrait;
+    use DescribeAccountVpcEncryptionControl\DescribeAccountVpcEncryptionControlTrait;
     use DescribeAddressTransfers\DescribeAddressTransfersTrait;
     use DescribeAddresses\DescribeAddressesTrait;
     use DescribeAddressesAttribute\DescribeAddressesAttributeTrait;
@@ -614,6 +615,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ListSnapshotsInRecycleBin\ListSnapshotsInRecycleBinTrait;
     use ListVolumesInRecycleBin\ListVolumesInRecycleBinTrait;
     use LockSnapshot\LockSnapshotTrait;
+    use ModifyAccountVpcEncryptionControl\ModifyAccountVpcEncryptionControlTrait;
     use ModifyAddressAttribute\ModifyAddressAttributeTrait;
     use ModifyAvailabilityZoneGroup\ModifyAvailabilityZoneGroupTrait;
     use ModifyCapacityReservation\ModifyCapacityReservationTrait;

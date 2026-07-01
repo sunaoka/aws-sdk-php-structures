@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'on'|'off'|null $HostMaintenance
  * @property list<string>|null $AssetIds
  * @property string|null $AvailabilityZoneId
+ * @property Shapes\HostCpuOptionsRequest|null $CpuOptions
  * @property 'on'|'off'|null $AutoPlacement
  * @property string|null $ClientToken
  * @property string|null $InstanceType
@@ -29,6 +30,7 @@ class AllocateHostsRequest extends Request
      *     HostMaintenance?: 'on'|'off'|null,
      *     AssetIds?: list<string>|null,
      *     AvailabilityZoneId?: string|null,
+     *     CpuOptions?: Shapes\HostCpuOptionsRequest|null,
      *     AutoPlacement?: 'on'|'off'|null,
      *     ClientToken?: string|null,
      *     InstanceType?: string|null,
