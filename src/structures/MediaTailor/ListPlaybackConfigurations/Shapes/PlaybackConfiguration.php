@@ -20,7 +20,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, max>|null $PersonalizationThresholdSeconds
  * @property string|null $PlaybackConfigurationArn
  * @property string|null $PlaybackEndpointPrefix
+ * @property string|null $DualStackPlaybackEndpointPrefix
  * @property string|null $SessionInitializationEndpointPrefix
+ * @property string|null $DualStackSessionInitializationEndpointPrefix
  * @property string|null $SlateAdUrl
  * @property array<string, string>|null $Tags
  * @property string|null $TranscodeProfileName
@@ -48,7 +50,9 @@ class PlaybackConfiguration extends Shape
      *     PersonalizationThresholdSeconds?: int<1, max>|null,
      *     PlaybackConfigurationArn?: string|null,
      *     PlaybackEndpointPrefix?: string|null,
+     *     DualStackPlaybackEndpointPrefix?: string|null,
      *     SessionInitializationEndpointPrefix?: string|null,
+     *     DualStackSessionInitializationEndpointPrefix?: string|null,
      *     SlateAdUrl?: string|null,
      *     Tags?: array<string, string>|null,
      *     TranscodeProfileName?: string|null,

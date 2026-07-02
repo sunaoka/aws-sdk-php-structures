@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property string|null $FailureReason
  * @property Shapes\RecommenderUpdate|null $LatestRecommenderUpdate
+ * @property string|null $ActiveRecommenderVersionName
  * @property list<Shapes\TrainingMetrics>|null $TrainingMetrics
  * @property array<string, string>|null $Tags
  */

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $RecommenderName
  * @property string|null $Description
  * @property Shapes\RecommenderConfig|null $RecommenderConfig
+ * @property string|null $RecommenderVersionName
  */
 class UpdateRecommenderRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateRecommenderRequest extends Request
      *     DomainName: string,
      *     RecommenderName: string,
      *     Description?: string|null,
-     *     RecommenderConfig?: Shapes\RecommenderConfig|null
+     *     RecommenderConfig?: Shapes\RecommenderConfig|null,
+     *     RecommenderVersionName?: string|null
      * } $args
      */
     public function __construct(array $args)

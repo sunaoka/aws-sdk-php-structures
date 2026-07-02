@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DeliveryS3KeyPrefix
  * @property list<Shapes\ConformancePackInputParameter>|null $ConformancePackInputParameters
  * @property list<string>|null $ExcludedAccounts
+ * @property list<Shapes\Tag>|null $Tags
  */
 class PutOrganizationConformancePackRequest extends Request
 {
@@ -23,7 +24,8 @@ class PutOrganizationConformancePackRequest extends Request
      *     DeliveryS3Bucket?: string|null,
      *     DeliveryS3KeyPrefix?: string|null,
      *     ConformancePackInputParameters?: list<Shapes\ConformancePackInputParameter>|null,
-     *     ExcludedAccounts?: list<string>|null
+     *     ExcludedAccounts?: list<string>|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

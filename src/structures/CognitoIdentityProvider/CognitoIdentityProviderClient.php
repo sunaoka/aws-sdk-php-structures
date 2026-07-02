@@ -78,6 +78,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use GetGroup\GetGroupTrait;
     use GetIdentityProviderByIdentifier\GetIdentityProviderByIdentifierTrait;
     use GetLogDeliveryConfiguration\GetLogDeliveryConfigurationTrait;
+    use GetProvisionedLimit\GetProvisionedLimitTrait;
     use GetSigningCertificate\GetSigningCertificateTrait;
     use GetTokensFromRefreshToken\GetTokensFromRefreshTokenTrait;
     use GetUICustomization\GetUICustomizationTrait;
@@ -121,6 +122,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use UpdateGroup\UpdateGroupTrait;
     use UpdateIdentityProvider\UpdateIdentityProviderTrait;
     use UpdateManagedLoginBranding\UpdateManagedLoginBrandingTrait;
+    use UpdateProvisionedLimit\UpdateProvisionedLimitTrait;
     use UpdateResourceServer\UpdateResourceServerTrait;
     use UpdateTerms\UpdateTermsTrait;
     use UpdateUserAttributes\UpdateUserAttributesTrait;

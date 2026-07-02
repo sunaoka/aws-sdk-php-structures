@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
  * @property string|null $FailureReason
+ * @property string|null $RecommenderVersionName
  */
 class RecommenderUpdate extends Shape
 {
@@ -19,7 +20,8 @@ class RecommenderUpdate extends Shape
      *     Status?: 'PENDING'|'IN_PROGRESS'|'ACTIVE'|'FAILED'|'STOPPING'|'INACTIVE'|'STARTING'|'DELETING'|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     LastUpdatedAt?: \Aws\Api\DateTimeResult|null,
-     *     FailureReason?: string|null
+     *     FailureReason?: string|null,
+     *     RecommenderVersionName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

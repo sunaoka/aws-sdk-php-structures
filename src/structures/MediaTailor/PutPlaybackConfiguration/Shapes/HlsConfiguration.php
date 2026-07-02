@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $ManifestEndpointPrefix
+ * @property string|null $DualStackManifestEndpointPrefix
  */
 class HlsConfiguration extends Shape
 {
     /**
-     * @param array{ManifestEndpointPrefix?: string|null} $args
+     * @param array{
+     *     ManifestEndpointPrefix?: string|null,
+     *     DualStackManifestEndpointPrefix?: string|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

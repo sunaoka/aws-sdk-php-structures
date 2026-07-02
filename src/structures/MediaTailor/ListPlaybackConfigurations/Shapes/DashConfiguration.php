@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $ManifestEndpointPrefix
+ * @property string|null $DualStackManifestEndpointPrefix
  * @property string|null $MpdLocation
  * @property 'SINGLE_PERIOD'|'MULTI_PERIOD'|null $OriginManifestType
  */
@@ -14,6 +15,7 @@ class DashConfiguration extends Shape
     /**
      * @param array{
      *     ManifestEndpointPrefix?: string|null,
+     *     DualStackManifestEndpointPrefix?: string|null,
      *     MpdLocation?: string|null,
      *     OriginManifestType?: 'SINGLE_PERIOD'|'MULTI_PERIOD'|null
      * } $args

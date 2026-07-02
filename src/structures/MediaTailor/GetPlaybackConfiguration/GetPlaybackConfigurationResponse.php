@@ -20,7 +20,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<1, max>|null $PersonalizationThresholdSeconds
  * @property string|null $PlaybackConfigurationArn
  * @property string|null $PlaybackEndpointPrefix
+ * @property string|null $DualStackPlaybackEndpointPrefix
  * @property string|null $SessionInitializationEndpointPrefix
+ * @property string|null $DualStackSessionInitializationEndpointPrefix
  * @property string|null $SlateAdUrl
  * @property array<string, string>|null $Tags
  * @property string|null $TranscodeProfileName

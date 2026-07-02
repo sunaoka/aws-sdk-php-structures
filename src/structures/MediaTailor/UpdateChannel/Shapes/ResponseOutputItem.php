@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property HlsPlaylistSettings|null $HlsPlaylistSettings
  * @property string $ManifestName
  * @property string $PlaybackUrl
+ * @property string|null $DualStackPlaybackUrl
  * @property string $SourceGroup
  */
 class ResponseOutputItem extends Shape
@@ -19,6 +20,7 @@ class ResponseOutputItem extends Shape
      *     HlsPlaylistSettings?: HlsPlaylistSettings|null,
      *     ManifestName: string,
      *     PlaybackUrl: string,
+     *     DualStackPlaybackUrl?: string|null,
      *     SourceGroup: string
      * } $args
      */

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $CandidateIds
  * @property int<1, 500>|null $MaxResults
  * @property Shapes\MetadataConfig|null $MetadataConfig
+ * @property Shapes\RecommendationDiversityConfig|null $DiversityConfig
  */
 class GetProfileRecommendationsRequest extends Request
 {
@@ -27,7 +28,8 @@ class GetProfileRecommendationsRequest extends Request
      *     RecommenderPromotionalFilters?: list<Shapes\RecommenderPromotionalFilter>|null,
      *     CandidateIds?: list<string>|null,
      *     MaxResults?: int<1, 500>|null,
-     *     MetadataConfig?: Shapes\MetadataConfig|null
+     *     MetadataConfig?: Shapes\MetadataConfig|null,
+     *     DiversityConfig?: Shapes\RecommendationDiversityConfig|null
      * } $args
      */
     public function __construct(array $args)
