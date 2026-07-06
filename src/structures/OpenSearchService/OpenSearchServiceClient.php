@@ -58,6 +58,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use GetDirectQueryDataSource\GetDirectQueryDataSourceTrait;
     use GetDomainMaintenanceStatus\GetDomainMaintenanceStatusTrait;
     use GetIndex\GetIndexTrait;
+    use GetMigration\GetMigrationTrait;
     use GetPackageVersionHistory\GetPackageVersionHistoryTrait;
     use GetUpgradeHistory\GetUpgradeHistoryTrait;
     use GetUpgradeStatus\GetUpgradeStatusTrait;
@@ -71,6 +72,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use ListDomainsForPackage\ListDomainsForPackageTrait;
     use ListInsights\ListInsightsTrait;
     use ListInstanceTypeDetails\ListInstanceTypeDetailsTrait;
+    use ListMigrations\ListMigrationsTrait;
     use ListPackagesForDomain\ListPackagesForDomainTrait;
     use ListScheduledActions\ListScheduledActionsTrait;
     use ListTags\ListTagsTrait;
@@ -86,6 +88,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use RevokeVpcEndpointAccess\RevokeVpcEndpointAccessTrait;
     use RollbackServiceSoftwareUpdate\RollbackServiceSoftwareUpdateTrait;
     use StartDomainMaintenance\StartDomainMaintenanceTrait;
+    use StartMigration\StartMigrationTrait;
     use StartServiceSoftwareUpdate\StartServiceSoftwareUpdateTrait;
     use UpdateApplication\UpdateApplicationTrait;
     use UpdateDataSource\UpdateDataSourceTrait;

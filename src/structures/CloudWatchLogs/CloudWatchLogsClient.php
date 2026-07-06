@@ -75,6 +75,7 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use GetQueryResults\GetQueryResultsTrait;
     use GetScheduledQuery\GetScheduledQueryTrait;
     use GetScheduledQueryHistory\GetScheduledQueryHistoryTrait;
+    use GetStorageTierPolicy\GetStorageTierPolicyTrait;
     use GetTransformer\GetTransformerTrait;
     use ListAggregateLogGroupSummaries\ListAggregateLogGroupSummariesTrait;
     use ListAnomalies\ListAnomaliesTrait;
@@ -103,6 +104,7 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use PutQueryDefinition\PutQueryDefinitionTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;
     use PutRetentionPolicy\PutRetentionPolicyTrait;
+    use PutStorageTierPolicy\PutStorageTierPolicyTrait;
     use PutSubscriptionFilter\PutSubscriptionFilterTrait;
     use PutSyslogConfiguration\PutSyslogConfigurationTrait;
     use PutTransformer\PutTransformerTrait;
