@@ -51,6 +51,25 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<NumberFilter>|null $epssScore
  * @property list<StringFilter>|null $codeRepositoryProjectName
  * @property list<StringFilter>|null $codeRepositoryProviderType
+ * @property list<StringFilter>|null $cloudProvider
+ * @property list<StringFilter>|null $cloudProviderRegion
+ * @property list<StringFilter>|null $cloudProviderAccountId
+ * @property list<StringFilter>|null $cloudProviderOrgId
+ * @property list<StringFilter>|null $cloudVmImageReference
+ * @property list<StringFilter>|null $cloudVmNetworkId
+ * @property list<StringFilter>|null $cloudVmSubnetIds
+ * @property list<StringFilter>|null $cloudImageRepositoryName
+ * @property list<StringFilter>|null $cloudImageRegistry
+ * @property list<StringFilter>|null $cloudImageDigest
+ * @property list<StringFilter>|null $cloudImageTags
+ * @property list<DateFilter>|null $cloudImagePushedAt
+ * @property list<StringFilter>|null $cloudImageArchitecture
+ * @property list<DateFilter>|null $cloudImageLastInUseAt
+ * @property list<NumberFilter>|null $cloudImageInUseCount
+ * @property list<StringFilter>|null $cloudServerlessFunctionName
+ * @property list<StringFilter>|null $cloudServerlessFunctionRuntime
+ * @property list<DateFilter>|null $cloudServerlessFunctionLastModifiedAt
+ * @property list<StringFilter>|null $cloudServerlessFunctionExecutionRole
  */
 class FilterCriteria extends Shape
 {
@@ -101,7 +120,26 @@ class FilterCriteria extends Shape
      *     codeVulnerabilityFilePath?: list<StringFilter>|null,
      *     epssScore?: list<NumberFilter>|null,
      *     codeRepositoryProjectName?: list<StringFilter>|null,
-     *     codeRepositoryProviderType?: list<StringFilter>|null
+     *     codeRepositoryProviderType?: list<StringFilter>|null,
+     *     cloudProvider?: list<StringFilter>|null,
+     *     cloudProviderRegion?: list<StringFilter>|null,
+     *     cloudProviderAccountId?: list<StringFilter>|null,
+     *     cloudProviderOrgId?: list<StringFilter>|null,
+     *     cloudVmImageReference?: list<StringFilter>|null,
+     *     cloudVmNetworkId?: list<StringFilter>|null,
+     *     cloudVmSubnetIds?: list<StringFilter>|null,
+     *     cloudImageRepositoryName?: list<StringFilter>|null,
+     *     cloudImageRegistry?: list<StringFilter>|null,
+     *     cloudImageDigest?: list<StringFilter>|null,
+     *     cloudImageTags?: list<StringFilter>|null,
+     *     cloudImagePushedAt?: list<DateFilter>|null,
+     *     cloudImageArchitecture?: list<StringFilter>|null,
+     *     cloudImageLastInUseAt?: list<DateFilter>|null,
+     *     cloudImageInUseCount?: list<NumberFilter>|null,
+     *     cloudServerlessFunctionName?: list<StringFilter>|null,
+     *     cloudServerlessFunctionRuntime?: list<StringFilter>|null,
+     *     cloudServerlessFunctionLastModifiedAt?: list<DateFilter>|null,
+     *     cloudServerlessFunctionExecutionRole?: list<StringFilter>|null
      * } $args
      */
     public function __construct(array $args = [])

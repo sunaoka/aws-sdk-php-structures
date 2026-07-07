@@ -30,7 +30,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $LastSuccessfulAssociationExecutionDate
  * @property InstanceAggregatedAssociationOverview|null $AssociationOverview
  * @property string|null $SourceId
- * @property 'AWS::EC2::Instance'|'AWS::IoT::Thing'|'AWS::SSM::ManagedInstance'|null $SourceType
+ * @property 'AWS::EC2::Instance'|'AWS::IoT::Thing'|'AWS::SSM::ManagedInstance'|'Microsoft.Compute/virtualMachines'|null $SourceType
+ * @property string|null $SourceLocation
+ * @property string|null $AvailabilityZone
  */
 class InstanceProperty extends Shape
 {
@@ -61,7 +63,9 @@ class InstanceProperty extends Shape
      *     LastSuccessfulAssociationExecutionDate?: \Aws\Api\DateTimeResult|null,
      *     AssociationOverview?: InstanceAggregatedAssociationOverview|null,
      *     SourceId?: string|null,
-     *     SourceType?: 'AWS::EC2::Instance'|'AWS::IoT::Thing'|'AWS::SSM::ManagedInstance'|null
+     *     SourceType?: 'AWS::EC2::Instance'|'AWS::IoT::Thing'|'AWS::SSM::ManagedInstance'|'Microsoft.Compute/virtualMachines'|null,
+     *     SourceLocation?: string|null,
+     *     AvailabilityZone?: string|null
      * } $args
      */
     public function __construct(array $args = [])

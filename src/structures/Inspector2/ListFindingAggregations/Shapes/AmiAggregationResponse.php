@@ -7,6 +7,11 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ami
  * @property string|null $accountId
+ * @property 'AWS'|'AZURE'|null $cloudProvider
+ * @property string|null $cloudPartition
+ * @property string|null $cloudRegion
+ * @property string|null $cloudOrgId
+ * @property string|null $cloudAccountId
  * @property SeverityCounts|null $severityCounts
  * @property int|null $affectedInstances
  */
@@ -16,6 +21,11 @@ class AmiAggregationResponse extends Shape
      * @param array{
      *     ami: string,
      *     accountId?: string|null,
+     *     cloudProvider?: 'AWS'|'AZURE'|null,
+     *     cloudPartition?: string|null,
+     *     cloudRegion?: string|null,
+     *     cloudOrgId?: string|null,
+     *     cloudAccountId?: string|null,
      *     severityCounts?: SeverityCounts|null,
      *     affectedInstances?: int|null
      * } $args

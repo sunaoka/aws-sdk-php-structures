@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property int|null $maxResults
  * @property string|null $nextToken
- * @property string $resourceArn
+ * @property string|null $resourceArn
  */
 class ListHostedZoneAssociationsRequest extends Request
 {
@@ -15,10 +15,10 @@ class ListHostedZoneAssociationsRequest extends Request
      * @param array{
      *     maxResults?: int|null,
      *     nextToken?: string|null,
-     *     resourceArn: string
+     *     resourceArn?: string|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

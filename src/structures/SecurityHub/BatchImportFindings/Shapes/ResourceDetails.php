@@ -105,6 +105,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AwsS3AccessPointDetails|null $AwsS3AccessPoint
  * @property AwsEc2ClientVpnEndpointDetails|null $AwsEc2ClientVpnEndpoint
  * @property CodeRepositoryDetails|null $CodeRepository
+ * @property AzureResourceDetails|null $AzureResource
  */
 class ResourceDetails extends Shape
 {
@@ -209,7 +210,8 @@ class ResourceDetails extends Shape
      *     AwsMskCluster?: AwsMskClusterDetails|null,
      *     AwsS3AccessPoint?: AwsS3AccessPointDetails|null,
      *     AwsEc2ClientVpnEndpoint?: AwsEc2ClientVpnEndpointDetails|null,
-     *     CodeRepository?: CodeRepositoryDetails|null
+     *     CodeRepository?: CodeRepositoryDetails|null,
+     *     AzureResource?: AzureResourceDetails|null
      * } $args
      */
     public function __construct(array $args = [])

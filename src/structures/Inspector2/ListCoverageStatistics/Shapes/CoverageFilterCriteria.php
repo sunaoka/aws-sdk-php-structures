@@ -26,6 +26,17 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<CoverageStringFilter>|null $codeRepositoryProviderType
  * @property list<CoverageStringFilter>|null $codeRepositoryProviderTypeVisibility
  * @property list<CoverageStringFilter>|null $lastScannedCommitId
+ * @property list<CoverageStringFilter>|null $cloudProvider
+ * @property list<CoverageStringFilter>|null $cloudProviderAccountId
+ * @property list<CoverageStringFilter>|null $cloudProviderRegion
+ * @property list<CoverageMapFilter>|null $cloudVmInstanceTags
+ * @property list<CoverageStringFilter>|null $cloudContainerImageTags
+ * @property list<CoverageStringFilter>|null $cloudContainerRepositoryName
+ * @property list<CoverageStringFilter>|null $cloudContainerRegistryName
+ * @property list<CoverageStringFilter>|null $cloudServerlessFunctionName
+ * @property list<CoverageStringFilter>|null $cloudServerlessFunctionRuntime
+ * @property list<CoverageMapFilter>|null $cloudServerlessFunctionTags
+ * @property list<CoverageStringFilter>|null $cloudProviderOrgId
  */
 class CoverageFilterCriteria extends Shape
 {
@@ -51,7 +62,18 @@ class CoverageFilterCriteria extends Shape
      *     codeRepositoryProjectName?: list<CoverageStringFilter>|null,
      *     codeRepositoryProviderType?: list<CoverageStringFilter>|null,
      *     codeRepositoryProviderTypeVisibility?: list<CoverageStringFilter>|null,
-     *     lastScannedCommitId?: list<CoverageStringFilter>|null
+     *     lastScannedCommitId?: list<CoverageStringFilter>|null,
+     *     cloudProvider?: list<CoverageStringFilter>|null,
+     *     cloudProviderAccountId?: list<CoverageStringFilter>|null,
+     *     cloudProviderRegion?: list<CoverageStringFilter>|null,
+     *     cloudVmInstanceTags?: list<CoverageMapFilter>|null,
+     *     cloudContainerImageTags?: list<CoverageStringFilter>|null,
+     *     cloudContainerRepositoryName?: list<CoverageStringFilter>|null,
+     *     cloudContainerRegistryName?: list<CoverageStringFilter>|null,
+     *     cloudServerlessFunctionName?: list<CoverageStringFilter>|null,
+     *     cloudServerlessFunctionRuntime?: list<CoverageStringFilter>|null,
+     *     cloudServerlessFunctionTags?: list<CoverageMapFilter>|null,
+     *     cloudProviderOrgId?: list<CoverageStringFilter>|null
      * } $args
      */
     public function __construct(array $args = [])

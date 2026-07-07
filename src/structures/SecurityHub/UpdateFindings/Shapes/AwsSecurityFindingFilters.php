@@ -109,6 +109,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<StringFilter>|null $AwsAccountName
  * @property list<StringFilter>|null $ResourceApplicationName
  * @property list<StringFilter>|null $ResourceApplicationArn
+ * @property list<StringFilter>|null $ResourceOwnerAccountId
+ * @property list<StringFilter>|null $ResourceOwnerOrgId
+ * @property list<StringFilter>|null $ResourceProvider
  */
 class AwsSecurityFindingFilters extends Shape
 {
@@ -217,7 +220,10 @@ class AwsSecurityFindingFilters extends Shape
      *     ComplianceSecurityControlParametersValue?: list<StringFilter>|null,
      *     AwsAccountName?: list<StringFilter>|null,
      *     ResourceApplicationName?: list<StringFilter>|null,
-     *     ResourceApplicationArn?: list<StringFilter>|null
+     *     ResourceApplicationArn?: list<StringFilter>|null,
+     *     ResourceOwnerAccountId?: list<StringFilter>|null,
+     *     ResourceOwnerOrgId?: list<StringFilter>|null,
+     *     ResourceProvider?: list<StringFilter>|null
      * } $args
      */
     public function __construct(array $args = [])

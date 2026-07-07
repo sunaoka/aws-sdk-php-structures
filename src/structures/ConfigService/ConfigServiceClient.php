@@ -12,6 +12,7 @@ class ConfigServiceClient extends \Aws\ConfigService\ConfigServiceClient
     use DeleteConfigurationAggregator\DeleteConfigurationAggregatorTrait;
     use DeleteConfigurationRecorder\DeleteConfigurationRecorderTrait;
     use DeleteConformancePack\DeleteConformancePackTrait;
+    use DeleteConnector\DeleteConnectorTrait;
     use DeleteDeliveryChannel\DeleteDeliveryChannelTrait;
     use DeleteEvaluationResults\DeleteEvaluationResultsTrait;
     use DeleteOrganizationConfigRule\DeleteOrganizationConfigRuleTrait;
@@ -61,6 +62,7 @@ class ConfigServiceClient extends \Aws\ConfigService\ConfigServiceClient
     use GetComplianceSummaryByResourceType\GetComplianceSummaryByResourceTypeTrait;
     use GetConformancePackComplianceDetails\GetConformancePackComplianceDetailsTrait;
     use GetConformancePackComplianceSummary\GetConformancePackComplianceSummaryTrait;
+    use GetConnector\GetConnectorTrait;
     use GetCustomRulePolicy\GetCustomRulePolicyTrait;
     use GetDiscoveredResourceCounts\GetDiscoveredResourceCountsTrait;
     use GetOrganizationConfigRuleDetailedStatus\GetOrganizationConfigRuleDetailedStatusTrait;
@@ -72,6 +74,7 @@ class ConfigServiceClient extends \Aws\ConfigService\ConfigServiceClient
     use ListAggregateDiscoveredResources\ListAggregateDiscoveredResourcesTrait;
     use ListConfigurationRecorders\ListConfigurationRecordersTrait;
     use ListConformancePackComplianceScores\ListConformancePackComplianceScoresTrait;
+    use ListConnectors\ListConnectorsTrait;
     use ListDiscoveredResources\ListDiscoveredResourcesTrait;
     use ListResourceEvaluations\ListResourceEvaluationsTrait;
     use ListStoredQueries\ListStoredQueriesTrait;
@@ -81,6 +84,7 @@ class ConfigServiceClient extends \Aws\ConfigService\ConfigServiceClient
     use PutConfigurationAggregator\PutConfigurationAggregatorTrait;
     use PutConfigurationRecorder\PutConfigurationRecorderTrait;
     use PutConformancePack\PutConformancePackTrait;
+    use PutConnector\PutConnectorTrait;
     use PutDeliveryChannel\PutDeliveryChannelTrait;
     use PutEvaluations\PutEvaluationsTrait;
     use PutExternalEvaluation\PutExternalEvaluationTrait;
@@ -92,6 +96,7 @@ class ConfigServiceClient extends \Aws\ConfigService\ConfigServiceClient
     use PutRetentionConfiguration\PutRetentionConfigurationTrait;
     use PutServiceLinkedConfigurationRecorder\PutServiceLinkedConfigurationRecorderTrait;
     use PutStoredQuery\PutStoredQueryTrait;
+    use PutThirdPartyServiceLinkedConfigurationRecorder\PutThirdPartyServiceLinkedConfigurationRecorderTrait;
     use SelectAggregateResourceConfig\SelectAggregateResourceConfigTrait;
     use SelectResourceConfig\SelectResourceConfigTrait;
     use StartConfigRulesEvaluation\StartConfigRulesEvaluationTrait;

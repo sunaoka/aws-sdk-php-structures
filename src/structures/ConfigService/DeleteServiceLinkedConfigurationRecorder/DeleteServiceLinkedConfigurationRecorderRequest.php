@@ -5,14 +5,18 @@ namespace Sunaoka\Aws\Structures\ConfigService\DeleteServiceLinkedConfigurationR
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ServicePrincipal
+ * @property string|null $ServicePrincipal
+ * @property string|null $Arn
  */
 class DeleteServiceLinkedConfigurationRecorderRequest extends Request
 {
     /**
-     * @param array{ServicePrincipal: string} $args
+     * @param array{
+     *     ServicePrincipal?: string|null,
+     *     Arn?: string|null
+     * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

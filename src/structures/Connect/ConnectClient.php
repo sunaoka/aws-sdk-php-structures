@@ -38,6 +38,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use CompleteAttachedFileUpload\CompleteAttachedFileUploadTrait;
     use CreateAgentStatus\CreateAgentStatusTrait;
     use CreateAttachedFile\CreateAttachedFileTrait;
+    use CreateAuthCode\CreateAuthCodeTrait;
     use CreateContact\CreateContactTrait;
     use CreateContactFlow\CreateContactFlowTrait;
     use CreateContactFlowModule\CreateContactFlowModuleTrait;
@@ -99,6 +100,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DeleteRoutingProfile\DeleteRoutingProfileTrait;
     use DeleteRule\DeleteRuleTrait;
     use DeleteSecurityProfile\DeleteSecurityProfileTrait;
+    use DeleteSession\DeleteSessionTrait;
     use DeleteTaskTemplate\DeleteTaskTemplateTrait;
     use DeleteTestCase\DeleteTestCaseTrait;
     use DeleteTrafficDistributionGroup\DeleteTrafficDistributionGroupTrait;

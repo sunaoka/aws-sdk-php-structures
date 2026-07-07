@@ -11,10 +11,16 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $InstanceStatus
  * @property string|null $IpAddress
  * @property 'All'|'Managed'|'Unmanaged'|null $ManagedStatus
+ * @property string|null $Name
  * @property 'Windows'|'Linux'|'MacOS'|null $PlatformType
  * @property string|null $PlatformName
  * @property string|null $PlatformVersion
  * @property 'ManagedInstance'|'EC2Instance'|null $ResourceType
+ * @property 'AWS::EC2::Instance'|'AWS::IoT::Thing'|'AWS::SSM::ManagedInstance'|'Microsoft.Compute/virtualMachines'|null $SourceType
+ * @property string|null $SourceId
+ * @property string|null $SourceLocation
+ * @property string|null $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
  */
 class InstanceInfo extends Shape
 {
@@ -26,10 +32,16 @@ class InstanceInfo extends Shape
      *     InstanceStatus?: string|null,
      *     IpAddress?: string|null,
      *     ManagedStatus?: 'All'|'Managed'|'Unmanaged'|null,
+     *     Name?: string|null,
      *     PlatformType?: 'Windows'|'Linux'|'MacOS'|null,
      *     PlatformName?: string|null,
      *     PlatformVersion?: string|null,
-     *     ResourceType?: 'ManagedInstance'|'EC2Instance'|null
+     *     ResourceType?: 'ManagedInstance'|'EC2Instance'|null,
+     *     SourceType?: 'AWS::EC2::Instance'|'AWS::IoT::Thing'|'AWS::SSM::ManagedInstance'|'Microsoft.Compute/virtualMachines'|null,
+     *     SourceId?: string|null,
+     *     SourceLocation?: string|null,
+     *     AvailabilityZone?: string|null,
+     *     AvailabilityZoneId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

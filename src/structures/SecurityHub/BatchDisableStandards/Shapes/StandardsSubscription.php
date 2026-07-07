@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PENDING'|'READY'|'FAILED'|'DELETING'|'INCOMPLETE' $StandardsStatus
  * @property 'READY_FOR_UPDATES'|'NOT_READY_FOR_UPDATES'|null $StandardsControlsUpdatable
  * @property StandardsStatusReason|null $StandardsStatusReason
+ * @property 'AWS'|'Azure'|null $Provider
  */
 class StandardsSubscription extends Shape
 {
@@ -21,7 +22,8 @@ class StandardsSubscription extends Shape
      *     StandardsInput: array<string, string>,
      *     StandardsStatus: 'PENDING'|'READY'|'FAILED'|'DELETING'|'INCOMPLETE',
      *     StandardsControlsUpdatable?: 'READY_FOR_UPDATES'|'NOT_READY_FOR_UPDATES'|null,
-     *     StandardsStatusReason?: StandardsStatusReason|null
+     *     StandardsStatusReason?: StandardsStatusReason|null,
+     *     Provider?: 'AWS'|'Azure'|null
      * } $args
      */
     public function __construct(array $args)

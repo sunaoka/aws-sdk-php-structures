@@ -23,6 +23,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use CreateAutomationRule\CreateAutomationRuleTrait;
     use CreateAutomationRuleV2\CreateAutomationRuleV2Trait;
     use CreateConfigurationPolicy\CreateConfigurationPolicyTrait;
+    use CreateConnector\CreateConnectorTrait;
     use CreateConnectorV2\CreateConnectorV2Trait;
     use CreateFindingAggregator\CreateFindingAggregatorTrait;
     use CreateInsight\CreateInsightTrait;
@@ -33,6 +34,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use DeleteAggregatorV2\DeleteAggregatorV2Trait;
     use DeleteAutomationRuleV2\DeleteAutomationRuleV2Trait;
     use DeleteConfigurationPolicy\DeleteConfigurationPolicyTrait;
+    use DeleteConnector\DeleteConnectorTrait;
     use DeleteConnectorV2\DeleteConnectorV2Trait;
     use DeleteFindingAggregator\DeleteFindingAggregatorTrait;
     use DeleteInsight\DeleteInsightTrait;
@@ -49,6 +51,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use DisableImportFindingsForProduct\DisableImportFindingsForProductTrait;
     use DisableOrganizationAdminAccount\DisableOrganizationAdminAccountTrait;
     use DisableSecurityHub\DisableSecurityHubTrait;
+    use DisableSecurityHubFeatureV2\DisableSecurityHubFeatureV2Trait;
     use DisableSecurityHubV2\DisableSecurityHubV2Trait;
     use DisassociateFromAdministratorAccount\DisassociateFromAdministratorAccountTrait;
     use DisassociateFromMasterAccount\DisassociateFromMasterAccountTrait;
@@ -56,6 +59,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use EnableImportFindingsForProduct\EnableImportFindingsForProductTrait;
     use EnableOrganizationAdminAccount\EnableOrganizationAdminAccountTrait;
     use EnableSecurityHub\EnableSecurityHubTrait;
+    use EnableSecurityHubFeatureV2\EnableSecurityHubFeatureV2Trait;
     use EnableSecurityHubV2\EnableSecurityHubV2Trait;
     use GenerateRecommendedPolicyV2\GenerateRecommendedPolicyV2Trait;
     use GetAdministratorAccount\GetAdministratorAccountTrait;
@@ -63,6 +67,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use GetAutomationRuleV2\GetAutomationRuleV2Trait;
     use GetConfigurationPolicy\GetConfigurationPolicyTrait;
     use GetConfigurationPolicyAssociation\GetConfigurationPolicyAssociationTrait;
+    use GetConnector\GetConnectorTrait;
     use GetConnectorV2\GetConnectorV2Trait;
     use GetEnabledStandards\GetEnabledStandardsTrait;
     use GetFindingAggregator\GetFindingAggregatorTrait;
@@ -87,6 +92,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use ListAutomationRulesV2\ListAutomationRulesV2Trait;
     use ListConfigurationPolicies\ListConfigurationPoliciesTrait;
     use ListConfigurationPolicyAssociations\ListConfigurationPolicyAssociationsTrait;
+    use ListConnectors\ListConnectorsTrait;
     use ListConnectorsV2\ListConnectorsV2Trait;
     use ListEnabledProductsForImport\ListEnabledProductsForImportTrait;
     use ListFindingAggregators\ListFindingAggregatorsTrait;
@@ -105,6 +111,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use UpdateAggregatorV2\UpdateAggregatorV2Trait;
     use UpdateAutomationRuleV2\UpdateAutomationRuleV2Trait;
     use UpdateConfigurationPolicy\UpdateConfigurationPolicyTrait;
+    use UpdateConnector\UpdateConnectorTrait;
     use UpdateConnectorV2\UpdateConnectorV2Trait;
     use UpdateFindingAggregator\UpdateFindingAggregatorTrait;
     use UpdateFindings\UpdateFindingsTrait;

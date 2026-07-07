@@ -43,6 +43,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<StringFilter>|null $ResourceApplicationArn
  * @property list<StringFilter>|null $ResourceApplicationName
  * @property list<StringFilter>|null $AwsAccountName
+ * @property list<StringFilter>|null $ResourceProvider
+ * @property list<StringFilter>|null $ResourceOwnerAccountId
+ * @property list<StringFilter>|null $ResourceOwnerOrgId
  */
 class AutomationRulesFindingFilters extends Shape
 {
@@ -85,7 +88,10 @@ class AutomationRulesFindingFilters extends Shape
      *     UserDefinedFields?: list<MapFilter>|null,
      *     ResourceApplicationArn?: list<StringFilter>|null,
      *     ResourceApplicationName?: list<StringFilter>|null,
-     *     AwsAccountName?: list<StringFilter>|null
+     *     AwsAccountName?: list<StringFilter>|null,
+     *     ResourceProvider?: list<StringFilter>|null,
+     *     ResourceOwnerAccountId?: list<StringFilter>|null,
+     *     ResourceOwnerOrgId?: list<StringFilter>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,6 +9,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $resourceId
  * @property string $layerHash
  * @property string $accountId
+ * @property string|null $cloudProvider
+ * @property string|null $cloudAccountId
+ * @property string|null $cloudOrgId
+ * @property string|null $cloudRegion
+ * @property string|null $cloudPartition
  * @property SeverityCounts|null $severityCounts
  */
 class ImageLayerAggregationResponse extends Shape
@@ -19,6 +24,11 @@ class ImageLayerAggregationResponse extends Shape
      *     resourceId: string,
      *     layerHash: string,
      *     accountId: string,
+     *     cloudProvider?: string|null,
+     *     cloudAccountId?: string|null,
+     *     cloudOrgId?: string|null,
+     *     cloudRegion?: string|null,
+     *     cloudPartition?: string|null,
      *     severityCounts?: SeverityCounts|null
      * } $args
      */

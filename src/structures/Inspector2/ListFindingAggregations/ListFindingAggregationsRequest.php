@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListFindingAggregations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'FINDING_TYPE'|'PACKAGE'|'TITLE'|'REPOSITORY'|'AMI'|'AWS_EC2_INSTANCE'|'AWS_ECR_CONTAINER'|'IMAGE_LAYER'|'ACCOUNT'|'AWS_LAMBDA_FUNCTION'|'LAMBDA_LAYER'|'CODE_REPOSITORY' $aggregationType
+ * @property 'FINDING_TYPE'|'PACKAGE'|'TITLE'|'REPOSITORY'|'AMI'|'AWS_EC2_INSTANCE'|'AWS_ECR_CONTAINER'|'IMAGE_LAYER'|'ACCOUNT'|'AWS_LAMBDA_FUNCTION'|'LAMBDA_LAYER'|'CODE_REPOSITORY'|'VM_INSTANCE'|'CONTAINER_IMAGE'|'SERVERLESS_FUNCTION' $aggregationType
  * @property string|null $nextToken
  * @property int<1, 100>|null $maxResults
  * @property list<Shapes\StringFilter>|null $accountIds
@@ -15,7 +15,7 @@ class ListFindingAggregationsRequest extends Request
 {
     /**
      * @param array{
-     *     aggregationType: 'FINDING_TYPE'|'PACKAGE'|'TITLE'|'REPOSITORY'|'AMI'|'AWS_EC2_INSTANCE'|'AWS_ECR_CONTAINER'|'IMAGE_LAYER'|'ACCOUNT'|'AWS_LAMBDA_FUNCTION'|'LAMBDA_LAYER'|'CODE_REPOSITORY',
+     *     aggregationType: 'FINDING_TYPE'|'PACKAGE'|'TITLE'|'REPOSITORY'|'AMI'|'AWS_EC2_INSTANCE'|'AWS_ECR_CONTAINER'|'IMAGE_LAYER'|'ACCOUNT'|'AWS_LAMBDA_FUNCTION'|'LAMBDA_LAYER'|'CODE_REPOSITORY'|'VM_INSTANCE'|'CONTAINER_IMAGE'|'SERVERLESS_FUNCTION',
      *     nextToken?: string|null,
      *     maxResults?: int<1, 100>|null,
      *     accountIds?: list<Shapes\StringFilter>|null,

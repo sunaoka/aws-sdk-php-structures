@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RecordingMode|null $recordingMode
  * @property 'INTERNAL'|'PAID'|null $recordingScope
  * @property string|null $servicePrincipal
+ * @property string|null $connectorArn
+ * @property ScopeConfiguration|null $scopeConfiguration
  */
 class ConfigurationRecorder extends Shape
 {
@@ -23,7 +25,9 @@ class ConfigurationRecorder extends Shape
      *     recordingGroup?: RecordingGroup|null,
      *     recordingMode?: RecordingMode|null,
      *     recordingScope?: 'INTERNAL'|'PAID'|null,
-     *     servicePrincipal?: string|null
+     *     servicePrincipal?: string|null,
+     *     connectorArn?: string|null,
+     *     scopeConfiguration?: ScopeConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

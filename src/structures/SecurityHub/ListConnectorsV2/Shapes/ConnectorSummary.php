@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property ProviderSummary $ProviderSummary
  * @property \Aws\Api\DateTimeResult $CreatedAt
+ * @property 'ENABLED'|'PENDING_ENABLEMENT'|'FAILED_TO_ENABLE'|'PENDING_UPDATE'|'FAILED_TO_UPDATE'|'PENDING_DELETION'|'FAILED_TO_DELETE'|null $EnablementStatus
+ * @property string|null $EnablementStatusReason
  */
 class ConnectorSummary extends Shape
 {
@@ -21,7 +23,9 @@ class ConnectorSummary extends Shape
      *     Name: string,
      *     Description?: string|null,
      *     ProviderSummary: ProviderSummary,
-     *     CreatedAt: \Aws\Api\DateTimeResult
+     *     CreatedAt: \Aws\Api\DateTimeResult,
+     *     EnablementStatus?: 'ENABLED'|'PENDING_ENABLEMENT'|'FAILED_TO_ENABLE'|'PENDING_UPDATE'|'FAILED_TO_UPDATE'|'PENDING_DELETION'|'FAILED_TO_DELETE'|null,
+     *     EnablementStatusReason?: string|null
      * } $args
      */
     public function __construct(array $args)

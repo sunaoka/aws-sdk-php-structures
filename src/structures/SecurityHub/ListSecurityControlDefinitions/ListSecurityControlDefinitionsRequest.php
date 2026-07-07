@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $StandardsArn
  * @property string|null $NextToken
  * @property int<1, 100>|null $MaxResults
+ * @property list<'AWS'|'Azure'>|null $Providers
  */
 class ListSecurityControlDefinitionsRequest extends Request
 {
@@ -15,7 +16,8 @@ class ListSecurityControlDefinitionsRequest extends Request
      * @param array{
      *     StandardsArn?: string|null,
      *     NextToken?: string|null,
-     *     MaxResults?: int<1, 100>|null
+     *     MaxResults?: int<1, 100>|null,
+     *     Providers?: list<'AWS'|'Azure'>|null
      * } $args
      */
     public function __construct(array $args = [])

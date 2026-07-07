@@ -41,6 +41,7 @@ class Route53GlobalResolverClient extends \Aws\Route53GlobalResolver\Route53Glob
     use ListGlobalResolvers\ListGlobalResolversTrait;
     use ListHostedZoneAssociations\ListHostedZoneAssociationsTrait;
     use ListManagedFirewallDomainLists\ListManagedFirewallDomainListsTrait;
+    use ListSharedDNSViews\ListSharedDNSViewsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;

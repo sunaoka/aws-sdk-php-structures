@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $EndTimestamp
  * @property string|null $Version
  * @property Shapes\TraceHeader|null $TraceHeader
+ * @property bool|null $ExecutionDataIncluded
+ * @property Shapes\DurableConfig|null $DurableConfig
  */
 class GetDurableExecutionResponse extends Response
 {

@@ -8,9 +8,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ResourceGuid
  * @property string $ResourceId
  * @property string $AccountId
+ * @property string|null $AccountName
  * @property string $Region
- * @property 'Compute'|'Database'|'Storage'|'Code'|'AI/ML'|'Identity'|'Network'|'Other'|null $ResourceCategory
- * @property string|null $ResourceType
+ * @property string|null $ResourceProvider
+ * @property string|null $ResourceOwnerAccountId
+ * @property string|null $ResourceOwnerOrgId
+ * @property string|null $ResourceCloudPartition
+ * @property string|null $ResourceRegion
+ * @property 'Compute'|'Database'|'Storage'|'Code'|'AI/ML'|'Identity'|'Network'|'Messaging'|'Other'|null $ResourceCategory
+ * @property string $ResourceType
  * @property string|null $ResourceName
  * @property string|null $ResourceCreationTimeDt
  * @property string $ResourceDetailCaptureTimeDt
@@ -25,9 +31,15 @@ class ResourceResult extends Shape
      *     ResourceGuid?: string|null,
      *     ResourceId: string,
      *     AccountId: string,
+     *     AccountName?: string|null,
      *     Region: string,
-     *     ResourceCategory?: 'Compute'|'Database'|'Storage'|'Code'|'AI/ML'|'Identity'|'Network'|'Other'|null,
-     *     ResourceType?: string|null,
+     *     ResourceProvider?: string|null,
+     *     ResourceOwnerAccountId?: string|null,
+     *     ResourceOwnerOrgId?: string|null,
+     *     ResourceCloudPartition?: string|null,
+     *     ResourceRegion?: string|null,
+     *     ResourceCategory?: 'Compute'|'Database'|'Storage'|'Code'|'AI/ML'|'Identity'|'Network'|'Messaging'|'Other'|null,
+     *     ResourceType: string,
      *     ResourceName?: string|null,
      *     ResourceCreationTimeDt?: string|null,
      *     ResourceDetailCaptureTimeDt: string,

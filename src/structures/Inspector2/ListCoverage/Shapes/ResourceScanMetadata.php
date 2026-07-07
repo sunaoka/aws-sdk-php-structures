@@ -10,6 +10,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Ec2Metadata|null $ec2
  * @property LambdaFunctionMetadata|null $lambdaFunction
  * @property CodeRepositoryMetadata|null $codeRepository
+ * @property VmInstanceMetadata|null $vmInstance
+ * @property ContainerImageMetadata|null $containerImage
+ * @property ContainerRepositoryMetadata|null $containerRepository
+ * @property ContainerRegistryMetadata|null $containerRegistry
+ * @property ServerlessFunctionMetadata|null $serverlessFunction
  */
 class ResourceScanMetadata extends Shape
 {
@@ -19,7 +24,12 @@ class ResourceScanMetadata extends Shape
      *     ecrImage?: EcrContainerImageMetadata|null,
      *     ec2?: Ec2Metadata|null,
      *     lambdaFunction?: LambdaFunctionMetadata|null,
-     *     codeRepository?: CodeRepositoryMetadata|null
+     *     codeRepository?: CodeRepositoryMetadata|null,
+     *     vmInstance?: VmInstanceMetadata|null,
+     *     containerImage?: ContainerImageMetadata|null,
+     *     containerRepository?: ContainerRepositoryMetadata|null,
+     *     containerRegistry?: ContainerRegistryMetadata|null,
+     *     serverlessFunction?: ServerlessFunctionMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

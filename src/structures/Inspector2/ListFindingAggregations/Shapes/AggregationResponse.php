@@ -17,6 +17,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LambdaLayerAggregationResponse|null $lambdaLayerAggregation
  * @property LambdaFunctionAggregationResponse|null $lambdaFunctionAggregation
  * @property CodeRepositoryAggregationResponse|null $codeRepositoryAggregation
+ * @property VmInstanceAggregationResponse|null $vmInstanceAggregation
+ * @property ContainerImageAggregationResponse|null $containerImageAggregation
+ * @property ServerlessFunctionAggregationResponse|null $serverlessFunctionAggregation
  */
 class AggregationResponse extends Shape
 {
@@ -33,7 +36,10 @@ class AggregationResponse extends Shape
      *     titleAggregation?: TitleAggregationResponse|null,
      *     lambdaLayerAggregation?: LambdaLayerAggregationResponse|null,
      *     lambdaFunctionAggregation?: LambdaFunctionAggregationResponse|null,
-     *     codeRepositoryAggregation?: CodeRepositoryAggregationResponse|null
+     *     codeRepositoryAggregation?: CodeRepositoryAggregationResponse|null,
+     *     vmInstanceAggregation?: VmInstanceAggregationResponse|null,
+     *     containerImageAggregation?: ContainerImageAggregationResponse|null,
+     *     serverlessFunctionAggregation?: ServerlessFunctionAggregationResponse|null
      * } $args
      */
     public function __construct(array $args = [])

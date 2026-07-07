@@ -11,6 +11,7 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use CreateActivation\CreateActivationTrait;
     use CreateAssociation\CreateAssociationTrait;
     use CreateAssociationBatch\CreateAssociationBatchTrait;
+    use CreateCloudConnector\CreateCloudConnectorTrait;
     use CreateDocument\CreateDocumentTrait;
     use CreateMaintenanceWindow\CreateMaintenanceWindowTrait;
     use CreateOpsItem\CreateOpsItemTrait;
@@ -19,6 +20,7 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use CreateResourceDataSync\CreateResourceDataSyncTrait;
     use DeleteActivation\DeleteActivationTrait;
     use DeleteAssociation\DeleteAssociationTrait;
+    use DeleteCloudConnector\DeleteCloudConnectorTrait;
     use DeleteDocument\DeleteDocumentTrait;
     use DeleteInventory\DeleteInventoryTrait;
     use DeleteMaintenanceWindow\DeleteMaintenanceWindowTrait;
@@ -70,6 +72,7 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use GetAccessToken\GetAccessTokenTrait;
     use GetAutomationExecution\GetAutomationExecutionTrait;
     use GetCalendarState\GetCalendarStateTrait;
+    use GetCloudConnector\GetCloudConnectorTrait;
     use GetCommandInvocation\GetCommandInvocationTrait;
     use GetConnectionStatus\GetConnectionStatusTrait;
     use GetDefaultPatchBaseline\GetDefaultPatchBaselineTrait;
@@ -97,6 +100,7 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use LabelParameterVersion\LabelParameterVersionTrait;
     use ListAssociationVersions\ListAssociationVersionsTrait;
     use ListAssociations\ListAssociationsTrait;
+    use ListCloudConnectors\ListCloudConnectorsTrait;
     use ListCommandInvocations\ListCommandInvocationsTrait;
     use ListCommands\ListCommandsTrait;
     use ListComplianceItems\ListComplianceItemsTrait;
@@ -138,6 +142,7 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use UnlabelParameterVersion\UnlabelParameterVersionTrait;
     use UpdateAssociation\UpdateAssociationTrait;
     use UpdateAssociationStatus\UpdateAssociationStatusTrait;
+    use UpdateCloudConnector\UpdateCloudConnectorTrait;
     use UpdateDocument\UpdateDocumentTrait;
     use UpdateDocumentDefaultVersion\UpdateDocumentDefaultVersionTrait;
     use UpdateDocumentMetadata\UpdateDocumentMetadataTrait;
@@ -150,4 +155,5 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use UpdatePatchBaseline\UpdatePatchBaselineTrait;
     use UpdateResourceDataSync\UpdateResourceDataSyncTrait;
     use UpdateServiceSetting\UpdateServiceSettingTrait;
+    use ValidateCloudConnector\ValidateCloudConnectorTrait;
 }

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'RUNNING'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'STOPPED' $Status
  * @property \Aws\Api\DateTimeResult $StartTimestamp
  * @property \Aws\Api\DateTimeResult|null $EndTimestamp
+ * @property string|null $KMSKeyArn
  */
 class Execution extends Shape
 {
@@ -21,7 +22,8 @@ class Execution extends Shape
      *     FunctionArn: string,
      *     Status: 'RUNNING'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'STOPPED',
      *     StartTimestamp: \Aws\Api\DateTimeResult,
-     *     EndTimestamp?: \Aws\Api\DateTimeResult|null
+     *     EndTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     KMSKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

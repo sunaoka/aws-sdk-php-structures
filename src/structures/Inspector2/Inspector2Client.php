@@ -18,12 +18,14 @@ class Inspector2Client extends \Aws\Inspector2\Inspector2Client
     use CreateCisScanConfiguration\CreateCisScanConfigurationTrait;
     use CreateCodeSecurityIntegration\CreateCodeSecurityIntegrationTrait;
     use CreateCodeSecurityScanConfiguration\CreateCodeSecurityScanConfigurationTrait;
+    use CreateConnector\CreateConnectorTrait;
     use CreateFilter\CreateFilterTrait;
     use CreateFindingsReport\CreateFindingsReportTrait;
     use CreateSbomExport\CreateSbomExportTrait;
     use DeleteCisScanConfiguration\DeleteCisScanConfigurationTrait;
     use DeleteCodeSecurityIntegration\DeleteCodeSecurityIntegrationTrait;
     use DeleteCodeSecurityScanConfiguration\DeleteCodeSecurityScanConfigurationTrait;
+    use DeleteConnector\DeleteConnectorTrait;
     use DeleteFilter\DeleteFilterTrait;
     use DescribeOrganizationConfiguration\DescribeOrganizationConfigurationTrait;
     use Disable\DisableTrait;
@@ -52,6 +54,8 @@ class Inspector2Client extends \Aws\Inspector2\Inspector2Client
     use ListCodeSecurityIntegrations\ListCodeSecurityIntegrationsTrait;
     use ListCodeSecurityScanConfigurationAssociations\ListCodeSecurityScanConfigurationAssociationsTrait;
     use ListCodeSecurityScanConfigurations\ListCodeSecurityScanConfigurationsTrait;
+    use ListConnectorScanConfigurations\ListConnectorScanConfigurationsTrait;
+    use ListConnectors\ListConnectorsTrait;
     use ListCoverage\ListCoverageTrait;
     use ListCoverageStatistics\ListCoverageStatisticsTrait;
     use ListDelegatedAdminAccounts\ListDelegatedAdminAccountsTrait;
@@ -74,6 +78,8 @@ class Inspector2Client extends \Aws\Inspector2\Inspector2Client
     use UpdateCodeSecurityIntegration\UpdateCodeSecurityIntegrationTrait;
     use UpdateCodeSecurityScanConfiguration\UpdateCodeSecurityScanConfigurationTrait;
     use UpdateConfiguration\UpdateConfigurationTrait;
+    use UpdateConnector\UpdateConnectorTrait;
+    use UpdateConnectorScanConfiguration\UpdateConnectorScanConfigurationTrait;
     use UpdateEc2DeepInspectionConfiguration\UpdateEc2DeepInspectionConfigurationTrait;
     use UpdateEncryptionKey\UpdateEncryptionKeyTrait;
     use UpdateFilter\UpdateFilterTrait;
