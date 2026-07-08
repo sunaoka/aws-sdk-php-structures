@@ -1,6 +1,6 @@
 <?php
 
-namespace Sunaoka\Aws\Structures\GeoPlaces\Autocomplete\Shapes;
+namespace Sunaoka\Aws\Structures\GeoPlaces\ReverseGeocode\Shapes;
 
 use Sunaoka\Aws\Structures\Shape;
 
@@ -9,13 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress'|'SecondaryAddress'|'InferredSecondaryAddress' $PlaceType
  * @property string $Title
  * @property Address|null $Address
- * @property int<0, 4294967295>|null $Distance
- * @property string|null $Language
- * @property string|null $PoliticalView
- * @property AutocompleteHighlights|null $Highlights
- * @property bool|null $EstimatedPointAddress
+ * @property list<double>|null $Position
+ * @property list<AccessPoint>|null $AccessPoints
  */
-class AutocompleteResultItem extends Shape
+class RelatedPlace extends Shape
 {
     /**
      * @param array{
@@ -23,11 +20,8 @@ class AutocompleteResultItem extends Shape
      *     PlaceType: 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress'|'SecondaryAddress'|'InferredSecondaryAddress',
      *     Title: string,
      *     Address?: Address|null,
-     *     Distance?: int<0, 4294967295>|null,
-     *     Language?: string|null,
-     *     PoliticalView?: string|null,
-     *     Highlights?: AutocompleteHighlights|null,
-     *     EstimatedPointAddress?: bool|null
+     *     Position?: list<double>|null,
+     *     AccessPoints?: list<AccessPoint>|null
      * } $args
      */
     public function __construct(array $args)

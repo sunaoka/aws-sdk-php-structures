@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<VpcLatticeConfiguration>|null $vpcLatticeConfigurations
  * @property ResolvedConfiguration|null $resolvedConfiguration
  * @property ECSManagedResources|null $ecsManagedResources
+ * @property ServiceRevisionOverrides|null $overrides
  * @property MonitoringConfiguration|null $monitoring
  */
 class ServiceRevision extends Shape
@@ -51,6 +52,7 @@ class ServiceRevision extends Shape
      *     vpcLatticeConfigurations?: list<VpcLatticeConfiguration>|null,
      *     resolvedConfiguration?: ResolvedConfiguration|null,
      *     ecsManagedResources?: ECSManagedResources|null,
+     *     overrides?: ServiceRevisionOverrides|null,
      *     monitoring?: MonitoringConfiguration|null
      * } $args
      */

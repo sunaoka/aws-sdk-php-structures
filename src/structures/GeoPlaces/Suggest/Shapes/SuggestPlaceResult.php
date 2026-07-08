@@ -19,6 +19,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TimeZone|null $TimeZone
  * @property string|null $PoliticalView
  * @property PhonemeDetails|null $Phonemes
+ * @property list<'DriveThrough'>|null $PlaceAttributes
+ * @property list<CrossReference>|null $CrossReferences
  */
 class SuggestPlaceResult extends Shape
 {
@@ -37,7 +39,9 @@ class SuggestPlaceResult extends Shape
      *     AccessRestrictions?: list<AccessRestriction>|null,
      *     TimeZone?: TimeZone|null,
      *     PoliticalView?: string|null,
-     *     Phonemes?: PhonemeDetails|null
+     *     Phonemes?: PhonemeDetails|null,
+     *     PlaceAttributes?: list<'DriveThrough'>|null,
+     *     CrossReferences?: list<CrossReference>|null
      * } $args
      */
     public function __construct(array $args = [])

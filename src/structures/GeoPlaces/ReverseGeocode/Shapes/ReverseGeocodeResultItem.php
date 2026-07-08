@@ -20,6 +20,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TimeZone|null $TimeZone
  * @property string|null $PoliticalView
  * @property list<Intersection>|null $Intersections
+ * @property RelatedPlace|null $MainAddress
+ * @property bool|null $EstimatedPointAddress
  */
 class ReverseGeocodeResultItem extends Shape
 {
@@ -39,7 +41,9 @@ class ReverseGeocodeResultItem extends Shape
      *     AccessPoints?: list<AccessPoint>|null,
      *     TimeZone?: TimeZone|null,
      *     PoliticalView?: string|null,
-     *     Intersections?: list<Intersection>|null
+     *     Intersections?: list<Intersection>|null,
+     *     MainAddress?: RelatedPlace|null,
+     *     EstimatedPointAddress?: bool|null
      * } $args
      */
     public function __construct(array $args)

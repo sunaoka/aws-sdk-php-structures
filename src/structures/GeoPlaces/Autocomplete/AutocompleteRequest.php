@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 20>|null $MaxResults
  * @property list<double>|null $BiasPosition
  * @property Shapes\AutocompleteFilter|null $Filter
- * @property 'MergeAllSpannedLocalities'|'EnumerateSpannedLocalities'|null $PostalCodeMode
+ * @property 'MergeAllSpannedLocalities'|'EnumerateSpannedLocalities'|'EnumerateSpannedDistricts'|null $PostalCodeMode
  * @property list<'Core'>|null $AdditionalFeatures
  * @property string|null $Language
  * @property string|null $PoliticalView
@@ -24,7 +24,7 @@ class AutocompleteRequest extends Request
      *     MaxResults?: int<1, 20>|null,
      *     BiasPosition?: list<double>|null,
      *     Filter?: Shapes\AutocompleteFilter|null,
-     *     PostalCodeMode?: 'MergeAllSpannedLocalities'|'EnumerateSpannedLocalities'|null,
+     *     PostalCodeMode?: 'MergeAllSpannedLocalities'|'EnumerateSpannedLocalities'|'EnumerateSpannedDistricts'|null,
      *     AdditionalFeatures?: list<'Core'>|null,
      *     Language?: string|null,
      *     PoliticalView?: string|null,

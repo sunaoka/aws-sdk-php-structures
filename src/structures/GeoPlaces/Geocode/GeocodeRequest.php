@@ -15,6 +15,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $PoliticalView
  * @property 'SingleUse'|'Storage'|null $IntendedUse
  * @property string|null $Key
+ * @property 'MergeAllSpannedLocalities'|'EnumerateSpannedLocalities'|'EnumerateSpannedDistricts'|null $PostalCodeMode
+ * @property list<'District'|'Locality'|'Region'|'SubRegion'>|null $AddressTranslations
+ * @property 'Matched'|'Administrative'|null $AddressNamesMode
  */
 class GeocodeRequest extends Request
 {
@@ -29,7 +32,10 @@ class GeocodeRequest extends Request
      *     Language?: string|null,
      *     PoliticalView?: string|null,
      *     IntendedUse?: 'SingleUse'|'Storage'|null,
-     *     Key?: string|null
+     *     Key?: string|null,
+     *     PostalCodeMode?: 'MergeAllSpannedLocalities'|'EnumerateSpannedLocalities'|'EnumerateSpannedDistricts'|null,
+     *     AddressTranslations?: list<'District'|'Locality'|'Region'|'SubRegion'>|null,
+     *     AddressNamesMode?: 'Matched'|'Administrative'|null
      * } $args
      */
     public function __construct(array $args = [])

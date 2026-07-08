@@ -6,22 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PlaceId
- * @property list<'TimeZone'|'Phonemes'|'Access'|'Contact'|'SecondaryAddresses'>|null $AdditionalFeatures
+ * @property list<'TimeZone'|'Phonemes'|'Access'|'Contact'|'SecondaryAddresses'|'CrossReferences'>|null $AdditionalFeatures
  * @property string|null $Language
  * @property string|null $PoliticalView
  * @property 'SingleUse'|'Storage'|null $IntendedUse
  * @property string|null $Key
+ * @property 'Administrative'|null $AddressNamesMode
  */
 class GetPlaceRequest extends Request
 {
     /**
      * @param array{
      *     PlaceId: string,
-     *     AdditionalFeatures?: list<'TimeZone'|'Phonemes'|'Access'|'Contact'|'SecondaryAddresses'>|null,
+     *     AdditionalFeatures?: list<'TimeZone'|'Phonemes'|'Access'|'Contact'|'SecondaryAddresses'|'CrossReferences'>|null,
      *     Language?: string|null,
      *     PoliticalView?: string|null,
      *     IntendedUse?: 'SingleUse'|'Storage'|null,
-     *     Key?: string|null
+     *     Key?: string|null,
+     *     AddressNamesMode?: 'Administrative'|null
      * } $args
      */
     public function __construct(array $args)

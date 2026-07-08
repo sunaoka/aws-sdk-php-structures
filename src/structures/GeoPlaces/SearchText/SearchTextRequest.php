@@ -10,11 +10,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 100>|null $MaxResults
  * @property list<double>|null $BiasPosition
  * @property Shapes\SearchTextFilter|null $Filter
- * @property list<'TimeZone'|'Phonemes'|'Access'|'Contact'>|null $AdditionalFeatures
+ * @property list<'TimeZone'|'Phonemes'|'Access'|'Contact'|'CrossReferences'>|null $AdditionalFeatures
  * @property string|null $Language
  * @property string|null $PoliticalView
  * @property 'SingleUse'|'Storage'|null $IntendedUse
  * @property string|null $NextToken
+ * @property 'Car'|'Scooter'|'Truck'|null $TravelMode
  * @property string|null $Key
  */
 class SearchTextRequest extends Request
@@ -26,11 +27,12 @@ class SearchTextRequest extends Request
      *     MaxResults?: int<1, 100>|null,
      *     BiasPosition?: list<double>|null,
      *     Filter?: Shapes\SearchTextFilter|null,
-     *     AdditionalFeatures?: list<'TimeZone'|'Phonemes'|'Access'|'Contact'>|null,
+     *     AdditionalFeatures?: list<'TimeZone'|'Phonemes'|'Access'|'Contact'|'CrossReferences'>|null,
      *     Language?: string|null,
      *     PoliticalView?: string|null,
      *     IntendedUse?: 'SingleUse'|'Storage'|null,
      *     NextToken?: string|null,
+     *     TravelMode?: 'Car'|'Scooter'|'Truck'|null,
      *     Key?: string|null
      * } $args
      */

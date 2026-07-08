@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $assessmentId
  * @property string $serviceArn
  * @property 'NOT_STARTED'|'PENDING'|'IN_PROGRESS'|'FAILED'|'SUCCESS'|null $assessmentStatus
- * @property 'TOPOLOGY_ENHANCEMENT'|'SERVICE_FUNCTION_GENERATION'|'RESILIENCE_ASSESSMENT'|null $assessmentStep
+ * @property 'TOPOLOGY_GENERATION'|'INPUT_VALIDATION'|'DESIGN_ANALYSIS'|'TOPOLOGY_ENHANCEMENT'|'SERVICE_FUNCTION_GENERATION'|'POLICY_VALIDATION'|'RESILIENCE_ASSESSMENT'|'FAILURE_MODE_FINDINGS_CONSOLIDATION'|'FAILURE_MODE_FINDINGS_ENRICHMENT'|null $assessmentStep
  * @property int|null $totalFindings
  * @property \Aws\Api\DateTimeResult|null $startedAt
  * @property \Aws\Api\DateTimeResult|null $endedAt
@@ -25,7 +25,7 @@ class AssessmentSummary extends Shape
      *     assessmentId: string,
      *     serviceArn: string,
      *     assessmentStatus?: 'NOT_STARTED'|'PENDING'|'IN_PROGRESS'|'FAILED'|'SUCCESS'|null,
-     *     assessmentStep?: 'TOPOLOGY_ENHANCEMENT'|'SERVICE_FUNCTION_GENERATION'|'RESILIENCE_ASSESSMENT'|null,
+     *     assessmentStep?: 'TOPOLOGY_GENERATION'|'INPUT_VALIDATION'|'DESIGN_ANALYSIS'|'TOPOLOGY_ENHANCEMENT'|'SERVICE_FUNCTION_GENERATION'|'POLICY_VALIDATION'|'RESILIENCE_ASSESSMENT'|'FAILURE_MODE_FINDINGS_CONSOLIDATION'|'FAILURE_MODE_FINDINGS_ENRICHMENT'|null,
      *     totalFindings?: int|null,
      *     startedAt?: \Aws\Api\DateTimeResult|null,
      *     endedAt?: \Aws\Api\DateTimeResult|null,

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 21000000>|null $QueryRadius
  * @property int<1, 100>|null $MaxResults
  * @property Shapes\SearchNearbyFilter|null $Filter
- * @property list<'TimeZone'|'Phonemes'|'Access'|'Contact'>|null $AdditionalFeatures
+ * @property list<'TimeZone'|'Phonemes'|'Access'|'Contact'|'CrossReferences'>|null $AdditionalFeatures
  * @property string|null $Language
  * @property string|null $PoliticalView
  * @property 'SingleUse'|'Storage'|null $IntendedUse
@@ -24,7 +24,7 @@ class SearchNearbyRequest extends Request
      *     QueryRadius?: int<1, 21000000>|null,
      *     MaxResults?: int<1, 100>|null,
      *     Filter?: Shapes\SearchNearbyFilter|null,
-     *     AdditionalFeatures?: list<'TimeZone'|'Phonemes'|'Access'|'Contact'>|null,
+     *     AdditionalFeatures?: list<'TimeZone'|'Phonemes'|'Access'|'Contact'|'CrossReferences'>|null,
      *     Language?: string|null,
      *     PoliticalView?: string|null,
      *     IntendedUse?: 'SingleUse'|'Storage'|null,

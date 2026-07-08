@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ParsedQueryComponent>|null $AddressNumber
  * @property list<ParsedQueryComponent>|null $Building
  * @property list<ParsedQuerySecondaryAddressComponent>|null $SecondaryAddressComponents
+ * @property list<ParsedQueryComponent>|null $OtherComponents
  */
 class GeocodeParsedQueryAddressComponents extends Shape
 {
@@ -35,7 +36,8 @@ class GeocodeParsedQueryAddressComponents extends Shape
      *     Street?: list<ParsedQueryComponent>|null,
      *     AddressNumber?: list<ParsedQueryComponent>|null,
      *     Building?: list<ParsedQueryComponent>|null,
-     *     SecondaryAddressComponents?: list<ParsedQuerySecondaryAddressComponent>|null
+     *     SecondaryAddressComponents?: list<ParsedQuerySecondaryAddressComponent>|null,
+     *     OtherComponents?: list<ParsedQueryComponent>|null
      * } $args
      */
     public function __construct(array $args = [])

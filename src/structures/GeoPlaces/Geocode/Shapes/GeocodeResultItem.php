@@ -24,6 +24,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Intersection>|null $Intersections
  * @property RelatedPlace|null $MainAddress
  * @property list<RelatedPlace>|null $SecondaryAddresses
+ * @property TranslationDetails|null $Translations
+ * @property bool|null $EstimatedPointAddress
  */
 class GeocodeResultItem extends Shape
 {
@@ -47,7 +49,9 @@ class GeocodeResultItem extends Shape
      *     ParsedQuery?: GeocodeParsedQuery|null,
      *     Intersections?: list<Intersection>|null,
      *     MainAddress?: RelatedPlace|null,
-     *     SecondaryAddresses?: list<RelatedPlace>|null
+     *     SecondaryAddresses?: list<RelatedPlace>|null,
+     *     Translations?: TranslationDetails|null,
+     *     EstimatedPointAddress?: bool|null
      * } $args
      */
     public function __construct(array $args)

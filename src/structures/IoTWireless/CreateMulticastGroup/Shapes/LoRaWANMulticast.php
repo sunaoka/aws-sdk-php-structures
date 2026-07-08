@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'EU868'|'US915'|'AU915'|'AS923-1'|'AS923-2'|'AS923-3'|'AS923-4'|'EU433'|'CN470'|'CN779'|'RU864'|'KR920'|'IN865'|null $RfRegion
  * @property 'ClassB'|'ClassC'|null $DlClass
  * @property ParticipatingGatewaysMulticast|null $ParticipatingGateways
+ * @property DefaultSessionParametersMulticast|null $DefaultSessionParameters
  */
 class LoRaWANMulticast extends Shape
 {
@@ -15,7 +16,8 @@ class LoRaWANMulticast extends Shape
      * @param array{
      *     RfRegion?: 'EU868'|'US915'|'AU915'|'AS923-1'|'AS923-2'|'AS923-3'|'AS923-4'|'EU433'|'CN470'|'CN779'|'RU864'|'KR920'|'IN865'|null,
      *     DlClass?: 'ClassB'|'ClassC'|null,
-     *     ParticipatingGateways?: ParticipatingGatewaysMulticast|null
+     *     ParticipatingGateways?: ParticipatingGatewaysMulticast|null,
+     *     DefaultSessionParameters?: DefaultSessionParametersMulticast|null
      * } $args
      */
     public function __construct(array $args = [])

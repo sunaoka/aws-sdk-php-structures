@@ -26,6 +26,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\PhonemeDetails|null $Phonemes
  * @property Shapes\RelatedPlace|null $MainAddress
  * @property list<Shapes\RelatedPlace>|null $SecondaryAddresses
+ * @property list<'DriveThrough'>|null $PlaceAttributes
+ * @property bool|null $EstimatedPointAddress
+ * @property list<Shapes\CrossReference>|null $CrossReferences
  */
 class GetPlaceResponse extends Response
 {

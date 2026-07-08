@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $NumberOfDevicesRequested
  * @property int|null $NumberOfDevicesInGroup
  * @property ParticipatingGatewaysMulticast|null $ParticipatingGateways
+ * @property DefaultSessionParametersMulticast|null $DefaultSessionParameters
  */
 class LoRaWANMulticastGet extends Shape
 {
@@ -19,7 +20,8 @@ class LoRaWANMulticastGet extends Shape
      *     DlClass?: 'ClassB'|'ClassC'|null,
      *     NumberOfDevicesRequested?: int|null,
      *     NumberOfDevicesInGroup?: int|null,
-     *     ParticipatingGateways?: ParticipatingGatewaysMulticast|null
+     *     ParticipatingGateways?: ParticipatingGatewaysMulticast|null,
+     *     DefaultSessionParameters?: DefaultSessionParametersMulticast|null
      * } $args
      */
     public function __construct(array $args = [])

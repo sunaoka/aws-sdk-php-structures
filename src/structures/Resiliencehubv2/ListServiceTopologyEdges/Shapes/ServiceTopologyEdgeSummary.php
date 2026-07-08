@@ -7,6 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $sourceResourceIdentifier
  * @property string $destinationResourceIdentifier
+ * @property string|null $sourceRegion
+ * @property string|null $destinationRegion
+ * @property string|null $sourceAccount
+ * @property string|null $destinationAccount
  * @property list<EdgePropertySummary>|null $properties
  */
 class ServiceTopologyEdgeSummary extends Shape
@@ -15,6 +19,10 @@ class ServiceTopologyEdgeSummary extends Shape
      * @param array{
      *     sourceResourceIdentifier: string,
      *     destinationResourceIdentifier: string,
+     *     sourceRegion?: string|null,
+     *     destinationRegion?: string|null,
+     *     sourceAccount?: string|null,
+     *     destinationAccount?: string|null,
      *     properties?: list<EdgePropertySummary>|null
      * } $args
      */

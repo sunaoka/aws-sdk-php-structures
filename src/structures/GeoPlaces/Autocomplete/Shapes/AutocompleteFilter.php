@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<double>|null $BoundingBox
  * @property FilterCircle|null $Circle
  * @property list<string>|null $IncludeCountries
- * @property list<'Locality'|'PostalCode'>|null $IncludePlaceTypes
+ * @property list<'Locality'|'PostalCode'|'Street'|'Intersection'|'PointAddress'|'InterpolatedAddress'|'Country'|'Region'>|null $IncludePlaceTypes
  */
 class AutocompleteFilter extends Shape
 {
@@ -17,7 +17,7 @@ class AutocompleteFilter extends Shape
      *     BoundingBox?: list<double>|null,
      *     Circle?: FilterCircle|null,
      *     IncludeCountries?: list<string>|null,
-     *     IncludePlaceTypes?: list<'Locality'|'PostalCode'>|null
+     *     IncludePlaceTypes?: list<'Locality'|'PostalCode'|'Street'|'Intersection'|'PointAddress'|'InterpolatedAddress'|'Country'|'Region'>|null
      * } $args
      */
     public function __construct(array $args = [])
