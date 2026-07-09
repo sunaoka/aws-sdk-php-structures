@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $name
  * @property list<Shapes\MediaTailorPlaybackConfiguration> $mediaTailorPlaybackConfigurations
+ * @property Shapes\PostRollConfiguration|null $postRollConfiguration
  * @property array<string, string>|null $tags
  */
 class CreateAdConfigurationRequest extends Request
@@ -15,6 +16,7 @@ class CreateAdConfigurationRequest extends Request
      * @param array{
      *     name?: string|null,
      *     mediaTailorPlaybackConfigurations: list<Shapes\MediaTailorPlaybackConfiguration>,
+     *     postRollConfiguration?: Shapes\PostRollConfiguration|null,
      *     tags?: array<string, string>|null
      * } $args
      */

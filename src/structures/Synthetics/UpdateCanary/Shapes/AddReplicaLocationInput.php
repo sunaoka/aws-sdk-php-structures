@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Location
  * @property VpcConfigInput|null $VpcConfig
+ * @property string|null $KmsKeyArn
  */
 class AddReplicaLocationInput extends Shape
 {
     /**
      * @param array{
      *     Location: string,
-     *     VpcConfig?: VpcConfigInput|null
+     *     VpcConfig?: VpcConfigInput|null,
+     *     KmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

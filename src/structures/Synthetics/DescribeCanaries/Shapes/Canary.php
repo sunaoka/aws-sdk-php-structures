@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MultiLocationConfig|null $MultiLocationConfig
  * @property array<string, string>|null $Tags
  * @property ArtifactConfigOutput|null $ArtifactConfig
+ * @property string|null $KmsKeyArn
  * @property DryRunConfigOutput|null $DryRunConfig
  */
 class Canary extends Shape
@@ -55,6 +56,7 @@ class Canary extends Shape
      *     MultiLocationConfig?: MultiLocationConfig|null,
      *     Tags?: array<string, string>|null,
      *     ArtifactConfig?: ArtifactConfigOutput|null,
+     *     KmsKeyArn?: string|null,
      *     DryRunConfig?: DryRunConfigOutput|null
      * } $args
      */

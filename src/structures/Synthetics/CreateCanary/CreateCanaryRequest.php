@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\AddReplicaLocationInput>|null $AddReplicaLocations
  * @property array<string, string>|null $Tags
  * @property Shapes\ArtifactConfigInput|null $ArtifactConfig
+ * @property string|null $KmsKeyArn
  */
 class CreateCanaryRequest extends Request
 {
@@ -41,7 +42,8 @@ class CreateCanaryRequest extends Request
      *     BrowserConfigs?: list<Shapes\BrowserConfig>|null,
      *     AddReplicaLocations?: list<Shapes\AddReplicaLocationInput>|null,
      *     Tags?: array<string, string>|null,
-     *     ArtifactConfig?: Shapes\ArtifactConfigInput|null
+     *     ArtifactConfig?: Shapes\ArtifactConfigInput|null,
+     *     KmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

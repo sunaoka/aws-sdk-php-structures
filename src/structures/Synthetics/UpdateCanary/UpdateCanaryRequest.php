@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\BrowserConfig>|null $BrowserConfigs
  * @property list<Shapes\AddReplicaLocationInput>|null $AddReplicaLocations
  * @property list<string>|null $RemoveReplicaLocations
+ * @property string|null $KmsKeyArn
  */
 class UpdateCanaryRequest extends Request
 {
@@ -45,7 +46,8 @@ class UpdateCanaryRequest extends Request
      *     VisualReferences?: list<Shapes\VisualReferenceInput>|null,
      *     BrowserConfigs?: list<Shapes\BrowserConfig>|null,
      *     AddReplicaLocations?: list<Shapes\AddReplicaLocationInput>|null,
-     *     RemoveReplicaLocations?: list<string>|null
+     *     RemoveReplicaLocations?: list<string>|null,
+     *     KmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)
