@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'AVAILABLE'|'PENDING_AVAILABLE'|'DEACTIVATED'|'SUSPENDED'|'EXPIRED'|'PENDING_DELETE'|'DELETED' $Status
  * @property string $ClientToken
  * @property string|null $SourceVersion
+ * @property bool|null $ResetUsage
  */
 class CreateLicenseVersionRequest extends Request
 {
@@ -33,7 +34,8 @@ class CreateLicenseVersionRequest extends Request
      *     ConsumptionConfiguration: Shapes\ConsumptionConfiguration,
      *     Status: 'AVAILABLE'|'PENDING_AVAILABLE'|'DEACTIVATED'|'SUSPENDED'|'EXPIRED'|'PENDING_DELETE'|'DELETED',
      *     ClientToken: string,
-     *     SourceVersion?: string|null
+     *     SourceVersion?: string|null,
+     *     ResetUsage?: bool|null
      * } $args
      */
     public function __construct(array $args)

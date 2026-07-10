@@ -25,6 +25,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use CreateGroupMembership\CreateGroupMembershipTrait;
     use CreateIAMPolicyAssignment\CreateIAMPolicyAssignmentTrait;
     use CreateIngestion\CreateIngestionTrait;
+    use CreateKnowledgeBase\CreateKnowledgeBaseTrait;
     use CreateNamespace\CreateNamespaceTrait;
     use CreateOAuthClientApplication\CreateOAuthClientApplicationTrait;
     use CreateRefreshSchedule\CreateRefreshScheduleTrait;
@@ -246,6 +247,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateIdentityPropagationConfig\UpdateIdentityPropagationConfigTrait;
     use UpdateIpRestriction\UpdateIpRestrictionTrait;
     use UpdateKeyRegistration\UpdateKeyRegistrationTrait;
+    use UpdateKnowledgeBase\UpdateKnowledgeBaseTrait;
     use UpdateKnowledgeBasePermissions\UpdateKnowledgeBasePermissionsTrait;
     use UpdateOAuthClientApplication\UpdateOAuthClientApplicationTrait;
     use UpdatePublicSharingSettings\UpdatePublicSharingSettingsTrait;

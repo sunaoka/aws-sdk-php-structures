@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SslProperties|null $SslProperties
  * @property DataSourceErrorInfo|null $ErrorInfo
  * @property string|null $SecretArn
+ * @property 'CONNECTED'|'AUTH_FAILED'|'NOT_VERIFIED'|null $CredentialStatus
+ * @property \Aws\Api\DateTimeResult|null $LastCredentialVerifiedAt
  */
 class DataSource extends Shape
 {
@@ -35,7 +37,9 @@ class DataSource extends Shape
      *     VpcConnectionProperties?: VpcConnectionProperties|null,
      *     SslProperties?: SslProperties|null,
      *     ErrorInfo?: DataSourceErrorInfo|null,
-     *     SecretArn?: string|null
+     *     SecretArn?: string|null,
+     *     CredentialStatus?: 'CONNECTED'|'AUTH_FAILED'|'NOT_VERIFIED'|null,
+     *     LastCredentialVerifiedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

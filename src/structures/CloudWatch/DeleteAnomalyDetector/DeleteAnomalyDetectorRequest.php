@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudWatch\DeleteAnomalyDetector;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string|null $AnomalyDetectorId
  * @property string|null $Namespace
  * @property string|null $MetricName
  * @property list<Shapes\Dimension>|null $Dimensions
@@ -16,6 +17,7 @@ class DeleteAnomalyDetectorRequest extends Request
 {
     /**
      * @param array{
+     *     AnomalyDetectorId?: string|null,
      *     Namespace?: string|null,
      *     MetricName?: string|null,
      *     Dimensions?: list<Shapes\Dimension>|null,

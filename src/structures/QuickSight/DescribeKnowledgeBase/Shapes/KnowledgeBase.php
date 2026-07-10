@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DataSourceArn
  * @property KnowledgeBaseConfiguration $KnowledgeBaseConfiguration
  * @property MediaExtractionConfiguration|null $MediaExtractionConfiguration
+ * @property AccessControlConfiguration|null $AccessControlConfiguration
  * @property string|null $Type
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property \Aws\Api\DateTimeResult|null $UpdatedAt
@@ -36,6 +37,7 @@ class KnowledgeBase extends Shape
      *     DataSourceArn: string,
      *     KnowledgeBaseConfiguration: KnowledgeBaseConfiguration,
      *     MediaExtractionConfiguration?: MediaExtractionConfiguration|null,
+     *     AccessControlConfiguration?: AccessControlConfiguration|null,
      *     Type?: string|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     UpdatedAt?: \Aws\Api\DateTimeResult|null,

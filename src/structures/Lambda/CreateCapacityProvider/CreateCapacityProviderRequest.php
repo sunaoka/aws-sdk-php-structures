@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $KmsKeyArn
  * @property array<string, string>|null $Tags
  * @property Shapes\PropagateTags|null $PropagateTags
+ * @property Shapes\CapacityProviderTelemetryConfig|null $TelemetryConfig
  */
 class CreateCapacityProviderRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateCapacityProviderRequest extends Request
      *     CapacityProviderScalingConfig?: Shapes\CapacityProviderScalingConfig|null,
      *     KmsKeyArn?: string|null,
      *     Tags?: array<string, string>|null,
-     *     PropagateTags?: Shapes\PropagateTags|null
+     *     PropagateTags?: Shapes\PropagateTags|null,
+     *     TelemetryConfig?: Shapes\CapacityProviderTelemetryConfig|null
      * } $args
      */
     public function __construct(array $args)

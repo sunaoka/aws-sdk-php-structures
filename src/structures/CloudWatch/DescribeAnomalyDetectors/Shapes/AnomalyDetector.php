@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudWatch\DescribeAnomalyDetectors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $AnomalyDetectorId
  * @property string|null $Namespace
  * @property string|null $MetricName
  * @property list<Dimension>|null $Dimensions
@@ -19,6 +20,7 @@ class AnomalyDetector extends Shape
 {
     /**
      * @param array{
+     *     AnomalyDetectorId?: string|null,
      *     Namespace?: string|null,
      *     MetricName?: string|null,
      *     Dimensions?: list<Dimension>|null,

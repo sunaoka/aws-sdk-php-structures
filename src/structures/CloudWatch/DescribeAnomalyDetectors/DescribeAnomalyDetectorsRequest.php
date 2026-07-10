@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudWatch\DescribeAnomalyDetectors;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property list<string>|null $AnomalyDetectorIds
  * @property string|null $NextToken
  * @property int<1, max>|null $MaxResults
  * @property string|null $Namespace
@@ -16,6 +17,7 @@ class DescribeAnomalyDetectorsRequest extends Request
 {
     /**
      * @param array{
+     *     AnomalyDetectorIds?: list<string>|null,
      *     NextToken?: string|null,
      *     MaxResults?: int<1, max>|null,
      *     Namespace?: string|null,

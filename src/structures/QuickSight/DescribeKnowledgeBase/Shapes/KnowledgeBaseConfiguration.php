@@ -6,15 +6,11 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property KbTemplateConfiguration|null $templateConfiguration
- * @property bool|null $eventEnabled
  */
 class KnowledgeBaseConfiguration extends Shape
 {
     /**
-     * @param array{
-     *     templateConfiguration?: KbTemplateConfiguration|null,
-     *     eventEnabled?: bool|null
-     * } $args
+     * @param array{templateConfiguration?: KbTemplateConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

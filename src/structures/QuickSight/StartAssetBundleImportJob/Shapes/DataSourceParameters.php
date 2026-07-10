@@ -38,6 +38,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property WebCrawlerParameters|null $WebCrawlerParameters
  * @property ConfluenceParameters|null $ConfluenceParameters
  * @property QBusinessParameters|null $QBusinessParameters
+ * @property SharePointParameters|null $SharePointParameters
+ * @property GoogleDriveParameters|null $GoogleDriveParameters
+ * @property OneDriveParameters|null $OneDriveParameters
+ * @property FMKBParameters|null $FMKBParameters
  */
 class DataSourceParameters extends Shape
 {
@@ -75,7 +79,11 @@ class DataSourceParameters extends Shape
      *     CustomConnectionParameters?: CustomConnectionParameters|null,
      *     WebCrawlerParameters?: WebCrawlerParameters|null,
      *     ConfluenceParameters?: ConfluenceParameters|null,
-     *     QBusinessParameters?: QBusinessParameters|null
+     *     QBusinessParameters?: QBusinessParameters|null,
+     *     SharePointParameters?: SharePointParameters|null,
+     *     GoogleDriveParameters?: GoogleDriveParameters|null,
+     *     OneDriveParameters?: OneDriveParameters|null,
+     *     FMKBParameters?: FMKBParameters|null
      * } $args
      */
     public function __construct(array $args = [])
