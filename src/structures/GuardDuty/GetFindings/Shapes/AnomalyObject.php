@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'FREQUENCY'|null $ProfileType
- * @property 'FREQUENT'|'INFREQUENT'|'UNSEEN'|'RARE'|null $ProfileSubtype
+ * @property 'FREQUENCY'|'VOLUME'|null $ProfileType
+ * @property 'FREQUENT'|'INFREQUENT'|'UNSEEN'|'RARE'|'COUNT'|'AVERAGE'|null $ProfileSubtype
  * @property Observations|null $Observations
  */
 class AnomalyObject extends Shape
 {
     /**
      * @param array{
-     *     ProfileType?: 'FREQUENCY'|null,
-     *     ProfileSubtype?: 'FREQUENT'|'INFREQUENT'|'UNSEEN'|'RARE'|null,
+     *     ProfileType?: 'FREQUENCY'|'VOLUME'|null,
+     *     ProfileSubtype?: 'FREQUENT'|'INFREQUENT'|'UNSEEN'|'RARE'|'COUNT'|'AVERAGE'|null,
      *     Observations?: Observations|null
      * } $args
      */

@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $adminPasswordSecretKmsKeyId
+ * @property bool|null $maintainIntegration
  * @property bool|null $manageAdminPassword
  * @property string $namespaceName
  * @property string|null $ownerAccount
@@ -18,6 +19,7 @@ class RestoreFromSnapshotRequest extends Request
     /**
      * @param array{
      *     adminPasswordSecretKmsKeyId?: string|null,
+     *     maintainIntegration?: bool|null,
      *     manageAdminPassword?: bool|null,
      *     namespaceName: string,
      *     ownerAccount?: string|null,

@@ -21,6 +21,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EbsSnapshotDetails|null $EbsSnapshotDetails
  * @property Ec2ImageDetails|null $Ec2ImageDetails
  * @property RecoveryPointDetails|null $RecoveryPointDetails
+ * @property BedrockGuardrailDetails|null $BedrockGuardrailDetails
+ * @property list<ModelDetail>|null $ModelDetails
  */
 class ResourceShape extends Shape
 {
@@ -41,7 +43,9 @@ class ResourceShape extends Shape
      *     RdsDbUserDetails?: RdsDbUserDetails|null,
      *     EbsSnapshotDetails?: EbsSnapshotDetails|null,
      *     Ec2ImageDetails?: Ec2ImageDetails|null,
-     *     RecoveryPointDetails?: RecoveryPointDetails|null
+     *     RecoveryPointDetails?: RecoveryPointDetails|null,
+     *     BedrockGuardrailDetails?: BedrockGuardrailDetails|null,
+     *     ModelDetails?: list<ModelDetail>|null
      * } $args
      */
     public function __construct(array $args = [])

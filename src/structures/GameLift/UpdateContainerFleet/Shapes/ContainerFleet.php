@@ -23,7 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $MetricGroups
  * @property 'NoProtection'|'FullProtection'|null $NewGameSessionProtectionPolicy
  * @property GameSessionCreationLimitPolicy|null $GameSessionCreationLimitPolicy
- * @property 'PENDING'|'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVE'|'UPDATING'|'DELETING'|null $Status
+ * @property 'PENDING'|'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVE'|'UPDATING'|'DELETING'|'EXPIRED'|null $Status
  * @property DeploymentDetails|null $DeploymentDetails
  * @property LogConfiguration|null $LogConfiguration
  * @property list<ContainerFleetLocationAttributes>|null $LocationAttributes
@@ -51,7 +51,7 @@ class ContainerFleet extends Shape
      *     MetricGroups?: list<string>|null,
      *     NewGameSessionProtectionPolicy?: 'NoProtection'|'FullProtection'|null,
      *     GameSessionCreationLimitPolicy?: GameSessionCreationLimitPolicy|null,
-     *     Status?: 'PENDING'|'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVE'|'UPDATING'|'DELETING'|null,
+     *     Status?: 'PENDING'|'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVE'|'UPDATING'|'DELETING'|'EXPIRED'|null,
      *     DeploymentDetails?: DeploymentDetails|null,
      *     LogConfiguration?: LogConfiguration|null,
      *     LocationAttributes?: list<ContainerFleetLocationAttributes>|null,

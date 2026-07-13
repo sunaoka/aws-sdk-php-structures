@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string>|null $Text
- * @property list<int>|null $Number
+ * @property string|null $Arn
+ * @property string|null $Version
  */
-class Observations extends Shape
+class BedrockGuardrail extends Shape
 {
     /**
      * @param array{
-     *     Text?: list<string>|null,
-     *     Number?: list<int>|null
+     *     Arn?: string|null,
+     *     Version?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -22,6 +22,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DryRun
  * @property Shapes\DeploymentStrategyOptions|null $DeploymentStrategyOptions
  * @property Shapes\AutomatedSnapshotPauseRequestOptions|null $AutomatedSnapshotPauseOptions
+ * @property 'SEARCH'|'VECTOR'|'OBSERVABILITY'|'MIXED'|null $UseCase
+ * @property 'GENERAL'|'OPTIMIZED'|null $EngineMode
  */
 class UpdateElasticsearchDomainConfigRequest extends Request
 {
@@ -43,7 +45,9 @@ class UpdateElasticsearchDomainConfigRequest extends Request
      *     AutoTuneOptions?: Shapes\AutoTuneOptions|null,
      *     DryRun?: bool|null,
      *     DeploymentStrategyOptions?: Shapes\DeploymentStrategyOptions|null,
-     *     AutomatedSnapshotPauseOptions?: Shapes\AutomatedSnapshotPauseRequestOptions|null
+     *     AutomatedSnapshotPauseOptions?: Shapes\AutomatedSnapshotPauseRequestOptions|null,
+     *     UseCase?: 'SEARCH'|'VECTOR'|'OBSERVABILITY'|'MIXED'|null,
+     *     EngineMode?: 'GENERAL'|'OPTIMIZED'|null
      * } $args
      */
     public function __construct(array $args)

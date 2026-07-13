@@ -23,6 +23,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ModifyingProperties>|null $ModifyingProperties
  * @property DeploymentStrategyOptionsStatus|null $DeploymentStrategyOptions
  * @property AutomatedSnapshotPauseOptionsStatus|null $AutomatedSnapshotPauseOptions
+ * @property UseCaseStatus|null $UseCase
+ * @property EngineModeStatus|null $EngineMode
  */
 class ElasticsearchDomainConfig extends Shape
 {
@@ -45,7 +47,9 @@ class ElasticsearchDomainConfig extends Shape
      *     ChangeProgressDetails?: ChangeProgressDetails|null,
      *     ModifyingProperties?: list<ModifyingProperties>|null,
      *     DeploymentStrategyOptions?: DeploymentStrategyOptionsStatus|null,
-     *     AutomatedSnapshotPauseOptions?: AutomatedSnapshotPauseOptionsStatus|null
+     *     AutomatedSnapshotPauseOptions?: AutomatedSnapshotPauseOptionsStatus|null,
+     *     UseCase?: UseCaseStatus|null,
+     *     EngineMode?: EngineModeStatus|null
      * } $args
      */
     public function __construct(array $args = [])

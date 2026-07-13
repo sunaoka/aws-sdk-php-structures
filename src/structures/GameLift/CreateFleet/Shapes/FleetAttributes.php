@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Name
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property \Aws\Api\DateTimeResult|null $TerminationTime
- * @property 'NEW'|'DOWNLOADING'|'VALIDATING'|'BUILDING'|'ACTIVATING'|'ACTIVE'|'DELETING'|'ERROR'|'TERMINATED'|'NOT_FOUND'|null $Status
+ * @property 'NEW'|'DOWNLOADING'|'VALIDATING'|'BUILDING'|'ACTIVATING'|'ACTIVE'|'DELETING'|'ERROR'|'TERMINATED'|'NOT_FOUND'|'EXPIRED'|null $Status
  * @property string|null $BuildId
  * @property string|null $BuildArn
  * @property string|null $ScriptId
@@ -46,7 +46,7 @@ class FleetAttributes extends Shape
      *     Name?: string|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
      *     TerminationTime?: \Aws\Api\DateTimeResult|null,
-     *     Status?: 'NEW'|'DOWNLOADING'|'VALIDATING'|'BUILDING'|'ACTIVATING'|'ACTIVE'|'DELETING'|'ERROR'|'TERMINATED'|'NOT_FOUND'|null,
+     *     Status?: 'NEW'|'DOWNLOADING'|'VALIDATING'|'BUILDING'|'ACTIVATING'|'ACTIVE'|'DELETING'|'ERROR'|'TERMINATED'|'NOT_FOUND'|'EXPIRED'|null,
      *     BuildId?: string|null,
      *     BuildArn?: string|null,
      *     ScriptId?: string|null,
