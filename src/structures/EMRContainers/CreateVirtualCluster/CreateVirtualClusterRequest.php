@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $clientToken
  * @property array<string, string>|null $tags
  * @property string|null $securityConfigurationId
+ * @property bool|null $sessionEnabled
  */
 class CreateVirtualClusterRequest extends Request
 {
@@ -19,7 +20,8 @@ class CreateVirtualClusterRequest extends Request
      *     containerProvider: Shapes\ContainerProvider,
      *     clientToken: string,
      *     tags?: array<string, string>|null,
-     *     securityConfigurationId?: string|null
+     *     securityConfigurationId?: string|null,
+     *     sessionEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'NONE'|'CRDR'|null $DataReplicationMode
  * @property Shapes\DataReplicationMetadataOutput|null $PendingDataReplicationMetadata
  * @property 'NONE'|'CRDR'|null $PendingDataReplicationMode
+ * @property int|null $StorageSize
  */
 class UpdateBrokerResponse extends Response
 {

@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\WeeklyStartTime|null $MaintenanceWindowStartTime
  * @property list<string>|null $ResourceShareArns
  * @property list<string>|null $SecurityGroups
+ * @property int|null $StorageSize
  * @property 'NONE'|'CRDR'|null $DataReplicationMode
  */
 class UpdateBrokerRequest extends Request
@@ -33,6 +34,7 @@ class UpdateBrokerRequest extends Request
      *     MaintenanceWindowStartTime?: Shapes\WeeklyStartTime|null,
      *     ResourceShareArns?: list<string>|null,
      *     SecurityGroups?: list<string>|null,
+     *     StorageSize?: int|null,
      *     DataReplicationMode?: 'NONE'|'CRDR'|null
      * } $args
      */

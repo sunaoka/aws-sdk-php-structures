@@ -28,8 +28,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $PendingHostInstanceType
  * @property Shapes\LdapServerMetadataOutput|null $PendingLdapServerMetadata
  * @property list<string>|null $PendingSecurityGroups
+ * @property int|null $PendingStorageSize
  * @property bool|null $PubliclyAccessible
  * @property list<string>|null $SecurityGroups
+ * @property int|null $StorageSize
  * @property 'EBS'|'EFS'|null $StorageType
  * @property list<string>|null $SubnetIds
  * @property array<string, string>|null $Tags

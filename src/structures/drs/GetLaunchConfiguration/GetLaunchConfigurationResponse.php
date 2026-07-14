@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\Licensing|null $licensing
  * @property bool|null $postLaunchEnabled
  * @property Shapes\LaunchIntoInstanceProperties|null $launchIntoInstanceProperties
+ * @property 'FAST'|'OPTIMAL'|null $recoveryMode
  */
 class GetLaunchConfigurationResponse extends Response
 {

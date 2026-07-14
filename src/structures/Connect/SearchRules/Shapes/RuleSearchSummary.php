@@ -1,6 +1,6 @@
 <?php
 
-namespace Sunaoka\Aws\Structures\Connect\DescribeRule\Shapes;
+namespace Sunaoka\Aws\Structures\Connect\SearchRules\Shapes;
 
 use Sunaoka\Aws\Structures\Shape;
 
@@ -9,16 +9,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $RuleId
  * @property string $RuleArn
  * @property RuleTriggerEventSource $TriggerEventSource
+ * @property list<ActionSummary> $ActionSummaries
  * @property list<'GenerativeAI'>|null $RuleCapabilityTiers
- * @property string $Function
- * @property list<RuleAction> $Actions
  * @property 'DRAFT'|'PUBLISHED' $PublishStatus
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property \Aws\Api\DateTimeResult $LastUpdatedTime
  * @property string $LastUpdatedBy
  * @property array<string, string>|null $Tags
  */
-class Rule extends Shape
+class RuleSearchSummary extends Shape
 {
     /**
      * @param array{
@@ -26,9 +25,8 @@ class Rule extends Shape
      *     RuleId: string,
      *     RuleArn: string,
      *     TriggerEventSource: RuleTriggerEventSource,
+     *     ActionSummaries: list<ActionSummary>,
      *     RuleCapabilityTiers?: list<'GenerativeAI'>|null,
-     *     Function: string,
-     *     Actions: list<RuleAction>,
      *     PublishStatus: 'DRAFT'|'PUBLISHED',
      *     CreatedTime: \Aws\Api\DateTimeResult,
      *     LastUpdatedTime: \Aws\Api\DateTimeResult,

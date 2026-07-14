@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\WeeklyStartTime|null $MaintenanceWindowStartTime
  * @property bool $PubliclyAccessible
  * @property list<string>|null $SecurityGroups
+ * @property int|null $StorageSize
  * @property 'EBS'|'EFS'|null $StorageType
  * @property list<string>|null $SubnetIds
  * @property array<string, string>|null $Tags
@@ -46,6 +47,7 @@ class CreateBrokerRequest extends Request
      *     MaintenanceWindowStartTime?: Shapes\WeeklyStartTime|null,
      *     PubliclyAccessible: bool,
      *     SecurityGroups?: list<string>|null,
+     *     StorageSize?: int|null,
      *     StorageType?: 'EBS'|'EFS'|null,
      *     SubnetIds?: list<string>|null,
      *     Tags?: array<string, string>|null,

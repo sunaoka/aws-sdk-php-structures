@@ -1,33 +1,19 @@
 <?php
 
-namespace Sunaoka\Aws\Structures\Connect\ListRules\Shapes;
+namespace Sunaoka\Aws\Structures\Connect\SearchRules\Shapes;
 
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $RuleId
- * @property string $RuleArn
  * @property 'OnPostCallAnalysisAvailable'|'OnRealTimeCallAnalysisAvailable'|'OnRealTimeChatAnalysisAvailable'|'OnPostChatAnalysisAvailable'|'OnEmailAnalysisAvailable'|'OnZendeskTicketCreate'|'OnZendeskTicketStatusUpdate'|'OnSalesforceCaseCreate'|'OnContactEvaluationSubmit'|'OnMetricDataUpdate'|'OnCaseCreate'|'OnCaseUpdate'|'OnSlaBreach'|'OnAlertUpdate'|'OnSchedulePublish'|'OnScheduleUpdate'|'OnScheduleTimeOffRequestActivity' $EventSourceName
- * @property 'DRAFT'|'PUBLISHED' $PublishStatus
- * @property list<'GenerativeAI'>|null $RuleCapabilityTiers
- * @property list<ActionSummary> $ActionSummaries
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
+ * @property string|null $IntegrationAssociationId
  */
-class RuleSummary extends Shape
+class RuleTriggerEventSource extends Shape
 {
     /**
      * @param array{
-     *     Name: string,
-     *     RuleId: string,
-     *     RuleArn: string,
      *     EventSourceName: 'OnPostCallAnalysisAvailable'|'OnRealTimeCallAnalysisAvailable'|'OnRealTimeChatAnalysisAvailable'|'OnPostChatAnalysisAvailable'|'OnEmailAnalysisAvailable'|'OnZendeskTicketCreate'|'OnZendeskTicketStatusUpdate'|'OnSalesforceCaseCreate'|'OnContactEvaluationSubmit'|'OnMetricDataUpdate'|'OnCaseCreate'|'OnCaseUpdate'|'OnSlaBreach'|'OnAlertUpdate'|'OnSchedulePublish'|'OnScheduleUpdate'|'OnScheduleTimeOffRequestActivity',
-     *     PublishStatus: 'DRAFT'|'PUBLISHED',
-     *     RuleCapabilityTiers?: list<'GenerativeAI'>|null,
-     *     ActionSummaries: list<ActionSummary>,
-     *     CreatedTime: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTime: \Aws\Api\DateTimeResult
+     *     IntegrationAssociationId?: string|null
      * } $args
      */
     public function __construct(array $args)

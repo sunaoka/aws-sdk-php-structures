@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $exportBucketArn
  * @property bool|null $postLaunchEnabled
  * @property bool|null $launchIntoSourceInstance
+ * @property 'FAST'|'OPTIMAL'|null $recoveryMode
  */
 class LaunchConfigurationTemplate extends Shape
 {
@@ -31,7 +32,8 @@ class LaunchConfigurationTemplate extends Shape
      *     licensing?: Licensing|null,
      *     exportBucketArn?: string|null,
      *     postLaunchEnabled?: bool|null,
-     *     launchIntoSourceInstance?: bool|null
+     *     launchIntoSourceInstance?: bool|null,
+     *     recoveryMode?: 'FAST'|'OPTIMAL'|null
      * } $args
      */
     public function __construct(array $args = [])

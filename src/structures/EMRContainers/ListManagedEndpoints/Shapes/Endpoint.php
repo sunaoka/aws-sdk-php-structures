@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Certificate|null $certificateAuthority
  * @property ConfigurationOverrides|null $configurationOverrides
  * @property string|null $serverUrl
+ * @property string|null $authProxyUrl
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $securityGroup
  * @property list<string>|null $subnetIds
@@ -40,6 +41,7 @@ class Endpoint extends Shape
      *     certificateAuthority?: Certificate|null,
      *     configurationOverrides?: ConfigurationOverrides|null,
      *     serverUrl?: string|null,
+     *     authProxyUrl?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     securityGroup?: string|null,
      *     subnetIds?: list<string>|null,

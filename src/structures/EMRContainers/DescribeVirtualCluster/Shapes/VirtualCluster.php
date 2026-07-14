@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property array<string, string>|null $tags
  * @property string|null $securityConfigurationId
+ * @property bool|null $sessionEnabled
  */
 class VirtualCluster extends Shape
 {
@@ -25,7 +26,8 @@ class VirtualCluster extends Shape
      *     containerProvider?: ContainerProvider|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     tags?: array<string, string>|null,
-     *     securityConfigurationId?: string|null
+     *     securityConfigurationId?: string|null,
+     *     sessionEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

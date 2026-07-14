@@ -279,6 +279,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use SearchQuickConnects\SearchQuickConnectsTrait;
     use SearchResourceTags\SearchResourceTagsTrait;
     use SearchRoutingProfiles\SearchRoutingProfilesTrait;
+    use SearchRules\SearchRulesTrait;
     use SearchSecurityProfiles\SearchSecurityProfilesTrait;
     use SearchTestCases\SearchTestCasesTrait;
     use SearchUserHierarchyGroups\SearchUserHierarchyGroupsTrait;

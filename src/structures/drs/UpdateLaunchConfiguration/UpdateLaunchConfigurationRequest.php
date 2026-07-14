@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Licensing|null $licensing
  * @property bool|null $postLaunchEnabled
  * @property Shapes\LaunchIntoInstanceProperties|null $launchIntoInstanceProperties
+ * @property 'FAST'|'OPTIMAL'|null $recoveryMode
  */
 class UpdateLaunchConfigurationRequest extends Request
 {
@@ -27,7 +28,8 @@ class UpdateLaunchConfigurationRequest extends Request
      *     copyTags?: bool|null,
      *     licensing?: Shapes\Licensing|null,
      *     postLaunchEnabled?: bool|null,
-     *     launchIntoInstanceProperties?: Shapes\LaunchIntoInstanceProperties|null
+     *     launchIntoInstanceProperties?: Shapes\LaunchIntoInstanceProperties|null,
+     *     recoveryMode?: 'FAST'|'OPTIMAL'|null
      * } $args
      */
     public function __construct(array $args)

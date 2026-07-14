@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ConfigurationOverrides|null $configurationOverrides
  * @property string $clientToken
  * @property array<string, string>|null $tags
+ * @property int|null $sessionIdleTimeoutInMinutes
  */
 class CreateManagedEndpointRequest extends Request
 {
@@ -27,7 +28,8 @@ class CreateManagedEndpointRequest extends Request
      *     certificateArn?: string|null,
      *     configurationOverrides?: Shapes\ConfigurationOverrides|null,
      *     clientToken: string,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     sessionIdleTimeoutInMinutes?: int|null
      * } $args
      */
     public function __construct(array $args)

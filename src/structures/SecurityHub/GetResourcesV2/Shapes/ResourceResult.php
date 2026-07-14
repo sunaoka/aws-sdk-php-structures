@@ -23,6 +23,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ResourceFindingsSummary>|null $FindingsSummary
  * @property list<ResourceTag>|null $ResourceTags
  * @property ResourceConfig $ResourceConfig
+ * @property 'Model'|'ModelServing'|'Agent'|'AgentFramework'|'AgentToolsAndIdentity'|'SafetyAndGuardrail'|'KnowledgeAndData'|'OrchestrationAndPipeline'|'ExternalEndpoint'|'Development'|'Other'|null $ResourceSubCategory
+ * @property 'Managed'|'SelfHosted'|null $DiscoveryType
+ * @property ResourceInfo|null $ResourceInfo
  */
 class ResourceResult extends Shape
 {
@@ -45,7 +48,10 @@ class ResourceResult extends Shape
      *     ResourceDetailCaptureTimeDt: string,
      *     FindingsSummary?: list<ResourceFindingsSummary>|null,
      *     ResourceTags?: list<ResourceTag>|null,
-     *     ResourceConfig: ResourceConfig
+     *     ResourceConfig: ResourceConfig,
+     *     ResourceSubCategory?: 'Model'|'ModelServing'|'Agent'|'AgentFramework'|'AgentToolsAndIdentity'|'SafetyAndGuardrail'|'KnowledgeAndData'|'OrchestrationAndPipeline'|'ExternalEndpoint'|'Development'|'Other'|null,
+     *     DiscoveryType?: 'Managed'|'SelfHosted'|null,
+     *     ResourceInfo?: ResourceInfo|null
      * } $args
      */
     public function __construct(array $args)
