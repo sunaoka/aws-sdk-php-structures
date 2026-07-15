@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property float|null $temperature
  * @property float|null $topP
  * @property int<0, 500>|null $topK
+ * @property Document|null $additionalParams
  */
 class HarnessGeminiModelConfig extends Shape
 {
@@ -21,7 +22,8 @@ class HarnessGeminiModelConfig extends Shape
      *     maxTokens?: int<1, max>|null,
      *     temperature?: float|null,
      *     topP?: float|null,
-     *     topK?: int<0, 500>|null
+     *     topK?: int<0, 500>|null,
+     *     additionalParams?: Document|null
      * } $args
      */
     public function __construct(array $args)

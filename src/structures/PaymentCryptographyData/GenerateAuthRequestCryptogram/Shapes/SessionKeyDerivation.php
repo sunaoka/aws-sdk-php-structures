@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SessionKeyEmv2000|null $Emv2000
  * @property SessionKeyAmex|null $Amex
  * @property SessionKeyVisa|null $Visa
+ * @property SessionKeyUnionPay|null $UnionPay
  */
 class SessionKeyDerivation extends Shape
 {
@@ -19,7 +20,8 @@ class SessionKeyDerivation extends Shape
      *     Mastercard?: SessionKeyMastercard|null,
      *     Emv2000?: SessionKeyEmv2000|null,
      *     Amex?: SessionKeyAmex|null,
-     *     Visa?: SessionKeyVisa|null
+     *     Visa?: SessionKeyVisa|null,
+     *     UnionPay?: SessionKeyUnionPay|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -12,6 +12,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DataAccessRoleArn
  * @property string|null $ClientToken
  * @property 'strict'|'structure-only'|'minimal'|null $ValidationLevel
+ * @property string|null $ProfileId
+ * @property string|null $InputFormat
+ * @property bool|null $DriftDetectionEnabled
  */
 class StartFHIRImportJobRequest extends Request
 {
@@ -23,7 +26,10 @@ class StartFHIRImportJobRequest extends Request
      *     DatastoreId: string,
      *     DataAccessRoleArn: string,
      *     ClientToken?: string|null,
-     *     ValidationLevel?: 'strict'|'structure-only'|'minimal'|null
+     *     ValidationLevel?: 'strict'|'structure-only'|'minimal'|null,
+     *     ProfileId?: string|null,
+     *     InputFormat?: string|null,
+     *     DriftDetectionEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)
