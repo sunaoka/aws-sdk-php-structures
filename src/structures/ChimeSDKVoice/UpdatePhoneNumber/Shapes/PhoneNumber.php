@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $PhoneNumberId
  * @property string|null $E164PhoneNumber
+ * @property string|null $PhoneNumberArn
  * @property string|null $Country
  * @property 'Local'|'TollFree'|null $Type
  * @property 'VoiceConnector'|'SipMediaApplicationDialIn'|null $ProductType
@@ -27,6 +28,7 @@ class PhoneNumber extends Shape
      * @param array{
      *     PhoneNumberId?: string|null,
      *     E164PhoneNumber?: string|null,
+     *     PhoneNumberArn?: string|null,
      *     Country?: string|null,
      *     Type?: 'Local'|'TollFree'|null,
      *     ProductType?: 'VoiceConnector'|'SipMediaApplicationDialIn'|null,

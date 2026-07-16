@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $instanceType
  * @property string|null $failureReason
  * @property Shapes\ImageDetails|null $imageDetails
+ * @property string|null $uuid
  */
 class GetRunTaskResponse extends Response
 {

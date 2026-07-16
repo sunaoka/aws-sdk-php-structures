@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
  * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
  * @property string|null $VoiceConnectorGroupArn
+ * @property 'PriorityWeightedDistribution'|'LoadBalancedDistribution'|null $CallDistributionType
  */
 class VoiceConnectorGroup extends Shape
 {
@@ -21,7 +22,8 @@ class VoiceConnectorGroup extends Shape
      *     VoiceConnectorItems?: list<VoiceConnectorItem>|null,
      *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
      *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null,
-     *     VoiceConnectorGroupArn?: string|null
+     *     VoiceConnectorGroupArn?: string|null,
+     *     CallDistributionType?: 'PriorityWeightedDistribution'|'LoadBalancedDistribution'|null
      * } $args
      */
     public function __construct(array $args = [])

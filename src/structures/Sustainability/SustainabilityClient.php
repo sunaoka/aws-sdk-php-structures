@@ -6,4 +6,6 @@ class SustainabilityClient extends \Aws\Sustainability\SustainabilityClient
 {
     use GetEstimatedCarbonEmissions\GetEstimatedCarbonEmissionsTrait;
     use GetEstimatedCarbonEmissionsDimensionValues\GetEstimatedCarbonEmissionsDimensionValuesTrait;
+    use GetEstimatedWaterAllocation\GetEstimatedWaterAllocationTrait;
+    use GetEstimatedWaterAllocationDimensionValues\GetEstimatedWaterAllocationDimensionValuesTrait;
 }

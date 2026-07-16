@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $stopTime
  * @property int<0, max>|null $gpus
  * @property string|null $instanceType
+ * @property string|null $uuid
  */
 class TaskListItem extends Shape
 {
@@ -33,7 +34,8 @@ class TaskListItem extends Shape
      *     startTime?: \Aws\Api\DateTimeResult|null,
      *     stopTime?: \Aws\Api\DateTimeResult|null,
      *     gpus?: int<0, max>|null,
-     *     instanceType?: string|null
+     *     instanceType?: string|null,
+     *     uuid?: string|null
      * } $args
      */
     public function __construct(array $args = [])

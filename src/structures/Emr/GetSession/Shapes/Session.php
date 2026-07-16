@@ -22,7 +22,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Configuration>|null $EngineConfigurations
  * @property SessionMonitoringConfiguration|null $MonitoringConfiguration
  * @property int|null $SessionIdleTimeoutInMinutes
- * @property CertificateAuthority|null $CertificateAuthority
  * @property string|null $ServerUrl
  * @property list<Tag>|null $Tags
  */
@@ -47,7 +46,6 @@ class Session extends Shape
      *     EngineConfigurations?: list<Configuration>|null,
      *     MonitoringConfiguration?: SessionMonitoringConfiguration|null,
      *     SessionIdleTimeoutInMinutes?: int|null,
-     *     CertificateAuthority?: CertificateAuthority|null,
      *     ServerUrl?: string|null,
      *     Tags?: list<Tag>|null
      * } $args

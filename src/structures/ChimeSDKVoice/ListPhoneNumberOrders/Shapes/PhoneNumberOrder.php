@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<OrderedPhoneNumber>|null $OrderedPhoneNumbers
  * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
  * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
- * @property \Aws\Api\DateTimeResult|null $FocDate
+ * @property string|null $FocDate
  */
 class PhoneNumberOrder extends Shape
 {
@@ -25,7 +25,7 @@ class PhoneNumberOrder extends Shape
      *     OrderedPhoneNumbers?: list<OrderedPhoneNumber>|null,
      *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
      *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null,
-     *     FocDate?: \Aws\Api\DateTimeResult|null
+     *     FocDate?: string|null
      * } $args
      */
     public function __construct(array $args = [])
