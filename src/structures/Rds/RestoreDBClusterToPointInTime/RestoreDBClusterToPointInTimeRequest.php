@@ -45,6 +45,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property bool|null $EnableVPCNetworking
  * @property bool|null $EnableInternetAccessGateway
+ * @property list<Shapes\DBClusterAssociatedRole>|null $AssociatedRoles
  */
 class RestoreDBClusterToPointInTimeRequest extends Request
 {
@@ -89,7 +90,8 @@ class RestoreDBClusterToPointInTimeRequest extends Request
      *     EngineLifecycleSupport?: string|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     EnableVPCNetworking?: bool|null,
-     *     EnableInternetAccessGateway?: bool|null
+     *     EnableInternetAccessGateway?: bool|null,
+     *     AssociatedRoles?: list<Shapes\DBClusterAssociatedRole>|null
      * } $args
      */
     public function __construct(array $args)

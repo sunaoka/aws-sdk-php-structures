@@ -42,6 +42,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\SourceConfiguration|null $sourceConfiguration
  * @property 'ORACLE_MANAGED'|'AWS_KMS'|null $encryptionKeyProvider
  * @property Shapes\EncryptionKeyConfigurationInput|null $encryptionKeyConfiguration
+ * @property 'CUSTOMER_MANAGED_AWS_SECRET'|'API_REQUEST_PARAMETER'|null $adminPasswordSource
+ * @property Shapes\AdminPasswordSourceConfigurationInput|null $adminPasswordSourceConfiguration
  * @property string|null $clientToken
  * @property array<string, string>|null $tags
  */
@@ -86,6 +88,8 @@ class CreateAutonomousDatabaseRequest extends Request
      *     sourceConfiguration?: Shapes\SourceConfiguration|null,
      *     encryptionKeyProvider?: 'ORACLE_MANAGED'|'AWS_KMS'|null,
      *     encryptionKeyConfiguration?: Shapes\EncryptionKeyConfigurationInput|null,
+     *     adminPasswordSource?: 'CUSTOMER_MANAGED_AWS_SECRET'|'API_REQUEST_PARAMETER'|null,
+     *     adminPasswordSourceConfiguration?: Shapes\AdminPasswordSourceConfigurationInput|null,
      *     clientToken?: string|null,
      *     tags?: array<string, string>|null
      * } $args

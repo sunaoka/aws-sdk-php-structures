@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $SkippedUsers
  * @property int|null $FailedUsers
  * @property string|null $CompletionMessage
+ * @property 'BCRYPT'|'SCRYPT'|'ARGON2ID'|'PBKDF2_SHA256'|null $PasswordHashingAlgorithm
  */
 class UserImportJobType extends Shape
 {
@@ -35,7 +36,8 @@ class UserImportJobType extends Shape
      *     ImportedUsers?: int|null,
      *     SkippedUsers?: int|null,
      *     FailedUsers?: int|null,
-     *     CompletionMessage?: string|null
+     *     CompletionMessage?: string|null,
+     *     PasswordHashingAlgorithm?: 'BCRYPT'|'SCRYPT'|'ARGON2ID'|'PBKDF2_SHA256'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -64,6 +64,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property 'password'|'iam-db-auth'|null $MasterUserAuthenticationType
  * @property bool|null $WithExpressConfiguration
+ * @property list<Shapes\DBClusterAssociatedRole>|null $AssociatedRoles
  */
 class CreateDBClusterRequest extends Request
 {
@@ -127,7 +128,8 @@ class CreateDBClusterRequest extends Request
      *     EngineLifecycleSupport?: string|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     MasterUserAuthenticationType?: 'password'|'iam-db-auth'|null,
-     *     WithExpressConfiguration?: bool|null
+     *     WithExpressConfiguration?: bool|null,
+     *     AssociatedRoles?: list<Shapes\DBClusterAssociatedRole>|null
      * } $args
      */
     public function __construct(array $args)

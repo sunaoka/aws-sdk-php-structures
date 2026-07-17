@@ -8,13 +8,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Arn
  * @property string|null $UserId
  * @property 'ACTIVATING'|'ACTIVE'|'CONNECTED'|'PENDING_CLIENT_RECONNECTION'|'RECONNECTING'|'TERMINATING'|'TERMINATED'|'ERROR'|null $Status
- * @property 'internalError'|'invalidSignalRequest'|'placementTimeout'|'applicationLogS3DestinationError'|'applicationExit'|'connectionTimeout'|'reconnectionTimeout'|'maxSessionLengthTimeout'|'idleTimeout'|'apiTerminated'|null $StatusReason
+ * @property 'internalError'|'invalidSignalRequest'|'placementTimeout'|'applicationLogS3DestinationError'|'assumeRoleFailed'|'applicationExit'|'connectionTimeout'|'reconnectionTimeout'|'maxSessionLengthTimeout'|'idleTimeout'|'apiTerminated'|null $StatusReason
  * @property 'WebRTC'|null $Protocol
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property string|null $ApplicationArn
  * @property ExportFilesMetadata|null $ExportFilesMetadata
  * @property string|null $Location
+ * @property string|null $RoleArn
  */
 class StreamSessionSummary extends Shape
 {
@@ -23,13 +24,14 @@ class StreamSessionSummary extends Shape
      *     Arn?: string|null,
      *     UserId?: string|null,
      *     Status?: 'ACTIVATING'|'ACTIVE'|'CONNECTED'|'PENDING_CLIENT_RECONNECTION'|'RECONNECTING'|'TERMINATING'|'TERMINATED'|'ERROR'|null,
-     *     StatusReason?: 'internalError'|'invalidSignalRequest'|'placementTimeout'|'applicationLogS3DestinationError'|'applicationExit'|'connectionTimeout'|'reconnectionTimeout'|'maxSessionLengthTimeout'|'idleTimeout'|'apiTerminated'|null,
+     *     StatusReason?: 'internalError'|'invalidSignalRequest'|'placementTimeout'|'applicationLogS3DestinationError'|'assumeRoleFailed'|'applicationExit'|'connectionTimeout'|'reconnectionTimeout'|'maxSessionLengthTimeout'|'idleTimeout'|'apiTerminated'|null,
      *     Protocol?: 'WebRTC'|null,
      *     LastUpdatedAt?: \Aws\Api\DateTimeResult|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     ApplicationArn?: string|null,
      *     ExportFilesMetadata?: ExportFilesMetadata|null,
-     *     Location?: string|null
+     *     Location?: string|null,
+     *     RoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

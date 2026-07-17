@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property bool|null $ociIdentityDomain
+ * @property 'ENABLED'|'DISABLED'|null $autonomousDatabaseOciAwsSecretsManagerIntegration
  */
 class InitializeServiceRequest extends Request
 {
     /**
-     * @param array{ociIdentityDomain?: bool|null} $args
+     * @param array{
+     *     ociIdentityDomain?: bool|null,
+     *     autonomousDatabaseOciAwsSecretsManagerIntegration?: 'ENABLED'|'DISABLED'|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

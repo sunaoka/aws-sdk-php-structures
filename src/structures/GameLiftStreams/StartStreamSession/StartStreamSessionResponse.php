@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $StreamGroupId
  * @property string|null $UserId
  * @property 'ACTIVATING'|'ACTIVE'|'CONNECTED'|'PENDING_CLIENT_RECONNECTION'|'RECONNECTING'|'TERMINATING'|'TERMINATED'|'ERROR'|null $Status
- * @property 'internalError'|'invalidSignalRequest'|'placementTimeout'|'applicationLogS3DestinationError'|'applicationExit'|'connectionTimeout'|'reconnectionTimeout'|'maxSessionLengthTimeout'|'idleTimeout'|'apiTerminated'|null $StatusReason
+ * @property 'internalError'|'invalidSignalRequest'|'placementTimeout'|'applicationLogS3DestinationError'|'assumeRoleFailed'|'applicationExit'|'connectionTimeout'|'reconnectionTimeout'|'maxSessionLengthTimeout'|'idleTimeout'|'apiTerminated'|null $StatusReason
  * @property 'WebRTC'|null $Protocol
  * @property string|null $Location
  * @property string|null $SignalRequest
@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property string|null $ApplicationArn
  * @property Shapes\ExportFilesMetadata|null $ExportFilesMetadata
+ * @property string|null $RoleArn
  */
 class StartStreamSessionResponse extends Response
 {

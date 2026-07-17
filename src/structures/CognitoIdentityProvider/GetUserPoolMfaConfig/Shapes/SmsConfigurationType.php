@@ -5,20 +5,22 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\GetUserPoolMfaConfig\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SnsCallerArn
+ * @property string|null $SnsCallerArn
  * @property string|null $ExternalId
  * @property string|null $SnsRegion
+ * @property EumsSmsConfigurationType|null $EumsSms
  */
 class SmsConfigurationType extends Shape
 {
     /**
      * @param array{
-     *     SnsCallerArn: string,
+     *     SnsCallerArn?: string|null,
      *     ExternalId?: string|null,
-     *     SnsRegion?: string|null
+     *     SnsRegion?: string|null,
+     *     EumsSms?: EumsSmsConfigurationType|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

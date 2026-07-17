@@ -48,6 +48,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $timeOfAutoRefreshStart
  * @property 'ORACLE_MANAGED'|'AWS_KMS'|null $encryptionKeyProvider
  * @property Shapes\EncryptionKeyConfigurationInput|null $encryptionKeyConfiguration
+ * @property 'CUSTOMER_MANAGED_AWS_SECRET'|'API_REQUEST_PARAMETER'|null $adminPasswordSource
+ * @property Shapes\AdminPasswordSourceConfigurationInput|null $adminPasswordSourceConfiguration
  */
 class UpdateAutonomousDatabaseRequest extends Request
 {
@@ -95,7 +97,9 @@ class UpdateAutonomousDatabaseRequest extends Request
      *     autoRefreshPointLagInSeconds?: int<0, 604800>|null,
      *     timeOfAutoRefreshStart?: \Aws\Api\DateTimeResult|null,
      *     encryptionKeyProvider?: 'ORACLE_MANAGED'|'AWS_KMS'|null,
-     *     encryptionKeyConfiguration?: Shapes\EncryptionKeyConfigurationInput|null
+     *     encryptionKeyConfiguration?: Shapes\EncryptionKeyConfigurationInput|null,
+     *     adminPasswordSource?: 'CUSTOMER_MANAGED_AWS_SECRET'|'API_REQUEST_PARAMETER'|null,
+     *     adminPasswordSourceConfiguration?: Shapes\AdminPasswordSourceConfigurationInput|null
      * } $args
      */
     public function __construct(array $args)

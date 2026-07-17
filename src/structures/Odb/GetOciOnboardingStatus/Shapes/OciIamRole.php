@@ -6,14 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $iamRoleArn
- * @property 'KmsTde'|null $awsIntegration
+ * @property 'KmsTde'|'SecretsManager'|null $awsIntegration
+ * @property 'PROVISIONING'|'AVAILABLE'|'PROVISION_FAILED'|'TERMINATING'|'TERMINATE_FAILED'|null $status
+ * @property string|null $statusReason
  */
 class OciIamRole extends Shape
 {
     /**
      * @param array{
      *     iamRoleArn?: string|null,
-     *     awsIntegration?: 'KmsTde'|null
+     *     awsIntegration?: 'KmsTde'|'SecretsManager'|null,
+     *     status?: 'PROVISIONING'|'AVAILABLE'|'PROVISION_FAILED'|'TERMINATING'|'TERMINATE_FAILED'|null,
+     *     statusReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

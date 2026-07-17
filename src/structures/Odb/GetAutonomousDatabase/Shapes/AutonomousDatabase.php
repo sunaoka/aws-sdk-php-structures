@@ -108,6 +108,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $timeUntilReconnectCloneEnabled
  * @property \Aws\Api\DateTimeResult|null $nextLongTermBackupTimeStamp
  * @property \Aws\Api\DateTimeResult|null $timeUndeleted
+ * @property AdminPasswordSourceSummary|null $adminPasswordSourceSummary
  */
 class AutonomousDatabase extends Shape
 {
@@ -215,7 +216,8 @@ class AutonomousDatabase extends Shape
      *     timeDisasterRecoveryRoleChanged?: \Aws\Api\DateTimeResult|null,
      *     timeUntilReconnectCloneEnabled?: \Aws\Api\DateTimeResult|null,
      *     nextLongTermBackupTimeStamp?: \Aws\Api\DateTimeResult|null,
-     *     timeUndeleted?: \Aws\Api\DateTimeResult|null
+     *     timeUndeleted?: \Aws\Api\DateTimeResult|null,
+     *     adminPasswordSourceSummary?: AdminPasswordSourceSummary|null
      * } $args
      */
     public function __construct(array $args = [])
