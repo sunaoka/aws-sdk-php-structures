@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AwsAccountId
- * @property 'REDSHIFT'|'QBUSINESS'|'ATHENA' $Service
+ * @property 'REDSHIFT'|'QBUSINESS'|'ATHENA'|'GLUE_DATA_CATALOG' $Service
  * @property list<string>|null $AuthorizedTargets
  */
 class UpdateIdentityPropagationConfigRequest extends Request
@@ -14,7 +14,7 @@ class UpdateIdentityPropagationConfigRequest extends Request
     /**
      * @param array{
      *     AwsAccountId: string,
-     *     Service: 'REDSHIFT'|'QBUSINESS'|'ATHENA',
+     *     Service: 'REDSHIFT'|'QBUSINESS'|'ATHENA'|'GLUE_DATA_CATALOG',
      *     AuthorizedTargets?: list<string>|null
      * } $args
      */

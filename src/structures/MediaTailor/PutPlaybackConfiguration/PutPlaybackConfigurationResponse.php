@@ -30,6 +30,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\AdConditioningConfiguration|null $AdConditioningConfiguration
  * @property Shapes\AdDecisionServerConfiguration|null $AdDecisionServerConfiguration
  * @property array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST', string>|null $FunctionMapping
+ * @property Shapes\AdsPersonalizationTimeouts|null $AdsPersonalizationTimeouts
+ * @property Shapes\AdsPersonalizationConcurrency|null $AdsPersonalizationConcurrency
  */
 class PutPlaybackConfigurationResponse extends Response
 {

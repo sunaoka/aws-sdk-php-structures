@@ -9,6 +9,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $qualifier
  * @property string $runtimeSessionId
  * @property string|null $runtimeUserId
+ * @property string|null $traceParent
+ * @property string|null $traceState
+ * @property string|null $traceId
+ * @property string|null $baggage
  * @property list<Shapes\HarnessMessage> $messages
  * @property Shapes\HarnessModelConfiguration|null $model
  * @property list<Shapes\HarnessSystemContentBlock>|null $systemPrompt
@@ -28,6 +32,10 @@ class InvokeHarnessRequest extends Request
      *     qualifier?: string|null,
      *     runtimeSessionId: string,
      *     runtimeUserId?: string|null,
+     *     traceParent?: string|null,
+     *     traceState?: string|null,
+     *     traceId?: string|null,
+     *     baggage?: string|null,
      *     messages: list<Shapes\HarnessMessage>,
      *     model?: Shapes\HarnessModelConfiguration|null,
      *     systemPrompt?: list<Shapes\HarnessSystemContentBlock>|null,

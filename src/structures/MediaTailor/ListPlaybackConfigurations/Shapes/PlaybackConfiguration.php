@@ -30,6 +30,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AdConditioningConfiguration|null $AdConditioningConfiguration
  * @property AdDecisionServerConfiguration|null $AdDecisionServerConfiguration
  * @property array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST', string>|null $FunctionMapping
+ * @property AdsPersonalizationTimeouts|null $AdsPersonalizationTimeouts
+ * @property AdsPersonalizationConcurrency|null $AdsPersonalizationConcurrency
  */
 class PlaybackConfiguration extends Shape
 {
@@ -59,7 +61,9 @@ class PlaybackConfiguration extends Shape
      *     VideoContentSourceUrl?: string|null,
      *     AdConditioningConfiguration?: AdConditioningConfiguration|null,
      *     AdDecisionServerConfiguration?: AdDecisionServerConfiguration|null,
-     *     FunctionMapping?: array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST', string>|null
+     *     FunctionMapping?: array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST', string>|null,
+     *     AdsPersonalizationTimeouts?: AdsPersonalizationTimeouts|null,
+     *     AdsPersonalizationConcurrency?: AdsPersonalizationConcurrency|null
      * } $args
      */
     public function __construct(array $args = [])

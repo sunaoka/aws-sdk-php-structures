@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\SuppressionAttributes|null $SuppressionAttributes
  * @property Shapes\AccountDetails|null $Details
  * @property Shapes\VdmAttributes|null $VdmAttributes
+ * @property Shapes\PricingAttributes|null $PricingAttributes
  */
 class GetAccountResponse extends Response
 {

@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $mcpSessionId
  * @property string|null $runtimeSessionId
  * @property string|null $mcpProtocolVersion
+ * @property string|null $mcpMethod
+ * @property string|null $mcpName
  * @property string|null $runtimeUserId
  * @property string|null $traceId
  * @property string|null $traceParent
@@ -29,6 +31,8 @@ class InvokeAgentRuntimeRequest extends Request
      *     mcpSessionId?: string|null,
      *     runtimeSessionId?: string|null,
      *     mcpProtocolVersion?: string|null,
+     *     mcpMethod?: string|null,
+     *     mcpName?: string|null,
      *     runtimeUserId?: string|null,
      *     traceId?: string|null,
      *     traceParent?: string|null,

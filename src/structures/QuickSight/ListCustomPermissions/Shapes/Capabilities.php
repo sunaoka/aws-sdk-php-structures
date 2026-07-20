@@ -233,6 +233,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DENY'|null $GenerateAnalyses
  * @property 'DENY'|null $Story
  * @property 'DENY'|null $Scenario
+ * @property 'DENY'|null $Trigger
+ * @property 'DENY'|null $ScheduleTrigger
+ * @property 'DENY'|null $InboundEmailTrigger
+ * @property 'DENY'|null $QuickEventTrigger
  */
 class Capabilities extends Shape
 {
@@ -465,7 +469,11 @@ class Capabilities extends Shape
      *     ManageSharedFolders?: 'DENY'|null,
      *     GenerateAnalyses?: 'DENY'|null,
      *     Story?: 'DENY'|null,
-     *     Scenario?: 'DENY'|null
+     *     Scenario?: 'DENY'|null,
+     *     Trigger?: 'DENY'|null,
+     *     ScheduleTrigger?: 'DENY'|null,
+     *     InboundEmailTrigger?: 'DENY'|null,
+     *     QuickEventTrigger?: 'DENY'|null
      * } $args
      */
     public function __construct(array $args = [])

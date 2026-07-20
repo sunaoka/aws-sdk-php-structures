@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property HarnessToolUseBlockDelta|null $toolUse
  * @property list<HarnessToolResultBlockDelta>|null $toolResult
  * @property HarnessReasoningContentBlockDelta|null $reasoningContent
+ * @property HarnessToolResultMetadataBlockDelta|null $toolResultMetadata
  */
 class HarnessContentBlockDelta extends Shape
 {
@@ -17,7 +18,8 @@ class HarnessContentBlockDelta extends Shape
      *     text?: string|null,
      *     toolUse?: HarnessToolUseBlockDelta|null,
      *     toolResult?: list<HarnessToolResultBlockDelta>|null,
-     *     reasoningContent?: HarnessReasoningContentBlockDelta|null
+     *     reasoningContent?: HarnessReasoningContentBlockDelta|null,
+     *     toolResultMetadata?: HarnessToolResultMetadataBlockDelta|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\QuickSight\ListIdentityPropagationConfigs\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'REDSHIFT'|'QBUSINESS'|'ATHENA'|null $Service
+ * @property 'REDSHIFT'|'QBUSINESS'|'ATHENA'|'GLUE_DATA_CATALOG'|null $Service
  * @property list<string>|null $AuthorizedTargets
  */
 class AuthorizedTargetsByService extends Shape
 {
     /**
      * @param array{
-     *     Service?: 'REDSHIFT'|'QBUSINESS'|'ATHENA'|null,
+     *     Service?: 'REDSHIFT'|'QBUSINESS'|'ATHENA'|'GLUE_DATA_CATALOG'|null,
      *     AuthorizedTargets?: list<string>|null
      * } $args
      */
