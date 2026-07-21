@@ -44,6 +44,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Duration|null $retentionCheckInterval
  * @property Duration|null $deleteGracePeriod
  * @property Duration|null $hardDeleteDefaultDuration
+ * @property string|null $pluginRepositoryUrl
+ * @property string|null $pluginRepositorySecretArn
  */
 class InfluxDBv3CoreParameters extends Shape
 {
@@ -87,7 +89,9 @@ class InfluxDBv3CoreParameters extends Shape
      *     gen1LookbackDuration?: Duration|null,
      *     retentionCheckInterval?: Duration|null,
      *     deleteGracePeriod?: Duration|null,
-     *     hardDeleteDefaultDuration?: Duration|null
+     *     hardDeleteDefaultDuration?: Duration|null,
+     *     pluginRepositoryUrl?: string|null,
+     *     pluginRepositorySecretArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

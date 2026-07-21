@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, list<string>>|null $Parameters
  * @property array<string, list<string>>|null $Outputs
  * @property string|null $FailureMessage
+ * @property string|null $WarningMessage
  * @property 'Auto'|'Interactive'|null $Mode
  * @property string|null $ParentAutomationExecutionId
  * @property string|null $ExecutedBy
@@ -56,6 +57,7 @@ class AutomationExecution extends Shape
      *     Parameters?: array<string, list<string>>|null,
      *     Outputs?: array<string, list<string>>|null,
      *     FailureMessage?: string|null,
+     *     WarningMessage?: string|null,
      *     Mode?: 'Auto'|'Interactive'|null,
      *     ParentAutomationExecutionId?: string|null,
      *     ExecutedBy?: string|null,

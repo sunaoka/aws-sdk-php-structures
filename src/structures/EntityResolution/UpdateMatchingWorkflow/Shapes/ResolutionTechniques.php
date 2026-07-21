@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'RULE_MATCHING'|'ML_MATCHING'|'PROVIDER' $resolutionType
  * @property RuleBasedProperties|null $ruleBasedProperties
  * @property RuleConditionProperties|null $ruleConditionProperties
+ * @property bool|null $enableRealTimeMatching
  * @property ProviderProperties|null $providerProperties
  */
 class ResolutionTechniques extends Shape
@@ -17,6 +18,7 @@ class ResolutionTechniques extends Shape
      *     resolutionType: 'RULE_MATCHING'|'ML_MATCHING'|'PROVIDER',
      *     ruleBasedProperties?: RuleBasedProperties|null,
      *     ruleConditionProperties?: RuleConditionProperties|null,
+     *     enableRealTimeMatching?: bool|null,
      *     providerProperties?: ProviderProperties|null
      * } $args
      */

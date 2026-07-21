@@ -27,6 +27,7 @@ class RedshiftClient extends \Aws\Redshift\RedshiftClient
     use CreateHsmClientCertificate\CreateHsmClientCertificateTrait;
     use CreateHsmConfiguration\CreateHsmConfigurationTrait;
     use CreateIntegration\CreateIntegrationTrait;
+    use CreateQev2IdcApplication\CreateQev2IdcApplicationTrait;
     use CreateRedshiftIdcApplication\CreateRedshiftIdcApplicationTrait;
     use CreateScheduledAction\CreateScheduledActionTrait;
     use CreateSnapshotCopyGrant\CreateSnapshotCopyGrantTrait;
@@ -47,6 +48,7 @@ class RedshiftClient extends \Aws\Redshift\RedshiftClient
     use DeleteHsmConfiguration\DeleteHsmConfigurationTrait;
     use DeleteIntegration\DeleteIntegrationTrait;
     use DeletePartner\DeletePartnerTrait;
+    use DeleteQev2IdcApplication\DeleteQev2IdcApplicationTrait;
     use DeleteRedshiftIdcApplication\DeleteRedshiftIdcApplicationTrait;
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;
     use DeleteScheduledAction\DeleteScheduledActionTrait;
@@ -84,6 +86,7 @@ class RedshiftClient extends \Aws\Redshift\RedshiftClient
     use DescribeNodeConfigurationOptions\DescribeNodeConfigurationOptionsTrait;
     use DescribeOrderableClusterOptions\DescribeOrderableClusterOptionsTrait;
     use DescribePartners\DescribePartnersTrait;
+    use DescribeQev2IdcApplications\DescribeQev2IdcApplicationsTrait;
     use DescribeRedshiftIdcApplications\DescribeRedshiftIdcApplicationsTrait;
     use DescribeReservedNodeExchangeStatus\DescribeReservedNodeExchangeStatusTrait;
     use DescribeReservedNodeOfferings\DescribeReservedNodeOfferingsTrait;
@@ -124,6 +127,7 @@ class RedshiftClient extends \Aws\Redshift\RedshiftClient
     use ModifyEventSubscription\ModifyEventSubscriptionTrait;
     use ModifyIntegration\ModifyIntegrationTrait;
     use ModifyLakehouseConfiguration\ModifyLakehouseConfigurationTrait;
+    use ModifyQev2IdcApplication\ModifyQev2IdcApplicationTrait;
     use ModifyRedshiftIdcApplication\ModifyRedshiftIdcApplicationTrait;
     use ModifyScheduledAction\ModifyScheduledActionTrait;
     use ModifySnapshotCopyRetentionPeriod\ModifySnapshotCopyRetentionPeriodTrait;

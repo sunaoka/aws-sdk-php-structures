@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $statusReason
  * @property \Aws\Api\DateTimeResult $createdOn
  * @property \Aws\Api\DateTimeResult $lastUpdateOn
- * @property array<string, string>|null $tags
  */
 class CodeSecurityIntegrationSummary extends Shape
 {
@@ -24,8 +23,7 @@ class CodeSecurityIntegrationSummary extends Shape
      *     status: 'PENDING'|'IN_PROGRESS'|'ACTIVE'|'INACTIVE'|'DISABLING',
      *     statusReason: string,
      *     createdOn: \Aws\Api\DateTimeResult,
-     *     lastUpdateOn: \Aws\Api\DateTimeResult,
-     *     tags?: array<string, string>|null
+     *     lastUpdateOn: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

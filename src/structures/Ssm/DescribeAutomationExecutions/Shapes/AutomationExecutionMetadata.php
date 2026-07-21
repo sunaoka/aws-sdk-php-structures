@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CurrentStepName
  * @property string|null $CurrentAction
  * @property string|null $FailureMessage
+ * @property string|null $WarningMessage
  * @property string|null $TargetParameterName
  * @property list<Target>|null $Targets
  * @property list<array<string, list<string>>>|null $TargetMaps
@@ -55,6 +56,7 @@ class AutomationExecutionMetadata extends Shape
      *     CurrentStepName?: string|null,
      *     CurrentAction?: string|null,
      *     FailureMessage?: string|null,
+     *     WarningMessage?: string|null,
      *     TargetParameterName?: string|null,
      *     Targets?: list<Target>|null,
      *     TargetMaps?: list<array<string, list<string>>>|null,

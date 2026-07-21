@@ -17,8 +17,10 @@ class InvoicingClient extends \Aws\Invoicing\InvoicingClient
     use ListProcurementPortalPreferences\ListProcurementPortalPreferencesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PutProcurementPortalPreference\PutProcurementPortalPreferenceTrait;
+    use SendProcurementPortalValidation\SendProcurementPortalValidationTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateInvoiceUnit\UpdateInvoiceUnitTrait;
     use UpdateProcurementPortalPreferenceStatus\UpdateProcurementPortalPreferenceStatusTrait;
+    use VerifyProcurementPortalValidation\VerifyProcurementPortalValidationTrait;
 }

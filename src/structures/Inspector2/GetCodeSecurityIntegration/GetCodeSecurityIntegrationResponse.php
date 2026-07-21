@@ -12,8 +12,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $statusReason
  * @property \Aws\Api\DateTimeResult $createdOn
  * @property \Aws\Api\DateTimeResult $lastUpdateOn
- * @property array<string, string>|null $tags
  * @property string|null $authorizationUrl
+ * @property array<string, string>|null $tags
  */
 class GetCodeSecurityIntegrationResponse extends Response
 {

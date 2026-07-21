@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, list<string>>|null $Outputs
  * @property string|null $Response
  * @property string|null $FailureMessage
+ * @property string|null $WarningMessage
  * @property FailureDetails|null $FailureDetails
  * @property string|null $StepExecutionId
  * @property array<string, list<string>>|null $OverriddenParameters
@@ -47,6 +48,7 @@ class StepExecution extends Shape
      *     Outputs?: array<string, list<string>>|null,
      *     Response?: string|null,
      *     FailureMessage?: string|null,
+     *     WarningMessage?: string|null,
      *     FailureDetails?: FailureDetails|null,
      *     StepExecutionId?: string|null,
      *     OverriddenParameters?: array<string, list<string>>|null,

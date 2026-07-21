@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property AuthorizationConfiguration|null $authorizationConfiguration
+ * @property AuthenticationConfiguration|null $authenticationConfiguration
  */
 class SecurityConfigurationData extends Shape
 {
     /**
-     * @param array{authorizationConfiguration?: AuthorizationConfiguration|null} $args
+     * @param array{
+     *     authorizationConfiguration?: AuthorizationConfiguration|null,
+     *     authenticationConfiguration?: AuthenticationConfiguration|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

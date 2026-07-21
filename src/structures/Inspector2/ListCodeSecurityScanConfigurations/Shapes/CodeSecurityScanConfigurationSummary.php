@@ -13,7 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'PULL_REQUEST'|'PUSH'>|null $continuousIntegrationScanSupportedEvents
  * @property list<'SAST'|'IAC'|'SCA'> $ruleSetCategories
  * @property ScopeSettings|null $scopeSettings
- * @property array<string, string>|null $tags
  */
 class CodeSecurityScanConfigurationSummary extends Shape
 {
@@ -26,8 +25,7 @@ class CodeSecurityScanConfigurationSummary extends Shape
      *     frequencyExpression?: string|null,
      *     continuousIntegrationScanSupportedEvents?: list<'PULL_REQUEST'|'PUSH'>|null,
      *     ruleSetCategories: list<'SAST'|'IAC'|'SCA'>,
-     *     scopeSettings?: ScopeSettings|null,
-     *     tags?: array<string, string>|null
+     *     scopeSettings?: ScopeSettings|null
      * } $args
      */
     public function __construct(array $args)

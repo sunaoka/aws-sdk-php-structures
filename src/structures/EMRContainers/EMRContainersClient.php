@@ -11,6 +11,7 @@ class EMRContainersClient extends \Aws\EMRContainers\EMRContainersClient
     use CreateVirtualCluster\CreateVirtualClusterTrait;
     use DeleteJobTemplate\DeleteJobTemplateTrait;
     use DeleteManagedEndpoint\DeleteManagedEndpointTrait;
+    use DeleteSecurityConfiguration\DeleteSecurityConfigurationTrait;
     use DeleteVirtualCluster\DeleteVirtualClusterTrait;
     use DescribeJobRun\DescribeJobRunTrait;
     use DescribeJobTemplate\DescribeJobTemplateTrait;
