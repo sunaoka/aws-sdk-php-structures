@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ObservabilityAdmin\GetTelemetryRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<'APPLICATION_LOGS'|'USAGE_LOGS'|'SECURITY_FINDING_LOGS'|'ACCESS_LOGS'|'CONNECTION_LOGS'|'S3_SERVER_ACCESS_LOGS'>|null $LogTypes
+ * @property list<'APPLICATION_LOGS'|'USAGE_LOGS'|'SECURITY_FINDING_LOGS'|'ACCESS_LOGS'|'CONNECTION_LOGS'|'S3_SERVER_ACCESS_LOGS'|'ALB_ACCESS_LOGS'|'ALB_CONNECTION_LOGS'|'ALB_HEALTH_CHECK_LOGS'>|null $LogTypes
  */
 class LogDeliveryParameters extends Shape
 {
     /**
-     * @param array{LogTypes?: list<'APPLICATION_LOGS'|'USAGE_LOGS'|'SECURITY_FINDING_LOGS'|'ACCESS_LOGS'|'CONNECTION_LOGS'|'S3_SERVER_ACCESS_LOGS'>|null} $args
+     * @param array{LogTypes?: list<'APPLICATION_LOGS'|'USAGE_LOGS'|'SECURITY_FINDING_LOGS'|'ACCESS_LOGS'|'CONNECTION_LOGS'|'S3_SERVER_ACCESS_LOGS'|'ALB_ACCESS_LOGS'|'ALB_CONNECTION_LOGS'|'ALB_HEALTH_CHECK_LOGS'>|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $comment
  * @property string|null $latestVersion
  * @property string|null $recoveryExecutionId
+ * @property string|null $clientToken
  */
 class StartPlanExecutionRequest extends Request
 {
@@ -23,7 +24,8 @@ class StartPlanExecutionRequest extends Request
      *     mode?: 'graceful'|'ungraceful'|null,
      *     comment?: string|null,
      *     latestVersion?: string|null,
-     *     recoveryExecutionId?: string|null
+     *     recoveryExecutionId?: string|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

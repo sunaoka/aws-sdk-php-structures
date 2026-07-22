@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\InstanceConfig> $instanceConfigs
  * @property Shapes\SpotOptions|null $spotOptions
  * @property Shapes\ComputeNodeGroupSlurmConfigurationRequest|null $slurmConfiguration
+ * @property Shapes\NodeLifecycleActionsRequest|null $nodeLifecycleActions
  * @property string|null $clientToken
  * @property array<string, string>|null $tags
  */
@@ -34,6 +35,7 @@ class CreateComputeNodeGroupRequest extends Request
      *     instanceConfigs: list<Shapes\InstanceConfig>,
      *     spotOptions?: Shapes\SpotOptions|null,
      *     slurmConfiguration?: Shapes\ComputeNodeGroupSlurmConfigurationRequest|null,
+     *     nodeLifecycleActions?: Shapes\NodeLifecycleActionsRequest|null,
      *     clientToken?: string|null,
      *     tags?: array<string, string>|null
      * } $args

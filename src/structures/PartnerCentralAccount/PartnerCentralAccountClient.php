@@ -19,6 +19,9 @@ class PartnerCentralAccountClient extends \Aws\PartnerCentralAccount\PartnerCent
     use GetPartner\GetPartnerTrait;
     use GetProfileUpdateTask\GetProfileUpdateTaskTrait;
     use GetProfileVisibility\GetProfileVisibilityTrait;
+    use GetQualificationsAssociationDetails\GetQualificationsAssociationDetailsTrait;
+    use GetQualificationsAssociationTask\GetQualificationsAssociationTaskTrait;
+    use GetQualificationsDisassociationTask\GetQualificationsDisassociationTaskTrait;
     use GetVerification\GetVerificationTrait;
     use ListConnectionInvitations\ListConnectionInvitationsTrait;
     use ListConnections\ListConnectionsTrait;
@@ -29,6 +32,8 @@ class PartnerCentralAccountClient extends \Aws\PartnerCentralAccount\PartnerCent
     use RejectConnectionInvitation\RejectConnectionInvitationTrait;
     use SendEmailVerificationCode\SendEmailVerificationCodeTrait;
     use StartProfileUpdateTask\StartProfileUpdateTaskTrait;
+    use StartQualificationsAssociationTask\StartQualificationsAssociationTaskTrait;
+    use StartQualificationsDisassociationTask\StartQualificationsDisassociationTaskTrait;
     use StartVerification\StartVerificationTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
