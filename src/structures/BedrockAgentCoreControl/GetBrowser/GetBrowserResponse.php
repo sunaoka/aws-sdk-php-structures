@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\BrowserSigningConfigOutput|null $browserSigning
  * @property list<Shapes\BrowserEnterprisePolicy>|null $enterprisePolicies
  * @property list<Shapes\Certificate>|null $certificates
+ * @property list<Shapes\ToolsFileSystemConfiguration>|null $filesystemConfigurations
  * @property 'CREATING'|'CREATE_FAILED'|'READY'|'DELETING'|'DELETE_FAILED'|'DELETED' $status
  * @property string|null $failureReason
  * @property \Aws\Api\DateTimeResult $createdAt

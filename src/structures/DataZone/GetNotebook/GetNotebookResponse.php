@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $owningProjectId
  * @property string $domainId
  * @property list<Shapes\CellInformation> $cellOrder
- * @property 'ACTIVE'|'ARCHIVED' $status
+ * @property 'ACTIVE'|'ARCHIVED'|'SYNC_IN_PROGRESS'|'SYNC_FAILED' $status
  * @property string|null $description
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $createdBy
@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $parameters
  * @property Shapes\EnvironmentConfig|null $environmentConfiguration
  * @property Shapes\NotebookError|null $error
+ * @property Shapes\GitMetadata|null $gitMetadata
  */
 class GetNotebookResponse extends Response
 {

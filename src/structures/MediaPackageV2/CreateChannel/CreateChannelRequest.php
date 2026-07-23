@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property Shapes\InputSwitchConfiguration|null $InputSwitchConfiguration
  * @property Shapes\OutputHeaderConfiguration|null $OutputHeaderConfiguration
+ * @property 'EPOCH_LOCKED'|'NON_EPOCH_LOCKED'|null $OutputLockingMode
  * @property array<string, string>|null $Tags
  */
 class CreateChannelRequest extends Request
@@ -25,6 +26,7 @@ class CreateChannelRequest extends Request
      *     Description?: string|null,
      *     InputSwitchConfiguration?: Shapes\InputSwitchConfiguration|null,
      *     OutputHeaderConfiguration?: Shapes\OutputHeaderConfiguration|null,
+     *     OutputLockingMode?: 'EPOCH_LOCKED'|'NON_EPOCH_LOCKED'|null,
      *     Tags?: array<string, string>|null
      * } $args
      */

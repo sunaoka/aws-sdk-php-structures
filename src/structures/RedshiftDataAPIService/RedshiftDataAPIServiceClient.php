@@ -13,6 +13,7 @@ class RedshiftDataAPIServiceClient extends \Aws\RedshiftDataAPIService\RedshiftD
     use GetStatementResultV2\GetStatementResultV2Trait;
     use ListDatabases\ListDatabasesTrait;
     use ListSchemas\ListSchemasTrait;
+    use ListSessions\ListSessionsTrait;
     use ListStatements\ListStatementsTrait;
     use ListTables\ListTablesTrait;
 }

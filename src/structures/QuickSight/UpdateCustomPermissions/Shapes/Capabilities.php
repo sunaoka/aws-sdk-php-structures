@@ -229,6 +229,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DENY'|null $Research
  * @property 'DENY'|null $SelfUpgradeUserRole
  * @property 'DENY'|null $Extension
+ * @property 'DENY'|null $UseBrowserExtension
+ * @property 'DENY'|null $UseWordAddInExtension
+ * @property 'DENY'|null $UseOutlookAddInExtension
+ * @property 'DENY'|null $UseExcelAddInExtension
+ * @property 'DENY'|null $UsePowerpointAddInExtension
  * @property 'DENY'|null $ManageSharedFolders
  * @property 'DENY'|null $GenerateAnalyses
  * @property 'DENY'|null $Story
@@ -466,6 +471,11 @@ class Capabilities extends Shape
      *     Research?: 'DENY'|null,
      *     SelfUpgradeUserRole?: 'DENY'|null,
      *     Extension?: 'DENY'|null,
+     *     UseBrowserExtension?: 'DENY'|null,
+     *     UseWordAddInExtension?: 'DENY'|null,
+     *     UseOutlookAddInExtension?: 'DENY'|null,
+     *     UseExcelAddInExtension?: 'DENY'|null,
+     *     UsePowerpointAddInExtension?: 'DENY'|null,
      *     ManageSharedFolders?: 'DENY'|null,
      *     GenerateAnalyses?: 'DENY'|null,
      *     Story?: 'DENY'|null,

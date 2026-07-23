@@ -168,6 +168,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use StartNotebookExport\StartNotebookExportTrait;
     use StartNotebookImport\StartNotebookImportTrait;
     use StartNotebookRun\StartNotebookRunTrait;
+    use StartNotebookSync\StartNotebookSyncTrait;
     use StopNotebookRun\StopNotebookRunTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;

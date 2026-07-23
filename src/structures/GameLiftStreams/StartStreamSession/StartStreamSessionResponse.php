@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ApplicationArn
  * @property Shapes\ExportFilesMetadata|null $ExportFilesMetadata
  * @property string|null $RoleArn
+ * @property Shapes\DisplayConfiguration|null $DisplayConfiguration
  */
 class StartStreamSessionResponse extends Response
 {

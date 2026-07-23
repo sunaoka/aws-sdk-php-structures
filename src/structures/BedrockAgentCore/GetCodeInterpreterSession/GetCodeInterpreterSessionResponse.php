@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<1, 28800>|null $sessionTimeoutSeconds
  * @property 'READY'|'TERMINATED'|null $status
  * @property list<Shapes\Certificate>|null $certificates
+ * @property list<Shapes\ToolsFileSystemConfiguration>|null $filesystemConfigurations
  */
 class GetCodeInterpreterSessionResponse extends Response
 {

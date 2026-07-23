@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $Tags
  * @property Shapes\InputSwitchConfiguration|null $InputSwitchConfiguration
  * @property Shapes\OutputHeaderConfiguration|null $OutputHeaderConfiguration
+ * @property 'EPOCH_LOCKED'|'NON_EPOCH_LOCKED'|null $OutputLockingMode
  */
 class CreateChannelResponse extends Response
 {

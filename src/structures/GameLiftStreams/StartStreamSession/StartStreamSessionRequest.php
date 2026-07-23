@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $AdditionalEnvironmentVariables
  * @property Shapes\PerformanceStatsConfiguration|null $PerformanceStatsConfiguration
  * @property string|null $RoleArn
+ * @property Shapes\DisplayConfiguration|null $DisplayConfiguration
  */
 class StartStreamSessionRequest extends Request
 {
@@ -37,7 +38,8 @@ class StartStreamSessionRequest extends Request
      *     AdditionalLaunchArgs?: list<string>|null,
      *     AdditionalEnvironmentVariables?: array<string, string>|null,
      *     PerformanceStatsConfiguration?: Shapes\PerformanceStatsConfiguration|null,
-     *     RoleArn?: string|null
+     *     RoleArn?: string|null,
+     *     DisplayConfiguration?: Shapes\DisplayConfiguration|null
      * } $args
      */
     public function __construct(array $args)

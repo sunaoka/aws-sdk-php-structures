@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domainIdentifier
  * @property string $identifier
  * @property string|null $description
- * @property 'ACTIVE'|'ARCHIVED'|null $status
+ * @property 'ACTIVE'|'ARCHIVED'|'SYNC_IN_PROGRESS'|'SYNC_FAILED'|null $status
  * @property string|null $name
  * @property list<Shapes\CellInformation>|null $cellOrder
  * @property array<string, string>|null $metadata
@@ -23,7 +23,7 @@ class UpdateNotebookRequest extends Request
      *     domainIdentifier: string,
      *     identifier: string,
      *     description?: string|null,
-     *     status?: 'ACTIVE'|'ARCHIVED'|null,
+     *     status?: 'ACTIVE'|'ARCHIVED'|'SYNC_IN_PROGRESS'|'SYNC_FAILED'|null,
      *     name?: string|null,
      *     cellOrder?: list<Shapes\CellInformation>|null,
      *     metadata?: array<string, string>|null,

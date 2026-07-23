@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\BrowserSigningConfigInput|null $browserSigning
  * @property list<Shapes\BrowserEnterprisePolicy>|null $enterprisePolicies
  * @property list<Shapes\Certificate>|null $certificates
+ * @property list<Shapes\ToolsFileSystemConfiguration>|null $filesystemConfigurations
  * @property string|null $clientToken
  * @property array<string, string>|null $tags
  */
@@ -28,6 +29,7 @@ class CreateBrowserRequest extends Request
      *     browserSigning?: Shapes\BrowserSigningConfigInput|null,
      *     enterprisePolicies?: list<Shapes\BrowserEnterprisePolicy>|null,
      *     certificates?: list<Shapes\Certificate>|null,
+     *     filesystemConfigurations?: list<Shapes\ToolsFileSystemConfiguration>|null,
      *     clientToken?: string|null,
      *     tags?: array<string, string>|null
      * } $args

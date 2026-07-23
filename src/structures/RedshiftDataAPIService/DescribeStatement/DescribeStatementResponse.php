@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $WorkgroupName
  * @property 'JSON'|'CSV'|null $ResultFormat
  * @property string|null $SessionId
+ * @property 'TRANSACTION'|'AUTO_COMMIT'|null $ExecutionMode
  */
 class DescribeStatementResponse extends Response
 {

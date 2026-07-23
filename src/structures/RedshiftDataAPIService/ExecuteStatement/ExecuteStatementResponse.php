@@ -14,6 +14,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $SecretArn
  * @property string|null $WorkgroupName
  * @property string|null $SessionId
+ * @property 'SUBMITTED'|'PICKED'|'STARTED'|'FINISHED'|'ABORTED'|'FAILED'|null $Status
+ * @property int|null $RedshiftPid
+ * @property bool|null $HasResultSet
  */
 class ExecuteStatementResponse extends Response
 {

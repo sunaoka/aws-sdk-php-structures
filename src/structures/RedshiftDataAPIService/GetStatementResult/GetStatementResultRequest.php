@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Id
  * @property string|null $NextToken
+ * @property int<1, 30>|null $WaitTimeSeconds
  */
 class GetStatementResultRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     NextToken?: string|null
+     *     NextToken?: string|null,
+     *     WaitTimeSeconds?: int<1, 30>|null
      * } $args
      */
     public function __construct(array $args)

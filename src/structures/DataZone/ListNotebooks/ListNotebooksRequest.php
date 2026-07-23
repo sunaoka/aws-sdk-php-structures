@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 50>|null $maxResults
  * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
  * @property 'CREATED_AT'|'UPDATED_AT'|null $sortBy
- * @property 'ACTIVE'|'ARCHIVED'|null $status
+ * @property 'ACTIVE'|'ARCHIVED'|'SYNC_IN_PROGRESS'|'SYNC_FAILED'|null $status
  * @property string|null $nextToken
  */
 class ListNotebooksRequest extends Request
@@ -22,7 +22,7 @@ class ListNotebooksRequest extends Request
      *     maxResults?: int<1, 50>|null,
      *     sortOrder?: 'ASCENDING'|'DESCENDING'|null,
      *     sortBy?: 'CREATED_AT'|'UPDATED_AT'|null,
-     *     status?: 'ACTIVE'|'ARCHIVED'|null,
+     *     status?: 'ACTIVE'|'ARCHIVED'|'SYNC_IN_PROGRESS'|'SYNC_FAILED'|null,
      *     nextToken?: string|null
      * } $args
      */

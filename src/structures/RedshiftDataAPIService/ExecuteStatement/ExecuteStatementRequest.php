@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'JSON'|'CSV'|null $ResultFormat
  * @property int<0, 86400>|null $SessionKeepAliveSeconds
  * @property string|null $SessionId
+ * @property int<1, 30>|null $WaitTimeSeconds
  */
 class ExecuteStatementRequest extends Request
 {
@@ -35,7 +36,8 @@ class ExecuteStatementRequest extends Request
      *     ClientToken?: string|null,
      *     ResultFormat?: 'JSON'|'CSV'|null,
      *     SessionKeepAliveSeconds?: int<0, 86400>|null,
-     *     SessionId?: string|null
+     *     SessionId?: string|null,
+     *     WaitTimeSeconds?: int<1, 30>|null
      * } $args
      */
     public function __construct(array $args)

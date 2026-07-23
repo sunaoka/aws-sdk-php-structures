@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $TsIncludeDvbSubtitles
  * @property Scte|null $Scte
  * @property Encryption|null $Encryption
+ * @property 'PASSTHROUGH'|'REBASED_TO_CHANNEL_START'|null $OutputTimestampMode
  */
 class Segment extends Shape
 {
@@ -23,7 +24,8 @@ class Segment extends Shape
      *     IncludeIframeOnlyStreams?: bool|null,
      *     TsIncludeDvbSubtitles?: bool|null,
      *     Scte?: Scte|null,
-     *     Encryption?: Encryption|null
+     *     Encryption?: Encryption|null,
+     *     OutputTimestampMode?: 'PASSTHROUGH'|'REBASED_TO_CHANNEL_START'|null
      * } $args
      */
     public function __construct(array $args = [])

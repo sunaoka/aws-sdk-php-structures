@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\BrowserSessionStream|null $streams
  * @property Shapes\ProxyConfiguration|null $proxyConfiguration
  * @property list<Shapes\Certificate>|null $certificates
+ * @property list<Shapes\ToolsFileSystemConfiguration>|null $filesystemConfigurations
  * @property string|null $sessionReplayArtifact
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $notebookId
- * @property 'ACTIVE'|'ARCHIVED'|null $status
+ * @property 'ACTIVE'|'ARCHIVED'|'SYNC_IN_PROGRESS'|'SYNC_FAILED'|null $status
  * @property string|null $domainId
  * @property string|null $owningProjectId
  * @property string|null $name
