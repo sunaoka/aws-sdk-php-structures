@@ -17,6 +17,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use AdminForgetDevice\AdminForgetDeviceTrait;
     use AdminGetDevice\AdminGetDeviceTrait;
     use AdminGetUser\AdminGetUserTrait;
+    use AdminGetUserAuthFactors\AdminGetUserAuthFactorsTrait;
     use AdminInitiateAuth\AdminInitiateAuthTrait;
     use AdminLinkProviderForUser\AdminLinkProviderForUserTrait;
     use AdminListDevices\AdminListDevicesTrait;

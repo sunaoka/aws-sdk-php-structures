@@ -22,7 +22,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $tags
  * @property int|null $activeLinksCount
  * @property int|null $totalLinksCount
- * @property int|null $inboundLinksCount
  * @property int|null $linksRequestedCount
  * @property 'EXTERNAL'|'INTERNAL'|null $gatewayType
  * @property string|null $externalInboundEndpoint

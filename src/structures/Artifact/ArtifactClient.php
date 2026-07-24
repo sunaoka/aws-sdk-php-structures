@@ -18,6 +18,7 @@ class ArtifactClient extends \Aws\Artifact\ArtifactClient
     use ListReports\ListReportsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PutAccountSettings\PutAccountSettingsTrait;
+    use PutComplianceInquiryFeedback\PutComplianceInquiryFeedbackTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
 }

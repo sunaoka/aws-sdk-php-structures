@@ -1,6 +1,6 @@
 <?php
 
-namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\GetUserAuthFactors;
+namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\AdminGetUserAuthFactors;
 
 use Sunaoka\Aws\Structures\Response;
 
@@ -10,6 +10,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<string>|null $UserMFASettingList
  * @property list<'PASSWORD'|'EMAIL_OTP'|'SMS_OTP'|'WEB_AUTHN'|'SOFTWARE_TOKEN'>|null $ConfiguredUserAuthFactors
  */
-class GetUserAuthFactorsResponse extends Response
+class AdminGetUserAuthFactorsResponse extends Response
 {
 }
