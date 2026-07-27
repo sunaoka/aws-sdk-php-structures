@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Arn
  * @property string|null $CustomPermissionsName
  * @property Capabilities|null $Capabilities
+ * @property Governance|null $Governance
  */
 class CustomPermissions extends Shape
 {
@@ -15,7 +16,8 @@ class CustomPermissions extends Shape
      * @param array{
      *     Arn?: string|null,
      *     CustomPermissionsName?: string|null,
-     *     Capabilities?: Capabilities|null
+     *     Capabilities?: Capabilities|null,
+     *     Governance?: Governance|null
      * } $args
      */
     public function __construct(array $args = [])

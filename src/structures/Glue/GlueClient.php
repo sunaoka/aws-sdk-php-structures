@@ -14,6 +14,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use BatchGetCrawlers\BatchGetCrawlersTrait;
     use BatchGetCustomEntityTypes\BatchGetCustomEntityTypesTrait;
     use BatchGetDataQualityResult\BatchGetDataQualityResultTrait;
+    use BatchGetDataQualityRulesetEvaluationRun\BatchGetDataQualityRulesetEvaluationRunTrait;
     use BatchGetDevEndpoints\BatchGetDevEndpointsTrait;
     use BatchGetIterableForms\BatchGetIterableFormsTrait;
     use BatchGetJobs\BatchGetJobsTrait;

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'INITIATION_IN_PROCESS'|'QUERY_QUEUED'|'QUERY_IN_PROCESS'|'QUERY_FAILURE'|'DELIVERY_IN_PROCESS'|'DELIVERY_SUCCESS'|'DELIVERY_FAILURE'|null $StatusCode
- * @property 'INSUFFICIENT_PERMISSION'|'BILL_OWNER_CHANGED'|'INTERNAL_FAILURE'|null $StatusReason
+ * @property 'INSUFFICIENT_PERMISSION'|'BILL_OWNER_CHANGED'|'INTERNAL_FAILURE'|'DEPRECATED'|null $StatusReason
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property \Aws\Api\DateTimeResult|null $CompletedAt
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
@@ -16,7 +16,7 @@ class ExecutionStatus extends Shape
     /**
      * @param array{
      *     StatusCode?: 'INITIATION_IN_PROCESS'|'QUERY_QUEUED'|'QUERY_IN_PROCESS'|'QUERY_FAILURE'|'DELIVERY_IN_PROCESS'|'DELIVERY_SUCCESS'|'DELIVERY_FAILURE'|null,
-     *     StatusReason?: 'INSUFFICIENT_PERMISSION'|'BILL_OWNER_CHANGED'|'INTERNAL_FAILURE'|null,
+     *     StatusReason?: 'INSUFFICIENT_PERMISSION'|'BILL_OWNER_CHANGED'|'INTERNAL_FAILURE'|'DEPRECATED'|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     CompletedAt?: \Aws\Api\DateTimeResult|null,
      *     LastUpdatedAt?: \Aws\Api\DateTimeResult|null

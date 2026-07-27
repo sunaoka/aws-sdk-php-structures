@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RunIdentifier|null $RunIdentifier
  * @property string|null $StatisticName
  * @property double|null $DoubleValue
+ * @property DistributionData|null $DistributionValue
  * @property 'Dataset'|'Column'|'Multicolumn'|null $EvaluationLevel
  * @property list<string>|null $ColumnsReferenced
  * @property list<string>|null $ReferencedDatasets
@@ -26,6 +27,7 @@ class StatisticSummary extends Shape
      *     RunIdentifier?: RunIdentifier|null,
      *     StatisticName?: string|null,
      *     DoubleValue?: double|null,
+     *     DistributionValue?: DistributionData|null,
      *     EvaluationLevel?: 'Dataset'|'Column'|'Multicolumn'|null,
      *     ColumnsReferenced?: list<string>|null,
      *     ReferencedDatasets?: list<string>|null,

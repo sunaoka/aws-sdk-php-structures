@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AIRecommendationInferenceSpecification|null $InferenceSpecification
  * @property bool|null $OptimizeModel
  * @property Shapes\AIRecommendationComputeSpec|null $ComputeSpec
+ * @property Shapes\AIAdapterSource|null $AdapterSource
  * @property list<Shapes\Tag>|null $Tags
  */
 class CreateAIRecommendationJobRequest extends Request
@@ -29,6 +30,7 @@ class CreateAIRecommendationJobRequest extends Request
      *     InferenceSpecification?: Shapes\AIRecommendationInferenceSpecification|null,
      *     OptimizeModel?: bool|null,
      *     ComputeSpec?: Shapes\AIRecommendationComputeSpec|null,
+     *     AdapterSource?: Shapes\AIAdapterSource|null,
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */

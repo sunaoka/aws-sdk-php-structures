@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AIRecommendationDeploymentConfiguration|null $DeploymentConfiguration
  * @property string|null $AIBenchmarkJobArn
  * @property list<AIRecommendationPerformanceMetric>|null $ExpectedPerformance
+ * @property AIRecommendationAdapterDetails|null $AdapterDetails
  */
 class AIRecommendation extends Shape
 {
@@ -21,7 +22,8 @@ class AIRecommendation extends Shape
      *     ModelDetails?: AIRecommendationModelDetails|null,
      *     DeploymentConfiguration?: AIRecommendationDeploymentConfiguration|null,
      *     AIBenchmarkJobArn?: string|null,
-     *     ExpectedPerformance?: list<AIRecommendationPerformanceMetric>|null
+     *     ExpectedPerformance?: list<AIRecommendationPerformanceMetric>|null,
+     *     AdapterDetails?: AIRecommendationAdapterDetails|null
      * } $args
      */
     public function __construct(array $args = [])

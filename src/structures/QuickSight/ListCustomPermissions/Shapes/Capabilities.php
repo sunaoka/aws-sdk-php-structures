@@ -5,485 +5,485 @@ namespace Sunaoka\Aws\Structures\QuickSight\ListCustomPermissions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DENY'|null $ExportToCsv
- * @property 'DENY'|null $ExportToExcel
- * @property 'DENY'|null $ExportToPdf
- * @property 'DENY'|null $PrintReports
- * @property 'DENY'|null $CreateAndUpdateThemes
- * @property 'DENY'|null $AddOrRunAnomalyDetectionForAnalyses
- * @property 'DENY'|null $ShareAnalyses
- * @property 'DENY'|null $CreateAndUpdateDatasets
- * @property 'DENY'|null $ShareDatasets
- * @property 'DENY'|null $SubscribeDashboardEmailReports
- * @property 'DENY'|null $CreateAndUpdateDashboardEmailReports
- * @property 'DENY'|null $ShareDashboards
- * @property 'DENY'|null $CreateAndUpdateThresholdAlerts
- * @property 'DENY'|null $RenameSharedFolders
- * @property 'DENY'|null $CreateSharedFolders
- * @property 'DENY'|null $CreateAndUpdateDataSources
- * @property 'DENY'|null $ShareDataSources
- * @property 'DENY'|null $ViewAccountSPICECapacity
- * @property 'DENY'|null $CreateSPICEDataset
- * @property 'DENY'|null $ExportToPdfInScheduledReports
- * @property 'DENY'|null $ExportToCsvInScheduledReports
- * @property 'DENY'|null $ExportToExcelInScheduledReports
- * @property 'DENY'|null $IncludeContentInScheduledReportsEmail
- * @property 'DENY'|null $Dashboard
- * @property 'DENY'|null $Analysis
- * @property 'DENY'|null $Automate
- * @property 'DENY'|null $Flow
- * @property 'DENY'|null $Apps
- * @property 'DENY'|null $CreateAndUpdateApps
- * @property 'DENY'|null $ShareApps
- * @property 'DENY'|null $InvokeAppsAIInference
- * @property 'DENY'|null $AccessAppsNativeDataStore
- * @property 'DENY'|null $PublishWithoutApproval
- * @property 'DENY'|null $UseBedrockModels
- * @property 'DENY'|null $PerformFlowUiTask
- * @property 'DENY'|null $ApproveFlowShareRequests
- * @property 'DENY'|null $UseAgentWebSearch
- * @property 'DENY'|null $KnowledgeBase
- * @property 'DENY'|null $Action
- * @property 'DENY'|null $GenericHTTPAction
- * @property 'DENY'|null $CreateAndUpdateGenericHTTPAction
- * @property 'DENY'|null $ShareGenericHTTPAction
- * @property 'DENY'|null $UseGenericHTTPAction
- * @property 'DENY'|null $AsanaAction
- * @property 'DENY'|null $CreateAndUpdateAsanaAction
- * @property 'DENY'|null $ShareAsanaAction
- * @property 'DENY'|null $UseAsanaAction
- * @property 'DENY'|null $SlackAction
- * @property 'DENY'|null $CreateAndUpdateSlackAction
- * @property 'DENY'|null $ShareSlackAction
- * @property 'DENY'|null $UseSlackAction
- * @property 'DENY'|null $ServiceNowAction
- * @property 'DENY'|null $CreateAndUpdateServiceNowAction
- * @property 'DENY'|null $ShareServiceNowAction
- * @property 'DENY'|null $UseServiceNowAction
- * @property 'DENY'|null $SalesforceAction
- * @property 'DENY'|null $CreateAndUpdateSalesforceAction
- * @property 'DENY'|null $ShareSalesforceAction
- * @property 'DENY'|null $UseSalesforceAction
- * @property 'DENY'|null $MSExchangeAction
- * @property 'DENY'|null $CreateAndUpdateMSExchangeAction
- * @property 'DENY'|null $ShareMSExchangeAction
- * @property 'DENY'|null $UseMSExchangeAction
- * @property 'DENY'|null $PagerDutyAction
- * @property 'DENY'|null $CreateAndUpdatePagerDutyAction
- * @property 'DENY'|null $SharePagerDutyAction
- * @property 'DENY'|null $UsePagerDutyAction
- * @property 'DENY'|null $JiraAction
- * @property 'DENY'|null $CreateAndUpdateJiraAction
- * @property 'DENY'|null $ShareJiraAction
- * @property 'DENY'|null $UseJiraAction
- * @property 'DENY'|null $ConfluenceAction
- * @property 'DENY'|null $CreateAndUpdateConfluenceAction
- * @property 'DENY'|null $ShareConfluenceAction
- * @property 'DENY'|null $UseConfluenceAction
- * @property 'DENY'|null $OneDriveAction
- * @property 'DENY'|null $CreateAndUpdateOneDriveAction
- * @property 'DENY'|null $ShareOneDriveAction
- * @property 'DENY'|null $UseOneDriveAction
- * @property 'DENY'|null $SharePointAction
- * @property 'DENY'|null $CreateAndUpdateSharePointAction
- * @property 'DENY'|null $ShareSharePointAction
- * @property 'DENY'|null $UseSharePointAction
- * @property 'DENY'|null $MSTeamsAction
- * @property 'DENY'|null $CreateAndUpdateMSTeamsAction
- * @property 'DENY'|null $ShareMSTeamsAction
- * @property 'DENY'|null $UseMSTeamsAction
- * @property 'DENY'|null $GoogleCalendarAction
- * @property 'DENY'|null $CreateAndUpdateGoogleCalendarAction
- * @property 'DENY'|null $ShareGoogleCalendarAction
- * @property 'DENY'|null $UseGoogleCalendarAction
- * @property 'DENY'|null $ZendeskAction
- * @property 'DENY'|null $CreateAndUpdateZendeskAction
- * @property 'DENY'|null $ShareZendeskAction
- * @property 'DENY'|null $UseZendeskAction
- * @property 'DENY'|null $SmartsheetAction
- * @property 'DENY'|null $CreateAndUpdateSmartsheetAction
- * @property 'DENY'|null $ShareSmartsheetAction
- * @property 'DENY'|null $UseSmartsheetAction
- * @property 'DENY'|null $SAPBusinessPartnerAction
- * @property 'DENY'|null $CreateAndUpdateSAPBusinessPartnerAction
- * @property 'DENY'|null $ShareSAPBusinessPartnerAction
- * @property 'DENY'|null $UseSAPBusinessPartnerAction
- * @property 'DENY'|null $SAPProductMasterDataAction
- * @property 'DENY'|null $CreateAndUpdateSAPProductMasterDataAction
- * @property 'DENY'|null $ShareSAPProductMasterDataAction
- * @property 'DENY'|null $UseSAPProductMasterDataAction
- * @property 'DENY'|null $SAPPhysicalInventoryAction
- * @property 'DENY'|null $CreateAndUpdateSAPPhysicalInventoryAction
- * @property 'DENY'|null $ShareSAPPhysicalInventoryAction
- * @property 'DENY'|null $UseSAPPhysicalInventoryAction
- * @property 'DENY'|null $SAPBillOfMaterialAction
- * @property 'DENY'|null $CreateAndUpdateSAPBillOfMaterialAction
- * @property 'DENY'|null $ShareSAPBillOfMaterialAction
- * @property 'DENY'|null $UseSAPBillOfMaterialAction
- * @property 'DENY'|null $SAPMaterialStockAction
- * @property 'DENY'|null $CreateAndUpdateSAPMaterialStockAction
- * @property 'DENY'|null $ShareSAPMaterialStockAction
- * @property 'DENY'|null $UseSAPMaterialStockAction
- * @property 'DENY'|null $FactSetAction
- * @property 'DENY'|null $CreateAndUpdateFactSetAction
- * @property 'DENY'|null $ShareFactSetAction
- * @property 'DENY'|null $UseFactSetAction
- * @property 'DENY'|null $AmazonSThreeAction
- * @property 'DENY'|null $CreateAndUpdateAmazonSThreeAction
- * @property 'DENY'|null $ShareAmazonSThreeAction
- * @property 'DENY'|null $UseAmazonSThreeAction
- * @property 'DENY'|null $TextractAction
- * @property 'DENY'|null $CreateAndUpdateTextractAction
- * @property 'DENY'|null $ShareTextractAction
- * @property 'DENY'|null $UseTextractAction
- * @property 'DENY'|null $ComprehendAction
- * @property 'DENY'|null $CreateAndUpdateComprehendAction
- * @property 'DENY'|null $ShareComprehendAction
- * @property 'DENY'|null $UseComprehendAction
- * @property 'DENY'|null $ComprehendMedicalAction
- * @property 'DENY'|null $CreateAndUpdateComprehendMedicalAction
- * @property 'DENY'|null $ShareComprehendMedicalAction
- * @property 'DENY'|null $UseComprehendMedicalAction
- * @property 'DENY'|null $AmazonBedrockARSAction
- * @property 'DENY'|null $CreateAndUpdateAmazonBedrockARSAction
- * @property 'DENY'|null $ShareAmazonBedrockARSAction
- * @property 'DENY'|null $UseAmazonBedrockARSAction
- * @property 'DENY'|null $AmazonBedrockFSAction
- * @property 'DENY'|null $CreateAndUpdateAmazonBedrockFSAction
- * @property 'DENY'|null $ShareAmazonBedrockFSAction
- * @property 'DENY'|null $UseAmazonBedrockFSAction
- * @property 'DENY'|null $AmazonBedrockKRSAction
- * @property 'DENY'|null $CreateAndUpdateAmazonBedrockKRSAction
- * @property 'DENY'|null $ShareAmazonBedrockKRSAction
- * @property 'DENY'|null $UseAmazonBedrockKRSAction
- * @property 'DENY'|null $MCPAction
- * @property 'DENY'|null $CreateAndUpdateMCPAction
- * @property 'DENY'|null $ShareMCPAction
- * @property 'DENY'|null $UseMCPAction
- * @property 'DENY'|null $OpenAPIAction
- * @property 'DENY'|null $CreateAndUpdateOpenAPIAction
- * @property 'DENY'|null $ShareOpenAPIAction
- * @property 'DENY'|null $UseOpenAPIAction
- * @property 'DENY'|null $SandPGMIAction
- * @property 'DENY'|null $CreateAndUpdateSandPGMIAction
- * @property 'DENY'|null $ShareSandPGMIAction
- * @property 'DENY'|null $UseSandPGMIAction
- * @property 'DENY'|null $SandPGlobalEnergyAction
- * @property 'DENY'|null $CreateAndUpdateSandPGlobalEnergyAction
- * @property 'DENY'|null $ShareSandPGlobalEnergyAction
- * @property 'DENY'|null $UseSandPGlobalEnergyAction
- * @property 'DENY'|null $BambooHRAction
- * @property 'DENY'|null $CreateAndUpdateBambooHRAction
- * @property 'DENY'|null $ShareBambooHRAction
- * @property 'DENY'|null $UseBambooHRAction
- * @property 'DENY'|null $BoxAgentAction
- * @property 'DENY'|null $CreateAndUpdateBoxAgentAction
- * @property 'DENY'|null $ShareBoxAgentAction
- * @property 'DENY'|null $UseBoxAgentAction
- * @property 'DENY'|null $CanvaAgentAction
- * @property 'DENY'|null $CreateAndUpdateCanvaAgentAction
- * @property 'DENY'|null $ShareCanvaAgentAction
- * @property 'DENY'|null $UseCanvaAgentAction
- * @property 'DENY'|null $GithubAction
- * @property 'DENY'|null $CreateAndUpdateGithubAction
- * @property 'DENY'|null $ShareGithubAction
- * @property 'DENY'|null $UseGithubAction
- * @property 'DENY'|null $NotionAction
- * @property 'DENY'|null $CreateAndUpdateNotionAction
- * @property 'DENY'|null $ShareNotionAction
- * @property 'DENY'|null $UseNotionAction
- * @property 'DENY'|null $LinearAction
- * @property 'DENY'|null $CreateAndUpdateLinearAction
- * @property 'DENY'|null $ShareLinearAction
- * @property 'DENY'|null $UseLinearAction
- * @property 'DENY'|null $HuggingFaceAction
- * @property 'DENY'|null $CreateAndUpdateHuggingFaceAction
- * @property 'DENY'|null $ShareHuggingFaceAction
- * @property 'DENY'|null $UseHuggingFaceAction
- * @property 'DENY'|null $MondayAction
- * @property 'DENY'|null $CreateAndUpdateMondayAction
- * @property 'DENY'|null $ShareMondayAction
- * @property 'DENY'|null $UseMondayAction
- * @property 'DENY'|null $HubspotAction
- * @property 'DENY'|null $CreateAndUpdateHubspotAction
- * @property 'DENY'|null $ShareHubspotAction
- * @property 'DENY'|null $UseHubspotAction
- * @property 'DENY'|null $IntercomAction
- * @property 'DENY'|null $CreateAndUpdateIntercomAction
- * @property 'DENY'|null $ShareIntercomAction
- * @property 'DENY'|null $UseIntercomAction
- * @property 'DENY'|null $NewRelicAction
- * @property 'DENY'|null $CreateAndUpdateNewRelicAction
- * @property 'DENY'|null $ShareNewRelicAction
- * @property 'DENY'|null $UseNewRelicAction
- * @property 'DENY'|null $Topic
- * @property 'DENY'|null $EditVisualWithQ
- * @property 'DENY'|null $BuildCalculatedFieldWithQ
- * @property 'DENY'|null $CreateDashboardExecutiveSummaryWithQ
- * @property 'DENY'|null $Space
- * @property 'DENY'|null $CreateSpaces
- * @property 'DENY'|null $ShareSpaces
- * @property 'DENY'|null $ChatAgent
- * @property 'DENY'|null $CreateChatAgents
- * @property 'DENY'|null $ShareChatAgents
- * @property 'DENY'|null $Research
- * @property 'DENY'|null $SelfUpgradeUserRole
- * @property 'DENY'|null $Extension
- * @property 'DENY'|null $UseBrowserExtension
- * @property 'DENY'|null $UseWordAddInExtension
- * @property 'DENY'|null $UseOutlookAddInExtension
- * @property 'DENY'|null $UseExcelAddInExtension
- * @property 'DENY'|null $UsePowerpointAddInExtension
- * @property 'DENY'|null $ManageSharedFolders
- * @property 'DENY'|null $GenerateAnalyses
- * @property 'DENY'|null $Story
- * @property 'DENY'|null $Scenario
- * @property 'DENY'|null $Trigger
- * @property 'DENY'|null $ScheduleTrigger
- * @property 'DENY'|null $InboundEmailTrigger
- * @property 'DENY'|null $QuickEventTrigger
+ * @property 'DENY'|'ALLOW'|null $ExportToCsv
+ * @property 'DENY'|'ALLOW'|null $ExportToExcel
+ * @property 'DENY'|'ALLOW'|null $ExportToPdf
+ * @property 'DENY'|'ALLOW'|null $PrintReports
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateThemes
+ * @property 'DENY'|'ALLOW'|null $AddOrRunAnomalyDetectionForAnalyses
+ * @property 'DENY'|'ALLOW'|null $ShareAnalyses
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateDatasets
+ * @property 'DENY'|'ALLOW'|null $ShareDatasets
+ * @property 'DENY'|'ALLOW'|null $SubscribeDashboardEmailReports
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateDashboardEmailReports
+ * @property 'DENY'|'ALLOW'|null $ShareDashboards
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateThresholdAlerts
+ * @property 'DENY'|'ALLOW'|null $RenameSharedFolders
+ * @property 'DENY'|'ALLOW'|null $CreateSharedFolders
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateDataSources
+ * @property 'DENY'|'ALLOW'|null $ShareDataSources
+ * @property 'DENY'|'ALLOW'|null $ViewAccountSPICECapacity
+ * @property 'DENY'|'ALLOW'|null $CreateSPICEDataset
+ * @property 'DENY'|'ALLOW'|null $ExportToPdfInScheduledReports
+ * @property 'DENY'|'ALLOW'|null $ExportToCsvInScheduledReports
+ * @property 'DENY'|'ALLOW'|null $ExportToExcelInScheduledReports
+ * @property 'DENY'|'ALLOW'|null $IncludeContentInScheduledReportsEmail
+ * @property 'DENY'|'ALLOW'|null $Dashboard
+ * @property 'DENY'|'ALLOW'|null $Analysis
+ * @property 'DENY'|'ALLOW'|null $Automate
+ * @property 'DENY'|'ALLOW'|null $Flow
+ * @property 'DENY'|'ALLOW'|null $Apps
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateApps
+ * @property 'DENY'|'ALLOW'|null $ShareApps
+ * @property 'DENY'|'ALLOW'|null $InvokeAppsAIInference
+ * @property 'DENY'|'ALLOW'|null $AccessAppsNativeDataStore
+ * @property 'DENY'|'ALLOW'|null $PublishWithoutApproval
+ * @property 'DENY'|'ALLOW'|null $UseBedrockModels
+ * @property 'DENY'|'ALLOW'|null $PerformFlowUiTask
+ * @property 'DENY'|'ALLOW'|null $ApproveFlowShareRequests
+ * @property 'DENY'|'ALLOW'|null $UseAgentWebSearch
+ * @property 'DENY'|'ALLOW'|null $KnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $Action
+ * @property 'DENY'|'ALLOW'|null $GenericHTTPAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateGenericHTTPAction
+ * @property 'DENY'|'ALLOW'|null $ShareGenericHTTPAction
+ * @property 'DENY'|'ALLOW'|null $UseGenericHTTPAction
+ * @property 'DENY'|'ALLOW'|null $AsanaAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateAsanaAction
+ * @property 'DENY'|'ALLOW'|null $ShareAsanaAction
+ * @property 'DENY'|'ALLOW'|null $UseAsanaAction
+ * @property 'DENY'|'ALLOW'|null $SlackAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateSlackAction
+ * @property 'DENY'|'ALLOW'|null $ShareSlackAction
+ * @property 'DENY'|'ALLOW'|null $UseSlackAction
+ * @property 'DENY'|'ALLOW'|null $ServiceNowAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateServiceNowAction
+ * @property 'DENY'|'ALLOW'|null $ShareServiceNowAction
+ * @property 'DENY'|'ALLOW'|null $UseServiceNowAction
+ * @property 'DENY'|'ALLOW'|null $SalesforceAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateSalesforceAction
+ * @property 'DENY'|'ALLOW'|null $ShareSalesforceAction
+ * @property 'DENY'|'ALLOW'|null $UseSalesforceAction
+ * @property 'DENY'|'ALLOW'|null $MSExchangeAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateMSExchangeAction
+ * @property 'DENY'|'ALLOW'|null $ShareMSExchangeAction
+ * @property 'DENY'|'ALLOW'|null $UseMSExchangeAction
+ * @property 'DENY'|'ALLOW'|null $PagerDutyAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdatePagerDutyAction
+ * @property 'DENY'|'ALLOW'|null $SharePagerDutyAction
+ * @property 'DENY'|'ALLOW'|null $UsePagerDutyAction
+ * @property 'DENY'|'ALLOW'|null $JiraAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateJiraAction
+ * @property 'DENY'|'ALLOW'|null $ShareJiraAction
+ * @property 'DENY'|'ALLOW'|null $UseJiraAction
+ * @property 'DENY'|'ALLOW'|null $ConfluenceAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateConfluenceAction
+ * @property 'DENY'|'ALLOW'|null $ShareConfluenceAction
+ * @property 'DENY'|'ALLOW'|null $UseConfluenceAction
+ * @property 'DENY'|'ALLOW'|null $OneDriveAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateOneDriveAction
+ * @property 'DENY'|'ALLOW'|null $ShareOneDriveAction
+ * @property 'DENY'|'ALLOW'|null $UseOneDriveAction
+ * @property 'DENY'|'ALLOW'|null $SharePointAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateSharePointAction
+ * @property 'DENY'|'ALLOW'|null $ShareSharePointAction
+ * @property 'DENY'|'ALLOW'|null $UseSharePointAction
+ * @property 'DENY'|'ALLOW'|null $MSTeamsAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateMSTeamsAction
+ * @property 'DENY'|'ALLOW'|null $ShareMSTeamsAction
+ * @property 'DENY'|'ALLOW'|null $UseMSTeamsAction
+ * @property 'DENY'|'ALLOW'|null $GoogleCalendarAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateGoogleCalendarAction
+ * @property 'DENY'|'ALLOW'|null $ShareGoogleCalendarAction
+ * @property 'DENY'|'ALLOW'|null $UseGoogleCalendarAction
+ * @property 'DENY'|'ALLOW'|null $ZendeskAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateZendeskAction
+ * @property 'DENY'|'ALLOW'|null $ShareZendeskAction
+ * @property 'DENY'|'ALLOW'|null $UseZendeskAction
+ * @property 'DENY'|'ALLOW'|null $SmartsheetAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateSmartsheetAction
+ * @property 'DENY'|'ALLOW'|null $ShareSmartsheetAction
+ * @property 'DENY'|'ALLOW'|null $UseSmartsheetAction
+ * @property 'DENY'|'ALLOW'|null $SAPBusinessPartnerAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateSAPBusinessPartnerAction
+ * @property 'DENY'|'ALLOW'|null $ShareSAPBusinessPartnerAction
+ * @property 'DENY'|'ALLOW'|null $UseSAPBusinessPartnerAction
+ * @property 'DENY'|'ALLOW'|null $SAPProductMasterDataAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateSAPProductMasterDataAction
+ * @property 'DENY'|'ALLOW'|null $ShareSAPProductMasterDataAction
+ * @property 'DENY'|'ALLOW'|null $UseSAPProductMasterDataAction
+ * @property 'DENY'|'ALLOW'|null $SAPPhysicalInventoryAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateSAPPhysicalInventoryAction
+ * @property 'DENY'|'ALLOW'|null $ShareSAPPhysicalInventoryAction
+ * @property 'DENY'|'ALLOW'|null $UseSAPPhysicalInventoryAction
+ * @property 'DENY'|'ALLOW'|null $SAPBillOfMaterialAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateSAPBillOfMaterialAction
+ * @property 'DENY'|'ALLOW'|null $ShareSAPBillOfMaterialAction
+ * @property 'DENY'|'ALLOW'|null $UseSAPBillOfMaterialAction
+ * @property 'DENY'|'ALLOW'|null $SAPMaterialStockAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateSAPMaterialStockAction
+ * @property 'DENY'|'ALLOW'|null $ShareSAPMaterialStockAction
+ * @property 'DENY'|'ALLOW'|null $UseSAPMaterialStockAction
+ * @property 'DENY'|'ALLOW'|null $FactSetAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateFactSetAction
+ * @property 'DENY'|'ALLOW'|null $ShareFactSetAction
+ * @property 'DENY'|'ALLOW'|null $UseFactSetAction
+ * @property 'DENY'|'ALLOW'|null $AmazonSThreeAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateAmazonSThreeAction
+ * @property 'DENY'|'ALLOW'|null $ShareAmazonSThreeAction
+ * @property 'DENY'|'ALLOW'|null $UseAmazonSThreeAction
+ * @property 'DENY'|'ALLOW'|null $TextractAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateTextractAction
+ * @property 'DENY'|'ALLOW'|null $ShareTextractAction
+ * @property 'DENY'|'ALLOW'|null $UseTextractAction
+ * @property 'DENY'|'ALLOW'|null $ComprehendAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateComprehendAction
+ * @property 'DENY'|'ALLOW'|null $ShareComprehendAction
+ * @property 'DENY'|'ALLOW'|null $UseComprehendAction
+ * @property 'DENY'|'ALLOW'|null $ComprehendMedicalAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateComprehendMedicalAction
+ * @property 'DENY'|'ALLOW'|null $ShareComprehendMedicalAction
+ * @property 'DENY'|'ALLOW'|null $UseComprehendMedicalAction
+ * @property 'DENY'|'ALLOW'|null $AmazonBedrockARSAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateAmazonBedrockARSAction
+ * @property 'DENY'|'ALLOW'|null $ShareAmazonBedrockARSAction
+ * @property 'DENY'|'ALLOW'|null $UseAmazonBedrockARSAction
+ * @property 'DENY'|'ALLOW'|null $AmazonBedrockFSAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateAmazonBedrockFSAction
+ * @property 'DENY'|'ALLOW'|null $ShareAmazonBedrockFSAction
+ * @property 'DENY'|'ALLOW'|null $UseAmazonBedrockFSAction
+ * @property 'DENY'|'ALLOW'|null $AmazonBedrockKRSAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateAmazonBedrockKRSAction
+ * @property 'DENY'|'ALLOW'|null $ShareAmazonBedrockKRSAction
+ * @property 'DENY'|'ALLOW'|null $UseAmazonBedrockKRSAction
+ * @property 'DENY'|'ALLOW'|null $MCPAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateMCPAction
+ * @property 'DENY'|'ALLOW'|null $ShareMCPAction
+ * @property 'DENY'|'ALLOW'|null $UseMCPAction
+ * @property 'DENY'|'ALLOW'|null $OpenAPIAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateOpenAPIAction
+ * @property 'DENY'|'ALLOW'|null $ShareOpenAPIAction
+ * @property 'DENY'|'ALLOW'|null $UseOpenAPIAction
+ * @property 'DENY'|'ALLOW'|null $SandPGMIAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateSandPGMIAction
+ * @property 'DENY'|'ALLOW'|null $ShareSandPGMIAction
+ * @property 'DENY'|'ALLOW'|null $UseSandPGMIAction
+ * @property 'DENY'|'ALLOW'|null $SandPGlobalEnergyAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateSandPGlobalEnergyAction
+ * @property 'DENY'|'ALLOW'|null $ShareSandPGlobalEnergyAction
+ * @property 'DENY'|'ALLOW'|null $UseSandPGlobalEnergyAction
+ * @property 'DENY'|'ALLOW'|null $BambooHRAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateBambooHRAction
+ * @property 'DENY'|'ALLOW'|null $ShareBambooHRAction
+ * @property 'DENY'|'ALLOW'|null $UseBambooHRAction
+ * @property 'DENY'|'ALLOW'|null $BoxAgentAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateBoxAgentAction
+ * @property 'DENY'|'ALLOW'|null $ShareBoxAgentAction
+ * @property 'DENY'|'ALLOW'|null $UseBoxAgentAction
+ * @property 'DENY'|'ALLOW'|null $CanvaAgentAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateCanvaAgentAction
+ * @property 'DENY'|'ALLOW'|null $ShareCanvaAgentAction
+ * @property 'DENY'|'ALLOW'|null $UseCanvaAgentAction
+ * @property 'DENY'|'ALLOW'|null $GithubAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateGithubAction
+ * @property 'DENY'|'ALLOW'|null $ShareGithubAction
+ * @property 'DENY'|'ALLOW'|null $UseGithubAction
+ * @property 'DENY'|'ALLOW'|null $NotionAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateNotionAction
+ * @property 'DENY'|'ALLOW'|null $ShareNotionAction
+ * @property 'DENY'|'ALLOW'|null $UseNotionAction
+ * @property 'DENY'|'ALLOW'|null $LinearAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateLinearAction
+ * @property 'DENY'|'ALLOW'|null $ShareLinearAction
+ * @property 'DENY'|'ALLOW'|null $UseLinearAction
+ * @property 'DENY'|'ALLOW'|null $HuggingFaceAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateHuggingFaceAction
+ * @property 'DENY'|'ALLOW'|null $ShareHuggingFaceAction
+ * @property 'DENY'|'ALLOW'|null $UseHuggingFaceAction
+ * @property 'DENY'|'ALLOW'|null $MondayAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateMondayAction
+ * @property 'DENY'|'ALLOW'|null $ShareMondayAction
+ * @property 'DENY'|'ALLOW'|null $UseMondayAction
+ * @property 'DENY'|'ALLOW'|null $HubspotAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateHubspotAction
+ * @property 'DENY'|'ALLOW'|null $ShareHubspotAction
+ * @property 'DENY'|'ALLOW'|null $UseHubspotAction
+ * @property 'DENY'|'ALLOW'|null $IntercomAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateIntercomAction
+ * @property 'DENY'|'ALLOW'|null $ShareIntercomAction
+ * @property 'DENY'|'ALLOW'|null $UseIntercomAction
+ * @property 'DENY'|'ALLOW'|null $NewRelicAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateNewRelicAction
+ * @property 'DENY'|'ALLOW'|null $ShareNewRelicAction
+ * @property 'DENY'|'ALLOW'|null $UseNewRelicAction
+ * @property 'DENY'|'ALLOW'|null $Topic
+ * @property 'DENY'|'ALLOW'|null $EditVisualWithQ
+ * @property 'DENY'|'ALLOW'|null $BuildCalculatedFieldWithQ
+ * @property 'DENY'|'ALLOW'|null $CreateDashboardExecutiveSummaryWithQ
+ * @property 'DENY'|'ALLOW'|null $Space
+ * @property 'DENY'|'ALLOW'|null $CreateSpaces
+ * @property 'DENY'|'ALLOW'|null $ShareSpaces
+ * @property 'DENY'|'ALLOW'|null $ChatAgent
+ * @property 'DENY'|'ALLOW'|null $CreateChatAgents
+ * @property 'DENY'|'ALLOW'|null $ShareChatAgents
+ * @property 'DENY'|'ALLOW'|null $Research
+ * @property 'DENY'|'ALLOW'|null $SelfUpgradeUserRole
+ * @property 'DENY'|'ALLOW'|null $Extension
+ * @property 'DENY'|'ALLOW'|null $UseBrowserExtension
+ * @property 'DENY'|'ALLOW'|null $UseWordAddInExtension
+ * @property 'DENY'|'ALLOW'|null $UseOutlookAddInExtension
+ * @property 'DENY'|'ALLOW'|null $UseExcelAddInExtension
+ * @property 'DENY'|'ALLOW'|null $UsePowerpointAddInExtension
+ * @property 'DENY'|'ALLOW'|null $ManageSharedFolders
+ * @property 'DENY'|'ALLOW'|null $GenerateAnalyses
+ * @property 'DENY'|'ALLOW'|null $Story
+ * @property 'DENY'|'ALLOW'|null $Scenario
+ * @property 'DENY'|'ALLOW'|null $Trigger
+ * @property 'DENY'|'ALLOW'|null $ScheduleTrigger
+ * @property 'DENY'|'ALLOW'|null $InboundEmailTrigger
+ * @property 'DENY'|'ALLOW'|null $QuickEventTrigger
  */
 class Capabilities extends Shape
 {
     /**
      * @param array{
-     *     ExportToCsv?: 'DENY'|null,
-     *     ExportToExcel?: 'DENY'|null,
-     *     ExportToPdf?: 'DENY'|null,
-     *     PrintReports?: 'DENY'|null,
-     *     CreateAndUpdateThemes?: 'DENY'|null,
-     *     AddOrRunAnomalyDetectionForAnalyses?: 'DENY'|null,
-     *     ShareAnalyses?: 'DENY'|null,
-     *     CreateAndUpdateDatasets?: 'DENY'|null,
-     *     ShareDatasets?: 'DENY'|null,
-     *     SubscribeDashboardEmailReports?: 'DENY'|null,
-     *     CreateAndUpdateDashboardEmailReports?: 'DENY'|null,
-     *     ShareDashboards?: 'DENY'|null,
-     *     CreateAndUpdateThresholdAlerts?: 'DENY'|null,
-     *     RenameSharedFolders?: 'DENY'|null,
-     *     CreateSharedFolders?: 'DENY'|null,
-     *     CreateAndUpdateDataSources?: 'DENY'|null,
-     *     ShareDataSources?: 'DENY'|null,
-     *     ViewAccountSPICECapacity?: 'DENY'|null,
-     *     CreateSPICEDataset?: 'DENY'|null,
-     *     ExportToPdfInScheduledReports?: 'DENY'|null,
-     *     ExportToCsvInScheduledReports?: 'DENY'|null,
-     *     ExportToExcelInScheduledReports?: 'DENY'|null,
-     *     IncludeContentInScheduledReportsEmail?: 'DENY'|null,
-     *     Dashboard?: 'DENY'|null,
-     *     Analysis?: 'DENY'|null,
-     *     Automate?: 'DENY'|null,
-     *     Flow?: 'DENY'|null,
-     *     Apps?: 'DENY'|null,
-     *     CreateAndUpdateApps?: 'DENY'|null,
-     *     ShareApps?: 'DENY'|null,
-     *     InvokeAppsAIInference?: 'DENY'|null,
-     *     AccessAppsNativeDataStore?: 'DENY'|null,
-     *     PublishWithoutApproval?: 'DENY'|null,
-     *     UseBedrockModels?: 'DENY'|null,
-     *     PerformFlowUiTask?: 'DENY'|null,
-     *     ApproveFlowShareRequests?: 'DENY'|null,
-     *     UseAgentWebSearch?: 'DENY'|null,
-     *     KnowledgeBase?: 'DENY'|null,
-     *     Action?: 'DENY'|null,
-     *     GenericHTTPAction?: 'DENY'|null,
-     *     CreateAndUpdateGenericHTTPAction?: 'DENY'|null,
-     *     ShareGenericHTTPAction?: 'DENY'|null,
-     *     UseGenericHTTPAction?: 'DENY'|null,
-     *     AsanaAction?: 'DENY'|null,
-     *     CreateAndUpdateAsanaAction?: 'DENY'|null,
-     *     ShareAsanaAction?: 'DENY'|null,
-     *     UseAsanaAction?: 'DENY'|null,
-     *     SlackAction?: 'DENY'|null,
-     *     CreateAndUpdateSlackAction?: 'DENY'|null,
-     *     ShareSlackAction?: 'DENY'|null,
-     *     UseSlackAction?: 'DENY'|null,
-     *     ServiceNowAction?: 'DENY'|null,
-     *     CreateAndUpdateServiceNowAction?: 'DENY'|null,
-     *     ShareServiceNowAction?: 'DENY'|null,
-     *     UseServiceNowAction?: 'DENY'|null,
-     *     SalesforceAction?: 'DENY'|null,
-     *     CreateAndUpdateSalesforceAction?: 'DENY'|null,
-     *     ShareSalesforceAction?: 'DENY'|null,
-     *     UseSalesforceAction?: 'DENY'|null,
-     *     MSExchangeAction?: 'DENY'|null,
-     *     CreateAndUpdateMSExchangeAction?: 'DENY'|null,
-     *     ShareMSExchangeAction?: 'DENY'|null,
-     *     UseMSExchangeAction?: 'DENY'|null,
-     *     PagerDutyAction?: 'DENY'|null,
-     *     CreateAndUpdatePagerDutyAction?: 'DENY'|null,
-     *     SharePagerDutyAction?: 'DENY'|null,
-     *     UsePagerDutyAction?: 'DENY'|null,
-     *     JiraAction?: 'DENY'|null,
-     *     CreateAndUpdateJiraAction?: 'DENY'|null,
-     *     ShareJiraAction?: 'DENY'|null,
-     *     UseJiraAction?: 'DENY'|null,
-     *     ConfluenceAction?: 'DENY'|null,
-     *     CreateAndUpdateConfluenceAction?: 'DENY'|null,
-     *     ShareConfluenceAction?: 'DENY'|null,
-     *     UseConfluenceAction?: 'DENY'|null,
-     *     OneDriveAction?: 'DENY'|null,
-     *     CreateAndUpdateOneDriveAction?: 'DENY'|null,
-     *     ShareOneDriveAction?: 'DENY'|null,
-     *     UseOneDriveAction?: 'DENY'|null,
-     *     SharePointAction?: 'DENY'|null,
-     *     CreateAndUpdateSharePointAction?: 'DENY'|null,
-     *     ShareSharePointAction?: 'DENY'|null,
-     *     UseSharePointAction?: 'DENY'|null,
-     *     MSTeamsAction?: 'DENY'|null,
-     *     CreateAndUpdateMSTeamsAction?: 'DENY'|null,
-     *     ShareMSTeamsAction?: 'DENY'|null,
-     *     UseMSTeamsAction?: 'DENY'|null,
-     *     GoogleCalendarAction?: 'DENY'|null,
-     *     CreateAndUpdateGoogleCalendarAction?: 'DENY'|null,
-     *     ShareGoogleCalendarAction?: 'DENY'|null,
-     *     UseGoogleCalendarAction?: 'DENY'|null,
-     *     ZendeskAction?: 'DENY'|null,
-     *     CreateAndUpdateZendeskAction?: 'DENY'|null,
-     *     ShareZendeskAction?: 'DENY'|null,
-     *     UseZendeskAction?: 'DENY'|null,
-     *     SmartsheetAction?: 'DENY'|null,
-     *     CreateAndUpdateSmartsheetAction?: 'DENY'|null,
-     *     ShareSmartsheetAction?: 'DENY'|null,
-     *     UseSmartsheetAction?: 'DENY'|null,
-     *     SAPBusinessPartnerAction?: 'DENY'|null,
-     *     CreateAndUpdateSAPBusinessPartnerAction?: 'DENY'|null,
-     *     ShareSAPBusinessPartnerAction?: 'DENY'|null,
-     *     UseSAPBusinessPartnerAction?: 'DENY'|null,
-     *     SAPProductMasterDataAction?: 'DENY'|null,
-     *     CreateAndUpdateSAPProductMasterDataAction?: 'DENY'|null,
-     *     ShareSAPProductMasterDataAction?: 'DENY'|null,
-     *     UseSAPProductMasterDataAction?: 'DENY'|null,
-     *     SAPPhysicalInventoryAction?: 'DENY'|null,
-     *     CreateAndUpdateSAPPhysicalInventoryAction?: 'DENY'|null,
-     *     ShareSAPPhysicalInventoryAction?: 'DENY'|null,
-     *     UseSAPPhysicalInventoryAction?: 'DENY'|null,
-     *     SAPBillOfMaterialAction?: 'DENY'|null,
-     *     CreateAndUpdateSAPBillOfMaterialAction?: 'DENY'|null,
-     *     ShareSAPBillOfMaterialAction?: 'DENY'|null,
-     *     UseSAPBillOfMaterialAction?: 'DENY'|null,
-     *     SAPMaterialStockAction?: 'DENY'|null,
-     *     CreateAndUpdateSAPMaterialStockAction?: 'DENY'|null,
-     *     ShareSAPMaterialStockAction?: 'DENY'|null,
-     *     UseSAPMaterialStockAction?: 'DENY'|null,
-     *     FactSetAction?: 'DENY'|null,
-     *     CreateAndUpdateFactSetAction?: 'DENY'|null,
-     *     ShareFactSetAction?: 'DENY'|null,
-     *     UseFactSetAction?: 'DENY'|null,
-     *     AmazonSThreeAction?: 'DENY'|null,
-     *     CreateAndUpdateAmazonSThreeAction?: 'DENY'|null,
-     *     ShareAmazonSThreeAction?: 'DENY'|null,
-     *     UseAmazonSThreeAction?: 'DENY'|null,
-     *     TextractAction?: 'DENY'|null,
-     *     CreateAndUpdateTextractAction?: 'DENY'|null,
-     *     ShareTextractAction?: 'DENY'|null,
-     *     UseTextractAction?: 'DENY'|null,
-     *     ComprehendAction?: 'DENY'|null,
-     *     CreateAndUpdateComprehendAction?: 'DENY'|null,
-     *     ShareComprehendAction?: 'DENY'|null,
-     *     UseComprehendAction?: 'DENY'|null,
-     *     ComprehendMedicalAction?: 'DENY'|null,
-     *     CreateAndUpdateComprehendMedicalAction?: 'DENY'|null,
-     *     ShareComprehendMedicalAction?: 'DENY'|null,
-     *     UseComprehendMedicalAction?: 'DENY'|null,
-     *     AmazonBedrockARSAction?: 'DENY'|null,
-     *     CreateAndUpdateAmazonBedrockARSAction?: 'DENY'|null,
-     *     ShareAmazonBedrockARSAction?: 'DENY'|null,
-     *     UseAmazonBedrockARSAction?: 'DENY'|null,
-     *     AmazonBedrockFSAction?: 'DENY'|null,
-     *     CreateAndUpdateAmazonBedrockFSAction?: 'DENY'|null,
-     *     ShareAmazonBedrockFSAction?: 'DENY'|null,
-     *     UseAmazonBedrockFSAction?: 'DENY'|null,
-     *     AmazonBedrockKRSAction?: 'DENY'|null,
-     *     CreateAndUpdateAmazonBedrockKRSAction?: 'DENY'|null,
-     *     ShareAmazonBedrockKRSAction?: 'DENY'|null,
-     *     UseAmazonBedrockKRSAction?: 'DENY'|null,
-     *     MCPAction?: 'DENY'|null,
-     *     CreateAndUpdateMCPAction?: 'DENY'|null,
-     *     ShareMCPAction?: 'DENY'|null,
-     *     UseMCPAction?: 'DENY'|null,
-     *     OpenAPIAction?: 'DENY'|null,
-     *     CreateAndUpdateOpenAPIAction?: 'DENY'|null,
-     *     ShareOpenAPIAction?: 'DENY'|null,
-     *     UseOpenAPIAction?: 'DENY'|null,
-     *     SandPGMIAction?: 'DENY'|null,
-     *     CreateAndUpdateSandPGMIAction?: 'DENY'|null,
-     *     ShareSandPGMIAction?: 'DENY'|null,
-     *     UseSandPGMIAction?: 'DENY'|null,
-     *     SandPGlobalEnergyAction?: 'DENY'|null,
-     *     CreateAndUpdateSandPGlobalEnergyAction?: 'DENY'|null,
-     *     ShareSandPGlobalEnergyAction?: 'DENY'|null,
-     *     UseSandPGlobalEnergyAction?: 'DENY'|null,
-     *     BambooHRAction?: 'DENY'|null,
-     *     CreateAndUpdateBambooHRAction?: 'DENY'|null,
-     *     ShareBambooHRAction?: 'DENY'|null,
-     *     UseBambooHRAction?: 'DENY'|null,
-     *     BoxAgentAction?: 'DENY'|null,
-     *     CreateAndUpdateBoxAgentAction?: 'DENY'|null,
-     *     ShareBoxAgentAction?: 'DENY'|null,
-     *     UseBoxAgentAction?: 'DENY'|null,
-     *     CanvaAgentAction?: 'DENY'|null,
-     *     CreateAndUpdateCanvaAgentAction?: 'DENY'|null,
-     *     ShareCanvaAgentAction?: 'DENY'|null,
-     *     UseCanvaAgentAction?: 'DENY'|null,
-     *     GithubAction?: 'DENY'|null,
-     *     CreateAndUpdateGithubAction?: 'DENY'|null,
-     *     ShareGithubAction?: 'DENY'|null,
-     *     UseGithubAction?: 'DENY'|null,
-     *     NotionAction?: 'DENY'|null,
-     *     CreateAndUpdateNotionAction?: 'DENY'|null,
-     *     ShareNotionAction?: 'DENY'|null,
-     *     UseNotionAction?: 'DENY'|null,
-     *     LinearAction?: 'DENY'|null,
-     *     CreateAndUpdateLinearAction?: 'DENY'|null,
-     *     ShareLinearAction?: 'DENY'|null,
-     *     UseLinearAction?: 'DENY'|null,
-     *     HuggingFaceAction?: 'DENY'|null,
-     *     CreateAndUpdateHuggingFaceAction?: 'DENY'|null,
-     *     ShareHuggingFaceAction?: 'DENY'|null,
-     *     UseHuggingFaceAction?: 'DENY'|null,
-     *     MondayAction?: 'DENY'|null,
-     *     CreateAndUpdateMondayAction?: 'DENY'|null,
-     *     ShareMondayAction?: 'DENY'|null,
-     *     UseMondayAction?: 'DENY'|null,
-     *     HubspotAction?: 'DENY'|null,
-     *     CreateAndUpdateHubspotAction?: 'DENY'|null,
-     *     ShareHubspotAction?: 'DENY'|null,
-     *     UseHubspotAction?: 'DENY'|null,
-     *     IntercomAction?: 'DENY'|null,
-     *     CreateAndUpdateIntercomAction?: 'DENY'|null,
-     *     ShareIntercomAction?: 'DENY'|null,
-     *     UseIntercomAction?: 'DENY'|null,
-     *     NewRelicAction?: 'DENY'|null,
-     *     CreateAndUpdateNewRelicAction?: 'DENY'|null,
-     *     ShareNewRelicAction?: 'DENY'|null,
-     *     UseNewRelicAction?: 'DENY'|null,
-     *     Topic?: 'DENY'|null,
-     *     EditVisualWithQ?: 'DENY'|null,
-     *     BuildCalculatedFieldWithQ?: 'DENY'|null,
-     *     CreateDashboardExecutiveSummaryWithQ?: 'DENY'|null,
-     *     Space?: 'DENY'|null,
-     *     CreateSpaces?: 'DENY'|null,
-     *     ShareSpaces?: 'DENY'|null,
-     *     ChatAgent?: 'DENY'|null,
-     *     CreateChatAgents?: 'DENY'|null,
-     *     ShareChatAgents?: 'DENY'|null,
-     *     Research?: 'DENY'|null,
-     *     SelfUpgradeUserRole?: 'DENY'|null,
-     *     Extension?: 'DENY'|null,
-     *     UseBrowserExtension?: 'DENY'|null,
-     *     UseWordAddInExtension?: 'DENY'|null,
-     *     UseOutlookAddInExtension?: 'DENY'|null,
-     *     UseExcelAddInExtension?: 'DENY'|null,
-     *     UsePowerpointAddInExtension?: 'DENY'|null,
-     *     ManageSharedFolders?: 'DENY'|null,
-     *     GenerateAnalyses?: 'DENY'|null,
-     *     Story?: 'DENY'|null,
-     *     Scenario?: 'DENY'|null,
-     *     Trigger?: 'DENY'|null,
-     *     ScheduleTrigger?: 'DENY'|null,
-     *     InboundEmailTrigger?: 'DENY'|null,
-     *     QuickEventTrigger?: 'DENY'|null
+     *     ExportToCsv?: 'DENY'|'ALLOW'|null,
+     *     ExportToExcel?: 'DENY'|'ALLOW'|null,
+     *     ExportToPdf?: 'DENY'|'ALLOW'|null,
+     *     PrintReports?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateThemes?: 'DENY'|'ALLOW'|null,
+     *     AddOrRunAnomalyDetectionForAnalyses?: 'DENY'|'ALLOW'|null,
+     *     ShareAnalyses?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateDatasets?: 'DENY'|'ALLOW'|null,
+     *     ShareDatasets?: 'DENY'|'ALLOW'|null,
+     *     SubscribeDashboardEmailReports?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateDashboardEmailReports?: 'DENY'|'ALLOW'|null,
+     *     ShareDashboards?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateThresholdAlerts?: 'DENY'|'ALLOW'|null,
+     *     RenameSharedFolders?: 'DENY'|'ALLOW'|null,
+     *     CreateSharedFolders?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateDataSources?: 'DENY'|'ALLOW'|null,
+     *     ShareDataSources?: 'DENY'|'ALLOW'|null,
+     *     ViewAccountSPICECapacity?: 'DENY'|'ALLOW'|null,
+     *     CreateSPICEDataset?: 'DENY'|'ALLOW'|null,
+     *     ExportToPdfInScheduledReports?: 'DENY'|'ALLOW'|null,
+     *     ExportToCsvInScheduledReports?: 'DENY'|'ALLOW'|null,
+     *     ExportToExcelInScheduledReports?: 'DENY'|'ALLOW'|null,
+     *     IncludeContentInScheduledReportsEmail?: 'DENY'|'ALLOW'|null,
+     *     Dashboard?: 'DENY'|'ALLOW'|null,
+     *     Analysis?: 'DENY'|'ALLOW'|null,
+     *     Automate?: 'DENY'|'ALLOW'|null,
+     *     Flow?: 'DENY'|'ALLOW'|null,
+     *     Apps?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateApps?: 'DENY'|'ALLOW'|null,
+     *     ShareApps?: 'DENY'|'ALLOW'|null,
+     *     InvokeAppsAIInference?: 'DENY'|'ALLOW'|null,
+     *     AccessAppsNativeDataStore?: 'DENY'|'ALLOW'|null,
+     *     PublishWithoutApproval?: 'DENY'|'ALLOW'|null,
+     *     UseBedrockModels?: 'DENY'|'ALLOW'|null,
+     *     PerformFlowUiTask?: 'DENY'|'ALLOW'|null,
+     *     ApproveFlowShareRequests?: 'DENY'|'ALLOW'|null,
+     *     UseAgentWebSearch?: 'DENY'|'ALLOW'|null,
+     *     KnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     Action?: 'DENY'|'ALLOW'|null,
+     *     GenericHTTPAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateGenericHTTPAction?: 'DENY'|'ALLOW'|null,
+     *     ShareGenericHTTPAction?: 'DENY'|'ALLOW'|null,
+     *     UseGenericHTTPAction?: 'DENY'|'ALLOW'|null,
+     *     AsanaAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateAsanaAction?: 'DENY'|'ALLOW'|null,
+     *     ShareAsanaAction?: 'DENY'|'ALLOW'|null,
+     *     UseAsanaAction?: 'DENY'|'ALLOW'|null,
+     *     SlackAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateSlackAction?: 'DENY'|'ALLOW'|null,
+     *     ShareSlackAction?: 'DENY'|'ALLOW'|null,
+     *     UseSlackAction?: 'DENY'|'ALLOW'|null,
+     *     ServiceNowAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateServiceNowAction?: 'DENY'|'ALLOW'|null,
+     *     ShareServiceNowAction?: 'DENY'|'ALLOW'|null,
+     *     UseServiceNowAction?: 'DENY'|'ALLOW'|null,
+     *     SalesforceAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateSalesforceAction?: 'DENY'|'ALLOW'|null,
+     *     ShareSalesforceAction?: 'DENY'|'ALLOW'|null,
+     *     UseSalesforceAction?: 'DENY'|'ALLOW'|null,
+     *     MSExchangeAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateMSExchangeAction?: 'DENY'|'ALLOW'|null,
+     *     ShareMSExchangeAction?: 'DENY'|'ALLOW'|null,
+     *     UseMSExchangeAction?: 'DENY'|'ALLOW'|null,
+     *     PagerDutyAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdatePagerDutyAction?: 'DENY'|'ALLOW'|null,
+     *     SharePagerDutyAction?: 'DENY'|'ALLOW'|null,
+     *     UsePagerDutyAction?: 'DENY'|'ALLOW'|null,
+     *     JiraAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateJiraAction?: 'DENY'|'ALLOW'|null,
+     *     ShareJiraAction?: 'DENY'|'ALLOW'|null,
+     *     UseJiraAction?: 'DENY'|'ALLOW'|null,
+     *     ConfluenceAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateConfluenceAction?: 'DENY'|'ALLOW'|null,
+     *     ShareConfluenceAction?: 'DENY'|'ALLOW'|null,
+     *     UseConfluenceAction?: 'DENY'|'ALLOW'|null,
+     *     OneDriveAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateOneDriveAction?: 'DENY'|'ALLOW'|null,
+     *     ShareOneDriveAction?: 'DENY'|'ALLOW'|null,
+     *     UseOneDriveAction?: 'DENY'|'ALLOW'|null,
+     *     SharePointAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateSharePointAction?: 'DENY'|'ALLOW'|null,
+     *     ShareSharePointAction?: 'DENY'|'ALLOW'|null,
+     *     UseSharePointAction?: 'DENY'|'ALLOW'|null,
+     *     MSTeamsAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateMSTeamsAction?: 'DENY'|'ALLOW'|null,
+     *     ShareMSTeamsAction?: 'DENY'|'ALLOW'|null,
+     *     UseMSTeamsAction?: 'DENY'|'ALLOW'|null,
+     *     GoogleCalendarAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateGoogleCalendarAction?: 'DENY'|'ALLOW'|null,
+     *     ShareGoogleCalendarAction?: 'DENY'|'ALLOW'|null,
+     *     UseGoogleCalendarAction?: 'DENY'|'ALLOW'|null,
+     *     ZendeskAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateZendeskAction?: 'DENY'|'ALLOW'|null,
+     *     ShareZendeskAction?: 'DENY'|'ALLOW'|null,
+     *     UseZendeskAction?: 'DENY'|'ALLOW'|null,
+     *     SmartsheetAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateSmartsheetAction?: 'DENY'|'ALLOW'|null,
+     *     ShareSmartsheetAction?: 'DENY'|'ALLOW'|null,
+     *     UseSmartsheetAction?: 'DENY'|'ALLOW'|null,
+     *     SAPBusinessPartnerAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateSAPBusinessPartnerAction?: 'DENY'|'ALLOW'|null,
+     *     ShareSAPBusinessPartnerAction?: 'DENY'|'ALLOW'|null,
+     *     UseSAPBusinessPartnerAction?: 'DENY'|'ALLOW'|null,
+     *     SAPProductMasterDataAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateSAPProductMasterDataAction?: 'DENY'|'ALLOW'|null,
+     *     ShareSAPProductMasterDataAction?: 'DENY'|'ALLOW'|null,
+     *     UseSAPProductMasterDataAction?: 'DENY'|'ALLOW'|null,
+     *     SAPPhysicalInventoryAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateSAPPhysicalInventoryAction?: 'DENY'|'ALLOW'|null,
+     *     ShareSAPPhysicalInventoryAction?: 'DENY'|'ALLOW'|null,
+     *     UseSAPPhysicalInventoryAction?: 'DENY'|'ALLOW'|null,
+     *     SAPBillOfMaterialAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateSAPBillOfMaterialAction?: 'DENY'|'ALLOW'|null,
+     *     ShareSAPBillOfMaterialAction?: 'DENY'|'ALLOW'|null,
+     *     UseSAPBillOfMaterialAction?: 'DENY'|'ALLOW'|null,
+     *     SAPMaterialStockAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateSAPMaterialStockAction?: 'DENY'|'ALLOW'|null,
+     *     ShareSAPMaterialStockAction?: 'DENY'|'ALLOW'|null,
+     *     UseSAPMaterialStockAction?: 'DENY'|'ALLOW'|null,
+     *     FactSetAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateFactSetAction?: 'DENY'|'ALLOW'|null,
+     *     ShareFactSetAction?: 'DENY'|'ALLOW'|null,
+     *     UseFactSetAction?: 'DENY'|'ALLOW'|null,
+     *     AmazonSThreeAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateAmazonSThreeAction?: 'DENY'|'ALLOW'|null,
+     *     ShareAmazonSThreeAction?: 'DENY'|'ALLOW'|null,
+     *     UseAmazonSThreeAction?: 'DENY'|'ALLOW'|null,
+     *     TextractAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateTextractAction?: 'DENY'|'ALLOW'|null,
+     *     ShareTextractAction?: 'DENY'|'ALLOW'|null,
+     *     UseTextractAction?: 'DENY'|'ALLOW'|null,
+     *     ComprehendAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateComprehendAction?: 'DENY'|'ALLOW'|null,
+     *     ShareComprehendAction?: 'DENY'|'ALLOW'|null,
+     *     UseComprehendAction?: 'DENY'|'ALLOW'|null,
+     *     ComprehendMedicalAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateComprehendMedicalAction?: 'DENY'|'ALLOW'|null,
+     *     ShareComprehendMedicalAction?: 'DENY'|'ALLOW'|null,
+     *     UseComprehendMedicalAction?: 'DENY'|'ALLOW'|null,
+     *     AmazonBedrockARSAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateAmazonBedrockARSAction?: 'DENY'|'ALLOW'|null,
+     *     ShareAmazonBedrockARSAction?: 'DENY'|'ALLOW'|null,
+     *     UseAmazonBedrockARSAction?: 'DENY'|'ALLOW'|null,
+     *     AmazonBedrockFSAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateAmazonBedrockFSAction?: 'DENY'|'ALLOW'|null,
+     *     ShareAmazonBedrockFSAction?: 'DENY'|'ALLOW'|null,
+     *     UseAmazonBedrockFSAction?: 'DENY'|'ALLOW'|null,
+     *     AmazonBedrockKRSAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateAmazonBedrockKRSAction?: 'DENY'|'ALLOW'|null,
+     *     ShareAmazonBedrockKRSAction?: 'DENY'|'ALLOW'|null,
+     *     UseAmazonBedrockKRSAction?: 'DENY'|'ALLOW'|null,
+     *     MCPAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateMCPAction?: 'DENY'|'ALLOW'|null,
+     *     ShareMCPAction?: 'DENY'|'ALLOW'|null,
+     *     UseMCPAction?: 'DENY'|'ALLOW'|null,
+     *     OpenAPIAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateOpenAPIAction?: 'DENY'|'ALLOW'|null,
+     *     ShareOpenAPIAction?: 'DENY'|'ALLOW'|null,
+     *     UseOpenAPIAction?: 'DENY'|'ALLOW'|null,
+     *     SandPGMIAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateSandPGMIAction?: 'DENY'|'ALLOW'|null,
+     *     ShareSandPGMIAction?: 'DENY'|'ALLOW'|null,
+     *     UseSandPGMIAction?: 'DENY'|'ALLOW'|null,
+     *     SandPGlobalEnergyAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateSandPGlobalEnergyAction?: 'DENY'|'ALLOW'|null,
+     *     ShareSandPGlobalEnergyAction?: 'DENY'|'ALLOW'|null,
+     *     UseSandPGlobalEnergyAction?: 'DENY'|'ALLOW'|null,
+     *     BambooHRAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateBambooHRAction?: 'DENY'|'ALLOW'|null,
+     *     ShareBambooHRAction?: 'DENY'|'ALLOW'|null,
+     *     UseBambooHRAction?: 'DENY'|'ALLOW'|null,
+     *     BoxAgentAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateBoxAgentAction?: 'DENY'|'ALLOW'|null,
+     *     ShareBoxAgentAction?: 'DENY'|'ALLOW'|null,
+     *     UseBoxAgentAction?: 'DENY'|'ALLOW'|null,
+     *     CanvaAgentAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateCanvaAgentAction?: 'DENY'|'ALLOW'|null,
+     *     ShareCanvaAgentAction?: 'DENY'|'ALLOW'|null,
+     *     UseCanvaAgentAction?: 'DENY'|'ALLOW'|null,
+     *     GithubAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateGithubAction?: 'DENY'|'ALLOW'|null,
+     *     ShareGithubAction?: 'DENY'|'ALLOW'|null,
+     *     UseGithubAction?: 'DENY'|'ALLOW'|null,
+     *     NotionAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateNotionAction?: 'DENY'|'ALLOW'|null,
+     *     ShareNotionAction?: 'DENY'|'ALLOW'|null,
+     *     UseNotionAction?: 'DENY'|'ALLOW'|null,
+     *     LinearAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateLinearAction?: 'DENY'|'ALLOW'|null,
+     *     ShareLinearAction?: 'DENY'|'ALLOW'|null,
+     *     UseLinearAction?: 'DENY'|'ALLOW'|null,
+     *     HuggingFaceAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateHuggingFaceAction?: 'DENY'|'ALLOW'|null,
+     *     ShareHuggingFaceAction?: 'DENY'|'ALLOW'|null,
+     *     UseHuggingFaceAction?: 'DENY'|'ALLOW'|null,
+     *     MondayAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateMondayAction?: 'DENY'|'ALLOW'|null,
+     *     ShareMondayAction?: 'DENY'|'ALLOW'|null,
+     *     UseMondayAction?: 'DENY'|'ALLOW'|null,
+     *     HubspotAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateHubspotAction?: 'DENY'|'ALLOW'|null,
+     *     ShareHubspotAction?: 'DENY'|'ALLOW'|null,
+     *     UseHubspotAction?: 'DENY'|'ALLOW'|null,
+     *     IntercomAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateIntercomAction?: 'DENY'|'ALLOW'|null,
+     *     ShareIntercomAction?: 'DENY'|'ALLOW'|null,
+     *     UseIntercomAction?: 'DENY'|'ALLOW'|null,
+     *     NewRelicAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateNewRelicAction?: 'DENY'|'ALLOW'|null,
+     *     ShareNewRelicAction?: 'DENY'|'ALLOW'|null,
+     *     UseNewRelicAction?: 'DENY'|'ALLOW'|null,
+     *     Topic?: 'DENY'|'ALLOW'|null,
+     *     EditVisualWithQ?: 'DENY'|'ALLOW'|null,
+     *     BuildCalculatedFieldWithQ?: 'DENY'|'ALLOW'|null,
+     *     CreateDashboardExecutiveSummaryWithQ?: 'DENY'|'ALLOW'|null,
+     *     Space?: 'DENY'|'ALLOW'|null,
+     *     CreateSpaces?: 'DENY'|'ALLOW'|null,
+     *     ShareSpaces?: 'DENY'|'ALLOW'|null,
+     *     ChatAgent?: 'DENY'|'ALLOW'|null,
+     *     CreateChatAgents?: 'DENY'|'ALLOW'|null,
+     *     ShareChatAgents?: 'DENY'|'ALLOW'|null,
+     *     Research?: 'DENY'|'ALLOW'|null,
+     *     SelfUpgradeUserRole?: 'DENY'|'ALLOW'|null,
+     *     Extension?: 'DENY'|'ALLOW'|null,
+     *     UseBrowserExtension?: 'DENY'|'ALLOW'|null,
+     *     UseWordAddInExtension?: 'DENY'|'ALLOW'|null,
+     *     UseOutlookAddInExtension?: 'DENY'|'ALLOW'|null,
+     *     UseExcelAddInExtension?: 'DENY'|'ALLOW'|null,
+     *     UsePowerpointAddInExtension?: 'DENY'|'ALLOW'|null,
+     *     ManageSharedFolders?: 'DENY'|'ALLOW'|null,
+     *     GenerateAnalyses?: 'DENY'|'ALLOW'|null,
+     *     Story?: 'DENY'|'ALLOW'|null,
+     *     Scenario?: 'DENY'|'ALLOW'|null,
+     *     Trigger?: 'DENY'|'ALLOW'|null,
+     *     ScheduleTrigger?: 'DENY'|'ALLOW'|null,
+     *     InboundEmailTrigger?: 'DENY'|'ALLOW'|null,
+     *     QuickEventTrigger?: 'DENY'|'ALLOW'|null
      * } $args
      */
     public function __construct(array $args = [])

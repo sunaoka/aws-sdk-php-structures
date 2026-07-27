@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'CUSTOM'|'ATHENA'|'REDSHIFT' $OutputType
  * @property 'TEXT_OR_CSV'|'PARQUET' $Format
- * @property 'GZIP'|'PARQUET' $Compression
+ * @property 'GZIP'|'PARQUET'|'ZIP' $Compression
  * @property 'CREATE_NEW_REPORT'|'OVERWRITE_REPORT' $Overwrite
  */
 class S3OutputConfigurations extends Shape
@@ -16,7 +16,7 @@ class S3OutputConfigurations extends Shape
      * @param array{
      *     OutputType: 'CUSTOM'|'ATHENA'|'REDSHIFT',
      *     Format: 'TEXT_OR_CSV'|'PARQUET',
-     *     Compression: 'GZIP'|'PARQUET',
+     *     Compression: 'GZIP'|'PARQUET'|'ZIP',
      *     Overwrite: 'CREATE_NEW_REPORT'|'OVERWRITE_REPORT'
      * } $args
      */

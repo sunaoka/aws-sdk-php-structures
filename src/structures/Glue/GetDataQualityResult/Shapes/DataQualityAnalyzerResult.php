@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property string|null $EvaluationMessage
  * @property array<string, double>|null $EvaluatedMetrics
+ * @property array<string, DistributionData>|null $EvaluatedDistributions
  */
 class DataQualityAnalyzerResult extends Shape
 {
@@ -17,7 +18,8 @@ class DataQualityAnalyzerResult extends Shape
      *     Name?: string|null,
      *     Description?: string|null,
      *     EvaluationMessage?: string|null,
-     *     EvaluatedMetrics?: array<string, double>|null
+     *     EvaluatedMetrics?: array<string, double>|null,
+     *     EvaluatedDistributions?: array<string, DistributionData>|null
      * } $args
      */
     public function __construct(array $args = [])

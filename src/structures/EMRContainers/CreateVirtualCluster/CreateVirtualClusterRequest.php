@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $tags
  * @property string|null $securityConfigurationId
  * @property bool|null $sessionEnabled
+ * @property Shapes\SchedulerConfiguration|null $schedulerConfiguration
  */
 class CreateVirtualClusterRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateVirtualClusterRequest extends Request
      *     clientToken: string,
      *     tags?: array<string, string>|null,
      *     securityConfigurationId?: string|null,
-     *     sessionEnabled?: bool|null
+     *     sessionEnabled?: bool|null,
+     *     schedulerConfiguration?: Shapes\SchedulerConfiguration|null
      * } $args
      */
     public function __construct(array $args)

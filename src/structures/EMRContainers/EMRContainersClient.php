@@ -28,4 +28,5 @@ class EMRContainersClient extends \Aws\EMRContainers\EMRContainersClient
     use StartJobRun\StartJobRunTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateVirtualCluster\UpdateVirtualClusterTrait;
 }

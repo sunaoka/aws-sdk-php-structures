@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\AIRecommendation>|null $Recommendations
  * @property string $RoleArn
  * @property Shapes\AIRecommendationComputeSpec|null $ComputeSpec
+ * @property Shapes\AIAdapterSource|null $AdapterSource
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult|null $StartTime
  * @property \Aws\Api\DateTimeResult|null $EndTime
