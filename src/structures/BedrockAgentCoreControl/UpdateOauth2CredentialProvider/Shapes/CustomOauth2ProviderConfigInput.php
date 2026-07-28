@@ -11,7 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SecretReference|null $clientSecretConfig
  * @property 'MANAGED'|'EXTERNAL'|null $clientSecretSource
  * @property OnBehalfOfTokenExchangeConfigType|null $onBehalfOfTokenExchangeConfig
- * @property 'CLIENT_SECRET_BASIC'|'CLIENT_SECRET_POST'|'AWS_IAM_ID_TOKEN_JWT'|null $clientAuthenticationMethod
+ * @property 'CLIENT_SECRET_BASIC'|'CLIENT_SECRET_POST'|'AWS_IAM_ID_TOKEN_JWT'|'PRIVATE_KEY_JWT'|null $clientAuthenticationMethod
+ * @property PrivateKeyJwtConfig|null $privateKeyJwtConfig
  * @property PrivateEndpoint|null $privateEndpoint
  * @property list<PrivateEndpointOverride>|null $privateEndpointOverrides
  */
@@ -25,7 +26,8 @@ class CustomOauth2ProviderConfigInput extends Shape
      *     clientSecretConfig?: SecretReference|null,
      *     clientSecretSource?: 'MANAGED'|'EXTERNAL'|null,
      *     onBehalfOfTokenExchangeConfig?: OnBehalfOfTokenExchangeConfigType|null,
-     *     clientAuthenticationMethod?: 'CLIENT_SECRET_BASIC'|'CLIENT_SECRET_POST'|'AWS_IAM_ID_TOKEN_JWT'|null,
+     *     clientAuthenticationMethod?: 'CLIENT_SECRET_BASIC'|'CLIENT_SECRET_POST'|'AWS_IAM_ID_TOKEN_JWT'|'PRIVATE_KEY_JWT'|null,
+     *     privateKeyJwtConfig?: PrivateKeyJwtConfig|null,
      *     privateEndpoint?: PrivateEndpoint|null,
      *     privateEndpointOverrides?: list<PrivateEndpointOverride>|null
      * } $args

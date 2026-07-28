@@ -13,6 +13,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $awsServices
  * @property 'aws_config'|'compute_optimizer'|'cost_explorer'|'lse'|'manual'|'pse'|'rds'|'resilience'|'resilience_hub'|'security_hub'|'stir'|'ta_check'|'well_architected'|'cost_optimization_hub' $source
  * @property array<string, string> $metadata
+ * @property bool|null $resourceArnQueryable
+ * @property list<string>|null $awsResourceTypes
+ * @property string|null $checkGranularity
+ * @property string|null $recommendationId
  */
 class CheckSummary extends Shape
 {
@@ -25,7 +29,11 @@ class CheckSummary extends Shape
      *     pillars: list<'cost_optimizing'|'performance'|'security'|'service_limits'|'fault_tolerance'|'operational_excellence'>,
      *     awsServices: list<string>,
      *     source: 'aws_config'|'compute_optimizer'|'cost_explorer'|'lse'|'manual'|'pse'|'rds'|'resilience'|'resilience_hub'|'security_hub'|'stir'|'ta_check'|'well_architected'|'cost_optimization_hub',
-     *     metadata: array<string, string>
+     *     metadata: array<string, string>,
+     *     resourceArnQueryable?: bool|null,
+     *     awsResourceTypes?: list<string>|null,
+     *     checkGranularity?: string|null,
+     *     recommendationId?: string|null
      * } $args
      */
     public function __construct(array $args)

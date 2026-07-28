@@ -13,6 +13,7 @@ class TrustedAdvisorClient extends \Aws\TrustedAdvisor\TrustedAdvisorClient
     use ListOrganizationRecommendations\ListOrganizationRecommendationsTrait;
     use ListRecommendationResources\ListRecommendationResourcesTrait;
     use ListRecommendations\ListRecommendationsTrait;
+    use ListRecommendationsForResource\ListRecommendationsForResourceTrait;
     use UpdateOrganizationRecommendationLifecycle\UpdateOrganizationRecommendationLifecycleTrait;
     use UpdateRecommendationLifecycle\UpdateRecommendationLifecycleTrait;
 }
