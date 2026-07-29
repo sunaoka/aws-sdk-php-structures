@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $assetId
  * @property string|null $aliasPrefix
  * @property 'ASSOCIATED'|'DISASSOCIATED'|null $timeSeriesType
+ * @property string|null $workspaceName
  */
 class ListTimeSeriesRequest extends Request
 {
@@ -19,7 +20,8 @@ class ListTimeSeriesRequest extends Request
      *     maxResults?: int<1, 250>|null,
      *     assetId?: string|null,
      *     aliasPrefix?: string|null,
-     *     timeSeriesType?: 'ASSOCIATED'|'DISASSOCIATED'|null
+     *     timeSeriesType?: 'ASSOCIATED'|'DISASSOCIATED'|null,
+     *     workspaceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

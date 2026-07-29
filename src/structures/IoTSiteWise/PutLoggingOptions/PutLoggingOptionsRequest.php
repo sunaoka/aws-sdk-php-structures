@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\LoggingOptions $loggingOptions
+ * @property string|null $workspaceName
  */
 class PutLoggingOptionsRequest extends Request
 {
     /**
-     * @param array{loggingOptions: Shapes\LoggingOptions} $args
+     * @param array{
+     *     loggingOptions: Shapes\LoggingOptions,
+     *     workspaceName?: string|null
+     * } $args
      */
     public function __construct(array $args)
     {

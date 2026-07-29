@@ -151,6 +151,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateTransitGatewayMulticastDomain\CreateTransitGatewayMulticastDomainTrait;
     use CreateTransitGatewayPeeringAttachment\CreateTransitGatewayPeeringAttachmentTrait;
     use CreateTransitGatewayPolicyTable\CreateTransitGatewayPolicyTableTrait;
+    use CreateTransitGatewayPolicyTableEntry\CreateTransitGatewayPolicyTableEntryTrait;
     use CreateTransitGatewayPrefixListReference\CreateTransitGatewayPrefixListReferenceTrait;
     use CreateTransitGatewayRoute\CreateTransitGatewayRouteTrait;
     use CreateTransitGatewayRouteTable\CreateTransitGatewayRouteTableTrait;
@@ -244,6 +245,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeleteTransitGatewayMulticastDomain\DeleteTransitGatewayMulticastDomainTrait;
     use DeleteTransitGatewayPeeringAttachment\DeleteTransitGatewayPeeringAttachmentTrait;
     use DeleteTransitGatewayPolicyTable\DeleteTransitGatewayPolicyTableTrait;
+    use DeleteTransitGatewayPolicyTableEntry\DeleteTransitGatewayPolicyTableEntryTrait;
     use DeleteTransitGatewayPrefixListReference\DeleteTransitGatewayPrefixListReferenceTrait;
     use DeleteTransitGatewayRoute\DeleteTransitGatewayRouteTrait;
     use DeleteTransitGatewayRouteTable\DeleteTransitGatewayRouteTableTrait;
@@ -669,6 +671,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ModifyTrafficMirrorSession\ModifyTrafficMirrorSessionTrait;
     use ModifyTransitGateway\ModifyTransitGatewayTrait;
     use ModifyTransitGatewayMeteringPolicy\ModifyTransitGatewayMeteringPolicyTrait;
+    use ModifyTransitGatewayPolicyTableEntry\ModifyTransitGatewayPolicyTableEntryTrait;
     use ModifyTransitGatewayPrefixListReference\ModifyTransitGatewayPrefixListReferenceTrait;
     use ModifyTransitGatewayVpcAttachment\ModifyTransitGatewayVpcAttachmentTrait;
     use ModifyVerifiedAccessEndpoint\ModifyVerifiedAccessEndpointTrait;

@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $TransitGatewayRouteTableId
+ * @property string|null $TransitGatewayPolicyTableId
  * @property 'associating'|'associated'|'disassociating'|'disassociated'|null $State
  */
 class TransitGatewayAttachmentAssociation extends Shape
@@ -13,6 +14,7 @@ class TransitGatewayAttachmentAssociation extends Shape
     /**
      * @param array{
      *     TransitGatewayRouteTableId?: string|null,
+     *     TransitGatewayPolicyTableId?: string|null,
      *     State?: 'associating'|'associated'|'disassociating'|'disassociated'|null
      * } $args
      */

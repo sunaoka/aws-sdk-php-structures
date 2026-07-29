@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $alias
  * @property string|null $assetId
  * @property string|null $propertyId
+ * @property string|null $workspaceName
  */
 class DescribeTimeSeriesRequest extends Request
 {
@@ -15,7 +16,8 @@ class DescribeTimeSeriesRequest extends Request
      * @param array{
      *     alias?: string|null,
      *     assetId?: string|null,
-     *     propertyId?: string|null
+     *     propertyId?: string|null,
+     *     workspaceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,9 +9,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property string $name
  * @property string $description
+ * @property 'KENDRA'|'SITEWISE'|null $sourceType
+ * @property 'SESSION'|'CURATED'|'EXTERNAL'|null $datasetType
  * @property \Aws\Api\DateTimeResult $creationDate
  * @property \Aws\Api\DateTimeResult $lastUpdateDate
  * @property DatasetStatus $status
+ * @property DatasetEnrichment|null $enrichmentStatus
  */
 class DatasetSummary extends Shape
 {
@@ -21,9 +24,12 @@ class DatasetSummary extends Shape
      *     arn: string,
      *     name: string,
      *     description: string,
+     *     sourceType?: 'KENDRA'|'SITEWISE'|null,
+     *     datasetType?: 'SESSION'|'CURATED'|'EXTERNAL'|null,
      *     creationDate: \Aws\Api\DateTimeResult,
      *     lastUpdateDate: \Aws\Api\DateTimeResult,
-     *     status: DatasetStatus
+     *     status: DatasetStatus,
+     *     enrichmentStatus?: DatasetEnrichment|null
      * } $args
      */
     public function __construct(array $args)

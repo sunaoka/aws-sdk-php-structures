@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $AllowedValues
  * @property 'HEADER'|'BODY'|'QUERY_PARAM'|'PATH'|null $PropertyLocation
  * @property 'USER_INPUT'|'SECRET'|'READ_ONLY'|'UNUSED'|'SECRET_OR_USER_INPUT' $PropertyType
+ * @property string|null $Format
  */
 class ConnectorProperty extends Shape
 {
@@ -23,7 +24,8 @@ class ConnectorProperty extends Shape
      *     DefaultValue?: string|null,
      *     AllowedValues?: list<string>|null,
      *     PropertyLocation?: 'HEADER'|'BODY'|'QUERY_PARAM'|'PATH'|null,
-     *     PropertyType: 'USER_INPUT'|'SECRET'|'READ_ONLY'|'UNUSED'|'SECRET_OR_USER_INPUT'
+     *     PropertyType: 'USER_INPUT'|'SECRET'|'READ_ONLY'|'UNUSED'|'SECRET_OR_USER_INPUT',
+     *     Format?: string|null
      * } $args
      */
     public function __construct(array $args)

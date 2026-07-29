@@ -9,11 +9,12 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $propertyId
  * @property string|null $alias
  * @property string $timeSeriesId
- * @property 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT' $dataType
+ * @property 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT'|'VIDEO'|'ANNOTATION'|'JSON' $dataType
  * @property string|null $dataTypeSpec
  * @property \Aws\Api\DateTimeResult $timeSeriesCreationDate
  * @property \Aws\Api\DateTimeResult $timeSeriesLastUpdateDate
  * @property string $timeSeriesArn
+ * @property string|null $workspaceName
  */
 class DescribeTimeSeriesResponse extends Response
 {

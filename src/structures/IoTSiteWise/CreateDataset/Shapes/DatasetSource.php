@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\CreateDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'KENDRA' $sourceType
- * @property 'KNOWLEDGE_BASE' $sourceFormat
+ * @property 'KENDRA'|'SITEWISE' $sourceType
+ * @property 'KNOWLEDGE_BASE'|'TIMESERIES' $sourceFormat
  * @property SourceDetail|null $sourceDetail
  */
 class DatasetSource extends Shape
 {
     /**
      * @param array{
-     *     sourceType: 'KENDRA',
-     *     sourceFormat: 'KNOWLEDGE_BASE',
+     *     sourceType: 'KENDRA'|'SITEWISE',
+     *     sourceFormat: 'KNOWLEDGE_BASE'|'TIMESERIES',
      *     sourceDetail?: SourceDetail|null
      * } $args
      */

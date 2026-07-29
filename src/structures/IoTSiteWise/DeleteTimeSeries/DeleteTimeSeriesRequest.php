@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $assetId
  * @property string|null $propertyId
  * @property string|null $clientToken
+ * @property string|null $workspaceName
  */
 class DeleteTimeSeriesRequest extends Request
 {
@@ -17,7 +18,8 @@ class DeleteTimeSeriesRequest extends Request
      *     alias?: string|null,
      *     assetId?: string|null,
      *     propertyId?: string|null,
-     *     clientToken?: string|null
+     *     clientToken?: string|null,
+     *     workspaceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

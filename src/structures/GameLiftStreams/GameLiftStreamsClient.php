@@ -10,6 +10,7 @@ class GameLiftStreamsClient extends \Aws\GameLiftStreams\GameLiftStreamsClient
     use CreateStreamGroup\CreateStreamGroupTrait;
     use CreateStreamSessionAdminShell\CreateStreamSessionAdminShellTrait;
     use CreateStreamSessionConnection\CreateStreamSessionConnectionTrait;
+    use CreateStreamUrl\CreateStreamUrlTrait;
     use DeleteApplication\DeleteApplicationTrait;
     use DeleteStreamGroup\DeleteStreamGroupTrait;
     use DisassociateApplications\DisassociateApplicationsTrait;
@@ -17,12 +18,16 @@ class GameLiftStreamsClient extends \Aws\GameLiftStreams\GameLiftStreamsClient
     use GetApplication\GetApplicationTrait;
     use GetStreamGroup\GetStreamGroupTrait;
     use GetStreamSession\GetStreamSessionTrait;
+    use GetStreamUrl\GetStreamUrlTrait;
+    use ListApplicationShaderCaches\ListApplicationShaderCachesTrait;
     use ListApplications\ListApplicationsTrait;
     use ListStreamGroups\ListStreamGroupsTrait;
     use ListStreamSessions\ListStreamSessionsTrait;
     use ListStreamSessionsByAccount\ListStreamSessionsByAccountTrait;
+    use ListStreamUrls\ListStreamUrlsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use RemoveStreamGroupLocations\RemoveStreamGroupLocationsTrait;
+    use RevokeStreamUrl\RevokeStreamUrlTrait;
     use StartStreamSession\StartStreamSessionTrait;
     use TagResource\TagResourceTrait;
     use TerminateStreamSession\TerminateStreamSessionTrait;

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $propertyId
  * @property string|null $alias
  * @property string $timeSeriesId
- * @property 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT' $dataType
+ * @property 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT'|'VIDEO'|'ANNOTATION'|'JSON' $dataType
  * @property string|null $dataTypeSpec
  * @property \Aws\Api\DateTimeResult $timeSeriesCreationDate
  * @property \Aws\Api\DateTimeResult $timeSeriesLastUpdateDate
@@ -23,7 +23,7 @@ class TimeSeriesSummary extends Shape
      *     propertyId?: string|null,
      *     alias?: string|null,
      *     timeSeriesId: string,
-     *     dataType: 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT',
+     *     dataType: 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT'|'VIDEO'|'ANNOTATION'|'JSON',
      *     dataTypeSpec?: string|null,
      *     timeSeriesCreationDate: \Aws\Api\DateTimeResult,
      *     timeSeriesLastUpdateDate: \Aws\Api\DateTimeResult,

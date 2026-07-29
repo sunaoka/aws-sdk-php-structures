@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string|null $alias
  * @property PropertyNotification|null $notification
- * @property 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT' $dataType
+ * @property 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT'|'VIDEO'|'ANNOTATION'|'JSON' $dataType
  * @property string|null $dataTypeSpec
  * @property string|null $unit
  * @property list<AssetPropertyPathSegment>|null $path
@@ -24,7 +24,7 @@ class AssetProperty extends Shape
      *     name: string,
      *     alias?: string|null,
      *     notification?: PropertyNotification|null,
-     *     dataType: 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT',
+     *     dataType: 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT'|'VIDEO'|'ANNOTATION'|'JSON',
      *     dataTypeSpec?: string|null,
      *     unit?: string|null,
      *     path?: list<AssetPropertyPathSegment>|null

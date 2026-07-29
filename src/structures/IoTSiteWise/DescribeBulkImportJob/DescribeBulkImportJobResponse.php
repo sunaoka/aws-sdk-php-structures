@@ -11,11 +11,13 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $jobRoleArn
  * @property list<Shapes\File> $files
  * @property Shapes\ErrorReportLocation $errorReportLocation
- * @property Shapes\JobConfiguration $jobConfiguration
+ * @property Shapes\JobConfiguration|null $jobConfiguration
  * @property \Aws\Api\DateTimeResult $jobCreationDate
  * @property \Aws\Api\DateTimeResult $jobLastUpdateDate
  * @property bool|null $adaptiveIngestion
  * @property bool|null $deleteFilesAfterImport
+ * @property string|null $datasetId
+ * @property string|null $workspaceName
  */
 class DescribeBulkImportJobResponse extends Response
 {

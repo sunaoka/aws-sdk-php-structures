@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\AssetModelStatus $assetModelStatus
+ * @property string|null $assetModelId
  */
 class DeleteAssetModelCompositeModelResponse extends Response
 {

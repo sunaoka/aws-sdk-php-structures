@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'EQ'|'NE'|'LE'|'LT'|'GE'|'GT' $ComparisonOperator
  * @property int<0, 21474836480> $Size
  * @property list<TextTransformation> $TextTransformations
+ * @property list<PreParseTextTransformation>|null $PreParseTextTransformations
  */
 class SizeConstraintStatement extends Shape
 {
@@ -17,7 +18,8 @@ class SizeConstraintStatement extends Shape
      *     FieldToMatch: FieldToMatch,
      *     ComparisonOperator: 'EQ'|'NE'|'LE'|'LT'|'GE'|'GT',
      *     Size: int<0, 21474836480>,
-     *     TextTransformations: list<TextTransformation>
+     *     TextTransformations: list<TextTransformation>,
+     *     PreParseTextTransformations?: list<PreParseTextTransformation>|null
      * } $args
      */
     public function __construct(array $args)

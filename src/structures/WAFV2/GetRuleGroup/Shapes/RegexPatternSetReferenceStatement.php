@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ARN
  * @property FieldToMatch $FieldToMatch
  * @property list<TextTransformation> $TextTransformations
+ * @property list<PreParseTextTransformation>|null $PreParseTextTransformations
  */
 class RegexPatternSetReferenceStatement extends Shape
 {
@@ -15,7 +16,8 @@ class RegexPatternSetReferenceStatement extends Shape
      * @param array{
      *     ARN: string,
      *     FieldToMatch: FieldToMatch,
-     *     TextTransformations: list<TextTransformation>
+     *     TextTransformations: list<TextTransformation>,
+     *     PreParseTextTransformations?: list<PreParseTextTransformation>|null
      * } $args
      */
     public function __construct(array $args)

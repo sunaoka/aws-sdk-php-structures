@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ConnectorProperty>|null $RequestParameters
  * @property ResponseConfiguration|null $ResponseConfiguration
  * @property PaginationConfiguration|null $PaginationConfiguration
+ * @property FilterConfiguration|null $FilterConfiguration
  */
 class SourceConfiguration extends Shape
 {
@@ -19,7 +20,8 @@ class SourceConfiguration extends Shape
      *     RequestPath?: string|null,
      *     RequestParameters?: list<ConnectorProperty>|null,
      *     ResponseConfiguration?: ResponseConfiguration|null,
-     *     PaginationConfiguration?: PaginationConfiguration|null
+     *     PaginationConfiguration?: PaginationConfiguration|null,
+     *     FilterConfiguration?: FilterConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

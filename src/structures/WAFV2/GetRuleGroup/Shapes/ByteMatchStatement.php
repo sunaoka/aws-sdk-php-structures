@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Psr\Http\Message\StreamInterface $SearchString
  * @property FieldToMatch $FieldToMatch
  * @property list<TextTransformation> $TextTransformations
+ * @property list<PreParseTextTransformation>|null $PreParseTextTransformations
  * @property 'EXACTLY'|'STARTS_WITH'|'ENDS_WITH'|'CONTAINS'|'CONTAINS_WORD' $PositionalConstraint
  */
 class ByteMatchStatement extends Shape
@@ -17,6 +18,7 @@ class ByteMatchStatement extends Shape
      *     SearchString: \Psr\Http\Message\StreamInterface,
      *     FieldToMatch: FieldToMatch,
      *     TextTransformations: list<TextTransformation>,
+     *     PreParseTextTransformations?: list<PreParseTextTransformation>|null,
      *     PositionalConstraint: 'EXACTLY'|'STARTS_WITH'|'ENDS_WITH'|'CONTAINS'|'CONTAINS_WORD'
      * } $args
      */
