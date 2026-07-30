@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property BedrockEvaluatorModelConfig|null $bedrockEvaluatorModelConfig
+ * @property OpenResponsesEvaluatorModelConfig|null $responsesEvaluatorModelConfig
  */
 class EvaluatorModelConfig extends Shape
 {
     /**
-     * @param array{bedrockEvaluatorModelConfig?: BedrockEvaluatorModelConfig|null} $args
+     * @param array{
+     *     bedrockEvaluatorModelConfig?: BedrockEvaluatorModelConfig|null,
+     *     responsesEvaluatorModelConfig?: OpenResponsesEvaluatorModelConfig|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

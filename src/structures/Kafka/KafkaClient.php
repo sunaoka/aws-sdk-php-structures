@@ -8,10 +8,12 @@ class KafkaClient extends \Aws\Kafka\KafkaClient
     use CreateCluster\CreateClusterTrait;
     use CreateClusterV2\CreateClusterV2Trait;
     use CreateConfiguration\CreateConfigurationTrait;
+    use CreateChannel\CreateChannelTrait;
     use CreateReplicator\CreateReplicatorTrait;
     use CreateTopic\CreateTopicTrait;
     use CreateVpcConnection\CreateVpcConnectionTrait;
     use DeleteCluster\DeleteClusterTrait;
+    use DeleteChannel\DeleteChannelTrait;
     use DeleteConfiguration\DeleteConfigurationTrait;
     use DeleteReplicator\DeleteReplicatorTrait;
     use DeleteTopic\DeleteTopicTrait;
@@ -20,6 +22,7 @@ class KafkaClient extends \Aws\Kafka\KafkaClient
     use DescribeClusterV2\DescribeClusterV2Trait;
     use DescribeClusterOperation\DescribeClusterOperationTrait;
     use DescribeClusterOperationV2\DescribeClusterOperationV2Trait;
+    use DescribeChannel\DescribeChannelTrait;
     use DescribeConfiguration\DescribeConfigurationTrait;
     use DescribeConfigurationRevision\DescribeConfigurationRevisionTrait;
     use DescribeReplicator\DescribeReplicatorTrait;
@@ -29,6 +32,7 @@ class KafkaClient extends \Aws\Kafka\KafkaClient
     use BatchDisassociateScramSecret\BatchDisassociateScramSecretTrait;
     use GetBootstrapBrokers\GetBootstrapBrokersTrait;
     use GetCompatibleKafkaVersions\GetCompatibleKafkaVersionsTrait;
+    use ListChannels\ListChannelsTrait;
     use ListClusterOperations\ListClusterOperationsTrait;
     use ListClusterOperationsV2\ListClusterOperationsV2Trait;
     use ListClusters\ListClustersTrait;
@@ -54,6 +58,7 @@ class KafkaClient extends \Aws\Kafka\KafkaClient
     use UpdateBrokerType\UpdateBrokerTypeTrait;
     use UpdateBrokerStorage\UpdateBrokerStorageTrait;
     use UpdateConfiguration\UpdateConfigurationTrait;
+    use UpdateChannel\UpdateChannelTrait;
     use UpdateClusterConfiguration\UpdateClusterConfigurationTrait;
     use UpdateClusterKafkaVersion\UpdateClusterKafkaVersionTrait;
     use UpdateConnectivity\UpdateConnectivityTrait;

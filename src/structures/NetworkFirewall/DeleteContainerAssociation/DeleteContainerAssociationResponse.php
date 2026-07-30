@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $ContainerAssociationName
  * @property string|null $ContainerAssociationArn
- * @property 'ACTIVE'|'CREATING'|'DELETING'|null $Status
+ * @property 'ACTIVE'|'CREATING'|'DELETING'|'UPDATING'|null $Status
  */
 class DeleteContainerAssociationResponse extends Response
 {

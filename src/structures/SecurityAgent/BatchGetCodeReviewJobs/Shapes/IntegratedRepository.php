@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $integrationId
  * @property string $providerResourceId
+ * @property string|null $branch
  */
 class IntegratedRepository extends Shape
 {
     /**
      * @param array{
      *     integrationId: string,
-     *     providerResourceId: string
+     *     providerResourceId: string,
+     *     branch?: string|null
      * } $args
      */
     public function __construct(array $args)

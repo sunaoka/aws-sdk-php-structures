@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $PolicyInputList
  * @property list<string>|null $PermissionsBoundaryPolicyInputList
+ * @property list<Shapes\OrderedOrganizationPolicyType>|null $OrderedOrganizationPolicyInputList
  * @property list<string> $ActionNames
  * @property list<string>|null $ResourceArns
  * @property string|null $ResourcePolicy
@@ -23,6 +24,7 @@ class SimulateCustomPolicyRequest extends Request
      * @param array{
      *     PolicyInputList: list<string>,
      *     PermissionsBoundaryPolicyInputList?: list<string>|null,
+     *     OrderedOrganizationPolicyInputList?: list<Shapes\OrderedOrganizationPolicyType>|null,
      *     ActionNames: list<string>,
      *     ResourceArns?: list<string>|null,
      *     ResourcePolicy?: string|null,
