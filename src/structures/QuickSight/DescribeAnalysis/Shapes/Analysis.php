@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED'|null $Status
  * @property list<AnalysisError>|null $Errors
  * @property list<string>|null $DataSetArns
+ * @property list<string>|null $TopicArns
  * @property string|null $ThemeArn
  * @property \Aws\Api\DateTimeResult|null $CreatedTime
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
@@ -26,6 +27,7 @@ class Analysis extends Shape
      *     Status?: 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED'|null,
      *     Errors?: list<AnalysisError>|null,
      *     DataSetArns?: list<string>|null,
+     *     TopicArns?: list<string>|null,
      *     ThemeArn?: string|null,
      *     CreatedTime?: \Aws\Api\DateTimeResult|null,
      *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null,

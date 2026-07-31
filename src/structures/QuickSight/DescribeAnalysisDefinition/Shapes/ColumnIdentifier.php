@@ -5,14 +5,16 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DataSetIdentifier
+ * @property string|null $DataSetIdentifier
+ * @property string|null $TopicIdentifier
  * @property string $ColumnName
  */
 class ColumnIdentifier extends Shape
 {
     /**
      * @param array{
-     *     DataSetIdentifier: string,
+     *     DataSetIdentifier?: string|null,
+     *     TopicIdentifier?: string|null,
      *     ColumnName: string
      * } $args
      */

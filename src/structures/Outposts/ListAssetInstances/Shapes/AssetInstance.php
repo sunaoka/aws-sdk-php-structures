@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $InstanceType
  * @property string|null $AssetId
  * @property string|null $AccountId
- * @property 'AWS'|'EC2'|'ELASTICACHE'|'ELB'|'RDS'|'ROUTE53'|null $AwsServiceName
+ * @property 'AWS'|'EC2'|'EKS'|'ELASTICACHE'|'ELB'|'RDS'|'ROUTE53'|null $AwsServiceName
  */
 class AssetInstance extends Shape
 {
@@ -19,7 +19,7 @@ class AssetInstance extends Shape
      *     InstanceType?: string|null,
      *     AssetId?: string|null,
      *     AccountId?: string|null,
-     *     AwsServiceName?: 'AWS'|'EC2'|'ELASTICACHE'|'ELB'|'RDS'|'ROUTE53'|null
+     *     AwsServiceName?: 'AWS'|'EC2'|'EKS'|'ELASTICACHE'|'ELB'|'RDS'|'ROUTE53'|null
      * } $args
      */
     public function __construct(array $args = [])

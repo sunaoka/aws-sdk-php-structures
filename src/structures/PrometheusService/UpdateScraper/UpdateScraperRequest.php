@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Destination|null $destination
  * @property Shapes\RoleConfiguration|null $roleConfiguration
  * @property string|null $clientToken
+ * @property list<Shapes\ExporterConfiguration>|null $exporters
  */
 class UpdateScraperRequest extends Request
 {
@@ -21,7 +22,8 @@ class UpdateScraperRequest extends Request
      *     scrapeConfiguration?: Shapes\ScrapeConfiguration|null,
      *     destination?: Shapes\Destination|null,
      *     roleConfiguration?: Shapes\RoleConfiguration|null,
-     *     clientToken?: string|null
+     *     clientToken?: string|null,
+     *     exporters?: list<Shapes\ExporterConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

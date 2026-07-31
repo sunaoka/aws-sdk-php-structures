@@ -5,7 +5,8 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DataSetIdentifier
+ * @property string|null $DataSetIdentifier
+ * @property string|null $TopicIdentifier
  * @property string $Name
  * @property string $Expression
  */
@@ -13,7 +14,8 @@ class CalculatedField extends Shape
 {
     /**
      * @param array{
-     *     DataSetIdentifier: string,
+     *     DataSetIdentifier?: string|null,
+     *     TopicIdentifier?: string|null,
      *     Name: string,
      *     Expression: string
      * } $args

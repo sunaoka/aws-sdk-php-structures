@@ -7,6 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $VolumeName
  * @property string|null $StorageVolumeStatus
+ * @property string|null $StorageOperationStatus
+ * @property int|null $StorageOperationPercentProgress
  * @property int|null $AllocatedStorage
  * @property int|null $IOPS
  * @property int|null $MaxAllocatedStorage
@@ -19,6 +21,8 @@ class AdditionalStorageVolumeOutput extends Shape
      * @param array{
      *     VolumeName?: string|null,
      *     StorageVolumeStatus?: string|null,
+     *     StorageOperationStatus?: string|null,
+     *     StorageOperationPercentProgress?: int|null,
      *     AllocatedStorage?: int|null,
      *     IOPS?: int|null,
      *     MaxAllocatedStorage?: int|null,

@@ -12,6 +12,7 @@ class Resiliencehubv2Client extends \Aws\Resiliencehubv2\Resiliencehubv2Client
     use CreateServiceFunction\CreateServiceFunctionTrait;
     use CreateServiceFunctionResources\CreateServiceFunctionResourcesTrait;
     use CreateSystem\CreateSystemTrait;
+    use CreateTest\CreateTestTrait;
     use CreateUserJourney\CreateUserJourneyTrait;
     use DeleteAssertion\DeleteAssertionTrait;
     use DeleteInputSource\DeleteInputSourceTrait;
@@ -20,11 +21,16 @@ class Resiliencehubv2Client extends \Aws\Resiliencehubv2\Resiliencehubv2Client
     use DeleteServiceFunction\DeleteServiceFunctionTrait;
     use DeleteServiceFunctionResources\DeleteServiceFunctionResourcesTrait;
     use DeleteSystem\DeleteSystemTrait;
+    use DeleteTest\DeleteTestTrait;
+    use DeleteTestSources\DeleteTestSourcesTrait;
     use DeleteUserJourney\DeleteUserJourneyTrait;
     use GetFailureModeFinding\GetFailureModeFindingTrait;
     use GetPolicy\GetPolicyTrait;
     use GetService\GetServiceTrait;
     use GetSystem\GetSystemTrait;
+    use GetTest\GetTestTrait;
+    use GetTestRun\GetTestRunTrait;
+    use GetTestTemplate\GetTestTemplateTrait;
     use GetUserJourney\GetUserJourneyTrait;
     use ImportApp\ImportAppTrait;
     use ImportPolicy\ImportPolicyTrait;
@@ -35,6 +41,7 @@ class Resiliencehubv2Client extends \Aws\Resiliencehubv2\Resiliencehubv2Client
     use ListInputSources\ListInputSourcesTrait;
     use ListPolicies\ListPoliciesTrait;
     use ListReports\ListReportsTrait;
+    use ListResolvedTestRunTargetResources\ListResolvedTestRunTargetResourcesTrait;
     use ListResources\ListResourcesTrait;
     use ListServiceEvents\ListServiceEventsTrait;
     use ListServiceFunctions\ListServiceFunctionsTrait;
@@ -43,8 +50,17 @@ class Resiliencehubv2Client extends \Aws\Resiliencehubv2\Resiliencehubv2Client
     use ListSystemEvents\ListSystemEventsTrait;
     use ListSystems\ListSystemsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use ListTestRunEvents\ListTestRunEventsTrait;
+    use ListTestRunSources\ListTestRunSourcesTrait;
+    use ListTestRuns\ListTestRunsTrait;
+    use ListTestSources\ListTestSourcesTrait;
+    use ListTestTemplates\ListTestTemplatesTrait;
+    use ListTests\ListTestsTrait;
     use ListUserJourneys\ListUserJourneysTrait;
+    use PutTestSources\PutTestSourcesTrait;
     use StartFailureModeAssessment\StartFailureModeAssessmentTrait;
+    use StartTestRun\StartTestRunTrait;
+    use StopTestRun\StopTestRunTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAssertion\UpdateAssertionTrait;
@@ -54,5 +70,6 @@ class Resiliencehubv2Client extends \Aws\Resiliencehubv2\Resiliencehubv2Client
     use UpdateService\UpdateServiceTrait;
     use UpdateServiceFunction\UpdateServiceFunctionTrait;
     use UpdateSystem\UpdateSystemTrait;
+    use UpdateTest\UpdateTestTrait;
     use UpdateUserJourney\UpdateUserJourneyTrait;
 }

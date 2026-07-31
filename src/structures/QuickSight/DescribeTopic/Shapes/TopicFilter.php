@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $FilterDescription
- * @property 'ENFORCED_VALUE_FILTER'|'CONDITIONAL_VALUE_FILTER'|'NAMED_VALUE_FILTER'|null $FilterClass
+ * @property 'ENFORCED_VALUE_FILTER'|'CONDITIONAL_VALUE_FILTER'|'NAMED_VALUE_FILTER'|'DASHBOARD_DEFAULT_FILTER'|null $FilterClass
  * @property string $FilterName
  * @property list<string>|null $FilterSynonyms
  * @property string $OperandFieldName
@@ -23,7 +23,7 @@ class TopicFilter extends Shape
     /**
      * @param array{
      *     FilterDescription?: string|null,
-     *     FilterClass?: 'ENFORCED_VALUE_FILTER'|'CONDITIONAL_VALUE_FILTER'|'NAMED_VALUE_FILTER'|null,
+     *     FilterClass?: 'ENFORCED_VALUE_FILTER'|'CONDITIONAL_VALUE_FILTER'|'NAMED_VALUE_FILTER'|'DASHBOARD_DEFAULT_FILTER'|null,
      *     FilterName: string,
      *     FilterSynonyms?: list<string>|null,
      *     OperandFieldName: string,

@@ -43,6 +43,48 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DENY'|'ALLOW'|null $ApproveFlowShareRequests
  * @property 'DENY'|'ALLOW'|null $UseAgentWebSearch
  * @property 'DENY'|'ALLOW'|null $KnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateKnowledgeBases
+ * @property 'DENY'|'ALLOW'|null $ShareKnowledgeBases
+ * @property 'DENY'|'ALLOW'|null $SharePointKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateSharePointKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $ShareSharePointKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $UseSharePointKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $GoogleDriveKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateGoogleDriveKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $ShareGoogleDriveKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $UseGoogleDriveKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $WebCrawlerKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateWebCrawlerKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $ShareWebCrawlerKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $UseWebCrawlerKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $S3KnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateS3KnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $ShareS3KnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $UseS3KnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $ConfluenceKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateConfluenceKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $ShareConfluenceKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $UseConfluenceKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $OneDriveKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateOneDriveKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $ShareOneDriveKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $UseOneDriveKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $QBusinessKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateQBusinessKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $ShareQBusinessKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $UseQBusinessKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $BedrockManagedKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateBedrockManagedKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $ShareBedrockManagedKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $UseBedrockManagedKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $BoxKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateBoxKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $ShareBoxKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $UseBoxKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $IDCKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateIDCKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $ShareIDCKnowledgeBase
+ * @property 'DENY'|'ALLOW'|null $UseIDCKnowledgeBase
  * @property 'DENY'|'ALLOW'|null $Action
  * @property 'DENY'|'ALLOW'|null $GenericHTTPAction
  * @property 'DENY'|'ALLOW'|null $CreateAndUpdateGenericHTTPAction
@@ -285,6 +327,48 @@ class Capabilities extends Shape
      *     ApproveFlowShareRequests?: 'DENY'|'ALLOW'|null,
      *     UseAgentWebSearch?: 'DENY'|'ALLOW'|null,
      *     KnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateKnowledgeBases?: 'DENY'|'ALLOW'|null,
+     *     ShareKnowledgeBases?: 'DENY'|'ALLOW'|null,
+     *     SharePointKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateSharePointKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     ShareSharePointKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     UseSharePointKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     GoogleDriveKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateGoogleDriveKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     ShareGoogleDriveKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     UseGoogleDriveKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     WebCrawlerKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateWebCrawlerKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     ShareWebCrawlerKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     UseWebCrawlerKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     S3KnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateS3KnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     ShareS3KnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     UseS3KnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     ConfluenceKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateConfluenceKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     ShareConfluenceKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     UseConfluenceKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     OneDriveKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateOneDriveKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     ShareOneDriveKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     UseOneDriveKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     QBusinessKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateQBusinessKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     ShareQBusinessKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     UseQBusinessKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     BedrockManagedKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateBedrockManagedKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     ShareBedrockManagedKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     UseBedrockManagedKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     BoxKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateBoxKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     ShareBoxKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     UseBoxKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     IDCKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateIDCKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     ShareIDCKnowledgeBase?: 'DENY'|'ALLOW'|null,
+     *     UseIDCKnowledgeBase?: 'DENY'|'ALLOW'|null,
      *     Action?: 'DENY'|'ALLOW'|null,
      *     GenericHTTPAction?: 'DENY'|'ALLOW'|null,
      *     CreateAndUpdateGenericHTTPAction?: 'DENY'|'ALLOW'|null,

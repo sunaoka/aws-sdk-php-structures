@@ -6,7 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $VisualId
- * @property string $DataSetIdentifier
+ * @property string|null $DataSetIdentifier
+ * @property string|null $TopicIdentifier
  * @property list<VisualCustomAction>|null $Actions
  */
 class EmptyVisual extends Shape
@@ -14,7 +15,8 @@ class EmptyVisual extends Shape
     /**
      * @param array{
      *     VisualId: string,
-     *     DataSetIdentifier: string,
+     *     DataSetIdentifier?: string|null,
+     *     TopicIdentifier?: string|null,
      *     Actions?: list<VisualCustomAction>|null
      * } $args
      */

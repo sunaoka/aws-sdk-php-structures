@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
+ * @property string|null $accessRoleArn
  * @property string $id
  * @property list<Shapes\UpdateOutput> $outputs
  */
@@ -14,6 +15,7 @@ class UpdateFeedRequest extends Request
     /**
      * @param array{
      *     name: string,
+     *     accessRoleArn?: string|null,
      *     id: string,
      *     outputs: list<Shapes\UpdateOutput>
      * } $args

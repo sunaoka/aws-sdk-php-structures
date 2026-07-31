@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Source $source
  * @property Destination $destination
  * @property RoleConfiguration|null $roleConfiguration
+ * @property list<ExporterConfiguration>|null $exporters
  */
 class ScraperDescription extends Shape
 {
@@ -35,7 +36,8 @@ class ScraperDescription extends Shape
      *     scrapeConfiguration: ScrapeConfiguration,
      *     source: Source,
      *     destination: Destination,
-     *     roleConfiguration?: RoleConfiguration|null
+     *     roleConfiguration?: RoleConfiguration|null,
+     *     exporters?: list<ExporterConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

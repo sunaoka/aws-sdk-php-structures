@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<DataSetConfiguration> $DataSetConfigurations
+ * @property list<TopicConfiguration>|null $TopicConfigurations
  * @property list<SheetDefinition>|null $Sheets
  * @property list<TooltipSheetDefinition>|null $TooltipSheets
  * @property list<CalculatedField>|null $CalculatedFields
@@ -22,6 +23,7 @@ class TemplateVersionDefinition extends Shape
     /**
      * @param array{
      *     DataSetConfigurations: list<DataSetConfiguration>,
+     *     TopicConfigurations?: list<TopicConfiguration>|null,
      *     Sheets?: list<SheetDefinition>|null,
      *     TooltipSheets?: list<TooltipSheetDefinition>|null,
      *     CalculatedFields?: list<CalculatedField>|null,

@@ -14,6 +14,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Draft'|'Released'|null $State
  * @property list<'BuyerAccounts'|'ParticipatingPrograms'|'CountryCodes'|'None'>|null $Targeting
  * @property string|null $OfferSetId
+ * @property string|null $TargetAgreementId
+ * @property 'Renew'|null $TargetAgreementIntent
+ * @property 'Seller'|'AwsMarketplace'|null $CreatedBySource
  */
 class OfferSummary extends Shape
 {
@@ -27,7 +30,10 @@ class OfferSummary extends Shape
      *     BuyerAccounts?: list<string>|null,
      *     State?: 'Draft'|'Released'|null,
      *     Targeting?: list<'BuyerAccounts'|'ParticipatingPrograms'|'CountryCodes'|'None'>|null,
-     *     OfferSetId?: string|null
+     *     OfferSetId?: string|null,
+     *     TargetAgreementId?: string|null,
+     *     TargetAgreementIntent?: 'Renew'|null,
+     *     CreatedBySource?: 'Seller'|'AwsMarketplace'|null
      * } $args
      */
     public function __construct(array $args = [])

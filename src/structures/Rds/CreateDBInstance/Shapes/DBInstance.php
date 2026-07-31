@@ -96,6 +96,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $EngineLifecycleSupport
  * @property list<AdditionalStorageVolumeOutput>|null $AdditionalStorageVolumes
  * @property string|null $StorageVolumeStatus
+ * @property string|null $StorageOperationStatus
+ * @property int|null $StorageOperationPercentProgress
  */
 class DBInstance extends Shape
 {
@@ -191,7 +193,9 @@ class DBInstance extends Shape
      *     IsStorageConfigUpgradeAvailable?: bool|null,
      *     EngineLifecycleSupport?: string|null,
      *     AdditionalStorageVolumes?: list<AdditionalStorageVolumeOutput>|null,
-     *     StorageVolumeStatus?: string|null
+     *     StorageVolumeStatus?: string|null,
+     *     StorageOperationStatus?: string|null,
+     *     StorageOperationPercentProgress?: int|null
      * } $args
      */
     public function __construct(array $args = [])

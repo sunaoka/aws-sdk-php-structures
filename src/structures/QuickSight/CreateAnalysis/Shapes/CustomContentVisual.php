@@ -10,7 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VisualSubtitleLabelOptions|null $Subtitle
  * @property CustomContentConfiguration|null $ChartConfiguration
  * @property list<VisualCustomAction>|null $Actions
- * @property string $DataSetIdentifier
+ * @property string|null $DataSetIdentifier
+ * @property string|null $TopicIdentifier
  * @property string|null $VisualContentAltText
  */
 class CustomContentVisual extends Shape
@@ -22,7 +23,8 @@ class CustomContentVisual extends Shape
      *     Subtitle?: VisualSubtitleLabelOptions|null,
      *     ChartConfiguration?: CustomContentConfiguration|null,
      *     Actions?: list<VisualCustomAction>|null,
-     *     DataSetIdentifier: string,
+     *     DataSetIdentifier?: string|null,
+     *     TopicIdentifier?: string|null,
      *     VisualContentAltText?: string|null
      * } $args
      */

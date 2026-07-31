@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $serviceArn
- * @property 'FAILURE_MODE' $reportType
+ * @property 'FAILURE_MODE'|'TESTING' $reportType
  * @property string|null $clientToken
  */
 class CreateReportRequest extends Request
@@ -14,7 +14,7 @@ class CreateReportRequest extends Request
     /**
      * @param array{
      *     serviceArn: string,
-     *     reportType: 'FAILURE_MODE',
+     *     reportType: 'FAILURE_MODE'|'TESTING',
      *     clientToken?: string|null
      * } $args
      */

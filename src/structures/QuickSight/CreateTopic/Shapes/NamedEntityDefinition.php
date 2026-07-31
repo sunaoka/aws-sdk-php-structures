@@ -10,6 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PRIMARY'|'ID'|null $PropertyRole
  * @property 'INHERIT'|'DIMENSION'|'MEASURE'|null $PropertyUsage
  * @property NamedEntityDefinitionMetric|null $Metric
+ * @property int|null $RankOrder
+ * @property int|null $PresentationOrder
+ * @property bool|null $IsHidden
  */
 class NamedEntityDefinition extends Shape
 {
@@ -19,7 +22,10 @@ class NamedEntityDefinition extends Shape
      *     PropertyName?: string|null,
      *     PropertyRole?: 'PRIMARY'|'ID'|null,
      *     PropertyUsage?: 'INHERIT'|'DIMENSION'|'MEASURE'|null,
-     *     Metric?: NamedEntityDefinitionMetric|null
+     *     Metric?: NamedEntityDefinitionMetric|null,
+     *     RankOrder?: int|null,
+     *     PresentationOrder?: int|null,
+     *     IsHidden?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

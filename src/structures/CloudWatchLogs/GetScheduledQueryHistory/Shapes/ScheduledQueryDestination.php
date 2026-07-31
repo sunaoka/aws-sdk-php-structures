@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\GetScheduledQueryHistory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'S3'|null $destinationType
+ * @property 'S3'|'LOOKUP_TABLE'|null $destinationType
  * @property string|null $destinationIdentifier
  * @property 'IN_PROGRESS'|'CLIENT_ERROR'|'FAILED'|'COMPLETE'|null $status
  * @property string|null $processedIdentifier
@@ -15,7 +15,7 @@ class ScheduledQueryDestination extends Shape
 {
     /**
      * @param array{
-     *     destinationType?: 'S3'|null,
+     *     destinationType?: 'S3'|'LOOKUP_TABLE'|null,
      *     destinationIdentifier?: string|null,
      *     status?: 'IN_PROGRESS'|'CLIENT_ERROR'|'FAILED'|'COMPLETE'|null,
      *     processedIdentifier?: string|null,

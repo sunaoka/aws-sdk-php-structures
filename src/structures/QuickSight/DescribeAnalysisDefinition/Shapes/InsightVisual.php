@@ -10,7 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VisualSubtitleLabelOptions|null $Subtitle
  * @property InsightConfiguration|null $InsightConfiguration
  * @property list<VisualCustomAction>|null $Actions
- * @property string $DataSetIdentifier
+ * @property string|null $DataSetIdentifier
+ * @property string|null $TopicIdentifier
  * @property string|null $VisualContentAltText
  */
 class InsightVisual extends Shape
@@ -22,7 +23,8 @@ class InsightVisual extends Shape
      *     Subtitle?: VisualSubtitleLabelOptions|null,
      *     InsightConfiguration?: InsightConfiguration|null,
      *     Actions?: list<VisualCustomAction>|null,
-     *     DataSetIdentifier: string,
+     *     DataSetIdentifier?: string|null,
+     *     TopicIdentifier?: string|null,
      *     VisualContentAltText?: string|null
      * } $args
      */

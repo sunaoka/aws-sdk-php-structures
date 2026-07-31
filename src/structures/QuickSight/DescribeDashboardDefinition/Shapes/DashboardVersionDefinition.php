@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<DataSetIdentifierDeclaration> $DataSetIdentifierDeclarations
+ * @property list<TopicIdentifierDeclaration>|null $TopicIdentifierDeclarations
  * @property list<SheetDefinition>|null $Sheets
  * @property list<TooltipSheetDefinition>|null $TooltipSheets
  * @property list<CalculatedField>|null $CalculatedFields
@@ -21,6 +22,7 @@ class DashboardVersionDefinition extends Shape
     /**
      * @param array{
      *     DataSetIdentifierDeclarations: list<DataSetIdentifierDeclaration>,
+     *     TopicIdentifierDeclarations?: list<TopicIdentifierDeclaration>|null,
      *     Sheets?: list<SheetDefinition>|null,
      *     TooltipSheets?: list<TooltipSheetDefinition>|null,
      *     CalculatedFields?: list<CalculatedField>|null,

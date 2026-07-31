@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property double $bandwidthAllocation
+ * @property list<PacingStrategy>|null $pacingStrategies
  */
 class PredictiveConfig extends Shape
 {
     /**
-     * @param array{bandwidthAllocation: double} $args
+     * @param array{
+     *     bandwidthAllocation: double,
+     *     pacingStrategies?: list<PacingStrategy>|null
+     * } $args
      */
     public function __construct(array $args)
     {

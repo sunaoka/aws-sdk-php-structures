@@ -16,6 +16,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OfferTargetingFilter|null $Targeting
  * @property OfferLastModifiedDateFilter|null $LastModifiedDate
  * @property OfferSetIdFilter|null $OfferSetId
+ * @property OfferTargetAgreementIdFilter|null $TargetAgreementId
+ * @property OfferTargetAgreementIntentFilter|null $TargetAgreementIntent
+ * @property OfferCreatedBySourceFilter|null $CreatedBySource
  */
 class OfferFilters extends Shape
 {
@@ -31,7 +34,10 @@ class OfferFilters extends Shape
      *     State?: OfferStateFilter|null,
      *     Targeting?: OfferTargetingFilter|null,
      *     LastModifiedDate?: OfferLastModifiedDateFilter|null,
-     *     OfferSetId?: OfferSetIdFilter|null
+     *     OfferSetId?: OfferSetIdFilter|null,
+     *     TargetAgreementId?: OfferTargetAgreementIdFilter|null,
+     *     TargetAgreementIntent?: OfferTargetAgreementIntentFilter|null,
+     *     CreatedBySource?: OfferCreatedBySourceFilter|null
      * } $args
      */
     public function __construct(array $args = [])

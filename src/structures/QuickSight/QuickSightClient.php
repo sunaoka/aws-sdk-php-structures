@@ -37,6 +37,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use CreateThemeAlias\CreateThemeAliasTrait;
     use CreateTopic\CreateTopicTrait;
     use CreateTopicRefreshSchedule\CreateTopicRefreshScheduleTrait;
+    use CreateTopicV2\CreateTopicV2Trait;
     use CreateVPCConnection\CreateVPCConnectionTrait;
     use DeleteAccountCustomPermission\DeleteAccountCustomPermissionTrait;
     use DeleteAccountCustomization\DeleteAccountCustomizationTrait;
@@ -72,6 +73,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DeleteThemeAlias\DeleteThemeAliasTrait;
     use DeleteTopic\DeleteTopicTrait;
     use DeleteTopicRefreshSchedule\DeleteTopicRefreshScheduleTrait;
+    use DeleteTopicV2\DeleteTopicV2Trait;
     use DeleteUser\DeleteUserTrait;
     use DeleteUserByPrincipalId\DeleteUserByPrincipalIdTrait;
     use DeleteUserCustomPermission\DeleteUserCustomPermissionTrait;
@@ -136,8 +138,10 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DescribeThemePermissions\DescribeThemePermissionsTrait;
     use DescribeTopic\DescribeTopicTrait;
     use DescribeTopicPermissions\DescribeTopicPermissionsTrait;
+    use DescribeTopicPermissionsV2\DescribeTopicPermissionsV2Trait;
     use DescribeTopicRefresh\DescribeTopicRefreshTrait;
     use DescribeTopicRefreshSchedule\DescribeTopicRefreshScheduleTrait;
+    use DescribeTopicV2\DescribeTopicV2Trait;
     use DescribeUser\DescribeUserTrait;
     use DescribeVPCConnection\DescribeVPCConnectionTrait;
     use GenerateEmbedUrlForAnonymousUser\GenerateEmbedUrlForAnonymousUserTrait;
@@ -187,6 +191,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use ListTopicRefreshSchedules\ListTopicRefreshSchedulesTrait;
     use ListTopicReviewedAnswers\ListTopicReviewedAnswersTrait;
     use ListTopics\ListTopicsTrait;
+    use ListTopicsV2\ListTopicsV2Trait;
     use ListUserGroups\ListUserGroupsTrait;
     use ListUsers\ListUsersTrait;
     use ListUsersIndexCapacity\ListUsersIndexCapacityTrait;
@@ -207,6 +212,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use SearchKnowledgeBases\SearchKnowledgeBasesTrait;
     use SearchSpaces\SearchSpacesTrait;
     use SearchTopics\SearchTopicsTrait;
+    use SearchTopicsV2\SearchTopicsV2Trait;
     use StartAssetBundleExportJob\StartAssetBundleExportJobTrait;
     use StartAssetBundleImportJob\StartAssetBundleImportJobTrait;
     use StartAutomationJob\StartAutomationJobTrait;
@@ -269,7 +275,9 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateThemePermissions\UpdateThemePermissionsTrait;
     use UpdateTopic\UpdateTopicTrait;
     use UpdateTopicPermissions\UpdateTopicPermissionsTrait;
+    use UpdateTopicPermissionsV2\UpdateTopicPermissionsV2Trait;
     use UpdateTopicRefreshSchedule\UpdateTopicRefreshScheduleTrait;
+    use UpdateTopicV2\UpdateTopicV2Trait;
     use UpdateUser\UpdateUserTrait;
     use UpdateUserCustomPermission\UpdateUserCustomPermissionTrait;
     use UpdateVPCConnection\UpdateVPCConnectionTrait;

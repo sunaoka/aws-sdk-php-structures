@@ -9,7 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VisualTitleLabelOptions|null $Title
  * @property VisualSubtitleLabelOptions|null $Subtitle
  * @property GeospatialLayerMapConfiguration|null $ChartConfiguration
- * @property string $DataSetIdentifier
+ * @property string|null $DataSetIdentifier
+ * @property string|null $TopicIdentifier
  * @property string|null $VisualContentAltText
  */
 class LayerMapVisual extends Shape
@@ -20,7 +21,8 @@ class LayerMapVisual extends Shape
      *     Title?: VisualTitleLabelOptions|null,
      *     Subtitle?: VisualSubtitleLabelOptions|null,
      *     ChartConfiguration?: GeospatialLayerMapConfiguration|null,
-     *     DataSetIdentifier: string,
+     *     DataSetIdentifier?: string|null,
+     *     TopicIdentifier?: string|null,
      *     VisualContentAltText?: string|null
      * } $args
      */

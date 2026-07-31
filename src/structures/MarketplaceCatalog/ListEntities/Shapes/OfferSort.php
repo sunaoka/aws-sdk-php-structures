@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MarketplaceCatalog\ListEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'EntityId'|'Name'|'ProductId'|'ResaleAuthorizationId'|'ReleaseDate'|'AvailabilityEndDate'|'BuyerAccounts'|'State'|'Targeting'|'LastModifiedDate'|'OfferSetId'|null $SortBy
+ * @property 'EntityId'|'Name'|'ProductId'|'ResaleAuthorizationId'|'ReleaseDate'|'AvailabilityEndDate'|'BuyerAccounts'|'State'|'Targeting'|'LastModifiedDate'|'OfferSetId'|'TargetAgreementId'|'TargetAgreementIntent'|'CreatedBySource'|null $SortBy
  * @property 'ASCENDING'|'DESCENDING'|null $SortOrder
  */
 class OfferSort extends Shape
 {
     /**
      * @param array{
-     *     SortBy?: 'EntityId'|'Name'|'ProductId'|'ResaleAuthorizationId'|'ReleaseDate'|'AvailabilityEndDate'|'BuyerAccounts'|'State'|'Targeting'|'LastModifiedDate'|'OfferSetId'|null,
+     *     SortBy?: 'EntityId'|'Name'|'ProductId'|'ResaleAuthorizationId'|'ReleaseDate'|'AvailabilityEndDate'|'BuyerAccounts'|'State'|'Targeting'|'LastModifiedDate'|'OfferSetId'|'TargetAgreementId'|'TargetAgreementIntent'|'CreatedBySource'|null,
      *     SortOrder?: 'ASCENDING'|'DESCENDING'|null
      * } $args
      */

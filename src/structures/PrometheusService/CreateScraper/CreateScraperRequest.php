@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RoleConfiguration|null $roleConfiguration
  * @property string|null $clientToken
  * @property array<string, string>|null $tags
+ * @property list<Shapes\ExporterConfiguration>|null $exporters
  */
 class CreateScraperRequest extends Request
 {
@@ -23,7 +24,8 @@ class CreateScraperRequest extends Request
      *     destination: Shapes\Destination,
      *     roleConfiguration?: Shapes\RoleConfiguration|null,
      *     clientToken?: string|null,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     exporters?: list<Shapes\ExporterConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

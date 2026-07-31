@@ -10,6 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $EntitySynonyms
  * @property SemanticEntityType|null $SemanticEntityType
  * @property list<NamedEntityDefinition>|null $Definition
+ * @property list<NamedEntitySort>|null $Sort
+ * @property int|null $RankOrder
+ * @property int|null $PresentationOrder
  */
 class TopicNamedEntity extends Shape
 {
@@ -19,7 +22,10 @@ class TopicNamedEntity extends Shape
      *     EntityDescription?: string|null,
      *     EntitySynonyms?: list<string>|null,
      *     SemanticEntityType?: SemanticEntityType|null,
-     *     Definition?: list<NamedEntityDefinition>|null
+     *     Definition?: list<NamedEntityDefinition>|null,
+     *     Sort?: list<NamedEntitySort>|null,
+     *     RankOrder?: int|null,
+     *     PresentationOrder?: int|null
      * } $args
      */
     public function __construct(array $args)

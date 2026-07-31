@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, max>|null $VersionNumber
  * @property 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED'|null $Status
  * @property list<DataSetConfiguration>|null $DataSetConfigurations
+ * @property list<TopicConfiguration>|null $TopicConfigurations
  * @property string|null $Description
  * @property string|null $SourceEntityArn
  * @property string|null $ThemeArn
@@ -24,6 +25,7 @@ class TemplateVersion extends Shape
      *     VersionNumber?: int<1, max>|null,
      *     Status?: 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED'|null,
      *     DataSetConfigurations?: list<DataSetConfiguration>|null,
+     *     TopicConfigurations?: list<TopicConfiguration>|null,
      *     Description?: string|null,
      *     SourceEntityArn?: string|null,
      *     ThemeArn?: string|null,

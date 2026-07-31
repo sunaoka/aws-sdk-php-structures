@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property OutputFormat|null $textFormat
+ * @property string|null $effort
  */
 class OutputConfig extends Shape
 {
     /**
-     * @param array{textFormat?: OutputFormat|null} $args
+     * @param array{
+     *     textFormat?: OutputFormat|null,
+     *     effort?: string|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

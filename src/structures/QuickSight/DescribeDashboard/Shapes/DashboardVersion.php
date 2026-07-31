@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Arn
  * @property string|null $SourceEntityArn
  * @property list<string>|null $DataSetArns
+ * @property list<string>|null $TopicArns
  * @property string|null $Description
  * @property string|null $ThemeArn
  * @property list<Sheet>|null $Sheets
@@ -27,6 +28,7 @@ class DashboardVersion extends Shape
      *     Arn?: string|null,
      *     SourceEntityArn?: string|null,
      *     DataSetArns?: list<string>|null,
+     *     TopicArns?: list<string>|null,
      *     Description?: string|null,
      *     ThemeArn?: string|null,
      *     Sheets?: list<Sheet>|null
