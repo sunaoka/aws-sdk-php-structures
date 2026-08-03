@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|'db.influx.24xlarge'|null $dbInstanceType
  * @property 'AUTOMATIC'|'NO_FAILOVER'|null $failoverMode
  * @property Shapes\MaintenanceSchedule|null $maintenanceSchedule
+ * @property list<Shapes\DbBackupConfiguration>|null $dbBackupConfigurations
  */
 class UpdateDbClusterRequest extends Request
 {
@@ -23,7 +24,8 @@ class UpdateDbClusterRequest extends Request
      *     port?: int<1024, 65535>|null,
      *     dbInstanceType?: 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|'db.influx.24xlarge'|null,
      *     failoverMode?: 'AUTOMATIC'|'NO_FAILOVER'|null,
-     *     maintenanceSchedule?: Shapes\MaintenanceSchedule|null
+     *     maintenanceSchedule?: Shapes\MaintenanceSchedule|null,
+     *     dbBackupConfigurations?: list<Shapes\DbBackupConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

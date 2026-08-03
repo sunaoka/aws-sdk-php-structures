@@ -19,6 +19,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $TransitGatewayId
  * @property list<Shapes\AvailabilityZoneMapping>|null $AvailabilityZoneMappings
  * @property bool|null $AvailabilityZoneChangeProtection
+ * @property list<Shapes\NatGatewayMapping>|null $NatGatewayMappings
+ * @property Shapes\ProxySettings|null $ProxySettings
+ * @property bool|null $NoSourcePreservation
+ * @property Shapes\VpcEndpoint|null $VpcEndpoint
  */
 class CreateFirewallRequest extends Request
 {
@@ -37,7 +41,11 @@ class CreateFirewallRequest extends Request
      *     EnabledAnalysisTypes?: list<'TLS_SNI'|'HTTP_HOST'>|null,
      *     TransitGatewayId?: string|null,
      *     AvailabilityZoneMappings?: list<Shapes\AvailabilityZoneMapping>|null,
-     *     AvailabilityZoneChangeProtection?: bool|null
+     *     AvailabilityZoneChangeProtection?: bool|null,
+     *     NatGatewayMappings?: list<Shapes\NatGatewayMapping>|null,
+     *     ProxySettings?: Shapes\ProxySettings|null,
+     *     NoSourcePreservation?: bool|null,
+     *     VpcEndpoint?: Shapes\VpcEndpoint|null
      * } $args
      */
     public function __construct(array $args)

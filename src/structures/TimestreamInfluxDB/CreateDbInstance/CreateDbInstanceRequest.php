@@ -23,6 +23,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $tags
  * @property int<1024, 65535>|null $port
  * @property 'IPV4'|'DUAL'|null $networkType
+ * @property list<Shapes\DbBackupConfiguration>|null $dbBackupConfigurations
+ * @property string|null $kmsKeyId
  */
 class CreateDbInstanceRequest extends Request
 {
@@ -45,7 +47,9 @@ class CreateDbInstanceRequest extends Request
      *     maintenanceSchedule?: Shapes\MaintenanceSchedule|null,
      *     tags?: array<string, string>|null,
      *     port?: int<1024, 65535>|null,
-     *     networkType?: 'IPV4'|'DUAL'|null
+     *     networkType?: 'IPV4'|'DUAL'|null,
+     *     dbBackupConfigurations?: list<Shapes\DbBackupConfiguration>|null,
+     *     kmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

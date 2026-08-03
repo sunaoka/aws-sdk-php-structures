@@ -1,0 +1,25 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\TimestreamInfluxDB\ListDbBackups;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property string|null $dbResourceId
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
+ */
+class ListDbBackupsRequest extends Request
+{
+    /**
+     * @param array{
+     *     dbResourceId?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

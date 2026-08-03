@@ -85,6 +85,7 @@ class NetworkFirewallClient extends \Aws\NetworkFirewall\NetworkFirewallClient
     use UpdateProxyRule\UpdateProxyRuleTrait;
     use UpdateProxyRuleGroupPriorities\UpdateProxyRuleGroupPrioritiesTrait;
     use UpdateProxyRulePriorities\UpdateProxyRulePrioritiesTrait;
+    use UpdateProxySettings\UpdateProxySettingsTrait;
     use UpdateRuleGroup\UpdateRuleGroupTrait;
     use UpdateSubnetChangeProtection\UpdateSubnetChangeProtectionTrait;
     use UpdateTLSInspectionConfiguration\UpdateTLSInspectionConfigurationTrait;

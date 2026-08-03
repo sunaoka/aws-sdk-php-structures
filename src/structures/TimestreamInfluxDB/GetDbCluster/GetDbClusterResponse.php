@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $id
  * @property string $name
  * @property string $arn
- * @property 'CREATING'|'UPDATING'|'DELETING'|'AVAILABLE'|'FAILED'|'DELETED'|'MAINTENANCE'|'UPDATING_INSTANCE_TYPE'|'REBOOTING'|'REBOOT_FAILED'|'PARTIALLY_AVAILABLE'|null $status
+ * @property 'CREATING'|'UPDATING'|'DELETING'|'AVAILABLE'|'FAILED'|'DELETED'|'MAINTENANCE'|'UPDATING_INSTANCE_TYPE'|'REBOOTING'|'REBOOT_FAILED'|'PARTIALLY_AVAILABLE'|'RESTORING'|'RESTORE_FAILED'|null $status
  * @property string|null $endpoint
  * @property string|null $readerEndpoint
  * @property int<1024, 65535>|null $port
@@ -29,6 +29,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<string>|null $vpcSecurityGroupIds
  * @property 'AUTOMATIC'|'NO_FAILOVER'|null $failoverMode
  * @property Shapes\ClusterConfiguration|null $clusterConfiguration
+ * @property list<Shapes\DbBackupConfigurationOutput>|null $dbBackupConfigurations
+ * @property string|null $kmsKeyId
  */
 class GetDbClusterResponse extends Response
 {

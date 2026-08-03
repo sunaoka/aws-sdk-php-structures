@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property WAFLoggingParameters|null $WAFLoggingParameters
  * @property LogDeliveryParameters|null $LogDeliveryParameters
  * @property MskMonitoringParameters|null $MskMonitoringParameters
+ * @property string|null $KmsKeyArn
  */
 class TelemetryDestinationConfiguration extends Shape
 {
@@ -27,7 +28,8 @@ class TelemetryDestinationConfiguration extends Shape
      *     ELBLoadBalancerLoggingParameters?: ELBLoadBalancerLoggingParameters|null,
      *     WAFLoggingParameters?: WAFLoggingParameters|null,
      *     LogDeliveryParameters?: LogDeliveryParameters|null,
-     *     MskMonitoringParameters?: MskMonitoringParameters|null
+     *     MskMonitoringParameters?: MskMonitoringParameters|null,
+     *     KmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

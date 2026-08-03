@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null $dbStorageType
  * @property int<20, 15360>|null $allocatedStorage
  * @property Shapes\MaintenanceSchedule|null $maintenanceSchedule
+ * @property list<Shapes\DbBackupConfiguration>|null $dbBackupConfigurations
  */
 class UpdateDbInstanceRequest extends Request
 {
@@ -27,7 +28,8 @@ class UpdateDbInstanceRequest extends Request
      *     deploymentType?: 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|null,
      *     dbStorageType?: 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null,
      *     allocatedStorage?: int<20, 15360>|null,
-     *     maintenanceSchedule?: Shapes\MaintenanceSchedule|null
+     *     maintenanceSchedule?: Shapes\MaintenanceSchedule|null,
+     *     dbBackupConfigurations?: list<Shapes\DbBackupConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

@@ -57,6 +57,7 @@ class DirectConnectClient extends \Aws\DirectConnect\DirectConnectClient
     use DescribeVirtualInterfaces\DescribeVirtualInterfacesTrait;
     use DisassociateConnectionFromLag\DisassociateConnectionFromLagTrait;
     use DisassociateMacSecKey\DisassociateMacSecKeyTrait;
+    use ListVirtualInterfaceRoutes\ListVirtualInterfaceRoutesTrait;
     use ListVirtualInterfaceTestHistory\ListVirtualInterfaceTestHistoryTrait;
     use StartBgpFailoverTest\StartBgpFailoverTestTrait;
     use StopBgpFailoverTest\StopBgpFailoverTestTrait;

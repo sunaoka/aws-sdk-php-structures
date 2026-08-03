@@ -23,6 +23,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TransitGatewayOwnerAccountId
  * @property list<AvailabilityZoneMapping>|null $AvailabilityZoneMappings
  * @property bool|null $AvailabilityZoneChangeProtection
+ * @property list<NatGatewayMapping>|null $NatGatewayMappings
+ * @property ProxySettings|null $ProxySettings
+ * @property bool|null $NoSourcePreservation
+ * @property VpcEndpoint|null $VpcEndpoint
  */
 class Firewall extends Shape
 {
@@ -45,7 +49,11 @@ class Firewall extends Shape
      *     TransitGatewayId?: string|null,
      *     TransitGatewayOwnerAccountId?: string|null,
      *     AvailabilityZoneMappings?: list<AvailabilityZoneMapping>|null,
-     *     AvailabilityZoneChangeProtection?: bool|null
+     *     AvailabilityZoneChangeProtection?: bool|null,
+     *     NatGatewayMappings?: list<NatGatewayMapping>|null,
+     *     ProxySettings?: ProxySettings|null,
+     *     NoSourcePreservation?: bool|null,
+     *     VpcEndpoint?: VpcEndpoint|null
      * } $args
      */
     public function __construct(array $args)

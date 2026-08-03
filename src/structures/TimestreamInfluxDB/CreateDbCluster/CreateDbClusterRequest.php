@@ -23,6 +23,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'AUTOMATIC'|'NO_FAILOVER'|null $failoverMode
  * @property Shapes\LogDeliveryConfiguration|null $logDeliveryConfiguration
  * @property Shapes\MaintenanceSchedule|null $maintenanceSchedule
+ * @property list<Shapes\DbBackupConfiguration>|null $dbBackupConfigurations
+ * @property string|null $kmsKeyId
  * @property array<string, string>|null $tags
  */
 class CreateDbClusterRequest extends Request
@@ -47,6 +49,8 @@ class CreateDbClusterRequest extends Request
      *     failoverMode?: 'AUTOMATIC'|'NO_FAILOVER'|null,
      *     logDeliveryConfiguration?: Shapes\LogDeliveryConfiguration|null,
      *     maintenanceSchedule?: Shapes\MaintenanceSchedule|null,
+     *     dbBackupConfigurations?: list<Shapes\DbBackupConfiguration>|null,
+     *     kmsKeyId?: string|null,
      *     tags?: array<string, string>|null
      * } $args
      */

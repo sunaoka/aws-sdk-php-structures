@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FrameRate|null $CodedFrameRate
  * @property 'ITU_709'|'UNSPECIFIED'|'RESERVED'|'ITU_470M'|'ITU_470BG'|'SMPTE_170M'|'SMPTE_240M'|'GENERIC_FILM'|'ITU_2020'|'SMPTE_428_1'|'SMPTE_431_2'|'SMPTE_EG_432_1'|'IPT'|'SMPTE_2067XYZ'|'EBU_3213_E'|'LAST'|null $ColorPrimaries
  * @property ContentLightLevel|null $ContentLightLevel
+ * @property string|null $FieldOrder
  * @property int|null $Height
  * @property string|null $Level
  * @property 'RGB'|'ITU_709'|'UNSPECIFIED'|'RESERVED'|'FCC'|'ITU_470BG'|'SMPTE_170M'|'SMPTE_240M'|'YCgCo'|'ITU_2020_NCL'|'ITU_2020_CL'|'SMPTE_2085'|'CD_NCL'|'CD_CL'|'ITU_2100ICtCp'|'IPT'|'EBU3213'|'LAST'|null $MatrixCoefficients
@@ -28,6 +29,7 @@ class CodecMetadata extends Shape
      *     CodedFrameRate?: FrameRate|null,
      *     ColorPrimaries?: 'ITU_709'|'UNSPECIFIED'|'RESERVED'|'ITU_470M'|'ITU_470BG'|'SMPTE_170M'|'SMPTE_240M'|'GENERIC_FILM'|'ITU_2020'|'SMPTE_428_1'|'SMPTE_431_2'|'SMPTE_EG_432_1'|'IPT'|'SMPTE_2067XYZ'|'EBU_3213_E'|'LAST'|null,
      *     ContentLightLevel?: ContentLightLevel|null,
+     *     FieldOrder?: string|null,
      *     Height?: int|null,
      *     Level?: string|null,
      *     MatrixCoefficients?: 'RGB'|'ITU_709'|'UNSPECIFIED'|'RESERVED'|'FCC'|'ITU_470BG'|'SMPTE_170M'|'SMPTE_240M'|'YCgCo'|'ITU_2020_NCL'|'ITU_2020_CL'|'SMPTE_2085'|'CD_NCL'|'CD_CL'|'ITU_2100ICtCp'|'IPT'|'EBU3213'|'LAST'|null,
