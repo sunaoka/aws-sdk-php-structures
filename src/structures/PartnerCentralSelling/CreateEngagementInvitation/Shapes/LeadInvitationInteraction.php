@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\CreateEngagementInvitatio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceType
- * @property string $SourceId
- * @property string $SourceName
+ * @property string|null $SourceType
+ * @property string|null $SourceId
+ * @property string|null $SourceName
  * @property string|null $Usecase
  * @property string $ContactBusinessTitle
  */
@@ -15,9 +15,9 @@ class LeadInvitationInteraction extends Shape
 {
     /**
      * @param array{
-     *     SourceType: string,
-     *     SourceId: string,
-     *     SourceName: string,
+     *     SourceType?: string|null,
+     *     SourceId?: string|null,
+     *     SourceName?: string|null,
      *     Usecase?: string|null,
      *     ContactBusinessTitle: string
      * } $args

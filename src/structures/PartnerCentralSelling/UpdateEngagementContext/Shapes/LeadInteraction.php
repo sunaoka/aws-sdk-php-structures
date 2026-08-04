@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\UpdateEngagementContext\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceType
- * @property string $SourceId
- * @property string $SourceName
+ * @property string|null $SourceType
+ * @property string|null $SourceId
+ * @property string|null $SourceName
  * @property string|null $Usecase
  * @property \Aws\Api\DateTimeResult|null $InteractionDate
- * @property string $CustomerAction
+ * @property string|null $CustomerAction
  * @property string|null $BusinessProblem
  * @property LeadContact $Contact
  */
@@ -18,12 +18,12 @@ class LeadInteraction extends Shape
 {
     /**
      * @param array{
-     *     SourceType: string,
-     *     SourceId: string,
-     *     SourceName: string,
+     *     SourceType?: string|null,
+     *     SourceId?: string|null,
+     *     SourceName?: string|null,
      *     Usecase?: string|null,
      *     InteractionDate?: \Aws\Api\DateTimeResult|null,
-     *     CustomerAction: string,
+     *     CustomerAction?: string|null,
      *     BusinessProblem?: string|null,
      *     Contact: LeadContact
      * } $args

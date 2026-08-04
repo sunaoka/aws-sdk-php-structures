@@ -48,6 +48,7 @@ class DynamoDbClient extends \Aws\DynamoDb\DynamoDbClient
     use RestoreTableFromBackup\RestoreTableFromBackupTrait;
     use RestoreTableToPointInTime\RestoreTableToPointInTimeTrait;
     use Scan\ScanTrait;
+    use SearchVectors\SearchVectorsTrait;
     use TagResource\TagResourceTrait;
     use TransactGetItems\TransactGetItemsTrait;
     use TransactWriteItems\TransactWriteItemsTrait;

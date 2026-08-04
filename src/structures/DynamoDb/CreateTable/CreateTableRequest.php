@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\OnDemandThroughput|null $OnDemandThroughput
  * @property string|null $GlobalTableSourceArn
  * @property 'ENABLED'|'DISABLED'|'ENABLED_WITH_OVERRIDES'|null $GlobalTableSettingsReplicationMode
+ * @property list<Shapes\VectorIndex>|null $VectorIndexes
  */
 class CreateTableRequest extends Request
 {
@@ -43,7 +44,8 @@ class CreateTableRequest extends Request
      *     ResourcePolicy?: string|null,
      *     OnDemandThroughput?: Shapes\OnDemandThroughput|null,
      *     GlobalTableSourceArn?: string|null,
-     *     GlobalTableSettingsReplicationMode?: 'ENABLED'|'DISABLED'|'ENABLED_WITH_OVERRIDES'|null
+     *     GlobalTableSettingsReplicationMode?: 'ENABLED'|'DISABLED'|'ENABLED_WITH_OVERRIDES'|null,
+     *     VectorIndexes?: list<Shapes\VectorIndex>|null
      * } $args
      */
     public function __construct(array $args)

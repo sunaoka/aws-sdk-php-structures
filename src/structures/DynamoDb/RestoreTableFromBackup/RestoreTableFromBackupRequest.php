@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ProvisionedThroughput|null $ProvisionedThroughputOverride
  * @property Shapes\OnDemandThroughput|null $OnDemandThroughputOverride
  * @property Shapes\SSESpecification|null $SSESpecificationOverride
+ * @property list<Shapes\VectorIndex>|null $VectorIndexOverride
  */
 class RestoreTableFromBackupRequest extends Request
 {
@@ -25,7 +26,8 @@ class RestoreTableFromBackupRequest extends Request
      *     LocalSecondaryIndexOverride?: list<Shapes\LocalSecondaryIndex>|null,
      *     ProvisionedThroughputOverride?: Shapes\ProvisionedThroughput|null,
      *     OnDemandThroughputOverride?: Shapes\OnDemandThroughput|null,
-     *     SSESpecificationOverride?: Shapes\SSESpecification|null
+     *     SSESpecificationOverride?: Shapes\SSESpecification|null,
+     *     VectorIndexOverride?: list<Shapes\VectorIndex>|null
      * } $args
      */
     public function __construct(array $args)

@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $InvitationMessage
  * @property string|null $EngagementDescription
  * @property list<Shapes\EngagementMemberSummary>|null $ExistingMembers
+ * @property Shapes\EnrichmentContext|null $EnrichmentContext
  */
 class GetEngagementInvitationResponse extends Response
 {

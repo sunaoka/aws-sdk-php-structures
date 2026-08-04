@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Catalog
  * @property string $ClientToken
- * @property string $Title
- * @property string $Description
+ * @property string|null $Title
+ * @property string|null $Description
  * @property list<Shapes\EngagementContextDetails>|null $Contexts
  */
 class CreateEngagementRequest extends Request
@@ -17,8 +17,8 @@ class CreateEngagementRequest extends Request
      * @param array{
      *     Catalog: string,
      *     ClientToken: string,
-     *     Title: string,
-     *     Description: string,
+     *     Title?: string|null,
+     *     Description?: string|null,
      *     Contexts?: list<Shapes\EngagementContextDetails>|null
      * } $args
      */

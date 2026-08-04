@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'DELETE_IN_PROGRESS'|'ACTIVE'|null $Status
  * @property string|null $StatusReason
  * @property Shapes\EncryptionConfigurationDetails|null $EncryptionConfigurationDetails
+ * @property bool|null $PermissionSetsEnabled
  */
 class DescribeInstanceResponse extends Response
 {

@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InstanceStatusSummary|null $InstanceStatus
  * @property InstanceStatusSummary|null $SystemStatus
  * @property EbsStatusSummary|null $AttachedEbsStatus
+ * @property ApplicationStatusSummary|null $ApplicationStatus
  */
 class InstanceStatus extends Shape
 {
@@ -29,7 +30,8 @@ class InstanceStatus extends Shape
      *     InstanceState?: InstanceState|null,
      *     InstanceStatus?: InstanceStatusSummary|null,
      *     SystemStatus?: InstanceStatusSummary|null,
-     *     AttachedEbsStatus?: EbsStatusSummary|null
+     *     AttachedEbsStatus?: EbsStatusSummary|null,
+     *     ApplicationStatus?: ApplicationStatusSummary|null
      * } $args
      */
     public function __construct(array $args = [])

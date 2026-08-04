@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property StreamSpecification|null $StreamDescription
  * @property TimeToLiveDescription|null $TimeToLiveDescription
  * @property SSEDescription|null $SSEDescription
+ * @property list<VectorIndexInfo>|null $VectorIndexes
  */
 class SourceTableFeatureDetails extends Shape
 {
@@ -19,7 +20,8 @@ class SourceTableFeatureDetails extends Shape
      *     GlobalSecondaryIndexes?: list<GlobalSecondaryIndexInfo>|null,
      *     StreamDescription?: StreamSpecification|null,
      *     TimeToLiveDescription?: TimeToLiveDescription|null,
-     *     SSEDescription?: SSEDescription|null
+     *     SSEDescription?: SSEDescription|null,
+     *     VectorIndexes?: list<VectorIndexInfo>|null
      * } $args
      */
     public function __construct(array $args = [])

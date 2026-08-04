@@ -33,6 +33,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OnDemandThroughput|null $OnDemandThroughput
  * @property TableWarmThroughputDescription|null $WarmThroughput
  * @property 'EVENTUAL'|'STRONG'|null $MultiRegionConsistency
+ * @property list<VectorIndexDescription>|null $VectorIndexes
  */
 class TableDescription extends Shape
 {
@@ -65,7 +66,8 @@ class TableDescription extends Shape
      *     DeletionProtectionEnabled?: bool|null,
      *     OnDemandThroughput?: OnDemandThroughput|null,
      *     WarmThroughput?: TableWarmThroughputDescription|null,
-     *     MultiRegionConsistency?: 'EVENTUAL'|'STRONG'|null
+     *     MultiRegionConsistency?: 'EVENTUAL'|'STRONG'|null,
+     *     VectorIndexes?: list<VectorIndexDescription>|null
      * } $args
      */
     public function __construct(array $args = [])

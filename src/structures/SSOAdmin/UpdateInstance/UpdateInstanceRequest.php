@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Name
  * @property string $InstanceArn
  * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
+ * @property bool|null $PermissionSetsEnabled
  */
 class UpdateInstanceRequest extends Request
 {
@@ -15,7 +16,8 @@ class UpdateInstanceRequest extends Request
      * @param array{
      *     Name?: string|null,
      *     InstanceArn: string,
-     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null
+     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null,
+     *     PermissionSetsEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

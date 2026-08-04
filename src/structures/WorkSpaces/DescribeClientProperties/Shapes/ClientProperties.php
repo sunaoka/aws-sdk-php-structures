@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'ENABLED'|'DISABLED'|null $ReconnectEnabled
  * @property 'ENABLED'|'DISABLED'|null $LogUploadEnabled
+ * @property string|null $ClientExperiencePolicy
  */
 class ClientProperties extends Shape
 {
     /**
      * @param array{
      *     ReconnectEnabled?: 'ENABLED'|'DISABLED'|null,
-     *     LogUploadEnabled?: 'ENABLED'|'DISABLED'|null
+     *     LogUploadEnabled?: 'ENABLED'|'DISABLED'|null,
+     *     ClientExperiencePolicy?: string|null
      * } $args
      */
     public function __construct(array $args = [])

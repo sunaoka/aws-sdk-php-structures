@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Capacity|null $Table
  * @property array<string, Capacity>|null $LocalSecondaryIndexes
  * @property array<string, Capacity>|null $GlobalSecondaryIndexes
+ * @property array<string, VectorCapacity>|null $VectorIndexes
  */
 class ConsumedCapacity extends Shape
 {
@@ -23,7 +24,8 @@ class ConsumedCapacity extends Shape
      *     WriteCapacityUnits?: double|null,
      *     Table?: Capacity|null,
      *     LocalSecondaryIndexes?: array<string, Capacity>|null,
-     *     GlobalSecondaryIndexes?: array<string, Capacity>|null
+     *     GlobalSecondaryIndexes?: array<string, Capacity>|null,
+     *     VectorIndexes?: array<string, VectorCapacity>|null
      * } $args
      */
     public function __construct(array $args = [])

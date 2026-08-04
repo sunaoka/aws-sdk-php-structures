@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OnDemandThroughput|null $OnDemandThroughput
  * @property SSESpecification|null $SSESpecification
  * @property list<GlobalSecondaryIndex>|null $GlobalSecondaryIndexes
+ * @property list<VectorIndex>|null $VectorIndexes
  */
 class TableCreationParameters extends Shape
 {
@@ -25,7 +26,8 @@ class TableCreationParameters extends Shape
      *     ProvisionedThroughput?: ProvisionedThroughput|null,
      *     OnDemandThroughput?: OnDemandThroughput|null,
      *     SSESpecification?: SSESpecification|null,
-     *     GlobalSecondaryIndexes?: list<GlobalSecondaryIndex>|null
+     *     GlobalSecondaryIndexes?: list<GlobalSecondaryIndex>|null,
+     *     VectorIndexes?: list<VectorIndex>|null
      * } $args
      */
     public function __construct(array $args)

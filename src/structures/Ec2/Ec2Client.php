@@ -22,6 +22,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use AssignPrivateIpAddresses\AssignPrivateIpAddressesTrait;
     use AssignPrivateNatGatewayAddress\AssignPrivateNatGatewayAddressTrait;
     use AssociateAddress\AssociateAddressTrait;
+    use AssociateApplicationStatusCheck\AssociateApplicationStatusCheckTrait;
     use AssociateCapacityReservationBillingOwner\AssociateCapacityReservationBillingOwnerTrait;
     use AssociateClientVpnTargetNetwork\AssociateClientVpnTargetNetworkTrait;
     use AssociateDhcpOptions\AssociateDhcpOptionsTrait;
@@ -67,6 +68,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CopyImage\CopyImageTrait;
     use CopySnapshot\CopySnapshotTrait;
     use CopyVolumes\CopyVolumesTrait;
+    use CreateApplicationStatusCheck\CreateApplicationStatusCheckTrait;
     use CreateCapacityManagerDataExport\CreateCapacityManagerDataExportTrait;
     use CreateCapacityReservation\CreateCapacityReservationTrait;
     use CreateCapacityReservationBySplitting\CreateCapacityReservationBySplittingTrait;
@@ -173,6 +175,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateVpnConnection\CreateVpnConnectionTrait;
     use CreateVpnConnectionRoute\CreateVpnConnectionRouteTrait;
     use CreateVpnGateway\CreateVpnGatewayTrait;
+    use DeleteApplicationStatusCheck\DeleteApplicationStatusCheckTrait;
     use DeleteCapacityManagerDataExport\DeleteCapacityManagerDataExportTrait;
     use DeleteCarrierGateway\DeleteCarrierGatewayTrait;
     use DeleteClientVpnEndpoint\DeleteClientVpnEndpointTrait;
@@ -281,6 +284,9 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeAddresses\DescribeAddressesTrait;
     use DescribeAddressesAttribute\DescribeAddressesAttributeTrait;
     use DescribeAggregateIdFormat\DescribeAggregateIdFormatTrait;
+    use DescribeApplicationStatus\DescribeApplicationStatusTrait;
+    use DescribeApplicationStatusCheckAssociations\DescribeApplicationStatusCheckAssociationsTrait;
+    use DescribeApplicationStatusChecks\DescribeApplicationStatusChecksTrait;
     use DescribeAvailabilityZones\DescribeAvailabilityZonesTrait;
     use DescribeAwsNetworkPerformanceMetricSubscriptions\DescribeAwsNetworkPerformanceMetricSubscriptionsTrait;
     use DescribeBundleTasks\DescribeBundleTasksTrait;
@@ -472,6 +478,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DetachVpnGateway\DetachVpnGatewayTrait;
     use DisableAddressTransfer\DisableAddressTransferTrait;
     use DisableAllowedImagesSettings\DisableAllowedImagesSettingsTrait;
+    use DisableApplicationStatusCheckSuppression\DisableApplicationStatusCheckSuppressionTrait;
     use DisableAwsNetworkPerformanceMetricSubscription\DisableAwsNetworkPerformanceMetricSubscriptionTrait;
     use DisableCapacityManager\DisableCapacityManagerTrait;
     use DisableEbsEncryptionByDefault\DisableEbsEncryptionByDefaultTrait;
@@ -492,6 +499,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DisableVpcClassicLink\DisableVpcClassicLinkTrait;
     use DisableVpcClassicLinkDnsSupport\DisableVpcClassicLinkDnsSupportTrait;
     use DisassociateAddress\DisassociateAddressTrait;
+    use DisassociateApplicationStatusCheck\DisassociateApplicationStatusCheckTrait;
     use DisassociateCapacityReservationBillingOwner\DisassociateCapacityReservationBillingOwnerTrait;
     use DisassociateClientVpnTargetNetwork\DisassociateClientVpnTargetNetworkTrait;
     use DisassociateEnclaveCertificateIamRole\DisassociateEnclaveCertificateIamRoleTrait;
@@ -511,6 +519,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DisassociateVpcCidrBlock\DisassociateVpcCidrBlockTrait;
     use EnableAddressTransfer\EnableAddressTransferTrait;
     use EnableAllowedImagesSettings\EnableAllowedImagesSettingsTrait;
+    use EnableApplicationStatusCheckSuppression\EnableApplicationStatusCheckSuppressionTrait;
     use EnableAwsNetworkPerformanceMetricSubscription\EnableAwsNetworkPerformanceMetricSubscriptionTrait;
     use EnableCapacityManager\EnableCapacityManagerTrait;
     use EnableEbsEncryptionByDefault\EnableEbsEncryptionByDefaultTrait;
@@ -619,6 +628,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use LockSnapshot\LockSnapshotTrait;
     use ModifyAccountVpcEncryptionControl\ModifyAccountVpcEncryptionControlTrait;
     use ModifyAddressAttribute\ModifyAddressAttributeTrait;
+    use ModifyApplicationStatusCheck\ModifyApplicationStatusCheckTrait;
     use ModifyAvailabilityZoneGroup\ModifyAvailabilityZoneGroupTrait;
     use ModifyCapacityReservation\ModifyCapacityReservationTrait;
     use ModifyCapacityReservationFleet\ModifyCapacityReservationFleetTrait;
