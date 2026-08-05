@@ -32,7 +32,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $pullStoppedAt
  * @property \Aws\Api\DateTimeResult|null $startedAt
  * @property string|null $startedBy
- * @property 'TaskFailedToStart'|'EssentialContainerExited'|'UserInitiated'|'ServiceSchedulerInitiated'|'SpotInterruption'|'TerminationNotice'|null $stopCode
+ * @property 'TaskFailedToStart'|'EssentialContainerExited'|'UserInitiated'|'ServiceSchedulerInitiated'|'SpotInterruption'|'TerminationNotice'|'InfrastructureHealth'|null $stopCode
  * @property \Aws\Api\DateTimeResult|null $stoppedAt
  * @property string|null $stoppedReason
  * @property \Aws\Api\DateTimeResult|null $stoppingAt
@@ -74,7 +74,7 @@ class Task extends Shape
      *     pullStoppedAt?: \Aws\Api\DateTimeResult|null,
      *     startedAt?: \Aws\Api\DateTimeResult|null,
      *     startedBy?: string|null,
-     *     stopCode?: 'TaskFailedToStart'|'EssentialContainerExited'|'UserInitiated'|'ServiceSchedulerInitiated'|'SpotInterruption'|'TerminationNotice'|null,
+     *     stopCode?: 'TaskFailedToStart'|'EssentialContainerExited'|'UserInitiated'|'ServiceSchedulerInitiated'|'SpotInterruption'|'TerminationNotice'|'InfrastructureHealth'|null,
      *     stoppedAt?: \Aws\Api\DateTimeResult|null,
      *     stoppedReason?: string|null,
      *     stoppingAt?: \Aws\Api\DateTimeResult|null,

@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property RuntimeTargetConfiguration|null $agentcoreRuntime
  * @property PassthroughTargetConfiguration|null $passthrough
+ * @property HttpConnectorTargetConfiguration|null $connector
  */
 class HttpTargetConfiguration extends Shape
 {
     /**
      * @param array{
      *     agentcoreRuntime?: RuntimeTargetConfiguration|null,
-     *     passthrough?: PassthroughTargetConfiguration|null
+     *     passthrough?: PassthroughTargetConfiguration|null,
+     *     connector?: HttpConnectorTargetConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

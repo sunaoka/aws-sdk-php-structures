@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $jobId
- * @property JobAttachmentSettings|null $jobAttachmentSettings
+ * @property JobDetailsJobAttachmentSettings|null $jobAttachmentSettings
  * @property JobRunAsUser|null $jobRunAsUser
  * @property string $logGroupName
  * @property string|null $queueRoleArn
@@ -19,7 +19,7 @@ class JobDetailsEntity extends Shape
     /**
      * @param array{
      *     jobId: string,
-     *     jobAttachmentSettings?: JobAttachmentSettings|null,
+     *     jobAttachmentSettings?: JobDetailsJobAttachmentSettings|null,
      *     jobRunAsUser?: JobRunAsUser|null,
      *     logGroupName: string,
      *     queueRoleArn?: string|null,

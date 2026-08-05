@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 1000>|null $resourcePriority
  * @property \Aws\Api\DateTimeResult|null $lastSynchronizedAt
  * @property AuthorizationData|null $authorizationData
- * @property 'OPEN_API_SCHEMA'|'SMITHY_MODEL'|'MCP_SERVER'|'LAMBDA'|'API_GATEWAY'|'CONNECTOR'|'AGENTCORE_RUNTIME'|'PASSTHROUGH'|'PROVIDER'|null $targetType
+ * @property 'OPEN_API_SCHEMA'|'SMITHY_MODEL'|'MCP_SERVER'|'LAMBDA'|'API_GATEWAY'|'CONNECTOR'|'AGENTCORE_RUNTIME'|'PASSTHROUGH'|'PROVIDER'|'HTTP_CONNECTOR'|null $targetType
  * @property 'DEFAULT'|'DYNAMIC'|null $listingMode
  */
 class TargetSummary extends Shape
@@ -30,7 +30,7 @@ class TargetSummary extends Shape
      *     resourcePriority?: int<0, 1000>|null,
      *     lastSynchronizedAt?: \Aws\Api\DateTimeResult|null,
      *     authorizationData?: AuthorizationData|null,
-     *     targetType?: 'OPEN_API_SCHEMA'|'SMITHY_MODEL'|'MCP_SERVER'|'LAMBDA'|'API_GATEWAY'|'CONNECTOR'|'AGENTCORE_RUNTIME'|'PASSTHROUGH'|'PROVIDER'|null,
+     *     targetType?: 'OPEN_API_SCHEMA'|'SMITHY_MODEL'|'MCP_SERVER'|'LAMBDA'|'API_GATEWAY'|'CONNECTOR'|'AGENTCORE_RUNTIME'|'PASSTHROUGH'|'PROVIDER'|'HTTP_CONNECTOR'|null,
      *     listingMode?: 'DEFAULT'|'DYNAMIC'|null
      * } $args
      */

@@ -129,6 +129,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetCustomEntityType\GetCustomEntityTypeTrait;
     use GetDashboardUrl\GetDashboardUrlTrait;
     use GetDataCatalogEncryptionSettings\GetDataCatalogEncryptionSettingsTrait;
+    use GetDataCatalogExportConfiguration\GetDataCatalogExportConfigurationTrait;
     use GetDataQualityModel\GetDataQualityModelTrait;
     use GetDataQualityModelResult\GetDataQualityModelResultTrait;
     use GetDataQualityResult\GetDataQualityResultTrait;
@@ -230,6 +231,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use PutAssetType\PutAssetTypeTrait;
     use PutAttachment\PutAttachmentTrait;
     use PutDataCatalogEncryptionSettings\PutDataCatalogEncryptionSettingsTrait;
+    use PutDataCatalogExportConfiguration\PutDataCatalogExportConfigurationTrait;
     use PutDataQualityProfileAnnotation\PutDataQualityProfileAnnotationTrait;
     use PutFormType\PutFormTypeTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;

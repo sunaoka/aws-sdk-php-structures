@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $s3BucketName
  * @property string $rootPrefix
  */
-class JobAttachmentSettings extends Shape
+class JobDetailsJobAttachmentSettings extends Shape
 {
     /**
      * @param array{

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $jobId
  * @property string|null $jobName
  * @property string|null $userId
- * @property 'COMPUTE'|'LICENSE'|null $usageType
+ * @property 'COMPUTE'|'LICENSE'|'PERSISTENT_VOLUME'|null $usageType
  * @property string|null $licenseProduct
  * @property string|null $instanceType
  * @property int $count
@@ -28,7 +28,7 @@ class Statistics extends Shape
      *     jobId?: string|null,
      *     jobName?: string|null,
      *     userId?: string|null,
-     *     usageType?: 'COMPUTE'|'LICENSE'|null,
+     *     usageType?: 'COMPUTE'|'LICENSE'|'PERSISTENT_VOLUME'|null,
      *     licenseProduct?: string|null,
      *     instanceType?: string|null,
      *     count: int,
