@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $wabaName
  * @property list<WhatsAppBusinessAccountEventDestination> $eventDestinations
  * @property string|null $marketingMessagesOnboardingStatus
+ * @property string|null $datasetId
  */
 class LinkedWhatsAppBusinessAccountSummary extends Shape
 {
@@ -25,7 +26,8 @@ class LinkedWhatsAppBusinessAccountSummary extends Shape
      *     linkDate: \Aws\Api\DateTimeResult,
      *     wabaName: string,
      *     eventDestinations: list<WhatsAppBusinessAccountEventDestination>,
-     *     marketingMessagesOnboardingStatus?: string|null
+     *     marketingMessagesOnboardingStatus?: string|null,
+     *     datasetId?: string|null
      * } $args
      */
     public function __construct(array $args)

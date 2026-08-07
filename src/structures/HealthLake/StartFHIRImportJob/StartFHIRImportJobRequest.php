@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ProfileId
  * @property string|null $InputFormat
  * @property bool|null $DriftDetectionEnabled
+ * @property bool|null $ProvenanceEnabled
  */
 class StartFHIRImportJobRequest extends Request
 {
@@ -29,7 +30,8 @@ class StartFHIRImportJobRequest extends Request
      *     ValidationLevel?: 'strict'|'structure-only'|'minimal'|null,
      *     ProfileId?: string|null,
      *     InputFormat?: string|null,
-     *     DriftDetectionEnabled?: bool|null
+     *     DriftDetectionEnabled?: bool|null,
+     *     ProvenanceEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

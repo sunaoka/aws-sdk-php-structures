@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentCoreControl\CreateAgentRuntime\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<60, 28800>|null $idleRuntimeSessionTimeout
- * @property int<60, 28800>|null $maxLifetime
+ * @property int<60, 1209600>|null $idleRuntimeSessionTimeout
+ * @property int<60, 1209600>|null $maxLifetime
  */
 class LifecycleConfiguration extends Shape
 {
     /**
      * @param array{
-     *     idleRuntimeSessionTimeout?: int<60, 28800>|null,
-     *     maxLifetime?: int<60, 28800>|null
+     *     idleRuntimeSessionTimeout?: int<60, 1209600>|null,
+     *     maxLifetime?: int<60, 1209600>|null
      * } $args
      */
     public function __construct(array $args = [])

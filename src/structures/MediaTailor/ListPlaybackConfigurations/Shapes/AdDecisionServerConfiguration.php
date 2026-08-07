@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property HttpRequest|null $HttpRequest
+ * @property VastResponse|null $VastResponse
  */
 class AdDecisionServerConfiguration extends Shape
 {
     /**
-     * @param array{HttpRequest?: HttpRequest|null} $args
+     * @param array{
+     *     HttpRequest?: HttpRequest|null,
+     *     VastResponse?: VastResponse|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

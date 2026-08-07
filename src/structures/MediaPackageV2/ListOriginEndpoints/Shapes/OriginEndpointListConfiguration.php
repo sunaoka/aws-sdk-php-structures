@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ListMssManifestConfiguration>|null $MssManifests
  * @property ForceEndpointErrorConfiguration|null $ForceEndpointErrorConfiguration
  * @property 'UNDERSCORE'|'HYPHEN'|null $UriSeparator
+ * @property 'INDEX'|'PASSTHROUGH_NAME'|null $StreamNameOutputMode
  */
 class OriginEndpointListConfiguration extends Shape
 {
@@ -37,7 +38,8 @@ class OriginEndpointListConfiguration extends Shape
      *     DashManifests?: list<ListDashManifestConfiguration>|null,
      *     MssManifests?: list<ListMssManifestConfiguration>|null,
      *     ForceEndpointErrorConfiguration?: ForceEndpointErrorConfiguration|null,
-     *     UriSeparator?: 'UNDERSCORE'|'HYPHEN'|null
+     *     UriSeparator?: 'UNDERSCORE'|'HYPHEN'|null,
+     *     StreamNameOutputMode?: 'INDEX'|'PASSTHROUGH_NAME'|null
      * } $args
      */
     public function __construct(array $args)

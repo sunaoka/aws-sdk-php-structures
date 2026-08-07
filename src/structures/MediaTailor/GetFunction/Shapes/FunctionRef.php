@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $RunCondition
  * @property string|null $FunctionId
+ * @property string|null $Alias
  */
 class FunctionRef extends Shape
 {
     /**
      * @param array{
      *     RunCondition?: string|null,
-     *     FunctionId?: string|null
+     *     FunctionId?: string|null,
+     *     Alias?: string|null
      * } $args
      */
     public function __construct(array $args = [])

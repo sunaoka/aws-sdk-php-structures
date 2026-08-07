@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'advertised'|'deprovisioned'|'failed-deprovision'|'failed-provision'|'pending-advertising'|'pending-deprovision'|'pending-provision'|'pending-withdrawal'|'provisioned'|'provisioned-not-publicly-advertisable'|null $State
  * @property string|null $NetworkBorderGroup
  * @property string|null $AdvertisementType
+ * @property string|null $PoolId
+ * @property string|null $IpamPoolId
  */
 class ByoipCidr extends Shape
 {
@@ -23,7 +25,9 @@ class ByoipCidr extends Shape
      *     StatusMessage?: string|null,
      *     State?: 'advertised'|'deprovisioned'|'failed-deprovision'|'failed-provision'|'pending-advertising'|'pending-deprovision'|'pending-provision'|'pending-withdrawal'|'provisioned'|'provisioned-not-publicly-advertisable'|null,
      *     NetworkBorderGroup?: string|null,
-     *     AdvertisementType?: string|null
+     *     AdvertisementType?: string|null,
+     *     PoolId?: string|null,
+     *     IpamPoolId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

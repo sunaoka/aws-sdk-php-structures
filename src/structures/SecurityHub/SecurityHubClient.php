@@ -96,6 +96,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use ListConnectorsV2\ListConnectorsV2Trait;
     use ListEnabledProductsForImport\ListEnabledProductsForImportTrait;
     use ListFindingAggregators\ListFindingAggregatorsTrait;
+    use ListFreeTrialStatusesV2\ListFreeTrialStatusesV2Trait;
     use ListInvitations\ListInvitationsTrait;
     use ListMembers\ListMembersTrait;
     use ListOrganizationAdminAccounts\ListOrganizationAdminAccountsTrait;

@@ -333,6 +333,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use UpdateContactFlowName\UpdateContactFlowNameTrait;
     use UpdateContactRoutingData\UpdateContactRoutingDataTrait;
     use UpdateContactSchedule\UpdateContactScheduleTrait;
+    use UpdateContactTaskTemplate\UpdateContactTaskTemplateTrait;
     use UpdateDataTableAttribute\UpdateDataTableAttributeTrait;
     use UpdateDataTableMetadata\UpdateDataTableMetadataTrait;
     use UpdateDataTablePrimaryValues\UpdateDataTablePrimaryValuesTrait;

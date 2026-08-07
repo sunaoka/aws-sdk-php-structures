@@ -40,6 +40,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $SkipZonalShiftValidation
  * @property Shapes\CapacityReservationSpecification|null $CapacityReservationSpecification
  * @property Shapes\InstanceLifecyclePolicy|null $InstanceLifecyclePolicy
+ * @property Shapes\Operator|null $Operator
  */
 class CreateAutoScalingGroupRequest extends Request
 {
@@ -79,7 +80,8 @@ class CreateAutoScalingGroupRequest extends Request
      *     AvailabilityZoneImpairmentPolicy?: Shapes\AvailabilityZoneImpairmentPolicy|null,
      *     SkipZonalShiftValidation?: bool|null,
      *     CapacityReservationSpecification?: Shapes\CapacityReservationSpecification|null,
-     *     InstanceLifecyclePolicy?: Shapes\InstanceLifecyclePolicy|null
+     *     InstanceLifecyclePolicy?: Shapes\InstanceLifecyclePolicy|null,
+     *     Operator?: Shapes\Operator|null
      * } $args
      */
     public function __construct(array $args)

@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'METERED'|'UNMETERED'|null $billingMethod
  * @property list<EnvironmentVariable>|null $environmentVariables
  * @property string|null $executionRoleArn
+ * @property list<'TEST_REPORT'>|null $insightsTypes
  */
 class ScheduleRunConfiguration extends Shape
 {
@@ -33,7 +34,8 @@ class ScheduleRunConfiguration extends Shape
      *     auxiliaryApps?: list<string>|null,
      *     billingMethod?: 'METERED'|'UNMETERED'|null,
      *     environmentVariables?: list<EnvironmentVariable>|null,
-     *     executionRoleArn?: string|null
+     *     executionRoleArn?: string|null,
+     *     insightsTypes?: list<'TEST_REPORT'>|null
      * } $args
      */
     public function __construct(array $args = [])

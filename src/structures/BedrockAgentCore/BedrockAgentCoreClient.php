@@ -14,6 +14,7 @@ class BedrockAgentCoreClient extends \Aws\BedrockAgentCore\BedrockAgentCoreClien
     use CreatePaymentSession\CreatePaymentSessionTrait;
     use DeleteABTest\DeleteABTestTrait;
     use DeleteBatchEvaluation\DeleteBatchEvaluationTrait;
+    use DeleteCapacityProviderSession\DeleteCapacityProviderSessionTrait;
     use DeleteEvent\DeleteEventTrait;
     use DeleteMemoryRecord\DeleteMemoryRecordTrait;
     use DeletePaymentInstrument\DeletePaymentInstrumentTrait;

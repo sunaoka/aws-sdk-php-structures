@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $CreationTimeAfter
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTimeBefore
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTimeAfter
- * @property 'Pending'|'InService'|'Stopping'|'Stopped'|'Failed'|'Deleting'|'Updating'|null $StatusEquals
+ * @property 'Pending'|'InService'|'Stopping'|'Stopped'|'Failed'|'Deleting'|'Updating'|'PendingMaintenance'|'InMaintenance'|null $StatusEquals
  * @property string|null $NotebookInstanceLifecycleConfigNameContains
  * @property string|null $DefaultCodeRepositoryContains
  * @property string|null $AdditionalCodeRepositoryEquals
@@ -32,7 +32,7 @@ class ListNotebookInstancesRequest extends Request
      *     CreationTimeAfter?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedTimeBefore?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedTimeAfter?: \Aws\Api\DateTimeResult|null,
-     *     StatusEquals?: 'Pending'|'InService'|'Stopping'|'Stopped'|'Failed'|'Deleting'|'Updating'|null,
+     *     StatusEquals?: 'Pending'|'InService'|'Stopping'|'Stopped'|'Failed'|'Deleting'|'Updating'|'PendingMaintenance'|'InMaintenance'|null,
      *     NotebookInstanceLifecycleConfigNameContains?: string|null,
      *     DefaultCodeRepositoryContains?: string|null,
      *     AdditionalCodeRepositoryEquals?: string|null

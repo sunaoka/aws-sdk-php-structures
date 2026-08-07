@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\SocialMessaging;
 class SocialMessagingClient extends \Aws\SocialMessaging\SocialMessagingClient
 {
     use AssociateWhatsAppBusinessAccount\AssociateWhatsAppBusinessAccountTrait;
+    use CreateWhatsAppDataset\CreateWhatsAppDatasetTrait;
     use CreateWhatsAppFlow\CreateWhatsAppFlowTrait;
     use CreateWhatsAppMessageTemplate\CreateWhatsAppMessageTemplateTrait;
     use CreateWhatsAppMessageTemplateFromLibrary\CreateWhatsAppMessageTemplateFromLibraryTrait;
@@ -29,6 +30,7 @@ class SocialMessagingClient extends \Aws\SocialMessaging\SocialMessagingClient
     use PostWhatsAppMessageMedia\PostWhatsAppMessageMediaTrait;
     use PublishWhatsAppFlow\PublishWhatsAppFlowTrait;
     use PutWhatsAppBusinessAccountEventDestinations\PutWhatsAppBusinessAccountEventDestinationsTrait;
+    use SendWhatsAppConversionEvent\SendWhatsAppConversionEventTrait;
     use SendWhatsAppMessage\SendWhatsAppMessageTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;

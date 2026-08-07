@@ -6,10 +6,11 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FunctionId
- * @property 'HTTP_REQUEST'|'CUSTOM_OUTPUT'|'SEQUENTIAL_EXECUTOR' $FunctionType
+ * @property 'HTTP_REQUEST'|'CUSTOM_OUTPUT'|'CONCURRENT_EXECUTOR'|'SEQUENTIAL_EXECUTOR' $FunctionType
  * @property string|null $Description
  * @property HttpRequestConfiguration|null $HttpRequestConfiguration
  * @property CustomOutputConfiguration|null $CustomOutputConfiguration
+ * @property ConcurrentExecutorConfiguration|null $ConcurrentExecutorConfiguration
  * @property SequentialExecutorConfiguration|null $SequentialExecutorConfiguration
  * @property array<string, string>|null $Tags
  * @property string|null $Arn
@@ -19,10 +20,11 @@ class FunctionShape extends Shape
     /**
      * @param array{
      *     FunctionId: string,
-     *     FunctionType: 'HTTP_REQUEST'|'CUSTOM_OUTPUT'|'SEQUENTIAL_EXECUTOR',
+     *     FunctionType: 'HTTP_REQUEST'|'CUSTOM_OUTPUT'|'CONCURRENT_EXECUTOR'|'SEQUENTIAL_EXECUTOR',
      *     Description?: string|null,
      *     HttpRequestConfiguration?: HttpRequestConfiguration|null,
      *     CustomOutputConfiguration?: CustomOutputConfiguration|null,
+     *     ConcurrentExecutorConfiguration?: ConcurrentExecutorConfiguration|null,
      *     SequentialExecutorConfiguration?: SequentialExecutorConfiguration|null,
      *     Tags?: array<string, string>|null,
      *     Arn?: string|null

@@ -51,6 +51,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use AuthorizeClientVpnIngress\AuthorizeClientVpnIngressTrait;
     use AuthorizeSecurityGroupEgress\AuthorizeSecurityGroupEgressTrait;
     use AuthorizeSecurityGroupIngress\AuthorizeSecurityGroupIngressTrait;
+    use BatchModifyIpamRoutingPolicyRegistrations\BatchModifyIpamRoutingPolicyRegistrationsTrait;
     use BundleInstance\BundleInstanceTrait;
     use CancelBundleTask\CancelBundleTaskTrait;
     use CancelCapacityReservation\CancelCapacityReservationTrait;
@@ -97,11 +98,13 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateInterruptibleCapacityReservationAllocation\CreateInterruptibleCapacityReservationAllocationTrait;
     use CreateIpam\CreateIpamTrait;
     use CreateIpamExternalResourceVerificationToken\CreateIpamExternalResourceVerificationTokenTrait;
+    use CreateIpamInternetRegistryAssociation\CreateIpamInternetRegistryAssociationTrait;
     use CreateIpamPolicy\CreateIpamPolicyTrait;
     use CreateIpamPool\CreateIpamPoolTrait;
     use CreateIpamPrefixListResolver\CreateIpamPrefixListResolverTrait;
     use CreateIpamPrefixListResolverTarget\CreateIpamPrefixListResolverTargetTrait;
     use CreateIpamResourceDiscovery\CreateIpamResourceDiscoveryTrait;
+    use CreateIpamRoutingPolicyRegistration\CreateIpamRoutingPolicyRegistrationTrait;
     use CreateIpamScope\CreateIpamScopeTrait;
     use CreateKeyPair\CreateKeyPairTrait;
     use CreateLaunchTemplate\CreateLaunchTemplateTrait;
@@ -194,11 +197,13 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeleteInternetGateway\DeleteInternetGatewayTrait;
     use DeleteIpam\DeleteIpamTrait;
     use DeleteIpamExternalResourceVerificationToken\DeleteIpamExternalResourceVerificationTokenTrait;
+    use DeleteIpamInternetRegistryAssociation\DeleteIpamInternetRegistryAssociationTrait;
     use DeleteIpamPolicy\DeleteIpamPolicyTrait;
     use DeleteIpamPool\DeleteIpamPoolTrait;
     use DeleteIpamPrefixListResolver\DeleteIpamPrefixListResolverTrait;
     use DeleteIpamPrefixListResolverTarget\DeleteIpamPrefixListResolverTargetTrait;
     use DeleteIpamResourceDiscovery\DeleteIpamResourceDiscoveryTrait;
+    use DeleteIpamRoutingPolicyRegistration\DeleteIpamRoutingPolicyRegistrationTrait;
     use DeleteIpamScope\DeleteIpamScopeTrait;
     use DeleteKeyPair\DeleteKeyPairTrait;
     use DeleteLaunchTemplate\DeleteLaunchTemplateTrait;
@@ -355,6 +360,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeInternetGateways\DescribeInternetGatewaysTrait;
     use DescribeIpamByoasn\DescribeIpamByoasnTrait;
     use DescribeIpamExternalResourceVerificationTokens\DescribeIpamExternalResourceVerificationTokensTrait;
+    use DescribeIpamInternetRegistryAssociations\DescribeIpamInternetRegistryAssociationsTrait;
     use DescribeIpamPolicies\DescribeIpamPoliciesTrait;
     use DescribeIpamPoolAllocations\DescribeIpamPoolAllocationsTrait;
     use DescribeIpamPools\DescribeIpamPoolsTrait;
@@ -530,6 +536,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use EnableImageDeprecation\EnableImageDeprecationTrait;
     use EnableImageDeregistrationProtection\EnableImageDeregistrationProtectionTrait;
     use EnableInstanceSqlHaStandbyDetections\EnableInstanceSqlHaStandbyDetectionsTrait;
+    use EnableIpamInternetRegistryAssociation\EnableIpamInternetRegistryAssociationTrait;
     use EnableIpamOrganizationAdminAccount\EnableIpamOrganizationAdminAccountTrait;
     use EnableIpamPolicy\EnableIpamPolicyTrait;
     use EnableReachabilityAnalyzerOrganizationSharing\EnableReachabilityAnalyzerOrganizationSharingTrait;
@@ -577,6 +584,9 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetIpamDiscoveredAccounts\GetIpamDiscoveredAccountsTrait;
     use GetIpamDiscoveredPublicAddresses\GetIpamDiscoveredPublicAddressesTrait;
     use GetIpamDiscoveredResourceCidrs\GetIpamDiscoveredResourceCidrsTrait;
+    use GetIpamDiscoveredRoutes\GetIpamDiscoveredRoutesTrait;
+    use GetIpamInternetRegistryAssociationAsns\GetIpamInternetRegistryAssociationAsnsTrait;
+    use GetIpamInternetRegistryAssociationCidrs\GetIpamInternetRegistryAssociationCidrsTrait;
     use GetIpamPolicyAllocationRules\GetIpamPolicyAllocationRulesTrait;
     use GetIpamPolicyOrganizationTargets\GetIpamPolicyOrganizationTargetsTrait;
     use GetIpamPoolAllocations\GetIpamPoolAllocationsTrait;
@@ -585,6 +595,10 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetIpamPrefixListResolverVersionEntries\GetIpamPrefixListResolverVersionEntriesTrait;
     use GetIpamPrefixListResolverVersions\GetIpamPrefixListResolverVersionsTrait;
     use GetIpamResourceCidrs\GetIpamResourceCidrsTrait;
+    use GetIpamRouteOriginAuthorizations\GetIpamRouteOriginAuthorizationsTrait;
+    use GetIpamRouteProtectionFindings\GetIpamRouteProtectionFindingsTrait;
+    use GetIpamRoutingPolicyRegistrationDeltas\GetIpamRoutingPolicyRegistrationDeltasTrait;
+    use GetIpamRoutingPolicyRegistrations\GetIpamRoutingPolicyRegistrationsTrait;
     use GetLaunchTemplateData\GetLaunchTemplateDataTrait;
     use GetManagedPrefixListAssociations\GetManagedPrefixListAssociationsTrait;
     use GetManagedPrefixListEntries\GetManagedPrefixListEntriesTrait;
@@ -661,6 +675,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ModifyIpamPrefixListResolverTarget\ModifyIpamPrefixListResolverTargetTrait;
     use ModifyIpamResourceCidr\ModifyIpamResourceCidrTrait;
     use ModifyIpamResourceDiscovery\ModifyIpamResourceDiscoveryTrait;
+    use ModifyIpamRoutingPolicyRegistration\ModifyIpamRoutingPolicyRegistrationTrait;
     use ModifyIpamScope\ModifyIpamScopeTrait;
     use ModifyLaunchTemplate\ModifyLaunchTemplateTrait;
     use ModifyLocalGatewayRoute\ModifyLocalGatewayRouteTrait;

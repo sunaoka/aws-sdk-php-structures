@@ -6,6 +6,7 @@ class BackupClient extends \Aws\Backup\BackupClient
 {
     use AssociateBackupVaultMpaApprovalTeam\AssociateBackupVaultMpaApprovalTeamTrait;
     use CancelLegalHold\CancelLegalHoldTrait;
+    use CreateBackupAccessPoint\CreateBackupAccessPointTrait;
     use CreateBackupPlan\CreateBackupPlanTrait;
     use CreateBackupSelection\CreateBackupSelectionTrait;
     use CreateBackupVault\CreateBackupVaultTrait;
@@ -17,6 +18,7 @@ class BackupClient extends \Aws\Backup\BackupClient
     use CreateRestoreTestingPlan\CreateRestoreTestingPlanTrait;
     use CreateRestoreTestingSelection\CreateRestoreTestingSelectionTrait;
     use CreateTieringConfiguration\CreateTieringConfigurationTrait;
+    use DeleteBackupAccessPoint\DeleteBackupAccessPointTrait;
     use DeleteBackupPlan\DeleteBackupPlanTrait;
     use DeleteBackupSelection\DeleteBackupSelectionTrait;
     use DeleteBackupVault\DeleteBackupVaultTrait;
@@ -29,6 +31,7 @@ class BackupClient extends \Aws\Backup\BackupClient
     use DeleteRestoreTestingPlan\DeleteRestoreTestingPlanTrait;
     use DeleteRestoreTestingSelection\DeleteRestoreTestingSelectionTrait;
     use DeleteTieringConfiguration\DeleteTieringConfigurationTrait;
+    use DescribeBackupAccessPoint\DescribeBackupAccessPointTrait;
     use DescribeBackupJob\DescribeBackupJobTrait;
     use DescribeBackupVault\DescribeBackupVaultTrait;
     use DescribeCopyJob\DescribeCopyJobTrait;
@@ -61,6 +64,9 @@ class BackupClient extends \Aws\Backup\BackupClient
     use GetRestoreTestingSelection\GetRestoreTestingSelectionTrait;
     use GetSupportedResourceTypes\GetSupportedResourceTypesTrait;
     use GetTieringConfiguration\GetTieringConfigurationTrait;
+    use ListBackupAccessPoints\ListBackupAccessPointsTrait;
+    use ListBackupAccessPointsByRecoveryPoint\ListBackupAccessPointsByRecoveryPointTrait;
+    use ListBackupAccessPointsByResource\ListBackupAccessPointsByResourceTrait;
     use ListBackupJobSummaries\ListBackupJobSummariesTrait;
     use ListBackupJobs\ListBackupJobsTrait;
     use ListBackupPlanTemplates\ListBackupPlanTemplatesTrait;

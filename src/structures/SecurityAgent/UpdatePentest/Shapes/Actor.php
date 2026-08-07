@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $uris
  * @property Authentication|null $authentication
  * @property string|null $description
+ * @property bool|null $enableEmailMfa
+ * @property string|null $mfaForwardingAddress
  */
 class Actor extends Shape
 {
@@ -17,7 +19,9 @@ class Actor extends Shape
      *     identifier?: string|null,
      *     uris?: list<string>|null,
      *     authentication?: Authentication|null,
-     *     description?: string|null
+     *     description?: string|null,
+     *     enableEmailMfa?: bool|null,
+     *     mfaForwardingAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -21,7 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ChecksumXXHASH3
  * @property string|null $ChecksumXXHASH128
  * @property 'COMPOSITE'|'FULL_OBJECT'|null $ChecksumType
- * @property 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
+ * @property 'AES256'|'aws:fsx'|'aws:backup'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
  * @property 'requester'|null $RequestCharged
  * @property 'COMPLETE'|'PENDING'|'FAILED'|'REPLICA'|'COMPLETED'|null $ReplicationStatus
  */

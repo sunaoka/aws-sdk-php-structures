@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property UsageBasedPricingTerm|null $usageBasedPricingTerm
  * @property ValidityTerm|null $validityTerm
  * @property VariablePaymentTerm|null $variablePaymentTerm
+ * @property NetPaymentTerm|null $netPaymentTerm
  */
 class OfferTerm extends Shape
 {
@@ -33,7 +34,8 @@ class OfferTerm extends Shape
      *     supportTerm?: SupportTerm|null,
      *     usageBasedPricingTerm?: UsageBasedPricingTerm|null,
      *     validityTerm?: ValidityTerm|null,
-     *     variablePaymentTerm?: VariablePaymentTerm|null
+     *     variablePaymentTerm?: VariablePaymentTerm|null,
+     *     netPaymentTerm?: NetPaymentTerm|null
      * } $args
      */
     public function __construct(array $args = [])

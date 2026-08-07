@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'LORA'|null $Peft
  * @property 'LLMAJEvaluation'|'CustomScorerEvaluation'|'BenchmarkEvaluation'|null $EvaluationType
  * @property string|null $EvaluatorArn
+ * @property string|null $SequenceLength
  */
 class ServerlessJobConfig extends Shape
 {
@@ -23,7 +24,8 @@ class ServerlessJobConfig extends Shape
      *     CustomizationTechnique?: 'SFT'|'DPO'|'RLVR'|'RLAIF'|null,
      *     Peft?: 'LORA'|null,
      *     EvaluationType?: 'LLMAJEvaluation'|'CustomScorerEvaluation'|'BenchmarkEvaluation'|null,
-     *     EvaluatorArn?: string|null
+     *     EvaluatorArn?: string|null,
+     *     SequenceLength?: string|null
      * } $args
      */
     public function __construct(array $args)

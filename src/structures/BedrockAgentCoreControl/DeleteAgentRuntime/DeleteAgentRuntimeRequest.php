@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $agentRuntimeId
+ * @property string|null $agentRuntimeVersion
  * @property string|null $clientToken
  */
 class DeleteAgentRuntimeRequest extends Request
@@ -13,6 +14,7 @@ class DeleteAgentRuntimeRequest extends Request
     /**
      * @param array{
      *     agentRuntimeId: string,
+     *     agentRuntimeVersion?: string|null,
      *     clientToken?: string|null
      * } $args
      */

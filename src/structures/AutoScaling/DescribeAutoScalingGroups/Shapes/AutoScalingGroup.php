@@ -46,6 +46,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AvailabilityZoneImpairmentPolicy|null $AvailabilityZoneImpairmentPolicy
  * @property CapacityReservationSpecification|null $CapacityReservationSpecification
  * @property InstanceLifecyclePolicy|null $InstanceLifecyclePolicy
+ * @property Operator|null $Operator
  */
 class AutoScalingGroup extends Shape
 {
@@ -91,7 +92,8 @@ class AutoScalingGroup extends Shape
      *     AvailabilityZoneDistribution?: AvailabilityZoneDistribution|null,
      *     AvailabilityZoneImpairmentPolicy?: AvailabilityZoneImpairmentPolicy|null,
      *     CapacityReservationSpecification?: CapacityReservationSpecification|null,
-     *     InstanceLifecyclePolicy?: InstanceLifecyclePolicy|null
+     *     InstanceLifecyclePolicy?: InstanceLifecyclePolicy|null,
+     *     Operator?: Operator|null
      * } $args
      */
     public function __construct(array $args)

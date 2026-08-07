@@ -40,6 +40,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VpcConfig|null $vpcConfig
  * @property string|null $executionRoleArn
  * @property list<EnvironmentVariable>|null $environmentVariables
+ * @property list<'TEST_REPORT'>|null $insightsTypes
+ * @property RunInsights|null $insights
  */
 class Run extends Shape
 {
@@ -79,7 +81,9 @@ class Run extends Shape
      *     deviceSelectionResult?: DeviceSelectionResult|null,
      *     vpcConfig?: VpcConfig|null,
      *     executionRoleArn?: string|null,
-     *     environmentVariables?: list<EnvironmentVariable>|null
+     *     environmentVariables?: list<EnvironmentVariable>|null,
+     *     insightsTypes?: list<'TEST_REPORT'>|null,
+     *     insights?: RunInsights|null
      * } $args
      */
     public function __construct(array $args = [])

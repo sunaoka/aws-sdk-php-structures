@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $agentRuntimeId
  * @property Shapes\AgentRuntimeArtifact $agentRuntimeArtifact
  * @property string $roleArn
- * @property Shapes\NetworkConfiguration $networkConfiguration
+ * @property Shapes\NetworkConfiguration|null $networkConfiguration
  * @property string|null $description
  * @property Shapes\AuthorizerConfiguration|null $authorizerConfiguration
  * @property Shapes\RequestHeaderConfiguration|null $requestHeaderConfiguration
@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RuntimeMetadataConfiguration|null $metadataConfiguration
  * @property array<string, string>|null $environmentVariables
  * @property list<Shapes\FilesystemConfiguration>|null $filesystemConfigurations
+ * @property Shapes\CapacityProviderConfiguration|null $capacityProviderConfiguration
  * @property string|null $clientToken
  */
 class UpdateAgentRuntimeRequest extends Request
@@ -26,7 +27,7 @@ class UpdateAgentRuntimeRequest extends Request
      *     agentRuntimeId: string,
      *     agentRuntimeArtifact: Shapes\AgentRuntimeArtifact,
      *     roleArn: string,
-     *     networkConfiguration: Shapes\NetworkConfiguration,
+     *     networkConfiguration?: Shapes\NetworkConfiguration|null,
      *     description?: string|null,
      *     authorizerConfiguration?: Shapes\AuthorizerConfiguration|null,
      *     requestHeaderConfiguration?: Shapes\RequestHeaderConfiguration|null,
@@ -35,6 +36,7 @@ class UpdateAgentRuntimeRequest extends Request
      *     metadataConfiguration?: Shapes\RuntimeMetadataConfiguration|null,
      *     environmentVariables?: array<string, string>|null,
      *     filesystemConfigurations?: list<Shapes\FilesystemConfiguration>|null,
+     *     capacityProviderConfiguration?: Shapes\CapacityProviderConfiguration|null,
      *     clientToken?: string|null
      * } $args
      */

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DryRun
  * @property int<10, 1000>|null $MaxResults
  * @property string|null $NextToken
+ * @property bool|null $IncludeLocalZones
  */
 class GetSpotPlacementScoresRequest extends Request
 {
@@ -27,7 +28,8 @@ class GetSpotPlacementScoresRequest extends Request
      *     InstanceRequirementsWithMetadata?: Shapes\InstanceRequirementsWithMetadataRequest|null,
      *     DryRun?: bool|null,
      *     MaxResults?: int<10, 1000>|null,
-     *     NextToken?: string|null
+     *     NextToken?: string|null,
+     *     IncludeLocalZones?: bool|null
      * } $args
      */
     public function __construct(array $args)

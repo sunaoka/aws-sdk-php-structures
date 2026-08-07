@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DeviceMinutes|null $deviceMinutes
  * @property string|null $videoEndpoint
  * @property bool|null $videoCapture
+ * @property JobInsights|null $insights
  */
 class Job extends Shape
 {
@@ -39,7 +40,8 @@ class Job extends Shape
      *     instanceArn?: string|null,
      *     deviceMinutes?: DeviceMinutes|null,
      *     videoEndpoint?: string|null,
-     *     videoCapture?: bool|null
+     *     videoCapture?: bool|null,
+     *     insights?: JobInsights|null
      * } $args
      */
     public function __construct(array $args = [])

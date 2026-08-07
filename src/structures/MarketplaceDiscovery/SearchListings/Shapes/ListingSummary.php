@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $listingId
  * @property string $listingName
  * @property SellerInformation $publisher
+ * @property list<FulfillmentOptionSummary> $fulfillmentOptionSummaries
  * @property string $catalog
  * @property string $shortDescription
  * @property string $logoThumbnailUrl
  * @property list<Category> $categories
- * @property list<FulfillmentOptionSummary> $fulfillmentOptionSummaries
  * @property list<ListingBadge> $badges
  * @property ReviewSummary $reviewSummary
  * @property list<PricingModel> $pricingModels
@@ -26,11 +26,11 @@ class ListingSummary extends Shape
      *     listingId: string,
      *     listingName: string,
      *     publisher: SellerInformation,
+     *     fulfillmentOptionSummaries: list<FulfillmentOptionSummary>,
      *     catalog: string,
      *     shortDescription: string,
      *     logoThumbnailUrl: string,
      *     categories: list<Category>,
-     *     fulfillmentOptionSummaries: list<FulfillmentOptionSummary>,
      *     badges: list<ListingBadge>,
      *     reviewSummary: ReviewSummary,
      *     pricingModels: list<PricingModel>,
