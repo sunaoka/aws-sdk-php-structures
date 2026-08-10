@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $callbackMetadata
+ * @property DataSourceConfiguration|null $dataSourceConfiguration
  */
 class ClippingConfig extends Shape
 {
     /**
-     * @param array{callbackMetadata?: string|null} $args
+     * @param array{
+     *     callbackMetadata?: string|null,
+     *     dataSourceConfiguration?: DataSourceConfiguration|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

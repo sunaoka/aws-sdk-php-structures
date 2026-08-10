@@ -16,6 +16,7 @@ class ElementalInferenceClient extends \Aws\ElementalInference\ElementalInferenc
     use ListDictionaries\ListDictionariesTrait;
     use ListFeeds\ListFeedsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use SearchFixtures\SearchFixturesTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateDictionary\UpdateDictionaryTrait;

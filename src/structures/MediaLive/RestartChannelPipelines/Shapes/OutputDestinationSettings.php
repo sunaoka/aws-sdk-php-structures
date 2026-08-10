@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $StreamName
  * @property string|null $Url
  * @property string|null $Username
+ * @property string|null $VirtualSourceAddress
  */
 class OutputDestinationSettings extends Shape
 {
@@ -17,7 +18,8 @@ class OutputDestinationSettings extends Shape
      *     PasswordParam?: string|null,
      *     StreamName?: string|null,
      *     Url?: string|null,
-     *     Username?: string|null
+     *     Username?: string|null,
+     *     VirtualSourceAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

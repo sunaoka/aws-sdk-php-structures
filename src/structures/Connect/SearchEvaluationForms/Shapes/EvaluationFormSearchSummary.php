@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $LatestVersion
  * @property int|null $ActiveVersion
  * @property bool|null $AutoEvaluationEnabled
- * @property 'de-DE'|'en-US'|'es-ES'|'fr-FR'|'it-IT'|'pt-BR'|'ja-JP'|'ko-KR'|'zh-CN'|null $EvaluationFormLanguage
+ * @property 'de-DE'|'en-US'|'es-ES'|'fr-FR'|'it-IT'|'pt-BR'|'ja-JP'|'ko-KR'|'zh-CN'|'ms-MY'|null $EvaluationFormLanguage
  * @property 'AGENT'|'AUTOMATED'|'CUSTOMER'|null $ContactInteractionType
  * @property array<string, string>|null $Tags
  */
@@ -41,7 +41,7 @@ class EvaluationFormSearchSummary extends Shape
      *     LatestVersion: int,
      *     ActiveVersion?: int|null,
      *     AutoEvaluationEnabled?: bool|null,
-     *     EvaluationFormLanguage?: 'de-DE'|'en-US'|'es-ES'|'fr-FR'|'it-IT'|'pt-BR'|'ja-JP'|'ko-KR'|'zh-CN'|null,
+     *     EvaluationFormLanguage?: 'de-DE'|'en-US'|'es-ES'|'fr-FR'|'it-IT'|'pt-BR'|'ja-JP'|'ko-KR'|'zh-CN'|'ms-MY'|null,
      *     ContactInteractionType?: 'AGENT'|'AUTOMATED'|'CUSTOMER'|null,
      *     Tags?: array<string, string>|null
      * } $args
