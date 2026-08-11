@@ -53,6 +53,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use CreateHoursOfOperationOverride\CreateHoursOfOperationOverrideTrait;
     use CreateInstance\CreateInstanceTrait;
     use CreateIntegrationAssociation\CreateIntegrationAssociationTrait;
+    use CreateMetric\CreateMetricTrait;
     use CreateNotification\CreateNotificationTrait;
     use CreateParticipant\CreateParticipantTrait;
     use CreatePersistentContactAssociation\CreatePersistentContactAssociationTrait;
@@ -92,6 +93,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DeleteHoursOfOperationOverride\DeleteHoursOfOperationOverrideTrait;
     use DeleteInstance\DeleteInstanceTrait;
     use DeleteIntegrationAssociation\DeleteIntegrationAssociationTrait;
+    use DeleteMetric\DeleteMetricTrait;
     use DeleteNotification\DeleteNotificationTrait;
     use DeletePredefinedAttribute\DeletePredefinedAttributeTrait;
     use DeletePrompt\DeletePromptTrait;
@@ -131,6 +133,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DescribeInstance\DescribeInstanceTrait;
     use DescribeInstanceAttribute\DescribeInstanceAttributeTrait;
     use DescribeInstanceStorageConfig\DescribeInstanceStorageConfigTrait;
+    use DescribeMetric\DescribeMetricTrait;
     use DescribeNotification\DescribeNotificationTrait;
     use DescribePhoneNumber\DescribePhoneNumberTrait;
     use DescribePredefinedAttribute\DescribePredefinedAttributeTrait;
@@ -218,6 +221,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ListIntegrationAssociations\ListIntegrationAssociationsTrait;
     use ListLambdaFunctions\ListLambdaFunctionsTrait;
     use ListLexBots\ListLexBotsTrait;
+    use ListMetrics\ListMetricsTrait;
     use ListNotifications\ListNotificationsTrait;
     use ListPhoneNumbers\ListPhoneNumbersTrait;
     use ListPhoneNumbersV2\ListPhoneNumbersV2Trait;
@@ -272,6 +276,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use SearchEvaluationForms\SearchEvaluationFormsTrait;
     use SearchHoursOfOperationOverrides\SearchHoursOfOperationOverridesTrait;
     use SearchHoursOfOperations\SearchHoursOfOperationsTrait;
+    use SearchMetrics\SearchMetricsTrait;
     use SearchNotifications\SearchNotificationsTrait;
     use SearchPredefinedAttributes\SearchPredefinedAttributesTrait;
     use SearchPrompts\SearchPromptsTrait;
@@ -343,6 +348,8 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use UpdateHoursOfOperationOverride\UpdateHoursOfOperationOverrideTrait;
     use UpdateInstanceAttribute\UpdateInstanceAttributeTrait;
     use UpdateInstanceStorageConfig\UpdateInstanceStorageConfigTrait;
+    use UpdateMetricContent\UpdateMetricContentTrait;
+    use UpdateMetricMetadata\UpdateMetricMetadataTrait;
     use UpdateNotificationContent\UpdateNotificationContentTrait;
     use UpdateParticipantAuthentication\UpdateParticipantAuthenticationTrait;
     use UpdateParticipantRoleConfig\UpdateParticipantRoleConfigTrait;

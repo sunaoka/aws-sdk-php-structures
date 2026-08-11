@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Span>|null $sessionSpans
  * @property CloudWatchLogsTraceConfig|null $cloudwatchLogs
  * @property BatchEvaluationTraceConfig|null $batchEvaluation
+ * @property OnlineEvaluationTraceConfig|null $onlineEvaluation
  */
 class AgentTracesConfig extends Shape
 {
@@ -15,7 +16,8 @@ class AgentTracesConfig extends Shape
      * @param array{
      *     sessionSpans?: list<Span>|null,
      *     cloudwatchLogs?: CloudWatchLogsTraceConfig|null,
-     *     batchEvaluation?: BatchEvaluationTraceConfig|null
+     *     batchEvaluation?: BatchEvaluationTraceConfig|null,
+     *     onlineEvaluation?: OnlineEvaluationTraceConfig|null
      * } $args
      */
     public function __construct(array $args = [])

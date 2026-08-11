@@ -33,6 +33,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property StorageConfigResponse|null $storageConfig
  * @property bool|null $deletionProtection
  * @property ControlPlaneScalingConfig|null $controlPlaneScalingConfig
+ * @property KubeApiServerConfigResponse|null $kubeApiServerConfig
+ * @property KubeSchedulerConfigResponse|null $kubeSchedulerConfig
+ * @property KubeControllerManagerConfigResponse|null $kubeControllerManagerConfig
  */
 class Cluster extends Shape
 {
@@ -65,7 +68,10 @@ class Cluster extends Shape
      *     computeConfig?: ComputeConfigResponse|null,
      *     storageConfig?: StorageConfigResponse|null,
      *     deletionProtection?: bool|null,
-     *     controlPlaneScalingConfig?: ControlPlaneScalingConfig|null
+     *     controlPlaneScalingConfig?: ControlPlaneScalingConfig|null,
+     *     kubeApiServerConfig?: KubeApiServerConfigResponse|null,
+     *     kubeSchedulerConfig?: KubeSchedulerConfigResponse|null,
+     *     kubeControllerManagerConfig?: KubeControllerManagerConfigResponse|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $assetId
  * @property list<string> $filterIds
  * @property string $status
+ * @property string|null $scopeName
  * @property string|null $errorMessage
  */
 class AssetScope extends Shape
@@ -17,6 +18,7 @@ class AssetScope extends Shape
      *     assetId: string,
      *     filterIds: list<string>,
      *     status: string,
+     *     scopeName?: string|null,
      *     errorMessage?: string|null
      * } $args
      */

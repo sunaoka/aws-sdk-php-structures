@@ -36,6 +36,7 @@ class CleanRoomsClient extends \Aws\CleanRooms\CleanRoomsClient
     use DeleteMembership\DeleteMembershipTrait;
     use DeletePrivacyBudgetTemplate\DeletePrivacyBudgetTemplateTrait;
     use DisallowIntermediateTable\DisallowIntermediateTableTrait;
+    use GetAnalysisLogExport\GetAnalysisLogExportTrait;
     use GetAnalysisTemplate\GetAnalysisTemplateTrait;
     use GetCollaboration\GetCollaborationTrait;
     use GetCollaborationAnalysisTemplate\GetCollaborationAnalysisTemplateTrait;
@@ -58,6 +59,7 @@ class CleanRoomsClient extends \Aws\CleanRooms\CleanRoomsClient
     use GetProtectedQuery\GetProtectedQueryTrait;
     use GetSchema\GetSchemaTrait;
     use GetSchemaAnalysisRule\GetSchemaAnalysisRuleTrait;
+    use ListAnalysisLogExports\ListAnalysisLogExportsTrait;
     use ListAnalysisTemplates\ListAnalysisTemplatesTrait;
     use ListCollaborationAnalysisTemplates\ListCollaborationAnalysisTemplatesTrait;
     use ListCollaborationChangeRequests\ListCollaborationChangeRequestsTrait;
@@ -84,6 +86,7 @@ class CleanRoomsClient extends \Aws\CleanRooms\CleanRoomsClient
     use PopulateIdMappingTable\PopulateIdMappingTableTrait;
     use PopulateIntermediateTable\PopulateIntermediateTableTrait;
     use PreviewPrivacyImpact\PreviewPrivacyImpactTrait;
+    use StartAnalysisLogExport\StartAnalysisLogExportTrait;
     use StartProtectedJob\StartProtectedJobTrait;
     use StartProtectedQuery\StartProtectedQueryTrait;
     use TagResource\TagResourceTrait;

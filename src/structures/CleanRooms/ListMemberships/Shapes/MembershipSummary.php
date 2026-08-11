@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property 'ACTIVE'|'REMOVED'|'COLLABORATION_DELETED' $status
- * @property list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'|'CAN_RUN_JOB'> $memberAbilities
+ * @property list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'|'CAN_RUN_JOB'|'CAN_EXPORT_QUERY_ANALYSIS_LOG'> $memberAbilities
  * @property MLMemberAbilities|null $mlMemberAbilities
  * @property MembershipPaymentConfiguration $paymentConfiguration
  */
@@ -33,7 +33,7 @@ class MembershipSummary extends Shape
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
      *     status: 'ACTIVE'|'REMOVED'|'COLLABORATION_DELETED',
-     *     memberAbilities: list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'|'CAN_RUN_JOB'>,
+     *     memberAbilities: list<'CAN_QUERY'|'CAN_RECEIVE_RESULTS'|'CAN_RUN_JOB'|'CAN_EXPORT_QUERY_ANALYSIS_LOG'>,
      *     mlMemberAbilities?: MLMemberAbilities|null,
      *     paymentConfiguration: MembershipPaymentConfiguration
      * } $args

@@ -24,6 +24,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\StorageConfigRequest|null $storageConfig
  * @property bool|null $deletionProtection
  * @property Shapes\ControlPlaneScalingConfig|null $controlPlaneScalingConfig
+ * @property Shapes\KubeApiServerConfigRequest|null $kubeApiServerConfig
+ * @property Shapes\KubeSchedulerConfigRequest|null $kubeSchedulerConfig
+ * @property Shapes\KubeControllerManagerConfigRequest|null $kubeControllerManagerConfig
  */
 class CreateClusterRequest extends Request
 {
@@ -47,7 +50,10 @@ class CreateClusterRequest extends Request
      *     computeConfig?: Shapes\ComputeConfigRequest|null,
      *     storageConfig?: Shapes\StorageConfigRequest|null,
      *     deletionProtection?: bool|null,
-     *     controlPlaneScalingConfig?: Shapes\ControlPlaneScalingConfig|null
+     *     controlPlaneScalingConfig?: Shapes\ControlPlaneScalingConfig|null,
+     *     kubeApiServerConfig?: Shapes\KubeApiServerConfigRequest|null,
+     *     kubeSchedulerConfig?: Shapes\KubeSchedulerConfigRequest|null,
+     *     kubeControllerManagerConfig?: Shapes\KubeControllerManagerConfigRequest|null
      * } $args
      */
     public function __construct(array $args)

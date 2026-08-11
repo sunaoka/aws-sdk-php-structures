@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'unsupported'|'standard-support'|'extended-support'|null $status
  * @property 'UNSUPPORTED'|'STANDARD_SUPPORT'|'EXTENDED_SUPPORT'|null $versionStatus
  * @property string|null $kubernetesPatchVersion
+ * @property list<ControlPlaneScalingTierInfo>|null $controlPlaneScalingTiers
+ * @property ControlPlaneConfigInfo|null $controlPlaneComponentConfig
  */
 class ClusterVersionInformation extends Shape
 {
@@ -29,7 +31,9 @@ class ClusterVersionInformation extends Shape
      *     endOfExtendedSupportDate?: \Aws\Api\DateTimeResult|null,
      *     status?: 'unsupported'|'standard-support'|'extended-support'|null,
      *     versionStatus?: 'UNSUPPORTED'|'STANDARD_SUPPORT'|'EXTENDED_SUPPORT'|null,
-     *     kubernetesPatchVersion?: string|null
+     *     kubernetesPatchVersion?: string|null,
+     *     controlPlaneScalingTiers?: list<ControlPlaneScalingTierInfo>|null,
+     *     controlPlaneComponentConfig?: ControlPlaneConfigInfo|null
      * } $args
      */
     public function __construct(array $args = [])
