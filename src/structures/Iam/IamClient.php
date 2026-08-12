@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\Iam;
 class IamClient extends \Aws\Iam\IamClient
 {
     use AcceptDelegationRequest\AcceptDelegationRequestTrait;
+    use AcquireRole\AcquireRoleTrait;
     use AddClientIDToOpenIDConnectProvider\AddClientIDToOpenIDConnectProviderTrait;
     use AddRoleToInstanceProfile\AddRoleToInstanceProfileTrait;
     use AddUserToGroup\AddUserToGroupTrait;
@@ -68,6 +69,7 @@ class IamClient extends \Aws\Iam\IamClient
     use GetAccessKeyLastUsed\GetAccessKeyLastUsedTrait;
     use GetAccountAuthorizationDetails\GetAccountAuthorizationDetailsTrait;
     use GetAccountPasswordPolicy\GetAccountPasswordPolicyTrait;
+    use GetAccountProperties\GetAccountPropertiesTrait;
     use GetAccountSummary\GetAccountSummaryTrait;
     use GetContextKeysForCustomPolicy\GetContextKeysForCustomPolicyTrait;
     use GetContextKeysForPrincipalPolicy\GetContextKeysForPrincipalPolicyTrait;
@@ -86,6 +88,7 @@ class IamClient extends \Aws\Iam\IamClient
     use GetPolicyVersion\GetPolicyVersionTrait;
     use GetRole\GetRoleTrait;
     use GetRolePolicy\GetRolePolicyTrait;
+    use GetRoleTemplateVersion\GetRoleTemplateVersionTrait;
     use GetSAMLProvider\GetSAMLProviderTrait;
     use GetSSHPublicKey\GetSSHPublicKeyTrait;
     use GetServerCertificate\GetServerCertificateTrait;
@@ -130,6 +133,7 @@ class IamClient extends \Aws\Iam\IamClient
     use ListUserTags\ListUserTagsTrait;
     use ListUsers\ListUsersTrait;
     use ListVirtualMFADevices\ListVirtualMFADevicesTrait;
+    use PutAccountProperties\PutAccountPropertiesTrait;
     use PutGroupPolicy\PutGroupPolicyTrait;
     use PutRolePermissionsBoundary\PutRolePermissionsBoundaryTrait;
     use PutRolePolicy\PutRolePolicyTrait;

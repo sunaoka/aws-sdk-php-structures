@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Odb\GetExadbVmCluster\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property int|null $totalSizeInGBs
+ */
+class ExadbVmClusterStorageDetails extends Shape
+{
+    /**
+     * @param array{totalSizeInGBs?: int|null} $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

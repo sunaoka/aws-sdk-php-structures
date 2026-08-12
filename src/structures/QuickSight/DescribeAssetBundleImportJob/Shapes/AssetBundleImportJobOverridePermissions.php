@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<AssetBundleImportJobAnalysisOverridePermissions>|null $Analyses
  * @property list<AssetBundleImportJobDashboardOverridePermissions>|null $Dashboards
  * @property list<AssetBundleImportJobFolderOverridePermissions>|null $Folders
+ * @property list<AssetBundleImportJobTopicV2OverridePermissions>|null $TopicsV2
  */
 class AssetBundleImportJobOverridePermissions extends Shape
 {
@@ -21,7 +22,8 @@ class AssetBundleImportJobOverridePermissions extends Shape
      *     Themes?: list<AssetBundleImportJobThemeOverridePermissions>|null,
      *     Analyses?: list<AssetBundleImportJobAnalysisOverridePermissions>|null,
      *     Dashboards?: list<AssetBundleImportJobDashboardOverridePermissions>|null,
-     *     Folders?: list<AssetBundleImportJobFolderOverridePermissions>|null
+     *     Folders?: list<AssetBundleImportJobFolderOverridePermissions>|null,
+     *     TopicsV2?: list<AssetBundleImportJobTopicV2OverridePermissions>|null
      * } $args
      */
     public function __construct(array $args = [])

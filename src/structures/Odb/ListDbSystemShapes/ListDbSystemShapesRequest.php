@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $nextToken
  * @property string|null $availabilityZone
  * @property string|null $availabilityZoneId
+ * @property string|null $shapeFamily
  */
 class ListDbSystemShapesRequest extends Request
 {
@@ -17,7 +18,8 @@ class ListDbSystemShapesRequest extends Request
      *     maxResults?: int<1, 1000>|null,
      *     nextToken?: string|null,
      *     availabilityZone?: string|null,
-     *     availabilityZoneId?: string|null
+     *     availabilityZoneId?: string|null,
+     *     shapeFamily?: string|null
      * } $args
      */
     public function __construct(array $args = [])

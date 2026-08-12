@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<AssetBundleImportJobAnalysisOverrideTags>|null $Analyses
  * @property list<AssetBundleImportJobDashboardOverrideTags>|null $Dashboards
  * @property list<AssetBundleImportJobFolderOverrideTags>|null $Folders
+ * @property list<AssetBundleImportJobTopicV2OverrideTags>|null $TopicsV2
  */
 class AssetBundleImportJobOverrideTags extends Shape
 {
@@ -23,7 +24,8 @@ class AssetBundleImportJobOverrideTags extends Shape
      *     Themes?: list<AssetBundleImportJobThemeOverrideTags>|null,
      *     Analyses?: list<AssetBundleImportJobAnalysisOverrideTags>|null,
      *     Dashboards?: list<AssetBundleImportJobDashboardOverrideTags>|null,
-     *     Folders?: list<AssetBundleImportJobFolderOverrideTags>|null
+     *     Folders?: list<AssetBundleImportJobFolderOverrideTags>|null,
+     *     TopicsV2?: list<AssetBundleImportJobTopicV2OverrideTags>|null
      * } $args
      */
     public function __construct(array $args = [])

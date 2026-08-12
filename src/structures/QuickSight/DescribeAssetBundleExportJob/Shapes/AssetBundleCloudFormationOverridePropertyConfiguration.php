@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<AssetBundleExportJobAnalysisOverrideProperties>|null $Analyses
  * @property list<AssetBundleExportJobDashboardOverrideProperties>|null $Dashboards
  * @property list<AssetBundleExportJobFolderOverrideProperties>|null $Folders
+ * @property list<AssetBundleExportJobTopicV2OverrideProperties>|null $TopicsV2
  */
 class AssetBundleCloudFormationOverridePropertyConfiguration extends Shape
 {
@@ -27,7 +28,8 @@ class AssetBundleCloudFormationOverridePropertyConfiguration extends Shape
      *     Themes?: list<AssetBundleExportJobThemeOverrideProperties>|null,
      *     Analyses?: list<AssetBundleExportJobAnalysisOverrideProperties>|null,
      *     Dashboards?: list<AssetBundleExportJobDashboardOverrideProperties>|null,
-     *     Folders?: list<AssetBundleExportJobFolderOverrideProperties>|null
+     *     Folders?: list<AssetBundleExportJobFolderOverrideProperties>|null,
+     *     TopicsV2?: list<AssetBundleExportJobTopicV2OverrideProperties>|null
      * } $args
      */
     public function __construct(array $args = [])

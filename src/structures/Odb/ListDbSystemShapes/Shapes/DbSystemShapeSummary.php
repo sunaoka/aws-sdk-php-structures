@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $runtimeMinimumCoreCount
  * @property string|null $shapeFamily
  * @property 'AMD'|'INTEL'|'INTEL_FLEX_X9'|'AMPERE_FLEX_A1'|null $shapeType
+ * @property list<'SMART_STORAGE'|'BLOCK_STORAGE'>|null $shapeAttributes
  * @property string|null $name
  * @property 'ECPU'|'OCPU'|null $computeModel
  * @property bool|null $areServerTypesSupported
@@ -55,6 +56,7 @@ class DbSystemShapeSummary extends Shape
      *     runtimeMinimumCoreCount?: int|null,
      *     shapeFamily?: string|null,
      *     shapeType?: 'AMD'|'INTEL'|'INTEL_FLEX_X9'|'AMPERE_FLEX_A1'|null,
+     *     shapeAttributes?: list<'SMART_STORAGE'|'BLOCK_STORAGE'>|null,
      *     name?: string|null,
      *     computeModel?: 'ECPU'|'OCPU'|null,
      *     areServerTypesSupported?: bool|null

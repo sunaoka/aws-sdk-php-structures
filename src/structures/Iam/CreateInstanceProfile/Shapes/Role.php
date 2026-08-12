@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AttachedPermissionsBoundary|null $PermissionsBoundary
  * @property list<Tag>|null $Tags
  * @property RoleLastUsed|null $RoleLastUsed
+ * @property SourceRoleTemplate|null $SourceRoleTemplate
  */
 class Role extends Shape
 {
@@ -31,7 +32,8 @@ class Role extends Shape
      *     MaxSessionDuration?: int<3600, 43200>|null,
      *     PermissionsBoundary?: AttachedPermissionsBoundary|null,
      *     Tags?: list<Tag>|null,
-     *     RoleLastUsed?: RoleLastUsed|null
+     *     RoleLastUsed?: RoleLastUsed|null,
+     *     SourceRoleTemplate?: SourceRoleTemplate|null
      * } $args
      */
     public function __construct(array $args)

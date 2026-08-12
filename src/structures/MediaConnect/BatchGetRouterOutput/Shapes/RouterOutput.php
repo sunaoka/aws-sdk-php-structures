@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MaintenanceConfiguration $MaintenanceConfiguration
  * @property 'WINDOW'|null $MaintenanceScheduleType
  * @property MaintenanceSchedule|null $MaintenanceSchedule
+ * @property FabricConfiguration $FabricConfiguration
  */
 class RouterOutput extends Shape
 {
@@ -55,7 +56,8 @@ class RouterOutput extends Shape
      *     MaintenanceType: 'PREFERRED_DAY_TIME'|'DEFAULT',
      *     MaintenanceConfiguration: MaintenanceConfiguration,
      *     MaintenanceScheduleType?: 'WINDOW'|null,
-     *     MaintenanceSchedule?: MaintenanceSchedule|null
+     *     MaintenanceSchedule?: MaintenanceSchedule|null,
+     *     FabricConfiguration: FabricConfiguration
      * } $args
      */
     public function __construct(array $args)

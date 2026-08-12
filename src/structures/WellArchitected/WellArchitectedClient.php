@@ -6,6 +6,9 @@ class WellArchitectedClient extends \Aws\WellArchitected\WellArchitectedClient
 {
     use AssociateLenses\AssociateLensesTrait;
     use AssociateProfiles\AssociateProfilesTrait;
+    use CreateAgentContext\CreateAgentContextTrait;
+    use CreateAgentGoal\CreateAgentGoalTrait;
+    use CreateAgentProfile\CreateAgentProfileTrait;
     use CreateLensShare\CreateLensShareTrait;
     use CreateLensVersion\CreateLensVersionTrait;
     use CreateMilestone\CreateMilestoneTrait;
@@ -15,6 +18,9 @@ class WellArchitectedClient extends \Aws\WellArchitected\WellArchitectedClient
     use CreateTemplateShare\CreateTemplateShareTrait;
     use CreateWorkload\CreateWorkloadTrait;
     use CreateWorkloadShare\CreateWorkloadShareTrait;
+    use DeleteAgentContext\DeleteAgentContextTrait;
+    use DeleteAgentGoal\DeleteAgentGoalTrait;
+    use DeleteAgentProfile\DeleteAgentProfileTrait;
     use DeleteLens\DeleteLensTrait;
     use DeleteLensShare\DeleteLensShareTrait;
     use DeleteProfile\DeleteProfileTrait;
@@ -26,6 +32,11 @@ class WellArchitectedClient extends \Aws\WellArchitected\WellArchitectedClient
     use DisassociateLenses\DisassociateLensesTrait;
     use DisassociateProfiles\DisassociateProfilesTrait;
     use ExportLens\ExportLensTrait;
+    use GetAgentContext\GetAgentContextTrait;
+    use GetAgentGoal\GetAgentGoalTrait;
+    use GetAgentProfile\GetAgentProfileTrait;
+    use GetAgentRecommendation\GetAgentRecommendationTrait;
+    use GetAgentRecommendationGeneration\GetAgentRecommendationGenerationTrait;
     use GetAnswer\GetAnswerTrait;
     use GetConsolidatedReport\GetConsolidatedReportTrait;
     use GetGlobalSettings\GetGlobalSettingsTrait;
@@ -41,6 +52,12 @@ class WellArchitectedClient extends \Aws\WellArchitected\WellArchitectedClient
     use GetReviewTemplateLensReview\GetReviewTemplateLensReviewTrait;
     use GetWorkload\GetWorkloadTrait;
     use ImportLens\ImportLensTrait;
+    use ListAgentContexts\ListAgentContextsTrait;
+    use ListAgentGoals\ListAgentGoalsTrait;
+    use ListAgentProfiles\ListAgentProfilesTrait;
+    use ListAgentRecommendationGenerations\ListAgentRecommendationGenerationsTrait;
+    use ListAgentRecommendationItems\ListAgentRecommendationItemsTrait;
+    use ListAgentRecommendations\ListAgentRecommendationsTrait;
     use ListAnswers\ListAnswersTrait;
     use ListCheckDetails\ListCheckDetailsTrait;
     use ListCheckSummaries\ListCheckSummariesTrait;
@@ -60,8 +77,14 @@ class WellArchitectedClient extends \Aws\WellArchitected\WellArchitectedClient
     use ListTemplateShares\ListTemplateSharesTrait;
     use ListWorkloadShares\ListWorkloadSharesTrait;
     use ListWorkloads\ListWorkloadsTrait;
+    use PutAgentRecommendationFeedback\PutAgentRecommendationFeedbackTrait;
+    use StartAgentRecommendationGeneration\StartAgentRecommendationGenerationTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateAgentContext\UpdateAgentContextTrait;
+    use UpdateAgentGoal\UpdateAgentGoalTrait;
+    use UpdateAgentProfile\UpdateAgentProfileTrait;
+    use UpdateAgentRecommendationStatus\UpdateAgentRecommendationStatusTrait;
     use UpdateAnswer\UpdateAnswerTrait;
     use UpdateGlobalSettings\UpdateGlobalSettingsTrait;
     use UpdateIntegration\UpdateIntegrationTrait;

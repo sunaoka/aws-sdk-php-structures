@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $AvailabilityZone
  * @property Shapes\MaintenanceConfiguration|null $MaintenanceConfiguration
  * @property array<string, string>|null $Tags
+ * @property Shapes\FabricConfiguration|null $FabricConfiguration
  * @property string|null $ClientToken
  */
 class CreateRouterOutputRequest extends Request
@@ -29,6 +30,7 @@ class CreateRouterOutputRequest extends Request
      *     AvailabilityZone?: string|null,
      *     MaintenanceConfiguration?: Shapes\MaintenanceConfiguration|null,
      *     Tags?: array<string, string>|null,
+     *     FabricConfiguration?: Shapes\FabricConfiguration|null,
      *     ClientToken?: string|null
      * } $args
      */

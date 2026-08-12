@@ -7,17 +7,20 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use BatchCreateTopicReviewedAnswer\BatchCreateTopicReviewedAnswerTrait;
     use BatchDeleteKnowledgeBase\BatchDeleteKnowledgeBaseTrait;
     use BatchDeleteTopicReviewedAnswer\BatchDeleteTopicReviewedAnswerTrait;
+    use BatchDescribeUserLimits\BatchDescribeUserLimitsTrait;
     use CancelIngestion\CancelIngestionTrait;
     use CreateAccountCustomization\CreateAccountCustomizationTrait;
     use CreateAccountSubscription\CreateAccountSubscriptionTrait;
     use CreateActionConnector\CreateActionConnectorTrait;
     use CreateAgent\CreateAgentTrait;
     use CreateAnalysis\CreateAnalysisTrait;
+    use CreateApprovalPolicy\CreateApprovalPolicyTrait;
     use CreateBrand\CreateBrandTrait;
     use CreateCustomPermissions\CreateCustomPermissionsTrait;
     use CreateDashboard\CreateDashboardTrait;
     use CreateDataSet\CreateDataSetTrait;
     use CreateDataSource\CreateDataSourceTrait;
+    use CreateDlpSetting\CreateDlpSettingTrait;
     use CreateFlow\CreateFlowTrait;
     use CreateFolder\CreateFolderTrait;
     use CreateFolderMembership\CreateFolderMembershipTrait;
@@ -26,6 +29,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use CreateIAMPolicyAssignment\CreateIAMPolicyAssignmentTrait;
     use CreateIngestion\CreateIngestionTrait;
     use CreateKnowledgeBase\CreateKnowledgeBaseTrait;
+    use CreateLimitsProfile\CreateLimitsProfileTrait;
     use CreateNamespace\CreateNamespaceTrait;
     use CreateOAuthClientApplication\CreateOAuthClientApplicationTrait;
     use CreateRefreshSchedule\CreateRefreshScheduleTrait;
@@ -45,6 +49,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DeleteActionConnector\DeleteActionConnectorTrait;
     use DeleteAgent\DeleteAgentTrait;
     use DeleteAnalysis\DeleteAnalysisTrait;
+    use DeleteApprovalPolicy\DeleteApprovalPolicyTrait;
     use DeleteBrand\DeleteBrandTrait;
     use DeleteBrandAssignment\DeleteBrandAssignmentTrait;
     use DeleteCustomPermissions\DeleteCustomPermissionsTrait;
@@ -53,6 +58,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DeleteDataSetRefreshProperties\DeleteDataSetRefreshPropertiesTrait;
     use DeleteDataSource\DeleteDataSourceTrait;
     use DeleteDefaultQBusinessApplication\DeleteDefaultQBusinessApplicationTrait;
+    use DeleteDlpSetting\DeleteDlpSettingTrait;
     use DeleteFlow\DeleteFlowTrait;
     use DeleteFolder\DeleteFolderTrait;
     use DeleteFolderMembership\DeleteFolderMembershipTrait;
@@ -61,6 +67,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DeleteIAMPolicyAssignment\DeleteIAMPolicyAssignmentTrait;
     use DeleteIdentityPropagationConfig\DeleteIdentityPropagationConfigTrait;
     use DeleteKnowledgeBase\DeleteKnowledgeBaseTrait;
+    use DeleteLimitsProfile\DeleteLimitsProfileTrait;
     use DeleteNamespace\DeleteNamespaceTrait;
     use DeleteOAuthClientApplication\DeleteOAuthClientApplicationTrait;
     use DeleteRefreshSchedule\DeleteRefreshScheduleTrait;
@@ -89,6 +96,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DescribeAnalysis\DescribeAnalysisTrait;
     use DescribeAnalysisDefinition\DescribeAnalysisDefinitionTrait;
     use DescribeAnalysisPermissions\DescribeAnalysisPermissionsTrait;
+    use DescribeApprovalPolicy\DescribeApprovalPolicyTrait;
     use DescribeAssetBundleExportJob\DescribeAssetBundleExportJobTrait;
     use DescribeAssetBundleImportJob\DescribeAssetBundleImportJobTrait;
     use DescribeAutomationJob\DescribeAutomationJobTrait;
@@ -108,6 +116,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DescribeDataSource\DescribeDataSourceTrait;
     use DescribeDataSourcePermissions\DescribeDataSourcePermissionsTrait;
     use DescribeDefaultQBusinessApplication\DescribeDefaultQBusinessApplicationTrait;
+    use DescribeDlpSetting\DescribeDlpSettingTrait;
     use DescribeFlow\DescribeFlowTrait;
     use DescribeFolder\DescribeFolderTrait;
     use DescribeFolderPermissions\DescribeFolderPermissionsTrait;
@@ -120,6 +129,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DescribeKeyRegistration\DescribeKeyRegistrationTrait;
     use DescribeKnowledgeBase\DescribeKnowledgeBaseTrait;
     use DescribeKnowledgeBasePermissions\DescribeKnowledgeBasePermissionsTrait;
+    use DescribeLimitsProfile\DescribeLimitsProfileTrait;
     use DescribeNamespace\DescribeNamespaceTrait;
     use DescribeOAuthClientApplication\DescribeOAuthClientApplicationTrait;
     use DescribeQPersonalizationConfiguration\DescribeQPersonalizationConfigurationTrait;
@@ -155,6 +165,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use ListActionConnectors\ListActionConnectorsTrait;
     use ListAgents\ListAgentsTrait;
     use ListAnalyses\ListAnalysesTrait;
+    use ListApprovalPolicies\ListApprovalPoliciesTrait;
     use ListAssetBundleExportJobs\ListAssetBundleExportJobsTrait;
     use ListAssetBundleImportJobs\ListAssetBundleImportJobsTrait;
     use ListBrands\ListBrandsTrait;
@@ -163,6 +174,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use ListDashboards\ListDashboardsTrait;
     use ListDataSets\ListDataSetsTrait;
     use ListDataSources\ListDataSourcesTrait;
+    use ListDlpSettings\ListDlpSettingsTrait;
     use ListFlows\ListFlowsTrait;
     use ListFolderMembers\ListFolderMembersTrait;
     use ListFolders\ListFoldersTrait;
@@ -174,6 +186,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use ListIdentityPropagationConfigs\ListIdentityPropagationConfigsTrait;
     use ListIngestions\ListIngestionsTrait;
     use ListKnowledgeBases\ListKnowledgeBasesTrait;
+    use ListLimitsProfiles\ListLimitsProfilesTrait;
     use ListNamespaces\ListNamespacesTrait;
     use ListOAuthClientApplications\ListOAuthClientApplicationsTrait;
     use ListRefreshSchedules\ListRefreshSchedulesTrait;
@@ -230,6 +243,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateAnalysis\UpdateAnalysisTrait;
     use UpdateAnalysisPermissions\UpdateAnalysisPermissionsTrait;
     use UpdateApplicationWithTokenExchangeGrant\UpdateApplicationWithTokenExchangeGrantTrait;
+    use UpdateApprovalPolicy\UpdateApprovalPolicyTrait;
     use UpdateBrand\UpdateBrandTrait;
     use UpdateBrandAssignment\UpdateBrandAssignmentTrait;
     use UpdateBrandPublishedVersion\UpdateBrandPublishedVersionTrait;
@@ -244,6 +258,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateDataSource\UpdateDataSourceTrait;
     use UpdateDataSourcePermissions\UpdateDataSourcePermissionsTrait;
     use UpdateDefaultQBusinessApplication\UpdateDefaultQBusinessApplicationTrait;
+    use UpdateDlpSetting\UpdateDlpSettingTrait;
     use UpdateFlow\UpdateFlowTrait;
     use UpdateFlowPermissions\UpdateFlowPermissionsTrait;
     use UpdateFolder\UpdateFolderTrait;
@@ -255,6 +270,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateKeyRegistration\UpdateKeyRegistrationTrait;
     use UpdateKnowledgeBase\UpdateKnowledgeBaseTrait;
     use UpdateKnowledgeBasePermissions\UpdateKnowledgeBasePermissionsTrait;
+    use UpdateLimitsProfile\UpdateLimitsProfileTrait;
     use UpdateOAuthClientApplication\UpdateOAuthClientApplicationTrait;
     use UpdatePublicSharingSettings\UpdatePublicSharingSettingsTrait;
     use UpdateQPersonalizationConfiguration\UpdateQPersonalizationConfigurationTrait;
