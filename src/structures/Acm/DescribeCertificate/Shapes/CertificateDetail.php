@@ -32,6 +32,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CertificateAuthorityArn
  * @property 'ELIGIBLE'|'INELIGIBLE'|null $RenewalEligibility
  * @property CertificateOptions|null $Options
+ * @property UpdateSummary|null $UpdateSummary
  * @property 'AWS_MANAGED'|'ACME'|'CUSTOMER_PROVIDED'|null $CertificateKeyPairOrigin
  * @property string|null $AcmeEndpointArn
  * @property string|null $AcmeAccountId
@@ -67,6 +68,7 @@ class CertificateDetail extends Shape
      *     CertificateAuthorityArn?: string|null,
      *     RenewalEligibility?: 'ELIGIBLE'|'INELIGIBLE'|null,
      *     Options?: CertificateOptions|null,
+     *     UpdateSummary?: UpdateSummary|null,
      *     CertificateKeyPairOrigin?: 'AWS_MANAGED'|'ACME'|'CUSTOMER_PROVIDED'|null,
      *     AcmeEndpointArn?: string|null,
      *     AcmeAccountId?: string|null

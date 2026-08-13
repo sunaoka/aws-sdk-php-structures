@@ -28,6 +28,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<CodeLocation>|null $codeLocations
  * @property VerificationScript|null $verificationScript
  * @property string|null $alignmentRationale
+ * @property list<string>|null $revalidationJobIds
+ * @property string|null $originalFindingId
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
@@ -58,6 +60,8 @@ class Finding extends Shape
      *     codeLocations?: list<CodeLocation>|null,
      *     verificationScript?: VerificationScript|null,
      *     alignmentRationale?: string|null,
+     *     revalidationJobIds?: list<string>|null,
+     *     originalFindingId?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args

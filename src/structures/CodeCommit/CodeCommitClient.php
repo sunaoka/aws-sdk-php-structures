@@ -29,6 +29,7 @@ class CodeCommitClient extends \Aws\CodeCommit\CodeCommitClient
     use EvaluatePullRequestApprovalRules\EvaluatePullRequestApprovalRulesTrait;
     use GetApprovalRuleTemplate\GetApprovalRuleTemplateTrait;
     use GetBlob\GetBlobTrait;
+    use GetBlobDifferences\GetBlobDifferencesTrait;
     use GetBranch\GetBranchTrait;
     use GetComment\GetCommentTrait;
     use GetCommentReactions\GetCommentReactionsTrait;

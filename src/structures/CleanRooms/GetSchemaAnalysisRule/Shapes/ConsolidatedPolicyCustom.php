@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ALLOWED'|'REQUIRED'|'NOT_ALLOWED'|null $additionalAnalyses
  * @property list<string>|null $disallowedOutputColumns
  * @property DifferentialPrivacyConfiguration|null $differentialPrivacy
+ * @property list<AggregationThreshold>|null $aggregationThresholds
+ * @property ComparisonControls|null $comparisonControls
  * @property list<string>|null $allowedResultReceivers
  * @property list<string>|null $allowedAdditionalAnalyses
  */
@@ -22,6 +24,8 @@ class ConsolidatedPolicyCustom extends Shape
      *     additionalAnalyses?: 'ALLOWED'|'REQUIRED'|'NOT_ALLOWED'|null,
      *     disallowedOutputColumns?: list<string>|null,
      *     differentialPrivacy?: DifferentialPrivacyConfiguration|null,
+     *     aggregationThresholds?: list<AggregationThreshold>|null,
+     *     comparisonControls?: ComparisonControls|null,
      *     allowedResultReceivers?: list<string>|null,
      *     allowedAdditionalAnalyses?: list<string>|null
      * } $args

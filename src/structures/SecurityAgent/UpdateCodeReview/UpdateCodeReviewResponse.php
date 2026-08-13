@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $agentSpaceId
  * @property 'AUTOMATIC'|'DISABLED'|null $codeRemediationStrategy
  * @property 'DISABLED'|'SIMULATED'|null $validationMode
+ * @property double|null $maxTaskHours
  */
 class UpdateCodeReviewResponse extends Response
 {

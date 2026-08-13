@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $allowedResultReceivers
  * @property DifferentialPrivacyConfiguration|null $differentialPrivacy
  * @property list<string>|null $disallowedOutputColumns
+ * @property list<AggregationThreshold>|null $aggregationThresholds
+ * @property ComparisonControls|null $comparisonControls
  */
 class IntermediateTableAnalysisRuleCustom extends Shape
 {
@@ -23,7 +25,9 @@ class IntermediateTableAnalysisRuleCustom extends Shape
      *     allowedAnalysisProviders?: list<string>|null,
      *     allowedResultReceivers?: list<string>|null,
      *     differentialPrivacy?: DifferentialPrivacyConfiguration|null,
-     *     disallowedOutputColumns?: list<string>|null
+     *     disallowedOutputColumns?: list<string>|null,
+     *     aggregationThresholds?: list<AggregationThreshold>|null,
+     *     comparisonControls?: ComparisonControls|null
      * } $args
      */
     public function __construct(array $args = [])

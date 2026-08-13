@@ -5,14 +5,18 @@ namespace Sunaoka\Aws\Structures\AutoScaling\TerminateInstanceInAutoScalingGroup
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $InstanceId
+ * @property string|null $InstanceId
+ * @property list<string>|null $InstanceIds
+ * @property string|null $AutoScalingGroupName
  * @property bool $ShouldDecrementDesiredCapacity
  */
 class TerminateInstanceInAutoScalingGroupRequest extends Request
 {
     /**
      * @param array{
-     *     InstanceId: string,
+     *     InstanceId?: string|null,
+     *     InstanceIds?: list<string>|null,
+     *     AutoScalingGroupName?: string|null,
      *     ShouldDecrementDesiredCapacity: bool
      * } $args
      */

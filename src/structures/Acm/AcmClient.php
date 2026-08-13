@@ -26,6 +26,7 @@ class AcmClient extends \Aws\Acm\AcmClient
     use ListAcmeDomainValidations\ListAcmeDomainValidationsTrait;
     use ListAcmeEndpoints\ListAcmeEndpointsTrait;
     use ListAcmeExternalAccountBindings\ListAcmeExternalAccountBindingsTrait;
+    use ListCertificateDomainValidations\ListCertificateDomainValidationsTrait;
     use ListCertificates\ListCertificatesTrait;
     use ListTagsForCertificate\ListTagsForCertificateTrait;
     use ListTagsForResource\ListTagsForResourceTrait;

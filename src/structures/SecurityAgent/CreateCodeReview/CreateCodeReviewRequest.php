@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\CloudWatchLog|null $logConfig
  * @property 'AUTOMATIC'|'DISABLED'|null $codeRemediationStrategy
  * @property 'DISABLED'|'SIMULATED'|null $validationMode
+ * @property double|null $maxTaskHours
  */
 class CreateCodeReviewRequest extends Request
 {
@@ -23,7 +24,8 @@ class CreateCodeReviewRequest extends Request
      *     serviceRole?: string|null,
      *     logConfig?: Shapes\CloudWatchLog|null,
      *     codeRemediationStrategy?: 'AUTOMATIC'|'DISABLED'|null,
-     *     validationMode?: 'DISABLED'|'SIMULATED'|null
+     *     validationMode?: 'DISABLED'|'SIMULATED'|null,
+     *     maxTaskHours?: double|null
      * } $args
      */
     public function __construct(array $args)

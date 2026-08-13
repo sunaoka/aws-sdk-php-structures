@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $RelatedContactId
  * @property array<string, Shapes\Reference>|null $References
  * @property string|null $Description
+ * @property array<string, Shapes\SegmentAttributeValue>|null $SegmentAttributes
  */
 class StartWebRTCContactRequest extends Request
 {
@@ -27,7 +28,8 @@ class StartWebRTCContactRequest extends Request
      *     ParticipantDetails: Shapes\ParticipantDetails,
      *     RelatedContactId?: string|null,
      *     References?: array<string, Shapes\Reference>|null,
-     *     Description?: string|null
+     *     Description?: string|null,
+     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>|null
      * } $args
      */
     public function __construct(array $args)
