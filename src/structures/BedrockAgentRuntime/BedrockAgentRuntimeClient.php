@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime;
 class BedrockAgentRuntimeClient extends \Aws\BedrockAgentRuntime\BedrockAgentRuntimeClient
 {
     use AgenticRetrieveStream\AgenticRetrieveStreamTrait;
+    use CheckIngestedDocumentAcl\CheckIngestedDocumentAclTrait;
     use CreateInvocation\CreateInvocationTrait;
     use CreateSession\CreateSessionTrait;
     use DeleteAgentMemory\DeleteAgentMemoryTrait;
@@ -15,6 +16,7 @@ class BedrockAgentRuntimeClient extends \Aws\BedrockAgentRuntime\BedrockAgentRun
     use GetDocumentContent\GetDocumentContentTrait;
     use GetExecutionFlowSnapshot\GetExecutionFlowSnapshotTrait;
     use GetFlowExecution\GetFlowExecutionTrait;
+    use GetIngestedDocumentAcl\GetIngestedDocumentAclTrait;
     use GetInvocationStep\GetInvocationStepTrait;
     use GetSession\GetSessionTrait;
     use InvokeAgent\InvokeAgentTrait;

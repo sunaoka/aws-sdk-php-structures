@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $paymentManagerArn
  * @property string $paymentSessionId
  * @property string $paymentInstrumentId
- * @property 'CRYPTO_X402' $paymentType
+ * @property 'CRYPTO_X402'|'MPP' $paymentType
  * @property 'PROOF_GENERATED' $status
  * @property Shapes\PaymentOutput $paymentOutput
  * @property \Aws\Api\DateTimeResult $createdAt

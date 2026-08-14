@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\BedrockAgentCoreControl\UpdateAgentRuntime\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $capacityProviderArn
+ * @property string $capacityProviderArn
  */
 class CapacityProviderConfiguration extends Shape
 {
     /**
-     * @param array{capacityProviderArn?: string|null} $args
+     * @param array{capacityProviderArn: string} $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

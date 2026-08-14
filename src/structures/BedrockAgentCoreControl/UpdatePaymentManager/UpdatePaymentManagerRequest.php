@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AuthorizerConfiguration|null $authorizerConfiguration
  * @property string|null $roleArn
  * @property string|null $clientToken
+ * @property string|null $kmsKeyArn
  */
 class UpdatePaymentManagerRequest extends Request
 {
@@ -21,7 +22,8 @@ class UpdatePaymentManagerRequest extends Request
      *     authorizerType?: 'CUSTOM_JWT'|'AWS_IAM'|null,
      *     authorizerConfiguration?: Shapes\AuthorizerConfiguration|null,
      *     roleArn?: string|null,
-     *     clientToken?: string|null
+     *     clientToken?: string|null,
+     *     kmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

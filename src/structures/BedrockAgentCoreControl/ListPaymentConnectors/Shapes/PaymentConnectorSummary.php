@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $paymentConnectorId
  * @property string $name
  * @property 'CoinbaseCDP'|'StripePrivy' $type
- * @property 'CREATING'|'UPDATING'|'DELETING'|'READY'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED' $status
+ * @property 'CREATING'|'UPDATING'|'DELETING'|'READY'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED'|'AWS_MARKETPLACE_SUBSCRIPTION_REQUIRED'|'PENDING_AUTHENTICATION'|'PROVISIONING'|'AUTHENTICATION_EXPIRED'|'AUTHENTICATION_FAILED' $status
  * @property \Aws\Api\DateTimeResult $lastUpdatedAt
  */
 class PaymentConnectorSummary extends Shape
@@ -18,7 +18,7 @@ class PaymentConnectorSummary extends Shape
      *     paymentConnectorId: string,
      *     name: string,
      *     type: 'CoinbaseCDP'|'StripePrivy',
-     *     status: 'CREATING'|'UPDATING'|'DELETING'|'READY'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED',
+     *     status: 'CREATING'|'UPDATING'|'DELETING'|'READY'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED'|'AWS_MARKETPLACE_SUBSCRIPTION_REQUIRED'|'PENDING_AUTHENTICATION'|'PROVISIONING'|'AUTHENTICATION_EXPIRED'|'AUTHENTICATION_FAILED',
      *     lastUpdatedAt: \Aws\Api\DateTimeResult
      * } $args
      */

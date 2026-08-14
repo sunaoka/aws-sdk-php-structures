@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $paymentConnectorId
  * @property string $userId
  * @property 'EMBEDDED_CRYPTO_WALLET' $paymentInstrumentType
- * @property 'INITIATED'|'ACTIVE'|'FAILED'|'DELETED' $status
+ * @property 'INITIATED'|'ACTIVE'|'FAILED'|'DELETED'|'BLOCKED' $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  */
@@ -23,7 +23,7 @@ class PaymentInstrumentSummary extends Shape
      *     paymentConnectorId: string,
      *     userId: string,
      *     paymentInstrumentType: 'EMBEDDED_CRYPTO_WALLET',
-     *     status: 'INITIATED'|'ACTIVE'|'FAILED'|'DELETED',
+     *     status: 'INITIATED'|'ACTIVE'|'FAILED'|'DELETED'|'BLOCKED',
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult
      * } $args

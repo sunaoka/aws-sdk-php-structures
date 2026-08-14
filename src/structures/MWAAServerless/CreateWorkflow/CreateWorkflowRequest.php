@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string|null $ClientToken
  * @property Shapes\DefinitionS3Location $DefinitionS3Location
+ * @property Shapes\Code|null $Code
  * @property string $RoleArn
  * @property string|null $Description
  * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
@@ -24,6 +25,7 @@ class CreateWorkflowRequest extends Request
      *     Name: string,
      *     ClientToken?: string|null,
      *     DefinitionS3Location: Shapes\DefinitionS3Location,
+     *     Code?: Shapes\Code|null,
      *     RoleArn: string,
      *     Description?: string|null,
      *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null,

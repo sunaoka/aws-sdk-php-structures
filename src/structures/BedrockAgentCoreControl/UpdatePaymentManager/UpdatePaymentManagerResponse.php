@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\WorkloadIdentityDetails|null $workloadIdentityDetails
  * @property \Aws\Api\DateTimeResult $lastUpdatedAt
  * @property 'CREATING'|'UPDATING'|'DELETING'|'READY'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED' $status
+ * @property string|null $kmsKeyArn
  */
 class UpdatePaymentManagerResponse extends Response
 {

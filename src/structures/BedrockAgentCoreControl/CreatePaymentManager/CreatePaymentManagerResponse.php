@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property 'CREATING'|'UPDATING'|'DELETING'|'READY'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED' $status
  * @property array<string, string>|null $tags
+ * @property string|null $kmsKeyArn
  */
 class CreatePaymentManagerResponse extends Response
 {

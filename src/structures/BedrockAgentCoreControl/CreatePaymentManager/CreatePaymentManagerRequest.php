@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $roleArn
  * @property string|null $clientToken
  * @property array<string, string>|null $tags
+ * @property string|null $kmsKeyArn
  */
 class CreatePaymentManagerRequest extends Request
 {
@@ -23,7 +24,8 @@ class CreatePaymentManagerRequest extends Request
      *     authorizerConfiguration?: Shapes\AuthorizerConfiguration|null,
      *     roleArn: string,
      *     clientToken?: string|null,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     kmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $WorkflowArn
  * @property Shapes\DefinitionS3Location $DefinitionS3Location
+ * @property Shapes\Code|null $Code
  * @property string $RoleArn
  * @property string|null $Description
  * @property Shapes\LoggingConfiguration|null $LoggingConfiguration
@@ -20,6 +21,7 @@ class UpdateWorkflowRequest extends Request
      * @param array{
      *     WorkflowArn: string,
      *     DefinitionS3Location: Shapes\DefinitionS3Location,
+     *     Code?: Shapes\Code|null,
      *     RoleArn: string,
      *     Description?: string|null,
      *     LoggingConfiguration?: Shapes\LoggingConfiguration|null,

@@ -11,7 +11,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'CoinbaseCDP'|'StripePrivy' $type
  * @property list<Shapes\CredentialsProviderConfiguration> $credentialProviderConfigurations
  * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property 'CREATING'|'UPDATING'|'DELETING'|'READY'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED' $status
+ * @property 'CREATING'|'UPDATING'|'DELETING'|'READY'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED'|'AWS_MARKETPLACE_SUBSCRIPTION_REQUIRED'|'PENDING_AUTHENTICATION'|'PROVISIONING'|'AUTHENTICATION_EXPIRED'|'AUTHENTICATION_FAILED' $status
+ * @property string|null $authorizationUrl
  */
 class UpdatePaymentConnectorResponse extends Response
 {

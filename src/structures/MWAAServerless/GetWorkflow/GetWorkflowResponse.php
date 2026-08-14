@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $EngineVersion
  * @property 'READY'|'DELETING'|null $WorkflowStatus
  * @property Shapes\DefinitionS3Location|null $DefinitionS3Location
+ * @property Shapes\Code|null $Code
+ * @property \Aws\Api\DateTimeResult|null $CodeSnapshottedAt
  * @property Shapes\ScheduleConfiguration|null $ScheduleConfiguration
  * @property string|null $RoleArn
  * @property Shapes\NetworkConfiguration|null $NetworkConfiguration

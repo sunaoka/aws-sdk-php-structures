@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $lastUpdatedAt
  * @property string $roleArn
- * @property Shapes\NetworkConfiguration $networkConfiguration
+ * @property Shapes\NetworkConfiguration|null $networkConfiguration
  * @property 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING' $status
  * @property Shapes\LifecycleConfiguration $lifecycleConfiguration
  * @property string|null $failureReason

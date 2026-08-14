@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $paymentManagerArn
  * @property string $paymentSessionId
  * @property string $paymentInstrumentId
- * @property 'CRYPTO_X402' $paymentType
+ * @property 'CRYPTO_X402'|'MPP' $paymentType
  * @property Shapes\PaymentInput $paymentInput
  * @property string|null $clientToken
  */
@@ -23,7 +23,7 @@ class ProcessPaymentRequest extends Request
      *     paymentManagerArn: string,
      *     paymentSessionId: string,
      *     paymentInstrumentId: string,
-     *     paymentType: 'CRYPTO_X402',
+     *     paymentType: 'CRYPTO_X402'|'MPP',
      *     paymentInput: Shapes\PaymentInput,
      *     clientToken?: string|null
      * } $args

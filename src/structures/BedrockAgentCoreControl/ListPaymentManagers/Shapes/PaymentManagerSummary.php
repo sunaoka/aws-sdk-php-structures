@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CREATING'|'UPDATING'|'DELETING'|'READY'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED' $status
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult $lastUpdatedAt
+ * @property string|null $kmsKeyArn
  */
 class PaymentManagerSummary extends Shape
 {
@@ -27,7 +28,8 @@ class PaymentManagerSummary extends Shape
      *     roleArn: string,
      *     status: 'CREATING'|'UPDATING'|'DELETING'|'READY'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED',
      *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     lastUpdatedAt: \Aws\Api\DateTimeResult
+     *     lastUpdatedAt: \Aws\Api\DateTimeResult,
+     *     kmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)
