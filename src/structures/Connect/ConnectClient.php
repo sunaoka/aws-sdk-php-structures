@@ -49,6 +49,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use CreateDataTableAttribute\CreateDataTableAttributeTrait;
     use CreateEmailAddress\CreateEmailAddressTrait;
     use CreateEvaluationForm\CreateEvaluationFormTrait;
+    use CreateExtractionDefinition\CreateExtractionDefinitionTrait;
     use CreateHoursOfOperation\CreateHoursOfOperationTrait;
     use CreateHoursOfOperationOverride\CreateHoursOfOperationOverrideTrait;
     use CreateInstance\CreateInstanceTrait;
@@ -89,6 +90,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DeleteDataTableAttribute\DeleteDataTableAttributeTrait;
     use DeleteEmailAddress\DeleteEmailAddressTrait;
     use DeleteEvaluationForm\DeleteEvaluationFormTrait;
+    use DeleteExtractionDefinition\DeleteExtractionDefinitionTrait;
     use DeleteHoursOfOperation\DeleteHoursOfOperationTrait;
     use DeleteHoursOfOperationOverride\DeleteHoursOfOperationOverrideTrait;
     use DeleteInstance\DeleteInstanceTrait;
@@ -128,6 +130,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DescribeDataTableAttribute\DescribeDataTableAttributeTrait;
     use DescribeEmailAddress\DescribeEmailAddressTrait;
     use DescribeEvaluationForm\DescribeEvaluationFormTrait;
+    use DescribeExtractionDefinition\DescribeExtractionDefinitionTrait;
     use DescribeHoursOfOperation\DescribeHoursOfOperationTrait;
     use DescribeHoursOfOperationOverride\DescribeHoursOfOperationOverrideTrait;
     use DescribeInstance\DescribeInstanceTrait;
@@ -212,6 +215,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ListEntitySecurityProfiles\ListEntitySecurityProfilesTrait;
     use ListEvaluationFormVersions\ListEvaluationFormVersionsTrait;
     use ListEvaluationForms\ListEvaluationFormsTrait;
+    use ListExtractionDefinitions\ListExtractionDefinitionsTrait;
     use ListFlowAssociations\ListFlowAssociationsTrait;
     use ListHoursOfOperationOverrides\ListHoursOfOperationOverridesTrait;
     use ListHoursOfOperations\ListHoursOfOperationsTrait;
@@ -345,6 +349,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use UpdateDataTablePrimaryValues\UpdateDataTablePrimaryValuesTrait;
     use UpdateEmailAddressMetadata\UpdateEmailAddressMetadataTrait;
     use UpdateEvaluationForm\UpdateEvaluationFormTrait;
+    use UpdateExtractionDefinition\UpdateExtractionDefinitionTrait;
     use UpdateHoursOfOperation\UpdateHoursOfOperationTrait;
     use UpdateHoursOfOperationOverride\UpdateHoursOfOperationOverrideTrait;
     use UpdateInstanceAttribute\UpdateInstanceAttributeTrait;

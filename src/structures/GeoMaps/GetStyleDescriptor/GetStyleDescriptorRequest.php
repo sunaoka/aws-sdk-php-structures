@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'All'|'Congestion'|null $Traffic
  * @property list<'Transit'|'Truck'>|null $TravelModes
  * @property 'Buildings3D'|null $Buildings
+ * @property 'Off'|'VerySparse'|'Sparse'|'Default'|'Dense'|'VeryDense'|null $PoiDensity
+ * @property list<'FoodAndDrink'|'Entertainment'|'SightsAndMuseums'|'Transportation'|'Accommodations'|'LeisureAndOutdoor'|'Shopping'|'BusinessAndServices'|'FacilitiesAndBuildings'>|null $PoiCategories
  * @property string|null $Key
  */
 class GetStyleDescriptorRequest extends Request
@@ -27,6 +29,8 @@ class GetStyleDescriptorRequest extends Request
      *     Traffic?: 'All'|'Congestion'|null,
      *     TravelModes?: list<'Transit'|'Truck'>|null,
      *     Buildings?: 'Buildings3D'|null,
+     *     PoiDensity?: 'Off'|'VerySparse'|'Sparse'|'Default'|'Dense'|'VeryDense'|null,
+     *     PoiCategories?: list<'FoodAndDrink'|'Entertainment'|'SightsAndMuseums'|'Transportation'|'Accommodations'|'LeisureAndOutdoor'|'Shopping'|'BusinessAndServices'|'FacilitiesAndBuildings'>|null,
      *     Key?: string|null
      * } $args
      */

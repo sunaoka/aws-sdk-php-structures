@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $RuleId
  * @property string $RuleArn
- * @property 'OnPostCallAnalysisAvailable'|'OnRealTimeCallAnalysisAvailable'|'OnRealTimeChatAnalysisAvailable'|'OnPostChatAnalysisAvailable'|'OnEmailAnalysisAvailable'|'OnZendeskTicketCreate'|'OnZendeskTicketStatusUpdate'|'OnSalesforceCaseCreate'|'OnContactEvaluationSubmit'|'OnMetricDataUpdate'|'OnCaseCreate'|'OnCaseUpdate'|'OnSlaBreach'|'OnAlertUpdate'|'OnSchedulePublish'|'OnScheduleUpdate'|'OnScheduleTimeOffRequestActivity' $EventSourceName
+ * @property 'OnPostCallAnalysisAvailable'|'OnRealTimeCallAnalysisAvailable'|'OnRealTimeChatAnalysisAvailable'|'OnPostChatAnalysisAvailable'|'OnAfterCallWorkAvailable'|'OnAfterChatWorkAvailable'|'OnEmailAnalysisAvailable'|'OnZendeskTicketCreate'|'OnZendeskTicketStatusUpdate'|'OnSalesforceCaseCreate'|'OnContactEvaluationSubmit'|'OnMetricDataUpdate'|'OnCaseCreate'|'OnCaseUpdate'|'OnSlaBreach'|'OnAlertUpdate'|'OnSchedulePublish'|'OnScheduleUpdate'|'OnScheduleTimeOffRequestActivity' $EventSourceName
  * @property 'DRAFT'|'PUBLISHED' $PublishStatus
  * @property list<'GenerativeAI'>|null $RuleCapabilityTiers
  * @property list<ActionSummary> $ActionSummaries
@@ -22,7 +22,7 @@ class RuleSummary extends Shape
      *     Name: string,
      *     RuleId: string,
      *     RuleArn: string,
-     *     EventSourceName: 'OnPostCallAnalysisAvailable'|'OnRealTimeCallAnalysisAvailable'|'OnRealTimeChatAnalysisAvailable'|'OnPostChatAnalysisAvailable'|'OnEmailAnalysisAvailable'|'OnZendeskTicketCreate'|'OnZendeskTicketStatusUpdate'|'OnSalesforceCaseCreate'|'OnContactEvaluationSubmit'|'OnMetricDataUpdate'|'OnCaseCreate'|'OnCaseUpdate'|'OnSlaBreach'|'OnAlertUpdate'|'OnSchedulePublish'|'OnScheduleUpdate'|'OnScheduleTimeOffRequestActivity',
+     *     EventSourceName: 'OnPostCallAnalysisAvailable'|'OnRealTimeCallAnalysisAvailable'|'OnRealTimeChatAnalysisAvailable'|'OnPostChatAnalysisAvailable'|'OnAfterCallWorkAvailable'|'OnAfterChatWorkAvailable'|'OnEmailAnalysisAvailable'|'OnZendeskTicketCreate'|'OnZendeskTicketStatusUpdate'|'OnSalesforceCaseCreate'|'OnContactEvaluationSubmit'|'OnMetricDataUpdate'|'OnCaseCreate'|'OnCaseUpdate'|'OnSlaBreach'|'OnAlertUpdate'|'OnSchedulePublish'|'OnScheduleUpdate'|'OnScheduleTimeOffRequestActivity',
      *     PublishStatus: 'DRAFT'|'PUBLISHED',
      *     RuleCapabilityTiers?: list<'GenerativeAI'>|null,
      *     ActionSummaries: list<ActionSummary>,

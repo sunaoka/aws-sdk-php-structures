@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\AgenticRetrieveConfiguration $agenticRetrieveConfiguration
  * @property bool|null $generateResponse
+ * @property Shapes\AgenticRetrieveMemoryConfiguration|null $memoryConfiguration
  * @property list<Shapes\AgenticRetrieveMessage> $messages
  * @property string|null $nextToken
  * @property Shapes\AgenticRetrievePolicyConfiguration|null $policyConfiguration
@@ -19,6 +20,7 @@ class AgenticRetrieveStreamRequest extends Request
      * @param array{
      *     agenticRetrieveConfiguration: Shapes\AgenticRetrieveConfiguration,
      *     generateResponse?: bool|null,
+     *     memoryConfiguration?: Shapes\AgenticRetrieveMemoryConfiguration|null,
      *     messages: list<Shapes\AgenticRetrieveMessage>,
      *     nextToken?: string|null,
      *     policyConfiguration?: Shapes\AgenticRetrievePolicyConfiguration|null,

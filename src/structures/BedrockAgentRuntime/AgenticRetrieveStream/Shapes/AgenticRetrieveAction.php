@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property AgenticRetrieveFullDocExpansionDetails|null $fullDocumentExpansion
+ * @property AgenticRetrieveMemoryRetrieveDetails|null $memoryRetrieve
  * @property AgenticRetrieveActionDetails|null $retrieve
  */
 class AgenticRetrieveAction extends Shape
@@ -13,6 +14,7 @@ class AgenticRetrieveAction extends Shape
     /**
      * @param array{
      *     fullDocumentExpansion?: AgenticRetrieveFullDocExpansionDetails|null,
+     *     memoryRetrieve?: AgenticRetrieveMemoryRetrieveDetails|null,
      *     retrieve?: AgenticRetrieveActionDetails|null
      * } $args
      */

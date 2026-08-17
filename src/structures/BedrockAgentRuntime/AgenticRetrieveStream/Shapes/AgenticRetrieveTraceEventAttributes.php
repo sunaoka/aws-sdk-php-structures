@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<AgenticRetrieveSourceMetadata>|null $retrievalMetadata
  * @property list<AgenticRetrieveTraceResultItem>|null $retrievalResponse
  * @property 'IN_PROGRESS'|'SUCCEEDED'|'FAILED' $status
- * @property 'Planning'|'Retrieval'|'SpeculativeRetrieval'|'FullDocumentExpansion' $step
+ * @property 'Planning'|'Retrieval'|'SpeculativeRetrieval'|'FullDocumentExpansion'|'SessionHistoryLoad' $step
  * @property list<AgenticRetrieveWarning>|null $warnings
  */
 class AgenticRetrieveTraceEventAttributes extends Shape
@@ -24,7 +24,7 @@ class AgenticRetrieveTraceEventAttributes extends Shape
      *     retrievalMetadata?: list<AgenticRetrieveSourceMetadata>|null,
      *     retrievalResponse?: list<AgenticRetrieveTraceResultItem>|null,
      *     status: 'IN_PROGRESS'|'SUCCEEDED'|'FAILED',
-     *     step: 'Planning'|'Retrieval'|'SpeculativeRetrieval'|'FullDocumentExpansion',
+     *     step: 'Planning'|'Retrieval'|'SpeculativeRetrieval'|'FullDocumentExpansion'|'SessionHistoryLoad',
      *     warnings?: list<AgenticRetrieveWarning>|null
      * } $args
      */

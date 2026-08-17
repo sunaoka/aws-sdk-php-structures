@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $datasetName
  * @property string|null $description
  * @property Shapes\DataSourceType $source
- * @property 'AGENTCORE_EVALUATION_PREDEFINED_V1'|'AGENTCORE_EVALUATION_SIMULATED_V1' $schemaType
+ * @property 'AGENTCORE_EVALUATION_PREDEFINED_V1'|'AGENTCORE_EVALUATION_SIMULATED_V1'|'GENERIC_EVALUATION_PREDEFINED_V1' $schemaType
  * @property string|null $kmsKeyArn
  * @property array<string, string>|null $tags
  */
@@ -21,7 +21,7 @@ class CreateDatasetRequest extends Request
      *     datasetName: string,
      *     description?: string|null,
      *     source: Shapes\DataSourceType,
-     *     schemaType: 'AGENTCORE_EVALUATION_PREDEFINED_V1'|'AGENTCORE_EVALUATION_SIMULATED_V1',
+     *     schemaType: 'AGENTCORE_EVALUATION_PREDEFINED_V1'|'AGENTCORE_EVALUATION_SIMULATED_V1'|'GENERIC_EVALUATION_PREDEFINED_V1',
      *     kmsKeyArn?: string|null,
      *     tags?: array<string, string>|null
      * } $args

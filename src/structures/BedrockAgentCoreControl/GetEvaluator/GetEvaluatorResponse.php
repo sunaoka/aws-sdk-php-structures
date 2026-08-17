@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $evaluatorName
  * @property string|null $description
  * @property Shapes\EvaluatorConfig $evaluatorConfig
+ * @property 'Builtin'|'ThirdParty'|'Custom'|'CustomCode'|'CustomDerived'|null $evaluatorType
+ * @property 'AWS'|'DeepEval'|'AutoEval'|'Custom'|null $provider
  * @property 'TOOL_CALL'|'TRACE'|'SESSION' $level
  * @property 'ACTIVE'|'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'DELETING' $status
  * @property \Aws\Api\DateTimeResult $createdAt
