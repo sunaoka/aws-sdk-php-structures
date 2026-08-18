@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DISABLED'|'ENABLED'|null $Id3Behavior
  * @property 'NO_PASSTHROUGH'|'PASSTHROUGH'|null $KlvBehavior
  * @property 'NO_PASSTHROUGH'|'PASSTHROUGH'|null $NielsenId3Behavior
- * @property 'NONE'|'SCTE_35_WITHOUT_SEGMENTATION'|null $Scte35Type
+ * @property 'NONE'|'SCTE_35_WITHOUT_SEGMENTATION'|'SCTE_35_WITHOUT_IDR'|null $Scte35Type
  * @property int|null $SegmentLength
  * @property 'MILLISECONDS'|'SECONDS'|null $SegmentLengthUnits
  * @property 'NONE'|'PRIV'|'TDRL'|null $TimedMetadataId3Frame
@@ -25,7 +25,7 @@ class MediaPackageV2GroupSettings extends Shape
      *     Id3Behavior?: 'DISABLED'|'ENABLED'|null,
      *     KlvBehavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH'|null,
      *     NielsenId3Behavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH'|null,
-     *     Scte35Type?: 'NONE'|'SCTE_35_WITHOUT_SEGMENTATION'|null,
+     *     Scte35Type?: 'NONE'|'SCTE_35_WITHOUT_SEGMENTATION'|'SCTE_35_WITHOUT_IDR'|null,
      *     SegmentLength?: int|null,
      *     SegmentLengthUnits?: 'MILLISECONDS'|'SECONDS'|null,
      *     TimedMetadataId3Frame?: 'NONE'|'PRIV'|'TDRL'|null,

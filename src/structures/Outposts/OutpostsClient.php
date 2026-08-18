@@ -8,6 +8,7 @@ class OutpostsClient extends \Aws\Outposts\OutpostsClient
     use CancelOrder\CancelOrderTrait;
     use CreateOrder\CreateOrderTrait;
     use CreateOutpost\CreateOutpostTrait;
+    use CreatePrivateConnectivityConfig\CreatePrivateConnectivityConfigTrait;
     use CreateQuote\CreateQuoteTrait;
     use CreateRenewal\CreateRenewalTrait;
     use CreateSite\CreateSiteTrait;
@@ -22,6 +23,7 @@ class OutpostsClient extends \Aws\Outposts\OutpostsClient
     use GetOutpostBillingInformation\GetOutpostBillingInformationTrait;
     use GetOutpostInstanceTypes\GetOutpostInstanceTypesTrait;
     use GetOutpostSupportedInstanceTypes\GetOutpostSupportedInstanceTypesTrait;
+    use GetPrivateConnectivityConfig\GetPrivateConnectivityConfigTrait;
     use GetQuote\GetQuoteTrait;
     use GetRenewalPricing\GetRenewalPricingTrait;
     use GetSite\GetSiteTrait;

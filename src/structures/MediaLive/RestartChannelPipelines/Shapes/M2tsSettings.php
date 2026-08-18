@@ -43,7 +43,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $ProgramNum
  * @property 'CBR'|'VBR'|null $RateMode
  * @property string|null $Scte27Pids
- * @property 'NONE'|'PASSTHROUGH'|null $Scte35Control
+ * @property 'NONE'|'PASSTHROUGH'|'SCTE_35_WITHOUT_IDR'|null $Scte35Control
  * @property string|null $Scte35Pid
  * @property double|null $Scte35PrerollPullupMilliseconds
  * @property 'EBP'|'EBP_LEGACY'|'NONE'|'PSI_SEGSTART'|'RAI_ADAPT'|'RAI_SEGSTART'|null $SegmentationMarkers
@@ -96,7 +96,7 @@ class M2tsSettings extends Shape
      *     ProgramNum?: int|null,
      *     RateMode?: 'CBR'|'VBR'|null,
      *     Scte27Pids?: string|null,
-     *     Scte35Control?: 'NONE'|'PASSTHROUGH'|null,
+     *     Scte35Control?: 'NONE'|'PASSTHROUGH'|'SCTE_35_WITHOUT_IDR'|null,
      *     Scte35Pid?: string|null,
      *     Scte35PrerollPullupMilliseconds?: double|null,
      *     SegmentationMarkers?: 'EBP'|'EBP_LEGACY'|'NONE'|'PSI_SEGSTART'|'RAI_ADAPT'|'RAI_SEGSTART'|null,

@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'NO_PASSTHROUGH'|'PASSTHROUGH'|null $NielsenId3Behavior
  * @property 'CONFIGURED_PCR_PERIOD'|'PCR_EVERY_PES_PACKET'|null $PcrControl
  * @property int|null $PcrPeriod
- * @property 'NONE'|'PASSTHROUGH'|null $Scte35Control
+ * @property 'NONE'|'PASSTHROUGH'|'SCTE_35_WITHOUT_IDR'|null $Scte35Control
  * @property double|null $Scte35PrerollPullupMilliseconds
  */
 class MultiplexM2tsSettings extends Shape
@@ -36,7 +36,7 @@ class MultiplexM2tsSettings extends Shape
      *     NielsenId3Behavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH'|null,
      *     PcrControl?: 'CONFIGURED_PCR_PERIOD'|'PCR_EVERY_PES_PACKET'|null,
      *     PcrPeriod?: int|null,
-     *     Scte35Control?: 'NONE'|'PASSTHROUGH'|null,
+     *     Scte35Control?: 'NONE'|'PASSTHROUGH'|'SCTE_35_WITHOUT_IDR'|null,
      *     Scte35PrerollPullupMilliseconds?: double|null
      * } $args
      */
