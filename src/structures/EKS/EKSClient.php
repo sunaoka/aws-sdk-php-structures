@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\EKS;
 
 class EKSClient extends \Aws\EKS\EKSClient
 {
+    use ActivateCertificateAuthority\ActivateCertificateAuthorityTrait;
     use AssociateAccessPolicy\AssociateAccessPolicyTrait;
     use AssociateEncryptionConfig\AssociateEncryptionConfigTrait;
     use AssociateIdentityProviderConfig\AssociateIdentityProviderConfigTrait;
@@ -11,6 +12,7 @@ class EKSClient extends \Aws\EKS\EKSClient
     use CreateAccessEntry\CreateAccessEntryTrait;
     use CreateAddon\CreateAddonTrait;
     use CreateCapability\CreateCapabilityTrait;
+    use CreateCertificateAuthority\CreateCertificateAuthorityTrait;
     use CreateCluster\CreateClusterTrait;
     use CreateEksAnywhereSubscription\CreateEksAnywhereSubscriptionTrait;
     use CreateFargateProfile\CreateFargateProfileTrait;
@@ -19,6 +21,7 @@ class EKSClient extends \Aws\EKS\EKSClient
     use DeleteAccessEntry\DeleteAccessEntryTrait;
     use DeleteAddon\DeleteAddonTrait;
     use DeleteCapability\DeleteCapabilityTrait;
+    use DeleteCertificateAuthority\DeleteCertificateAuthorityTrait;
     use DeleteCluster\DeleteClusterTrait;
     use DeleteEksAnywhereSubscription\DeleteEksAnywhereSubscriptionTrait;
     use DeleteFargateProfile\DeleteFargateProfileTrait;
@@ -30,6 +33,7 @@ class EKSClient extends \Aws\EKS\EKSClient
     use DescribeAddonConfiguration\DescribeAddonConfigurationTrait;
     use DescribeAddonVersions\DescribeAddonVersionsTrait;
     use DescribeCapability\DescribeCapabilityTrait;
+    use DescribeCertificateAuthority\DescribeCertificateAuthorityTrait;
     use DescribeCluster\DescribeClusterTrait;
     use DescribeClusterVersions\DescribeClusterVersionsTrait;
     use DescribeEksAnywhereSubscription\DescribeEksAnywhereSubscriptionTrait;
@@ -47,6 +51,7 @@ class EKSClient extends \Aws\EKS\EKSClient
     use ListAddons\ListAddonsTrait;
     use ListAssociatedAccessPolicies\ListAssociatedAccessPoliciesTrait;
     use ListCapabilities\ListCapabilitiesTrait;
+    use ListCertificateAuthorities\ListCertificateAuthoritiesTrait;
     use ListClusters\ListClustersTrait;
     use ListEksAnywhereSubscriptions\ListEksAnywhereSubscriptionsTrait;
     use ListFargateProfiles\ListFargateProfilesTrait;

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $memoryExecutionRoleArn
  * @property Shapes\ModifyMemoryStrategies|null $memoryStrategies
  * @property list<Shapes\IndexedKey>|null $addIndexedKeys
+ * @property list<Shapes\NamespaceKeyEntry>|null $namespaceKeys
  * @property Shapes\StreamDeliveryResources|null $streamDeliveryResources
  */
 class UpdateMemoryRequest extends Request
@@ -25,6 +26,7 @@ class UpdateMemoryRequest extends Request
      *     memoryExecutionRoleArn?: string|null,
      *     memoryStrategies?: Shapes\ModifyMemoryStrategies|null,
      *     addIndexedKeys?: list<Shapes\IndexedKey>|null,
+     *     namespaceKeys?: list<Shapes\NamespaceKeyEntry>|null,
      *     streamDeliveryResources?: Shapes\StreamDeliveryResources|null
      * } $args
      */

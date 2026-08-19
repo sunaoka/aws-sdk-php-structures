@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $namespaceArn
  * @property string|null $namespaceId
  * @property string|null $namespaceName
+ * @property S3TablePublishStatus|null $s3TablePublishStatus
  * @property 'AVAILABLE'|'MODIFYING'|'DELETING'|null $status
  */
 class NamespaceShape extends Shape
@@ -39,6 +40,7 @@ class NamespaceShape extends Shape
      *     namespaceArn?: string|null,
      *     namespaceId?: string|null,
      *     namespaceName?: string|null,
+     *     s3TablePublishStatus?: S3TablePublishStatus|null,
      *     status?: 'AVAILABLE'|'MODIFYING'|'DELETING'|null
      * } $args
      */

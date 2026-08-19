@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property Conversational|null $conversational
  * @property MemoryDocument|null $blob
+ * @property MemoryJsonData|null $json
  */
 class PayloadType extends Shape
 {
     /**
      * @param array{
      *     conversational?: Conversational|null,
-     *     blob?: MemoryDocument|null
+     *     blob?: MemoryDocument|null,
+     *     json?: MemoryJsonData|null
      * } $args
      */
     public function __construct(array $args = [])

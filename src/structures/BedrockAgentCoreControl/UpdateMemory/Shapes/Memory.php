@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property list<MemoryStrategy>|null $strategies
  * @property list<IndexedKey>|null $indexedKeys
+ * @property list<NamespaceKeyEntry>|null $namespaceKeys
  * @property StreamDeliveryResources|null $streamDeliveryResources
  * @property string|null $managedByResourceArn
  */
@@ -38,6 +39,7 @@ class Memory extends Shape
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     strategies?: list<MemoryStrategy>|null,
      *     indexedKeys?: list<IndexedKey>|null,
+     *     namespaceKeys?: list<NamespaceKeyEntry>|null,
      *     streamDeliveryResources?: StreamDeliveryResources|null,
      *     managedByResourceArn?: string|null
      * } $args

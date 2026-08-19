@@ -11,8 +11,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $LastSuccessfulDeliveryTime
  * @property \Aws\Api\DateTimeResult|null $LastFailureTime
  * @property string|null $LastFailureMessage
- * @property 's3'|'cloudwatch'|null $LogDestinationType
+ * @property 's3'|'cloudwatch'|'s3table'|null $LogDestinationType
  * @property list<string>|null $LogExports
+ * @property Shapes\S3TablePublishStatus|null $S3Tables
  */
 class DisableLoggingResponse extends Response
 {
