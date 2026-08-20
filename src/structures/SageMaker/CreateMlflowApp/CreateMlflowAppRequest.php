@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $ArtifactStoreUri
  * @property string $RoleArn
+ * @property string|null $KmsKeyId
  * @property 'AutoModelRegistrationEnabled'|'AutoModelRegistrationDisabled'|null $ModelRegistrationMode
  * @property string|null $WeeklyMaintenanceWindowStart
  * @property 'ENABLED'|'DISABLED'|null $AccountDefaultStatus
@@ -21,6 +22,7 @@ class CreateMlflowAppRequest extends Request
      *     Name: string,
      *     ArtifactStoreUri: string,
      *     RoleArn: string,
+     *     KmsKeyId?: string|null,
      *     ModelRegistrationMode?: 'AutoModelRegistrationEnabled'|'AutoModelRegistrationDisabled'|null,
      *     WeeklyMaintenanceWindowStart?: string|null,
      *     AccountDefaultStatus?: 'ENABLED'|'DISABLED'|null,

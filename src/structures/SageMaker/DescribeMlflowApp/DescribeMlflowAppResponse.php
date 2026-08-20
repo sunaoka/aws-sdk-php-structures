@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ArtifactStoreUri
  * @property string|null $MlflowVersion
  * @property string|null $RoleArn
+ * @property string|null $KmsKeyId
  * @property 'Creating'|'Created'|'CreateFailed'|'Updating'|'Updated'|'UpdateFailed'|'Deleting'|'DeleteFailed'|'Deleted'|null $Status
  * @property 'AutoModelRegistrationEnabled'|'AutoModelRegistrationDisabled'|null $ModelRegistrationMode
  * @property 'ENABLED'|'DISABLED'|null $AccountDefaultStatus

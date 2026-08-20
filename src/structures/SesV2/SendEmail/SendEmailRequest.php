@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $EndpointId
  * @property string|null $TenantName
  * @property Shapes\ListManagementOptions|null $ListManagementOptions
+ * @property Shapes\ConfigurationOverrides|null $ConfigurationOverrides
  */
 class SendEmailRequest extends Request
 {
@@ -33,7 +34,8 @@ class SendEmailRequest extends Request
      *     ConfigurationSetName?: string|null,
      *     EndpointId?: string|null,
      *     TenantName?: string|null,
-     *     ListManagementOptions?: Shapes\ListManagementOptions|null
+     *     ListManagementOptions?: Shapes\ListManagementOptions|null,
+     *     ConfigurationOverrides?: Shapes\ConfigurationOverrides|null
      * } $args
      */
     public function __construct(array $args)

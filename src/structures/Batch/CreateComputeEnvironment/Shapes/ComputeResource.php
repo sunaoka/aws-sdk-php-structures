@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Batch\CreateComputeEnvironment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'EC2'|'SPOT'|'FARGATE'|'FARGATE_SPOT' $type
+ * @property 'EC2'|'SPOT'|'FARGATE'|'FARGATE_SPOT'|'ECS_MANAGED_INSTANCES' $type
  * @property 'BEST_FIT'|'BEST_FIT_PROGRESSIVE'|'BEST_FIT_PROGRESSIVE_ORDERED'|'SPOT_CAPACITY_OPTIMIZED'|'SPOT_PRICE_CAPACITY_OPTIMIZED'|'SPOT_CAPACITY_OPTIMIZED_PRIORITIZED'|null $allocationStrategy
  * @property int|null $minvCpus
  * @property int $maxvCpus
@@ -23,12 +23,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LaunchTemplateSpecification|null $launchTemplate
  * @property list<Ec2Configuration>|null $ec2Configuration
  * @property ComputeScalingPolicy|null $scalingPolicy
+ * @property ManagedInstancesProvider|null $managedInstancesProvider
+ * @property array<string, string>|null $capacityTags
  */
 class ComputeResource extends Shape
 {
     /**
      * @param array{
-     *     type: 'EC2'|'SPOT'|'FARGATE'|'FARGATE_SPOT',
+     *     type: 'EC2'|'SPOT'|'FARGATE'|'FARGATE_SPOT'|'ECS_MANAGED_INSTANCES',
      *     allocationStrategy?: 'BEST_FIT'|'BEST_FIT_PROGRESSIVE'|'BEST_FIT_PROGRESSIVE_ORDERED'|'SPOT_CAPACITY_OPTIMIZED'|'SPOT_PRICE_CAPACITY_OPTIMIZED'|'SPOT_CAPACITY_OPTIMIZED_PRIORITIZED'|null,
      *     minvCpus?: int|null,
      *     maxvCpus: int,
@@ -45,7 +47,9 @@ class ComputeResource extends Shape
      *     spotIamFleetRole?: string|null,
      *     launchTemplate?: LaunchTemplateSpecification|null,
      *     ec2Configuration?: list<Ec2Configuration>|null,
-     *     scalingPolicy?: ComputeScalingPolicy|null
+     *     scalingPolicy?: ComputeScalingPolicy|null,
+     *     managedInstancesProvider?: ManagedInstancesProvider|null,
+     *     capacityTags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

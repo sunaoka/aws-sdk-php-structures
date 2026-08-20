@@ -12,7 +12,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\PartnerAppMaintenanceConfig|null $MaintenanceConfig
  * @property string $Tier
  * @property Shapes\PartnerAppConfig|null $ApplicationConfig
- * @property 'IAM' $AuthType
+ * @property Shapes\IdcConfigInput|null $IdcConfig
+ * @property 'IAM'|'IDC' $AuthType
  * @property bool|null $EnableIamSessionBasedIdentity
  * @property bool|null $EnableAutoMinorVersionUpgrade
  * @property string|null $ClientToken
@@ -29,7 +30,8 @@ class CreatePartnerAppRequest extends Request
      *     MaintenanceConfig?: Shapes\PartnerAppMaintenanceConfig|null,
      *     Tier: string,
      *     ApplicationConfig?: Shapes\PartnerAppConfig|null,
-     *     AuthType: 'IAM',
+     *     IdcConfig?: Shapes\IdcConfigInput|null,
+     *     AuthType: 'IAM'|'IDC',
      *     EnableIamSessionBasedIdentity?: bool|null,
      *     EnableAutoMinorVersionUpgrade?: bool|null,
      *     ClientToken?: string|null,

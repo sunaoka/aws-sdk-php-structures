@@ -18,12 +18,13 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Tier
  * @property string|null $Version
  * @property Shapes\PartnerAppConfig|null $ApplicationConfig
- * @property 'IAM'|null $AuthType
+ * @property 'IAM'|'IDC'|null $AuthType
  * @property bool|null $EnableIamSessionBasedIdentity
  * @property Shapes\ErrorInfo|null $Error
  * @property bool|null $EnableAutoMinorVersionUpgrade
  * @property \Aws\Api\DateTimeResult|null $CurrentVersionEolDate
  * @property Shapes\AvailableUpgrade|null $AvailableUpgrade
+ * @property Shapes\IdcConfigOutput|null $IdcConfig
  */
 class DescribePartnerAppResponse extends Response
 {

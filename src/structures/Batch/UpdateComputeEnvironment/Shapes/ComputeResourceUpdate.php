@@ -20,9 +20,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LaunchTemplateSpecification|null $launchTemplate
  * @property list<Ec2Configuration>|null $ec2Configuration
  * @property bool|null $updateToLatestImageVersion
- * @property 'EC2'|'SPOT'|'FARGATE'|'FARGATE_SPOT'|null $type
+ * @property 'EC2'|'SPOT'|'FARGATE'|'FARGATE_SPOT'|'ECS_MANAGED_INSTANCES'|null $type
  * @property string|null $imageId
  * @property ComputeScalingPolicy|null $scalingPolicy
+ * @property UpdateManagedInstancesProviderConfiguration|null $managedInstancesProvider
+ * @property array<string, string>|null $capacityTags
  */
 class ComputeResourceUpdate extends Shape
 {
@@ -43,9 +45,11 @@ class ComputeResourceUpdate extends Shape
      *     launchTemplate?: LaunchTemplateSpecification|null,
      *     ec2Configuration?: list<Ec2Configuration>|null,
      *     updateToLatestImageVersion?: bool|null,
-     *     type?: 'EC2'|'SPOT'|'FARGATE'|'FARGATE_SPOT'|null,
+     *     type?: 'EC2'|'SPOT'|'FARGATE'|'FARGATE_SPOT'|'ECS_MANAGED_INSTANCES'|null,
      *     imageId?: string|null,
-     *     scalingPolicy?: ComputeScalingPolicy|null
+     *     scalingPolicy?: ComputeScalingPolicy|null,
+     *     managedInstancesProvider?: UpdateManagedInstancesProviderConfiguration|null,
+     *     capacityTags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

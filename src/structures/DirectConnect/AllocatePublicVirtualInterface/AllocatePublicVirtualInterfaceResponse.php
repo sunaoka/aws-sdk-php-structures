@@ -32,6 +32,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $awsLogicalDeviceId
  * @property list<Shapes\Tag>|null $tags
  * @property bool|null $siteLinkEnabled
+ * @property int<0, max>|null $prefixPoolAllocatedCountIpv4
+ * @property int<0, max>|null $prefixPoolAllocatedCountIpv6
  * @property string|null $rateLimit
  */
 class AllocatePublicVirtualInterfaceResponse extends Response

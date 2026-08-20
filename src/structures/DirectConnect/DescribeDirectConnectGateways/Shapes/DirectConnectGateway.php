@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ownerAccount
  * @property 'pending'|'available'|'deleting'|'deleted'|null $directConnectGatewayState
  * @property string|null $stateChangeError
+ * @property int<0, max>|null $totalPrefixPoolAllocations
  * @property list<Tag>|null $tags
  */
 class DirectConnectGateway extends Shape
@@ -23,6 +24,7 @@ class DirectConnectGateway extends Shape
      *     ownerAccount?: string|null,
      *     directConnectGatewayState?: 'pending'|'available'|'deleting'|'deleted'|null,
      *     stateChangeError?: string|null,
+     *     totalPrefixPoolAllocations?: int<0, max>|null,
      *     tags?: list<Tag>|null
      * } $args
      */

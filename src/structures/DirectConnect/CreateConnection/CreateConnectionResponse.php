@@ -29,6 +29,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\MacSecKey>|null $macSecKeys
  * @property Shapes\RateLimiterStatus|null $rateLimiterStatus
  * @property bool|null $partnerInterconnectMacSecCapable
+ * @property int<0, max>|null $prefixPoolSizeIpv4
+ * @property int<0, max>|null $prefixPoolSizeIpv6
+ * @property int<0, max>|null $prefixPoolUnallocatedCountIpv4
+ * @property int<0, max>|null $prefixPoolUnallocatedCountIpv6
  */
 class CreateConnectionResponse extends Response
 {

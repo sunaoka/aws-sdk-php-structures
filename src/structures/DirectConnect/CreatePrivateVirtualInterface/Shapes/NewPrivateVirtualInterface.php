@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $directConnectGatewayId
  * @property list<Tag>|null $tags
  * @property bool|null $enableSiteLink
+ * @property int<0, max>|null $prefixPoolAllocatedCountIpv4
+ * @property int<0, max>|null $prefixPoolAllocatedCountIpv6
  * @property string|null $rateLimit
  */
 class NewPrivateVirtualInterface extends Shape
@@ -37,6 +39,8 @@ class NewPrivateVirtualInterface extends Shape
      *     directConnectGatewayId?: string|null,
      *     tags?: list<Tag>|null,
      *     enableSiteLink?: bool|null,
+     *     prefixPoolAllocatedCountIpv4?: int<0, max>|null,
+     *     prefixPoolAllocatedCountIpv6?: int<0, max>|null,
      *     rateLimit?: string|null
      * } $args
      */

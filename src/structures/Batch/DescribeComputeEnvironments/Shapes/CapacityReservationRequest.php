@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Batch\DescribeComputeEnvironments\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string|null $reservationGroupArn
+ * @property string|null $reservationPreference
+ */
+class CapacityReservationRequest extends Shape
+{
+    /**
+     * @param array{
+     *     reservationGroupArn?: string|null,
+     *     reservationPreference?: string|null
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

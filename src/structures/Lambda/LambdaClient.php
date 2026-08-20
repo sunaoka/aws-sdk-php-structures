@@ -24,6 +24,7 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use DeleteFunctionUrlConfig\DeleteFunctionUrlConfigTrait;
     use DeleteLayerVersion\DeleteLayerVersionTrait;
     use DeleteProvisionedConcurrencyConfig\DeleteProvisionedConcurrencyConfigTrait;
+    use DeleteResourcePolicy\DeleteResourcePolicyTrait;
     use GetAccountSettings\GetAccountSettingsTrait;
     use GetAlias\GetAliasTrait;
     use GetCapacityProvider\GetCapacityProviderTrait;
@@ -45,6 +46,7 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use GetLayerVersionPolicy\GetLayerVersionPolicyTrait;
     use GetPolicy\GetPolicyTrait;
     use GetProvisionedConcurrencyConfig\GetProvisionedConcurrencyConfigTrait;
+    use GetResourcePolicy\GetResourcePolicyTrait;
     use GetRuntimeManagementConfig\GetRuntimeManagementConfigTrait;
     use Invoke\InvokeTrait;
     use InvokeWithResponseStream\InvokeWithResponseStreamTrait;
@@ -71,6 +73,7 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use PutFunctionRecursionConfig\PutFunctionRecursionConfigTrait;
     use PutFunctionScalingConfig\PutFunctionScalingConfigTrait;
     use PutProvisionedConcurrencyConfig\PutProvisionedConcurrencyConfigTrait;
+    use PutResourcePolicy\PutResourcePolicyTrait;
     use PutRuntimeManagementConfig\PutRuntimeManagementConfigTrait;
     use RemoveLayerVersionPermission\RemoveLayerVersionPermissionTrait;
     use RemovePermission\RemovePermissionTrait;

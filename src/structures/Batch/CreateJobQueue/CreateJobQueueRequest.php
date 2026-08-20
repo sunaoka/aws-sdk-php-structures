@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int $priority
  * @property list<Shapes\ComputeEnvironmentOrder>|null $computeEnvironmentOrder
  * @property list<Shapes\ServiceEnvironmentOrder>|null $serviceEnvironmentOrder
- * @property 'EKS'|'ECS'|'ECS_FARGATE'|'SAGEMAKER_TRAINING'|null $jobQueueType
+ * @property 'EKS'|'ECS'|'ECS_FARGATE'|'SAGEMAKER_TRAINING'|'ECS_MANAGED_INSTANCES'|null $jobQueueType
  * @property array<string, string>|null $tags
  * @property list<Shapes\JobStateTimeLimitAction>|null $jobStateTimeLimitActions
  */
@@ -25,7 +25,7 @@ class CreateJobQueueRequest extends Request
      *     priority: int,
      *     computeEnvironmentOrder?: list<Shapes\ComputeEnvironmentOrder>|null,
      *     serviceEnvironmentOrder?: list<Shapes\ServiceEnvironmentOrder>|null,
-     *     jobQueueType?: 'EKS'|'ECS'|'ECS_FARGATE'|'SAGEMAKER_TRAINING'|null,
+     *     jobQueueType?: 'EKS'|'ECS'|'ECS_FARGATE'|'SAGEMAKER_TRAINING'|'ECS_MANAGED_INSTANCES'|null,
      *     tags?: array<string, string>|null,
      *     jobStateTimeLimitActions?: list<Shapes\JobStateTimeLimitAction>|null
      * } $args

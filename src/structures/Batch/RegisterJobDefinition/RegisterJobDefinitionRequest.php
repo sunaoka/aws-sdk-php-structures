@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $propagateTags
  * @property Shapes\JobTimeout|null $timeout
  * @property array<string, string>|null $tags
- * @property list<'EC2'|'FARGATE'>|null $platformCapabilities
+ * @property list<'EC2'|'FARGATE'|'MANAGED_INSTANCES'>|null $platformCapabilities
  * @property Shapes\EksProperties|null $eksProperties
  * @property Shapes\EcsProperties|null $ecsProperties
  * @property Shapes\ConsumableResourceProperties|null $consumableResourceProperties
@@ -34,7 +34,7 @@ class RegisterJobDefinitionRequest extends Request
      *     propagateTags?: bool|null,
      *     timeout?: Shapes\JobTimeout|null,
      *     tags?: array<string, string>|null,
-     *     platformCapabilities?: list<'EC2'|'FARGATE'>|null,
+     *     platformCapabilities?: list<'EC2'|'FARGATE'|'MANAGED_INSTANCES'>|null,
      *     eksProperties?: Shapes\EksProperties|null,
      *     ecsProperties?: Shapes\EcsProperties|null,
      *     consumableResourceProperties?: Shapes\ConsumableResourceProperties|null

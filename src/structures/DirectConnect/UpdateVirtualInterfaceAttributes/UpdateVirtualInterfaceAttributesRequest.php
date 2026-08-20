@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $mtu
  * @property bool|null $enableSiteLink
  * @property string|null $virtualInterfaceName
+ * @property int<0, max>|null $prefixPoolAllocatedCountIpv4
+ * @property int<0, max>|null $prefixPoolAllocatedCountIpv6
  * @property string|null $rateLimit
  */
 class UpdateVirtualInterfaceAttributesRequest extends Request
@@ -19,6 +21,8 @@ class UpdateVirtualInterfaceAttributesRequest extends Request
      *     mtu?: int|null,
      *     enableSiteLink?: bool|null,
      *     virtualInterfaceName?: string|null,
+     *     prefixPoolAllocatedCountIpv4?: int<0, max>|null,
+     *     prefixPoolAllocatedCountIpv6?: int<0, max>|null,
      *     rateLimit?: string|null
      * } $args
      */

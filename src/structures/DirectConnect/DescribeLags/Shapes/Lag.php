@@ -26,6 +26,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $macSecCapable
  * @property string|null $encryptionMode
  * @property list<MacSecKey>|null $macSecKeys
+ * @property int<0, max>|null $prefixPoolSizeIpv4
+ * @property int<0, max>|null $prefixPoolSizeIpv6
+ * @property int<0, max>|null $prefixPoolUnallocatedCountIpv4
+ * @property int<0, max>|null $prefixPoolUnallocatedCountIpv6
  * @property RateLimiterStatus|null $rateLimiterStatus
  */
 class Lag extends Shape
@@ -53,6 +57,10 @@ class Lag extends Shape
      *     macSecCapable?: bool|null,
      *     encryptionMode?: string|null,
      *     macSecKeys?: list<MacSecKey>|null,
+     *     prefixPoolSizeIpv4?: int<0, max>|null,
+     *     prefixPoolSizeIpv6?: int<0, max>|null,
+     *     prefixPoolUnallocatedCountIpv4?: int<0, max>|null,
+     *     prefixPoolUnallocatedCountIpv6?: int<0, max>|null,
      *     rateLimiterStatus?: RateLimiterStatus|null
      * } $args
      */

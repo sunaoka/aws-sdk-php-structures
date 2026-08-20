@@ -29,6 +29,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<MacSecKey>|null $macSecKeys
  * @property RateLimiterStatus|null $rateLimiterStatus
  * @property bool|null $partnerInterconnectMacSecCapable
+ * @property int<0, max>|null $prefixPoolSizeIpv4
+ * @property int<0, max>|null $prefixPoolSizeIpv6
+ * @property int<0, max>|null $prefixPoolUnallocatedCountIpv4
+ * @property int<0, max>|null $prefixPoolUnallocatedCountIpv6
  */
 class Connection extends Shape
 {
@@ -57,7 +61,11 @@ class Connection extends Shape
      *     encryptionMode?: string|null,
      *     macSecKeys?: list<MacSecKey>|null,
      *     rateLimiterStatus?: RateLimiterStatus|null,
-     *     partnerInterconnectMacSecCapable?: bool|null
+     *     partnerInterconnectMacSecCapable?: bool|null,
+     *     prefixPoolSizeIpv4?: int<0, max>|null,
+     *     prefixPoolSizeIpv6?: int<0, max>|null,
+     *     prefixPoolUnallocatedCountIpv4?: int<0, max>|null,
+     *     prefixPoolUnallocatedCountIpv6?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

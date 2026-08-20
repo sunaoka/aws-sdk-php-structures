@@ -26,6 +26,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool|null $macSecCapable
  * @property string|null $encryptionMode
  * @property list<Shapes\MacSecKey>|null $macSecKeys
+ * @property int<0, max>|null $prefixPoolSizeIpv4
+ * @property int<0, max>|null $prefixPoolSizeIpv6
+ * @property int<0, max>|null $prefixPoolUnallocatedCountIpv4
+ * @property int<0, max>|null $prefixPoolUnallocatedCountIpv6
  * @property Shapes\RateLimiterStatus|null $rateLimiterStatus
  */
 class CreateLagResponse extends Response
