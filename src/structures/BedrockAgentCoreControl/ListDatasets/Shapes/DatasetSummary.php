@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $description
  * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED' $status
  * @property 'MODIFIED'|'UNMODIFIED'|null $draftStatus
- * @property 'AGENTCORE_EVALUATION_PREDEFINED_V1'|'AGENTCORE_EVALUATION_SIMULATED_V1'|'GENERIC_EVALUATION_PREDEFINED_V1' $schemaType
+ * @property 'AGENTCORE_EVALUATION_PREDEFINED_V1'|'AGENTCORE_EVALUATION_SIMULATED_V1'|'THIRD_PARTY_EVALUATION_V1' $schemaType
  * @property int $exampleCount
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
@@ -26,7 +26,7 @@ class DatasetSummary extends Shape
      *     description?: string|null,
      *     status: 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED',
      *     draftStatus?: 'MODIFIED'|'UNMODIFIED'|null,
-     *     schemaType: 'AGENTCORE_EVALUATION_PREDEFINED_V1'|'AGENTCORE_EVALUATION_SIMULATED_V1'|'GENERIC_EVALUATION_PREDEFINED_V1',
+     *     schemaType: 'AGENTCORE_EVALUATION_PREDEFINED_V1'|'AGENTCORE_EVALUATION_SIMULATED_V1'|'THIRD_PARTY_EVALUATION_V1',
      *     exampleCount: int,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult

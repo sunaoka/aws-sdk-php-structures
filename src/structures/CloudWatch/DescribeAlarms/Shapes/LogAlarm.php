@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PARTIAL_DATA'|'EVALUATION_FAILURE'|'EVALUATION_ERROR'|null $EvaluationState
  * @property int|null $ActionLogLineCount
  * @property string|null $ActionLogLineRoleArn
+ * @property WarmUpConfiguration|null $WarmUpConfiguration
  */
 class LogAlarm extends Shape
 {
@@ -53,7 +54,8 @@ class LogAlarm extends Shape
      *     StateTransitionedTimestamp?: \Aws\Api\DateTimeResult|null,
      *     EvaluationState?: 'PARTIAL_DATA'|'EVALUATION_FAILURE'|'EVALUATION_ERROR'|null,
      *     ActionLogLineCount?: int|null,
-     *     ActionLogLineRoleArn?: string|null
+     *     ActionLogLineRoleArn?: string|null,
+     *     WarmUpConfiguration?: WarmUpConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

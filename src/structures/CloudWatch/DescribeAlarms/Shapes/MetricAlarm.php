@@ -35,6 +35,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PARTIAL_DATA'|'EVALUATION_FAILURE'|'EVALUATION_ERROR'|null $EvaluationState
  * @property \Aws\Api\DateTimeResult|null $StateTransitionedTimestamp
  * @property EvaluationWindow|null $EvaluationWindow
+ * @property WarmUpConfiguration|null $WarmUpConfiguration
  * @property EvaluationCriteria|null $EvaluationCriteria
  * @property int<10, 3600>|null $EvaluationInterval
  */
@@ -72,6 +73,7 @@ class MetricAlarm extends Shape
      *     EvaluationState?: 'PARTIAL_DATA'|'EVALUATION_FAILURE'|'EVALUATION_ERROR'|null,
      *     StateTransitionedTimestamp?: \Aws\Api\DateTimeResult|null,
      *     EvaluationWindow?: EvaluationWindow|null,
+     *     WarmUpConfiguration?: WarmUpConfiguration|null,
      *     EvaluationCriteria?: EvaluationCriteria|null,
      *     EvaluationInterval?: int<10, 3600>|null
      * } $args

@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold'|'LessThanLowerOrGreaterThanUpperThreshold'|'LessThanLowerThreshold'|'GreaterThanUpperThreshold' $ComparisonOperator
  * @property string|null $TreatMissingData
  * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\WarmUpConfiguration|null $WarmUpConfiguration
  */
 class PutLogAlarmRequest extends Request
 {
@@ -39,7 +40,8 @@ class PutLogAlarmRequest extends Request
      *     Threshold: double,
      *     ComparisonOperator: 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold'|'LessThanLowerOrGreaterThanUpperThreshold'|'LessThanLowerThreshold'|'GreaterThanUpperThreshold',
      *     TreatMissingData?: string|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     WarmUpConfiguration?: Shapes\WarmUpConfiguration|null
      * } $args
      */
     public function __construct(array $args)

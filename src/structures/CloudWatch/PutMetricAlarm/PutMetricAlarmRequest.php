@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $ThresholdMetricId
  * @property Shapes\EvaluationWindow|null $EvaluationWindow
+ * @property Shapes\WarmUpConfiguration|null $WarmUpConfiguration
  * @property Shapes\EvaluationCriteria|null $EvaluationCriteria
  * @property int<10, 3600>|null $EvaluationInterval
  */
@@ -58,6 +59,7 @@ class PutMetricAlarmRequest extends Request
      *     Tags?: list<Shapes\Tag>|null,
      *     ThresholdMetricId?: string|null,
      *     EvaluationWindow?: Shapes\EvaluationWindow|null,
+     *     WarmUpConfiguration?: Shapes\WarmUpConfiguration|null,
      *     EvaluationCriteria?: Shapes\EvaluationCriteria|null,
      *     EvaluationInterval?: int<10, 3600>|null
      * } $args
