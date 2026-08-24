@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CANCELED'|'CANCELING'|'COMPLETED'|'CREATED'|'FAILED'|'IN_PROGRESS'|'PENDING'|'TIMED_OUT'|null $status
  * @property string|null $statusReason
  * @property \Aws\Api\DateTimeResult|null $timestamp
+ * @property array<string, string>|null $metadata
  */
 class DeploymentEventDataSummary extends Shape
 {
@@ -19,7 +20,8 @@ class DeploymentEventDataSummary extends Shape
      *     description?: string|null,
      *     status?: 'CANCELED'|'CANCELING'|'COMPLETED'|'CREATED'|'FAILED'|'IN_PROGRESS'|'PENDING'|'TIMED_OUT'|null,
      *     statusReason?: string|null,
-     *     timestamp?: \Aws\Api\DateTimeResult|null
+     *     timestamp?: \Aws\Api\DateTimeResult|null,
+     *     metadata?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

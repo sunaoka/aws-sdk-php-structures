@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property KafkaClusterSaslScramAuthentication|null $SaslScram
  * @property KafkaClusterMTLSAuthentication|null $MTLS
+ * @property KafkaClusterSaslOAuthBearerAuthentication|null $SaslOAuthBearer
  */
 class KafkaClusterClientAuthentication extends Shape
 {
     /**
      * @param array{
      *     SaslScram?: KafkaClusterSaslScramAuthentication|null,
-     *     MTLS?: KafkaClusterMTLSAuthentication|null
+     *     MTLS?: KafkaClusterMTLSAuthentication|null,
+     *     SaslOAuthBearer?: KafkaClusterSaslOAuthBearerAuthentication|null
      * } $args
      */
     public function __construct(array $args = [])

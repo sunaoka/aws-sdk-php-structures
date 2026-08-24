@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $description
  * @property 'ACTIVE'|'INACTIVE'|'DISABLED'|'DELETED'|null $status
  * @property string|null $statusMessage
+ * @property list<AccountConstraint>|null $accountConstraints
  */
 class WorkloadDeploymentPatternDataSummary extends Shape
 {
@@ -25,7 +26,8 @@ class WorkloadDeploymentPatternDataSummary extends Shape
      *     displayName?: string|null,
      *     description?: string|null,
      *     status?: 'ACTIVE'|'INACTIVE'|'DISABLED'|'DELETED'|null,
-     *     statusMessage?: string|null
+     *     statusMessage?: string|null,
+     *     accountConstraints?: list<AccountConstraint>|null
      * } $args
      */
     public function __construct(array $args = [])

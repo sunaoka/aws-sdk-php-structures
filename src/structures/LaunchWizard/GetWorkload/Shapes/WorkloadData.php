@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $workloadName
  * @property string|null $displayName
  * @property 'ACTIVE'|'INACTIVE'|'DISABLED'|'DELETED'|null $status
+ * @property list<AccountConstraint>|null $accountConstraints
  * @property string|null $description
  * @property string|null $documentationUrl
  * @property string|null $iconUrl
@@ -20,6 +21,7 @@ class WorkloadData extends Shape
      *     workloadName?: string|null,
      *     displayName?: string|null,
      *     status?: 'ACTIVE'|'INACTIVE'|'DISABLED'|'DELETED'|null,
+     *     accountConstraints?: list<AccountConstraint>|null,
      *     description?: string|null,
      *     documentationUrl?: string|null,
      *     iconUrl?: string|null,

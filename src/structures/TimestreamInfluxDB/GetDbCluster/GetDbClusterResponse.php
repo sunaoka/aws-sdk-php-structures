@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'INFLUXDB_V2'|'INFLUXDB_V3_CORE'|'INFLUXDB_V3_ENTERPRISE'|null $engineType
  * @property bool|null $publiclyAccessible
  * @property string|null $dbParameterGroupIdentifier
+ * @property string|null $effectiveDbParameterGroupIdentifier
  * @property Shapes\LogDeliveryConfiguration|null $logDeliveryConfiguration
  * @property Shapes\MaintenanceSchedule|null $maintenanceSchedule
  * @property \Aws\Api\DateTimeResult|null $lastMaintenanceTime

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $id
  * @property list<string> $dataEndpoints
  * @property list<Shapes\GetOutput> $outputs
+ * @property string|null $accessRoleArn
  * @property 'CREATING'|'AVAILABLE'|'ACTIVE'|'UPDATING'|'DELETING'|'DELETED'|'ARCHIVED' $status
  * @property Shapes\FeedAssociation|null $association
  * @property array<string, string>|null $tags

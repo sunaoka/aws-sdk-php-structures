@@ -13,6 +13,7 @@ class ElementalInferenceClient extends \Aws\ElementalInference\ElementalInferenc
     use ExportDictionaryEntries\ExportDictionaryEntriesTrait;
     use GetDictionary\GetDictionaryTrait;
     use GetFeed\GetFeedTrait;
+    use GetFixture\GetFixtureTrait;
     use ListDictionaries\ListDictionariesTrait;
     use ListFeeds\ListFeedsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;

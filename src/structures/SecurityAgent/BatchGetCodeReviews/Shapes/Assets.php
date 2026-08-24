@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<DocumentInfo>|null $documents
  * @property list<SourceCodeRepository>|null $sourceCode
  * @property list<IntegratedRepository>|null $integratedRepositories
+ * @property list<TrustedCaCertificate>|null $trustedCaCertificates
  */
 class Assets extends Shape
 {
@@ -19,7 +20,8 @@ class Assets extends Shape
      *     actors?: list<Actor>|null,
      *     documents?: list<DocumentInfo>|null,
      *     sourceCode?: list<SourceCodeRepository>|null,
-     *     integratedRepositories?: list<IntegratedRepository>|null
+     *     integratedRepositories?: list<IntegratedRepository>|null,
+     *     trustedCaCertificates?: list<TrustedCaCertificate>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RealTimeContactAnalysisSegmentEvent|null $Event
  * @property RealTimeContactAnalysisSegmentAttachments|null $Attachments
  * @property RealTimeContactAnalysisSegmentPostContactSummary|null $PostContactSummary
+ * @property RealTimeContactAnalysisSegmentExtractedInformation|null $ExtractedInformation
  */
 class RealtimeContactAnalysisSegment extends Shape
 {
@@ -21,7 +22,8 @@ class RealtimeContactAnalysisSegment extends Shape
      *     Issues?: RealTimeContactAnalysisSegmentIssues|null,
      *     Event?: RealTimeContactAnalysisSegmentEvent|null,
      *     Attachments?: RealTimeContactAnalysisSegmentAttachments|null,
-     *     PostContactSummary?: RealTimeContactAnalysisSegmentPostContactSummary|null
+     *     PostContactSummary?: RealTimeContactAnalysisSegmentPostContactSummary|null,
+     *     ExtractedInformation?: RealTimeContactAnalysisSegmentExtractedInformation|null
      * } $args
      */
     public function __construct(array $args = [])
