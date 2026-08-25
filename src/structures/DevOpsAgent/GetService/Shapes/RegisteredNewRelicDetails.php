@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $accountId
- * @property 'US'|'EU' $region
+ * @property 'US'|'EU'|'JP' $region
  * @property string|null $description
  */
 class RegisteredNewRelicDetails extends Shape
@@ -14,7 +14,7 @@ class RegisteredNewRelicDetails extends Shape
     /**
      * @param array{
      *     accountId: string,
-     *     region: 'US'|'EU',
+     *     region: 'US'|'EU'|'JP',
      *     description?: string|null
      * } $args
      */

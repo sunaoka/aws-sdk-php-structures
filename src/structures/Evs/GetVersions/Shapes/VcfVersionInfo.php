@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'VCF-5.2.1'|'VCF-5.2.2'|'SELF_DEPLOYED' $vcfVersion
  * @property string $status
  * @property string $defaultEsxVersion
- * @property list<'i4i.metal'|'i7i.metal-24xl'> $instanceTypes
+ * @property list<'i4i.metal'|'i7i.metal-24xl'|'i7i.metal-48xl'> $instanceTypes
  */
 class VcfVersionInfo extends Shape
 {
@@ -17,7 +17,7 @@ class VcfVersionInfo extends Shape
      *     vcfVersion: 'VCF-5.2.1'|'VCF-5.2.2'|'SELF_DEPLOYED',
      *     status: string,
      *     defaultEsxVersion: string,
-     *     instanceTypes: list<'i4i.metal'|'i7i.metal-24xl'>
+     *     instanceTypes: list<'i4i.metal'|'i7i.metal-24xl'|'i7i.metal-48xl'>
      * } $args
      */
     public function __construct(array $args)

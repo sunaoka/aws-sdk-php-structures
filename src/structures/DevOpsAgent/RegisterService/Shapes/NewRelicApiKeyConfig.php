@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $apiKey
  * @property string $accountId
- * @property 'US'|'EU' $region
+ * @property 'US'|'EU'|'JP' $region
  * @property list<string>|null $applicationIds
  * @property list<string>|null $entityGuids
  * @property list<string>|null $alertPolicyIds
@@ -18,7 +18,7 @@ class NewRelicApiKeyConfig extends Shape
      * @param array{
      *     apiKey: string,
      *     accountId: string,
-     *     region: 'US'|'EU',
+     *     region: 'US'|'EU'|'JP',
      *     applicationIds?: list<string>|null,
      *     entityGuids?: list<string>|null,
      *     alertPolicyIds?: list<string>|null

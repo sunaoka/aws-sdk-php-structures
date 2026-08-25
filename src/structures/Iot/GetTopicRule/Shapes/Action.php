@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property KafkaAction|null $kafka
  * @property OpenSearchAction|null $openSearch
  * @property LocationAction|null $location
+ * @property InfluxDBAction|null $influxDB
  */
 class Action extends Shape
 {
@@ -55,7 +56,8 @@ class Action extends Shape
      *     http?: HttpAction|null,
      *     kafka?: KafkaAction|null,
      *     openSearch?: OpenSearchAction|null,
-     *     location?: LocationAction|null
+     *     location?: LocationAction|null,
+     *     influxDB?: InfluxDBAction|null
      * } $args
      */
     public function __construct(array $args = [])

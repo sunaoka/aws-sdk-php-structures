@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $statusReason
  * @property HttpUrlDestinationSummary|null $httpUrlSummary
  * @property VpcDestinationSummary|null $vpcDestinationSummary
+ * @property InfluxDBDestinationSummary|null $influxDBSummary
  */
 class TopicRuleDestinationSummary extends Shape
 {
@@ -23,7 +24,8 @@ class TopicRuleDestinationSummary extends Shape
      *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
      *     statusReason?: string|null,
      *     httpUrlSummary?: HttpUrlDestinationSummary|null,
-     *     vpcDestinationSummary?: VpcDestinationSummary|null
+     *     vpcDestinationSummary?: VpcDestinationSummary|null,
+     *     influxDBSummary?: InfluxDBDestinationSummary|null
      * } $args
      */
     public function __construct(array $args = [])

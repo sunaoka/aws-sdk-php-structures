@@ -56,6 +56,7 @@ class DevOpsAgentClient extends \Aws\DevOpsAgent\DevOpsAgentClient
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAgentSpace\UpdateAgentSpaceTrait;
+    use UpdateApprovalAction\UpdateApprovalActionTrait;
     use UpdateAsset\UpdateAssetTrait;
     use UpdateAssetFile\UpdateAssetFileTrait;
     use UpdateAssociation\UpdateAssociationTrait;

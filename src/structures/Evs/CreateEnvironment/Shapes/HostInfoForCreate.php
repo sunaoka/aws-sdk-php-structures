@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $hostName
  * @property string $keyName
- * @property 'i4i.metal'|'i7i.metal-24xl' $instanceType
+ * @property 'i4i.metal'|'i7i.metal-24xl'|'i7i.metal-48xl' $instanceType
  * @property string|null $placementGroupId
  * @property string|null $dedicatedHostId
  */
@@ -17,7 +17,7 @@ class HostInfoForCreate extends Shape
      * @param array{
      *     hostName: string,
      *     keyName: string,
-     *     instanceType: 'i4i.metal'|'i7i.metal-24xl',
+     *     instanceType: 'i4i.metal'|'i7i.metal-24xl'|'i7i.metal-48xl',
      *     placementGroupId?: string|null,
      *     dedicatedHostId?: string|null
      * } $args

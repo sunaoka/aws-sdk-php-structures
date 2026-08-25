@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\SendMessageContext|null $context
  * @property string|null $userId
  * @property list<string>|null $assetIds
+ * @property string|null $modelTier
  */
 class SendMessageRequest extends Request
 {
@@ -21,7 +22,8 @@ class SendMessageRequest extends Request
      *     content: string,
      *     context?: Shapes\SendMessageContext|null,
      *     userId?: string|null,
-     *     assetIds?: list<string>|null
+     *     assetIds?: list<string>|null,
+     *     modelTier?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SpotAllocationStrategy
  * @property int|null $SpotInstancePools
  * @property string|null $SpotMaxPrice
+ * @property list<DistributionSegment>|null $DistributionSegments
  */
 class InstancesDistribution extends Shape
 {
@@ -21,7 +22,8 @@ class InstancesDistribution extends Shape
      *     OnDemandPercentageAboveBaseCapacity?: int|null,
      *     SpotAllocationStrategy?: string|null,
      *     SpotInstancePools?: int|null,
-     *     SpotMaxPrice?: string|null
+     *     SpotMaxPrice?: string|null,
+     *     DistributionSegments?: list<DistributionSegment>|null
      * } $args
      */
     public function __construct(array $args = [])

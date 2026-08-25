@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $agentSubTask
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
- * @property 'FAILED'|'RUNNING'|'STOPPED'|'CANCELED'|'TIMED_OUT' $executionStatus
+ * @property 'FAILED'|'RUNNING'|'STOPPED'|'CANCELED'|'TIMED_OUT'|'WAITING' $executionStatus
  * @property string|null $agentType
  * @property string|null $uid
  */
@@ -25,7 +25,7 @@ class Execution extends Shape
      *     agentSubTask: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
-     *     executionStatus: 'FAILED'|'RUNNING'|'STOPPED'|'CANCELED'|'TIMED_OUT',
+     *     executionStatus: 'FAILED'|'RUNNING'|'STOPPED'|'CANCELED'|'TIMED_OUT'|'WAITING',
      *     agentType?: string|null,
      *     uid?: string|null
      * } $args

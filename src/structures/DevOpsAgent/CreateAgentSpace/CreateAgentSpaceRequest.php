@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $kmsKeyArn
  * @property string|null $clientToken
  * @property array<string, string>|null $tags
+ * @property array<'elevatedActionsEnabled', bool>|null $preferences
  */
 class CreateAgentSpaceRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateAgentSpaceRequest extends Request
      *     locale?: string|null,
      *     kmsKeyArn?: string|null,
      *     clientToken?: string|null,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     preferences?: array<'elevatedActionsEnabled', bool>|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $name
  * @property string|null $description
  * @property string|null $locale
+ * @property array<'elevatedActionsEnabled', bool>|null $preferences
  */
 class UpdateAgentSpaceRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateAgentSpaceRequest extends Request
      *     agentSpaceId: string,
      *     name?: string|null,
      *     description?: string|null,
-     *     locale?: string|null
+     *     locale?: string|null,
+     *     preferences?: array<'elevatedActionsEnabled', bool>|null
      * } $args
      */
     public function __construct(array $args)

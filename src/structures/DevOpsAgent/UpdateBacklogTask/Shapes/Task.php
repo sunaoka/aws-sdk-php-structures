@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ReferenceOutput|null $reference
  * @property 'INVESTIGATION'|'EVALUATION'|'RELEASE_READINESS_REVIEW'|'RELEASE_TESTING' $taskType
  * @property 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'MINIMAL' $priority
- * @property 'PENDING_TRIAGE'|'LINKED'|'PENDING_START'|'IN_PROGRESS'|'PENDING_CUSTOMER_APPROVAL'|'COMPLETED'|'FAILED'|'TIMED_OUT'|'CANCELED'|'SKIPPED' $status
+ * @property 'PENDING_TRIAGE'|'LINKED'|'PENDING_START'|'IN_PROGRESS'|'PENDING_CUSTOMER_APPROVAL'|'COMPLETED'|'FAILED'|'TIMED_OUT'|'CANCELED'|'SKIPPED'|'WAITING' $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property int $version
@@ -35,7 +35,7 @@ class Task extends Shape
      *     reference?: ReferenceOutput|null,
      *     taskType: 'INVESTIGATION'|'EVALUATION'|'RELEASE_READINESS_REVIEW'|'RELEASE_TESTING',
      *     priority: 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'MINIMAL',
-     *     status: 'PENDING_TRIAGE'|'LINKED'|'PENDING_START'|'IN_PROGRESS'|'PENDING_CUSTOMER_APPROVAL'|'COMPLETED'|'FAILED'|'TIMED_OUT'|'CANCELED'|'SKIPPED',
+     *     status: 'PENDING_TRIAGE'|'LINKED'|'PENDING_START'|'IN_PROGRESS'|'PENDING_CUSTOMER_APPROVAL'|'COMPLETED'|'FAILED'|'TIMED_OUT'|'CANCELED'|'SKIPPED'|'WAITING',
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     version: int,

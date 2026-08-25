@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property string|null $kmsKeyArn
  * @property string $agentSpaceId
+ * @property array<'elevatedActionsEnabled', bool>|null $preferences
  */
 class AgentSpace extends Shape
 {
@@ -23,7 +24,8 @@ class AgentSpace extends Shape
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     kmsKeyArn?: string|null,
-     *     agentSpaceId: string
+     *     agentSpaceId: string,
+     *     preferences?: array<'elevatedActionsEnabled', bool>|null
      * } $args
      */
     public function __construct(array $args)

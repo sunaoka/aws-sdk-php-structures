@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'source' $accountType
  * @property string $assumableRoleArn
  * @property string|null $externalId
+ * @property string|null $agentElevatedRoleArn
+ * @property 'valid'|'invalid'|'pending-confirmation'|null $agentElevatedRoleArnStatus
  */
 class SourceAwsConfiguration extends Shape
 {
@@ -17,7 +19,9 @@ class SourceAwsConfiguration extends Shape
      *     accountId: string,
      *     accountType: 'source',
      *     assumableRoleArn: string,
-     *     externalId?: string|null
+     *     externalId?: string|null,
+     *     agentElevatedRoleArn?: string|null,
+     *     agentElevatedRoleArnStatus?: 'valid'|'invalid'|'pending-confirmation'|null
      * } $args
      */
     public function __construct(array $args)

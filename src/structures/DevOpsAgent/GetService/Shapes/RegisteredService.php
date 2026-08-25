@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AdditionalServiceDetails|null $additionalServiceDetails
  * @property string|null $kmsKeyArn
  * @property string|null $privateConnectionName
+ * @property \Aws\Api\DateTimeResult $createdAt
+ * @property \Aws\Api\DateTimeResult $updatedAt
  */
 class RegisteredService extends Shape
 {
@@ -23,7 +25,9 @@ class RegisteredService extends Shape
      *     accessibleResources?: list<Document>|null,
      *     additionalServiceDetails?: AdditionalServiceDetails|null,
      *     kmsKeyArn?: string|null,
-     *     privateConnectionName?: string|null
+     *     privateConnectionName?: string|null,
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     updatedAt: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)
