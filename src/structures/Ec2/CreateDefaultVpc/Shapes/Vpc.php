@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Tag>|null $Tags
  * @property BlockPublicAccessStates|null $BlockPublicAccessStates
  * @property string|null $VpcId
- * @property 'pending'|'available'|null $State
+ * @property 'pending'|'available'|'deleting'|null $State
  * @property string|null $CidrBlock
  * @property string|null $DhcpOptionsId
  */
@@ -31,7 +31,7 @@ class Vpc extends Shape
      *     Tags?: list<Tag>|null,
      *     BlockPublicAccessStates?: BlockPublicAccessStates|null,
      *     VpcId?: string|null,
-     *     State?: 'pending'|'available'|null,
+     *     State?: 'pending'|'available'|'deleting'|null,
      *     CidrBlock?: string|null,
      *     DhcpOptionsId?: string|null
      * } $args

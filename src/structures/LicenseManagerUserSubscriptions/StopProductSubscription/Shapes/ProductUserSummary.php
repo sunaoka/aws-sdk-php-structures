@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Domain
  * @property string|null $SubscriptionStartDate
  * @property string|null $SubscriptionEndDate
+ * @property string|null $LicenseExpirationDate
  */
 class ProductUserSummary extends Shape
 {
@@ -27,7 +28,8 @@ class ProductUserSummary extends Shape
      *     StatusMessage?: string|null,
      *     Domain?: string|null,
      *     SubscriptionStartDate?: string|null,
-     *     SubscriptionEndDate?: string|null
+     *     SubscriptionEndDate?: string|null,
+     *     LicenseExpirationDate?: string|null
      * } $args
      */
     public function __construct(array $args)
