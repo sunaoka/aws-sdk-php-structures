@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double|null $bytesScanned
  * @property double|null $estimatedBytesSkipped
  * @property double|null $logGroupsScanned
+ * @property double|null $resultCount
  */
 class QueryStatistics extends Shape
 {
@@ -21,7 +22,8 @@ class QueryStatistics extends Shape
      *     estimatedRecordsSkipped?: double|null,
      *     bytesScanned?: double|null,
      *     estimatedBytesSkipped?: double|null,
-     *     logGroupsScanned?: double|null
+     *     logGroupsScanned?: double|null,
+     *     resultCount?: double|null
      * } $args
      */
     public function __construct(array $args = [])

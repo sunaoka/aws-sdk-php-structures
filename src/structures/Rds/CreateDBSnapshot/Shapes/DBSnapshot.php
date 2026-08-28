@@ -46,6 +46,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $DedicatedLogVolume
  * @property list<AdditionalStorageVolume>|null $AdditionalStorageVolumes
  * @property string|null $SnapshotAvailabilityZone
+ * @property int|null $FullSnapshotSizeInBytes
  */
 class DBSnapshot extends Shape
 {
@@ -91,7 +92,8 @@ class DBSnapshot extends Shape
      *     MultiTenant?: bool|null,
      *     DedicatedLogVolume?: bool|null,
      *     AdditionalStorageVolumes?: list<AdditionalStorageVolume>|null,
-     *     SnapshotAvailabilityZone?: string|null
+     *     SnapshotAvailabilityZone?: string|null,
+     *     FullSnapshotSizeInBytes?: int|null
      * } $args
      */
     public function __construct(array $args = [])

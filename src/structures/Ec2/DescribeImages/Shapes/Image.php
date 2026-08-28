@@ -32,6 +32,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $FreeTierEligible
  * @property string|null $PublicSsmParameterName
  * @property list<ImageWatermark>|null $ImageWatermarks
+ * @property InstanceTypeSpecification|null $InstanceTypeSpecification
  * @property string|null $ImageId
  * @property string|null $ImageLocation
  * @property 'pending'|'available'|'invalid'|'deregistered'|'transient'|'failed'|'error'|'disabled'|null $State
@@ -76,6 +77,7 @@ class Image extends Shape
      *     FreeTierEligible?: bool|null,
      *     PublicSsmParameterName?: string|null,
      *     ImageWatermarks?: list<ImageWatermark>|null,
+     *     InstanceTypeSpecification?: InstanceTypeSpecification|null,
      *     ImageId?: string|null,
      *     ImageLocation?: string|null,
      *     State?: 'pending'|'available'|'invalid'|'deregistered'|'transient'|'failed'|'error'|'disabled'|null,

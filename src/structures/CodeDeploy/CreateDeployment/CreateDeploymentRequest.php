@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AutoRollbackConfiguration|null $autoRollbackConfiguration
  * @property bool|null $updateOutdatedInstancesOnly
  * @property 'DISALLOW'|'OVERWRITE'|'RETAIN'|null $fileExistsBehavior
+ * @property 'STANDARD'|'RESTART'|null $deploymentMode
  * @property Shapes\AlarmConfiguration|null $overrideAlarmConfiguration
  */
 class CreateDeploymentRequest extends Request
@@ -31,6 +32,7 @@ class CreateDeploymentRequest extends Request
      *     autoRollbackConfiguration?: Shapes\AutoRollbackConfiguration|null,
      *     updateOutdatedInstancesOnly?: bool|null,
      *     fileExistsBehavior?: 'DISALLOW'|'OVERWRITE'|'RETAIN'|null,
+     *     deploymentMode?: 'STANDARD'|'RESTART'|null,
      *     overrideAlarmConfiguration?: Shapes\AlarmConfiguration|null
      * } $args
      */

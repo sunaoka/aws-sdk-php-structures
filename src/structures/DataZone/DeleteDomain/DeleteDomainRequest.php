@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $identifier
  * @property string|null $clientToken
  * @property bool|null $skipDeletionCheck
+ * @property bool|null $cascadeDelete
  */
 class DeleteDomainRequest extends Request
 {
@@ -15,7 +16,8 @@ class DeleteDomainRequest extends Request
      * @param array{
      *     identifier: string,
      *     clientToken?: string|null,
-     *     skipDeletionCheck?: bool|null
+     *     skipDeletionCheck?: bool|null,
+     *     cascadeDelete?: bool|null
      * } $args
      */
     public function __construct(array $args)

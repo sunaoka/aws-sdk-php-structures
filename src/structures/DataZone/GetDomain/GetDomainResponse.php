@@ -20,6 +20,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $tags
  * @property 'V1'|'V2'|null $domainVersion
  * @property string|null $serviceRole
+ * @property list<Shapes\FailureReason>|null $failureReasons
+ * @property Shapes\DeleteProgress|null $deleteProgress
  */
 class GetDomainResponse extends Response
 {

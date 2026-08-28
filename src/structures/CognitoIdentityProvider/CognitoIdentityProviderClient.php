@@ -9,6 +9,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use AdminAddUserToGroup\AdminAddUserToGroupTrait;
     use AdminConfirmSignUp\AdminConfirmSignUpTrait;
     use AdminCreateUser\AdminCreateUserTrait;
+    use AdminDeleteSoftwareToken\AdminDeleteSoftwareTokenTrait;
     use AdminDeleteUser\AdminDeleteUserTrait;
     use AdminDeleteUserAttributes\AdminDeleteUserAttributesTrait;
     use AdminDisableProviderForUser\AdminDisableProviderForUserTrait;

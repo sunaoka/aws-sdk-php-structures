@@ -754,6 +754,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ReleaseIpamPoolAllocation\ReleaseIpamPoolAllocationTrait;
     use ReplaceIamInstanceProfileAssociation\ReplaceIamInstanceProfileAssociationTrait;
     use ReplaceImageCriteriaInAllowedImagesSettings\ReplaceImageCriteriaInAllowedImagesSettingsTrait;
+    use ReplaceImageInstanceTypeSpecification\ReplaceImageInstanceTypeSpecificationTrait;
     use ReplaceNetworkAclAssociation\ReplaceNetworkAclAssociationTrait;
     use ReplaceNetworkAclEntry\ReplaceNetworkAclEntryTrait;
     use ReplaceRoute\ReplaceRouteTrait;
