@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property NlpConfiguration|null $NlpConfiguration
  * @property AnalyticsConfiguration|null $AnalyticsConfiguration
  * @property ProfileConfiguration|null $ProfileConfiguration
+ * @property DatastoreBackupStatus|null $BackupStatusInfo
  */
 class DatastoreProperties extends Shape
 {
@@ -37,7 +38,8 @@ class DatastoreProperties extends Shape
      *     ErrorCause?: ErrorCause|null,
      *     NlpConfiguration?: NlpConfiguration|null,
      *     AnalyticsConfiguration?: AnalyticsConfiguration|null,
-     *     ProfileConfiguration?: ProfileConfiguration|null
+     *     ProfileConfiguration?: ProfileConfiguration|null,
+     *     BackupStatusInfo?: DatastoreBackupStatus|null
      * } $args
      */
     public function __construct(array $args)

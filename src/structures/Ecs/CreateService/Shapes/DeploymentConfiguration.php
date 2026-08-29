@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<DeploymentLifecycleHook>|null $lifecycleHooks
  * @property LinearConfiguration|null $linearConfiguration
  * @property CanaryConfiguration|null $canaryConfiguration
+ * @property DeploymentEarlySuccessCriteria|null $earlySuccessCriteria
  */
 class DeploymentConfiguration extends Shape
 {
@@ -27,7 +28,8 @@ class DeploymentConfiguration extends Shape
      *     bakeTimeInMinutes?: int|null,
      *     lifecycleHooks?: list<DeploymentLifecycleHook>|null,
      *     linearConfiguration?: LinearConfiguration|null,
-     *     canaryConfiguration?: CanaryConfiguration|null
+     *     canaryConfiguration?: CanaryConfiguration|null,
+     *     earlySuccessCriteria?: DeploymentEarlySuccessCriteria|null
      * } $args
      */
     public function __construct(array $args = [])

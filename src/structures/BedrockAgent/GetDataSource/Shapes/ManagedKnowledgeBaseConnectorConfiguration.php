@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DeletionProtectionConfiguration|null $deletionProtectionConfiguration
  * @property MediaExtractionConfiguration|null $mediaExtractionConfiguration
  * @property Document|null $connectorParameters
+ * @property SyncSchedule|null $syncSchedule
  */
 class ManagedKnowledgeBaseConnectorConfiguration extends Shape
 {
@@ -15,7 +16,8 @@ class ManagedKnowledgeBaseConnectorConfiguration extends Shape
      * @param array{
      *     deletionProtectionConfiguration?: DeletionProtectionConfiguration|null,
      *     mediaExtractionConfiguration?: MediaExtractionConfiguration|null,
-     *     connectorParameters?: Document|null
+     *     connectorParameters?: Document|null,
+     *     syncSchedule?: SyncSchedule|null
      * } $args
      */
     public function __construct(array $args = [])

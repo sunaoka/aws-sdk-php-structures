@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AnalyticsConfiguration|null $AnalyticsConfiguration
  * @property Shapes\NlpConfiguration|null $NlpConfiguration
  * @property Shapes\ProfileConfiguration|null $ProfileConfiguration
+ * @property Shapes\BackupConfiguration|null $BackupConfiguration
  */
 class CreateFHIRDatastoreRequest extends Request
 {
@@ -29,7 +30,8 @@ class CreateFHIRDatastoreRequest extends Request
      *     IdentityProviderConfiguration?: Shapes\IdentityProviderConfiguration|null,
      *     AnalyticsConfiguration?: Shapes\AnalyticsConfiguration|null,
      *     NlpConfiguration?: Shapes\NlpConfiguration|null,
-     *     ProfileConfiguration?: Shapes\ProfileConfiguration|null
+     *     ProfileConfiguration?: Shapes\ProfileConfiguration|null,
+     *     BackupConfiguration?: Shapes\BackupConfiguration|null
      * } $args
      */
     public function __construct(array $args)

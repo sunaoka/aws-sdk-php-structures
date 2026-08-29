@@ -21,6 +21,7 @@ class HealthLakeClient extends \Aws\HealthLake\HealthLakeClient
     use ListFHIRImportJobs\ListFHIRImportJobsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PublishDataTransformationProfile\PublishDataTransformationProfileTrait;
+    use RestoreFHIRDatastore\RestoreFHIRDatastoreTrait;
     use StartDataTransformationJob\StartDataTransformationJobTrait;
     use StartFHIRExportJob\StartFHIRExportJobTrait;
     use StartFHIRImportJob\StartFHIRImportJobTrait;

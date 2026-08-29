@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Email
  * @property string|null $FirstName
  * @property string|null $LastName
- * @property 'AWSSalesRep'|'AWSAccountOwner'|'WWPSPDM'|'PDM'|'PSM'|'ISVSM'|null $BusinessTitle
+ * @property 'AWSSalesRep'|'AWSAccountOwner'|'WWPSPDM'|'PDM'|'PSM'|'ISVSM'|'Signatory'|null $BusinessTitle
  */
 class AwsTeamMember extends Shape
 {
@@ -17,7 +17,7 @@ class AwsTeamMember extends Shape
      *     Email?: string|null,
      *     FirstName?: string|null,
      *     LastName?: string|null,
-     *     BusinessTitle?: 'AWSSalesRep'|'AWSAccountOwner'|'WWPSPDM'|'PDM'|'PSM'|'ISVSM'|null
+     *     BusinessTitle?: 'AWSSalesRep'|'AWSAccountOwner'|'WWPSPDM'|'PDM'|'PSM'|'ISVSM'|'Signatory'|null
      * } $args
      */
     public function __construct(array $args = [])

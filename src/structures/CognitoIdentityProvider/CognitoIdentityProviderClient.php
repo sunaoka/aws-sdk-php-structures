@@ -69,6 +69,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use DescribeResourceServer\DescribeResourceServerTrait;
     use DescribeRiskConfiguration\DescribeRiskConfigurationTrait;
     use DescribeTerms\DescribeTermsTrait;
+    use DescribeTermsByClient\DescribeTermsByClientTrait;
     use DescribeUserImportJob\DescribeUserImportJobTrait;
     use DescribeUserPool\DescribeUserPoolTrait;
     use DescribeUserPoolClient\DescribeUserPoolClientTrait;
@@ -76,6 +77,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use ForgetDevice\ForgetDeviceTrait;
     use ForgotPassword\ForgotPasswordTrait;
     use GetCSVHeader\GetCSVHeaderTrait;
+    use GetClientToken\GetClientTokenTrait;
     use GetDevice\GetDeviceTrait;
     use GetGroup\GetGroupTrait;
     use GetIdentityProviderByIdentifier\GetIdentityProviderByIdentifierTrait;
