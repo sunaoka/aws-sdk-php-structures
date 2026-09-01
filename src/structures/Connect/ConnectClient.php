@@ -177,6 +177,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use GetAttachedFile\GetAttachedFileTrait;
     use GetContactAttributes\GetContactAttributesTrait;
     use GetContactMetrics\GetContactMetricsTrait;
+    use GetCrossRegionRouting\GetCrossRegionRoutingTrait;
     use GetCurrentMetricData\GetCurrentMetricDataTrait;
     use GetCurrentUserData\GetCurrentUserDataTrait;
     use GetEffectiveHoursOfOperations\GetEffectiveHoursOfOperationsTrait;
@@ -344,6 +345,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use UpdateContactRoutingData\UpdateContactRoutingDataTrait;
     use UpdateContactSchedule\UpdateContactScheduleTrait;
     use UpdateContactTaskTemplate\UpdateContactTaskTemplateTrait;
+    use UpdateCrossRegionRouting\UpdateCrossRegionRoutingTrait;
     use UpdateDataTableAttribute\UpdateDataTableAttributeTrait;
     use UpdateDataTableMetadata\UpdateDataTableMetadataTrait;
     use UpdateDataTablePrimaryValues\UpdateDataTablePrimaryValuesTrait;

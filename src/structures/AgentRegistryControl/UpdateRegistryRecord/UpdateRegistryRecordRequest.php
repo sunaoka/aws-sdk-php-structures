@@ -10,10 +10,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $name
  * @property Shapes\UpdatedDisplayName|null $displayName
  * @property Shapes\UpdatedDescription|null $description
- * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|null $recordType
+ * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|null $recordType
  * @property Shapes\UpdatedDescriptors|null $descriptors
  * @property string|null $recordVersion
  * @property bool|null $triggerSynchronization
+ * @property list<Shapes\Provenance>|null $provenance
  */
 class UpdateRegistryRecordRequest extends Request
 {
@@ -24,10 +25,11 @@ class UpdateRegistryRecordRequest extends Request
      *     name?: string|null,
      *     displayName?: Shapes\UpdatedDisplayName|null,
      *     description?: Shapes\UpdatedDescription|null,
-     *     recordType?: 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|null,
+     *     recordType?: 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|null,
      *     descriptors?: Shapes\UpdatedDescriptors|null,
      *     recordVersion?: string|null,
-     *     triggerSynchronization?: bool|null
+     *     triggerSynchronization?: bool|null,
+     *     provenance?: list<Shapes\Provenance>|null
      * } $args
      */
     public function __construct(array $args)

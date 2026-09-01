@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $communicationBody
  * @property list<string>|null $ccEmailAddresses
  * @property string|null $attachmentSetId
+ * @property list<string>|null $uploadIds
+ * @property bool|null $dryRun
  */
 class AddCommunicationToCaseRequest extends Request
 {
@@ -17,7 +19,9 @@ class AddCommunicationToCaseRequest extends Request
      *     caseId?: string|null,
      *     communicationBody: string,
      *     ccEmailAddresses?: list<string>|null,
-     *     attachmentSetId?: string|null
+     *     attachmentSetId?: string|null,
+     *     uploadIds?: list<string>|null,
+     *     dryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

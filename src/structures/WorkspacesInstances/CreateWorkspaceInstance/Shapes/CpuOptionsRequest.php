@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'enabled'|'disabled'|null $AmdSevSnp
  * @property int<0, max>|null $CoreCount
  * @property int<0, max>|null $ThreadsPerCore
+ * @property 'enabled'|'disabled'|null $NestedVirtualization
  */
 class CpuOptionsRequest extends Shape
 {
@@ -15,7 +16,8 @@ class CpuOptionsRequest extends Shape
      * @param array{
      *     AmdSevSnp?: 'enabled'|'disabled'|null,
      *     CoreCount?: int<0, max>|null,
-     *     ThreadsPerCore?: int<0, max>|null
+     *     ThreadsPerCore?: int<0, max>|null,
+     *     NestedVirtualization?: 'enabled'|'disabled'|null
      * } $args
      */
     public function __construct(array $args = [])

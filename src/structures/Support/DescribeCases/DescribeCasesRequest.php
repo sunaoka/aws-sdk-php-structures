@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<10, 100>|null $maxResults
  * @property string|null $language
  * @property bool|null $includeCommunications
+ * @property bool|null $dryRun
  */
 class DescribeCasesRequest extends Request
 {
@@ -27,7 +28,8 @@ class DescribeCasesRequest extends Request
      *     nextToken?: string|null,
      *     maxResults?: int<10, 100>|null,
      *     language?: string|null,
-     *     includeCommunications?: bool|null
+     *     includeCommunications?: bool|null,
+     *     dryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

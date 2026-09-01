@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $language
  * @property string|null $issueType
  * @property string|null $attachmentSetId
+ * @property list<string>|null $uploadIds
+ * @property bool|null $dryRun
  */
 class CreateCaseRequest extends Request
 {
@@ -27,7 +29,9 @@ class CreateCaseRequest extends Request
      *     ccEmailAddresses?: list<string>|null,
      *     language?: string|null,
      *     issueType?: string|null,
-     *     attachmentSetId?: string|null
+     *     attachmentSetId?: string|null,
+     *     uploadIds?: list<string>|null,
+     *     dryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

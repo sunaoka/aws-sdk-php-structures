@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $body
  * @property string|null $submittedBy
  * @property string|null $timeCreated
+ * @property list<AttachmentDetails>|null $attachments
  * @property list<AttachmentDetails>|null $attachmentSet
  */
 class Communication extends Shape
@@ -19,6 +20,7 @@ class Communication extends Shape
      *     body?: string|null,
      *     submittedBy?: string|null,
      *     timeCreated?: string|null,
+     *     attachments?: list<AttachmentDetails>|null,
      *     attachmentSet?: list<AttachmentDetails>|null
      * } $args
      */

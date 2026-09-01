@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\UpdatedDescription|null $description
  * @property Shapes\UpdatedDiscoveryConfiguration|null $discoveryConfiguration
  * @property Shapes\UpdatedApprovalConfiguration|null $approvalConfiguration
+ * @property Shapes\UpdatedAutoDetectionConfiguration|null $autoDetectionConfiguration
  */
 class UpdateRegistryRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateRegistryRequest extends Request
      *     name?: string|null,
      *     description?: Shapes\UpdatedDescription|null,
      *     discoveryConfiguration?: Shapes\UpdatedDiscoveryConfiguration|null,
-     *     approvalConfiguration?: Shapes\UpdatedApprovalConfiguration|null
+     *     approvalConfiguration?: Shapes\UpdatedApprovalConfiguration|null,
+     *     autoDetectionConfiguration?: Shapes\UpdatedAutoDetectionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

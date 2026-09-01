@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Description
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
- * @property 'FIRST_OCCURRENCE'|'LAST_OCCURRENCE'|'COUNT'|'SUM'|'MINIMUM'|'MAXIMUM'|'AVERAGE'|'MAX_OCCURRENCE'|null $Statistic
+ * @property 'FIRST_OCCURRENCE'|'LAST_OCCURRENCE'|'COUNT'|'SUM'|'MINIMUM'|'MAXIMUM'|'AVERAGE'|'MAX_OCCURRENCE'|'RECENT_OCCURRENCES'|null $Statistic
  * @property Shapes\Conditions|null $Conditions
  * @property Shapes\AttributeDetails|null $AttributeDetails
  * @property bool|null $UseHistoricalData

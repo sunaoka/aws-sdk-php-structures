@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles;
 class CustomerProfilesClient extends \Aws\CustomerProfiles\CustomerProfilesClient
 {
     use AddProfileKey\AddProfileKeyTrait;
+    use AssociateStreamForSegments\AssociateStreamForSegmentsTrait;
     use BatchGetCalculatedAttributeForProfile\BatchGetCalculatedAttributeForProfileTrait;
     use BatchGetProfile\BatchGetProfileTrait;
     use BatchPutProfileObject\BatchPutProfileObjectTrait;
@@ -37,8 +38,10 @@ class CustomerProfilesClient extends \Aws\CustomerProfiles\CustomerProfilesClien
     use DeleteRecommenderFilter\DeleteRecommenderFilterTrait;
     use DeleteRecommenderSchema\DeleteRecommenderSchemaTrait;
     use DeleteSegmentDefinition\DeleteSegmentDefinitionTrait;
+    use DeleteSegmentSubscription\DeleteSegmentSubscriptionTrait;
     use DeleteWorkflow\DeleteWorkflowTrait;
     use DetectProfileObjectType\DetectProfileObjectTypeTrait;
+    use DisassociateStreamForSegments\DisassociateStreamForSegmentsTrait;
     use GetAutoMergingPreview\GetAutoMergingPreviewTrait;
     use GetCalculatedAttributeDefinition\GetCalculatedAttributeDefinitionTrait;
     use GetCalculatedAttributeForProfile\GetCalculatedAttributeForProfileTrait;
@@ -62,7 +65,9 @@ class CustomerProfilesClient extends \Aws\CustomerProfiles\CustomerProfilesClien
     use GetSegmentEstimate\GetSegmentEstimateTrait;
     use GetSegmentMembership\GetSegmentMembershipTrait;
     use GetSegmentSnapshot\GetSegmentSnapshotTrait;
+    use GetSegmentSubscription\GetSegmentSubscriptionTrait;
     use GetSimilarProfiles\GetSimilarProfilesTrait;
+    use GetStreamForSegments\GetStreamForSegmentsTrait;
     use GetUploadJob\GetUploadJobTrait;
     use GetUploadJobPath\GetUploadJobPathTrait;
     use GetWorkflow\GetWorkflowTrait;
@@ -90,6 +95,7 @@ class CustomerProfilesClient extends \Aws\CustomerProfiles\CustomerProfilesClien
     use ListRecommenders\ListRecommendersTrait;
     use ListRuleBasedMatches\ListRuleBasedMatchesTrait;
     use ListSegmentDefinitions\ListSegmentDefinitionsTrait;
+    use ListSegmentSubscriptionEvents\ListSegmentSubscriptionEventsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListUploadJobs\ListUploadJobsTrait;
     use ListWorkflows\ListWorkflowsTrait;
@@ -98,6 +104,7 @@ class CustomerProfilesClient extends \Aws\CustomerProfiles\CustomerProfilesClien
     use PutIntegration\PutIntegrationTrait;
     use PutProfileObject\PutProfileObjectTrait;
     use PutProfileObjectType\PutProfileObjectTypeTrait;
+    use PutSegmentSubscription\PutSegmentSubscriptionTrait;
     use SearchProfiles\SearchProfilesTrait;
     use StartRecommender\StartRecommenderTrait;
     use StartUploadJob\StartUploadJobTrait;

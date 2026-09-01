@@ -6,8 +6,10 @@ class SupportClient extends \Aws\Support\SupportClient
 {
     use AddAttachmentsToSet\AddAttachmentsToSetTrait;
     use AddCommunicationToCase\AddCommunicationToCaseTrait;
+    use CompleteAttachmentUpload\CompleteAttachmentUploadTrait;
     use CreateCase\CreateCaseTrait;
     use DescribeAttachment\DescribeAttachmentTrait;
+    use DescribeAttachmentUploadStatus\DescribeAttachmentUploadStatusTrait;
     use DescribeCases\DescribeCasesTrait;
     use DescribeCommunications\DescribeCommunicationsTrait;
     use DescribeCreateCaseOptions\DescribeCreateCaseOptionsTrait;
@@ -18,6 +20,8 @@ class SupportClient extends \Aws\Support\SupportClient
     use DescribeTrustedAdvisorCheckResult\DescribeTrustedAdvisorCheckResultTrait;
     use DescribeTrustedAdvisorCheckSummaries\DescribeTrustedAdvisorCheckSummariesTrait;
     use DescribeTrustedAdvisorChecks\DescribeTrustedAdvisorChecksTrait;
+    use GetAttachmentDownloadLink\GetAttachmentDownloadLinkTrait;
+    use GetAttachmentUploadLinks\GetAttachmentUploadLinksTrait;
     use RefreshTrustedAdvisorCheck\RefreshTrustedAdvisorCheckTrait;
     use ResolveCase\ResolveCaseTrait;
 }

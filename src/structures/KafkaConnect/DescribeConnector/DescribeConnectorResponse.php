@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $connectorConfiguration
  * @property string|null $connectorDescription
  * @property string|null $connectorName
- * @property 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED'|null $connectorState
+ * @property 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED'|'RESTARTING'|null $connectorState
  * @property \Aws\Api\DateTimeResult|null $creationTime
  * @property string|null $currentVersion
  * @property Shapes\KafkaClusterDescription|null $kafkaCluster

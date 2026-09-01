@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $connectorArn
  * @property string|null $connectorDescription
  * @property string|null $connectorName
- * @property 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED'|null $connectorState
+ * @property 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED'|'RESTARTING'|null $connectorState
  * @property \Aws\Api\DateTimeResult|null $creationTime
  * @property string|null $currentVersion
  * @property KafkaClusterDescription|null $kafkaCluster
@@ -30,7 +30,7 @@ class ConnectorSummary extends Shape
      *     connectorArn?: string|null,
      *     connectorDescription?: string|null,
      *     connectorName?: string|null,
-     *     connectorState?: 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED'|null,
+     *     connectorState?: 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED'|'RESTARTING'|null,
      *     creationTime?: \Aws\Api\DateTimeResult|null,
      *     currentVersion?: string|null,
      *     kafkaCluster?: KafkaClusterDescription|null,

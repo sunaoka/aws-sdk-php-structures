@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\AttributeDetails|null $AttributeDetails
  * @property Shapes\Conditions|null $Conditions
  * @property Shapes\Filter|null $Filter
- * @property 'FIRST_OCCURRENCE'|'LAST_OCCURRENCE'|'COUNT'|'SUM'|'MINIMUM'|'MAXIMUM'|'AVERAGE'|'MAX_OCCURRENCE'|null $Statistic
+ * @property 'FIRST_OCCURRENCE'|'LAST_OCCURRENCE'|'COUNT'|'SUM'|'MINIMUM'|'MAXIMUM'|'AVERAGE'|'MAX_OCCURRENCE'|'RECENT_OCCURRENCES'|null $Statistic
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
  * @property bool|null $UseHistoricalData

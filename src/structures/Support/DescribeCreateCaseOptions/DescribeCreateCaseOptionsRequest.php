@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $serviceCode
  * @property string $language
  * @property string $categoryCode
+ * @property bool|null $dryRun
  */
 class DescribeCreateCaseOptionsRequest extends Request
 {
@@ -17,7 +18,8 @@ class DescribeCreateCaseOptionsRequest extends Request
      *     issueType: string,
      *     serviceCode: string,
      *     language: string,
-     *     categoryCode: string
+     *     categoryCode: string,
+     *     dryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

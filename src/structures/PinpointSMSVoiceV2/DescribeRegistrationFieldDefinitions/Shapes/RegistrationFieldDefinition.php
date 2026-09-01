@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SelectValidation|null $SelectValidation
  * @property TextValidation|null $TextValidation
  * @property RegistrationFieldDisplayHints $DisplayHints
+ * @property ConditionalBehavior|null $ConditionalBehavior
  */
 class RegistrationFieldDefinition extends Shape
 {
@@ -23,7 +24,8 @@ class RegistrationFieldDefinition extends Shape
      *     FieldRequirement: 'REQUIRED'|'CONDITIONAL'|'OPTIONAL',
      *     SelectValidation?: SelectValidation|null,
      *     TextValidation?: TextValidation|null,
-     *     DisplayHints: RegistrationFieldDisplayHints
+     *     DisplayHints: RegistrationFieldDisplayHints,
+     *     ConditionalBehavior?: ConditionalBehavior|null
      * } $args
      */
     public function __construct(array $args)

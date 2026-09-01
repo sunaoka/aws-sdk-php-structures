@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property A2aAgentCardDescriptor|null $a2aAgentCard
  * @property AgentSkillsDefinitionDescriptor|null $agentSkillsDefinition
  * @property CustomDescriptor|null $custom
+ * @property HttpDescriptor|null $http
+ * @property AgUiDescriptor|null $agui
  */
 class Descriptors extends Shape
 {
@@ -17,7 +19,9 @@ class Descriptors extends Shape
      *     mcpServer?: McpServerDescriptor|null,
      *     a2aAgentCard?: A2aAgentCardDescriptor|null,
      *     agentSkillsDefinition?: AgentSkillsDefinitionDescriptor|null,
-     *     custom?: CustomDescriptor|null
+     *     custom?: CustomDescriptor|null,
+     *     http?: HttpDescriptor|null,
+     *     agui?: AgUiDescriptor|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -19,6 +19,7 @@ class KafkaConnectClient extends \Aws\KafkaConnect\KafkaConnectClient
     use ListCustomPlugins\ListCustomPluginsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListWorkerConfigurations\ListWorkerConfigurationsTrait;
+    use RestartConnector\RestartConnectorTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateConnector\UpdateConnectorTrait;

@@ -49,6 +49,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DeleteActionConnector\DeleteActionConnectorTrait;
     use DeleteAgent\DeleteAgentTrait;
     use DeleteAnalysis\DeleteAnalysisTrait;
+    use DeleteApp\DeleteAppTrait;
     use DeleteApprovalPolicy\DeleteApprovalPolicyTrait;
     use DeleteBrand\DeleteBrandTrait;
     use DeleteBrandAssignment\DeleteBrandAssignmentTrait;
@@ -96,6 +97,8 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DescribeAnalysis\DescribeAnalysisTrait;
     use DescribeAnalysisDefinition\DescribeAnalysisDefinitionTrait;
     use DescribeAnalysisPermissions\DescribeAnalysisPermissionsTrait;
+    use DescribeApp\DescribeAppTrait;
+    use DescribeAppPermissions\DescribeAppPermissionsTrait;
     use DescribeApprovalPolicy\DescribeApprovalPolicyTrait;
     use DescribeAssetBundleExportJob\DescribeAssetBundleExportJobTrait;
     use DescribeAssetBundleImportJob\DescribeAssetBundleImportJobTrait;
@@ -166,6 +169,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use ListAgents\ListAgentsTrait;
     use ListAnalyses\ListAnalysesTrait;
     use ListApprovalPolicies\ListApprovalPoliciesTrait;
+    use ListApps\ListAppsTrait;
     use ListAssetBundleExportJobs\ListAssetBundleExportJobsTrait;
     use ListAssetBundleImportJobs\ListAssetBundleImportJobsTrait;
     use ListBrands\ListBrandsTrait;
@@ -216,6 +220,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use SearchActionConnectors\SearchActionConnectorsTrait;
     use SearchAgents\SearchAgentsTrait;
     use SearchAnalyses\SearchAnalysesTrait;
+    use SearchApps\SearchAppsTrait;
     use SearchDashboards\SearchDashboardsTrait;
     use SearchDataSets\SearchDataSetsTrait;
     use SearchDataSources\SearchDataSourcesTrait;
@@ -242,6 +247,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateAgentPermissions\UpdateAgentPermissionsTrait;
     use UpdateAnalysis\UpdateAnalysisTrait;
     use UpdateAnalysisPermissions\UpdateAnalysisPermissionsTrait;
+    use UpdateAppPermissions\UpdateAppPermissionsTrait;
     use UpdateApplicationWithTokenExchangeGrant\UpdateApplicationWithTokenExchangeGrantTrait;
     use UpdateApprovalPolicy\UpdateApprovalPolicyTrait;
     use UpdateBrand\UpdateBrandTrait;
