@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'NONE'|'PASSTHROUGH'|null $KlvMetadata
  * @property 'ENABLED'|'DISABLED'|null $ManifestMetadataSignaling
  * @property 'INSERT'|'NONE'|null $Scte35Esam
- * @property 'PASSTHROUGH'|'NONE'|null $Scte35Source
+ * @property 'PASSTHROUGH'|'NONE'|'MANIFEST_CUES'|null $Scte35Source
  * @property string|null $SigningKmsKey
  * @property 'PASSTHROUGH'|'NONE'|null $TimedMetadata
  * @property 'VERSION_0'|'VERSION_1'|null $TimedMetadataBoxVersion
@@ -32,7 +32,7 @@ class MpdSettings extends Shape
      *     KlvMetadata?: 'NONE'|'PASSTHROUGH'|null,
      *     ManifestMetadataSignaling?: 'ENABLED'|'DISABLED'|null,
      *     Scte35Esam?: 'INSERT'|'NONE'|null,
-     *     Scte35Source?: 'PASSTHROUGH'|'NONE'|null,
+     *     Scte35Source?: 'PASSTHROUGH'|'NONE'|'MANIFEST_CUES'|null,
      *     SigningKmsKey?: string|null,
      *     TimedMetadata?: 'PASSTHROUGH'|'NONE'|null,
      *     TimedMetadataBoxVersion?: 'VERSION_0'|'VERSION_1'|null,

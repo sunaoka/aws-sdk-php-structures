@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\SesV2;
 
 class SesV2Client extends \Aws\SesV2\SesV2Client
 {
+    use AssociateEmailIdentityCertificate\AssociateEmailIdentityCertificateTrait;
     use BatchGetMetricData\BatchGetMetricDataTrait;
     use CancelExportJob\CancelExportJobTrait;
     use CreateConfigurationSet\CreateConfigurationSetTrait;
@@ -34,6 +35,7 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use DeleteSuppressedDestination\DeleteSuppressedDestinationTrait;
     use DeleteTenant\DeleteTenantTrait;
     use DeleteTenantResourceAssociation\DeleteTenantResourceAssociationTrait;
+    use DisassociateEmailIdentityCertificate\DisassociateEmailIdentityCertificateTrait;
     use GetAccount\GetAccountTrait;
     use GetBlacklistReports\GetBlacklistReportsTrait;
     use GetConfigurationSet\GetConfigurationSetTrait;
@@ -67,6 +69,7 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use ListDeliverabilityTestReports\ListDeliverabilityTestReportsTrait;
     use ListDomainDeliverabilityCampaigns\ListDomainDeliverabilityCampaignsTrait;
     use ListEmailIdentities\ListEmailIdentitiesTrait;
+    use ListEmailIdentityCertificates\ListEmailIdentityCertificatesTrait;
     use ListEmailTemplates\ListEmailTemplatesTrait;
     use ListExportJobs\ListExportJobsTrait;
     use ListImportJobs\ListImportJobsTrait;
@@ -108,6 +111,7 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use TagResource\TagResourceTrait;
     use TestRenderEmailTemplate\TestRenderEmailTemplateTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateConfigurationSet\UpdateConfigurationSetTrait;
     use UpdateConfigurationSetEventDestination\UpdateConfigurationSetEventDestinationTrait;
     use UpdateContact\UpdateContactTrait;
     use UpdateContactList\UpdateContactListTrait;

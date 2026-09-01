@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $SequenceNumberForOrdering
  * @property string|null $StreamARN
  * @property string|null $StreamId
+ * @property bool|null $DryRun
  */
 class PutRecordRequest extends Request
 {
@@ -23,7 +24,8 @@ class PutRecordRequest extends Request
      *     ExplicitHashKey?: string|null,
      *     SequenceNumberForOrdering?: string|null,
      *     StreamARN?: string|null,
-     *     StreamId?: string|null
+     *     StreamId?: string|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

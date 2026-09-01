@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\EstimatedCharges|null $estimatedCharges
  * @property Shapes\ProposalSummary|null $proposalSummary
  * @property 'ACTIVE'|'ARCHIVED'|'CANCELLED'|'EXPIRED'|'RENEWED'|'REPLACED'|'ROLLED_BACK'|'SUPERSEDED'|'TERMINATED'|null $status
+ * @property string|null $initialAgreementId
+ * @property Shapes\EndTimeBehavior|null $endTimeBehavior
  */
 class DescribeAgreementResponse extends Response
 {

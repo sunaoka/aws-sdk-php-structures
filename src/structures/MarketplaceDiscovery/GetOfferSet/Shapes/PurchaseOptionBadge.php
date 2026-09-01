@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $displayName
- * @property 'PRIVATE_PRICING'|'FUTURE_DATED'|'REPLACEMENT_OFFER' $badgeType
+ * @property 'PRIVATE_PRICING'|'FUTURE_DATED'|'REPLACEMENT_OFFER'|'AUTO_RENEW' $badgeType
  */
 class PurchaseOptionBadge extends Shape
 {
     /**
      * @param array{
      *     displayName: string,
-     *     badgeType: 'PRIVATE_PRICING'|'FUTURE_DATED'|'REPLACEMENT_OFFER'
+     *     badgeType: 'PRIVATE_PRICING'|'FUTURE_DATED'|'REPLACEMENT_OFFER'|'AUTO_RENEW'
      * } $args
      */
     public function __construct(array $args)

@@ -22,7 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 3600>|null $PtsOffset
  * @property 'AUTO'|'SECONDS'|'MILLISECONDS'|null $PtsOffsetMode
  * @property int<32, 8182>|null $Scte35Pid
- * @property 'PASSTHROUGH'|'NONE'|null $Scte35Source
+ * @property 'PASSTHROUGH'|'NONE'|'MANIFEST_CUES'|null $Scte35Source
  * @property 'PASSTHROUGH'|'NONE'|null $TimedMetadata
  * @property int<32, 8182>|null $TimedMetadataPid
  * @property int<0, 65535>|null $TransportStreamId
@@ -49,7 +49,7 @@ class M3u8Settings extends Shape
      *     PtsOffset?: int<0, 3600>|null,
      *     PtsOffsetMode?: 'AUTO'|'SECONDS'|'MILLISECONDS'|null,
      *     Scte35Pid?: int<32, 8182>|null,
-     *     Scte35Source?: 'PASSTHROUGH'|'NONE'|null,
+     *     Scte35Source?: 'PASSTHROUGH'|'NONE'|'MANIFEST_CUES'|null,
      *     TimedMetadata?: 'PASSTHROUGH'|'NONE'|null,
      *     TimedMetadataPid?: int<32, 8182>|null,
      *     TransportStreamId?: int<0, 65535>|null,

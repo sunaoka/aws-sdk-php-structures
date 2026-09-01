@@ -7,6 +7,8 @@ class GuardDutyClient extends \Aws\GuardDuty\GuardDutyClient
     use AcceptAdministratorInvitation\AcceptAdministratorInvitationTrait;
     use AcceptInvitation\AcceptInvitationTrait;
     use ArchiveFindings\ArchiveFindingsTrait;
+    use CreateCustomDetectionRuleAssociation\CreateCustomDetectionRuleAssociationTrait;
+    use CreateCustomDetectionRuleOrgConfiguration\CreateCustomDetectionRuleOrgConfigurationTrait;
     use CreateDetector\CreateDetectorTrait;
     use CreateFilter\CreateFilterTrait;
     use CreateIPSet\CreateIPSetTrait;
@@ -19,6 +21,8 @@ class GuardDutyClient extends \Aws\GuardDuty\GuardDutyClient
     use CreateThreatIntelSet\CreateThreatIntelSetTrait;
     use CreateTrustedEntitySet\CreateTrustedEntitySetTrait;
     use DeclineInvitations\DeclineInvitationsTrait;
+    use DeleteCustomDetectionRuleAssociation\DeleteCustomDetectionRuleAssociationTrait;
+    use DeleteCustomDetectionRuleOrgConfiguration\DeleteCustomDetectionRuleOrgConfigurationTrait;
     use DeleteDetector\DeleteDetectorTrait;
     use DeleteFilter\DeleteFilterTrait;
     use DeleteIPSet\DeleteIPSetTrait;
@@ -39,6 +43,9 @@ class GuardDutyClient extends \Aws\GuardDuty\GuardDutyClient
     use EnableOrganizationAdminAccount\EnableOrganizationAdminAccountTrait;
     use GetAdministratorAccount\GetAdministratorAccountTrait;
     use GetCoverageStatistics\GetCoverageStatisticsTrait;
+    use GetCustomDetectionRule\GetCustomDetectionRuleTrait;
+    use GetCustomDetectionRuleAssociation\GetCustomDetectionRuleAssociationTrait;
+    use GetCustomDetectionRuleOrgConfiguration\GetCustomDetectionRuleOrgConfigurationTrait;
     use GetDetector\GetDetectorTrait;
     use GetFilter\GetFilterTrait;
     use GetFindings\GetFindingsTrait;
@@ -60,6 +67,9 @@ class GuardDutyClient extends \Aws\GuardDuty\GuardDutyClient
     use GetUsageStatistics\GetUsageStatisticsTrait;
     use InviteMembers\InviteMembersTrait;
     use ListCoverage\ListCoverageTrait;
+    use ListCustomDetectionRuleAssociations\ListCustomDetectionRuleAssociationsTrait;
+    use ListCustomDetectionRuleOrgConfigurations\ListCustomDetectionRuleOrgConfigurationsTrait;
+    use ListCustomDetectionRules\ListCustomDetectionRulesTrait;
     use ListDetectors\ListDetectorsTrait;
     use ListFilters\ListFiltersTrait;
     use ListFindings\ListFindingsTrait;
@@ -82,6 +92,8 @@ class GuardDutyClient extends \Aws\GuardDuty\GuardDutyClient
     use TagResource\TagResourceTrait;
     use UnarchiveFindings\UnarchiveFindingsTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateCustomDetectionRuleAssociation\UpdateCustomDetectionRuleAssociationTrait;
+    use UpdateCustomDetectionRuleOrgConfiguration\UpdateCustomDetectionRuleOrgConfigurationTrait;
     use UpdateDetector\UpdateDetectorTrait;
     use UpdateFilter\UpdateFilterTrait;
     use UpdateFindingsFeedback\UpdateFindingsFeedbackTrait;

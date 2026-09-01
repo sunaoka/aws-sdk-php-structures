@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $Timestamp
  * @property string|null $StreamARN
  * @property string|null $StreamId
+ * @property bool|null $DryRun
  */
 class GetShardIteratorRequest extends Request
 {
@@ -23,7 +24,8 @@ class GetShardIteratorRequest extends Request
      *     StartingSequenceNumber?: string|null,
      *     Timestamp?: \Aws\Api\DateTimeResult|null,
      *     StreamARN?: string|null,
-     *     StreamId?: string|null
+     *     StreamId?: string|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $startTime
  * @property \Aws\Api\DateTimeResult|null $endTime
  * @property Shapes\ExecutionEnvironmentVariables $requestEnvironmentVariables
+ * @property Shapes\MountOverrides|null $requestMountOverrides
  * @property int<0, 2>|null $executionPriority
  * @property list<Shapes\ComputeNodeExecutionDetails> $computeNodeExecutionDetails
  * @property string|null $nextToken

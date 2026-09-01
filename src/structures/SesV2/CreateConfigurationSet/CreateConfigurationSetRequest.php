@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\SuppressionOptions|null $SuppressionOptions
  * @property Shapes\VdmOptions|null $VdmOptions
  * @property Shapes\ArchivingOptions|null $ArchivingOptions
+ * @property Shapes\MessageSecurityOptions|null $MessageSecurityOptions
  */
 class CreateConfigurationSetRequest extends Request
 {
@@ -27,7 +28,8 @@ class CreateConfigurationSetRequest extends Request
      *     Tags?: list<Shapes\Tag>|null,
      *     SuppressionOptions?: Shapes\SuppressionOptions|null,
      *     VdmOptions?: Shapes\VdmOptions|null,
-     *     ArchivingOptions?: Shapes\ArchivingOptions|null
+     *     ArchivingOptions?: Shapes\ArchivingOptions|null,
+     *     MessageSecurityOptions?: Shapes\MessageSecurityOptions|null
      * } $args
      */
     public function __construct(array $args)

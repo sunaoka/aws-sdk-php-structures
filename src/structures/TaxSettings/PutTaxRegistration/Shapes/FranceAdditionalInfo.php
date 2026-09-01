@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $sirenNumber
+ * @property string|null $eInvoiceRoutingCode
  */
 class FranceAdditionalInfo extends Shape
 {
     /**
-     * @param array{sirenNumber: string} $args
+     * @param array{
+     *     sirenNumber: string,
+     *     eInvoiceRoutingCode?: string|null
+     * } $args
      */
     public function __construct(array $args)
     {

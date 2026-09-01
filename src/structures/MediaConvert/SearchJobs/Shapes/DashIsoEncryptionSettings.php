@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaConvert\SearchJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CENC_V1'|'UNENCRYPTED_SEI'|null $PlaybackDeviceCompatibility
+ * @property 'CENC_V1'|'UNENCRYPTED_SEI'|'CENC_V1_UNENCRYPTED_HEADERS'|null $PlaybackDeviceCompatibility
  * @property SpekeKeyProvider|null $SpekeKeyProvider
  */
 class DashIsoEncryptionSettings extends Shape
 {
     /**
      * @param array{
-     *     PlaybackDeviceCompatibility?: 'CENC_V1'|'UNENCRYPTED_SEI'|null,
+     *     PlaybackDeviceCompatibility?: 'CENC_V1'|'UNENCRYPTED_SEI'|'CENC_V1_UNENCRYPTED_HEADERS'|null,
      *     SpekeKeyProvider?: SpekeKeyProvider|null
      * } $args
      */

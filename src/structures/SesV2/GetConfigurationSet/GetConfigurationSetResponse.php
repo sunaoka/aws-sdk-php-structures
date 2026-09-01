@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\SuppressionOptions|null $SuppressionOptions
  * @property Shapes\VdmOptions|null $VdmOptions
  * @property Shapes\ArchivingOptions|null $ArchivingOptions
+ * @property Shapes\MessageSecurityOptions|null $MessageSecurityOptions
  */
 class GetConfigurationSetResponse extends Response
 {

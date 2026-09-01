@@ -41,7 +41,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'VBR'|'CBR'|null $RateMode
  * @property M2tsScte35Esam|null $Scte35Esam
  * @property int<32, 8182>|null $Scte35Pid
- * @property 'PASSTHROUGH'|'NONE'|null $Scte35Source
+ * @property 'PASSTHROUGH'|'NONE'|'MANIFEST_CUES'|null $Scte35Source
  * @property 'NONE'|'RAI_SEGSTART'|'RAI_ADAPT'|'PSI_SEGSTART'|'EBP'|'EBP_LEGACY'|null $SegmentationMarkers
  * @property 'MAINTAIN_CADENCE'|'RESET_CADENCE'|null $SegmentationStyle
  * @property double|null $SegmentationTime
@@ -89,7 +89,7 @@ class M2tsSettings extends Shape
      *     RateMode?: 'VBR'|'CBR'|null,
      *     Scte35Esam?: M2tsScte35Esam|null,
      *     Scte35Pid?: int<32, 8182>|null,
-     *     Scte35Source?: 'PASSTHROUGH'|'NONE'|null,
+     *     Scte35Source?: 'PASSTHROUGH'|'NONE'|'MANIFEST_CUES'|null,
      *     SegmentationMarkers?: 'NONE'|'RAI_SEGSTART'|'RAI_ADAPT'|'PSI_SEGSTART'|'EBP'|'EBP_LEGACY'|null,
      *     SegmentationStyle?: 'MAINTAIN_CADENCE'|'RESET_CADENCE'|null,
      *     SegmentationTime?: double|null,

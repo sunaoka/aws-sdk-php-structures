@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaConvert\StartJobsQuery\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'queue'|'status'|'fileInput'|'jobEngineVersionRequested'|'jobEngineVersionUsed'|'audioCodec'|'videoCodec'|null $Key
+ * @property 'queue'|'status'|'fileInput'|'jobEngineVersionRequested'|'jobEngineVersionUsed'|'audioCodec'|'videoCodec'|'errorCode'|null $Key
  * @property list<string>|null $Values
  */
 class JobsQueryFilter extends Shape
 {
     /**
      * @param array{
-     *     Key?: 'queue'|'status'|'fileInput'|'jobEngineVersionRequested'|'jobEngineVersionUsed'|'audioCodec'|'videoCodec'|null,
+     *     Key?: 'queue'|'status'|'fileInput'|'jobEngineVersionRequested'|'jobEngineVersionUsed'|'audioCodec'|'videoCodec'|'errorCode'|null,
      *     Values?: list<string>|null
      * } $args
      */

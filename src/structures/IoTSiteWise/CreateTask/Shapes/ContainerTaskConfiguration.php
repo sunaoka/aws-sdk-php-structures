@@ -9,9 +9,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $taskExecutionRole
  * @property 'GENERIC_COMPUTE_PROCESSING'|'HARDWARE_ACCELERATED_PROCESSING' $processingType
  * @property 'UNITS_2'|'UNITS_4'|'UNITS_8'|'UNITS_12'|'UNITS_16'|'UNITS_24'|'UNITS_32'|'UNITS_36'|'UNITS_48'|'UNITS_60'|'UNITS_64'|'UNITS_72'|'UNITS_84'|'UNITS_96' $processingUnit
+ * @property EphemeralStorageConfiguration|null $ephemeralStorageConfiguration
  * @property list<string>|null $command
  * @property int<60, 86400>|null $timeoutSeconds
  * @property array<string, string>|null $environmentVariables
+ * @property list<Mount>|null $mounts
  */
 class ContainerTaskConfiguration extends Shape
 {
@@ -21,9 +23,11 @@ class ContainerTaskConfiguration extends Shape
      *     taskExecutionRole: string,
      *     processingType: 'GENERIC_COMPUTE_PROCESSING'|'HARDWARE_ACCELERATED_PROCESSING',
      *     processingUnit: 'UNITS_2'|'UNITS_4'|'UNITS_8'|'UNITS_12'|'UNITS_16'|'UNITS_24'|'UNITS_32'|'UNITS_36'|'UNITS_48'|'UNITS_60'|'UNITS_64'|'UNITS_72'|'UNITS_84'|'UNITS_96',
+     *     ephemeralStorageConfiguration?: EphemeralStorageConfiguration|null,
      *     command?: list<string>|null,
      *     timeoutSeconds?: int<60, 86400>|null,
-     *     environmentVariables?: array<string, string>|null
+     *     environmentVariables?: array<string, string>|null,
+     *     mounts?: list<Mount>|null
      * } $args
      */
     public function __construct(array $args)

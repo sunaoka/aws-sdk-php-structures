@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'LC'|'HEV1'|'HEV2'|'XHE'|null $CodecProfile
  * @property 'AD_RECEIVER_MIX'|'CODING_MODE_1_0'|'CODING_MODE_1_1'|'CODING_MODE_2_0'|'CODING_MODE_5_1'|'CODING_MODE_AUTO'|null $CodingMode
  * @property 'PROGRAM'|'ANCHOR'|null $LoudnessMeasurementMode
+ * @property 'WHEN_POSSIBLE'|'NO_PASSTHROUGH'|null $PassthroughControl
  * @property int<2000, 30000>|null $RapInterval
  * @property 'CBR'|'VBR'|null $RateControlMode
  * @property 'LATM_LOAS'|'NONE'|null $RawFormat
@@ -27,6 +28,7 @@ class AacSettings extends Shape
      *     CodecProfile?: 'LC'|'HEV1'|'HEV2'|'XHE'|null,
      *     CodingMode?: 'AD_RECEIVER_MIX'|'CODING_MODE_1_0'|'CODING_MODE_1_1'|'CODING_MODE_2_0'|'CODING_MODE_5_1'|'CODING_MODE_AUTO'|null,
      *     LoudnessMeasurementMode?: 'PROGRAM'|'ANCHOR'|null,
+     *     PassthroughControl?: 'WHEN_POSSIBLE'|'NO_PASSTHROUGH'|null,
      *     RapInterval?: int<2000, 30000>|null,
      *     RateControlMode?: 'CBR'|'VBR'|null,
      *     RawFormat?: 'LATM_LOAS'|'NONE'|null,

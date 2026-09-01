@@ -114,6 +114,7 @@ class LightsailClient extends \Aws\Lightsail\LightsailClient
     use GetOperation\GetOperationTrait;
     use GetOperations\GetOperationsTrait;
     use GetOperationsForResource\GetOperationsForResourceTrait;
+    use GetProfile\GetProfileTrait;
     use GetRegions\GetRegionsTrait;
     use GetRelationalDatabase\GetRelationalDatabaseTrait;
     use GetRelationalDatabaseBlueprints\GetRelationalDatabaseBlueprintsTrait;

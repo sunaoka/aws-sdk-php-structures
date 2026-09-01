@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $startTime
  * @property \Aws\Api\DateTimeResult|null $endTime
  * @property array<string, string>|null $executionEnvironmentVariables
+ * @property list<Mount>|null $executionMounts
  */
 class ComputeNodeExecutionDetails extends Shape
 {
@@ -27,7 +28,8 @@ class ComputeNodeExecutionDetails extends Shape
      *     status: ComputeNodeExecutionStatus,
      *     startTime?: \Aws\Api\DateTimeResult|null,
      *     endTime?: \Aws\Api\DateTimeResult|null,
-     *     executionEnvironmentVariables?: array<string, string>|null
+     *     executionEnvironmentVariables?: array<string, string>|null,
+     *     executionMounts?: list<Mount>|null
      * } $args
      */
     public function __construct(array $args)

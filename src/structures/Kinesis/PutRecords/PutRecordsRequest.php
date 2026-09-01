@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $StreamName
  * @property string|null $StreamARN
  * @property string|null $StreamId
+ * @property bool|null $DryRun
  */
 class PutRecordsRequest extends Request
 {
@@ -17,7 +18,8 @@ class PutRecordsRequest extends Request
      *     Records: list<Shapes\PutRecordsRequestEntry>,
      *     StreamName?: string|null,
      *     StreamARN?: string|null,
-     *     StreamId?: string|null
+     *     StreamId?: string|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)
