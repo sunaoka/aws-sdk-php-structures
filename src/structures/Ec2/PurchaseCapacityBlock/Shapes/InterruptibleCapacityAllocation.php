@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'pending'|'active'|'updating'|'canceling'|'canceled'|'failed'|null $Status
  * @property string|null $InterruptibleCapacityReservationId
  * @property 'adhoc'|null $InterruptionType
+ * @property 'retain'|'default'|null $ZeroSizePreference
  */
 class InterruptibleCapacityAllocation extends Shape
 {
@@ -19,7 +20,8 @@ class InterruptibleCapacityAllocation extends Shape
      *     TargetInstanceCount?: int|null,
      *     Status?: 'pending'|'active'|'updating'|'canceling'|'canceled'|'failed'|null,
      *     InterruptibleCapacityReservationId?: string|null,
-     *     InterruptionType?: 'adhoc'|null
+     *     InterruptionType?: 'adhoc'|null,
+     *     ZeroSizePreference?: 'retain'|'default'|null
      * } $args
      */
     public function __construct(array $args = [])

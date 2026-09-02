@@ -59,6 +59,7 @@ class OdbClient extends \Aws\Odb\OdbClient
     use ListDbSystemShapes\ListDbSystemShapesTrait;
     use ListExadbVmClusters\ListExadbVmClustersTrait;
     use ListExascaleDbStorageVaults\ListExascaleDbStorageVaultsTrait;
+    use ListFlexComponents\ListFlexComponentsTrait;
     use ListGiMinorVersions\ListGiMinorVersionsTrait;
     use ListGiVersions\ListGiVersionsTrait;
     use ListOdbNetworks\ListOdbNetworksTrait;

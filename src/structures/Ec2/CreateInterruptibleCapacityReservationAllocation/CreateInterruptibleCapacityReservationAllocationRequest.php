@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ClientToken
  * @property bool|null $DryRun
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property 'retain'|'default'|null $ZeroSizePreference
  */
 class CreateInterruptibleCapacityReservationAllocationRequest extends Request
 {
@@ -19,7 +20,8 @@ class CreateInterruptibleCapacityReservationAllocationRequest extends Request
      *     InstanceCount: int,
      *     ClientToken?: string|null,
      *     DryRun?: bool|null,
-     *     TagSpecifications?: list<Shapes\TagSpecification>|null
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     ZeroSizePreference?: 'retain'|'default'|null
      * } $args
      */
     public function __construct(array $args)

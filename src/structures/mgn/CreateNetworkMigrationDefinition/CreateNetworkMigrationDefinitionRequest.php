@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\TargetS3Configuration $targetS3Configuration
  * @property Shapes\TargetNetwork $targetNetwork
  * @property 'SINGLE_ACCOUNT'|'MULTI_ACCOUNT'|null $targetDeployment
+ * @property 'CREATE_NEW'|'USE_EXISTING'|null $vpcProvisioningStrategy
+ * @property list<Shapes\CidrMapping>|null $cidrMappings
  * @property array<string, string>|null $tags
  * @property array<string, string>|null $scopeTags
  */
@@ -24,6 +26,8 @@ class CreateNetworkMigrationDefinitionRequest extends Request
      *     targetS3Configuration: Shapes\TargetS3Configuration,
      *     targetNetwork: Shapes\TargetNetwork,
      *     targetDeployment?: 'SINGLE_ACCOUNT'|'MULTI_ACCOUNT'|null,
+     *     vpcProvisioningStrategy?: 'CREATE_NEW'|'USE_EXISTING'|null,
+     *     cidrMappings?: list<Shapes\CidrMapping>|null,
      *     tags?: array<string, string>|null,
      *     scopeTags?: array<string, string>|null
      * } $args

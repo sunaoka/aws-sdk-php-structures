@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $TimedMetadataId3Period
  * @property 'DISABLED'|'ENABLED'|null $TimedMetadataPassthrough
  * @property list<AdditionalDestinations>|null $AdditionalDestinations
+ * @property CmafIngestWatermarkingSettings|null $WatermarkingSettings
  */
 class CmafIngestGroupSettings extends Shape
 {
@@ -43,7 +44,8 @@ class CmafIngestGroupSettings extends Shape
      *     TimedMetadataId3Frame?: 'NONE'|'PRIV'|'TDRL'|null,
      *     TimedMetadataId3Period?: int|null,
      *     TimedMetadataPassthrough?: 'DISABLED'|'ENABLED'|null,
-     *     AdditionalDestinations?: list<AdditionalDestinations>|null
+     *     AdditionalDestinations?: list<AdditionalDestinations>|null,
+     *     WatermarkingSettings?: CmafIngestWatermarkingSettings|null
      * } $args
      */
     public function __construct(array $args)

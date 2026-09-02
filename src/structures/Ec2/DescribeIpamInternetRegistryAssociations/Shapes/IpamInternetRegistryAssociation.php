@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $OrganizationHandle
  * @property string|null $Description
  * @property 'pending-enable'|'create-in-progress'|'create-failed'|'enable-in-progress'|'enable-complete'|'enable-failed'|'delete-in-progress'|'delete-complete'|'delete-failed'|null $State
+ * @property string|null $StateMessage
  * @property string|null $ChildRequestXml
  * @property list<Tag>|null $Tags
  */
@@ -30,6 +31,7 @@ class IpamInternetRegistryAssociation extends Shape
      *     OrganizationHandle?: string|null,
      *     Description?: string|null,
      *     State?: 'pending-enable'|'create-in-progress'|'create-failed'|'enable-in-progress'|'enable-complete'|'enable-failed'|'delete-in-progress'|'delete-complete'|'delete-failed'|null,
+     *     StateMessage?: string|null,
      *     ChildRequestXml?: string|null,
      *     Tags?: list<Tag>|null
      * } $args

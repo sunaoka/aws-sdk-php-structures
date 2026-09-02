@@ -36,6 +36,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $Interruptible
  * @property InterruptibleCapacityAllocation|null $InterruptibleCapacityAllocation
  * @property InterruptionInfo|null $InterruptionInfo
+ * @property 'retain'|'default'|null $ZeroSizePreference
  */
 class CapacityReservation extends Shape
 {
@@ -71,7 +72,8 @@ class CapacityReservation extends Shape
      *     CapacityBlockId?: string|null,
      *     Interruptible?: bool|null,
      *     InterruptibleCapacityAllocation?: InterruptibleCapacityAllocation|null,
-     *     InterruptionInfo?: InterruptionInfo|null
+     *     InterruptionInfo?: InterruptionInfo|null,
+     *     ZeroSizePreference?: 'retain'|'default'|null
      * } $args
      */
     public function __construct(array $args = [])

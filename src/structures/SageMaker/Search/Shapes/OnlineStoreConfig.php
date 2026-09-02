@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OnlineStoreSecurityConfig|null $SecurityConfig
  * @property bool|null $EnableOnlineStore
  * @property TtlDuration|null $TtlDuration
- * @property 'Standard'|'InMemory'|null $StorageType
+ * @property 'Standard'|'Standard_V2'|'InMemory'|null $StorageType
  */
 class OnlineStoreConfig extends Shape
 {
@@ -17,7 +17,7 @@ class OnlineStoreConfig extends Shape
      *     SecurityConfig?: OnlineStoreSecurityConfig|null,
      *     EnableOnlineStore?: bool|null,
      *     TtlDuration?: TtlDuration|null,
-     *     StorageType?: 'Standard'|'InMemory'|null
+     *     StorageType?: 'Standard'|'Standard_V2'|'InMemory'|null
      * } $args
      */
     public function __construct(array $args = [])

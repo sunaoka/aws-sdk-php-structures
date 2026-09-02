@@ -6,16 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CapacityReservationId
- * @property int $TargetInstanceCount
+ * @property int|null $TargetInstanceCount
  * @property bool|null $DryRun
+ * @property 'retain'|'default'|null $ZeroSizePreference
  */
 class UpdateInterruptibleCapacityReservationAllocationRequest extends Request
 {
     /**
      * @param array{
      *     CapacityReservationId: string,
-     *     TargetInstanceCount: int,
-     *     DryRun?: bool|null
+     *     TargetInstanceCount?: int|null,
+     *     DryRun?: bool|null,
+     *     ZeroSizePreference?: 'retain'|'default'|null
      * } $args
      */
     public function __construct(array $args)

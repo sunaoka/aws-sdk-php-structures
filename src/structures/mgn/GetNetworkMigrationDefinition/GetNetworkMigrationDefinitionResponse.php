@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\TargetS3Configuration|null $targetS3Configuration
  * @property Shapes\TargetNetwork|null $targetNetwork
  * @property 'SINGLE_ACCOUNT'|'MULTI_ACCOUNT'|null $targetDeployment
+ * @property 'CREATE_NEW'|'USE_EXISTING'|null $vpcProvisioningStrategy
+ * @property list<Shapes\CidrMapping>|null $cidrMappings
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property array<string, string>|null $tags

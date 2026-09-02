@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Arn
+ * @property bool|null $Force
  */
 class DeleteApplicationRequest extends Request
 {
     /**
-     * @param array{Arn: string} $args
+     * @param array{
+     *     Arn: string,
+     *     Force?: bool|null
+     * } $args
      */
     public function __construct(array $args)
     {

@@ -10,4 +10,5 @@ class SageMakerFeatureStoreRuntimeClient extends \Aws\SageMakerFeatureStoreRunti
     use GetRecord\GetRecordTrait;
     use ListRecords\ListRecordsTrait;
     use PutRecord\PutRecordTrait;
+    use UpdateRecord\UpdateRecordTrait;
 }
