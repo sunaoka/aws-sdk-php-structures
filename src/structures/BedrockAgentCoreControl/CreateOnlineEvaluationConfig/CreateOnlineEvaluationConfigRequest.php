@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\EvaluatorReference>|null $evaluators
  * @property list<Shapes\Insight>|null $insights
  * @property Shapes\ClusteringConfig|null $clusteringConfig
+ * @property Shapes\OutputConfig|null $outputConfig
  * @property string $evaluationExecutionRoleArn
  * @property bool $enableOnCreate
  * @property array<string, string>|null $tags
@@ -29,6 +30,7 @@ class CreateOnlineEvaluationConfigRequest extends Request
      *     evaluators?: list<Shapes\EvaluatorReference>|null,
      *     insights?: list<Shapes\Insight>|null,
      *     clusteringConfig?: Shapes\ClusteringConfig|null,
+     *     outputConfig?: Shapes\OutputConfig|null,
      *     evaluationExecutionRoleArn: string,
      *     enableOnCreate: bool,
      *     tags?: array<string, string>|null

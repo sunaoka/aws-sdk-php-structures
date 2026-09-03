@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ActionSummary> $ActionSummaries
  * @property list<'GenerativeAI'>|null $RuleCapabilityTiers
  * @property 'DRAFT'|'PUBLISHED' $PublishStatus
+ * @property PreEvaluationFilters|null $PreEvaluationFilters
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property \Aws\Api\DateTimeResult $LastUpdatedTime
  * @property string $LastUpdatedBy
@@ -28,6 +29,7 @@ class RuleSearchSummary extends Shape
      *     ActionSummaries: list<ActionSummary>,
      *     RuleCapabilityTiers?: list<'GenerativeAI'>|null,
      *     PublishStatus: 'DRAFT'|'PUBLISHED',
+     *     PreEvaluationFilters?: PreEvaluationFilters|null,
      *     CreatedTime: \Aws\Api\DateTimeResult,
      *     LastUpdatedTime: \Aws\Api\DateTimeResult,
      *     LastUpdatedBy: string,

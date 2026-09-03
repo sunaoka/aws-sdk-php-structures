@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'DAEMON'|'NONE'|null $propagateTags
  * @property bool|null $enableECSManagedTags
  * @property bool|null $enableExecuteCommand
+ * @property bool|null $critical
  */
 class UpdateDaemonRequest extends Request
 {
@@ -23,7 +24,8 @@ class UpdateDaemonRequest extends Request
      *     deploymentConfiguration?: Shapes\DaemonDeploymentConfiguration|null,
      *     propagateTags?: 'DAEMON'|'NONE'|null,
      *     enableECSManagedTags?: bool|null,
-     *     enableExecuteCommand?: bool|null
+     *     enableExecuteCommand?: bool|null,
+     *     critical?: bool|null
      * } $args
      */
     public function __construct(array $args)

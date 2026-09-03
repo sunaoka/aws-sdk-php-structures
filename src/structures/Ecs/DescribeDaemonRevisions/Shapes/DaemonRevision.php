@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DAEMON'|'NONE'|null $propagateTags
  * @property bool|null $enableECSManagedTags
  * @property bool|null $enableExecuteCommand
+ * @property bool|null $critical
  */
 class DaemonRevision extends Shape
 {
@@ -27,7 +28,8 @@ class DaemonRevision extends Shape
      *     containerImages?: list<DaemonContainerImage>|null,
      *     propagateTags?: 'DAEMON'|'NONE'|null,
      *     enableECSManagedTags?: bool|null,
-     *     enableExecuteCommand?: bool|null
+     *     enableExecuteCommand?: bool|null,
+     *     critical?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

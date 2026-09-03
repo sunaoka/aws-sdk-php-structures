@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\EvaluatorReference>|null $evaluators
  * @property list<Shapes\Insight>|null $insights
  * @property Shapes\ClusteringConfig|null $clusteringConfig
+ * @property Shapes\OutputConfig|null $outputConfig
  * @property string|null $evaluationExecutionRoleArn
  * @property 'ENABLED'|'DISABLED'|null $executionStatus
  */
@@ -28,6 +29,7 @@ class UpdateOnlineEvaluationConfigRequest extends Request
      *     evaluators?: list<Shapes\EvaluatorReference>|null,
      *     insights?: list<Shapes\Insight>|null,
      *     clusteringConfig?: Shapes\ClusteringConfig|null,
+     *     outputConfig?: Shapes\OutputConfig|null,
      *     evaluationExecutionRoleArn?: string|null,
      *     executionStatus?: 'ENABLED'|'DISABLED'|null
      * } $args

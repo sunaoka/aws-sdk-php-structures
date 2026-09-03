@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $arn
  * @property list<DaemonDeploymentCapacityProvider>|null $capacityProviders
  * @property int|null $totalRunningInstanceCount
+ * @property int|null $totalWithoutDaemonInstanceCount
  * @property int|null $totalDrainingInstanceCount
  */
 class DaemonDeploymentRevisionDetail extends Shape
@@ -17,6 +18,7 @@ class DaemonDeploymentRevisionDetail extends Shape
      *     arn?: string|null,
      *     capacityProviders?: list<DaemonDeploymentCapacityProvider>|null,
      *     totalRunningInstanceCount?: int|null,
+     *     totalWithoutDaemonInstanceCount?: int|null,
      *     totalDrainingInstanceCount?: int|null
      * } $args
      */

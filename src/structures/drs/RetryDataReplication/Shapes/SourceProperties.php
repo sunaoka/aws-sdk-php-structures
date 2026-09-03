@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, max>|null $ramBytes
  * @property OS|null $os
  * @property bool|null $supportsNitroInstances
+ * @property 'x86_64'|'arm64'|null $architecture
  */
 class SourceProperties extends Shape
 {
@@ -27,7 +28,8 @@ class SourceProperties extends Shape
      *     cpus?: list<CPU>|null,
      *     ramBytes?: int<0, max>|null,
      *     os?: OS|null,
-     *     supportsNitroInstances?: bool|null
+     *     supportsNitroInstances?: bool|null,
+     *     architecture?: 'x86_64'|'arm64'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $ActorIds
  * @property list<string>|null $EndpointIds
  * @property list<Indicator>|null $SignalIndicators
+ * @property list<Activity>|null $Activities
  */
 class Signal extends Shape
 {
@@ -37,7 +38,8 @@ class Signal extends Shape
      *     ResourceUids?: list<string>|null,
      *     ActorIds?: list<string>|null,
      *     EndpointIds?: list<string>|null,
-     *     SignalIndicators?: list<Indicator>|null
+     *     SignalIndicators?: list<Indicator>|null,
+     *     Activities?: list<Activity>|null
      * } $args
      */
     public function __construct(array $args)

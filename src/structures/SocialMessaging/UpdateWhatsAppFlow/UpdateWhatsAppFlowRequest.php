@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $flowId
  * @property string|null $flowName
  * @property list<'SIGN_UP'|'SIGN_IN'|'APPOINTMENT_BOOKING'|'LEAD_GENERATION'|'SHOPPING'|'CONTACT_US'|'CUSTOMER_SUPPORT'|'SURVEY'|'OTHER'>|null $categories
+ * @property string|null $endpointUri
+ * @property string|null $metaAppId
  */
 class UpdateWhatsAppFlowRequest extends Request
 {
@@ -17,7 +19,9 @@ class UpdateWhatsAppFlowRequest extends Request
      *     id: string,
      *     flowId: string,
      *     flowName?: string|null,
-     *     categories?: list<'SIGN_UP'|'SIGN_IN'|'APPOINTMENT_BOOKING'|'LEAD_GENERATION'|'SHOPPING'|'CONTACT_US'|'CUSTOMER_SUPPORT'|'SURVEY'|'OTHER'>|null
+     *     categories?: list<'SIGN_UP'|'SIGN_IN'|'APPOINTMENT_BOOKING'|'LEAD_GENERATION'|'SHOPPING'|'CONTACT_US'|'CUSTOMER_SUPPORT'|'SURVEY'|'OTHER'>|null,
+     *     endpointUri?: string|null,
+     *     metaAppId?: string|null
      * } $args
      */
     public function __construct(array $args)

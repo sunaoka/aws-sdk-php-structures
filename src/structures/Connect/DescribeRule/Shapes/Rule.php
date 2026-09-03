@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Function
  * @property list<RuleAction> $Actions
  * @property 'DRAFT'|'PUBLISHED' $PublishStatus
+ * @property PreEvaluationFilters|null $PreEvaluationFilters
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property \Aws\Api\DateTimeResult $LastUpdatedTime
  * @property string $LastUpdatedBy
@@ -30,6 +31,7 @@ class Rule extends Shape
      *     Function: string,
      *     Actions: list<RuleAction>,
      *     PublishStatus: 'DRAFT'|'PUBLISHED',
+     *     PreEvaluationFilters?: PreEvaluationFilters|null,
      *     CreatedTime: \Aws\Api\DateTimeResult,
      *     LastUpdatedTime: \Aws\Api\DateTimeResult,
      *     LastUpdatedBy: string,

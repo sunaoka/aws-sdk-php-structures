@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $enableECSManagedTags
  * @property bool|null $enableExecuteCommand
  * @property string|null $clientToken
+ * @property bool|null $critical
  */
 class CreateDaemonRequest extends Request
 {
@@ -29,7 +30,8 @@ class CreateDaemonRequest extends Request
      *     propagateTags?: 'DAEMON'|'NONE'|null,
      *     enableECSManagedTags?: bool|null,
      *     enableExecuteCommand?: bool|null,
-     *     clientToken?: string|null
+     *     clientToken?: string|null,
+     *     critical?: bool|null
      * } $args
      */
     public function __construct(array $args)

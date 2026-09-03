@@ -5,14 +5,16 @@ namespace Sunaoka\Aws\Structures\BedrockAgentCoreControl\UpdateOnlineEvaluationC
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $logGroupNames
+ * @property list<string>|null $logGroupNames
+ * @property list<string>|null $logGroupNamePrefixes
  * @property list<string> $serviceNames
  */
 class CloudWatchLogsInputConfig extends Shape
 {
     /**
      * @param array{
-     *     logGroupNames: list<string>,
+     *     logGroupNames?: list<string>|null,
+     *     logGroupNamePrefixes?: list<string>|null,
      *     serviceNames: list<string>
      * } $args
      */

@@ -14,6 +14,7 @@ class EvsClient extends \Aws\Evs\EvsClient
     use DeleteEnvironmentConnector\DeleteEnvironmentConnectorTrait;
     use DeleteEnvironmentHost\DeleteEnvironmentHostTrait;
     use DisassociateEipFromVlan\DisassociateEipFromVlanTrait;
+    use GetAccountSettings\GetAccountSettingsTrait;
     use GetDepotUrl\GetDepotUrlTrait;
     use GetEnvironment\GetEnvironmentTrait;
     use GetVersions\GetVersionsTrait;
@@ -23,6 +24,7 @@ class EvsClient extends \Aws\Evs\EvsClient
     use ListEnvironments\ListEnvironmentsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListVmEntitlements\ListVmEntitlementsTrait;
+    use PutAccountSettings\PutAccountSettingsTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateEnvironmentConnector\UpdateEnvironmentConnectorTrait;

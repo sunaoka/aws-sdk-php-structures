@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Function
  * @property list<Shapes\RuleAction> $Actions
  * @property 'DRAFT'|'PUBLISHED' $PublishStatus
+ * @property Shapes\PreEvaluationFilters|null $PreEvaluationFilters
  */
 class UpdateRuleRequest extends Request
 {
@@ -21,7 +22,8 @@ class UpdateRuleRequest extends Request
      *     Name: string,
      *     Function: string,
      *     Actions: list<Shapes\RuleAction>,
-     *     PublishStatus: 'DRAFT'|'PUBLISHED'
+     *     PublishStatus: 'DRAFT'|'PUBLISHED',
+     *     PreEvaluationFilters?: Shapes\PreEvaluationFilters|null
      * } $args
      */
     public function __construct(array $args)

@@ -14,6 +14,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use CreateCapacityProvider\CreateCapacityProviderTrait;
     use CreateCodeInterpreter\CreateCodeInterpreterTrait;
     use CreateConfigurationBundle\CreateConfigurationBundleTrait;
+    use CreateConsentPortal\CreateConsentPortalTrait;
     use CreateDataset\CreateDatasetTrait;
     use CreateDatasetVersion\CreateDatasetVersionTrait;
     use CreateEvaluator\CreateEvaluatorTrait;
@@ -42,6 +43,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use DeleteCapacityProvider\DeleteCapacityProviderTrait;
     use DeleteCodeInterpreter\DeleteCodeInterpreterTrait;
     use DeleteConfigurationBundle\DeleteConfigurationBundleTrait;
+    use DeleteConsentPortal\DeleteConsentPortalTrait;
     use DeleteDataset\DeleteDatasetTrait;
     use DeleteDatasetExamples\DeleteDatasetExamplesTrait;
     use DeleteEvaluator\DeleteEvaluatorTrait;
@@ -72,6 +74,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use GetCodeInterpreter\GetCodeInterpreterTrait;
     use GetConfigurationBundle\GetConfigurationBundleTrait;
     use GetConfigurationBundleVersion\GetConfigurationBundleVersionTrait;
+    use GetConsentPortal\GetConsentPortalTrait;
     use GetDataset\GetDatasetTrait;
     use GetEvaluator\GetEvaluatorTrait;
     use GetGateway\GetGatewayTrait;
@@ -108,6 +111,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use ListCodeInterpreters\ListCodeInterpretersTrait;
     use ListConfigurationBundleVersions\ListConfigurationBundleVersionsTrait;
     use ListConfigurationBundles\ListConfigurationBundlesTrait;
+    use ListConsentPortals\ListConsentPortalsTrait;
     use ListDatasetExamples\ListDatasetExamplesTrait;
     use ListDatasetVersions\ListDatasetVersionsTrait;
     use ListDatasets\ListDatasetsTrait;
@@ -148,6 +152,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use UpdateApiKeyCredentialProvider\UpdateApiKeyCredentialProviderTrait;
     use UpdateCapacityProvider\UpdateCapacityProviderTrait;
     use UpdateConfigurationBundle\UpdateConfigurationBundleTrait;
+    use UpdateConsentPortal\UpdateConsentPortalTrait;
     use UpdateDataset\UpdateDatasetTrait;
     use UpdateDatasetExamples\UpdateDatasetExamplesTrait;
     use UpdateEvaluator\UpdateEvaluatorTrait;

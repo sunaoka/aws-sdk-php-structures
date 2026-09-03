@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $tags
  * @property string|null $kmsKeyArn
  * @property string|null $description
+ * @property Shapes\OutputConfig|null $outputConfig
  */
 class StartBatchEvaluationRequest extends Request
 {
@@ -27,7 +28,8 @@ class StartBatchEvaluationRequest extends Request
      *     evaluationMetadata?: Shapes\EvaluationMetadata|null,
      *     tags?: array<string, string>|null,
      *     kmsKeyArn?: string|null,
-     *     description?: string|null
+     *     description?: string|null,
+     *     outputConfig?: Shapes\OutputConfig|null
      * } $args
      */
     public function __construct(array $args)
