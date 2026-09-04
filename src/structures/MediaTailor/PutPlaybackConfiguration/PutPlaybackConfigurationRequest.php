@@ -22,7 +22,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $VideoContentSourceUrl
  * @property Shapes\AdConditioningConfiguration|null $AdConditioningConfiguration
  * @property Shapes\AdDecisionServerConfiguration|null $AdDecisionServerConfiguration
- * @property array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST', string>|null $FunctionMapping
+ * @property Shapes\YieldOptimizationConfiguration|null $YieldOptimizationConfiguration
+ * @property array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST'|'POST_ADS_RESPONSE'|'PRE_MANIFEST_INSERTION', string>|null $FunctionMapping
  * @property Shapes\AdsPersonalizationTimeouts|null $AdsPersonalizationTimeouts
  * @property Shapes\AdsPersonalizationConcurrency|null $AdsPersonalizationConcurrency
  */
@@ -47,7 +48,8 @@ class PutPlaybackConfigurationRequest extends Request
      *     VideoContentSourceUrl?: string|null,
      *     AdConditioningConfiguration?: Shapes\AdConditioningConfiguration|null,
      *     AdDecisionServerConfiguration?: Shapes\AdDecisionServerConfiguration|null,
-     *     FunctionMapping?: array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST', string>|null,
+     *     YieldOptimizationConfiguration?: Shapes\YieldOptimizationConfiguration|null,
+     *     FunctionMapping?: array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST'|'POST_ADS_RESPONSE'|'PRE_MANIFEST_INSERTION', string>|null,
      *     AdsPersonalizationTimeouts?: Shapes\AdsPersonalizationTimeouts|null,
      *     AdsPersonalizationConcurrency?: Shapes\AdsPersonalizationConcurrency|null
      * } $args

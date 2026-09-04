@@ -804,5 +804,6 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use UpdateInterruptibleCapacityReservationAllocation\UpdateInterruptibleCapacityReservationAllocationTrait;
     use UpdateSecurityGroupRuleDescriptionsEgress\UpdateSecurityGroupRuleDescriptionsEgressTrait;
     use UpdateSecurityGroupRuleDescriptionsIngress\UpdateSecurityGroupRuleDescriptionsIngressTrait;
+    use ValidateSecurityGroupQuotasForInterface\ValidateSecurityGroupQuotasForInterfaceTrait;
     use WithdrawByoipCidr\WithdrawByoipCidrTrait;
 }
