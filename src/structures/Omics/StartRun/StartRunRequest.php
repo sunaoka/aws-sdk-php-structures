@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'RESTRICTED'|'VPC'|null $networkingMode
  * @property 'LOCAL'|'SHARED'|null $scratchStorageMode
  * @property string|null $configurationName
+ * @property string|null $sessionPolicy
  * @property Shapes\EngineSettings|null $engineSettings
  */
 class StartRunRequest extends Request
@@ -55,6 +56,7 @@ class StartRunRequest extends Request
      *     networkingMode?: 'RESTRICTED'|'VPC'|null,
      *     scratchStorageMode?: 'LOCAL'|'SHARED'|null,
      *     configurationName?: string|null,
+     *     sessionPolicy?: string|null,
      *     engineSettings?: Shapes\EngineSettings|null
      * } $args
      */

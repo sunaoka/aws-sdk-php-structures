@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $DefaultEnaQueueCountPerInterface
  * @property int|null $MaximumEnaQueueCount
  * @property int|null $MaximumEnaQueueCountPerInterface
+ * @property list<'interface'|'efa'|'efa-only'|'secondary'>|null $InterfaceTypes
  */
 class NetworkCardInfo extends Shape
 {
@@ -27,7 +28,8 @@ class NetworkCardInfo extends Shape
      *     PeakBandwidthInGbps?: double|null,
      *     DefaultEnaQueueCountPerInterface?: int|null,
      *     MaximumEnaQueueCount?: int|null,
-     *     MaximumEnaQueueCountPerInterface?: int|null
+     *     MaximumEnaQueueCountPerInterface?: int|null,
+     *     InterfaceTypes?: list<'interface'|'efa'|'efa-only'|'secondary'>|null
      * } $args
      */
     public function __construct(array $args = [])

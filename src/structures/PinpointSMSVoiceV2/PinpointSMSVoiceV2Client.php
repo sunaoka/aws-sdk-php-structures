@@ -70,6 +70,7 @@ class PinpointSMSVoiceV2Client extends \Aws\PinpointSMSVoiceV2\PinpointSMSVoiceV
     use DiscardRegistrationVersion\DiscardRegistrationVersionTrait;
     use GetProtectConfigurationCountryRuleSet\GetProtectConfigurationCountryRuleSetTrait;
     use GetResourcePolicy\GetResourcePolicyTrait;
+    use ListAvailablePhoneNumbers\ListAvailablePhoneNumbersTrait;
     use ListNotifyCountries\ListNotifyCountriesTrait;
     use ListPoolOriginationIdentities\ListPoolOriginationIdentitiesTrait;
     use ListProtectConfigurationRuleSetNumberOverrides\ListProtectConfigurationRuleSetNumberOverridesTrait;

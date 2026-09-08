@@ -32,7 +32,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ContentLanguage
  * @property string|null $ContentRange
  * @property string|null $ContentType
- * @property \Aws\Api\DateTimeResult|null $Expires
+ * @property string|null $Expires
  * @property string|null $WebsiteRedirectLocation
  * @property 'AES256'|'aws:fsx'|'aws:backup'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
  * @property array<string, string>|null $Metadata
@@ -48,6 +48,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'GOVERNANCE'|'COMPLIANCE'|null $ObjectLockMode
  * @property \Aws\Api\DateTimeResult|null $ObjectLockRetainUntilDate
  * @property 'ON'|'OFF'|null $ObjectLockLegalHoldStatus
+ * @property 'ON'|'OFF'|null $ObjectLockEventHold
+ * @property int|null $ObjectLockEventHoldDurationDays
+ * @property int|null $ObjectLockEventHoldDurationYears
  */
 class GetObjectResponse extends Response
 {

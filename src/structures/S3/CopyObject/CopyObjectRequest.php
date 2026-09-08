@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $CopySourceIfModifiedSince
  * @property string|null $CopySourceIfNoneMatch
  * @property \Aws\Api\DateTimeResult|null $CopySourceIfUnmodifiedSince
- * @property \Aws\Api\DateTimeResult|null $Expires
+ * @property string|null $Expires
  * @property string|null $GrantFullControl
  * @property string|null $GrantRead
  * @property string|null $GrantReadACP
@@ -47,6 +47,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'GOVERNANCE'|'COMPLIANCE'|null $ObjectLockMode
  * @property \Aws\Api\DateTimeResult|null $ObjectLockRetainUntilDate
  * @property 'ON'|'OFF'|null $ObjectLockLegalHoldStatus
+ * @property 'ON'|'OFF'|null $ObjectLockEventHold
+ * @property int|null $ObjectLockEventHoldDurationDays
+ * @property int|null $ObjectLockEventHoldDurationYears
  * @property string|null $ExpectedBucketOwner
  * @property string|null $ExpectedSourceBucketOwner
  */
@@ -67,7 +70,7 @@ class CopyObjectRequest extends Request
      *     CopySourceIfModifiedSince?: \Aws\Api\DateTimeResult|null,
      *     CopySourceIfNoneMatch?: string|null,
      *     CopySourceIfUnmodifiedSince?: \Aws\Api\DateTimeResult|null,
-     *     Expires?: \Aws\Api\DateTimeResult|null,
+     *     Expires?: string|null,
      *     GrantFullControl?: string|null,
      *     GrantRead?: string|null,
      *     GrantReadACP?: string|null,
@@ -96,6 +99,9 @@ class CopyObjectRequest extends Request
      *     ObjectLockMode?: 'GOVERNANCE'|'COMPLIANCE'|null,
      *     ObjectLockRetainUntilDate?: \Aws\Api\DateTimeResult|null,
      *     ObjectLockLegalHoldStatus?: 'ON'|'OFF'|null,
+     *     ObjectLockEventHold?: 'ON'|'OFF'|null,
+     *     ObjectLockEventHoldDurationDays?: int|null,
+     *     ObjectLockEventHoldDurationYears?: int|null,
      *     ExpectedBucketOwner?: string|null,
      *     ExpectedSourceBucketOwner?: string|null
      * } $args

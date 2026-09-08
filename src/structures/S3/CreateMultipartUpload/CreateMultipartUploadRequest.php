@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ContentEncoding
  * @property string|null $ContentLanguage
  * @property string|null $ContentType
- * @property \Aws\Api\DateTimeResult|null $Expires
+ * @property string|null $Expires
  * @property string|null $GrantFullControl
  * @property string|null $GrantRead
  * @property string|null $GrantReadACP
@@ -33,6 +33,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'GOVERNANCE'|'COMPLIANCE'|null $ObjectLockMode
  * @property \Aws\Api\DateTimeResult|null $ObjectLockRetainUntilDate
  * @property 'ON'|'OFF'|null $ObjectLockLegalHoldStatus
+ * @property 'ON'|'OFF'|null $ObjectLockEventHold
+ * @property int|null $ObjectLockEventHoldDurationDays
+ * @property int|null $ObjectLockEventHoldDurationYears
  * @property string|null $ExpectedBucketOwner
  * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|'SHA512'|'MD5'|'XXHASH64'|'XXHASH3'|'XXHASH128'|null $ChecksumAlgorithm
  * @property 'COMPOSITE'|'FULL_OBJECT'|null $ChecksumType
@@ -48,7 +51,7 @@ class CreateMultipartUploadRequest extends Request
      *     ContentEncoding?: string|null,
      *     ContentLanguage?: string|null,
      *     ContentType?: string|null,
-     *     Expires?: \Aws\Api\DateTimeResult|null,
+     *     Expires?: string|null,
      *     GrantFullControl?: string|null,
      *     GrantRead?: string|null,
      *     GrantReadACP?: string|null,
@@ -69,6 +72,9 @@ class CreateMultipartUploadRequest extends Request
      *     ObjectLockMode?: 'GOVERNANCE'|'COMPLIANCE'|null,
      *     ObjectLockRetainUntilDate?: \Aws\Api\DateTimeResult|null,
      *     ObjectLockLegalHoldStatus?: 'ON'|'OFF'|null,
+     *     ObjectLockEventHold?: 'ON'|'OFF'|null,
+     *     ObjectLockEventHoldDurationDays?: int|null,
+     *     ObjectLockEventHoldDurationYears?: int|null,
      *     ExpectedBucketOwner?: string|null,
      *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|'SHA512'|'MD5'|'XXHASH64'|'XXHASH3'|'XXHASH128'|null,
      *     ChecksumType?: 'COMPOSITE'|'FULL_OBJECT'|null

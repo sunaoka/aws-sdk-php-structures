@@ -6,14 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $username
- * @property string $password
+ * @property string|null $password
+ * @property string|null $privateKey
  */
 class SnowflakeConnectorProfileCredentials extends Shape
 {
     /**
      * @param array{
      *     username: string,
-     *     password: string
+     *     password?: string|null,
+     *     privateKey?: string|null
      * } $args
      */
     public function __construct(array $args)

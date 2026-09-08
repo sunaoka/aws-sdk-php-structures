@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TwoWayMediaS3Role
  * @property list<string>|null $TwoWayRcsEventsEnabled
  * @property TestingAgentInformation|null $TestingAgent
+ * @property MessagingLimits|null $MessagingLimits
  */
 class RcsAgentInformation extends Shape
 {
@@ -41,7 +42,8 @@ class RcsAgentInformation extends Shape
      *     TwoWayMediaS3KeyPrefix?: string|null,
      *     TwoWayMediaS3Role?: string|null,
      *     TwoWayRcsEventsEnabled?: list<string>|null,
-     *     TestingAgent?: TestingAgentInformation|null
+     *     TestingAgent?: TestingAgentInformation|null,
+     *     MessagingLimits?: MessagingLimits|null
      * } $args
      */
     public function __construct(array $args)

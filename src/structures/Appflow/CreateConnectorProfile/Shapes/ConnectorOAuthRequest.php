@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $authCode
  * @property string|null $redirectUri
+ * @property string|null $codeVerifier
  */
 class ConnectorOAuthRequest extends Shape
 {
     /**
      * @param array{
      *     authCode?: string|null,
-     *     redirectUri?: string|null
+     *     redirectUri?: string|null,
+     *     codeVerifier?: string|null
      * } $args
      */
     public function __construct(array $args = [])

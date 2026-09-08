@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'private'|'public-read'|'public-read-write'|'aws-exec-read'|'authenticated-read'|'bucket-owner-read'|'bucket-owner-full-control'|null $CannedAccessControlList
  * @property list<S3Grant>|null $AccessControlGrants
  * @property 'COPY'|'REPLACE'|null $MetadataDirective
+ * @property 'COPY'|'EXCLUDE'|null $AnnotationDirective
  * @property \Aws\Api\DateTimeResult|null $ModifiedSinceConstraint
  * @property S3ObjectMetadata|null $NewObjectMetadata
  * @property list<S3Tag>|null $NewObjectTagging
@@ -23,6 +24,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $ObjectLockRetainUntilDate
  * @property bool|null $BucketKeyEnabled
  * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|'SHA512'|'MD5'|'XXHASH64'|'XXHASH3'|'XXHASH128'|null $ChecksumAlgorithm
+ * @property 'ON'|'OFF'|null $ObjectLockEventHold
+ * @property S3ObjectLockEventHoldDuration|null $ObjectLockEventHoldDuration
  */
 class S3CopyObjectOperation extends Shape
 {
@@ -32,6 +35,7 @@ class S3CopyObjectOperation extends Shape
      *     CannedAccessControlList?: 'private'|'public-read'|'public-read-write'|'aws-exec-read'|'authenticated-read'|'bucket-owner-read'|'bucket-owner-full-control'|null,
      *     AccessControlGrants?: list<S3Grant>|null,
      *     MetadataDirective?: 'COPY'|'REPLACE'|null,
+     *     AnnotationDirective?: 'COPY'|'EXCLUDE'|null,
      *     ModifiedSinceConstraint?: \Aws\Api\DateTimeResult|null,
      *     NewObjectMetadata?: S3ObjectMetadata|null,
      *     NewObjectTagging?: list<S3Tag>|null,
@@ -45,7 +49,9 @@ class S3CopyObjectOperation extends Shape
      *     ObjectLockMode?: 'COMPLIANCE'|'GOVERNANCE'|null,
      *     ObjectLockRetainUntilDate?: \Aws\Api\DateTimeResult|null,
      *     BucketKeyEnabled?: bool|null,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|'SHA512'|'MD5'|'XXHASH64'|'XXHASH3'|'XXHASH128'|null
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|'SHA512'|'MD5'|'XXHASH64'|'XXHASH3'|'XXHASH128'|null,
+     *     ObjectLockEventHold?: 'ON'|'OFF'|null,
+     *     ObjectLockEventHoldDuration?: S3ObjectLockEventHoldDuration|null
      * } $args
      */
     public function __construct(array $args = [])

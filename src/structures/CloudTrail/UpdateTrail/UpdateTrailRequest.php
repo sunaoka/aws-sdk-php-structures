@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $CloudWatchLogsRoleArn
  * @property string|null $KmsKeyId
  * @property bool|null $IsOrganizationTrail
+ * @property bool|null $RecursiveLogging
  */
 class UpdateTrailRequest extends Request
 {
@@ -31,7 +32,8 @@ class UpdateTrailRequest extends Request
      *     CloudWatchLogsLogGroupArn?: string|null,
      *     CloudWatchLogsRoleArn?: string|null,
      *     KmsKeyId?: string|null,
-     *     IsOrganizationTrail?: bool|null
+     *     IsOrganizationTrail?: bool|null,
+     *     RecursiveLogging?: bool|null
      * } $args
      */
     public function __construct(array $args)

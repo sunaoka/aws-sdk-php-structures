@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $CloudWatchLogsRoleArn
  * @property string|null $KmsKeyId
  * @property bool|null $IsOrganizationTrail
+ * @property bool|null $RecursiveLogging
  */
 class UpdateTrailResponse extends Response
 {

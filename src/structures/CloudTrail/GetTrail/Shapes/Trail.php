@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $HasCustomEventSelectors
  * @property bool|null $HasInsightSelectors
  * @property bool|null $IsOrganizationTrail
+ * @property bool|null $RecursiveLogging
  */
 class Trail extends Shape
 {
@@ -41,7 +42,8 @@ class Trail extends Shape
      *     KmsKeyId?: string|null,
      *     HasCustomEventSelectors?: bool|null,
      *     HasInsightSelectors?: bool|null,
-     *     IsOrganizationTrail?: bool|null
+     *     IsOrganizationTrail?: bool|null,
+     *     RecursiveLogging?: bool|null
      * } $args
      */
     public function __construct(array $args = [])
