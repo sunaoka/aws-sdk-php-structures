@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EvaluationFormTargetConfiguration|null $TargetConfiguration
  * @property EvaluationFormLanguageConfiguration|null $LanguageConfiguration
  * @property EvaluationReviewConfiguration|null $ReviewConfiguration
+ * @property string|null $AIVersion
  */
 class EvaluationFormContent extends Shape
 {
@@ -31,7 +32,8 @@ class EvaluationFormContent extends Shape
      *     AutoEvaluationConfiguration?: EvaluationFormAutoEvaluationConfiguration|null,
      *     TargetConfiguration?: EvaluationFormTargetConfiguration|null,
      *     LanguageConfiguration?: EvaluationFormLanguageConfiguration|null,
-     *     ReviewConfiguration?: EvaluationReviewConfiguration|null
+     *     ReviewConfiguration?: EvaluationReviewConfiguration|null,
+     *     AIVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

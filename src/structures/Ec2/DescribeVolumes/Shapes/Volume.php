@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'sse-ebs'|'sse-kms'|'none'|null $SseType
  * @property OperatorResponse|null $Operator
  * @property int|null $VolumeInitializationRate
+ * @property string|null $VolumeArn
+ * @property string|null $OwnerId
  * @property string|null $VolumeId
  * @property int|null $Size
  * @property string|null $SnapshotId
@@ -43,6 +45,8 @@ class Volume extends Shape
      *     SseType?: 'sse-ebs'|'sse-kms'|'none'|null,
      *     Operator?: OperatorResponse|null,
      *     VolumeInitializationRate?: int|null,
+     *     VolumeArn?: string|null,
+     *     OwnerId?: string|null,
      *     VolumeId?: string|null,
      *     Size?: int|null,
      *     SnapshotId?: string|null,

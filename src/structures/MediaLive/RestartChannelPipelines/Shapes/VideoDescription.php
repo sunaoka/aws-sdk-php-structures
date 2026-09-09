@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $Width
  * @property VideoPositionRectangle|null $CropRectangle
  * @property VideoPositionRectangle|null $OutputPositionRectangle
+ * @property int|null $Border
  */
 class VideoDescription extends Shape
 {
@@ -27,7 +28,8 @@ class VideoDescription extends Shape
      *     Sharpness?: int|null,
      *     Width?: int|null,
      *     CropRectangle?: VideoPositionRectangle|null,
-     *     OutputPositionRectangle?: VideoPositionRectangle|null
+     *     OutputPositionRectangle?: VideoPositionRectangle|null,
+     *     Border?: int|null
      * } $args
      */
     public function __construct(array $args)

@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'sse-ebs'|'sse-kms'|'none'|null $SseType
  * @property Shapes\OperatorResponse|null $Operator
  * @property int|null $VolumeInitializationRate
+ * @property string|null $VolumeArn
+ * @property string|null $OwnerId
  * @property string|null $VolumeId
  * @property int|null $Size
  * @property string|null $SnapshotId

@@ -5,6 +5,8 @@ namespace Sunaoka\Aws\Structures\MediaPackageV2\GetChannel;
 use Sunaoka\Aws\Structures\Response;
 
 /**
+ * @property Shapes\MultiviewConfiguration|null $MultiviewConfiguration
+ * @property list<string>|null $AttachedMultiviewChannels
  * @property string $Arn
  * @property string $ChannelName
  * @property string $ChannelGroupName
@@ -13,7 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $ResetAt
  * @property string|null $Description
  * @property list<Shapes\IngestEndpoint>|null $IngestEndpoints
- * @property 'HLS'|'CMAF'|null $InputType
+ * @property 'HLS'|'CMAF'|'MULTIVIEW'|null $InputType
  * @property string|null $ETag
  * @property array<string, string>|null $Tags
  * @property Shapes\InputSwitchConfiguration|null $InputSwitchConfiguration

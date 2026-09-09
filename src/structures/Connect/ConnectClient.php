@@ -214,6 +214,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ListDataTables\ListDataTablesTrait;
     use ListDefaultVocabularies\ListDefaultVocabulariesTrait;
     use ListEntitySecurityProfiles\ListEntitySecurityProfilesTrait;
+    use ListEvaluationFormAIVersions\ListEvaluationFormAIVersionsTrait;
     use ListEvaluationFormVersions\ListEvaluationFormVersionsTrait;
     use ListEvaluationForms\ListEvaluationFormsTrait;
     use ListExtractionDefinitions\ListExtractionDefinitionsTrait;

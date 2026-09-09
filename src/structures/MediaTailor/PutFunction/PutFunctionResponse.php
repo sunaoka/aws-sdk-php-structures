@@ -6,9 +6,10 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $FunctionId
- * @property 'HTTP_REQUEST'|'CUSTOM_OUTPUT'|'CONCURRENT_EXECUTOR'|'SEQUENTIAL_EXECUTOR'|'VAST_REQUEST' $FunctionType
+ * @property 'HTTP_REQUEST'|'AWS_SERVICE_REQUEST'|'CUSTOM_OUTPUT'|'CONCURRENT_EXECUTOR'|'SEQUENTIAL_EXECUTOR'|'VAST_REQUEST' $FunctionType
  * @property string|null $Description
  * @property Shapes\HttpRequestConfiguration|null $HttpRequestConfiguration
+ * @property Shapes\AwsServiceRequestConfiguration|null $AwsServiceRequestConfiguration
  * @property Shapes\CustomOutputConfiguration|null $CustomOutputConfiguration
  * @property Shapes\ConcurrentExecutorConfiguration|null $ConcurrentExecutorConfiguration
  * @property Shapes\SequentialExecutorConfiguration|null $SequentialExecutorConfiguration

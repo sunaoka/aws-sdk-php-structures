@@ -6,9 +6,10 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FunctionId
- * @property 'HTTP_REQUEST'|'CUSTOM_OUTPUT'|'CONCURRENT_EXECUTOR'|'SEQUENTIAL_EXECUTOR'|'VAST_REQUEST' $FunctionType
+ * @property 'HTTP_REQUEST'|'AWS_SERVICE_REQUEST'|'CUSTOM_OUTPUT'|'CONCURRENT_EXECUTOR'|'SEQUENTIAL_EXECUTOR'|'VAST_REQUEST' $FunctionType
  * @property string|null $Description
  * @property HttpRequestConfiguration|null $HttpRequestConfiguration
+ * @property AwsServiceRequestConfiguration|null $AwsServiceRequestConfiguration
  * @property CustomOutputConfiguration|null $CustomOutputConfiguration
  * @property ConcurrentExecutorConfiguration|null $ConcurrentExecutorConfiguration
  * @property SequentialExecutorConfiguration|null $SequentialExecutorConfiguration
@@ -21,9 +22,10 @@ class FunctionShape extends Shape
     /**
      * @param array{
      *     FunctionId: string,
-     *     FunctionType: 'HTTP_REQUEST'|'CUSTOM_OUTPUT'|'CONCURRENT_EXECUTOR'|'SEQUENTIAL_EXECUTOR'|'VAST_REQUEST',
+     *     FunctionType: 'HTTP_REQUEST'|'AWS_SERVICE_REQUEST'|'CUSTOM_OUTPUT'|'CONCURRENT_EXECUTOR'|'SEQUENTIAL_EXECUTOR'|'VAST_REQUEST',
      *     Description?: string|null,
      *     HttpRequestConfiguration?: HttpRequestConfiguration|null,
+     *     AwsServiceRequestConfiguration?: AwsServiceRequestConfiguration|null,
      *     CustomOutputConfiguration?: CustomOutputConfiguration|null,
      *     ConcurrentExecutorConfiguration?: ConcurrentExecutorConfiguration|null,
      *     SequentialExecutorConfiguration?: SequentialExecutorConfiguration|null,

@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $MultiAttachEnabled
  * @property int|null $Throughput
  * @property string|null $ClientToken
+ * @property bool|null $Encrypted
+ * @property string|null $KmsKeyId
  */
 class CopyVolumesRequest extends Request
 {
@@ -27,7 +29,9 @@ class CopyVolumesRequest extends Request
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     MultiAttachEnabled?: bool|null,
      *     Throughput?: int|null,
-     *     ClientToken?: string|null
+     *     ClientToken?: string|null,
+     *     Encrypted?: bool|null,
+     *     KmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

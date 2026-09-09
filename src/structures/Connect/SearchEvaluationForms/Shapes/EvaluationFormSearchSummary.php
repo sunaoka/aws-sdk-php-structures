@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'de-DE'|'en-US'|'es-ES'|'fr-FR'|'it-IT'|'pt-BR'|'ja-JP'|'ko-KR'|'zh-CN'|'ms-MY'|null $EvaluationFormLanguage
  * @property 'AGENT'|'AUTOMATED'|'CUSTOMER'|null $ContactInteractionType
  * @property array<string, string>|null $Tags
+ * @property string|null $AIVersion
  */
 class EvaluationFormSearchSummary extends Shape
 {
@@ -43,7 +44,8 @@ class EvaluationFormSearchSummary extends Shape
      *     AutoEvaluationEnabled?: bool|null,
      *     EvaluationFormLanguage?: 'de-DE'|'en-US'|'es-ES'|'fr-FR'|'it-IT'|'pt-BR'|'ja-JP'|'ko-KR'|'zh-CN'|'ms-MY'|null,
      *     ContactInteractionType?: 'AGENT'|'AUTOMATED'|'CUSTOMER'|null,
-     *     Tags?: array<string, string>|null
+     *     Tags?: array<string, string>|null,
+     *     AIVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

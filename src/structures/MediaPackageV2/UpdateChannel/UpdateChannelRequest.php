@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property Shapes\InputSwitchConfiguration|null $InputSwitchConfiguration
  * @property Shapes\OutputHeaderConfiguration|null $OutputHeaderConfiguration
+ * @property Shapes\MultiviewConfiguration|null $MultiviewConfiguration
  */
 class UpdateChannelRequest extends Request
 {
@@ -21,7 +22,8 @@ class UpdateChannelRequest extends Request
      *     ETag?: string|null,
      *     Description?: string|null,
      *     InputSwitchConfiguration?: Shapes\InputSwitchConfiguration|null,
-     *     OutputHeaderConfiguration?: Shapes\OutputHeaderConfiguration|null
+     *     OutputHeaderConfiguration?: Shapes\OutputHeaderConfiguration|null,
+     *     MultiviewConfiguration?: Shapes\MultiviewConfiguration|null
      * } $args
      */
     public function __construct(array $args)
