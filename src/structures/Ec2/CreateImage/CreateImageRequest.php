@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property 'regional'|'local'|null $SnapshotLocation
+ * @property 'uefi'|null $BootModeOverride
  * @property bool|null $DryRun
  * @property string $InstanceId
  * @property string $Name
@@ -20,6 +21,7 @@ class CreateImageRequest extends Request
      * @param array{
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     SnapshotLocation?: 'regional'|'local'|null,
+     *     BootModeOverride?: 'uefi'|null,
      *     DryRun?: bool|null,
      *     InstanceId: string,
      *     Name: string,

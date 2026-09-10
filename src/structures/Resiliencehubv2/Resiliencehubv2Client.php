@@ -50,7 +50,9 @@ class Resiliencehubv2Client extends \Aws\Resiliencehubv2\Resiliencehubv2Client
     use ListSystemEvents\ListSystemEventsTrait;
     use ListSystems\ListSystemsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use ListTestRunDependencies\ListTestRunDependenciesTrait;
     use ListTestRunEvents\ListTestRunEventsTrait;
+    use ListTestRunSourceEvents\ListTestRunSourceEventsTrait;
     use ListTestRunSources\ListTestRunSourcesTrait;
     use ListTestRuns\ListTestRunsTrait;
     use ListTestSources\ListTestSourcesTrait;

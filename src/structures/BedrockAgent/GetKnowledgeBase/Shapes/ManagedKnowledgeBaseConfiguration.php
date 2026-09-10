@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $embeddingModelArn
  * @property EmbeddingModelConfiguration|null $embeddingModelConfiguration
  * @property ServerSideEncryptionConfiguration|null $serverSideEncryptionConfiguration
+ * @property SupplementalDataStorageConfiguration|null $supplementalDataStorageConfiguration
  */
 class ManagedKnowledgeBaseConfiguration extends Shape
 {
@@ -17,7 +18,8 @@ class ManagedKnowledgeBaseConfiguration extends Shape
      *     embeddingModelType?: 'CUSTOM'|'MANAGED'|null,
      *     embeddingModelArn?: string|null,
      *     embeddingModelConfiguration?: EmbeddingModelConfiguration|null,
-     *     serverSideEncryptionConfiguration?: ServerSideEncryptionConfiguration|null
+     *     serverSideEncryptionConfiguration?: ServerSideEncryptionConfiguration|null,
+     *     supplementalDataStorageConfiguration?: SupplementalDataStorageConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

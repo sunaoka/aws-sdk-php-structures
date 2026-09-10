@@ -7,6 +7,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use AddAssociation\AddAssociationTrait;
     use AddTags\AddTagsTrait;
     use AssociateTrialComponent\AssociateTrialComponentTrait;
+    use AttachClusterNodeNetworkInterface\AttachClusterNodeNetworkInterfaceTrait;
     use AttachClusterNodeVolume\AttachClusterNodeVolumeTrait;
     use BatchAddClusterNodes\BatchAddClusterNodesTrait;
     use BatchDeleteClusterNodes\BatchDeleteClusterNodesTrait;

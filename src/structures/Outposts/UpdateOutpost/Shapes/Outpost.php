@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $Tags
  * @property string|null $SiteArn
  * @property 'RACK'|'SERVER'|null $SupportedHardwareType
+ * @property 'GENERATION_2'|'GENERATION_1'|null $Generation
+ * @property 'SINGLE_RACK'|'MULTI_RACK'|null $RackScalingType
  */
 class Outpost extends Shape
 {
@@ -33,7 +35,9 @@ class Outpost extends Shape
      *     AvailabilityZoneId?: string|null,
      *     Tags?: array<string, string>|null,
      *     SiteArn?: string|null,
-     *     SupportedHardwareType?: 'RACK'|'SERVER'|null
+     *     SupportedHardwareType?: 'RACK'|'SERVER'|null,
+     *     Generation?: 'GENERATION_2'|'GENERATION_1'|null,
+     *     RackScalingType?: 'SINGLE_RACK'|'MULTI_RACK'|null
      * } $args
      */
     public function __construct(array $args = [])

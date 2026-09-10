@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $WeightLbs
  * @property list<int>|null $SupportedUplinkGbps
  * @property list<'EBS'|'S3'>|null $SupportedStorage
+ * @property 'SINGLE_RACK'|'MULTI_RACK'|null $RackScalingType
  */
 class CatalogItem extends Shape
 {
@@ -23,7 +24,8 @@ class CatalogItem extends Shape
      *     PowerKva?: float|null,
      *     WeightLbs?: int|null,
      *     SupportedUplinkGbps?: list<int>|null,
-     *     SupportedStorage?: list<'EBS'|'S3'>|null
+     *     SupportedStorage?: list<'EBS'|'S3'>|null,
+     *     RackScalingType?: 'SINGLE_RACK'|'MULTI_RACK'|null
      * } $args
      */
     public function __construct(array $args = [])

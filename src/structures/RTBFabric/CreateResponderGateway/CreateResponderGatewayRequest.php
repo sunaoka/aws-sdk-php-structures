@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property array<string, string>|null $tags
  * @property 'EXTERNAL'|'INTERNAL'|null $gatewayType
+ * @property 'AVAILABILITY_ZONE_AFFINITY'|'ANY_AVAILABILITY_ZONE'|null $clientRoutingPolicy
  */
 class CreateResponderGatewayRequest extends Request
 {
@@ -35,7 +36,8 @@ class CreateResponderGatewayRequest extends Request
      *     clientToken: string,
      *     description?: string|null,
      *     tags?: array<string, string>|null,
-     *     gatewayType?: 'EXTERNAL'|'INTERNAL'|null
+     *     gatewayType?: 'EXTERNAL'|'INTERNAL'|null,
+     *     clientRoutingPolicy?: 'AVAILABILITY_ZONE_AFFINITY'|'ANY_AVAILABILITY_ZONE'|null
      * } $args
      */
     public function __construct(array $args)

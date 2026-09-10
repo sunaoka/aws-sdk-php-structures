@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'FLOAT32'|'BINARY'|null $embeddingDataType
  * @property list<AudioConfiguration>|null $audio
  * @property list<VideoConfiguration>|null $video
+ * @property Document|null $modelConfiguration
  */
 class BedrockEmbeddingModelConfiguration extends Shape
 {
@@ -17,7 +18,8 @@ class BedrockEmbeddingModelConfiguration extends Shape
      *     dimensions?: int<0, 4096>|null,
      *     embeddingDataType?: 'FLOAT32'|'BINARY'|null,
      *     audio?: list<AudioConfiguration>|null,
-     *     video?: list<VideoConfiguration>|null
+     *     video?: list<VideoConfiguration>|null,
+     *     modelConfiguration?: Document|null
      * } $args
      */
     public function __construct(array $args = [])

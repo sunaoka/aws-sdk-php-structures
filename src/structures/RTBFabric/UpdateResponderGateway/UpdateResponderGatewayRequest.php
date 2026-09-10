@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $clientToken
  * @property string $gatewayId
  * @property string|null $description
+ * @property 'AVAILABILITY_ZONE_AFFINITY'|'ANY_AVAILABILITY_ZONE'|null $clientRoutingPolicy
  */
 class UpdateResponderGatewayRequest extends Request
 {
@@ -27,7 +28,8 @@ class UpdateResponderGatewayRequest extends Request
      *     managedEndpointConfiguration?: Shapes\ManagedEndpointConfiguration|null,
      *     clientToken: string,
      *     gatewayId: string,
-     *     description?: string|null
+     *     description?: string|null,
+     *     clientRoutingPolicy?: 'AVAILABILITY_ZONE_AFFINITY'|'ANY_AVAILABILITY_ZONE'|null
      * } $args
      */
     public function __construct(array $args)
