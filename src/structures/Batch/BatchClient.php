@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\Batch;
 class BatchClient extends \Aws\Batch\BatchClient
 {
     use CancelJob\CancelJobTrait;
+    use CancelJobs\CancelJobsTrait;
     use CreateComputeEnvironment\CreateComputeEnvironmentTrait;
     use CreateConsumableResource\CreateConsumableResourceTrait;
     use CreateJobQueue\CreateJobQueueTrait;
@@ -40,7 +41,9 @@ class BatchClient extends \Aws\Batch\BatchClient
     use SubmitServiceJob\SubmitServiceJobTrait;
     use TagResource\TagResourceTrait;
     use TerminateJob\TerminateJobTrait;
+    use TerminateJobs\TerminateJobsTrait;
     use TerminateServiceJob\TerminateServiceJobTrait;
+    use TerminateServiceJobs\TerminateServiceJobsTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateComputeEnvironment\UpdateComputeEnvironmentTrait;
     use UpdateConsumableResource\UpdateConsumableResourceTrait;

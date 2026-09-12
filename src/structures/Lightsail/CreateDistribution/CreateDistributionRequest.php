@@ -15,6 +15,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $tags
  * @property string|null $certificateName
  * @property 'TLSv1.1_2016'|'TLSv1.2_2018'|'TLSv1.2_2019'|'TLSv1.2_2021'|null $viewerMinimumTlsProtocolVersion
+ * @property bool|null $enablePrivateOriginAccess
+ * @property string|null $defaultRootObject
+ * @property list<Shapes\DistributionCustomErrorResponse>|null $customErrorResponses
  */
 class CreateDistributionRequest extends Request
 {
@@ -29,7 +32,10 @@ class CreateDistributionRequest extends Request
      *     ipAddressType?: 'dualstack'|'ipv4'|'ipv6'|null,
      *     tags?: list<Shapes\Tag>|null,
      *     certificateName?: string|null,
-     *     viewerMinimumTlsProtocolVersion?: 'TLSv1.1_2016'|'TLSv1.2_2018'|'TLSv1.2_2019'|'TLSv1.2_2021'|null
+     *     viewerMinimumTlsProtocolVersion?: 'TLSv1.1_2016'|'TLSv1.2_2018'|'TLSv1.2_2019'|'TLSv1.2_2021'|null,
+     *     enablePrivateOriginAccess?: bool|null,
+     *     defaultRootObject?: string|null,
+     *     customErrorResponses?: list<Shapes\DistributionCustomErrorResponse>|null
      * } $args
      */
     public function __construct(array $args)

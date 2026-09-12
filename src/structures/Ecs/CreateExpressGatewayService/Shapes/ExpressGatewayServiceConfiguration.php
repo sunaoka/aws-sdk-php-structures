@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $taskDefinitionArn
  * @property string|null $cpu
  * @property string|null $memory
+ * @property 'X86_64'|'ARM64'|null $cpuArchitecture
  * @property ExpressGatewayServiceNetworkConfiguration|null $networkConfiguration
  * @property string|null $healthCheckPath
  * @property ExpressGatewayContainer|null $primaryContainer
@@ -28,6 +29,7 @@ class ExpressGatewayServiceConfiguration extends Shape
      *     taskDefinitionArn?: string|null,
      *     cpu?: string|null,
      *     memory?: string|null,
+     *     cpuArchitecture?: 'X86_64'|'ARM64'|null,
      *     networkConfiguration?: ExpressGatewayServiceNetworkConfiguration|null,
      *     healthCheckPath?: string|null,
      *     primaryContainer?: ExpressGatewayContainer|null,

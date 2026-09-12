@@ -20,6 +20,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ArrayPropertiesSummary|null $arrayProperties
  * @property NodePropertiesSummary|null $nodeProperties
  * @property string|null $jobDefinition
+ * @property bool|null $isCancelled
+ * @property bool|null $isTerminated
  */
 class JobSummary extends Shape
 {
@@ -39,7 +41,9 @@ class JobSummary extends Shape
      *     container?: ContainerSummary|null,
      *     arrayProperties?: ArrayPropertiesSummary|null,
      *     nodeProperties?: NodePropertiesSummary|null,
-     *     jobDefinition?: string|null
+     *     jobDefinition?: string|null,
+     *     isCancelled?: bool|null,
+     *     isTerminated?: bool|null
      * } $args
      */
     public function __construct(array $args)

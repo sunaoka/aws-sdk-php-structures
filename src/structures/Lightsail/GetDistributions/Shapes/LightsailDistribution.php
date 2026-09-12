@@ -26,6 +26,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'dualstack'|'ipv4'|'ipv6'|null $ipAddressType
  * @property list<Tag>|null $tags
  * @property string|null $viewerMinimumTlsProtocolVersion
+ * @property string|null $defaultRootObject
+ * @property list<DistributionCustomErrorResponse>|null $customErrorResponses
  */
 class LightsailDistribution extends Shape
 {
@@ -51,7 +53,9 @@ class LightsailDistribution extends Shape
      *     ableToUpdateBundle?: bool|null,
      *     ipAddressType?: 'dualstack'|'ipv4'|'ipv6'|null,
      *     tags?: list<Tag>|null,
-     *     viewerMinimumTlsProtocolVersion?: string|null
+     *     viewerMinimumTlsProtocolVersion?: string|null,
+     *     defaultRootObject?: string|null,
+     *     customErrorResponses?: list<DistributionCustomErrorResponse>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -15,6 +15,8 @@ class InvoicingClient extends \Aws\Invoicing\InvoicingClient
     use ListInvoiceSummaries\ListInvoiceSummariesTrait;
     use ListInvoiceUnits\ListInvoiceUnitsTrait;
     use ListProcurementPortalPreferences\ListProcurementPortalPreferencesTrait;
+    use ListProcurementPortalSuppliers\ListProcurementPortalSuppliersTrait;
+    use ListProcurementPortals\ListProcurementPortalsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PutProcurementPortalPreference\PutProcurementPortalPreferenceTrait;
     use SendProcurementPortalValidation\SendProcurementPortalValidationTrait;

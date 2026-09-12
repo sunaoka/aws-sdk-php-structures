@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $statusReason
  * @property int|null $startedAt
  * @property int|null $stoppedAt
+ * @property bool|null $isTerminated
  */
 class ServiceJobSummary extends Shape
 {
@@ -37,7 +38,8 @@ class ServiceJobSummary extends Shape
      *     status?: 'SUBMITTED'|'PENDING'|'RUNNABLE'|'SCHEDULED'|'STARTING'|'RUNNING'|'SUCCEEDED'|'FAILED'|null,
      *     statusReason?: string|null,
      *     startedAt?: int|null,
-     *     stoppedAt?: int|null
+     *     stoppedAt?: int|null,
+     *     isTerminated?: bool|null
      * } $args
      */
     public function __construct(array $args)
