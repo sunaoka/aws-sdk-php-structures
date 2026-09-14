@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $TargetPrincipal
  * @property Shapes\PolicyDescriptorType $TaskPolicyArn
  * @property int<0, 900>|null $DurationSeconds
+ * @property int<0, 4096>|null $MinimumSessionTokenSize
  */
 class AssumeRootRequest extends Request
 {
@@ -15,7 +16,8 @@ class AssumeRootRequest extends Request
      * @param array{
      *     TargetPrincipal: string,
      *     TaskPolicyArn: Shapes\PolicyDescriptorType,
-     *     DurationSeconds?: int<0, 900>|null
+     *     DurationSeconds?: int<0, 900>|null,
+     *     MinimumSessionTokenSize?: int<0, 4096>|null
      * } $args
      */
     public function __construct(array $args)

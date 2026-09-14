@@ -30,6 +30,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LoadBalancerInfo|null $loadBalancerInfo
  * @property string|null $additionalDeploymentStatusInfo
  * @property 'DISALLOW'|'OVERWRITE'|'RETAIN'|null $fileExistsBehavior
+ * @property 'STANDARD'|'RESTART'|null $deploymentMode
  * @property list<string>|null $deploymentStatusMessages
  * @property 'Server'|'Lambda'|'ECS'|null $computePlatform
  * @property string|null $externalId
@@ -65,6 +66,7 @@ class DeploymentInfo extends Shape
      *     loadBalancerInfo?: LoadBalancerInfo|null,
      *     additionalDeploymentStatusInfo?: string|null,
      *     fileExistsBehavior?: 'DISALLOW'|'OVERWRITE'|'RETAIN'|null,
+     *     deploymentMode?: 'STANDARD'|'RESTART'|null,
      *     deploymentStatusMessages?: list<string>|null,
      *     computePlatform?: 'Server'|'Lambda'|'ECS'|null,
      *     externalId?: string|null,

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\LifecyclePolicyResourceSelection $resourceSelection
  * @property array<string, string>|null $tags
  * @property string $clientToken
+ * @property bool|null $dryRun
  */
 class CreateLifecyclePolicyRequest extends Request
 {
@@ -27,7 +28,8 @@ class CreateLifecyclePolicyRequest extends Request
      *     policyDetails: list<Shapes\LifecyclePolicyDetail>,
      *     resourceSelection: Shapes\LifecyclePolicyResourceSelection,
      *     tags?: array<string, string>|null,
-     *     clientToken: string
+     *     clientToken: string,
+     *     dryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

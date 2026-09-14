@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Distribution> $distributions
  * @property array<string, string>|null $tags
  * @property string $clientToken
+ * @property bool|null $dryRun
  */
 class CreateDistributionConfigurationRequest extends Request
 {
@@ -19,7 +20,8 @@ class CreateDistributionConfigurationRequest extends Request
      *     description?: string|null,
      *     distributions: list<Shapes\Distribution>,
      *     tags?: array<string, string>|null,
-     *     clientToken: string
+     *     clientToken: string,
+     *     dryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

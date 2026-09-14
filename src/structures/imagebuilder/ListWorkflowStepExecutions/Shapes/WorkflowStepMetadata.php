@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $outputs
  * @property string|null $startTime
  * @property string|null $endTime
+ * @property int<1, max>|null $attemptNumber
+ * @property int<1, max>|null $maxAttempts
  */
 class WorkflowStepMetadata extends Shape
 {
@@ -31,7 +33,9 @@ class WorkflowStepMetadata extends Shape
      *     inputs?: string|null,
      *     outputs?: string|null,
      *     startTime?: string|null,
-     *     endTime?: string|null
+     *     endTime?: string|null,
+     *     attemptNumber?: int<1, max>|null,
+     *     maxAttempts?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args = [])

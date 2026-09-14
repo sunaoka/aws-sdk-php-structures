@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $tags
  * @property Shapes\Placement|null $placement
  * @property string $clientToken
+ * @property bool|null $dryRun
  */
 class CreateInfrastructureConfigurationRequest extends Request
 {
@@ -39,7 +40,8 @@ class CreateInfrastructureConfigurationRequest extends Request
      *     instanceMetadataOptions?: Shapes\InstanceMetadataOptions|null,
      *     tags?: array<string, string>|null,
      *     placement?: Shapes\Placement|null,
-     *     clientToken: string
+     *     clientToken: string,
+     *     dryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

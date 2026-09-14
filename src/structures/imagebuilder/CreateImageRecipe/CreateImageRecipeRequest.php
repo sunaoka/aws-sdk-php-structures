@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $amiTags
  * @property list<string>|null $amiWatermarks
  * @property string $clientToken
+ * @property bool|null $dryRun
  */
 class CreateImageRecipeRequest extends Request
 {
@@ -33,7 +34,8 @@ class CreateImageRecipeRequest extends Request
      *     additionalInstanceConfiguration?: Shapes\AdditionalInstanceConfiguration|null,
      *     amiTags?: array<string, string>|null,
      *     amiWatermarks?: list<string>|null,
-     *     clientToken: string
+     *     clientToken: string,
+     *     dryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

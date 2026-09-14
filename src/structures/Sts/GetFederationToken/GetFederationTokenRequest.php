@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\PolicyDescriptorType>|null $PolicyArns
  * @property int<900, 129600>|null $DurationSeconds
  * @property list<Shapes\Tag>|null $Tags
+ * @property int<0, 4096>|null $MinimumSessionTokenSize
  */
 class GetFederationTokenRequest extends Request
 {
@@ -19,7 +20,8 @@ class GetFederationTokenRequest extends Request
      *     Policy?: string|null,
      *     PolicyArns?: list<Shapes\PolicyDescriptorType>|null,
      *     DurationSeconds?: int<900, 129600>|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     MinimumSessionTokenSize?: int<0, 4096>|null
      * } $args
      */
     public function __construct(array $args)

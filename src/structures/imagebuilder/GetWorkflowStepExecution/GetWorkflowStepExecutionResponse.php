@@ -22,6 +22,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $endTime
  * @property string|null $onFailure
  * @property int<0, 43200>|null $timeoutSeconds
+ * @property int<1, max>|null $attemptNumber
+ * @property int<1, max>|null $maxAttempts
  */
 class GetWorkflowStepExecutionResponse extends Response
 {

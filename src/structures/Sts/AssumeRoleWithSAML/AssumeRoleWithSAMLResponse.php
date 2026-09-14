@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Audience
  * @property string|null $NameQualifier
  * @property string|null $SourceIdentity
+ * @property int<0, max>|null $SessionTokenUtilization
+ * @property int<0, max>|null $SessionTokenSize
  */
 class AssumeRoleWithSAMLResponse extends Response
 {

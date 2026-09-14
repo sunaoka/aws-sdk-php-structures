@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\TargetContainerRepository $targetRepository
  * @property string|null $kmsKeyId
  * @property string $clientToken
+ * @property bool|null $dryRun
  */
 class CreateContainerRecipeRequest extends Request
 {
@@ -41,7 +42,8 @@ class CreateContainerRecipeRequest extends Request
      *     workingDirectory?: string|null,
      *     targetRepository: Shapes\TargetContainerRepository,
      *     kmsKeyId?: string|null,
-     *     clientToken: string
+     *     clientToken: string,
+     *     dryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

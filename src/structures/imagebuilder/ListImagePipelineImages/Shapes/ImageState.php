@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'PENDING'|'CREATING'|'BUILDING'|'TESTING'|'DISTRIBUTING'|'INTEGRATING'|'AVAILABLE'|'CANCELLED'|'FAILED'|'DEPRECATED'|'DELETED'|'DISABLED'|null $status
  * @property string|null $reason
+ * @property ImageFailureContext|null $failureContext
  */
 class ImageState extends Shape
 {
     /**
      * @param array{
      *     status?: 'PENDING'|'CREATING'|'BUILDING'|'TESTING'|'DISTRIBUTING'|'INTEGRATING'|'AVAILABLE'|'CANCELLED'|'FAILED'|'DEPRECATED'|'DELETED'|'DISABLED'|null,
-     *     reason?: string|null
+     *     reason?: string|null,
+     *     failureContext?: ImageFailureContext|null
      * } $args
      */
     public function __construct(array $args = [])

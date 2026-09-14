@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $TokenCode
  * @property string|null $SourceIdentity
  * @property list<Shapes\ProvidedContext>|null $ProvidedContexts
+ * @property int<0, 4096>|null $MinimumSessionTokenSize
  */
 class AssumeRoleRequest extends Request
 {
@@ -33,7 +34,8 @@ class AssumeRoleRequest extends Request
      *     SerialNumber?: string|null,
      *     TokenCode?: string|null,
      *     SourceIdentity?: string|null,
-     *     ProvidedContexts?: list<Shapes\ProvidedContext>|null
+     *     ProvidedContexts?: list<Shapes\ProvidedContext>|null,
+     *     MinimumSessionTokenSize?: int<0, 4096>|null
      * } $args
      */
     public function __construct(array $args)

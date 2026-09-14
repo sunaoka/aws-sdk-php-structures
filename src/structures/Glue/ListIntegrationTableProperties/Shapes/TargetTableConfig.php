@@ -1,6 +1,6 @@
 <?php
 
-namespace Sunaoka\Aws\Structures\Glue\CreateIntegrationTableProperties\Shapes;
+namespace Sunaoka\Aws\Structures\Glue\ListIntegrationTableProperties\Shapes;
 
 use Sunaoka\Aws\Structures\Shape;
 

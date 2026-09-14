@@ -213,6 +213,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use ListGlossaries\ListGlossariesTrait;
     use ListGlossaryTerms\ListGlossaryTermsTrait;
     use ListIntegrationResourceProperties\ListIntegrationResourcePropertiesTrait;
+    use ListIntegrationTableProperties\ListIntegrationTablePropertiesTrait;
     use ListIterableForms\ListIterableFormsTrait;
     use ListJobs\ListJobsTrait;
     use ListMLTransforms\ListMLTransformsTrait;
