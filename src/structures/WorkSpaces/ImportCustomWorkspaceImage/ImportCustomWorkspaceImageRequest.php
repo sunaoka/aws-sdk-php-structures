@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ImageName
  * @property string $ImageDescription
- * @property 'BASE'|'GRAPHICS_G4DN'|'GRAPHICS_G6' $ComputeType
+ * @property 'BASE'|'GRAPHICS_G4DN'|'GRAPHICS_G6'|'GRAPHICS_G7' $ComputeType
  * @property 'PCOIP'|'DCV'|'BYOP' $Protocol
  * @property Shapes\ImageSourceIdentifier $ImageSource
  * @property string $InfrastructureConfigurationArn
@@ -21,7 +21,7 @@ class ImportCustomWorkspaceImageRequest extends Request
      * @param array{
      *     ImageName: string,
      *     ImageDescription: string,
-     *     ComputeType: 'BASE'|'GRAPHICS_G4DN'|'GRAPHICS_G6',
+     *     ComputeType: 'BASE'|'GRAPHICS_G4DN'|'GRAPHICS_G6'|'GRAPHICS_G7',
      *     Protocol: 'PCOIP'|'DCV'|'BYOP',
      *     ImageSource: Shapes\ImageSourceIdentifier,
      *     InfrastructureConfigurationArn: string,

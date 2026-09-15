@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $availablePortSpeeds
  * @property list<string>|null $availableProviders
  * @property list<string>|null $availableMacSecPortSpeeds
+ * @property list<AvailableBillingMode>|null $availableBillingModes
  */
 class Location extends Shape
 {
@@ -21,7 +22,8 @@ class Location extends Shape
      *     region?: string|null,
      *     availablePortSpeeds?: list<string>|null,
      *     availableProviders?: list<string>|null,
-     *     availableMacSecPortSpeeds?: list<string>|null
+     *     availableMacSecPortSpeeds?: list<string>|null,
+     *     availableBillingModes?: list<AvailableBillingMode>|null
      * } $args
      */
     public function __construct(array $args = [])

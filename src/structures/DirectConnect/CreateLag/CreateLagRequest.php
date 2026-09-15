@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $childConnectionTags
  * @property string|null $providerName
  * @property bool|null $requestMACSec
+ * @property 'PayAsYouGo'|'FlatRateTier1'|'FlatRateTier2'|'FlatRateTier3'|'FlatRateTier4'|'FlatRateTier5'|null $billingMode
  */
 class CreateLagRequest extends Request
 {
@@ -27,7 +28,8 @@ class CreateLagRequest extends Request
      *     tags?: list<Shapes\Tag>|null,
      *     childConnectionTags?: list<Shapes\Tag>|null,
      *     providerName?: string|null,
-     *     requestMACSec?: bool|null
+     *     requestMACSec?: bool|null,
+     *     billingMode?: 'PayAsYouGo'|'FlatRateTier1'|'FlatRateTier2'|'FlatRateTier3'|'FlatRateTier4'|'FlatRateTier5'|null
      * } $args
      */
     public function __construct(array $args)

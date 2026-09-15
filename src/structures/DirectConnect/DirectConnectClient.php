@@ -11,6 +11,7 @@ class DirectConnectClient extends \Aws\DirectConnect\DirectConnectClient
     use AllocatePublicVirtualInterface\AllocatePublicVirtualInterfaceTrait;
     use AllocateTransitVirtualInterface\AllocateTransitVirtualInterfaceTrait;
     use AssociateConnectionWithLag\AssociateConnectionWithLagTrait;
+    use AssociateConnectionsToResiliencyGroup\AssociateConnectionsToResiliencyGroupTrait;
     use AssociateHostedConnection\AssociateHostedConnectionTrait;
     use AssociateMacSecKey\AssociateMacSecKeyTrait;
     use AssociateVirtualInterface\AssociateVirtualInterfaceTrait;
@@ -28,6 +29,7 @@ class DirectConnectClient extends \Aws\DirectConnect\DirectConnectClient
     use CreateLag\CreateLagTrait;
     use CreatePrivateVirtualInterface\CreatePrivateVirtualInterfaceTrait;
     use CreatePublicVirtualInterface\CreatePublicVirtualInterfaceTrait;
+    use CreateResiliencyGroup\CreateResiliencyGroupTrait;
     use CreateTransitVirtualInterface\CreateTransitVirtualInterfaceTrait;
     use DeleteBGPPeer\DeleteBGPPeerTrait;
     use DeleteConnection\DeleteConnectionTrait;
@@ -36,6 +38,7 @@ class DirectConnectClient extends \Aws\DirectConnect\DirectConnectClient
     use DeleteDirectConnectGatewayAssociationProposal\DeleteDirectConnectGatewayAssociationProposalTrait;
     use DeleteInterconnect\DeleteInterconnectTrait;
     use DeleteLag\DeleteLagTrait;
+    use DeleteResiliencyGroup\DeleteResiliencyGroupTrait;
     use DeleteVirtualInterface\DeleteVirtualInterfaceTrait;
     use DescribeConnectionLoa\DescribeConnectionLoaTrait;
     use DescribeConnections\DescribeConnectionsTrait;
@@ -56,7 +59,11 @@ class DirectConnectClient extends \Aws\DirectConnect\DirectConnectClient
     use DescribeVirtualGateways\DescribeVirtualGatewaysTrait;
     use DescribeVirtualInterfaces\DescribeVirtualInterfacesTrait;
     use DisassociateConnectionFromLag\DisassociateConnectionFromLagTrait;
+    use DisassociateConnectionsFromResiliencyGroup\DisassociateConnectionsFromResiliencyGroupTrait;
     use DisassociateMacSecKey\DisassociateMacSecKeyTrait;
+    use GetResiliencyGroup\GetResiliencyGroupTrait;
+    use ListResiliencyGroupAssociations\ListResiliencyGroupAssociationsTrait;
+    use ListResiliencyGroups\ListResiliencyGroupsTrait;
     use ListVirtualInterfaceRoutes\ListVirtualInterfaceRoutesTrait;
     use ListVirtualInterfaceTestHistory\ListVirtualInterfaceTestHistoryTrait;
     use StartBgpFailoverTest\StartBgpFailoverTestTrait;
@@ -64,8 +71,10 @@ class DirectConnectClient extends \Aws\DirectConnect\DirectConnectClient
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateConnection\UpdateConnectionTrait;
+    use UpdateConnectionsBillingMode\UpdateConnectionsBillingModeTrait;
     use UpdateDirectConnectGateway\UpdateDirectConnectGatewayTrait;
     use UpdateDirectConnectGatewayAssociation\UpdateDirectConnectGatewayAssociationTrait;
     use UpdateLag\UpdateLagTrait;
+    use UpdateResiliencyGroup\UpdateResiliencyGroupTrait;
     use UpdateVirtualInterfaceAttributes\UpdateVirtualInterfaceAttributesTrait;
 }

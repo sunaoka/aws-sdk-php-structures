@@ -31,6 +31,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, max>|null $prefixPoolUnallocatedCountIpv4
  * @property int<0, max>|null $prefixPoolUnallocatedCountIpv6
  * @property RateLimiterStatus|null $rateLimiterStatus
+ * @property 'PayAsYouGo'|'FlatRateTier1'|'FlatRateTier2'|'FlatRateTier3'|'FlatRateTier4'|'FlatRateTier5'|'PortPairFlatRateTier1'|'PortPairFlatRateTier2'|'PortPairFlatRateTier3'|'PortPairFlatRateTier4'|'PortPairFlatRateTier5'|null $billingMode
  */
 class Lag extends Shape
 {
@@ -61,7 +62,8 @@ class Lag extends Shape
      *     prefixPoolSizeIpv6?: int<0, max>|null,
      *     prefixPoolUnallocatedCountIpv4?: int<0, max>|null,
      *     prefixPoolUnallocatedCountIpv6?: int<0, max>|null,
-     *     rateLimiterStatus?: RateLimiterStatus|null
+     *     rateLimiterStatus?: RateLimiterStatus|null,
+     *     billingMode?: 'PayAsYouGo'|'FlatRateTier1'|'FlatRateTier2'|'FlatRateTier3'|'FlatRateTier4'|'FlatRateTier5'|'PortPairFlatRateTier1'|'PortPairFlatRateTier2'|'PortPairFlatRateTier3'|'PortPairFlatRateTier4'|'PortPairFlatRateTier5'|null
      * } $args
      */
     public function __construct(array $args = [])

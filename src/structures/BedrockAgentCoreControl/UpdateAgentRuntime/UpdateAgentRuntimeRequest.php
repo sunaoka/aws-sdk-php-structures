@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $environmentVariables
  * @property list<Shapes\FilesystemConfiguration>|null $filesystemConfigurations
  * @property Shapes\CapacityProviderConfiguration|null $capacityProviderConfiguration
+ * @property string|null $platformVersion
  * @property string|null $clientToken
  */
 class UpdateAgentRuntimeRequest extends Request
@@ -37,6 +38,7 @@ class UpdateAgentRuntimeRequest extends Request
      *     environmentVariables?: array<string, string>|null,
      *     filesystemConfigurations?: list<Shapes\FilesystemConfiguration>|null,
      *     capacityProviderConfiguration?: Shapes\CapacityProviderConfiguration|null,
+     *     platformVersion?: string|null,
      *     clientToken?: string|null
      * } $args
      */

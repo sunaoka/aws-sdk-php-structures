@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DISABLED'|'ENABLED'|'ENFORCED'|null $TlsSessionResumptionMode
  * @property 'DEFAULT'|'ENABLE_NO_OP'|null $SetStatOption
  * @property list<'HTTP'>|null $As2Transports
+ * @property ProxyConfig|null $ProxyConfig
  */
 class ProtocolDetails extends Shape
 {
@@ -17,7 +18,8 @@ class ProtocolDetails extends Shape
      *     PassiveIp?: string|null,
      *     TlsSessionResumptionMode?: 'DISABLED'|'ENABLED'|'ENFORCED'|null,
      *     SetStatOption?: 'DEFAULT'|'ENABLE_NO_OP'|null,
-     *     As2Transports?: list<'HTTP'>|null
+     *     As2Transports?: list<'HTTP'>|null,
+     *     ProxyConfig?: ProxyConfig|null
      * } $args
      */
     public function __construct(array $args = [])

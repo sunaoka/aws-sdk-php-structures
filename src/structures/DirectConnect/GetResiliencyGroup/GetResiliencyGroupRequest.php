@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\DirectConnect\GetResiliencyGroup;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property string $resiliencyGroupId
+ */
+class GetResiliencyGroupRequest extends Request
+{
+    /**
+     * @param array{resiliencyGroupId: string} $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

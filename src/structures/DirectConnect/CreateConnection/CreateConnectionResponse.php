@@ -33,6 +33,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<0, max>|null $prefixPoolSizeIpv6
  * @property int<0, max>|null $prefixPoolUnallocatedCountIpv4
  * @property int<0, max>|null $prefixPoolUnallocatedCountIpv6
+ * @property 'PayAsYouGo'|'FlatRateTier1'|'FlatRateTier2'|'FlatRateTier3'|'FlatRateTier4'|'FlatRateTier5'|'PortPairFlatRateTier1'|'PortPairFlatRateTier2'|'PortPairFlatRateTier3'|'PortPairFlatRateTier4'|'PortPairFlatRateTier5'|null $billingMode
  */
 class CreateConnectionResponse extends Response
 {

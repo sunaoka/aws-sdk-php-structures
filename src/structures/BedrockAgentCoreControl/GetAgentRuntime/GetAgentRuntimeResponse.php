@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\RuntimeMetadataConfiguration|null $metadataConfiguration
  * @property list<Shapes\FilesystemConfiguration>|null $filesystemConfigurations
  * @property Shapes\CapacityProviderConfiguration|null $capacityProviderConfiguration
+ * @property string|null $platformVersion
  */
 class GetAgentRuntimeResponse extends Response
 {
