@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\MultiAzTargets|null $multiAz
  * @property Shapes\MultiRegionTargets|null $multiRegion
  * @property Shapes\DataRecoveryTargets|null $dataRecovery
+ * @property bool|null $sharingEnabled
  */
 class UpdatePolicyRequest extends Request
 {
@@ -21,7 +22,8 @@ class UpdatePolicyRequest extends Request
      *     availabilitySlo?: Shapes\AvailabilitySlo|null,
      *     multiAz?: Shapes\MultiAzTargets|null,
      *     multiRegion?: Shapes\MultiRegionTargets|null,
-     *     dataRecovery?: Shapes\DataRecoveryTargets|null
+     *     dataRecovery?: Shapes\DataRecoveryTargets|null,
+     *     sharingEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

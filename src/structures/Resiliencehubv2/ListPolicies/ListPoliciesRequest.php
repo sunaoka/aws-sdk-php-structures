@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\Resiliencehubv2\ListPolicies;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string|null $accountId
  * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
  */
@@ -12,6 +13,7 @@ class ListPoliciesRequest extends Request
 {
     /**
      * @param array{
+     *     accountId?: string|null,
      *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null
      * } $args

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $targetVersion
  * @property string $agentRuntimeEndpointArn
  * @property string $agentRuntimeArn
- * @property 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING' $status
+ * @property 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING'|'DELETE_FAILED' $status
  * @property string $id
  * @property string|null $description
  * @property \Aws\Api\DateTimeResult $createdAt
@@ -25,7 +25,7 @@ class AgentRuntimeEndpoint extends Shape
      *     targetVersion?: string|null,
      *     agentRuntimeEndpointArn: string,
      *     agentRuntimeArn: string,
-     *     status: 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING',
+     *     status: 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING'|'DELETE_FAILED',
      *     id: string,
      *     description?: string|null,
      *     createdAt: \Aws\Api\DateTimeResult,

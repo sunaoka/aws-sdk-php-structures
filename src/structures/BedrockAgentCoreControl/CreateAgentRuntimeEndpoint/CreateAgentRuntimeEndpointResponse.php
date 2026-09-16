@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $agentRuntimeArn
  * @property string|null $agentRuntimeId
  * @property string|null $endpointName
- * @property 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING' $status
+ * @property 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING'|'DELETE_FAILED' $status
  * @property \Aws\Api\DateTimeResult $createdAt
  */
 class CreateAgentRuntimeEndpointResponse extends Response

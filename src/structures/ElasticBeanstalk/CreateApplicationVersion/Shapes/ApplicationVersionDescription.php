@@ -12,6 +12,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SourceBuildInformation|null $SourceBuildInformation
  * @property string|null $BuildArn
  * @property S3Location|null $SourceBundle
+ * @property ImageSource|null $ImageSource
+ * @property ImageBuildConfiguration|null $ImageBuildConfiguration
+ * @property bool|null $Process
  * @property \Aws\Api\DateTimeResult|null $DateCreated
  * @property \Aws\Api\DateTimeResult|null $DateUpdated
  * @property 'Processed'|'Unprocessed'|'Failed'|'Processing'|'Building'|null $Status
@@ -27,6 +30,9 @@ class ApplicationVersionDescription extends Shape
      *     SourceBuildInformation?: SourceBuildInformation|null,
      *     BuildArn?: string|null,
      *     SourceBundle?: S3Location|null,
+     *     ImageSource?: ImageSource|null,
+     *     ImageBuildConfiguration?: ImageBuildConfiguration|null,
+     *     Process?: bool|null,
      *     DateCreated?: \Aws\Api\DateTimeResult|null,
      *     DateUpdated?: \Aws\Api\DateTimeResult|null,
      *     Status?: 'Processed'|'Unprocessed'|'Failed'|'Processing'|'Building'|null

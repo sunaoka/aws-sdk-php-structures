@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\MultiAzTargets|null $multiAz
  * @property Shapes\MultiRegionTargets|null $multiRegion
  * @property Shapes\DataRecoveryTargets|null $dataRecovery
+ * @property bool|null $sharingEnabled
  * @property string|null $kmsKeyId
  * @property array<string, string>|null $tags
  * @property string|null $clientToken
@@ -25,6 +26,7 @@ class CreatePolicyRequest extends Request
      *     multiAz?: Shapes\MultiAzTargets|null,
      *     multiRegion?: Shapes\MultiRegionTargets|null,
      *     dataRecovery?: Shapes\DataRecoveryTargets|null,
+     *     sharingEnabled?: bool|null,
      *     kmsKeyId?: string|null,
      *     tags?: array<string, string>|null,
      *     clientToken?: string|null

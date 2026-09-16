@@ -19,6 +19,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ResaleAuthorizationOfferExtendedStatusFilter|null $OfferExtendedStatus
  * @property ResaleAuthorizationLastModifiedDateFilter|null $LastModifiedDate
  * @property ResaleAuthorizationResellerRoleFilter|null $ResellerRole
+ * @property ResaleAuthorizationSourceAuthorizationFilter|null $SourceAuthorization
+ * @property ResaleAuthorizationIssuerAccountIdFilter|null $IssuerAccountId
  */
 class ResaleAuthorizationFilters extends Shape
 {
@@ -37,7 +39,9 @@ class ResaleAuthorizationFilters extends Shape
      *     Status?: ResaleAuthorizationStatusFilter|null,
      *     OfferExtendedStatus?: ResaleAuthorizationOfferExtendedStatusFilter|null,
      *     LastModifiedDate?: ResaleAuthorizationLastModifiedDateFilter|null,
-     *     ResellerRole?: ResaleAuthorizationResellerRoleFilter|null
+     *     ResellerRole?: ResaleAuthorizationResellerRoleFilter|null,
+     *     SourceAuthorization?: ResaleAuthorizationSourceAuthorizationFilter|null,
+     *     IssuerAccountId?: ResaleAuthorizationIssuerAccountIdFilter|null
      * } $args
      */
     public function __construct(array $args = [])

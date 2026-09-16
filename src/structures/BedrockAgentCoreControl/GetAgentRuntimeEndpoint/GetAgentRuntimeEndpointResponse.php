@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $agentRuntimeEndpointArn
  * @property string $agentRuntimeArn
  * @property string|null $description
- * @property 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING' $status
+ * @property 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING'|'DELETE_FAILED' $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $lastUpdatedAt
  * @property string|null $failureReason

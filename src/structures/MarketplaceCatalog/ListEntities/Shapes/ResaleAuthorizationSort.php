@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MarketplaceCatalog\ListEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'EntityId'|'Name'|'ProductId'|'ProductName'|'ManufacturerAccountId'|'ManufacturerLegalName'|'ResellerAccountID'|'ResellerLegalName'|'Status'|'OfferExtendedStatus'|'CreatedDate'|'AvailabilityEndDate'|'LastModifiedDate'|null $SortBy
+ * @property 'EntityId'|'Name'|'ProductId'|'ProductName'|'ManufacturerAccountId'|'ManufacturerLegalName'|'ResellerAccountID'|'ResellerLegalName'|'Status'|'OfferExtendedStatus'|'CreatedDate'|'AvailabilityEndDate'|'LastModifiedDate'|'ResellerRole'|'SourceAuthorization'|'IssuerAccountId'|null $SortBy
  * @property 'ASCENDING'|'DESCENDING'|null $SortOrder
  */
 class ResaleAuthorizationSort extends Shape
 {
     /**
      * @param array{
-     *     SortBy?: 'EntityId'|'Name'|'ProductId'|'ProductName'|'ManufacturerAccountId'|'ManufacturerLegalName'|'ResellerAccountID'|'ResellerLegalName'|'Status'|'OfferExtendedStatus'|'CreatedDate'|'AvailabilityEndDate'|'LastModifiedDate'|null,
+     *     SortBy?: 'EntityId'|'Name'|'ProductId'|'ProductName'|'ManufacturerAccountId'|'ManufacturerLegalName'|'ResellerAccountID'|'ResellerLegalName'|'Status'|'OfferExtendedStatus'|'CreatedDate'|'AvailabilityEndDate'|'LastModifiedDate'|'ResellerRole'|'SourceAuthorization'|'IssuerAccountId'|null,
      *     SortOrder?: 'ASCENDING'|'DESCENDING'|null
      * } $args
      */

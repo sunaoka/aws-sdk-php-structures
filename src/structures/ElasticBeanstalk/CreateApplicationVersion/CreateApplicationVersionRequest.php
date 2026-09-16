@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $AutoCreateApplication
  * @property bool|null $Process
  * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\ImageConfiguration|null $ImageConfiguration
  */
 class CreateApplicationVersionRequest extends Request
 {
@@ -27,7 +28,8 @@ class CreateApplicationVersionRequest extends Request
      *     BuildConfiguration?: Shapes\BuildConfiguration|null,
      *     AutoCreateApplication?: bool|null,
      *     Process?: bool|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ImageConfiguration?: Shapes\ImageConfiguration|null
      * } $args
      */
     public function __construct(array $args)

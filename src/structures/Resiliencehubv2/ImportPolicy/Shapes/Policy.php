@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MultiAzTargets|null $multiAz
  * @property MultiRegionTargets|null $multiRegion
  * @property DataRecoveryTargets|null $dataRecovery
+ * @property bool|null $sharingEnabled
+ * @property string|null $organizationId
  * @property string|null $kmsKeyId
  * @property array<string, string>|null $tags
  * @property int|null $associatedServiceCount
@@ -29,6 +31,8 @@ class Policy extends Shape
      *     multiAz?: MultiAzTargets|null,
      *     multiRegion?: MultiRegionTargets|null,
      *     dataRecovery?: DataRecoveryTargets|null,
+     *     sharingEnabled?: bool|null,
+     *     organizationId?: string|null,
      *     kmsKeyId?: string|null,
      *     tags?: array<string, string>|null,
      *     associatedServiceCount?: int|null,

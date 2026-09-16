@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $agentRuntimeName
  * @property string $description
  * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING' $status
+ * @property 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING'|'DELETE_FAILED' $status
  */
 class AgentRuntime extends Shape
 {
@@ -23,7 +23,7 @@ class AgentRuntime extends Shape
      *     agentRuntimeName: string,
      *     description: string,
      *     lastUpdatedAt: \Aws\Api\DateTimeResult,
-     *     status: 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING'
+     *     status: 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING'|'DELETE_FAILED'
      * } $args
      */
     public function __construct(array $args)

@@ -106,6 +106,7 @@ class CustomerProfilesClient extends \Aws\CustomerProfiles\CustomerProfilesClien
     use PutProfileObjectType\PutProfileObjectTypeTrait;
     use PutSegmentSubscription\PutSegmentSubscriptionTrait;
     use SearchProfiles\SearchProfilesTrait;
+    use SearchRecommendations\SearchRecommendationsTrait;
     use StartRecommender\StartRecommenderTrait;
     use StartUploadJob\StartUploadJobTrait;
     use StopRecommender\StopRecommenderTrait;

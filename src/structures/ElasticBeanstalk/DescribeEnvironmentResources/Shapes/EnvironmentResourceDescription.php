@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $EnvironmentName
  * @property list<AutoScalingGroup>|null $AutoScalingGroups
+ * @property Cluster|null $Cluster
  * @property list<Instance>|null $Instances
  * @property list<LaunchConfiguration>|null $LaunchConfigurations
  * @property list<LaunchTemplate>|null $LaunchTemplates
@@ -20,6 +21,7 @@ class EnvironmentResourceDescription extends Shape
      * @param array{
      *     EnvironmentName?: string|null,
      *     AutoScalingGroups?: list<AutoScalingGroup>|null,
+     *     Cluster?: Cluster|null,
      *     Instances?: list<Instance>|null,
      *     LaunchConfigurations?: list<LaunchConfiguration>|null,
      *     LaunchTemplates?: list<LaunchTemplate>|null,

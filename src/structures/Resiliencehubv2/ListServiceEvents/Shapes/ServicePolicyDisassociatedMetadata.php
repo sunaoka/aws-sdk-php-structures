@@ -7,13 +7,19 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $policyName
  * @property string|null $policyArn
+ * @property string|null $policyOwnerAccountId
+ * @property 'SELF'|'CROSS_ACCOUNT'|null $policySource
+ * @property 'REPLACED_BY_UPDATE'|'SHARING_REVOKED'|'POLICY_DELETED'|null $reason
  */
 class ServicePolicyDisassociatedMetadata extends Shape
 {
     /**
      * @param array{
      *     policyName?: string|null,
-     *     policyArn?: string|null
+     *     policyArn?: string|null,
+     *     policyOwnerAccountId?: string|null,
+     *     policySource?: 'SELF'|'CROSS_ACCOUNT'|null,
+     *     reason?: 'REPLACED_BY_UPDATE'|'SHARING_REVOKED'|'POLICY_DELETED'|null
      * } $args
      */
     public function __construct(array $args = [])

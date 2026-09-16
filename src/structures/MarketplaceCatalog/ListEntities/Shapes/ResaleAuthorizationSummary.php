@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CreatedDate
  * @property string|null $AvailabilityEndDate
  * @property 'ChannelPartner'|'Distributor'|null $ResellerRole
+ * @property string|null $SourceAuthorization
+ * @property string|null $IssuerAccountId
  */
 class ResaleAuthorizationSummary extends Shape
 {
@@ -33,7 +35,9 @@ class ResaleAuthorizationSummary extends Shape
      *     OfferExtendedStatus?: string|null,
      *     CreatedDate?: string|null,
      *     AvailabilityEndDate?: string|null,
-     *     ResellerRole?: 'ChannelPartner'|'Distributor'|null
+     *     ResellerRole?: 'ChannelPartner'|'Distributor'|null,
+     *     SourceAuthorization?: string|null,
+     *     IssuerAccountId?: string|null
      * } $args
      */
     public function __construct(array $args = [])
