@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property string $ReplicaRegion
  * @property string|null $ClientToken
- * @property string $ReplicaAlias
+ * @property string|null $ReplicaAlias
  */
 class ReplicateInstanceRequest extends Request
 {
@@ -17,7 +17,7 @@ class ReplicateInstanceRequest extends Request
      *     InstanceId: string,
      *     ReplicaRegion: string,
      *     ClientToken?: string|null,
-     *     ReplicaAlias: string
+     *     ReplicaAlias?: string|null
      * } $args
      */
     public function __construct(array $args)

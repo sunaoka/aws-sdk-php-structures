@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DryRun
  * @property string|null $ServiceId
  * @property string $VpcEndpointId
- * @property 'vpc-endpoint-account'|'vpc-endpoint-service-account' $PayerResponsibility
- * @property 'vpc-endpoint-charges' $Scope
+ * @property 'vpc-endpoint-account'|'resource-gateway-account'|'vpc-endpoint-service-account' $PayerResponsibility
+ * @property 'vpc-endpoint-charges'|'resource-gateway-charges' $Scope
  */
 class ModifyVpcEndpointPayerResponsibilityRequest extends Request
 {
@@ -18,8 +18,8 @@ class ModifyVpcEndpointPayerResponsibilityRequest extends Request
      *     DryRun?: bool|null,
      *     ServiceId?: string|null,
      *     VpcEndpointId: string,
-     *     PayerResponsibility: 'vpc-endpoint-account'|'vpc-endpoint-service-account',
-     *     Scope: 'vpc-endpoint-charges'
+     *     PayerResponsibility: 'vpc-endpoint-account'|'resource-gateway-account'|'vpc-endpoint-service-account',
+     *     Scope: 'vpc-endpoint-charges'|'resource-gateway-charges'
      * } $args
      */
     public function __construct(array $args)

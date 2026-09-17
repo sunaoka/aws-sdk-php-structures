@@ -18,6 +18,7 @@ class SocialMessagingClient extends \Aws\SocialMessaging\SocialMessagingClient
     use GetLinkedWhatsAppBusinessAccount\GetLinkedWhatsAppBusinessAccountTrait;
     use GetLinkedWhatsAppBusinessAccountPhoneNumber\GetLinkedWhatsAppBusinessAccountPhoneNumberTrait;
     use GetWhatsAppBusinessPublicKey\GetWhatsAppBusinessPublicKeyTrait;
+    use GetWhatsAppCallPermission\GetWhatsAppCallPermissionTrait;
     use GetWhatsAppFlow\GetWhatsAppFlowTrait;
     use GetWhatsAppFlowPreview\GetWhatsAppFlowPreviewTrait;
     use GetWhatsAppMessageMedia\GetWhatsAppMessageMediaTrait;
@@ -32,10 +33,12 @@ class SocialMessagingClient extends \Aws\SocialMessaging\SocialMessagingClient
     use PublishWhatsAppFlow\PublishWhatsAppFlowTrait;
     use PutWhatsAppBusinessAccountEventDestinations\PutWhatsAppBusinessAccountEventDestinationsTrait;
     use PutWhatsAppBusinessPublicKey\PutWhatsAppBusinessPublicKeyTrait;
+    use SendWhatsAppCallEvent\SendWhatsAppCallEventTrait;
     use SendWhatsAppConversionEvent\SendWhatsAppConversionEventTrait;
     use SendWhatsAppMessage\SendWhatsAppMessageTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateLinkedWhatsAppBusinessAccountPhoneNumber\UpdateLinkedWhatsAppBusinessAccountPhoneNumberTrait;
     use UpdateWhatsAppFlow\UpdateWhatsAppFlowTrait;
     use UpdateWhatsAppFlowAssets\UpdateWhatsAppFlowAssetsTrait;
     use UpdateWhatsAppMessageTemplate\UpdateWhatsAppMessageTemplateTrait;

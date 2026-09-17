@@ -42,5 +42,6 @@ class NotificationsClient extends \Aws\Notifications\NotificationsClient
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateEventRule\UpdateEventRuleTrait;
+    use UpdateManagedNotificationChannelAssociation\UpdateManagedNotificationChannelAssociationTrait;
     use UpdateNotificationConfiguration\UpdateNotificationConfigurationTrait;
 }

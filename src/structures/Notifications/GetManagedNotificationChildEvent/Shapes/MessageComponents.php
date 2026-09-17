@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $headline
  * @property string|null $paragraphSummary
  * @property string|null $completeDescription
+ * @property string|null $markupDescription
  * @property list<Dimension>|null $dimensions
  */
 class MessageComponents extends Shape
@@ -17,6 +18,7 @@ class MessageComponents extends Shape
      *     headline?: string|null,
      *     paragraphSummary?: string|null,
      *     completeDescription?: string|null,
+     *     markupDescription?: string|null,
      *     dimensions?: list<Dimension>|null
      * } $args
      */

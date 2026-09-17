@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $vpcEndpointOwner
  * @property string|null $createdBy
  * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property list<PayerResponsibilityEntry>|null $payerResponsibility
  */
 class ResourceEndpointAssociationSummary extends Shape
 {
@@ -27,7 +28,8 @@ class ResourceEndpointAssociationSummary extends Shape
      *     vpcEndpointId?: string|null,
      *     vpcEndpointOwner?: string|null,
      *     createdBy?: string|null,
-     *     createdAt?: \Aws\Api\DateTimeResult|null
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     payerResponsibility?: list<PayerResponsibilityEntry>|null
      * } $args
      */
     public function __construct(array $args = [])

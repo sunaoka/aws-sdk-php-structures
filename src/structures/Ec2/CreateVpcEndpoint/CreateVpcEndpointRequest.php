@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property bool|null $DryRun
- * @property 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork'|null $VpcEndpointType
+ * @property 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork'|'Tunnel'|null $VpcEndpointType
  * @property string $VpcId
  * @property string|null $ServiceName
  * @property string|null $PolicyDocument
@@ -28,7 +28,7 @@ class CreateVpcEndpointRequest extends Request
     /**
      * @param array{
      *     DryRun?: bool|null,
-     *     VpcEndpointType?: 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork'|null,
+     *     VpcEndpointType?: 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork'|'Tunnel'|null,
      *     VpcId: string,
      *     ServiceName?: string|null,
      *     PolicyDocument?: string|null,

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $Destination
  * @property list<string>|null $Subject
  * @property list<string>|null $Isp
+ * @property list<string>|null $TenantName
  * @property list<'SEND'|'DELIVERY'|'TRANSIENT_BOUNCE'|'PERMANENT_BOUNCE'|'UNDETERMINED_BOUNCE'|'COMPLAINT'>|null $LastDeliveryEvent
  * @property list<'OPEN'|'CLICK'>|null $LastEngagementEvent
  */
@@ -20,6 +21,7 @@ class MessageInsightsFilters extends Shape
      *     Destination?: list<string>|null,
      *     Subject?: list<string>|null,
      *     Isp?: list<string>|null,
+     *     TenantName?: list<string>|null,
      *     LastDeliveryEvent?: list<'SEND'|'DELIVERY'|'TRANSIENT_BOUNCE'|'PERMANENT_BOUNCE'|'UNDETERMINED_BOUNCE'|'COMPLAINT'>|null,
      *     LastEngagementEvent?: list<'OPEN'|'CLICK'>|null
      * } $args

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $nextToken
  * @property string|null $organizationalUnitId
  * @property string|null $relatedAccount
+ * @property bool|null $includeSensitiveEvents
  */
 class ListManagedNotificationEventsRequest extends Request
 {
@@ -25,7 +26,8 @@ class ListManagedNotificationEventsRequest extends Request
      *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null,
      *     organizationalUnitId?: string|null,
-     *     relatedAccount?: string|null
+     *     relatedAccount?: string|null,
+     *     includeSensitiveEvents?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

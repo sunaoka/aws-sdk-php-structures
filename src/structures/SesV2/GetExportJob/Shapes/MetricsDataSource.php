@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SesV2\GetExportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<'EMAIL_IDENTITY'|'CONFIGURATION_SET'|'ISP', list<string>> $Dimensions
+ * @property array<'EMAIL_IDENTITY'|'CONFIGURATION_SET'|'ISP'|'TENANT_NAME', list<string>> $Dimensions
  * @property 'VDM' $Namespace
  * @property list<ExportMetric> $Metrics
  * @property \Aws\Api\DateTimeResult $StartDate
@@ -15,7 +15,7 @@ class MetricsDataSource extends Shape
 {
     /**
      * @param array{
-     *     Dimensions: array<'EMAIL_IDENTITY'|'CONFIGURATION_SET'|'ISP', list<string>>,
+     *     Dimensions: array<'EMAIL_IDENTITY'|'CONFIGURATION_SET'|'ISP'|'TENANT_NAME', list<string>>,
      *     Namespace: 'VDM',
      *     Metrics: list<ExportMetric>,
      *     StartDate: \Aws\Api\DateTimeResult,

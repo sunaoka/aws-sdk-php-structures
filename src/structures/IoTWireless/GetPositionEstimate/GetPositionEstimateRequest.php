@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\CellTowers|null $CellTowers
  * @property Shapes\Ip|null $Ip
  * @property Shapes\Gnss|null $Gnss
+ * @property Shapes\GnssMultiFrame|null $GnssMultiFrame
  * @property \Aws\Api\DateTimeResult|null $Timestamp
  * @property Shapes\AdvancedConfiguration|null $AdvancedConfiguration
  */
@@ -20,6 +21,7 @@ class GetPositionEstimateRequest extends Request
      *     CellTowers?: Shapes\CellTowers|null,
      *     Ip?: Shapes\Ip|null,
      *     Gnss?: Shapes\Gnss|null,
+     *     GnssMultiFrame?: Shapes\GnssMultiFrame|null,
      *     Timestamp?: \Aws\Api\DateTimeResult|null,
      *     AdvancedConfiguration?: Shapes\AdvancedConfiguration|null
      * } $args

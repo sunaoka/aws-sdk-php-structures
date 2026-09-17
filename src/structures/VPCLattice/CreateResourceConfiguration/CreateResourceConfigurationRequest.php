@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property 'GROUP'|'CHILD'|'SINGLE'|'ARN' $type
+ * @property 'GROUP'|'CHILD'|'SINGLE'|'ARN'|'CIDR' $type
  * @property list<string>|null $portRanges
- * @property 'TCP'|null $protocol
+ * @property 'TCP'|'TCP_UDP'|null $protocol
  * @property string|null $resourceGatewayIdentifier
  * @property string|null $resourceConfigurationGroupIdentifier
  * @property Shapes\ResourceConfigurationDefinition|null $resourceConfigurationDefinition
@@ -24,9 +24,9 @@ class CreateResourceConfigurationRequest extends Request
     /**
      * @param array{
      *     name: string,
-     *     type: 'GROUP'|'CHILD'|'SINGLE'|'ARN',
+     *     type: 'GROUP'|'CHILD'|'SINGLE'|'ARN'|'CIDR',
      *     portRanges?: list<string>|null,
-     *     protocol?: 'TCP'|null,
+     *     protocol?: 'TCP'|'TCP_UDP'|null,
      *     resourceGatewayIdentifier?: string|null,
      *     resourceConfigurationGroupIdentifier?: string|null,
      *     resourceConfigurationDefinition?: Shapes\ResourceConfigurationDefinition|null,

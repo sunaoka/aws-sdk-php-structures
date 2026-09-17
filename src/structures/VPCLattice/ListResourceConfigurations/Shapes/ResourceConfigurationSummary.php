@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $arn
  * @property string|null $resourceGatewayId
  * @property string|null $resourceConfigurationGroupId
- * @property 'GROUP'|'CHILD'|'SINGLE'|'ARN'|null $type
+ * @property 'GROUP'|'CHILD'|'SINGLE'|'ARN'|'CIDR'|null $type
  * @property 'ACTIVE'|'CREATE_IN_PROGRESS'|'UPDATE_IN_PROGRESS'|'DELETE_IN_PROGRESS'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED'|null $status
  * @property bool|null $amazonManaged
  * @property \Aws\Api\DateTimeResult|null $createdAt
@@ -28,7 +28,7 @@ class ResourceConfigurationSummary extends Shape
      *     arn?: string|null,
      *     resourceGatewayId?: string|null,
      *     resourceConfigurationGroupId?: string|null,
-     *     type?: 'GROUP'|'CHILD'|'SINGLE'|'ARN'|null,
+     *     type?: 'GROUP'|'CHILD'|'SINGLE'|'ARN'|'CIDR'|null,
      *     status?: 'ACTIVE'|'CREATE_IN_PROGRESS'|'UPDATE_IN_PROGRESS'|'DELETE_IN_PROGRESS'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED'|null,
      *     amazonManaged?: bool|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,

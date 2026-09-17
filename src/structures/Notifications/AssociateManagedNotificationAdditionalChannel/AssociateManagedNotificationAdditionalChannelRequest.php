@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $channelArn
  * @property string $managedNotificationConfigurationArn
+ * @property bool|null $isSensitiveEventsSubscribed
  */
 class AssociateManagedNotificationAdditionalChannelRequest extends Request
 {
     /**
      * @param array{
      *     channelArn: string,
-     *     managedNotificationConfigurationArn: string
+     *     managedNotificationConfigurationArn: string,
+     *     isSensitiveEventsSubscribed?: bool|null
      * } $args
      */
     public function __construct(array $args)

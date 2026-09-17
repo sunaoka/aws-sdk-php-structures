@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $VpcEndpointId
- * @property 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork'|null $VpcEndpointType
+ * @property 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork'|'Tunnel'|null $VpcEndpointType
  * @property string|null $VpcId
  * @property string|null $ServiceName
  * @property 'PendingAcceptance'|'Pending'|'Available'|'Deleting'|'Deleted'|'Rejected'|'Failed'|'Expired'|'Partial'|null $State
@@ -37,7 +37,7 @@ class VpcEndpoint extends Shape
     /**
      * @param array{
      *     VpcEndpointId?: string|null,
-     *     VpcEndpointType?: 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork'|null,
+     *     VpcEndpointType?: 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork'|'Tunnel'|null,
      *     VpcId?: string|null,
      *     ServiceName?: string|null,
      *     State?: 'PendingAcceptance'|'Pending'|'Available'|'Deleting'|'Deleted'|'Rejected'|'Failed'|'Expired'|'Partial'|null,

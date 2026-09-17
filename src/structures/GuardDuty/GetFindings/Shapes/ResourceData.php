@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Ec2Vpc|null $Ec2Vpc
  * @property Ec2Image|null $Ec2Image
  * @property CloudformationStack|null $CloudformationStack
+ * @property BedrockGuardrailResource|null $BedrockGuardrail
  */
 class ResourceData extends Shape
 {
@@ -41,7 +42,8 @@ class ResourceData extends Shape
      *     Ec2LaunchTemplate?: Ec2LaunchTemplate|null,
      *     Ec2Vpc?: Ec2Vpc|null,
      *     Ec2Image?: Ec2Image|null,
-     *     CloudformationStack?: CloudformationStack|null
+     *     CloudformationStack?: CloudformationStack|null,
+     *     BedrockGuardrail?: BedrockGuardrailResource|null
      * } $args
      */
     public function __construct(array $args = [])
