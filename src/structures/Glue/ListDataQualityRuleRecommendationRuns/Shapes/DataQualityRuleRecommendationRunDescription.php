@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $StartedOn
  * @property DataSource|null $DataSource
  * @property string|null $CreatedRulesetName
+ * @property 'BASIC'|'ADVANCED'|null $RecommendationMode
  */
 class DataQualityRuleRecommendationRunDescription extends Shape
 {
@@ -19,7 +20,8 @@ class DataQualityRuleRecommendationRunDescription extends Shape
      *     Status?: 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT'|null,
      *     StartedOn?: \Aws\Api\DateTimeResult|null,
      *     DataSource?: DataSource|null,
-     *     CreatedRulesetName?: string|null
+     *     CreatedRulesetName?: string|null,
+     *     RecommendationMode?: 'BASIC'|'ADVANCED'|null
      * } $args
      */
     public function __construct(array $args = [])

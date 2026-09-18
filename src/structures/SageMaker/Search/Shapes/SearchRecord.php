@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ModelCard|null $ModelCard
  * @property ModelDashboardModel|null $Model
  * @property Job|null $Job
+ * @property HubContent|null $HubContent
  */
 class SearchRecord extends Shape
 {
@@ -43,7 +44,8 @@ class SearchRecord extends Shape
      *     HyperParameterTuningJob?: HyperParameterTuningJobSearchEntity|null,
      *     ModelCard?: ModelCard|null,
      *     Model?: ModelDashboardModel|null,
-     *     Job?: Job|null
+     *     Job?: Job|null,
+     *     HubContent?: HubContent|null
      * } $args
      */
     public function __construct(array $args = [])

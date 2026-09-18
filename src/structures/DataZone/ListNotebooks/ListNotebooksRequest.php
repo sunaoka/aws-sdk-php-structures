@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
  * @property 'CREATED_AT'|'UPDATED_AT'|null $sortBy
  * @property 'ACTIVE'|'ARCHIVED'|'SYNC_IN_PROGRESS'|'SYNC_FAILED'|null $status
+ * @property 'DATA'|'SQL'|null $type
  * @property string|null $nextToken
  */
 class ListNotebooksRequest extends Request
@@ -23,6 +24,7 @@ class ListNotebooksRequest extends Request
      *     sortOrder?: 'ASCENDING'|'DESCENDING'|null,
      *     sortBy?: 'CREATED_AT'|'UPDATED_AT'|null,
      *     status?: 'ACTIVE'|'ARCHIVED'|'SYNC_IN_PROGRESS'|'SYNC_FAILED'|null,
+     *     type?: 'DATA'|'SQL'|null,
      *     nextToken?: string|null
      * } $args
      */

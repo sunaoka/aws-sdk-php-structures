@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SageMaker\GetSearchSuggestions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'TrainingJob'|'Experiment'|'ExperimentTrial'|'ExperimentTrialComponent'|'Endpoint'|'Model'|'ModelPackage'|'ModelPackageGroup'|'Pipeline'|'PipelineExecution'|'FeatureGroup'|'FeatureMetadata'|'Image'|'ImageVersion'|'Project'|'HyperParameterTuningJob'|'ModelCard'|'PipelineVersion'|'Job' $Resource
+ * @property 'TrainingJob'|'Experiment'|'ExperimentTrial'|'ExperimentTrialComponent'|'Endpoint'|'Model'|'ModelPackage'|'ModelPackageGroup'|'Pipeline'|'PipelineExecution'|'FeatureGroup'|'FeatureMetadata'|'Image'|'ImageVersion'|'Project'|'HyperParameterTuningJob'|'ModelCard'|'PipelineVersion'|'Job'|'HubContent' $Resource
  * @property Shapes\SuggestionQuery|null $SuggestionQuery
  */
 class GetSearchSuggestionsRequest extends Request
 {
     /**
      * @param array{
-     *     Resource: 'TrainingJob'|'Experiment'|'ExperimentTrial'|'ExperimentTrialComponent'|'Endpoint'|'Model'|'ModelPackage'|'ModelPackageGroup'|'Pipeline'|'PipelineExecution'|'FeatureGroup'|'FeatureMetadata'|'Image'|'ImageVersion'|'Project'|'HyperParameterTuningJob'|'ModelCard'|'PipelineVersion'|'Job',
+     *     Resource: 'TrainingJob'|'Experiment'|'ExperimentTrial'|'ExperimentTrialComponent'|'Endpoint'|'Model'|'ModelPackage'|'ModelPackageGroup'|'Pipeline'|'PipelineExecution'|'FeatureGroup'|'FeatureMetadata'|'Image'|'ImageVersion'|'Project'|'HyperParameterTuningJob'|'ModelCard'|'PipelineVersion'|'Job'|'HubContent',
      *     SuggestionQuery?: Shapes\SuggestionQuery|null
      * } $args
      */

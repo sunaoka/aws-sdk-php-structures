@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ACTIVE'|'ARCHIVED'|'SYNC_IN_PROGRESS'|'SYNC_FAILED'|null $status
  * @property string|null $name
  * @property list<Shapes\CellInformation>|null $cellOrder
+ * @property 'DATA'|'SQL'|null $type
  * @property array<string, string>|null $metadata
  * @property array<string, string>|null $parameters
  * @property Shapes\EnvironmentConfig|null $environmentConfiguration
@@ -26,6 +27,7 @@ class UpdateNotebookRequest extends Request
      *     status?: 'ACTIVE'|'ARCHIVED'|'SYNC_IN_PROGRESS'|'SYNC_FAILED'|null,
      *     name?: string|null,
      *     cellOrder?: list<Shapes\CellInformation>|null,
+     *     type?: 'DATA'|'SQL'|null,
      *     metadata?: array<string, string>|null,
      *     parameters?: array<string, string>|null,
      *     environmentConfiguration?: Shapes\EnvironmentConfig|null,

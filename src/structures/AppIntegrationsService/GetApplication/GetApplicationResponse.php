@@ -21,7 +21,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<1, 600000>|null $InitializationTimeout
  * @property Shapes\ApplicationConfig|null $ApplicationConfig
  * @property Shapes\IframeConfig|null $IframeConfig
- * @property 'STANDARD'|'SERVICE'|'MCP_SERVER'|null $ApplicationType
+ * @property 'STANDARD'|'SERVICE'|'MCP_SERVER'|'A2A_SERVER'|null $ApplicationType
+ * @property Shapes\AuthConfig|null $AuthConfig
  */
 class GetApplicationResponse extends Response
 {

@@ -44,6 +44,7 @@ class TranscribeServiceClient extends \Aws\TranscribeService\TranscribeServiceCl
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateCallAnalyticsCategory\UpdateCallAnalyticsCategoryTrait;
+    use UpdateLanguageModel\UpdateLanguageModelTrait;
     use UpdateMedicalVocabulary\UpdateMedicalVocabularyTrait;
     use UpdateVocabulary\UpdateVocabularyTrait;
     use UpdateVocabularyFilter\UpdateVocabularyFilterTrait;

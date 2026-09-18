@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $Words
  * @property string|null $VocabularyFilterFileUri
  * @property string|null $DataAccessRoleArn
+ * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
  */
 class UpdateVocabularyFilterRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateVocabularyFilterRequest extends Request
      *     VocabularyFilterName: string,
      *     Words?: list<string>|null,
      *     VocabularyFilterFileUri?: string|null,
-     *     DataAccessRoleArn?: string|null
+     *     DataAccessRoleArn?: string|null,
+     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -20,6 +20,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $aiAgentVersion
  * @property string|null $aiAgentInvoker
  * @property string|null $aiAgentOrchestratorUseCase
+ * @property 'DELEGATE'|'HANDOFF'|null $interactionMode
+ * @property string|null $targetAgentId
+ * @property 'COMPLETE'|'COMPLETE_WITH_ERROR'|'ESCALATE'|'OUT_OF_DOMAIN'|null $returnReason
  * @property string|null $requestModel
  * @property int|null $requestMaxTokens
  * @property float|null $temperature
@@ -61,6 +64,9 @@ class SpanAttributes extends Shape
      *     aiAgentVersion?: int|null,
      *     aiAgentInvoker?: string|null,
      *     aiAgentOrchestratorUseCase?: string|null,
+     *     interactionMode?: 'DELEGATE'|'HANDOFF'|null,
+     *     targetAgentId?: string|null,
+     *     returnReason?: 'COMPLETE'|'COMPLETE_WITH_ERROR'|'ESCALATE'|'OUT_OF_DOMAIN'|null,
      *     requestModel?: string|null,
      *     requestMaxTokens?: int|null,
      *     temperature?: float|null,

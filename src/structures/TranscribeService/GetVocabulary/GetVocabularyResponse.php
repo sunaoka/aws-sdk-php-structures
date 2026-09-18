@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property string|null $FailureReason
  * @property string|null $DownloadUri
+ * @property string|null $DataAccessRoleArn
+ * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
  */
 class GetVocabularyResponse extends Response
 {

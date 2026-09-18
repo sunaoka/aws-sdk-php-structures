@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $CreatedRulesetName
  * @property string|null $DataQualitySecurityConfiguration
  * @property Shapes\DataQualityRuleRecommendationRunAdditionalRunOptions|null $AdditionalRunOptions
+ * @property 'BASIC'|'ADVANCED'|null $RecommendationMode
  */
 class GetDataQualityRuleRecommendationRunResponse extends Response
 {

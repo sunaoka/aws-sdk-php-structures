@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $owningProjectIdentifier
  * @property string $name
  * @property string|null $description
+ * @property 'DATA'|'SQL'|null $type
  * @property array<string, string>|null $metadata
  * @property array<string, string>|null $parameters
  * @property string|null $clientToken
@@ -21,6 +22,7 @@ class CreateNotebookRequest extends Request
      *     owningProjectIdentifier: string,
      *     name: string,
      *     description?: string|null,
+     *     type?: 'DATA'|'SQL'|null,
      *     metadata?: array<string, string>|null,
      *     parameters?: array<string, string>|null,
      *     clientToken?: string|null

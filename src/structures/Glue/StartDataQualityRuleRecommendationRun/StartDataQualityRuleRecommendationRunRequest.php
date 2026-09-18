@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DataQualitySecurityConfiguration
  * @property string|null $ClientToken
  * @property Shapes\DataQualityRuleRecommendationRunAdditionalRunOptions|null $AdditionalRunOptions
+ * @property 'BASIC'|'ADVANCED'|null $RecommendationMode
  */
 class StartDataQualityRuleRecommendationRunRequest extends Request
 {
@@ -25,7 +26,8 @@ class StartDataQualityRuleRecommendationRunRequest extends Request
      *     CreatedRulesetName?: string|null,
      *     DataQualitySecurityConfiguration?: string|null,
      *     ClientToken?: string|null,
-     *     AdditionalRunOptions?: Shapes\DataQualityRuleRecommendationRunAdditionalRunOptions|null
+     *     AdditionalRunOptions?: Shapes\DataQualityRuleRecommendationRunAdditionalRunOptions|null,
+     *     RecommendationMode?: 'BASIC'|'ADVANCED'|null
      * } $args
      */
     public function __construct(array $args)

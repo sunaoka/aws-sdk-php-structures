@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $UpgradeAvailability
  * @property string|null $FailureReason
  * @property InputDataConfig|null $InputDataConfig
+ * @property EncryptionConfiguration|null $EncryptionConfiguration
  */
 class LanguageModel extends Shape
 {
@@ -27,7 +28,8 @@ class LanguageModel extends Shape
      *     ModelStatus?: 'IN_PROGRESS'|'FAILED'|'COMPLETED'|null,
      *     UpgradeAvailability?: bool|null,
      *     FailureReason?: string|null,
-     *     InputDataConfig?: InputDataConfig|null
+     *     InputDataConfig?: InputDataConfig|null,
+     *     EncryptionConfiguration?: EncryptionConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

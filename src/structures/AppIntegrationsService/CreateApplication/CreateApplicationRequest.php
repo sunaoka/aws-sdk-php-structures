@@ -18,7 +18,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 600000>|null $InitializationTimeout
  * @property Shapes\ApplicationConfig|null $ApplicationConfig
  * @property Shapes\IframeConfig|null $IframeConfig
- * @property 'STANDARD'|'SERVICE'|'MCP_SERVER'|null $ApplicationType
+ * @property 'STANDARD'|'SERVICE'|'MCP_SERVER'|'A2A_SERVER'|null $ApplicationType
+ * @property Shapes\AuthConfig|null $AuthConfig
  */
 class CreateApplicationRequest extends Request
 {
@@ -37,7 +38,8 @@ class CreateApplicationRequest extends Request
      *     InitializationTimeout?: int<1, 600000>|null,
      *     ApplicationConfig?: Shapes\ApplicationConfig|null,
      *     IframeConfig?: Shapes\IframeConfig|null,
-     *     ApplicationType?: 'STANDARD'|'SERVICE'|'MCP_SERVER'|null
+     *     ApplicationType?: 'STANDARD'|'SERVICE'|'MCP_SERVER'|'A2A_SERVER'|null,
+     *     AuthConfig?: Shapes\AuthConfig|null
      * } $args
      */
     public function __construct(array $args)

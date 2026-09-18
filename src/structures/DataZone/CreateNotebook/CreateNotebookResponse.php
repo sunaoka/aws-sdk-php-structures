@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $domainId
  * @property list<Shapes\CellInformation> $cellOrder
  * @property 'ACTIVE'|'ARCHIVED'|'SYNC_IN_PROGRESS'|'SYNC_FAILED' $status
+ * @property 'DATA'|'SQL'|null $type
  * @property string|null $description
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $createdBy

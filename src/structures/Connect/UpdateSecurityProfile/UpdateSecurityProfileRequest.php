@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $HierarchyRestrictedResources
  * @property string|null $AllowedAccessControlHierarchyGroupId
  * @property list<Shapes\FlowModule>|null $AllowedFlowModules
+ * @property list<Shapes\AIAgent>|null $AllowedAIAgents
  * @property Shapes\GranularAccessControlConfiguration|null $GranularAccessControlConfiguration
  */
 class UpdateSecurityProfileRequest extends Request
@@ -31,6 +32,7 @@ class UpdateSecurityProfileRequest extends Request
      *     HierarchyRestrictedResources?: list<string>|null,
      *     AllowedAccessControlHierarchyGroupId?: string|null,
      *     AllowedFlowModules?: list<Shapes\FlowModule>|null,
+     *     AllowedAIAgents?: list<Shapes\AIAgent>|null,
      *     GranularAccessControlConfiguration?: Shapes\GranularAccessControlConfiguration|null
      * } $args
      */

@@ -243,6 +243,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ListRoutingProfiles\ListRoutingProfilesTrait;
     use ListRules\ListRulesTrait;
     use ListSecurityKeys\ListSecurityKeysTrait;
+    use ListSecurityProfileAIAgents\ListSecurityProfileAIAgentsTrait;
     use ListSecurityProfileApplications\ListSecurityProfileApplicationsTrait;
     use ListSecurityProfileFlowModules\ListSecurityProfileFlowModulesTrait;
     use ListSecurityProfilePermissions\ListSecurityProfilePermissionsTrait;

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $owningProjectId
  * @property string $domainId
  * @property 'ACTIVE'|'ARCHIVED'|'SYNC_IN_PROGRESS'|'SYNC_FAILED' $status
+ * @property 'DATA'|'SQL'|null $type
  * @property string|null $description
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $createdBy
@@ -25,6 +26,7 @@ class NotebookSummary extends Shape
      *     owningProjectId: string,
      *     domainId: string,
      *     status: 'ACTIVE'|'ARCHIVED'|'SYNC_IN_PROGRESS'|'SYNC_FAILED',
+     *     type?: 'DATA'|'SQL'|null,
      *     description?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     createdBy?: string|null,

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $VocabularyFilterFileUri
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $DataAccessRoleArn
+ * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
  */
 class CreateVocabularyFilterRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateVocabularyFilterRequest extends Request
      *     Words?: list<string>|null,
      *     VocabularyFilterFileUri?: string|null,
      *     Tags?: list<Shapes\Tag>|null,
-     *     DataAccessRoleArn?: string|null
+     *     DataAccessRoleArn?: string|null,
+     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null
      * } $args
      */
     public function __construct(array $args)
