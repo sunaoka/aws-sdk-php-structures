@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $environmentVariables
  * @property AuthorizerConfiguration|null $authorizerConfiguration
  * @property HarnessMemoryConfiguration|null $memory
+ * @property list<HarnessHook>|null $hooks
  * @property int|null $maxIterations
  * @property int|null $maxTokens
  * @property int|null $timeoutSeconds
@@ -52,6 +53,7 @@ class Harness extends Shape
      *     environmentVariables?: array<string, string>|null,
      *     authorizerConfiguration?: AuthorizerConfiguration|null,
      *     memory?: HarnessMemoryConfiguration|null,
+     *     hooks?: list<HarnessHook>|null,
      *     maxIterations?: int|null,
      *     maxTokens?: int|null,
      *     timeoutSeconds?: int|null,

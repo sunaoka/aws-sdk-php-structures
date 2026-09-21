@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InternalServerException|null $internalServerException
  * @property ValidationException|null $validationException
  * @property RuntimeClientError|null $runtimeClientError
+ * @property HarnessHookEvent|null $hookEvent
  */
 class InvokeHarnessStreamOutput extends Shape
 {
@@ -27,7 +28,8 @@ class InvokeHarnessStreamOutput extends Shape
      *     metadata?: HarnessMetadataEvent|null,
      *     internalServerException?: InternalServerException|null,
      *     validationException?: ValidationException|null,
-     *     runtimeClientError?: RuntimeClientError|null
+     *     runtimeClientError?: RuntimeClientError|null,
+     *     hookEvent?: HarnessHookEvent|null
      * } $args
      */
     public function __construct(array $args = [])

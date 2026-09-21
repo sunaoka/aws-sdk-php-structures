@@ -30,6 +30,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $ManageMasterUserPassword
  * @property string|null $MasterUserSecretKmsKeyId
  * @property string|null $NetworkType
+ * @property bool|null $CopyTagsToSnapshot
  */
 class CreateDBClusterRequest extends Request
 {
@@ -59,7 +60,8 @@ class CreateDBClusterRequest extends Request
      *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
      *     ManageMasterUserPassword?: bool|null,
      *     MasterUserSecretKmsKeyId?: string|null,
-     *     NetworkType?: string|null
+     *     NetworkType?: string|null,
+     *     CopyTagsToSnapshot?: bool|null
      * } $args
      */
     public function __construct(array $args)

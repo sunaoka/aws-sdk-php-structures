@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $allowedTools
  * @property Shapes\UpdatedHarnessMemoryConfiguration|null $memory
  * @property Shapes\HarnessTruncationConfiguration|null $truncation
+ * @property list<Shapes\HarnessHook>|null $hooks
  * @property int|null $maxIterations
  * @property int|null $maxTokens
  * @property int|null $timeoutSeconds
@@ -41,6 +42,7 @@ class UpdateHarnessRequest extends Request
      *     allowedTools?: list<string>|null,
      *     memory?: Shapes\UpdatedHarnessMemoryConfiguration|null,
      *     truncation?: Shapes\HarnessTruncationConfiguration|null,
+     *     hooks?: list<Shapes\HarnessHook>|null,
      *     maxIterations?: int|null,
      *     maxTokens?: int|null,
      *     timeoutSeconds?: int|null

@@ -19,6 +19,7 @@ class BillingConductorClient extends \Aws\BillingConductor\BillingConductorClien
     use DisassociateAccounts\DisassociateAccountsTrait;
     use DisassociatePricingRules\DisassociatePricingRulesTrait;
     use GetBillingGroupCostReport\GetBillingGroupCostReportTrait;
+    use GetBillingTransferPreference\GetBillingTransferPreferenceTrait;
     use ListAccountAssociations\ListAccountAssociationsTrait;
     use ListBillingGroupCostReports\ListBillingGroupCostReportsTrait;
     use ListBillingGroups\ListBillingGroupsTrait;
@@ -33,6 +34,7 @@ class BillingConductorClient extends \Aws\BillingConductor\BillingConductorClien
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateBillingGroup\UpdateBillingGroupTrait;
+    use UpdateBillingTransferPreference\UpdateBillingTransferPreferenceTrait;
     use UpdateCustomLineItem\UpdateCustomLineItemTrait;
     use UpdatePricingPlan\UpdatePricingPlanTrait;
     use UpdatePricingRule\UpdatePricingRuleTrait;

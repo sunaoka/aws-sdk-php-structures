@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $modelId
  * @property string $apiKeyArn
+ * @property string|null $apiBase
  * @property int<1, max>|null $maxTokens
  * @property float|null $temperature
  * @property float|null $topP
@@ -19,6 +20,7 @@ class HarnessOpenAiModelConfig extends Shape
      * @param array{
      *     modelId: string,
      *     apiKeyArn: string,
+     *     apiBase?: string|null,
      *     maxTokens?: int<1, max>|null,
      *     temperature?: float|null,
      *     topP?: float|null,

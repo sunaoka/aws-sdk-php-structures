@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $MasterUserSecretKmsKeyId
  * @property bool|null $RotateMasterUserPassword
  * @property string|null $NetworkType
+ * @property bool|null $CopyTagsToSnapshot
  */
 class ModifyDBClusterRequest extends Request
 {
@@ -49,7 +50,8 @@ class ModifyDBClusterRequest extends Request
      *     ManageMasterUserPassword?: bool|null,
      *     MasterUserSecretKmsKeyId?: string|null,
      *     RotateMasterUserPassword?: bool|null,
-     *     NetworkType?: string|null
+     *     NetworkType?: string|null,
+     *     CopyTagsToSnapshot?: bool|null
      * } $args
      */
     public function __construct(array $args)

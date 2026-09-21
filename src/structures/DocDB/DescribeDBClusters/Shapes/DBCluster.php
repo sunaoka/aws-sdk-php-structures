@@ -42,6 +42,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ServerlessV2ScalingConfigurationInfo|null $ServerlessV2ScalingConfiguration
  * @property ClusterMasterUserSecret|null $MasterUserSecret
  * @property string|null $NetworkType
+ * @property bool|null $CopyTagsToSnapshot
  */
 class DBCluster extends Shape
 {
@@ -83,7 +84,8 @@ class DBCluster extends Shape
      *     StorageType?: string|null,
      *     ServerlessV2ScalingConfiguration?: ServerlessV2ScalingConfigurationInfo|null,
      *     MasterUserSecret?: ClusterMasterUserSecret|null,
-     *     NetworkType?: string|null
+     *     NetworkType?: string|null,
+     *     CopyTagsToSnapshot?: bool|null
      * } $args
      */
     public function __construct(array $args = [])
