@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'TRUSTED_ACCESS_NOT_ENABLED'|'DESTINATION_ACCOUNT_NOT_IN_ORGANIZATION'|'INTERNAL_SERVER_ERROR'|null $FailureReason
  * @property 'Healthy'|'Unhealthy'|null $TagPropagationStatus
  * @property 'RoleNotAssumable'|'RoleLacksPermissions'|null $TagPropagationFailureReason
+ * @property 'Healthy'|'Unhealthy'|'Provisioning'|null $ContextGraphStatus
  * @property Shapes\CentralizationRule|null $CentralizationRule
  */
 class GetCentralizationRuleForOrganizationResponse extends Response

@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $InstanceArn
  * @property string|null $IdentityStoreId
+ * @property string|null $IdentityStoreArn
  * @property string|null $OwnerAccountId
  * @property string|null $Name
  * @property \Aws\Api\DateTimeResult|null $CreatedDate
@@ -21,6 +22,7 @@ class InstanceMetadata extends Shape
      * @param array{
      *     InstanceArn?: string|null,
      *     IdentityStoreId?: string|null,
+     *     IdentityStoreArn?: string|null,
      *     OwnerAccountId?: string|null,
      *     Name?: string|null,
      *     CreatedDate?: \Aws\Api\DateTimeResult|null,

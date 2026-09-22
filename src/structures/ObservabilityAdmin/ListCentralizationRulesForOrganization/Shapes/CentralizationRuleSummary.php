@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'TRUSTED_ACCESS_NOT_ENABLED'|'DESTINATION_ACCOUNT_NOT_IN_ORGANIZATION'|'INTERNAL_SERVER_ERROR'|null $FailureReason
  * @property 'Healthy'|'Unhealthy'|null $TagPropagationStatus
  * @property 'RoleNotAssumable'|'RoleLacksPermissions'|null $TagPropagationFailureReason
+ * @property 'Healthy'|'Unhealthy'|'Provisioning'|null $ContextGraphStatus
  * @property string|null $DestinationAccountId
  * @property string|null $DestinationRegion
  */
@@ -32,6 +33,7 @@ class CentralizationRuleSummary extends Shape
      *     FailureReason?: 'TRUSTED_ACCESS_NOT_ENABLED'|'DESTINATION_ACCOUNT_NOT_IN_ORGANIZATION'|'INTERNAL_SERVER_ERROR'|null,
      *     TagPropagationStatus?: 'Healthy'|'Unhealthy'|null,
      *     TagPropagationFailureReason?: 'RoleNotAssumable'|'RoleLacksPermissions'|null,
+     *     ContextGraphStatus?: 'Healthy'|'Unhealthy'|'Provisioning'|null,
      *     DestinationAccountId?: string|null,
      *     DestinationRegion?: string|null
      * } $args

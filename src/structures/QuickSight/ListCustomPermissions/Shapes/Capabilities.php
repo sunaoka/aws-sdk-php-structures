@@ -258,6 +258,118 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DENY'|'ALLOW'|null $CreateAndUpdateNewRelicAction
  * @property 'DENY'|'ALLOW'|null $ShareNewRelicAction
  * @property 'DENY'|'ALLOW'|null $UseNewRelicAction
+ * @property 'DENY'|'ALLOW'|null $PagerDutyAgentAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdatePagerDutyAgentAction
+ * @property 'DENY'|'ALLOW'|null $SharePagerDutyAgentAction
+ * @property 'DENY'|'ALLOW'|null $UsePagerDutyAgentAction
+ * @property 'DENY'|'ALLOW'|null $VisierAgentAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateVisierAgentAction
+ * @property 'DENY'|'ALLOW'|null $ShareVisierAgentAction
+ * @property 'DENY'|'ALLOW'|null $UseVisierAgentAction
+ * @property 'DENY'|'ALLOW'|null $ZoomAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateZoomAction
+ * @property 'DENY'|'ALLOW'|null $ShareZoomAction
+ * @property 'DENY'|'ALLOW'|null $UseZoomAction
+ * @property 'DENY'|'ALLOW'|null $SnowFlakeAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateSnowFlakeAction
+ * @property 'DENY'|'ALLOW'|null $ShareSnowFlakeAction
+ * @property 'DENY'|'ALLOW'|null $UseSnowFlakeAction
+ * @property 'DENY'|'ALLOW'|null $ZapierAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateZapierAction
+ * @property 'DENY'|'ALLOW'|null $ShareZapierAction
+ * @property 'DENY'|'ALLOW'|null $UseZapierAction
+ * @property 'DENY'|'ALLOW'|null $AirtableAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateAirtableAction
+ * @property 'DENY'|'ALLOW'|null $ShareAirtableAction
+ * @property 'DENY'|'ALLOW'|null $UseAirtableAction
+ * @property 'DENY'|'ALLOW'|null $DropboxAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateDropboxAction
+ * @property 'DENY'|'ALLOW'|null $ShareDropboxAction
+ * @property 'DENY'|'ALLOW'|null $UseDropboxAction
+ * @property 'DENY'|'ALLOW'|null $GmailAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateGmailAction
+ * @property 'DENY'|'ALLOW'|null $ShareGmailAction
+ * @property 'DENY'|'ALLOW'|null $UseGmailAction
+ * @property 'DENY'|'ALLOW'|null $GoogleAnalyticsAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateGoogleAnalyticsAction
+ * @property 'DENY'|'ALLOW'|null $ShareGoogleAnalyticsAction
+ * @property 'DENY'|'ALLOW'|null $UseGoogleAnalyticsAction
+ * @property 'DENY'|'ALLOW'|null $GoogleDocsAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateGoogleDocsAction
+ * @property 'DENY'|'ALLOW'|null $ShareGoogleDocsAction
+ * @property 'DENY'|'ALLOW'|null $UseGoogleDocsAction
+ * @property 'DENY'|'ALLOW'|null $GoogleDriveAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateGoogleDriveAction
+ * @property 'DENY'|'ALLOW'|null $ShareGoogleDriveAction
+ * @property 'DENY'|'ALLOW'|null $UseGoogleDriveAction
+ * @property 'DENY'|'ALLOW'|null $GoogleMeetAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateGoogleMeetAction
+ * @property 'DENY'|'ALLOW'|null $ShareGoogleMeetAction
+ * @property 'DENY'|'ALLOW'|null $UseGoogleMeetAction
+ * @property 'DENY'|'ALLOW'|null $GoogleSheetsAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateGoogleSheetsAction
+ * @property 'DENY'|'ALLOW'|null $ShareGoogleSheetsAction
+ * @property 'DENY'|'ALLOW'|null $UseGoogleSheetsAction
+ * @property 'DENY'|'ALLOW'|null $GoogleSlidesAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateGoogleSlidesAction
+ * @property 'DENY'|'ALLOW'|null $ShareGoogleSlidesAction
+ * @property 'DENY'|'ALLOW'|null $UseGoogleSlidesAction
+ * @property 'DENY'|'ALLOW'|null $QuickBooksAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateQuickBooksAction
+ * @property 'DENY'|'ALLOW'|null $ShareQuickBooksAction
+ * @property 'DENY'|'ALLOW'|null $UseQuickBooksAction
+ * @property 'DENY'|'ALLOW'|null $FigmaAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateFigmaAction
+ * @property 'DENY'|'ALLOW'|null $ShareFigmaAction
+ * @property 'DENY'|'ALLOW'|null $UseFigmaAction
+ * @property 'DENY'|'ALLOW'|null $WhatsAppAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateWhatsAppAction
+ * @property 'DENY'|'ALLOW'|null $ShareWhatsAppAction
+ * @property 'DENY'|'ALLOW'|null $UseWhatsAppAction
+ * @property 'DENY'|'ALLOW'|null $GoogleChatAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateGoogleChatAction
+ * @property 'DENY'|'ALLOW'|null $ShareGoogleChatAction
+ * @property 'DENY'|'ALLOW'|null $UseGoogleChatAction
+ * @property 'DENY'|'ALLOW'|null $OneNoteAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateOneNoteAction
+ * @property 'DENY'|'ALLOW'|null $ShareOneNoteAction
+ * @property 'DENY'|'ALLOW'|null $UseOneNoteAction
+ * @property 'DENY'|'ALLOW'|null $ShopifyAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateShopifyAction
+ * @property 'DENY'|'ALLOW'|null $ShareShopifyAction
+ * @property 'DENY'|'ALLOW'|null $UseShopifyAction
+ * @property 'DENY'|'ALLOW'|null $AdobeAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateAdobeAction
+ * @property 'DENY'|'ALLOW'|null $ShareAdobeAction
+ * @property 'DENY'|'ALLOW'|null $UseAdobeAction
+ * @property 'DENY'|'ALLOW'|null $CiscoWebexVidcastAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateCiscoWebexVidcastAction
+ * @property 'DENY'|'ALLOW'|null $ShareCiscoWebexVidcastAction
+ * @property 'DENY'|'ALLOW'|null $UseCiscoWebexVidcastAction
+ * @property 'DENY'|'ALLOW'|null $CiscoWebexMeetingsAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateCiscoWebexMeetingsAction
+ * @property 'DENY'|'ALLOW'|null $ShareCiscoWebexMeetingsAction
+ * @property 'DENY'|'ALLOW'|null $UseCiscoWebexMeetingsAction
+ * @property 'DENY'|'ALLOW'|null $DunAndBradstreetAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateDunAndBradstreetAction
+ * @property 'DENY'|'ALLOW'|null $ShareDunAndBradstreetAction
+ * @property 'DENY'|'ALLOW'|null $UseDunAndBradstreetAction
+ * @property 'DENY'|'ALLOW'|null $HGInsightsAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateHGInsightsAction
+ * @property 'DENY'|'ALLOW'|null $ShareHGInsightsAction
+ * @property 'DENY'|'ALLOW'|null $UseHGInsightsAction
+ * @property 'DENY'|'ALLOW'|null $ZoomInfoAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateZoomInfoAction
+ * @property 'DENY'|'ALLOW'|null $ShareZoomInfoAction
+ * @property 'DENY'|'ALLOW'|null $UseZoomInfoAction
+ * @property 'DENY'|'ALLOW'|null $MoodysAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateMoodysAction
+ * @property 'DENY'|'ALLOW'|null $ShareMoodysAction
+ * @property 'DENY'|'ALLOW'|null $UseMoodysAction
+ * @property 'DENY'|'ALLOW'|null $BeeAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateBeeAction
+ * @property 'DENY'|'ALLOW'|null $ShareBeeAction
+ * @property 'DENY'|'ALLOW'|null $UseBeeAction
  * @property 'DENY'|'ALLOW'|null $Topic
  * @property 'DENY'|'ALLOW'|null $EditVisualWithQ
  * @property 'DENY'|'ALLOW'|null $BuildCalculatedFieldWithQ
@@ -542,6 +654,118 @@ class Capabilities extends Shape
      *     CreateAndUpdateNewRelicAction?: 'DENY'|'ALLOW'|null,
      *     ShareNewRelicAction?: 'DENY'|'ALLOW'|null,
      *     UseNewRelicAction?: 'DENY'|'ALLOW'|null,
+     *     PagerDutyAgentAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdatePagerDutyAgentAction?: 'DENY'|'ALLOW'|null,
+     *     SharePagerDutyAgentAction?: 'DENY'|'ALLOW'|null,
+     *     UsePagerDutyAgentAction?: 'DENY'|'ALLOW'|null,
+     *     VisierAgentAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateVisierAgentAction?: 'DENY'|'ALLOW'|null,
+     *     ShareVisierAgentAction?: 'DENY'|'ALLOW'|null,
+     *     UseVisierAgentAction?: 'DENY'|'ALLOW'|null,
+     *     ZoomAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateZoomAction?: 'DENY'|'ALLOW'|null,
+     *     ShareZoomAction?: 'DENY'|'ALLOW'|null,
+     *     UseZoomAction?: 'DENY'|'ALLOW'|null,
+     *     SnowFlakeAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateSnowFlakeAction?: 'DENY'|'ALLOW'|null,
+     *     ShareSnowFlakeAction?: 'DENY'|'ALLOW'|null,
+     *     UseSnowFlakeAction?: 'DENY'|'ALLOW'|null,
+     *     ZapierAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateZapierAction?: 'DENY'|'ALLOW'|null,
+     *     ShareZapierAction?: 'DENY'|'ALLOW'|null,
+     *     UseZapierAction?: 'DENY'|'ALLOW'|null,
+     *     AirtableAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateAirtableAction?: 'DENY'|'ALLOW'|null,
+     *     ShareAirtableAction?: 'DENY'|'ALLOW'|null,
+     *     UseAirtableAction?: 'DENY'|'ALLOW'|null,
+     *     DropboxAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateDropboxAction?: 'DENY'|'ALLOW'|null,
+     *     ShareDropboxAction?: 'DENY'|'ALLOW'|null,
+     *     UseDropboxAction?: 'DENY'|'ALLOW'|null,
+     *     GmailAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateGmailAction?: 'DENY'|'ALLOW'|null,
+     *     ShareGmailAction?: 'DENY'|'ALLOW'|null,
+     *     UseGmailAction?: 'DENY'|'ALLOW'|null,
+     *     GoogleAnalyticsAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateGoogleAnalyticsAction?: 'DENY'|'ALLOW'|null,
+     *     ShareGoogleAnalyticsAction?: 'DENY'|'ALLOW'|null,
+     *     UseGoogleAnalyticsAction?: 'DENY'|'ALLOW'|null,
+     *     GoogleDocsAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateGoogleDocsAction?: 'DENY'|'ALLOW'|null,
+     *     ShareGoogleDocsAction?: 'DENY'|'ALLOW'|null,
+     *     UseGoogleDocsAction?: 'DENY'|'ALLOW'|null,
+     *     GoogleDriveAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateGoogleDriveAction?: 'DENY'|'ALLOW'|null,
+     *     ShareGoogleDriveAction?: 'DENY'|'ALLOW'|null,
+     *     UseGoogleDriveAction?: 'DENY'|'ALLOW'|null,
+     *     GoogleMeetAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateGoogleMeetAction?: 'DENY'|'ALLOW'|null,
+     *     ShareGoogleMeetAction?: 'DENY'|'ALLOW'|null,
+     *     UseGoogleMeetAction?: 'DENY'|'ALLOW'|null,
+     *     GoogleSheetsAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateGoogleSheetsAction?: 'DENY'|'ALLOW'|null,
+     *     ShareGoogleSheetsAction?: 'DENY'|'ALLOW'|null,
+     *     UseGoogleSheetsAction?: 'DENY'|'ALLOW'|null,
+     *     GoogleSlidesAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateGoogleSlidesAction?: 'DENY'|'ALLOW'|null,
+     *     ShareGoogleSlidesAction?: 'DENY'|'ALLOW'|null,
+     *     UseGoogleSlidesAction?: 'DENY'|'ALLOW'|null,
+     *     QuickBooksAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateQuickBooksAction?: 'DENY'|'ALLOW'|null,
+     *     ShareQuickBooksAction?: 'DENY'|'ALLOW'|null,
+     *     UseQuickBooksAction?: 'DENY'|'ALLOW'|null,
+     *     FigmaAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateFigmaAction?: 'DENY'|'ALLOW'|null,
+     *     ShareFigmaAction?: 'DENY'|'ALLOW'|null,
+     *     UseFigmaAction?: 'DENY'|'ALLOW'|null,
+     *     WhatsAppAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateWhatsAppAction?: 'DENY'|'ALLOW'|null,
+     *     ShareWhatsAppAction?: 'DENY'|'ALLOW'|null,
+     *     UseWhatsAppAction?: 'DENY'|'ALLOW'|null,
+     *     GoogleChatAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateGoogleChatAction?: 'DENY'|'ALLOW'|null,
+     *     ShareGoogleChatAction?: 'DENY'|'ALLOW'|null,
+     *     UseGoogleChatAction?: 'DENY'|'ALLOW'|null,
+     *     OneNoteAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateOneNoteAction?: 'DENY'|'ALLOW'|null,
+     *     ShareOneNoteAction?: 'DENY'|'ALLOW'|null,
+     *     UseOneNoteAction?: 'DENY'|'ALLOW'|null,
+     *     ShopifyAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateShopifyAction?: 'DENY'|'ALLOW'|null,
+     *     ShareShopifyAction?: 'DENY'|'ALLOW'|null,
+     *     UseShopifyAction?: 'DENY'|'ALLOW'|null,
+     *     AdobeAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateAdobeAction?: 'DENY'|'ALLOW'|null,
+     *     ShareAdobeAction?: 'DENY'|'ALLOW'|null,
+     *     UseAdobeAction?: 'DENY'|'ALLOW'|null,
+     *     CiscoWebexVidcastAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateCiscoWebexVidcastAction?: 'DENY'|'ALLOW'|null,
+     *     ShareCiscoWebexVidcastAction?: 'DENY'|'ALLOW'|null,
+     *     UseCiscoWebexVidcastAction?: 'DENY'|'ALLOW'|null,
+     *     CiscoWebexMeetingsAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateCiscoWebexMeetingsAction?: 'DENY'|'ALLOW'|null,
+     *     ShareCiscoWebexMeetingsAction?: 'DENY'|'ALLOW'|null,
+     *     UseCiscoWebexMeetingsAction?: 'DENY'|'ALLOW'|null,
+     *     DunAndBradstreetAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateDunAndBradstreetAction?: 'DENY'|'ALLOW'|null,
+     *     ShareDunAndBradstreetAction?: 'DENY'|'ALLOW'|null,
+     *     UseDunAndBradstreetAction?: 'DENY'|'ALLOW'|null,
+     *     HGInsightsAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateHGInsightsAction?: 'DENY'|'ALLOW'|null,
+     *     ShareHGInsightsAction?: 'DENY'|'ALLOW'|null,
+     *     UseHGInsightsAction?: 'DENY'|'ALLOW'|null,
+     *     ZoomInfoAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateZoomInfoAction?: 'DENY'|'ALLOW'|null,
+     *     ShareZoomInfoAction?: 'DENY'|'ALLOW'|null,
+     *     UseZoomInfoAction?: 'DENY'|'ALLOW'|null,
+     *     MoodysAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateMoodysAction?: 'DENY'|'ALLOW'|null,
+     *     ShareMoodysAction?: 'DENY'|'ALLOW'|null,
+     *     UseMoodysAction?: 'DENY'|'ALLOW'|null,
+     *     BeeAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateBeeAction?: 'DENY'|'ALLOW'|null,
+     *     ShareBeeAction?: 'DENY'|'ALLOW'|null,
+     *     UseBeeAction?: 'DENY'|'ALLOW'|null,
      *     Topic?: 'DENY'|'ALLOW'|null,
      *     EditVisualWithQ?: 'DENY'|'ALLOW'|null,
      *     BuildCalculatedFieldWithQ?: 'DENY'|'ALLOW'|null,

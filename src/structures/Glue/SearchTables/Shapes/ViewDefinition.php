@@ -13,7 +13,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'FULL'|'INCREMENTAL'|null $LastRefreshType
  * @property list<string>|null $SubObjects
  * @property list<int<-1, max>>|null $SubObjectVersionIds
+ * @property list<SubObjectStatistics>|null $SubObjectsStatistics
  * @property list<ViewRepresentation>|null $Representations
+ * @property array<string, string>|null $SparkPipelineInfo
  */
 class ViewDefinition extends Shape
 {
@@ -27,7 +29,9 @@ class ViewDefinition extends Shape
      *     LastRefreshType?: 'FULL'|'INCREMENTAL'|null,
      *     SubObjects?: list<string>|null,
      *     SubObjectVersionIds?: list<int<-1, max>>|null,
-     *     Representations?: list<ViewRepresentation>|null
+     *     SubObjectsStatistics?: list<SubObjectStatistics>|null,
+     *     Representations?: list<ViewRepresentation>|null,
+     *     SparkPipelineInfo?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

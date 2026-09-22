@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int|null $CommittedInstanceCount
  * @property \Aws\Api\DateTimeResult|null $CommitmentEndDate
+ * @property int|null $CommitmentDuration
  */
 class CapacityReservationCommitmentInfo extends Shape
 {
     /**
      * @param array{
      *     CommittedInstanceCount?: int|null,
-     *     CommitmentEndDate?: \Aws\Api\DateTimeResult|null
+     *     CommitmentEndDate?: \Aws\Api\DateTimeResult|null,
+     *     CommitmentDuration?: int|null
      * } $args
      */
     public function __construct(array $args = [])

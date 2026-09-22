@@ -5,16 +5,19 @@ namespace Sunaoka\Aws\Structures\ObservabilityAdmin;
 class ObservabilityAdminClient extends \Aws\ObservabilityAdmin\ObservabilityAdminClient
 {
     use CreateCentralizationRuleForOrganization\CreateCentralizationRuleForOrganizationTrait;
+    use CreateDatasetIntegration\CreateDatasetIntegrationTrait;
     use CreateS3TableIntegration\CreateS3TableIntegrationTrait;
     use CreateTelemetryPipeline\CreateTelemetryPipelineTrait;
     use CreateTelemetryRule\CreateTelemetryRuleTrait;
     use CreateTelemetryRuleForOrganization\CreateTelemetryRuleForOrganizationTrait;
     use DeleteCentralizationRuleForOrganization\DeleteCentralizationRuleForOrganizationTrait;
+    use DeleteDatasetIntegration\DeleteDatasetIntegrationTrait;
     use DeleteS3TableIntegration\DeleteS3TableIntegrationTrait;
     use DeleteTelemetryPipeline\DeleteTelemetryPipelineTrait;
     use DeleteTelemetryRule\DeleteTelemetryRuleTrait;
     use DeleteTelemetryRuleForOrganization\DeleteTelemetryRuleForOrganizationTrait;
     use GetCentralizationRuleForOrganization\GetCentralizationRuleForOrganizationTrait;
+    use GetDatasetIntegration\GetDatasetIntegrationTrait;
     use GetS3TableIntegration\GetS3TableIntegrationTrait;
     use GetTelemetryEnrichmentStatus\GetTelemetryEnrichmentStatusTrait;
     use GetTelemetryEvaluationStatus\GetTelemetryEvaluationStatusTrait;
@@ -23,6 +26,7 @@ class ObservabilityAdminClient extends \Aws\ObservabilityAdmin\ObservabilityAdmi
     use GetTelemetryRule\GetTelemetryRuleTrait;
     use GetTelemetryRuleForOrganization\GetTelemetryRuleForOrganizationTrait;
     use ListCentralizationRulesForOrganization\ListCentralizationRulesForOrganizationTrait;
+    use ListDatasetIntegrations\ListDatasetIntegrationsTrait;
     use ListResourceTelemetry\ListResourceTelemetryTrait;
     use ListResourceTelemetryForOrganization\ListResourceTelemetryForOrganizationTrait;
     use ListS3TableIntegrations\ListS3TableIntegrationsTrait;
@@ -40,6 +44,7 @@ class ObservabilityAdminClient extends \Aws\ObservabilityAdmin\ObservabilityAdmi
     use TestTelemetryPipeline\TestTelemetryPipelineTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateCentralizationRuleForOrganization\UpdateCentralizationRuleForOrganizationTrait;
+    use UpdateDatasetIntegration\UpdateDatasetIntegrationTrait;
     use UpdateTelemetryPipeline\UpdateTelemetryPipelineTrait;
     use UpdateTelemetryRule\UpdateTelemetryRuleTrait;
     use UpdateTelemetryRuleForOrganization\UpdateTelemetryRuleForOrganizationTrait;
