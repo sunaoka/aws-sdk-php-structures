@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $sessionId
  * @property string|null $domainId
  * @property string|null $subscriptionId
- * @property 'en-US'|null $languageCode
+ * @property 'en-US'|'multi'|null $languageCode
  * @property int<8000, 48000>|null $mediaSampleRateHertz
  * @property 'pcm'|'flac'|null $mediaEncoding
  * @property list<MedicalScribeChannelDefinition>|null $channelDefinitions
@@ -26,7 +26,7 @@ class MedicalScribeListeningSessionDetails extends Shape
      *     sessionId?: string|null,
      *     domainId?: string|null,
      *     subscriptionId?: string|null,
-     *     languageCode?: 'en-US'|null,
+     *     languageCode?: 'en-US'|'multi'|null,
      *     mediaSampleRateHertz?: int<8000, 48000>|null,
      *     mediaEncoding?: 'pcm'|'flac'|null,
      *     channelDefinitions?: list<MedicalScribeChannelDefinition>|null,

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Input>|null $Inputs
  * @property KantarWatermarkSettings|null $KantarWatermark
  * @property MotionImageInserter|null $MotionImageInserter
+ * @property list<MotionImageInserter>|null $MotionImageInserters
  * @property NielsenConfiguration|null $NielsenConfiguration
  * @property NielsenNonLinearWatermarkSettings|null $NielsenNonLinearWatermark
  * @property list<OutputGroup>|null $OutputGroups
@@ -33,6 +34,7 @@ class JobSettings extends Shape
      *     Inputs?: list<Input>|null,
      *     KantarWatermark?: KantarWatermarkSettings|null,
      *     MotionImageInserter?: MotionImageInserter|null,
+     *     MotionImageInserters?: list<MotionImageInserter>|null,
      *     NielsenConfiguration?: NielsenConfiguration|null,
      *     NielsenNonLinearWatermark?: NielsenNonLinearWatermarkSettings|null,
      *     OutputGroups?: list<OutputGroup>|null,

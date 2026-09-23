@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property SymmetricEncryptionAttributes|null $Symmetric
+ * @property AsymmetricEncryptionAttributes|null $Asymmetric
  * @property DukptEncryptionAttributes|null $Dukpt
  */
 class ReEncryptionAttributes extends Shape
@@ -13,6 +14,7 @@ class ReEncryptionAttributes extends Shape
     /**
      * @param array{
      *     Symmetric?: SymmetricEncryptionAttributes|null,
+     *     Asymmetric?: AsymmetricEncryptionAttributes|null,
      *     Dukpt?: DukptEncryptionAttributes|null
      * } $args
      */

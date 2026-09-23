@@ -46,5 +46,6 @@ class KinesisClient extends \Aws\Kinesis\KinesisClient
     use UpdateMaxRecordSize\UpdateMaxRecordSizeTrait;
     use UpdateShardCount\UpdateShardCountTrait;
     use UpdateStreamMode\UpdateStreamModeTrait;
+    use UpdateStreamRecordDistributionStrategy\UpdateStreamRecordDistributionStrategyTrait;
     use UpdateStreamWarmThroughput\UpdateStreamWarmThroughputTrait;
 }

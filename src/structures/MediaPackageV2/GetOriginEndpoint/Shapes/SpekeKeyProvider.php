@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $RoleArn
  * @property string $Url
  * @property string|null $CertificateArn
+ * @property 'V2_0'|'V2_1'|null $SpekeVersion
+ * @property ContentKeyPeriodConfiguration|null $ContentKeyPeriodConfiguration
  */
 class SpekeKeyProvider extends Shape
 {
@@ -21,7 +23,9 @@ class SpekeKeyProvider extends Shape
      *     DrmSystems: list<'CLEAR_KEY_AES_128'|'FAIRPLAY'|'PLAYREADY'|'WIDEVINE'|'IRDETO'>,
      *     RoleArn: string,
      *     Url: string,
-     *     CertificateArn?: string|null
+     *     CertificateArn?: string|null,
+     *     SpekeVersion?: 'V2_0'|'V2_1'|null,
+     *     ContentKeyPeriodConfiguration?: ContentKeyPeriodConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $SequenceNumber
  * @property \Aws\Api\DateTimeResult|null $ApproximateArrivalTimestamp
  * @property \Psr\Http\Message\StreamInterface $Data
- * @property string $PartitionKey
+ * @property string|null $PartitionKey
  * @property 'NONE'|'KMS'|null $EncryptionType
  */
 class Record extends Shape
@@ -18,7 +18,7 @@ class Record extends Shape
      *     SequenceNumber: string,
      *     ApproximateArrivalTimestamp?: \Aws\Api\DateTimeResult|null,
      *     Data: \Psr\Http\Message\StreamInterface,
-     *     PartitionKey: string,
+     *     PartitionKey?: string|null,
      *     EncryptionType?: 'NONE'|'KMS'|null
      * } $args
      */

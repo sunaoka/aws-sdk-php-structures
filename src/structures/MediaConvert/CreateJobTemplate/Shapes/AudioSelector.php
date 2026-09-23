@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 8>|null $ProgramSelection
  * @property RemixSettings|null $RemixSettings
  * @property 'PID'|'TRACK'|'LANGUAGE_CODE'|'HLS_RENDITION_GROUP'|'ALL_PCM'|'STREAM'|null $SelectorType
+ * @property 'ENABLED'|'DISABLED'|null $Smpte337Passthrough
  * @property list<int<1, 2147483647>>|null $Streams
  * @property list<int<1, 2147483647>>|null $Tracks
  */
@@ -34,6 +35,7 @@ class AudioSelector extends Shape
      *     ProgramSelection?: int<0, 8>|null,
      *     RemixSettings?: RemixSettings|null,
      *     SelectorType?: 'PID'|'TRACK'|'LANGUAGE_CODE'|'HLS_RENDITION_GROUP'|'ALL_PCM'|'STREAM'|null,
+     *     Smpte337Passthrough?: 'ENABLED'|'DISABLED'|null,
      *     Streams?: list<int<1, 2147483647>>|null,
      *     Tracks?: list<int<1, 2147483647>>|null
      * } $args

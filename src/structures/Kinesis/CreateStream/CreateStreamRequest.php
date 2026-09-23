@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $Tags
  * @property int<0, max>|null $WarmThroughputMiBps
  * @property int<1024, 10240>|null $MaxRecordSizeInKiB
+ * @property 'AUTO'|'USER_PARTITION_KEY'|null $RecordDistributionStrategy
  */
 class CreateStreamRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateStreamRequest extends Request
      *     StreamModeDetails?: Shapes\StreamModeDetails|null,
      *     Tags?: array<string, string>|null,
      *     WarmThroughputMiBps?: int<0, max>|null,
-     *     MaxRecordSizeInKiB?: int<1024, 10240>|null
+     *     MaxRecordSizeInKiB?: int<1024, 10240>|null,
+     *     RecordDistributionStrategy?: 'AUTO'|'USER_PARTITION_KEY'|null
      * } $args
      */
     public function __construct(array $args)

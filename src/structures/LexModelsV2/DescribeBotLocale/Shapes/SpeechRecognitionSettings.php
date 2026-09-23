@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\DescribeBotLocale\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Standard'|'Neural'|'Deepgram'|null $speechModelPreference
+ * @property 'Standard'|'Neural'|'Deepgram'|'Advanced'|null $speechModelPreference
  * @property SpeechModelConfig|null $speechModelConfig
  */
 class SpeechRecognitionSettings extends Shape
 {
     /**
      * @param array{
-     *     speechModelPreference?: 'Standard'|'Neural'|'Deepgram'|null,
+     *     speechModelPreference?: 'Standard'|'Neural'|'Deepgram'|'Advanced'|null,
      *     speechModelConfig?: SpeechModelConfig|null
      * } $args
      */

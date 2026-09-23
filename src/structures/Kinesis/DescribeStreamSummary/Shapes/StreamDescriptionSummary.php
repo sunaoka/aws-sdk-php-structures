@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property WarmThroughputObject|null $WarmThroughput
  * @property int<1024, 10240>|null $MaxRecordSizeInKiB
  * @property int<0, 1000000>|null $ChannelCount
+ * @property 'AUTO'|'USER_PARTITION_KEY'|null $RecordDistributionStrategy
  */
 class StreamDescriptionSummary extends Shape
 {
@@ -39,7 +40,8 @@ class StreamDescriptionSummary extends Shape
      *     ConsumerCount?: int<0, 1000000>|null,
      *     WarmThroughput?: WarmThroughputObject|null,
      *     MaxRecordSizeInKiB?: int<1024, 10240>|null,
-     *     ChannelCount?: int<0, 1000000>|null
+     *     ChannelCount?: int<0, 1000000>|null,
+     *     RecordDistributionStrategy?: 'AUTO'|'USER_PARTITION_KEY'|null
      * } $args
      */
     public function __construct(array $args)
