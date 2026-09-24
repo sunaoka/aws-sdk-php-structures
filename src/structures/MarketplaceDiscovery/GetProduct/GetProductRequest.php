@@ -5,12 +5,16 @@ namespace Sunaoka\Aws\Structures\MarketplaceDiscovery\GetProduct;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string|null $locale
  * @property string $productId
  */
 class GetProductRequest extends Request
 {
     /**
-     * @param array{productId: string} $args
+     * @param array{
+     *     locale?: string|null,
+     *     productId: string
+     * } $args
      */
     public function __construct(array $args)
     {

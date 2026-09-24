@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\MarketplaceDiscovery\ListPurchaseOptions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string|null $locale
  * @property list<Shapes\PurchaseOptionFilter>|null $filters
  * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
@@ -13,6 +14,7 @@ class ListPurchaseOptionsRequest extends Request
 {
     /**
      * @param array{
+     *     locale?: string|null,
      *     filters?: list<Shapes\PurchaseOptionFilter>|null,
      *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null

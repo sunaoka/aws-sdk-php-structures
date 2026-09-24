@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<IntegratedRepository>|null $integratedRepositories
  * @property 'AUTOMATIC'|'DISABLED'|null $codeRemediationStrategy
  * @property double|null $maxTaskHours
+ * @property ReportDestination|null $reportDestination
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
@@ -42,6 +43,7 @@ class CodeReviewJob extends Shape
      *     integratedRepositories?: list<IntegratedRepository>|null,
      *     codeRemediationStrategy?: 'AUTOMATIC'|'DISABLED'|null,
      *     maxTaskHours?: double|null,
+     *     reportDestination?: ReportDestination|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args

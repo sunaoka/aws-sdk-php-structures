@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\CloudWatchLog|null $logConfig
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property Shapes\ReportDestination|null $reportDestination
  */
 class UpdateThreatModelResponse extends Response
 {

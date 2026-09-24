@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\MarketplaceDiscovery\SearchListings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string|null $locale
  * @property string|null $searchText
  * @property list<Shapes\SearchFilter>|null $filters
  * @property int<1, 100>|null $maxResults
@@ -16,6 +17,7 @@ class SearchListingsRequest extends Request
 {
     /**
      * @param array{
+     *     locale?: string|null,
      *     searchText?: string|null,
      *     filters?: list<Shapes\SearchFilter>|null,
      *     maxResults?: int<1, 100>|null,

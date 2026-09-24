@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\DocumentInfo>|null $scopeDocs
  * @property string|null $serviceRole
  * @property Shapes\CloudWatchLog|null $logConfig
+ * @property Shapes\ReportDestination|null $reportDestination
  */
 class UpdateThreatModelRequest extends Request
 {
@@ -25,7 +26,8 @@ class UpdateThreatModelRequest extends Request
      *     assets?: Shapes\Assets|null,
      *     scopeDocs?: list<Shapes\DocumentInfo>|null,
      *     serviceRole?: string|null,
-     *     logConfig?: Shapes\CloudWatchLog|null
+     *     logConfig?: Shapes\CloudWatchLog|null,
+     *     reportDestination?: Shapes\ReportDestination|null
      * } $args
      */
     public function __construct(array $args)

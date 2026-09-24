@@ -5,12 +5,14 @@ namespace Sunaoka\Aws\Structures\CloudWatch;
 class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
 {
     use AssociateDatasetKmsKey\AssociateDatasetKmsKeyTrait;
+    use CreateResourceMetricsConfiguration\CreateResourceMetricsConfigurationTrait;
     use DeleteAlarmMuteRule\DeleteAlarmMuteRuleTrait;
     use DeleteAlarms\DeleteAlarmsTrait;
     use DeleteAnomalyDetector\DeleteAnomalyDetectorTrait;
     use DeleteDashboards\DeleteDashboardsTrait;
     use DeleteInsightRules\DeleteInsightRulesTrait;
     use DeleteMetricStream\DeleteMetricStreamTrait;
+    use DeleteResourceMetricsConfiguration\DeleteResourceMetricsConfigurationTrait;
     use DescribeAlarmContributors\DescribeAlarmContributorsTrait;
     use DescribeAlarmHistory\DescribeAlarmHistoryTrait;
     use DescribeAlarms\DescribeAlarmsTrait;
@@ -31,6 +33,7 @@ class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
     use GetMetricStream\GetMetricStreamTrait;
     use GetMetricWidgetImage\GetMetricWidgetImageTrait;
     use GetOTelEnrichment\GetOTelEnrichmentTrait;
+    use GetResourceMetricsConfiguration\GetResourceMetricsConfigurationTrait;
     use ListAlarmMuteRules\ListAlarmMuteRulesTrait;
     use ListDashboards\ListDashboardsTrait;
     use ListManagedInsightRules\ListManagedInsightRulesTrait;
@@ -54,4 +57,6 @@ class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
     use StopOTelEnrichment\StopOTelEnrichmentTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateOTelEnrichment\UpdateOTelEnrichmentTrait;
+    use UpdateResourceMetricsConfiguration\UpdateResourceMetricsConfigurationTrait;
 }

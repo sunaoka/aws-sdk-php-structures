@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\LogConfig|null $LogConfig
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $ManagedBy
  */
 class DescribeEventBusResponse extends Response
 {

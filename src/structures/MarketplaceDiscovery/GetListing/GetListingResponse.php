@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\MarketplaceDiscovery\GetListing;
 use Sunaoka\Aws\Structures\Response;
 
 /**
+ * @property string|null $locale
  * @property list<Shapes\ListingAssociatedEntity> $associatedEntities
  * @property list<Shapes\ListingBadge> $badges
  * @property string $catalog

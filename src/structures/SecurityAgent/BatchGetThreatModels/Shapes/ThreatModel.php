@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<DocumentInfo>|null $scopeDocs
  * @property string|null $serviceRole
  * @property CloudWatchLog|null $logConfig
+ * @property ReportDestination|null $reportDestination
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
@@ -28,6 +29,7 @@ class ThreatModel extends Shape
      *     scopeDocs?: list<DocumentInfo>|null,
      *     serviceRole?: string|null,
      *     logConfig?: CloudWatchLog|null,
+     *     reportDestination?: ReportDestination|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args

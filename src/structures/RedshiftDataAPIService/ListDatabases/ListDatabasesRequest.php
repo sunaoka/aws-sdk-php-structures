@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $ClusterIdentifier
- * @property string $Database
+ * @property string|null $Database
  * @property string|null $SecretArn
  * @property string|null $DbUser
  * @property string|null $NextToken
@@ -18,7 +18,7 @@ class ListDatabasesRequest extends Request
     /**
      * @param array{
      *     ClusterIdentifier?: string|null,
-     *     Database: string,
+     *     Database?: string|null,
      *     SecretArn?: string|null,
      *     DbUser?: string|null,
      *     NextToken?: string|null,
@@ -26,7 +26,7 @@ class ListDatabasesRequest extends Request
      *     WorkgroupName?: string|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

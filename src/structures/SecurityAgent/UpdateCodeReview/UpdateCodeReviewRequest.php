@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'AUTOMATIC'|'DISABLED'|null $codeRemediationStrategy
  * @property 'DISABLED'|'SIMULATED'|null $validationMode
  * @property double|null $maxTaskHours
+ * @property Shapes\ReportDestination|null $reportDestination
+ * @property Shapes\ReportFilters|null $reportFilters
  */
 class UpdateCodeReviewRequest extends Request
 {
@@ -27,7 +29,9 @@ class UpdateCodeReviewRequest extends Request
      *     logConfig?: Shapes\CloudWatchLog|null,
      *     codeRemediationStrategy?: 'AUTOMATIC'|'DISABLED'|null,
      *     validationMode?: 'DISABLED'|'SIMULATED'|null,
-     *     maxTaskHours?: double|null
+     *     maxTaskHours?: double|null,
+     *     reportDestination?: Shapes\ReportDestination|null,
+     *     reportFilters?: Shapes\ReportFilters|null
      * } $args
      */
     public function __construct(array $args)

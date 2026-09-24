@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $releaseNotes
  * @property string|null $usageInstructions
  * @property SageMakerModelRecommendation|null $recommendation
+ * @property list<string>|null $supportedContentTypes
+ * @property list<string>|null $supportedResponseMimeTypes
  */
 class SageMakerModelFulfillmentOption extends Shape
 {
@@ -23,7 +25,9 @@ class SageMakerModelFulfillmentOption extends Shape
      *     fulfillmentOptionVersion?: string|null,
      *     releaseNotes?: string|null,
      *     usageInstructions?: string|null,
-     *     recommendation?: SageMakerModelRecommendation|null
+     *     recommendation?: SageMakerModelRecommendation|null,
+     *     supportedContentTypes?: list<string>|null,
+     *     supportedResponseMimeTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

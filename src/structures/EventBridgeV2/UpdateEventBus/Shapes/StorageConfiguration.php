@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\EventBridgeV2\UpdateEventBus\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property int<1, 365>|null $RetentionPeriodInDays
+ */
+class StorageConfiguration extends Shape
+{
+    /**
+     * @param array{RetentionPeriodInDays?: int<1, 365>|null} $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

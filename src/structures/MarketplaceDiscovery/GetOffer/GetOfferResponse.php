@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\MarketplaceDiscovery\GetOffer;
 use Sunaoka\Aws\Structures\Response;
 
 /**
+ * @property string|null $locale
  * @property string $offerId
  * @property string $catalog
  * @property string|null $offerName

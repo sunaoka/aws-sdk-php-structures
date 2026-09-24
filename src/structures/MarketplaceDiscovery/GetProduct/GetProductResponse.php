@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\MarketplaceDiscovery\GetProduct;
 use Sunaoka\Aws\Structures\Response;
 
 /**
+ * @property string|null $locale
  * @property string $productId
  * @property string $catalog
  * @property string $productName
@@ -19,6 +20,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\PromotionalMedia> $promotionalMedia
  * @property list<Shapes\ResourceShape> $resources
  * @property list<Shapes\SellerEngagement> $sellerEngagements
+ * @property string $listingId
  */
 class GetProductResponse extends Response
 {

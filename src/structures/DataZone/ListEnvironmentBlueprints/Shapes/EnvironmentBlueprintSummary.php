@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ProvisioningProperties $provisioningProperties
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property 'TOOLING'|null $blueprintCategory
  */
 class EnvironmentBlueprintSummary extends Shape
 {
@@ -23,7 +24,8 @@ class EnvironmentBlueprintSummary extends Shape
      *     provider: string,
      *     provisioningProperties: ProvisioningProperties,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     updatedAt?: \Aws\Api\DateTimeResult|null
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     blueprintCategory?: 'TOOLING'|null
      * } $args
      */
     public function __construct(array $args)

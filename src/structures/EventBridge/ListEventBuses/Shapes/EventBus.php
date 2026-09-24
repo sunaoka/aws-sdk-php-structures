@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Policy
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $ManagedBy
  */
 class EventBus extends Shape
 {
@@ -21,7 +22,8 @@ class EventBus extends Shape
      *     Description?: string|null,
      *     Policy?: string|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     ManagedBy?: string|null
      * } $args
      */
     public function __construct(array $args = [])

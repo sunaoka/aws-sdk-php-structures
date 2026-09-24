@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'AUTOMATIC'|'DISABLED'|null $codeRemediationStrategy
  * @property 'DISABLED'|'SIMULATED'|null $validationMode
  * @property double|null $maxTaskHours
+ * @property Shapes\ReportDestination|null $reportDestination
+ * @property Shapes\ReportFilters|null $reportFilters
  */
 class CreateCodeReviewResponse extends Response
 {

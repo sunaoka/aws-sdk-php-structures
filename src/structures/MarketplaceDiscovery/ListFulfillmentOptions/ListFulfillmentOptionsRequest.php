@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\MarketplaceDiscovery\ListFulfillmentOptions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string|null $locale
  * @property string $productId
  * @property int<1, 50>|null $maxResults
  * @property string|null $nextToken
@@ -13,6 +14,7 @@ class ListFulfillmentOptionsRequest extends Request
 {
     /**
      * @param array{
+     *     locale?: string|null,
      *     productId: string,
      *     maxResults?: int<1, 50>|null,
      *     nextToken?: string|null

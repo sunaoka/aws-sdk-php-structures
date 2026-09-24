@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<DocumentInfo>|null $scopeDocs
  * @property ErrorInformation|null $errorInformation
  * @property string|null $systemOverview
+ * @property ReportDestination|null $reportDestination
  */
 class ThreatModelJob extends Shape
 {
@@ -39,7 +40,8 @@ class ThreatModelJob extends Shape
      *     documents?: list<DocumentInfo>|null,
      *     scopeDocs?: list<DocumentInfo>|null,
      *     errorInformation?: ErrorInformation|null,
-     *     systemOverview?: string|null
+     *     systemOverview?: string|null,
+     *     reportDestination?: ReportDestination|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\DeploymentProperties|null $deploymentProperties
  * @property list<Shapes\CustomParameter>|null $userParameters
  * @property list<string>|null $glossaryTerms
+ * @property 'TOOLING'|null $blueprintCategory
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */

@@ -14,6 +14,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AmazonMachineImageRecommendation|null $recommendation
  * @property string|null $releaseNotes
  * @property string|null $usageInstructions
+ * @property \Aws\Api\DateTimeResult|null $availableFromTime
+ * @property string|null $accessUrlTemplate
+ * @property string $architecture
+ * @property string|null $amiAlias
+ * @property AmazonMachineImageEbsVolume|null $ebsVolume
+ * @property string|null $shortDescription
  */
 class AmazonMachineImageFulfillmentOption extends Shape
 {
@@ -27,7 +33,13 @@ class AmazonMachineImageFulfillmentOption extends Shape
      *     operatingSystems: list<AmazonMachineImageOperatingSystem>,
      *     recommendation?: AmazonMachineImageRecommendation|null,
      *     releaseNotes?: string|null,
-     *     usageInstructions?: string|null
+     *     usageInstructions?: string|null,
+     *     availableFromTime?: \Aws\Api\DateTimeResult|null,
+     *     accessUrlTemplate?: string|null,
+     *     architecture: string,
+     *     amiAlias?: string|null,
+     *     ebsVolume?: AmazonMachineImageEbsVolume|null,
+     *     shortDescription?: string|null
      * } $args
      */
     public function __construct(array $args)

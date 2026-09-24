@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property Shapes\ProvisioningProperties|null $provisioningProperties
  * @property list<Shapes\CustomParameter>|null $userParameters
+ * @property 'TOOLING'|null $blueprintCategory
  */
 class UpdateEnvironmentBlueprintRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateEnvironmentBlueprintRequest extends Request
      *     identifier: string,
      *     description?: string|null,
      *     provisioningProperties?: Shapes\ProvisioningProperties|null,
-     *     userParameters?: list<Shapes\CustomParameter>|null
+     *     userParameters?: list<Shapes\CustomParameter>|null,
+     *     blueprintCategory?: 'TOOLING'|null
      * } $args
      */
     public function __construct(array $args)
