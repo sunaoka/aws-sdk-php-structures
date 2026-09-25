@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $TransactionId
  * @property \Aws\Api\DateTimeResult|null $QueryAsOfTime
  * @property Shapes\AuditContext|null $AuditContext
+ * @property 'FEDERATED'|'ALL'|null $ResourceShareType
  * @property bool|null $IncludeStatusDetails
  * @property list<'NAME'|'TABLE_TYPE'|'DEFAULT'|'LATEST_ICEBERG_METADATA'>|null $AttributesToGet
  */
@@ -28,6 +29,7 @@ class GetTablesRequest extends Request
      *     TransactionId?: string|null,
      *     QueryAsOfTime?: \Aws\Api\DateTimeResult|null,
      *     AuditContext?: Shapes\AuditContext|null,
+     *     ResourceShareType?: 'FEDERATED'|'ALL'|null,
      *     IncludeStatusDetails?: bool|null,
      *     AttributesToGet?: list<'NAME'|'TABLE_TYPE'|'DEFAULT'|'LATEST_ICEBERG_METADATA'>|null
      * } $args

@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $aiAgentId
+ * @property bool|null $enabled
  */
 class AIAgentConfigurationData extends Shape
 {
     /**
-     * @param array{aiAgentId: string} $args
+     * @param array{
+     *     aiAgentId: string,
+     *     enabled?: bool|null
+     * } $args
      */
     public function __construct(array $args)
     {

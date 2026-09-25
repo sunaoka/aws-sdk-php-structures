@@ -52,6 +52,7 @@ class SecurityAgentClient extends \Aws\SecurityAgent\SecurityAgentClient
     use GetSecurityRequirementPack\GetSecurityRequirementPackTrait;
     use ImportSecurityRequirements\ImportSecurityRequirementsTrait;
     use InitiateProviderRegistration\InitiateProviderRegistrationTrait;
+    use ListActorMessages\ListActorMessagesTrait;
     use ListAgentSpaces\ListAgentSpacesTrait;
     use ListApplications\ListApplicationsTrait;
     use ListArtifacts\ListArtifactsTrait;

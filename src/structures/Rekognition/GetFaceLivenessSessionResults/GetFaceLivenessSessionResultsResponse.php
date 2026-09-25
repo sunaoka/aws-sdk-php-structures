@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\AuditImage|null $ReferenceImage
  * @property list<Shapes\AuditImage>|null $AuditImages
  * @property Shapes\Challenge|null $Challenge
+ * @property list<Shapes\FeedbackItem>|null $Feedback
+ * @property Shapes\SessionMetadata|null $Metadata
  */
 class GetFaceLivenessSessionResultsResponse extends Response
 {

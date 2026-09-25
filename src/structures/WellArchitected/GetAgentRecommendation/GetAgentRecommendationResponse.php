@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $recommendationArn
  * @property string $profileArn
+ * @property string|null $generationId
  * @property string $title
  * @property string $description
  * @property 'RESOURCE'|'ARCHITECTURE'|'APPLICATION' $type

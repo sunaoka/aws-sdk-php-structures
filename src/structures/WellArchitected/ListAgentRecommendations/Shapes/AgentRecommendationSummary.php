@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $recommendationArn
  * @property string $profileArn
+ * @property string|null $generationId
  * @property string $title
  * @property string $description
  * @property 'RESOURCE'|'ARCHITECTURE'|'APPLICATION' $type
@@ -33,6 +34,7 @@ class AgentRecommendationSummary extends Shape
      * @param array{
      *     recommendationArn: string,
      *     profileArn: string,
+     *     generationId?: string|null,
      *     title: string,
      *     description: string,
      *     type: 'RESOURCE'|'ARCHITECTURE'|'APPLICATION',

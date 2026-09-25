@@ -141,6 +141,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListWorkloadIdentities\ListWorkloadIdentitiesTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;
+    use RotatePaymentConnectorCredentials\RotatePaymentConnectorCredentialsTrait;
     use SetTokenVaultCMK\SetTokenVaultCMKTrait;
     use StartPolicyGeneration\StartPolicyGenerationTrait;
     use SubmitRegistryRecordForApproval\SubmitRegistryRecordForApprovalTrait;

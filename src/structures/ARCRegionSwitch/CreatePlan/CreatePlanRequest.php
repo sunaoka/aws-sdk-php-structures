@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, Shapes\AssociatedAlarm>|null $associatedAlarms
  * @property list<Shapes\Trigger>|null $triggers
  * @property Shapes\ReportConfiguration|null $reportConfiguration
+ * @property bool|null $serviceQuotaChecksEnabled
  * @property string $name
  * @property list<string> $regions
  * @property 'activeActive'|'activePassive' $recoveryApproach
@@ -29,6 +30,7 @@ class CreatePlanRequest extends Request
      *     associatedAlarms?: array<string, Shapes\AssociatedAlarm>|null,
      *     triggers?: list<Shapes\Trigger>|null,
      *     reportConfiguration?: Shapes\ReportConfiguration|null,
+     *     serviceQuotaChecksEnabled?: bool|null,
      *     name: string,
      *     regions: list<string>,
      *     recoveryApproach: 'activeActive'|'activePassive',

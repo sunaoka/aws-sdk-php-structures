@@ -16,6 +16,7 @@ class BedrockAgentClient extends \Aws\BedrockAgent\BedrockAgentClient
     use CreateKnowledgeBase\CreateKnowledgeBaseTrait;
     use CreatePrompt\CreatePromptTrait;
     use CreatePromptVersion\CreatePromptVersionTrait;
+    use CreateVpcConfiguration\CreateVpcConfigurationTrait;
     use DeleteAgent\DeleteAgentTrait;
     use DeleteAgentActionGroup\DeleteAgentActionGroupTrait;
     use DeleteAgentAlias\DeleteAgentAliasTrait;
@@ -28,6 +29,7 @@ class BedrockAgentClient extends \Aws\BedrockAgent\BedrockAgentClient
     use DeleteKnowledgeBaseDocuments\DeleteKnowledgeBaseDocumentsTrait;
     use DeletePrompt\DeletePromptTrait;
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;
+    use DeleteVpcConfiguration\DeleteVpcConfigurationTrait;
     use DisassociateAgentCollaborator\DisassociateAgentCollaboratorTrait;
     use DisassociateAgentKnowledgeBase\DisassociateAgentKnowledgeBaseTrait;
     use GetAgent\GetAgentTrait;
@@ -45,6 +47,7 @@ class BedrockAgentClient extends \Aws\BedrockAgent\BedrockAgentClient
     use GetKnowledgeBaseDocuments\GetKnowledgeBaseDocumentsTrait;
     use GetPrompt\GetPromptTrait;
     use GetResourcePolicy\GetResourcePolicyTrait;
+    use GetVpcConfiguration\GetVpcConfigurationTrait;
     use IngestKnowledgeBaseDocuments\IngestKnowledgeBaseDocumentsTrait;
     use ListAgentActionGroups\ListAgentActionGroupsTrait;
     use ListAgentAliases\ListAgentAliasesTrait;
@@ -61,6 +64,7 @@ class BedrockAgentClient extends \Aws\BedrockAgent\BedrockAgentClient
     use ListKnowledgeBases\ListKnowledgeBasesTrait;
     use ListPrompts\ListPromptsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use ListVpcConfigurations\ListVpcConfigurationsTrait;
     use PrepareAgent\PrepareAgentTrait;
     use PrepareFlow\PrepareFlowTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;

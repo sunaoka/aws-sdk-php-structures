@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $NetworkInterfaceArn
  * @property RouterOutputProtocolConfiguration $ProtocolConfiguration
- * @property 'RTP'|'RIST'|'SRT_CALLER'|'SRT_LISTENER'|null $Protocol
+ * @property 'RTP'|'RIST'|'SRT_CALLER'|'SRT_LISTENER'|'RTMP_PUSH'|null $Protocol
  */
 class StandardRouterOutputConfiguration extends Shape
 {
@@ -15,7 +15,7 @@ class StandardRouterOutputConfiguration extends Shape
      * @param array{
      *     NetworkInterfaceArn: string,
      *     ProtocolConfiguration: RouterOutputProtocolConfiguration,
-     *     Protocol?: 'RTP'|'RIST'|'SRT_CALLER'|'SRT_LISTENER'|null
+     *     Protocol?: 'RTP'|'RIST'|'SRT_CALLER'|'SRT_LISTENER'|'RTMP_PUSH'|null
      * } $args
      */
     public function __construct(array $args)

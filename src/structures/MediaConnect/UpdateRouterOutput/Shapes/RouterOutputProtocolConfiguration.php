@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property RistRouterOutputConfiguration|null $Rist
  * @property SrtListenerRouterOutputConfiguration|null $SrtListener
+ * @property RtmpPushRouterOutputConfiguration|null $RtmpPush
  * @property SrtCallerRouterOutputConfiguration|null $SrtCaller
  * @property RtpRouterOutputConfiguration|null $Rtp
  */
@@ -16,6 +17,7 @@ class RouterOutputProtocolConfiguration extends Shape
      * @param array{
      *     Rist?: RistRouterOutputConfiguration|null,
      *     SrtListener?: SrtListenerRouterOutputConfiguration|null,
+     *     RtmpPush?: RtmpPushRouterOutputConfiguration|null,
      *     SrtCaller?: SrtCallerRouterOutputConfiguration|null,
      *     Rtp?: RtpRouterOutputConfiguration|null
      * } $args

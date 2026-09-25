@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Ec2Ungraceful|null $ungraceful
  * @property int|null $targetPercent
  * @property 'sampledMaxInLast24Hours'|'autoscalingMaxInLast24Hours'|null $capacityMonitoringApproach
+ * @property 'enabled'|'disabled'|null $waitELBTargetGroupHealthy
  */
 class Ec2AsgCapacityIncreaseConfiguration extends Shape
 {
@@ -19,7 +20,8 @@ class Ec2AsgCapacityIncreaseConfiguration extends Shape
      *     asgs: list<Asg>,
      *     ungraceful?: Ec2Ungraceful|null,
      *     targetPercent?: int|null,
-     *     capacityMonitoringApproach?: 'sampledMaxInLast24Hours'|'autoscalingMaxInLast24Hours'|null
+     *     capacityMonitoringApproach?: 'sampledMaxInLast24Hours'|'autoscalingMaxInLast24Hours'|null,
+     *     waitELBTargetGroupHealthy?: 'enabled'|'disabled'|null
      * } $args
      */
     public function __construct(array $args)

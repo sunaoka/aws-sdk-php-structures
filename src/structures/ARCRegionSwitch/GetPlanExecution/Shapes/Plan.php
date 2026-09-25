@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, AssociatedAlarm>|null $associatedAlarms
  * @property list<Trigger>|null $triggers
  * @property ReportConfiguration|null $reportConfiguration
+ * @property bool|null $serviceQuotaChecksEnabled
  * @property string $name
  * @property list<string> $regions
  * @property 'activeActive'|'activePassive' $recoveryApproach
@@ -33,6 +34,7 @@ class Plan extends Shape
      *     associatedAlarms?: array<string, AssociatedAlarm>|null,
      *     triggers?: list<Trigger>|null,
      *     reportConfiguration?: ReportConfiguration|null,
+     *     serviceQuotaChecksEnabled?: bool|null,
      *     name: string,
      *     regions: list<string>,
      *     recoveryApproach: 'activeActive'|'activePassive',

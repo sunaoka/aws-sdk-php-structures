@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, Shapes\AssociatedAlarm>|null $associatedAlarms
  * @property list<Shapes\Trigger>|null $triggers
  * @property Shapes\ReportConfiguration|null $reportConfiguration
+ * @property bool|null $serviceQuotaChecksEnabled
  */
 class UpdatePlanRequest extends Request
 {
@@ -25,7 +26,8 @@ class UpdatePlanRequest extends Request
      *     recoveryTimeObjectiveMinutes?: int<1, 10080>|null,
      *     associatedAlarms?: array<string, Shapes\AssociatedAlarm>|null,
      *     triggers?: list<Shapes\Trigger>|null,
-     *     reportConfiguration?: Shapes\ReportConfiguration|null
+     *     reportConfiguration?: Shapes\ReportConfiguration|null,
+     *     serviceQuotaChecksEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

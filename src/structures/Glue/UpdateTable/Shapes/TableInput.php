@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TableType
  * @property array<string, string>|null $Parameters
  * @property TableIdentifier|null $TargetTable
+ * @property FederatedTable|null $FederatedTable
  * @property ViewDefinitionInput|null $ViewDefinition
  */
 class TableInput extends Shape
@@ -37,6 +38,7 @@ class TableInput extends Shape
      *     TableType?: string|null,
      *     Parameters?: array<string, string>|null,
      *     TargetTable?: TableIdentifier|null,
+     *     FederatedTable?: FederatedTable|null,
      *     ViewDefinition?: ViewDefinitionInput|null
      * } $args
      */

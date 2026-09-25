@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SuggestedMessageDataDetails|null $suggestedMessageData
  * @property NotesDataDetails|null $notesData
  * @property NotesChunkDataDetails|null $notesChunkData
+ * @property ProactiveRecommendationDataDetails|null $proactiveRecommendationData
  */
 class DataDetails extends Shape
 {
@@ -33,7 +34,8 @@ class DataDetails extends Shape
      *     caseSummarizationChunkData?: CaseSummarizationChunkDataDetails|null,
      *     suggestedMessageData?: SuggestedMessageDataDetails|null,
      *     notesData?: NotesDataDetails|null,
-     *     notesChunkData?: NotesChunkDataDetails|null
+     *     notesChunkData?: NotesChunkDataDetails|null,
+     *     proactiveRecommendationData?: ProactiveRecommendationDataDetails|null
      * } $args
      */
     public function __construct(array $args = [])
