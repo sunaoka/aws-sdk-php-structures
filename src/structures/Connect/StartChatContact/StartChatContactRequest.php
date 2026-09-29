@@ -19,6 +19,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, Shapes\SegmentAttributeValue>|null $SegmentAttributes
  * @property string|null $CustomerId
  * @property list<'AGENT'>|null $DisconnectOnCustomerExit
+ * @property list<'WEBSOCKET'|'CONNECTION_CREDENTIALS'|'AUTHENTICATION_SESSION'|'WEBRTC_CONNECTION'>|null $ConnectionTypes
+ * @property Shapes\ChatStreamingConfiguration|null $ChatStreamingConfiguration
  */
 class StartChatContactRequest extends Request
 {
@@ -37,7 +39,9 @@ class StartChatContactRequest extends Request
      *     RelatedContactId?: string|null,
      *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>|null,
      *     CustomerId?: string|null,
-     *     DisconnectOnCustomerExit?: list<'AGENT'>|null
+     *     DisconnectOnCustomerExit?: list<'AGENT'>|null,
+     *     ConnectionTypes?: list<'WEBSOCKET'|'CONNECTION_CREDENTIALS'|'AUTHENTICATION_SESSION'|'WEBRTC_CONNECTION'>|null,
+     *     ChatStreamingConfiguration?: Shapes\ChatStreamingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

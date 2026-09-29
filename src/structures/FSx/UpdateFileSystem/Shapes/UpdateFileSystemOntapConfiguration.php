@@ -10,10 +10,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $FsxAdminPassword
  * @property string|null $WeeklyMaintenanceStartTime
  * @property DiskIopsConfiguration|null $DiskIopsConfiguration
- * @property int<8, 100000>|null $ThroughputCapacity
+ * @property int<8, 2147483647>|null $ThroughputCapacity
  * @property list<string>|null $AddRouteTableIds
  * @property list<string>|null $RemoveRouteTableIds
- * @property int<128, 6144>|null $ThroughputCapacityPerHAPair
+ * @property int<128, 2147483647>|null $ThroughputCapacityPerHAPair
  * @property int<1, 12>|null $HAPairs
  * @property string|null $EndpointIpv6AddressRange
  */
@@ -26,10 +26,10 @@ class UpdateFileSystemOntapConfiguration extends Shape
      *     FsxAdminPassword?: string|null,
      *     WeeklyMaintenanceStartTime?: string|null,
      *     DiskIopsConfiguration?: DiskIopsConfiguration|null,
-     *     ThroughputCapacity?: int<8, 100000>|null,
+     *     ThroughputCapacity?: int<8, 2147483647>|null,
      *     AddRouteTableIds?: list<string>|null,
      *     RemoveRouteTableIds?: list<string>|null,
-     *     ThroughputCapacityPerHAPair?: int<128, 6144>|null,
+     *     ThroughputCapacityPerHAPair?: int<128, 2147483647>|null,
      *     HAPairs?: int<1, 12>|null,
      *     EndpointIpv6AddressRange?: string|null
      * } $args

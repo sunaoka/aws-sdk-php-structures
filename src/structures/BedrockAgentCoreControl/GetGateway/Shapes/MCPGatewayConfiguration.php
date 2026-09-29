@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'SEMANTIC'|null $searchType
  * @property SessionConfiguration|null $sessionConfiguration
  * @property StreamingConfiguration|null $streamingConfiguration
+ * @property bool|null $disableMcpListToolsPagination
  */
 class MCPGatewayConfiguration extends Shape
 {
@@ -19,7 +20,8 @@ class MCPGatewayConfiguration extends Shape
      *     instructions?: string|null,
      *     searchType?: 'SEMANTIC'|null,
      *     sessionConfiguration?: SessionConfiguration|null,
-     *     streamingConfiguration?: StreamingConfiguration|null
+     *     streamingConfiguration?: StreamingConfiguration|null,
+     *     disableMcpListToolsPagination?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

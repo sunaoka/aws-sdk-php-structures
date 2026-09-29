@@ -13,10 +13,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DiskIopsConfiguration|null $DiskIopsConfiguration
  * @property string|null $PreferredSubnetId
  * @property list<string>|null $RouteTableIds
- * @property int<8, 100000>|null $ThroughputCapacity
+ * @property int<8, 2147483647>|null $ThroughputCapacity
  * @property string|null $WeeklyMaintenanceStartTime
  * @property int<1, 12>|null $HAPairs
- * @property int<128, 6144>|null $ThroughputCapacityPerHAPair
+ * @property int<128, 2147483647>|null $ThroughputCapacityPerHAPair
  * @property string|null $EndpointIpv6AddressRange
  */
 class CreateFileSystemOntapConfiguration extends Shape
@@ -31,10 +31,10 @@ class CreateFileSystemOntapConfiguration extends Shape
      *     DiskIopsConfiguration?: DiskIopsConfiguration|null,
      *     PreferredSubnetId?: string|null,
      *     RouteTableIds?: list<string>|null,
-     *     ThroughputCapacity?: int<8, 100000>|null,
+     *     ThroughputCapacity?: int<8, 2147483647>|null,
      *     WeeklyMaintenanceStartTime?: string|null,
      *     HAPairs?: int<1, 12>|null,
-     *     ThroughputCapacityPerHAPair?: int<128, 6144>|null,
+     *     ThroughputCapacityPerHAPair?: int<128, 2147483647>|null,
      *     EndpointIpv6AddressRange?: string|null
      * } $args
      */

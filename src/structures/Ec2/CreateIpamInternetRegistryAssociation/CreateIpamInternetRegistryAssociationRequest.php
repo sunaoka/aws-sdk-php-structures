@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property bool|null $DryRun
  * @property string $IpamId
- * @property 'ripe'|'apnic'|'arin'|'lacnic' $Rir
+ * @property 'ripe'|'apnic'|'arin'|'lacnic'|'nicbr' $Rir
  * @property string $OrganizationHandle
  * @property string|null $Description
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
@@ -19,7 +19,7 @@ class CreateIpamInternetRegistryAssociationRequest extends Request
      * @param array{
      *     DryRun?: bool|null,
      *     IpamId: string,
-     *     Rir: 'ripe'|'apnic'|'arin'|'lacnic',
+     *     Rir: 'ripe'|'apnic'|'arin'|'lacnic'|'nicbr',
      *     OrganizationHandle: string,
      *     Description?: string|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,

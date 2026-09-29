@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|null $recordType
  * @property Shapes\UpdatedDescriptors|null $descriptors
  * @property string|null $recordVersion
+ * @property Shapes\UpdatedCustomMetadataMap|null $customMetadata
  * @property bool|null $triggerSynchronization
  * @property list<Shapes\Provenance>|null $provenance
  */
@@ -28,6 +29,7 @@ class UpdateRegistryRecordRequest extends Request
      *     recordType?: 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|null,
      *     descriptors?: Shapes\UpdatedDescriptors|null,
      *     recordVersion?: string|null,
+     *     customMetadata?: Shapes\UpdatedCustomMetadataMap|null,
      *     triggerSynchronization?: bool|null,
      *     provenance?: list<Shapes\Provenance>|null
      * } $args

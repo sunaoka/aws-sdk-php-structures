@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $RemoteAdministrationEndpoint
  * @property string|null $PreferredSubnetId
  * @property string|null $PreferredFileServerIp
- * @property int<8, 100000>|null $ThroughputCapacity
+ * @property int<8, 2147483647>|null $ThroughputCapacity
  * @property list<'PATCHING'|'BACKING_UP'>|null $MaintenanceOperationsInProgress
  * @property string|null $WeeklyMaintenanceStartTime
  * @property string|null $DailyAutomaticBackupStartTime
@@ -33,7 +33,7 @@ class WindowsFileSystemConfiguration extends Shape
      *     RemoteAdministrationEndpoint?: string|null,
      *     PreferredSubnetId?: string|null,
      *     PreferredFileServerIp?: string|null,
-     *     ThroughputCapacity?: int<8, 100000>|null,
+     *     ThroughputCapacity?: int<8, 2147483647>|null,
      *     MaintenanceOperationsInProgress?: list<'PATCHING'|'BACKING_UP'>|null,
      *     WeeklyMaintenanceStartTime?: string|null,
      *     DailyAutomaticBackupStartTime?: string|null,

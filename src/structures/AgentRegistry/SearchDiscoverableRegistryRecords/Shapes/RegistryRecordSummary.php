@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DRAFT'|'PENDING_APPROVAL'|'APPROVED'|'REJECTED'|'DEPRECATED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED' $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property CustomMetadataDocument|null $customMetadata
  */
 class RegistryRecordSummary extends Shape
 {
@@ -33,7 +34,8 @@ class RegistryRecordSummary extends Shape
      *     recordVersion: string,
      *     status: 'DRAFT'|'PENDING_APPROVAL'|'APPROVED'|'REJECTED'|'DEPRECATED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED',
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     updatedAt: \Aws\Api\DateTimeResult
+     *     updatedAt: \Aws\Api\DateTimeResult,
+     *     customMetadata?: CustomMetadataDocument|null
      * } $args
      */
     public function __construct(array $args)

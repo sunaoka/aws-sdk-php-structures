@@ -17,6 +17,8 @@ class BillingClient extends \Aws\Billing\BillingClient
     use GetResourcePolicy\GetResourcePolicyTrait;
     use ListBillingViewSegments\ListBillingViewSegmentsTrait;
     use ListBillingViews\ListBillingViewsTrait;
+    use ListBusinessSupportAccountCharges\ListBusinessSupportAccountChargesTrait;
+    use ListBusinessSupportSubscriptionHistory\ListBusinessSupportSubscriptionHistoryTrait;
     use ListEnterpriseSupportLinkedAccountCharges\ListEnterpriseSupportLinkedAccountChargesTrait;
     use ListSourceViewsForBillingView\ListSourceViewsForBillingViewTrait;
     use ListTagsForResource\ListTagsForResourceTrait;

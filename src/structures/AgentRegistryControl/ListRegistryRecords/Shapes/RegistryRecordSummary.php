@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $createdByAutoDetection
  * @property string|null $createdBy
  * @property list<ProvenanceSummary>|null $provenanceSummaryList
+ * @property 'COMPLIANT'|'NON_COMPLIANT'|null $customMetadataSchemaComplianceStatus
  */
 class RegistryRecordSummary extends Shape
 {
@@ -37,7 +38,8 @@ class RegistryRecordSummary extends Shape
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     createdByAutoDetection?: bool|null,
      *     createdBy?: string|null,
-     *     provenanceSummaryList?: list<ProvenanceSummary>|null
+     *     provenanceSummaryList?: list<ProvenanceSummary>|null,
+     *     customMetadataSchemaComplianceStatus?: 'COMPLIANT'|'NON_COMPLIANT'|null
      * } $args
      */
     public function __construct(array $args)

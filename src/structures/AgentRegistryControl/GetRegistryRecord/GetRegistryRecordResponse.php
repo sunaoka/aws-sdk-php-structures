@@ -21,6 +21,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\Provenance>|null $provenance
  * @property bool|null $createdByAutoDetection
  * @property string|null $createdBy
+ * @property Shapes\CustomMetadataDocument|null $customMetadata
+ * @property 'COMPLIANT'|'NON_COMPLIANT'|null $customMetadataSchemaComplianceStatus
  */
 class GetRegistryRecordResponse extends Response
 {

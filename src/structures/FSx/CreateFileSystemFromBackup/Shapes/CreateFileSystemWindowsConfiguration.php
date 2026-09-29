@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SelfManagedActiveDirectoryConfiguration|null $SelfManagedActiveDirectoryConfiguration
  * @property 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2'|null $DeploymentType
  * @property string|null $PreferredSubnetId
- * @property int<8, 100000> $ThroughputCapacity
+ * @property int<8, 2147483647> $ThroughputCapacity
  * @property string|null $WeeklyMaintenanceStartTime
  * @property string|null $DailyAutomaticBackupStartTime
  * @property int<0, 90>|null $AutomaticBackupRetentionDays
@@ -27,7 +27,7 @@ class CreateFileSystemWindowsConfiguration extends Shape
      *     SelfManagedActiveDirectoryConfiguration?: SelfManagedActiveDirectoryConfiguration|null,
      *     DeploymentType?: 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2'|null,
      *     PreferredSubnetId?: string|null,
-     *     ThroughputCapacity: int<8, 100000>,
+     *     ThroughputCapacity: int<8, 2147483647>,
      *     WeeklyMaintenanceStartTime?: string|null,
      *     DailyAutomaticBackupStartTime?: string|null,
      *     AutomaticBackupRetentionDays?: int<0, 90>|null,

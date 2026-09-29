@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $Enabled
  * @property string|null $CloudwatchLogGroup
  * @property string|null $CloudwatchLogStream
+ * @property bool|null $IncludeAuthorizationPolicyContext
  */
 class ConnectionLogResponseOptions extends Shape
 {
@@ -15,7 +16,8 @@ class ConnectionLogResponseOptions extends Shape
      * @param array{
      *     Enabled?: bool|null,
      *     CloudwatchLogGroup?: string|null,
-     *     CloudwatchLogStream?: string|null
+     *     CloudwatchLogStream?: string|null,
+     *     IncludeAuthorizationPolicyContext?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientToken
  * @property array<string, string>|null $tags
  * @property Shapes\ApprovalConfiguration|null $approvalConfiguration
+ * @property Shapes\CustomMetadataSchemaConfiguration|null $customMetadataSchemaConfiguration
  * @property Shapes\AutoDetectionConfiguration|null $autoDetectionConfiguration
  */
 class CreateRegistryRequest extends Request
@@ -25,6 +26,7 @@ class CreateRegistryRequest extends Request
      *     clientToken?: string|null,
      *     tags?: array<string, string>|null,
      *     approvalConfiguration?: Shapes\ApprovalConfiguration|null,
+     *     customMetadataSchemaConfiguration?: Shapes\CustomMetadataSchemaConfiguration|null,
      *     autoDetectionConfiguration?: Shapes\AutoDetectionConfiguration|null
      * } $args
      */

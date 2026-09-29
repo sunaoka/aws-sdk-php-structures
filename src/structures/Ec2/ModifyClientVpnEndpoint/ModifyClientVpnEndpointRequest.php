@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ClientRouteEnforcementOptions|null $ClientRouteEnforcementOptions
  * @property bool|null $DisconnectOnSessionTimeout
  * @property Shapes\TransitGatewayConfigurationInputStructure|null $TransitGatewayConfiguration
+ * @property Shapes\DevicePostureOptions|null $DevicePostureOptions
  */
 class ModifyClientVpnEndpointRequest extends Request
 {
@@ -43,7 +44,8 @@ class ModifyClientVpnEndpointRequest extends Request
      *     ClientLoginBannerOptions?: Shapes\ClientLoginBannerOptions|null,
      *     ClientRouteEnforcementOptions?: Shapes\ClientRouteEnforcementOptions|null,
      *     DisconnectOnSessionTimeout?: bool|null,
-     *     TransitGatewayConfiguration?: Shapes\TransitGatewayConfigurationInputStructure|null
+     *     TransitGatewayConfiguration?: Shapes\TransitGatewayConfigurationInputStructure|null,
+     *     DevicePostureOptions?: Shapes\DevicePostureOptions|null
      * } $args
      */
     public function __construct(array $args)

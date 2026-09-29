@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\DiscoveryConfiguration|null $discoveryConfiguration
  * @property Shapes\EncryptionConfiguration|null $encryptionConfiguration
  * @property Shapes\ApprovalConfiguration|null $approvalConfiguration
+ * @property Shapes\CustomMetadataSchemaConfiguration|null $customMetadataSchemaConfiguration
  * @property 'CREATING'|'READY'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETING'|'DELETE_FAILED' $status
  * @property string|null $statusReason
  * @property Shapes\AutoDetection|null $autoDetection

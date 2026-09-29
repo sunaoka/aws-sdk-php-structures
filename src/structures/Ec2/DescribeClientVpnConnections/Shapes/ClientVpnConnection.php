@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ClientVpnConnectionStatus|null $Status
  * @property string|null $ConnectionEndTime
  * @property list<string>|null $PostureComplianceStatuses
+ * @property string|null $AuthorizationPolicyLastEvaluatedTime
  */
 class ClientVpnConnection extends Shape
 {
@@ -39,7 +40,8 @@ class ClientVpnConnection extends Shape
      *     CommonName?: string|null,
      *     Status?: ClientVpnConnectionStatus|null,
      *     ConnectionEndTime?: string|null,
-     *     PostureComplianceStatuses?: list<string>|null
+     *     PostureComplianceStatuses?: list<string>|null,
+     *     AuthorizationPolicyLastEvaluatedTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

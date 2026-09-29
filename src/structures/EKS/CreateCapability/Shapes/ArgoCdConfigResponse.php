@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ArgoCdRoleMapping>|null $rbacRoleMappings
  * @property ArgoCdNetworkAccessConfigResponse|null $networkAccess
  * @property string|null $serverUrl
+ * @property string|null $endpointPrefix
  */
 class ArgoCdConfigResponse extends Shape
 {
@@ -19,7 +20,8 @@ class ArgoCdConfigResponse extends Shape
      *     awsIdc?: ArgoCdAwsIdcConfigResponse|null,
      *     rbacRoleMappings?: list<ArgoCdRoleMapping>|null,
      *     networkAccess?: ArgoCdNetworkAccessConfigResponse|null,
-     *     serverUrl?: string|null
+     *     serverUrl?: string|null,
+     *     endpointPrefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

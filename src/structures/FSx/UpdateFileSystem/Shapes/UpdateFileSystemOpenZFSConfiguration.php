@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $CopyTagsToBackups
  * @property bool|null $CopyTagsToVolumes
  * @property string|null $DailyAutomaticBackupStartTime
- * @property int<8, 100000>|null $ThroughputCapacity
+ * @property int<8, 2147483647>|null $ThroughputCapacity
  * @property string|null $WeeklyMaintenanceStartTime
  * @property DiskIopsConfiguration|null $DiskIopsConfiguration
  * @property list<string>|null $AddRouteTableIds
@@ -25,7 +25,7 @@ class UpdateFileSystemOpenZFSConfiguration extends Shape
      *     CopyTagsToBackups?: bool|null,
      *     CopyTagsToVolumes?: bool|null,
      *     DailyAutomaticBackupStartTime?: string|null,
-     *     ThroughputCapacity?: int<8, 100000>|null,
+     *     ThroughputCapacity?: int<8, 2147483647>|null,
      *     WeeklyMaintenanceStartTime?: string|null,
      *     DiskIopsConfiguration?: DiskIopsConfiguration|null,
      *     AddRouteTableIds?: list<string>|null,

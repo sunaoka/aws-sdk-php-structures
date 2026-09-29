@@ -183,6 +183,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeleteCapacityManagerDataExport\DeleteCapacityManagerDataExportTrait;
     use DeleteCarrierGateway\DeleteCarrierGatewayTrait;
     use DeleteClientVpnEndpoint\DeleteClientVpnEndpointTrait;
+    use DeleteClientVpnEndpointAuthorizationPolicy\DeleteClientVpnEndpointAuthorizationPolicyTrait;
     use DeleteClientVpnRoute\DeleteClientVpnRouteTrait;
     use DeleteCoipCidr\DeleteCoipCidrTrait;
     use DeleteCoipPool\DeleteCoipPoolTrait;
@@ -565,6 +566,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetCapacityManagerMetricDimensions\GetCapacityManagerMetricDimensionsTrait;
     use GetCapacityManagerMonitoredTagKeys\GetCapacityManagerMonitoredTagKeysTrait;
     use GetCapacityReservationUsage\GetCapacityReservationUsageTrait;
+    use GetClientVpnEndpointAuthorizationPolicy\GetClientVpnEndpointAuthorizationPolicyTrait;
     use GetCoipPoolUsage\GetCoipPoolUsageTrait;
     use GetConsoleOutput\GetConsoleOutputTrait;
     use GetConsoleScreenshot\GetConsoleScreenshotTrait;
@@ -649,6 +651,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ModifyCapacityReservation\ModifyCapacityReservationTrait;
     use ModifyCapacityReservationFleet\ModifyCapacityReservationFleetTrait;
     use ModifyClientVpnEndpoint\ModifyClientVpnEndpointTrait;
+    use ModifyClientVpnEndpointAuthorizationPolicy\ModifyClientVpnEndpointAuthorizationPolicyTrait;
     use ModifyDefaultCreditSpecification\ModifyDefaultCreditSpecificationTrait;
     use ModifyEbsDefaultKmsKeyId\ModifyEbsDefaultKmsKeyIdTrait;
     use ModifyFleet\ModifyFleetTrait;
