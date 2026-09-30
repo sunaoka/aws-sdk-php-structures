@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $SnapshotRetentionLimit
  * @property string|null $DailySnapshotTime
  * @property 'ipv4'|'ipv6'|'dual_stack'|null $NetworkType
+ * @property 'vpc'|'public'|null $ConnectionType
  */
 class ServerlessCache extends Shape
 {
@@ -47,7 +48,8 @@ class ServerlessCache extends Shape
      *     SubnetIds?: list<string>|null,
      *     SnapshotRetentionLimit?: int|null,
      *     DailySnapshotTime?: string|null,
-     *     NetworkType?: 'ipv4'|'ipv6'|'dual_stack'|null
+     *     NetworkType?: 'ipv4'|'ipv6'|'dual_stack'|null,
+     *     ConnectionType?: 'vpc'|'public'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -33,6 +33,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST'|'POST_ADS_RESPONSE'|'PRE_MANIFEST_INSERTION', string>|null $FunctionMapping
  * @property AdsPersonalizationTimeouts|null $AdsPersonalizationTimeouts
  * @property AdsPersonalizationConcurrency|null $AdsPersonalizationConcurrency
+ * @property BeaconingConfiguration|null $BeaconingConfiguration
  */
 class PlaybackConfiguration extends Shape
 {
@@ -65,7 +66,8 @@ class PlaybackConfiguration extends Shape
      *     YieldOptimizationConfiguration?: YieldOptimizationConfiguration|null,
      *     FunctionMapping?: array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST'|'POST_ADS_RESPONSE'|'PRE_MANIFEST_INSERTION', string>|null,
      *     AdsPersonalizationTimeouts?: AdsPersonalizationTimeouts|null,
-     *     AdsPersonalizationConcurrency?: AdsPersonalizationConcurrency|null
+     *     AdsPersonalizationConcurrency?: AdsPersonalizationConcurrency|null,
+     *     BeaconingConfiguration?: BeaconingConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

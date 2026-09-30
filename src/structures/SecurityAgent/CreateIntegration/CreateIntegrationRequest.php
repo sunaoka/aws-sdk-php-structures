@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SecurityAgent\CreateIntegration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'GITHUB'|'GITLAB'|'BITBUCKET'|'CONFLUENCE' $provider
+ * @property 'GITHUB'|'GITLAB'|'BITBUCKET'|'CONFLUENCE'|'AZURE_DEVOPS' $provider
  * @property Shapes\ProviderInput $input
  * @property string $integrationDisplayName
  * @property string|null $kmsKeyId
@@ -16,7 +16,7 @@ class CreateIntegrationRequest extends Request
 {
     /**
      * @param array{
-     *     provider: 'GITHUB'|'GITLAB'|'BITBUCKET'|'CONFLUENCE',
+     *     provider: 'GITHUB'|'GITLAB'|'BITBUCKET'|'CONFLUENCE'|'AZURE_DEVOPS',
      *     input: Shapes\ProviderInput,
      *     integrationDisplayName: string,
      *     kmsKeyId?: string|null,

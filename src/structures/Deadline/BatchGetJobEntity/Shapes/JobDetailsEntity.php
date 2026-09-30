@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $queueRoleArn
  * @property array<string, JobParameter>|null $parameters
  * @property string $schemaVersion
+ * @property list<string>|null $extensions
  * @property list<PathMappingRule>|null $pathMappingRules
  */
 class JobDetailsEntity extends Shape
@@ -25,6 +26,7 @@ class JobDetailsEntity extends Shape
      *     queueRoleArn?: string|null,
      *     parameters?: array<string, JobParameter>|null,
      *     schemaVersion: string,
+     *     extensions?: list<string>|null,
      *     pathMappingRules?: list<PathMappingRule>|null
      * } $args
      */

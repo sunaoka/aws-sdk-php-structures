@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $SnapshotRetentionLimit
  * @property string|null $DailySnapshotTime
  * @property 'ipv4'|'ipv6'|'dual_stack'|null $NetworkType
+ * @property 'vpc'|'public'|null $ConnectionType
  */
 class CreateServerlessCacheRequest extends Request
 {
@@ -37,7 +38,8 @@ class CreateServerlessCacheRequest extends Request
      *     SubnetIds?: list<string>|null,
      *     SnapshotRetentionLimit?: int|null,
      *     DailySnapshotTime?: string|null,
-     *     NetworkType?: 'ipv4'|'ipv6'|'dual_stack'|null
+     *     NetworkType?: 'ipv4'|'ipv6'|'dual_stack'|null,
+     *     ConnectionType?: 'vpc'|'public'|null
      * } $args
      */
     public function __construct(array $args)

@@ -12,6 +12,7 @@ class IdentityStoreClient extends \Aws\IdentityStore\IdentityStoreClient
     use DeleteUser\DeleteUserTrait;
     use DescribeGroup\DescribeGroupTrait;
     use DescribeGroupMembership\DescribeGroupMembershipTrait;
+    use DescribeIdentityStore\DescribeIdentityStoreTrait;
     use DescribeUser\DescribeUserTrait;
     use GetGroupId\GetGroupIdTrait;
     use GetGroupMembershipId\GetGroupMembershipIdTrait;
@@ -20,7 +21,9 @@ class IdentityStoreClient extends \Aws\IdentityStore\IdentityStoreClient
     use ListGroupMemberships\ListGroupMembershipsTrait;
     use ListGroupMembershipsForMember\ListGroupMembershipsForMemberTrait;
     use ListGroups\ListGroupsTrait;
+    use ListIdentityStores\ListIdentityStoresTrait;
     use ListUsers\ListUsersTrait;
     use UpdateGroup\UpdateGroupTrait;
+    use UpdateIdentityStore\UpdateIdentityStoreTrait;
     use UpdateUser\UpdateUserTrait;
 }

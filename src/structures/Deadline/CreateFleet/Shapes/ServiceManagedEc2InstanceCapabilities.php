@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $excludedInstanceTypes
  * @property list<FleetAmountCapability>|null $customAmounts
  * @property list<FleetAttributeCapability>|null $customAttributes
+ * @property list<FleetSoftwareAddOn>|null $softwareAddOns
  */
 class ServiceManagedEc2InstanceCapabilities extends Shape
 {
@@ -29,7 +30,8 @@ class ServiceManagedEc2InstanceCapabilities extends Shape
      *     allowedInstanceTypes?: list<string>|null,
      *     excludedInstanceTypes?: list<string>|null,
      *     customAmounts?: list<FleetAmountCapability>|null,
-     *     customAttributes?: list<FleetAttributeCapability>|null
+     *     customAttributes?: list<FleetAttributeCapability>|null,
+     *     softwareAddOns?: list<FleetSoftwareAddOn>|null
      * } $args
      */
     public function __construct(array $args)

@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $TargetStorageType
  * @property int|null $TargetAllocatedStorage
  * @property int|null $TargetStorageThroughput
+ * @property list<Shapes\TargetResourceConfiguration>|null $TargetResourceConfigurations
  */
 class CreateBlueGreenDeploymentRequest extends Request
 {
@@ -33,7 +34,8 @@ class CreateBlueGreenDeploymentRequest extends Request
      *     TargetIops?: int|null,
      *     TargetStorageType?: string|null,
      *     TargetAllocatedStorage?: int|null,
-     *     TargetStorageThroughput?: int|null
+     *     TargetStorageThroughput?: int|null,
+     *     TargetResourceConfigurations?: list<Shapes\TargetResourceConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

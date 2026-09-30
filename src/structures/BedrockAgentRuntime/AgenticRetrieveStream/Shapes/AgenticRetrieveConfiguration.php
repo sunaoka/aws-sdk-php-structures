@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property FoundationModelConfiguration|null $foundationModelConfiguration
  * @property 'CUSTOM'|'MANAGED'|null $foundationModelType
- * @property int<2, max>|null $maxAgentIteration
+ * @property int<0, max>|null $maxAgentIteration
  * @property AgenticRetrieveRerankingConfiguration|null $rerankingConfiguration
  * @property 'CUSTOM'|'MANAGED'|'NONE'|null $rerankingModelType
  */
@@ -17,7 +17,7 @@ class AgenticRetrieveConfiguration extends Shape
      * @param array{
      *     foundationModelConfiguration?: FoundationModelConfiguration|null,
      *     foundationModelType?: 'CUSTOM'|'MANAGED'|null,
-     *     maxAgentIteration?: int<2, max>|null,
+     *     maxAgentIteration?: int<0, max>|null,
      *     rerankingConfiguration?: AgenticRetrieveRerankingConfiguration|null,
      *     rerankingModelType?: 'CUSTOM'|'MANAGED'|'NONE'|null
      * } $args

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property GitLabRepositoryMetadata|null $gitlabRepository
  * @property BitbucketRepositoryMetadata|null $bitbucketRepository
  * @property ConfluenceDocumentMetadata|null $confluenceDocument
+ * @property AzureDevOpsRepositoryMetadata|null $azureDevOpsRepository
  */
 class IntegratedResourceMetadata extends Shape
 {
@@ -17,7 +18,8 @@ class IntegratedResourceMetadata extends Shape
      *     githubRepository?: GitHubRepositoryMetadata|null,
      *     gitlabRepository?: GitLabRepositoryMetadata|null,
      *     bitbucketRepository?: BitbucketRepositoryMetadata|null,
-     *     confluenceDocument?: ConfluenceDocumentMetadata|null
+     *     confluenceDocument?: ConfluenceDocumentMetadata|null,
+     *     azureDevOpsRepository?: AzureDevOpsRepositoryMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

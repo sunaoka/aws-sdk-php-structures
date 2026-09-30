@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $environmentId
  * @property string $schemaVersion
  * @property Document $template
+ * @property list<string>|null $extensions
+ * @property string|null $resolvedSymbolTable
  */
 class EnvironmentDetailsEntity extends Shape
 {
@@ -17,7 +19,9 @@ class EnvironmentDetailsEntity extends Shape
      *     jobId: string,
      *     environmentId: string,
      *     schemaVersion: string,
-     *     template: Document
+     *     template: Document,
+     *     extensions?: list<string>|null,
+     *     resolvedSymbolTable?: string|null
      * } $args
      */
     public function __construct(array $args)

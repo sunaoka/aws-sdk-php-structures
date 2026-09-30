@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'TRUE'|'FALSE'|null $ImageSharedWithOthers
  * @property bool|null $ManagedSoftwareIncluded
  * @property 'CUSTOM'|'NATIVE'|'BYOL'|null $ImageType
+ * @property ImageSoftwareMetadata|null $ImageSoftwareMetadata
  */
 class Image extends Shape
 {
@@ -55,7 +56,8 @@ class Image extends Shape
      *     DynamicAppProvidersEnabled?: 'ENABLED'|'DISABLED'|null,
      *     ImageSharedWithOthers?: 'TRUE'|'FALSE'|null,
      *     ManagedSoftwareIncluded?: bool|null,
-     *     ImageType?: 'CUSTOM'|'NATIVE'|'BYOL'|null
+     *     ImageType?: 'CUSTOM'|'NATIVE'|'BYOL'|null,
+     *     ImageSoftwareMetadata?: ImageSoftwareMetadata|null
      * } $args
      */
     public function __construct(array $args)

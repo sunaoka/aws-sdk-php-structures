@@ -33,6 +33,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST'|'POST_ADS_RESPONSE'|'PRE_MANIFEST_INSERTION', string>|null $FunctionMapping
  * @property Shapes\AdsPersonalizationTimeouts|null $AdsPersonalizationTimeouts
  * @property Shapes\AdsPersonalizationConcurrency|null $AdsPersonalizationConcurrency
+ * @property Shapes\BeaconingConfiguration|null $BeaconingConfiguration
  */
 class GetPlaybackConfigurationResponse extends Response
 {

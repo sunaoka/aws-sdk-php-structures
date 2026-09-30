@@ -90,6 +90,7 @@ class SecurityAgentClient extends \Aws\SecurityAgent\SecurityAgentClient
     use UpdateCodeReview\UpdateCodeReviewTrait;
     use UpdateFinding\UpdateFindingTrait;
     use UpdateIntegratedResources\UpdateIntegratedResourcesTrait;
+    use UpdateIntegration\UpdateIntegrationTrait;
     use UpdatePentest\UpdatePentestTrait;
     use UpdatePrivateConnectionCertificate\UpdatePrivateConnectionCertificateTrait;
     use UpdateSecurityRequirementPack\UpdateSecurityRequirementPackTrait;

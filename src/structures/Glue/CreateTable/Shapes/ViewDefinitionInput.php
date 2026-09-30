@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool|null $IsProtected
+ * @property bool|null $IsManaged
  * @property string|null $Definer
  * @property list<ViewRepresentationInput>|null $Representations
  * @property int<-1, max>|null $ViewVersionId
@@ -22,6 +23,7 @@ class ViewDefinitionInput extends Shape
     /**
      * @param array{
      *     IsProtected?: bool|null,
+     *     IsManaged?: bool|null,
      *     Definer?: string|null,
      *     Representations?: list<ViewRepresentationInput>|null,
      *     ViewVersionId?: int<-1, max>|null,

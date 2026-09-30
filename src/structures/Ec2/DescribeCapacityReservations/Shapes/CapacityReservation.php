@@ -40,6 +40,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CapacityReservationAdjustmentDetails|null $AdjustmentDetails
  * @property \Aws\Api\DateTimeResult|null $OriginalStartDate
  * @property 'retain'|'default'|null $ZeroSizePreference
+ * @property 'launchable'|'unlaunchable'|null $LaunchStatus
  */
 class CapacityReservation extends Shape
 {
@@ -79,7 +80,8 @@ class CapacityReservation extends Shape
      *     AdjustmentStatus?: 'requested'|'applied'|'rejected'|null,
      *     AdjustmentDetails?: CapacityReservationAdjustmentDetails|null,
      *     OriginalStartDate?: \Aws\Api\DateTimeResult|null,
-     *     ZeroSizePreference?: 'retain'|'default'|null
+     *     ZeroSizePreference?: 'retain'|'default'|null,
+     *     LaunchStatus?: 'launchable'|'unlaunchable'|null
      * } $args
      */
     public function __construct(array $args = [])

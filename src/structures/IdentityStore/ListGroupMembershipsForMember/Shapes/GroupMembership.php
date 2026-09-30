@@ -6,7 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $IdentityStoreId
- * @property string|null $MembershipId
+ * @property string $MembershipId
+ * @property string $MembershipArn
  * @property string|null $GroupId
  * @property MemberId|null $MemberId
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
@@ -19,7 +20,8 @@ class GroupMembership extends Shape
     /**
      * @param array{
      *     IdentityStoreId: string,
-     *     MembershipId?: string|null,
+     *     MembershipId: string,
+     *     MembershipArn: string,
      *     GroupId?: string|null,
      *     MemberId?: MemberId|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,

@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $IdentityStoreId
  * @property string $UserId
+ * @property string|null $Revision
  */
 class DeleteUserRequest extends Request
 {
     /**
      * @param array{
      *     IdentityStoreId: string,
-     *     UserId: string
+     *     UserId: string,
+     *     Revision?: string|null
      * } $args
      */
     public function __construct(array $args)

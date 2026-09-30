@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PassiveIp
  * @property 'DISABLED'|'ENABLED'|'ENFORCED'|null $TlsSessionResumptionMode
  * @property 'DEFAULT'|'ENABLE_NO_OP'|null $SetStatOption
+ * @property list<SftpPortWithOptions>|null $SftpPorts
  * @property list<'HTTP'>|null $As2Transports
  * @property ProxyConfig|null $ProxyConfig
  */
@@ -18,6 +19,7 @@ class ProtocolDetails extends Shape
      *     PassiveIp?: string|null,
      *     TlsSessionResumptionMode?: 'DISABLED'|'ENABLED'|'ENFORCED'|null,
      *     SetStatOption?: 'DEFAULT'|'ENABLE_NO_OP'|null,
+     *     SftpPorts?: list<SftpPortWithOptions>|null,
      *     As2Transports?: list<'HTTP'>|null,
      *     ProxyConfig?: ProxyConfig|null
      * } $args

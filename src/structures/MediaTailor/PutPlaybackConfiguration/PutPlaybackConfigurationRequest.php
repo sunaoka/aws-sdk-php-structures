@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST'|'POST_ADS_RESPONSE'|'PRE_MANIFEST_INSERTION', string>|null $FunctionMapping
  * @property Shapes\AdsPersonalizationTimeouts|null $AdsPersonalizationTimeouts
  * @property Shapes\AdsPersonalizationConcurrency|null $AdsPersonalizationConcurrency
+ * @property Shapes\BeaconingConfiguration|null $BeaconingConfiguration
  */
 class PutPlaybackConfigurationRequest extends Request
 {
@@ -51,7 +52,8 @@ class PutPlaybackConfigurationRequest extends Request
      *     YieldOptimizationConfiguration?: Shapes\YieldOptimizationConfiguration|null,
      *     FunctionMapping?: array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST'|'POST_ADS_RESPONSE'|'PRE_MANIFEST_INSERTION', string>|null,
      *     AdsPersonalizationTimeouts?: Shapes\AdsPersonalizationTimeouts|null,
-     *     AdsPersonalizationConcurrency?: Shapes\AdsPersonalizationConcurrency|null
+     *     AdsPersonalizationConcurrency?: Shapes\AdsPersonalizationConcurrency|null,
+     *     BeaconingConfiguration?: Shapes\BeaconingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,6 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $IdentityStoreId
  * @property string $UserId
+ * @property string $UserArn
+ * @property string $Revision
  * @property string|null $UserName
  * @property list<ExternalId>|null $ExternalIds
  * @property Name|null $Name
@@ -38,6 +40,8 @@ class User extends Shape
      * @param array{
      *     IdentityStoreId: string,
      *     UserId: string,
+     *     UserArn: string,
+     *     Revision: string,
      *     UserName?: string|null,
      *     ExternalIds?: list<ExternalId>|null,
      *     Name?: Name|null,

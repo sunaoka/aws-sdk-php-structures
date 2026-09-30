@@ -7,6 +7,8 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $IdentityStoreId
  * @property string $UserId
+ * @property string $UserArn
+ * @property string $Revision
  * @property string|null $UserName
  * @property list<Shapes\ExternalId>|null $ExternalIds
  * @property Shapes\Name|null $Name

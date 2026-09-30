@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TenantId
  * @property string|null $TenantArn
  * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property 'ENABLED'|'REINSTATED'|'DISABLED'|null $SendingStatus
  */
 class TenantInfo extends Shape
 {
@@ -17,7 +18,8 @@ class TenantInfo extends Shape
      *     TenantName?: string|null,
      *     TenantId?: string|null,
      *     TenantArn?: string|null,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     SendingStatus?: 'ENABLED'|'REINSTATED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $IdentityStoreId
  * @property string $MembershipId
+ * @property string $MembershipArn
  * @property string $GroupId
  * @property Shapes\MemberId $MemberId
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
