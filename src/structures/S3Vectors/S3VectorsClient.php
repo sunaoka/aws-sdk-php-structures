@@ -18,9 +18,11 @@ class S3VectorsClient extends \Aws\S3Vectors\S3VectorsClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListVectorBuckets\ListVectorBucketsTrait;
     use ListVectors\ListVectorsTrait;
+    use PutVectorBucketDefaultIndexMode\PutVectorBucketDefaultIndexModeTrait;
     use PutVectorBucketPolicy\PutVectorBucketPolicyTrait;
     use PutVectors\PutVectorsTrait;
     use QueryVectors\QueryVectorsTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateIndexMode\UpdateIndexModeTrait;
 }

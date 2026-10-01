@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Configuration
  * @property string|null $CrawlerSecurityConfiguration
  * @property LakeFormationConfiguration|null $LakeFormationConfiguration
+ * @property string|null $CatalogId
  */
 class Crawler extends Shape
 {
@@ -49,7 +50,8 @@ class Crawler extends Shape
      *     Version?: int|null,
      *     Configuration?: string|null,
      *     CrawlerSecurityConfiguration?: string|null,
-     *     LakeFormationConfiguration?: LakeFormationConfiguration|null
+     *     LakeFormationConfiguration?: LakeFormationConfiguration|null,
+     *     CatalogId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

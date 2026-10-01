@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\ManagedResourceDetails>|null $privateEndpointManagedResources
  * @property Shapes\AuthorizationData|null $authorizationData
  * @property 'MCP'|'HTTP'|null $protocolType
+ * @property list<Shapes\CertificateConfiguration>|null $certificateConfigurations
  */
 class GetGatewayTargetResponse extends Response
 {

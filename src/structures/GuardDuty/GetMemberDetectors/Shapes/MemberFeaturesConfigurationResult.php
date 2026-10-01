@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ENABLED'|'DISABLED'|null $Status
  * @property \Aws\Api\DateTimeResult|null $UpdatedAt
  * @property list<MemberAdditionalConfigurationResult>|null $AdditionalConfiguration
+ * @property 'GUARDDUTY_POLICY'|null $ManagedBy
  */
 class MemberFeaturesConfigurationResult extends Shape
 {
@@ -17,7 +18,8 @@ class MemberFeaturesConfigurationResult extends Shape
      *     Name?: 'S3_DATA_EVENTS'|'EKS_AUDIT_LOGS'|'EBS_MALWARE_PROTECTION'|'RDS_LOGIN_EVENTS'|'LAMBDA_NETWORK_LOGS'|'EKS_RUNTIME_MONITORING'|'RUNTIME_MONITORING'|'AI_PROTECTION'|null,
      *     Status?: 'ENABLED'|'DISABLED'|null,
      *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
-     *     AdditionalConfiguration?: list<MemberAdditionalConfigurationResult>|null
+     *     AdditionalConfiguration?: list<MemberAdditionalConfigurationResult>|null,
+     *     ManagedBy?: 'GUARDDUTY_POLICY'|null
      * } $args
      */
     public function __construct(array $args = [])

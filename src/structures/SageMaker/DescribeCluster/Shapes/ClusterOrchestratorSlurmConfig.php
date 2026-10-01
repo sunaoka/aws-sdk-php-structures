@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Overwrite'|'Managed'|'Merge'|null $SlurmConfigStrategy
+ * @property ClusterAccountingDatabase|null $AccountingDatabase
  */
 class ClusterOrchestratorSlurmConfig extends Shape
 {
     /**
-     * @param array{SlurmConfigStrategy?: 'Overwrite'|'Managed'|'Merge'|null} $args
+     * @param array{
+     *     SlurmConfigStrategy?: 'Overwrite'|'Managed'|'Merge'|null,
+     *     AccountingDatabase?: ClusterAccountingDatabase|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $roleArn
  * @property string $targetGroupArn
  * @property string $portName
+ * @property VpcLatticeAdvancedConfiguration|null $advancedConfiguration
  */
 class VpcLatticeConfiguration extends Shape
 {
@@ -15,7 +16,8 @@ class VpcLatticeConfiguration extends Shape
      * @param array{
      *     roleArn: string,
      *     targetGroupArn: string,
-     *     portName: string
+     *     portName: string,
+     *     advancedConfiguration?: VpcLatticeAdvancedConfiguration|null
      * } $args
      */
     public function __construct(array $args)

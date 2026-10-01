@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, Shapes\ComponentConfiguration>|null $components
  * @property list<string> $parentVersionIds
  * @property string|null $branchName
- * @property string|null $commitMessage
+ * @property string $commitMessage
  * @property Shapes\VersionCreatedBySource|null $createdBy
  * @property string|null $kmsKeyArn
  */
@@ -27,7 +27,7 @@ class UpdateConfigurationBundleRequest extends Request
      *     components?: array<string, Shapes\ComponentConfiguration>|null,
      *     parentVersionIds: list<string>,
      *     branchName?: string|null,
-     *     commitMessage?: string|null,
+     *     commitMessage: string,
      *     createdBy?: Shapes\VersionCreatedBySource|null,
      *     kmsKeyArn?: string|null
      * } $args

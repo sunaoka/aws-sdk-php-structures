@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\CredentialProviderConfiguration>|null $credentialProviderConfigurations
  * @property Shapes\MetadataConfiguration|null $metadataConfiguration
  * @property Shapes\PrivateEndpoint|null $privateEndpoint
+ * @property list<Shapes\CertificateConfiguration>|null $certificateConfigurations
  */
 class CreateGatewayTargetRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateGatewayTargetRequest extends Request
      *     targetConfiguration: Shapes\TargetConfiguration,
      *     credentialProviderConfigurations?: list<Shapes\CredentialProviderConfiguration>|null,
      *     metadataConfiguration?: Shapes\MetadataConfiguration|null,
-     *     privateEndpoint?: Shapes\PrivateEndpoint|null
+     *     privateEndpoint?: Shapes\PrivateEndpoint|null,
+     *     certificateConfigurations?: list<Shapes\CertificateConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

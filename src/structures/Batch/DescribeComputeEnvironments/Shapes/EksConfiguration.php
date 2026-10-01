@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $eksClusterArn
  * @property string $kubernetesNamespace
+ * @property EksAccessEntry|null $accessEntry
  */
 class EksConfiguration extends Shape
 {
     /**
      * @param array{
      *     eksClusterArn: string,
-     *     kubernetesNamespace: string
+     *     kubernetesNamespace: string,
+     *     accessEntry?: EksAccessEntry|null
      * } $args
      */
     public function __construct(array $args)

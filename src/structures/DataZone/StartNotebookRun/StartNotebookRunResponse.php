@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\TimeoutConfig|null $timeoutConfiguration
  * @property Shapes\EnvironmentConfig|null $environmentConfiguration
  * @property Shapes\StorageConfig|null $storageConfiguration
+ * @property Shapes\NotificationConfig|null $notificationConfiguration
  * @property Shapes\TriggerSource|null $triggerSource
  * @property Shapes\NotebookRunError|null $error
  * @property \Aws\Api\DateTimeResult|null $createdAt

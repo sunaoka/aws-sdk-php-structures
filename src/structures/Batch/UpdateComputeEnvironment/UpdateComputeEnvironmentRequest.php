@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\UpdatePolicy|null $updatePolicy
  * @property string|null $context
  * @property Shapes\EcsSettings|null $ecsSettings
+ * @property Shapes\EksConfigurationUpdate|null $eksConfiguration
  */
 class UpdateComputeEnvironmentRequest extends Request
 {
@@ -25,7 +26,8 @@ class UpdateComputeEnvironmentRequest extends Request
      *     serviceRole?: string|null,
      *     updatePolicy?: Shapes\UpdatePolicy|null,
      *     context?: string|null,
-     *     ecsSettings?: Shapes\EcsSettings|null
+     *     ecsSettings?: Shapes\EcsSettings|null,
+     *     eksConfiguration?: Shapes\EksConfigurationUpdate|null
      * } $args
      */
     public function __construct(array $args)

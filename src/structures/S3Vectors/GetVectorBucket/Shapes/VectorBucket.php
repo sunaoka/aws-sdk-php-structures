@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $vectorBucketArn
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property EncryptionConfiguration|null $encryptionConfiguration
+ * @property 'CLASSIC'|'ENHANCED'|null $defaultIndexMode
  */
 class VectorBucket extends Shape
 {
@@ -17,7 +18,8 @@ class VectorBucket extends Shape
      *     vectorBucketName: string,
      *     vectorBucketArn: string,
      *     creationTime: \Aws\Api\DateTimeResult,
-     *     encryptionConfiguration?: EncryptionConfiguration|null
+     *     encryptionConfiguration?: EncryptionConfiguration|null,
+     *     defaultIndexMode?: 'CLASSIC'|'ENHANCED'|null
      * } $args
      */
     public function __construct(array $args)

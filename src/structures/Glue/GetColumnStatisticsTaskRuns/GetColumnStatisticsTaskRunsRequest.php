@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $TableName
  * @property int<1, 1000>|null $MaxResults
  * @property string|null $NextToken
+ * @property string|null $CatalogID
  */
 class GetColumnStatisticsTaskRunsRequest extends Request
 {
@@ -17,7 +18,8 @@ class GetColumnStatisticsTaskRunsRequest extends Request
      *     DatabaseName: string,
      *     TableName: string,
      *     MaxResults?: int<1, 1000>|null,
-     *     NextToken?: string|null
+     *     NextToken?: string|null,
+     *     CatalogID?: string|null
      * } $args
      */
     public function __construct(array $args)

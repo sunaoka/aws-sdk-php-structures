@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\BedrockAgentCoreControl\DeleteConfigurationBund
 use Sunaoka\Aws\Structures\Response;
 
 /**
+ * @property string $bundleArn
  * @property string $bundleId
  * @property 'ACTIVE'|'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'DELETING'|'DELETE_FAILED' $status
  */

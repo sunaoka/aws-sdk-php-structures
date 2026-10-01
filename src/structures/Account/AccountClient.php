@@ -19,5 +19,7 @@ class AccountClient extends \Aws\Account\AccountClient
     use PutAccountName\PutAccountNameTrait;
     use PutAlternateContact\PutAlternateContactTrait;
     use PutContactInformation\PutContactInformationTrait;
+    use SendPhoneNumberVerification\SendPhoneNumberVerificationTrait;
     use StartPrimaryEmailUpdate\StartPrimaryEmailUpdateTrait;
+    use VerifyPhoneNumber\VerifyPhoneNumberTrait;
 }

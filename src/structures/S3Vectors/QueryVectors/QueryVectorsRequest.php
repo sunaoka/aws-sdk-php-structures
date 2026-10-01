@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, max> $topK
  * @property Shapes\VectorData $queryVector
  * @property Shapes\Document|null $filter
+ * @property 'CLASSIC'|'ENHANCED'|null $queryMode
  * @property bool|null $returnMetadata
  * @property bool|null $returnDistance
  * @property string|null $nextToken
@@ -25,6 +26,7 @@ class QueryVectorsRequest extends Request
      *     topK: int<1, max>,
      *     queryVector: Shapes\VectorData,
      *     filter?: Shapes\Document|null,
+     *     queryMode?: 'CLASSIC'|'ENHANCED'|null,
      *     returnMetadata?: bool|null,
      *     returnDistance?: bool|null,
      *     nextToken?: string|null

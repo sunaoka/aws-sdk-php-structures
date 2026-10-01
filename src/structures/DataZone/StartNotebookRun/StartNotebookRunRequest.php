@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ComputeConfig|null $computeConfiguration
  * @property Shapes\NetworkConfig|null $networkConfiguration
  * @property Shapes\TimeoutConfig|null $timeoutConfiguration
+ * @property Shapes\NotificationConfig|null $notificationConfiguration
  * @property Shapes\TriggerSource|null $triggerSource
  * @property array<string, string>|null $metadata
  * @property array<string, string>|null $parameters
@@ -28,6 +29,7 @@ class StartNotebookRunRequest extends Request
      *     computeConfiguration?: Shapes\ComputeConfig|null,
      *     networkConfiguration?: Shapes\NetworkConfig|null,
      *     timeoutConfiguration?: Shapes\TimeoutConfig|null,
+     *     notificationConfiguration?: Shapes\NotificationConfig|null,
      *     triggerSource?: Shapes\TriggerSource|null,
      *     metadata?: array<string, string>|null,
      *     parameters?: array<string, string>|null,

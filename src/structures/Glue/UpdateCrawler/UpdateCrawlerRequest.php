@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\LakeFormationConfiguration|null $LakeFormationConfiguration
  * @property string|null $Configuration
  * @property string|null $CrawlerSecurityConfiguration
+ * @property string|null $CatalogId
  */
 class UpdateCrawlerRequest extends Request
 {
@@ -37,7 +38,8 @@ class UpdateCrawlerRequest extends Request
      *     LineageConfiguration?: Shapes\LineageConfiguration|null,
      *     LakeFormationConfiguration?: Shapes\LakeFormationConfiguration|null,
      *     Configuration?: string|null,
-     *     CrawlerSecurityConfiguration?: string|null
+     *     CrawlerSecurityConfiguration?: string|null,
+     *     CatalogId?: string|null
      * } $args
      */
     public function __construct(array $args)

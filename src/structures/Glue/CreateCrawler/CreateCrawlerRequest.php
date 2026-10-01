@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Configuration
  * @property string|null $CrawlerSecurityConfiguration
  * @property array<string, string>|null $Tags
+ * @property string|null $CatalogId
  */
 class CreateCrawlerRequest extends Request
 {
@@ -39,7 +40,8 @@ class CreateCrawlerRequest extends Request
      *     LakeFormationConfiguration?: Shapes\LakeFormationConfiguration|null,
      *     Configuration?: string|null,
      *     CrawlerSecurityConfiguration?: string|null,
-     *     Tags?: array<string, string>|null
+     *     Tags?: array<string, string>|null,
+     *     CatalogId?: string|null
      * } $args
      */
     public function __construct(array $args)

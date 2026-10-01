@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, max>|null $ItemCount
  * @property 'FULL_EXPORT'|'INCREMENTAL_EXPORT'|null $ExportType
  * @property IncrementalExportSpecification|null $IncrementalExportSpecification
+ * @property FilterSpecification|null $FilterSpecification
  */
 class ExportDescription extends Shape
 {
@@ -51,7 +52,8 @@ class ExportDescription extends Shape
      *     BilledSizeBytes?: int<0, max>|null,
      *     ItemCount?: int<0, max>|null,
      *     ExportType?: 'FULL_EXPORT'|'INCREMENTAL_EXPORT'|null,
-     *     IncrementalExportSpecification?: IncrementalExportSpecification|null
+     *     IncrementalExportSpecification?: IncrementalExportSpecification|null,
+     *     FilterSpecification?: FilterSpecification|null
      * } $args
      */
     public function __construct(array $args = [])

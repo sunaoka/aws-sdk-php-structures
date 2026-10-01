@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'S3'|'CWL'|'FH'|'XRAY'|null $deliveryDestinationType
  * @property 'json'|'plain'|'w3c'|'raw'|'parquet'|null $outputFormat
  * @property DeliveryDestinationConfiguration|null $deliveryDestinationConfiguration
+ * @property string|null $roleArn
  * @property array<string, string>|null $tags
  */
 class DeliveryDestination extends Shape
@@ -21,6 +22,7 @@ class DeliveryDestination extends Shape
      *     deliveryDestinationType?: 'S3'|'CWL'|'FH'|'XRAY'|null,
      *     outputFormat?: 'json'|'plain'|'w3c'|'raw'|'parquet'|null,
      *     deliveryDestinationConfiguration?: DeliveryDestinationConfiguration|null,
+     *     roleArn?: string|null,
      *     tags?: array<string, string>|null
      * } $args
      */
