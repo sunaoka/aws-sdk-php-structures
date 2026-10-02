@@ -8,6 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Host
  * @property int<1, 65535> $Port
  * @property string $SqlEndpointPath
+ * @property 'PASSWORD'|'KEYPAIR'|'TOKEN'|'X509'|null $AuthenticationType
+ * @property OAuthParameters|null $OAuthParameters
  */
 class DatabricksParameters extends Shape
 {
@@ -15,7 +17,9 @@ class DatabricksParameters extends Shape
      * @param array{
      *     Host: string,
      *     Port: int<1, 65535>,
-     *     SqlEndpointPath: string
+     *     SqlEndpointPath: string,
+     *     AuthenticationType?: 'PASSWORD'|'KEYPAIR'|'TOKEN'|'X509'|null,
+     *     OAuthParameters?: OAuthParameters|null
      * } $args
      */
     public function __construct(array $args)

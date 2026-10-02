@@ -16,6 +16,7 @@ class HealthClient extends \Aws\Health\HealthClient
     use DescribeEvents\DescribeEventsTrait;
     use DescribeEventsForOrganization\DescribeEventsForOrganizationTrait;
     use DescribeHealthServiceStatusForOrganization\DescribeHealthServiceStatusForOrganizationTrait;
+    use DescribeServiceLifecycle\DescribeServiceLifecycleTrait;
     use DisableHealthServiceAccessForOrganization\DisableHealthServiceAccessForOrganizationTrait;
     use EnableHealthServiceAccessForOrganization\EnableHealthServiceAccessForOrganizationTrait;
 }

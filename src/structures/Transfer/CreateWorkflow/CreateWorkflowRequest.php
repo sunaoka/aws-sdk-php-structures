@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\WorkflowStep> $Steps
  * @property list<Shapes\WorkflowStep>|null $OnExceptionSteps
  * @property list<Shapes\Tag>|null $Tags
+ * @property list<string>|null $StructuredLogDestinations
  */
 class CreateWorkflowRequest extends Request
 {
@@ -17,7 +18,8 @@ class CreateWorkflowRequest extends Request
      *     Description?: string|null,
      *     Steps: list<Shapes\WorkflowStep>,
      *     OnExceptionSteps?: list<Shapes\WorkflowStep>|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     StructuredLogDestinations?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

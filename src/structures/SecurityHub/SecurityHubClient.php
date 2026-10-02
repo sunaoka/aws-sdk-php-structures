@@ -82,6 +82,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use GetMasterAccount\GetMasterAccountTrait;
     use GetMembers\GetMembersTrait;
     use GetRecommendedPolicyV2\GetRecommendedPolicyV2Trait;
+    use GetRemediationsV2\GetRemediationsV2Trait;
     use GetResourcesStatisticsV2\GetResourcesStatisticsV2Trait;
     use GetResourcesTrendsV2\GetResourcesTrendsV2Trait;
     use GetResourcesV2\GetResourcesV2Trait;
@@ -95,6 +96,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use ListConnectors\ListConnectorsTrait;
     use ListConnectorsV2\ListConnectorsV2Trait;
     use ListEnabledProductsForImport\ListEnabledProductsForImportTrait;
+    use ListExposuresByRemediationV2\ListExposuresByRemediationV2Trait;
     use ListFindingAggregators\ListFindingAggregatorsTrait;
     use ListFreeTrialStatusesV2\ListFreeTrialStatusesV2Trait;
     use ListInvitations\ListInvitationsTrait;

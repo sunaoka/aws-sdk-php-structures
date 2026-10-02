@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FilterSliderControl|null $Slider
  * @property FilterRelativeDateTimeControl|null $RelativeDateTime
  * @property FilterCrossSheetControl|null $CrossSheet
+ * @property HierarchyFilterListControl|null $HierarchyList
+ * @property HierarchyFilterDropDownControl|null $HierarchyDropdown
  */
 class FilterControl extends Shape
 {
@@ -25,7 +27,9 @@ class FilterControl extends Shape
      *     TextArea?: FilterTextAreaControl|null,
      *     Slider?: FilterSliderControl|null,
      *     RelativeDateTime?: FilterRelativeDateTimeControl|null,
-     *     CrossSheet?: FilterCrossSheetControl|null
+     *     CrossSheet?: FilterCrossSheetControl|null,
+     *     HierarchyList?: HierarchyFilterListControl|null,
+     *     HierarchyDropdown?: HierarchyFilterDropDownControl|null
      * } $args
      */
     public function __construct(array $args = [])

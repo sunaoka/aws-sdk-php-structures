@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RelativeDatesFilter|null $RelativeDatesFilter
  * @property TopBottomFilter|null $TopBottomFilter
  * @property NestedFilter|null $NestedFilter
+ * @property HierarchyFilter|null $HierarchyFilter
  */
 class Filter extends Shape
 {
@@ -25,7 +26,8 @@ class Filter extends Shape
      *     TimeRangeFilter?: TimeRangeFilter|null,
      *     RelativeDatesFilter?: RelativeDatesFilter|null,
      *     TopBottomFilter?: TopBottomFilter|null,
-     *     NestedFilter?: NestedFilter|null
+     *     NestedFilter?: NestedFilter|null,
+     *     HierarchyFilter?: HierarchyFilter|null
      * } $args
      */
     public function __construct(array $args = [])

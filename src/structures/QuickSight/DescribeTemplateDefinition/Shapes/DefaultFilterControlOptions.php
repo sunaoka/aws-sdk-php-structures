@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DefaultTextAreaControlOptions|null $DefaultTextAreaOptions
  * @property DefaultSliderControlOptions|null $DefaultSliderOptions
  * @property DefaultRelativeDateTimeControlOptions|null $DefaultRelativeDateTimeOptions
+ * @property DefaultHierarchyFilterListControlOptions|null $DefaultHierarchyList
+ * @property DefaultHierarchyFilterDropDownControlOptions|null $DefaultHierarchyDropdown
  */
 class DefaultFilterControlOptions extends Shape
 {
@@ -23,7 +25,9 @@ class DefaultFilterControlOptions extends Shape
      *     DefaultTextFieldOptions?: DefaultTextFieldControlOptions|null,
      *     DefaultTextAreaOptions?: DefaultTextAreaControlOptions|null,
      *     DefaultSliderOptions?: DefaultSliderControlOptions|null,
-     *     DefaultRelativeDateTimeOptions?: DefaultRelativeDateTimeControlOptions|null
+     *     DefaultRelativeDateTimeOptions?: DefaultRelativeDateTimeControlOptions|null,
+     *     DefaultHierarchyList?: DefaultHierarchyFilterListControlOptions|null,
+     *     DefaultHierarchyDropdown?: DefaultHierarchyFilterDropDownControlOptions|null
      * } $args
      */
     public function __construct(array $args = [])

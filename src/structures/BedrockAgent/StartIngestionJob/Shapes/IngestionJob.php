@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $failureReasons
  * @property \Aws\Api\DateTimeResult $startedAt
  * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property \Aws\Api\DateTimeResult|null $textReadyAt
  */
 class IngestionJob extends Shape
 {
@@ -27,7 +28,8 @@ class IngestionJob extends Shape
      *     statistics?: IngestionJobStatistics|null,
      *     failureReasons?: list<string>|null,
      *     startedAt: \Aws\Api\DateTimeResult,
-     *     updatedAt: \Aws\Api\DateTimeResult
+     *     updatedAt: \Aws\Api\DateTimeResult,
+     *     textReadyAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

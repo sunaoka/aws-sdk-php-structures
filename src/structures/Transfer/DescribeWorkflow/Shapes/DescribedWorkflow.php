@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<WorkflowStep>|null $OnExceptionSteps
  * @property string|null $WorkflowId
  * @property list<Tag>|null $Tags
+ * @property list<string>|null $StructuredLogDestinations
  */
 class DescribedWorkflow extends Shape
 {
@@ -21,7 +22,8 @@ class DescribedWorkflow extends Shape
      *     Steps?: list<WorkflowStep>|null,
      *     OnExceptionSteps?: list<WorkflowStep>|null,
      *     WorkflowId?: string|null,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     StructuredLogDestinations?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

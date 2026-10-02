@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string|null $Description
  * @property 'sigv4'|'sigv4a' $SigningProtocol
- * @property 'never'|'always'|'no-override' $SigningBehavior
+ * @property 'never'|'always'|'no-override'|'always-amz-auth' $SigningBehavior
  * @property 's3'|'mediastore'|'mediapackagev2'|'lambda' $OriginAccessControlOriginType
  */
 class OriginAccessControlConfig extends Shape
@@ -18,7 +18,7 @@ class OriginAccessControlConfig extends Shape
      *     Name: string,
      *     Description?: string|null,
      *     SigningProtocol: 'sigv4'|'sigv4a',
-     *     SigningBehavior: 'never'|'always'|'no-override',
+     *     SigningBehavior: 'never'|'always'|'no-override'|'always-amz-auth',
      *     OriginAccessControlOriginType: 's3'|'mediastore'|'mediapackagev2'|'lambda'
      * } $args
      */
