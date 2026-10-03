@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $ProviderDetails
  * @property array<string, string>|null $AttributeMapping
  * @property list<string>|null $IdpIdentifiers
+ * @property array<string, string>|null $AcrMapping
  * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
  * @property \Aws\Api\DateTimeResult|null $CreationDate
  */
@@ -24,6 +25,7 @@ class IdentityProviderType extends Shape
      *     ProviderDetails?: array<string, string>|null,
      *     AttributeMapping?: array<string, string>|null,
      *     IdpIdentifiers?: list<string>|null,
+     *     AcrMapping?: array<string, string>|null,
      *     LastModifiedDate?: \Aws\Api\DateTimeResult|null,
      *     CreationDate?: \Aws\Api\DateTimeResult|null
      * } $args

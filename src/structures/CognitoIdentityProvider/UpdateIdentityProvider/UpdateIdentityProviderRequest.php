@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $ProviderDetails
  * @property array<string, string>|null $AttributeMapping
  * @property list<string>|null $IdpIdentifiers
+ * @property array<string, string>|null $AcrMapping
  */
 class UpdateIdentityProviderRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateIdentityProviderRequest extends Request
      *     ProviderName: string,
      *     ProviderDetails?: array<string, string>|null,
      *     AttributeMapping?: array<string, string>|null,
-     *     IdpIdentifiers?: list<string>|null
+     *     IdpIdentifiers?: list<string>|null,
+     *     AcrMapping?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $EinvoiceDeliveryEnabled
  * @property Shapes\EinvoiceDeliveryPreference|null $EinvoiceDeliveryPreference
  * @property bool $PurchaseOrderRetrievalEnabled
+ * @property bool|null $MarketplacePunchOutEnabled
+ * @property Shapes\MarketplacePunchOutPreference|null $MarketplacePunchOutPreference
  * @property list<Shapes\Contact> $Contacts
  * @property string|null $ClientToken
  */
@@ -28,6 +30,8 @@ class PutProcurementPortalPreferenceRequest extends Request
      *     EinvoiceDeliveryEnabled: bool,
      *     EinvoiceDeliveryPreference?: Shapes\EinvoiceDeliveryPreference|null,
      *     PurchaseOrderRetrievalEnabled: bool,
+     *     MarketplacePunchOutEnabled?: bool|null,
+     *     MarketplacePunchOutPreference?: Shapes\MarketplacePunchOutPreference|null,
      *     Contacts: list<Shapes\Contact>,
      *     ClientToken?: string|null
      * } $args

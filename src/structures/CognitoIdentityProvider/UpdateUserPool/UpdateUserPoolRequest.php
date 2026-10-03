@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'LITE'|'ESSENTIALS'|'PLUS'|null $UserPoolTier
  * @property Shapes\KeyConfigurationType|null $KeyConfiguration
  * @property Shapes\IssuerConfigurationType|null $IssuerConfiguration
+ * @property array<string, Shapes\AcrLevelConfigType>|null $AcrConfiguration
  */
 class UpdateUserPoolRequest extends Request
 {
@@ -55,7 +56,8 @@ class UpdateUserPoolRequest extends Request
      *     PoolName?: string|null,
      *     UserPoolTier?: 'LITE'|'ESSENTIALS'|'PLUS'|null,
      *     KeyConfiguration?: Shapes\KeyConfigurationType|null,
-     *     IssuerConfiguration?: Shapes\IssuerConfigurationType|null
+     *     IssuerConfiguration?: Shapes\IssuerConfigurationType|null,
+     *     AcrConfiguration?: array<string, Shapes\AcrLevelConfigType>|null
      * } $args
      */
     public function __construct(array $args)

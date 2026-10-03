@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $End
  * @property int<0, 1209600>|null $TimeDelaySeconds
  * @property \Aws\Api\DateTimeResult|null $ClipStartTime
+ * @property MultiviewFilterConfiguration|null $Multiview
  */
 class FilterConfiguration extends Shape
 {
@@ -21,7 +22,8 @@ class FilterConfiguration extends Shape
      *     Start?: \Aws\Api\DateTimeResult|null,
      *     End?: \Aws\Api\DateTimeResult|null,
      *     TimeDelaySeconds?: int<0, 1209600>|null,
-     *     ClipStartTime?: \Aws\Api\DateTimeResult|null
+     *     ClipStartTime?: \Aws\Api\DateTimeResult|null,
+     *     Multiview?: MultiviewFilterConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

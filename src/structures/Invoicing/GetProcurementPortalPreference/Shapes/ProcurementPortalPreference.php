@@ -20,6 +20,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $EinvoiceDeliveryEnabled
  * @property EinvoiceDeliveryPreference|null $EinvoiceDeliveryPreference
  * @property bool $PurchaseOrderRetrievalEnabled
+ * @property bool|null $MarketplacePunchOutEnabled
+ * @property MarketplacePunchOutPreference|null $MarketplacePunchOutPreference
  * @property list<Contact>|null $Contacts
  * @property 'PENDING_VERIFICATION'|'VALIDATED'|'TEST_INITIALIZED'|'TEST_INITIALIZATION_FAILED'|'TEST_FAILED'|'ACTIVE'|'SUSPENDED'|null $EinvoiceDeliveryPreferenceStatus
  * @property string|null $EinvoiceDeliveryPreferenceStatusReason
@@ -48,6 +50,8 @@ class ProcurementPortalPreference extends Shape
      *     EinvoiceDeliveryEnabled: bool,
      *     EinvoiceDeliveryPreference?: EinvoiceDeliveryPreference|null,
      *     PurchaseOrderRetrievalEnabled: bool,
+     *     MarketplacePunchOutEnabled?: bool|null,
+     *     MarketplacePunchOutPreference?: MarketplacePunchOutPreference|null,
      *     Contacts?: list<Contact>|null,
      *     EinvoiceDeliveryPreferenceStatus?: 'PENDING_VERIFICATION'|'VALIDATED'|'TEST_INITIALIZED'|'TEST_INITIALIZATION_FAILED'|'TEST_FAILED'|'ACTIVE'|'SUSPENDED'|null,
      *     EinvoiceDeliveryPreferenceStatusReason?: string|null,

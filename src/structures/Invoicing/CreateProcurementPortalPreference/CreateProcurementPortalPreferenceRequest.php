@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $EinvoiceDeliveryEnabled
  * @property Shapes\EinvoiceDeliveryPreference|null $EinvoiceDeliveryPreference
  * @property bool $PurchaseOrderRetrievalEnabled
+ * @property bool|null $MarketplacePunchOutEnabled
+ * @property Shapes\MarketplacePunchOutPreference|null $MarketplacePunchOutPreference
  * @property list<Shapes\Contact> $Contacts
  * @property list<Shapes\ResourceTag>|null $ResourceTags
  * @property string|null $ClientToken
@@ -37,6 +39,8 @@ class CreateProcurementPortalPreferenceRequest extends Request
      *     EinvoiceDeliveryEnabled: bool,
      *     EinvoiceDeliveryPreference?: Shapes\EinvoiceDeliveryPreference|null,
      *     PurchaseOrderRetrievalEnabled: bool,
+     *     MarketplacePunchOutEnabled?: bool|null,
+     *     MarketplacePunchOutPreference?: Shapes\MarketplacePunchOutPreference|null,
      *     Contacts: list<Shapes\Contact>,
      *     ResourceTags?: list<Shapes\ResourceTag>|null,
      *     ClientToken?: string|null

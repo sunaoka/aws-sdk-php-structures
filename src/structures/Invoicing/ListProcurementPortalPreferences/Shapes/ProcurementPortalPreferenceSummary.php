@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ProcurementPortalPreferenceSelector|null $Selector
  * @property bool $EinvoiceDeliveryEnabled
  * @property bool $PurchaseOrderRetrievalEnabled
+ * @property bool|null $MarketplacePunchOutEnabled
  * @property 'PENDING_VERIFICATION'|'VALIDATED'|'TEST_INITIALIZED'|'TEST_INITIALIZATION_FAILED'|'TEST_FAILED'|'ACTIVE'|'SUSPENDED'|null $EinvoiceDeliveryPreferenceStatus
  * @property string|null $EinvoiceDeliveryPreferenceStatusReason
  * @property 'PENDING_VERIFICATION'|'VALIDATED'|'TEST_INITIALIZED'|'TEST_INITIALIZATION_FAILED'|'TEST_FAILED'|'ACTIVE'|'SUSPENDED'|null $PurchaseOrderRetrievalPreferenceStatus
@@ -37,6 +38,7 @@ class ProcurementPortalPreferenceSummary extends Shape
      *     Selector?: ProcurementPortalPreferenceSelector|null,
      *     EinvoiceDeliveryEnabled: bool,
      *     PurchaseOrderRetrievalEnabled: bool,
+     *     MarketplacePunchOutEnabled?: bool|null,
      *     EinvoiceDeliveryPreferenceStatus?: 'PENDING_VERIFICATION'|'VALIDATED'|'TEST_INITIALIZED'|'TEST_INITIALIZATION_FAILED'|'TEST_FAILED'|'ACTIVE'|'SUSPENDED'|null,
      *     EinvoiceDeliveryPreferenceStatusReason?: string|null,
      *     PurchaseOrderRetrievalPreferenceStatus?: 'PENDING_VERIFICATION'|'VALIDATED'|'TEST_INITIALIZED'|'TEST_INITIALIZATION_FAILED'|'TEST_FAILED'|'ACTIVE'|'SUSPENDED'|null,

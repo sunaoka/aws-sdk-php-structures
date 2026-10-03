@@ -12,7 +12,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $MCC
  * @property string|null $MNC
  * @property string|null $Carrier
- * @property 'MOBILE'|'LANDLINE'|'OTHER'|'INVALID' $PhoneNumberType
+ * @property 'MOBILE'|'LANDLINE'|'VOIP'|'PREPAID'|'OTHER'|'INVALID' $PhoneNumberType
+ * @property string|null $OriginalPhoneNumber
  */
 class CarrierLookupResponse extends Response
 {
