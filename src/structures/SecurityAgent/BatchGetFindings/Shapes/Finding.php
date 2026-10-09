@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'FALSE_POSITIVE'|'UNCONFIRMED'|'LOW'|'MEDIUM'|'HIGH'|null $confidence
  * @property 'CONFIRMED'|'NOT_REPRODUCED'|'VALIDATION_FAILED'|'VALIDATING'|'NOT_VALIDATED'|null $validationStatus
  * @property string|null $attackScript
+ * @property string|null $remediationCode
  * @property CodeRemediationTask|null $codeRemediationTask
  * @property string|null $lastUpdatedBy
  * @property string|null $customerNote
@@ -54,6 +55,7 @@ class Finding extends Shape
      *     confidence?: 'FALSE_POSITIVE'|'UNCONFIRMED'|'LOW'|'MEDIUM'|'HIGH'|null,
      *     validationStatus?: 'CONFIRMED'|'NOT_REPRODUCED'|'VALIDATION_FAILED'|'VALIDATING'|'NOT_VALIDATED'|null,
      *     attackScript?: string|null,
+     *     remediationCode?: string|null,
      *     codeRemediationTask?: CodeRemediationTask|null,
      *     lastUpdatedBy?: string|null,
      *     customerNote?: string|null,

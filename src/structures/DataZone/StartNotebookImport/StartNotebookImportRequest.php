@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\SourceLocation $sourceLocation
  * @property string $name
  * @property string|null $description
+ * @property 'DATA'|'SQL'|null $type
  * @property string|null $clientToken
  */
 class StartNotebookImportRequest extends Request
@@ -21,6 +22,7 @@ class StartNotebookImportRequest extends Request
      *     sourceLocation: Shapes\SourceLocation,
      *     name: string,
      *     description?: string|null,
+     *     type?: 'DATA'|'SQL'|null,
      *     clientToken?: string|null
      * } $args
      */

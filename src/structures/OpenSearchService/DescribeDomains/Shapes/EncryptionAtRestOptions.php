@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property bool|null $Enabled
  * @property string|null $KmsKeyId
+ * @property 'DISK'|'NATIVE'|null $EncryptionMode
  */
 class EncryptionAtRestOptions extends Shape
 {
     /**
      * @param array{
      *     Enabled?: bool|null,
-     *     KmsKeyId?: string|null
+     *     KmsKeyId?: string|null,
+     *     EncryptionMode?: 'DISK'|'NATIVE'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ResolvedImageDigest
  * @property string|null $ServerSdkVersion
  * @property LinuxCapabilities|null $LinuxCapabilities
+ * @property double|null $Vcpu
  */
 class GameServerContainerDefinition extends Shape
 {
@@ -27,7 +28,8 @@ class GameServerContainerDefinition extends Shape
      *     PortConfiguration?: ContainerPortConfiguration|null,
      *     ResolvedImageDigest?: string|null,
      *     ServerSdkVersion?: string|null,
-     *     LinuxCapabilities?: LinuxCapabilities|null
+     *     LinuxCapabilities?: LinuxCapabilities|null,
+     *     Vcpu?: double|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -175,6 +175,8 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetSession\GetSessionTrait;
     use GetSessionEndpoint\GetSessionEndpointTrait;
     use GetStatement\GetStatementTrait;
+    use GetSystemLogsForJobRun\GetSystemLogsForJobRunTrait;
+    use GetSystemLogsForSession\GetSystemLogsForSessionTrait;
     use GetTable\GetTableTrait;
     use GetTableOptimizer\GetTableOptimizerTrait;
     use GetTableVersion\GetTableVersionTrait;

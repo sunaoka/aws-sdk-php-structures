@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property 'GAME_SERVER'|'PER_INSTANCE'|null $ContainerGroupType
  * @property int<4, 1024000> $TotalMemoryLimitMebibytes
- * @property double $TotalVcpuLimit
+ * @property double|null $TotalVcpuLimit
  * @property Shapes\GameServerContainerDefinitionInput|null $GameServerContainerDefinition
  * @property list<Shapes\SupportContainerDefinitionInput>|null $SupportContainerDefinitions
  * @property 'AMAZON_LINUX_2023' $OperatingSystem
@@ -22,7 +22,7 @@ class CreateContainerGroupDefinitionRequest extends Request
      *     Name: string,
      *     ContainerGroupType?: 'GAME_SERVER'|'PER_INSTANCE'|null,
      *     TotalMemoryLimitMebibytes: int<4, 1024000>,
-     *     TotalVcpuLimit: double,
+     *     TotalVcpuLimit?: double|null,
      *     GameServerContainerDefinition?: Shapes\GameServerContainerDefinitionInput|null,
      *     SupportContainerDefinitions?: list<Shapes\SupportContainerDefinitionInput>|null,
      *     OperatingSystem: 'AMAZON_LINUX_2023',

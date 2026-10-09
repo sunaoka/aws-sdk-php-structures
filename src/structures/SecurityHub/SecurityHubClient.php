@@ -18,6 +18,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use BatchUpdateFindings\BatchUpdateFindingsTrait;
     use BatchUpdateFindingsV2\BatchUpdateFindingsV2Trait;
     use BatchUpdateStandardsControlAssociations\BatchUpdateStandardsControlAssociationsTrait;
+    use CancelExportJobV2\CancelExportJobV2Trait;
     use CreateActionTarget\CreateActionTargetTrait;
     use CreateAggregatorV2\CreateAggregatorV2Trait;
     use CreateAutomationRule\CreateAutomationRuleTrait;
@@ -70,6 +71,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use GetConnector\GetConnectorTrait;
     use GetConnectorV2\GetConnectorV2Trait;
     use GetEnabledStandards\GetEnabledStandardsTrait;
+    use GetExportJobV2\GetExportJobV2Trait;
     use GetFindingAggregator\GetFindingAggregatorTrait;
     use GetFindingHistory\GetFindingHistoryTrait;
     use GetFindingStatisticsV2\GetFindingStatisticsV2Trait;
@@ -96,6 +98,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use ListConnectors\ListConnectorsTrait;
     use ListConnectorsV2\ListConnectorsV2Trait;
     use ListEnabledProductsForImport\ListEnabledProductsForImportTrait;
+    use ListExportJobsV2\ListExportJobsV2Trait;
     use ListExposuresByRemediationV2\ListExposuresByRemediationV2Trait;
     use ListFindingAggregators\ListFindingAggregatorsTrait;
     use ListFreeTrialStatusesV2\ListFreeTrialStatusesV2Trait;
@@ -108,6 +111,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use RegisterConnectorV2\RegisterConnectorV2Trait;
     use StartConfigurationPolicyAssociation\StartConfigurationPolicyAssociationTrait;
     use StartConfigurationPolicyDisassociation\StartConfigurationPolicyDisassociationTrait;
+    use StartExportJobV2\StartExportJobV2Trait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateActionTarget\UpdateActionTargetTrait;

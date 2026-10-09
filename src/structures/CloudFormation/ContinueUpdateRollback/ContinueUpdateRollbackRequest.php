@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $RoleARN
  * @property list<string>|null $ResourcesToSkip
  * @property string|null $ClientRequestToken
+ * @property bool|null $ForceRollback
  */
 class ContinueUpdateRollbackRequest extends Request
 {
@@ -17,7 +18,8 @@ class ContinueUpdateRollbackRequest extends Request
      *     StackName: string,
      *     RoleARN?: string|null,
      *     ResourcesToSkip?: list<string>|null,
-     *     ClientRequestToken?: string|null
+     *     ClientRequestToken?: string|null,
+     *     ForceRollback?: bool|null
      * } $args
      */
     public function __construct(array $args)

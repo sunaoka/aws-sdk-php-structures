@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetReservationCoverage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DIMENSION'|'TAG'|'COST_CATEGORY'|null $Type
+ * @property 'DIMENSION'|'TAG'|'COST_CATEGORY'|'PRODUCT_ATTRIBUTE'|null $Type
  * @property string|null $Key
  */
 class GroupDefinition extends Shape
 {
     /**
      * @param array{
-     *     Type?: 'DIMENSION'|'TAG'|'COST_CATEGORY'|null,
+     *     Type?: 'DIMENSION'|'TAG'|'COST_CATEGORY'|'PRODUCT_ATTRIBUTE'|null,
      *     Key?: string|null
      * } $args
      */

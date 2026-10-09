@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $applicationId
  * @property string $resourceId
  * @property 'SESSION' $resourceType
+ * @property bool|null $accessSystemProfileLogs
  */
 class GetResourceDashboardRequest extends Request
 {
@@ -15,7 +16,8 @@ class GetResourceDashboardRequest extends Request
      * @param array{
      *     applicationId: string,
      *     resourceId: string,
-     *     resourceType: 'SESSION'
+     *     resourceType: 'SESSION',
+     *     accessSystemProfileLogs?: bool|null
      * } $args
      */
     public function __construct(array $args)

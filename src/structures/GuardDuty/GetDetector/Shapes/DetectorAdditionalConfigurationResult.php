@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetDetector\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'EKS_ADDON_MANAGEMENT'|'ECS_FARGATE_AGENT_MANAGEMENT'|'EC2_AGENT_MANAGEMENT'|null $Name
+ * @property 'EKS_ADDON_MANAGEMENT'|'ECS_FARGATE_AGENT_MANAGEMENT'|'EC2_AGENT_MANAGEMENT'|'RDS_DATA_RISK'|null $Name
  * @property 'ENABLED'|'DISABLED'|null $Status
  * @property \Aws\Api\DateTimeResult|null $UpdatedAt
  * @property 'GUARDDUTY_POLICY'|null $ManagedBy
@@ -14,7 +14,7 @@ class DetectorAdditionalConfigurationResult extends Shape
 {
     /**
      * @param array{
-     *     Name?: 'EKS_ADDON_MANAGEMENT'|'ECS_FARGATE_AGENT_MANAGEMENT'|'EC2_AGENT_MANAGEMENT'|null,
+     *     Name?: 'EKS_ADDON_MANAGEMENT'|'ECS_FARGATE_AGENT_MANAGEMENT'|'EC2_AGENT_MANAGEMENT'|'RDS_DATA_RISK'|null,
      *     Status?: 'ENABLED'|'DISABLED'|null,
      *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
      *     ManagedBy?: 'GUARDDUTY_POLICY'|null

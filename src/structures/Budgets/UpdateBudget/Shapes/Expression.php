@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ExpressionDimensionValues|null $Dimensions
  * @property TagValues|null $Tags
  * @property CostCategoryValues|null $CostCategories
+ * @property ProductAttributeValues|null $ProductAttributes
  */
 class Expression extends Shape
 {
@@ -21,7 +22,8 @@ class Expression extends Shape
      *     Not?: Expression|null,
      *     Dimensions?: ExpressionDimensionValues|null,
      *     Tags?: TagValues|null,
-     *     CostCategories?: CostCategoryValues|null
+     *     CostCategories?: CostCategoryValues|null,
+     *     ProductAttributes?: ProductAttributeValues|null
      * } $args
      */
     public function __construct(array $args = [])

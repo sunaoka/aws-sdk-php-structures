@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MCPServerSigV4Configuration|null $mcpserversigv4
  * @property RemoteAgentConfiguration|null $remoteagent
  * @property RemoteAgentSigV4Configuration|null $remoteagentsigv4
+ * @property ReleaseManagementConfiguration|null $releaseManagement
  */
 class ServiceConfiguration extends Shape
 {
@@ -47,7 +48,8 @@ class ServiceConfiguration extends Shape
      *     pagerduty?: PagerDutyConfiguration|null,
      *     mcpserversigv4?: MCPServerSigV4Configuration|null,
      *     remoteagent?: RemoteAgentConfiguration|null,
-     *     remoteagentsigv4?: RemoteAgentSigV4Configuration|null
+     *     remoteagentsigv4?: RemoteAgentSigV4Configuration|null,
+     *     releaseManagement?: ReleaseManagementConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

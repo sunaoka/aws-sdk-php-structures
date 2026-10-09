@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $VersionDescription
  * @property int<1, max>|null $SourceVersionNumber
  * @property 'AMAZON_LINUX_2023'|null $OperatingSystem
+ * @property list<'TOTAL_VCPU_LIMIT'>|null $RemoveAttributes
  */
 class UpdateContainerGroupDefinitionRequest extends Request
 {
@@ -25,7 +26,8 @@ class UpdateContainerGroupDefinitionRequest extends Request
      *     TotalVcpuLimit?: double|null,
      *     VersionDescription?: string|null,
      *     SourceVersionNumber?: int<1, max>|null,
-     *     OperatingSystem?: 'AMAZON_LINUX_2023'|null
+     *     OperatingSystem?: 'AMAZON_LINUX_2023'|null,
+     *     RemoveAttributes?: list<'TOTAL_VCPU_LIMIT'>|null
      * } $args
      */
     public function __construct(array $args)

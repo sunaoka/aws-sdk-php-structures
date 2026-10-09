@@ -13,6 +13,7 @@ class SecurityIRClient extends \Aws\SecurityIR\SecurityIRClient
     use GetCase\GetCaseTrait;
     use GetCaseAttachmentDownloadUrl\GetCaseAttachmentDownloadUrlTrait;
     use GetCaseAttachmentUploadUrl\GetCaseAttachmentUploadUrlTrait;
+    use GetFindingMetrics\GetFindingMetricsTrait;
     use GetMembership\GetMembershipTrait;
     use ListCaseEdits\ListCaseEditsTrait;
     use ListCases\ListCasesTrait;

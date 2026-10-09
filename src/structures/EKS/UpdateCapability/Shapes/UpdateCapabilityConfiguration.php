@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property UpdateArgoCdConfig|null $argoCd
+ * @property UpdateAckConfig|null $ack
  */
 class UpdateCapabilityConfiguration extends Shape
 {
     /**
-     * @param array{argoCd?: UpdateArgoCdConfig|null} $args
+     * @param array{
+     *     argoCd?: UpdateArgoCdConfig|null,
+     *     ack?: UpdateAckConfig|null
+     * } $args
      */
     public function __construct(array $args = [])
     {
