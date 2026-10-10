@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Url
  * @property string|null $Body
  * @property array<string, string>|null $Headers
+ * @property HttpRequestCacheConfiguration|null $Cache
  */
 class HttpRequestConfiguration extends Shape
 {
@@ -23,7 +24,8 @@ class HttpRequestConfiguration extends Shape
      *     RequestTimeoutMilliseconds: int,
      *     Url: string,
      *     Body?: string|null,
-     *     Headers?: array<string, string>|null
+     *     Headers?: array<string, string>|null,
+     *     Cache?: HttpRequestCacheConfiguration|null
      * } $args
      */
     public function __construct(array $args)

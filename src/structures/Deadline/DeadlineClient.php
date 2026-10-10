@@ -86,6 +86,7 @@ class DeadlineClient extends \Aws\Deadline\DeadlineClient
     use ListJobs\ListJobsTrait;
     use ListLicenseEndpoints\ListLicenseEndpointsTrait;
     use ListLimits\ListLimitsTrait;
+    use ListMemberships\ListMembershipsTrait;
     use ListMeteredProducts\ListMeteredProductsTrait;
     use ListMonitors\ListMonitorsTrait;
     use ListQueueEnvironments\ListQueueEnvironmentsTrait;

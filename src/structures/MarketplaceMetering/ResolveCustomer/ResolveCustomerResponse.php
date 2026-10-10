@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ProductCode
  * @property string|null $CustomerAWSAccountId
  * @property string|null $LicenseArn
+ * @property Shapes\Metadata|null $Metadata
  */
 class ResolveCustomerResponse extends Response
 {

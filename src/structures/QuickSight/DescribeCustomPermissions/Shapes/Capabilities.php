@@ -370,6 +370,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DENY'|'ALLOW'|null $CreateAndUpdateBeeAction
  * @property 'DENY'|'ALLOW'|null $ShareBeeAction
  * @property 'DENY'|'ALLOW'|null $UseBeeAction
+ * @property 'DENY'|'ALLOW'|null $GongAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateGongAction
+ * @property 'DENY'|'ALLOW'|null $ShareGongAction
+ * @property 'DENY'|'ALLOW'|null $UseGongAction
  * @property 'DENY'|'ALLOW'|null $Topic
  * @property 'DENY'|'ALLOW'|null $EditVisualWithQ
  * @property 'DENY'|'ALLOW'|null $BuildCalculatedFieldWithQ
@@ -396,6 +400,186 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DENY'|'ALLOW'|null $ScheduleTrigger
  * @property 'DENY'|'ALLOW'|null $InboundEmailTrigger
  * @property 'DENY'|'ALLOW'|null $QuickEventTrigger
+ * @property 'DENY'|'ALLOW'|null $FileDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateFileDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateFileDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareFileDataSource
+ * @property 'DENY'|'ALLOW'|null $S3DataSource
+ * @property 'DENY'|'ALLOW'|null $CreateS3DataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateS3DataSource
+ * @property 'DENY'|'ALLOW'|null $ShareS3DataSource
+ * @property 'DENY'|'ALLOW'|null $S3AnalyticsDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateS3AnalyticsDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateS3AnalyticsDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareS3AnalyticsDataSource
+ * @property 'DENY'|'ALLOW'|null $S3TablesDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateS3TablesDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateS3TablesDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareS3TablesDataSource
+ * @property 'DENY'|'ALLOW'|null $AthenaDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateAthenaDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateAthenaDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareAthenaDataSource
+ * @property 'DENY'|'ALLOW'|null $RdsDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateRdsDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateRdsDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareRdsDataSource
+ * @property 'DENY'|'ALLOW'|null $RedshiftAutoDiscoveredDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateRedshiftAutoDiscoveredDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateRedshiftAutoDiscoveredDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareRedshiftAutoDiscoveredDataSource
+ * @property 'DENY'|'ALLOW'|null $RedshiftManualDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateRedshiftManualDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateRedshiftManualDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareRedshiftManualDataSource
+ * @property 'DENY'|'ALLOW'|null $OpenSearchDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateOpenSearchDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateOpenSearchDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareOpenSearchDataSource
+ * @property 'DENY'|'ALLOW'|null $TimestreamDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateTimestreamDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateTimestreamDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareTimestreamDataSource
+ * @property 'DENY'|'ALLOW'|null $AuroraDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateAuroraDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateAuroraDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareAuroraDataSource
+ * @property 'DENY'|'ALLOW'|null $MySqlDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateMySqlDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateMySqlDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareMySqlDataSource
+ * @property 'DENY'|'ALLOW'|null $PostgreSqlDataSource
+ * @property 'DENY'|'ALLOW'|null $CreatePostgreSqlDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdatePostgreSqlDataSource
+ * @property 'DENY'|'ALLOW'|null $SharePostgreSqlDataSource
+ * @property 'DENY'|'ALLOW'|null $OracleDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateOracleDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateOracleDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareOracleDataSource
+ * @property 'DENY'|'ALLOW'|null $SqlServerDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateSqlServerDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateSqlServerDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareSqlServerDataSource
+ * @property 'DENY'|'ALLOW'|null $MariaDbDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateMariaDbDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateMariaDbDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareMariaDbDataSource
+ * @property 'DENY'|'ALLOW'|null $SnowflakeDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateSnowflakeDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateSnowflakeDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareSnowflakeDataSource
+ * @property 'DENY'|'ALLOW'|null $GoogleBigQueryDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateGoogleBigQueryDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateGoogleBigQueryDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareGoogleBigQueryDataSource
+ * @property 'DENY'|'ALLOW'|null $DatabricksDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateDatabricksDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateDatabricksDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareDatabricksDataSource
+ * @property 'DENY'|'ALLOW'|null $StarburstDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateStarburstDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateStarburstDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareStarburstDataSource
+ * @property 'DENY'|'ALLOW'|null $TrinoDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateTrinoDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateTrinoDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareTrinoDataSource
+ * @property 'DENY'|'ALLOW'|null $ImpalaDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateImpalaDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateImpalaDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareImpalaDataSource
+ * @property 'DENY'|'ALLOW'|null $TeradataDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateTeradataDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateTeradataDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareTeradataDataSource
+ * @property 'DENY'|'ALLOW'|null $PrestoDataSource
+ * @property 'DENY'|'ALLOW'|null $CreatePrestoDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdatePrestoDataSource
+ * @property 'DENY'|'ALLOW'|null $SharePrestoDataSource
+ * @property 'DENY'|'ALLOW'|null $SparkDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateSparkDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateSparkDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareSparkDataSource
+ * @property 'DENY'|'ALLOW'|null $ExasolDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateExasolDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateExasolDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareExasolDataSource
+ * @property 'DENY'|'ALLOW'|null $Db2DataSource
+ * @property 'DENY'|'ALLOW'|null $CreateDb2DataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateDb2DataSource
+ * @property 'DENY'|'ALLOW'|null $ShareDb2DataSource
+ * @property 'DENY'|'ALLOW'|null $SapHanaDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateSapHanaDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateSapHanaDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareSapHanaDataSource
+ * @property 'DENY'|'ALLOW'|null $DenodoDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateDenodoDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateDenodoDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareDenodoDataSource
+ * @property 'DENY'|'ALLOW'|null $DremioDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateDremioDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateDremioDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareDremioDataSource
+ * @property 'DENY'|'ALLOW'|null $SalesforceDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateSalesforceDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateSalesforceDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareSalesforceDataSource
+ * @property 'DENY'|'ALLOW'|null $RadiantDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateRadiantDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateRadiantDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareRadiantDataSource
+ * @property 'DENY'|'ALLOW'|null $PayPalDataSource
+ * @property 'DENY'|'ALLOW'|null $CreatePayPalDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdatePayPalDataSource
+ * @property 'DENY'|'ALLOW'|null $SharePayPalDataSource
+ * @property 'DENY'|'ALLOW'|null $SquareDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateSquareDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateSquareDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareSquareDataSource
+ * @property 'DENY'|'ALLOW'|null $GitHubDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateGitHubDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateGitHubDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareGitHubDataSource
+ * @property 'DENY'|'ALLOW'|null $TwitterDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateTwitterDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateTwitterDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareTwitterDataSource
+ * @property 'DENY'|'ALLOW'|null $JiraDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateJiraDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateJiraDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareJiraDataSource
+ * @property 'DENY'|'ALLOW'|null $ServiceNowDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateServiceNowDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateServiceNowDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareServiceNowDataSource
+ * @property 'DENY'|'ALLOW'|null $AdobeAnalyticsDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateAdobeAnalyticsDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateAdobeAnalyticsDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareAdobeAnalyticsDataSource
+ * @property 'DENY'|'ALLOW'|null $GoogleAnalyticsDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateGoogleAnalyticsDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateGoogleAnalyticsDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareGoogleAnalyticsDataSource
+ * @property 'DENY'|'ALLOW'|null $GoogleSheetsDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateGoogleSheetsDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateGoogleSheetsDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareGoogleSheetsDataSource
+ * @property 'DENY'|'ALLOW'|null $DocumentDbDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateDocumentDbDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateDocumentDbDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareDocumentDbDataSource
+ * @property 'DENY'|'ALLOW'|null $MongoDbDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateMongoDbDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateMongoDbDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareMongoDbDataSource
+ * @property 'DENY'|'ALLOW'|null $MongoAtlasDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateMongoAtlasDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateMongoAtlasDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareMongoAtlasDataSource
+ * @property 'DENY'|'ALLOW'|null $DynamoDbDataSource
+ * @property 'DENY'|'ALLOW'|null $CreateDynamoDbDataSource
+ * @property 'DENY'|'ALLOW'|null $UpdateDynamoDbDataSource
+ * @property 'DENY'|'ALLOW'|null $ShareDynamoDbDataSource
  */
 class Capabilities extends Shape
 {
@@ -766,6 +950,10 @@ class Capabilities extends Shape
      *     CreateAndUpdateBeeAction?: 'DENY'|'ALLOW'|null,
      *     ShareBeeAction?: 'DENY'|'ALLOW'|null,
      *     UseBeeAction?: 'DENY'|'ALLOW'|null,
+     *     GongAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateGongAction?: 'DENY'|'ALLOW'|null,
+     *     ShareGongAction?: 'DENY'|'ALLOW'|null,
+     *     UseGongAction?: 'DENY'|'ALLOW'|null,
      *     Topic?: 'DENY'|'ALLOW'|null,
      *     EditVisualWithQ?: 'DENY'|'ALLOW'|null,
      *     BuildCalculatedFieldWithQ?: 'DENY'|'ALLOW'|null,
@@ -791,7 +979,187 @@ class Capabilities extends Shape
      *     Trigger?: 'DENY'|'ALLOW'|null,
      *     ScheduleTrigger?: 'DENY'|'ALLOW'|null,
      *     InboundEmailTrigger?: 'DENY'|'ALLOW'|null,
-     *     QuickEventTrigger?: 'DENY'|'ALLOW'|null
+     *     QuickEventTrigger?: 'DENY'|'ALLOW'|null,
+     *     FileDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateFileDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateFileDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareFileDataSource?: 'DENY'|'ALLOW'|null,
+     *     S3DataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateS3DataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateS3DataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareS3DataSource?: 'DENY'|'ALLOW'|null,
+     *     S3AnalyticsDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateS3AnalyticsDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateS3AnalyticsDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareS3AnalyticsDataSource?: 'DENY'|'ALLOW'|null,
+     *     S3TablesDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateS3TablesDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateS3TablesDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareS3TablesDataSource?: 'DENY'|'ALLOW'|null,
+     *     AthenaDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateAthenaDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateAthenaDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareAthenaDataSource?: 'DENY'|'ALLOW'|null,
+     *     RdsDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateRdsDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateRdsDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareRdsDataSource?: 'DENY'|'ALLOW'|null,
+     *     RedshiftAutoDiscoveredDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateRedshiftAutoDiscoveredDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateRedshiftAutoDiscoveredDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareRedshiftAutoDiscoveredDataSource?: 'DENY'|'ALLOW'|null,
+     *     RedshiftManualDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateRedshiftManualDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateRedshiftManualDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareRedshiftManualDataSource?: 'DENY'|'ALLOW'|null,
+     *     OpenSearchDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateOpenSearchDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateOpenSearchDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareOpenSearchDataSource?: 'DENY'|'ALLOW'|null,
+     *     TimestreamDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateTimestreamDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateTimestreamDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareTimestreamDataSource?: 'DENY'|'ALLOW'|null,
+     *     AuroraDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateAuroraDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateAuroraDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareAuroraDataSource?: 'DENY'|'ALLOW'|null,
+     *     MySqlDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateMySqlDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateMySqlDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareMySqlDataSource?: 'DENY'|'ALLOW'|null,
+     *     PostgreSqlDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreatePostgreSqlDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdatePostgreSqlDataSource?: 'DENY'|'ALLOW'|null,
+     *     SharePostgreSqlDataSource?: 'DENY'|'ALLOW'|null,
+     *     OracleDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateOracleDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateOracleDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareOracleDataSource?: 'DENY'|'ALLOW'|null,
+     *     SqlServerDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateSqlServerDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateSqlServerDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareSqlServerDataSource?: 'DENY'|'ALLOW'|null,
+     *     MariaDbDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateMariaDbDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateMariaDbDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareMariaDbDataSource?: 'DENY'|'ALLOW'|null,
+     *     SnowflakeDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateSnowflakeDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateSnowflakeDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareSnowflakeDataSource?: 'DENY'|'ALLOW'|null,
+     *     GoogleBigQueryDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateGoogleBigQueryDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateGoogleBigQueryDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareGoogleBigQueryDataSource?: 'DENY'|'ALLOW'|null,
+     *     DatabricksDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateDatabricksDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateDatabricksDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareDatabricksDataSource?: 'DENY'|'ALLOW'|null,
+     *     StarburstDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateStarburstDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateStarburstDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareStarburstDataSource?: 'DENY'|'ALLOW'|null,
+     *     TrinoDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateTrinoDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateTrinoDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareTrinoDataSource?: 'DENY'|'ALLOW'|null,
+     *     ImpalaDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateImpalaDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateImpalaDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareImpalaDataSource?: 'DENY'|'ALLOW'|null,
+     *     TeradataDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateTeradataDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateTeradataDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareTeradataDataSource?: 'DENY'|'ALLOW'|null,
+     *     PrestoDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreatePrestoDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdatePrestoDataSource?: 'DENY'|'ALLOW'|null,
+     *     SharePrestoDataSource?: 'DENY'|'ALLOW'|null,
+     *     SparkDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateSparkDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateSparkDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareSparkDataSource?: 'DENY'|'ALLOW'|null,
+     *     ExasolDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateExasolDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateExasolDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareExasolDataSource?: 'DENY'|'ALLOW'|null,
+     *     Db2DataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateDb2DataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateDb2DataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareDb2DataSource?: 'DENY'|'ALLOW'|null,
+     *     SapHanaDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateSapHanaDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateSapHanaDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareSapHanaDataSource?: 'DENY'|'ALLOW'|null,
+     *     DenodoDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateDenodoDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateDenodoDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareDenodoDataSource?: 'DENY'|'ALLOW'|null,
+     *     DremioDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateDremioDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateDremioDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareDremioDataSource?: 'DENY'|'ALLOW'|null,
+     *     SalesforceDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateSalesforceDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateSalesforceDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareSalesforceDataSource?: 'DENY'|'ALLOW'|null,
+     *     RadiantDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateRadiantDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateRadiantDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareRadiantDataSource?: 'DENY'|'ALLOW'|null,
+     *     PayPalDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreatePayPalDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdatePayPalDataSource?: 'DENY'|'ALLOW'|null,
+     *     SharePayPalDataSource?: 'DENY'|'ALLOW'|null,
+     *     SquareDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateSquareDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateSquareDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareSquareDataSource?: 'DENY'|'ALLOW'|null,
+     *     GitHubDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateGitHubDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateGitHubDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareGitHubDataSource?: 'DENY'|'ALLOW'|null,
+     *     TwitterDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateTwitterDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateTwitterDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareTwitterDataSource?: 'DENY'|'ALLOW'|null,
+     *     JiraDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateJiraDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateJiraDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareJiraDataSource?: 'DENY'|'ALLOW'|null,
+     *     ServiceNowDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateServiceNowDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateServiceNowDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareServiceNowDataSource?: 'DENY'|'ALLOW'|null,
+     *     AdobeAnalyticsDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateAdobeAnalyticsDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateAdobeAnalyticsDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareAdobeAnalyticsDataSource?: 'DENY'|'ALLOW'|null,
+     *     GoogleAnalyticsDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateGoogleAnalyticsDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateGoogleAnalyticsDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareGoogleAnalyticsDataSource?: 'DENY'|'ALLOW'|null,
+     *     GoogleSheetsDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateGoogleSheetsDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateGoogleSheetsDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareGoogleSheetsDataSource?: 'DENY'|'ALLOW'|null,
+     *     DocumentDbDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateDocumentDbDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateDocumentDbDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareDocumentDbDataSource?: 'DENY'|'ALLOW'|null,
+     *     MongoDbDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateMongoDbDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateMongoDbDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareMongoDbDataSource?: 'DENY'|'ALLOW'|null,
+     *     MongoAtlasDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateMongoAtlasDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateMongoAtlasDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareMongoAtlasDataSource?: 'DENY'|'ALLOW'|null,
+     *     DynamoDbDataSource?: 'DENY'|'ALLOW'|null,
+     *     CreateDynamoDbDataSource?: 'DENY'|'ALLOW'|null,
+     *     UpdateDynamoDbDataSource?: 'DENY'|'ALLOW'|null,
+     *     ShareDynamoDbDataSource?: 'DENY'|'ALLOW'|null
      * } $args
      */
     public function __construct(array $args = [])

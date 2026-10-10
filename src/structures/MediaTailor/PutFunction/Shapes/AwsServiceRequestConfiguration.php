@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Url
  * @property string|null $Body
  * @property array<string, string>|null $Headers
+ * @property HttpRequestCacheConfiguration|null $Cache
  * @property string $TargetService
  * @property string $TargetRegion
  */
@@ -26,6 +27,7 @@ class AwsServiceRequestConfiguration extends Shape
      *     Url: string,
      *     Body?: string|null,
      *     Headers?: array<string, string>|null,
+     *     Cache?: HttpRequestCacheConfiguration|null,
      *     TargetService: string,
      *     TargetRegion: string
      * } $args
