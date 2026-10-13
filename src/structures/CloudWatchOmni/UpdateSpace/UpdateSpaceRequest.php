@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $spaceId
  * @property string|null $name
+ * @property string|null $agentCoreEvaluationRoleArn
  * @property Shapes\EncryptionConfiguration|null $encryptionConfiguration
  */
 class UpdateSpaceRequest extends Request
@@ -15,6 +16,7 @@ class UpdateSpaceRequest extends Request
      * @param array{
      *     spaceId: string,
      *     name?: string|null,
+     *     agentCoreEvaluationRoleArn?: string|null,
      *     encryptionConfiguration?: Shapes\EncryptionConfiguration|null
      * } $args
      */

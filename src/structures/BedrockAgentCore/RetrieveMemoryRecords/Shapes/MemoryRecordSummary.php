@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $namespaces
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property double|null $score
+ * @property \Aws\Api\DateTimeResult|null $timestamp
  * @property array<string, MemoryRecordMetadataValue>|null $metadata
  */
 class MemoryRecordSummary extends Shape
@@ -23,6 +24,7 @@ class MemoryRecordSummary extends Shape
      *     namespaces: list<string>,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     score?: double|null,
+     *     timestamp?: \Aws\Api\DateTimeResult|null,
      *     metadata?: array<string, MemoryRecordMetadataValue>|null
      * } $args
      */

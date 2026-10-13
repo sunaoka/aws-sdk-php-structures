@@ -7,6 +7,7 @@ class LambdaCoreClient extends \Aws\LambdaCore\LambdaCoreClient
     use CreateNetworkConnector\CreateNetworkConnectorTrait;
     use DeleteNetworkConnector\DeleteNetworkConnectorTrait;
     use GetNetworkConnector\GetNetworkConnectorTrait;
+    use ListNetworkConnectorVersions\ListNetworkConnectorVersionsTrait;
     use ListNetworkConnectors\ListNetworkConnectorsTrait;
     use UpdateNetworkConnector\UpdateNetworkConnectorTrait;
 }

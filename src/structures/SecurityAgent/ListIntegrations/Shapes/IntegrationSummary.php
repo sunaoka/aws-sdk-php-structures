@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $integrationId
  * @property string $installationId
- * @property 'GITHUB'|'GITLAB'|'BITBUCKET'|'CONFLUENCE'|'AZURE_DEVOPS' $provider
- * @property 'SOURCE_CODE'|'DOCUMENTATION' $providerType
+ * @property 'GITHUB'|'GITLAB'|'BITBUCKET'|'CONFLUENCE'|'AZURE_DEVOPS'|'JIRA' $provider
+ * @property 'SOURCE_CODE'|'DOCUMENTATION'|'ISSUE_TRACKING' $providerType
  * @property string $displayName
  * @property string|null $targetUrl
  * @property string|null $webhookUrl
@@ -20,8 +20,8 @@ class IntegrationSummary extends Shape
      * @param array{
      *     integrationId: string,
      *     installationId: string,
-     *     provider: 'GITHUB'|'GITLAB'|'BITBUCKET'|'CONFLUENCE'|'AZURE_DEVOPS',
-     *     providerType: 'SOURCE_CODE'|'DOCUMENTATION',
+     *     provider: 'GITHUB'|'GITLAB'|'BITBUCKET'|'CONFLUENCE'|'AZURE_DEVOPS'|'JIRA',
+     *     providerType: 'SOURCE_CODE'|'DOCUMENTATION'|'ISSUE_TRACKING',
      *     displayName: string,
      *     targetUrl?: string|null,
      *     webhookUrl?: string|null,

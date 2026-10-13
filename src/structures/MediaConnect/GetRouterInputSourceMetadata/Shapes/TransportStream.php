@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int|null $Channels
  * @property string|null $Codec
+ * @property ColorInformation|null $Color
  * @property string|null $FrameRate
  * @property FrameResolution|null $FrameResolution
  * @property int $Pid
@@ -20,6 +21,7 @@ class TransportStream extends Shape
      * @param array{
      *     Channels?: int|null,
      *     Codec?: string|null,
+     *     Color?: ColorInformation|null,
      *     FrameRate?: string|null,
      *     FrameResolution?: FrameResolution|null,
      *     Pid: int,

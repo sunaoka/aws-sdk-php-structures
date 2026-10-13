@@ -7,11 +7,12 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $integrationId
  * @property string $installationId
- * @property 'GITHUB'|'GITLAB'|'BITBUCKET'|'CONFLUENCE'|'AZURE_DEVOPS' $provider
- * @property 'SOURCE_CODE'|'DOCUMENTATION' $providerType
+ * @property 'GITHUB'|'GITLAB'|'BITBUCKET'|'CONFLUENCE'|'AZURE_DEVOPS'|'JIRA' $provider
+ * @property 'SOURCE_CODE'|'DOCUMENTATION'|'ISSUE_TRACKING' $providerType
  * @property string|null $displayName
  * @property string|null $kmsKeyId
  * @property string|null $targetUrl
+ * @property string|null $siteUrl
  * @property string|null $webhookUrl
  * @property string|null $privateConnectionName
  */

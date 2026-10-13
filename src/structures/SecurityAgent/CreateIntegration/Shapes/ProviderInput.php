@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ConfluenceIntegrationInput|null $confluence
  * @property AzureDevOpsIntegrationInput|null $azureDevOps
  * @property BitbucketDataCenterIntegrationInput|null $bitbucketDataCenter
+ * @property JiraIntegrationInput|null $jira
  */
 class ProviderInput extends Shape
 {
@@ -21,7 +22,8 @@ class ProviderInput extends Shape
      *     bitbucket?: BitbucketIntegrationInput|null,
      *     confluence?: ConfluenceIntegrationInput|null,
      *     azureDevOps?: AzureDevOpsIntegrationInput|null,
-     *     bitbucketDataCenter?: BitbucketDataCenterIntegrationInput|null
+     *     bitbucketDataCenter?: BitbucketDataCenterIntegrationInput|null,
+     *     jira?: JiraIntegrationInput|null
      * } $args
      */
     public function __construct(array $args = [])

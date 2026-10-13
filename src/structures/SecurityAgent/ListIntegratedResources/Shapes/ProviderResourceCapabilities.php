@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property BitbucketResourceCapabilities|null $bitbucket
  * @property ConfluenceResourceCapabilities|null $confluence
  * @property AzureDevOpsResourceCapabilities|null $azureDevOps
+ * @property JiraResourceCapabilities|null $jira
  */
 class ProviderResourceCapabilities extends Shape
 {
@@ -19,7 +20,8 @@ class ProviderResourceCapabilities extends Shape
      *     gitlab?: GitLabResourceCapabilities|null,
      *     bitbucket?: BitbucketResourceCapabilities|null,
      *     confluence?: ConfluenceResourceCapabilities|null,
-     *     azureDevOps?: AzureDevOpsResourceCapabilities|null
+     *     azureDevOps?: AzureDevOpsResourceCapabilities|null,
+     *     jira?: JiraResourceCapabilities|null
      * } $args
      */
     public function __construct(array $args = [])

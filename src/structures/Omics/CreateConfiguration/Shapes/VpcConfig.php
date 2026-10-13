@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<string>|null $securityGroupIds
  * @property list<string>|null $subnetIds
+ * @property string|null $vpcOwnerAccountId
  */
 class VpcConfig extends Shape
 {
     /**
      * @param array{
      *     securityGroupIds?: list<string>|null,
-     *     subnetIds?: list<string>|null
+     *     subnetIds?: list<string>|null,
+     *     vpcOwnerAccountId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

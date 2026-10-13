@@ -31,6 +31,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $IsMaterializedView
  * @property IcebergTableMetadata|null $IcebergTableMetadata
  * @property TableStatus|null $Status
+ * @property RLSProperties|null $RLSProperties
  */
 class Table extends Shape
 {
@@ -61,7 +62,8 @@ class Table extends Shape
      *     IsMultiDialectView?: bool|null,
      *     IsMaterializedView?: bool|null,
      *     IcebergTableMetadata?: IcebergTableMetadata|null,
-     *     Status?: TableStatus|null
+     *     Status?: TableStatus|null,
+     *     RLSProperties?: RLSProperties|null
      * } $args
      */
     public function __construct(array $args)

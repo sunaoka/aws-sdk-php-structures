@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $namespaceTemplates
  * @property CustomConfigurationInput|null $configuration
  * @property MemoryRecordSchema|null $memoryRecordSchema
+ * @property RecordExpirySpecification|null $recordExpirySpecification
  */
 class CustomMemoryStrategyInput extends Shape
 {
@@ -21,7 +22,8 @@ class CustomMemoryStrategyInput extends Shape
      *     namespaces?: list<string>|null,
      *     namespaceTemplates?: list<string>|null,
      *     configuration?: CustomConfigurationInput|null,
-     *     memoryRecordSchema?: MemoryRecordSchema|null
+     *     memoryRecordSchema?: MemoryRecordSchema|null,
+     *     recordExpirySpecification?: RecordExpirySpecification|null
      * } $args
      */
     public function __construct(array $args)

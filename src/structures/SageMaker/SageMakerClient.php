@@ -80,6 +80,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use CreateStudioLifecycleConfig\CreateStudioLifecycleConfigTrait;
     use CreateTrainingJob\CreateTrainingJobTrait;
     use CreateTrainingPlan\CreateTrainingPlanTrait;
+    use CreateTrainingSession\CreateTrainingSessionTrait;
     use CreateTransformJob\CreateTransformJobTrait;
     use CreateTrial\CreateTrialTrait;
     use CreateTrialComponent\CreateTrialComponentTrait;
@@ -143,6 +144,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DeleteStudioLifecycleConfig\DeleteStudioLifecycleConfigTrait;
     use DeleteTags\DeleteTagsTrait;
     use DeleteTrainingJob\DeleteTrainingJobTrait;
+    use DeleteTrainingSession\DeleteTrainingSessionTrait;
     use DeleteTrial\DeleteTrialTrait;
     use DeleteTrialComponent\DeleteTrialComponentTrait;
     use DeleteUserProfile\DeleteUserProfileTrait;
@@ -219,6 +221,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DescribeTrainingJob\DescribeTrainingJobTrait;
     use DescribeTrainingPlan\DescribeTrainingPlanTrait;
     use DescribeTrainingPlanExtensionHistory\DescribeTrainingPlanExtensionHistoryTrait;
+    use DescribeTrainingSession\DescribeTrainingSessionTrait;
     use DescribeTransformJob\DescribeTransformJobTrait;
     use DescribeTrial\DescribeTrialTrait;
     use DescribeTrialComponent\DescribeTrialComponentTrait;
@@ -320,6 +323,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListTrainingJobs\ListTrainingJobsTrait;
     use ListTrainingJobsForHyperParameterTuningJob\ListTrainingJobsForHyperParameterTuningJobTrait;
     use ListTrainingPlans\ListTrainingPlansTrait;
+    use ListTrainingSessions\ListTrainingSessionsTrait;
     use ListTransformJobs\ListTransformJobsTrait;
     use ListTrialComponents\ListTrialComponentsTrait;
     use ListTrials\ListTrialsTrait;
@@ -362,6 +366,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use StopPipelineExecution\StopPipelineExecutionTrait;
     use StopProcessingJob\StopProcessingJobTrait;
     use StopTrainingJob\StopTrainingJobTrait;
+    use StopTrainingSession\StopTrainingSessionTrait;
     use StopTransformJob\StopTransformJobTrait;
     use UpdateAction\UpdateActionTrait;
     use UpdateAppImageConfig\UpdateAppImageConfigTrait;

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RouterOutputConfiguration|null $Configuration
  * @property int|null $MaximumBitrate
  * @property 'REGIONAL'|'GLOBAL'|null $RoutingScope
- * @property 'OUTPUT_100'|'OUTPUT_50'|'OUTPUT_20'|null $Tier
+ * @property 'OUTPUT_100'|'OUTPUT_50'|'OUTPUT_20'|'OUTPUT_500'|'OUTPUT_250'|null $Tier
  * @property Shapes\MaintenanceConfiguration|null $MaintenanceConfiguration
  * @property Shapes\FabricConfiguration|null $FabricConfiguration
  */
@@ -23,7 +23,7 @@ class UpdateRouterOutputRequest extends Request
      *     Configuration?: Shapes\RouterOutputConfiguration|null,
      *     MaximumBitrate?: int|null,
      *     RoutingScope?: 'REGIONAL'|'GLOBAL'|null,
-     *     Tier?: 'OUTPUT_100'|'OUTPUT_50'|'OUTPUT_20'|null,
+     *     Tier?: 'OUTPUT_100'|'OUTPUT_50'|'OUTPUT_20'|'OUTPUT_500'|'OUTPUT_250'|null,
      *     MaintenanceConfiguration?: Shapes\MaintenanceConfiguration|null,
      *     FabricConfiguration?: Shapes\FabricConfiguration|null
      * } $args

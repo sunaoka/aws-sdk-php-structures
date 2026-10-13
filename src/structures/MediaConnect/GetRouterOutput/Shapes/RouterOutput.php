@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $AvailabilityZone
  * @property int $MaximumBitrate
  * @property 'REGIONAL'|'GLOBAL' $RoutingScope
- * @property 'OUTPUT_100'|'OUTPUT_50'|'OUTPUT_20' $Tier
+ * @property 'OUTPUT_100'|'OUTPUT_50'|'OUTPUT_20'|'OUTPUT_500'|'OUTPUT_250' $Tier
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property \Aws\Api\DateTimeResult $UpdatedAt
  * @property list<RouterOutputMessage> $Messages
@@ -45,7 +45,7 @@ class RouterOutput extends Shape
      *     AvailabilityZone: string,
      *     MaximumBitrate: int,
      *     RoutingScope: 'REGIONAL'|'GLOBAL',
-     *     Tier: 'OUTPUT_100'|'OUTPUT_50'|'OUTPUT_20',
+     *     Tier: 'OUTPUT_100'|'OUTPUT_50'|'OUTPUT_20'|'OUTPUT_500'|'OUTPUT_250',
      *     CreatedAt: \Aws\Api\DateTimeResult,
      *     UpdatedAt: \Aws\Api\DateTimeResult,
      *     Messages: list<RouterOutputMessage>,

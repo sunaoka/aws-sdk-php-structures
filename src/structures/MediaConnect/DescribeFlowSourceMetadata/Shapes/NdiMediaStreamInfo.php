@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Codec
  * @property int $StreamId
  * @property 'progressive'|'interlace'|'progressive-segmented-frame'|null $ScanMode
+ * @property ColorInformation|null $Color
  * @property FrameResolution|null $FrameResolution
  * @property string|null $FrameRate
  * @property int|null $Channels
@@ -22,6 +23,7 @@ class NdiMediaStreamInfo extends Shape
      *     Codec: string,
      *     StreamId: int,
      *     ScanMode?: 'progressive'|'interlace'|'progressive-segmented-frame'|null,
+     *     Color?: ColorInformation|null,
      *     FrameResolution?: FrameResolution|null,
      *     FrameRate?: string|null,
      *     Channels?: int|null,

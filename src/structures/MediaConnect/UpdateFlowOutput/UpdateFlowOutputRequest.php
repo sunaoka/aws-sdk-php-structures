@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ENABLED'|'DISABLED'|null $RouterIntegrationState
  * @property Shapes\FlowTransitEncryption|null $RouterIntegrationTransitEncryption
  * @property 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null $NdiOutputTimecodeSource
+ * @property int<-40, 0>|null $NdiAudioReferenceLevel
  */
 class UpdateFlowOutputRequest extends Request
 {
@@ -55,7 +56,8 @@ class UpdateFlowOutputRequest extends Request
      *     NdiSpeedHqQuality?: int|null,
      *     RouterIntegrationState?: 'ENABLED'|'DISABLED'|null,
      *     RouterIntegrationTransitEncryption?: Shapes\FlowTransitEncryption|null,
-     *     NdiOutputTimecodeSource?: 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null
+     *     NdiOutputTimecodeSource?: 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null,
+     *     NdiAudioReferenceLevel?: int<-40, 0>|null
      * } $args
      */
     public function __construct(array $args)

@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PoolId
  * @property string|null $RegistrationId
  * @property MessagingLimits|null $MessagingLimits
+ * @property string|null $PricingTier
  * @property \Aws\Api\DateTimeResult $CreatedTimestamp
  */
 class PhoneNumberInformation extends Shape
@@ -49,6 +50,7 @@ class PhoneNumberInformation extends Shape
      *     PoolId?: string|null,
      *     RegistrationId?: string|null,
      *     MessagingLimits?: MessagingLimits|null,
+     *     PricingTier?: string|null,
      *     CreatedTimestamp: \Aws\Api\DateTimeResult
      * } $args
      */

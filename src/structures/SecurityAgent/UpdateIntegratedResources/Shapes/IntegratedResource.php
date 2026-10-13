@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property BitbucketRepositoryResource|null $bitbucketRepository
  * @property ConfluenceDocumentResource|null $confluenceDocument
  * @property AzureDevOpsRepositoryResource|null $azureDevOpsRepository
+ * @property JiraProjectResource|null $jiraProject
  */
 class IntegratedResource extends Shape
 {
@@ -19,7 +20,8 @@ class IntegratedResource extends Shape
      *     gitlabRepository?: GitLabRepositoryResource|null,
      *     bitbucketRepository?: BitbucketRepositoryResource|null,
      *     confluenceDocument?: ConfluenceDocumentResource|null,
-     *     azureDevOpsRepository?: AzureDevOpsRepositoryResource|null
+     *     azureDevOpsRepository?: AzureDevOpsRepositoryResource|null,
+     *     jiraProject?: JiraProjectResource|null
      * } $args
      */
     public function __construct(array $args = [])

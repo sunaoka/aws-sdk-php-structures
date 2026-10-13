@@ -14,6 +14,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use BatchGetCrawlers\BatchGetCrawlersTrait;
     use BatchGetCustomEntityTypes\BatchGetCustomEntityTypesTrait;
     use BatchGetDataQualityResult\BatchGetDataQualityResultTrait;
+    use BatchGetDataQualityResultV2\BatchGetDataQualityResultV2Trait;
     use BatchGetDataQualityRulesetEvaluationRun\BatchGetDataQualityRulesetEvaluationRunTrait;
     use BatchGetDevEndpoints\BatchGetDevEndpointsTrait;
     use BatchGetIterableForms\BatchGetIterableFormsTrait;
@@ -133,6 +134,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetDataQualityModel\GetDataQualityModelTrait;
     use GetDataQualityModelResult\GetDataQualityModelResultTrait;
     use GetDataQualityResult\GetDataQualityResultTrait;
+    use GetDataQualityResultV2\GetDataQualityResultV2Trait;
     use GetDataQualityRuleRecommendationRun\GetDataQualityRuleRecommendationRunTrait;
     use GetDataQualityRuleset\GetDataQualityRulesetTrait;
     use GetDataQualityRulesetEvaluationRun\GetDataQualityRulesetEvaluationRunTrait;
@@ -204,6 +206,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use ListCrawls\ListCrawlsTrait;
     use ListCustomEntityTypes\ListCustomEntityTypesTrait;
     use ListDataQualityResults\ListDataQualityResultsTrait;
+    use ListDataQualityResultsV2\ListDataQualityResultsV2Trait;
     use ListDataQualityRuleRecommendationRuns\ListDataQualityRuleRecommendationRunsTrait;
     use ListDataQualityRulesetEvaluationRuns\ListDataQualityRulesetEvaluationRunsTrait;
     use ListDataQualityRulesets\ListDataQualityRulesetsTrait;
@@ -230,6 +233,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use ListUsageProfiles\ListUsageProfilesTrait;
     use ListWorkflows\ListWorkflowsTrait;
     use ModifyIntegration\ModifyIntegrationTrait;
+    use PublishDataQualityResultV2\PublishDataQualityResultV2Trait;
     use PutAsset\PutAssetTrait;
     use PutAssetType\PutAssetTypeTrait;
     use PutAttachment\PutAttachmentTrait;

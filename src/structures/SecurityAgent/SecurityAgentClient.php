@@ -10,6 +10,8 @@ class SecurityAgentClient extends \Aws\SecurityAgent\SecurityAgentClient
     use BatchDeletePentests\BatchDeletePentestsTrait;
     use BatchDeleteSecurityRequirements\BatchDeleteSecurityRequirementsTrait;
     use BatchDeleteThreatModels\BatchDeleteThreatModelsTrait;
+    use BatchDisassociateFindingIssue\BatchDisassociateFindingIssueTrait;
+    use BatchExportFindings\BatchExportFindingsTrait;
     use BatchGetAgentSpaces\BatchGetAgentSpacesTrait;
     use BatchGetArtifactMetadata\BatchGetArtifactMetadataTrait;
     use BatchGetCodeReviewJobTasks\BatchGetCodeReviewJobTasksTrait;

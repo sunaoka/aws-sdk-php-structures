@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RouterOutputConfiguration $Configuration
  * @property int $MaximumBitrate
  * @property 'REGIONAL'|'GLOBAL' $RoutingScope
- * @property 'OUTPUT_100'|'OUTPUT_50'|'OUTPUT_20' $Tier
+ * @property 'OUTPUT_100'|'OUTPUT_50'|'OUTPUT_20'|'OUTPUT_500'|'OUTPUT_250' $Tier
  * @property string|null $RegionName
  * @property string|null $AvailabilityZone
  * @property Shapes\MaintenanceConfiguration|null $MaintenanceConfiguration
@@ -25,7 +25,7 @@ class CreateRouterOutputRequest extends Request
      *     Configuration: Shapes\RouterOutputConfiguration,
      *     MaximumBitrate: int,
      *     RoutingScope: 'REGIONAL'|'GLOBAL',
-     *     Tier: 'OUTPUT_100'|'OUTPUT_50'|'OUTPUT_20',
+     *     Tier: 'OUTPUT_100'|'OUTPUT_50'|'OUTPUT_20'|'OUTPUT_500'|'OUTPUT_250',
      *     RegionName?: string|null,
      *     AvailabilityZone?: string|null,
      *     MaintenanceConfiguration?: Shapes\MaintenanceConfiguration|null,

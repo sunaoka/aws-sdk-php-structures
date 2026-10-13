@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $Registered
  * @property string|null $RegistrationId
  * @property MessagingLimits|null $MessagingLimits
+ * @property string|null $PricingTier
  */
 class SenderIdInformation extends Shape
 {
@@ -27,7 +28,8 @@ class SenderIdInformation extends Shape
      *     DeletionProtectionEnabled: bool,
      *     Registered: bool,
      *     RegistrationId?: string|null,
-     *     MessagingLimits?: MessagingLimits|null
+     *     MessagingLimits?: MessagingLimits|null,
+     *     PricingTier?: string|null
      * } $args
      */
     public function __construct(array $args)

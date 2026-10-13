@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RouterInputConfiguration|null $Configuration
  * @property int|null $MaximumBitrate
  * @property 'REGIONAL'|'GLOBAL'|null $RoutingScope
- * @property 'INPUT_100'|'INPUT_50'|'INPUT_20'|null $Tier
+ * @property 'INPUT_100'|'INPUT_50'|'INPUT_20'|'INPUT_500'|'INPUT_250'|null $Tier
  * @property Shapes\RouterInputTransitEncryption|null $TransitEncryption
  * @property Shapes\MaintenanceConfiguration|null $MaintenanceConfiguration
  * @property Shapes\RouterContentQualityAnalysisConfiguration|null $ContentQualityAnalysisConfiguration
@@ -24,7 +24,7 @@ class UpdateRouterInputRequest extends Request
      *     Configuration?: Shapes\RouterInputConfiguration|null,
      *     MaximumBitrate?: int|null,
      *     RoutingScope?: 'REGIONAL'|'GLOBAL'|null,
-     *     Tier?: 'INPUT_100'|'INPUT_50'|'INPUT_20'|null,
+     *     Tier?: 'INPUT_100'|'INPUT_50'|'INPUT_20'|'INPUT_500'|'INPUT_250'|null,
      *     TransitEncryption?: Shapes\RouterInputTransitEncryption|null,
      *     MaintenanceConfiguration?: Shapes\MaintenanceConfiguration|null,
      *     ContentQualityAnalysisConfiguration?: Shapes\RouterContentQualityAnalysisConfiguration|null

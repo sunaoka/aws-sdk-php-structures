@@ -6,7 +6,6 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $name
- * @property string|null $namespace
  * @property string|null $preferredStat
  * @property string|null $metricType
  * @property array<string, string>|null $attributes
@@ -17,7 +16,6 @@ class MetricMetadata extends Shape
     /**
      * @param array{
      *     name?: string|null,
-     *     namespace?: string|null,
      *     preferredStat?: string|null,
      *     metricType?: string|null,
      *     attributes?: array<string, string>|null,

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\UsageMetric|null $monthlyAccountEvaluationHours
  * @property Shapes\UsageMetric|null $monthlyAccountSystemLearningHours
  * @property Shapes\UsageMetric|null $monthlyAccountOnDemandHours
+ * @property Shapes\UsageMetric|null $monthlyAccountGraderHours
  * @property \Aws\Api\DateTimeResult $usagePeriodStartTime
  * @property \Aws\Api\DateTimeResult $usagePeriodEndTime
  */

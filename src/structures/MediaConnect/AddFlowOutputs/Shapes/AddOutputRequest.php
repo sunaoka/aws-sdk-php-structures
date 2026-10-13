@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ENABLED'|'DISABLED'|null $RouterIntegrationState
  * @property FlowTransitEncryption|null $RouterIntegrationTransitEncryption
  * @property 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null $NdiOutputTimecodeSource
+ * @property int<-40, 0>|null $NdiAudioReferenceLevel
  */
 class AddOutputRequest extends Shape
 {
@@ -53,7 +54,8 @@ class AddOutputRequest extends Shape
      *     OutputTags?: array<string, string>|null,
      *     RouterIntegrationState?: 'ENABLED'|'DISABLED'|null,
      *     RouterIntegrationTransitEncryption?: FlowTransitEncryption|null,
-     *     NdiOutputTimecodeSource?: 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null
+     *     NdiOutputTimecodeSource?: 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null,
+     *     NdiAudioReferenceLevel?: int<-40, 0>|null
      * } $args
      */
     public function __construct(array $args = [])

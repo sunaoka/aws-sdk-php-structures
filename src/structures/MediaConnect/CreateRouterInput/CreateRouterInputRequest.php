@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RouterInputConfiguration $Configuration
  * @property int $MaximumBitrate
  * @property 'REGIONAL'|'GLOBAL' $RoutingScope
- * @property 'INPUT_100'|'INPUT_50'|'INPUT_20' $Tier
+ * @property 'INPUT_100'|'INPUT_50'|'INPUT_20'|'INPUT_500'|'INPUT_250' $Tier
  * @property string|null $RegionName
  * @property string|null $AvailabilityZone
  * @property Shapes\RouterInputTransitEncryption|null $TransitEncryption
@@ -26,7 +26,7 @@ class CreateRouterInputRequest extends Request
      *     Configuration: Shapes\RouterInputConfiguration,
      *     MaximumBitrate: int,
      *     RoutingScope: 'REGIONAL'|'GLOBAL',
-     *     Tier: 'INPUT_100'|'INPUT_50'|'INPUT_20',
+     *     Tier: 'INPUT_100'|'INPUT_50'|'INPUT_20'|'INPUT_500'|'INPUT_250',
      *     RegionName?: string|null,
      *     AvailabilityZone?: string|null,
      *     TransitEncryption?: Shapes\RouterInputTransitEncryption|null,

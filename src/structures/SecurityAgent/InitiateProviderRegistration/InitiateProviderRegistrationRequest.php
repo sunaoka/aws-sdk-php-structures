@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SecurityAgent\InitiateProviderRegistration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'GITHUB'|'GITLAB'|'BITBUCKET'|'CONFLUENCE'|'AZURE_DEVOPS' $provider
+ * @property 'GITHUB'|'GITLAB'|'BITBUCKET'|'CONFLUENCE'|'AZURE_DEVOPS'|'JIRA' $provider
  * @property string|null $targetUrl
  * @property string|null $organizationName
  * @property string|null $clientId
@@ -15,7 +15,7 @@ class InitiateProviderRegistrationRequest extends Request
 {
     /**
      * @param array{
-     *     provider: 'GITHUB'|'GITLAB'|'BITBUCKET'|'CONFLUENCE'|'AZURE_DEVOPS',
+     *     provider: 'GITHUB'|'GITLAB'|'BITBUCKET'|'CONFLUENCE'|'AZURE_DEVOPS'|'JIRA',
      *     targetUrl?: string|null,
      *     organizationName?: string|null,
      *     clientId?: string|null,

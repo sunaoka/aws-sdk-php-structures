@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $RegionName
  * @property string $AvailabilityZone
  * @property int $MaximumBitrate
- * @property 'INPUT_100'|'INPUT_50'|'INPUT_20' $Tier
+ * @property 'INPUT_100'|'INPUT_50'|'INPUT_20'|'INPUT_500'|'INPUT_250' $Tier
  * @property 'REGIONAL'|'GLOBAL' $RoutingScope
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property \Aws\Api\DateTimeResult $UpdatedAt
@@ -47,7 +47,7 @@ class RouterInput extends Shape
      *     RegionName: string,
      *     AvailabilityZone: string,
      *     MaximumBitrate: int,
-     *     Tier: 'INPUT_100'|'INPUT_50'|'INPUT_20',
+     *     Tier: 'INPUT_100'|'INPUT_50'|'INPUT_20'|'INPUT_500'|'INPUT_250',
      *     RoutingScope: 'REGIONAL'|'GLOBAL',
      *     CreatedAt: \Aws\Api\DateTimeResult,
      *     UpdatedAt: \Aws\Api\DateTimeResult,

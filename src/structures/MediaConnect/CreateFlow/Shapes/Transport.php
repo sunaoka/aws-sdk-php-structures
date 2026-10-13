@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $NdiProgramName
  * @property NdiSourceSettings|null $NdiSourceSettings
  * @property 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null $NdiOutputTimecodeSource
+ * @property int<-40, 0>|null $NdiAudioReferenceLevel
  */
 class Transport extends Shape
 {
@@ -43,7 +44,8 @@ class Transport extends Shape
      *     NdiSpeedHqQuality?: int|null,
      *     NdiProgramName?: string|null,
      *     NdiSourceSettings?: NdiSourceSettings|null,
-     *     NdiOutputTimecodeSource?: 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null
+     *     NdiOutputTimecodeSource?: 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null,
+     *     NdiAudioReferenceLevel?: int<-40, 0>|null
      * } $args
      */
     public function __construct(array $args)

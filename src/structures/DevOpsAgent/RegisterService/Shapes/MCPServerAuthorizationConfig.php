@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MCPServerOAuth3LOConfig|null $oAuth3LO
  * @property MCPServerAPIKeyConfig|null $apiKey
  * @property MCPServerBearerTokenConfig|null $bearerToken
+ * @property MCPServerCustomHeadersConfig|null $customHeaders
  * @property MCPServerAuthorizationDiscoveryConfig|null $authorizationDiscovery
  */
 class MCPServerAuthorizationConfig extends Shape
@@ -19,6 +20,7 @@ class MCPServerAuthorizationConfig extends Shape
      *     oAuth3LO?: MCPServerOAuth3LOConfig|null,
      *     apiKey?: MCPServerAPIKeyConfig|null,
      *     bearerToken?: MCPServerBearerTokenConfig|null,
+     *     customHeaders?: MCPServerCustomHeadersConfig|null,
      *     authorizationDiscovery?: MCPServerAuthorizationDiscoveryConfig|null
      * } $args
      */
