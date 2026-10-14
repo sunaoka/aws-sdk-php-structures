@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ENABLED'|'DISABLED'|null $dependencyDiscovery
  * @property Shapes\ServiceReportConfiguration|null $reportConfiguration
  * @property string|null $kmsKeyId
+ * @property Shapes\DevOpsAgentConfiguration|null $devOpsAgentConfiguration
  * @property array<string, string>|null $tags
  * @property string|null $clientToken
  */
@@ -30,6 +31,7 @@ class CreateServiceRequest extends Request
      *     dependencyDiscovery?: 'ENABLED'|'DISABLED'|null,
      *     reportConfiguration?: Shapes\ServiceReportConfiguration|null,
      *     kmsKeyId?: string|null,
+     *     devOpsAgentConfiguration?: Shapes\DevOpsAgentConfiguration|null,
      *     tags?: array<string, string>|null,
      *     clientToken?: string|null
      * } $args

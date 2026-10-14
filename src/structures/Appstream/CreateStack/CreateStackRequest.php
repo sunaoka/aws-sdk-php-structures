@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\StreamingExperienceSettings|null $StreamingExperienceSettings
  * @property Shapes\ContentRedirection|null $ContentRedirection
  * @property Shapes\AgentAccessConfig|null $AgentAccessConfig
+ * @property 'FORCE_REAUTHENTICATION'|'REUSE_CREDENTIALS'|null $StorageConnectorAuthentication
  */
 class CreateStackRequest extends Request
 {
@@ -37,7 +38,8 @@ class CreateStackRequest extends Request
      *     EmbedHostDomains?: list<string>|null,
      *     StreamingExperienceSettings?: Shapes\StreamingExperienceSettings|null,
      *     ContentRedirection?: Shapes\ContentRedirection|null,
-     *     AgentAccessConfig?: Shapes\AgentAccessConfig|null
+     *     AgentAccessConfig?: Shapes\AgentAccessConfig|null,
+     *     StorageConnectorAuthentication?: 'FORCE_REAUTHENTICATION'|'REUSE_CREDENTIALS'|null
      * } $args
      */
     public function __construct(array $args)

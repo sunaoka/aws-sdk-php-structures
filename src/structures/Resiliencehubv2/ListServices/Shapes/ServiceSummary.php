@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $regions
  * @property string|null $policyArn
  * @property 'NOT_STARTED'|'PENDING'|'IN_PROGRESS'|'FAILED'|'SUCCESS'|null $assessmentStatus
+ * @property 'CONNECTING'|'CONNECTED'|'DISCONNECTED'|'FAILED'|null $devOpsAgentStatus
+ * @property string|null $devOpsAgentSpaceArn
  * @property int|null $openFindingsCount
  * @property int|null $resolvedFindingsCount
  * @property DependencyDiscoveryConfig|null $dependencyDiscovery
@@ -31,6 +33,8 @@ class ServiceSummary extends Shape
      *     regions?: list<string>|null,
      *     policyArn?: string|null,
      *     assessmentStatus?: 'NOT_STARTED'|'PENDING'|'IN_PROGRESS'|'FAILED'|'SUCCESS'|null,
+     *     devOpsAgentStatus?: 'CONNECTING'|'CONNECTED'|'DISCONNECTED'|'FAILED'|null,
+     *     devOpsAgentSpaceArn?: string|null,
      *     openFindingsCount?: int|null,
      *     resolvedFindingsCount?: int|null,
      *     dependencyDiscovery?: DependencyDiscoveryConfig|null,

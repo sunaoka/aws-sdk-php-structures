@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LFTagKeyResource|null $LFTag
  * @property LFTagPolicyResource|null $LFTagPolicy
  * @property LFTagExpressionResource|null $LFTagExpression
+ * @property RLSPolicyResource|null $RLSPolicy
  */
 class ResourceShape extends Shape
 {
@@ -27,7 +28,8 @@ class ResourceShape extends Shape
      *     DataCellsFilter?: DataCellsFilterResource|null,
      *     LFTag?: LFTagKeyResource|null,
      *     LFTagPolicy?: LFTagPolicyResource|null,
-     *     LFTagExpression?: LFTagExpressionResource|null
+     *     LFTagExpression?: LFTagExpressionResource|null,
+     *     RLSPolicy?: RLSPolicyResource|null
      * } $args
      */
     public function __construct(array $args = [])

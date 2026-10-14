@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CallbackStepMetadata|null $Callback
  * @property LambdaStepMetadata|null $Lambda
  * @property EMRStepMetadata|null $EMR
+ * @property EMRServerlessStepMetadata|null $EMRServerless
  * @property QualityCheckStepMetadata|null $QualityCheck
  * @property ClarifyCheckStepMetadata|null $ClarifyCheck
  * @property FailStepMetadata|null $Fail
@@ -28,6 +29,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InferenceComponentMetadata|null $InferenceComponent
  * @property LineageMetadata|null $Lineage
  * @property JobStepMetadata|null $Job
+ * @property AthenaStepMetadata|null $Athena
+ * @property CleanupStepMetadata|null $Cleanup
+ * @property ForEachStepMetadata|null $ForEach
  */
 class PipelineExecutionStepMetadata extends Shape
 {
@@ -43,6 +47,7 @@ class PipelineExecutionStepMetadata extends Shape
      *     Callback?: CallbackStepMetadata|null,
      *     Lambda?: LambdaStepMetadata|null,
      *     EMR?: EMRStepMetadata|null,
+     *     EMRServerless?: EMRServerlessStepMetadata|null,
      *     QualityCheck?: QualityCheckStepMetadata|null,
      *     ClarifyCheck?: ClarifyCheckStepMetadata|null,
      *     Fail?: FailStepMetadata|null,
@@ -55,7 +60,10 @@ class PipelineExecutionStepMetadata extends Shape
      *     BedrockModelImport?: BedrockModelImportMetadata|null,
      *     InferenceComponent?: InferenceComponentMetadata|null,
      *     Lineage?: LineageMetadata|null,
-     *     Job?: JobStepMetadata|null
+     *     Job?: JobStepMetadata|null,
+     *     Athena?: AthenaStepMetadata|null,
+     *     Cleanup?: CleanupStepMetadata|null,
+     *     ForEach?: ForEachStepMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

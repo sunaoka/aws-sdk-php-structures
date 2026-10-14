@@ -41,6 +41,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use CreateAuthCode\CreateAuthCodeTrait;
     use CreateContact\CreateContactTrait;
     use CreateContactFlow\CreateContactFlowTrait;
+    use CreateContactFlowAlias\CreateContactFlowAliasTrait;
     use CreateContactFlowModule\CreateContactFlowModuleTrait;
     use CreateContactFlowModuleAlias\CreateContactFlowModuleAliasTrait;
     use CreateContactFlowModuleVersion\CreateContactFlowModuleVersionTrait;
@@ -82,6 +83,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DeleteContactData\DeleteContactDataTrait;
     use DeleteContactEvaluation\DeleteContactEvaluationTrait;
     use DeleteContactFlow\DeleteContactFlowTrait;
+    use DeleteContactFlowAlias\DeleteContactFlowAliasTrait;
     use DeleteContactFlowModule\DeleteContactFlowModuleTrait;
     use DeleteContactFlowModuleAlias\DeleteContactFlowModuleAliasTrait;
     use DeleteContactFlowModuleVersion\DeleteContactFlowModuleVersionTrait;
@@ -124,6 +126,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DescribeContact\DescribeContactTrait;
     use DescribeContactEvaluation\DescribeContactEvaluationTrait;
     use DescribeContactFlow\DescribeContactFlowTrait;
+    use DescribeContactFlowAlias\DescribeContactFlowAliasTrait;
     use DescribeContactFlowModule\DescribeContactFlowModuleTrait;
     use DescribeContactFlowModuleAlias\DescribeContactFlowModuleAliasTrait;
     use DescribeDataTable\DescribeDataTableTrait;
@@ -202,6 +205,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ListBots\ListBotsTrait;
     use ListChildHoursOfOperations\ListChildHoursOfOperationsTrait;
     use ListContactEvaluations\ListContactEvaluationsTrait;
+    use ListContactFlowAliases\ListContactFlowAliasesTrait;
     use ListContactFlowModuleAliases\ListContactFlowModuleAliasesTrait;
     use ListContactFlowModuleVersions\ListContactFlowModuleVersionsTrait;
     use ListContactFlowModules\ListContactFlowModulesTrait;
@@ -338,6 +342,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use UpdateContact\UpdateContactTrait;
     use UpdateContactAttributes\UpdateContactAttributesTrait;
     use UpdateContactEvaluation\UpdateContactEvaluationTrait;
+    use UpdateContactFlowAlias\UpdateContactFlowAliasTrait;
     use UpdateContactFlowContent\UpdateContactFlowContentTrait;
     use UpdateContactFlowMetadata\UpdateContactFlowMetadataTrait;
     use UpdateContactFlowModuleAlias\UpdateContactFlowModuleAliasTrait;

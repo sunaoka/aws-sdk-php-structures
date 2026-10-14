@@ -26,6 +26,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Model'|'ModelServing'|'Agent'|'AgentFramework'|'AgentToolsAndIdentity'|'SafetyAndGuardrail'|'KnowledgeAndData'|'OrchestrationAndPipeline'|'ExternalEndpoint'|'Development'|'Other'|null $ResourceSubCategory
  * @property 'Managed'|'SelfHosted'|null $DiscoveryType
  * @property ResourceInfo|null $ResourceInfo
+ * @property 'Very High'|'High'|'Medium'|'Low'|'Unknown'|null $ResourceCriticality
+ * @property list<CriticalitySource>|null $CriticalitySources
  */
 class ResourceResult extends Shape
 {
@@ -51,7 +53,9 @@ class ResourceResult extends Shape
      *     ResourceConfig: ResourceConfig,
      *     ResourceSubCategory?: 'Model'|'ModelServing'|'Agent'|'AgentFramework'|'AgentToolsAndIdentity'|'SafetyAndGuardrail'|'KnowledgeAndData'|'OrchestrationAndPipeline'|'ExternalEndpoint'|'Development'|'Other'|null,
      *     DiscoveryType?: 'Managed'|'SelfHosted'|null,
-     *     ResourceInfo?: ResourceInfo|null
+     *     ResourceInfo?: ResourceInfo|null,
+     *     ResourceCriticality?: 'Very High'|'High'|'Medium'|'Low'|'Unknown'|null,
+     *     CriticalitySources?: list<CriticalitySource>|null
      * } $args
      */
     public function __construct(array $args)

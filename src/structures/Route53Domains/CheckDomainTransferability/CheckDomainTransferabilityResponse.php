@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property Shapes\DomainTransferability|null $Transferability
  * @property string|null $Message
+ * @property Shapes\PriceWithCurrency|null $Price
  */
 class CheckDomainTransferabilityResponse extends Response
 {

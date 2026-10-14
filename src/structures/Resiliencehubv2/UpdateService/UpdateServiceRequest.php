@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\PermissionModel|null $permissionModel
  * @property 'ENABLED'|'DISABLED'|null $dependencyDiscovery
  * @property Shapes\ServiceReportConfiguration|null $reportConfiguration
+ * @property Shapes\DevOpsAgentConfiguration|null $devOpsAgentConfiguration
  */
 class UpdateServiceRequest extends Request
 {
@@ -25,7 +26,8 @@ class UpdateServiceRequest extends Request
      *     regions?: list<string>|null,
      *     permissionModel?: Shapes\PermissionModel|null,
      *     dependencyDiscovery?: 'ENABLED'|'DISABLED'|null,
-     *     reportConfiguration?: Shapes\ServiceReportConfiguration|null
+     *     reportConfiguration?: Shapes\ServiceReportConfiguration|null,
+     *     devOpsAgentConfiguration?: Shapes\DevOpsAgentConfiguration|null
      * } $args
      */
     public function __construct(array $args)

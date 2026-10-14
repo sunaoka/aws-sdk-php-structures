@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $organizationId
  * @property string|null $ouId
  * @property string|null $accountId
+ * @property DevOpsAgentConfigurationView|null $devOpsAgentConfiguration
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
@@ -56,6 +57,7 @@ class Service extends Shape
      *     organizationId?: string|null,
      *     ouId?: string|null,
      *     accountId?: string|null,
+     *     devOpsAgentConfiguration?: DevOpsAgentConfigurationView|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args

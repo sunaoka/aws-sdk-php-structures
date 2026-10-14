@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CHANGED'|'ALL'|null $TransferMode
  * @property 'NONE'|'OWNER_DACL'|'OWNER_DACL_SACL'|null $SecurityDescriptorCopyFlags
  * @property 'PRESERVE'|'NONE'|null $ObjectTags
+ * @property 'PRESERVE'|'NONE'|null $ObjectMetadata
  */
 class Options extends Shape
 {
@@ -39,7 +40,8 @@ class Options extends Shape
      *     LogLevel?: 'OFF'|'BASIC'|'TRANSFER'|null,
      *     TransferMode?: 'CHANGED'|'ALL'|null,
      *     SecurityDescriptorCopyFlags?: 'NONE'|'OWNER_DACL'|'OWNER_DACL_SACL'|null,
-     *     ObjectTags?: 'PRESERVE'|'NONE'|null
+     *     ObjectTags?: 'PRESERVE'|'NONE'|null,
+     *     ObjectMetadata?: 'PRESERVE'|'NONE'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $PipelineExecutionArn
  * @property \Aws\Api\DateTimeResult|null $StartTime
- * @property 'Executing'|'Stopping'|'Stopped'|'Failed'|'Succeeded'|null $PipelineExecutionStatus
+ * @property 'Executing'|'Stopping'|'Stopped'|'Failed'|'Succeeded'|'CompletedWithFailures'|null $PipelineExecutionStatus
  * @property string|null $PipelineExecutionDescription
  * @property string|null $PipelineExecutionDisplayName
  * @property string|null $PipelineExecutionFailureReason
@@ -18,7 +18,7 @@ class PipelineExecutionSummary extends Shape
      * @param array{
      *     PipelineExecutionArn?: string|null,
      *     StartTime?: \Aws\Api\DateTimeResult|null,
-     *     PipelineExecutionStatus?: 'Executing'|'Stopping'|'Stopped'|'Failed'|'Succeeded'|null,
+     *     PipelineExecutionStatus?: 'Executing'|'Stopping'|'Stopped'|'Failed'|'Succeeded'|'CompletedWithFailures'|null,
      *     PipelineExecutionDescription?: string|null,
      *     PipelineExecutionDisplayName?: string|null,
      *     PipelineExecutionFailureReason?: string|null

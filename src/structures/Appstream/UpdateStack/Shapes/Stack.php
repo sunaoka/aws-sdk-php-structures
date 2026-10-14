@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property StreamingExperienceSettings|null $StreamingExperienceSettings
  * @property ContentRedirection|null $ContentRedirection
  * @property AgentAccessConfig|null $AgentAccessConfig
+ * @property 'FORCE_REAUTHENTICATION'|'REUSE_CREDENTIALS'|null $StorageConnectorAuthentication
  */
 class Stack extends Shape
 {
@@ -41,7 +42,8 @@ class Stack extends Shape
      *     EmbedHostDomains?: list<string>|null,
      *     StreamingExperienceSettings?: StreamingExperienceSettings|null,
      *     ContentRedirection?: ContentRedirection|null,
-     *     AgentAccessConfig?: AgentAccessConfig|null
+     *     AgentAccessConfig?: AgentAccessConfig|null,
+     *     StorageConnectorAuthentication?: 'FORCE_REAUTHENTICATION'|'REUSE_CREDENTIALS'|null
      * } $args
      */
     public function __construct(array $args)

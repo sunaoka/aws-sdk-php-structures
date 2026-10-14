@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'OPEN'|'RESOLVED'|'IRRELEVANT'|null $status
  * @property 'AVAILABILITY_SLO'|'MULTI_AZ_DISASTER_RECOVERY'|'MULTI_REGION_DISASTER_RECOVERY'|'DATA_RECOVERY'|null $policyComponent
  * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $investigationDeepLink
  */
 class FindingSummary extends Shape
 {
@@ -27,7 +28,8 @@ class FindingSummary extends Shape
      *     severity?: 'LOW'|'MEDIUM'|'HIGH'|null,
      *     status?: 'OPEN'|'RESOLVED'|'IRRELEVANT'|null,
      *     policyComponent?: 'AVAILABILITY_SLO'|'MULTI_AZ_DISASTER_RECOVERY'|'MULTI_REGION_DISASTER_RECOVERY'|'DATA_RECOVERY'|null,
-     *     updatedAt?: \Aws\Api\DateTimeResult|null
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     investigationDeepLink?: string|null
      * } $args
      */
     public function __construct(array $args = [])

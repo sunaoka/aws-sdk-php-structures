@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PermissionModel|null $permissionModel
  * @property list<string>|null $regions
  * @property 'SINGLE_ACCOUNT'|'MULTI_ACCOUNT'|null $accountTargeting
+ * @property DevOpsAgentInvestigation|null $devOpsAgentInvestigation
  */
 class TestRun extends Shape
 {
@@ -53,7 +54,8 @@ class TestRun extends Shape
      *     regionSwitchExecutionId?: string|null,
      *     permissionModel?: PermissionModel|null,
      *     regions?: list<string>|null,
-     *     accountTargeting?: 'SINGLE_ACCOUNT'|'MULTI_ACCOUNT'|null
+     *     accountTargeting?: 'SINGLE_ACCOUNT'|'MULTI_ACCOUNT'|null,
+     *     devOpsAgentInvestigation?: DevOpsAgentInvestigation|null
      * } $args
      */
     public function __construct(array $args)

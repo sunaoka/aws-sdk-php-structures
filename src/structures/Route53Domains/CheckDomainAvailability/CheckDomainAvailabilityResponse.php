@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property 'AVAILABLE'|'AVAILABLE_RESERVED'|'AVAILABLE_PREORDER'|'UNAVAILABLE'|'UNAVAILABLE_PREMIUM'|'UNAVAILABLE_RESTRICTED'|'RESERVED'|'DONT_KNOW'|'INVALID_NAME_FOR_TLD'|'PENDING'|null $Availability
+ * @property Shapes\PriceWithCurrency|null $Price
  */
 class CheckDomainAvailabilityResponse extends Response
 {

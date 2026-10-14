@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ObservabilityRecommendation>|null $observabilityRecommendations
  * @property list<TestingRecommendation>|null $testingRecommendations
  * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $investigationDeepLink
  */
 class Finding extends Shape
 {
@@ -37,7 +38,8 @@ class Finding extends Shape
      *     infrastructureAndCodeRecommendations?: list<InfrastructureAndCodeRecommendation>|null,
      *     observabilityRecommendations?: list<ObservabilityRecommendation>|null,
      *     testingRecommendations?: list<TestingRecommendation>|null,
-     *     updatedAt?: \Aws\Api\DateTimeResult|null
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     investigationDeepLink?: string|null
      * } $args
      */
     public function __construct(array $args = [])

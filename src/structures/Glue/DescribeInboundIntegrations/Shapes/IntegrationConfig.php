@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $RefreshInterval
  * @property array<string, string>|null $SourceProperties
  * @property bool|null $ContinuousSync
+ * @property string|null $TargetNamespace
  */
 class IntegrationConfig extends Shape
 {
@@ -15,7 +16,8 @@ class IntegrationConfig extends Shape
      * @param array{
      *     RefreshInterval?: string|null,
      *     SourceProperties?: array<string, string>|null,
-     *     ContinuousSync?: bool|null
+     *     ContinuousSync?: bool|null,
+     *     TargetNamespace?: string|null
      * } $args
      */
     public function __construct(array $args = [])

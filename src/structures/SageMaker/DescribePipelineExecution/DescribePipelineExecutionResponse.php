@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $PipelineArn
  * @property string|null $PipelineExecutionArn
  * @property string|null $PipelineExecutionDisplayName
- * @property 'Executing'|'Stopping'|'Stopped'|'Failed'|'Succeeded'|null $PipelineExecutionStatus
+ * @property 'Executing'|'Stopping'|'Stopped'|'Failed'|'Succeeded'|'CompletedWithFailures'|null $PipelineExecutionStatus
  * @property string|null $PipelineExecutionDescription
  * @property Shapes\PipelineExperimentConfig|null $PipelineExperimentConfig
  * @property string|null $FailureReason

@@ -6,6 +6,7 @@ class LakeFormationClient extends \Aws\LakeFormation\LakeFormationClient
 {
     use AddLFTagsToResource\AddLFTagsToResourceTrait;
     use AssumeDecoratedRoleWithSAML\AssumeDecoratedRoleWithSAMLTrait;
+    use AttachRLSPolicy\AttachRLSPolicyTrait;
     use BatchGrantPermissions\BatchGrantPermissionsTrait;
     use BatchRevokePermissions\BatchRevokePermissionsTrait;
     use CancelTransaction\CancelTransactionTrait;
@@ -15,16 +16,19 @@ class LakeFormationClient extends \Aws\LakeFormation\LakeFormationClient
     use CreateLFTagExpression\CreateLFTagExpressionTrait;
     use CreateLakeFormationIdentityCenterConfiguration\CreateLakeFormationIdentityCenterConfigurationTrait;
     use CreateLakeFormationOptIn\CreateLakeFormationOptInTrait;
+    use CreateRLSPolicy\CreateRLSPolicyTrait;
     use DeleteDataCellsFilter\DeleteDataCellsFilterTrait;
     use DeleteLFTag\DeleteLFTagTrait;
     use DeleteLFTagExpression\DeleteLFTagExpressionTrait;
     use DeleteLakeFormationIdentityCenterConfiguration\DeleteLakeFormationIdentityCenterConfigurationTrait;
     use DeleteLakeFormationOptIn\DeleteLakeFormationOptInTrait;
     use DeleteObjectsOnCancel\DeleteObjectsOnCancelTrait;
+    use DeleteRLSPolicy\DeleteRLSPolicyTrait;
     use DeregisterResource\DeregisterResourceTrait;
     use DescribeLakeFormationIdentityCenterConfiguration\DescribeLakeFormationIdentityCenterConfigurationTrait;
     use DescribeResource\DescribeResourceTrait;
     use DescribeTransaction\DescribeTransactionTrait;
+    use DetachRLSPolicy\DetachRLSPolicyTrait;
     use ExtendTransaction\ExtendTransactionTrait;
     use GetDataCellsFilter\GetDataCellsFilterTrait;
     use GetDataLakePrincipal\GetDataLakePrincipalTrait;
@@ -34,6 +38,7 @@ class LakeFormationClient extends \Aws\LakeFormation\LakeFormationClient
     use GetLFTagExpression\GetLFTagExpressionTrait;
     use GetQueryState\GetQueryStateTrait;
     use GetQueryStatistics\GetQueryStatisticsTrait;
+    use GetRLSPolicy\GetRLSPolicyTrait;
     use GetResourceLFTags\GetResourceLFTagsTrait;
     use GetTableObjects\GetTableObjectsTrait;
     use GetTemporaryDataLocationCredentials\GetTemporaryDataLocationCredentialsTrait;
@@ -47,6 +52,8 @@ class LakeFormationClient extends \Aws\LakeFormation\LakeFormationClient
     use ListLFTags\ListLFTagsTrait;
     use ListLakeFormationOptIns\ListLakeFormationOptInsTrait;
     use ListPermissions\ListPermissionsTrait;
+    use ListRLSPolicies\ListRLSPoliciesTrait;
+    use ListRLSPolicyAttachments\ListRLSPolicyAttachmentsTrait;
     use ListResources\ListResourcesTrait;
     use ListTableStorageOptimizers\ListTableStorageOptimizersTrait;
     use ListTransactions\ListTransactionsTrait;
@@ -62,6 +69,7 @@ class LakeFormationClient extends \Aws\LakeFormation\LakeFormationClient
     use UpdateLFTag\UpdateLFTagTrait;
     use UpdateLFTagExpression\UpdateLFTagExpressionTrait;
     use UpdateLakeFormationIdentityCenterConfiguration\UpdateLakeFormationIdentityCenterConfigurationTrait;
+    use UpdateRLSPolicy\UpdateRLSPolicyTrait;
     use UpdateResource\UpdateResourceTrait;
     use UpdateTableObjects\UpdateTableObjectsTrait;
     use UpdateTableStorageOptimizer\UpdateTableStorageOptimizerTrait;

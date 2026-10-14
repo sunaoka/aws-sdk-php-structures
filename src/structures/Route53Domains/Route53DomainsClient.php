@@ -18,6 +18,7 @@ class Route53DomainsClient extends \Aws\Route53Domains\Route53DomainsClient
     use EnableDomainTransferLock\EnableDomainTransferLockTrait;
     use GetContactReachabilityStatus\GetContactReachabilityStatusTrait;
     use GetDomainDetail\GetDomainDetailTrait;
+    use GetDomainPrices\GetDomainPricesTrait;
     use GetDomainSuggestions\GetDomainSuggestionsTrait;
     use GetOperationDetail\GetOperationDetailTrait;
     use ListDomains\ListDomainsTrait;

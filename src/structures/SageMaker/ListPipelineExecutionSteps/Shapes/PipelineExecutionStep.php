@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PipelineExecutionStepMetadata|null $Metadata
  * @property int|null $AttemptCount
  * @property SelectiveExecutionResult|null $SelectiveExecutionResult
+ * @property IterationContext|null $IterationContext
  */
 class PipelineExecutionStep extends Shape
 {
@@ -31,7 +32,8 @@ class PipelineExecutionStep extends Shape
      *     FailureReason?: string|null,
      *     Metadata?: PipelineExecutionStepMetadata|null,
      *     AttemptCount?: int|null,
-     *     SelectiveExecutionResult?: SelectiveExecutionResult|null
+     *     SelectiveExecutionResult?: SelectiveExecutionResult|null,
+     *     IterationContext?: IterationContext|null
      * } $args
      */
     public function __construct(array $args = [])
