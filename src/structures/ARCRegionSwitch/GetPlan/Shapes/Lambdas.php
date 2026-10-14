@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $crossAccountRole
  * @property string|null $externalId
  * @property string|null $arn
+ * @property string|null $payload
  */
 class Lambdas extends Shape
 {
@@ -15,7 +16,8 @@ class Lambdas extends Shape
      * @param array{
      *     crossAccountRole?: string|null,
      *     externalId?: string|null,
-     *     arn?: string|null
+     *     arn?: string|null,
+     *     payload?: string|null
      * } $args
      */
     public function __construct(array $args = [])

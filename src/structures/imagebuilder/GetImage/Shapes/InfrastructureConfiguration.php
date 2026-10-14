@@ -22,6 +22,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InstanceMetadataOptions|null $instanceMetadataOptions
  * @property array<string, string>|null $tags
  * @property Placement|null $placement
+ * @property bool|null $terminateInstanceOnCompletion
+ * @property ParentInstanceConfiguration|null $parentInstance
  */
 class InfrastructureConfiguration extends Shape
 {
@@ -43,7 +45,9 @@ class InfrastructureConfiguration extends Shape
      *     resourceTags?: array<string, string>|null,
      *     instanceMetadataOptions?: InstanceMetadataOptions|null,
      *     tags?: array<string, string>|null,
-     *     placement?: Placement|null
+     *     placement?: Placement|null,
+     *     terminateInstanceOnCompletion?: bool|null,
+     *     parentInstance?: ParentInstanceConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

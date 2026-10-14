@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Type
  * @property \Aws\Api\DateTimeResult|null $DateImported
  * @property list<Tag>|null $Tags
+ * @property 'SERVICE_MANAGED'|'SECRETS_MANAGER'|null $StorageType
+ * @property string|null $SecretId
  */
 class DescribedHostKey extends Shape
 {
@@ -23,7 +25,9 @@ class DescribedHostKey extends Shape
      *     Description?: string|null,
      *     Type?: string|null,
      *     DateImported?: \Aws\Api\DateTimeResult|null,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     StorageType?: 'SERVICE_MANAGED'|'SECRETS_MANAGER'|null,
+     *     SecretId?: string|null
      * } $args
      */
     public function __construct(array $args)

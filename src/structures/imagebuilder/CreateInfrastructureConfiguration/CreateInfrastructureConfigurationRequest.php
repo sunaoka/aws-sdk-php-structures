@@ -14,11 +14,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Logging|null $logging
  * @property string|null $keyPair
  * @property bool|null $terminateInstanceOnFailure
+ * @property bool|null $terminateInstanceOnCompletion
  * @property string|null $snsTopicArn
  * @property array<string, string>|null $resourceTags
  * @property Shapes\InstanceMetadataOptions|null $instanceMetadataOptions
  * @property array<string, string>|null $tags
  * @property Shapes\Placement|null $placement
+ * @property Shapes\ParentInstanceConfiguration|null $parentInstance
  * @property string $clientToken
  * @property bool|null $dryRun
  */
@@ -35,11 +37,13 @@ class CreateInfrastructureConfigurationRequest extends Request
      *     logging?: Shapes\Logging|null,
      *     keyPair?: string|null,
      *     terminateInstanceOnFailure?: bool|null,
+     *     terminateInstanceOnCompletion?: bool|null,
      *     snsTopicArn?: string|null,
      *     resourceTags?: array<string, string>|null,
      *     instanceMetadataOptions?: Shapes\InstanceMetadataOptions|null,
      *     tags?: array<string, string>|null,
      *     placement?: Shapes\Placement|null,
+     *     parentInstance?: Shapes\ParentInstanceConfiguration|null,
      *     clientToken: string,
      *     dryRun?: bool|null
      * } $args

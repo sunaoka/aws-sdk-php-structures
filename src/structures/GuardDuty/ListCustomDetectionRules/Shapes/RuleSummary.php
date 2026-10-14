@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $Description
  * @property 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW' $Severity
- * @property 'CloudTrailManagementEvent' $DataSource
+ * @property 'CloudTrailManagementEvent'|'RuntimeMonitoring' $DataSource
  * @property string $Tactic
  * @property string $Technique
  * @property string $Service
@@ -28,7 +28,7 @@ class RuleSummary extends Shape
      *     Name: string,
      *     Description: string,
      *     Severity: 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW',
-     *     DataSource: 'CloudTrailManagementEvent',
+     *     DataSource: 'CloudTrailManagementEvent'|'RuntimeMonitoring',
      *     Tactic: string,
      *     Technique: string,
      *     Service: string,

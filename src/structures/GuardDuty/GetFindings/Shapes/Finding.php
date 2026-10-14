@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Type
  * @property string $UpdatedAt
  * @property string|null $AssociatedAttackSequenceArn
+ * @property string|null $CustomDetectionRuleName
  */
 class Finding extends Shape
 {
@@ -41,7 +42,8 @@ class Finding extends Shape
      *     Title?: string|null,
      *     Type: string,
      *     UpdatedAt: string,
-     *     AssociatedAttackSequenceArn?: string|null
+     *     AssociatedAttackSequenceArn?: string|null,
+     *     CustomDetectionRuleName?: string|null
      * } $args
      */
     public function __construct(array $args)

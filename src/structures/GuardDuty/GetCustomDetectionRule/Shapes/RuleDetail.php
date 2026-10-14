@@ -10,13 +10,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $Description
  * @property 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW' $Severity
- * @property 'CloudTrailManagementEvent' $DataSource
+ * @property 'CloudTrailManagementEvent'|'RuntimeMonitoring' $DataSource
  * @property string $Tactic
  * @property string $Technique
  * @property string $Service
  * @property RuleDefinition $Definition
  * @property 'SQL'|null $Language
  * @property 'CloudTrail'|null $Schema
+ * @property DetectionRuleRuntimeMonitoringDetails|null $RuntimeMonitoringDetails
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property \Aws\Api\DateTimeResult|null $UpdatedAt
  */
@@ -29,13 +30,14 @@ class RuleDetail extends Shape
      *     Name: string,
      *     Description: string,
      *     Severity: 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW',
-     *     DataSource: 'CloudTrailManagementEvent',
+     *     DataSource: 'CloudTrailManagementEvent'|'RuntimeMonitoring',
      *     Tactic: string,
      *     Technique: string,
      *     Service: string,
      *     Definition: RuleDefinition,
      *     Language?: 'SQL'|null,
      *     Schema?: 'CloudTrail'|null,
+     *     RuntimeMonitoringDetails?: DetectionRuleRuntimeMonitoringDetails|null,
      *     CreatedAt: \Aws\Api\DateTimeResult,
      *     UpdatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
