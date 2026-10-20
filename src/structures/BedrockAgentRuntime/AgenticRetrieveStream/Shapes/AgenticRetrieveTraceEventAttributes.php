@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<AgenticRetrieveAction>|null $actions
+ * @property AgenticRetrieveAppliedInstruction|null $appliedInstruction
  * @property list<AgenticRetrieveFailure>|null $failures
  * @property string $message
  * @property list<AgenticRetrieveSourceMetadata>|null $retrievalMetadata
@@ -19,6 +20,7 @@ class AgenticRetrieveTraceEventAttributes extends Shape
     /**
      * @param array{
      *     actions?: list<AgenticRetrieveAction>|null,
+     *     appliedInstruction?: AgenticRetrieveAppliedInstruction|null,
      *     failures?: list<AgenticRetrieveFailure>|null,
      *     message: string,
      *     retrievalMetadata?: list<AgenticRetrieveSourceMetadata>|null,

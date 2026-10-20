@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $AccountIdentifiers
  * @property string|null $ResourceIdentifierPrefix
  * @property list<'AWS::EC2::Instance'|'AWS::EC2::VPC'|'AWS::Lambda::Function'|'AWS::CloudTrail'|'AWS::EKS::Cluster'|'AWS::WAFv2::WebACL'|'AWS::ElasticLoadBalancingV2::LoadBalancer'|'AWS::Route53Resolver::ResolverEndpoint'|'AWS::BedrockAgentCore::Runtime'|'AWS::BedrockAgentCore::Browser'|'AWS::BedrockAgentCore::CodeInterpreter'|'AWS::BedrockAgentCore::Gateway'|'AWS::BedrockAgentCore::Memory'|'AWS::BedrockAgentCore::WorkloadIdentity'|'AWS::BedrockAgentCore::PaymentManager'|'AWS::SecurityHub::Hub'|'AWS::CloudFront::Distribution'|'AWS::SecurityHub::HubV2'|'AWS::CloudWatch::OTelEnrichment'|'AWS::MSK::Cluster'|'AWS::S3::Bucket'|'AWS::Bedrock::KnowledgeBase'|'AWS::XRay::TransactionSearchConfig'>|null $ResourceTypes
- * @property array<'Logs'|'Metrics'|'Traces', 'Enabled'|'Disabled'|'NotApplicable'>|null $TelemetryConfigurationState
+ * @property array<'Logs'|'Metrics'|'Traces'|'Insights', 'Enabled'|'Disabled'|'NotApplicable'>|null $TelemetryConfigurationState
  * @property array<string, string>|null $ResourceTags
  * @property int<1, 50>|null $MaxResults
  * @property string|null $NextToken
@@ -20,7 +20,7 @@ class ListResourceTelemetryForOrganizationRequest extends Request
      *     AccountIdentifiers?: list<string>|null,
      *     ResourceIdentifierPrefix?: string|null,
      *     ResourceTypes?: list<'AWS::EC2::Instance'|'AWS::EC2::VPC'|'AWS::Lambda::Function'|'AWS::CloudTrail'|'AWS::EKS::Cluster'|'AWS::WAFv2::WebACL'|'AWS::ElasticLoadBalancingV2::LoadBalancer'|'AWS::Route53Resolver::ResolverEndpoint'|'AWS::BedrockAgentCore::Runtime'|'AWS::BedrockAgentCore::Browser'|'AWS::BedrockAgentCore::CodeInterpreter'|'AWS::BedrockAgentCore::Gateway'|'AWS::BedrockAgentCore::Memory'|'AWS::BedrockAgentCore::WorkloadIdentity'|'AWS::BedrockAgentCore::PaymentManager'|'AWS::SecurityHub::Hub'|'AWS::CloudFront::Distribution'|'AWS::SecurityHub::HubV2'|'AWS::CloudWatch::OTelEnrichment'|'AWS::MSK::Cluster'|'AWS::S3::Bucket'|'AWS::Bedrock::KnowledgeBase'|'AWS::XRay::TransactionSearchConfig'>|null,
-     *     TelemetryConfigurationState?: array<'Logs'|'Metrics'|'Traces', 'Enabled'|'Disabled'|'NotApplicable'>|null,
+     *     TelemetryConfigurationState?: array<'Logs'|'Metrics'|'Traces'|'Insights', 'Enabled'|'Disabled'|'NotApplicable'>|null,
      *     ResourceTags?: array<string, string>|null,
      *     MaxResults?: int<1, 50>|null,
      *     NextToken?: string|null

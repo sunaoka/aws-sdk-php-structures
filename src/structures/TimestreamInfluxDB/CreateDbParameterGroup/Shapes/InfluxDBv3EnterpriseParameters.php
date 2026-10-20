@@ -59,6 +59,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $distinctValueCacheDisableFromHistory
  * @property Duration|null $replicationInterval
  * @property Duration|null $catalogSyncInterval
+ * @property bool|null $upgradePachaTree
+ * @property int<1, 1073741824>|null $walBufferSize
+ * @property PercentOrAbsoluteLong|null $snapshotSize
+ * @property Duration|null $snapshotDuration
  */
 class InfluxDBv3EnterpriseParameters extends Shape
 {
@@ -117,7 +121,11 @@ class InfluxDBv3EnterpriseParameters extends Shape
      *     lastValueCacheDisableFromHistory?: bool|null,
      *     distinctValueCacheDisableFromHistory?: bool|null,
      *     replicationInterval?: Duration|null,
-     *     catalogSyncInterval?: Duration|null
+     *     catalogSyncInterval?: Duration|null,
+     *     upgradePachaTree?: bool|null,
+     *     walBufferSize?: int<1, 1073741824>|null,
+     *     snapshotSize?: PercentOrAbsoluteLong|null,
+     *     snapshotDuration?: Duration|null
      * } $args
      */
     public function __construct(array $args)

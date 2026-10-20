@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ServiceConnectService>|null $services
  * @property LogConfiguration|null $logConfiguration
  * @property ServiceConnectAccessLogConfiguration|null $accessLogConfiguration
+ * @property list<ServiceConnectContainerConfiguration>|null $containerConfigurations
  */
 class ServiceConnectConfiguration extends Shape
 {
@@ -19,7 +20,8 @@ class ServiceConnectConfiguration extends Shape
      *     namespace?: string|null,
      *     services?: list<ServiceConnectService>|null,
      *     logConfiguration?: LogConfiguration|null,
-     *     accessLogConfiguration?: ServiceConnectAccessLogConfiguration|null
+     *     accessLogConfiguration?: ServiceConnectAccessLogConfiguration|null,
+     *     containerConfigurations?: list<ServiceConnectContainerConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

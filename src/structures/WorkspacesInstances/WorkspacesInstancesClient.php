@@ -15,6 +15,7 @@ class WorkspacesInstancesClient extends \Aws\WorkspacesInstances\WorkspacesInsta
     use ListRegions\ListRegionsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListWorkspaceInstances\ListWorkspaceInstancesTrait;
+    use ModifyVolume\ModifyVolumeTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
 }

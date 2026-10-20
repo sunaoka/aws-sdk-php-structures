@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $Encrypted
  * @property int<0, max>|null $Iops
  * @property string|null $KmsKeyId
- * @property int<0, max>|null $SizeInGB
+ * @property int<1, 16384>|null $SizeInGB
  * @property string|null $SnapshotId
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property int<0, max>|null $Throughput
@@ -25,7 +25,7 @@ class CreateVolumeRequest extends Request
      *     Encrypted?: bool|null,
      *     Iops?: int<0, max>|null,
      *     KmsKeyId?: string|null,
-     *     SizeInGB?: int<0, max>|null,
+     *     SizeInGB?: int<1, 16384>|null,
      *     SnapshotId?: string|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     Throughput?: int<0, max>|null,

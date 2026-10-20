@@ -36,6 +36,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $externalId
  * @property RelatedDeployments|null $relatedDeployments
  * @property AlarmConfiguration|null $overrideAlarmConfiguration
+ * @property EC2DeploymentOptions|null $ec2DeploymentOptions
  */
 class DeploymentInfo extends Shape
 {
@@ -71,7 +72,8 @@ class DeploymentInfo extends Shape
      *     computePlatform?: 'Server'|'Lambda'|'ECS'|null,
      *     externalId?: string|null,
      *     relatedDeployments?: RelatedDeployments|null,
-     *     overrideAlarmConfiguration?: AlarmConfiguration|null
+     *     overrideAlarmConfiguration?: AlarmConfiguration|null,
+     *     ec2DeploymentOptions?: EC2DeploymentOptions|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ActionsSuppressor
  * @property int|null $ActionsSuppressorWaitPeriod
  * @property int|null $ActionsSuppressorExtensionPeriod
+ * @property ActionConfiguration|null $ActionConfiguration
  */
 class CompositeAlarm extends Shape
 {
@@ -47,7 +48,8 @@ class CompositeAlarm extends Shape
      *     ActionsSuppressedReason?: string|null,
      *     ActionsSuppressor?: string|null,
      *     ActionsSuppressorWaitPeriod?: int|null,
-     *     ActionsSuppressorExtensionPeriod?: int|null
+     *     ActionsSuppressorExtensionPeriod?: int|null,
+     *     ActionConfiguration?: ActionConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

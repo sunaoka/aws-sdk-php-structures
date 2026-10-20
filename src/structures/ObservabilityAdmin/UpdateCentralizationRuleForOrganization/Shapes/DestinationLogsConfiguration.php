@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LogsBackupConfiguration|null $BackupConfiguration
  * @property LogGroupNameConfiguration|null $LogGroupNameConfiguration
  * @property TagPropagationConfiguration|null $TagPropagationConfiguration
+ * @property 'ENABLED'|null $LogGroupDeletionProtection
  */
 class DestinationLogsConfiguration extends Shape
 {
@@ -17,7 +18,8 @@ class DestinationLogsConfiguration extends Shape
      *     LogsEncryptionConfiguration?: LogsEncryptionConfiguration|null,
      *     BackupConfiguration?: LogsBackupConfiguration|null,
      *     LogGroupNameConfiguration?: LogGroupNameConfiguration|null,
-     *     TagPropagationConfiguration?: TagPropagationConfiguration|null
+     *     TagPropagationConfiguration?: TagPropagationConfiguration|null,
+     *     LogGroupDeletionProtection?: 'ENABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

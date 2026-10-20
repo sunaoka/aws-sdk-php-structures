@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PhysicalConnectionRequirements|null $physicalConnectionRequirements
  * @property string|null $name
  * @property string|null $description
- * @property 'SNOWFLAKE'|'BIGQUERY'|'DOCUMENTDB'|'DYNAMODB'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'SAPHANA'|'SQLSERVER'|'TERADATA'|'VERTICA'|null $connectionType
+ * @property 'SNOWFLAKE'|'BIGQUERY'|'DOCUMENTDB'|'DYNAMODB'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'SAPHANA'|'SQLSERVER'|'TERADATA'|'VERTICA'|'ICEBERGRESTCATALOG'|'SNOWFLAKEICEBERGRESTCATALOG'|'DATABRICKSICEBERGRESTCATALOG'|null $connectionType
  * @property string|null $matchCriteria
  * @property bool|null $validateCredentials
  * @property list<'SPARK'|'ATHENA'|'PYTHON'>|null $validateForComputeEnvironments
@@ -26,7 +26,7 @@ class GlueConnectionInput extends Shape
      *     physicalConnectionRequirements?: PhysicalConnectionRequirements|null,
      *     name?: string|null,
      *     description?: string|null,
-     *     connectionType?: 'SNOWFLAKE'|'BIGQUERY'|'DOCUMENTDB'|'DYNAMODB'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'SAPHANA'|'SQLSERVER'|'TERADATA'|'VERTICA'|null,
+     *     connectionType?: 'SNOWFLAKE'|'BIGQUERY'|'DOCUMENTDB'|'DYNAMODB'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'SAPHANA'|'SQLSERVER'|'TERADATA'|'VERTICA'|'ICEBERGRESTCATALOG'|'SNOWFLAKEICEBERGRESTCATALOG'|'DATABRICKSICEBERGRESTCATALOG'|null,
      *     matchCriteria?: string|null,
      *     validateCredentials?: bool|null,
      *     validateForComputeEnvironments?: list<'SPARK'|'ATHENA'|'PYTHON'>|null,

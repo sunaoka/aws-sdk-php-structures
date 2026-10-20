@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $templateQualityScore
  * @property string|null $templateLanguage
  * @property string|null $templateCategory
+ * @property string|null $templateSource
+ * @property string|null $correctCategory
  */
 class TemplateSummary extends Shape
 {
@@ -21,7 +23,9 @@ class TemplateSummary extends Shape
      *     templateStatus?: string|null,
      *     templateQualityScore?: string|null,
      *     templateLanguage?: string|null,
-     *     templateCategory?: string|null
+     *     templateCategory?: string|null,
+     *     templateSource?: string|null,
+     *     correctCategory?: string|null
      * } $args
      */
     public function __construct(array $args = [])

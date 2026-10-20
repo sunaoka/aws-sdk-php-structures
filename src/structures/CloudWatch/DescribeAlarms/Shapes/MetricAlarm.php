@@ -38,6 +38,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property WarmUpConfiguration|null $WarmUpConfiguration
  * @property EvaluationCriteria|null $EvaluationCriteria
  * @property int<10, 3600>|null $EvaluationInterval
+ * @property ActionConfiguration|null $ActionConfiguration
  */
 class MetricAlarm extends Shape
 {
@@ -75,7 +76,8 @@ class MetricAlarm extends Shape
      *     EvaluationWindow?: EvaluationWindow|null,
      *     WarmUpConfiguration?: WarmUpConfiguration|null,
      *     EvaluationCriteria?: EvaluationCriteria|null,
-     *     EvaluationInterval?: int<10, 3600>|null
+     *     EvaluationInterval?: int<10, 3600>|null,
+     *     ActionConfiguration?: ActionConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

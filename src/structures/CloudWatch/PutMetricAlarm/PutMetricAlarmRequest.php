@@ -31,6 +31,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\WarmUpConfiguration|null $WarmUpConfiguration
  * @property Shapes\EvaluationCriteria|null $EvaluationCriteria
  * @property int<10, 3600>|null $EvaluationInterval
+ * @property Shapes\ActionConfiguration|null $ActionConfiguration
  */
 class PutMetricAlarmRequest extends Request
 {
@@ -61,7 +62,8 @@ class PutMetricAlarmRequest extends Request
      *     EvaluationWindow?: Shapes\EvaluationWindow|null,
      *     WarmUpConfiguration?: Shapes\WarmUpConfiguration|null,
      *     EvaluationCriteria?: Shapes\EvaluationCriteria|null,
-     *     EvaluationInterval?: int<10, 3600>|null
+     *     EvaluationInterval?: int<10, 3600>|null,
+     *     ActionConfiguration?: Shapes\ActionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

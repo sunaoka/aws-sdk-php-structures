@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $name
  * @property string|null $description
- * @property 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'S3'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|'AMAZON_Q'|'MLFLOW'|'VPC'|'GIT'|null $connectionType
+ * @property 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'S3'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|'AMAZON_Q'|'MLFLOW'|'VPC'|'GIT'|'ICEBERGRESTCATALOG'|'SNOWFLAKEICEBERGRESTCATALOG'|'DATABRICKSICEBERGRESTCATALOG'|null $connectionType
  * @property list<string>|null $matchCriteria
  * @property array<string, string>|null $connectionProperties
  * @property array<string, string>|null $sparkProperties
@@ -30,7 +30,7 @@ class GlueConnection extends Shape
      * @param array{
      *     name?: string|null,
      *     description?: string|null,
-     *     connectionType?: 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'S3'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|'AMAZON_Q'|'MLFLOW'|'VPC'|'GIT'|null,
+     *     connectionType?: 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'S3'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|'AMAZON_Q'|'MLFLOW'|'VPC'|'GIT'|'ICEBERGRESTCATALOG'|'SNOWFLAKEICEBERGRESTCATALOG'|'DATABRICKSICEBERGRESTCATALOG'|null,
      *     matchCriteria?: list<string>|null,
      *     connectionProperties?: array<string, string>|null,
      *     sparkProperties?: array<string, string>|null,

@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\EC2TagSet|null $ec2TagSet
  * @property list<Shapes\ECSService>|null $ecsServices
  * @property Shapes\OnPremisesTagSet|null $onPremisesTagSet
+ * @property Shapes\EC2DeploymentOptions|null $ec2DeploymentOptions
  * @property bool|null $terminationHookEnabled
  */
 class UpdateDeploymentGroupRequest extends Request
@@ -47,6 +48,7 @@ class UpdateDeploymentGroupRequest extends Request
      *     ec2TagSet?: Shapes\EC2TagSet|null,
      *     ecsServices?: list<Shapes\ECSService>|null,
      *     onPremisesTagSet?: Shapes\OnPremisesTagSet|null,
+     *     ec2DeploymentOptions?: Shapes\EC2DeploymentOptions|null,
      *     terminationHookEnabled?: bool|null
      * } $args
      */

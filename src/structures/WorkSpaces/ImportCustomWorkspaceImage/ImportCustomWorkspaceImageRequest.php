@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'WINDOWS' $Platform
  * @property 'Windows_10'|'Windows_11' $OsVersion
  * @property list<Shapes\Tag>|null $Tags
+ * @property 'CUSTOMER_MANAGED'|'SERVICE_MANAGED'|null $ImageValidationMode
  */
 class ImportCustomWorkspaceImageRequest extends Request
 {
@@ -27,7 +28,8 @@ class ImportCustomWorkspaceImageRequest extends Request
      *     InfrastructureConfigurationArn: string,
      *     Platform: 'WINDOWS',
      *     OsVersion: 'Windows_10'|'Windows_11',
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ImageValidationMode?: 'CUSTOMER_MANAGED'|'SERVICE_MANAGED'|null
      * } $args
      */
     public function __construct(array $args)

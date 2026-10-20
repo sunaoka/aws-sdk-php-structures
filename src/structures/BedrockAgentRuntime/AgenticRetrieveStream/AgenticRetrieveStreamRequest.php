@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\AgenticRetrieveMessage> $messages
  * @property string|null $nextToken
  * @property Shapes\AgenticRetrievePolicyConfiguration|null $policyConfiguration
+ * @property Shapes\AgenticRetrieveInstructionConfiguration|null $retrievalInstructionConfiguration
  * @property list<Shapes\AgenticRetriever> $retrievers
  * @property Shapes\UserContext|null $userContext
  */
@@ -24,6 +25,7 @@ class AgenticRetrieveStreamRequest extends Request
      *     messages: list<Shapes\AgenticRetrieveMessage>,
      *     nextToken?: string|null,
      *     policyConfiguration?: Shapes\AgenticRetrievePolicyConfiguration|null,
+     *     retrievalInstructionConfiguration?: Shapes\AgenticRetrieveInstructionConfiguration|null,
      *     retrievers: list<Shapes\AgenticRetriever>,
      *     userContext?: Shapes\UserContext|null
      * } $args

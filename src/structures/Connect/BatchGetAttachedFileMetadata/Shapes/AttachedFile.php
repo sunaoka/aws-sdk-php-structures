@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FileId
  * @property string $FileName
  * @property int<1, max> $FileSizeInBytes
- * @property 'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED' $FileStatus
+ * @property 'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED'|'DRAFTING' $FileStatus
  * @property CreatedByInfo|null $CreatedBy
  * @property 'CONTACT_ANALYSIS'|'EMAIL_MESSAGE'|'EMAIL_MESSAGE_PLAIN_TEXT'|'EMAIL_MESSAGE_REDACTED'|'EMAIL_MESSAGE_PLAIN_TEXT_REDACTED'|'ATTACHMENT'|'VOICE_RECORDING'|null $FileUseCaseType
  * @property string|null $AssociatedResourceArn
@@ -25,7 +25,7 @@ class AttachedFile extends Shape
      *     FileId: string,
      *     FileName: string,
      *     FileSizeInBytes: int<1, max>,
-     *     FileStatus: 'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED',
+     *     FileStatus: 'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED'|'DRAFTING',
      *     CreatedBy?: CreatedByInfo|null,
      *     FileUseCaseType?: 'CONTACT_ANALYSIS'|'EMAIL_MESSAGE'|'EMAIL_MESSAGE_PLAIN_TEXT'|'EMAIL_MESSAGE_REDACTED'|'EMAIL_MESSAGE_PLAIN_TEXT_REDACTED'|'ATTACHMENT'|'VOICE_RECORDING'|null,
      *     AssociatedResourceArn?: string|null,

@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'DISALLOW'|'OVERWRITE'|'RETAIN'|null $fileExistsBehavior
  * @property 'STANDARD'|'RESTART'|null $deploymentMode
  * @property Shapes\AlarmConfiguration|null $overrideAlarmConfiguration
+ * @property Shapes\EC2DeploymentOptions|null $ec2DeploymentOptions
  */
 class CreateDeploymentRequest extends Request
 {
@@ -33,7 +34,8 @@ class CreateDeploymentRequest extends Request
      *     updateOutdatedInstancesOnly?: bool|null,
      *     fileExistsBehavior?: 'DISALLOW'|'OVERWRITE'|'RETAIN'|null,
      *     deploymentMode?: 'STANDARD'|'RESTART'|null,
-     *     overrideAlarmConfiguration?: Shapes\AlarmConfiguration|null
+     *     overrideAlarmConfiguration?: Shapes\AlarmConfiguration|null,
+     *     ec2DeploymentOptions?: Shapes\EC2DeploymentOptions|null
      * } $args
      */
     public function __construct(array $args)

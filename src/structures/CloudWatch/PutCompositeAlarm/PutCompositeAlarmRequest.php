@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ActionsSuppressor
  * @property int|null $ActionsSuppressorWaitPeriod
  * @property int|null $ActionsSuppressorExtensionPeriod
+ * @property Shapes\ActionConfiguration|null $ActionConfiguration
  */
 class PutCompositeAlarmRequest extends Request
 {
@@ -31,7 +32,8 @@ class PutCompositeAlarmRequest extends Request
      *     Tags?: list<Shapes\Tag>|null,
      *     ActionsSuppressor?: string|null,
      *     ActionsSuppressorWaitPeriod?: int|null,
-     *     ActionsSuppressorExtensionPeriod?: int|null
+     *     ActionsSuppressorExtensionPeriod?: int|null,
+     *     ActionConfiguration?: Shapes\ActionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

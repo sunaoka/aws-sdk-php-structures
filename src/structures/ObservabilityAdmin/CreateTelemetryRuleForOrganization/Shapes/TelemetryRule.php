@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'AWS::EC2::Instance'|'AWS::EC2::VPC'|'AWS::Lambda::Function'|'AWS::CloudTrail'|'AWS::EKS::Cluster'|'AWS::WAFv2::WebACL'|'AWS::ElasticLoadBalancingV2::LoadBalancer'|'AWS::Route53Resolver::ResolverEndpoint'|'AWS::BedrockAgentCore::Runtime'|'AWS::BedrockAgentCore::Browser'|'AWS::BedrockAgentCore::CodeInterpreter'|'AWS::BedrockAgentCore::Gateway'|'AWS::BedrockAgentCore::Memory'|'AWS::BedrockAgentCore::WorkloadIdentity'|'AWS::BedrockAgentCore::PaymentManager'|'AWS::SecurityHub::Hub'|'AWS::CloudFront::Distribution'|'AWS::SecurityHub::HubV2'|'AWS::CloudWatch::OTelEnrichment'|'AWS::MSK::Cluster'|'AWS::S3::Bucket'|'AWS::Bedrock::KnowledgeBase'|'AWS::XRay::TransactionSearchConfig'|null $ResourceType
- * @property 'Logs'|'Metrics'|'Traces' $TelemetryType
+ * @property 'Logs'|'Metrics'|'Traces'|'Insights' $TelemetryType
  * @property list<'VPC_FLOW_LOGS'|'ROUTE53_RESOLVER_QUERY_LOGS'|'EKS_AUDIT_LOGS'|'EKS_AUTHENTICATOR_LOGS'|'EKS_CONTROLLER_MANAGER_LOGS'|'EKS_SCHEDULER_LOGS'|'EKS_API_LOGS'>|null $TelemetrySourceTypes
  * @property TelemetryDestinationConfiguration|null $DestinationConfiguration
  * @property string|null $Scope
@@ -20,7 +20,7 @@ class TelemetryRule extends Shape
     /**
      * @param array{
      *     ResourceType?: 'AWS::EC2::Instance'|'AWS::EC2::VPC'|'AWS::Lambda::Function'|'AWS::CloudTrail'|'AWS::EKS::Cluster'|'AWS::WAFv2::WebACL'|'AWS::ElasticLoadBalancingV2::LoadBalancer'|'AWS::Route53Resolver::ResolverEndpoint'|'AWS::BedrockAgentCore::Runtime'|'AWS::BedrockAgentCore::Browser'|'AWS::BedrockAgentCore::CodeInterpreter'|'AWS::BedrockAgentCore::Gateway'|'AWS::BedrockAgentCore::Memory'|'AWS::BedrockAgentCore::WorkloadIdentity'|'AWS::BedrockAgentCore::PaymentManager'|'AWS::SecurityHub::Hub'|'AWS::CloudFront::Distribution'|'AWS::SecurityHub::HubV2'|'AWS::CloudWatch::OTelEnrichment'|'AWS::MSK::Cluster'|'AWS::S3::Bucket'|'AWS::Bedrock::KnowledgeBase'|'AWS::XRay::TransactionSearchConfig'|null,
-     *     TelemetryType: 'Logs'|'Metrics'|'Traces',
+     *     TelemetryType: 'Logs'|'Metrics'|'Traces'|'Insights',
      *     TelemetrySourceTypes?: list<'VPC_FLOW_LOGS'|'ROUTE53_RESOLVER_QUERY_LOGS'|'EKS_AUDIT_LOGS'|'EKS_AUTHENTICATOR_LOGS'|'EKS_CONTROLLER_MANAGER_LOGS'|'EKS_SCHEDULER_LOGS'|'EKS_API_LOGS'>|null,
      *     DestinationConfiguration?: TelemetryDestinationConfiguration|null,
      *     Scope?: string|null,

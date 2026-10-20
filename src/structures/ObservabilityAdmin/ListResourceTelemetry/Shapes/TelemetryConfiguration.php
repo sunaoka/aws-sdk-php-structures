@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $AccountIdentifier
- * @property array<'Logs'|'Metrics'|'Traces', 'Enabled'|'Disabled'|'NotApplicable'>|null $TelemetryConfigurationState
+ * @property array<'Logs'|'Metrics'|'Traces'|'Insights', 'Enabled'|'Disabled'|'NotApplicable'>|null $TelemetryConfigurationState
  * @property 'AWS::EC2::Instance'|'AWS::EC2::VPC'|'AWS::Lambda::Function'|'AWS::CloudTrail'|'AWS::EKS::Cluster'|'AWS::WAFv2::WebACL'|'AWS::ElasticLoadBalancingV2::LoadBalancer'|'AWS::Route53Resolver::ResolverEndpoint'|'AWS::BedrockAgentCore::Runtime'|'AWS::BedrockAgentCore::Browser'|'AWS::BedrockAgentCore::CodeInterpreter'|'AWS::BedrockAgentCore::Gateway'|'AWS::BedrockAgentCore::Memory'|'AWS::BedrockAgentCore::WorkloadIdentity'|'AWS::BedrockAgentCore::PaymentManager'|'AWS::SecurityHub::Hub'|'AWS::CloudFront::Distribution'|'AWS::SecurityHub::HubV2'|'AWS::CloudWatch::OTelEnrichment'|'AWS::MSK::Cluster'|'AWS::S3::Bucket'|'AWS::Bedrock::KnowledgeBase'|'AWS::XRay::TransactionSearchConfig'|null $ResourceType
  * @property string|null $ResourceIdentifier
  * @property array<string, string>|null $ResourceTags
@@ -18,7 +18,7 @@ class TelemetryConfiguration extends Shape
     /**
      * @param array{
      *     AccountIdentifier?: string|null,
-     *     TelemetryConfigurationState?: array<'Logs'|'Metrics'|'Traces', 'Enabled'|'Disabled'|'NotApplicable'>|null,
+     *     TelemetryConfigurationState?: array<'Logs'|'Metrics'|'Traces'|'Insights', 'Enabled'|'Disabled'|'NotApplicable'>|null,
      *     ResourceType?: 'AWS::EC2::Instance'|'AWS::EC2::VPC'|'AWS::Lambda::Function'|'AWS::CloudTrail'|'AWS::EKS::Cluster'|'AWS::WAFv2::WebACL'|'AWS::ElasticLoadBalancingV2::LoadBalancer'|'AWS::Route53Resolver::ResolverEndpoint'|'AWS::BedrockAgentCore::Runtime'|'AWS::BedrockAgentCore::Browser'|'AWS::BedrockAgentCore::CodeInterpreter'|'AWS::BedrockAgentCore::Gateway'|'AWS::BedrockAgentCore::Memory'|'AWS::BedrockAgentCore::WorkloadIdentity'|'AWS::BedrockAgentCore::PaymentManager'|'AWS::SecurityHub::Hub'|'AWS::CloudFront::Distribution'|'AWS::SecurityHub::HubV2'|'AWS::CloudWatch::OTelEnrichment'|'AWS::MSK::Cluster'|'AWS::S3::Bucket'|'AWS::Bedrock::KnowledgeBase'|'AWS::XRay::TransactionSearchConfig'|null,
      *     ResourceIdentifier?: string|null,
      *     ResourceTags?: array<string, string>|null,

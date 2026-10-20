@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\DataSourceConfig|null $dataSourceConfig
  * @property Shapes\OutputConfig|null $outputConfig
  * @property Shapes\EvaluationJobResults|null $evaluationResults
+ * @property list<Shapes\InsightResult>|null $insightResults
  * @property Shapes\FailureAnalysisResultContent|null $failureAnalysisResult
  * @property Shapes\UserIntentClusteringResultContent|null $userIntentResult
  * @property Shapes\ExecutionSummaryClusteringResultContent|null $executionSummaryResult
