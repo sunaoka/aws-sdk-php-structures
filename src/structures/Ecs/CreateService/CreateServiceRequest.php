@@ -31,6 +31,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ServiceConnectConfiguration|null $serviceConnectConfiguration
  * @property list<Shapes\ServiceVolumeConfiguration>|null $volumeConfigurations
  * @property list<Shapes\VpcLatticeConfiguration>|null $vpcLatticeConfigurations
+ * @property list<Shapes\GatewayConnector>|null $gatewayConnectors
  * @property Shapes\MonitoringConfiguration|null $monitoring
  */
 class CreateServiceRequest extends Request
@@ -63,6 +64,7 @@ class CreateServiceRequest extends Request
      *     serviceConnectConfiguration?: Shapes\ServiceConnectConfiguration|null,
      *     volumeConfigurations?: list<Shapes\ServiceVolumeConfiguration>|null,
      *     vpcLatticeConfigurations?: list<Shapes\VpcLatticeConfiguration>|null,
+     *     gatewayConnectors?: list<Shapes\GatewayConnector>|null,
      *     monitoring?: Shapes\MonitoringConfiguration|null
      * } $args
      */

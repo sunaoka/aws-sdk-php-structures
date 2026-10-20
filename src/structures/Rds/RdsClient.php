@@ -11,6 +11,7 @@ class RdsClient extends \Aws\Rds\RdsClient
     use ApplyPendingMaintenanceAction\ApplyPendingMaintenanceActionTrait;
     use AuthorizeDBSecurityGroupIngress\AuthorizeDBSecurityGroupIngressTrait;
     use BacktrackDBCluster\BacktrackDBClusterTrait;
+    use CancelDBCapacityReservation\CancelDBCapacityReservationTrait;
     use CancelExportTask\CancelExportTaskTrait;
     use CopyDBClusterParameterGroup\CopyDBClusterParameterGroupTrait;
     use CopyDBClusterSnapshot\CopyDBClusterSnapshotTrait;
@@ -19,6 +20,7 @@ class RdsClient extends \Aws\Rds\RdsClient
     use CopyOptionGroup\CopyOptionGroupTrait;
     use CreateBlueGreenDeployment\CreateBlueGreenDeploymentTrait;
     use CreateCustomDBEngineVersion\CreateCustomDBEngineVersionTrait;
+    use CreateDBCapacityReservation\CreateDBCapacityReservationTrait;
     use CreateDBCluster\CreateDBClusterTrait;
     use CreateDBClusterEndpoint\CreateDBClusterEndpointTrait;
     use CreateDBClusterParameterGroup\CreateDBClusterParameterGroupTrait;
@@ -62,6 +64,7 @@ class RdsClient extends \Aws\Rds\RdsClient
     use DescribeAccountAttributes\DescribeAccountAttributesTrait;
     use DescribeBlueGreenDeployments\DescribeBlueGreenDeploymentsTrait;
     use DescribeCertificates\DescribeCertificatesTrait;
+    use DescribeDBCapacityReservations\DescribeDBCapacityReservationsTrait;
     use DescribeDBClusterAutomatedBackups\DescribeDBClusterAutomatedBackupsTrait;
     use DescribeDBClusterBacktracks\DescribeDBClusterBacktracksTrait;
     use DescribeDBClusterEndpoints\DescribeDBClusterEndpointsTrait;
@@ -116,6 +119,7 @@ class RdsClient extends \Aws\Rds\RdsClient
     use ModifyCertificates\ModifyCertificatesTrait;
     use ModifyCurrentDBClusterCapacity\ModifyCurrentDBClusterCapacityTrait;
     use ModifyCustomDBEngineVersion\ModifyCustomDBEngineVersionTrait;
+    use ModifyDBCapacityReservation\ModifyDBCapacityReservationTrait;
     use ModifyDBCluster\ModifyDBClusterTrait;
     use ModifyDBClusterEndpoint\ModifyDBClusterEndpointTrait;
     use ModifyDBClusterParameterGroup\ModifyDBClusterParameterGroupTrait;

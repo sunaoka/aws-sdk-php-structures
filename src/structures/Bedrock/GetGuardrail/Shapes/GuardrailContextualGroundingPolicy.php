@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<GuardrailContextualGroundingFilter> $filters
+ * @property GuardrailContextualGroundingTier|null $tier
  */
 class GuardrailContextualGroundingPolicy extends Shape
 {
     /**
-     * @param array{filters: list<GuardrailContextualGroundingFilter>} $args
+     * @param array{
+     *     filters: list<GuardrailContextualGroundingFilter>,
+     *     tier?: GuardrailContextualGroundingTier|null
+     * } $args
      */
     public function __construct(array $args)
     {

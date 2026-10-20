@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ManagedMetricAlarm>|null $metricAlarms
  * @property list<ManagedSecurityGroup>|null $serviceSecurityGroups
  * @property list<ManagedLogGroup>|null $logGroups
+ * @property list<GatewayConnection>|null $gatewayConnections
  */
 class ECSManagedResources extends Shape
 {
@@ -19,7 +20,8 @@ class ECSManagedResources extends Shape
      *     autoScaling?: ManagedAutoScaling|null,
      *     metricAlarms?: list<ManagedMetricAlarm>|null,
      *     serviceSecurityGroups?: list<ManagedSecurityGroup>|null,
-     *     logGroups?: list<ManagedLogGroup>|null
+     *     logGroups?: list<ManagedLogGroup>|null,
+     *     gatewayConnections?: list<GatewayConnection>|null
      * } $args
      */
     public function __construct(array $args = [])

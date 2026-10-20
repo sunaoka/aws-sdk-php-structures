@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $accessPointId
  * @property string $clientToken
  * @property string $fileSystemId
- * @property 'available'|'creating'|'deleting'|'deleted'|'error'|'updating' $status
+ * @property 'available'|'creating'|'deleting'|'deleted'|'error'|'updating'|'misconfigured' $status
  * @property string $ownerId
  * @property Shapes\PosixUser|null $posixUser
  * @property Shapes\RootDirectory|null $rootDirectory

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ResaleAuthorizationSort|null $ResaleAuthorizationSort
  * @property MachineLearningProductSort|null $MachineLearningProductSort
  * @property OfferSetSort|null $OfferSetSort
+ * @property ExpressPrivateOfferConfigurationSort|null $ExpressPrivateOfferConfigurationSort
  */
 class EntityTypeSort extends Shape
 {
@@ -25,7 +26,8 @@ class EntityTypeSort extends Shape
      *     ContainerProductSort?: ContainerProductSort|null,
      *     ResaleAuthorizationSort?: ResaleAuthorizationSort|null,
      *     MachineLearningProductSort?: MachineLearningProductSort|null,
-     *     OfferSetSort?: OfferSetSort|null
+     *     OfferSetSort?: OfferSetSort|null,
+     *     ExpressPrivateOfferConfigurationSort?: ExpressPrivateOfferConfigurationSort|null
      * } $args
      */
     public function __construct(array $args = [])

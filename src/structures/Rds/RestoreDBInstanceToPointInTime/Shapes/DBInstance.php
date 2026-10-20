@@ -98,6 +98,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $StorageVolumeStatus
  * @property string|null $StorageOperationStatus
  * @property int|null $StorageOperationPercentProgress
+ * @property string|null $DBCapacityReservationIdentifier
  */
 class DBInstance extends Shape
 {
@@ -195,7 +196,8 @@ class DBInstance extends Shape
      *     AdditionalStorageVolumes?: list<AdditionalStorageVolumeOutput>|null,
      *     StorageVolumeStatus?: string|null,
      *     StorageOperationStatus?: string|null,
-     *     StorageOperationPercentProgress?: int|null
+     *     StorageOperationPercentProgress?: int|null,
+     *     DBCapacityReservationIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args = [])

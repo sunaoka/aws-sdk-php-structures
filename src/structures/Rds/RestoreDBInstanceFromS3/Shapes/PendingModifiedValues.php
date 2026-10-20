@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $DedicatedLogVolume
  * @property string|null $Engine
  * @property list<AdditionalStorageVolume>|null $AdditionalStorageVolumes
+ * @property string|null $DBCapacityReservationIdentifier
  */
 class PendingModifiedValues extends Shape
 {
@@ -55,7 +56,8 @@ class PendingModifiedValues extends Shape
      *     IAMDatabaseAuthenticationEnabled?: bool|null,
      *     DedicatedLogVolume?: bool|null,
      *     Engine?: string|null,
-     *     AdditionalStorageVolumes?: list<AdditionalStorageVolume>|null
+     *     AdditionalStorageVolumes?: list<AdditionalStorageVolume>|null,
+     *     DBCapacityReservationIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args = [])

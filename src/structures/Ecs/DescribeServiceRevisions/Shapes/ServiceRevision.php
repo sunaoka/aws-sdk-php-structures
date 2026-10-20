@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ResolvedConfiguration|null $resolvedConfiguration
  * @property ECSManagedResources|null $ecsManagedResources
  * @property ServiceRevisionOverrides|null $overrides
+ * @property list<GatewayConnector>|null $gatewayConnectors
  * @property MonitoringConfiguration|null $monitoring
  */
 class ServiceRevision extends Shape
@@ -53,6 +54,7 @@ class ServiceRevision extends Shape
      *     resolvedConfiguration?: ResolvedConfiguration|null,
      *     ecsManagedResources?: ECSManagedResources|null,
      *     overrides?: ServiceRevisionOverrides|null,
+     *     gatewayConnectors?: list<GatewayConnector>|null,
      *     monitoring?: MonitoringConfiguration|null
      * } $args
      */

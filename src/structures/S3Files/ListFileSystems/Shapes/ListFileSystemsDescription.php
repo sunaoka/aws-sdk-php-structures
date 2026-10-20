@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $fileSystemId
  * @property string|null $name
  * @property string $bucket
- * @property 'available'|'creating'|'deleting'|'deleted'|'error'|'updating' $status
+ * @property 'available'|'creating'|'deleting'|'deleted'|'error'|'updating'|'misconfigured' $status
  * @property string|null $statusMessage
  * @property string $roleArn
  * @property string $ownerId
@@ -24,7 +24,7 @@ class ListFileSystemsDescription extends Shape
      *     fileSystemId: string,
      *     name?: string|null,
      *     bucket: string,
-     *     status: 'available'|'creating'|'deleting'|'deleted'|'error'|'updating',
+     *     status: 'available'|'creating'|'deleting'|'deleted'|'error'|'updating'|'misconfigured',
      *     statusMessage?: string|null,
      *     roleArn: string,
      *     ownerId: string

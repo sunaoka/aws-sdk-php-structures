@@ -71,6 +71,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $EngineLifecycleSupport
  * @property list<Shapes\AdditionalStorageVolume>|null $AdditionalStorageVolumes
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property string|null $DBCapacityReservationIdentifier
  * @property 'password'|'iam-db-auth'|null $MasterUserAuthenticationType
  */
 class CreateDBInstanceRequest extends Request
@@ -143,6 +144,7 @@ class CreateDBInstanceRequest extends Request
      *     EngineLifecycleSupport?: string|null,
      *     AdditionalStorageVolumes?: list<Shapes\AdditionalStorageVolume>|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     DBCapacityReservationIdentifier?: string|null,
      *     MasterUserAuthenticationType?: 'password'|'iam-db-auth'|null
      * } $args
      */

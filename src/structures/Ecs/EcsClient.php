@@ -4,11 +4,13 @@ namespace Sunaoka\Aws\Structures\Ecs;
 
 class EcsClient extends \Aws\Ecs\EcsClient
 {
+    use AssociateGatewayWithCluster\AssociateGatewayWithClusterTrait;
     use ContinueServiceDeployment\ContinueServiceDeploymentTrait;
     use CreateCapacityProvider\CreateCapacityProviderTrait;
     use CreateCluster\CreateClusterTrait;
     use CreateDaemon\CreateDaemonTrait;
     use CreateExpressGatewayService\CreateExpressGatewayServiceTrait;
+    use CreateGateway\CreateGatewayTrait;
     use CreateService\CreateServiceTrait;
     use CreateTaskSet\CreateTaskSetTrait;
     use DeleteAccountSetting\DeleteAccountSettingTrait;
@@ -18,6 +20,7 @@ class EcsClient extends \Aws\Ecs\EcsClient
     use DeleteDaemon\DeleteDaemonTrait;
     use DeleteDaemonTaskDefinition\DeleteDaemonTaskDefinitionTrait;
     use DeleteExpressGatewayService\DeleteExpressGatewayServiceTrait;
+    use DeleteGateway\DeleteGatewayTrait;
     use DeleteService\DeleteServiceTrait;
     use DeleteTaskDefinitions\DeleteTaskDefinitionsTrait;
     use DeleteTaskSet\DeleteTaskSetTrait;
@@ -31,12 +34,16 @@ class EcsClient extends \Aws\Ecs\EcsClient
     use DescribeDaemonRevisions\DescribeDaemonRevisionsTrait;
     use DescribeDaemonTaskDefinition\DescribeDaemonTaskDefinitionTrait;
     use DescribeExpressGatewayService\DescribeExpressGatewayServiceTrait;
+    use DescribeGateway\DescribeGatewayTrait;
+    use DescribeGatewayResources\DescribeGatewayResourcesTrait;
+    use DescribeGatewayRoute\DescribeGatewayRouteTrait;
     use DescribeServiceDeployments\DescribeServiceDeploymentsTrait;
     use DescribeServiceRevisions\DescribeServiceRevisionsTrait;
     use DescribeServices\DescribeServicesTrait;
     use DescribeTaskDefinition\DescribeTaskDefinitionTrait;
     use DescribeTaskSets\DescribeTaskSetsTrait;
     use DescribeTasks\DescribeTasksTrait;
+    use DisassociateGatewayFromCluster\DisassociateGatewayFromClusterTrait;
     use DiscoverPollEndpoint\DiscoverPollEndpointTrait;
     use ExecuteCommand\ExecuteCommandTrait;
     use GetTaskProtection\GetTaskProtectionTrait;
@@ -47,6 +54,9 @@ class EcsClient extends \Aws\Ecs\EcsClient
     use ListDaemonDeployments\ListDaemonDeploymentsTrait;
     use ListDaemonTaskDefinitions\ListDaemonTaskDefinitionsTrait;
     use ListDaemons\ListDaemonsTrait;
+    use ListGatewayClusterAssociations\ListGatewayClusterAssociationsTrait;
+    use ListGatewayRoutes\ListGatewayRoutesTrait;
+    use ListGateways\ListGatewaysTrait;
     use ListServiceDeployments\ListServiceDeploymentsTrait;
     use ListServices\ListServicesTrait;
     use ListServicesByNamespace\ListServicesByNamespaceTrait;
@@ -77,6 +87,7 @@ class EcsClient extends \Aws\Ecs\EcsClient
     use UpdateContainerInstancesState\UpdateContainerInstancesStateTrait;
     use UpdateDaemon\UpdateDaemonTrait;
     use UpdateExpressGatewayService\UpdateExpressGatewayServiceTrait;
+    use UpdateGateway\UpdateGatewayTrait;
     use UpdateService\UpdateServiceTrait;
     use UpdateServicePrimaryTaskSet\UpdateServicePrimaryTaskSetTrait;
     use UpdateTaskProtection\UpdateTaskProtectionTrait;

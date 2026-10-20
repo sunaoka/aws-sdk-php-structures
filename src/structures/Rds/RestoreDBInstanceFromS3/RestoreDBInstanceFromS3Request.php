@@ -54,6 +54,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $NetworkType
  * @property bool|null $ManageMasterUserPassword
  * @property string|null $MasterUserSecretKmsKeyId
+ * @property string|null $DBCapacityReservationIdentifier
  * @property bool|null $DedicatedLogVolume
  * @property string|null $CACertificateIdentifier
  * @property string|null $EngineLifecycleSupport
@@ -113,6 +114,7 @@ class RestoreDBInstanceFromS3Request extends Request
      *     NetworkType?: string|null,
      *     ManageMasterUserPassword?: bool|null,
      *     MasterUserSecretKmsKeyId?: string|null,
+     *     DBCapacityReservationIdentifier?: string|null,
      *     DedicatedLogVolume?: bool|null,
      *     CACertificateIdentifier?: string|null,
      *     EngineLifecycleSupport?: string|null,

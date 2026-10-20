@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CreateReplicationGroupMemberAction|null $Create
  * @property UpdateReplicationGroupMemberAction|null $Update
  * @property DeleteReplicationGroupMemberAction|null $Delete
+ * @property DisassociateReplicationGroupMemberAction|null $Disassociate
  */
 class ReplicationGroupUpdate extends Shape
 {
@@ -15,7 +16,8 @@ class ReplicationGroupUpdate extends Shape
      * @param array{
      *     Create?: CreateReplicationGroupMemberAction|null,
      *     Update?: UpdateReplicationGroupMemberAction|null,
-     *     Delete?: DeleteReplicationGroupMemberAction|null
+     *     Delete?: DeleteReplicationGroupMemberAction|null,
+     *     Disassociate?: DisassociateReplicationGroupMemberAction|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -70,6 +70,7 @@ class ElastiCacheClient extends \Aws\ElastiCache\ElastiCacheClient
     use ModifyServerlessCache\ModifyServerlessCacheTrait;
     use ModifyUser\ModifyUserTrait;
     use ModifyUserGroup\ModifyUserGroupTrait;
+    use PrepareMigration\PrepareMigrationTrait;
     use PurchaseReservedCacheNodesOffering\PurchaseReservedCacheNodesOfferingTrait;
     use RebalanceSlotsInGlobalReplicationGroup\RebalanceSlotsInGlobalReplicationGroupTrait;
     use RebootCacheCluster\RebootCacheClusterTrait;
@@ -77,6 +78,7 @@ class ElastiCacheClient extends \Aws\ElastiCache\ElastiCacheClient
     use ResetCacheParameterGroup\ResetCacheParameterGroupTrait;
     use RevokeCacheSecurityGroupIngress\RevokeCacheSecurityGroupIngressTrait;
     use StartMigration\StartMigrationTrait;
+    use StopMigration\StopMigrationTrait;
     use TestFailover\TestFailoverTrait;
     use TestMigration\TestMigrationTrait;
 }

@@ -46,6 +46,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DBClusterSnapshotIdentifier
  * @property int|null $BackupRetentionPeriod
  * @property string|null $PreferredBackupWindow
+ * @property string|null $DBCapacityReservationIdentifier
  * @property bool|null $DedicatedLogVolume
  * @property string|null $CACertificateIdentifier
  * @property string|null $EngineLifecycleSupport
@@ -99,6 +100,7 @@ class RestoreDBInstanceFromDBSnapshotRequest extends Request
      *     DBClusterSnapshotIdentifier?: string|null,
      *     BackupRetentionPeriod?: int|null,
      *     PreferredBackupWindow?: string|null,
+     *     DBCapacityReservationIdentifier?: string|null,
      *     DedicatedLogVolume?: bool|null,
      *     CACertificateIdentifier?: string|null,
      *     EngineLifecycleSupport?: string|null,

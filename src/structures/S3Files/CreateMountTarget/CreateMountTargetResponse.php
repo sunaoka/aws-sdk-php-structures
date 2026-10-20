@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $networkInterfaceId
  * @property string|null $vpcId
  * @property list<string>|null $securityGroups
- * @property 'available'|'creating'|'deleting'|'deleted'|'error'|'updating'|null $status
+ * @property 'available'|'creating'|'deleting'|'deleted'|'error'|'updating'|'misconfigured'|null $status
  * @property string|null $statusMessage
  */
 class CreateMountTargetResponse extends Response

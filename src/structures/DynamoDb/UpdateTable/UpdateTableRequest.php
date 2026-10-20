@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\OnDemandThroughput|null $OnDemandThroughput
  * @property Shapes\WarmThroughput|null $WarmThroughput
  * @property 'ENABLED'|'DISABLED'|'ENABLED_WITH_OVERRIDES'|null $GlobalTableSettingsReplicationMode
+ * @property bool|null $DisassociationProtectionEnabled
  * @property list<Shapes\VectorIndexUpdate>|null $VectorIndexUpdates
  */
 class UpdateTableRequest extends Request
@@ -41,6 +42,7 @@ class UpdateTableRequest extends Request
      *     OnDemandThroughput?: Shapes\OnDemandThroughput|null,
      *     WarmThroughput?: Shapes\WarmThroughput|null,
      *     GlobalTableSettingsReplicationMode?: 'ENABLED'|'DISABLED'|'ENABLED_WITH_OVERRIDES'|null,
+     *     DisassociationProtectionEnabled?: bool|null,
      *     VectorIndexUpdates?: list<Shapes\VectorIndexUpdate>|null
      * } $args
      */

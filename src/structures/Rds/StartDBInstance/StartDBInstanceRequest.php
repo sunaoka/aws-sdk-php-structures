@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DBInstanceIdentifier
+ * @property string|null $DBCapacityReservationIdentifier
  */
 class StartDBInstanceRequest extends Request
 {
     /**
-     * @param array{DBInstanceIdentifier: string} $args
+     * @param array{
+     *     DBInstanceIdentifier: string,
+     *     DBCapacityReservationIdentifier?: string|null
+     * } $args
      */
     public function __construct(array $args)
     {

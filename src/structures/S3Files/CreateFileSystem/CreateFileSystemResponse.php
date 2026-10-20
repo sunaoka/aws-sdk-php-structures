@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $prefix
  * @property string|null $clientToken
  * @property string|null $kmsKeyId
- * @property 'available'|'creating'|'deleting'|'deleted'|'error'|'updating'|null $status
+ * @property 'available'|'creating'|'deleting'|'deleted'|'error'|'updating'|'misconfigured'|null $status
  * @property string|null $statusMessage
  * @property string|null $roleArn
  * @property string|null $ownerId

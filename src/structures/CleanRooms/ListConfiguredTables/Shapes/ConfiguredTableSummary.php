@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $id
  * @property string $arn
  * @property string $name
+ * @property 'GLUE'|'SNOWFLAKE'|'ATHENA'|'DATABRICKS'|null $tableType
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property list<'AGGREGATION'|'LIST'|'CUSTOM'> $analysisRuleTypes
@@ -21,6 +22,7 @@ class ConfiguredTableSummary extends Shape
      *     id: string,
      *     arn: string,
      *     name: string,
+     *     tableType?: 'GLUE'|'SNOWFLAKE'|'ATHENA'|'DATABRICKS'|null,
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
      *     analysisRuleTypes: list<'AGGREGATION'|'LIST'|'CUSTOM'>,

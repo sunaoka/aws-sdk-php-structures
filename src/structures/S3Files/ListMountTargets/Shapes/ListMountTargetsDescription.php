@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $fileSystemId
  * @property string|null $ipv4Address
  * @property string|null $ipv6Address
- * @property 'available'|'creating'|'deleting'|'deleted'|'error'|'updating'|null $status
+ * @property 'available'|'creating'|'deleting'|'deleted'|'error'|'updating'|'misconfigured'|null $status
  * @property string|null $statusMessage
  * @property string $mountTargetId
  * @property string|null $networkInterfaceId
@@ -25,7 +25,7 @@ class ListMountTargetsDescription extends Shape
      *     fileSystemId?: string|null,
      *     ipv4Address?: string|null,
      *     ipv6Address?: string|null,
-     *     status?: 'available'|'creating'|'deleting'|'deleted'|'error'|'updating'|null,
+     *     status?: 'available'|'creating'|'deleting'|'deleted'|'error'|'updating'|'misconfigured'|null,
      *     statusMessage?: string|null,
      *     mountTargetId: string,
      *     networkInterfaceId?: string|null,

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $accessPointArn
  * @property string $accessPointId
  * @property string $fileSystemId
- * @property 'available'|'creating'|'deleting'|'deleted'|'error'|'updating' $status
+ * @property 'available'|'creating'|'deleting'|'deleted'|'error'|'updating'|'misconfigured' $status
  * @property string $ownerId
  * @property PosixUser|null $posixUser
  * @property RootDirectory|null $rootDirectory
@@ -21,7 +21,7 @@ class ListAccessPointsDescription extends Shape
      *     accessPointArn: string,
      *     accessPointId: string,
      *     fileSystemId: string,
-     *     status: 'available'|'creating'|'deleting'|'deleted'|'error'|'updating',
+     *     status: 'available'|'creating'|'deleting'|'deleted'|'error'|'updating'|'misconfigured',
      *     ownerId: string,
      *     posixUser?: PosixUser|null,
      *     rootDirectory?: RootDirectory|null,
