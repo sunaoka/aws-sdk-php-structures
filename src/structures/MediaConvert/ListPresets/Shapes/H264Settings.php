@@ -44,6 +44,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'INTERLACED'|'INTERLACED_OPTIMIZE'|null $ScanTypeConversionMode
  * @property 'DISABLED'|'ENABLED'|'TRANSITION_DETECTION'|null $SceneChangeDetect
  * @property int<1, 32>|null $Slices
+ * @property int<1000, 3000>|null $SlidingWindowMs
+ * @property int<1000, 1152000000>|null $SlidingWindowPeakBitrate
  * @property 'DISABLED'|'ENABLED'|null $SlowPal
  * @property int<0, 128>|null $Softness
  * @property 'DISABLED'|'ENABLED'|null $SpatialAdaptiveQuantization
@@ -96,6 +98,8 @@ class H264Settings extends Shape
      *     ScanTypeConversionMode?: 'INTERLACED'|'INTERLACED_OPTIMIZE'|null,
      *     SceneChangeDetect?: 'DISABLED'|'ENABLED'|'TRANSITION_DETECTION'|null,
      *     Slices?: int<1, 32>|null,
+     *     SlidingWindowMs?: int<1000, 3000>|null,
+     *     SlidingWindowPeakBitrate?: int<1000, 1152000000>|null,
      *     SlowPal?: 'DISABLED'|'ENABLED'|null,
      *     Softness?: int<0, 128>|null,
      *     SpatialAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null,

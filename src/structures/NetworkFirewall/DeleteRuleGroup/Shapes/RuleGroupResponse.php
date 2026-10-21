@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN'|null $Type
  * @property int|null $Capacity
- * @property 'ACTIVE'|'DELETING'|'ERROR'|null $RuleGroupStatus
+ * @property 'ACTIVE'|'DELETING'|'ERROR'|'UPDATING'|null $RuleGroupStatus
  * @property list<Tag>|null $Tags
  * @property int|null $ConsumedCapacity
  * @property int|null $NumberOfAssociations
@@ -32,7 +32,7 @@ class RuleGroupResponse extends Shape
      *     Description?: string|null,
      *     Type?: 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN'|null,
      *     Capacity?: int|null,
-     *     RuleGroupStatus?: 'ACTIVE'|'DELETING'|'ERROR'|null,
+     *     RuleGroupStatus?: 'ACTIVE'|'DELETING'|'ERROR'|'UPDATING'|null,
      *     Tags?: list<Tag>|null,
      *     ConsumedCapacity?: int|null,
      *     NumberOfAssociations?: int|null,

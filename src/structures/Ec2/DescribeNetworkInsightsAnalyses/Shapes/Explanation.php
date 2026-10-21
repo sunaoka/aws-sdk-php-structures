@@ -54,6 +54,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AnalysisComponent|null $TransitGateway
  * @property AnalysisComponent|null $TransitGatewayRouteTable
  * @property TransitGatewayRouteTableRoute|null $TransitGatewayRouteTableRoute
+ * @property AnalysisComponent|null $TransitGatewayPolicyTable
+ * @property AnalysisTransitGatewayPolicyTableEntry|null $TransitGatewayPolicyTableEntry
  * @property AnalysisComponent|null $TransitGatewayAttachment
  * @property string|null $ComponentAccount
  * @property string|null $ComponentRegion
@@ -113,6 +115,8 @@ class Explanation extends Shape
      *     TransitGateway?: AnalysisComponent|null,
      *     TransitGatewayRouteTable?: AnalysisComponent|null,
      *     TransitGatewayRouteTableRoute?: TransitGatewayRouteTableRoute|null,
+     *     TransitGatewayPolicyTable?: AnalysisComponent|null,
+     *     TransitGatewayPolicyTableEntry?: AnalysisTransitGatewayPolicyTableEntry|null,
      *     TransitGatewayAttachment?: AnalysisComponent|null,
      *     ComponentAccount?: string|null,
      *     ComponentRegion?: string|null,

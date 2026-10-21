@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $instanceName
- * @property 'CPUUtilization'|'NetworkIn'|'NetworkOut'|'StatusCheckFailed'|'StatusCheckFailed_Instance'|'StatusCheckFailed_System'|'BurstCapacityTime'|'BurstCapacityPercentage'|'MetadataNoToken' $metricName
+ * @property 'CPUUtilization'|'NetworkIn'|'NetworkOut'|'StatusCheckFailed'|'StatusCheckFailed_Instance'|'StatusCheckFailed_System'|'BurstCapacityTime'|'BurstCapacityPercentage'|'MetadataNoToken'|'DiskReadOps'|'DiskWriteOps'|'DiskReadBytes'|'DiskWriteBytes'|'DiskTotalReadTime'|'DiskTotalWriteTime'|'DiskQueueLength' $metricName
  * @property int<60, 86400> $period
  * @property \Aws\Api\DateTimeResult $startTime
  * @property \Aws\Api\DateTimeResult $endTime
@@ -18,7 +18,7 @@ class GetInstanceMetricDataRequest extends Request
     /**
      * @param array{
      *     instanceName: string,
-     *     metricName: 'CPUUtilization'|'NetworkIn'|'NetworkOut'|'StatusCheckFailed'|'StatusCheckFailed_Instance'|'StatusCheckFailed_System'|'BurstCapacityTime'|'BurstCapacityPercentage'|'MetadataNoToken',
+     *     metricName: 'CPUUtilization'|'NetworkIn'|'NetworkOut'|'StatusCheckFailed'|'StatusCheckFailed_Instance'|'StatusCheckFailed_System'|'BurstCapacityTime'|'BurstCapacityPercentage'|'MetadataNoToken'|'DiskReadOps'|'DiskWriteOps'|'DiskReadBytes'|'DiskWriteBytes'|'DiskTotalReadTime'|'DiskTotalWriteTime'|'DiskQueueLength',
      *     period: int<60, 86400>,
      *     startTime: \Aws\Api\DateTimeResult,
      *     endTime: \Aws\Api\DateTimeResult,

@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $ResultRows
  * @property int|null $ResultSize
  * @property int|null $RedshiftQueryId
+ * @property string|null $RedshiftQueryUuid
  * @property bool|null $HasResultSet
  */
 class SubStatementData extends Shape
@@ -31,6 +32,7 @@ class SubStatementData extends Shape
      *     ResultRows?: int|null,
      *     ResultSize?: int|null,
      *     RedshiftQueryId?: int|null,
+     *     RedshiftQueryUuid?: string|null,
      *     HasResultSet?: bool|null
      * } $args
      */

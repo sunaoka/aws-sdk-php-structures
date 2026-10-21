@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'OFF'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX'|null $AdaptiveQuantization
  * @property 'BIT_8'|'BIT_10'|null $BitDepth
+ * @property int<1000, 1152000000>|null $Bitrate
  * @property 'DISABLED'|'ENABLED'|null $FilmGrainSynthesis
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $FramerateControl
  * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null $FramerateConversionAlgorithm
@@ -17,8 +18,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 15>|null $NumberBFramesBetweenReferenceFrames
  * @property list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'|'SHOT_CHANGE'>|null $PerFrameMetrics
  * @property Av1QvbrSettings|null $QvbrSettings
- * @property 'QVBR'|null $RateControlMode
+ * @property 'CBR'|'QVBR'|null $RateControlMode
+ * @property 'DISABLED'|'ENABLED'|'TRANSITION_DETECTION'|null $SceneChangeDetect
  * @property int<1, 32>|null $Slices
+ * @property int<1000, 3000>|null $SlidingWindowMs
+ * @property int<1000, 1152000000>|null $SlidingWindowPeakBitrate
  * @property 'DISABLED'|'ENABLED'|null $SpatialAdaptiveQuantization
  */
 class Av1Settings extends Shape
@@ -27,6 +31,7 @@ class Av1Settings extends Shape
      * @param array{
      *     AdaptiveQuantization?: 'OFF'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX'|null,
      *     BitDepth?: 'BIT_8'|'BIT_10'|null,
+     *     Bitrate?: int<1000, 1152000000>|null,
      *     FilmGrainSynthesis?: 'DISABLED'|'ENABLED'|null,
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
      *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null,
@@ -37,8 +42,11 @@ class Av1Settings extends Shape
      *     NumberBFramesBetweenReferenceFrames?: int<0, 15>|null,
      *     PerFrameMetrics?: list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'|'SHOT_CHANGE'>|null,
      *     QvbrSettings?: Av1QvbrSettings|null,
-     *     RateControlMode?: 'QVBR'|null,
+     *     RateControlMode?: 'CBR'|'QVBR'|null,
+     *     SceneChangeDetect?: 'DISABLED'|'ENABLED'|'TRANSITION_DETECTION'|null,
      *     Slices?: int<1, 32>|null,
+     *     SlidingWindowMs?: int<1000, 3000>|null,
+     *     SlidingWindowPeakBitrate?: int<1000, 1152000000>|null,
      *     SpatialAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null
      * } $args
      */

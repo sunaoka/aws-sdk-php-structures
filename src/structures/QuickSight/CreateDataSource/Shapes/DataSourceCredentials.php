@@ -11,6 +11,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property KeyPairCredentials|null $KeyPairCredentials
  * @property WebProxyCredentials|null $WebProxyCredentials
  * @property OAuthClientCredentials|null $OAuthClientCredentials
+ * @property ServiceAccountCredentials|null $ServiceAccountCredentials
+ * @property SharePointClientCredentials|null $SharePointClientCredentials
+ * @property OneDriveClientCredentials|null $OneDriveClientCredentials
  */
 class DataSourceCredentials extends Shape
 {
@@ -21,7 +24,10 @@ class DataSourceCredentials extends Shape
      *     SecretArn?: string|null,
      *     KeyPairCredentials?: KeyPairCredentials|null,
      *     WebProxyCredentials?: WebProxyCredentials|null,
-     *     OAuthClientCredentials?: OAuthClientCredentials|null
+     *     OAuthClientCredentials?: OAuthClientCredentials|null,
+     *     ServiceAccountCredentials?: ServiceAccountCredentials|null,
+     *     SharePointClientCredentials?: SharePointClientCredentials|null,
+     *     OneDriveClientCredentials?: OneDriveClientCredentials|null
      * } $args
      */
     public function __construct(array $args = [])

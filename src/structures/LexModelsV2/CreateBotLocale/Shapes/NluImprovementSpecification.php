@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $enabled
- * @property 'Primary'|'Fallback'|null $assistedNluMode
+ * @property 'Primary'|'Fallback'|'DialogManager'|null $assistedNluMode
  * @property IntentDisambiguationSettings|null $intentDisambiguationSettings
  */
 class NluImprovementSpecification extends Shape
@@ -14,7 +14,7 @@ class NluImprovementSpecification extends Shape
     /**
      * @param array{
      *     enabled: bool,
-     *     assistedNluMode?: 'Primary'|'Fallback'|null,
+     *     assistedNluMode?: 'Primary'|'Fallback'|'DialogManager'|null,
      *     intentDisambiguationSettings?: IntentDisambiguationSettings|null
      * } $args
      */

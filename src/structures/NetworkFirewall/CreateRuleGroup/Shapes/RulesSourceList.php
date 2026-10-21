@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $Targets
- * @property list<'TLS_SNI'|'HTTP_HOST'> $TargetTypes
+ * @property list<'TLS_SNI'|'HTTP_HOST'|'AWS_ROUTE_53_RESOLVED_DOMAIN'> $TargetTypes
  * @property 'ALLOWLIST'|'DENYLIST'|'REJECTLIST'|'ALERTLIST' $GeneratedRulesType
  */
 class RulesSourceList extends Shape
@@ -14,7 +14,7 @@ class RulesSourceList extends Shape
     /**
      * @param array{
      *     Targets: list<string>,
-     *     TargetTypes: list<'TLS_SNI'|'HTTP_HOST'>,
+     *     TargetTypes: list<'TLS_SNI'|'HTTP_HOST'|'AWS_ROUTE_53_RESOLVED_DOMAIN'>,
      *     GeneratedRulesType: 'ALLOWLIST'|'DENYLIST'|'REJECTLIST'|'ALERTLIST'
      * } $args
      */

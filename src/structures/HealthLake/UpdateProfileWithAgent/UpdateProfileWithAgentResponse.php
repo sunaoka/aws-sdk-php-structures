@@ -5,8 +5,7 @@ namespace Sunaoka\Aws\Structures\HealthLake\UpdateProfileWithAgent;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AgentOutputMessage $AgentResponse
- * @property string $ConversationId
+ * @property Shapes\AgentOutputMessageStream $AgentResponse
  */
 class UpdateProfileWithAgentResponse extends Response
 {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\DescribeIntent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PromptSpecification $promptSpecification
+ * @property PromptSpecification|null $promptSpecification
  * @property ResponseSpecification|null $declinationResponse
  * @property bool|null $active
  * @property ResponseSpecification|null $confirmationResponse
@@ -23,7 +23,7 @@ class IntentConfirmationSetting extends Shape
 {
     /**
      * @param array{
-     *     promptSpecification: PromptSpecification,
+     *     promptSpecification?: PromptSpecification|null,
      *     declinationResponse?: ResponseSpecification|null,
      *     active?: bool|null,
      *     confirmationResponse?: ResponseSpecification|null,
@@ -38,7 +38,7 @@ class IntentConfirmationSetting extends Shape
      *     elicitationCodeHook?: ElicitationCodeHookInvocationSetting|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

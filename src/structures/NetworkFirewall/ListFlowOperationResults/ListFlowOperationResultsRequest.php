@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $NextToken
  * @property int<1, 100>|null $MaxResults
  * @property string|null $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
  * @property string|null $VpcEndpointId
  * @property string|null $VpcEndpointAssociationArn
  */
@@ -22,6 +23,7 @@ class ListFlowOperationResultsRequest extends Request
      *     NextToken?: string|null,
      *     MaxResults?: int<1, 100>|null,
      *     AvailabilityZone?: string|null,
+     *     AvailabilityZoneId?: string|null,
      *     VpcEndpointId?: string|null,
      *     VpcEndpointAssociationArn?: string|null
      * } $args

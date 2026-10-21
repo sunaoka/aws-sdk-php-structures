@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $FirewallArn
  * @property string|null $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
  * @property string|null $VpcEndpointAssociationArn
  * @property string|null $VpcEndpointId
  * @property 'FLOW_FLUSH'|'FLOW_CAPTURE'|null $FlowOperationType
@@ -19,6 +20,7 @@ class ListFlowOperationsRequest extends Request
      * @param array{
      *     FirewallArn: string,
      *     AvailabilityZone?: string|null,
+     *     AvailabilityZoneId?: string|null,
      *     VpcEndpointAssociationArn?: string|null,
      *     VpcEndpointId?: string|null,
      *     FlowOperationType?: 'FLOW_FLUSH'|'FLOW_CAPTURE'|null,

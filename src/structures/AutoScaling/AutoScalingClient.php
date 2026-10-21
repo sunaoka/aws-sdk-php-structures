@@ -24,6 +24,7 @@ class AutoScalingClient extends \Aws\AutoScaling\AutoScalingClient
     use DeleteTags\DeleteTagsTrait;
     use DeleteWarmPool\DeleteWarmPoolTrait;
     use DescribeAccountLimits\DescribeAccountLimitsTrait;
+    use DescribeAccountSettings\DescribeAccountSettingsTrait;
     use DescribeAdjustmentTypes\DescribeAdjustmentTypesTrait;
     use DescribeAutoScalingGroups\DescribeAutoScalingGroupsTrait;
     use DescribeAutoScalingInstances\DescribeAutoScalingInstancesTrait;
@@ -55,6 +56,7 @@ class AutoScalingClient extends \Aws\AutoScaling\AutoScalingClient
     use ExitStandby\ExitStandbyTrait;
     use GetPredictiveScalingForecast\GetPredictiveScalingForecastTrait;
     use LaunchInstances\LaunchInstancesTrait;
+    use PutAccountSetting\PutAccountSettingTrait;
     use PutLifecycleHook\PutLifecycleHookTrait;
     use PutNotificationConfiguration\PutNotificationConfigurationTrait;
     use PutScalingPolicy\PutScalingPolicyTrait;

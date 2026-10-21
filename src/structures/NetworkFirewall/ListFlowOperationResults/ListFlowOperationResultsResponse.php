@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $FirewallArn
  * @property string|null $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
  * @property string|null $VpcEndpointAssociationArn
  * @property string|null $VpcEndpointId
  * @property string|null $FlowOperationId

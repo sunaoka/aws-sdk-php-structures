@@ -23,6 +23,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use CreateDataProduct\CreateDataProductTrait;
     use CreateDataProductRevision\CreateDataProductRevisionTrait;
     use CreateDataSource\CreateDataSourceTrait;
+    use CreateDesignation\CreateDesignationTrait;
     use CreateDomain\CreateDomainTrait;
     use CreateDomainUnit\CreateDomainUnitTrait;
     use CreateEnvironment\CreateEnvironmentTrait;
@@ -51,6 +52,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use DeleteDataExportConfiguration\DeleteDataExportConfigurationTrait;
     use DeleteDataProduct\DeleteDataProductTrait;
     use DeleteDataSource\DeleteDataSourceTrait;
+    use DeleteDesignation\DeleteDesignationTrait;
     use DeleteDomain\DeleteDomainTrait;
     use DeleteDomainUnit\DeleteDomainUnitTrait;
     use DeleteEnvironment\DeleteEnvironmentTrait;
@@ -83,6 +85,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use GetDataProduct\GetDataProductTrait;
     use GetDataSource\GetDataSourceTrait;
     use GetDataSourceRun\GetDataSourceRunTrait;
+    use GetDesignation\GetDesignationTrait;
     use GetDomain\GetDomainTrait;
     use GetDomainUnit\GetDomainUnitTrait;
     use GetEnvironment\GetEnvironmentTrait;
@@ -122,6 +125,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use ListDataSourceRunActivities\ListDataSourceRunActivitiesTrait;
     use ListDataSourceRuns\ListDataSourceRunsTrait;
     use ListDataSources\ListDataSourcesTrait;
+    use ListDesignations\ListDesignationsTrait;
     use ListDomainUnitsForParent\ListDomainUnitsForParentTrait;
     use ListDomains\ListDomainsTrait;
     use ListEntityOwners\ListEntityOwnersTrait;
@@ -176,6 +180,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use UpdateAssetFilter\UpdateAssetFilterTrait;
     use UpdateConnection\UpdateConnectionTrait;
     use UpdateDataSource\UpdateDataSourceTrait;
+    use UpdateDesignation\UpdateDesignationTrait;
     use UpdateDomain\UpdateDomainTrait;
     use UpdateDomainUnit\UpdateDomainUnitTrait;
     use UpdateEnvironment\UpdateEnvironmentTrait;

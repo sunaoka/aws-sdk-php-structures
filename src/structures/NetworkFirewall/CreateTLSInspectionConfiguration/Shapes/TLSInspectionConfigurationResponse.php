@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TLSInspectionConfigurationArn
  * @property string $TLSInspectionConfigurationName
  * @property string $TLSInspectionConfigurationId
- * @property 'ACTIVE'|'DELETING'|'ERROR'|null $TLSInspectionConfigurationStatus
+ * @property 'ACTIVE'|'DELETING'|'ERROR'|'UPDATING'|null $TLSInspectionConfigurationStatus
  * @property string|null $Description
  * @property list<Tag>|null $Tags
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
@@ -24,7 +24,7 @@ class TLSInspectionConfigurationResponse extends Shape
      *     TLSInspectionConfigurationArn: string,
      *     TLSInspectionConfigurationName: string,
      *     TLSInspectionConfigurationId: string,
-     *     TLSInspectionConfigurationStatus?: 'ACTIVE'|'DELETING'|'ERROR'|null,
+     *     TLSInspectionConfigurationStatus?: 'ACTIVE'|'DELETING'|'ERROR'|'UPDATING'|null,
      *     Description?: string|null,
      *     Tags?: list<Tag>|null,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,

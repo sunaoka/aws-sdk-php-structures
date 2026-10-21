@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<AdditionalDetail>|null $AdditionalDetails
  * @property AnalysisComponent|null $TransitGateway
  * @property TransitGatewayRouteTableRoute|null $TransitGatewayRouteTableRoute
+ * @property AnalysisTransitGatewayPolicyTableEntry|null $TransitGatewayPolicyTableEntry
  * @property list<Explanation>|null $Explanations
  * @property AnalysisComponent|null $ElasticLoadBalancerListener
  * @property FirewallStatelessRule|null $FirewallStatelessRule
@@ -45,6 +46,7 @@ class PathComponent extends Shape
      *     AdditionalDetails?: list<AdditionalDetail>|null,
      *     TransitGateway?: AnalysisComponent|null,
      *     TransitGatewayRouteTableRoute?: TransitGatewayRouteTableRoute|null,
+     *     TransitGatewayPolicyTableEntry?: AnalysisTransitGatewayPolicyTableEntry|null,
      *     Explanations?: list<Explanation>|null,
      *     ElasticLoadBalancerListener?: AnalysisComponent|null,
      *     FirewallStatelessRule?: FirewallStatelessRule|null,

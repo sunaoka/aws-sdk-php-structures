@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $ResultRows
  * @property int|null $ResultSize
  * @property int|null $RedshiftQueryId
+ * @property string|null $RedshiftQueryUuid
  * @property list<Shapes\SqlParameter>|null $QueryParameters
  * @property list<Shapes\SubStatementData>|null $SubStatements
  * @property string|null $WorkgroupName

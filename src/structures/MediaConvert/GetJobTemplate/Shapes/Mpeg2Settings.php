@@ -33,6 +33,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'VBR'|'CBR'|null $RateControlMode
  * @property 'INTERLACED'|'INTERLACED_OPTIMIZE'|null $ScanTypeConversionMode
  * @property 'DISABLED'|'ENABLED'|null $SceneChangeDetect
+ * @property int<1000, 3000>|null $SlidingWindowMs
+ * @property int<1000, 300000000>|null $SlidingWindowPeakBitrate
  * @property 'DISABLED'|'ENABLED'|null $SlowPal
  * @property int<0, 128>|null $Softness
  * @property 'DISABLED'|'ENABLED'|null $SpatialAdaptiveQuantization
@@ -72,6 +74,8 @@ class Mpeg2Settings extends Shape
      *     RateControlMode?: 'VBR'|'CBR'|null,
      *     ScanTypeConversionMode?: 'INTERLACED'|'INTERLACED_OPTIMIZE'|null,
      *     SceneChangeDetect?: 'DISABLED'|'ENABLED'|null,
+     *     SlidingWindowMs?: int<1000, 3000>|null,
+     *     SlidingWindowPeakBitrate?: int<1000, 300000000>|null,
      *     SlowPal?: 'DISABLED'|'ENABLED'|null,
      *     Softness?: int<0, 128>|null,
      *     SpatialAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null,

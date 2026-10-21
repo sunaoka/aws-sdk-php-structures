@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SecurityProfileName
  * @property string|null $Description
  * @property array<string, string>|null $Tags
+ * @property 'AWS_MANAGED'|'CUSTOMER_MANAGED'|null $Type
  */
 class SecurityProfileSearchSummary extends Shape
 {
@@ -21,7 +22,8 @@ class SecurityProfileSearchSummary extends Shape
      *     Arn?: string|null,
      *     SecurityProfileName?: string|null,
      *     Description?: string|null,
-     *     Tags?: array<string, string>|null
+     *     Tags?: array<string, string>|null,
+     *     Type?: 'AWS_MANAGED'|'CUSTOMER_MANAGED'|null
      * } $args
      */
     public function __construct(array $args = [])

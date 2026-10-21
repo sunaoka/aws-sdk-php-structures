@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Name
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property string|null $LastModifiedRegion
+ * @property 'AWS_MANAGED'|'CUSTOMER_MANAGED'|null $Type
  */
 class SecurityProfileSummary extends Shape
 {
@@ -19,7 +20,8 @@ class SecurityProfileSummary extends Shape
      *     Arn?: string|null,
      *     Name?: string|null,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
-     *     LastModifiedRegion?: string|null
+     *     LastModifiedRegion?: string|null,
+     *     Type?: 'AWS_MANAGED'|'CUSTOMER_MANAGED'|null
      * } $args
      */
     public function __construct(array $args = [])

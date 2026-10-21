@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TLSInspectionConfigurationArn
  * @property PolicyVariables|null $PolicyVariables
  * @property bool|null $EnableTLSSessionHolding
+ * @property Route53ResolvedIPValidation|null $Route53ResolvedIPValidation
  */
 class FirewallPolicy extends Shape
 {
@@ -29,7 +30,8 @@ class FirewallPolicy extends Shape
      *     StatefulEngineOptions?: StatefulEngineOptions|null,
      *     TLSInspectionConfigurationArn?: string|null,
      *     PolicyVariables?: PolicyVariables|null,
-     *     EnableTLSSessionHolding?: bool|null
+     *     EnableTLSSessionHolding?: bool|null,
+     *     Route53ResolvedIPValidation?: Route53ResolvedIPValidation|null
      * } $args
      */
     public function __construct(array $args)
