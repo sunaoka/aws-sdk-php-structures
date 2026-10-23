@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $AttachmentPolicyRuleNumber
  * @property string|null $SegmentName
  * @property string|null $NetworkFunctionGroupName
+ * @property 'ENABLED'|'ENABLING'|'DISABLED'|'DISABLING'|'PENDING_ATTACHMENT_ACCEPTANCE'|null $NatGatewaySupport
+ * @property bool|null $NatSystemRouteSupport
  * @property list<Tag>|null $Tags
  * @property ProposedSegmentChange|null $ProposedSegmentChange
  * @property ProposedNetworkFunctionGroupChange|null $ProposedNetworkFunctionGroupChange
@@ -40,6 +42,8 @@ class Attachment extends Shape
      *     AttachmentPolicyRuleNumber?: int|null,
      *     SegmentName?: string|null,
      *     NetworkFunctionGroupName?: string|null,
+     *     NatGatewaySupport?: 'ENABLED'|'ENABLING'|'DISABLED'|'DISABLING'|'PENDING_ATTACHMENT_ACCEPTANCE'|null,
+     *     NatSystemRouteSupport?: bool|null,
      *     Tags?: list<Tag>|null,
      *     ProposedSegmentChange?: ProposedSegmentChange|null,
      *     ProposedNetworkFunctionGroupChange?: ProposedNetworkFunctionGroupChange|null,

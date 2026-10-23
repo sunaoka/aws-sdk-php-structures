@@ -13,8 +13,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $SupernetOfMatches
  * @property list<string>|null $PrefixListIds
  * @property list<'ACTIVE'|'BLACKHOLE'>|null $States
- * @property list<'PROPAGATED'|'STATIC'>|null $Types
+ * @property list<'PROPAGATED'|'STATIC'|'SYSTEM'>|null $Types
  * @property array<string, list<string>>|null $DestinationFilters
+ * @property int<1, 500>|null $MaxResults
+ * @property string|null $NextToken
  */
 class GetNetworkRoutesRequest extends Request
 {
@@ -28,8 +30,10 @@ class GetNetworkRoutesRequest extends Request
      *     SupernetOfMatches?: list<string>|null,
      *     PrefixListIds?: list<string>|null,
      *     States?: list<'ACTIVE'|'BLACKHOLE'>|null,
-     *     Types?: list<'PROPAGATED'|'STATIC'>|null,
-     *     DestinationFilters?: array<string, list<string>>|null
+     *     Types?: list<'PROPAGATED'|'STATIC'|'SYSTEM'>|null,
+     *     DestinationFilters?: array<string, list<string>>|null,
+     *     MaxResults?: int<1, 500>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,9 +7,11 @@ class ElementalInferenceClient extends \Aws\ElementalInference\ElementalInferenc
     use AssociateFeed\AssociateFeedTrait;
     use CreateDictionary\CreateDictionaryTrait;
     use CreateFeed\CreateFeedTrait;
+    use CreateScheduleAction\CreateScheduleActionTrait;
     use DeleteDictionary\DeleteDictionaryTrait;
     use DeleteFeed\DeleteFeedTrait;
     use DeleteFeedPolicy\DeleteFeedPolicyTrait;
+    use DeleteScheduleAction\DeleteScheduleActionTrait;
     use DisassociateFeed\DisassociateFeedTrait;
     use ExportDictionaryEntries\ExportDictionaryEntriesTrait;
     use GetDictionary\GetDictionaryTrait;
@@ -18,6 +20,7 @@ class ElementalInferenceClient extends \Aws\ElementalInference\ElementalInferenc
     use GetFixture\GetFixtureTrait;
     use ListDictionaries\ListDictionariesTrait;
     use ListFeeds\ListFeedsTrait;
+    use ListScheduleActions\ListScheduleActionsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PutFeedPolicy\PutFeedPolicyTrait;
     use SearchFixtures\SearchFixturesTrait;

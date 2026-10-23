@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $evaluatorArn
  * @property string $evaluatorId
  * @property string $evaluatorName
+ * @property string|null $evaluationDimensionName
  * @property string|null $explanation
  * @property Context $context
  * @property double|null $value
@@ -24,6 +25,7 @@ class EvaluationResultContent extends Shape
      *     evaluatorArn: string,
      *     evaluatorId: string,
      *     evaluatorName: string,
+     *     evaluationDimensionName?: string|null,
      *     explanation?: string|null,
      *     context: Context,
      *     value?: double|null,

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $connectorArn
- * @property 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED'|'RESTARTING'|null $connectorState
+ * @property 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED'|'PAUSED'|'RESTARTING'|'PAUSING'|'RESUMING'|null $connectorState
  * @property string|null $connectorOperationArn
  */
 class UpdateConnectorResponse extends Response

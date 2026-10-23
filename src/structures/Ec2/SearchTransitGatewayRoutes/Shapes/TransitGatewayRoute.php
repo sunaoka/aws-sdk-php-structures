@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PrefixListId
  * @property string|null $TransitGatewayRouteTableAnnouncementId
  * @property list<TransitGatewayRouteAttachment>|null $TransitGatewayAttachments
- * @property 'static'|'propagated'|null $Type
+ * @property 'static'|'propagated'|'system'|null $Type
  * @property 'pending'|'active'|'blackhole'|'deleting'|'deleted'|null $State
  */
 class TransitGatewayRoute extends Shape
@@ -20,7 +20,7 @@ class TransitGatewayRoute extends Shape
      *     PrefixListId?: string|null,
      *     TransitGatewayRouteTableAnnouncementId?: string|null,
      *     TransitGatewayAttachments?: list<TransitGatewayRouteAttachment>|null,
-     *     Type?: 'static'|'propagated'|null,
+     *     Type?: 'static'|'propagated'|'system'|null,
      *     State?: 'pending'|'active'|'blackhole'|'deleting'|'deleted'|null
      * } $args
      */

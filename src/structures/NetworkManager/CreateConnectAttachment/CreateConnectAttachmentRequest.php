@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EdgeLocation
  * @property string $TransportAttachmentId
  * @property string|null $RoutingPolicyLabel
+ * @property 'ENABLE'|'DISABLE'|null $NatGatewaySupport
+ * @property list<Shapes\NatRuleRequest>|null $NatGatewayRules
  * @property Shapes\ConnectAttachmentOptions $Options
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $ClientToken
@@ -21,6 +23,8 @@ class CreateConnectAttachmentRequest extends Request
      *     EdgeLocation: string,
      *     TransportAttachmentId: string,
      *     RoutingPolicyLabel?: string|null,
+     *     NatGatewaySupport?: 'ENABLE'|'DISABLE'|null,
+     *     NatGatewayRules?: list<Shapes\NatRuleRequest>|null,
      *     Options: Shapes\ConnectAttachmentOptions,
      *     Tags?: list<Shapes\Tag>|null,
      *     ClientToken?: string|null

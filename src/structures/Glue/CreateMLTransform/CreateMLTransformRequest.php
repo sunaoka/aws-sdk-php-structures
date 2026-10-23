@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Role
  * @property string|null $GlueVersion
  * @property double|null $MaxCapacity
- * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null $WorkerType
+ * @property 'Standard'|'G.1X'|'G.2X'|'G.4X'|'G.8X'|'G.025X'|'Z.2X'|'G.12X'|'G.16X'|'R.1X'|'R.2X'|'R.4X'|'R.8X'|null $WorkerType
  * @property int|null $NumberOfWorkers
  * @property int<1, max>|null $Timeout
  * @property int|null $MaxRetries
@@ -30,7 +30,7 @@ class CreateMLTransformRequest extends Request
      *     Role: string,
      *     GlueVersion?: string|null,
      *     MaxCapacity?: double|null,
-     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null,
+     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.4X'|'G.8X'|'G.025X'|'Z.2X'|'G.12X'|'G.16X'|'R.1X'|'R.2X'|'R.4X'|'R.8X'|null,
      *     NumberOfWorkers?: int|null,
      *     Timeout?: int<1, max>|null,
      *     MaxRetries?: int|null,

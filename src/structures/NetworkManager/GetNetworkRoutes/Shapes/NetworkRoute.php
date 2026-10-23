@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<NetworkRouteDestination>|null $Destinations
  * @property string|null $PrefixListId
  * @property 'ACTIVE'|'BLACKHOLE'|null $State
- * @property 'PROPAGATED'|'STATIC'|null $Type
+ * @property 'PROPAGATED'|'STATIC'|'SYSTEM'|null $Type
  */
 class NetworkRoute extends Shape
 {
@@ -19,7 +19,7 @@ class NetworkRoute extends Shape
      *     Destinations?: list<NetworkRouteDestination>|null,
      *     PrefixListId?: string|null,
      *     State?: 'ACTIVE'|'BLACKHOLE'|null,
-     *     Type?: 'PROPAGATED'|'STATIC'|null
+     *     Type?: 'PROPAGATED'|'STATIC'|'SYSTEM'|null
      * } $args
      */
     public function __construct(array $args = [])

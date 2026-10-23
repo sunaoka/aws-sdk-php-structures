@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Arn
  * @property Shapes\SignInConfig|null $SignInConfig
  * @property Shapes\AgentConfig|null $AgentConfig
+ * @property \Aws\Api\DateTimeResult|null $LastFailoverTime
  */
 class GetTrafficDistributionResponse extends Response
 {

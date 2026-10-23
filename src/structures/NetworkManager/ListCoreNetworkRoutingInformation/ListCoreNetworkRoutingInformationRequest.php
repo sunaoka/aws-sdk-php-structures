@@ -9,6 +9,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SegmentName
  * @property string $EdgeLocation
  * @property array<string, list<string>>|null $NextHopFilters
+ * @property list<string>|null $ExactPrefixMatches
+ * @property list<string>|null $LongestPrefixMatches
+ * @property list<string>|null $SubnetOfMatches
+ * @property list<string>|null $SupernetOfMatches
  * @property list<string>|null $LocalPreferenceMatches
  * @property list<string>|null $ExactAsPathMatches
  * @property list<string>|null $MedMatches
@@ -24,6 +28,10 @@ class ListCoreNetworkRoutingInformationRequest extends Request
      *     SegmentName: string,
      *     EdgeLocation: string,
      *     NextHopFilters?: array<string, list<string>>|null,
+     *     ExactPrefixMatches?: list<string>|null,
+     *     LongestPrefixMatches?: list<string>|null,
+     *     SubnetOfMatches?: list<string>|null,
+     *     SupernetOfMatches?: list<string>|null,
      *     LocalPreferenceMatches?: list<string>|null,
      *     ExactAsPathMatches?: list<string>|null,
      *     MedMatches?: list<string>|null,

@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $evaluatorId
+ * @property string|null $evaluationDimensionName
  * @property EvaluatorStatistics|null $statistics
  * @property int|null $totalEvaluated
  * @property int|null $totalFailed
@@ -15,6 +16,7 @@ class EvaluatorSummary extends Shape
     /**
      * @param array{
      *     evaluatorId?: string|null,
+     *     evaluationDimensionName?: string|null,
      *     statistics?: EvaluatorStatistics|null,
      *     totalEvaluated?: int|null,
      *     totalFailed?: int|null

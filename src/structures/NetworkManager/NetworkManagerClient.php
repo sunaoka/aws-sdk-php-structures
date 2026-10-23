@@ -69,6 +69,7 @@ class NetworkManagerClient extends \Aws\NetworkManager\NetworkManagerClient
     use GetTransitGatewayRegistrations\GetTransitGatewayRegistrationsTrait;
     use GetTransitGatewayRouteTableAttachment\GetTransitGatewayRouteTableAttachmentTrait;
     use GetVpcAttachment\GetVpcAttachmentTrait;
+    use ListAttachmentNatConfigurations\ListAttachmentNatConfigurationsTrait;
     use ListAttachmentRoutingPolicyAssociations\ListAttachmentRoutingPolicyAssociationsTrait;
     use ListAttachments\ListAttachmentsTrait;
     use ListConnectPeers\ListConnectPeersTrait;
@@ -90,6 +91,7 @@ class NetworkManagerClient extends \Aws\NetworkManager\NetworkManagerClient
     use StartRouteAnalysis\StartRouteAnalysisTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateAttachmentNatConfiguration\UpdateAttachmentNatConfigurationTrait;
     use UpdateConnection\UpdateConnectionTrait;
     use UpdateCoreNetwork\UpdateCoreNetworkTrait;
     use UpdateDevice\UpdateDeviceTrait;

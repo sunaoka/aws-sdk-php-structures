@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ConnectionsList|null $Connections
  * @property double|null $MaxCapacity
  * @property int|null $NumberOfWorkers
- * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null $WorkerType
+ * @property 'Standard'|'G.1X'|'G.2X'|'G.4X'|'G.8X'|'G.025X'|'Z.2X'|'G.12X'|'G.16X'|'R.1X'|'R.2X'|'R.4X'|'R.8X'|null $WorkerType
  * @property string|null $SecurityConfiguration
  * @property string|null $GlueVersion
  * @property array<string, string>|null $Tags
@@ -36,7 +36,7 @@ class CreateSessionRequest extends Request
      *     Connections?: Shapes\ConnectionsList|null,
      *     MaxCapacity?: double|null,
      *     NumberOfWorkers?: int|null,
-     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null,
+     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.4X'|'G.8X'|'G.025X'|'Z.2X'|'G.12X'|'G.16X'|'R.1X'|'R.2X'|'R.4X'|'R.8X'|null,
      *     SecurityConfiguration?: string|null,
      *     GlueVersion?: string|null,
      *     Tags?: array<string, string>|null,

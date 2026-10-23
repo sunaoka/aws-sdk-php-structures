@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property double|null $MaxCapacity
  * @property string|null $SecurityConfiguration
  * @property Shapes\NotificationProperty|null $NotificationProperty
- * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null $WorkerType
+ * @property 'Standard'|'G.1X'|'G.2X'|'G.4X'|'G.8X'|'G.025X'|'Z.2X'|'G.12X'|'G.16X'|'R.1X'|'R.2X'|'R.4X'|'R.8X'|null $WorkerType
  * @property int|null $NumberOfWorkers
  * @property 'FLEX'|'STANDARD'|null $ExecutionClass
  * @property string|null $ExecutionRoleSessionPolicy
@@ -32,7 +32,7 @@ class StartJobRunRequest extends Request
      *     MaxCapacity?: double|null,
      *     SecurityConfiguration?: string|null,
      *     NotificationProperty?: Shapes\NotificationProperty|null,
-     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null,
+     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.4X'|'G.8X'|'G.025X'|'Z.2X'|'G.12X'|'G.16X'|'R.1X'|'R.2X'|'R.4X'|'R.8X'|null,
      *     NumberOfWorkers?: int|null,
      *     ExecutionClass?: 'FLEX'|'STANDARD'|null,
      *     ExecutionRoleSessionPolicy?: string|null

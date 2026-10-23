@@ -242,6 +242,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ListQueues\ListQueuesTrait;
     use ListQuickConnects\ListQuickConnectsTrait;
     use ListRealtimeContactAnalysisSegmentsV2\ListRealtimeContactAnalysisSegmentsV2Trait;
+    use ListReplicationFindings\ListReplicationFindingsTrait;
     use ListRoutingProfileManualAssignmentQueues\ListRoutingProfileManualAssignmentQueuesTrait;
     use ListRoutingProfileQueues\ListRoutingProfileQueuesTrait;
     use ListRoutingProfiles\ListRoutingProfilesTrait;

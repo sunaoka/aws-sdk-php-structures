@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'SEARCH'|'TIMESERIES'|'VECTORSEARCH'|null $type
  * @property string|null $description
  * @property VectorOptions|null $vectorOptions
+ * @property string|null $kmsKeyArn
  * @property string|null $arn
  * @property int|null $createdDate
  * @property int|null $lastModifiedDate
@@ -26,6 +27,7 @@ class UpdateCollectionDetail extends Shape
      *     type?: 'SEARCH'|'TIMESERIES'|'VECTORSEARCH'|null,
      *     description?: string|null,
      *     vectorOptions?: VectorOptions|null,
+     *     kmsKeyArn?: string|null,
      *     arn?: string|null,
      *     createdDate?: int|null,
      *     lastModifiedDate?: int|null,

@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $PublicKey
  * @property list<string>|null $PublicKeys
  * @property int|null $NumberOfNodes
- * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null $WorkerType
+ * @property 'Standard'|'G.1X'|'G.2X'|'G.4X'|'G.8X'|'G.025X'|'Z.2X'|'G.12X'|'G.16X'|'R.1X'|'R.2X'|'R.4X'|'R.8X'|null $WorkerType
  * @property string|null $GlueVersion
  * @property int|null $NumberOfWorkers
  * @property string|null $ExtraPythonLibsS3Path
@@ -32,7 +32,7 @@ class CreateDevEndpointRequest extends Request
      *     PublicKey?: string|null,
      *     PublicKeys?: list<string>|null,
      *     NumberOfNodes?: int|null,
-     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null,
+     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.4X'|'G.8X'|'G.025X'|'Z.2X'|'G.12X'|'G.16X'|'R.1X'|'R.2X'|'R.4X'|'R.8X'|null,
      *     GlueVersion?: string|null,
      *     NumberOfWorkers?: int|null,
      *     ExtraPythonLibsS3Path?: string|null,

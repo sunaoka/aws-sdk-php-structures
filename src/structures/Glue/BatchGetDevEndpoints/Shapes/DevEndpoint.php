@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $ZeppelinRemoteSparkInterpreterPort
  * @property string|null $PublicAddress
  * @property string|null $Status
- * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null $WorkerType
+ * @property 'Standard'|'G.1X'|'G.2X'|'G.4X'|'G.8X'|'G.025X'|'Z.2X'|'G.12X'|'G.16X'|'R.1X'|'R.2X'|'R.4X'|'R.8X'|null $WorkerType
  * @property string|null $GlueVersion
  * @property int|null $NumberOfWorkers
  * @property int|null $NumberOfNodes
@@ -44,7 +44,7 @@ class DevEndpoint extends Shape
      *     ZeppelinRemoteSparkInterpreterPort?: int|null,
      *     PublicAddress?: string|null,
      *     Status?: string|null,
-     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null,
+     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.4X'|'G.8X'|'G.025X'|'Z.2X'|'G.12X'|'G.16X'|'R.1X'|'R.2X'|'R.4X'|'R.8X'|null,
      *     GlueVersion?: string|null,
      *     NumberOfWorkers?: int|null,
      *     NumberOfNodes?: int|null,

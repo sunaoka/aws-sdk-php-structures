@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TransitGatewayAttachmentAssociation|null $Association
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property list<Tag>|null $Tags
+ * @property 'enabled'|'disabled'|'enabling'|'disabling'|null $NatGatewaySupport
  */
 class TransitGatewayAttachment extends Shape
 {
@@ -29,7 +30,8 @@ class TransitGatewayAttachment extends Shape
      *     State?: 'initiating'|'initiatingRequest'|'pendingAcceptance'|'rollingBack'|'pending'|'available'|'modifying'|'deleting'|'deleted'|'failed'|'rejected'|'rejecting'|'failing'|null,
      *     Association?: TransitGatewayAttachmentAssociation|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     NatGatewaySupport?: 'enabled'|'disabled'|'enabling'|'disabling'|null
      * } $args
      */
     public function __construct(array $args = [])

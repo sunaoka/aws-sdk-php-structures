@@ -35,6 +35,7 @@ class IVSRealTimeClient extends \Aws\IVSRealTime\IVSRealTimeClient
     use ListStages\ListStagesTrait;
     use ListStorageConfigurations\ListStorageConfigurationsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use RevokeConnectionToken\RevokeConnectionTokenTrait;
     use StartComposition\StartCompositionTrait;
     use StartParticipantReplication\StartParticipantReplicationTrait;
     use StopComposition\StopCompositionTrait;

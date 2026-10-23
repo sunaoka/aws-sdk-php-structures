@@ -619,6 +619,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetSnapshotBlockPublicAccessState\GetSnapshotBlockPublicAccessStateTrait;
     use GetSpotPlacementScores\GetSpotPlacementScoresTrait;
     use GetSubnetCidrReservations\GetSubnetCidrReservationsTrait;
+    use GetTransitGatewayAttachmentNatConfiguration\GetTransitGatewayAttachmentNatConfigurationTrait;
     use GetTransitGatewayAttachmentPropagations\GetTransitGatewayAttachmentPropagationsTrait;
     use GetTransitGatewayMeteringPolicyEntries\GetTransitGatewayMeteringPolicyEntriesTrait;
     use GetTransitGatewayMulticastDomainAssociations\GetTransitGatewayMulticastDomainAssociationsTrait;
@@ -700,6 +701,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ModifyTrafficMirrorFilterRule\ModifyTrafficMirrorFilterRuleTrait;
     use ModifyTrafficMirrorSession\ModifyTrafficMirrorSessionTrait;
     use ModifyTransitGateway\ModifyTransitGatewayTrait;
+    use ModifyTransitGatewayAttachmentNatConfiguration\ModifyTransitGatewayAttachmentNatConfigurationTrait;
     use ModifyTransitGatewayMeteringPolicy\ModifyTransitGatewayMeteringPolicyTrait;
     use ModifyTransitGatewayPolicyTableEntry\ModifyTransitGatewayPolicyTableEntryTrait;
     use ModifyTransitGatewayPrefixListReference\ModifyTransitGatewayPrefixListReferenceTrait;
