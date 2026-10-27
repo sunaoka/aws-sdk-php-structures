@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $filterByRecordingConfigurationArn
  * @property string|null $filterByPlaybackRestrictionPolicyArn
  * @property string|null $filterByAdConfigurationArn
+ * @property string|null $filterByFailoverSlateConfigurationArn
  * @property string|null $nextToken
  * @property int<1, 100>|null $maxResults
  */
@@ -20,6 +21,7 @@ class ListChannelsRequest extends Request
      *     filterByRecordingConfigurationArn?: string|null,
      *     filterByPlaybackRestrictionPolicyArn?: string|null,
      *     filterByAdConfigurationArn?: string|null,
+     *     filterByFailoverSlateConfigurationArn?: string|null,
      *     nextToken?: string|null,
      *     maxResults?: int<1, 100>|null
      * } $args

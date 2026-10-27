@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property IngestConfigurations|null $ingestConfigurations
  * @property RecordingConfiguration|null $recordingConfiguration
  * @property list<StreamEvent>|null $truncatedEvents
+ * @property FailoverSlateConfiguration|null $failoverSlateConfiguration
  */
 class StreamSession extends Shape
 {
@@ -25,7 +26,8 @@ class StreamSession extends Shape
      *     ingestConfiguration?: IngestConfiguration|null,
      *     ingestConfigurations?: IngestConfigurations|null,
      *     recordingConfiguration?: RecordingConfiguration|null,
-     *     truncatedEvents?: list<StreamEvent>|null
+     *     truncatedEvents?: list<StreamEvent>|null,
+     *     failoverSlateConfiguration?: FailoverSlateConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

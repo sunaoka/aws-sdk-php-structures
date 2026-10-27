@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MachineLearningProductFilters|null $MachineLearningProductFilters
  * @property OfferSetFilters|null $OfferSetFilters
  * @property ExpressPrivateOfferConfigurationFilters|null $ExpressPrivateOfferConfigurationFilters
+ * @property SubsidiaryAuthorizationFilters|null $SubsidiaryAuthorizationFilters
  */
 class EntityTypeFilters extends Shape
 {
@@ -27,7 +28,8 @@ class EntityTypeFilters extends Shape
      *     ResaleAuthorizationFilters?: ResaleAuthorizationFilters|null,
      *     MachineLearningProductFilters?: MachineLearningProductFilters|null,
      *     OfferSetFilters?: OfferSetFilters|null,
-     *     ExpressPrivateOfferConfigurationFilters?: ExpressPrivateOfferConfigurationFilters|null
+     *     ExpressPrivateOfferConfigurationFilters?: ExpressPrivateOfferConfigurationFilters|null,
+     *     SubsidiaryAuthorizationFilters?: SubsidiaryAuthorizationFilters|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,17 +9,20 @@ class IVSClient extends \Aws\IVS\IVSClient
     use BatchStartViewerSessionRevocation\BatchStartViewerSessionRevocationTrait;
     use CreateAdConfiguration\CreateAdConfigurationTrait;
     use CreateChannel\CreateChannelTrait;
+    use CreateFailoverSlateConfiguration\CreateFailoverSlateConfigurationTrait;
     use CreatePlaybackRestrictionPolicy\CreatePlaybackRestrictionPolicyTrait;
     use CreateRecordingConfiguration\CreateRecordingConfigurationTrait;
     use CreateStreamKey\CreateStreamKeyTrait;
     use DeleteAdConfiguration\DeleteAdConfigurationTrait;
     use DeleteChannel\DeleteChannelTrait;
+    use DeleteFailoverSlateConfiguration\DeleteFailoverSlateConfigurationTrait;
     use DeletePlaybackKeyPair\DeletePlaybackKeyPairTrait;
     use DeletePlaybackRestrictionPolicy\DeletePlaybackRestrictionPolicyTrait;
     use DeleteRecordingConfiguration\DeleteRecordingConfigurationTrait;
     use DeleteStreamKey\DeleteStreamKeyTrait;
     use GetAdConfiguration\GetAdConfigurationTrait;
     use GetChannel\GetChannelTrait;
+    use GetFailoverSlateConfiguration\GetFailoverSlateConfigurationTrait;
     use GetPlaybackKeyPair\GetPlaybackKeyPairTrait;
     use GetPlaybackRestrictionPolicy\GetPlaybackRestrictionPolicyTrait;
     use GetRecordingConfiguration\GetRecordingConfigurationTrait;
@@ -30,6 +33,7 @@ class IVSClient extends \Aws\IVS\IVSClient
     use InsertAdBreak\InsertAdBreakTrait;
     use ListAdConfigurations\ListAdConfigurationsTrait;
     use ListChannels\ListChannelsTrait;
+    use ListFailoverSlateConfigurations\ListFailoverSlateConfigurationsTrait;
     use ListPlaybackKeyPairs\ListPlaybackKeyPairsTrait;
     use ListPlaybackRestrictionPolicies\ListPlaybackRestrictionPoliciesTrait;
     use ListRecordingConfigurations\ListRecordingConfigurationsTrait;
@@ -44,5 +48,6 @@ class IVSClient extends \Aws\IVS\IVSClient
     use UntagResource\UntagResourceTrait;
     use UpdateAdConfiguration\UpdateAdConfigurationTrait;
     use UpdateChannel\UpdateChannelTrait;
+    use UpdateFailoverSlateConfiguration\UpdateFailoverSlateConfigurationTrait;
     use UpdatePlaybackRestrictionPolicy\UpdatePlaybackRestrictionPolicyTrait;
 }

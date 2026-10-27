@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool|null $enabled
+ * @property GatewayApiConfiguration|null $gatewayApi
  */
 class ElasticLoadBalancing extends Shape
 {
     /**
-     * @param array{enabled?: bool|null} $args
+     * @param array{
+     *     enabled?: bool|null,
+     *     gatewayApi?: GatewayApiConfiguration|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

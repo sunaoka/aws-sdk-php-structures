@@ -367,6 +367,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use UpdateMetricContent\UpdateMetricContentTrait;
     use UpdateMetricMetadata\UpdateMetricMetadataTrait;
     use UpdateNotificationContent\UpdateNotificationContentTrait;
+    use UpdateOutboundEmailContactMessage\UpdateOutboundEmailContactMessageTrait;
     use UpdateParticipantAuthentication\UpdateParticipantAuthenticationTrait;
     use UpdateParticipantRoleConfig\UpdateParticipantRoleConfigTrait;
     use UpdatePhoneNumber\UpdatePhoneNumberTrait;

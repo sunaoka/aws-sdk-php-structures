@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $viewerMinimumTlsProtocolVersion
  * @property string|null $defaultRootObject
  * @property list<DistributionCustomErrorResponse>|null $customErrorResponses
+ * @property WafConfig|null $waf
  */
 class LightsailDistribution extends Shape
 {
@@ -55,7 +56,8 @@ class LightsailDistribution extends Shape
      *     tags?: list<Tag>|null,
      *     viewerMinimumTlsProtocolVersion?: string|null,
      *     defaultRootObject?: string|null,
-     *     customErrorResponses?: list<DistributionCustomErrorResponse>|null
+     *     customErrorResponses?: list<DistributionCustomErrorResponse>|null,
+     *     waf?: WafConfig|null
      * } $args
      */
     public function __construct(array $args = [])

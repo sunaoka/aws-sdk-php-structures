@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Kms\GetKeyLastUsage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Decrypt'|'DeriveSharedSecret'|'Encrypt'|'GenerateDataKey'|'GenerateDataKeyPair'|'GenerateDataKeyPairWithoutPlaintext'|'GenerateDataKeyWithoutPlaintext'|'GenerateMac'|'ReEncrypt'|'Sign'|'Verify'|'VerifyMac'|null $Operation
+ * @property 'Decrypt'|'DeriveSharedSecret'|'Encrypt'|'GenerateDataKey'|'GenerateDataKeyPair'|'GenerateDataKeyPairWithoutPlaintext'|'GenerateDataKeyWithoutPlaintext'|'GenerateMac'|'ReEncrypt'|'Sign'|'Verify'|'VerifyMac'|'Encapsulate'|'Decapsulate'|null $Operation
  * @property \Aws\Api\DateTimeResult|null $Timestamp
  * @property string|null $CloudTrailEventId
  * @property string|null $KmsRequestId
@@ -14,7 +14,7 @@ class KeyLastUsageData extends Shape
 {
     /**
      * @param array{
-     *     Operation?: 'Decrypt'|'DeriveSharedSecret'|'Encrypt'|'GenerateDataKey'|'GenerateDataKeyPair'|'GenerateDataKeyPairWithoutPlaintext'|'GenerateDataKeyWithoutPlaintext'|'GenerateMac'|'ReEncrypt'|'Sign'|'Verify'|'VerifyMac'|null,
+     *     Operation?: 'Decrypt'|'DeriveSharedSecret'|'Encrypt'|'GenerateDataKey'|'GenerateDataKeyPair'|'GenerateDataKeyPairWithoutPlaintext'|'GenerateDataKeyWithoutPlaintext'|'GenerateMac'|'ReEncrypt'|'Sign'|'Verify'|'VerifyMac'|'Encapsulate'|'Decapsulate'|null,
      *     Timestamp?: \Aws\Api\DateTimeResult|null,
      *     CloudTrailEventId?: string|null,
      *     KmsRequestId?: string|null

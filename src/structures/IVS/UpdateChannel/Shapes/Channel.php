@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MultitrackInputConfiguration|null $multitrackInputConfiguration
  * @property 'TS'|'FRAGMENTED_MP4'|null $containerFormat
  * @property string|null $adConfigurationArn
+ * @property string|null $failoverSlateConfigurationArn
  */
 class Channel extends Shape
 {
@@ -41,7 +42,8 @@ class Channel extends Shape
      *     playbackRestrictionPolicyArn?: string|null,
      *     multitrackInputConfiguration?: MultitrackInputConfiguration|null,
      *     containerFormat?: 'TS'|'FRAGMENTED_MP4'|null,
-     *     adConfigurationArn?: string|null
+     *     adConfigurationArn?: string|null,
+     *     failoverSlateConfigurationArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

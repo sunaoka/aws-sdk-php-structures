@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\MultitrackInputConfiguration|null $multitrackInputConfiguration
  * @property 'TS'|'FRAGMENTED_MP4'|null $containerFormat
  * @property string|null $adConfigurationArn
+ * @property string|null $failoverSlateConfigurationArn
  */
 class CreateChannelRequest extends Request
 {
@@ -33,7 +34,8 @@ class CreateChannelRequest extends Request
      *     playbackRestrictionPolicyArn?: string|null,
      *     multitrackInputConfiguration?: Shapes\MultitrackInputConfiguration|null,
      *     containerFormat?: 'TS'|'FRAGMENTED_MP4'|null,
-     *     adConfigurationArn?: string|null
+     *     adConfigurationArn?: string|null,
+     *     failoverSlateConfigurationArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

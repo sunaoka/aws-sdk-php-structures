@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Arn
  * @property string $Id
  * @property 'CREATING'|'STANDBY'|'STARTING'|'ACTIVE'|'STOPPING'|'DELETING'|'UPDATING'|'ERROR'|'RECOVERING'|'MIGRATING' $State
- * @property 'STANDARD'|'MEDIACONNECT_FLOW'|'MEDIALIVE_INPUT' $OutputType
+ * @property 'STANDARD'|'MEDIACONNECT_FLOW'|'MEDIALIVE_INPUT'|'SOURCE_ENDPOINT' $OutputType
  * @property RouterOutputConfiguration $Configuration
  * @property 'ROUTED'|'ROUTING'|'UNROUTED' $RoutedState
  * @property string $RegionName
@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'WINDOW'|null $MaintenanceScheduleType
  * @property MaintenanceSchedule|null $MaintenanceSchedule
  * @property FabricConfiguration $FabricConfiguration
+ * @property list<string>|null $AssociatedSourceEndpointArns
  */
 class RouterOutput extends Shape
 {
@@ -38,7 +39,7 @@ class RouterOutput extends Shape
      *     Arn: string,
      *     Id: string,
      *     State: 'CREATING'|'STANDBY'|'STARTING'|'ACTIVE'|'STOPPING'|'DELETING'|'UPDATING'|'ERROR'|'RECOVERING'|'MIGRATING',
-     *     OutputType: 'STANDARD'|'MEDIACONNECT_FLOW'|'MEDIALIVE_INPUT',
+     *     OutputType: 'STANDARD'|'MEDIACONNECT_FLOW'|'MEDIALIVE_INPUT'|'SOURCE_ENDPOINT',
      *     Configuration: RouterOutputConfiguration,
      *     RoutedState: 'ROUTED'|'ROUTING'|'UNROUTED',
      *     RegionName: string,
@@ -57,7 +58,8 @@ class RouterOutput extends Shape
      *     MaintenanceConfiguration: MaintenanceConfiguration,
      *     MaintenanceScheduleType?: 'WINDOW'|null,
      *     MaintenanceSchedule?: MaintenanceSchedule|null,
-     *     FabricConfiguration: FabricConfiguration
+     *     FabricConfiguration: FabricConfiguration,
+     *     AssociatedSourceEndpointArns?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

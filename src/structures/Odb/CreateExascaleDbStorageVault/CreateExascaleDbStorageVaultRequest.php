@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<0, max> $highCapacityDatabaseStorageTotalSizeInGBs
  * @property int<0, max>|null $additionalFlashCacheInPercent
  * @property int<0, max>|null $autoscaleLimitInGBs
+ * @property string|null $cloudExadataInfrastructureId
  * @property string|null $availabilityZoneId
  * @property string|null $availabilityZone
  * @property string|null $description
@@ -25,6 +26,7 @@ class CreateExascaleDbStorageVaultRequest extends Request
      *     highCapacityDatabaseStorageTotalSizeInGBs: int<0, max>,
      *     additionalFlashCacheInPercent?: int<0, max>|null,
      *     autoscaleLimitInGBs?: int<0, max>|null,
+     *     cloudExadataInfrastructureId?: string|null,
      *     availabilityZoneId?: string|null,
      *     availabilityZone?: string|null,
      *     description?: string|null,

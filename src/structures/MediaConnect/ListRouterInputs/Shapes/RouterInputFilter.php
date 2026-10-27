@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $RegionNames
  * @property list<string>|null $NetworkInterfaceArns
  * @property list<'REGIONAL'|'GLOBAL'>|null $RoutingScopes
- * @property list<'STANDARD'|'FAILOVER'|'MERGE'|'MEDIACONNECT_FLOW'|'MEDIALIVE_CHANNEL'>|null $InputTypes
+ * @property list<'STANDARD'|'FAILOVER'|'MERGE'|'MEDIACONNECT_FLOW'|'MEDIALIVE_CHANNEL'|'DESTINATION_ENDPOINT'>|null $InputTypes
  */
 class RouterInputFilter extends Shape
 {
@@ -19,7 +19,7 @@ class RouterInputFilter extends Shape
      *     RegionNames?: list<string>|null,
      *     NetworkInterfaceArns?: list<string>|null,
      *     RoutingScopes?: list<'REGIONAL'|'GLOBAL'>|null,
-     *     InputTypes?: list<'STANDARD'|'FAILOVER'|'MERGE'|'MEDIACONNECT_FLOW'|'MEDIALIVE_CHANNEL'>|null
+     *     InputTypes?: list<'STANDARD'|'FAILOVER'|'MERGE'|'MEDIACONNECT_FLOW'|'MEDIALIVE_CHANNEL'|'DESTINATION_ENDPOINT'>|null
      * } $args
      */
     public function __construct(array $args = [])

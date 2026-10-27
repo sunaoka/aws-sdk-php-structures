@@ -81,6 +81,7 @@ class OdbClient extends \Aws\Odb\OdbClient
     use UpdateAutonomousDatabaseBackup\UpdateAutonomousDatabaseBackupTrait;
     use UpdateCloudExadataInfrastructure\UpdateCloudExadataInfrastructureTrait;
     use UpdateExadbVmCluster\UpdateExadbVmClusterTrait;
+    use UpdateExascaleCloudExadataInfrastructure\UpdateExascaleCloudExadataInfrastructureTrait;
     use UpdateExascaleDbStorageVault\UpdateExascaleDbStorageVaultTrait;
     use UpdateOdbNetwork\UpdateOdbNetworkTrait;
     use UpdateOdbPeeringConnection\UpdateOdbPeeringConnectionTrait;

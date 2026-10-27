@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $autoscaleLimitInGBs
  * @property string|null $availabilityZone
  * @property string|null $availabilityZoneId
+ * @property string|null $cloudExadataInfrastructureArn
+ * @property string|null $cloudExadataInfrastructureId
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $description
  * @property string|null $displayName
@@ -27,6 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AVAILABLE'|'FAILED'|'PROVISIONING'|'TERMINATED'|'TERMINATING'|'UPDATING'|'MAINTENANCE_IN_PROGRESS'|null $status
  * @property string|null $statusReason
  * @property string|null $timeZone
+ * @property 'EXASCALE_INFRASTRUCTURE'|'DEDICATED_INFRASTRUCTURE'|null $vaultType
  */
 class ExascaleDbStorageVault extends Shape
 {
@@ -38,6 +41,8 @@ class ExascaleDbStorageVault extends Shape
      *     autoscaleLimitInGBs?: int|null,
      *     availabilityZone?: string|null,
      *     availabilityZoneId?: string|null,
+     *     cloudExadataInfrastructureArn?: string|null,
+     *     cloudExadataInfrastructureId?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     description?: string|null,
      *     displayName?: string|null,
@@ -53,7 +58,8 @@ class ExascaleDbStorageVault extends Shape
      *     percentProgress?: float|null,
      *     status?: 'AVAILABLE'|'FAILED'|'PROVISIONING'|'TERMINATED'|'TERMINATING'|'UPDATING'|'MAINTENANCE_IN_PROGRESS'|null,
      *     statusReason?: string|null,
-     *     timeZone?: string|null
+     *     timeZone?: string|null,
+     *     vaultType?: 'EXASCALE_INFRASTRUCTURE'|'DEDICATED_INFRASTRUCTURE'|null
      * } $args
      */
     public function __construct(array $args)

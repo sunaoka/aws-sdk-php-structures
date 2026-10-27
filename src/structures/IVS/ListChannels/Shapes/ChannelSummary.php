@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'HIGHER_BANDWIDTH_DELIVERY'|'CONSTRAINED_BANDWIDTH_DELIVERY'|null $preset
  * @property string|null $playbackRestrictionPolicyArn
  * @property string|null $adConfigurationArn
+ * @property string|null $failoverSlateConfigurationArn
  */
 class ChannelSummary extends Shape
 {
@@ -31,7 +32,8 @@ class ChannelSummary extends Shape
      *     type?: 'BASIC'|'STANDARD'|'ADVANCED_SD'|'ADVANCED_HD'|null,
      *     preset?: 'HIGHER_BANDWIDTH_DELIVERY'|'CONSTRAINED_BANDWIDTH_DELIVERY'|null,
      *     playbackRestrictionPolicyArn?: string|null,
-     *     adConfigurationArn?: string|null
+     *     adConfigurationArn?: string|null,
+     *     failoverSlateConfigurationArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

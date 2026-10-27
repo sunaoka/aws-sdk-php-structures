@@ -43,6 +43,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $databaseServerType
  * @property string|null $storageServerType
  * @property 'ECPU'|'OCPU'|null $computeModel
+ * @property ExascaleConfiguration|null $exascaleConfiguration
  */
 class CloudExadataInfrastructure extends Shape
 {
@@ -85,7 +86,8 @@ class CloudExadataInfrastructure extends Shape
      *     percentProgress?: float|null,
      *     databaseServerType?: string|null,
      *     storageServerType?: string|null,
-     *     computeModel?: 'ECPU'|'OCPU'|null
+     *     computeModel?: 'ECPU'|'OCPU'|null,
+     *     exascaleConfiguration?: ExascaleConfiguration|null
      * } $args
      */
     public function __construct(array $args)

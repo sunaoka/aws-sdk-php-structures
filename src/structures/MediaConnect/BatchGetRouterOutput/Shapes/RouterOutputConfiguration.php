@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property StandardRouterOutputConfiguration|null $Standard
  * @property MediaConnectFlowRouterOutputConfiguration|null $MediaConnectFlow
  * @property MediaLiveInputRouterOutputConfiguration|null $MediaLiveInput
+ * @property SourceEndpointRouterOutputConfiguration|null $SourceEndpoint
  */
 class RouterOutputConfiguration extends Shape
 {
@@ -15,7 +16,8 @@ class RouterOutputConfiguration extends Shape
      * @param array{
      *     Standard?: StandardRouterOutputConfiguration|null,
      *     MediaConnectFlow?: MediaConnectFlowRouterOutputConfiguration|null,
-     *     MediaLiveInput?: MediaLiveInputRouterOutputConfiguration|null
+     *     MediaLiveInput?: MediaLiveInputRouterOutputConfiguration|null,
+     *     SourceEndpoint?: SourceEndpointRouterOutputConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Arn
  * @property string $Id
  * @property 'CREATING'|'STANDBY'|'STARTING'|'ACTIVE'|'STOPPING'|'DELETING'|'UPDATING'|'ERROR'|'RECOVERING'|'MIGRATING' $State
- * @property 'STANDARD'|'FAILOVER'|'MERGE'|'MEDIACONNECT_FLOW'|'MEDIALIVE_CHANNEL' $InputType
+ * @property 'STANDARD'|'FAILOVER'|'MERGE'|'MEDIACONNECT_FLOW'|'MEDIALIVE_CHANNEL'|'DESTINATION_ENDPOINT' $InputType
  * @property RouterInputConfiguration $Configuration
  * @property int $RoutedOutputs
  * @property int|null $MaximumRoutedOutputs
@@ -31,6 +31,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MaintenanceSchedule|null $MaintenanceSchedule
  * @property 'CONTENT_LEVEL' $ContentQualityAnalysisType
  * @property RouterContentQualityAnalysisConfiguration $ContentQualityAnalysisConfiguration
+ * @property list<string>|null $AssociatedDestinationEndpointArns
  */
 class RouterInput extends Shape
 {
@@ -40,7 +41,7 @@ class RouterInput extends Shape
      *     Arn: string,
      *     Id: string,
      *     State: 'CREATING'|'STANDBY'|'STARTING'|'ACTIVE'|'STOPPING'|'DELETING'|'UPDATING'|'ERROR'|'RECOVERING'|'MIGRATING',
-     *     InputType: 'STANDARD'|'FAILOVER'|'MERGE'|'MEDIACONNECT_FLOW'|'MEDIALIVE_CHANNEL',
+     *     InputType: 'STANDARD'|'FAILOVER'|'MERGE'|'MEDIACONNECT_FLOW'|'MEDIALIVE_CHANNEL'|'DESTINATION_ENDPOINT',
      *     Configuration: RouterInputConfiguration,
      *     RoutedOutputs: int,
      *     MaximumRoutedOutputs?: int|null,
@@ -61,7 +62,8 @@ class RouterInput extends Shape
      *     MaintenanceScheduleType?: 'WINDOW'|null,
      *     MaintenanceSchedule?: MaintenanceSchedule|null,
      *     ContentQualityAnalysisType: 'CONTENT_LEVEL',
-     *     ContentQualityAnalysisConfiguration: RouterContentQualityAnalysisConfiguration
+     *     ContentQualityAnalysisConfiguration: RouterContentQualityAnalysisConfiguration,
+     *     AssociatedDestinationEndpointArns?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

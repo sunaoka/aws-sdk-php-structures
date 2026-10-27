@@ -6,6 +6,10 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $cloudExadataInfrastructureId
+ * @property string|null $exascaleDbStorageVaultId
+ * @property 'LOCAL'|'EXASCALE'|null $vmFileSystemStorageType
+ * @property 'LOCAL'|'EXASCALE'|null $vmBackupStorageType
+ * @property list<Shapes\FileSystemConfigurationDetails>|null $fileSystemConfigurationDetails
  * @property int<0, 10000> $cpuCoreCount
  * @property string $displayName
  * @property string $giVersion
@@ -32,6 +36,10 @@ class CreateCloudVmClusterRequest extends Request
     /**
      * @param array{
      *     cloudExadataInfrastructureId: string,
+     *     exascaleDbStorageVaultId?: string|null,
+     *     vmFileSystemStorageType?: 'LOCAL'|'EXASCALE'|null,
+     *     vmBackupStorageType?: 'LOCAL'|'EXASCALE'|null,
+     *     fileSystemConfigurationDetails?: list<Shapes\FileSystemConfigurationDetails>|null,
      *     cpuCoreCount: int<0, 10000>,
      *     displayName: string,
      *     giVersion: string,

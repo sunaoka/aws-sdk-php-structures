@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $distributionName
- * @property 'Requests'|'BytesDownloaded'|'BytesUploaded'|'TotalErrorRate'|'Http4xxErrorRate'|'Http5xxErrorRate' $metricName
+ * @property 'Requests'|'BytesDownloaded'|'BytesUploaded'|'TotalErrorRate'|'Http4xxErrorRate'|'Http5xxErrorRate'|'WafAllowedRequests'|'WafBlockedRequests' $metricName
  * @property \Aws\Api\DateTimeResult $startTime
  * @property \Aws\Api\DateTimeResult $endTime
  * @property int<60, 86400> $period
@@ -18,7 +18,7 @@ class GetDistributionMetricDataRequest extends Request
     /**
      * @param array{
      *     distributionName: string,
-     *     metricName: 'Requests'|'BytesDownloaded'|'BytesUploaded'|'TotalErrorRate'|'Http4xxErrorRate'|'Http5xxErrorRate',
+     *     metricName: 'Requests'|'BytesDownloaded'|'BytesUploaded'|'TotalErrorRate'|'Http4xxErrorRate'|'Http5xxErrorRate'|'WafAllowedRequests'|'WafBlockedRequests',
      *     startTime: \Aws\Api\DateTimeResult,
      *     endTime: \Aws\Api\DateTimeResult,
      *     period: int<60, 86400>,

@@ -10,6 +10,7 @@ class KmsClient extends \Aws\Kms\KmsClient
     use CreateCustomKeyStore\CreateCustomKeyStoreTrait;
     use CreateGrant\CreateGrantTrait;
     use CreateKey\CreateKeyTrait;
+    use Decapsulate\DecapsulateTrait;
     use Decrypt\DecryptTrait;
     use DeleteAlias\DeleteAliasTrait;
     use DeleteCustomKeyStore\DeleteCustomKeyStoreTrait;
@@ -22,6 +23,7 @@ class KmsClient extends \Aws\Kms\KmsClient
     use DisconnectCustomKeyStore\DisconnectCustomKeyStoreTrait;
     use EnableKey\EnableKeyTrait;
     use EnableKeyRotation\EnableKeyRotationTrait;
+    use Encapsulate\EncapsulateTrait;
     use Encrypt\EncryptTrait;
     use GenerateDataKey\GenerateDataKeyTrait;
     use GenerateDataKeyPair\GenerateDataKeyPairTrait;

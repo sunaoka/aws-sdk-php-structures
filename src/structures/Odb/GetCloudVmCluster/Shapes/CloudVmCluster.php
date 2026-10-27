@@ -12,6 +12,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $cloudVmClusterArn
  * @property string|null $cloudExadataInfrastructureId
  * @property string|null $cloudExadataInfrastructureArn
+ * @property string|null $exascaleDbStorageVaultId
+ * @property string|null $exascaleDbStorageVaultArn
+ * @property 'ASM'|'EXASCALE'|null $storageManagementType
+ * @property 'LOCAL'|'EXASCALE'|null $vmFileSystemStorageType
+ * @property 'LOCAL'|'EXASCALE'|null $vmBackupStorageType
+ * @property list<FileSystemConfigurationDetails>|null $fileSystemConfigurationDetails
  * @property string|null $clusterName
  * @property int|null $cpuCoreCount
  * @property DataCollectionOptions|null $dataCollectionOptions
@@ -60,6 +66,12 @@ class CloudVmCluster extends Shape
      *     cloudVmClusterArn?: string|null,
      *     cloudExadataInfrastructureId?: string|null,
      *     cloudExadataInfrastructureArn?: string|null,
+     *     exascaleDbStorageVaultId?: string|null,
+     *     exascaleDbStorageVaultArn?: string|null,
+     *     storageManagementType?: 'ASM'|'EXASCALE'|null,
+     *     vmFileSystemStorageType?: 'LOCAL'|'EXASCALE'|null,
+     *     vmBackupStorageType?: 'LOCAL'|'EXASCALE'|null,
+     *     fileSystemConfigurationDetails?: list<FileSystemConfigurationDetails>|null,
      *     clusterName?: string|null,
      *     cpuCoreCount?: int|null,
      *     dataCollectionOptions?: DataCollectionOptions|null,

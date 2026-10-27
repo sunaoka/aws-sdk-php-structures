@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ExecutionRole
  * @property int<1, 2>|null $ThreadsPerCore
  * @property list<ClusterInstanceStorageConfig>|null $InstanceStorageConfigs
- * @property list<'InstanceStress'|'InstanceConnectivity'>|null $OnStartDeepHealthChecks
+ * @property list<'InstanceStress'|'InstanceConnectivity'|'MultiNodeTrainingValidation'>|null $OnStartDeepHealthChecks
  * @property 'InService'|'Creating'|'Updating'|'Failed'|'Degraded'|'SystemUpdating'|'Deleting'|null $Status
  * @property string|null $TrainingPlanArn
  * @property string|null $TrainingPlanStatus
@@ -52,7 +52,7 @@ class ClusterInstanceGroupDetails extends Shape
      *     ExecutionRole?: string|null,
      *     ThreadsPerCore?: int<1, 2>|null,
      *     InstanceStorageConfigs?: list<ClusterInstanceStorageConfig>|null,
-     *     OnStartDeepHealthChecks?: list<'InstanceStress'|'InstanceConnectivity'>|null,
+     *     OnStartDeepHealthChecks?: list<'InstanceStress'|'InstanceConnectivity'|'MultiNodeTrainingValidation'>|null,
      *     Status?: 'InService'|'Creating'|'Updating'|'Failed'|'Degraded'|'SystemUpdating'|'Deleting'|null,
      *     TrainingPlanArn?: string|null,
      *     TrainingPlanStatus?: string|null,

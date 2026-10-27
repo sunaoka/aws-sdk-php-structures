@@ -10,9 +10,12 @@ class MediaConnectClient extends \Aws\MediaConnect\MediaConnectClient
     use AddFlowOutputs\AddFlowOutputsTrait;
     use AddFlowSources\AddFlowSourcesTrait;
     use AddFlowVpcInterfaces\AddFlowVpcInterfacesTrait;
+    use BatchGetDestinationEndpoint\BatchGetDestinationEndpointTrait;
     use BatchGetRouterInput\BatchGetRouterInputTrait;
     use BatchGetRouterNetworkInterface\BatchGetRouterNetworkInterfaceTrait;
     use BatchGetRouterOutput\BatchGetRouterOutputTrait;
+    use BatchGetSourceEndpoint\BatchGetSourceEndpointTrait;
+    use ConnectEndpoints\ConnectEndpointsTrait;
     use CreateBridge\CreateBridgeTrait;
     use CreateFlow\CreateFlowTrait;
     use CreateGateway\CreateGatewayTrait;
@@ -25,7 +28,9 @@ class MediaConnectClient extends \Aws\MediaConnect\MediaConnectClient
     use DeleteRouterInput\DeleteRouterInputTrait;
     use DeleteRouterNetworkInterface\DeleteRouterNetworkInterfaceTrait;
     use DeleteRouterOutput\DeleteRouterOutputTrait;
+    use DeregisterDestinationEndpoint\DeregisterDestinationEndpointTrait;
     use DeregisterGatewayInstance\DeregisterGatewayInstanceTrait;
+    use DeregisterSourceEndpoint\DeregisterSourceEndpointTrait;
     use DescribeBridge\DescribeBridgeTrait;
     use DescribeFlow\DescribeFlowTrait;
     use DescribeFlowSourceMetadata\DescribeFlowSourceMetadataTrait;
@@ -34,13 +39,17 @@ class MediaConnectClient extends \Aws\MediaConnect\MediaConnectClient
     use DescribeGatewayInstance\DescribeGatewayInstanceTrait;
     use DescribeOffering\DescribeOfferingTrait;
     use DescribeReservation\DescribeReservationTrait;
+    use DisconnectEndpoints\DisconnectEndpointsTrait;
+    use GetDestinationEndpoint\GetDestinationEndpointTrait;
     use GetRouterInput\GetRouterInputTrait;
     use GetRouterInputSourceMetadata\GetRouterInputSourceMetadataTrait;
     use GetRouterInputThumbnail\GetRouterInputThumbnailTrait;
     use GetRouterNetworkInterface\GetRouterNetworkInterfaceTrait;
     use GetRouterOutput\GetRouterOutputTrait;
+    use GetSourceEndpoint\GetSourceEndpointTrait;
     use GrantFlowEntitlements\GrantFlowEntitlementsTrait;
     use ListBridges\ListBridgesTrait;
+    use ListDestinationEndpoints\ListDestinationEndpointsTrait;
     use ListEntitlements\ListEntitlementsTrait;
     use ListFlows\ListFlowsTrait;
     use ListGatewayInstances\ListGatewayInstancesTrait;
@@ -50,9 +59,12 @@ class MediaConnectClient extends \Aws\MediaConnect\MediaConnectClient
     use ListRouterInputs\ListRouterInputsTrait;
     use ListRouterNetworkInterfaces\ListRouterNetworkInterfacesTrait;
     use ListRouterOutputs\ListRouterOutputsTrait;
+    use ListSourceEndpoints\ListSourceEndpointsTrait;
     use ListTagsForGlobalResource\ListTagsForGlobalResourceTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PurchaseOffering\PurchaseOfferingTrait;
+    use RegisterDestinationEndpoint\RegisterDestinationEndpointTrait;
+    use RegisterSourceEndpoint\RegisterSourceEndpointTrait;
     use RemoveBridgeOutput\RemoveBridgeOutputTrait;
     use RemoveBridgeSource\RemoveBridgeSourceTrait;
     use RemoveFlowMediaStream\RemoveFlowMediaStreamTrait;
@@ -77,6 +89,7 @@ class MediaConnectClient extends \Aws\MediaConnect\MediaConnectClient
     use UpdateBridgeOutput\UpdateBridgeOutputTrait;
     use UpdateBridgeSource\UpdateBridgeSourceTrait;
     use UpdateBridgeState\UpdateBridgeStateTrait;
+    use UpdateDestinationEndpoint\UpdateDestinationEndpointTrait;
     use UpdateFlow\UpdateFlowTrait;
     use UpdateFlowEntitlement\UpdateFlowEntitlementTrait;
     use UpdateFlowMediaStream\UpdateFlowMediaStreamTrait;
@@ -86,4 +99,5 @@ class MediaConnectClient extends \Aws\MediaConnect\MediaConnectClient
     use UpdateRouterInput\UpdateRouterInputTrait;
     use UpdateRouterNetworkInterface\UpdateRouterNetworkInterfaceTrait;
     use UpdateRouterOutput\UpdateRouterOutputTrait;
+    use UpdateSourceEndpoint\UpdateSourceEndpointTrait;
 }

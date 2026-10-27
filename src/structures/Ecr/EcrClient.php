@@ -26,6 +26,7 @@ class EcrClient extends \Aws\Ecr\EcrClient
     use DescribeImages\DescribeImagesTrait;
     use DescribePullThroughCacheRules\DescribePullThroughCacheRulesTrait;
     use DescribeRegistry\DescribeRegistryTrait;
+    use DescribeReplicationBackfillResults\DescribeReplicationBackfillResultsTrait;
     use DescribeRepositories\DescribeRepositoriesTrait;
     use DescribeRepositoryCreationTemplates\DescribeRepositoryCreationTemplatesTrait;
     use GetAccountSetting\GetAccountSettingTrait;
@@ -41,6 +42,7 @@ class EcrClient extends \Aws\Ecr\EcrClient
     use ListImageReferrers\ListImageReferrersTrait;
     use ListImages\ListImagesTrait;
     use ListPullTimeUpdateExclusions\ListPullTimeUpdateExclusionsTrait;
+    use ListReplicationBackfills\ListReplicationBackfillsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PutAccountSetting\PutAccountSettingTrait;
     use PutImage\PutImageTrait;
@@ -55,6 +57,8 @@ class EcrClient extends \Aws\Ecr\EcrClient
     use SetRepositoryPolicy\SetRepositoryPolicyTrait;
     use StartImageScan\StartImageScanTrait;
     use StartLifecyclePolicyPreview\StartLifecyclePolicyPreviewTrait;
+    use StartReplicationBackfill\StartReplicationBackfillTrait;
+    use StopReplicationBackfill\StopReplicationBackfillTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateImageStorageClass\UpdateImageStorageClassTrait;

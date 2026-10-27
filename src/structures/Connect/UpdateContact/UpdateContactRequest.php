@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\UserInfo|null $UserInfo
  * @property Shapes\Endpoint|null $CustomerEndpoint
  * @property Shapes\Endpoint|null $SystemEndpoint
+ * @property Shapes\NullableAdditionalRecipients|null $AdditionalRecipients
  */
 class UpdateContactRequest extends Request
 {
@@ -29,7 +30,8 @@ class UpdateContactRequest extends Request
      *     QueueInfo?: Shapes\QueueInfoInput|null,
      *     UserInfo?: Shapes\UserInfo|null,
      *     CustomerEndpoint?: Shapes\Endpoint|null,
-     *     SystemEndpoint?: Shapes\Endpoint|null
+     *     SystemEndpoint?: Shapes\Endpoint|null,
+     *     AdditionalRecipients?: Shapes\NullableAdditionalRecipients|null
      * } $args
      */
     public function __construct(array $args)

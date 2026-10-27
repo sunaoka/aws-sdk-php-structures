@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ExecutionRole
  * @property int<1, 2>|null $ThreadsPerCore
  * @property list<ClusterInstanceStorageConfig>|null $InstanceStorageConfigs
- * @property list<'InstanceStress'|'InstanceConnectivity'>|null $OnStartDeepHealthChecks
+ * @property list<'InstanceStress'|'InstanceConnectivity'|'MultiNodeTrainingValidation'>|null $OnStartDeepHealthChecks
  * @property string|null $TrainingPlanArn
  * @property VpcConfig|null $OverrideVpcConfig
  * @property ScheduledUpdateConfig|null $ScheduledUpdateConfig
@@ -39,7 +39,7 @@ class ClusterInstanceGroupSpecification extends Shape
      *     ExecutionRole: string,
      *     ThreadsPerCore?: int<1, 2>|null,
      *     InstanceStorageConfigs?: list<ClusterInstanceStorageConfig>|null,
-     *     OnStartDeepHealthChecks?: list<'InstanceStress'|'InstanceConnectivity'>|null,
+     *     OnStartDeepHealthChecks?: list<'InstanceStress'|'InstanceConnectivity'|'MultiNodeTrainingValidation'>|null,
      *     TrainingPlanArn?: string|null,
      *     OverrideVpcConfig?: VpcConfig|null,
      *     ScheduledUpdateConfig?: ScheduledUpdateConfig|null,

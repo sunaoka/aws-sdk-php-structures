@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $InstanceGroupName
  * @property list<string>|null $InstanceIds
- * @property list<'InstanceStress'|'InstanceConnectivity'> $DeepHealthChecks
+ * @property list<'InstanceStress'|'InstanceConnectivity'|'MultiNodeTrainingValidation'> $DeepHealthChecks
  */
 class InstanceGroupHealthCheckConfiguration extends Shape
 {
@@ -15,7 +15,7 @@ class InstanceGroupHealthCheckConfiguration extends Shape
      * @param array{
      *     InstanceGroupName: string,
      *     InstanceIds?: list<string>|null,
-     *     DeepHealthChecks: list<'InstanceStress'|'InstanceConnectivity'>
+     *     DeepHealthChecks: list<'InstanceStress'|'InstanceConnectivity'|'MultiNodeTrainingValidation'>
      * } $args
      */
     public function __construct(array $args)

@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $enablePrivateOriginAccess
  * @property string|null $defaultRootObject
  * @property list<Shapes\DistributionCustomErrorResponse>|null $customErrorResponses
+ * @property bool|null $enableWaf
+ * @property list<Shapes\WafRule>|null $wafRules
  */
 class UpdateDistributionRequest extends Request
 {
@@ -33,7 +35,9 @@ class UpdateDistributionRequest extends Request
      *     useDefaultCertificate?: bool|null,
      *     enablePrivateOriginAccess?: bool|null,
      *     defaultRootObject?: string|null,
-     *     customErrorResponses?: list<Shapes\DistributionCustomErrorResponse>|null
+     *     customErrorResponses?: list<Shapes\DistributionCustomErrorResponse>|null,
+     *     enableWaf?: bool|null,
+     *     wafRules?: list<Shapes\WafRule>|null
      * } $args
      */
     public function __construct(array $args)

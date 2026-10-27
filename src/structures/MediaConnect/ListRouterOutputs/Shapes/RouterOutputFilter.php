@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $RegionNames
  * @property list<string>|null $NetworkInterfaceArns
  * @property list<'REGIONAL'|'GLOBAL'>|null $RoutingScopes
- * @property list<'STANDARD'|'MEDIACONNECT_FLOW'|'MEDIALIVE_INPUT'>|null $OutputTypes
+ * @property list<'STANDARD'|'MEDIACONNECT_FLOW'|'MEDIALIVE_INPUT'|'SOURCE_ENDPOINT'>|null $OutputTypes
  * @property list<string>|null $RoutedInputArns
  * @property list<string>|null $NameContains
  */
@@ -19,7 +19,7 @@ class RouterOutputFilter extends Shape
      *     RegionNames?: list<string>|null,
      *     NetworkInterfaceArns?: list<string>|null,
      *     RoutingScopes?: list<'REGIONAL'|'GLOBAL'>|null,
-     *     OutputTypes?: list<'STANDARD'|'MEDIACONNECT_FLOW'|'MEDIALIVE_INPUT'>|null,
+     *     OutputTypes?: list<'STANDARD'|'MEDIACONNECT_FLOW'|'MEDIALIVE_INPUT'|'SOURCE_ENDPOINT'>|null,
      *     RoutedInputArns?: list<string>|null,
      *     NameContains?: list<string>|null
      * } $args

@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $GranteePrincipal
  * @property string|null $RetiringPrincipal
  * @property string|null $IssuingAccount
- * @property list<'Decrypt'|'Encrypt'|'GenerateDataKey'|'GenerateDataKeyWithoutPlaintext'|'ReEncryptFrom'|'ReEncryptTo'|'Sign'|'Verify'|'GetPublicKey'|'CreateGrant'|'RetireGrant'|'DescribeKey'|'GenerateDataKeyPair'|'GenerateDataKeyPairWithoutPlaintext'|'GenerateMac'|'VerifyMac'|'DeriveSharedSecret'>|null $Operations
+ * @property list<'Decrypt'|'Encrypt'|'GenerateDataKey'|'GenerateDataKeyWithoutPlaintext'|'ReEncryptFrom'|'ReEncryptTo'|'Sign'|'Verify'|'GetPublicKey'|'CreateGrant'|'RetireGrant'|'DescribeKey'|'GenerateDataKeyPair'|'GenerateDataKeyPairWithoutPlaintext'|'GenerateMac'|'VerifyMac'|'DeriveSharedSecret'|'Encapsulate'|'Decapsulate'>|null $Operations
  * @property GrantConstraints|null $Constraints
  * @property string|null $GranteeServicePrincipal
  * @property string|null $RetiringServicePrincipal
@@ -28,7 +28,7 @@ class GrantListEntry extends Shape
      *     GranteePrincipal?: string|null,
      *     RetiringPrincipal?: string|null,
      *     IssuingAccount?: string|null,
-     *     Operations?: list<'Decrypt'|'Encrypt'|'GenerateDataKey'|'GenerateDataKeyWithoutPlaintext'|'ReEncryptFrom'|'ReEncryptTo'|'Sign'|'Verify'|'GetPublicKey'|'CreateGrant'|'RetireGrant'|'DescribeKey'|'GenerateDataKeyPair'|'GenerateDataKeyPairWithoutPlaintext'|'GenerateMac'|'VerifyMac'|'DeriveSharedSecret'>|null,
+     *     Operations?: list<'Decrypt'|'Encrypt'|'GenerateDataKey'|'GenerateDataKeyWithoutPlaintext'|'ReEncryptFrom'|'ReEncryptTo'|'Sign'|'Verify'|'GetPublicKey'|'CreateGrant'|'RetireGrant'|'DescribeKey'|'GenerateDataKeyPair'|'GenerateDataKeyPairWithoutPlaintext'|'GenerateMac'|'VerifyMac'|'DeriveSharedSecret'|'Encapsulate'|'Decapsulate'>|null,
      *     Constraints?: GrantConstraints|null,
      *     GranteeServicePrincipal?: string|null,
      *     RetiringServicePrincipal?: string|null

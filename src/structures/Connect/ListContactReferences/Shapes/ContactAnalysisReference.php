@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $Name
  * @property string|null $Value
- * @property 'AVAILABLE'|'DELETED'|'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED'|null $Status
+ * @property 'AVAILABLE'|'DELETED'|'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED'|'DRAFTING'|null $Status
  * @property string|null $Arn
  * @property 'PostContact'|'RealTime'|'ContactLens'|'AutomatedInteraction'|null $AnalyticsMode
  * @property bool|null $IsRedacted
@@ -18,7 +18,7 @@ class ContactAnalysisReference extends Shape
      * @param array{
      *     Name?: string|null,
      *     Value?: string|null,
-     *     Status?: 'AVAILABLE'|'DELETED'|'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED'|null,
+     *     Status?: 'AVAILABLE'|'DELETED'|'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED'|'DRAFTING'|null,
      *     Arn?: string|null,
      *     AnalyticsMode?: 'PostContact'|'RealTime'|'ContactLens'|'AutomatedInteraction'|null,
      *     IsRedacted?: bool|null

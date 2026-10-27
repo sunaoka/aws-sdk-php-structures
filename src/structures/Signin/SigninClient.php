@@ -6,6 +6,7 @@ class SigninClient extends \Aws\Signin\SigninClient
 {
     use CreateOAuth2Token\CreateOAuth2TokenTrait;
     use CreateOAuth2TokenWithIAM\CreateOAuth2TokenWithIAMTrait;
+    use CreateOAuth2TokenWithTokenExchange\CreateOAuth2TokenWithTokenExchangeTrait;
     use DeleteConsoleAuthorizationConfiguration\DeleteConsoleAuthorizationConfigurationTrait;
     use DeleteResourcePermissionStatement\DeleteResourcePermissionStatementTrait;
     use GetConsoleAuthorizationConfiguration\GetConsoleAuthorizationConfigurationTrait;

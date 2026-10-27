@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaConnect\GetRouterInput\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property DestinationEndpointRouterInputConfiguration|null $DestinationEndpoint
  * @property StandardRouterInputConfiguration|null $Standard
  * @property MediaLiveChannelRouterInputConfiguration|null $MediaLiveChannel
  * @property FailoverRouterInputConfiguration|null $Failover
@@ -15,6 +16,7 @@ class RouterInputConfiguration extends Shape
 {
     /**
      * @param array{
+     *     DestinationEndpoint?: DestinationEndpointRouterInputConfiguration|null,
      *     Standard?: StandardRouterInputConfiguration|null,
      *     MediaLiveChannel?: MediaLiveChannelRouterInputConfiguration|null,
      *     Failover?: FailoverRouterInputConfiguration|null,
