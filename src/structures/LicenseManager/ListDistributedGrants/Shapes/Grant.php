@@ -14,8 +14,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PENDING_WORKFLOW'|'PENDING_ACCEPT'|'REJECTED'|'ACTIVE'|'FAILED_WORKFLOW'|'DELETED'|'PENDING_DELETE'|'DISABLED'|'WORKFLOW_COMPLETED' $GrantStatus
  * @property string|null $StatusReason
  * @property string $Version
- * @property list<'CreateGrant'|'CheckoutLicense'|'CheckoutBorrowLicense'|'CheckInLicense'|'ExtendConsumptionLicense'|'ListPurchasedLicenses'|'CreateToken'> $GrantedOperations
+ * @property list<'CreateGrant'|'CheckoutLicense'|'CheckoutBorrowLicense'|'CheckInLicense'|'ExtendConsumptionLicense'|'ListPurchasedLicenses'|'CreateToken'|'ListReceivedLicenses'> $GrantedOperations
  * @property Options|null $Options
+ * @property 'BuyerGrant'|'DelegateGrant'|null $GrantType
  */
 class Grant extends Shape
 {
@@ -30,8 +31,9 @@ class Grant extends Shape
      *     GrantStatus: 'PENDING_WORKFLOW'|'PENDING_ACCEPT'|'REJECTED'|'ACTIVE'|'FAILED_WORKFLOW'|'DELETED'|'PENDING_DELETE'|'DISABLED'|'WORKFLOW_COMPLETED',
      *     StatusReason?: string|null,
      *     Version: string,
-     *     GrantedOperations: list<'CreateGrant'|'CheckoutLicense'|'CheckoutBorrowLicense'|'CheckInLicense'|'ExtendConsumptionLicense'|'ListPurchasedLicenses'|'CreateToken'>,
-     *     Options?: Options|null
+     *     GrantedOperations: list<'CreateGrant'|'CheckoutLicense'|'CheckoutBorrowLicense'|'CheckInLicense'|'ExtendConsumptionLicense'|'ListPurchasedLicenses'|'CreateToken'|'ListReceivedLicenses'>,
+     *     Options?: Options|null,
+     *     GrantType?: 'BuyerGrant'|'DelegateGrant'|null
      * } $args
      */
     public function __construct(array $args)

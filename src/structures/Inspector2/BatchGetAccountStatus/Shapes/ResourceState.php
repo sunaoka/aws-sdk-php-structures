@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property State|null $lambda
  * @property State|null $lambdaCode
  * @property State|null $codeRepository
+ * @property State|null $ami
  */
 class ResourceState extends Shape
 {
@@ -19,7 +20,8 @@ class ResourceState extends Shape
      *     ecr: State,
      *     lambda?: State|null,
      *     lambdaCode?: State|null,
-     *     codeRepository?: State|null
+     *     codeRepository?: State|null,
+     *     ami?: State|null
      * } $args
      */
     public function __construct(array $args)

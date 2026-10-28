@@ -51,6 +51,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<NumberFilter>|null $epssScore
  * @property list<StringFilter>|null $codeRepositoryProjectName
  * @property list<StringFilter>|null $codeRepositoryProviderType
+ * @property list<StringFilter>|null $machineImageId
+ * @property list<StringFilter>|null $machineImageName
+ * @property list<StringFilter>|null $machineImageOwnerAccountId
+ * @property list<StringFilter>|null $machineImagePlatform
  * @property list<StringFilter>|null $cloudProvider
  * @property list<StringFilter>|null $cloudProviderRegion
  * @property list<StringFilter>|null $cloudProviderAccountId
@@ -121,6 +125,10 @@ class FilterCriteria extends Shape
      *     epssScore?: list<NumberFilter>|null,
      *     codeRepositoryProjectName?: list<StringFilter>|null,
      *     codeRepositoryProviderType?: list<StringFilter>|null,
+     *     machineImageId?: list<StringFilter>|null,
+     *     machineImageName?: list<StringFilter>|null,
+     *     machineImageOwnerAccountId?: list<StringFilter>|null,
+     *     machineImagePlatform?: list<StringFilter>|null,
      *     cloudProvider?: list<StringFilter>|null,
      *     cloudProviderRegion?: list<StringFilter>|null,
      *     cloudProviderAccountId?: list<StringFilter>|null,

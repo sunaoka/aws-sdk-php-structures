@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AwsEcrContainerImageDetails|null $awsEcrContainerImage
  * @property AwsLambdaFunctionDetails|null $awsLambdaFunction
  * @property CodeRepositoryDetails|null $codeRepository
+ * @property MachineImageDetails|null $machineImage
  * @property Vm|null $vm
  * @property Image|null $image
  * @property ServerlessFunction|null $serverlessFunction
@@ -21,6 +22,7 @@ class ResourceDetails extends Shape
      *     awsEcrContainerImage?: AwsEcrContainerImageDetails|null,
      *     awsLambdaFunction?: AwsLambdaFunctionDetails|null,
      *     codeRepository?: CodeRepositoryDetails|null,
+     *     machineImage?: MachineImageDetails|null,
      *     vm?: Vm|null,
      *     image?: Image|null,
      *     serverlessFunction?: ServerlessFunction|null

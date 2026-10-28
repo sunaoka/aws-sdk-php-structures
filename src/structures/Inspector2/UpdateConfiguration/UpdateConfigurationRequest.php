@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $accountId
  * @property Shapes\EcrConfiguration|null $ecrConfiguration
  * @property Shapes\Ec2Configuration|null $ec2Configuration
+ * @property Shapes\AmiConfiguration|null $amiConfiguration
  * @property Shapes\UpdateConfigurationInheritance|null $updateConfigurationInheritance
  */
 class UpdateConfigurationRequest extends Request
@@ -17,6 +18,7 @@ class UpdateConfigurationRequest extends Request
      *     accountId?: string|null,
      *     ecrConfiguration?: Shapes\EcrConfiguration|null,
      *     ec2Configuration?: Shapes\Ec2Configuration|null,
+     *     amiConfiguration?: Shapes\AmiConfiguration|null,
      *     updateConfigurationInheritance?: Shapes\UpdateConfigurationInheritance|null
      * } $args
      */

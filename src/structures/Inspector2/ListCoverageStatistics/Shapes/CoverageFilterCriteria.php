@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<CoverageStringFilter>|null $lambdaFunctionName
  * @property list<CoverageMapFilter>|null $lambdaFunctionTags
  * @property list<CoverageStringFilter>|null $lambdaFunctionRuntime
+ * @property list<CoverageMapFilter>|null $machineImageTags
  * @property list<CoverageDateFilter>|null $lastScannedAt
  * @property list<CoverageStringFilter>|null $scanMode
  * @property list<CoverageDateFilter>|null $imagePulledAt
@@ -54,6 +55,7 @@ class CoverageFilterCriteria extends Shape
      *     lambdaFunctionName?: list<CoverageStringFilter>|null,
      *     lambdaFunctionTags?: list<CoverageMapFilter>|null,
      *     lambdaFunctionRuntime?: list<CoverageStringFilter>|null,
+     *     machineImageTags?: list<CoverageMapFilter>|null,
      *     lastScannedAt?: list<CoverageDateFilter>|null,
      *     scanMode?: list<CoverageStringFilter>|null,
      *     imagePulledAt?: list<CoverageDateFilter>|null,

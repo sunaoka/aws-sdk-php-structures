@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $cloudAccountId
  * @property SeverityCounts|null $severityCounts
  * @property int|null $affectedInstances
+ * @property 'INSTANCE_SCAN'|'MACHINE_IMAGE_SCAN'|null $scanSource
  */
 class AmiAggregationResponse extends Shape
 {
@@ -27,7 +28,8 @@ class AmiAggregationResponse extends Shape
      *     cloudOrgId?: string|null,
      *     cloudAccountId?: string|null,
      *     severityCounts?: SeverityCounts|null,
-     *     affectedInstances?: int|null
+     *     affectedInstances?: int|null,
+     *     scanSource?: 'INSTANCE_SCAN'|'MACHINE_IMAGE_SCAN'|null
      * } $args
      */
     public function __construct(array $args)

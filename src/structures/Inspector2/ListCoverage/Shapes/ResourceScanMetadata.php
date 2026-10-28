@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ContainerRepositoryMetadata|null $containerRepository
  * @property ContainerRegistryMetadata|null $containerRegistry
  * @property ServerlessFunctionMetadata|null $serverlessFunction
+ * @property MachineImageMetadata|null $machineImage
  */
 class ResourceScanMetadata extends Shape
 {
@@ -29,7 +30,8 @@ class ResourceScanMetadata extends Shape
      *     containerImage?: ContainerImageMetadata|null,
      *     containerRepository?: ContainerRepositoryMetadata|null,
      *     containerRegistry?: ContainerRegistryMetadata|null,
-     *     serverlessFunction?: ServerlessFunctionMetadata|null
+     *     serverlessFunction?: ServerlessFunctionMetadata|null,
+     *     machineImage?: MachineImageMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

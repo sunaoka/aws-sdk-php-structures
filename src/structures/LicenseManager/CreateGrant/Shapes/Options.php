@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\LicenseManager\CreateGrant\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property 'DISTRIBUTED_GRANTS_ONLY'|'ALL_GRANTS_PERMITTED_BY_ISSUER'|null $ActivationOverrideBehavior
+ * @property 'PENDING_WORKFLOW'|'PENDING_ACCEPT'|'REJECTED'|'ACTIVE'|'FAILED_WORKFLOW'|'DELETED'|'PENDING_DELETE'|'DISABLED'|'WORKFLOW_COMPLETED'|null $DesiredStatus
+ */
+class Options extends Shape
+{
+    /**
+     * @param array{
+     *     ActivationOverrideBehavior?: 'DISTRIBUTED_GRANTS_ONLY'|'ALL_GRANTS_PERMITTED_BY_ISSUER'|null,
+     *     DesiredStatus?: 'PENDING_WORKFLOW'|'PENDING_ACCEPT'|'REJECTED'|'ACTIVE'|'FAILED_WORKFLOW'|'DELETED'|'PENDING_DELETE'|'DISABLED'|'WORKFLOW_COMPLETED'|null
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

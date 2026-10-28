@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DeprecationTimeConditionRequest|null $DeprecationTimeCondition
  * @property CreationDateConditionRequest|null $CreationDateCondition
  * @property list<ImageWatermarkFilterRequest>|null $ImageWatermarks
+ * @property ScanResultConditionRequest|null $ScanResultCondition
  */
 class ImageCriterionRequest extends Shape
 {
@@ -21,7 +22,8 @@ class ImageCriterionRequest extends Shape
      *     ImageNames?: list<string>|null,
      *     DeprecationTimeCondition?: DeprecationTimeConditionRequest|null,
      *     CreationDateCondition?: CreationDateConditionRequest|null,
-     *     ImageWatermarks?: list<ImageWatermarkFilterRequest>|null
+     *     ImageWatermarks?: list<ImageWatermarkFilterRequest>|null,
+     *     ScanResultCondition?: ScanResultConditionRequest|null
      * } $args
      */
     public function __construct(array $args = [])

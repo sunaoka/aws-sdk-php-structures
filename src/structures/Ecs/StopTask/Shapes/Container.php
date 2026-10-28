@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $memoryReservation
  * @property list<string>|null $gpuIds
  * @property list<string>|null $neuronDeviceIds
+ * @property SharingStrategy|null $gpuSharingStrategy
  */
 class Container extends Shape
 {
@@ -45,7 +46,8 @@ class Container extends Shape
      *     memory?: string|null,
      *     memoryReservation?: string|null,
      *     gpuIds?: list<string>|null,
-     *     neuronDeviceIds?: list<string>|null
+     *     neuronDeviceIds?: list<string>|null,
+     *     gpuSharingStrategy?: SharingStrategy|null
      * } $args
      */
     public function __construct(array $args = [])

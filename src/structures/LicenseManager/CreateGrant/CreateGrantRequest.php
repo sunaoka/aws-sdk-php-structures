@@ -10,8 +10,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $LicenseArn
  * @property list<string> $Principals
  * @property string $HomeRegion
- * @property list<'CreateGrant'|'CheckoutLicense'|'CheckoutBorrowLicense'|'CheckInLicense'|'ExtendConsumptionLicense'|'ListPurchasedLicenses'|'CreateToken'> $AllowedOperations
+ * @property list<'CreateGrant'|'CheckoutLicense'|'CheckoutBorrowLicense'|'CheckInLicense'|'ExtendConsumptionLicense'|'ListPurchasedLicenses'|'CreateToken'|'ListReceivedLicenses'> $AllowedOperations
  * @property list<Shapes\Tag>|null $Tags
+ * @property 'BuyerGrant'|'DelegateGrant'|null $GrantType
+ * @property Shapes\Options|null $Options
  */
 class CreateGrantRequest extends Request
 {
@@ -22,8 +24,10 @@ class CreateGrantRequest extends Request
      *     LicenseArn: string,
      *     Principals: list<string>,
      *     HomeRegion: string,
-     *     AllowedOperations: list<'CreateGrant'|'CheckoutLicense'|'CheckoutBorrowLicense'|'CheckInLicense'|'ExtendConsumptionLicense'|'ListPurchasedLicenses'|'CreateToken'>,
-     *     Tags?: list<Shapes\Tag>|null
+     *     AllowedOperations: list<'CreateGrant'|'CheckoutLicense'|'CheckoutBorrowLicense'|'CheckInLicense'|'ExtendConsumptionLicense'|'ListPurchasedLicenses'|'CreateToken'|'ListReceivedLicenses'>,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     GrantType?: 'BuyerGrant'|'DelegateGrant'|null,
+     *     Options?: Shapes\Options|null
      * } $args
      */
     public function __construct(array $args)

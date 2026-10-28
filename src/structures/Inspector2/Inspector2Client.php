@@ -45,6 +45,7 @@ class Inspector2Client extends \Aws\Inspector2\Inspector2Client
     use GetEncryptionKey\GetEncryptionKeyTrait;
     use GetFindingsReportStatus\GetFindingsReportStatusTrait;
     use GetMember\GetMemberTrait;
+    use GetOnDemandScanStatus\GetOnDemandScanStatusTrait;
     use GetSbomExport\GetSbomExportTrait;
     use ListAccountPermissions\ListAccountPermissionsTrait;
     use ListCisScanConfigurations\ListCisScanConfigurationsTrait;
@@ -63,6 +64,7 @@ class Inspector2Client extends \Aws\Inspector2\Inspector2Client
     use ListFindingAggregations\ListFindingAggregationsTrait;
     use ListFindings\ListFindingsTrait;
     use ListMembers\ListMembersTrait;
+    use ListOnDemandScans\ListOnDemandScansTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListUsageTotals\ListUsageTotalsTrait;
     use ResetEncryptionKey\ResetEncryptionKeyTrait;
@@ -71,6 +73,7 @@ class Inspector2Client extends \Aws\Inspector2\Inspector2Client
     use SendCisSessionTelemetry\SendCisSessionTelemetryTrait;
     use StartCisSession\StartCisSessionTrait;
     use StartCodeSecurityScan\StartCodeSecurityScanTrait;
+    use StartOnDemandScan\StartOnDemandScanTrait;
     use StopCisSession\StopCisSessionTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;

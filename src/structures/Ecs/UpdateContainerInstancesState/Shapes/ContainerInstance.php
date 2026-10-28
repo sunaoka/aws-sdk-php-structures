@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Attachment>|null $attachments
  * @property list<Tag>|null $tags
  * @property ContainerInstanceHealthStatus|null $healthStatus
+ * @property list<GpuDevice>|null $gpuDevices
  */
 class ContainerInstance extends Shape
 {
@@ -45,7 +46,8 @@ class ContainerInstance extends Shape
      *     registeredAt?: \Aws\Api\DateTimeResult|null,
      *     attachments?: list<Attachment>|null,
      *     tags?: list<Tag>|null,
-     *     healthStatus?: ContainerInstanceHealthStatus|null
+     *     healthStatus?: ContainerInstanceHealthStatus|null,
+     *     gpuDevices?: list<GpuDevice>|null
      * } $args
      */
     public function __construct(array $args = [])
