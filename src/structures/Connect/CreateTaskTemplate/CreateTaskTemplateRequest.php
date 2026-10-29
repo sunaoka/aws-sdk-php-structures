@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property string|null $ContactFlowId
  * @property string|null $SelfAssignFlowId
+ * @property Shapes\TaskTemplateContactHooks|null $ContactHooks
  * @property Shapes\TaskTemplateConstraints|null $Constraints
  * @property Shapes\TaskTemplateDefaults|null $Defaults
  * @property 'ACTIVE'|'INACTIVE'|null $Status
@@ -25,6 +26,7 @@ class CreateTaskTemplateRequest extends Request
      *     Description?: string|null,
      *     ContactFlowId?: string|null,
      *     SelfAssignFlowId?: string|null,
+     *     ContactHooks?: Shapes\TaskTemplateContactHooks|null,
      *     Constraints?: Shapes\TaskTemplateConstraints|null,
      *     Defaults?: Shapes\TaskTemplateDefaults|null,
      *     Status?: 'ACTIVE'|'INACTIVE'|null,

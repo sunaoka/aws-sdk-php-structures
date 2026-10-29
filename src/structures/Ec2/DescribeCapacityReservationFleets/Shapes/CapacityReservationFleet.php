@@ -16,6 +16,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'open'|null $InstanceMatchCriteria
  * @property string|null $AllocationStrategy
  * @property list<FleetCapacityReservation>|null $InstanceTypeSpecifications
+ * @property InstanceRequirementsRequest|null $InstanceRequirements
+ * @property string|null $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
  * @property list<Tag>|null $Tags
  */
 class CapacityReservationFleet extends Shape
@@ -33,6 +36,9 @@ class CapacityReservationFleet extends Shape
      *     InstanceMatchCriteria?: 'open'|null,
      *     AllocationStrategy?: string|null,
      *     InstanceTypeSpecifications?: list<FleetCapacityReservation>|null,
+     *     InstanceRequirements?: InstanceRequirementsRequest|null,
+     *     AvailabilityZone?: string|null,
+     *     AvailabilityZoneId?: string|null,
      *     Tags?: list<Tag>|null
      * } $args
      */

@@ -6,11 +6,19 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property CapacityDescription|null $capacity
+ * @property list<PluginDescription>|null $plugins
+ * @property WorkerConfigurationDescription|null $workerConfiguration
+ * @property bool|null $useDefaultWorkerConfiguration
  */
 class WorkerSetting extends Shape
 {
     /**
-     * @param array{capacity?: CapacityDescription|null} $args
+     * @param array{
+     *     capacity?: CapacityDescription|null,
+     *     plugins?: list<PluginDescription>|null,
+     *     workerConfiguration?: WorkerConfigurationDescription|null,
+     *     useDefaultWorkerConfiguration?: bool|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

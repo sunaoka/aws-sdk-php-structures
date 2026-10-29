@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<SourceCodeRepository>|null $sourceCode
  * @property list<IntegratedRepository>|null $integratedRepositories
  * @property list<TrustedCaCertificate>|null $trustedCaCertificates
+ * @property list<ClientCertificate>|null $clientCertificates
  */
 class Assets extends Shape
 {
@@ -21,7 +22,8 @@ class Assets extends Shape
      *     documents?: list<DocumentInfo>|null,
      *     sourceCode?: list<SourceCodeRepository>|null,
      *     integratedRepositories?: list<IntegratedRepository>|null,
-     *     trustedCaCertificates?: list<TrustedCaCertificate>|null
+     *     trustedCaCertificates?: list<TrustedCaCertificate>|null,
+     *     clientCertificates?: list<ClientCertificate>|null
      * } $args
      */
     public function __construct(array $args = [])

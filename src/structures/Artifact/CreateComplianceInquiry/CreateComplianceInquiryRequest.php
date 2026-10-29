@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property Shapes\InquiryContent $inquiryContent
  * @property string|null $clientToken
- * @property 'AI_ONLY'|'FULL_SUPPORT'|null $supportMode
+ * @property 'AI_ONLY'|null $supportMode
  * @property array<string, string>|null $tags
  */
 class CreateComplianceInquiryRequest extends Request
@@ -18,7 +18,7 @@ class CreateComplianceInquiryRequest extends Request
      *     name: string,
      *     inquiryContent: Shapes\InquiryContent,
      *     clientToken?: string|null,
-     *     supportMode?: 'AI_ONLY'|'FULL_SUPPORT'|null,
+     *     supportMode?: 'AI_ONLY'|null,
      *     tags?: array<string, string>|null
      * } $args
      */

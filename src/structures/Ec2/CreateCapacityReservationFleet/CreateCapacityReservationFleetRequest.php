@@ -8,6 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $AllocationStrategy
  * @property string|null $ClientToken
  * @property list<Shapes\ReservationFleetInstanceSpecification>|null $InstanceTypeSpecifications
+ * @property Shapes\InstanceRequirementsRequest|null $InstanceRequirements
+ * @property string|null $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
  * @property 'default'|null $Tenancy
  * @property int $TotalTargetCapacity
  * @property \Aws\Api\DateTimeResult|null $EndDate
@@ -22,6 +25,9 @@ class CreateCapacityReservationFleetRequest extends Request
      *     AllocationStrategy?: string|null,
      *     ClientToken?: string|null,
      *     InstanceTypeSpecifications?: list<Shapes\ReservationFleetInstanceSpecification>|null,
+     *     InstanceRequirements?: Shapes\InstanceRequirementsRequest|null,
+     *     AvailabilityZone?: string|null,
+     *     AvailabilityZoneId?: string|null,
      *     Tenancy?: 'default'|null,
      *     TotalTargetCapacity: int,
      *     EndDate?: \Aws\Api\DateTimeResult|null,

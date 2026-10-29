@@ -7,6 +7,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use AcceptInboundConnection\AcceptInboundConnectionTrait;
     use AddDataSource\AddDataSourceTrait;
     use AddDirectQueryDataSource\AddDirectQueryDataSourceTrait;
+    use AddReplicationPeer\AddReplicationPeerTrait;
     use AddTags\AddTagsTrait;
     use AssociatePackage\AssociatePackageTrait;
     use AssociatePackages\AssociatePackagesTrait;
@@ -14,6 +15,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use AuthorizeVpcEndpointAccess\AuthorizeVpcEndpointAccessTrait;
     use CancelDomainConfigChange\CancelDomainConfigChangeTrait;
     use CancelServiceSoftwareUpdate\CancelServiceSoftwareUpdateTrait;
+    use CompareDomainConfiguration\CompareDomainConfigurationTrait;
     use CreateApplication\CreateApplicationTrait;
     use CreateDomain\CreateDomainTrait;
     use CreateIndex\CreateIndexTrait;
@@ -37,6 +39,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use DescribeDomainConfig\DescribeDomainConfigTrait;
     use DescribeDomainHealth\DescribeDomainHealthTrait;
     use DescribeDomainNodes\DescribeDomainNodesTrait;
+    use DescribeDomainReplication\DescribeDomainReplicationTrait;
     use DescribeDomains\DescribeDomainsTrait;
     use DescribeDryRunProgress\DescribeDryRunProgressTrait;
     use DescribeInboundConnections\DescribeInboundConnectionsTrait;
@@ -50,6 +53,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use DetachDataSource\DetachDataSourceTrait;
     use DissociatePackage\DissociatePackageTrait;
     use DissociatePackages\DissociatePackagesTrait;
+    use FailoverReplication\FailoverReplicationTrait;
     use GetApplication\GetApplicationTrait;
     use GetCapability\GetCapabilityTrait;
     use GetCompatibleVersions\GetCompatibleVersionsTrait;
@@ -84,12 +88,14 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use PutDefaultApplicationSetting\PutDefaultApplicationSettingTrait;
     use RegisterCapability\RegisterCapabilityTrait;
     use RejectInboundConnection\RejectInboundConnectionTrait;
+    use RemoveReplicationPeer\RemoveReplicationPeerTrait;
     use RemoveTags\RemoveTagsTrait;
     use RevokeVpcEndpointAccess\RevokeVpcEndpointAccessTrait;
     use RollbackServiceSoftwareUpdate\RollbackServiceSoftwareUpdateTrait;
     use StartDomainMaintenance\StartDomainMaintenanceTrait;
     use StartMigration\StartMigrationTrait;
     use StartServiceSoftwareUpdate\StartServiceSoftwareUpdateTrait;
+    use SwitchoverReplication\SwitchoverReplicationTrait;
     use UpdateApplication\UpdateApplicationTrait;
     use UpdateDataSource\UpdateDataSourceTrait;
     use UpdateDirectQueryDataSource\UpdateDirectQueryDataSourceTrait;

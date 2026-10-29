@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\Neptunedata;
 class NeptunedataClient extends \Aws\Neptunedata\NeptunedataClient
 {
     use CancelGremlinQuery\CancelGremlinQueryTrait;
+    use CancelIndexRebuild\CancelIndexRebuildTrait;
     use CancelLoaderJob\CancelLoaderJobTrait;
     use CancelMLDataProcessingJob\CancelMLDataProcessingJobTrait;
     use CancelMLModelTrainingJob\CancelMLModelTrainingJobTrait;
@@ -22,6 +23,7 @@ class NeptunedataClient extends \Aws\Neptunedata\NeptunedataClient
     use ExecuteOpenCypherQuery\ExecuteOpenCypherQueryTrait;
     use GetEngineStatus\GetEngineStatusTrait;
     use GetGremlinQueryStatus\GetGremlinQueryStatusTrait;
+    use GetIndexRebuildStatus\GetIndexRebuildStatusTrait;
     use GetLoaderJobStatus\GetLoaderJobStatusTrait;
     use GetMLDataProcessingJob\GetMLDataProcessingJobTrait;
     use GetMLEndpoint\GetMLEndpointTrait;
@@ -34,7 +36,9 @@ class NeptunedataClient extends \Aws\Neptunedata\NeptunedataClient
     use GetRDFGraphSummary\GetRDFGraphSummaryTrait;
     use GetSparqlStatistics\GetSparqlStatisticsTrait;
     use GetSparqlStream\GetSparqlStreamTrait;
+    use GetStorageInfo\GetStorageInfoTrait;
     use ListGremlinQueries\ListGremlinQueriesTrait;
+    use ListIndexRebuilds\ListIndexRebuildsTrait;
     use ListLoaderJobs\ListLoaderJobsTrait;
     use ListMLDataProcessingJobs\ListMLDataProcessingJobsTrait;
     use ListMLEndpoints\ListMLEndpointsTrait;
@@ -43,6 +47,7 @@ class NeptunedataClient extends \Aws\Neptunedata\NeptunedataClient
     use ListOpenCypherQueries\ListOpenCypherQueriesTrait;
     use ManagePropertygraphStatistics\ManagePropertygraphStatisticsTrait;
     use ManageSparqlStatistics\ManageSparqlStatisticsTrait;
+    use StartIndexRebuild\StartIndexRebuildTrait;
     use StartLoaderJob\StartLoaderJobTrait;
     use StartMLDataProcessingJob\StartMLDataProcessingJobTrait;
     use StartMLModelTrainingJob\StartMLModelTrainingJobTrait;

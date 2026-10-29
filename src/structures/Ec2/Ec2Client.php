@@ -565,6 +565,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetCapacityManagerMetricData\GetCapacityManagerMetricDataTrait;
     use GetCapacityManagerMetricDimensions\GetCapacityManagerMetricDimensionsTrait;
     use GetCapacityManagerMonitoredTagKeys\GetCapacityManagerMonitoredTagKeysTrait;
+    use GetCapacityManagerSupportabilityScores\GetCapacityManagerSupportabilityScoresTrait;
     use GetCapacityReservationUsage\GetCapacityReservationUsageTrait;
     use GetClientVpnEndpointAuthorizationPolicy\GetClientVpnEndpointAuthorizationPolicyTrait;
     use GetCoipPoolUsage\GetCoipPoolUsageTrait;

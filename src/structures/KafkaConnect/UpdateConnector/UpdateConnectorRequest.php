@@ -10,6 +10,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $skipHealthValidation
  * @property string $connectorArn
  * @property string $currentVersion
+ * @property list<Shapes\PluginUpdate>|null $plugins
+ * @property Shapes\WorkerConfigurationUpdate|null $workerConfiguration
+ * @property bool|null $useDefaultWorkerConfiguration
  */
 class UpdateConnectorRequest extends Request
 {
@@ -19,7 +22,10 @@ class UpdateConnectorRequest extends Request
      *     connectorConfiguration?: array<string, string>|null,
      *     skipHealthValidation?: bool|null,
      *     connectorArn: string,
-     *     currentVersion: string
+     *     currentVersion: string,
+     *     plugins?: list<Shapes\PluginUpdate>|null,
+     *     workerConfiguration?: Shapes\WorkerConfigurationUpdate|null,
+     *     useDefaultWorkerConfiguration?: bool|null
      * } $args
      */
     public function __construct(array $args)

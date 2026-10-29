@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'TEXT'|'FILE' $inputSource
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
- * @property 'AI_ONLY'|'FULL_SUPPORT'|null $supportMode
+ * @property 'AI_ONLY'|null $supportMode
  */
 class InquiryDetail extends Shape
 {
@@ -27,7 +27,7 @@ class InquiryDetail extends Shape
      *     inputSource: 'TEXT'|'FILE',
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     supportMode?: 'AI_ONLY'|'FULL_SUPPORT'|null
+     *     supportMode?: 'AI_ONLY'|null
      * } $args
      */
     public function __construct(array $args)

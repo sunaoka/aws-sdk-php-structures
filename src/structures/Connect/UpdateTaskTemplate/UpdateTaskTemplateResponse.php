@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Description
  * @property string|null $ContactFlowId
  * @property string|null $SelfAssignFlowId
+ * @property Shapes\TaskTemplateContactHooks|null $ContactHooks
  * @property Shapes\TaskTemplateConstraints|null $Constraints
  * @property Shapes\TaskTemplateDefaults|null $Defaults
  * @property list<Shapes\TaskTemplateField>|null $Fields

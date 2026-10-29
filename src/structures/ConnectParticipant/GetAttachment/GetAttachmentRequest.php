@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AttachmentId
  * @property string $ConnectionToken
  * @property int<5, 300>|null $UrlExpiryInSeconds
+ * @property 'INLINE'|'ATTACHMENT'|null $UrlContentDisposition
  */
 class GetAttachmentRequest extends Request
 {
@@ -15,7 +16,8 @@ class GetAttachmentRequest extends Request
      * @param array{
      *     AttachmentId: string,
      *     ConnectionToken: string,
-     *     UrlExpiryInSeconds?: int<5, 300>|null
+     *     UrlExpiryInSeconds?: int<5, 300>|null,
+     *     UrlContentDisposition?: 'INLINE'|'ATTACHMENT'|null
      * } $args
      */
     public function __construct(array $args)
