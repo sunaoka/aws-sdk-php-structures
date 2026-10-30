@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\CapacityProviderConfiguration|null $capacityProviderConfiguration
  * @property array<string, string>|null $tags
  * @property string|null $platformVersion
+ * @property list<Shapes\AllowedPort>|null $allowedPorts
  */
 class CreateAgentRuntimeRequest extends Request
 {
@@ -39,7 +40,8 @@ class CreateAgentRuntimeRequest extends Request
      *     filesystemConfigurations?: list<Shapes\FilesystemConfiguration>|null,
      *     capacityProviderConfiguration?: Shapes\CapacityProviderConfiguration|null,
      *     tags?: array<string, string>|null,
-     *     platformVersion?: string|null
+     *     platformVersion?: string|null,
+     *     allowedPorts?: list<Shapes\AllowedPort>|null
      * } $args
      */
     public function __construct(array $args)

@@ -27,6 +27,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $username
  * @property string|null $sshKeyName
  * @property InstanceMetadataOptions|null $metadataOptions
+ * @property InstanceHealthStatus|null $instanceStatus
+ * @property InstanceHealthStatus|null $systemStatus
  */
 class Instance extends Shape
 {
@@ -53,7 +55,9 @@ class Instance extends Shape
      *     state?: InstanceState|null,
      *     username?: string|null,
      *     sshKeyName?: string|null,
-     *     metadataOptions?: InstanceMetadataOptions|null
+     *     metadataOptions?: InstanceMetadataOptions|null,
+     *     instanceStatus?: InstanceHealthStatus|null,
+     *     systemStatus?: InstanceHealthStatus|null
      * } $args
      */
     public function __construct(array $args = [])

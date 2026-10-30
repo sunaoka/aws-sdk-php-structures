@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $runtimeSessionId
+ * @property string|null $sessionEndpointUrl
  * @property string|null $mcpSessionId
  * @property string|null $mcpProtocolVersion
  * @property string|null $traceId

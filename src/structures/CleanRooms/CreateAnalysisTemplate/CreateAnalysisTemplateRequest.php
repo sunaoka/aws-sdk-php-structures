@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property string $membershipIdentifier
  * @property string $name
- * @property 'SQL'|'PYSPARK_1_0' $format
+ * @property 'SQL'|'PYSPARK_1_0'|'PYSPARK_2_0' $format
  * @property Shapes\AnalysisSource $source
  * @property array<string, string>|null $tags
  * @property list<Shapes\AnalysisParameter>|null $analysisParameters
@@ -23,7 +23,7 @@ class CreateAnalysisTemplateRequest extends Request
      *     description?: string|null,
      *     membershipIdentifier: string,
      *     name: string,
-     *     format: 'SQL'|'PYSPARK_1_0',
+     *     format: 'SQL'|'PYSPARK_1_0'|'PYSPARK_2_0',
      *     source: Shapes\AnalysisSource,
      *     tags?: array<string, string>|null,
      *     analysisParameters?: list<Shapes\AnalysisParameter>|null,
