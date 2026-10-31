@@ -39,6 +39,7 @@ class DocDBClient extends \Aws\DocDB\DocDBClient
     use DescribeGlobalClusters\DescribeGlobalClustersTrait;
     use DescribeOrderableDBInstanceOptions\DescribeOrderableDBInstanceOptionsTrait;
     use DescribePendingMaintenanceActions\DescribePendingMaintenanceActionsTrait;
+    use DescribeServerlessV2PlatformVersions\DescribeServerlessV2PlatformVersionsTrait;
     use FailoverDBCluster\FailoverDBClusterTrait;
     use FailoverGlobalCluster\FailoverGlobalClusterTrait;
     use ListTagsForResource\ListTagsForResourceTrait;

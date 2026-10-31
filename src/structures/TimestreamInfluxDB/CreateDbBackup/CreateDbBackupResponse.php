@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|'MULTI_NODE_READ_REPLICAS'|null $deploymentType
  * @property string|null $kmsKeyId
  * @property Shapes\ClusterConfiguration|null $clusterConfiguration
+ * @property Shapes\DeploymentConfiguration|null $deploymentConfiguration
  * @property string|null $dbParameterGroupId
  * @property 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|'db.influx.24xlarge'|null $dbInstanceType
  * @property Shapes\LogDeliveryConfiguration|null $logDeliveryConfiguration

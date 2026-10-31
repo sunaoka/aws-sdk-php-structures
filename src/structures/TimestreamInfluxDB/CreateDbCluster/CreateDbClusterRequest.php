@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $bucket
  * @property int<1024, 65535>|null $port
  * @property string|null $dbParameterGroupIdentifier
- * @property 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|'db.influx.24xlarge' $dbInstanceType
+ * @property 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|'db.influx.24xlarge'|null $dbInstanceType
  * @property 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null $dbStorageType
  * @property int<20, 15360>|null $allocatedStorage
  * @property 'IPV4'|'DUAL'|null $networkType
@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $vpcSubnetIds
  * @property list<string> $vpcSecurityGroupIds
  * @property 'MULTI_NODE_READ_REPLICAS'|null $deploymentType
+ * @property Shapes\DeploymentConfiguration|null $deploymentConfiguration
  * @property 'AUTOMATIC'|'NO_FAILOVER'|null $failoverMode
  * @property Shapes\LogDeliveryConfiguration|null $logDeliveryConfiguration
  * @property Shapes\MaintenanceSchedule|null $maintenanceSchedule
@@ -38,7 +39,7 @@ class CreateDbClusterRequest extends Request
      *     bucket?: string|null,
      *     port?: int<1024, 65535>|null,
      *     dbParameterGroupIdentifier?: string|null,
-     *     dbInstanceType: 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|'db.influx.24xlarge',
+     *     dbInstanceType?: 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|'db.influx.24xlarge'|null,
      *     dbStorageType?: 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null,
      *     allocatedStorage?: int<20, 15360>|null,
      *     networkType?: 'IPV4'|'DUAL'|null,
@@ -46,6 +47,7 @@ class CreateDbClusterRequest extends Request
      *     vpcSubnetIds: list<string>,
      *     vpcSecurityGroupIds: list<string>,
      *     deploymentType?: 'MULTI_NODE_READ_REPLICAS'|null,
+     *     deploymentConfiguration?: Shapes\DeploymentConfiguration|null,
      *     failoverMode?: 'AUTOMATIC'|'NO_FAILOVER'|null,
      *     logDeliveryConfiguration?: Shapes\LogDeliveryConfiguration|null,
      *     maintenanceSchedule?: Shapes\MaintenanceSchedule|null,

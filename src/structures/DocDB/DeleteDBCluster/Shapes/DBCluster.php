@@ -40,6 +40,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $IOOptimizedNextAllowedModificationTime
  * @property string|null $StorageType
  * @property ServerlessV2ScalingConfigurationInfo|null $ServerlessV2ScalingConfiguration
+ * @property string|null $ServerlessV2PlatformVersion
  * @property ClusterMasterUserSecret|null $MasterUserSecret
  * @property string|null $NetworkType
  * @property bool|null $CopyTagsToSnapshot
@@ -83,6 +84,7 @@ class DBCluster extends Shape
      *     IOOptimizedNextAllowedModificationTime?: \Aws\Api\DateTimeResult|null,
      *     StorageType?: string|null,
      *     ServerlessV2ScalingConfiguration?: ServerlessV2ScalingConfigurationInfo|null,
+     *     ServerlessV2PlatformVersion?: string|null,
      *     MasterUserSecret?: ClusterMasterUserSecret|null,
      *     NetworkType?: string|null,
      *     CopyTagsToSnapshot?: bool|null

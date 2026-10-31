@@ -46,9 +46,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Duration|null $hardDeleteDefaultDuration
  * @property string|null $pluginRepositoryUrl
  * @property string|null $pluginRepositorySecretArn
- * @property int<1, 4> $ingestQueryInstances
- * @property int<0, 10> $queryOnlyInstances
- * @property bool $dedicatedCompactor
+ * @property int<1, 4>|null $ingestQueryInstances
+ * @property int<0, 10>|null $queryOnlyInstances
+ * @property bool|null $dedicatedCompactor
  * @property int<1, 100000000>|null $compactionRowLimit
  * @property int<1, 10000>|null $compactionMaxNumFilesPerPlan
  * @property Duration|null $compactionGen2Duration
@@ -109,9 +109,9 @@ class InfluxDBv3EnterpriseParameters extends Shape
      *     hardDeleteDefaultDuration?: Duration|null,
      *     pluginRepositoryUrl?: string|null,
      *     pluginRepositorySecretArn?: string|null,
-     *     ingestQueryInstances: int<1, 4>,
-     *     queryOnlyInstances: int<0, 10>,
-     *     dedicatedCompactor: bool,
+     *     ingestQueryInstances?: int<1, 4>|null,
+     *     queryOnlyInstances?: int<0, 10>|null,
+     *     dedicatedCompactor?: bool|null,
      *     compactionRowLimit?: int<1, 100000000>|null,
      *     compactionMaxNumFilesPerPlan?: int<1, 10000>|null,
      *     compactionGen2Duration?: Duration|null,
@@ -128,7 +128,7 @@ class InfluxDBv3EnterpriseParameters extends Shape
      *     snapshotDuration?: Duration|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

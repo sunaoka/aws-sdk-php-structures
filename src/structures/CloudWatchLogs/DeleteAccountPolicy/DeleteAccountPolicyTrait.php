@@ -6,10 +6,11 @@ trait DeleteAccountPolicyTrait
 {
     /**
      * @param DeleteAccountPolicyRequest $args
-     * @return void
+     * @return DeleteAccountPolicyResponse
      */
     public function deleteAccountPolicy(DeleteAccountPolicyRequest $args)
     {
-        parent::deleteAccountPolicy($args->toArray());
+        $result = parent::deleteAccountPolicy($args->toArray());
+        return new DeleteAccountPolicyResponse($result->toArray());
     }
 }

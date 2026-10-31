@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $logGroupArn
  * @property bool|null $deletionProtectionEnabled
  * @property bool|null $bearerTokenAuthenticationEnabled
+ * @property string|null $retentionPolicyName
  */
 class LogGroup extends Shape
 {
@@ -35,7 +36,8 @@ class LogGroup extends Shape
      *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|null,
      *     logGroupArn?: string|null,
      *     deletionProtectionEnabled?: bool|null,
-     *     bearerTokenAuthenticationEnabled?: bool|null
+     *     bearerTokenAuthenticationEnabled?: bool|null,
+     *     retentionPolicyName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

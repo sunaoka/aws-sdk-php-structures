@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Connect\DescribeRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CONTACT' $ResourceType
+ * @property 'CONTACT'|'CONTACT_EVALUATION' $ResourceType
  * @property 'TAG' $FilterType
  * @property string $FilterKey
  * @property string $FilterValue
@@ -15,7 +15,7 @@ class PreEvaluationFilter extends Shape
 {
     /**
      * @param array{
-     *     ResourceType: 'CONTACT',
+     *     ResourceType: 'CONTACT'|'CONTACT_EVALUATION',
      *     FilterType: 'TAG',
      *     FilterKey: string,
      *     FilterValue: string,

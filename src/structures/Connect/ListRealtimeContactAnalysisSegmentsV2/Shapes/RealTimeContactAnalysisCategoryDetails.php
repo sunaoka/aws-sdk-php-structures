@@ -5,12 +5,16 @@ namespace Sunaoka\Aws\Structures\Connect\ListRealtimeContactAnalysisSegmentsV2\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $RuleId
  * @property list<RealTimeContactAnalysisPointOfInterest> $PointsOfInterest
  */
 class RealTimeContactAnalysisCategoryDetails extends Shape
 {
     /**
-     * @param array{PointsOfInterest: list<RealTimeContactAnalysisPointOfInterest>} $args
+     * @param array{
+     *     RuleId?: string|null,
+     *     PointsOfInterest: list<RealTimeContactAnalysisPointOfInterest>
+     * } $args
      */
     public function __construct(array $args)
     {

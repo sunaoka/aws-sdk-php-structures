@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $configurationName
  * @property string|null $sessionPolicy
  * @property Shapes\EngineSettings|null $engineSettings
+ * @property 'SERVICE_DEFINED'|'NONE_WITH_OVERWRITE'|null $outputUriPrefixMode
  */
 class StartRunRequest extends Request
 {
@@ -57,7 +58,8 @@ class StartRunRequest extends Request
      *     scratchStorageMode?: 'LOCAL'|'SHARED'|null,
      *     configurationName?: string|null,
      *     sessionPolicy?: string|null,
-     *     engineSettings?: Shapes\EngineSettings|null
+     *     engineSettings?: Shapes\EngineSettings|null,
+     *     outputUriPrefixMode?: 'SERVICE_DEFINED'|'NONE_WITH_OVERWRITE'|null
      * } $args
      */
     public function __construct(array $args)

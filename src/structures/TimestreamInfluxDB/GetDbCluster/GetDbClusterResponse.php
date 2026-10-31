@@ -30,6 +30,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<string>|null $vpcSecurityGroupIds
  * @property 'AUTOMATIC'|'NO_FAILOVER'|null $failoverMode
  * @property Shapes\ClusterConfiguration|null $clusterConfiguration
+ * @property Shapes\DeploymentConfiguration|null $deploymentConfiguration
  * @property list<Shapes\DbBackupConfigurationOutput>|null $dbBackupConfigurations
  * @property string|null $kmsKeyId
  */

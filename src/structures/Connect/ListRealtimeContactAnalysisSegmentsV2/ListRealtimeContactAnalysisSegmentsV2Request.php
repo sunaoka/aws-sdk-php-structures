@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $NextToken
  * @property 'Raw'|'Redacted' $OutputType
  * @property list<'Transcript'|'Categories'|'Issues'|'Event'|'Attachments'|'PostContactSummary'|'ExtractedInformation'> $SegmentTypes
+ * @property Shapes\RealTimeContactAnalysisSegmentsFilter|null $ListFilter
  */
 class ListRealtimeContactAnalysisSegmentsV2Request extends Request
 {
@@ -21,7 +22,8 @@ class ListRealtimeContactAnalysisSegmentsV2Request extends Request
      *     MaxResults?: int<1, 100>|null,
      *     NextToken?: string|null,
      *     OutputType: 'Raw'|'Redacted',
-     *     SegmentTypes: list<'Transcript'|'Categories'|'Issues'|'Event'|'Attachments'|'PostContactSummary'|'ExtractedInformation'>
+     *     SegmentTypes: list<'Transcript'|'Categories'|'Issues'|'Event'|'Attachments'|'PostContactSummary'|'ExtractedInformation'>,
+     *     ListFilter?: Shapes\RealTimeContactAnalysisSegmentsFilter|null
      * } $args
      */
     public function __construct(array $args)

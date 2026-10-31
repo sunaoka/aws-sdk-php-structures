@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ProductionVariantServerlessConfig|null $DesiredServerlessConfig
  * @property ProductionVariantManagedInstanceScaling|null $ManagedInstanceScaling
  * @property ProductionVariantRoutingConfig|null $RoutingConfig
+ * @property list<AcceleratorPartitionLayout>|null $AcceleratorPartitionLayouts
  */
 class PendingProductionVariantSummary extends Shape
 {
@@ -37,7 +38,8 @@ class PendingProductionVariantSummary extends Shape
      *     CurrentServerlessConfig?: ProductionVariantServerlessConfig|null,
      *     DesiredServerlessConfig?: ProductionVariantServerlessConfig|null,
      *     ManagedInstanceScaling?: ProductionVariantManagedInstanceScaling|null,
-     *     RoutingConfig?: ProductionVariantRoutingConfig|null
+     *     RoutingConfig?: ProductionVariantRoutingConfig|null,
+     *     AcceleratorPartitionLayouts?: list<AcceleratorPartitionLayout>|null
      * } $args
      */
     public function __construct(array $args)
