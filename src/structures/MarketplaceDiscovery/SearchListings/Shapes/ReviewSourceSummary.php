@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $sourceName
- * @property 'AWS_MARKETPLACE' $sourceId
+ * @property 'AWS_MARKETPLACE'|'G2'|'PEERSPOT' $sourceId
  * @property string|null $sourceUrl
  * @property string $averageRating
  * @property int<0, max> $totalReviews
@@ -16,7 +16,7 @@ class ReviewSourceSummary extends Shape
     /**
      * @param array{
      *     sourceName: string,
-     *     sourceId: 'AWS_MARKETPLACE',
+     *     sourceId: 'AWS_MARKETPLACE'|'G2'|'PEERSPOT',
      *     sourceUrl?: string|null,
      *     averageRating: string,
      *     totalReviews: int<0, max>

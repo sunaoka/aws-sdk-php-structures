@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property StepStatus|null $Status
  * @property string|null $LogUri
  * @property string|null $EncryptionKeyArn
+ * @property StepAdditionalInfo|null $AdditionalInfo
  */
 class StepSummary extends Shape
 {
@@ -23,7 +24,8 @@ class StepSummary extends Shape
      *     ActionOnFailure?: 'TERMINATE_JOB_FLOW'|'TERMINATE_CLUSTER'|'CANCEL_AND_WAIT'|'CONTINUE'|null,
      *     Status?: StepStatus|null,
      *     LogUri?: string|null,
-     *     EncryptionKeyArn?: string|null
+     *     EncryptionKeyArn?: string|null,
+     *     AdditionalInfo?: StepAdditionalInfo|null
      * } $args
      */
     public function __construct(array $args = [])

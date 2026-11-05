@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ExecutionRoleArn
  * @property string|null $LogUri
  * @property string|null $EncryptionKeyArn
+ * @property StepAdditionalInfo|null $AdditionalInfo
  */
 class Step extends Shape
 {
@@ -25,7 +26,8 @@ class Step extends Shape
      *     Status?: StepStatus|null,
      *     ExecutionRoleArn?: string|null,
      *     LogUri?: string|null,
-     *     EncryptionKeyArn?: string|null
+     *     EncryptionKeyArn?: string|null,
+     *     AdditionalInfo?: StepAdditionalInfo|null
      * } $args
      */
     public function __construct(array $args = [])

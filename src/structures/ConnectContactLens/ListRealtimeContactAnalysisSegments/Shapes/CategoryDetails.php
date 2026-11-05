@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<PointOfInterest> $PointsOfInterest
+ * @property string|null $RuleId
  */
 class CategoryDetails extends Shape
 {
     /**
-     * @param array{PointsOfInterest: list<PointOfInterest>} $args
+     * @param array{
+     *     PointsOfInterest: list<PointOfInterest>,
+     *     RuleId?: string|null
+     * } $args
      */
     public function __construct(array $args)
     {

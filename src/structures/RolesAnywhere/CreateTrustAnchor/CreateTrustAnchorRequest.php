@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property Shapes\Source $source
  * @property bool|null $enabled
+ * @property bool|null $crlDpRevocationEnabled
  * @property list<Shapes\Tag>|null $tags
  * @property list<Shapes\NotificationSetting>|null $notificationSettings
  */
@@ -18,6 +19,7 @@ class CreateTrustAnchorRequest extends Request
      *     name: string,
      *     source: Shapes\Source,
      *     enabled?: bool|null,
+     *     crlDpRevocationEnabled?: bool|null,
      *     tags?: list<Shapes\Tag>|null,
      *     notificationSettings?: list<Shapes\NotificationSetting>|null
      * } $args

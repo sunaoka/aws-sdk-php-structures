@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientToken
  * @property string $destinationS3Uri
  * @property Shapes\ProcessingInput $input
+ * @property string|null $jobName
  * @property Shapes\ExportErrorReportLocation $errorReportLocation
  */
 class CreateDatasetExportJobRequest extends Request
@@ -19,6 +20,7 @@ class CreateDatasetExportJobRequest extends Request
      *     clientToken?: string|null,
      *     destinationS3Uri: string,
      *     input: Shapes\ProcessingInput,
+     *     jobName?: string|null,
      *     errorReportLocation: Shapes\ExportErrorReportLocation
      * } $args
      */

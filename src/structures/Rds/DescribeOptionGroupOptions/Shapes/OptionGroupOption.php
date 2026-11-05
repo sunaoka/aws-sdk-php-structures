@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<OptionGroupOptionSetting>|null $OptionGroupOptionSettings
  * @property list<OptionVersion>|null $OptionGroupOptionVersions
  * @property bool|null $CopyableCrossAccount
+ * @property bool|null $CopyableCrossRegion
  */
 class OptionGroupOption extends Shape
 {
@@ -43,7 +44,8 @@ class OptionGroupOption extends Shape
      *     SupportsOptionVersionDowngrade?: bool|null,
      *     OptionGroupOptionSettings?: list<OptionGroupOptionSetting>|null,
      *     OptionGroupOptionVersions?: list<OptionVersion>|null,
-     *     CopyableCrossAccount?: bool|null
+     *     CopyableCrossAccount?: bool|null,
+     *     CopyableCrossRegion?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

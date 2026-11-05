@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $registrationId
- * @property 'VAT'|'GST'|'CPF'|'CNPJ'|'SST'|'TIN'|'NRIC'|'PAN'|'NIP' $registrationType
+ * @property 'VAT'|'GST'|'CPF'|'CNPJ'|'SST'|'TIN'|'NRIC'|'PAN'|'NIP'|'CUIT'|'CDI'|'RUT'|'NIE'|'CI' $registrationType
  * @property string|null $legalName
  * @property Address|null $legalAddress
  * @property 'Business'|'Individual'|'Government'|null $sector
@@ -19,7 +19,7 @@ class TaxRegistrationEntry extends Shape
     /**
      * @param array{
      *     registrationId: string,
-     *     registrationType: 'VAT'|'GST'|'CPF'|'CNPJ'|'SST'|'TIN'|'NRIC'|'PAN'|'NIP',
+     *     registrationType: 'VAT'|'GST'|'CPF'|'CNPJ'|'SST'|'TIN'|'NRIC'|'PAN'|'NIP'|'CUIT'|'CDI'|'RUT'|'NIE'|'CI',
      *     legalName?: string|null,
      *     legalAddress?: Address|null,
      *     sector?: 'Business'|'Individual'|'Government'|null,

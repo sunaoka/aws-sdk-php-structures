@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ScheduleConfiguration|null $ScheduleConfiguration
  * @property string|null $RoleArn
  * @property Shapes\NetworkConfiguration|null $NetworkConfiguration
+ * @property Shapes\Environment|null $Environment
  * @property string|null $TriggerMode
  * @property string|null $WorkflowDefinition
  */

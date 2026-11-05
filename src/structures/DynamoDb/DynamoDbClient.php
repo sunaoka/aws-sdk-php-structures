@@ -7,6 +7,7 @@ class DynamoDbClient extends \Aws\DynamoDb\DynamoDbClient
     use BatchExecuteStatement\BatchExecuteStatementTrait;
     use BatchGetItem\BatchGetItemTrait;
     use BatchWriteItem\BatchWriteItemTrait;
+    use CancelBulkOperation\CancelBulkOperationTrait;
     use CreateBackup\CreateBackupTrait;
     use CreateGlobalTable\CreateGlobalTableTrait;
     use CreateTable\CreateTableTrait;
@@ -15,6 +16,7 @@ class DynamoDbClient extends \Aws\DynamoDb\DynamoDbClient
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;
     use DeleteTable\DeleteTableTrait;
     use DescribeBackup\DescribeBackupTrait;
+    use DescribeBulkOperation\DescribeBulkOperationTrait;
     use DescribeContinuousBackups\DescribeContinuousBackupsTrait;
     use DescribeContributorInsights\DescribeContributorInsightsTrait;
     use DescribeEndpoints\DescribeEndpointsTrait;
@@ -36,6 +38,7 @@ class DynamoDbClient extends \Aws\DynamoDb\DynamoDbClient
     use GetResourcePolicy\GetResourcePolicyTrait;
     use ImportTable\ImportTableTrait;
     use ListBackups\ListBackupsTrait;
+    use ListBulkOperations\ListBulkOperationsTrait;
     use ListContributorInsights\ListContributorInsightsTrait;
     use ListExports\ListExportsTrait;
     use ListGlobalTables\ListGlobalTablesTrait;
@@ -49,6 +52,7 @@ class DynamoDbClient extends \Aws\DynamoDb\DynamoDbClient
     use RestoreTableToPointInTime\RestoreTableToPointInTimeTrait;
     use Scan\ScanTrait;
     use SearchVectors\SearchVectorsTrait;
+    use StartBulkPutItems\StartBulkPutItemsTrait;
     use TagResource\TagResourceTrait;
     use TransactGetItems\TransactGetItemsTrait;
     use TransactWriteItems\TransactWriteItemsTrait;

@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SourceOptionGroup
  * @property string|null $SourceAccountId
  * @property \Aws\Api\DateTimeResult|null $CopyTimestamp
+ * @property string|null $SourceRegion
  */
 class OptionGroup extends Shape
 {
@@ -31,7 +32,8 @@ class OptionGroup extends Shape
      *     OptionGroupArn?: string|null,
      *     SourceOptionGroup?: string|null,
      *     SourceAccountId?: string|null,
-     *     CopyTimestamp?: \Aws\Api\DateTimeResult|null
+     *     CopyTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     SourceRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

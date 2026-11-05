@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\LoggingConfiguration|null $LoggingConfiguration
  * @property int|null $EngineVersion
  * @property Shapes\NetworkConfiguration|null $NetworkConfiguration
+ * @property Shapes\Environment|null $Environment
  * @property array<string, string>|null $Tags
  * @property string|null $TriggerMode
  */
@@ -32,6 +33,7 @@ class CreateWorkflowRequest extends Request
      *     LoggingConfiguration?: Shapes\LoggingConfiguration|null,
      *     EngineVersion?: int|null,
      *     NetworkConfiguration?: Shapes\NetworkConfiguration|null,
+     *     Environment?: Shapes\Environment|null,
      *     Tags?: array<string, string>|null,
      *     TriggerMode?: string|null
      * } $args

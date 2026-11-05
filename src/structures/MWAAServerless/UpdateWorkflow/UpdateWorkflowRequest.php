@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\LoggingConfiguration|null $LoggingConfiguration
  * @property int|null $EngineVersion
  * @property Shapes\NetworkConfiguration|null $NetworkConfiguration
+ * @property Shapes\Environment|null $Environment
  * @property string|null $TriggerMode
  */
 class UpdateWorkflowRequest extends Request
@@ -27,6 +28,7 @@ class UpdateWorkflowRequest extends Request
      *     LoggingConfiguration?: Shapes\LoggingConfiguration|null,
      *     EngineVersion?: int|null,
      *     NetworkConfiguration?: Shapes\NetworkConfiguration|null,
+     *     Environment?: Shapes\Environment|null,
      *     TriggerMode?: string|null
      * } $args
      */

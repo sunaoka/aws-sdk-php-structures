@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $SnapshotTarget
  * @property bool|null $CopyOptionGroup
  * @property string|null $SnapshotAvailabilityZone
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class CopyDBSnapshotRequest extends Request
 {
@@ -31,7 +32,8 @@ class CopyDBSnapshotRequest extends Request
      *     TargetCustomAvailabilityZone?: string|null,
      *     SnapshotTarget?: string|null,
      *     CopyOptionGroup?: bool|null,
-     *     SnapshotAvailabilityZone?: string|null
+     *     SnapshotAvailabilityZone?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args)

@@ -89,6 +89,9 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use GetResourcesTrendsV2\GetResourcesTrendsV2Trait;
     use GetResourcesV2\GetResourcesV2Trait;
     use GetSecurityControlDefinition\GetSecurityControlDefinitionTrait;
+    use GetSoftwareResourcesV2\GetSoftwareResourcesV2Trait;
+    use GetSoftwareStatisticsV2\GetSoftwareStatisticsV2Trait;
+    use GetSoftwareV2\GetSoftwareV2Trait;
     use InviteMembers\InviteMembersTrait;
     use ListAggregatorsV2\ListAggregatorsV2Trait;
     use ListAutomationRules\ListAutomationRulesTrait;

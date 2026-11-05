@@ -10,7 +10,10 @@ class PollyClient extends \Aws\Polly\PollyClient
     use GetSpeechSynthesisTask\GetSpeechSynthesisTaskTrait;
     use ListLexicons\ListLexiconsTrait;
     use ListSpeechSynthesisTasks\ListSpeechSynthesisTasksTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
     use PutLexicon\PutLexiconTrait;
     use StartSpeechSynthesisTask\StartSpeechSynthesisTaskTrait;
     use SynthesizeSpeech\SynthesizeSpeechTrait;
+    use TagResource\TagResourceTrait;
+    use UntagResource\UntagResourceTrait;
 }

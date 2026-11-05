@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\mgn\CreateNetworkMigrationDefinition;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string|null $clientToken
  * @property string $name
  * @property string|null $description
  * @property list<Shapes\SourceConfiguration>|null $sourceConfigurations
@@ -20,6 +21,7 @@ class CreateNetworkMigrationDefinitionRequest extends Request
 {
     /**
      * @param array{
+     *     clientToken?: string|null,
      *     name: string,
      *     description?: string|null,
      *     sourceConfigurations?: list<Shapes\SourceConfiguration>|null,

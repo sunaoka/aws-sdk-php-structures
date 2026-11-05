@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<PlatformProgrammingLanguage>|null $ProgrammingLanguages
  * @property list<PlatformFramework>|null $Frameworks
  * @property list<CustomAmi>|null $CustomAmiList
+ * @property list<DefaultAmi>|null $DefaultAmiList
  * @property list<string>|null $SupportedTierList
  * @property list<string>|null $SupportedAddonList
  * @property string|null $PlatformLifecycleState
@@ -47,6 +48,7 @@ class PlatformDescription extends Shape
      *     ProgrammingLanguages?: list<PlatformProgrammingLanguage>|null,
      *     Frameworks?: list<PlatformFramework>|null,
      *     CustomAmiList?: list<CustomAmi>|null,
+     *     DefaultAmiList?: list<DefaultAmi>|null,
      *     SupportedTierList?: list<string>|null,
      *     SupportedAddonList?: list<string>|null,
      *     PlatformLifecycleState?: string|null,

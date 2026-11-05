@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property string $Content
+ * @property array<string, string>|null $Tags
  */
 class PutLexiconRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Content: string
+     *     Content: string,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

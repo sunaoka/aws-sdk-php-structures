@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ContactId
  * @property int<1, 100>|null $MaxResults
  * @property string|null $NextToken
+ * @property Shapes\RealTimeContactAnalysisSegmentsFilter|null $ListFilter
  */
 class ListRealtimeContactAnalysisSegmentsRequest extends Request
 {
@@ -17,7 +18,8 @@ class ListRealtimeContactAnalysisSegmentsRequest extends Request
      *     InstanceId: string,
      *     ContactId: string,
      *     MaxResults?: int<1, 100>|null,
-     *     NextToken?: string|null
+     *     NextToken?: string|null,
+     *     ListFilter?: Shapes\RealTimeContactAnalysisSegmentsFilter|null
      * } $args
      */
     public function __construct(array $args)

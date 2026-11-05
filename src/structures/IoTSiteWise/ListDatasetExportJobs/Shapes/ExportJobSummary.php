@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $jobId
+ * @property string|null $jobName
  * @property 'SUBMITTED'|'RUNNING'|'COMPLETED'|'COMPLETED_WITH_ERRORS'|'FAILED' $status
  * @property \Aws\Api\DateTimeResult $startedAt
  * @property \Aws\Api\DateTimeResult|null $completedAt
@@ -16,6 +17,7 @@ class ExportJobSummary extends Shape
     /**
      * @param array{
      *     jobId: string,
+     *     jobName?: string|null,
      *     status: 'SUBMITTED'|'RUNNING'|'COMPLETED'|'COMPLETED_WITH_ERRORS'|'FAILED',
      *     startedAt: \Aws\Api\DateTimeResult,
      *     completedAt?: \Aws\Api\DateTimeResult|null,
