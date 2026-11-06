@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED' $status
  * @property \Aws\Api\DateTimeResult $createdTime
  * @property \Aws\Api\DateTimeResult $lastModifiedTime
+ * @property string|null $lastModifiedRegion
  * @property QuickResponseContents|null $contents
  * @property string|null $description
  * @property GroupingConfiguration|null $groupingConfiguration
@@ -37,6 +38,7 @@ class QuickResponseData extends Shape
      *     status: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED',
      *     createdTime: \Aws\Api\DateTimeResult,
      *     lastModifiedTime: \Aws\Api\DateTimeResult,
+     *     lastModifiedRegion?: string|null,
      *     contents?: QuickResponseContents|null,
      *     description?: string|null,
      *     groupingConfiguration?: GroupingConfiguration|null,

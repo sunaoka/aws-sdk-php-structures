@@ -6,8 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ContainerUrl
- * @property 'SAS'|'NONE' $AuthenticationType
+ * @property 'SAS'|'NONE'|'OIDC' $AuthenticationType
  * @property Shapes\AzureBlobSasConfiguration|null $SasConfiguration
+ * @property Shapes\AzureFederatedIdentityConfig|null $FederatedIdentity
  * @property 'BLOCK'|null $BlobType
  * @property 'HOT'|'COOL'|'ARCHIVE'|null $AccessTier
  * @property string|null $Subdirectory
@@ -21,8 +22,9 @@ class CreateLocationAzureBlobRequest extends Request
     /**
      * @param array{
      *     ContainerUrl: string,
-     *     AuthenticationType: 'SAS'|'NONE',
+     *     AuthenticationType: 'SAS'|'NONE'|'OIDC',
      *     SasConfiguration?: Shapes\AzureBlobSasConfiguration|null,
+     *     FederatedIdentity?: Shapes\AzureFederatedIdentityConfig|null,
      *     BlobType?: 'BLOCK'|null,
      *     AccessTier?: 'HOT'|'COOL'|'ARCHIVE'|null,
      *     Subdirectory?: string|null,

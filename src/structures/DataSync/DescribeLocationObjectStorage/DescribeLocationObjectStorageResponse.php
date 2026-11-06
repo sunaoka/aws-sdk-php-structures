@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $LocationArn
  * @property string|null $LocationUri
  * @property string|null $AccessKey
+ * @property Shapes\ObjectStorageFederatedIdentityConfig|null $FederatedIdentity
  * @property int<1, 65536>|null $ServerPort
  * @property 'HTTPS'|'HTTP'|null $ServerProtocol
  * @property list<string>|null $AgentArns

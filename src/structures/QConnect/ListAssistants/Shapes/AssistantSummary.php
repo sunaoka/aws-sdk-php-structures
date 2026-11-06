@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AssistantCapabilityConfiguration|null $capabilityConfiguration
  * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'ORCHESTRATION'|'NOTE_TAKING'|'CASE_SUMMARIZATION', AIAgentConfigurationData>|null $aiAgentConfiguration
  * @property list<OrchestratorConfigurationEntry>|null $orchestratorConfigurationList
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
+ * @property string|null $lastModifiedRegion
  */
 class AssistantSummary extends Shape
 {
@@ -33,7 +35,9 @@ class AssistantSummary extends Shape
      *     integrationConfiguration?: AssistantIntegrationConfiguration|null,
      *     capabilityConfiguration?: AssistantCapabilityConfiguration|null,
      *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'ORCHESTRATION'|'NOTE_TAKING'|'CASE_SUMMARIZATION', AIAgentConfigurationData>|null,
-     *     orchestratorConfigurationList?: list<OrchestratorConfigurationEntry>|null
+     *     orchestratorConfigurationList?: list<OrchestratorConfigurationEntry>|null,
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedRegion?: string|null
      * } $args
      */
     public function __construct(array $args)

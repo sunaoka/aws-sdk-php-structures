@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ServerHostname
  * @property string|null $AccessKey
  * @property string|null $SecretKey
+ * @property Shapes\ObjectStorageFederatedIdentityConfig|null $FederatedIdentity
  * @property list<string>|null $AgentArns
  * @property string|resource|\Psr\Http\Message\StreamInterface|null $ServerCertificate
  * @property Shapes\CmkSecretConfig|null $CmkSecretConfig
@@ -28,6 +29,7 @@ class UpdateLocationObjectStorageRequest extends Request
      *     ServerHostname?: string|null,
      *     AccessKey?: string|null,
      *     SecretKey?: string|null,
+     *     FederatedIdentity?: Shapes\ObjectStorageFederatedIdentityConfig|null,
      *     AgentArns?: list<string>|null,
      *     ServerCertificate?: string|resource|\Psr\Http\Message\StreamInterface|null,
      *     CmkSecretConfig?: Shapes\CmkSecretConfig|null,

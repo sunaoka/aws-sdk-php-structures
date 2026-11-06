@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'KNOWLEDGE_BASE'|'EXTERNAL_BEDROCK_KNOWLEDGE_BASE' $associationType
  * @property AssistantAssociationOutputData $associationData
  * @property array<string, string>|null $tags
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
+ * @property string|null $lastModifiedRegion
  */
 class AssistantAssociationSummary extends Shape
 {
@@ -23,7 +25,9 @@ class AssistantAssociationSummary extends Shape
      *     assistantArn: string,
      *     associationType: 'KNOWLEDGE_BASE'|'EXTERNAL_BEDROCK_KNOWLEDGE_BASE',
      *     associationData: AssistantAssociationOutputData,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedRegion?: string|null
      * } $args
      */
     public function __construct(array $args)

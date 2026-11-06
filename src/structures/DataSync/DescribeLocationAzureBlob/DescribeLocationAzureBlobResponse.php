@@ -7,7 +7,8 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $LocationArn
  * @property string|null $LocationUri
- * @property 'SAS'|'NONE'|null $AuthenticationType
+ * @property 'SAS'|'NONE'|'OIDC'|null $AuthenticationType
+ * @property Shapes\AzureFederatedIdentityConfig|null $FederatedIdentity
  * @property 'BLOCK'|null $BlobType
  * @property 'HOT'|'COOL'|'ARCHIVE'|null $AccessTier
  * @property list<string>|null $AgentArns

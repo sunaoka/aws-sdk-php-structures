@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property CryptoConfig|null $CryptoConfig
+ * @property list<ConnectedAccountConfig>|null $ConnectedAccountConfigs
  * @property 'REAL'|'TEST'|null $CurrencyMode
  */
 class MonetizationConfig extends Shape
@@ -13,6 +14,7 @@ class MonetizationConfig extends Shape
     /**
      * @param array{
      *     CryptoConfig?: CryptoConfig|null,
+     *     ConnectedAccountConfigs?: list<ConnectedAccountConfig>|null,
      *     CurrencyMode?: 'REAL'|'TEST'|null
      * } $args
      */

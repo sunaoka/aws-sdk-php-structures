@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ACTIVE'|'LEGACY'|null $modelLifecycle
  * @property \Aws\Api\DateTimeResult|null $legacyTimestamp
  * @property \Aws\Api\DateTimeResult|null $endOfLifeTimestamp
+ * @property 'SUPPORTED'|'UNSUPPORTED'|null $globalResiliencyStatus
  */
 class ModelSummary extends Shape
 {
@@ -25,7 +26,8 @@ class ModelSummary extends Shape
      *     supportedAIPromptTypes?: list<'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'EMAIL_QUERY_REFORMULATION'|'ORCHESTRATION'|'NOTE_TAKING'|'CASE_SUMMARIZATION'>|null,
      *     modelLifecycle?: 'ACTIVE'|'LEGACY'|null,
      *     legacyTimestamp?: \Aws\Api\DateTimeResult|null,
-     *     endOfLifeTimestamp?: \Aws\Api\DateTimeResult|null
+     *     endOfLifeTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     globalResiliencyStatus?: 'SUPPORTED'|'UNSUPPORTED'|null
      * } $args
      */
     public function __construct(array $args)

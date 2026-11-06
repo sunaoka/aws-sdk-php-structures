@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $logGroupNamePattern
- * @property 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|null $logGroupClass
+ * @property 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|'ESSENTIALS'|null $logGroupClass
  * @property bool|null $includeLinkedAccounts
  * @property list<string>|null $accountIdentifiers
  * @property string|null $nextToken
@@ -20,7 +20,7 @@ class ListLogGroupsRequest extends Request
     /**
      * @param array{
      *     logGroupNamePattern?: string|null,
-     *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|null,
+     *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|'ESSENTIALS'|null,
      *     includeLinkedAccounts?: bool|null,
      *     accountIdentifiers?: list<string>|null,
      *     nextToken?: string|null,

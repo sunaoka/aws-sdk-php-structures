@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $dataSourceId
  * @property string $documentId
  * @property string $knowledgeBaseId
+ * @property string|null $mediaId
  * @property 'RAW'|'EXTRACTED'|null $outputFormat
  * @property Shapes\UserContext|null $userContext
  */
@@ -18,6 +19,7 @@ class GetDocumentContentRequest extends Request
      *     dataSourceId: string,
      *     documentId: string,
      *     knowledgeBaseId: string,
+     *     mediaId?: string|null,
      *     outputFormat?: 'RAW'|'EXTRACTED'|null,
      *     userContext?: Shapes\UserContext|null
      * } $args

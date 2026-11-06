@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $applicationId
  * @property string $agentSpaceId
- * @property 'USER'|'ALL'|null $memberType
+ * @property 'USER'|'GROUP'|'ALL'|null $memberType
  * @property int|null $maxResults
  * @property string|null $nextToken
  */
@@ -17,7 +17,7 @@ class ListMembershipsRequest extends Request
      * @param array{
      *     applicationId: string,
      *     agentSpaceId: string,
-     *     memberType?: 'USER'|'ALL'|null,
+     *     memberType?: 'USER'|'GROUP'|'ALL'|null,
      *     maxResults?: int|null,
      *     nextToken?: string|null
      * } $args

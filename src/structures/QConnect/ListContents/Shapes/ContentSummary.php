@@ -16,6 +16,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|'UPDATE_FAILED' $status
  * @property array<string, string> $metadata
  * @property array<string, string>|null $tags
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
+ * @property string|null $lastModifiedRegion
+ * @property string|null $fileHash
  */
 class ContentSummary extends Shape
 {
@@ -31,7 +34,10 @@ class ContentSummary extends Shape
      *     contentType: string,
      *     status: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|'UPDATE_FAILED',
      *     metadata: array<string, string>,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedRegion?: string|null,
+     *     fileHash?: string|null
      * } $args
      */
     public function __construct(array $args)

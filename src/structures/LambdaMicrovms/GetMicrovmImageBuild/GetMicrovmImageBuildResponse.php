@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $imageVersion
  * @property string $buildId
  * @property 'PENDING'|'IN_PROGRESS'|'SUCCESSFUL'|'FAILED' $buildState
- * @property 'ARM_64' $architecture
- * @property 'GRAVITON' $chipset
+ * @property 'ARM_64'|'X86_64' $architecture
+ * @property 'GRAVITON'|'INTEL' $chipset
  * @property string $chipsetGeneration
  * @property string|null $stateReason
  * @property \Aws\Api\DateTimeResult $createdAt

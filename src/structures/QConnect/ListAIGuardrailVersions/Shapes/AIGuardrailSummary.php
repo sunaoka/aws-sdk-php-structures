@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $aiGuardrailId
  * @property string $aiGuardrailArn
  * @property \Aws\Api\DateTimeResult|null $modifiedTime
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
+ * @property string|null $lastModifiedRegion
  * @property 'SAVED'|'PUBLISHED' $visibilityStatus
  * @property string|null $description
  * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|null $status
@@ -26,6 +28,8 @@ class AIGuardrailSummary extends Shape
      *     aiGuardrailId: string,
      *     aiGuardrailArn: string,
      *     modifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedRegion?: string|null,
      *     visibilityStatus: 'SAVED'|'PUBLISHED',
      *     description?: string|null,
      *     status?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|null,

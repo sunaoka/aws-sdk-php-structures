@@ -7,8 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $LocationArn
  * @property string|null $Subdirectory
- * @property 'SAS'|'NONE'|null $AuthenticationType
+ * @property 'SAS'|'NONE'|'OIDC'|null $AuthenticationType
  * @property Shapes\AzureBlobSasConfiguration|null $SasConfiguration
+ * @property Shapes\AzureFederatedIdentityConfig|null $FederatedIdentity
  * @property 'BLOCK'|null $BlobType
  * @property 'HOT'|'COOL'|'ARCHIVE'|null $AccessTier
  * @property list<string>|null $AgentArns
@@ -21,8 +22,9 @@ class UpdateLocationAzureBlobRequest extends Request
      * @param array{
      *     LocationArn: string,
      *     Subdirectory?: string|null,
-     *     AuthenticationType?: 'SAS'|'NONE'|null,
+     *     AuthenticationType?: 'SAS'|'NONE'|'OIDC'|null,
      *     SasConfiguration?: Shapes\AzureBlobSasConfiguration|null,
+     *     FederatedIdentity?: Shapes\AzureFederatedIdentityConfig|null,
      *     BlobType?: 'BLOCK'|null,
      *     AccessTier?: 'HOT'|'COOL'|'ARCHIVE'|null,
      *     AgentArns?: list<string>|null,

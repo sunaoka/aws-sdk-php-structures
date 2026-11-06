@@ -19,6 +19,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $tags
  * @property 'SYNC_FAILED'|'SYNCING_IN_PROGRESS'|'SYNC_SUCCESS'|'CREATE_IN_PROGRESS'|null $ingestionStatus
  * @property list<string>|null $ingestionFailureReasons
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
+ * @property string|null $lastModifiedRegion
  */
 class KnowledgeBaseData extends Shape
 {
@@ -37,7 +39,9 @@ class KnowledgeBaseData extends Shape
      *     description?: string|null,
      *     tags?: array<string, string>|null,
      *     ingestionStatus?: 'SYNC_FAILED'|'SYNCING_IN_PROGRESS'|'SYNC_SUCCESS'|'CREATE_IN_PROGRESS'|null,
-     *     ingestionFailureReasons?: list<string>|null
+     *     ingestionFailureReasons?: list<string>|null,
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedRegion?: string|null
      * } $args
      */
     public function __construct(array $args)

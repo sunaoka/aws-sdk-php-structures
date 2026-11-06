@@ -7,7 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $imageArn
  * @property string $imageVersion
- * @property 'AVAILABLE'|'DEPRECATED'|null $status
+ * @property 'AVAILABLE'|'DEPRECATED'|'RECALLED'|null $status
+ * @property list<CpuConfiguration>|null $supportedCpuConfigurations
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
@@ -17,7 +18,8 @@ class ManagedMicrovmImageVersion extends Shape
      * @param array{
      *     imageArn: string,
      *     imageVersion: string,
-     *     status?: 'AVAILABLE'|'DEPRECATED'|null,
+     *     status?: 'AVAILABLE'|'DEPRECATED'|'RECALLED'|null,
+     *     supportedCpuConfigurations?: list<CpuConfiguration>|null,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args

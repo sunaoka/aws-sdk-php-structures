@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED' $status
  * @property \Aws\Api\DateTimeResult $createdTime
  * @property \Aws\Api\DateTimeResult $lastModifiedTime
+ * @property string|null $lastModifiedRegion
  * @property string|null $description
  * @property string|null $lastModifiedBy
  * @property bool|null $isActive
@@ -33,6 +34,7 @@ class QuickResponseSummary extends Shape
      *     status: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED',
      *     createdTime: \Aws\Api\DateTimeResult,
      *     lastModifiedTime: \Aws\Api\DateTimeResult,
+     *     lastModifiedRegion?: string|null,
      *     description?: string|null,
      *     lastModifiedBy?: string|null,
      *     isActive?: bool|null,

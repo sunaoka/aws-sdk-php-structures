@@ -74,6 +74,8 @@ class QConnectClient extends \Aws\QConnect\QConnectClient
     use NotifyRecommendationsReceived\NotifyRecommendationsReceivedTrait;
     use PutFeedback\PutFeedbackTrait;
     use QueryAssistant\QueryAssistantTrait;
+    use RegisterAssistantReplicaKey\RegisterAssistantReplicaKeyTrait;
+    use RegisterKnowledgeBaseReplicaKey\RegisterKnowledgeBaseReplicaKeyTrait;
     use RemoveAssistantAIAgent\RemoveAssistantAIAgentTrait;
     use RemoveKnowledgeBaseTemplateUri\RemoveKnowledgeBaseTemplateUriTrait;
     use RenderMessageTemplate\RenderMessageTemplateTrait;

@@ -31,6 +31,7 @@ class Route53DomainsClient extends \Aws\Route53Domains\Route53DomainsClient
     use RenewDomain\RenewDomainTrait;
     use ResendContactReachabilityEmail\ResendContactReachabilityEmailTrait;
     use ResendOperationAuthorization\ResendOperationAuthorizationTrait;
+    use RestoreDomain\RestoreDomainTrait;
     use RetrieveDomainAuthCode\RetrieveDomainAuthCodeTrait;
     use TransferDomain\TransferDomainTrait;
     use TransferDomainToAnotherAwsAccount\TransferDomainToAnotherAwsAccountTrait;

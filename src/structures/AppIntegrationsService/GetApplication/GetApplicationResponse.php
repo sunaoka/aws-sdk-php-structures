@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\Publication>|null $Publications
  * @property \Aws\Api\DateTimeResult|null $CreatedTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $LastModifiedRegion
  * @property array<string, string>|null $Tags
  * @property list<string>|null $Permissions
  * @property bool|null $IsService

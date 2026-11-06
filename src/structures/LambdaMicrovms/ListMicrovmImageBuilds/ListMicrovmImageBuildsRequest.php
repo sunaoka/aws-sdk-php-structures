@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $nextToken
  * @property string $imageIdentifier
  * @property string $imageVersion
- * @property 'ARM_64'|null $architecture
- * @property 'GRAVITON'|null $chipset
+ * @property 'ARM_64'|'X86_64'|null $architecture
+ * @property 'GRAVITON'|'INTEL'|null $chipset
  * @property string|null $chipsetGeneration
  */
 class ListMicrovmImageBuildsRequest extends Request
@@ -21,8 +21,8 @@ class ListMicrovmImageBuildsRequest extends Request
      *     nextToken?: string|null,
      *     imageIdentifier: string,
      *     imageVersion: string,
-     *     architecture?: 'ARM_64'|null,
-     *     chipset?: 'GRAVITON'|null,
+     *     architecture?: 'ARM_64'|'X86_64'|null,
+     *     chipset?: 'GRAVITON'|'INTEL'|null,
      *     chipsetGeneration?: string|null
      * } $args
      */

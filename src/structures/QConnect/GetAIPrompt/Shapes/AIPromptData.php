@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AIPromptTemplateConfiguration $templateConfiguration
  * @property AIPromptInferenceConfiguration|null $inferenceConfiguration
  * @property \Aws\Api\DateTimeResult|null $modifiedTime
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
+ * @property string|null $lastModifiedRegion
  * @property string|null $description
  * @property 'SAVED'|'PUBLISHED' $visibilityStatus
  * @property array<string, string>|null $tags
@@ -39,6 +41,8 @@ class AIPromptData extends Shape
      *     templateConfiguration: AIPromptTemplateConfiguration,
      *     inferenceConfiguration?: AIPromptInferenceConfiguration|null,
      *     modifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedRegion?: string|null,
      *     description?: string|null,
      *     visibilityStatus: 'SAVED'|'PUBLISHED',
      *     tags?: array<string, string>|null,

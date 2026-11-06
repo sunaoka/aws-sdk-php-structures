@@ -22,6 +22,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $tags
  * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|null $status
  * @property \Aws\Api\DateTimeResult|null $modifiedTime
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
+ * @property string|null $lastModifiedRegion
  */
 class AIGuardrailData extends Shape
 {
@@ -43,7 +45,9 @@ class AIGuardrailData extends Shape
      *     contextualGroundingPolicyConfig?: AIGuardrailContextualGroundingPolicyConfig|null,
      *     tags?: array<string, string>|null,
      *     status?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|null,
-     *     modifiedTime?: \Aws\Api\DateTimeResult|null
+     *     modifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedRegion?: string|null
      * } $args
      */
     public function __construct(array $args)

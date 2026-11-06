@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $applicationId
  * @property string $agentSpaceId
  * @property string $membershipId
- * @property 'USER'|null $memberType
+ * @property 'USER'|'GROUP'|null $memberType
  */
 class DeleteMembershipRequest extends Request
 {
@@ -17,7 +17,7 @@ class DeleteMembershipRequest extends Request
      *     applicationId: string,
      *     agentSpaceId: string,
      *     membershipId: string,
-     *     memberType?: 'USER'|null
+     *     memberType?: 'USER'|'GROUP'|null
      * } $args
      */
     public function __construct(array $args)

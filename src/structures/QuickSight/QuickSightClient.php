@@ -138,6 +138,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DescribeQPersonalizationConfiguration\DescribeQPersonalizationConfigurationTrait;
     use DescribeQuickSightQSearchConfiguration\DescribeQuickSightQSearchConfigurationTrait;
     use DescribeRefreshSchedule\DescribeRefreshScheduleTrait;
+    use DescribeResourcePermissions\DescribeResourcePermissionsTrait;
     use DescribeRoleCustomPermission\DescribeRoleCustomPermissionTrait;
     use DescribeSelfUpgradeConfiguration\DescribeSelfUpgradeConfigurationTrait;
     use DescribeSpace\DescribeSpaceTrait;
@@ -282,6 +283,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateQPersonalizationConfiguration\UpdateQPersonalizationConfigurationTrait;
     use UpdateQuickSightQSearchConfiguration\UpdateQuickSightQSearchConfigurationTrait;
     use UpdateRefreshSchedule\UpdateRefreshScheduleTrait;
+    use UpdateResourcePermissions\UpdateResourcePermissionsTrait;
     use UpdateRoleCustomPermission\UpdateRoleCustomPermissionTrait;
     use UpdateSPICECapacityConfiguration\UpdateSPICECapacityConfigurationTrait;
     use UpdateSelfUpgrade\UpdateSelfUpgradeTrait;

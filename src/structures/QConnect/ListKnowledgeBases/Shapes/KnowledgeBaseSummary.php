@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ServerSideEncryptionConfiguration|null $serverSideEncryptionConfiguration
  * @property string|null $description
  * @property array<string, string>|null $tags
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
+ * @property string|null $lastModifiedRegion
  */
 class KnowledgeBaseSummary extends Shape
 {
@@ -31,7 +33,9 @@ class KnowledgeBaseSummary extends Shape
      *     renderingConfiguration?: RenderingConfiguration|null,
      *     serverSideEncryptionConfiguration?: ServerSideEncryptionConfiguration|null,
      *     description?: string|null,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedRegion?: string|null
      * } $args
      */
     public function __construct(array $args)

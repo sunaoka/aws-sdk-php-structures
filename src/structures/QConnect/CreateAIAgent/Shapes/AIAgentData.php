@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'ORCHESTRATION'|'NOTE_TAKING'|'CASE_SUMMARIZATION' $type
  * @property AIAgentConfiguration $configuration
  * @property \Aws\Api\DateTimeResult|null $modifiedTime
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
+ * @property string|null $lastModifiedRegion
  * @property string|null $description
  * @property 'SAVED'|'PUBLISHED' $visibilityStatus
  * @property array<string, string>|null $tags
@@ -31,6 +33,8 @@ class AIAgentData extends Shape
      *     type: 'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'ORCHESTRATION'|'NOTE_TAKING'|'CASE_SUMMARIZATION',
      *     configuration: AIAgentConfiguration,
      *     modifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedRegion?: string|null,
      *     description?: string|null,
      *     visibilityStatus: 'SAVED'|'PUBLISHED',
      *     tags?: array<string, string>|null,

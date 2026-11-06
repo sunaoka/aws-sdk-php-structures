@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $BucketName
  * @property string|null $AccessKey
  * @property string|null $SecretKey
+ * @property Shapes\ObjectStorageFederatedIdentityConfig|null $FederatedIdentity
  * @property list<string>|null $AgentArns
  * @property list<Shapes\TagListEntry>|null $Tags
  * @property string|resource|\Psr\Http\Message\StreamInterface|null $ServerCertificate
@@ -29,6 +30,7 @@ class CreateLocationObjectStorageRequest extends Request
      *     BucketName: string,
      *     AccessKey?: string|null,
      *     SecretKey?: string|null,
+     *     FederatedIdentity?: Shapes\ObjectStorageFederatedIdentityConfig|null,
      *     AgentArns?: list<string>|null,
      *     Tags?: list<Shapes\TagListEntry>|null,
      *     ServerCertificate?: string|resource|\Psr\Http\Message\StreamInterface|null,

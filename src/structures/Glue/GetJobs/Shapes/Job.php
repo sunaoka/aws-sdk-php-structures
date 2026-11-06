@@ -32,6 +32,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SourceControlDetails|null $SourceControlDetails
  * @property string|null $MaintenanceWindow
  * @property string|null $ProfileName
+ * @property AutoUpgradeMetadata|null $AutoUpgradeMetadata
  */
 class Job extends Shape
 {
@@ -63,7 +64,8 @@ class Job extends Shape
      *     ExecutionClass?: 'FLEX'|'STANDARD'|null,
      *     SourceControlDetails?: SourceControlDetails|null,
      *     MaintenanceWindow?: string|null,
-     *     ProfileName?: string|null
+     *     ProfileName?: string|null,
+     *     AutoUpgradeMetadata?: AutoUpgradeMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

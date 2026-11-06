@@ -154,6 +154,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetJobBookmark\GetJobBookmarkTrait;
     use GetJobRun\GetJobRunTrait;
     use GetJobRuns\GetJobRunsTrait;
+    use GetJobUpgradeAnalysis\GetJobUpgradeAnalysisTrait;
     use GetJobs\GetJobsTrait;
     use GetMLTaskRun\GetMLTaskRunTrait;
     use GetMLTaskRuns\GetMLTaskRunsTrait;
@@ -263,6 +264,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use StartExportLabelsTaskRun\StartExportLabelsTaskRunTrait;
     use StartImportLabelsTaskRun\StartImportLabelsTaskRunTrait;
     use StartJobRun\StartJobRunTrait;
+    use StartJobUpgradeAnalysis\StartJobUpgradeAnalysisTrait;
     use StartMLEvaluationTaskRun\StartMLEvaluationTaskRunTrait;
     use StartMLLabelingSetGenerationTaskRun\StartMLLabelingSetGenerationTaskRunTrait;
     use StartMaterializedViewRefreshTaskRun\StartMaterializedViewRefreshTaskRunTrait;
@@ -272,6 +274,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use StopColumnStatisticsTaskRunSchedule\StopColumnStatisticsTaskRunScheduleTrait;
     use StopCrawler\StopCrawlerTrait;
     use StopCrawlerSchedule\StopCrawlerScheduleTrait;
+    use StopJobUpgradeAnalysis\StopJobUpgradeAnalysisTrait;
     use StopMaterializedViewRefreshTaskRun\StopMaterializedViewRefreshTaskRunTrait;
     use StopSession\StopSessionTrait;
     use StopTrigger\StopTriggerTrait;

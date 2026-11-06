@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string>|null $accountIdentifiers
  * @property bool|null $includeLinkedAccounts
- * @property 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|null $logGroupClass
+ * @property 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|'ESSENTIALS'|null $logGroupClass
  * @property string|null $logGroupNamePattern
  * @property list<Shapes\DataSourceFilter>|null $dataSources
  * @property 'DATA_SOURCE_NAME_TYPE_AND_FORMAT'|'DATA_SOURCE_NAME_AND_TYPE' $groupBy
@@ -20,7 +20,7 @@ class ListAggregateLogGroupSummariesRequest extends Request
      * @param array{
      *     accountIdentifiers?: list<string>|null,
      *     includeLinkedAccounts?: bool|null,
-     *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|null,
+     *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|'ESSENTIALS'|null,
      *     logGroupNamePattern?: string|null,
      *     dataSources?: list<Shapes\DataSourceFilter>|null,
      *     groupBy: 'DATA_SOURCE_NAME_TYPE_AND_FORMAT'|'DATA_SOURCE_NAME_AND_TYPE',

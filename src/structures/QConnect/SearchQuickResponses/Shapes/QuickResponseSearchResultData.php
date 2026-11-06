@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property QuickResponseContents $contents
  * @property \Aws\Api\DateTimeResult $createdTime
  * @property \Aws\Api\DateTimeResult $lastModifiedTime
+ * @property string|null $lastModifiedRegion
  * @property bool $isActive
  * @property string|null $description
  * @property GroupingConfiguration|null $groupingConfiguration
@@ -40,6 +41,7 @@ class QuickResponseSearchResultData extends Shape
      *     contents: QuickResponseContents,
      *     createdTime: \Aws\Api\DateTimeResult,
      *     lastModifiedTime: \Aws\Api\DateTimeResult,
+     *     lastModifiedRegion?: string|null,
      *     isActive: bool,
      *     description?: string|null,
      *     groupingConfiguration?: GroupingConfiguration|null,

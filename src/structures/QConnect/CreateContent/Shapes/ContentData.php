@@ -19,6 +19,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $linkOutUri
  * @property string $url
  * @property \Aws\Api\DateTimeResult $urlExpiry
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
+ * @property string|null $lastModifiedRegion
+ * @property string|null $fileHash
  */
 class ContentData extends Shape
 {
@@ -37,7 +40,10 @@ class ContentData extends Shape
      *     tags?: array<string, string>|null,
      *     linkOutUri?: string|null,
      *     url: string,
-     *     urlExpiry: \Aws\Api\DateTimeResult
+     *     urlExpiry: \Aws\Api\DateTimeResult,
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedRegion?: string|null,
+     *     fileHash?: string|null
      * } $args
      */
     public function __construct(array $args)

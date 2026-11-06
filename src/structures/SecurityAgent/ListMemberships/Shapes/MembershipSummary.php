@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $membershipId
  * @property string $applicationId
  * @property string $agentSpaceId
- * @property 'USER' $memberType
+ * @property 'USER'|'GROUP' $memberType
  * @property MembershipConfig|null $config
  * @property MemberMetadata|null $metadata
  * @property \Aws\Api\DateTimeResult $createdAt
@@ -23,7 +23,7 @@ class MembershipSummary extends Shape
      *     membershipId: string,
      *     applicationId: string,
      *     agentSpaceId: string,
-     *     memberType: 'USER',
+     *     memberType: 'USER'|'GROUP',
      *     config?: MembershipConfig|null,
      *     metadata?: MemberMetadata|null,
      *     createdAt: \Aws\Api\DateTimeResult,
