@@ -31,6 +31,7 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use DeletePatchBaseline\DeletePatchBaselineTrait;
     use DeleteResourceDataSync\DeleteResourceDataSyncTrait;
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;
+    use DeregisterDefaultHostManagementConfiguration\DeregisterDefaultHostManagementConfigurationTrait;
     use DeregisterManagedInstance\DeregisterManagedInstanceTrait;
     use DeregisterPatchBaselineForPatchGroup\DeregisterPatchBaselineForPatchGroupTrait;
     use DeregisterTargetFromMaintenanceWindow\DeregisterTargetFromMaintenanceWindowTrait;
@@ -122,6 +123,7 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use PutInventory\PutInventoryTrait;
     use PutParameter\PutParameterTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;
+    use RegisterDefaultHostManagementConfiguration\RegisterDefaultHostManagementConfigurationTrait;
     use RegisterDefaultPatchBaseline\RegisterDefaultPatchBaselineTrait;
     use RegisterPatchBaselineForPatchGroup\RegisterPatchBaselineForPatchGroupTrait;
     use RegisterTargetWithMaintenanceWindow\RegisterTargetWithMaintenanceWindowTrait;

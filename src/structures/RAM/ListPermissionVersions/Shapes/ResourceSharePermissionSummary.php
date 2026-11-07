@@ -16,7 +16,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $isResourceTypeDefault
  * @property 'CUSTOMER_MANAGED'|'AWS_MANAGED'|null $permissionType
  * @property 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD'|null $featureSet
+ * @property list<PermissionTemplateParameter>|null $permissionTemplateParameters
  * @property list<Tag>|null $tags
+ * @property 'SELF'|'OTHER-ACCOUNTS'|null $resourceOwner
  */
 class ResourceSharePermissionSummary extends Shape
 {
@@ -33,7 +35,9 @@ class ResourceSharePermissionSummary extends Shape
      *     isResourceTypeDefault?: bool|null,
      *     permissionType?: 'CUSTOMER_MANAGED'|'AWS_MANAGED'|null,
      *     featureSet?: 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD'|null,
-     *     tags?: list<Tag>|null
+     *     permissionTemplateParameters?: list<PermissionTemplateParameter>|null,
+     *     tags?: list<Tag>|null,
+     *     resourceOwner?: 'SELF'|'OTHER-ACCOUNTS'|null
      * } $args
      */
     public function __construct(array $args = [])

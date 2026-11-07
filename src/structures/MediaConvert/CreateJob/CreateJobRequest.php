@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AccelerationSettings|null $AccelerationSettings
  * @property 'QUEUE'|'PRESET'|'JOB_TEMPLATE'|'JOB'|null $BillingTagsSource
  * @property string|null $ClientRequestToken
+ * @property Shapes\ElementalInferenceSettings|null $ElementalInferenceSettings
  * @property list<Shapes\HopDestination>|null $HopDestinations
  * @property string|null $JobEngineVersion
  * @property string|null $JobTemplate
@@ -27,6 +28,7 @@ class CreateJobRequest extends Request
      *     AccelerationSettings?: Shapes\AccelerationSettings|null,
      *     BillingTagsSource?: 'QUEUE'|'PRESET'|'JOB_TEMPLATE'|'JOB'|null,
      *     ClientRequestToken?: string|null,
+     *     ElementalInferenceSettings?: Shapes\ElementalInferenceSettings|null,
      *     HopDestinations?: list<Shapes\HopDestination>|null,
      *     JobEngineVersion?: string|null,
      *     JobTemplate?: string|null,

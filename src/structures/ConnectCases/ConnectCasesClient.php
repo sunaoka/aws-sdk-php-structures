@@ -4,9 +4,11 @@ namespace Sunaoka\Aws\Structures\ConnectCases;
 
 class ConnectCasesClient extends \Aws\ConnectCases\ConnectCasesClient
 {
+    use BatchCreateRelatedItem\BatchCreateRelatedItemTrait;
     use BatchGetCaseRule\BatchGetCaseRuleTrait;
     use BatchGetField\BatchGetFieldTrait;
     use BatchPutFieldOptions\BatchPutFieldOptionsTrait;
+    use BatchUpdateCase\BatchUpdateCaseTrait;
     use CreateCase\CreateCaseTrait;
     use CreateCaseRule\CreateCaseRuleTrait;
     use CreateDomain\CreateDomainTrait;

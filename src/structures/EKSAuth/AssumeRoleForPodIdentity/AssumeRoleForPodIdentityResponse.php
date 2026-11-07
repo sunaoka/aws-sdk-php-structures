@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\PodIdentityAssociation $podIdentityAssociation
  * @property Shapes\AssumedRoleUser $assumedRoleUser
  * @property Shapes\Credentials $credentials
+ * @property string|null $workloadIdentityProviderArn
  */
 class AssumeRoleForPodIdentityResponse extends Response
 {

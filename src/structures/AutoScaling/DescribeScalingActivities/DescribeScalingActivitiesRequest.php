@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $ActivityIds
  * @property string|null $AutoScalingGroupName
  * @property bool|null $IncludeDeletedGroups
+ * @property bool|null $IncludeManagedResources
  * @property int|null $MaxRecords
  * @property string|null $NextToken
  * @property list<Shapes\Filter>|null $Filters
@@ -19,6 +20,7 @@ class DescribeScalingActivitiesRequest extends Request
      *     ActivityIds?: list<string>|null,
      *     AutoScalingGroupName?: string|null,
      *     IncludeDeletedGroups?: bool|null,
+     *     IncludeManagedResources?: bool|null,
      *     MaxRecords?: int|null,
      *     NextToken?: string|null,
      *     Filters?: list<Shapes\Filter>|null

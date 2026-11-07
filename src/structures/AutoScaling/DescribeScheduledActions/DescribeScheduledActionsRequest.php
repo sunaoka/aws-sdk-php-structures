@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $ScheduledActionNames
  * @property \Aws\Api\DateTimeResult|null $StartTime
  * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property bool|null $IncludeManagedResources
  * @property string|null $NextToken
  * @property int|null $MaxRecords
  */
@@ -20,6 +21,7 @@ class DescribeScheduledActionsRequest extends Request
      *     ScheduledActionNames?: list<string>|null,
      *     StartTime?: \Aws\Api\DateTimeResult|null,
      *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     IncludeManagedResources?: bool|null,
      *     NextToken?: string|null,
      *     MaxRecords?: int|null
      * } $args

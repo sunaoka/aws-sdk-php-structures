@@ -11,13 +11,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $name
  * @property string|null $resourceType
  * @property string|null $permission
+ * @property list<PermissionTemplateParameterDeclaration>|null $permissionTemplateParameters
  * @property \Aws\Api\DateTimeResult|null $creationTime
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
  * @property bool|null $isResourceTypeDefault
  * @property 'CUSTOMER_MANAGED'|'AWS_MANAGED'|null $permissionType
  * @property 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD'|null $featureSet
- * @property 'ATTACHABLE'|'UNATTACHABLE'|'DELETING'|'DELETED'|null $status
+ * @property 'ATTACHABLE'|'UNATTACHABLE'|'DELETING'|'DELETED'|'DEPRECATED'|null $status
  * @property list<Tag>|null $tags
+ * @property 'SELF'|'OTHER-ACCOUNTS'|null $resourceOwner
  */
 class ResourceSharePermissionDetail extends Shape
 {
@@ -29,13 +31,15 @@ class ResourceSharePermissionDetail extends Shape
      *     name?: string|null,
      *     resourceType?: string|null,
      *     permission?: string|null,
+     *     permissionTemplateParameters?: list<PermissionTemplateParameterDeclaration>|null,
      *     creationTime?: \Aws\Api\DateTimeResult|null,
      *     lastUpdatedTime?: \Aws\Api\DateTimeResult|null,
      *     isResourceTypeDefault?: bool|null,
      *     permissionType?: 'CUSTOMER_MANAGED'|'AWS_MANAGED'|null,
      *     featureSet?: 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD'|null,
-     *     status?: 'ATTACHABLE'|'UNATTACHABLE'|'DELETING'|'DELETED'|null,
-     *     tags?: list<Tag>|null
+     *     status?: 'ATTACHABLE'|'UNATTACHABLE'|'DELETING'|'DELETED'|'DEPRECATED'|null,
+     *     tags?: list<Tag>|null,
+     *     resourceOwner?: 'SELF'|'OTHER-ACCOUNTS'|null
      * } $args
      */
     public function __construct(array $args = [])

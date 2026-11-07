@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $resourceType
  * @property 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD'|null $featureSet
  * @property bool|null $defaultVersion
+ * @property 'SELF'|'OTHER-ACCOUNTS'|null $resourceOwner
+ * @property string|null $resourceShareArn
  * @property string|null $nextToken
  * @property int<1, 500>|null $maxResults
  */
@@ -24,6 +26,8 @@ class ListPermissionAssociationsRequest extends Request
      *     resourceType?: string|null,
      *     featureSet?: 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD'|null,
      *     defaultVersion?: bool|null,
+     *     resourceOwner?: 'SELF'|'OTHER-ACCOUNTS'|null,
+     *     resourceShareArn?: string|null,
      *     nextToken?: string|null,
      *     maxResults?: int<1, 500>|null
      * } $args

@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string $resourceType
  * @property string $policyTemplate
+ * @property list<Shapes\PermissionTemplateParameterDeclaration>|null $permissionTemplateParameters
  * @property string|null $clientToken
  * @property list<Shapes\Tag>|null $tags
  */
@@ -18,6 +19,7 @@ class CreatePermissionRequest extends Request
      *     name: string,
      *     resourceType: string,
      *     policyTemplate: string,
+     *     permissionTemplateParameters?: list<Shapes\PermissionTemplateParameterDeclaration>|null,
      *     clientToken?: string|null,
      *     tags?: list<Shapes\Tag>|null
      * } $args

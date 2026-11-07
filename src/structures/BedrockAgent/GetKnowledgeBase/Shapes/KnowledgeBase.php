@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property list<string>|null $failureReasons
+ * @property list<MetadataConfiguration>|null $metadataConfigurations
  */
 class KnowledgeBase extends Shape
 {
@@ -31,7 +32,8 @@ class KnowledgeBase extends Shape
      *     status: 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL'|'UPDATE_UNSUCCESSFUL',
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
-     *     failureReasons?: list<string>|null
+     *     failureReasons?: list<string>|null,
+     *     metadataConfigurations?: list<MetadataConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

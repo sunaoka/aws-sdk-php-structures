@@ -14,12 +14,14 @@ class AthenaClient extends \Aws\Athena\AthenaClient
     use CreateNotebook\CreateNotebookTrait;
     use CreatePreparedStatement\CreatePreparedStatementTrait;
     use CreatePresignedNotebookUrl\CreatePresignedNotebookUrlTrait;
+    use CreateSystemTableConfiguration\CreateSystemTableConfigurationTrait;
     use CreateWorkGroup\CreateWorkGroupTrait;
     use DeleteCapacityReservation\DeleteCapacityReservationTrait;
     use DeleteDataCatalog\DeleteDataCatalogTrait;
     use DeleteNamedQuery\DeleteNamedQueryTrait;
     use DeleteNotebook\DeleteNotebookTrait;
     use DeletePreparedStatement\DeletePreparedStatementTrait;
+    use DeleteSystemTableConfiguration\DeleteSystemTableConfigurationTrait;
     use DeleteWorkGroup\DeleteWorkGroupTrait;
     use ExportNotebook\ExportNotebookTrait;
     use GetCalculationExecution\GetCalculationExecutionTrait;
@@ -39,6 +41,7 @@ class AthenaClient extends \Aws\Athena\AthenaClient
     use GetSession\GetSessionTrait;
     use GetSessionEndpoint\GetSessionEndpointTrait;
     use GetSessionStatus\GetSessionStatusTrait;
+    use GetSystemTableConfiguration\GetSystemTableConfigurationTrait;
     use GetTableMetadata\GetTableMetadataTrait;
     use GetWorkGroup\GetWorkGroupTrait;
     use ImportNotebook\ImportNotebookTrait;
@@ -55,6 +58,7 @@ class AthenaClient extends \Aws\Athena\AthenaClient
     use ListPreparedStatements\ListPreparedStatementsTrait;
     use ListQueryExecutions\ListQueryExecutionsTrait;
     use ListSessions\ListSessionsTrait;
+    use ListSystemTableStatuses\ListSystemTableStatusesTrait;
     use ListTableMetadata\ListTableMetadataTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListWorkGroups\ListWorkGroupsTrait;
@@ -73,5 +77,6 @@ class AthenaClient extends \Aws\Athena\AthenaClient
     use UpdateNotebook\UpdateNotebookTrait;
     use UpdateNotebookMetadata\UpdateNotebookMetadataTrait;
     use UpdatePreparedStatement\UpdatePreparedStatementTrait;
+    use UpdateSystemTableConfiguration\UpdateSystemTableConfigurationTrait;
     use UpdateWorkGroup\UpdateWorkGroupTrait;
 }

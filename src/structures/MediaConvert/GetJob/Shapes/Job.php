@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property 'PROBING'|'TRANSCODING'|'UPLOADING'|null $CurrentPhase
  * @property ElementalInferenceConfiguration|null $ElementalInferenceConfiguration
+ * @property ElementalInferenceSettings|null $ElementalInferenceSettings
  * @property int|null $ErrorCode
  * @property string|null $ErrorMessage
  * @property list<HopDestination>|null $HopDestinations
@@ -50,6 +51,7 @@ class Job extends Shape
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     CurrentPhase?: 'PROBING'|'TRANSCODING'|'UPLOADING'|null,
      *     ElementalInferenceConfiguration?: ElementalInferenceConfiguration|null,
+     *     ElementalInferenceSettings?: ElementalInferenceSettings|null,
      *     ErrorCode?: int|null,
      *     ErrorMessage?: string|null,
      *     HopDestinations?: list<HopDestination>|null,

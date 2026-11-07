@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AccelerationSettings|null $AccelerationSettings
  * @property string|null $Category
  * @property string|null $Description
+ * @property Shapes\ElementalInferenceSettings|null $ElementalInferenceSettings
  * @property list<Shapes\HopDestination>|null $HopDestinations
  * @property string $Name
  * @property int<-50, 50>|null $Priority
@@ -22,6 +23,7 @@ class UpdateJobTemplateRequest extends Request
      *     AccelerationSettings?: Shapes\AccelerationSettings|null,
      *     Category?: string|null,
      *     Description?: string|null,
+     *     ElementalInferenceSettings?: Shapes\ElementalInferenceSettings|null,
      *     HopDestinations?: list<Shapes\HopDestination>|null,
      *     Name: string,
      *     Priority?: int<-50, 50>|null,

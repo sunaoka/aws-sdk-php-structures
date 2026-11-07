@@ -38,5 +38,6 @@ class RAMClient extends \Aws\RAM\RAMClient
     use SetDefaultPermissionVersion\SetDefaultPermissionVersionTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdatePermission\UpdatePermissionTrait;
     use UpdateResourceShare\UpdateResourceShareTrait;
 }

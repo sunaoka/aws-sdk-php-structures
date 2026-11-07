@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'USER'|'ROLE'|'GROUP'|null $OwnerType
  * @property \Aws\Api\DateTimeResult|null $CreateTime
  * @property list<ResourceUri>|null $ResourceUris
+ * @property string|null $ArtifactLocation
+ * @property 'IAM_ONLY'|'LAKE_FORMATION'|null $GovernanceMode
  * @property string|null $CatalogId
  */
 class UserDefinedFunction extends Shape
@@ -27,6 +29,8 @@ class UserDefinedFunction extends Shape
      *     OwnerType?: 'USER'|'ROLE'|'GROUP'|null,
      *     CreateTime?: \Aws\Api\DateTimeResult|null,
      *     ResourceUris?: list<ResourceUri>|null,
+     *     ArtifactLocation?: string|null,
+     *     GovernanceMode?: 'IAM_ONLY'|'LAKE_FORMATION'|null,
      *     CatalogId?: string|null
      * } $args
      */

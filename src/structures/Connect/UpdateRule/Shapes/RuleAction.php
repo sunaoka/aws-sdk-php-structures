@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Connect\UpdateRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CREATE_TASK'|'ASSIGN_CONTACT_CATEGORY'|'GENERATE_EVENTBRIDGE_EVENT'|'SEND_NOTIFICATION'|'CREATE_CASE'|'UPDATE_CASE'|'ASSIGN_SLA'|'END_ASSOCIATED_TASKS'|'SUBMIT_AUTO_EVALUATION'|'EXTRACT_INFORMATION'|'SEND_IN_APP_NOTIFICATION' $ActionType
+ * @property 'CREATE_TASK'|'ASSIGN_CONTACT_CATEGORY'|'GENERATE_EVENTBRIDGE_EVENT'|'SEND_NOTIFICATION'|'CREATE_CASE'|'UPDATE_CASE'|'ASSIGN_SLA'|'END_ASSOCIATED_TASKS'|'END_ASSOCIATED_EMAILS'|'SUBMIT_AUTO_EVALUATION'|'EXTRACT_INFORMATION'|'SEND_IN_APP_NOTIFICATION' $ActionType
  * @property TaskActionDefinition|null $TaskAction
  * @property EventBridgeActionDefinition|null $EventBridgeAction
  * @property AssignContactCategoryActionDefinition|null $AssignContactCategoryAction
@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property UpdateCaseActionDefinition|null $UpdateCaseAction
  * @property AssignSlaActionDefinition|null $AssignSlaAction
  * @property EndAssociatedTasksActionDefinition|null $EndAssociatedTasksAction
+ * @property EndAssociatedEmailsActionDefinition|null $EndAssociatedEmailsAction
  * @property SubmitAutoEvaluationActionDefinition|null $SubmitAutoEvaluationAction
  * @property ExtractInformationActionDefinition|null $ExtractInformationAction
  * @property SendInAppNotificationActionDefinition|null $SendInAppNotificationAction
@@ -22,7 +23,7 @@ class RuleAction extends Shape
 {
     /**
      * @param array{
-     *     ActionType: 'CREATE_TASK'|'ASSIGN_CONTACT_CATEGORY'|'GENERATE_EVENTBRIDGE_EVENT'|'SEND_NOTIFICATION'|'CREATE_CASE'|'UPDATE_CASE'|'ASSIGN_SLA'|'END_ASSOCIATED_TASKS'|'SUBMIT_AUTO_EVALUATION'|'EXTRACT_INFORMATION'|'SEND_IN_APP_NOTIFICATION',
+     *     ActionType: 'CREATE_TASK'|'ASSIGN_CONTACT_CATEGORY'|'GENERATE_EVENTBRIDGE_EVENT'|'SEND_NOTIFICATION'|'CREATE_CASE'|'UPDATE_CASE'|'ASSIGN_SLA'|'END_ASSOCIATED_TASKS'|'END_ASSOCIATED_EMAILS'|'SUBMIT_AUTO_EVALUATION'|'EXTRACT_INFORMATION'|'SEND_IN_APP_NOTIFICATION',
      *     TaskAction?: TaskActionDefinition|null,
      *     EventBridgeAction?: EventBridgeActionDefinition|null,
      *     AssignContactCategoryAction?: AssignContactCategoryActionDefinition|null,
@@ -31,6 +32,7 @@ class RuleAction extends Shape
      *     UpdateCaseAction?: UpdateCaseActionDefinition|null,
      *     AssignSlaAction?: AssignSlaActionDefinition|null,
      *     EndAssociatedTasksAction?: EndAssociatedTasksActionDefinition|null,
+     *     EndAssociatedEmailsAction?: EndAssociatedEmailsActionDefinition|null,
      *     SubmitAutoEvaluationAction?: SubmitAutoEvaluationActionDefinition|null,
      *     ExtractInformationAction?: ExtractInformationActionDefinition|null,
      *     SendInAppNotificationAction?: SendInAppNotificationActionDefinition|null

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD'|null $featureSet
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
  * @property string|null $resourceShareArn
+ * @property list<PermissionTemplateParameter>|null $permissionTemplateParameters
  */
 class AssociatedPermission extends Shape
 {
@@ -25,7 +26,8 @@ class AssociatedPermission extends Shape
      *     status?: string|null,
      *     featureSet?: 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD'|null,
      *     lastUpdatedTime?: \Aws\Api\DateTimeResult|null,
-     *     resourceShareArn?: string|null
+     *     resourceShareArn?: string|null,
+     *     permissionTemplateParameters?: list<PermissionTemplateParameter>|null
      * } $args
      */
     public function __construct(array $args = [])

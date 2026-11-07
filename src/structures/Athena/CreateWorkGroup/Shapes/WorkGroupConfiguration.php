@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $EnableMinimumEncryptionConfiguration
  * @property IdentityCenterConfiguration|null $IdentityCenterConfiguration
  * @property QueryResultsS3AccessGrantsConfiguration|null $QueryResultsS3AccessGrantsConfiguration
+ * @property list<SystemTableStatus>|null $SystemTableStatuses
  */
 class WorkGroupConfiguration extends Shape
 {
@@ -39,7 +40,8 @@ class WorkGroupConfiguration extends Shape
      *     CustomerContentEncryptionConfiguration?: CustomerContentEncryptionConfiguration|null,
      *     EnableMinimumEncryptionConfiguration?: bool|null,
      *     IdentityCenterConfiguration?: IdentityCenterConfiguration|null,
-     *     QueryResultsS3AccessGrantsConfiguration?: QueryResultsS3AccessGrantsConfiguration|null
+     *     QueryResultsS3AccessGrantsConfiguration?: QueryResultsS3AccessGrantsConfiguration|null,
+     *     SystemTableStatuses?: list<SystemTableStatus>|null
      * } $args
      */
     public function __construct(array $args = [])

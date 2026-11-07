@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'REGULAR_FUNCTION'|'AGGREGATE_FUNCTION'|'STORED_PROCEDURE'|null $FunctionType
  * @property 'USER'|'ROLE'|'GROUP'|null $OwnerType
  * @property list<ResourceUri>|null $ResourceUris
+ * @property string|null $ArtifactLocation
+ * @property 'IAM_ONLY'|'LAKE_FORMATION'|null $GovernanceMode
  */
 class UserDefinedFunctionInput extends Shape
 {
@@ -21,7 +23,9 @@ class UserDefinedFunctionInput extends Shape
      *     OwnerName?: string|null,
      *     FunctionType?: 'REGULAR_FUNCTION'|'AGGREGATE_FUNCTION'|'STORED_PROCEDURE'|null,
      *     OwnerType?: 'USER'|'ROLE'|'GROUP'|null,
-     *     ResourceUris?: list<ResourceUri>|null
+     *     ResourceUris?: list<ResourceUri>|null,
+     *     ArtifactLocation?: string|null,
+     *     GovernanceMode?: 'IAM_ONLY'|'LAKE_FORMATION'|null
      * } $args
      */
     public function __construct(array $args = [])

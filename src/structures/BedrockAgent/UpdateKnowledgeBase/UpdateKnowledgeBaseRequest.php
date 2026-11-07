@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $roleArn
  * @property Shapes\KnowledgeBaseConfiguration $knowledgeBaseConfiguration
  * @property Shapes\StorageConfiguration|null $storageConfiguration
+ * @property list<Shapes\MetadataConfiguration>|null $metadataConfigurations
  */
 class UpdateKnowledgeBaseRequest extends Request
 {
@@ -21,7 +22,8 @@ class UpdateKnowledgeBaseRequest extends Request
      *     description?: string|null,
      *     roleArn: string,
      *     knowledgeBaseConfiguration: Shapes\KnowledgeBaseConfiguration,
-     *     storageConfiguration?: Shapes\StorageConfiguration|null
+     *     storageConfiguration?: Shapes\StorageConfiguration|null,
+     *     metadataConfigurations?: list<Shapes\MetadataConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

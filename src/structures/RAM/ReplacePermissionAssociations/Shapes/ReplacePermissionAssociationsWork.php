@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $fromPermissionVersion
  * @property string|null $toPermissionArn
  * @property string|null $toPermissionVersion
+ * @property list<PermissionTemplateParameter>|null $permissionTemplateParameters
  * @property 'IN_PROGRESS'|'COMPLETED'|'FAILED'|null $status
  * @property string|null $statusMessage
  * @property \Aws\Api\DateTimeResult|null $creationTime
@@ -24,6 +25,7 @@ class ReplacePermissionAssociationsWork extends Shape
      *     fromPermissionVersion?: string|null,
      *     toPermissionArn?: string|null,
      *     toPermissionVersion?: string|null,
+     *     permissionTemplateParameters?: list<PermissionTemplateParameter>|null,
      *     status?: 'IN_PROGRESS'|'COMPLETED'|'FAILED'|null,
      *     statusMessage?: string|null,
      *     creationTime?: \Aws\Api\DateTimeResult|null,

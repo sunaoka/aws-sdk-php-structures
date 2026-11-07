@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Category
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property string|null $Description
+ * @property ElementalInferenceSettings|null $ElementalInferenceSettings
  * @property list<HopDestination>|null $HopDestinations
  * @property \Aws\Api\DateTimeResult|null $LastUpdated
  * @property string $Name
@@ -28,6 +29,7 @@ class JobTemplate extends Shape
      *     Category?: string|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     Description?: string|null,
+     *     ElementalInferenceSettings?: ElementalInferenceSettings|null,
      *     HopDestinations?: list<HopDestination>|null,
      *     LastUpdated?: \Aws\Api\DateTimeResult|null,
      *     Name: string,
