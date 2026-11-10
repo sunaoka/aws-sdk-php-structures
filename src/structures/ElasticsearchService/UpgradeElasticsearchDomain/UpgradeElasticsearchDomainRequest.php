@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DomainName
  * @property string $TargetVersion
  * @property bool|null $PerformCheckOnly
+ * @property Shapes\DeploymentStrategyOverrideOptions|null $DeploymentStrategyOptions
  */
 class UpgradeElasticsearchDomainRequest extends Request
 {
@@ -15,7 +16,8 @@ class UpgradeElasticsearchDomainRequest extends Request
      * @param array{
      *     DomainName: string,
      *     TargetVersion: string,
-     *     PerformCheckOnly?: bool|null
+     *     PerformCheckOnly?: bool|null,
+     *     DeploymentStrategyOptions?: Shapes\DeploymentStrategyOverrideOptions|null
      * } $args
      */
     public function __construct(array $args)

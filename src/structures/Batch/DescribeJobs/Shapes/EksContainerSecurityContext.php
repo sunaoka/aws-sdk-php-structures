@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $allowPrivilegeEscalation
  * @property bool|null $readOnlyRootFilesystem
  * @property bool|null $runAsNonRoot
+ * @property EksContainerLinuxCapabilities|null $capabilities
+ * @property EksSeccompProfile|null $seccompProfile
  */
 class EksContainerSecurityContext extends Shape
 {
@@ -21,7 +23,9 @@ class EksContainerSecurityContext extends Shape
      *     privileged?: bool|null,
      *     allowPrivilegeEscalation?: bool|null,
      *     readOnlyRootFilesystem?: bool|null,
-     *     runAsNonRoot?: bool|null
+     *     runAsNonRoot?: bool|null,
+     *     capabilities?: EksContainerLinuxCapabilities|null,
+     *     seccompProfile?: EksSeccompProfile|null
      * } $args
      */
     public function __construct(array $args = [])

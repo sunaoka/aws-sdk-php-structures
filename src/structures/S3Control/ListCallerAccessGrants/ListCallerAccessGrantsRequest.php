@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $NextToken
  * @property int<0, 1000>|null $MaxResults
  * @property bool|null $AllowedByApplication
+ * @property 'SELF'|'ALL'|null $InstanceScope
  */
 class ListCallerAccessGrantsRequest extends Request
 {
@@ -19,7 +20,8 @@ class ListCallerAccessGrantsRequest extends Request
      *     GrantScope?: string|null,
      *     NextToken?: string|null,
      *     MaxResults?: int<0, 1000>|null,
-     *     AllowedByApplication?: bool|null
+     *     AllowedByApplication?: bool|null,
+     *     InstanceScope?: 'SELF'|'ALL'|null
      * } $args
      */
     public function __construct(array $args)

@@ -24,7 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'gpu'|'fpga'|'inference'>|null $acceleratorTypes
  * @property AcceleratorCountRequest|null $acceleratorCount
  * @property list<'amazon-web-services'|'amd'|'nvidia'|'xilinx'|'habana'>|null $acceleratorManufacturers
- * @property list<'a100'|'inferentia'|'k520'|'k80'|'m60'|'radeon-pro-v520'|'t4'|'vu9p'|'v100'|'a10g'|'h100'|'t4g'>|null $acceleratorNames
+ * @property list<'a100'|'inferentia'|'k520'|'k80'|'m60'|'radeon-pro-v520'|'t4'|'vu9p'|'v100'|'a10g'|'h100'|'t4g'|'l40s'|'l4'>|null $acceleratorNames
  * @property AcceleratorTotalMemoryMiBRequest|null $acceleratorTotalMemoryMiB
  * @property NetworkBandwidthGbpsRequest|null $networkBandwidthGbps
  * @property list<string>|null $allowedInstanceTypes
@@ -53,7 +53,7 @@ class InstanceRequirementsRequest extends Shape
      *     acceleratorTypes?: list<'gpu'|'fpga'|'inference'>|null,
      *     acceleratorCount?: AcceleratorCountRequest|null,
      *     acceleratorManufacturers?: list<'amazon-web-services'|'amd'|'nvidia'|'xilinx'|'habana'>|null,
-     *     acceleratorNames?: list<'a100'|'inferentia'|'k520'|'k80'|'m60'|'radeon-pro-v520'|'t4'|'vu9p'|'v100'|'a10g'|'h100'|'t4g'>|null,
+     *     acceleratorNames?: list<'a100'|'inferentia'|'k520'|'k80'|'m60'|'radeon-pro-v520'|'t4'|'vu9p'|'v100'|'a10g'|'h100'|'t4g'|'l40s'|'l4'>|null,
      *     acceleratorTotalMemoryMiB?: AcceleratorTotalMemoryMiBRequest|null,
      *     networkBandwidthGbps?: NetworkBandwidthGbpsRequest|null,
      *     allowedInstanceTypes?: list<string>|null,

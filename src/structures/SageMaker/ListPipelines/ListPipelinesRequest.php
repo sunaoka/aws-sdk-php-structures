@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Ascending'|'Descending'|null $SortOrder
  * @property string|null $NextToken
  * @property int<1, 100>|null $MaxResults
+ * @property 'AWS'|'CUSTOMER'|null $ManagedBy
  */
 class ListPipelinesRequest extends Request
 {
@@ -23,7 +24,8 @@ class ListPipelinesRequest extends Request
      *     SortBy?: 'Name'|'CreationTime'|null,
      *     SortOrder?: 'Ascending'|'Descending'|null,
      *     NextToken?: string|null,
-     *     MaxResults?: int<1, 100>|null
+     *     MaxResults?: int<1, 100>|null,
+     *     ManagedBy?: 'AWS'|'CUSTOMER'|null
      * } $args
      */
     public function __construct(array $args = [])

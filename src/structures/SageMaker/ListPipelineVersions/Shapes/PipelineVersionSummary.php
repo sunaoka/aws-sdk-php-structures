@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PipelineVersionDescription
  * @property string|null $PipelineVersionDisplayName
  * @property string|null $LastExecutionPipelineExecutionArn
+ * @property list<string>|null $PipelineVersionAliases
  */
 class PipelineVersionSummary extends Shape
 {
@@ -21,7 +22,8 @@ class PipelineVersionSummary extends Shape
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
      *     PipelineVersionDescription?: string|null,
      *     PipelineVersionDisplayName?: string|null,
-     *     LastExecutionPipelineExecutionArn?: string|null
+     *     LastExecutionPipelineExecutionArn?: string|null,
+     *     PipelineVersionAliases?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

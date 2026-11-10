@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $TargetVersion
  * @property bool|null $PerformCheckOnly
  * @property array<string, string>|null $AdvancedOptions
+ * @property Shapes\DeploymentStrategyOverrideOptions|null $DeploymentStrategyOptions
  */
 class UpgradeDomainRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpgradeDomainRequest extends Request
      *     DomainName: string,
      *     TargetVersion: string,
      *     PerformCheckOnly?: bool|null,
-     *     AdvancedOptions?: array<string, string>|null
+     *     AdvancedOptions?: array<string, string>|null,
+     *     DeploymentStrategyOptions?: Shapes\DeploymentStrategyOverrideOptions|null
      * } $args
      */
     public function __construct(array $args)

@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ParallelismConfiguration|null $ParallelismConfiguration
  * @property string|null $PipelineVersionDisplayName
  * @property string|null $PipelineVersionDescription
+ * @property list<string>|null $PipelineVersionAliases
  */
 class DescribePipelineResponse extends Response
 {

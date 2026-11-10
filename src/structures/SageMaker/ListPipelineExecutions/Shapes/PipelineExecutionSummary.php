@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PipelineExecutionDescription
  * @property string|null $PipelineExecutionDisplayName
  * @property string|null $PipelineExecutionFailureReason
+ * @property list<string>|null $PipelineVersionAliases
  */
 class PipelineExecutionSummary extends Shape
 {
@@ -21,7 +22,8 @@ class PipelineExecutionSummary extends Shape
      *     PipelineExecutionStatus?: 'Executing'|'Stopping'|'Stopped'|'Failed'|'Succeeded'|'CompletedWithFailures'|null,
      *     PipelineExecutionDescription?: string|null,
      *     PipelineExecutionDisplayName?: string|null,
-     *     PipelineExecutionFailureReason?: string|null
+     *     PipelineExecutionFailureReason?: string|null,
+     *     PipelineVersionAliases?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

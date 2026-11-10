@@ -38,6 +38,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use CreateConnection\CreateConnectionTrait;
     use CreateCrawler\CreateCrawlerTrait;
     use CreateCustomEntityType\CreateCustomEntityTypeTrait;
+    use CreateDataQualityEvaluationConfig\CreateDataQualityEvaluationConfigTrait;
     use CreateDataQualityRuleset\CreateDataQualityRulesetTrait;
     use CreateDatabase\CreateDatabaseTrait;
     use CreateDevEndpoint\CreateDevEndpointTrait;
@@ -75,6 +76,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use DeleteConnectionType\DeleteConnectionTypeTrait;
     use DeleteCrawler\DeleteCrawlerTrait;
     use DeleteCustomEntityType\DeleteCustomEntityTypeTrait;
+    use DeleteDataQualityEvaluationConfig\DeleteDataQualityEvaluationConfigTrait;
     use DeleteDataQualityRuleset\DeleteDataQualityRulesetTrait;
     use DeleteDatabase\DeleteDatabaseTrait;
     use DeleteDevEndpoint\DeleteDevEndpointTrait;
@@ -131,6 +133,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetDashboardUrl\GetDashboardUrlTrait;
     use GetDataCatalogEncryptionSettings\GetDataCatalogEncryptionSettingsTrait;
     use GetDataCatalogExportConfiguration\GetDataCatalogExportConfigurationTrait;
+    use GetDataQualityEvaluationConfig\GetDataQualityEvaluationConfigTrait;
     use GetDataQualityModel\GetDataQualityModelTrait;
     use GetDataQualityModelResult\GetDataQualityModelResultTrait;
     use GetDataQualityResult\GetDataQualityResultTrait;
@@ -206,6 +209,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use ListCrawlers\ListCrawlersTrait;
     use ListCrawls\ListCrawlsTrait;
     use ListCustomEntityTypes\ListCustomEntityTypesTrait;
+    use ListDataQualityEvaluationConfigs\ListDataQualityEvaluationConfigsTrait;
     use ListDataQualityResults\ListDataQualityResultsTrait;
     use ListDataQualityResultsV2\ListDataQualityResultsV2Trait;
     use ListDataQualityRuleRecommendationRuns\ListDataQualityRuleRecommendationRunsTrait;
@@ -292,6 +296,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use UpdateConnection\UpdateConnectionTrait;
     use UpdateCrawler\UpdateCrawlerTrait;
     use UpdateCrawlerSchedule\UpdateCrawlerScheduleTrait;
+    use UpdateDataQualityEvaluationConfig\UpdateDataQualityEvaluationConfigTrait;
     use UpdateDataQualityRuleset\UpdateDataQualityRulesetTrait;
     use UpdateDatabase\UpdateDatabaseTrait;
     use UpdateDevEndpoint\UpdateDevEndpointTrait;

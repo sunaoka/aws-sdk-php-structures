@@ -20,6 +20,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\SelectiveExecutionConfig|null $SelectiveExecutionConfig
  * @property int<1, max>|null $PipelineVersionId
  * @property Shapes\MLflowConfiguration|null $MLflowConfig
+ * @property list<string>|null $PipelineVersionAliases
+ * @property string|null $RoleArn
  */
 class DescribePipelineExecutionResponse extends Response
 {

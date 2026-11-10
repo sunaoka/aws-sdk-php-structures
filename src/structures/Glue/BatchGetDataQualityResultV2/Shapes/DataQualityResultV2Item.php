@@ -6,6 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ResultId
+ * @property 'ON_DEMAND'|'EVALUATION_CONFIG'|null $EvaluationRunMode
+ * @property string|null $DataQualityEvaluationConfig
  * @property DataSource|null $DataSource
  * @property array<string, string>|null $Dimensions
  * @property array<string, string>|null $Tags
@@ -26,6 +28,8 @@ class DataQualityResultV2Item extends Shape
     /**
      * @param array{
      *     ResultId: string,
+     *     EvaluationRunMode?: 'ON_DEMAND'|'EVALUATION_CONFIG'|null,
+     *     DataQualityEvaluationConfig?: string|null,
      *     DataSource?: DataSource|null,
      *     Dimensions?: array<string, string>|null,
      *     Tags?: array<string, string>|null,

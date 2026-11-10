@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\SelectiveExecutionConfig|null $SelectiveExecutionConfig
  * @property int<1, max>|null $PipelineVersionId
  * @property string|null $MlflowExperimentName
+ * @property string|null $PipelineVersionAlias
+ * @property string|null $RoleArn
  */
 class StartPipelineExecutionRequest extends Request
 {
@@ -27,7 +29,9 @@ class StartPipelineExecutionRequest extends Request
      *     ParallelismConfiguration?: Shapes\ParallelismConfiguration|null,
      *     SelectiveExecutionConfig?: Shapes\SelectiveExecutionConfig|null,
      *     PipelineVersionId?: int<1, max>|null,
-     *     MlflowExperimentName?: string|null
+     *     MlflowExperimentName?: string|null,
+     *     PipelineVersionAlias?: string|null,
+     *     RoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

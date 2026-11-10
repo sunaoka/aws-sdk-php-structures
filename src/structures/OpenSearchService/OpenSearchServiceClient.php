@@ -97,6 +97,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use StartServiceSoftwareUpdate\StartServiceSoftwareUpdateTrait;
     use SwitchoverReplication\SwitchoverReplicationTrait;
     use UpdateApplication\UpdateApplicationTrait;
+    use UpdateClone\UpdateCloneTrait;
     use UpdateDataSource\UpdateDataSourceTrait;
     use UpdateDirectQueryDataSource\UpdateDirectQueryDataSourceTrait;
     use UpdateDomainConfig\UpdateDomainConfigTrait;

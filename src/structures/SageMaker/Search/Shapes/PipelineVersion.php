@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LastExecutedPipelineExecutionArn
  * @property string|null $LastExecutedPipelineExecutionDisplayName
  * @property 'Executing'|'Stopping'|'Stopped'|'Failed'|'Succeeded'|'CompletedWithFailures'|null $LastExecutedPipelineExecutionStatus
+ * @property list<string>|null $PipelineVersionAliases
  */
 class PipelineVersion extends Shape
 {
@@ -31,7 +32,8 @@ class PipelineVersion extends Shape
      *     LastModifiedBy?: UserContext|null,
      *     LastExecutedPipelineExecutionArn?: string|null,
      *     LastExecutedPipelineExecutionDisplayName?: string|null,
-     *     LastExecutedPipelineExecutionStatus?: 'Executing'|'Stopping'|'Stopped'|'Failed'|'Succeeded'|'CompletedWithFailures'|null
+     *     LastExecutedPipelineExecutionStatus?: 'Executing'|'Stopping'|'Stopped'|'Failed'|'Succeeded'|'CompletedWithFailures'|null,
+     *     PipelineVersionAliases?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

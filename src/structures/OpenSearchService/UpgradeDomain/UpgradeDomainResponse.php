@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $TargetVersion
  * @property bool|null $PerformCheckOnly
  * @property array<string, string>|null $AdvancedOptions
+ * @property Shapes\DeploymentStrategyOverrideOptions|null $DeploymentStrategyOptions
  * @property Shapes\ChangeProgressDetails|null $ChangeProgressDetails
  */
 class UpgradeDomainResponse extends Response

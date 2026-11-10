@@ -1,0 +1,39 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Glue\CreateDataQualityEvaluationConfig\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property bool|null $CloudWatchMetricsEnabled
+ * @property string|null $ResultsS3Prefix
+ * @property 'COLUMN'|'ROW'|null $CompositeRuleEvaluationMethod
+ * @property RowLevelResultsOptions|null $RowLevelResults
+ * @property ProfilingResultsOptions|null $ProfilingResults
+ * @property 'ALL'|'NONE'|null $ObservationScope
+ * @property 'SCHEDULED'|'FIXED'|null $ObservationMode
+ * @property DataQualityRuleResultsOptions|null $DataQualityRuleResults
+ * @property ObservationResultsOptions|null $ObservationResults
+ * @property string|null $CustomLogGroupPrefix
+ */
+class DataQualityEvaluationConfigAdditionalRunOptions extends Shape
+{
+    /**
+     * @param array{
+     *     CloudWatchMetricsEnabled?: bool|null,
+     *     ResultsS3Prefix?: string|null,
+     *     CompositeRuleEvaluationMethod?: 'COLUMN'|'ROW'|null,
+     *     RowLevelResults?: RowLevelResultsOptions|null,
+     *     ProfilingResults?: ProfilingResultsOptions|null,
+     *     ObservationScope?: 'ALL'|'NONE'|null,
+     *     ObservationMode?: 'SCHEDULED'|'FIXED'|null,
+     *     DataQualityRuleResults?: DataQualityRuleResultsOptions|null,
+     *     ObservationResults?: ObservationResultsOptions|null,
+     *     CustomLogGroupPrefix?: string|null
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

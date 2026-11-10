@@ -32,6 +32,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AthenaStepMetadata|null $Athena
  * @property CleanupStepMetadata|null $Cleanup
  * @property ForEachStepMetadata|null $ForEach
+ * @property HubContentStepMetadata|null $HubContent
  */
 class PipelineExecutionStepMetadata extends Shape
 {
@@ -63,7 +64,8 @@ class PipelineExecutionStepMetadata extends Shape
      *     Job?: JobStepMetadata|null,
      *     Athena?: AthenaStepMetadata|null,
      *     Cleanup?: CleanupStepMetadata|null,
-     *     ForEach?: ForEachStepMetadata|null
+     *     ForEach?: ForEachStepMetadata|null,
+     *     HubContent?: HubContentStepMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

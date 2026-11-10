@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<EksVolume>|null $volumes
  * @property EksMetadata|null $metadata
  * @property bool|null $shareProcessNamespace
+ * @property EksPodSecurityContext|null $securityContext
  */
 class EksPodProperties extends Shape
 {
@@ -27,7 +28,8 @@ class EksPodProperties extends Shape
      *     initContainers?: list<EksContainer>|null,
      *     volumes?: list<EksVolume>|null,
      *     metadata?: EksMetadata|null,
-     *     shareProcessNamespace?: bool|null
+     *     shareProcessNamespace?: bool|null,
+     *     securityContext?: EksPodSecurityContext|null
      * } $args
      */
     public function __construct(array $args = [])

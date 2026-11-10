@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
  * @property 'Pending'|'Initializing'|'Validating'|'ValidationFailed'|'ApplyingChanges'|'Completed'|'PendingUserInput'|'Cancelled'|null $ConfigChangeStatus
  * @property 'CUSTOMER'|'SERVICE'|null $InitiatedBy
+ * @property ClonedBlueGreenUpgradeDetails|null $ClonedBlueGreenUpgradeDetails
  * @property list<ValidationFailure>|null $ValidationFailures
  * @property list<string>|null $AcceptedWarnings
  */
@@ -32,6 +33,7 @@ class ChangeProgressStatusDetails extends Shape
      *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null,
      *     ConfigChangeStatus?: 'Pending'|'Initializing'|'Validating'|'ValidationFailed'|'ApplyingChanges'|'Completed'|'PendingUserInput'|'Cancelled'|null,
      *     InitiatedBy?: 'CUSTOMER'|'SERVICE'|null,
+     *     ClonedBlueGreenUpgradeDetails?: ClonedBlueGreenUpgradeDetails|null,
      *     ValidationFailures?: list<ValidationFailure>|null,
      *     AcceptedWarnings?: list<string>|null
      * } $args

@@ -44,6 +44,7 @@ class BedrockAgentCoreClient extends \Aws\BedrockAgentCore\BedrockAgentCoreClien
     use InvokeBrowser\InvokeBrowserTrait;
     use InvokeCodeInterpreter\InvokeCodeInterpreterTrait;
     use InvokeHarness\InvokeHarnessTrait;
+    use InvokeWebSearch\InvokeWebSearchTrait;
     use ListABTests\ListABTestsTrait;
     use ListActors\ListActorsTrait;
     use ListBatchEvaluations\ListBatchEvaluationsTrait;

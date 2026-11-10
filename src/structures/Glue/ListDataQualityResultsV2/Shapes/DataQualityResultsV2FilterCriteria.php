@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $PublishedBefore
  * @property array<string, string>|null $Dimensions
  * @property string|null $EvaluationContext
+ * @property 'ON_DEMAND'|'EVALUATION_CONFIG'|null $EvaluationRunMode
+ * @property string|null $DataQualityEvaluationConfig
  */
 class DataQualityResultsV2FilterCriteria extends Shape
 {
@@ -19,7 +21,9 @@ class DataQualityResultsV2FilterCriteria extends Shape
      *     PublishedAfter?: \Aws\Api\DateTimeResult|null,
      *     PublishedBefore?: \Aws\Api\DateTimeResult|null,
      *     Dimensions?: array<string, string>|null,
-     *     EvaluationContext?: string|null
+     *     EvaluationContext?: string|null,
+     *     EvaluationRunMode?: 'ON_DEMAND'|'EVALUATION_CONFIG'|null,
+     *     DataQualityEvaluationConfig?: string|null
      * } $args
      */
     public function __construct(array $args = [])

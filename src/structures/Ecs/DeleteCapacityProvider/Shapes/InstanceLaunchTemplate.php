@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InstanceRequirementsRequest|null $instanceRequirements
  * @property bool|null $fipsEnabled
  * @property CapacityReservationRequest|null $capacityReservations
+ * @property bool|null $nitroEnclavesEnabled
  */
 class InstanceLaunchTemplate extends Shape
 {
@@ -29,7 +30,8 @@ class InstanceLaunchTemplate extends Shape
      *     instanceMetadataTagsPropagation?: bool|null,
      *     instanceRequirements?: InstanceRequirementsRequest|null,
      *     fipsEnabled?: bool|null,
-     *     capacityReservations?: CapacityReservationRequest|null
+     *     capacityReservations?: CapacityReservationRequest|null,
+     *     nitroEnclavesEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

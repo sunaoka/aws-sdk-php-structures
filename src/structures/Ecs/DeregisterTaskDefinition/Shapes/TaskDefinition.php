@@ -31,6 +31,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $registeredBy
  * @property EphemeralStorage|null $ephemeralStorage
  * @property bool|null $enableFaultInjection
+ * @property TrustedExecutionConfiguration|null $trustedExecutionConfiguration
  */
 class TaskDefinition extends Shape
 {
@@ -61,7 +62,8 @@ class TaskDefinition extends Shape
      *     deleteRequestedAt?: \Aws\Api\DateTimeResult|null,
      *     registeredBy?: string|null,
      *     ephemeralStorage?: EphemeralStorage|null,
-     *     enableFaultInjection?: bool|null
+     *     enableFaultInjection?: bool|null,
+     *     trustedExecutionConfiguration?: TrustedExecutionConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

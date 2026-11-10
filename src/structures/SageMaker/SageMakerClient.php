@@ -25,6 +25,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use CreateAutoMLJob\CreateAutoMLJobTrait;
     use CreateAutoMLJobV2\CreateAutoMLJobV2Trait;
     use CreateCluster\CreateClusterTrait;
+    use CreateClusterExtension\CreateClusterExtensionTrait;
     use CreateClusterSchedulerConfig\CreateClusterSchedulerConfigTrait;
     use CreateCodeRepository\CreateCodeRepositoryTrait;
     use CreateCompilationJob\CreateCompilationJobTrait;
@@ -97,6 +98,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DeleteArtifact\DeleteArtifactTrait;
     use DeleteAssociation\DeleteAssociationTrait;
     use DeleteCluster\DeleteClusterTrait;
+    use DeleteClusterExtension\DeleteClusterExtensionTrait;
     use DeleteClusterSchedulerConfig\DeleteClusterSchedulerConfigTrait;
     use DeleteCodeRepository\DeleteCodeRepositoryTrait;
     use DeleteCompilationJob\DeleteCompilationJobTrait;
@@ -163,6 +165,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DescribeAutoMLJobV2\DescribeAutoMLJobV2Trait;
     use DescribeCluster\DescribeClusterTrait;
     use DescribeClusterEvent\DescribeClusterEventTrait;
+    use DescribeClusterExtension\DescribeClusterExtensionTrait;
     use DescribeClusterNode\DescribeClusterNodeTrait;
     use DescribeClusterSchedulerConfig\DescribeClusterSchedulerConfigTrait;
     use DescribeCodeRepository\DescribeCodeRepositoryTrait;
@@ -253,6 +256,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListAutoMLJobs\ListAutoMLJobsTrait;
     use ListCandidatesForAutoMLJob\ListCandidatesForAutoMLJobTrait;
     use ListClusterEvents\ListClusterEventsTrait;
+    use ListClusterExtensions\ListClusterExtensionsTrait;
     use ListClusterNodes\ListClusterNodesTrait;
     use ListClusterSchedulerConfigs\ListClusterSchedulerConfigsTrait;
     use ListClusters\ListClustersTrait;
@@ -372,6 +376,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use UpdateAppImageConfig\UpdateAppImageConfigTrait;
     use UpdateArtifact\UpdateArtifactTrait;
     use UpdateCluster\UpdateClusterTrait;
+    use UpdateClusterExtension\UpdateClusterExtensionTrait;
     use UpdateClusterSchedulerConfig\UpdateClusterSchedulerConfigTrait;
     use UpdateClusterSoftware\UpdateClusterSoftwareTrait;
     use UpdateCodeRepository\UpdateCodeRepositoryTrait;

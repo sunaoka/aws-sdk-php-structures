@@ -6,6 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $ResultId
+ * @property 'ON_DEMAND'|'EVALUATION_CONFIG'|null $EvaluationRunMode
+ * @property string|null $DataQualityEvaluationConfig
  * @property string|null $ProfileId
  * @property double|null $Score
  * @property Shapes\DataSource|null $DataSource

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $PipelineDescription
  * @property string|null $RoleArn
  * @property Shapes\ParallelismConfiguration|null $ParallelismConfiguration
+ * @property list<string>|null $PipelineVersionAliases
  */
 class UpdatePipelineRequest extends Request
 {
@@ -23,7 +24,8 @@ class UpdatePipelineRequest extends Request
      *     PipelineDefinitionS3Location?: Shapes\PipelineDefinitionS3Location|null,
      *     PipelineDescription?: string|null,
      *     RoleArn?: string|null,
-     *     ParallelismConfiguration?: Shapes\ParallelismConfiguration|null
+     *     ParallelismConfiguration?: Shapes\ParallelismConfiguration|null,
+     *     PipelineVersionAliases?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, max> $PipelineVersionId
  * @property string|null $PipelineVersionDisplayName
  * @property string|null $PipelineVersionDescription
+ * @property Shapes\AliasOperations|null $PipelineVersionAliasOperations
  */
 class UpdatePipelineVersionRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdatePipelineVersionRequest extends Request
      *     PipelineArn: string,
      *     PipelineVersionId: int<1, max>,
      *     PipelineVersionDisplayName?: string|null,
-     *     PipelineVersionDescription?: string|null
+     *     PipelineVersionDescription?: string|null,
+     *     PipelineVersionAliasOperations?: Shapes\AliasOperations|null
      * } $args
      */
     public function __construct(array $args)

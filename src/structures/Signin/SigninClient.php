@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\Signin;
 
 class SigninClient extends \Aws\Signin\SigninClient
 {
+    use CreateBearerToken\CreateBearerTokenTrait;
     use CreateOAuth2Token\CreateOAuth2TokenTrait;
     use CreateOAuth2TokenWithIAM\CreateOAuth2TokenWithIAMTrait;
     use CreateOAuth2TokenWithTokenExchange\CreateOAuth2TokenWithTokenExchangeTrait;

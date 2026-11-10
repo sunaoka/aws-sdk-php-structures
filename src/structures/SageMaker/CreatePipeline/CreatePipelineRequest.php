@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $RoleArn
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\ParallelismConfiguration|null $ParallelismConfiguration
+ * @property list<string>|null $PipelineVersionAliases
  */
 class CreatePipelineRequest extends Request
 {
@@ -27,7 +28,8 @@ class CreatePipelineRequest extends Request
      *     ClientRequestToken: string,
      *     RoleArn: string,
      *     Tags?: list<Shapes\Tag>|null,
-     *     ParallelismConfiguration?: Shapes\ParallelismConfiguration|null
+     *     ParallelismConfiguration?: Shapes\ParallelismConfiguration|null,
+     *     PipelineVersionAliases?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

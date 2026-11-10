@@ -51,6 +51,7 @@ class ElasticsearchServiceClient extends \Aws\ElasticsearchService\Elasticsearch
     use RemoveTags\RemoveTagsTrait;
     use RevokeVpcEndpointAccess\RevokeVpcEndpointAccessTrait;
     use StartElasticsearchServiceSoftwareUpdate\StartElasticsearchServiceSoftwareUpdateTrait;
+    use UpdateClone\UpdateCloneTrait;
     use UpdateElasticsearchDomainConfig\UpdateElasticsearchDomainConfigTrait;
     use UpdatePackage\UpdatePackageTrait;
     use UpdateVpcEndpoint\UpdateVpcEndpointTrait;
