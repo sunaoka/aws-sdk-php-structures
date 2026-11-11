@@ -34,6 +34,7 @@ class LakeFormationClient extends \Aws\LakeFormation\LakeFormationClient
     use GetDataLakePrincipal\GetDataLakePrincipalTrait;
     use GetDataLakeSettings\GetDataLakeSettingsTrait;
     use GetEffectivePermissionsForPath\GetEffectivePermissionsForPathTrait;
+    use GetGlueFunctionSessionContext\GetGlueFunctionSessionContextTrait;
     use GetLFTag\GetLFTagTrait;
     use GetLFTagExpression\GetLFTagExpressionTrait;
     use GetQueryState\GetQueryStateTrait;
@@ -42,6 +43,7 @@ class LakeFormationClient extends \Aws\LakeFormation\LakeFormationClient
     use GetResourceLFTags\GetResourceLFTagsTrait;
     use GetTableObjects\GetTableObjectsTrait;
     use GetTemporaryDataLocationCredentials\GetTemporaryDataLocationCredentialsTrait;
+    use GetTemporaryGlueFunctionCredentials\GetTemporaryGlueFunctionCredentialsTrait;
     use GetTemporaryGluePartitionCredentials\GetTemporaryGluePartitionCredentialsTrait;
     use GetTemporaryGlueTableCredentials\GetTemporaryGlueTableCredentialsTrait;
     use GetWorkUnitResults\GetWorkUnitResultsTrait;

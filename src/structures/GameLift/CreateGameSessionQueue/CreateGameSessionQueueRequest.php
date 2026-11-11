@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $CustomEventData
  * @property string|null $NotificationTarget
  * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\GameSessionQueueLogConfiguration|null $LogConfiguration
  */
 class CreateGameSessionQueueRequest extends Request
 {
@@ -27,7 +28,8 @@ class CreateGameSessionQueueRequest extends Request
      *     PriorityConfiguration?: Shapes\PriorityConfiguration|null,
      *     CustomEventData?: string|null,
      *     NotificationTarget?: string|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     LogConfiguration?: Shapes\GameSessionQueueLogConfiguration|null
      * } $args
      */
     public function __construct(array $args)

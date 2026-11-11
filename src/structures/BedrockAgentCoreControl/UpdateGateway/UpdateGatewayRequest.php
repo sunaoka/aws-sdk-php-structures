@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\GatewayPolicyEngineConfiguration|null $policyEngineConfiguration
  * @property 'DEBUG'|null $exceptionLevel
  * @property Shapes\WafConfiguration|null $wafConfiguration
+ * @property Shapes\DomainOverride|null $domainOverride
  */
 class UpdateGatewayRequest extends Request
 {
@@ -37,7 +38,8 @@ class UpdateGatewayRequest extends Request
      *     interceptorConfigurations?: list<Shapes\GatewayInterceptorConfiguration>|null,
      *     policyEngineConfiguration?: Shapes\GatewayPolicyEngineConfiguration|null,
      *     exceptionLevel?: 'DEBUG'|null,
-     *     wafConfiguration?: Shapes\WafConfiguration|null
+     *     wafConfiguration?: Shapes\WafConfiguration|null,
+     *     domainOverride?: Shapes\DomainOverride|null
      * } $args
      */
     public function __construct(array $args)

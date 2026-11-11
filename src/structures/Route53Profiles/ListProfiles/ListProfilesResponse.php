@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Route53Profiles\ListProfiles;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string|null $NextToken
  * @property list<Shapes\ProfileSummary>|null $ProfileSummaries
+ * @property string|null $NextToken
  */
 class ListProfilesResponse extends Response
 {

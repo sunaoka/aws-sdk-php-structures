@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $RuleGroupName
  * @property string|null $RuleGroupArn
- * @property 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN'|null $Type
+ * @property 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN'|'FIREWALL'|'IPS'|null $Type
  */
 class DescribeRuleGroupSummaryRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeRuleGroupSummaryRequest extends Request
      * @param array{
      *     RuleGroupName?: string|null,
      *     RuleGroupArn?: string|null,
-     *     Type?: 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN'|null
+     *     Type?: 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN'|'FIREWALL'|'IPS'|null
      * } $args
      */
     public function __construct(array $args = [])

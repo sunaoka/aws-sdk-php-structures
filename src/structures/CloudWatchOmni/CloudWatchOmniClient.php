@@ -37,6 +37,7 @@ class CloudWatchOmniClient extends \Aws\CloudWatchOmni\CloudWatchOmniClient
     use GetOmniDashboard\GetOmniDashboardTrait;
     use GetSpace\GetSpaceTrait;
     use GetSpaceCredentialsForOrganization\GetSpaceCredentialsForOrganizationTrait;
+    use GetSpaceDataAccess\GetSpaceDataAccessTrait;
     use GetTelemetryQueryResults\GetTelemetryQueryResultsTrait;
     use GetView\GetViewTrait;
     use ListAccessGrants\ListAccessGrantsTrait;

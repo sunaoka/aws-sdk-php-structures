@@ -54,6 +54,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $Attributes
  * @property list<NextContactEntry>|null $NextContacts
  * @property GlobalResiliencyMetadata|null $GlobalResiliencyMetadata
+ * @property ContactLens|null $ContactLens
  */
 class Contact extends Shape
 {
@@ -107,7 +108,8 @@ class Contact extends Shape
      *     OutboundStrategy?: OutboundStrategy|null,
      *     Attributes?: array<string, string>|null,
      *     NextContacts?: list<NextContactEntry>|null,
-     *     GlobalResiliencyMetadata?: GlobalResiliencyMetadata|null
+     *     GlobalResiliencyMetadata?: GlobalResiliencyMetadata|null,
+     *     ContactLens?: ContactLens|null
      * } $args
      */
     public function __construct(array $args = [])

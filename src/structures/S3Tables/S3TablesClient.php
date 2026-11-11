@@ -21,6 +21,7 @@ class S3TablesClient extends \Aws\S3Tables\S3TablesClient
     use GetTable\GetTableTrait;
     use GetTableBucket\GetTableBucketTrait;
     use GetTableBucketEncryption\GetTableBucketEncryptionTrait;
+    use GetTableBucketLogging\GetTableBucketLoggingTrait;
     use GetTableBucketMaintenanceConfiguration\GetTableBucketMaintenanceConfigurationTrait;
     use GetTableBucketMetricsConfiguration\GetTableBucketMetricsConfigurationTrait;
     use GetTableBucketPolicy\GetTableBucketPolicyTrait;
@@ -43,6 +44,7 @@ class S3TablesClient extends \Aws\S3Tables\S3TablesClient
     use ListTables\ListTablesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PutTableBucketEncryption\PutTableBucketEncryptionTrait;
+    use PutTableBucketLogging\PutTableBucketLoggingTrait;
     use PutTableBucketMaintenanceConfiguration\PutTableBucketMaintenanceConfigurationTrait;
     use PutTableBucketMetricsConfiguration\PutTableBucketMetricsConfigurationTrait;
     use PutTableBucketPolicy\PutTableBucketPolicyTrait;

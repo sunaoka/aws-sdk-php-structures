@@ -19,5 +19,6 @@ class Route53ProfilesClient extends \Aws\Route53Profiles\Route53ProfilesClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateProfileAssociation\UpdateProfileAssociationTrait;
     use UpdateProfileResourceAssociation\UpdateProfileResourceAssociationTrait;
 }

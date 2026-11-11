@@ -5,12 +5,15 @@ namespace Sunaoka\Aws\Structures\PCS\CreateComputeNodeGroup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string|null $amiId
+ * @property list<string>|null $securityGroupIds
+ * @property string|null $sshKeyName
  * @property string $clusterIdentifier
  * @property string $computeNodeGroupName
- * @property string|null $amiId
  * @property list<string> $subnetIds
  * @property 'ONDEMAND'|'SPOT'|'CAPACITY_BLOCK'|'INTERRUPTIBLE_CAPACITY_RESERVATION'|null $purchaseOption
- * @property Shapes\CustomLaunchTemplate $customLaunchTemplate
+ * @property 'CUSTOM'|'MANAGED'|null $launchTemplateMode
+ * @property Shapes\CustomLaunchTemplate|null $customLaunchTemplate
  * @property string $iamInstanceProfileArn
  * @property Shapes\ScalingConfigurationRequest $scalingConfiguration
  * @property list<Shapes\InstanceConfig> $instanceConfigs
@@ -24,12 +27,15 @@ class CreateComputeNodeGroupRequest extends Request
 {
     /**
      * @param array{
+     *     amiId?: string|null,
+     *     securityGroupIds?: list<string>|null,
+     *     sshKeyName?: string|null,
      *     clusterIdentifier: string,
      *     computeNodeGroupName: string,
-     *     amiId?: string|null,
      *     subnetIds: list<string>,
      *     purchaseOption?: 'ONDEMAND'|'SPOT'|'CAPACITY_BLOCK'|'INTERRUPTIBLE_CAPACITY_RESERVATION'|null,
-     *     customLaunchTemplate: Shapes\CustomLaunchTemplate,
+     *     launchTemplateMode?: 'CUSTOM'|'MANAGED'|null,
+     *     customLaunchTemplate?: Shapes\CustomLaunchTemplate|null,
      *     iamInstanceProfileArn: string,
      *     scalingConfiguration: Shapes\ScalingConfigurationRequest,
      *     instanceConfigs: list<Shapes\InstanceConfig>,

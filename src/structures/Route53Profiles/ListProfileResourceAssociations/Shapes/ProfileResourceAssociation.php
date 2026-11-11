@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Route53Profiles\ListProfileResourceAssociations
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property string|null $Id
- * @property \Aws\Api\DateTimeResult|null $ModificationTime
  * @property string|null $Name
  * @property string|null $OwnerId
  * @property string|null $ProfileId
  * @property string|null $ResourceArn
- * @property string|null $ResourceProperties
  * @property string|null $ResourceType
+ * @property string|null $ResourceProperties
  * @property 'COMPLETE'|'DELETING'|'UPDATING'|'CREATING'|'DELETED'|'FAILED'|null $Status
  * @property string|null $StatusMessage
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $ModificationTime
  */
 class ProfileResourceAssociation extends Shape
 {
     /**
      * @param array{
-     *     CreationTime?: \Aws\Api\DateTimeResult|null,
      *     Id?: string|null,
-     *     ModificationTime?: \Aws\Api\DateTimeResult|null,
      *     Name?: string|null,
      *     OwnerId?: string|null,
      *     ProfileId?: string|null,
      *     ResourceArn?: string|null,
-     *     ResourceProperties?: string|null,
      *     ResourceType?: string|null,
+     *     ResourceProperties?: string|null,
      *     Status?: 'COMPLETE'|'DELETING'|'UPDATING'|'CREATING'|'DELETED'|'FAILED'|null,
-     *     StatusMessage?: string|null
+     *     StatusMessage?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     ModificationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

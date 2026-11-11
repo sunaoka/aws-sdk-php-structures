@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'ACTIVE'|'ARCHIVED'|'CANCELLED'|'EXPIRED'|'RENEWED'|'REPLACED'|'ROLLED_BACK'|'SUPERSEDED'|'TERMINATED'|null $status
  * @property string|null $initialAgreementId
  * @property Shapes\EndTimeBehavior|null $endTimeBehavior
+ * @property Shapes\FreeTrialSummary|null $freeTrialSummary
  */
 class DescribeAgreementResponse extends Response
 {

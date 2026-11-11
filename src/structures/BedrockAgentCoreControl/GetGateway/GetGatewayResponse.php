@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'DEBUG'|null $exceptionLevel
  * @property string|null $webAclArn
  * @property Shapes\WafConfiguration|null $wafConfiguration
+ * @property Shapes\DomainOverride|null $domainOverride
  */
 class GetGatewayResponse extends Response
 {

@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Route53Profiles\CreateProfile;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
  * @property string $Name
+ * @property string $ClientToken
  * @property list<Shapes\Tag>|null $Tags
  */
 class CreateProfileRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken: string,
      *     Name: string,
+     *     ClientToken: string,
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */

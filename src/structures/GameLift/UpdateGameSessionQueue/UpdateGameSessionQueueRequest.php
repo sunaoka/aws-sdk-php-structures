@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\PriorityConfiguration|null $PriorityConfiguration
  * @property string|null $CustomEventData
  * @property string|null $NotificationTarget
+ * @property list<Shapes\LogDeliveryDestination>|null $AddLogDeliveryDestinations
+ * @property list<Shapes\LogDeliveryDestination>|null $RemoveLogDeliveryDestinations
  */
 class UpdateGameSessionQueueRequest extends Request
 {
@@ -25,7 +27,9 @@ class UpdateGameSessionQueueRequest extends Request
      *     FilterConfiguration?: Shapes\FilterConfiguration|null,
      *     PriorityConfiguration?: Shapes\PriorityConfiguration|null,
      *     CustomEventData?: string|null,
-     *     NotificationTarget?: string|null
+     *     NotificationTarget?: string|null,
+     *     AddLogDeliveryDestinations?: list<Shapes\LogDeliveryDestination>|null,
+     *     RemoveLogDeliveryDestinations?: list<Shapes\LogDeliveryDestination>|null
      * } $args
      */
     public function __construct(array $args)

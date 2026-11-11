@@ -36,11 +36,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $webUrl
  * @property bool|null $skipAppResign
  * @property string|null $testSpecArn
+ * @property string|null $testPackageArn
  * @property DeviceSelectionResult|null $deviceSelectionResult
  * @property VpcConfig|null $vpcConfig
  * @property string|null $executionRoleArn
  * @property list<EnvironmentVariable>|null $environmentVariables
- * @property list<'TEST_REPORT'>|null $insightsTypes
+ * @property list<'TEST_REPORT'|'NONE'>|null $insightsTypes
  * @property RunInsights|null $insights
  */
 class Run extends Shape
@@ -78,11 +79,12 @@ class Run extends Shape
      *     webUrl?: string|null,
      *     skipAppResign?: bool|null,
      *     testSpecArn?: string|null,
+     *     testPackageArn?: string|null,
      *     deviceSelectionResult?: DeviceSelectionResult|null,
      *     vpcConfig?: VpcConfig|null,
      *     executionRoleArn?: string|null,
      *     environmentVariables?: list<EnvironmentVariable>|null,
-     *     insightsTypes?: list<'TEST_REPORT'>|null,
+     *     insightsTypes?: list<'TEST_REPORT'|'NONE'>|null,
      *     insights?: RunInsights|null
      * } $args
      */

@@ -5,6 +5,9 @@ namespace Sunaoka\Aws\Structures\PCS\UpdateComputeNodeGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $amiId
+ * @property list<string>|null $securityGroupIds
+ * @property string|null $sshKeyName
  * @property string $name
  * @property string $id
  * @property string $arn
@@ -12,10 +15,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $modifiedAt
  * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|'UPDATE_FAILED'|'DELETED'|'SUSPENDING'|'SUSPENDED'|'RESUMING' $status
- * @property string|null $amiId
  * @property list<string> $subnetIds
  * @property 'ONDEMAND'|'SPOT'|'CAPACITY_BLOCK'|'INTERRUPTIBLE_CAPACITY_RESERVATION'|null $purchaseOption
- * @property CustomLaunchTemplate $customLaunchTemplate
+ * @property 'CUSTOM'|'MANAGED'|null $launchTemplateMode
+ * @property CustomLaunchTemplate|null $customLaunchTemplate
  * @property string $iamInstanceProfileArn
  * @property ScalingConfiguration $scalingConfiguration
  * @property list<InstanceConfig> $instanceConfigs
@@ -28,6 +31,9 @@ class ComputeNodeGroup extends Shape
 {
     /**
      * @param array{
+     *     amiId?: string|null,
+     *     securityGroupIds?: list<string>|null,
+     *     sshKeyName?: string|null,
      *     name: string,
      *     id: string,
      *     arn: string,
@@ -35,10 +41,10 @@ class ComputeNodeGroup extends Shape
      *     createdAt: \Aws\Api\DateTimeResult,
      *     modifiedAt: \Aws\Api\DateTimeResult,
      *     status: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|'UPDATE_FAILED'|'DELETED'|'SUSPENDING'|'SUSPENDED'|'RESUMING',
-     *     amiId?: string|null,
      *     subnetIds: list<string>,
      *     purchaseOption?: 'ONDEMAND'|'SPOT'|'CAPACITY_BLOCK'|'INTERRUPTIBLE_CAPACITY_RESERVATION'|null,
-     *     customLaunchTemplate: CustomLaunchTemplate,
+     *     launchTemplateMode?: 'CUSTOM'|'MANAGED'|null,
+     *     customLaunchTemplate?: CustomLaunchTemplate|null,
      *     iamInstanceProfileArn: string,
      *     scalingConfiguration: ScalingConfiguration,
      *     instanceConfigs: list<InstanceConfig>,

@@ -14,12 +14,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RequestHeaderConfiguration|null $requestHeaderConfiguration
  * @property Shapes\ProtocolConfiguration|null $protocolConfiguration
  * @property Shapes\LifecycleConfiguration|null $lifecycleConfiguration
+ * @property Shapes\RuntimeHooksConfiguration|null $hooksConfiguration
  * @property Shapes\RuntimeMetadataConfiguration|null $metadataConfiguration
  * @property array<string, string>|null $environmentVariables
  * @property list<Shapes\FilesystemConfiguration>|null $filesystemConfigurations
  * @property Shapes\CapacityProviderConfiguration|null $capacityProviderConfiguration
  * @property string|null $platformVersion
  * @property list<Shapes\AllowedPort>|null $allowedPorts
+ * @property list<Shapes\ResourceConfiguration>|null $resourceConfigurations
  * @property string|null $clientToken
  */
 class UpdateAgentRuntimeRequest extends Request
@@ -35,12 +37,14 @@ class UpdateAgentRuntimeRequest extends Request
      *     requestHeaderConfiguration?: Shapes\RequestHeaderConfiguration|null,
      *     protocolConfiguration?: Shapes\ProtocolConfiguration|null,
      *     lifecycleConfiguration?: Shapes\LifecycleConfiguration|null,
+     *     hooksConfiguration?: Shapes\RuntimeHooksConfiguration|null,
      *     metadataConfiguration?: Shapes\RuntimeMetadataConfiguration|null,
      *     environmentVariables?: array<string, string>|null,
      *     filesystemConfigurations?: list<Shapes\FilesystemConfiguration>|null,
      *     capacityProviderConfiguration?: Shapes\CapacityProviderConfiguration|null,
      *     platformVersion?: string|null,
      *     allowedPorts?: list<Shapes\AllowedPort>|null,
+     *     resourceConfigurations?: list<Shapes\ResourceConfiguration>|null,
      *     clientToken?: string|null
      * } $args
      */

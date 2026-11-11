@@ -7,6 +7,8 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $UpdateToken
  * @property Shapes\RuleGroup|null $RuleGroup
+ * @property Shapes\FirewallRuleGroup|null $FirewallRuleGroup
+ * @property Shapes\IpsRuleGroup|null $IpsRuleGroup
  * @property Shapes\RuleGroupResponse $RuleGroupResponse
  */
 class DescribeRuleGroupResponse extends Response

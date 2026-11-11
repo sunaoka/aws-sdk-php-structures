@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientToken
  * @property string $memoryId
  * @property string|null $description
- * @property int<3, 365>|null $eventExpiryDuration
+ * @property int<3, 3650>|null $eventExpiryDuration
  * @property string|null $memoryExecutionRoleArn
  * @property Shapes\ModifyMemoryStrategies|null $memoryStrategies
  * @property list<Shapes\IndexedKey>|null $addIndexedKeys
@@ -22,7 +22,7 @@ class UpdateMemoryRequest extends Request
      *     clientToken?: string|null,
      *     memoryId: string,
      *     description?: string|null,
-     *     eventExpiryDuration?: int<3, 365>|null,
+     *     eventExpiryDuration?: int<3, 3650>|null,
      *     memoryExecutionRoleArn?: string|null,
      *     memoryStrategies?: Shapes\ModifyMemoryStrategies|null,
      *     addIndexedKeys?: list<Shapes\IndexedKey>|null,

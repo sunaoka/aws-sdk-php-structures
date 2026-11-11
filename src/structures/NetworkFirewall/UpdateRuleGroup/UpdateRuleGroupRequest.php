@@ -9,8 +9,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $RuleGroupArn
  * @property string|null $RuleGroupName
  * @property Shapes\RuleGroup|null $RuleGroup
+ * @property Shapes\FirewallRuleGroup|null $FirewallRuleGroup
+ * @property Shapes\IpsRuleGroup|null $IpsRuleGroup
  * @property string|null $Rules
- * @property 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN'|null $Type
+ * @property 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN'|'FIREWALL'|'IPS'|null $Type
  * @property string|null $Description
  * @property bool|null $DryRun
  * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
@@ -26,8 +28,10 @@ class UpdateRuleGroupRequest extends Request
      *     RuleGroupArn?: string|null,
      *     RuleGroupName?: string|null,
      *     RuleGroup?: Shapes\RuleGroup|null,
+     *     FirewallRuleGroup?: Shapes\FirewallRuleGroup|null,
+     *     IpsRuleGroup?: Shapes\IpsRuleGroup|null,
      *     Rules?: string|null,
-     *     Type?: 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN'|null,
+     *     Type?: 'STATELESS'|'STATEFUL'|'STATEFUL_DOMAIN'|'FIREWALL'|'IPS'|null,
      *     Description?: string|null,
      *     DryRun?: bool|null,
      *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null,

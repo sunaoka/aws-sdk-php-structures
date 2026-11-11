@@ -15,12 +15,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RequestHeaderConfiguration|null $requestHeaderConfiguration
  * @property Shapes\ProtocolConfiguration|null $protocolConfiguration
  * @property Shapes\LifecycleConfiguration|null $lifecycleConfiguration
+ * @property Shapes\RuntimeHooksConfiguration|null $hooksConfiguration
  * @property array<string, string>|null $environmentVariables
  * @property list<Shapes\FilesystemConfiguration>|null $filesystemConfigurations
  * @property Shapes\CapacityProviderConfiguration|null $capacityProviderConfiguration
  * @property array<string, string>|null $tags
  * @property string|null $platformVersion
  * @property list<Shapes\AllowedPort>|null $allowedPorts
+ * @property list<Shapes\ResourceConfiguration>|null $resourceConfigurations
  */
 class CreateAgentRuntimeRequest extends Request
 {
@@ -36,12 +38,14 @@ class CreateAgentRuntimeRequest extends Request
      *     requestHeaderConfiguration?: Shapes\RequestHeaderConfiguration|null,
      *     protocolConfiguration?: Shapes\ProtocolConfiguration|null,
      *     lifecycleConfiguration?: Shapes\LifecycleConfiguration|null,
+     *     hooksConfiguration?: Shapes\RuntimeHooksConfiguration|null,
      *     environmentVariables?: array<string, string>|null,
      *     filesystemConfigurations?: list<Shapes\FilesystemConfiguration>|null,
      *     capacityProviderConfiguration?: Shapes\CapacityProviderConfiguration|null,
      *     tags?: array<string, string>|null,
      *     platformVersion?: string|null,
-     *     allowedPorts?: list<Shapes\AllowedPort>|null
+     *     allowedPorts?: list<Shapes\AllowedPort>|null,
+     *     resourceConfigurations?: list<Shapes\ResourceConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

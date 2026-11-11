@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\NetworkConfiguration|null $networkConfiguration
  * @property 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING'|'DELETE_FAILED' $status
  * @property Shapes\LifecycleConfiguration $lifecycleConfiguration
+ * @property Shapes\RuntimeHooksConfiguration|null $hooksConfiguration
  * @property string|null $failureReason
  * @property string|null $description
  * @property Shapes\WorkloadIdentityDetails|null $workloadIdentityDetails
@@ -28,6 +29,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\CapacityProviderConfiguration|null $capacityProviderConfiguration
  * @property string|null $platformVersion
  * @property list<Shapes\AllowedPort>|null $allowedPorts
+ * @property list<Shapes\ResourceConfiguration>|null $resourceConfigurations
  */
 class GetAgentRuntimeResponse extends Response
 {
