@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property AzureConnectorConfiguration|null $azure
+ * @property GcpConnectorConfiguration|null $gcp
  */
 class ConnectorConfiguration extends Shape
 {
     /**
-     * @param array{azure?: AzureConnectorConfiguration|null} $args
+     * @param array{
+     *     azure?: AzureConnectorConfiguration|null,
+     *     gcp?: GcpConnectorConfiguration|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

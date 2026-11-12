@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CustomerIdentifier
  * @property string $Dimension
  * @property int<0, 2147483647>|null $Quantity
+ * @property string|null $QuantityAsDecimal
  * @property list<UsageAllocation>|null $UsageAllocations
  * @property string|null $CustomerAWSAccountId
  * @property string|null $LicenseArn
@@ -21,6 +22,7 @@ class UsageRecord extends Shape
      *     CustomerIdentifier?: string|null,
      *     Dimension: string,
      *     Quantity?: int<0, 2147483647>|null,
+     *     QuantityAsDecimal?: string|null,
      *     UsageAllocations?: list<UsageAllocation>|null,
      *     CustomerAWSAccountId?: string|null,
      *     LicenseArn?: string|null

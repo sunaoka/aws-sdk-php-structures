@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'Self'|'Shared'|'Amazon'|'ThirdParty'|'AWSMarketplace'|null $owner
  * @property list<Shapes\Filter>|null $filters
- * @property int<1, 25>|null $maxResults
+ * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
  */
 class ListContainerRecipesRequest extends Request
@@ -16,7 +16,7 @@ class ListContainerRecipesRequest extends Request
      * @param array{
      *     owner?: 'Self'|'Shared'|'Amazon'|'ThirdParty'|'AWSMarketplace'|null,
      *     filters?: list<Shapes\Filter>|null,
-     *     maxResults?: int<1, 25>|null,
+     *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null
      * } $args
      */

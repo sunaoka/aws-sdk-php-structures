@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<CustomClaimValidationType>|null $customClaims
  * @property PrivateEndpoint|null $privateEndpoint
  * @property list<PrivateEndpointOverride>|null $privateEndpointOverrides
+ * @property list<CertificateConfiguration>|null $certificateConfigurations
  * @property AllowedWorkloadConfiguration|null $allowedWorkloadConfiguration
  */
 class CustomJWTAuthorizerConfiguration extends Shape
@@ -27,6 +28,7 @@ class CustomJWTAuthorizerConfiguration extends Shape
      *     customClaims?: list<CustomClaimValidationType>|null,
      *     privateEndpoint?: PrivateEndpoint|null,
      *     privateEndpointOverrides?: list<PrivateEndpointOverride>|null,
+     *     certificateConfigurations?: list<CertificateConfiguration>|null,
      *     allowedWorkloadConfiguration?: AllowedWorkloadConfiguration|null
      * } $args
      */

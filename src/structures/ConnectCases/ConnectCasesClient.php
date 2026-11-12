@@ -28,6 +28,7 @@ class ConnectCasesClient extends \Aws\ConnectCases\ConnectCasesClient
     use GetCaseEventConfiguration\GetCaseEventConfigurationTrait;
     use GetDomain\GetDomainTrait;
     use GetLayout\GetLayoutTrait;
+    use GetMergeCasesStatus\GetMergeCasesStatusTrait;
     use GetTemplate\GetTemplateTrait;
     use ListCaseRules\ListCaseRulesTrait;
     use ListCasesForContact\ListCasesForContactTrait;
@@ -41,6 +42,7 @@ class ConnectCasesClient extends \Aws\ConnectCases\ConnectCasesClient
     use SearchAllRelatedItems\SearchAllRelatedItemsTrait;
     use SearchCases\SearchCasesTrait;
     use SearchRelatedItems\SearchRelatedItemsTrait;
+    use StartMergeCases\StartMergeCasesTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateCase\UpdateCaseTrait;

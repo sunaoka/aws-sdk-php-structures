@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\ImageScanFindingsFilter>|null $filters
- * @property int<1, 25>|null $maxResults
+ * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
  */
 class ListImageScanFindingsRequest extends Request
@@ -14,7 +14,7 @@ class ListImageScanFindingsRequest extends Request
     /**
      * @param array{
      *     filters?: list<Shapes\ImageScanFindingsFilter>|null,
-     *     maxResults?: int<1, 25>|null,
+     *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null
      * } $args
      */

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Self'|'Shared'|'Amazon'|'ThirdParty'|'AWSMarketplace'|null $owner
  * @property list<Shapes\Filter>|null $filters
  * @property bool|null $byName
- * @property int<1, 25>|null $maxResults
+ * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
  */
 class ListWorkflowsRequest extends Request
@@ -18,7 +18,7 @@ class ListWorkflowsRequest extends Request
      *     owner?: 'Self'|'Shared'|'Amazon'|'ThirdParty'|'AWSMarketplace'|null,
      *     filters?: list<Shapes\Filter>|null,
      *     byName?: bool|null,
-     *     maxResults?: int<1, 25>|null,
+     *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null
      * } $args
      */

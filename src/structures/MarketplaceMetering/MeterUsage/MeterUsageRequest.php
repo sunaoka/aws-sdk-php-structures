@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $Timestamp
  * @property string $UsageDimension
  * @property int<0, 2147483647>|null $UsageQuantity
+ * @property string|null $UsageQuantityAsDecimal
  * @property bool|null $DryRun
  * @property list<Shapes\UsageAllocation>|null $UsageAllocations
  * @property string|null $ClientToken
@@ -21,6 +22,7 @@ class MeterUsageRequest extends Request
      *     Timestamp: \Aws\Api\DateTimeResult,
      *     UsageDimension: string,
      *     UsageQuantity?: int<0, 2147483647>|null,
+     *     UsageQuantityAsDecimal?: string|null,
      *     DryRun?: bool|null,
      *     UsageAllocations?: list<Shapes\UsageAllocation>|null,
      *     ClientToken?: string|null

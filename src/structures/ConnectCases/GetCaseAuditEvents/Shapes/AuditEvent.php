@@ -6,22 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $eventId
- * @property 'Case.Created'|'Case.Updated'|'RelatedItem.Created'|'RelatedItem.Deleted'|'RelatedItem.Updated' $type
+ * @property 'Case.Created'|'Case.Updated'|'RelatedItem.Created'|'RelatedItem.Deleted'|'RelatedItem.Updated'|'Case.Merged' $type
  * @property 'Contact'|'Comment'|'File'|'Sla'|'ConnectCase'|'Custom'|null $relatedItemType
  * @property \Aws\Api\DateTimeResult $performedTime
  * @property list<AuditEventField> $fields
  * @property AuditEventPerformedBy|null $performedBy
+ * @property AuditMergeMetadata|null $mergeMetadata
  */
 class AuditEvent extends Shape
 {
     /**
      * @param array{
      *     eventId: string,
-     *     type: 'Case.Created'|'Case.Updated'|'RelatedItem.Created'|'RelatedItem.Deleted'|'RelatedItem.Updated',
+     *     type: 'Case.Created'|'Case.Updated'|'RelatedItem.Created'|'RelatedItem.Deleted'|'RelatedItem.Updated'|'Case.Merged',
      *     relatedItemType?: 'Contact'|'Comment'|'File'|'Sla'|'ConnectCase'|'Custom'|null,
      *     performedTime: \Aws\Api\DateTimeResult,
      *     fields: list<AuditEventField>,
-     *     performedBy?: AuditEventPerformedBy|null
+     *     performedBy?: AuditEventPerformedBy|null,
+     *     mergeMetadata?: AuditMergeMetadata|null
      * } $args
      */
     public function __construct(array $args)

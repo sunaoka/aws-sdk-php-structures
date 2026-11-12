@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DashProgramInformation|null $ProgramInformation
  * @property DashDvbSettings|null $DvbSettings
  * @property 'STANDARD'|'NONE'|null $Compactness
+ * @property 'AVERAGE'|'MAX'|null $BandwidthReportingMode
  * @property 'NONE'|'PATTERNED'|null $AudioTimelinePattern
  * @property DashSubtitleConfiguration|null $SubtitleConfiguration
  * @property 'LEAF'|'ROOT'|null $UriPathType
@@ -46,6 +47,7 @@ class CreateDashManifestConfiguration extends Shape
      *     ProgramInformation?: DashProgramInformation|null,
      *     DvbSettings?: DashDvbSettings|null,
      *     Compactness?: 'STANDARD'|'NONE'|null,
+     *     BandwidthReportingMode?: 'AVERAGE'|'MAX'|null,
      *     AudioTimelinePattern?: 'NONE'|'PATTERNED'|null,
      *     SubtitleConfiguration?: DashSubtitleConfiguration|null,
      *     UriPathType?: 'LEAF'|'ROOT'|null,

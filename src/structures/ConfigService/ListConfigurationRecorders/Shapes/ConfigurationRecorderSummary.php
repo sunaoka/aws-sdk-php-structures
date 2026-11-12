@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string|null $servicePrincipal
  * @property 'INTERNAL'|'PAID' $recordingScope
- * @property 'AZURE'|null $provider
+ * @property 'AZURE'|'GCP'|null $provider
  */
 class ConfigurationRecorderSummary extends Shape
 {
@@ -19,7 +19,7 @@ class ConfigurationRecorderSummary extends Shape
      *     name: string,
      *     servicePrincipal?: string|null,
      *     recordingScope: 'INTERNAL'|'PAID',
-     *     provider?: 'AZURE'|null
+     *     provider?: 'AZURE'|'GCP'|null
      * } $args
      */
     public function __construct(array $args)

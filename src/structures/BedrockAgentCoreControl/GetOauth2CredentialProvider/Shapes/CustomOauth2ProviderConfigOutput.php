@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CLIENT_SECRET_BASIC'|'CLIENT_SECRET_POST'|'AWS_IAM_ID_TOKEN_JWT'|'PRIVATE_KEY_JWT'|null $clientAuthenticationMethod
  * @property PrivateEndpoint|null $privateEndpoint
  * @property list<PrivateEndpointOverride>|null $privateEndpointOverrides
+ * @property list<CertificateConfiguration>|null $certificateConfigurations
  * @property PrivateKeyJwtConfig|null $privateKeyJwtConfig
  */
 class CustomOauth2ProviderConfigOutput extends Shape
@@ -23,6 +24,7 @@ class CustomOauth2ProviderConfigOutput extends Shape
      *     clientAuthenticationMethod?: 'CLIENT_SECRET_BASIC'|'CLIENT_SECRET_POST'|'AWS_IAM_ID_TOKEN_JWT'|'PRIVATE_KEY_JWT'|null,
      *     privateEndpoint?: PrivateEndpoint|null,
      *     privateEndpointOverrides?: list<PrivateEndpointOverride>|null,
+     *     certificateConfigurations?: list<CertificateConfiguration>|null,
      *     privateKeyJwtConfig?: PrivateKeyJwtConfig|null
      * } $args
      */

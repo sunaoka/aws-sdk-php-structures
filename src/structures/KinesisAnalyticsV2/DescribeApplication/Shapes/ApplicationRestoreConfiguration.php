@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'SKIP_RESTORE_FROM_SNAPSHOT'|'RESTORE_FROM_LATEST_SNAPSHOT'|'RESTORE_FROM_CUSTOM_SNAPSHOT' $ApplicationRestoreType
  * @property string|null $SnapshotName
+ * @property string|null $SnapshotArn
  */
 class ApplicationRestoreConfiguration extends Shape
 {
     /**
      * @param array{
      *     ApplicationRestoreType: 'SKIP_RESTORE_FROM_SNAPSHOT'|'RESTORE_FROM_LATEST_SNAPSHOT'|'RESTORE_FROM_CUSTOM_SNAPSHOT',
-     *     SnapshotName?: string|null
+     *     SnapshotName?: string|null,
+     *     SnapshotArn?: string|null
      * } $args
      */
     public function __construct(array $args)
