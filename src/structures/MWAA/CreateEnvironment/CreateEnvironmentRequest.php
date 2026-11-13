@@ -30,6 +30,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CUSTOMER'|'SERVICE'|null $EndpointManagement
  * @property int<1, max>|null $MinWebservers
  * @property int<1, max>|null $MaxWebservers
+ * @property Shapes\IdentityCenterConfiguration|null $IdentityCenterConfiguration
+ * @property array<string, Shapes\TeamConfig>|null $Teams
  */
 class CreateEnvironmentRequest extends Request
 {
@@ -59,7 +61,9 @@ class CreateEnvironmentRequest extends Request
      *     Schedulers?: int<min, 5>|null,
      *     EndpointManagement?: 'CUSTOMER'|'SERVICE'|null,
      *     MinWebservers?: int<1, max>|null,
-     *     MaxWebservers?: int<1, max>|null
+     *     MaxWebservers?: int<1, max>|null,
+     *     IdentityCenterConfiguration?: Shapes\IdentityCenterConfiguration|null,
+     *     Teams?: array<string, Shapes\TeamConfig>|null
      * } $args
      */
     public function __construct(array $args)

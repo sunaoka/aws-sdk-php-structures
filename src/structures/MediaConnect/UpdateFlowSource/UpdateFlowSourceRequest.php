@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $MaxSyncBuffer
  * @property list<Shapes\MediaStreamSourceConfigurationRequest>|null $MediaStreamSourceConfigurations
  * @property int|null $MinLatency
- * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null $Protocol
+ * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|'rtmp-push'|null $Protocol
  * @property int|null $SenderControlPort
  * @property string|null $SenderIpAddress
  * @property string $SourceArn
@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\NdiSourceSettings|null $NdiSourceSettings
  * @property 'ENABLED'|'DISABLED'|null $RouterIntegrationState
  * @property Shapes\FlowTransitEncryption|null $RouterIntegrationTransitDecryption
+ * @property Shapes\SetRtmpPushSourceSettings|null $RtmpPushSettings
  */
 class UpdateFlowSourceRequest extends Request
 {
@@ -43,7 +44,7 @@ class UpdateFlowSourceRequest extends Request
      *     MaxSyncBuffer?: int|null,
      *     MediaStreamSourceConfigurations?: list<Shapes\MediaStreamSourceConfigurationRequest>|null,
      *     MinLatency?: int|null,
-     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null,
+     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|'rtmp-push'|null,
      *     SenderControlPort?: int|null,
      *     SenderIpAddress?: string|null,
      *     SourceArn: string,
@@ -55,7 +56,8 @@ class UpdateFlowSourceRequest extends Request
      *     GatewayBridgeSource?: Shapes\UpdateGatewayBridgeSourceRequest|null,
      *     NdiSourceSettings?: Shapes\NdiSourceSettings|null,
      *     RouterIntegrationState?: 'ENABLED'|'DISABLED'|null,
-     *     RouterIntegrationTransitDecryption?: Shapes\FlowTransitEncryption|null
+     *     RouterIntegrationTransitDecryption?: Shapes\FlowTransitEncryption|null,
+     *     RtmpPushSettings?: Shapes\SetRtmpPushSourceSettings|null
      * } $args
      */
     public function __construct(array $args)

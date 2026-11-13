@@ -6,6 +6,7 @@ class OdbClient extends \Aws\Odb\OdbClient
 {
     use AcceptMarketplaceRegistration\AcceptMarketplaceRegistrationTrait;
     use AssociateIamRoleToResource\AssociateIamRoleToResourceTrait;
+    use AssociateVirtualMachinesToCloudVmCluster\AssociateVirtualMachinesToCloudVmClusterTrait;
     use AssociateVirtualMachinesToExadbVmCluster\AssociateVirtualMachinesToExadbVmClusterTrait;
     use CreateAutonomousDatabase\CreateAutonomousDatabaseTrait;
     use CreateAutonomousDatabaseBackup\CreateAutonomousDatabaseBackupTrait;
@@ -27,6 +28,7 @@ class OdbClient extends \Aws\Odb\OdbClient
     use DeleteOdbNetwork\DeleteOdbNetworkTrait;
     use DeleteOdbPeeringConnection\DeleteOdbPeeringConnectionTrait;
     use DisassociateIamRoleFromResource\DisassociateIamRoleFromResourceTrait;
+    use DisassociateVirtualMachinesFromCloudVmCluster\DisassociateVirtualMachinesFromCloudVmClusterTrait;
     use DisassociateVirtualMachinesFromExadbVmCluster\DisassociateVirtualMachinesFromExadbVmClusterTrait;
     use FailoverAutonomousDatabase\FailoverAutonomousDatabaseTrait;
     use GetAutonomousDatabase\GetAutonomousDatabaseTrait;
@@ -79,7 +81,10 @@ class OdbClient extends \Aws\Odb\OdbClient
     use UntagResource\UntagResourceTrait;
     use UpdateAutonomousDatabase\UpdateAutonomousDatabaseTrait;
     use UpdateAutonomousDatabaseBackup\UpdateAutonomousDatabaseBackupTrait;
+    use UpdateCloudAutonomousVmCluster\UpdateCloudAutonomousVmClusterTrait;
     use UpdateCloudExadataInfrastructure\UpdateCloudExadataInfrastructureTrait;
+    use UpdateCloudExadataInfrastructureStorageCapacity\UpdateCloudExadataInfrastructureStorageCapacityTrait;
+    use UpdateCloudVmCluster\UpdateCloudVmClusterTrait;
     use UpdateExadbVmCluster\UpdateExadbVmClusterTrait;
     use UpdateExascaleCloudExadataInfrastructure\UpdateExascaleCloudExadataInfrastructureTrait;
     use UpdateExascaleDbStorageVault\UpdateExascaleDbStorageVaultTrait;

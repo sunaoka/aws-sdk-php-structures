@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FunctionId
- * @property 'HTTP_REQUEST'|'AWS_SERVICE_REQUEST'|'CUSTOM_OUTPUT'|'CONCURRENT_EXECUTOR'|'SEQUENTIAL_EXECUTOR'|'VAST_REQUEST' $FunctionType
+ * @property 'HTTP_REQUEST'|'AWS_SERVICE_REQUEST'|'CUSTOM_OUTPUT'|'CONCURRENT_EXECUTOR'|'SEQUENTIAL_EXECUTOR'|'VAST_REQUEST'|'HLS_TAG_PROCESSOR' $FunctionType
  * @property string|null $Description
  * @property HttpRequestConfiguration|null $HttpRequestConfiguration
  * @property AwsServiceRequestConfiguration|null $AwsServiceRequestConfiguration
@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ConcurrentExecutorConfiguration|null $ConcurrentExecutorConfiguration
  * @property SequentialExecutorConfiguration|null $SequentialExecutorConfiguration
  * @property VastRequestConfiguration|null $VastRequestConfiguration
+ * @property HlsTagProcessorConfiguration|null $HlsTagProcessorConfiguration
  * @property array<string, string>|null $Tags
  * @property string|null $Arn
  */
@@ -22,7 +23,7 @@ class FunctionShape extends Shape
     /**
      * @param array{
      *     FunctionId: string,
-     *     FunctionType: 'HTTP_REQUEST'|'AWS_SERVICE_REQUEST'|'CUSTOM_OUTPUT'|'CONCURRENT_EXECUTOR'|'SEQUENTIAL_EXECUTOR'|'VAST_REQUEST',
+     *     FunctionType: 'HTTP_REQUEST'|'AWS_SERVICE_REQUEST'|'CUSTOM_OUTPUT'|'CONCURRENT_EXECUTOR'|'SEQUENTIAL_EXECUTOR'|'VAST_REQUEST'|'HLS_TAG_PROCESSOR',
      *     Description?: string|null,
      *     HttpRequestConfiguration?: HttpRequestConfiguration|null,
      *     AwsServiceRequestConfiguration?: AwsServiceRequestConfiguration|null,
@@ -30,6 +31,7 @@ class FunctionShape extends Shape
      *     ConcurrentExecutorConfiguration?: ConcurrentExecutorConfiguration|null,
      *     SequentialExecutorConfiguration?: SequentialExecutorConfiguration|null,
      *     VastRequestConfiguration?: VastRequestConfiguration|null,
+     *     HlsTagProcessorConfiguration?: HlsTagProcessorConfiguration|null,
      *     Tags?: array<string, string>|null,
      *     Arn?: string|null
      * } $args

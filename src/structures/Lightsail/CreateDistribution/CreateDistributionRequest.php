@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\DistributionCustomErrorResponse>|null $customErrorResponses
  * @property bool|null $enableWaf
  * @property list<Shapes\WafRule>|null $wafRules
+ * @property string|null $subdomainName
  */
 class CreateDistributionRequest extends Request
 {
@@ -39,7 +40,8 @@ class CreateDistributionRequest extends Request
      *     defaultRootObject?: string|null,
      *     customErrorResponses?: list<Shapes\DistributionCustomErrorResponse>|null,
      *     enableWaf?: bool|null,
-     *     wafRules?: list<Shapes\WafRule>|null
+     *     wafRules?: list<Shapes\WafRule>|null,
+     *     subdomainName?: string|null
      * } $args
      */
     public function __construct(array $args)

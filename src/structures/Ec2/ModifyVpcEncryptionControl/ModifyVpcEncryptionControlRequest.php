@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'enable'|'disable'|null $LambdaExclusion
  * @property 'enable'|'disable'|null $VpcLatticeExclusion
  * @property 'enable'|'disable'|null $ElasticFileSystemExclusion
+ * @property 'enable'|'disable'|null $GlobalAcceleratorExclusion
+ * @property 'enable'|'disable'|null $ApiGatewayV2Exclusion
  */
 class ModifyVpcEncryptionControlRequest extends Request
 {
@@ -31,7 +33,9 @@ class ModifyVpcEncryptionControlRequest extends Request
      *     VpcPeeringExclusion?: 'enable'|'disable'|null,
      *     LambdaExclusion?: 'enable'|'disable'|null,
      *     VpcLatticeExclusion?: 'enable'|'disable'|null,
-     *     ElasticFileSystemExclusion?: 'enable'|'disable'|null
+     *     ElasticFileSystemExclusion?: 'enable'|'disable'|null,
+     *     GlobalAcceleratorExclusion?: 'enable'|'disable'|null,
+     *     ApiGatewayV2Exclusion?: 'enable'|'disable'|null
      * } $args
      */
     public function __construct(array $args)

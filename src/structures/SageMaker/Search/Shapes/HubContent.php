@@ -25,6 +25,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $FailureReason
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property UserContext|null $CreatedBy
+ * @property UserContext|null $LastModifiedBy
  * @property list<Tag>|null $Tags
  */
 class HubContent extends Shape
@@ -51,6 +53,8 @@ class HubContent extends Shape
      *     FailureReason?: string|null,
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     CreatedBy?: UserContext|null,
+     *     LastModifiedBy?: UserContext|null,
      *     Tags?: list<Tag>|null
      * } $args
      */

@@ -25,6 +25,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $FailureReason
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property Shapes\UserContext|null $CreatedBy
+ * @property Shapes\UserContext|null $LastModifiedBy
  */
 class DescribeHubContentResponse extends Response
 {

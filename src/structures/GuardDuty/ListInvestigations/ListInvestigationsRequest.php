@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DetectorId
+ * @property Shapes\InvestigationFilterCriteria|null $FilterCriteria
  * @property Shapes\InvestigationSortCriteria|null $SortCriteria
  * @property int<1, 50>|null $MaxResults
  * @property string|null $NextToken
@@ -15,6 +16,7 @@ class ListInvestigationsRequest extends Request
     /**
      * @param array{
      *     DetectorId: string,
+     *     FilterCriteria?: Shapes\InvestigationFilterCriteria|null,
      *     SortCriteria?: Shapes\InvestigationSortCriteria|null,
      *     MaxResults?: int<1, 50>|null,
      *     NextToken?: string|null

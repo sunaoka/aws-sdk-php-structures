@@ -43,6 +43,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $memorySizeInGBs
  * @property int|null $nodeCount
  * @property int|null $nonProvisionableAutonomousContainerDatabases
+ * @property int|null $ocpusLowestScaledValue
  * @property int|null $provisionableAutonomousContainerDatabases
  * @property int|null $provisionedAutonomousContainerDatabases
  * @property float|null $provisionedCpus
@@ -100,6 +101,7 @@ class CloudAutonomousVmClusterSummary extends Shape
      *     memorySizeInGBs?: int|null,
      *     nodeCount?: int|null,
      *     nonProvisionableAutonomousContainerDatabases?: int|null,
+     *     ocpusLowestScaledValue?: int|null,
      *     provisionableAutonomousContainerDatabases?: int|null,
      *     provisionedAutonomousContainerDatabases?: int|null,
      *     provisionedCpus?: float|null,

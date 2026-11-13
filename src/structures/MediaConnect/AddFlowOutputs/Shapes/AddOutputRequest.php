@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $MinLatency
  * @property string|null $Name
  * @property int|null $Port
- * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null $Protocol
+ * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|'rtmp-push'|null $Protocol
  * @property string|null $RemoteId
  * @property int|null $SenderControlPort
  * @property int|null $SmoothingLatency
@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FlowTransitEncryption|null $RouterIntegrationTransitEncryption
  * @property 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null $NdiOutputTimecodeSource
  * @property int<-40, 0>|null $NdiAudioReferenceLevel
+ * @property RtmpPushOutputSettings|null $RtmpPushSettings
  */
 class AddOutputRequest extends Shape
 {
@@ -42,7 +43,7 @@ class AddOutputRequest extends Shape
      *     MinLatency?: int|null,
      *     Name?: string|null,
      *     Port?: int|null,
-     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null,
+     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|'rtmp-push'|null,
      *     RemoteId?: string|null,
      *     SenderControlPort?: int|null,
      *     SmoothingLatency?: int|null,
@@ -55,7 +56,8 @@ class AddOutputRequest extends Shape
      *     RouterIntegrationState?: 'ENABLED'|'DISABLED'|null,
      *     RouterIntegrationTransitEncryption?: FlowTransitEncryption|null,
      *     NdiOutputTimecodeSource?: 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null,
-     *     NdiAudioReferenceLevel?: int<-40, 0>|null
+     *     NdiAudioReferenceLevel?: int<-40, 0>|null,
+     *     RtmpPushSettings?: RtmpPushOutputSettings|null
      * } $args
      */
     public function __construct(array $args = [])

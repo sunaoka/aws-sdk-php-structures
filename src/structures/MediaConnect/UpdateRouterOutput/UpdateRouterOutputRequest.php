@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'OUTPUT_100'|'OUTPUT_50'|'OUTPUT_20'|'OUTPUT_500'|'OUTPUT_250'|null $Tier
  * @property Shapes\MaintenanceConfiguration|null $MaintenanceConfiguration
  * @property Shapes\FabricConfiguration|null $FabricConfiguration
+ * @property Shapes\RouterOutputProcessors|null $Processors
  */
 class UpdateRouterOutputRequest extends Request
 {
@@ -25,7 +26,8 @@ class UpdateRouterOutputRequest extends Request
      *     RoutingScope?: 'REGIONAL'|'GLOBAL'|null,
      *     Tier?: 'OUTPUT_100'|'OUTPUT_50'|'OUTPUT_20'|'OUTPUT_500'|'OUTPUT_250'|null,
      *     MaintenanceConfiguration?: Shapes\MaintenanceConfiguration|null,
-     *     FabricConfiguration?: Shapes\FabricConfiguration|null
+     *     FabricConfiguration?: Shapes\FabricConfiguration|null,
+     *     Processors?: Shapes\RouterOutputProcessors|null
      * } $args
      */
     public function __construct(array $args)

@@ -11,7 +11,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Info'|'Low'|'Medium'|'High'|'Critical'|null $RiskLevel
  * @property 'Unknown'|'Low'|'Medium'|'High'|null $Confidence
  * @property string|null $Title
+ * @property 'FINDING'|'ACCOUNT'|'ORGANIZATION'|null $InvestigationType
+ * @property string|null $FindingId
  * @property string|null $AccountId
+ * @property string|null $AdminAccountId
  * @property \Aws\Api\DateTimeResult|null $StartTime
  * @property \Aws\Api\DateTimeResult|null $EndTime
  */
@@ -25,7 +28,10 @@ class InvestigationSummary extends Shape
      *     RiskLevel?: 'Info'|'Low'|'Medium'|'High'|'Critical'|null,
      *     Confidence?: 'Unknown'|'Low'|'Medium'|'High'|null,
      *     Title?: string|null,
+     *     InvestigationType?: 'FINDING'|'ACCOUNT'|'ORGANIZATION'|null,
+     *     FindingId?: string|null,
      *     AccountId?: string|null,
+     *     AdminAccountId?: string|null,
      *     StartTime?: \Aws\Api\DateTimeResult|null,
      *     EndTime?: \Aws\Api\DateTimeResult|null
      * } $args

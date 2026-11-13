@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'WINDOW'|null $MaintenanceScheduleType
  * @property MaintenanceSchedule|null $MaintenanceSchedule
  * @property FabricConfiguration $FabricConfiguration
+ * @property RouterOutputProcessors|null $Processors
  * @property list<string>|null $AssociatedSourceEndpointArns
  */
 class RouterOutput extends Shape
@@ -59,6 +60,7 @@ class RouterOutput extends Shape
      *     MaintenanceScheduleType?: 'WINDOW'|null,
      *     MaintenanceSchedule?: MaintenanceSchedule|null,
      *     FabricConfiguration: FabricConfiguration,
+     *     Processors?: RouterOutputProcessors|null,
      *     AssociatedSourceEndpointArns?: list<string>|null
      * } $args
      */

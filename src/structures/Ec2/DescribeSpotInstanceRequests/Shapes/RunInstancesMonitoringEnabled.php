@@ -5,12 +5,16 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeSpotInstanceRequests\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property list<string>|null $MetricCategoryIds
  * @property bool $Enabled
  */
 class RunInstancesMonitoringEnabled extends Shape
 {
     /**
-     * @param array{Enabled: bool} $args
+     * @param array{
+     *     MetricCategoryIds?: list<string>|null,
+     *     Enabled: bool
+     * } $args
      */
     public function __construct(array $args)
     {

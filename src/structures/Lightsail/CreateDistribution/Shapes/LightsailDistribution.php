@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $supportCode
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property ResourceLocation|null $location
- * @property 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket'|null $resourceType
+ * @property 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket'|'Subdomain'|null $resourceType
  * @property list<string>|null $alternativeDomainNames
  * @property string|null $status
  * @property bool|null $isEnabled
@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $defaultRootObject
  * @property list<DistributionCustomErrorResponse>|null $customErrorResponses
  * @property WafConfig|null $waf
+ * @property LightsailDistributionSubdomain|null $subdomain
  */
 class LightsailDistribution extends Shape
 {
@@ -39,7 +40,7 @@ class LightsailDistribution extends Shape
      *     supportCode?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     location?: ResourceLocation|null,
-     *     resourceType?: 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket'|null,
+     *     resourceType?: 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket'|'Subdomain'|null,
      *     alternativeDomainNames?: list<string>|null,
      *     status?: string|null,
      *     isEnabled?: bool|null,
@@ -57,7 +58,8 @@ class LightsailDistribution extends Shape
      *     viewerMinimumTlsProtocolVersion?: string|null,
      *     defaultRootObject?: string|null,
      *     customErrorResponses?: list<DistributionCustomErrorResponse>|null,
-     *     waf?: WafConfig|null
+     *     waf?: WafConfig|null,
+     *     subdomain?: LightsailDistributionSubdomain|null
      * } $args
      */
     public function __construct(array $args = [])

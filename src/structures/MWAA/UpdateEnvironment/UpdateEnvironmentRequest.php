@@ -28,6 +28,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $StartupScriptS3ObjectVersion
  * @property 'PRIVATE_ONLY'|'PUBLIC_ONLY'|'PUBLIC_AND_PRIVATE'|null $WebserverAccessMode
  * @property string|null $WeeklyMaintenanceWindowStart
+ * @property Shapes\IdentityCenterConfiguration|null $IdentityCenterConfiguration
+ * @property Shapes\UpdateTeamsInput|null $Teams
  */
 class UpdateEnvironmentRequest extends Request
 {
@@ -55,7 +57,9 @@ class UpdateEnvironmentRequest extends Request
      *     StartupScriptS3Path?: string|null,
      *     StartupScriptS3ObjectVersion?: string|null,
      *     WebserverAccessMode?: 'PRIVATE_ONLY'|'PUBLIC_ONLY'|'PUBLIC_AND_PRIVATE'|null,
-     *     WeeklyMaintenanceWindowStart?: string|null
+     *     WeeklyMaintenanceWindowStart?: string|null,
+     *     IdentityCenterConfiguration?: Shapes\IdentityCenterConfiguration|null,
+     *     Teams?: Shapes\UpdateTeamsInput|null
      * } $args
      */
     public function __construct(array $args)

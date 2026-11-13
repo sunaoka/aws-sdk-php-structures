@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DISABLED'|'ENABLED'|null $TimedMetadataPassthrough
  * @property list<MediaPackageAdditionalDestinations>|null $AdditionalDestinations
  * @property MediaPackageV2WatermarkingSettings|null $WatermarkingSettings
+ * @property 'AUTO'|'NONE'|null $CaptionLanguageSetting
  */
 class MediaPackageV2GroupSettings extends Shape
 {
@@ -33,7 +34,8 @@ class MediaPackageV2GroupSettings extends Shape
      *     TimedMetadataId3Period?: int|null,
      *     TimedMetadataPassthrough?: 'DISABLED'|'ENABLED'|null,
      *     AdditionalDestinations?: list<MediaPackageAdditionalDestinations>|null,
-     *     WatermarkingSettings?: MediaPackageV2WatermarkingSettings|null
+     *     WatermarkingSettings?: MediaPackageV2WatermarkingSettings|null,
+     *     CaptionLanguageSetting?: 'AUTO'|'NONE'|null
      * } $args
      */
     public function __construct(array $args = [])

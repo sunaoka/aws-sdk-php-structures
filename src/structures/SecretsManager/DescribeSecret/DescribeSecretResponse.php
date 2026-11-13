@@ -26,6 +26,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $CreatedDate
  * @property string|null $PrimaryRegion
  * @property list<Shapes\ReplicationStatusType>|null $ReplicationStatus
+ * @property Shapes\CrossAccountPrimaryType|null $CrossAccountPrimary
+ * @property list<Shapes\CrossAccountReplicaEntry>|null $CrossAccountReplicas
  */
 class DescribeSecretResponse extends Response
 {

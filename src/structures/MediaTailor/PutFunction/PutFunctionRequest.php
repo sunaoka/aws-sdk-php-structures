@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FunctionId
- * @property 'HTTP_REQUEST'|'AWS_SERVICE_REQUEST'|'CUSTOM_OUTPUT'|'CONCURRENT_EXECUTOR'|'SEQUENTIAL_EXECUTOR'|'VAST_REQUEST' $FunctionType
+ * @property 'HTTP_REQUEST'|'AWS_SERVICE_REQUEST'|'CUSTOM_OUTPUT'|'CONCURRENT_EXECUTOR'|'SEQUENTIAL_EXECUTOR'|'VAST_REQUEST'|'HLS_TAG_PROCESSOR' $FunctionType
  * @property string|null $Description
  * @property Shapes\HttpRequestConfiguration|null $HttpRequestConfiguration
  * @property Shapes\AwsServiceRequestConfiguration|null $AwsServiceRequestConfiguration
@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ConcurrentExecutorConfiguration|null $ConcurrentExecutorConfiguration
  * @property Shapes\SequentialExecutorConfiguration|null $SequentialExecutorConfiguration
  * @property Shapes\VastRequestConfiguration|null $VastRequestConfiguration
+ * @property Shapes\HlsTagProcessorConfiguration|null $HlsTagProcessorConfiguration
  * @property array<string, string>|null $Tags
  */
 class PutFunctionRequest extends Request
@@ -21,7 +22,7 @@ class PutFunctionRequest extends Request
     /**
      * @param array{
      *     FunctionId: string,
-     *     FunctionType: 'HTTP_REQUEST'|'AWS_SERVICE_REQUEST'|'CUSTOM_OUTPUT'|'CONCURRENT_EXECUTOR'|'SEQUENTIAL_EXECUTOR'|'VAST_REQUEST',
+     *     FunctionType: 'HTTP_REQUEST'|'AWS_SERVICE_REQUEST'|'CUSTOM_OUTPUT'|'CONCURRENT_EXECUTOR'|'SEQUENTIAL_EXECUTOR'|'VAST_REQUEST'|'HLS_TAG_PROCESSOR',
      *     Description?: string|null,
      *     HttpRequestConfiguration?: Shapes\HttpRequestConfiguration|null,
      *     AwsServiceRequestConfiguration?: Shapes\AwsServiceRequestConfiguration|null,
@@ -29,6 +30,7 @@ class PutFunctionRequest extends Request
      *     ConcurrentExecutorConfiguration?: Shapes\ConcurrentExecutorConfiguration|null,
      *     SequentialExecutorConfiguration?: Shapes\SequentialExecutorConfiguration|null,
      *     VastRequestConfiguration?: Shapes\VastRequestConfiguration|null,
+     *     HlsTagProcessorConfiguration?: Shapes\HlsTagProcessorConfiguration|null,
      *     Tags?: array<string, string>|null
      * } $args
      */

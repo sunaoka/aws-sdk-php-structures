@@ -13,7 +13,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $Pid
  * @property int|null $SampleRate
  * @property int|null $SampleSize
+ * @property 'progressive'|'interlace'|'progressive-segmented-frame'|null $ScanMode
  * @property string $StreamType
+ * @property string|null $Language
  */
 class TransportStream extends Shape
 {
@@ -27,7 +29,9 @@ class TransportStream extends Shape
      *     Pid: int,
      *     SampleRate?: int|null,
      *     SampleSize?: int|null,
-     *     StreamType: string
+     *     ScanMode?: 'progressive'|'interlace'|'progressive-segmented-frame'|null,
+     *     StreamType: string,
+     *     Language?: string|null
      * } $args
      */
     public function __construct(array $args)

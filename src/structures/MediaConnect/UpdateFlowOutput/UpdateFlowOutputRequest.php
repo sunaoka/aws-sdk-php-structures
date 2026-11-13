@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $MinLatency
  * @property string $OutputArn
  * @property int|null $Port
- * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null $Protocol
+ * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|'rtmp-push'|null $Protocol
  * @property string|null $RemoteId
  * @property int|null $SenderControlPort
  * @property string|null $SenderIpAddress
@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\FlowTransitEncryption|null $RouterIntegrationTransitEncryption
  * @property 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null $NdiOutputTimecodeSource
  * @property int<-40, 0>|null $NdiAudioReferenceLevel
+ * @property Shapes\RtmpPushOutputSettings|null $RtmpPushSettings
  */
 class UpdateFlowOutputRequest extends Request
 {
@@ -44,7 +45,7 @@ class UpdateFlowOutputRequest extends Request
      *     MinLatency?: int|null,
      *     OutputArn: string,
      *     Port?: int|null,
-     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null,
+     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|'rtmp-push'|null,
      *     RemoteId?: string|null,
      *     SenderControlPort?: int|null,
      *     SenderIpAddress?: string|null,
@@ -57,7 +58,8 @@ class UpdateFlowOutputRequest extends Request
      *     RouterIntegrationState?: 'ENABLED'|'DISABLED'|null,
      *     RouterIntegrationTransitEncryption?: Shapes\FlowTransitEncryption|null,
      *     NdiOutputTimecodeSource?: 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null,
-     *     NdiAudioReferenceLevel?: int<-40, 0>|null
+     *     NdiAudioReferenceLevel?: int<-40, 0>|null,
+     *     RtmpPushSettings?: Shapes\RtmpPushOutputSettings|null
      * } $args
      */
     public function __construct(array $args)

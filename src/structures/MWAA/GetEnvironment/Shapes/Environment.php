@@ -39,6 +39,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CUSTOMER'|'SERVICE'|null $EndpointManagement
  * @property int<1, max>|null $MinWebservers
  * @property int<1, max>|null $MaxWebservers
+ * @property IdentityCenterConfiguration|null $IdentityCenterConfiguration
+ * @property array<string, TeamConfig>|null $Teams
  */
 class Environment extends Shape
 {
@@ -77,7 +79,9 @@ class Environment extends Shape
      *     CeleryExecutorQueue?: string|null,
      *     EndpointManagement?: 'CUSTOMER'|'SERVICE'|null,
      *     MinWebservers?: int<1, max>|null,
-     *     MaxWebservers?: int<1, max>|null
+     *     MaxWebservers?: int<1, max>|null,
+     *     IdentityCenterConfiguration?: IdentityCenterConfiguration|null,
+     *     Teams?: array<string, TeamConfig>|null
      * } $args
      */
     public function __construct(array $args = [])

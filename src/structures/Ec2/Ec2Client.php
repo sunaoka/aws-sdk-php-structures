@@ -118,6 +118,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateLocalGatewayVirtualInterfaceGroup\CreateLocalGatewayVirtualInterfaceGroupTrait;
     use CreateMacSystemIntegrityProtectionModificationTask\CreateMacSystemIntegrityProtectionModificationTaskTrait;
     use CreateManagedPrefixList\CreateManagedPrefixListTrait;
+    use CreateMetricCategory\CreateMetricCategoryTrait;
     use CreateNatGateway\CreateNatGatewayTrait;
     use CreateNetworkAcl\CreateNetworkAclTrait;
     use CreateNetworkAclEntry\CreateNetworkAclEntryTrait;
@@ -217,6 +218,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeleteLocalGatewayVirtualInterface\DeleteLocalGatewayVirtualInterfaceTrait;
     use DeleteLocalGatewayVirtualInterfaceGroup\DeleteLocalGatewayVirtualInterfaceGroupTrait;
     use DeleteManagedPrefixList\DeleteManagedPrefixListTrait;
+    use DeleteMetricCategory\DeleteMetricCategoryTrait;
     use DeleteNatGateway\DeleteNatGatewayTrait;
     use DeleteNetworkAcl\DeleteNetworkAclTrait;
     use DeleteNetworkAclEntry\DeleteNetworkAclEntryTrait;
@@ -387,6 +389,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeMacHosts\DescribeMacHostsTrait;
     use DescribeMacModificationTasks\DescribeMacModificationTasksTrait;
     use DescribeManagedPrefixLists\DescribeManagedPrefixListsTrait;
+    use DescribeMetricCategories\DescribeMetricCategoriesTrait;
     use DescribeMovingAddresses\DescribeMovingAddressesTrait;
     use DescribeNatGateways\DescribeNatGatewaysTrait;
     use DescribeNetworkAcls\DescribeNetworkAclsTrait;
@@ -689,6 +692,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ModifyLocalGatewayRoute\ModifyLocalGatewayRouteTrait;
     use ModifyManagedPrefixList\ModifyManagedPrefixListTrait;
     use ModifyManagedResourceVisibility\ModifyManagedResourceVisibilityTrait;
+    use ModifyMetricCategory\ModifyMetricCategoryTrait;
     use ModifyNetworkInterfaceAttribute\ModifyNetworkInterfaceAttributeTrait;
     use ModifyPrivateDnsNameOptions\ModifyPrivateDnsNameOptionsTrait;
     use ModifyPublicIpDnsNameOptions\ModifyPublicIpDnsNameOptionsTrait;

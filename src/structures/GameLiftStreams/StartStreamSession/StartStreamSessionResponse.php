@@ -28,6 +28,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ExportFilesMetadata|null $ExportFilesMetadata
  * @property string|null $RoleArn
  * @property Shapes\DisplayConfiguration|null $DisplayConfiguration
+ * @property \Aws\Api\DateTimeResult|null $ApplicationStartedAt
+ * @property \Aws\Api\DateTimeResult|null $StreamingStartedAt
+ * @property \Aws\Api\DateTimeResult|null $StreamingEndedAt
  */
 class StartStreamSessionResponse extends Response
 {

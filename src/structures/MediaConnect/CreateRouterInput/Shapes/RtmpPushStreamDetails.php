@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\MediaConnect\CreateRouterInput\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $ApplicationName
+ * @property string $StreamName
+ */
+class RtmpPushStreamDetails extends Shape
+{
+    /**
+     * @param array{
+     *     ApplicationName: string,
+     *     StreamName: string
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

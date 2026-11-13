@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SourceApplicationUrl
  * @property string|null $SourceApplicationName
  * @property 'SALESFORCE'|'ZENDESK'|'CASES'|null $SourceType
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $LastModifiedRegion
  */
 class IntegrationAssociationSummary extends Shape
 {
@@ -25,7 +27,9 @@ class IntegrationAssociationSummary extends Shape
      *     IntegrationArn?: string|null,
      *     SourceApplicationUrl?: string|null,
      *     SourceApplicationName?: string|null,
-     *     SourceType?: 'SALESFORCE'|'ZENDESK'|'CASES'|null
+     *     SourceType?: 'SALESFORCE'|'ZENDESK'|'CASES'|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

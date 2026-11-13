@@ -30,7 +30,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AdConditioningConfiguration|null $AdConditioningConfiguration
  * @property AdDecisionServerConfiguration|null $AdDecisionServerConfiguration
  * @property YieldOptimizationConfiguration|null $YieldOptimizationConfiguration
- * @property array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST'|'POST_ADS_RESPONSE'|'PRE_MANIFEST_INSERTION', string>|null $FunctionMapping
+ * @property array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST'|'POST_ADS_RESPONSE'|'PRE_MANIFEST_INSERTION'|'POST_ORIGIN_RESPONSE', string>|null $FunctionMapping
  * @property AdsPersonalizationTimeouts|null $AdsPersonalizationTimeouts
  * @property AdsPersonalizationConcurrency|null $AdsPersonalizationConcurrency
  * @property BeaconingConfiguration|null $BeaconingConfiguration
@@ -64,7 +64,7 @@ class PlaybackConfiguration extends Shape
      *     AdConditioningConfiguration?: AdConditioningConfiguration|null,
      *     AdDecisionServerConfiguration?: AdDecisionServerConfiguration|null,
      *     YieldOptimizationConfiguration?: YieldOptimizationConfiguration|null,
-     *     FunctionMapping?: array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST'|'POST_ADS_RESPONSE'|'PRE_MANIFEST_INSERTION', string>|null,
+     *     FunctionMapping?: array<'PRE_SESSION_INITIALIZATION'|'PRE_ADS_REQUEST'|'POST_ADS_RESPONSE'|'PRE_MANIFEST_INSERTION'|'POST_ORIGIN_RESPONSE', string>|null,
      *     AdsPersonalizationTimeouts?: AdsPersonalizationTimeouts|null,
      *     AdsPersonalizationConcurrency?: AdsPersonalizationConcurrency|null,
      *     BeaconingConfiguration?: BeaconingConfiguration|null

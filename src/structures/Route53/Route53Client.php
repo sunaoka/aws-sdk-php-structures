@@ -14,6 +14,7 @@ class Route53Client extends \Aws\Route53\Route53Client
     use CreateHostedZone\CreateHostedZoneTrait;
     use CreateKeySigningKey\CreateKeySigningKeyTrait;
     use CreateQueryLoggingConfig\CreateQueryLoggingConfigTrait;
+    use CreateResourceRecordSetProtections\CreateResourceRecordSetProtectionsTrait;
     use CreateReusableDelegationSet\CreateReusableDelegationSetTrait;
     use CreateTrafficPolicy\CreateTrafficPolicyTrait;
     use CreateTrafficPolicyInstance\CreateTrafficPolicyInstanceTrait;
@@ -25,6 +26,7 @@ class Route53Client extends \Aws\Route53\Route53Client
     use DeleteHostedZone\DeleteHostedZoneTrait;
     use DeleteKeySigningKey\DeleteKeySigningKeyTrait;
     use DeleteQueryLoggingConfig\DeleteQueryLoggingConfigTrait;
+    use DeleteResourceRecordSetProtections\DeleteResourceRecordSetProtectionsTrait;
     use DeleteReusableDelegationSet\DeleteReusableDelegationSetTrait;
     use DeleteTrafficPolicy\DeleteTrafficPolicyTrait;
     use DeleteTrafficPolicyInstance\DeleteTrafficPolicyInstanceTrait;
@@ -59,6 +61,7 @@ class Route53Client extends \Aws\Route53\Route53Client
     use ListHostedZonesByName\ListHostedZonesByNameTrait;
     use ListHostedZonesByVPC\ListHostedZonesByVPCTrait;
     use ListQueryLoggingConfigs\ListQueryLoggingConfigsTrait;
+    use ListResourceRecordSetProtections\ListResourceRecordSetProtectionsTrait;
     use ListResourceRecordSets\ListResourceRecordSetsTrait;
     use ListReusableDelegationSets\ListReusableDelegationSetsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;

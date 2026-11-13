@@ -11,6 +11,7 @@ class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
     use DeleteAnomalyDetector\DeleteAnomalyDetectorTrait;
     use DeleteDashboards\DeleteDashboardsTrait;
     use DeleteInsightRules\DeleteInsightRulesTrait;
+    use DeleteMetricDataQueryDefinition\DeleteMetricDataQueryDefinitionTrait;
     use DeleteMetricStream\DeleteMetricStreamTrait;
     use DeleteResourceMetricsConfiguration\DeleteResourceMetricsConfigurationTrait;
     use DescribeAlarmContributors\DescribeAlarmContributorsTrait;
@@ -29,6 +30,7 @@ class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
     use GetDataset\GetDatasetTrait;
     use GetInsightRuleReport\GetInsightRuleReportTrait;
     use GetMetricData\GetMetricDataTrait;
+    use GetMetricDataQueryDefinition\GetMetricDataQueryDefinitionTrait;
     use GetMetricStatistics\GetMetricStatisticsTrait;
     use GetMetricStream\GetMetricStreamTrait;
     use GetMetricWidgetImage\GetMetricWidgetImageTrait;
@@ -37,6 +39,7 @@ class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
     use ListAlarmMuteRules\ListAlarmMuteRulesTrait;
     use ListDashboards\ListDashboardsTrait;
     use ListManagedInsightRules\ListManagedInsightRulesTrait;
+    use ListMetricDataQueryDefinitions\ListMetricDataQueryDefinitionsTrait;
     use ListMetricStreams\ListMetricStreamsTrait;
     use ListMetrics\ListMetricsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
@@ -49,6 +52,7 @@ class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
     use PutManagedInsightRules\PutManagedInsightRulesTrait;
     use PutMetricAlarm\PutMetricAlarmTrait;
     use PutMetricData\PutMetricDataTrait;
+    use PutMetricDataQueryDefinition\PutMetricDataQueryDefinitionTrait;
     use PutMetricStream\PutMetricStreamTrait;
     use SetAlarmState\SetAlarmStateTrait;
     use StartMetricStreams\StartMetricStreamsTrait;

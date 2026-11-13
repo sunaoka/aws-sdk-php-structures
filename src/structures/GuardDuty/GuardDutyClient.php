@@ -74,6 +74,7 @@ class GuardDutyClient extends \Aws\GuardDuty\GuardDutyClient
     use ListFilters\ListFiltersTrait;
     use ListFindings\ListFindingsTrait;
     use ListIPSets\ListIPSetsTrait;
+    use ListInvestigationRecords\ListInvestigationRecordsTrait;
     use ListInvestigations\ListInvestigationsTrait;
     use ListInvitations\ListInvitationsTrait;
     use ListMalwareProtectionPlans\ListMalwareProtectionPlansTrait;

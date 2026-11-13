@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VpcEncryptionControlExclusion|null $Lambda
  * @property VpcEncryptionControlExclusion|null $VpcLattice
  * @property VpcEncryptionControlExclusion|null $ElasticFileSystem
+ * @property VpcEncryptionControlExclusion|null $GlobalAccelerator
+ * @property VpcEncryptionControlExclusion|null $ApiGatewayV2
  */
 class VpcEncryptionControlExclusions extends Shape
 {
@@ -25,7 +27,9 @@ class VpcEncryptionControlExclusions extends Shape
      *     VpcPeering?: VpcEncryptionControlExclusion|null,
      *     Lambda?: VpcEncryptionControlExclusion|null,
      *     VpcLattice?: VpcEncryptionControlExclusion|null,
-     *     ElasticFileSystem?: VpcEncryptionControlExclusion|null
+     *     ElasticFileSystem?: VpcEncryptionControlExclusion|null,
+     *     GlobalAccelerator?: VpcEncryptionControlExclusion|null,
+     *     ApiGatewayV2?: VpcEncryptionControlExclusion|null
      * } $args
      */
     public function __construct(array $args = [])

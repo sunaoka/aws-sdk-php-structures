@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $PrimaryRegion
  * @property list<Shapes\RegionMetadata>|null $Regions
  * @property Shapes\EncryptionConfigurationDetails|null $EncryptionConfigurationDetails
+ * @property Shapes\NetworkConfigurationInfo|null $NetworkConfigurationDetails
  * @property bool|null $PermissionSetsEnabled
  */
 class DescribeInstanceResponse extends Response

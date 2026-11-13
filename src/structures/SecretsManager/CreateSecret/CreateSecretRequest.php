@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ReplicaRegionType>|null $AddReplicaRegions
  * @property bool|null $ForceOverwriteReplicaSecret
  * @property string|null $Type
+ * @property string|null $CrossAccountPrimaryARN
  */
 class CreateSecretRequest extends Request
 {
@@ -29,7 +30,8 @@ class CreateSecretRequest extends Request
      *     Tags?: list<Shapes\Tag>|null,
      *     AddReplicaRegions?: list<Shapes\ReplicaRegionType>|null,
      *     ForceOverwriteReplicaSecret?: bool|null,
-     *     Type?: string|null
+     *     Type?: string|null,
+     *     CrossAccountPrimaryARN?: string|null
      * } $args
      */
     public function __construct(array $args)

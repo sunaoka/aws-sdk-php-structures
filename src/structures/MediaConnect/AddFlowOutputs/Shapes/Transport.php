@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $MaxLatency
  * @property int|null $MaxSyncBuffer
  * @property int|null $MinLatency
- * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq' $Protocol
+ * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|'rtmp-push' $Protocol
  * @property string|null $RemoteId
  * @property int|null $SenderControlPort
  * @property string|null $SenderIpAddress
@@ -23,6 +23,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property NdiSourceSettings|null $NdiSourceSettings
  * @property 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null $NdiOutputTimecodeSource
  * @property int<-40, 0>|null $NdiAudioReferenceLevel
+ * @property RtmpPushSourceSettings|null $RtmpPushSourceSettings
+ * @property RtmpPushOutputSettings|null $RtmpPushOutputSettings
  */
 class Transport extends Shape
 {
@@ -33,7 +35,7 @@ class Transport extends Shape
      *     MaxLatency?: int|null,
      *     MaxSyncBuffer?: int|null,
      *     MinLatency?: int|null,
-     *     Protocol: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq',
+     *     Protocol: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|'rtmp-push',
      *     RemoteId?: string|null,
      *     SenderControlPort?: int|null,
      *     SenderIpAddress?: string|null,
@@ -45,7 +47,9 @@ class Transport extends Shape
      *     NdiProgramName?: string|null,
      *     NdiSourceSettings?: NdiSourceSettings|null,
      *     NdiOutputTimecodeSource?: 'EMBEDDED_TIMECODE'|'UTC_SYSTEM_TIME'|null,
-     *     NdiAudioReferenceLevel?: int<-40, 0>|null
+     *     NdiAudioReferenceLevel?: int<-40, 0>|null,
+     *     RtmpPushSourceSettings?: RtmpPushSourceSettings|null,
+     *     RtmpPushOutputSettings?: RtmpPushOutputSettings|null
      * } $args
      */
     public function __construct(array $args)

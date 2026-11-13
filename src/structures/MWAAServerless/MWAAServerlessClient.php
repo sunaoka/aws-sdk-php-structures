@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\MWAAServerless;
 
 class MWAAServerlessClient extends \Aws\MWAAServerless\MWAAServerlessClient
 {
+    use CreateAirflowUiUrl\CreateAirflowUiUrlTrait;
     use CreateWorkflow\CreateWorkflowTrait;
     use DeleteWorkflow\DeleteWorkflowTrait;
     use GetTaskInstance\GetTaskInstanceTrait;

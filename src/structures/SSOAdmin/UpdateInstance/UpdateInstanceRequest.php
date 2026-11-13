@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceArn
  * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
  * @property bool|null $PermissionSetsEnabled
+ * @property Shapes\NetworkConfigurationInfo|null $NetworkConfiguration
  */
 class UpdateInstanceRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateInstanceRequest extends Request
      *     Name?: string|null,
      *     InstanceArn: string,
      *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null,
-     *     PermissionSetsEnabled?: bool|null
+     *     PermissionSetsEnabled?: bool|null,
+     *     NetworkConfiguration?: Shapes\NetworkConfigurationInfo|null
      * } $args
      */
     public function __construct(array $args)

@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Risk
  * @property 'Unknown'|'Low'|'Medium'|'High'|null $Confidence
  * @property string|null $Summary
+ * @property InvestigationSummaryData|null $SummaryData
+ * @property InvestigationScope|null $Scope
  * @property \Aws\Api\DateTimeResult|null $StartTime
  * @property \Aws\Api\DateTimeResult|null $EndTime
  * @property string|null $Error
@@ -33,6 +35,8 @@ class Investigation extends Shape
      *     Risk?: string|null,
      *     Confidence?: 'Unknown'|'Low'|'Medium'|'High'|null,
      *     Summary?: string|null,
+     *     SummaryData?: InvestigationSummaryData|null,
+     *     Scope?: InvestigationScope|null,
      *     StartTime?: \Aws\Api\DateTimeResult|null,
      *     EndTime?: \Aws\Api\DateTimeResult|null,
      *     Error?: string|null

@@ -10,6 +10,7 @@ class LightsailClient extends \Aws\Lightsail\LightsailClient
     use AttachInstancesToLoadBalancer\AttachInstancesToLoadBalancerTrait;
     use AttachLoadBalancerTlsCertificate\AttachLoadBalancerTlsCertificateTrait;
     use AttachStaticIp\AttachStaticIpTrait;
+    use CheckSubdomainAvailability\CheckSubdomainAvailabilityTrait;
     use CloseInstancePublicPorts\CloseInstancePublicPortsTrait;
     use CopySnapshot\CopySnapshotTrait;
     use CreateBucket\CreateBucketTrait;
@@ -36,6 +37,7 @@ class LightsailClient extends \Aws\Lightsail\LightsailClient
     use CreateRelationalDatabase\CreateRelationalDatabaseTrait;
     use CreateRelationalDatabaseFromSnapshot\CreateRelationalDatabaseFromSnapshotTrait;
     use CreateRelationalDatabaseSnapshot\CreateRelationalDatabaseSnapshotTrait;
+    use CreateSubdomain\CreateSubdomainTrait;
     use DeleteAlarm\DeleteAlarmTrait;
     use DeleteAutoSnapshot\DeleteAutoSnapshotTrait;
     use DeleteBucket\DeleteBucketTrait;
@@ -57,6 +59,7 @@ class LightsailClient extends \Aws\Lightsail\LightsailClient
     use DeleteLoadBalancerTlsCertificate\DeleteLoadBalancerTlsCertificateTrait;
     use DeleteRelationalDatabase\DeleteRelationalDatabaseTrait;
     use DeleteRelationalDatabaseSnapshot\DeleteRelationalDatabaseSnapshotTrait;
+    use DeleteSubdomain\DeleteSubdomainTrait;
     use DetachCertificateFromDistribution\DetachCertificateFromDistributionTrait;
     use DetachDisk\DetachDiskTrait;
     use DetachInstancesFromLoadBalancer\DetachInstancesFromLoadBalancerTrait;
@@ -131,6 +134,7 @@ class LightsailClient extends \Aws\Lightsail\LightsailClient
     use GetSetupHistory\GetSetupHistoryTrait;
     use GetStaticIp\GetStaticIpTrait;
     use GetStaticIps\GetStaticIpsTrait;
+    use GetSubdomains\GetSubdomainsTrait;
     use ImportKeyPair\ImportKeyPairTrait;
     use IsVpcPeered\IsVpcPeeredTrait;
     use OpenInstancePublicPorts\OpenInstancePublicPortsTrait;
@@ -166,4 +170,5 @@ class LightsailClient extends \Aws\Lightsail\LightsailClient
     use UpdateLoadBalancerAttribute\UpdateLoadBalancerAttributeTrait;
     use UpdateRelationalDatabase\UpdateRelationalDatabaseTrait;
     use UpdateRelationalDatabaseParameters\UpdateRelationalDatabaseParametersTrait;
+    use UpdateSubdomainAssociation\UpdateSubdomainAssociationTrait;
 }
