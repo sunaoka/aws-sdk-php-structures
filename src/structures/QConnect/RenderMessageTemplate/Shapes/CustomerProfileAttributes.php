@@ -63,6 +63,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $billingProvince
  * @property string|null $billingState
  * @property array<string, string>|null $custom
+ * @property list<ProfileRecommendation>|null $recommendations
+ * @property array<string, string>|null $calculatedAttributes
  */
 class CustomerProfileAttributes extends Shape
 {
@@ -125,7 +127,9 @@ class CustomerProfileAttributes extends Shape
      *     billingPostalCode?: string|null,
      *     billingProvince?: string|null,
      *     billingState?: string|null,
-     *     custom?: array<string, string>|null
+     *     custom?: array<string, string>|null,
+     *     recommendations?: list<ProfileRecommendation>|null,
+     *     calculatedAttributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

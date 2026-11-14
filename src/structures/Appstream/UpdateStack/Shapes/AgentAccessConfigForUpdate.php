@@ -8,6 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<AgentAccessSetting>|null $Settings
  * @property string|null $S3BucketArn
  * @property bool|null $ScreenshotsUploadEnabled
+ * @property bool|null $ReplaySessionEnabled
+ * @property string|null $KmsKeyArn
  * @property 'W_1280xH_720'|null $ScreenResolution
  * @property 'PNG'|'JPEG'|null $ScreenImageFormat
  * @property 'VIEW_ONLY'|'VIEW_STOP'|'DISABLED'|null $UserControlMode
@@ -19,6 +21,8 @@ class AgentAccessConfigForUpdate extends Shape
      *     Settings?: list<AgentAccessSetting>|null,
      *     S3BucketArn?: string|null,
      *     ScreenshotsUploadEnabled?: bool|null,
+     *     ReplaySessionEnabled?: bool|null,
+     *     KmsKeyArn?: string|null,
      *     ScreenResolution?: 'W_1280xH_720'|null,
      *     ScreenImageFormat?: 'PNG'|'JPEG'|null,
      *     UserControlMode?: 'VIEW_ONLY'|'VIEW_STOP'|'DISABLED'|null

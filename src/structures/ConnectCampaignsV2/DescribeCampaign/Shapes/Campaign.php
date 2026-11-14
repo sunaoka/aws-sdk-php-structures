@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EntryLimitsConfig|null $entryLimitsConfig
  * @property CommunicationTimeConfig|null $communicationTimeConfig
  * @property CommunicationLimitsConfig|null $communicationLimitsOverride
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
  * @property array<string, string>|null $tags
  */
 class Campaign extends Shape
@@ -35,6 +36,7 @@ class Campaign extends Shape
      *     entryLimitsConfig?: EntryLimitsConfig|null,
      *     communicationTimeConfig?: CommunicationTimeConfig|null,
      *     communicationLimitsOverride?: CommunicationLimitsConfig|null,
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
      *     tags?: array<string, string>|null
      * } $args
      */

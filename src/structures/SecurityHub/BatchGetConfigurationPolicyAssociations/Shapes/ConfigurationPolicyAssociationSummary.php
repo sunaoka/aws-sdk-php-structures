@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ACCOUNT'|'ORGANIZATIONAL_UNIT'|'ROOT'|null $TargetType
  * @property 'INHERITED'|'APPLIED'|null $AssociationType
  * @property \Aws\Api\DateTimeResult|null $UpdatedAt
- * @property 'PENDING'|'SUCCESS'|'FAILED'|null $AssociationStatus
+ * @property 'PENDING'|'SUCCESS'|'FAILED'|'DISABLED'|null $AssociationStatus
  * @property string|null $AssociationStatusMessage
  */
 class ConfigurationPolicyAssociationSummary extends Shape
@@ -22,7 +22,7 @@ class ConfigurationPolicyAssociationSummary extends Shape
      *     TargetType?: 'ACCOUNT'|'ORGANIZATIONAL_UNIT'|'ROOT'|null,
      *     AssociationType?: 'INHERITED'|'APPLIED'|null,
      *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
-     *     AssociationStatus?: 'PENDING'|'SUCCESS'|'FAILED'|null,
+     *     AssociationStatus?: 'PENDING'|'SUCCESS'|'FAILED'|'DISABLED'|null,
      *     AssociationStatusMessage?: string|null
      * } $args
      */

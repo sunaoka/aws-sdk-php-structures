@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PlatformName
  * @property string|null $PlatformVersion
  * @property 'ManagedInstance'|'EC2Instance'|null $ResourceType
- * @property 'AWS::EC2::Instance'|'AWS::IoT::Thing'|'AWS::SSM::ManagedInstance'|'Microsoft.Compute/virtualMachines'|null $SourceType
+ * @property 'AWS::EC2::Instance'|'AWS::IoT::Thing'|'AWS::SSM::ManagedInstance'|'Microsoft.Compute/virtualMachines'|'compute.googleapis.com/Instance'|null $SourceType
  * @property string|null $SourceId
  * @property string|null $SourceLocation
  * @property string|null $AvailabilityZone
@@ -37,7 +37,7 @@ class InstanceInfo extends Shape
      *     PlatformName?: string|null,
      *     PlatformVersion?: string|null,
      *     ResourceType?: 'ManagedInstance'|'EC2Instance'|null,
-     *     SourceType?: 'AWS::EC2::Instance'|'AWS::IoT::Thing'|'AWS::SSM::ManagedInstance'|'Microsoft.Compute/virtualMachines'|null,
+     *     SourceType?: 'AWS::EC2::Instance'|'AWS::IoT::Thing'|'AWS::SSM::ManagedInstance'|'Microsoft.Compute/virtualMachines'|'compute.googleapis.com/Instance'|null,
      *     SourceId?: string|null,
      *     SourceLocation?: string|null,
      *     AvailabilityZone?: string|null,

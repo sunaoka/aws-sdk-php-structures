@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'EventTime'|null $SortBy
  * @property 'Ascending'|'Descending'|null $SortOrder
  * @property 'Cluster'|'InstanceGroup'|'Instance'|null $ResourceType
+ * @property string|null $OperationId
  * @property int<1, 100>|null $MaxResults
  * @property string|null $NextToken
  */
@@ -28,6 +29,7 @@ class ListClusterEventsRequest extends Request
      *     SortBy?: 'EventTime'|null,
      *     SortOrder?: 'Ascending'|'Descending'|null,
      *     ResourceType?: 'Cluster'|'InstanceGroup'|'Instance'|null,
+     *     OperationId?: string|null,
      *     MaxResults?: int<1, 100>|null,
      *     NextToken?: string|null
      * } $args

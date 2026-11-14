@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $resourceGatewayIdentifier
  * @property list<string>|null $securityGroupIds
+ * @property 'IN_VPC'|'PUBLIC'|null $resourceConfigDnsResolution
  */
 class UpdateResourceGatewayRequest extends Request
 {
     /**
      * @param array{
      *     resourceGatewayIdentifier: string,
-     *     securityGroupIds?: list<string>|null
+     *     securityGroupIds?: list<string>|null,
+     *     resourceConfigDnsResolution?: 'IN_VPC'|'PUBLIC'|null
      * } $args
      */
     public function __construct(array $args)

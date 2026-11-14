@@ -90,6 +90,7 @@ class AppstreamClient extends \Aws\Appstream\AppstreamClient
     use UpdateDirectoryConfig\UpdateDirectoryConfigTrait;
     use UpdateEntitlement\UpdateEntitlementTrait;
     use UpdateFleet\UpdateFleetTrait;
+    use UpdateImageBuilder\UpdateImageBuilderTrait;
     use UpdateImagePermissions\UpdateImagePermissionsTrait;
     use UpdateStack\UpdateStackTrait;
     use UpdateThemeForStack\UpdateThemeForStackTrait;

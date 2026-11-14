@@ -23,10 +23,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TransitGatewayOwnerAccountId
  * @property list<AvailabilityZoneMapping>|null $AvailabilityZoneMappings
  * @property bool|null $AvailabilityZoneChangeProtection
- * @property list<NatGatewayMapping>|null $NatGatewayMappings
+ * @property list<NatGatewayCreateMapping>|null $NatGatewayCreateMappings
  * @property ProxySettings|null $ProxySettings
- * @property bool|null $NoSourcePreservation
  * @property VpcEndpoint|null $VpcEndpoint
+ * @property 'NAT_ALL'|'NAT_NONE'|null $TransparentFilteringNatScope
  */
 class Firewall extends Shape
 {
@@ -50,10 +50,10 @@ class Firewall extends Shape
      *     TransitGatewayOwnerAccountId?: string|null,
      *     AvailabilityZoneMappings?: list<AvailabilityZoneMapping>|null,
      *     AvailabilityZoneChangeProtection?: bool|null,
-     *     NatGatewayMappings?: list<NatGatewayMapping>|null,
+     *     NatGatewayCreateMappings?: list<NatGatewayCreateMapping>|null,
      *     ProxySettings?: ProxySettings|null,
-     *     NoSourcePreservation?: bool|null,
-     *     VpcEndpoint?: VpcEndpoint|null
+     *     VpcEndpoint?: VpcEndpoint|null,
+     *     TransparentFilteringNatScope?: 'NAT_ALL'|'NAT_NONE'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ssm\ListCloudConnectors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SubscriptionId'|'TenantId'|null $FilterKey
+ * @property 'SubscriptionId'|'TenantId'|'ProjectId'|'OrganizationId'|null $FilterKey
  * @property list<string>|null $FilterValues
  */
 class CloudConnectorFilter extends Shape
 {
     /**
      * @param array{
-     *     FilterKey?: 'SubscriptionId'|'TenantId'|null,
+     *     FilterKey?: 'SubscriptionId'|'TenantId'|'ProjectId'|'OrganizationId'|null,
      *     FilterValues?: list<string>|null
      * } $args
      */

@@ -41,6 +41,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AssociationId
  * @property string|null $ChangeRequestName
  * @property array<string, list<string>>|null $Variables
+ * @property TargetsSummary|null $TargetsSummary
  */
 class AutomationExecution extends Shape
 {
@@ -81,7 +82,8 @@ class AutomationExecution extends Shape
      *     OpsItemId?: string|null,
      *     AssociationId?: string|null,
      *     ChangeRequestName?: string|null,
-     *     Variables?: array<string, list<string>>|null
+     *     Variables?: array<string, list<string>>|null,
+     *     TargetsSummary?: TargetsSummary|null
      * } $args
      */
     public function __construct(array $args = [])

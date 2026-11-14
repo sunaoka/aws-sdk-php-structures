@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\Scheduler\UpdateSchedule;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'NONE'|'DELETE'|null $ActionAfterCompletion
- * @property string|null $ClientToken
- * @property string|null $Description
- * @property \Aws\Api\DateTimeResult|null $EndDate
- * @property Shapes\FlexibleTimeWindow $FlexibleTimeWindow
- * @property string|null $GroupName
- * @property string|null $KmsKeyArn
  * @property string $Name
+ * @property string|null $GroupName
  * @property string $ScheduleExpression
- * @property string|null $ScheduleExpressionTimezone
  * @property \Aws\Api\DateTimeResult|null $StartDate
+ * @property \Aws\Api\DateTimeResult|null $EndDate
+ * @property string|null $Description
+ * @property string|null $ScheduleExpressionTimezone
  * @property 'ENABLED'|'DISABLED'|null $State
+ * @property string|null $KmsKeyArn
  * @property Shapes\Target $Target
+ * @property Shapes\FlexibleTimeWindow $FlexibleTimeWindow
+ * @property string|null $ClientToken
+ * @property 'NONE'|'DELETE'|null $ActionAfterCompletion
  */
 class UpdateScheduleRequest extends Request
 {
     /**
      * @param array{
-     *     ActionAfterCompletion?: 'NONE'|'DELETE'|null,
-     *     ClientToken?: string|null,
-     *     Description?: string|null,
-     *     EndDate?: \Aws\Api\DateTimeResult|null,
-     *     FlexibleTimeWindow: Shapes\FlexibleTimeWindow,
-     *     GroupName?: string|null,
-     *     KmsKeyArn?: string|null,
      *     Name: string,
+     *     GroupName?: string|null,
      *     ScheduleExpression: string,
-     *     ScheduleExpressionTimezone?: string|null,
      *     StartDate?: \Aws\Api\DateTimeResult|null,
+     *     EndDate?: \Aws\Api\DateTimeResult|null,
+     *     Description?: string|null,
+     *     ScheduleExpressionTimezone?: string|null,
      *     State?: 'ENABLED'|'DISABLED'|null,
-     *     Target: Shapes\Target
+     *     KmsKeyArn?: string|null,
+     *     Target: Shapes\Target,
+     *     FlexibleTimeWindow: Shapes\FlexibleTimeWindow,
+     *     ClientToken?: string|null,
+     *     ActionAfterCompletion?: 'NONE'|'DELETE'|null
      * } $args
      */
     public function __construct(array $args)

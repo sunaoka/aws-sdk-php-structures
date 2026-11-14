@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Schedule|null $schedule
  * @property EntryLimitsConfig|null $entryLimitsConfig
  * @property string|null $connectCampaignFlowArn
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
  */
 class CampaignSummary extends Shape
 {
@@ -27,7 +28,8 @@ class CampaignSummary extends Shape
      *     type?: 'MANAGED'|'JOURNEY'|null,
      *     schedule?: Schedule|null,
      *     entryLimitsConfig?: EntryLimitsConfig|null,
-     *     connectCampaignFlowArn?: string|null
+     *     connectCampaignFlowArn?: string|null,
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

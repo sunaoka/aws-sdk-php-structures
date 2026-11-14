@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $enabled
  * @property list<Shapes\Tag>|null $tags
  * @property string $trustAnchorArn
+ * @property string|null $aliasName
  */
 class ImportCrlRequest extends Request
 {
@@ -19,7 +20,8 @@ class ImportCrlRequest extends Request
      *     crlData: string|resource|\Psr\Http\Message\StreamInterface,
      *     enabled?: bool|null,
      *     tags?: list<Shapes\Tag>|null,
-     *     trustAnchorArn: string
+     *     trustAnchorArn: string,
+     *     aliasName?: string|null
      * } $args
      */
     public function __construct(array $args)

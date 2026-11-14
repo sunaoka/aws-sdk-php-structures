@@ -80,7 +80,9 @@ class CloudFormationClient extends \Aws\CloudFormation\CloudFormationClient
     use RecordHandlerProgress\RecordHandlerProgressTrait;
     use RegisterPublisher\RegisterPublisherTrait;
     use RegisterType\RegisterTypeTrait;
+    use RemoveAlias\RemoveAliasTrait;
     use RollbackStack\RollbackStackTrait;
+    use SetAlias\SetAliasTrait;
     use SetStackPolicy\SetStackPolicyTrait;
     use SetTypeConfiguration\SetTypeConfigurationTrait;
     use SetTypeDefaultVersion\SetTypeDefaultVersionTrait;

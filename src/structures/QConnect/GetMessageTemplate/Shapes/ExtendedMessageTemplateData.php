@@ -21,7 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MessageTemplateSourceConfigurationSummary|null $sourceConfigurationSummary
  * @property GroupingConfiguration|null $groupingConfiguration
  * @property MessageTemplateAttributes|null $defaultAttributes
- * @property list<'SYSTEM'|'AGENT'|'CUSTOMER_PROFILE'|'CUSTOM'>|null $attributeTypes
+ * @property list<'SYSTEM'|'AGENT'|'CUSTOMER_PROFILE'|'CUSTOM'|'CASE'>|null $attributeTypes
  * @property list<MessageTemplateAttachment>|null $attachments
  * @property bool|null $isActive
  * @property int<1, max>|null $versionNumber
@@ -48,7 +48,7 @@ class ExtendedMessageTemplateData extends Shape
      *     sourceConfigurationSummary?: MessageTemplateSourceConfigurationSummary|null,
      *     groupingConfiguration?: GroupingConfiguration|null,
      *     defaultAttributes?: MessageTemplateAttributes|null,
-     *     attributeTypes?: list<'SYSTEM'|'AGENT'|'CUSTOMER_PROFILE'|'CUSTOM'>|null,
+     *     attributeTypes?: list<'SYSTEM'|'AGENT'|'CUSTOMER_PROFILE'|'CUSTOM'|'CASE'>|null,
      *     attachments?: list<MessageTemplateAttachment>|null,
      *     isActive?: bool|null,
      *     versionNumber?: int<1, max>|null,

@@ -19,6 +19,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $durationSeconds
  * @property bool|null $acceptRoleSessionName
  * @property list<AttributeMapping>|null $attributeMappings
+ * @property string|null $aliasName
+ * @property string|null $aliasArn
+ * @property string|null $previousAliasName
  */
 class ProfileDetail extends Shape
 {
@@ -37,7 +40,10 @@ class ProfileDetail extends Shape
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
      *     durationSeconds?: int|null,
      *     acceptRoleSessionName?: bool|null,
-     *     attributeMappings?: list<AttributeMapping>|null
+     *     attributeMappings?: list<AttributeMapping>|null,
+     *     aliasName?: string|null,
+     *     aliasArn?: string|null,
+     *     previousAliasName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -167,6 +167,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DescribeClusterEvent\DescribeClusterEventTrait;
     use DescribeClusterExtension\DescribeClusterExtensionTrait;
     use DescribeClusterNode\DescribeClusterNodeTrait;
+    use DescribeClusterOperation\DescribeClusterOperationTrait;
     use DescribeClusterSchedulerConfig\DescribeClusterSchedulerConfigTrait;
     use DescribeCodeRepository\DescribeCodeRepositoryTrait;
     use DescribeCompilationJob\DescribeCompilationJobTrait;
@@ -256,8 +257,10 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListAutoMLJobs\ListAutoMLJobsTrait;
     use ListCandidatesForAutoMLJob\ListCandidatesForAutoMLJobTrait;
     use ListClusterEvents\ListClusterEventsTrait;
+    use ListClusterExtensionVersions\ListClusterExtensionVersionsTrait;
     use ListClusterExtensions\ListClusterExtensionsTrait;
     use ListClusterNodes\ListClusterNodesTrait;
+    use ListClusterOperations\ListClusterOperationsTrait;
     use ListClusterSchedulerConfigs\ListClusterSchedulerConfigsTrait;
     use ListClusters\ListClustersTrait;
     use ListCodeRepositories\ListCodeRepositoriesTrait;

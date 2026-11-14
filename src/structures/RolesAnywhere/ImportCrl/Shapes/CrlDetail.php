@@ -13,6 +13,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $trustAnchorArn
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $aliasName
+ * @property string|null $aliasArn
+ * @property string|null $previousAliasName
  */
 class CrlDetail extends Shape
 {
@@ -25,7 +28,10 @@ class CrlDetail extends Shape
      *     crlData?: \Psr\Http\Message\StreamInterface|null,
      *     trustAnchorArn?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     updatedAt?: \Aws\Api\DateTimeResult|null
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     aliasName?: string|null,
+     *     aliasArn?: string|null,
+     *     previousAliasName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

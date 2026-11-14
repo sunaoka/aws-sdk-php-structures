@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Identifier
  * @property string|null $Name
  * @property list<ResourceServerScopeType>|null $Scopes
+ * @property 'COGNITO'|null $ManagedBy
  */
 class ResourceServerType extends Shape
 {
@@ -17,7 +18,8 @@ class ResourceServerType extends Shape
      *     UserPoolId?: string|null,
      *     Identifier?: string|null,
      *     Name?: string|null,
-     *     Scopes?: list<ResourceServerScopeType>|null
+     *     Scopes?: list<ResourceServerScopeType>|null,
+     *     ManagedBy?: 'COGNITO'|null
      * } $args
      */
     public function __construct(array $args = [])

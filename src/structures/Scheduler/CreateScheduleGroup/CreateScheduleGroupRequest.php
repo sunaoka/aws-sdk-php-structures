@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Scheduler\CreateScheduleGroup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $ClientToken
  * @property string $Name
  * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $ClientToken
  */
 class CreateScheduleGroupRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string|null,
      *     Name: string,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

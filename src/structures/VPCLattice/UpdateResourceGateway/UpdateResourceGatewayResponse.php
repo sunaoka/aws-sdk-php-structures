@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<string>|null $subnetIds
  * @property list<string>|null $securityGroupIds
  * @property 'IPV4'|'IPV6'|null $ipAddressType
+ * @property 'IN_VPC'|'PUBLIC'|null $resourceConfigDnsResolution
  */
 class UpdateResourceGatewayResponse extends Response
 {

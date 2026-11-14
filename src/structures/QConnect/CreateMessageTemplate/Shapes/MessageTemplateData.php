@@ -21,7 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MessageTemplateSourceConfigurationSummary|null $sourceConfigurationSummary
  * @property GroupingConfiguration|null $groupingConfiguration
  * @property MessageTemplateAttributes|null $defaultAttributes
- * @property list<'SYSTEM'|'AGENT'|'CUSTOMER_PROFILE'|'CUSTOM'>|null $attributeTypes
+ * @property list<'SYSTEM'|'AGENT'|'CUSTOMER_PROFILE'|'CUSTOM'|'CASE'>|null $attributeTypes
  * @property string $messageTemplateContentSha256
  * @property array<string, string>|null $tags
  */
@@ -45,7 +45,7 @@ class MessageTemplateData extends Shape
      *     sourceConfigurationSummary?: MessageTemplateSourceConfigurationSummary|null,
      *     groupingConfiguration?: GroupingConfiguration|null,
      *     defaultAttributes?: MessageTemplateAttributes|null,
-     *     attributeTypes?: list<'SYSTEM'|'AGENT'|'CUSTOMER_PROFILE'|'CUSTOM'>|null,
+     *     attributeTypes?: list<'SYSTEM'|'AGENT'|'CUSTOMER_PROFILE'|'CUSTOM'|'CASE'>|null,
      *     messageTemplateContentSha256: string,
      *     tags?: array<string, string>|null
      * } $args

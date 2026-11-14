@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $FirewallArn
  * @property string|null $FirewallName
  * @property list<Shapes\SubnetMapping> $SubnetMappings
+ * @property list<Shapes\NatGatewayCreateMapping>|null $NatGatewayCreateMappings
  */
 class AssociateSubnetsRequest extends Request
 {
@@ -17,7 +18,8 @@ class AssociateSubnetsRequest extends Request
      *     UpdateToken?: string|null,
      *     FirewallArn?: string|null,
      *     FirewallName?: string|null,
-     *     SubnetMappings: list<Shapes\SubnetMapping>
+     *     SubnetMappings: list<Shapes\SubnetMapping>,
+     *     NatGatewayCreateMappings?: list<Shapes\NatGatewayCreateMapping>|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $name
  * @property Shapes\Source|null $source
  * @property bool|null $crlDpRevocationEnabled
+ * @property string|null $aliasName
  */
 class UpdateTrustAnchorRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateTrustAnchorRequest extends Request
      *     trustAnchorId: string,
      *     name?: string|null,
      *     source?: Shapes\Source|null,
-     *     crlDpRevocationEnabled?: bool|null
+     *     crlDpRevocationEnabled?: bool|null,
+     *     aliasName?: string|null
      * } $args
      */
     public function __construct(array $args)

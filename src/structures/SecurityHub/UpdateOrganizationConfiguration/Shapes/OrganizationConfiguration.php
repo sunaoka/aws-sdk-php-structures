@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'CENTRAL'|'LOCAL'|null $ConfigurationType
- * @property 'PENDING'|'ENABLED'|'FAILED'|null $Status
+ * @property 'PENDING'|'ENABLED'|'FAILED'|'DISABLED'|null $Status
  * @property string|null $StatusMessage
  */
 class OrganizationConfiguration extends Shape
@@ -14,7 +14,7 @@ class OrganizationConfiguration extends Shape
     /**
      * @param array{
      *     ConfigurationType?: 'CENTRAL'|'LOCAL'|null,
-     *     Status?: 'PENDING'|'ENABLED'|'FAILED'|null,
+     *     Status?: 'PENDING'|'ENABLED'|'FAILED'|'DISABLED'|null,
      *     StatusMessage?: string|null
      * } $args
      */

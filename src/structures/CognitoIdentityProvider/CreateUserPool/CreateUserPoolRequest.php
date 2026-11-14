@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AdminCreateUserConfigType|null $AdminCreateUserConfig
  * @property list<Shapes\SchemaAttributeType>|null $Schema
  * @property Shapes\UserPoolAddOnsType|null $UserPoolAddOns
+ * @property Shapes\DcrConfigurationType|null $DcrConfiguration
  * @property Shapes\UsernameConfigurationType|null $UsernameConfiguration
  * @property Shapes\AccountRecoverySettingType|null $AccountRecoverySetting
  * @property 'LITE'|'ESSENTIALS'|'PLUS'|null $UserPoolTier
@@ -58,6 +59,7 @@ class CreateUserPoolRequest extends Request
      *     AdminCreateUserConfig?: Shapes\AdminCreateUserConfigType|null,
      *     Schema?: list<Shapes\SchemaAttributeType>|null,
      *     UserPoolAddOns?: Shapes\UserPoolAddOnsType|null,
+     *     DcrConfiguration?: Shapes\DcrConfigurationType|null,
      *     UsernameConfiguration?: Shapes\UsernameConfigurationType|null,
      *     AccountRecoverySetting?: Shapes\AccountRecoverySettingType|null,
      *     UserPoolTier?: 'LITE'|'ESSENTIALS'|'PLUS'|null,

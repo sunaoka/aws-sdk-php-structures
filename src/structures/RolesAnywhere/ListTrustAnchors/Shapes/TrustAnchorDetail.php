@@ -14,6 +14,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property list<NotificationSettingDetail>|null $notificationSettings
+ * @property string|null $aliasName
+ * @property string|null $aliasArn
+ * @property string|null $previousAliasName
  */
 class TrustAnchorDetail extends Shape
 {
@@ -27,7 +30,10 @@ class TrustAnchorDetail extends Shape
      *     crlDpRevocationEnabled?: bool|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     notificationSettings?: list<NotificationSettingDetail>|null
+     *     notificationSettings?: list<NotificationSettingDetail>|null,
+     *     aliasName?: string|null,
+     *     aliasArn?: string|null,
+     *     previousAliasName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

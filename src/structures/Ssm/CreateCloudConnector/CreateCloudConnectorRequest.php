@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $RoleArn
  * @property string|null $Description
  * @property Shapes\CloudConnectorConfiguration $Configuration
- * @property string $ConfigConnectorArn
+ * @property string|null $ConfigConnectorArn
  * @property list<Shapes\Tag>|null $Tags
  */
 class CreateCloudConnectorRequest extends Request
@@ -20,7 +20,7 @@ class CreateCloudConnectorRequest extends Request
      *     RoleArn: string,
      *     Description?: string|null,
      *     Configuration: Shapes\CloudConnectorConfiguration,
-     *     ConfigConnectorArn: string,
+     *     ConfigConnectorArn?: string|null,
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $enabled
  * @property list<Shapes\Tag>|null $tags
  * @property bool|null $acceptRoleSessionName
+ * @property string|null $aliasName
  */
 class CreateProfileRequest extends Request
 {
@@ -27,7 +28,8 @@ class CreateProfileRequest extends Request
      *     durationSeconds?: int<900, 43200>|null,
      *     enabled?: bool|null,
      *     tags?: list<Shapes\Tag>|null,
-     *     acceptRoleSessionName?: bool|null
+     *     acceptRoleSessionName?: bool|null,
+     *     aliasName?: string|null
      * } $args
      */
     public function __construct(array $args)

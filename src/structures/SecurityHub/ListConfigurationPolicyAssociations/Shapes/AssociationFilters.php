@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $ConfigurationPolicyId
  * @property 'INHERITED'|'APPLIED'|null $AssociationType
- * @property 'PENDING'|'SUCCESS'|'FAILED'|null $AssociationStatus
+ * @property 'PENDING'|'SUCCESS'|'FAILED'|'DISABLED'|null $AssociationStatus
  */
 class AssociationFilters extends Shape
 {
@@ -15,7 +15,7 @@ class AssociationFilters extends Shape
      * @param array{
      *     ConfigurationPolicyId?: string|null,
      *     AssociationType?: 'INHERITED'|'APPLIED'|null,
-     *     AssociationStatus?: 'PENDING'|'SUCCESS'|'FAILED'|null
+     *     AssociationStatus?: 'PENDING'|'SUCCESS'|'FAILED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

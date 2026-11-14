@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'ACCOUNT'|'ORGANIZATIONAL_UNIT'|'ROOT'|null $TargetType
  * @property 'INHERITED'|'APPLIED'|null $AssociationType
  * @property \Aws\Api\DateTimeResult|null $UpdatedAt
- * @property 'PENDING'|'SUCCESS'|'FAILED'|null $AssociationStatus
+ * @property 'PENDING'|'SUCCESS'|'FAILED'|'DISABLED'|null $AssociationStatus
  * @property string|null $AssociationStatusMessage
  */
 class GetConfigurationPolicyAssociationResponse extends Response

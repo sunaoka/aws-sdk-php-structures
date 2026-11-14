@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AgentAttributes|null $agentAttributes
  * @property CustomerProfileAttributes|null $customerProfileAttributes
  * @property array<string, string>|null $customAttributes
+ * @property array<string, string>|null $caseAttributes
  */
 class MessageTemplateAttributes extends Shape
 {
@@ -17,7 +18,8 @@ class MessageTemplateAttributes extends Shape
      *     systemAttributes?: SystemAttributes|null,
      *     agentAttributes?: AgentAttributes|null,
      *     customerProfileAttributes?: CustomerProfileAttributes|null,
-     *     customAttributes?: array<string, string>|null
+     *     customAttributes?: array<string, string>|null,
+     *     caseAttributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -32,6 +32,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use AssociateIpamByoasn\AssociateIpamByoasnTrait;
     use AssociateIpamResourceDiscovery\AssociateIpamResourceDiscoveryTrait;
     use AssociateNatGatewayAddress\AssociateNatGatewayAddressTrait;
+    use AssociateNetworkingFlexCostAllocationPolicy\AssociateNetworkingFlexCostAllocationPolicyTrait;
     use AssociateRouteServer\AssociateRouteServerTrait;
     use AssociateRouteTable\AssociateRouteTableTrait;
     use AssociateSecurityGroupVpc\AssociateSecurityGroupVpcTrait;
@@ -126,6 +127,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateNetworkInsightsPath\CreateNetworkInsightsPathTrait;
     use CreateNetworkInterface\CreateNetworkInterfaceTrait;
     use CreateNetworkInterfacePermission\CreateNetworkInterfacePermissionTrait;
+    use CreateNetworkingFlexCostAllocationPolicy\CreateNetworkingFlexCostAllocationPolicyTrait;
     use CreatePlacementGroup\CreatePlacementGroupTrait;
     use CreatePublicIpv4Pool\CreatePublicIpv4PoolTrait;
     use CreateReplaceRootVolumeTask\CreateReplaceRootVolumeTaskTrait;
@@ -228,6 +230,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeleteNetworkInsightsPath\DeleteNetworkInsightsPathTrait;
     use DeleteNetworkInterface\DeleteNetworkInterfaceTrait;
     use DeleteNetworkInterfacePermission\DeleteNetworkInterfacePermissionTrait;
+    use DeleteNetworkingFlexCostAllocationPolicies\DeleteNetworkingFlexCostAllocationPoliciesTrait;
     use DeletePlacementGroup\DeletePlacementGroupTrait;
     use DeletePublicIpv4Pool\DeletePublicIpv4PoolTrait;
     use DeleteQueuedReservedInstances\DeleteQueuedReservedInstancesTrait;
@@ -400,6 +403,8 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeNetworkInterfaceAttribute\DescribeNetworkInterfaceAttributeTrait;
     use DescribeNetworkInterfacePermissions\DescribeNetworkInterfacePermissionsTrait;
     use DescribeNetworkInterfaces\DescribeNetworkInterfacesTrait;
+    use DescribeNetworkingFlexCostAllocationPolicies\DescribeNetworkingFlexCostAllocationPoliciesTrait;
+    use DescribeNetworkingFlexCostAllocationPolicyAssociations\DescribeNetworkingFlexCostAllocationPolicyAssociationsTrait;
     use DescribeOutpostLags\DescribeOutpostLagsTrait;
     use DescribePlacementGroups\DescribePlacementGroupsTrait;
     use DescribePrefixLists\DescribePrefixListsTrait;
@@ -520,6 +525,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DisassociateIpamByoasn\DisassociateIpamByoasnTrait;
     use DisassociateIpamResourceDiscovery\DisassociateIpamResourceDiscoveryTrait;
     use DisassociateNatGatewayAddress\DisassociateNatGatewayAddressTrait;
+    use DisassociateNetworkingFlexCostAllocationPolicy\DisassociateNetworkingFlexCostAllocationPolicyTrait;
     use DisassociateRouteServer\DisassociateRouteServerTrait;
     use DisassociateRouteTable\DisassociateRouteTableTrait;
     use DisassociateSecurityGroupVpc\DisassociateSecurityGroupVpcTrait;
@@ -614,6 +620,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetManagedResourceVisibility\GetManagedResourceVisibilityTrait;
     use GetNetworkInsightsAccessScopeAnalysisFindings\GetNetworkInsightsAccessScopeAnalysisFindingsTrait;
     use GetNetworkInsightsAccessScopeContent\GetNetworkInsightsAccessScopeContentTrait;
+    use GetNetworkingFlexCostAllocationPolicyVersions\GetNetworkingFlexCostAllocationPolicyVersionsTrait;
     use GetPasswordData\GetPasswordDataTrait;
     use GetReservedInstancesExchangeQuote\GetReservedInstancesExchangeQuoteTrait;
     use GetRouteServerAssociations\GetRouteServerAssociationsTrait;
@@ -694,6 +701,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ModifyManagedResourceVisibility\ModifyManagedResourceVisibilityTrait;
     use ModifyMetricCategory\ModifyMetricCategoryTrait;
     use ModifyNetworkInterfaceAttribute\ModifyNetworkInterfaceAttributeTrait;
+    use ModifyNetworkingFlexCostAllocationPolicy\ModifyNetworkingFlexCostAllocationPolicyTrait;
     use ModifyPrivateDnsNameOptions\ModifyPrivateDnsNameOptionsTrait;
     use ModifyPublicIpDnsNameOptions\ModifyPublicIpDnsNameOptionsTrait;
     use ModifyReservedInstances\ModifyReservedInstancesTrait;

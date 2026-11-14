@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $UserPoolTags
  * @property Shapes\AdminCreateUserConfigType|null $AdminCreateUserConfig
  * @property Shapes\UserPoolAddOnsType|null $UserPoolAddOns
+ * @property Shapes\DcrConfigurationType|null $DcrConfiguration
  * @property Shapes\AccountRecoverySettingType|null $AccountRecoverySetting
  * @property string|null $PoolName
  * @property 'LITE'|'ESSENTIALS'|'PLUS'|null $UserPoolTier
@@ -52,6 +53,7 @@ class UpdateUserPoolRequest extends Request
      *     UserPoolTags?: array<string, string>|null,
      *     AdminCreateUserConfig?: Shapes\AdminCreateUserConfigType|null,
      *     UserPoolAddOns?: Shapes\UserPoolAddOnsType|null,
+     *     DcrConfiguration?: Shapes\DcrConfigurationType|null,
      *     AccountRecoverySetting?: Shapes\AccountRecoverySettingType|null,
      *     PoolName?: string|null,
      *     UserPoolTier?: 'LITE'|'ESSENTIALS'|'PLUS'|null,

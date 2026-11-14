@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $managedPolicyArns
  * @property int<900, 43200>|null $durationSeconds
  * @property bool|null $acceptRoleSessionName
+ * @property string|null $aliasName
  */
 class UpdateProfileRequest extends Request
 {
@@ -23,7 +24,8 @@ class UpdateProfileRequest extends Request
      *     roleArns?: list<string>|null,
      *     managedPolicyArns?: list<string>|null,
      *     durationSeconds?: int<900, 43200>|null,
-     *     acceptRoleSessionName?: bool|null
+     *     acceptRoleSessionName?: bool|null,
+     *     aliasName?: string|null
      * } $args
      */
     public function __construct(array $args)

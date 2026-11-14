@@ -6,13 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Arn
+ * @property string $RoleArn
  * @property DeadLetterConfig|null $DeadLetterConfig
+ * @property RetryPolicy|null $RetryPolicy
+ * @property string|null $Input
  * @property EcsParameters|null $EcsParameters
  * @property EventBridgeParameters|null $EventBridgeParameters
- * @property string|null $Input
+ * @property EventBridgePutEventsV2Parameters|null $EventBridgePutEventsV2Parameters
+ * @property EventBridgePutRawEventsParameters|null $EventBridgePutRawEventsParameters
  * @property KinesisParameters|null $KinesisParameters
- * @property RetryPolicy|null $RetryPolicy
- * @property string $RoleArn
  * @property SageMakerPipelineParameters|null $SageMakerPipelineParameters
  * @property SqsParameters|null $SqsParameters
  */
@@ -21,13 +23,15 @@ class Target extends Shape
     /**
      * @param array{
      *     Arn: string,
+     *     RoleArn: string,
      *     DeadLetterConfig?: DeadLetterConfig|null,
+     *     RetryPolicy?: RetryPolicy|null,
+     *     Input?: string|null,
      *     EcsParameters?: EcsParameters|null,
      *     EventBridgeParameters?: EventBridgeParameters|null,
-     *     Input?: string|null,
+     *     EventBridgePutEventsV2Parameters?: EventBridgePutEventsV2Parameters|null,
+     *     EventBridgePutRawEventsParameters?: EventBridgePutRawEventsParameters|null,
      *     KinesisParameters?: KinesisParameters|null,
-     *     RetryPolicy?: RetryPolicy|null,
-     *     RoleArn: string,
      *     SageMakerPipelineParameters?: SageMakerPipelineParameters|null,
      *     SqsParameters?: SqsParameters|null
      * } $args

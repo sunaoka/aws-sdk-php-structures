@@ -35,6 +35,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CustomDomain
  * @property AdminCreateUserConfigType|null $AdminCreateUserConfig
  * @property UserPoolAddOnsType|null $UserPoolAddOns
+ * @property DcrConfigurationType|null $DcrConfiguration
  * @property UsernameConfigurationType|null $UsernameConfiguration
  * @property string|null $Arn
  * @property AccountRecoverySettingType|null $AccountRecoverySetting
@@ -77,6 +78,7 @@ class UserPoolType extends Shape
      *     CustomDomain?: string|null,
      *     AdminCreateUserConfig?: AdminCreateUserConfigType|null,
      *     UserPoolAddOns?: UserPoolAddOnsType|null,
+     *     DcrConfiguration?: DcrConfigurationType|null,
      *     UsernameConfiguration?: UsernameConfigurationType|null,
      *     Arn?: string|null,
      *     AccountRecoverySetting?: AccountRecoverySettingType|null,
