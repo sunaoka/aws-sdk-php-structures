@@ -35,6 +35,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $queuedDurationMilliseconds
  * @property ImageConfiguration|null $imageConfiguration
  * @property array<string, WorkerTypeSpecification>|null $workerTypeSpecifications
+ * @property FlexExecution|null $flexExecution
  */
 class JobRun extends Shape
 {
@@ -69,7 +70,8 @@ class JobRun extends Shape
      *     endedAt?: \Aws\Api\DateTimeResult|null,
      *     queuedDurationMilliseconds?: int|null,
      *     imageConfiguration?: ImageConfiguration|null,
-     *     workerTypeSpecifications?: array<string, WorkerTypeSpecification>|null
+     *     workerTypeSpecifications?: array<string, WorkerTypeSpecification>|null,
+     *     flexExecution?: FlexExecution|null
      * } $args
      */
     public function __construct(array $args)

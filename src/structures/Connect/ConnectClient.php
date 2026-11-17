@@ -79,6 +79,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use CreateWorkspace\CreateWorkspaceTrait;
     use CreateWorkspacePage\CreateWorkspacePageTrait;
     use DeactivateEvaluationForm\DeactivateEvaluationFormTrait;
+    use DeleteAllEntitySessions\DeleteAllEntitySessionsTrait;
     use DeleteAttachedFile\DeleteAttachedFileTrait;
     use DeleteContactData\DeleteContactDataTrait;
     use DeleteContactEvaluation\DeleteContactEvaluationTrait;

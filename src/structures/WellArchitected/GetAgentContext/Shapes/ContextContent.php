@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $awsServices
  * @property list<string>|null $resourceTypes
  * @property list<ContextResourceTag>|null $resourceTags
+ * @property list<string>|null $organizationalUnitIds
  * @property string|null $applicationOverview
  * @property string|null $industry
  * @property 'SAS'|'DESKTOP_APPLICATION'|'OTHER'|null $applicationType
@@ -26,6 +27,7 @@ class ContextContent extends Shape
      *     awsServices?: list<string>|null,
      *     resourceTypes?: list<string>|null,
      *     resourceTags?: list<ContextResourceTag>|null,
+     *     organizationalUnitIds?: list<string>|null,
      *     applicationOverview?: string|null,
      *     industry?: string|null,
      *     applicationType?: 'SAS'|'DESKTOP_APPLICATION'|'OTHER'|null,

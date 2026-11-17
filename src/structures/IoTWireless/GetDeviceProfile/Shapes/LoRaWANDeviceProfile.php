@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 15>|null $RxDataRate2
  * @property int<1000000, 16700000>|null $RxFreq2
  * @property list<int<1000000, 16700000>>|null $FactoryPresetFreqsList
- * @property int<0, 15>|null $MaxEirp
+ * @property int<0, 36>|null $MaxEirp
  * @property int<0, 100>|null $MaxDutyCycle
  * @property string|null $RfRegion
  * @property bool|null $SupportsJoin
@@ -43,7 +43,7 @@ class LoRaWANDeviceProfile extends Shape
      *     RxDataRate2?: int<0, 15>|null,
      *     RxFreq2?: int<1000000, 16700000>|null,
      *     FactoryPresetFreqsList?: list<int<1000000, 16700000>>|null,
-     *     MaxEirp?: int<0, 15>|null,
+     *     MaxEirp?: int<0, 36>|null,
      *     MaxDutyCycle?: int<0, 100>|null,
      *     RfRegion?: string|null,
      *     SupportsJoin?: bool|null,

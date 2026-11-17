@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'AgentRFT'|'AgentRFTEvaluation' $JobCategory
+ * @property 'AgentRFT'|'SyntheticDataGeneration'|'DataQualityEvaluation'|'AgentRFTEvaluation'|'DataTransformation' $JobCategory
  * @property string|null $NextToken
  * @property int<1, 100>|null $MaxResults
  * @property \Aws\Api\DateTimeResult|null $CreationTimeAfter
@@ -21,7 +21,7 @@ class ListJobsRequest extends Request
 {
     /**
      * @param array{
-     *     JobCategory: 'AgentRFT'|'AgentRFTEvaluation',
+     *     JobCategory: 'AgentRFT'|'SyntheticDataGeneration'|'DataQualityEvaluation'|'AgentRFTEvaluation'|'DataTransformation',
      *     NextToken?: string|null,
      *     MaxResults?: int<1, 100>|null,
      *     CreationTimeAfter?: \Aws\Api\DateTimeResult|null,

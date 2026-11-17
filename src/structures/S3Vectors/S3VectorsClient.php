@@ -25,4 +25,5 @@ class S3VectorsClient extends \Aws\S3Vectors\S3VectorsClient
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateIndexMode\UpdateIndexModeTrait;
+    use UpdateMetadataConfiguration\UpdateMetadataConfigurationTrait;
 }

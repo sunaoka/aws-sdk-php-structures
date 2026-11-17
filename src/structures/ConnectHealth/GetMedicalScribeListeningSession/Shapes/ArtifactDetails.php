@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $outputLocation
- * @property 'IN_PROGRESS'|'FAILED'|'COMPLETED'|null $status
+ * @property 'IN_PROGRESS'|'FAILED'|'COMPLETED'|'PENDING'|'SKIPPED'|null $status
  * @property string|null $failureReason
  */
 class ArtifactDetails extends Shape
@@ -14,7 +14,7 @@ class ArtifactDetails extends Shape
     /**
      * @param array{
      *     outputLocation?: string|null,
-     *     status?: 'IN_PROGRESS'|'FAILED'|'COMPLETED'|null,
+     *     status?: 'IN_PROGRESS'|'FAILED'|'COMPLETED'|'PENDING'|'SKIPPED'|null,
      *     failureReason?: string|null
      * } $args
      */

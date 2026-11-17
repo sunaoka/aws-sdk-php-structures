@@ -52,6 +52,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use CreateInferenceComponent\CreateInferenceComponentTrait;
     use CreateInferenceExperiment\CreateInferenceExperimentTrait;
     use CreateInferenceRecommendationsJob\CreateInferenceRecommendationsJobTrait;
+    use CreateInferenceRouter\CreateInferenceRouterTrait;
     use CreateJob\CreateJobTrait;
     use CreateLabelingJob\CreateLabelingJobTrait;
     use CreateMlflowApp\CreateMlflowAppTrait;
@@ -111,6 +112,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DeleteEdgeDeploymentStage\DeleteEdgeDeploymentStageTrait;
     use DeleteEndpoint\DeleteEndpointTrait;
     use DeleteEndpointConfig\DeleteEndpointConfigTrait;
+    use DeleteEndpointPolicy\DeleteEndpointPolicyTrait;
     use DeleteExperiment\DeleteExperimentTrait;
     use DeleteFeatureGroup\DeleteFeatureGroupTrait;
     use DeleteFlowDefinition\DeleteFlowDefinitionTrait;
@@ -123,6 +125,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DeleteImageVersion\DeleteImageVersionTrait;
     use DeleteInferenceComponent\DeleteInferenceComponentTrait;
     use DeleteInferenceExperiment\DeleteInferenceExperimentTrait;
+    use DeleteInferenceRouter\DeleteInferenceRouterTrait;
     use DeleteJob\DeleteJobTrait;
     use DeleteMlflowApp\DeleteMlflowAppTrait;
     use DeleteMlflowTrackingServer\DeleteMlflowTrackingServerTrait;
@@ -194,6 +197,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DescribeInferenceComponent\DescribeInferenceComponentTrait;
     use DescribeInferenceExperiment\DescribeInferenceExperimentTrait;
     use DescribeInferenceRecommendationsJob\DescribeInferenceRecommendationsJobTrait;
+    use DescribeInferenceRouter\DescribeInferenceRouterTrait;
     use DescribeJob\DescribeJobTrait;
     use DescribeJobSchemaVersion\DescribeJobSchemaVersionTrait;
     use DescribeLabelingJob\DescribeLabelingJobTrait;
@@ -238,6 +242,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use EnableSagemakerServicecatalogPortfolio\EnableSagemakerServicecatalogPortfolioTrait;
     use ExtendTrainingPlan\ExtendTrainingPlanTrait;
     use GetDeviceFleetReport\GetDeviceFleetReportTrait;
+    use GetEndpointPolicy\GetEndpointPolicyTrait;
     use GetLineageGroupPolicy\GetLineageGroupPolicyTrait;
     use GetModelPackageGroupPolicy\GetModelPackageGroupPolicyTrait;
     use GetSagemakerServicecatalogPortfolioStatus\GetSagemakerServicecatalogPortfolioStatusTrait;
@@ -289,6 +294,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListInferenceExperiments\ListInferenceExperimentsTrait;
     use ListInferenceRecommendationsJobSteps\ListInferenceRecommendationsJobStepsTrait;
     use ListInferenceRecommendationsJobs\ListInferenceRecommendationsJobsTrait;
+    use ListInferenceRouters\ListInferenceRoutersTrait;
     use ListJobSchemaVersions\ListJobSchemaVersionsTrait;
     use ListJobs\ListJobsTrait;
     use ListLabelingJobs\ListLabelingJobsTrait;
@@ -338,6 +344,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListUserProfiles\ListUserProfilesTrait;
     use ListWorkforces\ListWorkforcesTrait;
     use ListWorkteams\ListWorkteamsTrait;
+    use PutEndpointPolicy\PutEndpointPolicyTrait;
     use PutModelPackageGroupPolicy\PutModelPackageGroupPolicyTrait;
     use QueryLineage\QueryLineageTrait;
     use RegisterDevices\RegisterDevicesTrait;
@@ -401,6 +408,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use UpdateInferenceComponent\UpdateInferenceComponentTrait;
     use UpdateInferenceComponentRuntimeConfig\UpdateInferenceComponentRuntimeConfigTrait;
     use UpdateInferenceExperiment\UpdateInferenceExperimentTrait;
+    use UpdateInferenceRouter\UpdateInferenceRouterTrait;
     use UpdateMlflowApp\UpdateMlflowAppTrait;
     use UpdateMlflowTrackingServer\UpdateMlflowTrackingServerTrait;
     use UpdateModelCard\UpdateModelCardTrait;

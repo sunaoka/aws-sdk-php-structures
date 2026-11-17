@@ -80,6 +80,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use ForgotPassword\ForgotPasswordTrait;
     use GetCSVHeader\GetCSVHeaderTrait;
     use GetClientToken\GetClientTokenTrait;
+    use GetDerivedToken\GetDerivedTokenTrait;
     use GetDevice\GetDeviceTrait;
     use GetGroup\GetGroupTrait;
     use GetIdentityProviderByIdentifier\GetIdentityProviderByIdentifierTrait;

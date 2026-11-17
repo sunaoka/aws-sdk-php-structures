@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $JobName
- * @property 'AgentRFT'|'AgentRFTEvaluation' $JobCategory
+ * @property 'AgentRFT'|'SyntheticDataGeneration'|'DataQualityEvaluation'|'AgentRFTEvaluation'|'DataTransformation' $JobCategory
  */
 class DescribeJobRequest extends Request
 {
     /**
      * @param array{
      *     JobName: string,
-     *     JobCategory: 'AgentRFT'|'AgentRFTEvaluation'
+     *     JobCategory: 'AgentRFT'|'SyntheticDataGeneration'|'DataQualityEvaluation'|'AgentRFTEvaluation'|'DataTransformation'
      * } $args
      */
     public function __construct(array $args)

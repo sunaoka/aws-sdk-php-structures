@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, SyncState>|null $SyncStates
  * @property CapacityUsageSummary|null $CapacityUsageSummary
  * @property TransitGatewayAttachmentSyncState|null $TransitGatewayAttachmentSyncState
+ * @property ContextStoreSyncState|null $ContextStoreSyncState
  */
 class FirewallStatus extends Shape
 {
@@ -19,7 +20,8 @@ class FirewallStatus extends Shape
      *     ConfigurationSyncStateSummary: 'PENDING'|'IN_SYNC'|'CAPACITY_CONSTRAINED',
      *     SyncStates?: array<string, SyncState>|null,
      *     CapacityUsageSummary?: CapacityUsageSummary|null,
-     *     TransitGatewayAttachmentSyncState?: TransitGatewayAttachmentSyncState|null
+     *     TransitGatewayAttachmentSyncState?: TransitGatewayAttachmentSyncState|null,
+     *     ContextStoreSyncState?: ContextStoreSyncState|null
      * } $args
      */
     public function __construct(array $args)

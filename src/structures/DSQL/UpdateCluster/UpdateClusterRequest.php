@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $kmsEncryptionKey
  * @property string|null $clientToken
  * @property Shapes\MultiRegionProperties|null $multiRegionProperties
+ * @property list<Shapes\MetricGroupRequest>|null $metricGroups
  */
 class UpdateClusterRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateClusterRequest extends Request
      *     deletionProtectionEnabled?: bool|null,
      *     kmsEncryptionKey?: string|null,
      *     clientToken?: string|null,
-     *     multiRegionProperties?: Shapes\MultiRegionProperties|null
+     *     multiRegionProperties?: Shapes\MultiRegionProperties|null,
+     *     metricGroups?: list<Shapes\MetricGroupRequest>|null
      * } $args
      */
     public function __construct(array $args)

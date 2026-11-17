@@ -33,6 +33,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property IDCConfig|null $IDCConfig
  * @property ActiveDirectoryConfig|null $ActiveDirectoryConfig
  * @property StreamingProperties|null $StreamingProperties
+ * @property 'LOCAL_USER'|'DOMAIN_JOIN'|'ENTRA_JOIN'|'SELF_MANAGED'|null $WorkspaceOsUserMode
  * @property string|null $ErrorMessage
  */
 class WorkspaceDirectory extends Shape
@@ -67,6 +68,7 @@ class WorkspaceDirectory extends Shape
      *     IDCConfig?: IDCConfig|null,
      *     ActiveDirectoryConfig?: ActiveDirectoryConfig|null,
      *     StreamingProperties?: StreamingProperties|null,
+     *     WorkspaceOsUserMode?: 'LOCAL_USER'|'DOMAIN_JOIN'|'ENTRA_JOIN'|'SELF_MANAGED'|null,
      *     ErrorMessage?: string|null
      * } $args
      */

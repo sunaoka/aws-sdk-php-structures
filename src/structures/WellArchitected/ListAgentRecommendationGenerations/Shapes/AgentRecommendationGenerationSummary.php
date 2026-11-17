@@ -14,6 +14,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string|null $lastModifiedBy
  * @property \Aws\Api\DateTimeResult|null $lastModifiedAt
+ * @property 'ONDEMAND'|'SCHEDULED'|'BASIC'|null $generationType
+ * @property list<'RESOURCE'|'ARCHITECTURE'|'APPLICATION'>|null $generationRecommendationTypes
+ * @property \Aws\Api\DateTimeResult|null $startedAt
+ * @property \Aws\Api\DateTimeResult|null $endedAt
+ * @property ErrorDetails|null $errorDetails
  */
 class AgentRecommendationGenerationSummary extends Shape
 {
@@ -27,7 +32,12 @@ class AgentRecommendationGenerationSummary extends Shape
      *     createdBy: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     lastModifiedBy?: string|null,
-     *     lastModifiedAt?: \Aws\Api\DateTimeResult|null
+     *     lastModifiedAt?: \Aws\Api\DateTimeResult|null,
+     *     generationType?: 'ONDEMAND'|'SCHEDULED'|'BASIC'|null,
+     *     generationRecommendationTypes?: list<'RESOURCE'|'ARCHITECTURE'|'APPLICATION'>|null,
+     *     startedAt?: \Aws\Api\DateTimeResult|null,
+     *     endedAt?: \Aws\Api\DateTimeResult|null,
+     *     errorDetails?: ErrorDetails|null
      * } $args
      */
     public function __construct(array $args)

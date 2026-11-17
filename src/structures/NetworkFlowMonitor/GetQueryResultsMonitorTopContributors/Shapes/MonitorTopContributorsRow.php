@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $localAz
  * @property string|null $localSubnetId
  * @property int|null $targetPort
- * @property 'INTRA_AZ'|'INTER_AZ'|'INTER_VPC'|'UNCLASSIFIED'|'AMAZON_S3'|'AMAZON_DYNAMODB'|'INTER_REGION'|null $destinationCategory
+ * @property 'INTRA_AZ'|'INTER_AZ'|'INTER_VPC'|'UNCLASSIFIED'|'AMAZON_S3'|'AMAZON_DYNAMODB'|'INTER_REGION'|'INTERNET'|'AWS_SERVICE'|'LOCAL_ZONE'|'TRANSIT_GATEWAY'|null $destinationCategory
  * @property string|null $remoteVpcId
  * @property string|null $remoteRegion
  * @property string|null $remoteAz
@@ -30,6 +30,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $remoteInstanceArn
  * @property string|null $remoteSubnetArn
  * @property string|null $remoteVpcArn
+ * @property AdditionalFlowInfo|null $additionalFlowInfo
  */
 class MonitorTopContributorsRow extends Shape
 {
@@ -43,7 +44,7 @@ class MonitorTopContributorsRow extends Shape
      *     localAz?: string|null,
      *     localSubnetId?: string|null,
      *     targetPort?: int|null,
-     *     destinationCategory?: 'INTRA_AZ'|'INTER_AZ'|'INTER_VPC'|'UNCLASSIFIED'|'AMAZON_S3'|'AMAZON_DYNAMODB'|'INTER_REGION'|null,
+     *     destinationCategory?: 'INTRA_AZ'|'INTER_AZ'|'INTER_VPC'|'UNCLASSIFIED'|'AMAZON_S3'|'AMAZON_DYNAMODB'|'INTER_REGION'|'INTERNET'|'AWS_SERVICE'|'LOCAL_ZONE'|'TRANSIT_GATEWAY'|null,
      *     remoteVpcId?: string|null,
      *     remoteRegion?: string|null,
      *     remoteAz?: string|null,
@@ -59,7 +60,8 @@ class MonitorTopContributorsRow extends Shape
      *     localVpcArn?: string|null,
      *     remoteInstanceArn?: string|null,
      *     remoteSubnetArn?: string|null,
-     *     remoteVpcArn?: string|null
+     *     remoteVpcArn?: string|null,
+     *     additionalFlowInfo?: AdditionalFlowInfo|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,19 +9,20 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $displayName
  * @property string|null $description
  * @property string|null $businessOverview
- * @property list<'COST_OPTIMIZATION'|'SECURITY'|'RESILIENCE'|'PERFORMANCE'|'OPERATIONAL_EXCELLENCE'> $pillars
+ * @property list<'COST_OPTIMIZATION'|'SECURITY'|'RESILIENCE'|'PERFORMANCE'|'OPERATIONAL_EXCELLENCE'>|null $pillars
  * @property bool|null $deletionProtection
- * @property string $executionRoleArn
- * @property list<AggregationConfiguration> $aggregationConfiguration
+ * @property 'STANDARD'|'BASIC'|'ORGANIZATIONAL'|null $profileType
+ * @property string|null $executionRoleArn
+ * @property list<AggregationConfiguration>|null $aggregationConfiguration
  * @property string $arn
  * @property bool|null $eligibleForScheduledGeneration
  * @property bool|null $eligibleForArchitectureGeneration
  * @property array<string, string>|null $fieldErrors
- * @property list<Tag>|null $tags
  * @property string $createdBy
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string|null $lastModifiedBy
  * @property \Aws\Api\DateTimeResult|null $lastModifiedAt
+ * @property OrganizationalAggregationConfiguration|null $organizationalAggregationConfiguration
  */
 class AgentProfileSummary extends Shape
 {
@@ -31,19 +32,20 @@ class AgentProfileSummary extends Shape
      *     displayName?: string|null,
      *     description?: string|null,
      *     businessOverview?: string|null,
-     *     pillars: list<'COST_OPTIMIZATION'|'SECURITY'|'RESILIENCE'|'PERFORMANCE'|'OPERATIONAL_EXCELLENCE'>,
+     *     pillars?: list<'COST_OPTIMIZATION'|'SECURITY'|'RESILIENCE'|'PERFORMANCE'|'OPERATIONAL_EXCELLENCE'>|null,
      *     deletionProtection?: bool|null,
-     *     executionRoleArn: string,
-     *     aggregationConfiguration: list<AggregationConfiguration>,
+     *     profileType?: 'STANDARD'|'BASIC'|'ORGANIZATIONAL'|null,
+     *     executionRoleArn?: string|null,
+     *     aggregationConfiguration?: list<AggregationConfiguration>|null,
      *     arn: string,
      *     eligibleForScheduledGeneration?: bool|null,
      *     eligibleForArchitectureGeneration?: bool|null,
      *     fieldErrors?: array<string, string>|null,
-     *     tags?: list<Tag>|null,
      *     createdBy: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     lastModifiedBy?: string|null,
-     *     lastModifiedAt?: \Aws\Api\DateTimeResult|null
+     *     lastModifiedAt?: \Aws\Api\DateTimeResult|null,
+     *     organizationalAggregationConfiguration?: OrganizationalAggregationConfiguration|null
      * } $args
      */
     public function __construct(array $args)

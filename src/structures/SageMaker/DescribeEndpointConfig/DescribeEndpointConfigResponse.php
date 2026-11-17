@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\VpcConfig|null $VpcConfig
  * @property bool|null $EnableNetworkIsolation
  * @property Shapes\MetricsConfig|null $MetricsConfig
+ * @property Shapes\CrossRegionTrafficConfig|null $CrossRegionTrafficConfig
  */
 class DescribeEndpointConfigResponse extends Response
 {

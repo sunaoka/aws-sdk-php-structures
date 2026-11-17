@@ -31,6 +31,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use AssociateInstanceEventWindow\AssociateInstanceEventWindowTrait;
     use AssociateIpamByoasn\AssociateIpamByoasnTrait;
     use AssociateIpamResourceDiscovery\AssociateIpamResourceDiscoveryTrait;
+    use AssociateKmsKeyId\AssociateKmsKeyIdTrait;
     use AssociateNatGatewayAddress\AssociateNatGatewayAddressTrait;
     use AssociateNetworkingFlexCostAllocationPolicy\AssociateNetworkingFlexCostAllocationPolicyTrait;
     use AssociateRouteServer\AssociateRouteServerTrait;
@@ -158,6 +159,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateTransitGatewayMeteringPolicy\CreateTransitGatewayMeteringPolicyTrait;
     use CreateTransitGatewayMeteringPolicyEntry\CreateTransitGatewayMeteringPolicyEntryTrait;
     use CreateTransitGatewayMulticastDomain\CreateTransitGatewayMulticastDomainTrait;
+    use CreateTransitGatewayNetworkFunctionAttachment\CreateTransitGatewayNetworkFunctionAttachmentTrait;
     use CreateTransitGatewayPeeringAttachment\CreateTransitGatewayPeeringAttachmentTrait;
     use CreateTransitGatewayPolicyTable\CreateTransitGatewayPolicyTableTrait;
     use CreateTransitGatewayPolicyTableEntry\CreateTransitGatewayPolicyTableEntryTrait;
@@ -258,6 +260,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeleteTransitGatewayMeteringPolicy\DeleteTransitGatewayMeteringPolicyTrait;
     use DeleteTransitGatewayMeteringPolicyEntry\DeleteTransitGatewayMeteringPolicyEntryTrait;
     use DeleteTransitGatewayMulticastDomain\DeleteTransitGatewayMulticastDomainTrait;
+    use DeleteTransitGatewayNetworkFunctionAttachment\DeleteTransitGatewayNetworkFunctionAttachmentTrait;
     use DeleteTransitGatewayPeeringAttachment\DeleteTransitGatewayPeeringAttachmentTrait;
     use DeleteTransitGatewayPolicyTable\DeleteTransitGatewayPolicyTableTrait;
     use DeleteTransitGatewayPolicyTableEntry\DeleteTransitGatewayPolicyTableEntryTrait;
@@ -452,6 +455,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeTransitGatewayConnects\DescribeTransitGatewayConnectsTrait;
     use DescribeTransitGatewayMeteringPolicies\DescribeTransitGatewayMeteringPoliciesTrait;
     use DescribeTransitGatewayMulticastDomains\DescribeTransitGatewayMulticastDomainsTrait;
+    use DescribeTransitGatewayNetworkFunctionAttachments\DescribeTransitGatewayNetworkFunctionAttachmentsTrait;
     use DescribeTransitGatewayPeeringAttachments\DescribeTransitGatewayPeeringAttachmentsTrait;
     use DescribeTransitGatewayPolicyTables\DescribeTransitGatewayPolicyTablesTrait;
     use DescribeTransitGatewayRouteTableAnnouncements\DescribeTransitGatewayRouteTableAnnouncementsTrait;
@@ -524,6 +528,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DisassociateInstanceEventWindow\DisassociateInstanceEventWindowTrait;
     use DisassociateIpamByoasn\DisassociateIpamByoasnTrait;
     use DisassociateIpamResourceDiscovery\DisassociateIpamResourceDiscoveryTrait;
+    use DisassociateKmsKeyId\DisassociateKmsKeyIdTrait;
     use DisassociateNatGatewayAddress\DisassociateNatGatewayAddressTrait;
     use DisassociateNetworkingFlexCostAllocationPolicy\DisassociateNetworkingFlexCostAllocationPolicyTrait;
     use DisassociateRouteServer\DisassociateRouteServerTrait;
@@ -717,6 +722,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ModifyTransitGateway\ModifyTransitGatewayTrait;
     use ModifyTransitGatewayAttachmentNatConfiguration\ModifyTransitGatewayAttachmentNatConfigurationTrait;
     use ModifyTransitGatewayMeteringPolicy\ModifyTransitGatewayMeteringPolicyTrait;
+    use ModifyTransitGatewayNetworkFunctionAttachment\ModifyTransitGatewayNetworkFunctionAttachmentTrait;
     use ModifyTransitGatewayPolicyTableEntry\ModifyTransitGatewayPolicyTableEntryTrait;
     use ModifyTransitGatewayPrefixListReference\ModifyTransitGatewayPrefixListReferenceTrait;
     use ModifyTransitGatewayVpcAttachment\ModifyTransitGatewayVpcAttachmentTrait;

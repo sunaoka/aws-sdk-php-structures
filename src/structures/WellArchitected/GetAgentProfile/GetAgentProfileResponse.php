@@ -9,10 +9,11 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $displayName
  * @property string|null $description
  * @property string|null $businessOverview
- * @property list<'COST_OPTIMIZATION'|'SECURITY'|'RESILIENCE'|'PERFORMANCE'|'OPERATIONAL_EXCELLENCE'> $pillars
+ * @property list<'COST_OPTIMIZATION'|'SECURITY'|'RESILIENCE'|'PERFORMANCE'|'OPERATIONAL_EXCELLENCE'>|null $pillars
  * @property bool|null $deletionProtection
- * @property string $executionRoleArn
- * @property list<Shapes\AggregationConfiguration> $aggregationConfiguration
+ * @property 'STANDARD'|'BASIC'|'ORGANIZATIONAL'|null $profileType
+ * @property string|null $executionRoleArn
+ * @property list<Shapes\AggregationConfiguration>|null $aggregationConfiguration
  * @property string $arn
  * @property bool|null $eligibleForScheduledGeneration
  * @property bool|null $eligibleForArchitectureGeneration
@@ -22,6 +23,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string|null $lastModifiedBy
  * @property \Aws\Api\DateTimeResult|null $lastModifiedAt
+ * @property Shapes\OrganizationalAggregationConfiguration|null $organizationalAggregationConfiguration
  */
 class GetAgentProfileResponse extends Response
 {

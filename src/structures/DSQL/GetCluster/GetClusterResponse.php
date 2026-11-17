@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $tags
  * @property Shapes\EncryptionDetails|null $encryptionDetails
  * @property string|null $endpoint
+ * @property list<Shapes\MetricGroupResponse>|null $metricGroups
  */
 class GetClusterResponse extends Response
 {

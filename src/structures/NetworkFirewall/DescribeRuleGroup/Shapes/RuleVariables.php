@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property array<string, IPSet>|null $IPSets
  * @property array<string, PortSet>|null $PortSets
+ * @property array<string, ContextSet>|null $ContextSets
  */
 class RuleVariables extends Shape
 {
     /**
      * @param array{
      *     IPSets?: array<string, IPSet>|null,
-     *     PortSets?: array<string, PortSet>|null
+     *     PortSets?: array<string, PortSet>|null,
+     *     ContextSets?: array<string, ContextSet>|null
      * } $args
      */
     public function __construct(array $args = [])

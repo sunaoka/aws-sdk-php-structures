@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property float|null $distance
+ * @property QueryScores|null $scores
  * @property string $key
  * @property VectorMetadata|null $metadata
  */
@@ -14,6 +15,7 @@ class QueryOutputVector extends Shape
     /**
      * @param array{
      *     distance?: float|null,
+     *     scores?: QueryScores|null,
      *     key: string,
      *     metadata?: VectorMetadata|null
      * } $args

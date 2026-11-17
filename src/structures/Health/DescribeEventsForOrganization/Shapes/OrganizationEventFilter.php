@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'issue'|'accountNotification'|'scheduledChange'|'investigation'>|null $eventTypeCategories
  * @property list<'open'|'closed'|'upcoming'>|null $eventStatusCodes
  * @property list<'OPERATIONS'|'SECURITY'|'BILLING'>|null $personas
+ * @property array<string, list<string>>|null $tags
  */
 class OrganizationEventFilter extends Shape
 {
@@ -35,7 +36,8 @@ class OrganizationEventFilter extends Shape
      *     entityValues?: list<string>|null,
      *     eventTypeCategories?: list<'issue'|'accountNotification'|'scheduledChange'|'investigation'>|null,
      *     eventStatusCodes?: list<'open'|'closed'|'upcoming'>|null,
-     *     personas?: list<'OPERATIONS'|'SECURITY'|'BILLING'>|null
+     *     personas?: list<'OPERATIONS'|'SECURITY'|'BILLING'>|null,
+     *     tags?: array<string, list<string>>|null
      * } $args
      */
     public function __construct(array $args = [])

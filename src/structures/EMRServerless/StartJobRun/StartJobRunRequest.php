@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $name
  * @property 'BATCH'|'STREAMING'|null $mode
  * @property Shapes\RetryPolicy|null $retryPolicy
+ * @property Shapes\FlexExecution|null $flexExecution
  */
 class StartJobRunRequest extends Request
 {
@@ -31,7 +32,8 @@ class StartJobRunRequest extends Request
      *     executionTimeoutMinutes?: int<0, 1000000>|null,
      *     name?: string|null,
      *     mode?: 'BATCH'|'STREAMING'|null,
-     *     retryPolicy?: Shapes\RetryPolicy|null
+     *     retryPolicy?: Shapes\RetryPolicy|null,
+     *     flexExecution?: Shapes\FlexExecution|null
      * } $args
      */
     public function __construct(array $args)

@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MedicalScribePostStreamActionSettingsResponse|null $postStreamActionSettings
  * @property MedicalScribePostStreamActionsResult|null $postStreamActionResult
  * @property bool|null $encounterContextProvided
+ * @property bool|null $medicalCodingContextProvided
  * @property 'IN_PROGRESS'|'PAUSED'|'FAILED'|'COMPLETED'|null $streamStatus
  * @property \Aws\Api\DateTimeResult|null $streamCreationTime
  * @property \Aws\Api\DateTimeResult|null $streamEndTime
@@ -33,6 +34,7 @@ class MedicalScribeListeningSessionDetails extends Shape
      *     postStreamActionSettings?: MedicalScribePostStreamActionSettingsResponse|null,
      *     postStreamActionResult?: MedicalScribePostStreamActionsResult|null,
      *     encounterContextProvided?: bool|null,
+     *     medicalCodingContextProvided?: bool|null,
      *     streamStatus?: 'IN_PROGRESS'|'PAUSED'|'FAILED'|'COMPLETED'|null,
      *     streamCreationTime?: \Aws\Api\DateTimeResult|null,
      *     streamEndTime?: \Aws\Api\DateTimeResult|null

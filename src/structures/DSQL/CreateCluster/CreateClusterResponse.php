@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\EncryptionDetails|null $encryptionDetails
  * @property bool $deletionProtectionEnabled
  * @property string|null $endpoint
+ * @property list<Shapes\MetricGroupResponse>|null $metricGroups
  */
 class CreateClusterResponse extends Response
 {

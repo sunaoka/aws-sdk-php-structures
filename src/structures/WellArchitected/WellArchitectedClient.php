@@ -6,8 +6,11 @@ class WellArchitectedClient extends \Aws\WellArchitected\WellArchitectedClient
 {
     use AssociateLenses\AssociateLensesTrait;
     use AssociateProfiles\AssociateProfilesTrait;
+    use CreateAgentBasicProfile\CreateAgentBasicProfileTrait;
     use CreateAgentContext\CreateAgentContextTrait;
     use CreateAgentGoal\CreateAgentGoalTrait;
+    use CreateAgentOrganizationalProfile\CreateAgentOrganizationalProfileTrait;
+    use CreateAgentOrganizationalReport\CreateAgentOrganizationalReportTrait;
     use CreateAgentProfile\CreateAgentProfileTrait;
     use CreateLensShare\CreateLensShareTrait;
     use CreateLensVersion\CreateLensVersionTrait;
@@ -20,7 +23,10 @@ class WellArchitectedClient extends \Aws\WellArchitected\WellArchitectedClient
     use CreateWorkloadShare\CreateWorkloadShareTrait;
     use DeleteAgentContext\DeleteAgentContextTrait;
     use DeleteAgentGoal\DeleteAgentGoalTrait;
+    use DeleteAgentOrganizationalReport\DeleteAgentOrganizationalReportTrait;
     use DeleteAgentProfile\DeleteAgentProfileTrait;
+    use DeleteAgentProfilePolicy\DeleteAgentProfilePolicyTrait;
+    use DeleteAgentRecommendationPolicy\DeleteAgentRecommendationPolicyTrait;
     use DeleteLens\DeleteLensTrait;
     use DeleteLensShare\DeleteLensShareTrait;
     use DeleteProfile\DeleteProfileTrait;
@@ -34,9 +40,14 @@ class WellArchitectedClient extends \Aws\WellArchitected\WellArchitectedClient
     use ExportLens\ExportLensTrait;
     use GetAgentContext\GetAgentContextTrait;
     use GetAgentGoal\GetAgentGoalTrait;
+    use GetAgentOrganizationalReport\GetAgentOrganizationalReportTrait;
+    use GetAgentOrganizationalReportData\GetAgentOrganizationalReportDataTrait;
+    use GetAgentPreferences\GetAgentPreferencesTrait;
     use GetAgentProfile\GetAgentProfileTrait;
+    use GetAgentProfilePolicy\GetAgentProfilePolicyTrait;
     use GetAgentRecommendation\GetAgentRecommendationTrait;
     use GetAgentRecommendationGeneration\GetAgentRecommendationGenerationTrait;
+    use GetAgentRecommendationPolicy\GetAgentRecommendationPolicyTrait;
     use GetAnswer\GetAnswerTrait;
     use GetConsolidatedReport\GetConsolidatedReportTrait;
     use GetGlobalSettings\GetGlobalSettingsTrait;
@@ -54,6 +65,7 @@ class WellArchitectedClient extends \Aws\WellArchitected\WellArchitectedClient
     use ImportLens\ImportLensTrait;
     use ListAgentContexts\ListAgentContextsTrait;
     use ListAgentGoals\ListAgentGoalsTrait;
+    use ListAgentOrganizationalReports\ListAgentOrganizationalReportsTrait;
     use ListAgentProfiles\ListAgentProfilesTrait;
     use ListAgentRecommendationGenerations\ListAgentRecommendationGenerationsTrait;
     use ListAgentRecommendationItems\ListAgentRecommendationItemsTrait;
@@ -77,12 +89,17 @@ class WellArchitectedClient extends \Aws\WellArchitected\WellArchitectedClient
     use ListTemplateShares\ListTemplateSharesTrait;
     use ListWorkloadShares\ListWorkloadSharesTrait;
     use ListWorkloads\ListWorkloadsTrait;
+    use PutAgentPreferences\PutAgentPreferencesTrait;
+    use PutAgentProfilePolicy\PutAgentProfilePolicyTrait;
     use PutAgentRecommendationFeedback\PutAgentRecommendationFeedbackTrait;
+    use PutAgentRecommendationPolicy\PutAgentRecommendationPolicyTrait;
+    use SendAgentOrganizationalReportDataToS3\SendAgentOrganizationalReportDataToS3Trait;
     use StartAgentRecommendationGeneration\StartAgentRecommendationGenerationTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAgentContext\UpdateAgentContextTrait;
     use UpdateAgentGoal\UpdateAgentGoalTrait;
+    use UpdateAgentOrganizationalProfile\UpdateAgentOrganizationalProfileTrait;
     use UpdateAgentProfile\UpdateAgentProfileTrait;
     use UpdateAgentRecommendationStatus\UpdateAgentRecommendationStatusTrait;
     use UpdateAnswer\UpdateAnswerTrait;

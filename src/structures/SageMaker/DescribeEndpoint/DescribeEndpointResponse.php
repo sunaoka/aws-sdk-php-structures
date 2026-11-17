@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ExplainerConfig|null $ExplainerConfig
  * @property list<Shapes\ProductionVariantSummary>|null $ShadowProductionVariants
  * @property Shapes\MetricsConfig|null $MetricsConfig
+ * @property Shapes\CrossRegionTrafficConfig|null $CrossRegionTrafficConfig
  */
 class DescribeEndpointResponse extends Response
 {

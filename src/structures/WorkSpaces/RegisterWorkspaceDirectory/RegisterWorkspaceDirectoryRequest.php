@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $WorkspaceDirectoryName
  * @property string|null $WorkspaceDirectoryDescription
  * @property 'CUSTOMER_MANAGED'|'AWS_DIRECTORY_SERVICE'|'AWS_IAM_IDENTITY_CENTER'|null $UserIdentityType
+ * @property 'LOCAL_USER'|'DOMAIN_JOIN'|'ENTRA_JOIN'|'SELF_MANAGED'|null $WorkspaceOsUserMode
  * @property string|null $IdcInstanceArn
  * @property Shapes\MicrosoftEntraConfig|null $MicrosoftEntraConfig
  * @property 'PERSONAL'|'POOLS'|null $WorkspaceType
@@ -30,6 +31,7 @@ class RegisterWorkspaceDirectoryRequest extends Request
      *     WorkspaceDirectoryName?: string|null,
      *     WorkspaceDirectoryDescription?: string|null,
      *     UserIdentityType?: 'CUSTOMER_MANAGED'|'AWS_DIRECTORY_SERVICE'|'AWS_IAM_IDENTITY_CENTER'|null,
+     *     WorkspaceOsUserMode?: 'LOCAL_USER'|'DOMAIN_JOIN'|'ENTRA_JOIN'|'SELF_MANAGED'|null,
      *     IdcInstanceArn?: string|null,
      *     MicrosoftEntraConfig?: Shapes\MicrosoftEntraConfig|null,
      *     WorkspaceType?: 'PERSONAL'|'POOLS'|null,

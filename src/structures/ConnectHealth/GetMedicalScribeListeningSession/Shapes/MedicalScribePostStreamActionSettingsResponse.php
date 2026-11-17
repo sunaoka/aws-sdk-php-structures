@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $outputS3Uri
  * @property ClinicalNoteGenerationSettingsResponse $clinicalNoteGenerationSettings
+ * @property MedicalCodeGenerationSettingsResponse|null $medicalCodeGenerationSettings
  */
 class MedicalScribePostStreamActionSettingsResponse extends Shape
 {
     /**
      * @param array{
      *     outputS3Uri: string,
-     *     clinicalNoteGenerationSettings: ClinicalNoteGenerationSettingsResponse
+     *     clinicalNoteGenerationSettings: ClinicalNoteGenerationSettingsResponse,
+     *     medicalCodeGenerationSettings?: MedicalCodeGenerationSettingsResponse|null
      * } $args
      */
     public function __construct(array $args)

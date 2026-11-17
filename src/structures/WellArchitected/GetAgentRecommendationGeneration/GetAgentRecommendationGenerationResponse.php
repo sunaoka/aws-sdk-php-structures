@@ -14,12 +14,14 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string|null $lastModifiedBy
  * @property \Aws\Api\DateTimeResult|null $lastModifiedAt
- * @property Shapes\Document|null $additionalContext
- * @property Shapes\Scope|null $scope
+ * @property 'ONDEMAND'|'SCHEDULED'|'BASIC'|null $generationType
+ * @property list<'RESOURCE'|'ARCHITECTURE'|'APPLICATION'>|null $generationRecommendationTypes
  * @property \Aws\Api\DateTimeResult|null $startedAt
  * @property \Aws\Api\DateTimeResult|null $endedAt
- * @property Shapes\Progress|null $progress
  * @property Shapes\ErrorDetails|null $errorDetails
+ * @property Shapes\SensitiveDocument|null $additionalContext
+ * @property Shapes\Scope|null $scope
+ * @property Shapes\Progress|null $progress
  */
 class GetAgentRecommendationGenerationResponse extends Response
 {

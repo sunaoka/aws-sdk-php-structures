@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $CompletionDurationMinutes
  * @property \Aws\Api\DateTimeResult|null $CompletionTime
  * @property int|null $FullSnapshotSizeInBytes
+ * @property list<Shapes\AssociatedKmsKey>|null $AssociatedKmsKeys
  * @property string|null $SnapshotId
  * @property string|null $VolumeId
  * @property 'pending'|'completed'|'error'|'recoverable'|'recovering'|null $State

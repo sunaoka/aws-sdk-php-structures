@@ -26,6 +26,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<NatGatewayCreateMapping>|null $NatGatewayCreateMappings
  * @property ProxySettings|null $ProxySettings
  * @property VpcEndpoint|null $VpcEndpoint
+ * @property string|null $ContextStoreId
+ * @property string|null $ContextStoreOwnerAccountId
  * @property 'NAT_ALL'|'NAT_NONE'|null $TransparentFilteringNatScope
  */
 class Firewall extends Shape
@@ -53,6 +55,8 @@ class Firewall extends Shape
      *     NatGatewayCreateMappings?: list<NatGatewayCreateMapping>|null,
      *     ProxySettings?: ProxySettings|null,
      *     VpcEndpoint?: VpcEndpoint|null,
+     *     ContextStoreId?: string|null,
+     *     ContextStoreOwnerAccountId?: string|null,
      *     TransparentFilteringNatScope?: 'NAT_ALL'|'NAT_NONE'|null
      * } $args
      */

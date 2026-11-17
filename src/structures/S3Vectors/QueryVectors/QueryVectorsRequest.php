@@ -9,11 +9,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $indexName
  * @property string|null $indexArn
  * @property int<1, max> $topK
- * @property Shapes\VectorData $queryVector
+ * @property Shapes\VectorData|null $queryVector
  * @property Shapes\Document|null $filter
  * @property 'CLASSIC'|'ENHANCED'|null $queryMode
  * @property bool|null $returnMetadata
  * @property bool|null $returnDistance
+ * @property list<Shapes\QueryText>|null $queryTexts
+ * @property bool|null $returnScores
  * @property string|null $nextToken
  */
 class QueryVectorsRequest extends Request
@@ -24,11 +26,13 @@ class QueryVectorsRequest extends Request
      *     indexName?: string|null,
      *     indexArn?: string|null,
      *     topK: int<1, max>,
-     *     queryVector: Shapes\VectorData,
+     *     queryVector?: Shapes\VectorData|null,
      *     filter?: Shapes\Document|null,
      *     queryMode?: 'CLASSIC'|'ENHANCED'|null,
      *     returnMetadata?: bool|null,
      *     returnDistance?: bool|null,
+     *     queryTexts?: list<Shapes\QueryText>|null,
+     *     returnScores?: bool|null,
      *     nextToken?: string|null
      * } $args
      */

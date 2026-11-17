@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $CompletionDurationMinutes
  * @property \Aws\Api\DateTimeResult|null $CompletionTime
  * @property int|null $FullSnapshotSizeInBytes
+ * @property list<AssociatedKmsKey>|null $AssociatedKmsKeys
  * @property string|null $SnapshotId
  * @property string|null $VolumeId
  * @property 'pending'|'completed'|'error'|'recoverable'|'recovering'|null $State
@@ -44,6 +45,7 @@ class Snapshot extends Shape
      *     CompletionDurationMinutes?: int|null,
      *     CompletionTime?: \Aws\Api\DateTimeResult|null,
      *     FullSnapshotSizeInBytes?: int|null,
+     *     AssociatedKmsKeys?: list<AssociatedKmsKey>|null,
      *     SnapshotId?: string|null,
      *     VolumeId?: string|null,
      *     State?: 'pending'|'completed'|'error'|'recoverable'|'recovering'|null,

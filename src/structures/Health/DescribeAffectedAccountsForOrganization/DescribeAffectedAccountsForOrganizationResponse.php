@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<string>|null $affectedAccounts
+ * @property list<Shapes\AccountEntity>|null $affectedAccountEntities
  * @property 'PUBLIC'|'ACCOUNT_SPECIFIC'|'NONE'|null $eventScopeCode
  * @property string|null $nextToken
  */

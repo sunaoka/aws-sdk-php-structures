@@ -6,12 +6,14 @@ class NetworkManagerClient extends \Aws\NetworkManager\NetworkManagerClient
 {
     use AcceptAttachment\AcceptAttachmentTrait;
     use AssociateConnectPeer\AssociateConnectPeerTrait;
+    use AssociateContextStore\AssociateContextStoreTrait;
     use AssociateCustomerGateway\AssociateCustomerGatewayTrait;
     use AssociateLink\AssociateLinkTrait;
     use AssociateTransitGatewayConnectPeer\AssociateTransitGatewayConnectPeerTrait;
     use CreateConnectAttachment\CreateConnectAttachmentTrait;
     use CreateConnectPeer\CreateConnectPeerTrait;
     use CreateConnection\CreateConnectionTrait;
+    use CreateContextStore\CreateContextStoreTrait;
     use CreateCoreNetwork\CreateCoreNetworkTrait;
     use CreateCoreNetworkPrefixListAssociation\CreateCoreNetworkPrefixListAssociationTrait;
     use CreateDevice\CreateDeviceTrait;
@@ -26,6 +28,7 @@ class NetworkManagerClient extends \Aws\NetworkManager\NetworkManagerClient
     use DeleteAttachment\DeleteAttachmentTrait;
     use DeleteConnectPeer\DeleteConnectPeerTrait;
     use DeleteConnection\DeleteConnectionTrait;
+    use DeleteContextStore\DeleteContextStoreTrait;
     use DeleteCoreNetwork\DeleteCoreNetworkTrait;
     use DeleteCoreNetworkPolicyVersion\DeleteCoreNetworkPolicyVersionTrait;
     use DeleteCoreNetworkPrefixListAssociation\DeleteCoreNetworkPrefixListAssociationTrait;
@@ -38,6 +41,7 @@ class NetworkManagerClient extends \Aws\NetworkManager\NetworkManagerClient
     use DeregisterTransitGateway\DeregisterTransitGatewayTrait;
     use DescribeGlobalNetworks\DescribeGlobalNetworksTrait;
     use DisassociateConnectPeer\DisassociateConnectPeerTrait;
+    use DisassociateContextStore\DisassociateContextStoreTrait;
     use DisassociateCustomerGateway\DisassociateCustomerGatewayTrait;
     use DisassociateLink\DisassociateLinkTrait;
     use DisassociateTransitGatewayConnectPeer\DisassociateTransitGatewayConnectPeerTrait;
@@ -46,6 +50,9 @@ class NetworkManagerClient extends \Aws\NetworkManager\NetworkManagerClient
     use GetConnectPeer\GetConnectPeerTrait;
     use GetConnectPeerAssociations\GetConnectPeerAssociationsTrait;
     use GetConnections\GetConnectionsTrait;
+    use GetContextStore\GetContextStoreTrait;
+    use GetContextStoreAssociation\GetContextStoreAssociationTrait;
+    use GetContextVersion\GetContextVersionTrait;
     use GetCoreNetwork\GetCoreNetworkTrait;
     use GetCoreNetworkChangeEvents\GetCoreNetworkChangeEventsTrait;
     use GetCoreNetworkChangeSet\GetCoreNetworkChangeSetTrait;
@@ -73,6 +80,10 @@ class NetworkManagerClient extends \Aws\NetworkManager\NetworkManagerClient
     use ListAttachmentRoutingPolicyAssociations\ListAttachmentRoutingPolicyAssociationsTrait;
     use ListAttachments\ListAttachmentsTrait;
     use ListConnectPeers\ListConnectPeersTrait;
+    use ListContextChanges\ListContextChangesTrait;
+    use ListContextStoreAssociations\ListContextStoreAssociationsTrait;
+    use ListContextStores\ListContextStoresTrait;
+    use ListContexts\ListContextsTrait;
     use ListCoreNetworkPolicyVersions\ListCoreNetworkPolicyVersionsTrait;
     use ListCoreNetworkPrefixListAssociations\ListCoreNetworkPrefixListAssociationsTrait;
     use ListCoreNetworkRoutingInformation\ListCoreNetworkRoutingInformationTrait;
@@ -93,6 +104,7 @@ class NetworkManagerClient extends \Aws\NetworkManager\NetworkManagerClient
     use UntagResource\UntagResourceTrait;
     use UpdateAttachmentNatConfiguration\UpdateAttachmentNatConfigurationTrait;
     use UpdateConnection\UpdateConnectionTrait;
+    use UpdateContextStore\UpdateContextStoreTrait;
     use UpdateCoreNetwork\UpdateCoreNetworkTrait;
     use UpdateDevice\UpdateDeviceTrait;
     use UpdateDirectConnectGatewayAttachment\UpdateDirectConnectGatewayAttachmentTrait;

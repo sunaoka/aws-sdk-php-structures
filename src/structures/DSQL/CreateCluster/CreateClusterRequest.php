@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientToken
  * @property Shapes\MultiRegionProperties|null $multiRegionProperties
  * @property string|null $policy
+ * @property list<Shapes\MetricGroupRequest>|null $metricGroups
  * @property bool|null $bypassPolicyLockoutSafetyCheck
  */
 class CreateClusterRequest extends Request
@@ -23,6 +24,7 @@ class CreateClusterRequest extends Request
      *     clientToken?: string|null,
      *     multiRegionProperties?: Shapes\MultiRegionProperties|null,
      *     policy?: string|null,
+     *     metricGroups?: list<Shapes\MetricGroupRequest>|null,
      *     bypassPolicyLockoutSafetyCheck?: bool|null
      * } $args
      */

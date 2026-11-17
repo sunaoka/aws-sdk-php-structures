@@ -16,10 +16,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $OperatorRole
  * @property 'PENDING'|'ACTIVE'|'INACTIVE'|'FAILED'|'DELETING'|'DELETE_FAILED'|null $State
  * @property string|null $StateReason
- * @property 'DisallowedByVpcEncryptionControl'|'Ec2RequestLimitExceeded'|'InsufficientRolePermissions'|'InternalError'|'InvalidSecurityGroup'|'InvalidSubnet'|'SecurityGroupsPerInterfaceLimitExceeded'|'SubnetOutOfIPAddresses'|null $StateReasonCode
+ * @property 'DisallowedByVpcEncryptionControl'|'Ec2RequestLimitExceeded'|'InsufficientRolePermissions'|'InternalError'|'InternetGatewayNotAttached'|'InvalidSecurityGroup'|'InvalidSubnet'|'SecurityGroupsPerInterfaceLimitExceeded'|'SubnetOutOfIPAddresses'|null $StateReasonCode
  * @property 'Successful'|'Failed'|'InProgress'|null $LastUpdateStatus
  * @property string|null $LastUpdateStatusReason
- * @property 'DisallowedByVpcEncryptionControl'|'Ec2RequestLimitExceeded'|'InsufficientRolePermissions'|'InternalError'|'InvalidSecurityGroup'|'InvalidSubnet'|'SecurityGroupsPerInterfaceLimitExceeded'|'SubnetOutOfIPAddresses'|null $LastUpdateStatusReasonCode
+ * @property 'DisallowedByVpcEncryptionControl'|'Ec2RequestLimitExceeded'|'InsufficientRolePermissions'|'InternalError'|'InternetGatewayNotAttached'|'InvalidSecurityGroup'|'InvalidSubnet'|'SecurityGroupsPerInterfaceLimitExceeded'|'SubnetOutOfIPAddresses'|null $LastUpdateStatusReasonCode
  * @property \Aws\Api\DateTimeResult|null $LastModified
  */
 class GetNetworkConnectorResponse extends Response

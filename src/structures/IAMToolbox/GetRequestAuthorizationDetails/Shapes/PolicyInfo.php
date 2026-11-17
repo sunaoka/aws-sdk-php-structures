@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $inline
  * @property string|null $uri
  * @property list<AttachedTo>|null $attachedTo
+ * @property array<string, string>|null $policySource
  */
 class PolicyInfo extends Shape
 {
@@ -17,7 +18,8 @@ class PolicyInfo extends Shape
      *     type?: 'IDENTITY_BASED_POLICY'|'RESOURCE_BASED_POLICY'|'PERMISSIONS_BOUNDARY'|'SESSION_POLICY'|'SERVICE_CONTROL_POLICY'|'RESOURCE_CONTROL_POLICY'|'VPC_ENDPOINT_POLICY'|null,
      *     inline?: bool|null,
      *     uri?: string|null,
-     *     attachedTo?: list<AttachedTo>|null
+     *     attachedTo?: list<AttachedTo>|null,
+     *     policySource?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

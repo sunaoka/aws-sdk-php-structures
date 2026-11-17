@@ -34,6 +34,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\CapacityProviderConfig|null $CapacityProviderConfig
  * @property Shapes\DurableConfig|null $DurableConfig
  * @property Shapes\FunctionRuntimeConfig|null $RuntimeConfig
+ * @property Shapes\AcceleratorConfig|null $AcceleratorConfig
  */
 class CreateFunctionRequest extends Request
 {
@@ -67,7 +68,8 @@ class CreateFunctionRequest extends Request
      *     TenancyConfig?: Shapes\TenancyConfig|null,
      *     CapacityProviderConfig?: Shapes\CapacityProviderConfig|null,
      *     DurableConfig?: Shapes\DurableConfig|null,
-     *     RuntimeConfig?: Shapes\FunctionRuntimeConfig|null
+     *     RuntimeConfig?: Shapes\FunctionRuntimeConfig|null,
+     *     AcceleratorConfig?: Shapes\AcceleratorConfig|null
      * } $args
      */
     public function __construct(array $args)

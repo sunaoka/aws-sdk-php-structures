@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\VpcConfig|null $VpcConfig
  * @property bool|null $EnableNetworkIsolation
  * @property Shapes\MetricsConfig|null $MetricsConfig
+ * @property Shapes\CrossRegionTrafficConfig|null $CrossRegionTrafficConfig
  */
 class CreateEndpointConfigRequest extends Request
 {
@@ -33,7 +34,8 @@ class CreateEndpointConfigRequest extends Request
      *     ExecutionRoleArn?: string|null,
      *     VpcConfig?: Shapes\VpcConfig|null,
      *     EnableNetworkIsolation?: bool|null,
-     *     MetricsConfig?: Shapes\MetricsConfig|null
+     *     MetricsConfig?: Shapes\MetricsConfig|null,
+     *     CrossRegionTrafficConfig?: Shapes\CrossRegionTrafficConfig|null
      * } $args
      */
     public function __construct(array $args)

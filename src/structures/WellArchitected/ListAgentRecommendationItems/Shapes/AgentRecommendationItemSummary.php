@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string|null $lastModifiedBy
  * @property \Aws\Api\DateTimeResult|null $lastModifiedAt
+ * @property AutoRemediation|null $autoRemediation
  */
 class AgentRecommendationItemSummary extends Shape
 {
@@ -25,7 +26,8 @@ class AgentRecommendationItemSummary extends Shape
      *     createdBy: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     lastModifiedBy?: string|null,
-     *     lastModifiedAt?: \Aws\Api\DateTimeResult|null
+     *     lastModifiedAt?: \Aws\Api\DateTimeResult|null,
+     *     autoRemediation?: AutoRemediation|null
      * } $args
      */
     public function __construct(array $args)

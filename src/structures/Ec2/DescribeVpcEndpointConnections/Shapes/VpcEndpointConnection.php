@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Tag>|null $Tags
  * @property string|null $VpcEndpointRegion
  * @property list<PayerResponsibilityEntry>|null $PayerResponsibilities
+ * @property string|null $TransitGatewayAttachmentId
+ * @property string|null $TransitGatewayAttachmentOwner
  */
 class VpcEndpointConnection extends Shape
 {
@@ -35,7 +37,9 @@ class VpcEndpointConnection extends Shape
      *     VpcEndpointConnectionId?: string|null,
      *     Tags?: list<Tag>|null,
      *     VpcEndpointRegion?: string|null,
-     *     PayerResponsibilities?: list<PayerResponsibilityEntry>|null
+     *     PayerResponsibilities?: list<PayerResponsibilityEntry>|null,
+     *     TransitGatewayAttachmentId?: string|null,
+     *     TransitGatewayAttachmentOwner?: string|null
      * } $args
      */
     public function __construct(array $args = [])

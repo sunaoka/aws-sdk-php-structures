@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Principal
  * @property string|null $ServicePermissionId
  * @property string|null $ServiceId
+ * @property 'vpc-endpoint'|'transit-gateway-attachment'|null $PermissionType
  */
 class AddedPrincipal extends Shape
 {
@@ -17,7 +18,8 @@ class AddedPrincipal extends Shape
      *     PrincipalType?: 'All'|'Service'|'OrganizationUnit'|'Account'|'User'|'Role'|null,
      *     Principal?: string|null,
      *     ServicePermissionId?: string|null,
-     *     ServiceId?: string|null
+     *     ServiceId?: string|null,
+     *     PermissionType?: 'vpc-endpoint'|'transit-gateway-attachment'|null
      * } $args
      */
     public function __construct(array $args = [])

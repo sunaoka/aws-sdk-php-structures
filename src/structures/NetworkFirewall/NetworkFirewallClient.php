@@ -44,11 +44,13 @@ class NetworkFirewallClient extends \Aws\NetworkFirewall\NetworkFirewallClient
     use GetAnalysisReportResults\GetAnalysisReportResultsTrait;
     use ListAnalysisReports\ListAnalysisReportsTrait;
     use ListContainerAssociations\ListContainerAssociationsTrait;
+    use ListContextStores\ListContextStoresTrait;
     use ListFirewallPolicies\ListFirewallPoliciesTrait;
     use ListFirewallPoliciesV2\ListFirewallPoliciesV2Trait;
     use ListFirewalls\ListFirewallsTrait;
     use ListFlowOperationResults\ListFlowOperationResultsTrait;
     use ListFlowOperations\ListFlowOperationsTrait;
+    use ListResourcesInContextStore\ListResourcesInContextStoreTrait;
     use ListRuleGroups\ListRuleGroupsTrait;
     use ListTLSInspectionConfigurations\ListTLSInspectionConfigurationsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;

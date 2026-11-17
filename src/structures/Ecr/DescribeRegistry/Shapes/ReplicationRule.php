@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<ReplicationDestination> $destinations
  * @property list<RepositoryFilter>|null $repositoryFilters
+ * @property DeleteReplication|null $deleteReplication
  */
 class ReplicationRule extends Shape
 {
     /**
      * @param array{
      *     destinations: list<ReplicationDestination>,
-     *     repositoryFilters?: list<RepositoryFilter>|null
+     *     repositoryFilters?: list<RepositoryFilter>|null,
+     *     deleteReplication?: DeleteReplication|null
      * } $args
      */
     public function __construct(array $args)

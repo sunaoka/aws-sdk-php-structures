@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $entityArns
  * @property list<string>|null $entityValues
  * @property list<'issue'|'accountNotification'|'scheduledChange'|'investigation'>|null $eventTypeCategories
- * @property list<array<string, string>>|null $tags
+ * @property array<string, list<string>>|null $tags
  * @property list<'open'|'closed'|'upcoming'>|null $eventStatusCodes
  * @property list<'OPERATIONS'|'SECURITY'|'BILLING'>|null $personas
  */
@@ -37,7 +37,7 @@ class EventFilter extends Shape
      *     entityArns?: list<string>|null,
      *     entityValues?: list<string>|null,
      *     eventTypeCategories?: list<'issue'|'accountNotification'|'scheduledChange'|'investigation'>|null,
-     *     tags?: list<array<string, string>>|null,
+     *     tags?: array<string, list<string>>|null,
      *     eventStatusCodes?: list<'open'|'closed'|'upcoming'>|null,
      *     personas?: list<'OPERATIONS'|'SECURITY'|'BILLING'>|null
      * } $args

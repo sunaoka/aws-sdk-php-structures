@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool|null $eligibleForScheduledGeneration
  * @property bool|null $eligibleForArchitectureGeneration
  * @property array<string, string>|null $fieldErrors
- * @property list<Shapes\Tag>|null $tags
  * @property string $createdBy
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string|null $lastModifiedBy

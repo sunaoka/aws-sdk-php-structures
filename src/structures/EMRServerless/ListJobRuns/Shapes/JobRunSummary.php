@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, max>|null $attempt
  * @property \Aws\Api\DateTimeResult|null $attemptCreatedAt
  * @property \Aws\Api\DateTimeResult|null $attemptUpdatedAt
+ * @property FlexExecution|null $flexExecution
  */
 class JobRunSummary extends Shape
 {
@@ -41,7 +42,8 @@ class JobRunSummary extends Shape
      *     type?: string|null,
      *     attempt?: int<1, max>|null,
      *     attemptCreatedAt?: \Aws\Api\DateTimeResult|null,
-     *     attemptUpdatedAt?: \Aws\Api\DateTimeResult|null
+     *     attemptUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     flexExecution?: FlexExecution|null
      * } $args
      */
     public function __construct(array $args)
