@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $name
  * @property string|null $description
  * @property list<Shapes\SourceConfiguration>|null $sourceConfigurations
+ * @property 'MIGRATION'|'NEW_NETWORK'|null $definitionType
  * @property Shapes\TargetS3Configuration|null $targetS3Configuration
  * @property Shapes\TargetNetwork|null $targetNetwork
  * @property 'SINGLE_ACCOUNT'|'MULTI_ACCOUNT'|null $targetDeployment

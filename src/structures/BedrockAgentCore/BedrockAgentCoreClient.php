@@ -15,6 +15,7 @@ class BedrockAgentCoreClient extends \Aws\BedrockAgentCore\BedrockAgentCoreClien
     use DeleteABTest\DeleteABTestTrait;
     use DeleteBatchEvaluation\DeleteBatchEvaluationTrait;
     use DeleteCapacityProviderSession\DeleteCapacityProviderSessionTrait;
+    use DeleteDatasetGeneration\DeleteDatasetGenerationTrait;
     use DeleteEvent\DeleteEventTrait;
     use DeleteMemoryRecord\DeleteMemoryRecordTrait;
     use DeletePaymentInstrument\DeletePaymentInstrumentTrait;
@@ -23,9 +24,11 @@ class BedrockAgentCoreClient extends \Aws\BedrockAgentCore\BedrockAgentCoreClien
     use Evaluate\EvaluateTrait;
     use GetABTest\GetABTestTrait;
     use GetAgentCard\GetAgentCardTrait;
+    use GetAgentInsight\GetAgentInsightTrait;
     use GetBatchEvaluation\GetBatchEvaluationTrait;
     use GetBrowserSession\GetBrowserSessionTrait;
     use GetCodeInterpreterSession\GetCodeInterpreterSessionTrait;
+    use GetDatasetGeneration\GetDatasetGenerationTrait;
     use GetEvent\GetEventTrait;
     use GetMemoryRecord\GetMemoryRecordTrait;
     use GetPaymentInstrument\GetPaymentInstrumentTrait;
@@ -47,9 +50,11 @@ class BedrockAgentCoreClient extends \Aws\BedrockAgentCore\BedrockAgentCoreClien
     use InvokeWebSearch\InvokeWebSearchTrait;
     use ListABTests\ListABTestsTrait;
     use ListActors\ListActorsTrait;
+    use ListAgentInsights\ListAgentInsightsTrait;
     use ListBatchEvaluations\ListBatchEvaluationsTrait;
     use ListBrowserSessions\ListBrowserSessionsTrait;
     use ListCodeInterpreterSessions\ListCodeInterpreterSessionsTrait;
+    use ListDatasetGenerations\ListDatasetGenerationsTrait;
     use ListEvents\ListEventsTrait;
     use ListMemoryExtractionJobs\ListMemoryExtractionJobsTrait;
     use ListMemoryRecords\ListMemoryRecordsTrait;
@@ -64,6 +69,7 @@ class BedrockAgentCoreClient extends \Aws\BedrockAgentCore\BedrockAgentCoreClien
     use StartBatchEvaluation\StartBatchEvaluationTrait;
     use StartBrowserSession\StartBrowserSessionTrait;
     use StartCodeInterpreterSession\StartCodeInterpreterSessionTrait;
+    use StartDatasetGeneration\StartDatasetGenerationTrait;
     use StartMemoryExtractionJob\StartMemoryExtractionJobTrait;
     use StartRecommendation\StartRecommendationTrait;
     use StopBatchEvaluation\StopBatchEvaluationTrait;
@@ -71,5 +77,6 @@ class BedrockAgentCoreClient extends \Aws\BedrockAgentCore\BedrockAgentCoreClien
     use StopCodeInterpreterSession\StopCodeInterpreterSessionTrait;
     use StopRuntimeSession\StopRuntimeSessionTrait;
     use UpdateABTest\UpdateABTestTrait;
+    use UpdateAgentInsight\UpdateAgentInsightTrait;
     use UpdateBrowserStream\UpdateBrowserStreamTrait;
 }

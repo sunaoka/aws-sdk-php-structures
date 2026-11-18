@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Initiator|null $Initiator
  * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|'SHA512'|'MD5'|'XXHASH64'|'XXHASH3'|'XXHASH128'|null $ChecksumAlgorithm
  * @property 'COMPOSITE'|'FULL_OBJECT'|null $ChecksumType
+ * @property string|null $VersionId
  */
 class MultipartUpload extends Shape
 {
@@ -25,7 +26,8 @@ class MultipartUpload extends Shape
      *     Owner?: Owner|null,
      *     Initiator?: Initiator|null,
      *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|'SHA512'|'MD5'|'XXHASH64'|'XXHASH3'|'XXHASH128'|null,
-     *     ChecksumType?: 'COMPOSITE'|'FULL_OBJECT'|null
+     *     ChecksumType?: 'COMPOSITE'|'FULL_OBJECT'|null,
+     *     VersionId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

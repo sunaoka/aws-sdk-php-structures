@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property 'requester'|null $RequestCharged
+ * @property string|null $VersionId
  */
 class AbortMultipartUploadResponse extends Response
 {

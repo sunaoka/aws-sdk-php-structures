@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DurableExecutionArn
  * @property string $DurableExecutionName
  * @property string $FunctionArn
- * @property 'RUNNING'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'STOPPED' $Status
+ * @property 'RUNNING'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'STOPPED'|'DELETING'|'PAUSING'|'PAUSED' $Status
  * @property \Aws\Api\DateTimeResult $StartTimestamp
  * @property \Aws\Api\DateTimeResult|null $EndTimestamp
  * @property string|null $KMSKeyArn
@@ -20,7 +20,7 @@ class Execution extends Shape
      *     DurableExecutionArn: string,
      *     DurableExecutionName: string,
      *     FunctionArn: string,
-     *     Status: 'RUNNING'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'STOPPED',
+     *     Status: 'RUNNING'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'STOPPED'|'DELETING'|'PAUSING'|'PAUSED',
      *     StartTimestamp: \Aws\Api\DateTimeResult,
      *     EndTimestamp?: \Aws\Api\DateTimeResult|null,
      *     KMSKeyArn?: string|null

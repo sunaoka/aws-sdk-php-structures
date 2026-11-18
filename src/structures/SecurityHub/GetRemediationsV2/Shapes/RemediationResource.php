@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property string|null $ResourceGuid
  * @property string $ResourceRegion
- * @property 'Azure'|'AWS' $CloudProvider
+ * @property 'Azure'|'AWS'|'GCP' $CloudProvider
  */
 class RemediationResource extends Shape
 {
@@ -29,7 +29,7 @@ class RemediationResource extends Shape
      *     Id: string,
      *     ResourceGuid?: string|null,
      *     ResourceRegion: string,
-     *     CloudProvider: 'Azure'|'AWS'
+     *     CloudProvider: 'Azure'|'AWS'|'GCP'
      * } $args
      */
     public function __construct(array $args)

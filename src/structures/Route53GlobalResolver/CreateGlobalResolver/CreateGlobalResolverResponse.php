@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $description
  * @property string $dnsName
  * @property 'IPV4'|'DUAL_STACK'|null $ipAddressType
+ * @property 'ENABLED_RESERVED'|'DISABLED_RESERVED'|'DISABLED_RELEASED'|null $publicIpStatus
  * @property list<string> $ipv4Addresses
  * @property list<string>|null $ipv6Addresses
  * @property string $name

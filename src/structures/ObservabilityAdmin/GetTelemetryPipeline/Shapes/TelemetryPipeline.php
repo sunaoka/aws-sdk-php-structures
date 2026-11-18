@@ -13,6 +13,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|null $Status
  * @property TelemetryPipelineStatusReason|null $StatusReason
  * @property array<string, string>|null $Tags
+ * @property int|null $LastRefreshTimeStamp
+ * @property SourceProgress|null $SourceProgress
+ * @property ConfigurationSummary|null $ConfigurationSummary
  */
 class TelemetryPipeline extends Shape
 {
@@ -25,7 +28,10 @@ class TelemetryPipeline extends Shape
      *     Configuration?: TelemetryPipelineConfiguration|null,
      *     Status?: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|null,
      *     StatusReason?: TelemetryPipelineStatusReason|null,
-     *     Tags?: array<string, string>|null
+     *     Tags?: array<string, string>|null,
+     *     LastRefreshTimeStamp?: int|null,
+     *     SourceProgress?: SourceProgress|null,
+     *     ConfigurationSummary?: ConfigurationSummary|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'READY'|'UPDATING'|null $UpdateStatus
  * @property array<string, ParameterConfiguration>|null $Parameters
  * @property string|null $LastUpdateReason
- * @property 'AWS'|'Azure'|null $Provider
+ * @property 'AWS'|'Azure'|'GCP'|null $Provider
  */
 class SecurityControl extends Shape
 {
@@ -31,7 +31,7 @@ class SecurityControl extends Shape
      *     UpdateStatus?: 'READY'|'UPDATING'|null,
      *     Parameters?: array<string, ParameterConfiguration>|null,
      *     LastUpdateReason?: string|null,
-     *     Provider?: 'AWS'|'Azure'|null
+     *     Provider?: 'AWS'|'Azure'|'GCP'|null
      * } $args
      */
     public function __construct(array $args)

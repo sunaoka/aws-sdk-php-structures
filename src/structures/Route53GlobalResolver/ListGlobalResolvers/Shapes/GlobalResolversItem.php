@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $ipv4Addresses
  * @property list<string>|null $ipv6Addresses
  * @property 'IPV4'|'DUAL_STACK'|null $ipAddressType
+ * @property 'ENABLED_RESERVED'|'DISABLED_RESERVED'|'DISABLED_RELEASED'|null $publicIpStatus
  */
 class GlobalResolversItem extends Shape
 {
@@ -37,7 +38,8 @@ class GlobalResolversItem extends Shape
      *     status: 'CREATING'|'OPERATIONAL'|'UPDATING'|'DELETING',
      *     ipv4Addresses: list<string>,
      *     ipv6Addresses?: list<string>|null,
-     *     ipAddressType?: 'IPV4'|'DUAL_STACK'|null
+     *     ipAddressType?: 'IPV4'|'DUAL_STACK'|null,
+     *     publicIpStatus?: 'ENABLED_RESERVED'|'DISABLED_RESERVED'|'DISABLED_RELEASED'|null
      * } $args
      */
     public function __construct(array $args)

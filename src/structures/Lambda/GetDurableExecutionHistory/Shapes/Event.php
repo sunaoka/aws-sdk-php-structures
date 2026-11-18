@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Lambda\GetDurableExecutionHistory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ExecutionStarted'|'ExecutionSucceeded'|'ExecutionFailed'|'ExecutionTimedOut'|'ExecutionStopped'|'ContextStarted'|'ContextSucceeded'|'ContextFailed'|'WaitStarted'|'WaitSucceeded'|'WaitCancelled'|'StepStarted'|'StepSucceeded'|'StepFailed'|'ChainedInvokeStarted'|'ChainedInvokeSucceeded'|'ChainedInvokeFailed'|'ChainedInvokeTimedOut'|'ChainedInvokeStopped'|'CallbackStarted'|'CallbackSucceeded'|'CallbackFailed'|'CallbackTimedOut'|'InvocationCompleted'|null $EventType
+ * @property 'ExecutionStarted'|'ExecutionSucceeded'|'ExecutionFailed'|'ExecutionTimedOut'|'ExecutionStopped'|'ContextStarted'|'ContextSucceeded'|'ContextFailed'|'WaitStarted'|'WaitSucceeded'|'WaitCancelled'|'StepStarted'|'StepSucceeded'|'StepFailed'|'ChainedInvokeStarted'|'ChainedInvokeSucceeded'|'ChainedInvokeFailed'|'ChainedInvokeTimedOut'|'ChainedInvokeStopped'|'CallbackStarted'|'CallbackSucceeded'|'CallbackFailed'|'CallbackTimedOut'|'InvocationCompleted'|'ExecutionPaused'|'ExecutionResumed'|null $EventType
  * @property string|null $SubType
  * @property int<1, max>|null $EventId
  * @property string|null $Id
@@ -36,12 +36,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CallbackFailedDetails|null $CallbackFailedDetails
  * @property CallbackTimedOutDetails|null $CallbackTimedOutDetails
  * @property InvocationCompletedDetails|null $InvocationCompletedDetails
+ * @property ExecutionPausedDetails|null $ExecutionPausedDetails
+ * @property ExecutionResumedDetails|null $ExecutionResumedDetails
  */
 class Event extends Shape
 {
     /**
      * @param array{
-     *     EventType?: 'ExecutionStarted'|'ExecutionSucceeded'|'ExecutionFailed'|'ExecutionTimedOut'|'ExecutionStopped'|'ContextStarted'|'ContextSucceeded'|'ContextFailed'|'WaitStarted'|'WaitSucceeded'|'WaitCancelled'|'StepStarted'|'StepSucceeded'|'StepFailed'|'ChainedInvokeStarted'|'ChainedInvokeSucceeded'|'ChainedInvokeFailed'|'ChainedInvokeTimedOut'|'ChainedInvokeStopped'|'CallbackStarted'|'CallbackSucceeded'|'CallbackFailed'|'CallbackTimedOut'|'InvocationCompleted'|null,
+     *     EventType?: 'ExecutionStarted'|'ExecutionSucceeded'|'ExecutionFailed'|'ExecutionTimedOut'|'ExecutionStopped'|'ContextStarted'|'ContextSucceeded'|'ContextFailed'|'WaitStarted'|'WaitSucceeded'|'WaitCancelled'|'StepStarted'|'StepSucceeded'|'StepFailed'|'ChainedInvokeStarted'|'ChainedInvokeSucceeded'|'ChainedInvokeFailed'|'ChainedInvokeTimedOut'|'ChainedInvokeStopped'|'CallbackStarted'|'CallbackSucceeded'|'CallbackFailed'|'CallbackTimedOut'|'InvocationCompleted'|'ExecutionPaused'|'ExecutionResumed'|null,
      *     SubType?: string|null,
      *     EventId?: int<1, max>|null,
      *     Id?: string|null,
@@ -71,7 +73,9 @@ class Event extends Shape
      *     CallbackSucceededDetails?: CallbackSucceededDetails|null,
      *     CallbackFailedDetails?: CallbackFailedDetails|null,
      *     CallbackTimedOutDetails?: CallbackTimedOutDetails|null,
-     *     InvocationCompletedDetails?: InvocationCompletedDetails|null
+     *     InvocationCompletedDetails?: InvocationCompletedDetails|null,
+     *     ExecutionPausedDetails?: ExecutionPausedDetails|null,
+     *     ExecutionResumedDetails?: ExecutionResumedDetails|null
      * } $args
      */
     public function __construct(array $args = [])

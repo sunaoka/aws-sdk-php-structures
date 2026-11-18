@@ -65,6 +65,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use DeleteRegistryRecord\DeleteRegistryRecordTrait;
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;
     use DeleteWorkloadIdentity\DeleteWorkloadIdentityTrait;
+    use GetAgentInsightStore\GetAgentInsightStoreTrait;
     use GetAgentRuntime\GetAgentRuntimeTrait;
     use GetAgentRuntimeEndpoint\GetAgentRuntimeEndpointTrait;
     use GetApiKeyCredentialProvider\GetApiKeyCredentialProviderTrait;
@@ -100,6 +101,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use GetResourcePolicy\GetResourcePolicyTrait;
     use GetTokenVault\GetTokenVaultTrait;
     use GetWorkloadIdentity\GetWorkloadIdentityTrait;
+    use ListAgentInsightStores\ListAgentInsightStoresTrait;
     use ListAgentRuntimeEndpoints\ListAgentRuntimeEndpointsTrait;
     use ListAgentRuntimeVersions\ListAgentRuntimeVersionsTrait;
     use ListAgentRuntimeVersionsByCapacityProvider\ListAgentRuntimeVersionsByCapacityProviderTrait;
@@ -149,6 +151,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use SynchronizeGatewayTargets\SynchronizeGatewayTargetsTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateAgentInsightStore\UpdateAgentInsightStoreTrait;
     use UpdateAgentRuntime\UpdateAgentRuntimeTrait;
     use UpdateAgentRuntimeEndpoint\UpdateAgentRuntimeEndpointTrait;
     use UpdateApiKeyCredentialProvider\UpdateApiKeyCredentialProviderTrait;

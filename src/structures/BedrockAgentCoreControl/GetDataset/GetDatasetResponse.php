@@ -13,9 +13,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED' $status
  * @property 'MODIFIED'|'UNMODIFIED'|null $draftStatus
  * @property string|null $failureReason
- * @property 'AGENTCORE_EVALUATION_PREDEFINED_V1'|'AGENTCORE_EVALUATION_SIMULATED_V1'|'THIRD_PARTY_EVALUATION_V1' $schemaType
+ * @property 'AGENTCORE_EVALUATION_PREDEFINED_V1'|'AGENTCORE_EVALUATION_SIMULATED_V1'|'THIRD_PARTY_EVALUATION_V1'|null $schemaType
  * @property string|null $kmsKeyArn
  * @property int $exampleCount
+ * @property Shapes\ExampleCountByField|null $exampleCountByField
  * @property string|null $downloadUrl
  * @property \Aws\Api\DateTimeResult|null $downloadUrlExpiresAt
  * @property \Aws\Api\DateTimeResult $createdAt

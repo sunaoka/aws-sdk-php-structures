@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $PeerEdgeLocations
  * @property string|null $AttachmentId
  * @property list<RoutingPolicyAssociationDetail>|null $RoutingPolicyAssociationDetails
+ * @property MultipathResilienceChangeValues|null $MultipathResilience
  */
 class CoreNetworkChangeValues extends Shape
 {
@@ -43,7 +44,8 @@ class CoreNetworkChangeValues extends Shape
      *     RoutingPolicy?: string|null,
      *     PeerEdgeLocations?: list<string>|null,
      *     AttachmentId?: string|null,
-     *     RoutingPolicyAssociationDetails?: list<RoutingPolicyAssociationDetail>|null
+     *     RoutingPolicyAssociationDetails?: list<RoutingPolicyAssociationDetail>|null,
+     *     MultipathResilience?: MultipathResilienceChangeValues|null
      * } $args
      */
     public function __construct(array $args = [])

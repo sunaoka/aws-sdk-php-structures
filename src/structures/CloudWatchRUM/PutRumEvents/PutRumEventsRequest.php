@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\UserDetails $UserDetails
  * @property list<Shapes\RumEvent> $RumEvents
  * @property string|null $Alias
+ * @property string|null $SessionMetadata
  */
 class PutRumEventsRequest extends Request
 {
@@ -21,7 +22,8 @@ class PutRumEventsRequest extends Request
      *     AppMonitorDetails: Shapes\AppMonitorDetails,
      *     UserDetails: Shapes\UserDetails,
      *     RumEvents: list<Shapes\RumEvent>,
-     *     Alias?: string|null
+     *     Alias?: string|null,
+     *     SessionMetadata?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $observabilityRegion
  * @property string|null $description
  * @property 'IPV4'|'DUAL_STACK'|null $ipAddressType
+ * @property 'ENABLED_RESERVED'|'DISABLED_RESERVED'|'DISABLED_RELEASED'|null $publicIpStatus
  * @property list<string>|null $regions
  */
 class UpdateGlobalResolverRequest extends Request
@@ -21,6 +22,7 @@ class UpdateGlobalResolverRequest extends Request
      *     observabilityRegion?: string|null,
      *     description?: string|null,
      *     ipAddressType?: 'IPV4'|'DUAL_STACK'|null,
+     *     publicIpStatus?: 'ENABLED_RESERVED'|'DISABLED_RESERVED'|'DISABLED_RELEASED'|null,
      *     regions?: list<string>|null
      * } $args
      */

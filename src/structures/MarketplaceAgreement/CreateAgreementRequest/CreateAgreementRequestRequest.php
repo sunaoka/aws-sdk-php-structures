@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $sourceAgreementIdentifier
  * @property string|null $agreementProposalIdentifier
  * @property Shapes\TaxConfiguration|null $taxConfiguration
+ * @property Shapes\AcceptorContact|null $acceptorContact
  */
 class CreateAgreementRequestRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateAgreementRequestRequest extends Request
      *     requestedTerms: list<Shapes\RequestedTerm>,
      *     sourceAgreementIdentifier?: string|null,
      *     agreementProposalIdentifier?: string|null,
-     *     taxConfiguration?: Shapes\TaxConfiguration|null
+     *     taxConfiguration?: Shapes\TaxConfiguration|null,
+     *     acceptorContact?: Shapes\AcceptorContact|null
      * } $args
      */
     public function __construct(array $args)

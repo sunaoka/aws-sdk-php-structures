@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\PostLaunchActions|null $postLaunchActions
  * @property bool|null $enableMapAutoTagging
  * @property string|null $mapAutoTaggingMpeID
+ * @property string|null $mapAutoTaggingKey
  * @property string|null $accountID
  */
 class UpdateLaunchConfigurationRequest extends Request
@@ -33,6 +34,7 @@ class UpdateLaunchConfigurationRequest extends Request
      *     postLaunchActions?: Shapes\PostLaunchActions|null,
      *     enableMapAutoTagging?: bool|null,
      *     mapAutoTaggingMpeID?: string|null,
+     *     mapAutoTaggingKey?: string|null,
      *     accountID?: string|null
      * } $args
      */

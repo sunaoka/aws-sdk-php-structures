@@ -16,6 +16,7 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use DeleteAlias\DeleteAliasTrait;
     use DeleteCapacityProvider\DeleteCapacityProviderTrait;
     use DeleteCodeSigningConfig\DeleteCodeSigningConfigTrait;
+    use DeleteDurableExecution\DeleteDurableExecutionTrait;
     use DeleteEventSourceMapping\DeleteEventSourceMappingTrait;
     use DeleteFunction\DeleteFunctionTrait;
     use DeleteFunctionCodeSigningConfig\DeleteFunctionCodeSigningConfigTrait;
@@ -65,6 +66,7 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use ListProvisionedConcurrencyConfigs\ListProvisionedConcurrencyConfigsTrait;
     use ListTags\ListTagsTrait;
     use ListVersionsByFunction\ListVersionsByFunctionTrait;
+    use PauseDurableExecution\PauseDurableExecutionTrait;
     use PublishLayerVersion\PublishLayerVersionTrait;
     use PublishVersion\PublishVersionTrait;
     use PutFunctionCodeSigningConfig\PutFunctionCodeSigningConfigTrait;
@@ -77,6 +79,7 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use PutRuntimeManagementConfig\PutRuntimeManagementConfigTrait;
     use RemoveLayerVersionPermission\RemoveLayerVersionPermissionTrait;
     use RemovePermission\RemovePermissionTrait;
+    use ResumeDurableExecution\ResumeDurableExecutionTrait;
     use SendDurableExecutionCallbackFailure\SendDurableExecutionCallbackFailureTrait;
     use SendDurableExecutionCallbackHeartbeat\SendDurableExecutionCallbackHeartbeatTrait;
     use SendDurableExecutionCallbackSuccess\SendDurableExecutionCallbackSuccessTrait;

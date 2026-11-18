@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $connectorArn
  * @property string|null $name
  * @property string|null $description
- * @property 'AZURE' $provider
+ * @property 'AZURE'|'GCP' $provider
  * @property 'ENABLED'|'PENDING_ENABLEMENT'|'FAILED_TO_ENABLE'|'PENDING_UPDATE'|'FAILED_TO_UPDATE'|'PENDING_DELETION'|'DELETED'|'FAILED_TO_DELETE'|null $enablementStatus
  * @property string|null $enablementStatusReason
  * @property ConnectorHealth|null $health
@@ -19,6 +19,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AzureScopeConfiguration|null $scopeConfiguration
  * @property array<string, string>|null $tags
  * @property bool|null $autoInstallVMScanner
+ * @property list<string>|null $gcpRegions
+ * @property GcpScopeConfiguration|null $gcpScopeConfiguration
  */
 class Connector extends Shape
 {
@@ -27,7 +29,7 @@ class Connector extends Shape
      *     connectorArn: string,
      *     name?: string|null,
      *     description?: string|null,
-     *     provider: 'AZURE',
+     *     provider: 'AZURE'|'GCP',
      *     enablementStatus?: 'ENABLED'|'PENDING_ENABLEMENT'|'FAILED_TO_ENABLE'|'PENDING_UPDATE'|'FAILED_TO_UPDATE'|'PENDING_DELETION'|'DELETED'|'FAILED_TO_DELETE'|null,
      *     enablementStatusReason?: string|null,
      *     health?: ConnectorHealth|null,
@@ -37,7 +39,9 @@ class Connector extends Shape
      *     awsConfigConnectorArn?: string|null,
      *     scopeConfiguration?: AzureScopeConfiguration|null,
      *     tags?: array<string, string>|null,
-     *     autoInstallVMScanner?: bool|null
+     *     autoInstallVMScanner?: bool|null,
+     *     gcpRegions?: list<string>|null,
+     *     gcpScopeConfiguration?: GcpScopeConfiguration|null
      * } $args
      */
     public function __construct(array $args)

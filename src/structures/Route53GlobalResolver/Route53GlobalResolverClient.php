@@ -10,12 +10,14 @@ class Route53GlobalResolverClient extends \Aws\Route53GlobalResolver\Route53Glob
     use BatchUpdateFirewallRule\BatchUpdateFirewallRuleTrait;
     use CreateAccessSource\CreateAccessSourceTrait;
     use CreateAccessToken\CreateAccessTokenTrait;
+    use CreateCoreNetworkEndpoint\CreateCoreNetworkEndpointTrait;
     use CreateDNSView\CreateDNSViewTrait;
     use CreateFirewallDomainList\CreateFirewallDomainListTrait;
     use CreateFirewallRule\CreateFirewallRuleTrait;
     use CreateGlobalResolver\CreateGlobalResolverTrait;
     use DeleteAccessSource\DeleteAccessSourceTrait;
     use DeleteAccessToken\DeleteAccessTokenTrait;
+    use DeleteCoreNetworkEndpoint\DeleteCoreNetworkEndpointTrait;
     use DeleteDNSView\DeleteDNSViewTrait;
     use DeleteFirewallDomainList\DeleteFirewallDomainListTrait;
     use DeleteFirewallRule\DeleteFirewallRuleTrait;
@@ -25,6 +27,7 @@ class Route53GlobalResolverClient extends \Aws\Route53GlobalResolver\Route53Glob
     use EnableDNSView\EnableDNSViewTrait;
     use GetAccessSource\GetAccessSourceTrait;
     use GetAccessToken\GetAccessTokenTrait;
+    use GetCoreNetworkEndpoint\GetCoreNetworkEndpointTrait;
     use GetDNSView\GetDNSViewTrait;
     use GetFirewallDomainList\GetFirewallDomainListTrait;
     use GetFirewallRule\GetFirewallRuleTrait;
@@ -34,6 +37,7 @@ class Route53GlobalResolverClient extends \Aws\Route53GlobalResolver\Route53Glob
     use ImportFirewallDomains\ImportFirewallDomainsTrait;
     use ListAccessSources\ListAccessSourcesTrait;
     use ListAccessTokens\ListAccessTokensTrait;
+    use ListCoreNetworkEndpoints\ListCoreNetworkEndpointsTrait;
     use ListDNSViews\ListDNSViewsTrait;
     use ListFirewallDomainLists\ListFirewallDomainListsTrait;
     use ListFirewallDomains\ListFirewallDomainsTrait;
@@ -47,6 +51,7 @@ class Route53GlobalResolverClient extends \Aws\Route53GlobalResolver\Route53Glob
     use UntagResource\UntagResourceTrait;
     use UpdateAccessSource\UpdateAccessSourceTrait;
     use UpdateAccessToken\UpdateAccessTokenTrait;
+    use UpdateCoreNetworkEndpoint\UpdateCoreNetworkEndpointTrait;
     use UpdateDNSView\UpdateDNSViewTrait;
     use UpdateFirewallDomains\UpdateFirewallDomainsTrait;
     use UpdateFirewallRule\UpdateFirewallRuleTrait;

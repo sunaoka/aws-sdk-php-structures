@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property 'aws'|'aws-cn'|'aws-us-gov'|'aws-us-iso'|'aws-us-iso-b'|'AzureCloud'|null $Partition
  * @property string|null $Region
- * @property 'Azure'|'AWS'|null $Provider
+ * @property 'Azure'|'AWS'|'GCP'|null $Provider
  * @property ResourceOwner|null $Owner
  * @property string|null $ResourceRole
  * @property array<string, string>|null $Tags
@@ -26,7 +26,7 @@ class ResourceShape extends Shape
      *     Id: string,
      *     Partition?: 'aws'|'aws-cn'|'aws-us-gov'|'aws-us-iso'|'aws-us-iso-b'|'AzureCloud'|null,
      *     Region?: string|null,
-     *     Provider?: 'Azure'|'AWS'|null,
+     *     Provider?: 'Azure'|'AWS'|'GCP'|null,
      *     Owner?: ResourceOwner|null,
      *     ResourceRole?: string|null,
      *     Tags?: array<string, string>|null,

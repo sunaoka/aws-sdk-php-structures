@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property EnabledBaselineInheritanceDrift|null $inheritance
+ * @property EnabledBaselineSourceDrift|null $source
  */
 class EnabledBaselineDriftTypes extends Shape
 {
     /**
-     * @param array{inheritance?: EnabledBaselineInheritanceDrift|null} $args
+     * @param array{
+     *     inheritance?: EnabledBaselineInheritanceDrift|null,
+     *     source?: EnabledBaselineSourceDrift|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

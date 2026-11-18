@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CREATE_NEW'|'USE_EXISTING'|null $vpcProvisioningStrategy
  * @property list<Shapes\CidrMapping>|null $cidrMappings
  * @property array<string, string>|null $scopeTags
+ * @property 'MIGRATION'|'NEW_NETWORK'|null $definitionType
  */
 class UpdateNetworkMigrationDefinitionRequest extends Request
 {
@@ -29,7 +30,8 @@ class UpdateNetworkMigrationDefinitionRequest extends Request
      *     targetDeployment?: 'SINGLE_ACCOUNT'|'MULTI_ACCOUNT'|null,
      *     vpcProvisioningStrategy?: 'CREATE_NEW'|'USE_EXISTING'|null,
      *     cidrMappings?: list<Shapes\CidrMapping>|null,
-     *     scopeTags?: array<string, string>|null
+     *     scopeTags?: array<string, string>|null,
+     *     definitionType?: 'MIGRATION'|'NEW_NETWORK'|null
      * } $args
      */
     public function __construct(array $args)

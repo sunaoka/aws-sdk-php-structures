@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $parentIdentifiers
  * @property list<'SUCCEEDED'|'FAILED'|'UNDER_CHANGE'>|null $statuses
  * @property list<'IN_SYNC'|'DRIFTED'>|null $inheritanceDriftStatuses
+ * @property list<'IN_SYNC'|'DRIFTED'>|null $sourceDriftStatuses
  */
 class EnabledBaselineFilter extends Shape
 {
@@ -19,7 +20,8 @@ class EnabledBaselineFilter extends Shape
      *     baselineIdentifiers?: list<string>|null,
      *     parentIdentifiers?: list<string>|null,
      *     statuses?: list<'SUCCEEDED'|'FAILED'|'UNDER_CHANGE'>|null,
-     *     inheritanceDriftStatuses?: list<'IN_SYNC'|'DRIFTED'>|null
+     *     inheritanceDriftStatuses?: list<'IN_SYNC'|'DRIFTED'>|null,
+     *     sourceDriftStatuses?: list<'IN_SYNC'|'DRIFTED'>|null
      * } $args
      */
     public function __construct(array $args = [])

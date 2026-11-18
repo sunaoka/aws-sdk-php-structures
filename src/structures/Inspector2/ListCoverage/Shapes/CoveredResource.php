@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListCoverage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AWS_EC2_INSTANCE'|'AWS_ECR_CONTAINER_IMAGE'|'AWS_ECR_REPOSITORY'|'AWS_LAMBDA_FUNCTION'|'CODE_REPOSITORY'|'Microsoft.Compute/virtualMachines'|'Microsoft.ContainerRegistry/registry/containerImage'|'Microsoft.ContainerRegistry/registry/containerRepository'|'Microsoft.Web/sites'|'Microsoft.ContainerRegistry/registries'|'MACHINE_IMAGE' $resourceType
+ * @property 'AWS_EC2_INSTANCE'|'AWS_ECR_CONTAINER_IMAGE'|'AWS_ECR_REPOSITORY'|'AWS_LAMBDA_FUNCTION'|'CODE_REPOSITORY'|'Microsoft.Compute/virtualMachines'|'Microsoft.ContainerRegistry/registry/containerImage'|'Microsoft.ContainerRegistry/registry/containerRepository'|'Microsoft.Web/sites'|'Microsoft.ContainerRegistry/registries'|'MACHINE_IMAGE'|'cloudfunctions.googleapis.com/Function'|'compute.googleapis.com/Instance'|'artifactregistry.googleapis.com/Repository'|'artifactregistry.googleapis.com/DockerImage' $resourceType
  * @property string $resourceId
  * @property string $accountId
  * @property 'NETWORK'|'PACKAGE'|'CODE' $scanType
@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ResourceScanMetadata|null $resourceMetadata
  * @property \Aws\Api\DateTimeResult|null $lastScannedAt
  * @property 'EC2_SSM_AGENT_BASED'|'EC2_AGENTLESS'|'EC2_INSPECTOR_AGENT_BASED'|'VM_INSPECTOR_AGENT_BASED'|null $scanMode
- * @property 'AWS'|'AZURE'|null $provider
+ * @property 'AWS'|'AZURE'|'GCP'|null $provider
  * @property string|null $providerAccountId
  * @property string|null $providerOrgId
  * @property string|null $providerRegion
@@ -23,7 +23,7 @@ class CoveredResource extends Shape
 {
     /**
      * @param array{
-     *     resourceType: 'AWS_EC2_INSTANCE'|'AWS_ECR_CONTAINER_IMAGE'|'AWS_ECR_REPOSITORY'|'AWS_LAMBDA_FUNCTION'|'CODE_REPOSITORY'|'Microsoft.Compute/virtualMachines'|'Microsoft.ContainerRegistry/registry/containerImage'|'Microsoft.ContainerRegistry/registry/containerRepository'|'Microsoft.Web/sites'|'Microsoft.ContainerRegistry/registries'|'MACHINE_IMAGE',
+     *     resourceType: 'AWS_EC2_INSTANCE'|'AWS_ECR_CONTAINER_IMAGE'|'AWS_ECR_REPOSITORY'|'AWS_LAMBDA_FUNCTION'|'CODE_REPOSITORY'|'Microsoft.Compute/virtualMachines'|'Microsoft.ContainerRegistry/registry/containerImage'|'Microsoft.ContainerRegistry/registry/containerRepository'|'Microsoft.Web/sites'|'Microsoft.ContainerRegistry/registries'|'MACHINE_IMAGE'|'cloudfunctions.googleapis.com/Function'|'compute.googleapis.com/Instance'|'artifactregistry.googleapis.com/Repository'|'artifactregistry.googleapis.com/DockerImage',
      *     resourceId: string,
      *     accountId: string,
      *     scanType: 'NETWORK'|'PACKAGE'|'CODE',
@@ -31,7 +31,7 @@ class CoveredResource extends Shape
      *     resourceMetadata?: ResourceScanMetadata|null,
      *     lastScannedAt?: \Aws\Api\DateTimeResult|null,
      *     scanMode?: 'EC2_SSM_AGENT_BASED'|'EC2_AGENTLESS'|'EC2_INSPECTOR_AGENT_BASED'|'VM_INSPECTOR_AGENT_BASED'|null,
-     *     provider?: 'AWS'|'AZURE'|null,
+     *     provider?: 'AWS'|'AZURE'|'GCP'|null,
      *     providerAccountId?: string|null,
      *     providerOrgId?: string|null,
      *     providerRegion?: string|null,

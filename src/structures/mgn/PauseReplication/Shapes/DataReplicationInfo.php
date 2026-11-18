@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DataReplicationError|null $dataReplicationError
  * @property string|null $lastSnapshotDateTime
  * @property string|null $replicatorId
+ * @property string|null $stagingOutpostArn
  */
 class DataReplicationInfo extends Shape
 {
@@ -25,7 +26,8 @@ class DataReplicationInfo extends Shape
      *     dataReplicationInitiation?: DataReplicationInitiation|null,
      *     dataReplicationError?: DataReplicationError|null,
      *     lastSnapshotDateTime?: string|null,
-     *     replicatorId?: string|null
+     *     replicatorId?: string|null,
+     *     stagingOutpostArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

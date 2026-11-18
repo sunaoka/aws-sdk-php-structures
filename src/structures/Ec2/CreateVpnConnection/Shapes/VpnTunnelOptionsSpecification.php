@@ -25,6 +25,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $StartupAction
  * @property VpnTunnelLogOptionsSpecification|null $LogOptions
  * @property bool|null $EnableTunnelLifecycleControl
+ * @property list<VpnAdditionalKeyExchangeRequest>|null $Phase1AdditionalKeyExchanges
+ * @property list<VpnAdditionalKeyExchangeRequest>|null $Phase2AdditionalKeyExchanges
  */
 class VpnTunnelOptionsSpecification extends Shape
 {
@@ -49,7 +51,9 @@ class VpnTunnelOptionsSpecification extends Shape
      *     IKEVersions?: list<IKEVersionsRequestListValue>|null,
      *     StartupAction?: string|null,
      *     LogOptions?: VpnTunnelLogOptionsSpecification|null,
-     *     EnableTunnelLifecycleControl?: bool|null
+     *     EnableTunnelLifecycleControl?: bool|null,
+     *     Phase1AdditionalKeyExchanges?: list<VpnAdditionalKeyExchangeRequest>|null,
+     *     Phase2AdditionalKeyExchanges?: list<VpnAdditionalKeyExchangeRequest>|null
      * } $args
      */
     public function __construct(array $args = [])

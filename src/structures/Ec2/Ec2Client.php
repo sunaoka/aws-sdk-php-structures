@@ -723,6 +723,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ModifyTransitGatewayAttachmentNatConfiguration\ModifyTransitGatewayAttachmentNatConfigurationTrait;
     use ModifyTransitGatewayMeteringPolicy\ModifyTransitGatewayMeteringPolicyTrait;
     use ModifyTransitGatewayNetworkFunctionAttachment\ModifyTransitGatewayNetworkFunctionAttachmentTrait;
+    use ModifyTransitGatewayPeeringAttachment\ModifyTransitGatewayPeeringAttachmentTrait;
     use ModifyTransitGatewayPolicyTableEntry\ModifyTransitGatewayPolicyTableEntryTrait;
     use ModifyTransitGatewayPrefixListReference\ModifyTransitGatewayPrefixListReferenceTrait;
     use ModifyTransitGatewayVpcAttachment\ModifyTransitGatewayVpcAttachmentTrait;

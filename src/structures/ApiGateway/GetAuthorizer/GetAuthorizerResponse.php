@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $id
  * @property string|null $name
- * @property 'TOKEN'|'REQUEST'|'COGNITO_USER_POOLS'|null $type
+ * @property 'TOKEN'|'REQUEST'|'COGNITO_USER_POOLS'|'JWT'|null $type
  * @property list<string>|null $providerARNs
  * @property string|null $authType
  * @property string|null $authorizerUri
@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $identitySource
  * @property string|null $identityValidationExpression
  * @property int|null $authorizerResultTtlInSeconds
+ * @property Shapes\JwtConfiguration|null $jwtConfiguration
  */
 class GetAuthorizerResponse extends Response
 {

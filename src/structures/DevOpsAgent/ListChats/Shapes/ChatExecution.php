@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string|null $summary
+ * @property 'ACTIVE'|'ARCHIVED'|null $archiveStatus
  */
 class ChatExecution extends Shape
 {
@@ -17,7 +18,8 @@ class ChatExecution extends Shape
      *     executionId: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     summary?: string|null
+     *     summary?: string|null,
+     *     archiveStatus?: 'ACTIVE'|'ARCHIVED'|null
      * } $args
      */
     public function __construct(array $args)

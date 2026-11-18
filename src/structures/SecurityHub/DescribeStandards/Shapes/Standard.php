@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Name
  * @property string|null $Description
  * @property bool|null $EnabledByDefault
- * @property 'AWS'|'Azure'|null $Provider
+ * @property 'AWS'|'Azure'|'GCP'|null $Provider
  * @property StandardsManagedBy|null $StandardsManagedBy
  */
 class Standard extends Shape
@@ -20,7 +20,7 @@ class Standard extends Shape
      *     Name?: string|null,
      *     Description?: string|null,
      *     EnabledByDefault?: bool|null,
-     *     Provider?: 'AWS'|'Azure'|null,
+     *     Provider?: 'AWS'|'Azure'|'GCP'|null,
      *     StandardsManagedBy?: StandardsManagedBy|null
      * } $args
      */

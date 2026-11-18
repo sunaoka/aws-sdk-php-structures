@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'ENABLED'|'DISABLED'|null $summaryGeneration
  * @property 'ENABLED'|'DISABLED'|null $extendedAnalysis
+ * @property CustomQuestionsConfig|null $customQuestions
  */
 class ContextualMetadataConfig extends Shape
 {
     /**
      * @param array{
      *     summaryGeneration?: 'ENABLED'|'DISABLED'|null,
-     *     extendedAnalysis?: 'ENABLED'|'DISABLED'|null
+     *     extendedAnalysis?: 'ENABLED'|'DISABLED'|null,
+     *     customQuestions?: CustomQuestionsConfig|null
      * } $args
      */
     public function __construct(array $args = [])

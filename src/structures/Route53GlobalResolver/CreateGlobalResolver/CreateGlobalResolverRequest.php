@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientToken
  * @property string|null $description
  * @property 'IPV4'|'DUAL_STACK'|null $ipAddressType
+ * @property 'ENABLED_RESERVED'|'DISABLED_RESERVED'|'DISABLED_RELEASED'|null $publicIpStatus
  * @property string $name
  * @property string|null $observabilityRegion
  * @property list<string> $regions
@@ -20,6 +21,7 @@ class CreateGlobalResolverRequest extends Request
      *     clientToken?: string|null,
      *     description?: string|null,
      *     ipAddressType?: 'IPV4'|'DUAL_STACK'|null,
+     *     publicIpStatus?: 'ENABLED_RESERVED'|'DISABLED_RESERVED'|'DISABLED_RELEASED'|null,
      *     name: string,
      *     observabilityRegion?: string|null,
      *     regions: list<string>,

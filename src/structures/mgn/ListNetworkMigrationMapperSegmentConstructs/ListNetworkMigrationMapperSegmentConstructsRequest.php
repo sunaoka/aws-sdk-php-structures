@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ListNetworkMigrationMapperSegmentConstructsFilters|null $filters
  * @property int<1, 1000>|null $maxResults
  * @property string|null $nextToken
+ * @property bool|null $includeEnrichedProperties
+ * @property bool|null $includeConfiguration
  */
 class ListNetworkMigrationMapperSegmentConstructsRequest extends Request
 {
@@ -21,7 +23,9 @@ class ListNetworkMigrationMapperSegmentConstructsRequest extends Request
      *     segmentID: string,
      *     filters?: Shapes\ListNetworkMigrationMapperSegmentConstructsFilters|null,
      *     maxResults?: int<1, 1000>|null,
-     *     nextToken?: string|null
+     *     nextToken?: string|null,
+     *     includeEnrichedProperties?: bool|null,
+     *     includeConfiguration?: bool|null
      * } $args
      */
     public function __construct(array $args)

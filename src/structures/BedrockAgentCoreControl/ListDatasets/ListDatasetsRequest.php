@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\BedrockAgentCoreControl\ListDatasets;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property Shapes\ListDatasetsFilter|null $filter
  * @property string|null $nextToken
  * @property int<1, 100>|null $maxResults
  */
@@ -12,6 +13,7 @@ class ListDatasetsRequest extends Request
 {
     /**
      * @param array{
+     *     filter?: Shapes\ListDatasetsFilter|null,
      *     nextToken?: string|null,
      *     maxResults?: int<1, 100>|null
      * } $args

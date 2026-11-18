@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'RENEW'|'REPLACE'|'EXPIRE'|null $endTimeBehaviorType
  * @property 'PROPOSER_RENEW_OPTED_OUT'|'ACCEPTOR_RENEW_OPTED_OUT'|'NO_RENEWAL_TERM'|'RENEWAL_LIMIT_EXHAUSTED'|null $endTimeBehaviorReasonCode
  * @property \Aws\Api\DateTimeResult|null $freeTrialEndTime
+ * @property list<'ACCEPTOR'>|null $includesContactOfType
  */
 class AgreementViewSummary extends Shape
 {
@@ -39,7 +40,8 @@ class AgreementViewSummary extends Shape
      *     initialAgreementId?: string|null,
      *     endTimeBehaviorType?: 'RENEW'|'REPLACE'|'EXPIRE'|null,
      *     endTimeBehaviorReasonCode?: 'PROPOSER_RENEW_OPTED_OUT'|'ACCEPTOR_RENEW_OPTED_OUT'|'NO_RENEWAL_TERM'|'RENEWAL_LIMIT_EXHAUSTED'|null,
-     *     freeTrialEndTime?: \Aws\Api\DateTimeResult|null
+     *     freeTrialEndTime?: \Aws\Api\DateTimeResult|null,
+     *     includesContactOfType?: list<'ACCEPTOR'>|null
      * } $args
      */
     public function __construct(array $args = [])

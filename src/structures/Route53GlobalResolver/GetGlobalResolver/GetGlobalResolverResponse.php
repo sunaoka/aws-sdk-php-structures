@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<string> $ipv4Addresses
  * @property list<string>|null $ipv6Addresses
  * @property 'IPV4'|'DUAL_STACK'|null $ipAddressType
+ * @property 'ENABLED_RESERVED'|'DISABLED_RESERVED'|'DISABLED_RELEASED'|null $publicIpStatus
  */
 class GetGlobalResolverResponse extends Response
 {

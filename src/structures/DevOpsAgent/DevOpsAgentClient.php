@@ -29,6 +29,7 @@ class DevOpsAgentClient extends \Aws\DevOpsAgent\DevOpsAgentClient
     use GetAssetFile\GetAssetFileTrait;
     use GetAssociation\GetAssociationTrait;
     use GetBacklogTask\GetBacklogTaskTrait;
+    use GetChat\GetChatTrait;
     use GetOperatorApp\GetOperatorAppTrait;
     use GetRecommendation\GetRecommendationTrait;
     use GetService\GetServiceTrait;
@@ -61,6 +62,7 @@ class DevOpsAgentClient extends \Aws\DevOpsAgent\DevOpsAgentClient
     use UpdateAssetFile\UpdateAssetFileTrait;
     use UpdateAssociation\UpdateAssociationTrait;
     use UpdateBacklogTask\UpdateBacklogTaskTrait;
+    use UpdateChat\UpdateChatTrait;
     use UpdateGoal\UpdateGoalTrait;
     use UpdateOperatorAppIdpConfig\UpdateOperatorAppIdpConfigTrait;
     use UpdatePrivateConnectionCertificate\UpdatePrivateConnectionCertificateTrait;

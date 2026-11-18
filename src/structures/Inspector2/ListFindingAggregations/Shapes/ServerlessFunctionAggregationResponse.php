@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $resourceId
- * @property 'AWS'|'AZURE'|null $cloudProvider
+ * @property 'AWS'|'AZURE'|'GCP'|null $cloudProvider
  * @property string|null $cloudAccountId
  * @property string|null $cloudPartition
  * @property string|null $cloudRegion
@@ -25,7 +25,7 @@ class ServerlessFunctionAggregationResponse extends Shape
     /**
      * @param array{
      *     resourceId: string,
-     *     cloudProvider?: 'AWS'|'AZURE'|null,
+     *     cloudProvider?: 'AWS'|'AZURE'|'GCP'|null,
      *     cloudAccountId?: string|null,
      *     cloudPartition?: string|null,
      *     cloudRegion?: string|null,

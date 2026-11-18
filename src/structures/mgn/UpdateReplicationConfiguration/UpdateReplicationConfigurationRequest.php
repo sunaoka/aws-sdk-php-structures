@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $accountID
  * @property 'IPV4'|'IPV6'|null $internetProtocol
  * @property bool|null $storeSnapshotOnLocalZone
+ * @property 'OUTPOST'|'REGION'|null $outpostSnapshotLocation
  * @property Shapes\StorageConfiguration|null $storageConfiguration
  */
 class UpdateReplicationConfigurationRequest extends Request
@@ -49,6 +50,7 @@ class UpdateReplicationConfigurationRequest extends Request
      *     accountID?: string|null,
      *     internetProtocol?: 'IPV4'|'IPV6'|null,
      *     storeSnapshotOnLocalZone?: bool|null,
+     *     outpostSnapshotLocation?: 'OUTPOST'|'REGION'|null,
      *     storageConfiguration?: Shapes\StorageConfiguration|null
      * } $args
      */

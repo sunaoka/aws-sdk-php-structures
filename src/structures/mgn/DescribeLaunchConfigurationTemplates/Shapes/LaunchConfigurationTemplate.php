@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PostLaunchActions|null $postLaunchActions
  * @property bool|null $enableMapAutoTagging
  * @property string|null $mapAutoTaggingMpeID
+ * @property string|null $mapAutoTaggingKey
  * @property array<string, string>|null $tags
  * @property string|null $ec2LaunchTemplateID
  * @property 'STOPPED'|'STARTED'|null $launchDisposition
@@ -34,6 +35,7 @@ class LaunchConfigurationTemplate extends Shape
      *     postLaunchActions?: PostLaunchActions|null,
      *     enableMapAutoTagging?: bool|null,
      *     mapAutoTaggingMpeID?: string|null,
+     *     mapAutoTaggingKey?: string|null,
      *     tags?: array<string, string>|null,
      *     ec2LaunchTemplateID?: string|null,
      *     launchDisposition?: 'STOPPED'|'STARTED'|null,

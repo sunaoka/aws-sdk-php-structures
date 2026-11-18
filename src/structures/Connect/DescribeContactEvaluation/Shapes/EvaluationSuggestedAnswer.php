@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EvaluationAnswerData|null $Value
  * @property 'IN_PROGRESS'|'FAILED'|'SUCCEEDED' $Status
  * @property EvaluationQuestionInputDetails|null $Input
- * @property 'CONTACT_LENS_DATA'|'GEN_AI' $AnalysisType
+ * @property 'CONTACT_LENS_DATA'|'GEN_AI'|'CONDITION' $AnalysisType
  * @property EvaluationQuestionAnswerAnalysisDetails|null $AnalysisDetails
  */
 class EvaluationSuggestedAnswer extends Shape
@@ -18,7 +18,7 @@ class EvaluationSuggestedAnswer extends Shape
      *     Value?: EvaluationAnswerData|null,
      *     Status: 'IN_PROGRESS'|'FAILED'|'SUCCEEDED',
      *     Input?: EvaluationQuestionInputDetails|null,
-     *     AnalysisType: 'CONTACT_LENS_DATA'|'GEN_AI',
+     *     AnalysisType: 'CONTACT_LENS_DATA'|'GEN_AI'|'CONDITION',
      *     AnalysisDetails?: EvaluationQuestionAnswerAnalysisDetails|null
      * } $args
      */

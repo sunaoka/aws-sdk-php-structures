@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SplitOperation|null $split
  * @property DeleteOperation|null $delete
  * @property UpdateOperation|null $update
+ * @property UpdateOperationV2|null $updateV2
+ * @property CreateOperation|null $create
  */
 class OperationUnion extends Shape
 {
@@ -17,7 +19,9 @@ class OperationUnion extends Shape
      *     merge?: MergeOperation|null,
      *     split?: SplitOperation|null,
      *     delete?: DeleteOperation|null,
-     *     update?: UpdateOperation|null
+     *     update?: UpdateOperation|null,
+     *     updateV2?: UpdateOperationV2|null,
+     *     create?: CreateOperation|null
      * } $args
      */
     public function __construct(array $args = [])

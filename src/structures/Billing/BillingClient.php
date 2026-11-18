@@ -32,7 +32,9 @@ class BillingClient extends \Aws\Billing\BillingClient
     use ListSourceViewsForBillingView\ListSourceViewsForBillingViewTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use RedeemCredits\RedeemCreditsTrait;
+    use SplitCredit\SplitCreditTrait;
     use TagResource\TagResourceTrait;
+    use TransferCredit\TransferCreditTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateBillingPreferences\UpdateBillingPreferencesTrait;
     use UpdateBillingView\UpdateBillingViewTrait;

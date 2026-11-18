@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ConformancePackInputParameter>|null $ConformancePackInputParameters
  * @property Shapes\TemplateSSMDocumentDetails|null $TemplateSSMDocumentDetails
  * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\ConformancePackSource|null $Source
+ * @property Shapes\ConformancePackScope|null $Scope
  */
 class PutConformancePackRequest extends Request
 {
@@ -25,7 +27,9 @@ class PutConformancePackRequest extends Request
      *     DeliveryS3KeyPrefix?: string|null,
      *     ConformancePackInputParameters?: list<Shapes\ConformancePackInputParameter>|null,
      *     TemplateSSMDocumentDetails?: Shapes\TemplateSSMDocumentDetails|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     Source?: Shapes\ConformancePackSource|null,
+     *     Scope?: Shapes\ConformancePackScope|null
      * } $args
      */
     public function __construct(array $args)

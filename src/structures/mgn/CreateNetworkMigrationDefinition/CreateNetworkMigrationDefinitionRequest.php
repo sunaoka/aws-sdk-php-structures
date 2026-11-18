@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string|null $description
  * @property list<Shapes\SourceConfiguration>|null $sourceConfigurations
+ * @property 'MIGRATION'|'NEW_NETWORK'|null $definitionType
  * @property Shapes\TargetS3Configuration $targetS3Configuration
  * @property Shapes\TargetNetwork $targetNetwork
  * @property 'SINGLE_ACCOUNT'|'MULTI_ACCOUNT'|null $targetDeployment
@@ -25,6 +26,7 @@ class CreateNetworkMigrationDefinitionRequest extends Request
      *     name: string,
      *     description?: string|null,
      *     sourceConfigurations?: list<Shapes\SourceConfiguration>|null,
+     *     definitionType?: 'MIGRATION'|'NEW_NETWORK'|null,
      *     targetS3Configuration: Shapes\TargetS3Configuration,
      *     targetNetwork: Shapes\TargetNetwork,
      *     targetDeployment?: 'SINGLE_ACCOUNT'|'MULTI_ACCOUNT'|null,

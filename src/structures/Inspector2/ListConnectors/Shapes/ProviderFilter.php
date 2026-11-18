@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'EQUALS' $comparison
- * @property 'AZURE' $value
+ * @property 'AZURE'|'GCP' $value
  */
 class ProviderFilter extends Shape
 {
     /**
      * @param array{
      *     comparison: 'EQUALS',
-     *     value: 'AZURE'
+     *     value: 'AZURE'|'GCP'
      * } $args
      */
     public function __construct(array $args)

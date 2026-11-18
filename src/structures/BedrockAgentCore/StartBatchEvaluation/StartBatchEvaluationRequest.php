@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $kmsKeyArn
  * @property string|null $description
  * @property Shapes\OutputConfig|null $outputConfig
+ * @property Shapes\DatasetExecutionConfig|null $datasetExecutionConfig
  */
 class StartBatchEvaluationRequest extends Request
 {
@@ -29,7 +30,8 @@ class StartBatchEvaluationRequest extends Request
      *     tags?: array<string, string>|null,
      *     kmsKeyArn?: string|null,
      *     description?: string|null,
-     *     outputConfig?: Shapes\OutputConfig|null
+     *     outputConfig?: Shapes\OutputConfig|null,
+     *     datasetExecutionConfig?: Shapes\DatasetExecutionConfig|null
      * } $args
      */
     public function __construct(array $args)

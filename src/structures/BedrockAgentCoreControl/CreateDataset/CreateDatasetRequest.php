@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientToken
  * @property string $datasetName
  * @property string|null $description
- * @property Shapes\DataSourceType $source
- * @property 'AGENTCORE_EVALUATION_PREDEFINED_V1'|'AGENTCORE_EVALUATION_SIMULATED_V1'|'THIRD_PARTY_EVALUATION_V1' $schemaType
+ * @property Shapes\DataSourceType|null $source
+ * @property 'AGENTCORE_EVALUATION_PREDEFINED_V1'|'AGENTCORE_EVALUATION_SIMULATED_V1'|'THIRD_PARTY_EVALUATION_V1'|null $schemaType
  * @property string|null $kmsKeyArn
  * @property array<string, string>|null $tags
  */
@@ -20,8 +20,8 @@ class CreateDatasetRequest extends Request
      *     clientToken?: string|null,
      *     datasetName: string,
      *     description?: string|null,
-     *     source: Shapes\DataSourceType,
-     *     schemaType: 'AGENTCORE_EVALUATION_PREDEFINED_V1'|'AGENTCORE_EVALUATION_SIMULATED_V1'|'THIRD_PARTY_EVALUATION_V1',
+     *     source?: Shapes\DataSourceType|null,
+     *     schemaType?: 'AGENTCORE_EVALUATION_PREDEFINED_V1'|'AGENTCORE_EVALUATION_SIMULATED_V1'|'THIRD_PARTY_EVALUATION_V1'|null,
      *     kmsKeyArn?: string|null,
      *     tags?: array<string, string>|null
      * } $args

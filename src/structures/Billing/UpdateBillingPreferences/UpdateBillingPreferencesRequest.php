@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Billing\UpdateBillingPreferences;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'RI_SHARING'|'RI_SHARING_HISTORY'|'CREDIT_SHARING'|'CREDIT_SHARING_HISTORY'|'CREDIT_LEVEL_SHARING'|'BILLING_ALERTS'|'CREDIT_PREFERENCE_OPTIONS' $feature
+ * @property 'RI_SHARING'|'RI_SHARING_HISTORY'|'CREDIT_SHARING'|'CREDIT_SHARING_HISTORY'|'CREDIT_LEVEL_SHARING'|'BILLING_ALERTS'|'CREDIT_PREFERENCE_OPTIONS'|'BENEFIT_LEVEL_SHARING' $feature
  * @property list<Shapes\BillingPreferenceForKey> $billingPreferencesPerKey
  */
 class UpdateBillingPreferencesRequest extends Request
 {
     /**
      * @param array{
-     *     feature: 'RI_SHARING'|'RI_SHARING_HISTORY'|'CREDIT_SHARING'|'CREDIT_SHARING_HISTORY'|'CREDIT_LEVEL_SHARING'|'BILLING_ALERTS'|'CREDIT_PREFERENCE_OPTIONS',
+     *     feature: 'RI_SHARING'|'RI_SHARING_HISTORY'|'CREDIT_SHARING'|'CREDIT_SHARING_HISTORY'|'CREDIT_LEVEL_SHARING'|'BILLING_ALERTS'|'CREDIT_PREFERENCE_OPTIONS'|'BENEFIT_LEVEL_SHARING',
      *     billingPreferencesPerKey: list<Shapes\BillingPreferenceForKey>
      * } $args
      */

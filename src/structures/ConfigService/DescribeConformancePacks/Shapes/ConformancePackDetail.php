@@ -14,6 +14,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $LastUpdateRequestedTime
  * @property string|null $CreatedBy
  * @property TemplateSSMDocumentDetails|null $TemplateSSMDocumentDetails
+ * @property 'CUSTOM'|'MANAGED'|null $Type
+ * @property ConformancePackSource|null $Source
+ * @property ConformancePackScope|null $Scope
  */
 class ConformancePackDetail extends Shape
 {
@@ -27,7 +30,10 @@ class ConformancePackDetail extends Shape
      *     ConformancePackInputParameters?: list<ConformancePackInputParameter>|null,
      *     LastUpdateRequestedTime?: \Aws\Api\DateTimeResult|null,
      *     CreatedBy?: string|null,
-     *     TemplateSSMDocumentDetails?: TemplateSSMDocumentDetails|null
+     *     TemplateSSMDocumentDetails?: TemplateSSMDocumentDetails|null,
+     *     Type?: 'CUSTOM'|'MANAGED'|null,
+     *     Source?: ConformancePackSource|null,
+     *     Scope?: ConformancePackScope|null
      * } $args
      */
     public function __construct(array $args)

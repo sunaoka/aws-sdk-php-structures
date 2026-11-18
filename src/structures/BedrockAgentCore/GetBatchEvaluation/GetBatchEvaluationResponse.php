@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $description
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string|null $kmsKeyArn
+ * @property Shapes\DatasetExecutionDetails|null $datasetExecutionDetails
  */
 class GetBatchEvaluationResponse extends Response
 {

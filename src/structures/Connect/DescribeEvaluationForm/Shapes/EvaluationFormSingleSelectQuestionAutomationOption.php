@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property SingleSelectQuestionRuleCategoryAutomation|null $RuleCategory
+ * @property SingleSelectQuestionAutomationRule|null $AutomationRule
  */
 class EvaluationFormSingleSelectQuestionAutomationOption extends Shape
 {
     /**
-     * @param array{RuleCategory?: SingleSelectQuestionRuleCategoryAutomation|null} $args
+     * @param array{
+     *     RuleCategory?: SingleSelectQuestionRuleCategoryAutomation|null,
+     *     AutomationRule?: SingleSelectQuestionAutomationRule|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

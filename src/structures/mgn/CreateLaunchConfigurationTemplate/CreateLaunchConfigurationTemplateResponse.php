@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\PostLaunchActions|null $postLaunchActions
  * @property bool|null $enableMapAutoTagging
  * @property string|null $mapAutoTaggingMpeID
+ * @property string|null $mapAutoTaggingKey
  * @property array<string, string>|null $tags
  * @property string|null $ec2LaunchTemplateID
  * @property 'STOPPED'|'STARTED'|null $launchDisposition

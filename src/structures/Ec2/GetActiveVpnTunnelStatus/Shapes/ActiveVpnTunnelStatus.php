@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $IkeVersion
  * @property 'available'|'pending'|'failed'|null $ProvisioningStatus
  * @property string|null $ProvisioningStatusReason
+ * @property list<ActiveVpnTunnelAdditionalKeyExchange>|null $Phase1AdditionalKeyExchanges
+ * @property list<ActiveVpnTunnelAdditionalKeyExchange>|null $Phase2AdditionalKeyExchanges
  */
 class ActiveVpnTunnelStatus extends Shape
 {
@@ -27,7 +29,9 @@ class ActiveVpnTunnelStatus extends Shape
      *     Phase2DHGroup?: int|null,
      *     IkeVersion?: string|null,
      *     ProvisioningStatus?: 'available'|'pending'|'failed'|null,
-     *     ProvisioningStatusReason?: string|null
+     *     ProvisioningStatusReason?: string|null,
+     *     Phase1AdditionalKeyExchanges?: list<ActiveVpnTunnelAdditionalKeyExchange>|null,
+     *     Phase2AdditionalKeyExchanges?: list<ActiveVpnTunnelAdditionalKeyExchange>|null
      * } $args
      */
     public function __construct(array $args = [])

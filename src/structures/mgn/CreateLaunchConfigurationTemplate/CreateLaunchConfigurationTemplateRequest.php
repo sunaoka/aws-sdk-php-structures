@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\PostLaunchActions|null $postLaunchActions
  * @property bool|null $enableMapAutoTagging
  * @property string|null $mapAutoTaggingMpeID
+ * @property string|null $mapAutoTaggingKey
  * @property array<string, string>|null $tags
  * @property 'STOPPED'|'STARTED'|null $launchDisposition
  * @property 'NONE'|'BASIC'|null $targetInstanceTypeRightSizingMethod
@@ -29,6 +30,7 @@ class CreateLaunchConfigurationTemplateRequest extends Request
      *     postLaunchActions?: Shapes\PostLaunchActions|null,
      *     enableMapAutoTagging?: bool|null,
      *     mapAutoTaggingMpeID?: string|null,
+     *     mapAutoTaggingKey?: string|null,
      *     tags?: array<string, string>|null,
      *     launchDisposition?: 'STOPPED'|'STARTED'|null,
      *     targetInstanceTypeRightSizingMethod?: 'NONE'|'BASIC'|null,

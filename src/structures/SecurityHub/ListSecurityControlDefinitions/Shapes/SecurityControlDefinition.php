@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AVAILABLE'|'UNAVAILABLE' $CurrentRegionAvailability
  * @property list<'Parameters'>|null $CustomizableProperties
  * @property array<string, ParameterDefinition>|null $ParameterDefinitions
- * @property 'AWS'|'Azure'|null $Provider
+ * @property 'AWS'|'Azure'|'GCP'|null $Provider
  */
 class SecurityControlDefinition extends Shape
 {
@@ -27,7 +27,7 @@ class SecurityControlDefinition extends Shape
      *     CurrentRegionAvailability: 'AVAILABLE'|'UNAVAILABLE',
      *     CustomizableProperties?: list<'Parameters'>|null,
      *     ParameterDefinitions?: array<string, ParameterDefinition>|null,
-     *     Provider?: 'AWS'|'Azure'|null
+     *     Provider?: 'AWS'|'Azure'|'GCP'|null
      * } $args
      */
     public function __construct(array $args)

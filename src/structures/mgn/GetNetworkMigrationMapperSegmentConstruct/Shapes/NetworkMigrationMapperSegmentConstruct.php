@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property array<string, string>|null $properties
+ * @property array<string, Document>|null $enrichedProperties
+ * @property OperationConfigurationUnion|null $configuration
  */
 class NetworkMigrationMapperSegmentConstruct extends Shape
 {
@@ -27,7 +29,9 @@ class NetworkMigrationMapperSegmentConstruct extends Shape
      *     excluded?: bool|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     properties?: array<string, string>|null
+     *     properties?: array<string, string>|null,
+     *     enrichedProperties?: array<string, Document>|null,
+     *     configuration?: OperationConfigurationUnion|null
      * } $args
      */
     public function __construct(array $args = [])

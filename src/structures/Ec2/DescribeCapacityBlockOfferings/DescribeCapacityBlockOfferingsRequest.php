@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $UltraserverType
  * @property int|null $UltraserverCount
  * @property bool|null $AllAvailabilityZones
+ * @property list<Shapes\CapacityBlockInstanceTypePreference>|null $InstanceTypePreferences
  */
 class DescribeCapacityBlockOfferingsRequest extends Request
 {
@@ -31,7 +32,8 @@ class DescribeCapacityBlockOfferingsRequest extends Request
      *     MaxResults?: int<1, 1000>|null,
      *     UltraserverType?: string|null,
      *     UltraserverCount?: int|null,
-     *     AllAvailabilityZones?: bool|null
+     *     AllAvailabilityZones?: bool|null,
+     *     InstanceTypePreferences?: list<Shapes\CapacityBlockInstanceTypePreference>|null
      * } $args
      */
     public function __construct(array $args)

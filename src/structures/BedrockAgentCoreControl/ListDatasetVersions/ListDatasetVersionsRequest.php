@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $datasetId
+ * @property Shapes\ListDatasetVersionsFilter|null $filter
  * @property string|null $nextToken
  * @property int<1, 100>|null $maxResults
  */
@@ -14,6 +15,7 @@ class ListDatasetVersionsRequest extends Request
     /**
      * @param array{
      *     datasetId: string,
+     *     filter?: Shapes\ListDatasetVersionsFilter|null,
      *     nextToken?: string|null,
      *     maxResults?: int<1, 100>|null
      * } $args

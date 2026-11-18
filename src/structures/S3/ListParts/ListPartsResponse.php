@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'requester'|null $RequestCharged
  * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|'SHA512'|'MD5'|'XXHASH64'|'XXHASH3'|'XXHASH128'|null $ChecksumAlgorithm
  * @property 'COMPOSITE'|'FULL_OBJECT'|null $ChecksumType
+ * @property string|null $VersionId
  */
 class ListPartsResponse extends Response
 {

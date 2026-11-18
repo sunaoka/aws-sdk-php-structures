@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $FunctionName
  * @property string|null $Qualifier
  * @property string|null $DurableExecutionName
- * @property list<'RUNNING'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'STOPPED'>|null $Statuses
+ * @property list<'RUNNING'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'STOPPED'|'DELETING'|'PAUSING'|'PAUSED'>|null $Statuses
  * @property \Aws\Api\DateTimeResult|null $StartedAfter
  * @property \Aws\Api\DateTimeResult|null $StartedBefore
  * @property bool|null $ReverseOrder
@@ -22,7 +22,7 @@ class ListDurableExecutionsByFunctionRequest extends Request
      *     FunctionName: string,
      *     Qualifier?: string|null,
      *     DurableExecutionName?: string|null,
-     *     Statuses?: list<'RUNNING'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'STOPPED'>|null,
+     *     Statuses?: list<'RUNNING'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'STOPPED'|'DELETING'|'PAUSING'|'PAUSED'>|null,
      *     StartedAfter?: \Aws\Api\DateTimeResult|null,
      *     StartedBefore?: \Aws\Api\DateTimeResult|null,
      *     ReverseOrder?: bool|null,

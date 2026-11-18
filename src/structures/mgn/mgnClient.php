@@ -13,6 +13,7 @@ class mgnClient extends \Aws\mgn\mgnClient
     use CreateConnector\CreateConnectorTrait;
     use CreateLaunchConfigurationTemplate\CreateLaunchConfigurationTemplateTrait;
     use CreateNetworkMigrationDefinition\CreateNetworkMigrationDefinitionTrait;
+    use CreateRemoteSourceAction\CreateRemoteSourceActionTrait;
     use CreateReplicationConfigurationTemplate\CreateReplicationConfigurationTemplateTrait;
     use CreateWave\CreateWaveTrait;
     use DeleteApplication\DeleteApplicationTrait;
@@ -20,6 +21,7 @@ class mgnClient extends \Aws\mgn\mgnClient
     use DeleteJob\DeleteJobTrait;
     use DeleteLaunchConfigurationTemplate\DeleteLaunchConfigurationTemplateTrait;
     use DeleteNetworkMigrationDefinition\DeleteNetworkMigrationDefinitionTrait;
+    use DeleteRemoteSourceAction\DeleteRemoteSourceActionTrait;
     use DeleteReplicationConfigurationTemplate\DeleteReplicationConfigurationTemplateTrait;
     use DeleteSourceServer\DeleteSourceServerTrait;
     use DeleteVcenterClient\DeleteVcenterClientTrait;
@@ -35,6 +37,7 @@ class mgnClient extends \Aws\mgn\mgnClient
     use DisconnectFromService\DisconnectFromServiceTrait;
     use FinalizeCutover\FinalizeCutoverTrait;
     use GetLaunchConfiguration\GetLaunchConfigurationTrait;
+    use GetLaunchConfigurationDefaults\GetLaunchConfigurationDefaultsTrait;
     use GetNetworkMigrationDefinition\GetNetworkMigrationDefinitionTrait;
     use GetNetworkMigrationMapperSegmentConstruct\GetNetworkMigrationMapperSegmentConstructTrait;
     use GetReplicationConfiguration\GetReplicationConfigurationTrait;
@@ -55,10 +58,15 @@ class mgnClient extends \Aws\mgn\mgnClient
     use ListNetworkMigrationDeployedStacks\ListNetworkMigrationDeployedStacksTrait;
     use ListNetworkMigrationDeployments\ListNetworkMigrationDeploymentsTrait;
     use ListNetworkMigrationExecutions\ListNetworkMigrationExecutionsTrait;
+    use ListNetworkMigrationInsights\ListNetworkMigrationInsightsTrait;
     use ListNetworkMigrationMapperSegmentConstructs\ListNetworkMigrationMapperSegmentConstructsTrait;
     use ListNetworkMigrationMapperSegments\ListNetworkMigrationMapperSegmentsTrait;
     use ListNetworkMigrationMappingUpdates\ListNetworkMigrationMappingUpdatesTrait;
     use ListNetworkMigrationMappings\ListNetworkMigrationMappingsTrait;
+    use ListRemoteSourceActionInvocationResults\ListRemoteSourceActionInvocationResultsTrait;
+    use ListRemoteSourceActionInvocations\ListRemoteSourceActionInvocationsTrait;
+    use ListRemoteSourceActionJobs\ListRemoteSourceActionJobsTrait;
+    use ListRemoteSourceActions\ListRemoteSourceActionsTrait;
     use ListSourceServerActions\ListSourceServerActionsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTemplateActions\ListTemplateActionsTrait;
@@ -80,6 +88,7 @@ class mgnClient extends \Aws\mgn\mgnClient
     use StartNetworkMigrationDeployment\StartNetworkMigrationDeploymentTrait;
     use StartNetworkMigrationMapping\StartNetworkMigrationMappingTrait;
     use StartNetworkMigrationMappingUpdate\StartNetworkMigrationMappingUpdateTrait;
+    use StartRemoteSourceActionJob\StartRemoteSourceActionJobTrait;
     use StartReplication\StartReplicationTrait;
     use StartTest\StartTestTrait;
     use StopReplication\StopReplicationTrait;
@@ -91,9 +100,11 @@ class mgnClient extends \Aws\mgn\mgnClient
     use UpdateApplication\UpdateApplicationTrait;
     use UpdateConnector\UpdateConnectorTrait;
     use UpdateLaunchConfiguration\UpdateLaunchConfigurationTrait;
+    use UpdateLaunchConfigurationDefaults\UpdateLaunchConfigurationDefaultsTrait;
     use UpdateLaunchConfigurationTemplate\UpdateLaunchConfigurationTemplateTrait;
     use UpdateNetworkMigrationDefinition\UpdateNetworkMigrationDefinitionTrait;
     use UpdateNetworkMigrationMapperSegment\UpdateNetworkMigrationMapperSegmentTrait;
+    use UpdateRemoteSourceAction\UpdateRemoteSourceActionTrait;
     use UpdateReplicationConfiguration\UpdateReplicationConfigurationTrait;
     use UpdateReplicationConfigurationTemplate\UpdateReplicationConfigurationTemplateTrait;
     use UpdateSourceServer\UpdateSourceServerTrait;

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $start
  * @property \Aws\Api\DateTimeResult $end
  * @property 'ACTIVE'|'INACTIVE' $status
- * @property 'AWS'|'AZURE'|'NOT_APPLICABLE'|null $cloudProvider
+ * @property 'AWS'|'AZURE'|'GCP'|'NOT_APPLICABLE'|null $cloudProvider
  */
 class FreeTrialInfo extends Shape
 {
@@ -19,7 +19,7 @@ class FreeTrialInfo extends Shape
      *     start: \Aws\Api\DateTimeResult,
      *     end: \Aws\Api\DateTimeResult,
      *     status: 'ACTIVE'|'INACTIVE',
-     *     cloudProvider?: 'AWS'|'AZURE'|'NOT_APPLICABLE'|null
+     *     cloudProvider?: 'AWS'|'AZURE'|'GCP'|'NOT_APPLICABLE'|null
      * } $args
      */
     public function __construct(array $args)

@@ -12,12 +12,14 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Result
  * @property Shapes\ErrorObject|null $Error
  * @property \Aws\Api\DateTimeResult $StartTimestamp
- * @property 'RUNNING'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'STOPPED' $Status
+ * @property 'RUNNING'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'STOPPED'|'DELETING'|'PAUSING'|'PAUSED' $Status
  * @property \Aws\Api\DateTimeResult|null $EndTimestamp
  * @property string|null $Version
  * @property Shapes\TraceHeader|null $TraceHeader
  * @property bool|null $ExecutionDataIncluded
  * @property Shapes\DurableConfig|null $DurableConfig
+ * @property Shapes\PauseDetails|null $PauseDetails
+ * @property \Aws\Api\DateTimeResult|null $ExpectedExecutionTimeoutTimestamp
  */
 class GetDurableExecutionResponse extends Response
 {

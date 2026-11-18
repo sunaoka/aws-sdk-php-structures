@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VpcPeeringConnectionStateReason|null $Status
  * @property list<Tag>|null $Tags
  * @property string|null $VpcPeeringConnectionId
+ * @property 'pending'|'enabled'|'disabled'|null $MultipathResilienceStatus
  */
 class VpcPeeringConnection extends Shape
 {
@@ -21,7 +22,8 @@ class VpcPeeringConnection extends Shape
      *     RequesterVpcInfo?: VpcPeeringConnectionVpcInfo|null,
      *     Status?: VpcPeeringConnectionStateReason|null,
      *     Tags?: list<Tag>|null,
-     *     VpcPeeringConnectionId?: string|null
+     *     VpcPeeringConnectionId?: string|null,
+     *     MultipathResilienceStatus?: 'pending'|'enabled'|'disabled'|null
      * } $args
      */
     public function __construct(array $args = [])

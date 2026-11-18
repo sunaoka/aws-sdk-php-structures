@@ -16,6 +16,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  * @property 'STANDARD'|'CALIBRATION'|null $EvaluationType
  * @property array<string, string>|null $Tags
+ * @property array<string, 'ENABLED'|'DISABLED'>|null $ItemEnablementStatus
+ * @property 'PENDING'|'RESOLVED'|'FAILED'|null $SourceResolutionStatus
+ * @property list<EvaluationResolvedSource>|null $SourceValues
  */
 class Evaluation extends Shape
 {
@@ -31,7 +34,10 @@ class Evaluation extends Shape
      *     CreatedTime: \Aws\Api\DateTimeResult,
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
      *     EvaluationType?: 'STANDARD'|'CALIBRATION'|null,
-     *     Tags?: array<string, string>|null
+     *     Tags?: array<string, string>|null,
+     *     ItemEnablementStatus?: array<string, 'ENABLED'|'DISABLED'>|null,
+     *     SourceResolutionStatus?: 'PENDING'|'RESOLVED'|'FAILED'|null,
+     *     SourceValues?: list<EvaluationResolvedSource>|null
      * } $args
      */
     public function __construct(array $args)

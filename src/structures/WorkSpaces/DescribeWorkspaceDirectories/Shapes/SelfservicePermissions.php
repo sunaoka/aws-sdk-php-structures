@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ENABLED'|'DISABLED'|null $ChangeComputeType
  * @property 'ENABLED'|'DISABLED'|null $SwitchRunningMode
  * @property 'ENABLED'|'DISABLED'|null $RebuildWorkspace
+ * @property 'ENABLED'|'DISABLED'|null $NestedVirtualization
+ * @property 'ENABLED'|'DISABLED'|null $EnableEndUserAdvisor
  */
 class SelfservicePermissions extends Shape
 {
@@ -19,7 +21,9 @@ class SelfservicePermissions extends Shape
      *     IncreaseVolumeSize?: 'ENABLED'|'DISABLED'|null,
      *     ChangeComputeType?: 'ENABLED'|'DISABLED'|null,
      *     SwitchRunningMode?: 'ENABLED'|'DISABLED'|null,
-     *     RebuildWorkspace?: 'ENABLED'|'DISABLED'|null
+     *     RebuildWorkspace?: 'ENABLED'|'DISABLED'|null,
+     *     NestedVirtualization?: 'ENABLED'|'DISABLED'|null,
+     *     EnableEndUserAdvisor?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

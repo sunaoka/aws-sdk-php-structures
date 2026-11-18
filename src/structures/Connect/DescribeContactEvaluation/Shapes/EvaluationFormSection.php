@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double|null $Weight
  * @property bool|null $IsExcludedFromScoring
  * @property list<EvaluationFormScoreThreshold>|null $ScoreThresholds
+ * @property EvaluationFormItemEnablementConfiguration|null $Enablement
  */
 class EvaluationFormSection extends Shape
 {
@@ -23,7 +24,8 @@ class EvaluationFormSection extends Shape
      *     Items: list<EvaluationFormItem>,
      *     Weight?: double|null,
      *     IsExcludedFromScoring?: bool|null,
-     *     ScoreThresholds?: list<EvaluationFormScoreThreshold>|null
+     *     ScoreThresholds?: list<EvaluationFormScoreThreshold>|null,
+     *     Enablement?: EvaluationFormItemEnablementConfiguration|null
      * } $args
      */
     public function __construct(array $args)

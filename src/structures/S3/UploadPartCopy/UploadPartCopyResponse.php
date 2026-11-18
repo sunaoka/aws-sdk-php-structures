@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $SSEKMSKeyId
  * @property bool|null $BucketKeyEnabled
  * @property 'requester'|null $RequestCharged
+ * @property string|null $VersionId
  */
 class UploadPartCopyResponse extends Response
 {

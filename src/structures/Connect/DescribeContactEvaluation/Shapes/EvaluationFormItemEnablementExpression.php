@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property EvaluationFormItemEnablementSource $Source
  * @property list<EvaluationFormItemEnablementSourceValue> $Values
- * @property 'IN'|'NOT_IN'|'ALL_IN'|'EXACT' $Comparator
+ * @property 'IN'|'NOT_IN'|'ALL_IN'|'EXACT'|'GREATER_THAN'|'LESS_THAN'|'GREATER_THAN_OR_EQUAL_TO'|'LESS_THAN_OR_EQUAL_TO'|'EQUAL_TO'|'NOT_EQUAL_TO' $Comparator
  */
 class EvaluationFormItemEnablementExpression extends Shape
 {
@@ -15,7 +15,7 @@ class EvaluationFormItemEnablementExpression extends Shape
      * @param array{
      *     Source: EvaluationFormItemEnablementSource,
      *     Values: list<EvaluationFormItemEnablementSourceValue>,
-     *     Comparator: 'IN'|'NOT_IN'|'ALL_IN'|'EXACT'
+     *     Comparator: 'IN'|'NOT_IN'|'ALL_IN'|'EXACT'|'GREATER_THAN'|'LESS_THAN'|'GREATER_THAN_OR_EQUAL_TO'|'LESS_THAN_OR_EQUAL_TO'|'EQUAL_TO'|'NOT_EQUAL_TO'
      * } $args
      */
     public function __construct(array $args)

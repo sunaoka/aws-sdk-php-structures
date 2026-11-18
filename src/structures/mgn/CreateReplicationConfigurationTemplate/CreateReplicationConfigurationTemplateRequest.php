@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $tags
  * @property 'IPV4'|'IPV6'|null $internetProtocol
  * @property bool|null $storeSnapshotOnLocalZone
+ * @property 'OUTPOST'|'REGION'|null $outpostSnapshotLocation
  * @property Shapes\StorageConfiguration|null $storageConfiguration
  */
 class CreateReplicationConfigurationTemplateRequest extends Request
@@ -43,6 +44,7 @@ class CreateReplicationConfigurationTemplateRequest extends Request
      *     tags?: array<string, string>|null,
      *     internetProtocol?: 'IPV4'|'IPV6'|null,
      *     storeSnapshotOnLocalZone?: bool|null,
+     *     outpostSnapshotLocation?: 'OUTPOST'|'REGION'|null,
      *     storageConfiguration?: Shapes\StorageConfiguration|null
      * } $args
      */
