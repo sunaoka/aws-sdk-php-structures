@@ -37,6 +37,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use AdminUpdateUserAttributes\AdminUpdateUserAttributesTrait;
     use AdminUserGlobalSignOut\AdminUserGlobalSignOutTrait;
     use AssociateSoftwareToken\AssociateSoftwareTokenTrait;
+    use CancelPointInTimeRecovery\CancelPointInTimeRecoveryTrait;
     use ChangePassword\ChangePasswordTrait;
     use CompleteWebAuthnRegistration\CompleteWebAuthnRegistrationTrait;
     use ConfirmDevice\ConfirmDeviceTrait;
@@ -68,6 +69,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use DescribeIdentityProvider\DescribeIdentityProviderTrait;
     use DescribeManagedLoginBranding\DescribeManagedLoginBrandingTrait;
     use DescribeManagedLoginBrandingByClient\DescribeManagedLoginBrandingByClientTrait;
+    use DescribePointInTimeRecovery\DescribePointInTimeRecoveryTrait;
     use DescribeResourceServer\DescribeResourceServerTrait;
     use DescribeRiskConfiguration\DescribeRiskConfigurationTrait;
     use DescribeTerms\DescribeTermsTrait;
@@ -97,9 +99,11 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use GetUserPoolSessionConfiguration\GetUserPoolSessionConfigurationTrait;
     use GlobalSignOut\GlobalSignOutTrait;
     use InitiateAuth\InitiateAuthTrait;
+    use InitiatePointInTimeRecovery\InitiatePointInTimeRecoveryTrait;
     use ListDevices\ListDevicesTrait;
     use ListGroups\ListGroupsTrait;
     use ListIdentityProviders\ListIdentityProvidersTrait;
+    use ListPointInTimeRecoveries\ListPointInTimeRecoveriesTrait;
     use ListResourceServers\ListResourceServersTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTerms\ListTermsTrait;
@@ -125,6 +129,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use SetUserPoolSessionConfiguration\SetUserPoolSessionConfigurationTrait;
     use SetUserSettings\SetUserSettingsTrait;
     use SignUp\SignUpTrait;
+    use StartPointInTimeRecovery\StartPointInTimeRecoveryTrait;
     use StartUserImportJob\StartUserImportJobTrait;
     use StartWebAuthnRegistration\StartWebAuthnRegistrationTrait;
     use StopUserImportJob\StopUserImportJobTrait;

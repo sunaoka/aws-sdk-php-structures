@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\OnSourceDDoSProtectionConfig|null $OnSourceDDoSProtectionConfig
  * @property Shapes\ApplicationConfig|null $ApplicationConfig
  * @property Shapes\MonetizationConfig|null $MonetizationConfig
+ * @property Shapes\AnalyticsConfig|null $AnalyticsConfig
  */
 class UpdateWebACLRequest extends Request
 {
@@ -43,7 +44,8 @@ class UpdateWebACLRequest extends Request
      *     AssociationConfig?: Shapes\AssociationConfig|null,
      *     OnSourceDDoSProtectionConfig?: Shapes\OnSourceDDoSProtectionConfig|null,
      *     ApplicationConfig?: Shapes\ApplicationConfig|null,
-     *     MonetizationConfig?: Shapes\MonetizationConfig|null
+     *     MonetizationConfig?: Shapes\MonetizationConfig|null,
+     *     AnalyticsConfig?: Shapes\AnalyticsConfig|null
      * } $args
      */
     public function __construct(array $args)

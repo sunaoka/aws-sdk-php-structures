@@ -78,6 +78,7 @@ class SecurityAgentClient extends \Aws\SecurityAgent\SecurityAgentClient
     use ListThreatModelJobs\ListThreatModelJobsTrait;
     use ListThreatModels\ListThreatModelsTrait;
     use ListThreats\ListThreatsTrait;
+    use ResumePentestJob\ResumePentestJobTrait;
     use StartCodeRemediation\StartCodeRemediationTrait;
     use StartCodeReviewJob\StartCodeReviewJobTrait;
     use StartPentestJob\StartPentestJobTrait;

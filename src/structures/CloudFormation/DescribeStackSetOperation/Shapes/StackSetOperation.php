@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property StackSetDriftDetectionDetails|null $StackSetDriftDetectionDetails
  * @property string|null $StatusReason
  * @property StackSetOperationStatusDetails|null $StatusDetails
+ * @property array<string, RegionalStatusDetail>|null $RegionalStatusDetails
  */
 class StackSetOperation extends Shape
 {
@@ -37,7 +38,8 @@ class StackSetOperation extends Shape
      *     DeploymentTargets?: DeploymentTargets|null,
      *     StackSetDriftDetectionDetails?: StackSetDriftDetectionDetails|null,
      *     StatusReason?: string|null,
-     *     StatusDetails?: StackSetOperationStatusDetails|null
+     *     StatusDetails?: StackSetOperationStatusDetails|null,
+     *     RegionalStatusDetails?: array<string, RegionalStatusDetail>|null
      * } $args
      */
     public function __construct(array $args = [])

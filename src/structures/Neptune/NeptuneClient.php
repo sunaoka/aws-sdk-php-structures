@@ -48,6 +48,7 @@ class NeptuneClient extends \Aws\Neptune\NeptuneClient
     use DescribeGlobalClusters\DescribeGlobalClustersTrait;
     use DescribeOrderableDBInstanceOptions\DescribeOrderableDBInstanceOptionsTrait;
     use DescribePendingMaintenanceActions\DescribePendingMaintenanceActionsTrait;
+    use DescribeServerlessV2PlatformVersions\DescribeServerlessV2PlatformVersionsTrait;
     use DescribeValidDBInstanceModifications\DescribeValidDBInstanceModificationsTrait;
     use FailoverDBCluster\FailoverDBClusterTrait;
     use FailoverGlobalCluster\FailoverGlobalClusterTrait;

@@ -9,7 +9,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $deviceName
  * @property string $providerName
  * @property 'QPU'|'SIMULATOR' $deviceType
- * @property 'ONLINE'|'OFFLINE'|'RETIRED' $deviceStatus
+ * @property 'ONLINE'|'OFFLINE'|'RETIRED'|'PAUSED' $deviceStatus
+ * @property Shapes\DeviceStatusReason|null $deviceStatusReason
  * @property string $deviceCapabilities
  * @property list<Shapes\DeviceQueueInfo>|null $deviceQueueInfo
  */

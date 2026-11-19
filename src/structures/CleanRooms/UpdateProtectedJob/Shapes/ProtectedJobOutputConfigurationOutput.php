@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property ProtectedJobS3OutputConfigurationOutput|null $s3
  * @property ProtectedJobMemberOutputConfigurationOutput|null $member
+ * @property IntermediateTableOutputConfiguration|null $intermediateTable
  */
 class ProtectedJobOutputConfigurationOutput extends Shape
 {
     /**
      * @param array{
      *     s3?: ProtectedJobS3OutputConfigurationOutput|null,
-     *     member?: ProtectedJobMemberOutputConfigurationOutput|null
+     *     member?: ProtectedJobMemberOutputConfigurationOutput|null,
+     *     intermediateTable?: IntermediateTableOutputConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

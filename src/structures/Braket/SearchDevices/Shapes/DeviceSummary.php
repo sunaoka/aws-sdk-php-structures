@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $deviceName
  * @property string $providerName
  * @property 'QPU'|'SIMULATOR' $deviceType
- * @property 'ONLINE'|'OFFLINE'|'RETIRED' $deviceStatus
+ * @property 'ONLINE'|'OFFLINE'|'RETIRED'|'PAUSED' $deviceStatus
  */
 class DeviceSummary extends Shape
 {
@@ -19,7 +19,7 @@ class DeviceSummary extends Shape
      *     deviceName: string,
      *     providerName: string,
      *     deviceType: 'QPU'|'SIMULATOR',
-     *     deviceStatus: 'ONLINE'|'OFFLINE'|'RETIRED'
+     *     deviceStatus: 'ONLINE'|'OFFLINE'|'RETIRED'|'PAUSED'
      * } $args
      */
     public function __construct(array $args)

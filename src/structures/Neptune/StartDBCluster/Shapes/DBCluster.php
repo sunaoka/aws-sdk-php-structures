@@ -47,6 +47,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $CrossAccountClone
  * @property \Aws\Api\DateTimeResult|null $AutomaticRestartTime
  * @property ServerlessV2ScalingConfigurationInfo|null $ServerlessV2ScalingConfiguration
+ * @property string|null $ServerlessV2PlatformVersion
  * @property string|null $GlobalClusterIdentifier
  * @property \Aws\Api\DateTimeResult|null $IOOptimizedNextAllowedModificationTime
  * @property string|null $StorageType
@@ -98,6 +99,7 @@ class DBCluster extends Shape
      *     CrossAccountClone?: bool|null,
      *     AutomaticRestartTime?: \Aws\Api\DateTimeResult|null,
      *     ServerlessV2ScalingConfiguration?: ServerlessV2ScalingConfigurationInfo|null,
+     *     ServerlessV2PlatformVersion?: string|null,
      *     GlobalClusterIdentifier?: string|null,
      *     IOOptimizedNextAllowedModificationTime?: \Aws\Api\DateTimeResult|null,
      *     StorageType?: string|null,

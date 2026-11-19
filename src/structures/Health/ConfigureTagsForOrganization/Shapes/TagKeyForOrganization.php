@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Health\ConfigureTagsForOrganization\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $key
+ * @property string $key
  * @property bool|null $enabledForEventBridge
  */
 class TagKeyForOrganization extends Shape
 {
     /**
      * @param array{
-     *     key?: string|null,
+     *     key: string,
      *     enabledForEventBridge?: bool|null
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

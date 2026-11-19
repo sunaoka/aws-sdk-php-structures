@@ -82,6 +82,7 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use ListTenantResources\ListTenantResourcesTrait;
     use ListTenants\ListTenantsTrait;
     use PutAccountDedicatedIpWarmupAttributes\PutAccountDedicatedIpWarmupAttributesTrait;
+    use PutAccountDeliveryAttributes\PutAccountDeliveryAttributesTrait;
     use PutAccountDetails\PutAccountDetailsTrait;
     use PutAccountPricingAttributes\PutAccountPricingAttributesTrait;
     use PutAccountSendingAttributes\PutAccountSendingAttributesTrait;

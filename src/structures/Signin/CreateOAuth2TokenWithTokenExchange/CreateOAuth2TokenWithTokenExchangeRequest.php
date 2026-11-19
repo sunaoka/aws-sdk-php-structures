@@ -8,6 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $grantType
  * @property string|null $subjectToken
  * @property string|null $subjectTokenType
+ * @property string|null $assertion
+ * @property string|null $clientId
  * @property string|null $resource
  * @property string|null $scope
  */
@@ -18,6 +20,8 @@ class CreateOAuth2TokenWithTokenExchangeRequest extends Request
      *     grantType: string,
      *     subjectToken?: string|null,
      *     subjectTokenType?: string|null,
+     *     assertion?: string|null,
+     *     clientId?: string|null,
      *     resource?: string|null,
      *     scope?: string|null
      * } $args

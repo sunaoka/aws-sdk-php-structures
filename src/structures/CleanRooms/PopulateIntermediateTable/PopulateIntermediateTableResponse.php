@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $analysisId
- * @property 'QUERY' $analysisType
+ * @property 'QUERY'|'JOB' $analysisType
  * @property string $versionId
  */
 class PopulateIntermediateTableResponse extends Response

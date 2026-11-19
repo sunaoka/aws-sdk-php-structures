@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\AccountDetails|null $Details
  * @property Shapes\VdmAttributes|null $VdmAttributes
  * @property Shapes\PricingAttributes|null $PricingAttributes
+ * @property Shapes\DeliveryAttributes|null $DeliveryAttributes
  */
 class GetAccountResponse extends Response
 {

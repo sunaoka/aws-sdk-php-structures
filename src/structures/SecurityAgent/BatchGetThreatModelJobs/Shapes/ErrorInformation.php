@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SecurityAgent\BatchGetThreatModelJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CLIENT_ERROR'|'INTERNAL_ERROR'|'STOPPED_BY_USER'|null $code
+ * @property 'CLIENT_ERROR'|'INTERNAL_ERROR'|'STOPPED_BY_USER'|'PAUSED_BY_USER'|null $code
  * @property string|null $message
  */
 class ErrorInformation extends Shape
 {
     /**
      * @param array{
-     *     code?: 'CLIENT_ERROR'|'INTERNAL_ERROR'|'STOPPED_BY_USER'|null,
+     *     code?: 'CLIENT_ERROR'|'INTERNAL_ERROR'|'STOPPED_BY_USER'|'PAUSED_BY_USER'|null,
      *     message?: string|null
      * } $args
      */

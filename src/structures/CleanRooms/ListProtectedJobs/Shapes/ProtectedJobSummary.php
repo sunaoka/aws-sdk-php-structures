@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'SUBMITTED'|'STARTED'|'CANCELLED'|'CANCELLING'|'FAILED'|'SUCCESS' $status
  * @property list<ProtectedJobReceiverConfiguration> $receiverConfigurations
  * @property string|null $jobComputePayerAccountId
+ * @property IntermediateTableOutputConfiguration|null $intermediateTableConfiguration
  */
 class ProtectedJobSummary extends Shape
 {
@@ -23,7 +24,8 @@ class ProtectedJobSummary extends Shape
      *     createTime: \Aws\Api\DateTimeResult,
      *     status: 'SUBMITTED'|'STARTED'|'CANCELLED'|'CANCELLING'|'FAILED'|'SUCCESS',
      *     receiverConfigurations: list<ProtectedJobReceiverConfiguration>,
-     *     jobComputePayerAccountId?: string|null
+     *     jobComputePayerAccountId?: string|null,
+     *     intermediateTableConfiguration?: IntermediateTableOutputConfiguration|null
      * } $args
      */
     public function __construct(array $args)

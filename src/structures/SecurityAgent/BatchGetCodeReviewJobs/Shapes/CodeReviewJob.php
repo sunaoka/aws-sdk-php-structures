@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $codeReviewId
  * @property string|null $title
  * @property string|null $overview
- * @property 'IN_PROGRESS'|'STOPPING'|'STOPPED'|'FAILED'|'COMPLETED'|null $status
+ * @property 'IN_PROGRESS'|'STOPPING'|'STOPPED'|'PAUSING'|'PAUSED'|'FAILED'|'COMPLETED'|null $status
  * @property list<DocumentInfo>|null $documents
  * @property list<SourceCodeRepository>|null $sourceCode
  * @property list<Step>|null $steps
@@ -32,7 +32,7 @@ class CodeReviewJob extends Shape
      *     codeReviewId?: string|null,
      *     title?: string|null,
      *     overview?: string|null,
-     *     status?: 'IN_PROGRESS'|'STOPPING'|'STOPPED'|'FAILED'|'COMPLETED'|null,
+     *     status?: 'IN_PROGRESS'|'STOPPING'|'STOPPED'|'PAUSING'|'PAUSED'|'FAILED'|'COMPLETED'|null,
      *     documents?: list<DocumentInfo>|null,
      *     sourceCode?: list<SourceCodeRepository>|null,
      *     steps?: list<Step>|null,

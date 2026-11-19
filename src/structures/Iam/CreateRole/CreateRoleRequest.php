@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AssumeRolePolicyDocument
  * @property string|null $Description
  * @property int<3600, 43200>|null $MaxSessionDuration
+ * @property int<3600, 7776000>|null $MaxSigninSessionDuration
  * @property string|null $PermissionsBoundary
  * @property list<Shapes\Tag>|null $Tags
  */
@@ -22,6 +23,7 @@ class CreateRoleRequest extends Request
      *     AssumeRolePolicyDocument: string,
      *     Description?: string|null,
      *     MaxSessionDuration?: int<3600, 43200>|null,
+     *     MaxSigninSessionDuration?: int<3600, 7776000>|null,
      *     PermissionsBoundary?: string|null,
      *     Tags?: list<Shapes\Tag>|null
      * } $args

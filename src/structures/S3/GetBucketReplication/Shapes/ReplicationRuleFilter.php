@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Prefix
  * @property Tag|null $Tag
  * @property ReplicationRuleAndOperator|null $And
+ * @property ReplicationRuleNotOperator|null $Not
  */
 class ReplicationRuleFilter extends Shape
 {
@@ -15,7 +16,8 @@ class ReplicationRuleFilter extends Shape
      * @param array{
      *     Prefix?: string|null,
      *     Tag?: Tag|null,
-     *     And?: ReplicationRuleAndOperator|null
+     *     And?: ReplicationRuleAndOperator|null,
+     *     Not?: ReplicationRuleNotOperator|null
      * } $args
      */
     public function __construct(array $args = [])

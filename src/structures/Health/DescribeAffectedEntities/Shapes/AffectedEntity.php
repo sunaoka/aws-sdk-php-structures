@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED'|null $statusCode
  * @property array<string, string>|null $resourceTags
  * @property array<string, string>|null $accountTags
- * @property array<string, string>|null $tags
  * @property array<string, string>|null $entityMetadata
  */
 class AffectedEntity extends Shape
@@ -30,7 +29,6 @@ class AffectedEntity extends Shape
      *     statusCode?: 'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED'|null,
      *     resourceTags?: array<string, string>|null,
      *     accountTags?: array<string, string>|null,
-     *     tags?: array<string, string>|null,
      *     entityMetadata?: array<string, string>|null
      * } $args
      */

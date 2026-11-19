@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $title
- * @property 'IN_PROGRESS'|'STOPPING'|'STOPPED'|'FAILED'|'COMPLETED'|null $status
+ * @property 'IN_PROGRESS'|'STOPPING'|'STOPPED'|'PAUSING'|'PAUSED'|'FAILED'|'COMPLETED'|null $status
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string $codeReviewId

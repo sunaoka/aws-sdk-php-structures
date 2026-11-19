@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $versionId
  * @property string $analysisId
- * @property 'QUERY' $analysisType
+ * @property 'QUERY'|'JOB' $analysisType
  * @property string|null $kmsKeyArn
  * @property array<string, string>|null $parameters
  * @property IntermediateTableInheritedConstraints $inheritedConstraints
@@ -19,7 +19,7 @@ class IntermediateTableActiveVersion extends Shape
      * @param array{
      *     versionId: string,
      *     analysisId: string,
-     *     analysisType: 'QUERY',
+     *     analysisType: 'QUERY'|'JOB',
      *     kmsKeyArn?: string|null,
      *     parameters?: array<string, string>|null,
      *     inheritedConstraints: IntermediateTableInheritedConstraints,

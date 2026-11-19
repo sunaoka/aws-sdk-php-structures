@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property WorkerComputeConfiguration|null $queryComputeConfiguration
+ * @property ProtectedJobComputeConfiguration|null $jobComputeConfiguration
  */
 class IntermediateTableComputeConfiguration extends Shape
 {
     /**
-     * @param array{queryComputeConfiguration?: WorkerComputeConfiguration|null} $args
+     * @param array{
+     *     queryComputeConfiguration?: WorkerComputeConfiguration|null,
+     *     jobComputeConfiguration?: ProtectedJobComputeConfiguration|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

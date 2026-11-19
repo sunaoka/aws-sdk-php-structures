@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AssumeRolePolicyDocument
  * @property string|null $Description
  * @property int<3600, 43200>|null $MaxSessionDuration
+ * @property int<3600, 7776000>|null $MaxSigninSessionDuration
  * @property AttachedPermissionsBoundary|null $PermissionsBoundary
  * @property list<Tag>|null $Tags
  * @property RoleLastUsed|null $RoleLastUsed
@@ -30,6 +31,7 @@ class Role extends Shape
      *     AssumeRolePolicyDocument?: string|null,
      *     Description?: string|null,
      *     MaxSessionDuration?: int<3600, 43200>|null,
+     *     MaxSigninSessionDuration?: int<3600, 7776000>|null,
      *     PermissionsBoundary?: AttachedPermissionsBoundary|null,
      *     Tags?: list<Tag>|null,
      *     RoleLastUsed?: RoleLastUsed|null,

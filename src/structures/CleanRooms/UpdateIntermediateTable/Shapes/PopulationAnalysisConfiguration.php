@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property PopulationAnalysisSqlParameters|null $sqlParameters
+ * @property PopulationAnalysisJobParameters|null $jobParameters
  */
 class PopulationAnalysisConfiguration extends Shape
 {
     /**
-     * @param array{sqlParameters?: PopulationAnalysisSqlParameters|null} $args
+     * @param array{
+     *     sqlParameters?: PopulationAnalysisSqlParameters|null,
+     *     jobParameters?: PopulationAnalysisJobParameters|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

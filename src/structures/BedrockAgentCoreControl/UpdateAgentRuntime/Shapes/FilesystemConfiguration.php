@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property S3FilesAccessPointConfiguration|null $s3FilesAccessPoint
  * @property EfsAccessPointConfiguration|null $efsAccessPoint
  * @property CapacityProviderVolumeConfiguration|null $capacityProviderVolume
+ * @property S3BucketMountConfiguration|null $s3BucketMount
  */
 class FilesystemConfiguration extends Shape
 {
@@ -17,7 +18,8 @@ class FilesystemConfiguration extends Shape
      *     sessionStorage?: SessionStorageConfiguration|null,
      *     s3FilesAccessPoint?: S3FilesAccessPointConfiguration|null,
      *     efsAccessPoint?: EfsAccessPointConfiguration|null,
-     *     capacityProviderVolume?: CapacityProviderVolumeConfiguration|null
+     *     capacityProviderVolume?: CapacityProviderVolumeConfiguration|null,
+     *     s3BucketMount?: S3BucketMountConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

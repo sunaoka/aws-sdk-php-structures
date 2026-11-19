@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $testTemplateArn
  * @property TestRunReportConfiguration|null $reportConfiguration
  * @property TestRunPolicySnapshot|null $policy
+ * @property TestRunEffectivePolicyValues|null $effectivePolicyValues
  * @property ReportGenerationResult|null $reportOutput
  * @property string|null $regionSwitchPlanArn
  * @property string|null $regionSwitchExecutionId
@@ -49,6 +50,7 @@ class TestRun extends Shape
      *     testTemplateArn: string,
      *     reportConfiguration?: TestRunReportConfiguration|null,
      *     policy?: TestRunPolicySnapshot|null,
+     *     effectivePolicyValues?: TestRunEffectivePolicyValues|null,
      *     reportOutput?: ReportGenerationResult|null,
      *     regionSwitchPlanArn?: string|null,
      *     regionSwitchExecutionId?: string|null,
