@@ -12,9 +12,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\UpdatedDescription|null $description
  * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|null $recordType
  * @property Shapes\UpdatedDescriptors|null $descriptors
+ * @property Shapes\UpdatedRegistryRecordArtifact|null $artifact
  * @property string|null $recordVersion
  * @property Shapes\UpdatedCustomMetadataMap|null $customMetadata
  * @property bool|null $triggerSynchronization
+ * @property bool|null $forceAuthentication
  * @property list<Shapes\Provenance>|null $provenance
  */
 class UpdateRegistryRecordRequest extends Request
@@ -28,9 +30,11 @@ class UpdateRegistryRecordRequest extends Request
      *     description?: Shapes\UpdatedDescription|null,
      *     recordType?: 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|null,
      *     descriptors?: Shapes\UpdatedDescriptors|null,
+     *     artifact?: Shapes\UpdatedRegistryRecordArtifact|null,
      *     recordVersion?: string|null,
      *     customMetadata?: Shapes\UpdatedCustomMetadataMap|null,
      *     triggerSynchronization?: bool|null,
+     *     forceAuthentication?: bool|null,
      *     provenance?: list<Shapes\Provenance>|null
      * } $args
      */

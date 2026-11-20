@@ -23,6 +23,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AlarmIdentifier|null $AlarmIdentifier
  * @property 'Healthy'|'Unhealthy'|'LastKnownStatus'|null $InsufficientDataHealthStatus
  * @property string|null $RoutingControlArn
+ * @property 'PUBLIC'|'PRIVATE'|null $EndpointType
+ * @property string|null $HealthCheckSourceId
  */
 class HealthCheckConfig extends Shape
 {
@@ -45,7 +47,9 @@ class HealthCheckConfig extends Shape
      *     Regions?: list<'us-east-1'|'us-west-1'|'us-west-2'|'eu-west-1'|'ap-southeast-1'|'ap-southeast-2'|'ap-northeast-1'|'sa-east-1'>|null,
      *     AlarmIdentifier?: AlarmIdentifier|null,
      *     InsufficientDataHealthStatus?: 'Healthy'|'Unhealthy'|'LastKnownStatus'|null,
-     *     RoutingControlArn?: string|null
+     *     RoutingControlArn?: string|null,
+     *     EndpointType?: 'PUBLIC'|'PRIVATE'|null,
+     *     HealthCheckSourceId?: string|null
      * } $args
      */
     public function __construct(array $args)

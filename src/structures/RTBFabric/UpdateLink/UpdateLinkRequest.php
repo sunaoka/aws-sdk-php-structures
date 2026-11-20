@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $linkId
  * @property Shapes\LinkLogSettings|null $logSettings
  * @property int<100, 5000>|null $timeoutInMillis
+ * @property string|null $clientToken
  */
 class UpdateLinkRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateLinkRequest extends Request
      *     gatewayId: string,
      *     linkId: string,
      *     logSettings?: Shapes\LinkLogSettings|null,
-     *     timeoutInMillis?: int<100, 5000>|null
+     *     timeoutInMillis?: int<100, 5000>|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

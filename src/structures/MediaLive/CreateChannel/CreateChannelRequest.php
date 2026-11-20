@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\LinkedChannelSettings|null $LinkedChannelSettings
  * @property list<string>|null $ChannelSecurityGroups
  * @property Shapes\InferenceSettings|null $InferenceSettings
+ * @property Shapes\JpegXsInputSpecification|null $JpegXsInputSpecification
  */
 class CreateChannelRequest extends Request
 {
@@ -49,7 +50,8 @@ class CreateChannelRequest extends Request
      *     DryRun?: bool|null,
      *     LinkedChannelSettings?: Shapes\LinkedChannelSettings|null,
      *     ChannelSecurityGroups?: list<string>|null,
-     *     InferenceSettings?: Shapes\InferenceSettings|null
+     *     InferenceSettings?: Shapes\InferenceSettings|null,
+     *     JpegXsInputSpecification?: Shapes\JpegXsInputSpecification|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $IfMatch
  * @property Shapes\ManagedCertificateRequest|null $ManagedCertificateRequest
  * @property bool|null $Enabled
+ * @property 'allow'|'reject'|null $OnDomainTakeover
  */
 class UpdateDistributionTenantRequest extends Request
 {
@@ -27,7 +28,8 @@ class UpdateDistributionTenantRequest extends Request
      *     ConnectionGroupId?: string|null,
      *     IfMatch: string,
      *     ManagedCertificateRequest?: Shapes\ManagedCertificateRequest|null,
-     *     Enabled?: bool|null
+     *     Enabled?: bool|null,
+     *     OnDomainTakeover?: 'allow'|'reject'|null
      * } $args
      */
     public function __construct(array $args)

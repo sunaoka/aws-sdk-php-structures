@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'Distributor'|'Reseller'|'Hardware Partner'|'Managed Service Provider'|'Software Partner'|'Services Partner'|'Training Partner'|'Co-Sell Facilitator'|'Facilitator'> $ReceiverResponsibilities
  * @property EngagementCustomer $Customer
  * @property ProjectDetails $Project
+ * @property 'Net New Business'|'Flat Renewal'|'Expansion'|null $OpportunityType
  */
 class OpportunityInvitationPayload extends Shape
 {
@@ -17,7 +18,8 @@ class OpportunityInvitationPayload extends Shape
      *     SenderContacts?: list<SenderContact>|null,
      *     ReceiverResponsibilities: list<'Distributor'|'Reseller'|'Hardware Partner'|'Managed Service Provider'|'Software Partner'|'Services Partner'|'Training Partner'|'Co-Sell Facilitator'|'Facilitator'>,
      *     Customer: EngagementCustomer,
-     *     Project: ProjectDetails
+     *     Project: ProjectDetails,
+     *     OpportunityType?: 'Net New Business'|'Flat Renewal'|'Expansion'|null
      * } $args
      */
     public function __construct(array $args)

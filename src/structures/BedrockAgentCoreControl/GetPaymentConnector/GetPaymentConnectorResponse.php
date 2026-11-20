@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $paymentConnectorId
  * @property string $name
  * @property string|null $description
- * @property 'CoinbaseCDP'|'StripePrivy' $type
+ * @property 'CoinbaseCDP'|'StripePrivy'|'AwsBilling' $type
  * @property 'MANUAL'|'QUICK_CREATE'|null $provisionMode
  * @property list<Shapes\CredentialsProviderConfiguration> $credentialProviderConfigurations
  * @property \Aws\Api\DateTimeResult $createdAt

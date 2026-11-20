@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, max> $FileSizeInBytes
  * @property 'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED'|'DRAFTING' $FileStatus
  * @property CreatedByInfo|null $CreatedBy
- * @property 'CONTACT_ANALYSIS'|'EMAIL_MESSAGE'|'EMAIL_MESSAGE_PLAIN_TEXT'|'EMAIL_MESSAGE_REDACTED'|'EMAIL_MESSAGE_PLAIN_TEXT_REDACTED'|'ATTACHMENT'|'VOICE_RECORDING'|null $FileUseCaseType
+ * @property 'CONTACT_ANALYSIS'|'EMAIL_MESSAGE'|'EMAIL_MESSAGE_PLAIN_TEXT'|'EMAIL_MESSAGE_REDACTED'|'EMAIL_MESSAGE_PLAIN_TEXT_REDACTED'|'ATTACHMENT'|'VOICE_RECORDING'|'VOICEMAIL_RECORDING'|'VOICEMAIL_RECORDING_REDACTED'|'VOICEMAIL_ANALYSIS'|'VOICEMAIL_ANALYSIS_REDACTED'|null $FileUseCaseType
  * @property string|null $AssociatedResourceArn
  * @property array<string, string>|null $Tags
  */
@@ -27,7 +27,7 @@ class AttachedFile extends Shape
      *     FileSizeInBytes: int<1, max>,
      *     FileStatus: 'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED'|'DRAFTING',
      *     CreatedBy?: CreatedByInfo|null,
-     *     FileUseCaseType?: 'CONTACT_ANALYSIS'|'EMAIL_MESSAGE'|'EMAIL_MESSAGE_PLAIN_TEXT'|'EMAIL_MESSAGE_REDACTED'|'EMAIL_MESSAGE_PLAIN_TEXT_REDACTED'|'ATTACHMENT'|'VOICE_RECORDING'|null,
+     *     FileUseCaseType?: 'CONTACT_ANALYSIS'|'EMAIL_MESSAGE'|'EMAIL_MESSAGE_PLAIN_TEXT'|'EMAIL_MESSAGE_REDACTED'|'EMAIL_MESSAGE_PLAIN_TEXT_REDACTED'|'ATTACHMENT'|'VOICE_RECORDING'|'VOICEMAIL_RECORDING'|'VOICEMAIL_RECORDING_REDACTED'|'VOICEMAIL_ANALYSIS'|'VOICEMAIL_ANALYSIS_REDACTED'|null,
      *     AssociatedResourceArn?: string|null,
      *     Tags?: array<string, string>|null
      * } $args

@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $Enabled
  * @property string|null $Status
  * @property bool|null $IsDefault
+ * @property ViewerFallback|null $ViewerFallback
  */
 class ConnectionGroupSummary extends Shape
 {
@@ -31,7 +32,8 @@ class ConnectionGroupSummary extends Shape
      *     AnycastIpListId?: string|null,
      *     Enabled?: bool|null,
      *     Status?: string|null,
-     *     IsDefault?: bool|null
+     *     IsDefault?: bool|null,
+     *     ViewerFallback?: ViewerFallback|null
      * } $args
      */
     public function __construct(array $args)

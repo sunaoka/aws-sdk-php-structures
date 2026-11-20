@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FirewallAdvancedContentCategoryConfig|null $FirewallAdvancedContentCategory
  * @property FirewallAdvancedThreatCategoryConfig|null $FirewallAdvancedThreatCategory
  * @property DnsThreatProtectionRuleTypeConfig|null $DnsThreatProtection
+ * @property AutoAllowlistConfig|null $AutoAllowlist
  */
 class FirewallRuleType extends Shape
 {
@@ -17,7 +18,8 @@ class FirewallRuleType extends Shape
      *     PartnerThreatProtection?: PartnerThreatProtectionConfig|null,
      *     FirewallAdvancedContentCategory?: FirewallAdvancedContentCategoryConfig|null,
      *     FirewallAdvancedThreatCategory?: FirewallAdvancedThreatCategoryConfig|null,
-     *     DnsThreatProtection?: DnsThreatProtectionRuleTypeConfig|null
+     *     DnsThreatProtection?: DnsThreatProtectionRuleTypeConfig|null,
+     *     AutoAllowlist?: AutoAllowlistConfig|null
      * } $args
      */
     public function __construct(array $args = [])

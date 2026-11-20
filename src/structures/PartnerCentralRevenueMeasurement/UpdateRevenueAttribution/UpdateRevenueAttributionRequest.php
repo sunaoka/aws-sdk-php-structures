@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ClientToken
  * @property string|null $Description
  * @property string $Revision
+ * @property array<string, string>|null $Context
  */
 class UpdateRevenueAttributionRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateRevenueAttributionRequest extends Request
      *     Identifier: string,
      *     ClientToken?: string|null,
      *     Description?: string|null,
-     *     Revision: string
+     *     Revision: string,
+     *     Context?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

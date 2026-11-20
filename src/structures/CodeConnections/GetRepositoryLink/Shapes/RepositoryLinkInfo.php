@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ConnectionArn
  * @property string|null $EncryptionKeyArn
  * @property string $OwnerId
- * @property 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged'|'AzureDevOps' $ProviderType
+ * @property 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged'|'AzureDevOps'|'GitHubEnterpriseCloudDataResidency' $ProviderType
  * @property string $RepositoryLinkArn
  * @property string $RepositoryLinkId
  * @property string $RepositoryName
@@ -20,7 +20,7 @@ class RepositoryLinkInfo extends Shape
      *     ConnectionArn: string,
      *     EncryptionKeyArn?: string|null,
      *     OwnerId: string,
-     *     ProviderType: 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged'|'AzureDevOps',
+     *     ProviderType: 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged'|'AzureDevOps'|'GitHubEnterpriseCloudDataResidency',
      *     RepositoryLinkArn: string,
      *     RepositoryLinkId: string,
      *     RepositoryName: string

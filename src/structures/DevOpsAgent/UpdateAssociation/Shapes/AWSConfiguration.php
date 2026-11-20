@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'monitor' $accountType
  * @property string|null $agentElevatedRoleArn
  * @property 'valid'|'invalid'|'pending-confirmation'|null $agentElevatedRoleArnStatus
+ * @property string|null $serviceManagementRoleArn
  */
 class AWSConfiguration extends Shape
 {
@@ -19,7 +20,8 @@ class AWSConfiguration extends Shape
      *     accountId: string,
      *     accountType: 'monitor',
      *     agentElevatedRoleArn?: string|null,
-     *     agentElevatedRoleArnStatus?: 'valid'|'invalid'|'pending-confirmation'|null
+     *     agentElevatedRoleArnStatus?: 'valid'|'invalid'|'pending-confirmation'|null,
+     *     serviceManagementRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

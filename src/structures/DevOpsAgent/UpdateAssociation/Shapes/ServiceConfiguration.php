@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property SourceAwsConfiguration|null $sourceAws
+ * @property SourceAwsOrgConfiguration|null $sourceAwsOrg
  * @property AWSConfiguration|null $aws
  * @property GitHubConfiguration|null $github
  * @property SlackConfiguration|null $slack
@@ -32,6 +33,7 @@ class ServiceConfiguration extends Shape
     /**
      * @param array{
      *     sourceAws?: SourceAwsConfiguration|null,
+     *     sourceAwsOrg?: SourceAwsOrgConfiguration|null,
      *     aws?: AWSConfiguration|null,
      *     github?: GitHubConfiguration|null,
      *     slack?: SlackConfiguration|null,

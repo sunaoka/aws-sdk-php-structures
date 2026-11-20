@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\PointInTimeConfiguration|null $PointInTimeConfiguration
  * @property 'RUNNING'|'STOPPED'|null $State
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property Shapes\SubscriberDetails|null $SubscriberDetails
  */
 class UpdateSubscriberResponse extends Response
 {

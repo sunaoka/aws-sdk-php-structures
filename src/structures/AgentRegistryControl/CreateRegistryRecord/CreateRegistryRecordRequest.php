@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY' $recordType
  * @property Shapes\Descriptors $descriptors
+ * @property Shapes\RegistryRecordArtifactUpload|null $artifact
  * @property string|null $recordVersion
  * @property string|null $clientToken
  * @property list<Shapes\Provenance>|null $provenance
@@ -27,6 +28,7 @@ class CreateRegistryRecordRequest extends Request
      *     description?: string|null,
      *     recordType: 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY',
      *     descriptors: Shapes\Descriptors,
+     *     artifact?: Shapes\RegistryRecordArtifactUpload|null,
      *     recordVersion?: string|null,
      *     clientToken?: string|null,
      *     provenance?: list<Shapes\Provenance>|null,

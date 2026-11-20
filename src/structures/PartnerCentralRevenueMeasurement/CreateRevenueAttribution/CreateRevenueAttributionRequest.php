@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'MULTI_TENANT'|'SINGLE_TENANT' $TenancyModel
  * @property string|null $ProductIdentifier
  * @property list<Shapes\Tag>|null $Tags
+ * @property array<string, string>|null $Context
  */
 class CreateRevenueAttributionRequest extends Request
 {
@@ -23,7 +24,8 @@ class CreateRevenueAttributionRequest extends Request
      *     Description?: string|null,
      *     TenancyModel: 'MULTI_TENANT'|'SINGLE_TENANT',
      *     ProductIdentifier?: string|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     Context?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,6 +10,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<string>|null $ThumbprintList
  * @property \Aws\Api\DateTimeResult|null $CreateDate
  * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\ContextProvider|null $ContextProvider
+ * @property string|null $IdentityCenterInstanceArn
+ * @property string|null $IdentityStoreArn
  */
 class GetOpenIDConnectProviderResponse extends Response
 {

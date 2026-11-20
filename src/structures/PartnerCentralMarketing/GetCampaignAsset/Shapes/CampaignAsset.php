@@ -1,0 +1,61 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\PartnerCentralMarketing\GetCampaignAsset\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $Id
+ * @property string $CampaignId
+ * @property 'EMAIL'|'LANDING_PAGE'|'SOCIAL_POST'|'BANNER_AD'|'DOCUMENT' $Category
+ * @property string $Name
+ * @property string|null $LinkLabel
+ * @property 'INACTIVE'|'ACTIVE' $State
+ * @property 'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|null $LastActivationStatus
+ * @property 'PENDING'|'DELIVERED'|'FAILED'|null $DeliveryStatus
+ * @property 'ASSET_NOT_FOUND'|'ASSET_NOT_STARTABLE'|'ASSET_START_IN_PROGRESS'|'ASSET_ALREADY_ACTIVE'|'SEND_WINDOW_TOO_SOON'|'REQUIRED_FIELD_MISSING'|'RECIPIENT_LIST_MISSING'|'ENGAGEMENT_GROUPS_UNAVAILABLE'|'SENDER_EMAIL_MISSING'|'END_ON_MISSING'|'ASSET_CONTENT_MISSING'|'ASSET_NOT_ACTIVATABLE'|'TEMPLATE_CHANGED'|'PARTNER_IMAGE_REJECTED'|'PREREQUISITE_ASSET_NOT_ACTIVE'|'PARTNER_NOT_PROVISIONED'|'RECIPIENT_LIST_EMPTY'|'RECIPIENT_LIMIT_EXCEEDED'|'CONTACT_OPT_IN_REQUIRED'|'MAILING_CREDITS_EXHAUSTED'|'SENDER_EMAIL_INVALID'|'SOCIAL_CONNECTION_MISSING'|'SOCIAL_CONNECTION_EXPIRED'|'SOCIAL_CONNECTION_PAGE_REQUIRED'|'DELIVERY_FAILED'|'INTERNAL_ERROR'|'MAILING_CREDITS_INSUFFICIENT'|'PARTNER_PROFILE_FIELD_MISSING'|'PARTNER_PROFILE_FIELD_DOES_NOT_FIT'|'SOCIAL_CONNECTION_NOT_CHOSEN'|'PRIVACY_POLICY_URL_MISSING'|'PARTNER_ADDRESS_MISSING'|'SEND_MODE_MISSING'|'CONTENT_REJECTED'|'URL_NOT_ALLOWED'|'SENDER_NOT_APPROVED'|null $DeliveryStatusReason
+ * @property string|null $SourceAssetTemplateId
+ * @property 'FACEBOOK'|'LINKEDIN'|'X'|null $SocialPlatform
+ * @property 'PDF'|'DOCX'|'PPTX'|'HTML'|'IMAGE'|null $FileFormat
+ * @property 'ON_ACTIVATION'|'SCHEDULED'|null $SendMode
+ * @property \Aws\Api\DateTimeResult|null $ScheduledSendAt
+ * @property list<CampaignAssetFieldValue>|null $FieldValues
+ * @property list<LayoutPreview>|null $LayoutPreviews
+ * @property CampaignAssetLayout|null $Layout
+ * @property list<ActivationIssue> $ActivationIssues
+ * @property string|null $PublicUrl
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
+ */
+class CampaignAsset extends Shape
+{
+    /**
+     * @param array{
+     *     Id: string,
+     *     CampaignId: string,
+     *     Category: 'EMAIL'|'LANDING_PAGE'|'SOCIAL_POST'|'BANNER_AD'|'DOCUMENT',
+     *     Name: string,
+     *     LinkLabel?: string|null,
+     *     State: 'INACTIVE'|'ACTIVE',
+     *     LastActivationStatus?: 'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|null,
+     *     DeliveryStatus?: 'PENDING'|'DELIVERED'|'FAILED'|null,
+     *     DeliveryStatusReason?: 'ASSET_NOT_FOUND'|'ASSET_NOT_STARTABLE'|'ASSET_START_IN_PROGRESS'|'ASSET_ALREADY_ACTIVE'|'SEND_WINDOW_TOO_SOON'|'REQUIRED_FIELD_MISSING'|'RECIPIENT_LIST_MISSING'|'ENGAGEMENT_GROUPS_UNAVAILABLE'|'SENDER_EMAIL_MISSING'|'END_ON_MISSING'|'ASSET_CONTENT_MISSING'|'ASSET_NOT_ACTIVATABLE'|'TEMPLATE_CHANGED'|'PARTNER_IMAGE_REJECTED'|'PREREQUISITE_ASSET_NOT_ACTIVE'|'PARTNER_NOT_PROVISIONED'|'RECIPIENT_LIST_EMPTY'|'RECIPIENT_LIMIT_EXCEEDED'|'CONTACT_OPT_IN_REQUIRED'|'MAILING_CREDITS_EXHAUSTED'|'SENDER_EMAIL_INVALID'|'SOCIAL_CONNECTION_MISSING'|'SOCIAL_CONNECTION_EXPIRED'|'SOCIAL_CONNECTION_PAGE_REQUIRED'|'DELIVERY_FAILED'|'INTERNAL_ERROR'|'MAILING_CREDITS_INSUFFICIENT'|'PARTNER_PROFILE_FIELD_MISSING'|'PARTNER_PROFILE_FIELD_DOES_NOT_FIT'|'SOCIAL_CONNECTION_NOT_CHOSEN'|'PRIVACY_POLICY_URL_MISSING'|'PARTNER_ADDRESS_MISSING'|'SEND_MODE_MISSING'|'CONTENT_REJECTED'|'URL_NOT_ALLOWED'|'SENDER_NOT_APPROVED'|null,
+     *     SourceAssetTemplateId?: string|null,
+     *     SocialPlatform?: 'FACEBOOK'|'LINKEDIN'|'X'|null,
+     *     FileFormat?: 'PDF'|'DOCX'|'PPTX'|'HTML'|'IMAGE'|null,
+     *     SendMode?: 'ON_ACTIVATION'|'SCHEDULED'|null,
+     *     ScheduledSendAt?: \Aws\Api\DateTimeResult|null,
+     *     FieldValues?: list<CampaignAssetFieldValue>|null,
+     *     LayoutPreviews?: list<LayoutPreview>|null,
+     *     Layout?: CampaignAssetLayout|null,
+     *     ActivationIssues: list<ActivationIssue>,
+     *     PublicUrl?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

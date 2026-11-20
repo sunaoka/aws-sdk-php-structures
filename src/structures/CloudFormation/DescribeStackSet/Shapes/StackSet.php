@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $OrganizationalUnitIds
  * @property ManagedExecution|null $ManagedExecution
  * @property list<string>|null $Regions
+ * @property string|null $StackSetOutputBucketPath
  */
 class StackSet extends Shape
 {
@@ -43,7 +44,8 @@ class StackSet extends Shape
      *     PermissionModel?: 'SERVICE_MANAGED'|'SELF_MANAGED'|null,
      *     OrganizationalUnitIds?: list<string>|null,
      *     ManagedExecution?: ManagedExecution|null,
-     *     Regions?: list<string>|null
+     *     Regions?: list<string>|null,
+     *     StackSetOutputBucketPath?: string|null
      * } $args
      */
     public function __construct(array $args = [])

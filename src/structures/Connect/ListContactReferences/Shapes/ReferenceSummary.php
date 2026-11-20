@@ -16,6 +16,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DateReference|null $Date
  * @property EmailReference|null $Email
  * @property ContactAnalysisReference|null $ContactAnalysis
+ * @property VoicemailRecordingReference|null $VoicemailRecording
+ * @property VoicemailRecordingReference|null $VoicemailRecordingRedacted
+ * @property VoicemailAnalysisReference|null $VoicemailAnalysis
+ * @property VoicemailAnalysisReference|null $VoicemailAnalysisRedacted
  */
 class ReferenceSummary extends Shape
 {
@@ -31,7 +35,11 @@ class ReferenceSummary extends Shape
      *     Number?: NumberReference|null,
      *     Date?: DateReference|null,
      *     Email?: EmailReference|null,
-     *     ContactAnalysis?: ContactAnalysisReference|null
+     *     ContactAnalysis?: ContactAnalysisReference|null,
+     *     VoicemailRecording?: VoicemailRecordingReference|null,
+     *     VoicemailRecordingRedacted?: VoicemailRecordingReference|null,
+     *     VoicemailAnalysis?: VoicemailAnalysisReference|null,
+     *     VoicemailAnalysisRedacted?: VoicemailAnalysisReference|null
      * } $args
      */
     public function __construct(array $args = [])

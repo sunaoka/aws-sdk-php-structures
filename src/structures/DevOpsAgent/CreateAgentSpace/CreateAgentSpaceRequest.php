@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientToken
  * @property array<string, string>|null $tags
  * @property array<'elevatedActionsEnabled', bool>|null $preferences
+ * @property 'standalone'|'organization'|null $awsSourceMode
  */
 class CreateAgentSpaceRequest extends Request
 {
@@ -23,7 +24,8 @@ class CreateAgentSpaceRequest extends Request
      *     kmsKeyArn?: string|null,
      *     clientToken?: string|null,
      *     tags?: array<string, string>|null,
-     *     preferences?: array<'elevatedActionsEnabled', bool>|null
+     *     preferences?: array<'elevatedActionsEnabled', bool>|null,
+     *     awsSourceMode?: 'standalone'|'organization'|null
      * } $args
      */
     public function __construct(array $args)

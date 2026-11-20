@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Arn
  * @property \Aws\Api\DateTimeResult|null $ValidUntil
  * @property \Aws\Api\DateTimeResult|null $CreateDate
+ * @property bool|null $IsTrustedIdentityPropagationEnabled
  */
 class SAMLProviderListEntry extends Shape
 {
@@ -15,7 +16,8 @@ class SAMLProviderListEntry extends Shape
      * @param array{
      *     Arn?: string|null,
      *     ValidUntil?: \Aws\Api\DateTimeResult|null,
-     *     CreateDate?: \Aws\Api\DateTimeResult|null
+     *     CreateDate?: \Aws\Api\DateTimeResult|null,
+     *     IsTrustedIdentityPropagationEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $EventSourceArn
  * @property string|null $Name
  * @property string|null $EventBusArn
- * @property 'AWS_SERVICE_EVENTS'|'PARTNER_EVENTS'|null $Type
+ * @property 'AWS_SERVICE_EVENTS'|'PARTNER_EVENTS'|'WEBHOOK_EVENTS'|null $Type
  * @property 'CREATING'|'ACTIVE'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETING'|'DELETE_FAILED'|null $State
  * @property bool|null $Revoked
  * @property \Aws\Api\DateTimeResult|null $CreationTime
@@ -22,7 +22,7 @@ class EventSourceSummary extends Shape
      *     EventSourceArn?: string|null,
      *     Name?: string|null,
      *     EventBusArn?: string|null,
-     *     Type?: 'AWS_SERVICE_EVENTS'|'PARTNER_EVENTS'|null,
+     *     Type?: 'AWS_SERVICE_EVENTS'|'PARTNER_EVENTS'|'WEBHOOK_EVENTS'|null,
      *     State?: 'CREATING'|'ACTIVE'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETING'|'DELETE_FAILED'|null,
      *     Revoked?: bool|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,

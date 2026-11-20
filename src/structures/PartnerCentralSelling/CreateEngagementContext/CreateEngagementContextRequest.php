@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Catalog
  * @property string $EngagementIdentifier
  * @property string $ClientToken
- * @property 'CustomerProject'|'Lead'|'ProspectingResult' $Type
+ * @property 'CustomerProject'|'Lead'|'ProspectingResult'|'CustomerAccount' $Type
  * @property Shapes\EngagementContextPayload $Payload
  */
 class CreateEngagementContextRequest extends Request
@@ -18,7 +18,7 @@ class CreateEngagementContextRequest extends Request
      *     Catalog: string,
      *     EngagementIdentifier: string,
      *     ClientToken: string,
-     *     Type: 'CustomerProject'|'Lead'|'ProspectingResult',
+     *     Type: 'CustomerProject'|'Lead'|'ProspectingResult'|'CustomerAccount',
      *     Payload: Shapes\EngagementContextPayload
      * } $args
      */

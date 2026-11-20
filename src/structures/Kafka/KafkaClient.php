@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\Kafka;
 class KafkaClient extends \Aws\Kafka\KafkaClient
 {
     use BatchAssociateScramSecret\BatchAssociateScramSecretTrait;
+    use CreateAssessment\CreateAssessmentTrait;
     use CreateCluster\CreateClusterTrait;
     use CreateClusterV2\CreateClusterV2Trait;
     use CreateConfiguration\CreateConfigurationTrait;
@@ -12,12 +13,14 @@ class KafkaClient extends \Aws\Kafka\KafkaClient
     use CreateReplicator\CreateReplicatorTrait;
     use CreateTopic\CreateTopicTrait;
     use CreateVpcConnection\CreateVpcConnectionTrait;
+    use DeleteAssessment\DeleteAssessmentTrait;
     use DeleteCluster\DeleteClusterTrait;
     use DeleteChannel\DeleteChannelTrait;
     use DeleteConfiguration\DeleteConfigurationTrait;
     use DeleteReplicator\DeleteReplicatorTrait;
     use DeleteTopic\DeleteTopicTrait;
     use DeleteVpcConnection\DeleteVpcConnectionTrait;
+    use DescribeAssessment\DescribeAssessmentTrait;
     use DescribeCluster\DescribeClusterTrait;
     use DescribeClusterV2\DescribeClusterV2Trait;
     use DescribeClusterOperation\DescribeClusterOperationTrait;
@@ -28,10 +31,13 @@ class KafkaClient extends \Aws\Kafka\KafkaClient
     use DescribeReplicator\DescribeReplicatorTrait;
     use DescribeTopic\DescribeTopicTrait;
     use DescribeTopicPartitions\DescribeTopicPartitionsTrait;
+    use DescribeTopicReassignment\DescribeTopicReassignmentTrait;
     use DescribeVpcConnection\DescribeVpcConnectionTrait;
     use BatchDisassociateScramSecret\BatchDisassociateScramSecretTrait;
     use GetBootstrapBrokers\GetBootstrapBrokersTrait;
     use GetCompatibleKafkaVersions\GetCompatibleKafkaVersionsTrait;
+    use ListAssessmentFindings\ListAssessmentFindingsTrait;
+    use ListAssessments\ListAssessmentsTrait;
     use ListChannels\ListChannelsTrait;
     use ListClusterOperations\ListClusterOperationsTrait;
     use ListClusterOperationsV2\ListClusterOperationsV2Trait;
@@ -45,6 +51,7 @@ class KafkaClient extends \Aws\Kafka\KafkaClient
     use ListScramSecrets\ListScramSecretsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListClientVpcConnections\ListClientVpcConnectionsTrait;
+    use ListTopicReassignments\ListTopicReassignmentsTrait;
     use ListVpcConnections\ListVpcConnectionsTrait;
     use ListTopics\ListTopicsTrait;
     use RejectClientVpcConnection\RejectClientVpcConnectionTrait;
@@ -52,6 +59,8 @@ class KafkaClient extends \Aws\Kafka\KafkaClient
     use GetClusterPolicy\GetClusterPolicyTrait;
     use PutClusterPolicy\PutClusterPolicyTrait;
     use RebootBroker\RebootBrokerTrait;
+    use StartTopicReassignment\StartTopicReassignmentTrait;
+    use StopTopicReassignment\StopTopicReassignmentTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateBrokerCount\UpdateBrokerCountTrait;

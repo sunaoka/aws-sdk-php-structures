@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property 'Required'|'Allowed'|null $AssertionEncryptionMode
  * @property string|null $AddPrivateKey
+ * @property Shapes\ContextProvider|null $ContextProvider
+ * @property string|null $IdentityCenterInstanceArn
  */
 class CreateSAMLProviderRequest extends Request
 {
@@ -19,7 +21,9 @@ class CreateSAMLProviderRequest extends Request
      *     Name: string,
      *     Tags?: list<Shapes\Tag>|null,
      *     AssertionEncryptionMode?: 'Required'|'Allowed'|null,
-     *     AddPrivateKey?: string|null
+     *     AddPrivateKey?: string|null,
+     *     ContextProvider?: Shapes\ContextProvider|null,
+     *     IdentityCenterInstanceArn?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $sshKeyName
  * @property string|null $instanceProfileArn
  * @property array<string, string>|null $propagatedTags
+ * @property CpuOptions|null $cpuOptions
  */
 class LaunchParameters extends Shape
 {
@@ -27,7 +28,8 @@ class LaunchParameters extends Shape
      *     capacityReservationSpecification?: CapacityReservationSpecification|null,
      *     sshKeyName?: string|null,
      *     instanceProfileArn?: string|null,
-     *     propagatedTags?: array<string, string>|null
+     *     propagatedTags?: array<string, string>|null,
+     *     cpuOptions?: CpuOptions|null
      * } $args
      */
     public function __construct(array $args)

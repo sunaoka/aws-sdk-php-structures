@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property HttpParameters|null $HttpParameters
  * @property UniversalTargetParameters|null $UniversalTargetParameters
  * @property EventBusV2Parameters|null $EventBusV2Parameters
+ * @property MskParameters|null $MskParameters
  * @property string $TargetArn
  */
 class InvokeConfiguration extends Shape
@@ -29,6 +30,7 @@ class InvokeConfiguration extends Shape
      *     HttpParameters?: HttpParameters|null,
      *     UniversalTargetParameters?: UniversalTargetParameters|null,
      *     EventBusV2Parameters?: EventBusV2Parameters|null,
+     *     MskParameters?: MskParameters|null,
      *     TargetArn: string
      * } $args
      */

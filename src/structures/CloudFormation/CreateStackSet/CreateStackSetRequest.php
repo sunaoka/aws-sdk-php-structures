@@ -20,6 +20,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'SELF'|'DELEGATED_ADMIN'|null $CallAs
  * @property string|null $ClientRequestToken
  * @property Shapes\ManagedExecution|null $ManagedExecution
+ * @property string|null $ExecutionRoleTemplateBody
+ * @property string|null $ExecutionRoleTemplateUrl
+ * @property string|null $StackSetOutputBucket
  */
 class CreateStackSetRequest extends Request
 {
@@ -39,7 +42,10 @@ class CreateStackSetRequest extends Request
      *     AutoDeployment?: Shapes\AutoDeployment|null,
      *     CallAs?: 'SELF'|'DELEGATED_ADMIN'|null,
      *     ClientRequestToken?: string|null,
-     *     ManagedExecution?: Shapes\ManagedExecution|null
+     *     ManagedExecution?: Shapes\ManagedExecution|null,
+     *     ExecutionRoleTemplateBody?: string|null,
+     *     ExecutionRoleTemplateUrl?: string|null,
+     *     StackSetOutputBucket?: string|null
      * } $args
      */
     public function __construct(array $args)

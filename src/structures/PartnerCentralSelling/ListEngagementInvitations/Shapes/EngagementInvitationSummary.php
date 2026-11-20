@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $Arn
- * @property 'OpportunityInvitation'|'LeadInvitation'|null $PayloadType
+ * @property 'OpportunityInvitation'|'LeadInvitation'|'AccountPlanningInvitation'|null $PayloadType
  * @property string $Id
  * @property string|null $EngagementId
  * @property string|null $EngagementTitle
@@ -24,7 +24,7 @@ class EngagementInvitationSummary extends Shape
     /**
      * @param array{
      *     Arn?: string|null,
-     *     PayloadType?: 'OpportunityInvitation'|'LeadInvitation'|null,
+     *     PayloadType?: 'OpportunityInvitation'|'LeadInvitation'|'AccountPlanningInvitation'|null,
      *     Id: string,
      *     EngagementId?: string|null,
      *     EngagementTitle?: string|null,

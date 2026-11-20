@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $gatewayId
  * @property string $peerGatewayId
- * @property 'PENDING_CREATION'|'PENDING_REQUEST'|'REQUESTED'|'ACCEPTED'|'ACTIVE'|'REJECTED'|'FAILED'|'PENDING_DELETION'|'DELETED'|'PENDING_UPDATE'|'PENDING_ISOLATION'|'ISOLATED'|'PENDING_RESTORATION' $status
+ * @property 'PENDING_CREATION'|'PENDING_REQUEST'|'REQUESTED'|'ACCEPTED'|'ACTIVE'|'REJECTED'|'FAILED'|'PENDING_DELETION'|'DELETED'|'PENDING_UPDATE'|'PENDING_ISOLATION'|'ISOLATED'|'PENDING_RESTORATION'|'CREATE_FAILED'|'DELETE_FAILED' $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property 'RESPONSE'|'REQUEST'|null $direction
@@ -16,10 +16,13 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\LinkAttributes|null $attributes
  * @property Shapes\LinkLogSettings|null $logSettings
  * @property 'DEFAULT'|'PUBLIC_INGRESS'|'PUBLIC_EGRESS'|'EXTERNAL_INBOUND'|null $connectivityType
+ * @property list<Shapes\ErrorDetail>|null $errorDetails
  * @property string $linkId
  * @property array<string, string>|null $tags
  * @property bool|null $httpResponderAllowed
  * @property int<100, 5000>|null $timeoutInMillis
+ * @property string|null $lockToken
+ * @property list<Shapes\Flow>|null $flows
  */
 class GetLinkResponse extends Response
 {

@@ -6,16 +6,15 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $MarketplaceRevenueShareAllocationId
- * @property string $ProductId
- * @property string|null $ProductName
- * @property string $Arn
+ * @property string $MarketplaceRevenueShareIdentifier
  * @property string $EffectiveFrom
- * @property string|null $EffectiveUntil
+ * @property string $EffectiveUntil
  * @property string $RevenueSharePercent
  * @property 'ACTIVE'|'INACTIVE' $Status
- * @property \Aws\Api\DateTimeResult|null $CreatedDate
- * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
- * @property string|null $LatestMarketplaceRevenueShareRevision
+ * @property \Aws\Api\DateTimeResult $CreatedDate
+ * @property \Aws\Api\DateTimeResult $LastModifiedDate
+ * @property string $MarketplaceRevenueShareRevision
+ * @property string $MarketplaceRevenueShareLatestRevision
  */
 class GetMarketplaceRevenueShareAllocationResponse extends Response
 {

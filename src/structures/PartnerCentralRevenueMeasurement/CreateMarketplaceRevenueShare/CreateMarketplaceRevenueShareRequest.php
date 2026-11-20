@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'AWS'|'Sandbox' $Catalog
  * @property string|null $ClientToken
- * @property string $ProductId
+ * @property list<Shapes\MarketplaceRevenueShareProductEntry> $Products
  * @property list<Shapes\Tag>|null $Tags
  */
 class CreateMarketplaceRevenueShareRequest extends Request
@@ -16,7 +16,7 @@ class CreateMarketplaceRevenueShareRequest extends Request
      * @param array{
      *     Catalog: 'AWS'|'Sandbox',
      *     ClientToken?: string|null,
-     *     ProductId: string,
+     *     Products: list<Shapes\MarketplaceRevenueShareProductEntry>,
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */

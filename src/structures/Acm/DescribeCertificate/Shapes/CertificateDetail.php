@@ -36,6 +36,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AWS_MANAGED'|'ACME'|'CUSTOMER_PROVIDED'|null $CertificateKeyPairOrigin
  * @property string|null $AcmeEndpointArn
  * @property string|null $AcmeAccountId
+ * @property 'CLIENT_AND_SERVER_AUTH'|'CLIENT_AUTH_ONLY'|null $CertificateUsage
+ * @property 'N2_AMAZON_MANAGED'|'N2_SFG2_AMAZON_MANAGED'|null $RootHierarchyType
  */
 class CertificateDetail extends Shape
 {
@@ -71,7 +73,9 @@ class CertificateDetail extends Shape
      *     UpdateSummary?: UpdateSummary|null,
      *     CertificateKeyPairOrigin?: 'AWS_MANAGED'|'ACME'|'CUSTOMER_PROVIDED'|null,
      *     AcmeEndpointArn?: string|null,
-     *     AcmeAccountId?: string|null
+     *     AcmeAccountId?: string|null,
+     *     CertificateUsage?: 'CLIENT_AND_SERVER_AUTH'|'CLIENT_AUTH_ONLY'|null,
+     *     RootHierarchyType?: 'N2_AMAZON_MANAGED'|'N2_SFG2_AMAZON_MANAGED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -14,10 +14,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY' $recordType
  * @property Descriptors $descriptors
  * @property string $recordVersion
- * @property 'DRAFT'|'PENDING_APPROVAL'|'APPROVED'|'REJECTED'|'DEPRECATED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED' $status
+ * @property 'DRAFT'|'PENDING_APPROVAL'|'APPROVED'|'REJECTED'|'DEPRECATED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED'|'CREATE_PENDING_AUTH'|'UPDATE_PENDING_AUTH' $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property CustomMetadataDocument|null $customMetadata
+ * @property RegistryRecordArtifactDownload|null $artifact
  */
 class RegistryRecordSummary extends Shape
 {
@@ -32,10 +33,11 @@ class RegistryRecordSummary extends Shape
      *     recordType: 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY',
      *     descriptors: Descriptors,
      *     recordVersion: string,
-     *     status: 'DRAFT'|'PENDING_APPROVAL'|'APPROVED'|'REJECTED'|'DEPRECATED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED',
+     *     status: 'DRAFT'|'PENDING_APPROVAL'|'APPROVED'|'REJECTED'|'DEPRECATED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED'|'CREATE_PENDING_AUTH'|'UPDATE_PENDING_AUTH',
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
-     *     customMetadata?: CustomMetadataDocument|null
+     *     customMetadata?: CustomMetadataDocument|null,
+     *     artifact?: RegistryRecordArtifactDownload|null
      * } $args
      */
     public function __construct(array $args)

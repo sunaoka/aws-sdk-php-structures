@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $ChannelSecurityGroups
  * @property Shapes\InferenceSettings|null $InferenceSettings
  * @property Shapes\SpecialRouterSettings|null $SpecialRouterSettings
+ * @property Shapes\JpegXsInputSpecification|null $JpegXsInputSpecification
  */
 class UpdateChannelRequest extends Request
 {
@@ -43,7 +44,8 @@ class UpdateChannelRequest extends Request
      *     LinkedChannelSettings?: Shapes\LinkedChannelSettings|null,
      *     ChannelSecurityGroups?: list<string>|null,
      *     InferenceSettings?: Shapes\InferenceSettings|null,
-     *     SpecialRouterSettings?: Shapes\SpecialRouterSettings|null
+     *     SpecialRouterSettings?: Shapes\SpecialRouterSettings|null,
+     *     JpegXsInputSpecification?: Shapes\JpegXsInputSpecification|null
      * } $args
      */
     public function __construct(array $args)

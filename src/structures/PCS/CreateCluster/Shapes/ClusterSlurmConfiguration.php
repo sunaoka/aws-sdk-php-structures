@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<SlurmCustomSetting>|null $slurmCustomSettings
  * @property list<SlurmdbdCustomSetting>|null $slurmdbdCustomSettings
  * @property list<CgroupCustomSetting>|null $cgroupCustomSettings
+ * @property list<JobSubmitPlugin>|null $jobSubmitPlugins
  * @property SlurmAuthKey|null $authKey
  * @property JwtAuth|null $jwtAuth
  * @property Accounting|null $accounting
@@ -22,6 +23,7 @@ class ClusterSlurmConfiguration extends Shape
      *     slurmCustomSettings?: list<SlurmCustomSetting>|null,
      *     slurmdbdCustomSettings?: list<SlurmdbdCustomSetting>|null,
      *     cgroupCustomSettings?: list<CgroupCustomSetting>|null,
+     *     jobSubmitPlugins?: list<JobSubmitPlugin>|null,
      *     authKey?: SlurmAuthKey|null,
      *     jwtAuth?: JwtAuth|null,
      *     accounting?: Accounting|null,

@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $AttachedENIId
  * @property double|null $BrokerId
+ * @property 'STANDARD'|'EXPRESS'|null $BrokerNodeType
  * @property string|null $ClientSubnet
  * @property string|null $ClientVpcIpAddress
  * @property BrokerSoftwareInfo|null $CurrentBrokerSoftwareInfo
@@ -18,6 +19,7 @@ class BrokerNodeInfo extends Shape
      * @param array{
      *     AttachedENIId?: string|null,
      *     BrokerId?: double|null,
+     *     BrokerNodeType?: 'STANDARD'|'EXPRESS'|null,
      *     ClientSubnet?: string|null,
      *     ClientVpcIpAddress?: string|null,
      *     CurrentBrokerSoftwareInfo?: BrokerSoftwareInfo|null,

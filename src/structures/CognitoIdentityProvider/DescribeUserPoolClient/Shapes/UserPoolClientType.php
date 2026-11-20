@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ClientName
  * @property string|null $ClientId
  * @property string|null $ClientSecret
+ * @property string|null $ClientSecretArn
  * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
  * @property \Aws\Api\DateTimeResult|null $CreationDate
  * @property int<0, 315360000>|null $RefreshTokenValidity
@@ -41,6 +42,7 @@ class UserPoolClientType extends Shape
      *     ClientName?: string|null,
      *     ClientId?: string|null,
      *     ClientSecret?: string|null,
+     *     ClientSecretArn?: string|null,
      *     LastModifiedDate?: \Aws\Api\DateTimeResult|null,
      *     CreationDate?: \Aws\Api\DateTimeResult|null,
      *     RefreshTokenValidity?: int<0, 315360000>|null,

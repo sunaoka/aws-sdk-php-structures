@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FirewallDomainListId
- * @property 'ADD'|'REMOVE'|'REPLACE' $Operation
+ * @property 'ADD'|'REMOVE'|'REPLACE'|'DENY' $Operation
  * @property list<string> $Domains
  */
 class UpdateFirewallDomainsRequest extends Request
@@ -14,7 +14,7 @@ class UpdateFirewallDomainsRequest extends Request
     /**
      * @param array{
      *     FirewallDomainListId: string,
-     *     Operation: 'ADD'|'REMOVE'|'REPLACE',
+     *     Operation: 'ADD'|'REMOVE'|'REPLACE'|'DENY',
      *     Domains: list<string>
      * } $args
      */

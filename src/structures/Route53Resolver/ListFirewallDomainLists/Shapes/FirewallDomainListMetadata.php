@@ -10,8 +10,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Name
  * @property string|null $CreatorRequestId
  * @property string|null $ManagedOwnerName
- * @property 'THREAT'|'CONTENT'|null $ManagedListType
+ * @property 'THREAT'|'CONTENT'|'AUTOALLOWLIST'|null $ManagedListType
  * @property string|null $Category
+ * @property string|null $FirewallRuleGroupId
+ * @property string|null $FirewallThreatProtectionId
+ * @property 'COMPLETE'|'COMPLETE_IMPORT_FAILED'|'IMPORTING'|'DELETING'|'UPDATING'|null $Status
  */
 class FirewallDomainListMetadata extends Shape
 {
@@ -22,8 +25,11 @@ class FirewallDomainListMetadata extends Shape
      *     Name?: string|null,
      *     CreatorRequestId?: string|null,
      *     ManagedOwnerName?: string|null,
-     *     ManagedListType?: 'THREAT'|'CONTENT'|null,
-     *     Category?: string|null
+     *     ManagedListType?: 'THREAT'|'CONTENT'|'AUTOALLOWLIST'|null,
+     *     Category?: string|null,
+     *     FirewallRuleGroupId?: string|null,
+     *     FirewallThreatProtectionId?: string|null,
+     *     Status?: 'COMPLETE'|'COMPLETE_IMPORT_FAILED'|'IMPORTING'|'DELETING'|'UPDATING'|null
      * } $args
      */
     public function __construct(array $args = [])

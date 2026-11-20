@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $paymentManagerId
  * @property string $paymentConnectorId
  * @property string|null $description
- * @property 'CoinbaseCDP'|'StripePrivy'|null $type
+ * @property 'CoinbaseCDP'|'StripePrivy'|'AwsBilling'|null $type
  * @property list<Shapes\CredentialsProviderConfiguration>|null $credentialProviderConfigurations
  * @property string|null $clientToken
  */
@@ -19,7 +19,7 @@ class UpdatePaymentConnectorRequest extends Request
      *     paymentManagerId: string,
      *     paymentConnectorId: string,
      *     description?: string|null,
-     *     type?: 'CoinbaseCDP'|'StripePrivy'|null,
+     *     type?: 'CoinbaseCDP'|'StripePrivy'|'AwsBilling'|null,
      *     credentialProviderConfigurations?: list<Shapes\CredentialsProviderConfiguration>|null,
      *     clientToken?: string|null
      * } $args

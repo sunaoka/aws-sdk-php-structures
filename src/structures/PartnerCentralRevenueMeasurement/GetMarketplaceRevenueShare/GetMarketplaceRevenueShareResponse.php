@@ -5,17 +5,18 @@ namespace Sunaoka\Aws\Structures\PartnerCentralRevenueMeasurement\GetMarketplace
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ProductId
+ * @property string $Id
  * @property string $Arn
  * @property 'AWS'|'Sandbox' $Catalog
- * @property string|null $ProductCode
- * @property string|null $ProductName
- * @property \Aws\Api\DateTimeResult|null $CreatedDate
- * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
- * @property int<1, max>|null $Revision
- * @property int<1, max>|null $LatestRevision
- * @property int|null $TotalActiveMarketplaceRevenueShareAllocationCount
- * @property int|null $TotalMarketplaceRevenueShareAllocationCount
+ * @property list<Shapes\MarketplaceRevenueShareProductDetail> $Products
+ * @property \Aws\Api\DateTimeResult $CreatedDate
+ * @property \Aws\Api\DateTimeResult $LastModifiedDate
+ * @property string $Revision
+ * @property string $LatestRevision
+ * @property string|null $EffectiveFrom
+ * @property string|null $EffectiveUntil
+ * @property int<0, max> $TotalActiveMarketplaceRevenueShareAllocationCount
+ * @property int<0, max> $TotalMarketplaceRevenueShareAllocationCount
  */
 class GetMarketplaceRevenueShareResponse extends Response
 {

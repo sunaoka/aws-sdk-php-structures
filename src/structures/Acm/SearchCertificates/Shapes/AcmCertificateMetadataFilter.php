@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AWS_MANAGED'|'ACME'|'CUSTOMER_PROVIDED'|null $CertificateKeyPairOrigin
  * @property string|null $AcmeEndpointArn
  * @property string|null $AcmeAccountId
+ * @property 'N2_AMAZON_MANAGED'|'N2_SFG2_AMAZON_MANAGED'|null $RootHierarchyType
  */
 class AcmCertificateMetadataFilter extends Shape
 {
@@ -31,7 +32,8 @@ class AcmCertificateMetadataFilter extends Shape
      *     ValidationMethod?: 'EMAIL'|'DNS'|'HTTP'|null,
      *     CertificateKeyPairOrigin?: 'AWS_MANAGED'|'ACME'|'CUSTOMER_PROVIDED'|null,
      *     AcmeEndpointArn?: string|null,
-     *     AcmeAccountId?: string|null
+     *     AcmeAccountId?: string|null,
+     *     RootHierarchyType?: 'N2_AMAZON_MANAGED'|'N2_SFG2_AMAZON_MANAGED'|null
      * } $args
      */
     public function __construct(array $args = [])

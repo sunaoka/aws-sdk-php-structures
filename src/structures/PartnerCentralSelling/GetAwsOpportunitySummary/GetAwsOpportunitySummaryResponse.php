@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\AwsOpportunityCustomer|null $Customer
  * @property Shapes\AwsOpportunityProject|null $Project
  * @property string|null $CosellMotion
+ * @property string|null $CosellMotionReason
  * @property Shapes\AwsSoftwareRevenue|null $SoftwareRevenue
  * @property string $Catalog
  */

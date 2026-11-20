@@ -20,6 +20,7 @@ class PartnerCentralRevenueMeasurementClient extends \Aws\PartnerCentralRevenueM
     use StartRevenueAttributionAllocationsTask\StartRevenueAttributionAllocationsTaskTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateMarketplaceRevenueShare\UpdateMarketplaceRevenueShareTrait;
     use UpdateMarketplaceRevenueShareAllocation\UpdateMarketplaceRevenueShareAllocationTrait;
     use UpdateRevenueAttribution\UpdateRevenueAttributionTrait;
 }

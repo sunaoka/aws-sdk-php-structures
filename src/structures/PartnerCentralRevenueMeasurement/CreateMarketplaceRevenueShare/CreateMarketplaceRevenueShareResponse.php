@@ -5,14 +5,13 @@ namespace Sunaoka\Aws\Structures\PartnerCentralRevenueMeasurement\CreateMarketpl
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ProductId
+ * @property string $Id
  * @property string $Arn
- * @property 'AWS'|'Sandbox'|null $Catalog
- * @property string|null $ProductCode
- * @property string|null $ProductName
- * @property \Aws\Api\DateTimeResult|null $CreatedDate
- * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
- * @property int<1, max>|null $Revision
+ * @property 'AWS'|'Sandbox' $Catalog
+ * @property list<Shapes\MarketplaceRevenueShareProductSummary> $Products
+ * @property \Aws\Api\DateTimeResult $CreatedDate
+ * @property \Aws\Api\DateTimeResult $LastModifiedDate
+ * @property string $Revision
  */
 class CreateMarketplaceRevenueShareResponse extends Response
 {

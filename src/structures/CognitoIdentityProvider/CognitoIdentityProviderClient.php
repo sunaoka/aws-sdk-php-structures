@@ -43,6 +43,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use ConfirmDevice\ConfirmDeviceTrait;
     use ConfirmForgotPassword\ConfirmForgotPasswordTrait;
     use ConfirmSignUp\ConfirmSignUpTrait;
+    use CreateCIMDPolicy\CreateCIMDPolicyTrait;
     use CreateGroup\CreateGroupTrait;
     use CreateIdentityProvider\CreateIdentityProviderTrait;
     use CreateManagedLoginBranding\CreateManagedLoginBrandingTrait;
@@ -53,6 +54,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use CreateUserPoolClient\CreateUserPoolClientTrait;
     use CreateUserPoolDomain\CreateUserPoolDomainTrait;
     use CreateUserPoolReplica\CreateUserPoolReplicaTrait;
+    use DeleteCIMDPolicy\DeleteCIMDPolicyTrait;
     use DeleteGroup\DeleteGroupTrait;
     use DeleteIdentityProvider\DeleteIdentityProviderTrait;
     use DeleteManagedLoginBranding\DeleteManagedLoginBrandingTrait;
@@ -66,6 +68,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use DeleteUserPoolDomain\DeleteUserPoolDomainTrait;
     use DeleteUserPoolReplica\DeleteUserPoolReplicaTrait;
     use DeleteWebAuthnCredential\DeleteWebAuthnCredentialTrait;
+    use DescribeCIMDPolicy\DescribeCIMDPolicyTrait;
     use DescribeIdentityProvider\DescribeIdentityProviderTrait;
     use DescribeManagedLoginBranding\DescribeManagedLoginBrandingTrait;
     use DescribeManagedLoginBrandingByClient\DescribeManagedLoginBrandingByClientTrait;
@@ -100,6 +103,8 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use GlobalSignOut\GlobalSignOutTrait;
     use InitiateAuth\InitiateAuthTrait;
     use InitiatePointInTimeRecovery\InitiatePointInTimeRecoveryTrait;
+    use ListCIMDPolicies\ListCIMDPoliciesTrait;
+    use ListClientMetadataURLs\ListClientMetadataURLsTrait;
     use ListDevices\ListDevicesTrait;
     use ListGroups\ListGroupsTrait;
     use ListIdentityProviders\ListIdentityProvidersTrait;
@@ -136,6 +141,8 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAuthEventFeedback\UpdateAuthEventFeedbackTrait;
+    use UpdateCIMDPolicy\UpdateCIMDPolicyTrait;
+    use UpdateClientMetadataURLState\UpdateClientMetadataURLStateTrait;
     use UpdateDeviceStatus\UpdateDeviceStatusTrait;
     use UpdateGroup\UpdateGroupTrait;
     use UpdateIdentityProvider\UpdateIdentityProviderTrait;

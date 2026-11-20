@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $EffectiveUntil
  * @property int<0, max>|null $TotalActiveRevenueAttributionAllocationCount
  * @property int<0, max>|null $TotalRevenueAttributionAllocationCount
+ * @property array<string, string>|null $Context
  */
 class GetRevenueAttributionResponse extends Response
 {

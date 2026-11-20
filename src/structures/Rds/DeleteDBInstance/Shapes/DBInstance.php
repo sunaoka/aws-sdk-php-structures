@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $MasterUsername
  * @property string|null $DBName
  * @property Endpoint|null $Endpoint
+ * @property PrimaryEndpoint|null $PrimaryEndpoint
  * @property int|null $AllocatedStorage
  * @property \Aws\Api\DateTimeResult|null $InstanceCreateTime
  * @property string|null $PreferredBackupWindow
@@ -99,6 +100,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $StorageOperationStatus
  * @property int|null $StorageOperationPercentProgress
  * @property string|null $DBCapacityReservationIdentifier
+ * @property bool|null $VPCNetworkingEnabled
  */
 class DBInstance extends Shape
 {
@@ -111,6 +113,7 @@ class DBInstance extends Shape
      *     MasterUsername?: string|null,
      *     DBName?: string|null,
      *     Endpoint?: Endpoint|null,
+     *     PrimaryEndpoint?: PrimaryEndpoint|null,
      *     AllocatedStorage?: int|null,
      *     InstanceCreateTime?: \Aws\Api\DateTimeResult|null,
      *     PreferredBackupWindow?: string|null,
@@ -197,7 +200,8 @@ class DBInstance extends Shape
      *     StorageVolumeStatus?: string|null,
      *     StorageOperationStatus?: string|null,
      *     StorageOperationPercentProgress?: int|null,
-     *     DBCapacityReservationIdentifier?: string|null
+     *     DBCapacityReservationIdentifier?: string|null,
+     *     VPCNetworkingEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AlarmIdentifier|null $AlarmIdentifier
  * @property 'Healthy'|'Unhealthy'|'LastKnownStatus'|null $InsufficientDataHealthStatus
  * @property list<'FullyQualifiedDomainName'|'Regions'|'ResourcePath'|'ChildHealthChecks'>|null $ResetElements
+ * @property string|null $HealthCheckSourceId
  */
 class UpdateHealthCheckRequest extends Request
 {
@@ -43,7 +44,8 @@ class UpdateHealthCheckRequest extends Request
      *     Regions?: list<'us-east-1'|'us-west-1'|'us-west-2'|'eu-west-1'|'ap-southeast-1'|'ap-southeast-2'|'ap-northeast-1'|'sa-east-1'>|null,
      *     AlarmIdentifier?: Shapes\AlarmIdentifier|null,
      *     InsufficientDataHealthStatus?: 'Healthy'|'Unhealthy'|'LastKnownStatus'|null,
-     *     ResetElements?: list<'FullyQualifiedDomainName'|'Regions'|'ResourcePath'|'ChildHealthChecks'>|null
+     *     ResetElements?: list<'FullyQualifiedDomainName'|'Regions'|'ResourcePath'|'ChildHealthChecks'>|null,
+     *     HealthCheckSourceId?: string|null
      * } $args
      */
     public function __construct(array $args)

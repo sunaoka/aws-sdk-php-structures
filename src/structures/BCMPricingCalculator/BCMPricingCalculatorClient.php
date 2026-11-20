@@ -22,6 +22,7 @@ class BCMPricingCalculatorClient extends \Aws\BCMPricingCalculator\BCMPricingCal
     use GetBillEstimate\GetBillEstimateTrait;
     use GetBillScenario\GetBillScenarioTrait;
     use GetPreferences\GetPreferencesTrait;
+    use GetUsageLinesEstimatedCost\GetUsageLinesEstimatedCostTrait;
     use GetWorkloadEstimate\GetWorkloadEstimateTrait;
     use ListBillEstimateCommitments\ListBillEstimateCommitmentsTrait;
     use ListBillEstimateInputCommitmentModifications\ListBillEstimateInputCommitmentModificationsTrait;

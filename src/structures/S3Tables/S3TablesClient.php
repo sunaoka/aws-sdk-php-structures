@@ -17,6 +17,7 @@ class S3TablesClient extends \Aws\S3Tables\S3TablesClient
     use DeleteTableBucketReplication\DeleteTableBucketReplicationTrait;
     use DeleteTablePolicy\DeleteTablePolicyTrait;
     use DeleteTableReplication\DeleteTableReplicationTrait;
+    use DisassociateTableReplication\DisassociateTableReplicationTrait;
     use GetNamespace\GetNamespaceTrait;
     use GetTable\GetTableTrait;
     use GetTableBucket\GetTableBucketTrait;

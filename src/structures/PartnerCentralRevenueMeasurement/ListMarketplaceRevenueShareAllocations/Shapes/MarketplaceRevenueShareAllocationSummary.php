@@ -6,30 +6,26 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $MarketplaceRevenueShareAllocationId
- * @property string $ProductId
- * @property string|null $ProductName
- * @property string $Arn
+ * @property string $MarketplaceRevenueShareIdentifier
  * @property string $EffectiveFrom
- * @property string|null $EffectiveUntil
+ * @property string $EffectiveUntil
  * @property string $RevenueSharePercent
  * @property 'ACTIVE'|'INACTIVE' $Status
- * @property \Aws\Api\DateTimeResult|null $CreatedDate
- * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
+ * @property \Aws\Api\DateTimeResult $CreatedDate
+ * @property \Aws\Api\DateTimeResult $LastModifiedDate
  */
 class MarketplaceRevenueShareAllocationSummary extends Shape
 {
     /**
      * @param array{
      *     MarketplaceRevenueShareAllocationId: string,
-     *     ProductId: string,
-     *     ProductName?: string|null,
-     *     Arn: string,
+     *     MarketplaceRevenueShareIdentifier: string,
      *     EffectiveFrom: string,
-     *     EffectiveUntil?: string|null,
+     *     EffectiveUntil: string,
      *     RevenueSharePercent: string,
      *     Status: 'ACTIVE'|'INACTIVE',
-     *     CreatedDate?: \Aws\Api\DateTimeResult|null,
-     *     LastModifiedDate?: \Aws\Api\DateTimeResult|null
+     *     CreatedDate: \Aws\Api\DateTimeResult,
+     *     LastModifiedDate: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

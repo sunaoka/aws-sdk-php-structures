@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $ReplicationFactor
  * @property int|null $PartitionCount
  * @property int|null $OutOfSyncReplicaCount
+ * @property list<int>|null $ReplicaIds
  */
 class TopicInfo extends Shape
 {
@@ -19,7 +20,8 @@ class TopicInfo extends Shape
      *     TopicName?: string|null,
      *     ReplicationFactor?: int|null,
      *     PartitionCount?: int|null,
-     *     OutOfSyncReplicaCount?: int|null
+     *     OutOfSyncReplicaCount?: int|null,
+     *     ReplicaIds?: list<int>|null
      * } $args
      */
     public function __construct(array $args = [])

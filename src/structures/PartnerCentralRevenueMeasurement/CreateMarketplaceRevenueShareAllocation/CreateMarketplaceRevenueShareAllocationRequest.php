@@ -6,10 +6,11 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'AWS'|'Sandbox' $Catalog
- * @property string $ProductId
+ * @property string $MarketplaceRevenueShareIdentifier
  * @property string|null $ClientToken
+ * @property string $MarketplaceRevenueShareRevision
  * @property string $EffectiveFrom
- * @property string|null $EffectiveUntil
+ * @property string $EffectiveUntil
  * @property string $RevenueSharePercent
  */
 class CreateMarketplaceRevenueShareAllocationRequest extends Request
@@ -17,10 +18,11 @@ class CreateMarketplaceRevenueShareAllocationRequest extends Request
     /**
      * @param array{
      *     Catalog: 'AWS'|'Sandbox',
-     *     ProductId: string,
+     *     MarketplaceRevenueShareIdentifier: string,
      *     ClientToken?: string|null,
+     *     MarketplaceRevenueShareRevision: string,
      *     EffectiveFrom: string,
-     *     EffectiveUntil?: string|null,
+     *     EffectiveUntil: string,
      *     RevenueSharePercent: string
      * } $args
      */

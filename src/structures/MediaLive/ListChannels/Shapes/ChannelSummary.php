@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DescribeLinkedChannelSettings|null $LinkedChannelSettings
  * @property list<string>|null $ChannelSecurityGroups
  * @property DescribeInferenceSettings|null $InferenceSettings
+ * @property JpegXsInputSpecification|null $JpegXsInputSpecification
  */
 class ChannelSummary extends Shape
 {
@@ -53,7 +54,8 @@ class ChannelSummary extends Shape
      *     UsedChannelEngineVersions?: list<ChannelEngineVersionResponse>|null,
      *     LinkedChannelSettings?: DescribeLinkedChannelSettings|null,
      *     ChannelSecurityGroups?: list<string>|null,
-     *     InferenceSettings?: DescribeInferenceSettings|null
+     *     InferenceSettings?: DescribeInferenceSettings|null,
+     *     JpegXsInputSpecification?: JpegXsInputSpecification|null
      * } $args
      */
     public function __construct(array $args = [])

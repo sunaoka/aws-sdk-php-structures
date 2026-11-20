@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaLive\ListChannels\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'MPEG2'|'AVC'|'HEVC'|null $Codec
+ * @property 'MPEG2'|'AVC'|'HEVC'|'JPEGXS'|null $Codec
  * @property 'MAX_10_MBPS'|'MAX_20_MBPS'|'MAX_50_MBPS'|null $MaximumBitrate
  * @property 'SD'|'HD'|'UHD'|null $Resolution
  */
@@ -13,7 +13,7 @@ class InputSpecification extends Shape
 {
     /**
      * @param array{
-     *     Codec?: 'MPEG2'|'AVC'|'HEVC'|null,
+     *     Codec?: 'MPEG2'|'AVC'|'HEVC'|'JPEGXS'|null,
      *     MaximumBitrate?: 'MAX_10_MBPS'|'MAX_20_MBPS'|'MAX_50_MBPS'|null,
      *     Resolution?: 'SD'|'HD'|'UHD'|null
      * } $args

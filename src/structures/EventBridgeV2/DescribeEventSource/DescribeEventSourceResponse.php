@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Description
  * @property 'CREATING'|'ACTIVE'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETING'|'DELETE_FAILED'|null $State
  * @property bool|null $Revoked
+ * @property Shapes\EventSourceDetails|null $EventSourceDetails
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  */

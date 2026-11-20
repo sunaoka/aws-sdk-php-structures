@@ -6,10 +6,12 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'AWS'|'Sandbox' $Catalog
- * @property string $ProductId
- * @property 'ACTIVE'|'INACTIVE'|null $Status
+ * @property string $MarketplaceRevenueShareIdentifier
+ * @property 'ACTIVE'|'INACTIVE'|null $StatusFilter
  * @property string|null $AfterEffectiveFrom
  * @property string|null $BeforeEffectiveFrom
+ * @property string|null $AfterEffectiveUntil
+ * @property string|null $BeforeEffectiveUntil
  * @property 'EffectiveFrom'|null $SortBy
  * @property 'ASCENDING'|'DESCENDING'|null $SortOrder
  * @property int<1, 100>|null $MaxResults
@@ -21,10 +23,12 @@ class ListMarketplaceRevenueShareAllocationsRequest extends Request
     /**
      * @param array{
      *     Catalog: 'AWS'|'Sandbox',
-     *     ProductId: string,
-     *     Status?: 'ACTIVE'|'INACTIVE'|null,
+     *     MarketplaceRevenueShareIdentifier: string,
+     *     StatusFilter?: 'ACTIVE'|'INACTIVE'|null,
      *     AfterEffectiveFrom?: string|null,
      *     BeforeEffectiveFrom?: string|null,
+     *     AfterEffectiveUntil?: string|null,
+     *     BeforeEffectiveUntil?: string|null,
      *     SortBy?: 'EffectiveFrom'|null,
      *     SortOrder?: 'ASCENDING'|'DESCENDING'|null,
      *     MaxResults?: int<1, 100>|null,

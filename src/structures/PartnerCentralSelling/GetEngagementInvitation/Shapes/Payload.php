@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property OpportunityInvitationPayload|null $OpportunityInvitation
  * @property LeadInvitationPayload|null $LeadInvitation
+ * @property AccountPlanningInvitationPayload|null $AccountPlanningInvitation
  */
 class Payload extends Shape
 {
     /**
      * @param array{
      *     OpportunityInvitation?: OpportunityInvitationPayload|null,
-     *     LeadInvitation?: LeadInvitationPayload|null
+     *     LeadInvitation?: LeadInvitationPayload|null,
+     *     AccountPlanningInvitation?: AccountPlanningInvitationPayload|null
      * } $args
      */
     public function __construct(array $args = [])

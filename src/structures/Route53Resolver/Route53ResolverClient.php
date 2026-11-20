@@ -48,6 +48,7 @@ class Route53ResolverClient extends \Aws\Route53Resolver\Route53ResolverClient
     use ListFirewallConfigs\ListFirewallConfigsTrait;
     use ListFirewallDomainLists\ListFirewallDomainListsTrait;
     use ListFirewallDomains\ListFirewallDomainsTrait;
+    use ListFirewallRuleDomains\ListFirewallRuleDomainsTrait;
     use ListFirewallRuleGroupAssociations\ListFirewallRuleGroupAssociationsTrait;
     use ListFirewallRuleGroups\ListFirewallRuleGroupsTrait;
     use ListFirewallRuleTypes\ListFirewallRuleTypesTrait;

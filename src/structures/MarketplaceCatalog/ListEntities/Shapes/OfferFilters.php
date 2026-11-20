@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OfferNameFilter|null $Name
  * @property OfferProductIdFilter|null $ProductId
  * @property OfferResaleAuthorizationIdFilter|null $ResaleAuthorizationId
+ * @property OfferSubsidiaryAuthorizationIdFilter|null $SubsidiaryAuthorizationId
  * @property OfferReleaseDateFilter|null $ReleaseDate
  * @property OfferAvailabilityEndDateFilter|null $AvailabilityEndDate
  * @property OfferBuyerAccountsFilter|null $BuyerAccounts
@@ -28,6 +29,7 @@ class OfferFilters extends Shape
      *     Name?: OfferNameFilter|null,
      *     ProductId?: OfferProductIdFilter|null,
      *     ResaleAuthorizationId?: OfferResaleAuthorizationIdFilter|null,
+     *     SubsidiaryAuthorizationId?: OfferSubsidiaryAuthorizationIdFilter|null,
      *     ReleaseDate?: OfferReleaseDateFilter|null,
      *     AvailabilityEndDate?: OfferAvailabilityEndDateFilter|null,
      *     BuyerAccounts?: OfferBuyerAccountsFilter|null,

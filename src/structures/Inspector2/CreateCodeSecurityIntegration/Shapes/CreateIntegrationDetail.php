@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property CreateGitLabSelfManagedIntegrationDetail|null $gitlabSelfManaged
+ * @property CreateGitHubEnterpriseIntegrationDetail|null $githubEnterprise
  */
 class CreateIntegrationDetail extends Shape
 {
     /**
-     * @param array{gitlabSelfManaged?: CreateGitLabSelfManagedIntegrationDetail|null} $args
+     * @param array{
+     *     gitlabSelfManaged?: CreateGitLabSelfManagedIntegrationDetail|null,
+     *     githubEnterprise?: CreateGitHubEnterpriseIntegrationDetail|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

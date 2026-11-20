@@ -19,6 +19,8 @@ class RTBFabricClient extends \Aws\RTBFabric\RTBFabricClient
     use DeleteRequesterGateway\DeleteRequesterGatewayTrait;
     use DeleteResponderGateway\DeleteResponderGatewayTrait;
     use DisassociateCertificate\DisassociateCertificateTrait;
+    use GetAvailableModule\GetAvailableModuleTrait;
+    use GetAvailableModuleVersion\GetAvailableModuleVersionTrait;
     use GetCertificateAssociation\GetCertificateAssociationTrait;
     use GetInboundExternalLink\GetInboundExternalLinkTrait;
     use GetLink\GetLinkTrait;
@@ -26,12 +28,17 @@ class RTBFabricClient extends \Aws\RTBFabric\RTBFabricClient
     use GetOutboundExternalLink\GetOutboundExternalLinkTrait;
     use GetRequesterGateway\GetRequesterGatewayTrait;
     use GetResponderGateway\GetResponderGatewayTrait;
+    use GetUpdate\GetUpdateTrait;
+    use ListAvailableModuleVersions\ListAvailableModuleVersionsTrait;
+    use ListAvailableModules\ListAvailableModulesTrait;
     use ListCertificateAssociations\ListCertificateAssociationsTrait;
     use ListLinkRoutingRules\ListLinkRoutingRulesTrait;
     use ListLinks\ListLinksTrait;
     use ListRequesterGateways\ListRequesterGatewaysTrait;
     use ListResponderGateways\ListResponderGatewaysTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use ListUpdates\ListUpdatesTrait;
+    use PutLinkFlows\PutLinkFlowsTrait;
     use RejectLink\RejectLinkTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;

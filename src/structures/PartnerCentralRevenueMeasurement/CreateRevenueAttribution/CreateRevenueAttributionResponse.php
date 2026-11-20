@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'MULTI_TENANT'|'SINGLE_TENANT' $TenancyModel
  * @property Shapes\MarketplaceProductSummary|null $MarketplaceProduct
  * @property string|null $Revision
+ * @property array<string, string>|null $Context
  */
 class CreateRevenueAttributionResponse extends Response
 {

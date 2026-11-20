@@ -24,6 +24,7 @@ class EventBridgeV2Client extends \Aws\EventBridgeV2\EventBridgeV2Client
     use PutRawEvents\PutRawEventsTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;
     use RevokeResource\RevokeResourceTrait;
+    use RotateWebhookCredentials\RotateWebhookCredentialsTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateEventBus\UpdateEventBusTrait;

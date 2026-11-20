@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'AWS'|'Sandbox' $Catalog
+ * @property list<string>|null $Identifiers
  * @property list<string>|null $ProductIds
  * @property list<string>|null $ProductCodes
  * @property int<1, 100>|null $MaxResults
@@ -20,6 +21,7 @@ class ListMarketplaceRevenueSharesRequest extends Request
     /**
      * @param array{
      *     Catalog: 'AWS'|'Sandbox',
+     *     Identifiers?: list<string>|null,
      *     ProductIds?: list<string>|null,
      *     ProductCodes?: list<string>|null,
      *     MaxResults?: int<1, 100>|null,

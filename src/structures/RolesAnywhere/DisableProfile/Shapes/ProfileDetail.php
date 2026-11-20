@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<AttributeMapping>|null $attributeMappings
  * @property string|null $aliasName
  * @property string|null $aliasArn
+ * @property TipConfiguration|null $tipConfiguration
  * @property string|null $previousAliasName
  */
 class ProfileDetail extends Shape
@@ -43,6 +44,7 @@ class ProfileDetail extends Shape
      *     attributeMappings?: list<AttributeMapping>|null,
      *     aliasName?: string|null,
      *     aliasArn?: string|null,
+     *     tipConfiguration?: TipConfiguration|null,
      *     previousAliasName?: string|null
      * } $args
      */

@@ -4,10 +4,13 @@ namespace Sunaoka\Aws\Structures\Polly;
 
 class PollyClient extends \Aws\Polly\PollyClient
 {
+    use CreateVoice\CreateVoiceTrait;
     use DeleteLexicon\DeleteLexiconTrait;
+    use DeleteVoice\DeleteVoiceTrait;
     use DescribeVoices\DescribeVoicesTrait;
     use GetLexicon\GetLexiconTrait;
     use GetSpeechSynthesisTask\GetSpeechSynthesisTaskTrait;
+    use GetVoice\GetVoiceTrait;
     use ListLexicons\ListLexiconsTrait;
     use ListSpeechSynthesisTasks\ListSpeechSynthesisTasksTrait;
     use ListTagsForResource\ListTagsForResourceTrait;

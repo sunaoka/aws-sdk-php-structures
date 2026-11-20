@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $gatewayId
  * @property string $linkId
- * @property 'PENDING_CREATION'|'PENDING_REQUEST'|'REQUESTED'|'ACCEPTED'|'ACTIVE'|'REJECTED'|'FAILED'|'PENDING_DELETION'|'DELETED'|'PENDING_UPDATE'|'PENDING_ISOLATION'|'ISOLATED'|'PENDING_RESTORATION' $status
+ * @property 'PENDING_CREATION'|'PENDING_REQUEST'|'REQUESTED'|'ACCEPTED'|'ACTIVE'|'REJECTED'|'FAILED'|'PENDING_DELETION'|'DELETED'|'PENDING_UPDATE'|'PENDING_ISOLATION'|'ISOLATED'|'PENDING_RESTORATION'|'CREATE_FAILED'|'DELETE_FAILED' $status
  * @property string $domainName
  * @property list<Shapes\ModuleConfiguration>|null $flowModules
  * @property list<Shapes\ModuleConfiguration>|null $pendingFlowModules
@@ -17,6 +17,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $tags
  * @property Shapes\LinkLogSettings|null $logSettings
  * @property 'DEFAULT'|'PUBLIC_INGRESS'|'PUBLIC_EGRESS'|'EXTERNAL_INBOUND'|null $connectivityType
+ * @property list<Shapes\ErrorDetail>|null $errorDetails
+ * @property string|null $lockToken
+ * @property list<Shapes\Flow>|null $flows
  */
 class GetInboundExternalLinkResponse extends Response
 {

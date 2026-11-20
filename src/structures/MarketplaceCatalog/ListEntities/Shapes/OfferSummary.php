@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Name
  * @property string|null $ProductId
  * @property string|null $ResaleAuthorizationId
+ * @property string|null $SubsidiaryAuthorizationId
  * @property string|null $ReleaseDate
  * @property string|null $AvailabilityEndDate
  * @property list<string>|null $BuyerAccounts
@@ -25,6 +26,7 @@ class OfferSummary extends Shape
      *     Name?: string|null,
      *     ProductId?: string|null,
      *     ResaleAuthorizationId?: string|null,
+     *     SubsidiaryAuthorizationId?: string|null,
      *     ReleaseDate?: string|null,
      *     AvailabilityEndDate?: string|null,
      *     BuyerAccounts?: list<string>|null,

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $kmsKeyArn
  * @property string $agentSpaceId
  * @property array<'elevatedActionsEnabled', bool>|null $preferences
+ * @property 'standalone'|'organization'|null $awsSourceMode
  */
 class AgentSpace extends Shape
 {
@@ -25,7 +26,8 @@ class AgentSpace extends Shape
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     kmsKeyArn?: string|null,
      *     agentSpaceId: string,
-     *     preferences?: array<'elevatedActionsEnabled', bool>|null
+     *     preferences?: array<'elevatedActionsEnabled', bool>|null,
+     *     awsSourceMode?: 'standalone'|'organization'|null
      * } $args
      */
     public function __construct(array $args)

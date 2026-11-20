@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property HttpParameters|null $HttpParameters
  * @property UniversalTargetParameters|null $UniversalTargetParameters
  * @property EventBusV2Parameters|null $EventBusV2Parameters
+ * @property MskParameters|null $MskParameters
  */
 class UpdateInvokeConfiguration extends Shape
 {
@@ -27,7 +28,8 @@ class UpdateInvokeConfiguration extends Shape
      *     StepFunctionsParameters?: StepFunctionsParameters|null,
      *     HttpParameters?: HttpParameters|null,
      *     UniversalTargetParameters?: UniversalTargetParameters|null,
-     *     EventBusV2Parameters?: EventBusV2Parameters|null
+     *     EventBusV2Parameters?: EventBusV2Parameters|null,
+     *     MskParameters?: MskParameters|null
      * } $args
      */
     public function __construct(array $args)

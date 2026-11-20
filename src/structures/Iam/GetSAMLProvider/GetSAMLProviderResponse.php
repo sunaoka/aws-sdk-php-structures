@@ -7,11 +7,15 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $SAMLProviderUUID
  * @property string|null $SAMLMetadataDocument
+ * @property Shapes\ContextProvider|null $ContextProvider
+ * @property list<Shapes\SAMLKeyHashEntry>|null $SAMLKeyHashes
  * @property \Aws\Api\DateTimeResult|null $CreateDate
  * @property \Aws\Api\DateTimeResult|null $ValidUntil
  * @property list<Shapes\Tag>|null $Tags
  * @property 'Required'|'Allowed'|null $AssertionEncryptionMode
  * @property list<Shapes\SAMLPrivateKey>|null $PrivateKeyList
+ * @property string|null $IdentityCenterInstanceArn
+ * @property string|null $IdentityStoreArn
  */
 class GetSAMLProviderResponse extends Response
 {

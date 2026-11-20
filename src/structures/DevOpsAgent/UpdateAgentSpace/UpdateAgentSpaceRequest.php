@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property string|null $locale
  * @property array<'elevatedActionsEnabled', bool>|null $preferences
+ * @property 'standalone'|'organization'|null $awsSourceMode
  */
 class UpdateAgentSpaceRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateAgentSpaceRequest extends Request
      *     name?: string|null,
      *     description?: string|null,
      *     locale?: string|null,
-     *     preferences?: array<'elevatedActionsEnabled', bool>|null
+     *     preferences?: array<'elevatedActionsEnabled', bool>|null,
+     *     awsSourceMode?: 'standalone'|'organization'|null
      * } $args
      */
     public function __construct(array $args)

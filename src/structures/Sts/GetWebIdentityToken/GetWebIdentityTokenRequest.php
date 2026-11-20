@@ -8,6 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $Audience
  * @property int<60, 3600>|null $DurationSeconds
  * @property string $SigningAlgorithm
+ * @property string|null $Scope
+ * @property 'AWSIdentity'|'OriginIdentity'|null $SubjectMode
  * @property list<Shapes\Tag>|null $Tags
  */
 class GetWebIdentityTokenRequest extends Request
@@ -17,6 +19,8 @@ class GetWebIdentityTokenRequest extends Request
      *     Audience: list<string>,
      *     DurationSeconds?: int<60, 3600>|null,
      *     SigningAlgorithm: string,
+     *     Scope?: string|null,
+     *     SubjectMode?: 'AWSIdentity'|'OriginIdentity'|null,
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */

@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY' $recordType
  * @property Shapes\Descriptors|null $descriptors
  * @property string|null $recordVersion
- * @property 'DRAFT'|'PENDING_APPROVAL'|'APPROVED'|'REJECTED'|'DEPRECATED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED' $status
+ * @property 'DRAFT'|'PENDING_APPROVAL'|'APPROVED'|'REJECTED'|'DEPRECATED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED'|'CREATE_PENDING_AUTH'|'UPDATE_PENDING_AUTH' $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property string|null $statusReason
@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $createdBy
  * @property Shapes\CustomMetadataDocument|null $customMetadata
  * @property 'COMPLIANT'|'NON_COMPLIANT'|null $customMetadataSchemaComplianceStatus
+ * @property Shapes\AuthorizationData|null $authorizationData
  */
 class UpdateRegistryRecordResponse extends Response
 {

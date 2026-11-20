@@ -16,6 +16,7 @@ class MarketplaceCatalogClient extends \Aws\MarketplaceCatalog\MarketplaceCatalo
     use ListEntities\ListEntitiesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;
+    use StartAssessment\StartAssessmentTrait;
     use StartChangeSet\StartChangeSetTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;

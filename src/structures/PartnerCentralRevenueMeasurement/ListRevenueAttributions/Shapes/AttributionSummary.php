@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $EffectiveUntil
  * @property int<0, max>|null $TotalActiveRevenueAttributionAllocationCount
  * @property int<0, max>|null $TotalRevenueAttributionAllocationCount
+ * @property array<string, string>|null $Context
  */
 class AttributionSummary extends Shape
 {
@@ -35,7 +36,8 @@ class AttributionSummary extends Shape
      *     EffectiveFrom?: string|null,
      *     EffectiveUntil?: string|null,
      *     TotalActiveRevenueAttributionAllocationCount?: int<0, max>|null,
-     *     TotalRevenueAttributionAllocationCount?: int<0, max>|null
+     *     TotalRevenueAttributionAllocationCount?: int<0, max>|null,
+     *     Context?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

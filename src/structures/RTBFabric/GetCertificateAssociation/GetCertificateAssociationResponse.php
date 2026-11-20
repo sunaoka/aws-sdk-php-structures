@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'PENDING_ASSOCIATION'|'ASSOCIATED'|'PENDING_DISASSOCIATION'|'DISASSOCIATED'|'FAILED' $status
  * @property \Aws\Api\DateTimeResult|null $associatedAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property list<Shapes\ErrorDetail>|null $errorDetails
  */
 class GetCertificateAssociationResponse extends Response
 {

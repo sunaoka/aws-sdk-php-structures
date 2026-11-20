@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RdsCustomClusterConfiguration|null $RdsCustomClusterConfiguration
  * @property int|null $Iops
  * @property CertificateDetails|null $CertificateDetails
+ * @property bool|null $VPCNetworkingEnabled
+ * @property bool|null $InternetAccessGatewayEnabled
  */
 class ClusterPendingModifiedValues extends Shape
 {
@@ -31,7 +33,9 @@ class ClusterPendingModifiedValues extends Shape
      *     AllocatedStorage?: int|null,
      *     RdsCustomClusterConfiguration?: RdsCustomClusterConfiguration|null,
      *     Iops?: int|null,
-     *     CertificateDetails?: CertificateDetails|null
+     *     CertificateDetails?: CertificateDetails|null,
+     *     VPCNetworkingEnabled?: bool|null,
+     *     InternetAccessGatewayEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ASCENDING'|'DESCENDING'|null $SortOrder
  * @property int<1, 100>|null $MaxResults
  * @property string|null $NextToken
+ * @property list<Shapes\ContextFilter>|null $ContextFilters
  */
 class ListRevenueAttributionsRequest extends Request
 {
@@ -25,7 +26,8 @@ class ListRevenueAttributionsRequest extends Request
      *     SortBy?: 'LastModifiedDate'|null,
      *     SortOrder?: 'ASCENDING'|'DESCENDING'|null,
      *     MaxResults?: int<1, 100>|null,
-     *     NextToken?: string|null
+     *     NextToken?: string|null,
+     *     ContextFilters?: list<Shapes\ContextFilter>|null
      * } $args
      */
     public function __construct(array $args)

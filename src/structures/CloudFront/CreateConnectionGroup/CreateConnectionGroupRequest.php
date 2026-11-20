@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Tags|null $Tags
  * @property string|null $AnycastIpListId
  * @property bool|null $Enabled
+ * @property Shapes\ViewerFallback|null $ViewerFallback
  */
 class CreateConnectionGroupRequest extends Request
 {
@@ -19,7 +20,8 @@ class CreateConnectionGroupRequest extends Request
      *     Ipv6Enabled?: bool|null,
      *     Tags?: Shapes\Tags|null,
      *     AnycastIpListId?: string|null,
-     *     Enabled?: bool|null
+     *     Enabled?: bool|null,
+     *     ViewerFallback?: Shapes\ViewerFallback|null
      * } $args
      */
     public function __construct(array $args)

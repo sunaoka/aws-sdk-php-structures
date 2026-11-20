@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $code
  * @property string $installationId
+ * @property string|null $stateToken
  */
 class UpdateGitHubIntegrationDetail extends Shape
 {
     /**
      * @param array{
      *     code: string,
-     *     installationId: string
+     *     installationId: string,
+     *     stateToken?: string|null
      * } $args
      */
     public function __construct(array $args)

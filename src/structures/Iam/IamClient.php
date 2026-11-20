@@ -172,6 +172,7 @@ class IamClient extends \Aws\Iam\IamClient
     use UpdateDelegationRequest\UpdateDelegationRequestTrait;
     use UpdateGroup\UpdateGroupTrait;
     use UpdateLoginProfile\UpdateLoginProfileTrait;
+    use UpdateOpenIDConnectProvider\UpdateOpenIDConnectProviderTrait;
     use UpdateOpenIDConnectProviderThumbprint\UpdateOpenIDConnectProviderThumbprintTrait;
     use UpdateRole\UpdateRoleTrait;
     use UpdateRoleDescription\UpdateRoleDescriptionTrait;

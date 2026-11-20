@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\Kafka\DescribeClusterOperation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property BrokerTypeUpgradeInfo|null $BrokerTypeUpgradeInfo
  * @property string|null $ClientRequestId
  * @property string|null $ClusterArn
  * @property \Aws\Api\DateTimeResult|null $CreationTime
@@ -22,6 +23,7 @@ class ClusterOperationInfo extends Shape
 {
     /**
      * @param array{
+     *     BrokerTypeUpgradeInfo?: BrokerTypeUpgradeInfo|null,
      *     ClientRequestId?: string|null,
      *     ClusterArn?: string|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,

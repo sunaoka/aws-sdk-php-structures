@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool|null $Revoked
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property Shapes\SubscriberDetails|null $SubscriberDetails
  */
 class DescribeSubscriberResponse extends Response
 {

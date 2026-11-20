@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\DescribeLinkedChannelSettings|null $LinkedChannelSettings
  * @property list<string>|null $ChannelSecurityGroups
  * @property Shapes\DescribeInferenceSettings|null $InferenceSettings
+ * @property Shapes\JpegXsInputSpecification|null $JpegXsInputSpecification
  */
 class StartChannelResponse extends Response
 {

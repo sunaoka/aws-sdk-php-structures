@@ -11,6 +11,7 @@ class Route53Client extends \Aws\Route53\Route53Client
     use ChangeTagsForResource\ChangeTagsForResourceTrait;
     use CreateCidrCollection\CreateCidrCollectionTrait;
     use CreateHealthCheck\CreateHealthCheckTrait;
+    use CreateHealthCheckSource\CreateHealthCheckSourceTrait;
     use CreateHostedZone\CreateHostedZoneTrait;
     use CreateKeySigningKey\CreateKeySigningKeyTrait;
     use CreateQueryLoggingConfig\CreateQueryLoggingConfigTrait;
@@ -23,6 +24,7 @@ class Route53Client extends \Aws\Route53\Route53Client
     use DeactivateKeySigningKey\DeactivateKeySigningKeyTrait;
     use DeleteCidrCollection\DeleteCidrCollectionTrait;
     use DeleteHealthCheck\DeleteHealthCheckTrait;
+    use DeleteHealthCheckSource\DeleteHealthCheckSourceTrait;
     use DeleteHostedZone\DeleteHostedZoneTrait;
     use DeleteKeySigningKey\DeleteKeySigningKeyTrait;
     use DeleteQueryLoggingConfig\DeleteQueryLoggingConfigTrait;
@@ -42,6 +44,7 @@ class Route53Client extends \Aws\Route53\Route53Client
     use GetHealthCheck\GetHealthCheckTrait;
     use GetHealthCheckCount\GetHealthCheckCountTrait;
     use GetHealthCheckLastFailureReason\GetHealthCheckLastFailureReasonTrait;
+    use GetHealthCheckSource\GetHealthCheckSourceTrait;
     use GetHealthCheckStatus\GetHealthCheckStatusTrait;
     use GetHostedZone\GetHostedZoneTrait;
     use GetHostedZoneCount\GetHostedZoneCountTrait;
@@ -56,7 +59,9 @@ class Route53Client extends \Aws\Route53\Route53Client
     use ListCidrCollections\ListCidrCollectionsTrait;
     use ListCidrLocations\ListCidrLocationsTrait;
     use ListGeoLocations\ListGeoLocationsTrait;
+    use ListHealthCheckSources\ListHealthCheckSourcesTrait;
     use ListHealthChecks\ListHealthChecksTrait;
+    use ListHealthChecksBySource\ListHealthChecksBySourceTrait;
     use ListHostedZones\ListHostedZonesTrait;
     use ListHostedZonesByName\ListHostedZonesByNameTrait;
     use ListHostedZonesByVPC\ListHostedZonesByVPCTrait;

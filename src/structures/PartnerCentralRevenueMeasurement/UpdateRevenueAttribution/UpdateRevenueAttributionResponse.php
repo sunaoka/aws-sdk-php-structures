@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Description
  * @property \Aws\Api\DateTimeResult $LastModifiedDate
  * @property string|null $LatestRevision
+ * @property array<string, string>|null $Context
  */
 class UpdateRevenueAttributionResponse extends Response
 {

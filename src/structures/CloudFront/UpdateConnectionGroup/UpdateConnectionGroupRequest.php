@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $IfMatch
  * @property string|null $AnycastIpListId
  * @property bool|null $Enabled
+ * @property Shapes\ViewerFallback|null $ViewerFallback
  */
 class UpdateConnectionGroupRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateConnectionGroupRequest extends Request
      *     Ipv6Enabled?: bool|null,
      *     IfMatch: string,
      *     AnycastIpListId?: string|null,
-     *     Enabled?: bool|null
+     *     Enabled?: bool|null,
+     *     ViewerFallback?: Shapes\ViewerFallback|null
      * } $args
      */
     public function __construct(array $args)

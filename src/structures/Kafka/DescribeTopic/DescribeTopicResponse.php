@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $PartitionCount
  * @property string|null $Configs
  * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|null $Status
+ * @property list<int>|null $ReplicaIds
  */
 class DescribeTopicResponse extends Response
 {

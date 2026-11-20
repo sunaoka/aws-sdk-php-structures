@@ -53,6 +53,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $CACertificateIdentifier
  * @property 'password'|'iam-db-auth'|null $MasterUserAuthenticationType
  * @property string|null $EngineLifecycleSupport
+ * @property bool|null $EnableInternetAccessGateway
+ * @property bool|null $EnableVPCNetworking
+ * @property string|null $DBSubnetGroupName
  */
 class ModifyDBClusterRequest extends Request
 {
@@ -105,7 +108,10 @@ class ModifyDBClusterRequest extends Request
      *     EnableLimitlessDatabase?: bool|null,
      *     CACertificateIdentifier?: string|null,
      *     MasterUserAuthenticationType?: 'password'|'iam-db-auth'|null,
-     *     EngineLifecycleSupport?: string|null
+     *     EngineLifecycleSupport?: string|null,
+     *     EnableInternetAccessGateway?: bool|null,
+     *     EnableVPCNetworking?: bool|null,
+     *     DBSubnetGroupName?: string|null
      * } $args
      */
     public function __construct(array $args)

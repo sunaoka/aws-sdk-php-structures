@@ -24,6 +24,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $Regions
  * @property 'SELF'|'DELEGATED_ADMIN'|null $CallAs
  * @property Shapes\ManagedExecution|null $ManagedExecution
+ * @property string|null $ExecutionRoleTemplateBody
+ * @property string|null $ExecutionRoleTemplateUrl
+ * @property bool|null $UseAdminExecutionRole
+ * @property string|null $StackSetOutputBucket
  */
 class UpdateStackSetRequest extends Request
 {
@@ -47,7 +51,11 @@ class UpdateStackSetRequest extends Request
      *     Accounts?: list<string>|null,
      *     Regions?: list<string>|null,
      *     CallAs?: 'SELF'|'DELEGATED_ADMIN'|null,
-     *     ManagedExecution?: Shapes\ManagedExecution|null
+     *     ManagedExecution?: Shapes\ManagedExecution|null,
+     *     ExecutionRoleTemplateBody?: string|null,
+     *     ExecutionRoleTemplateUrl?: string|null,
+     *     UseAdminExecutionRole?: bool|null,
+     *     StackSetOutputBucket?: string|null
      * } $args
      */
     public function __construct(array $args)

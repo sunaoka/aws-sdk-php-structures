@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AwsOpportunityCustomer|null $Customer
  * @property AwsOpportunityProject|null $Project
  * @property string|null $CosellMotion
+ * @property string|null $CosellMotionReason
  * @property AwsSoftwareRevenue|null $SoftwareRevenue
  */
 class AwsOpportunitySummaryFullView extends Shape
@@ -35,6 +36,7 @@ class AwsOpportunitySummaryFullView extends Shape
      *     Customer?: AwsOpportunityCustomer|null,
      *     Project?: AwsOpportunityProject|null,
      *     CosellMotion?: string|null,
+     *     CosellMotionReason?: string|null,
      *     SoftwareRevenue?: AwsSoftwareRevenue|null
      * } $args
      */
