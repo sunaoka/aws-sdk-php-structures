@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property string $id
  * @property string $name
- * @property 'eng'|'fra'|'ita'|'deu'|'spa'|'por' $language
+ * @property 'eng'|'fra'|'ita'|'deu'|'spa'|'por'|'ara' $language
  * @property 'CREATING'|'AVAILABLE'|'REFERENCED'|'DELETING'|'DELETED' $status
  */
 class DictionarySummary extends Shape
@@ -18,7 +18,7 @@ class DictionarySummary extends Shape
      *     arn: string,
      *     id: string,
      *     name: string,
-     *     language: 'eng'|'fra'|'ita'|'deu'|'spa'|'por',
+     *     language: 'eng'|'fra'|'ita'|'deu'|'spa'|'por'|'ara',
      *     status: 'CREATING'|'AVAILABLE'|'REFERENCED'|'DELETING'|'DELETED'
      * } $args
      */

@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<'ALL'>|null $additionalOsCapabilities
  * @property Shapes\Hooks|null $hooks
  * @property array<string, string>|null $environmentVariables
+ * @property string|null $kmsKeyIdentifier
  * @property array<string, string>|null $tags
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string $imageVersion

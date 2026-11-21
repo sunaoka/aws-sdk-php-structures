@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DryRun
  * @property string $IpamPolicyId
  * @property string $Locale
- * @property 'alb'|'eip'|'rds'|'rnat' $ResourceType
+ * @property 'alb'|'eip'|'rds'|'rnat'|'lambda-network-connector'|'igw-firewall' $ResourceType
  * @property list<Shapes\IpamPolicyAllocationRuleRequest>|null $AllocationRules
  */
 class ModifyIpamPolicyAllocationRulesRequest extends Request
@@ -18,7 +18,7 @@ class ModifyIpamPolicyAllocationRulesRequest extends Request
      *     DryRun?: bool|null,
      *     IpamPolicyId: string,
      *     Locale: string,
-     *     ResourceType: 'alb'|'eip'|'rds'|'rnat',
+     *     ResourceType: 'alb'|'eip'|'rds'|'rnat'|'lambda-network-connector'|'igw-firewall',
      *     AllocationRules?: list<Shapes\IpamPolicyAllocationRuleRequest>|null
      * } $args
      */

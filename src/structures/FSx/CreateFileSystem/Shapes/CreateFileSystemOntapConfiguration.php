@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int<0, 90>|null $AutomaticBackupRetentionDays
  * @property string|null $DailyAutomaticBackupStartTime
- * @property 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2'|'MULTI_AZ_2' $DeploymentType
+ * @property 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2'|'MULTI_AZ_2'|'SINGLE_AZ_3'|'MULTI_AZ_3' $DeploymentType
  * @property string|null $EndpointIpAddressRange
  * @property string|null $FsxAdminPassword
  * @property DiskIopsConfiguration|null $DiskIopsConfiguration
@@ -25,7 +25,7 @@ class CreateFileSystemOntapConfiguration extends Shape
      * @param array{
      *     AutomaticBackupRetentionDays?: int<0, 90>|null,
      *     DailyAutomaticBackupStartTime?: string|null,
-     *     DeploymentType: 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2'|'MULTI_AZ_2',
+     *     DeploymentType: 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2'|'MULTI_AZ_2'|'SINGLE_AZ_3'|'MULTI_AZ_3',
      *     EndpointIpAddressRange?: string|null,
      *     FsxAdminPassword?: string|null,
      *     DiskIopsConfiguration?: DiskIopsConfiguration|null,

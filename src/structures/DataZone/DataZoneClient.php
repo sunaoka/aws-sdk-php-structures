@@ -178,6 +178,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use UntagResource\UntagResourceTrait;
     use UpdateAccountPool\UpdateAccountPoolTrait;
     use UpdateAssetFilter\UpdateAssetFilterTrait;
+    use UpdateAssetOwner\UpdateAssetOwnerTrait;
     use UpdateConnection\UpdateConnectionTrait;
     use UpdateDataSource\UpdateDataSourceTrait;
     use UpdateDesignation\UpdateDesignationTrait;

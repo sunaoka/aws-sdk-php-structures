@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $iamInstanceProfileArn
  * @property Shapes\UpdateComputeNodeGroupSlurmConfigurationRequest|null $slurmConfiguration
  * @property Shapes\UpdateNodeLifecycleActionsRequest|null $nodeLifecycleActions
+ * @property Shapes\UpdateInstanceHealthChecksRequest|null $instanceHealthChecks
  * @property string|null $clientToken
  */
 class UpdateComputeNodeGroupRequest extends Request
@@ -39,6 +40,7 @@ class UpdateComputeNodeGroupRequest extends Request
      *     iamInstanceProfileArn?: string|null,
      *     slurmConfiguration?: Shapes\UpdateComputeNodeGroupSlurmConfigurationRequest|null,
      *     nodeLifecycleActions?: Shapes\UpdateNodeLifecycleActionsRequest|null,
+     *     instanceHealthChecks?: Shapes\UpdateInstanceHealthChecksRequest|null,
      *     clientToken?: string|null
      * } $args
      */

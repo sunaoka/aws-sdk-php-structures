@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 48>|null $MaxLength
  * @property string|null $Description
  * @property string|null $LatestDeltaId
- * @property 'pending-activate'|'activate-failed'|'create-in-progress'|'create-complete'|'update-in-progress'|'update-complete'|'delete-in-progress'|'delete-complete'|null $State
+ * @property 'pending-activate'|'activate-failed'|'create-in-progress'|'create-complete'|'update-in-progress'|'update-complete'|'delete-in-progress'|'delete-complete'|'disable-complete'|null $State
  */
 class IpamRoutingPolicyRegistration extends Shape
 {
@@ -23,7 +23,7 @@ class IpamRoutingPolicyRegistration extends Shape
      *     MaxLength?: int<0, 48>|null,
      *     Description?: string|null,
      *     LatestDeltaId?: string|null,
-     *     State?: 'pending-activate'|'activate-failed'|'create-in-progress'|'create-complete'|'update-in-progress'|'update-complete'|'delete-in-progress'|'delete-complete'|null
+     *     State?: 'pending-activate'|'activate-failed'|'create-in-progress'|'create-complete'|'update-in-progress'|'update-complete'|'delete-in-progress'|'delete-complete'|'disable-complete'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\PartnerCentralChannel\ListChannelHandshakes\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SOLUTION_PROVIDER'|'DISTRIBUTION'|'DISTRIBUTION_SELLER'|null $program
+ * @property 'SOLUTION_PROVIDER'|'DISTRIBUTION'|'DISTRIBUTION_SELLER'|'MANAGED_SERVICES_PROVIDER'|null $program
  */
 class ProgramManagementAccountHandshakeDetail extends Shape
 {
     /**
-     * @param array{program?: 'SOLUTION_PROVIDER'|'DISTRIBUTION'|'DISTRIBUTION_SELLER'|null} $args
+     * @param array{program?: 'SOLUTION_PROVIDER'|'DISTRIBUTION'|'DISTRIBUTION_SELLER'|'MANAGED_SERVICES_PROVIDER'|null} $args
      */
     public function __construct(array $args = [])
     {

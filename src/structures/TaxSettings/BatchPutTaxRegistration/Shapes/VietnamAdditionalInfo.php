@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $electronicTransactionCodeNumber
  * @property string|null $paymentVoucherNumber
  * @property string|null $paymentVoucherNumberDate
+ * @property bool|null $vatCreditMethod
  */
 class VietnamAdditionalInfo extends Shape
 {
@@ -17,7 +18,8 @@ class VietnamAdditionalInfo extends Shape
      *     enterpriseIdentificationNumber?: string|null,
      *     electronicTransactionCodeNumber?: string|null,
      *     paymentVoucherNumber?: string|null,
-     *     paymentVoucherNumberDate?: string|null
+     *     paymentVoucherNumberDate?: string|null,
+     *     vatCreditMethod?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

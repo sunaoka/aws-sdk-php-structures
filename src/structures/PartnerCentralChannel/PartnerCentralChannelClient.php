@@ -5,13 +5,17 @@ namespace Sunaoka\Aws\Structures\PartnerCentralChannel;
 class PartnerCentralChannelClient extends \Aws\PartnerCentralChannel\PartnerCentralChannelClient
 {
     use AcceptChannelHandshake\AcceptChannelHandshakeTrait;
+    use CancelChannelContract\CancelChannelContractTrait;
     use CancelChannelHandshake\CancelChannelHandshakeTrait;
+    use CreateChannelContract\CreateChannelContractTrait;
     use CreateChannelHandshake\CreateChannelHandshakeTrait;
     use CreateProgramManagementAccount\CreateProgramManagementAccountTrait;
     use CreateRelationship\CreateRelationshipTrait;
     use DeleteProgramManagementAccount\DeleteProgramManagementAccountTrait;
     use DeleteRelationship\DeleteRelationshipTrait;
+    use GetChannelContract\GetChannelContractTrait;
     use GetRelationship\GetRelationshipTrait;
+    use ListChannelContracts\ListChannelContractsTrait;
     use ListChannelHandshakes\ListChannelHandshakesTrait;
     use ListProgramManagementAccounts\ListProgramManagementAccountsTrait;
     use ListRelationships\ListRelationshipsTrait;

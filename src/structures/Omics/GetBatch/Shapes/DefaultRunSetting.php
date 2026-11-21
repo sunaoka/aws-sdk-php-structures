@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $sessionPolicy
  * @property EngineSettings|null $engineSettings
  * @property 'LOCAL'|'SHARED'|null $scratchStorageMode
+ * @property bool|null $requesterPaysEnabled
  */
 class DefaultRunSetting extends Shape
 {
@@ -55,7 +56,8 @@ class DefaultRunSetting extends Shape
      *     configurationName?: string|null,
      *     sessionPolicy?: string|null,
      *     engineSettings?: EngineSettings|null,
-     *     scratchStorageMode?: 'LOCAL'|'SHARED'|null
+     *     scratchStorageMode?: 'LOCAL'|'SHARED'|null,
+     *     requesterPaysEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

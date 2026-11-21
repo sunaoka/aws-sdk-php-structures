@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property UpdatedCustomDescriptor|null $custom
  * @property UpdatedHttpDescriptor|null $http
  * @property UpdatedAgUiDescriptor|null $agui
+ * @property UpdatedSignatureAgentCardDescriptor|null $signatureAgentCard
  */
 class UpdatedDescriptorsFields extends Shape
 {
@@ -21,7 +22,8 @@ class UpdatedDescriptorsFields extends Shape
      *     agentSkillsDefinition?: UpdatedAgentSkillsDefinitionDescriptor|null,
      *     custom?: UpdatedCustomDescriptor|null,
      *     http?: UpdatedHttpDescriptor|null,
-     *     agui?: UpdatedAgUiDescriptor|null
+     *     agui?: UpdatedAgUiDescriptor|null,
+     *     signatureAgentCard?: UpdatedSignatureAgentCardDescriptor|null
      * } $args
      */
     public function __construct(array $args = [])

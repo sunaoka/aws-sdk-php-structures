@@ -35,6 +35,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'APPROVED'|'NOT_REVIEWED'|'PENDING'|'REJECTED'|null $ReviewStatus
  * @property list<string>|null $Category
  * @property list<string>|null $CategoryEnum
+ * @property list<'AWS'|'Azure'|'GCP'>|null $CloudProviders
  */
 class DocumentDescription extends Shape
 {
@@ -69,7 +70,8 @@ class DocumentDescription extends Shape
      *     PendingReviewVersion?: string|null,
      *     ReviewStatus?: 'APPROVED'|'NOT_REVIEWED'|'PENDING'|'REJECTED'|null,
      *     Category?: list<string>|null,
-     *     CategoryEnum?: list<string>|null
+     *     CategoryEnum?: list<string>|null,
+     *     CloudProviders?: list<'AWS'|'Azure'|'GCP'>|null
      * } $args
      */
     public function __construct(array $args = [])

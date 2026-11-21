@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $scopeName
  * @property string|null $scopeDescription
  * @property Shapes\ScopeConfiguration $scopeConfiguration
+ * @property 'IGW_FIREWALL_SUBNET_CONNECTIVITY_OVERRIDE'|null $specializedScopeType
  * @property bool|null $isPublished
  * @property array<string, string>|null $tags
  */
@@ -20,6 +21,7 @@ class CreateScopeRequest extends Request
      *     scopeName: string,
      *     scopeDescription?: string|null,
      *     scopeConfiguration: Shapes\ScopeConfiguration,
+     *     specializedScopeType?: 'IGW_FIREWALL_SUBNET_CONNECTIVITY_OVERRIDE'|null,
      *     isPublished?: bool|null,
      *     tags?: array<string, string>|null
      * } $args

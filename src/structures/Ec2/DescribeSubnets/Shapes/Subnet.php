@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PrivateDnsNameOptionsOnLaunch|null $PrivateDnsNameOptionsOnLaunch
  * @property BlockPublicAccessStates|null $BlockPublicAccessStates
  * @property string|null $Type
+ * @property 'flexible'|'outbound-only'|'bidirectional'|'exclude'|'az-unsupported'|null $NetworkFirewallConnectivityType
  * @property string|null $SubnetId
  * @property 'pending'|'available'|'unavailable'|'failed'|'failed-insufficient-capacity'|null $State
  * @property string|null $VpcId
@@ -48,6 +49,7 @@ class Subnet extends Shape
      *     PrivateDnsNameOptionsOnLaunch?: PrivateDnsNameOptionsOnLaunch|null,
      *     BlockPublicAccessStates?: BlockPublicAccessStates|null,
      *     Type?: string|null,
+     *     NetworkFirewallConnectivityType?: 'flexible'|'outbound-only'|'bidirectional'|'exclude'|'az-unsupported'|null,
      *     SubnetId?: string|null,
      *     State?: 'pending'|'available'|'unavailable'|'failed'|'failed-insufficient-capacity'|null,
      *     VpcId?: string|null,

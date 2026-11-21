@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\RecommendedActionFilter>|null $filters
+ * @property list<string>|null $organizationalUnitIds
  * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
  */
@@ -14,6 +15,7 @@ class ListRecommendedActionSummariesRequest extends Request
     /**
      * @param array{
      *     filters?: list<Shapes\RecommendedActionFilter>|null,
+     *     organizationalUnitIds?: list<string>|null,
      *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null
      * } $args

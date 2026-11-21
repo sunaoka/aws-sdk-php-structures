@@ -18,6 +18,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<PricingModel> $pricingModels
  * @property list<PricingUnit> $pricingUnits
  * @property list<ListingSummaryAssociatedEntity> $associatedEntities
+ * @property TrustCenterSummary|null $trustCenterSummary
+ * @property CaseStudiesSummary|null $caseStudiesSummary
+ * @property UseCaseSummary|null $useCaseSummary
+ * @property list<SellerEngagement>|null $sellerEngagements
  */
 class ListingSummary extends Shape
 {
@@ -35,7 +39,11 @@ class ListingSummary extends Shape
      *     reviewSummary: ReviewSummary,
      *     pricingModels: list<PricingModel>,
      *     pricingUnits: list<PricingUnit>,
-     *     associatedEntities: list<ListingSummaryAssociatedEntity>
+     *     associatedEntities: list<ListingSummaryAssociatedEntity>,
+     *     trustCenterSummary?: TrustCenterSummary|null,
+     *     caseStudiesSummary?: CaseStudiesSummary|null,
+     *     useCaseSummary?: UseCaseSummary|null,
+     *     sellerEngagements?: list<SellerEngagement>|null
      * } $args
      */
     public function __construct(array $args)

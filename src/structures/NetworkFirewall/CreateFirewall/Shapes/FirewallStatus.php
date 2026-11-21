@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\CreateFirewall\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PROVISIONING'|'DELETING'|'READY'|'FAILED' $Status
+ * @property 'PROVISIONING'|'DELETING'|'READY'|'FAILED'|'STANDBY' $Status
  * @property 'PENDING'|'IN_SYNC'|'CAPACITY_CONSTRAINED' $ConfigurationSyncStateSummary
  * @property array<string, SyncState>|null $SyncStates
  * @property CapacityUsageSummary|null $CapacityUsageSummary
@@ -16,7 +16,7 @@ class FirewallStatus extends Shape
 {
     /**
      * @param array{
-     *     Status: 'PROVISIONING'|'DELETING'|'READY'|'FAILED',
+     *     Status: 'PROVISIONING'|'DELETING'|'READY'|'FAILED'|'STANDBY',
      *     ConfigurationSyncStateSummary: 'PENDING'|'IN_SYNC'|'CAPACITY_CONSTRAINED',
      *     SyncStates?: array<string, SyncState>|null,
      *     CapacityUsageSummary?: CapacityUsageSummary|null,

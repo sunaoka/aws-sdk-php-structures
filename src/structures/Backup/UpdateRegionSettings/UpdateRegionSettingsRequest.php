@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property array<string, bool>|null $ResourceTypeOptInPreference
  * @property array<string, bool>|null $ResourceTypeManagementPreference
+ * @property array<string, bool>|null $ResourceTypeOptInIncremental
  */
 class UpdateRegionSettingsRequest extends Request
 {
     /**
      * @param array{
      *     ResourceTypeOptInPreference?: array<string, bool>|null,
-     *     ResourceTypeManagementPreference?: array<string, bool>|null
+     *     ResourceTypeManagementPreference?: array<string, bool>|null,
+     *     ResourceTypeOptInIncremental?: array<string, bool>|null
      * } $args
      */
     public function __construct(array $args = [])

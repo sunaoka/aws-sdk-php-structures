@@ -6,9 +6,13 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
 {
     use BatchCreateTopicReviewedAnswer\BatchCreateTopicReviewedAnswerTrait;
     use BatchDeleteKnowledgeBase\BatchDeleteKnowledgeBaseTrait;
+    use BatchDeletePolicyAssignmentByPolicy\BatchDeletePolicyAssignmentByPolicyTrait;
     use BatchDeleteTopicReviewedAnswer\BatchDeleteTopicReviewedAnswerTrait;
     use BatchDescribeUserLimits\BatchDescribeUserLimitsTrait;
+    use BatchPutPolicyAssignmentByPolicy\BatchPutPolicyAssignmentByPolicyTrait;
     use CancelIngestion\CancelIngestionTrait;
+    use CreateAccessControlApplication\CreateAccessControlApplicationTrait;
+    use CreateAccessControlApplicationSecret\CreateAccessControlApplicationSecretTrait;
     use CreateAccountCustomization\CreateAccountCustomizationTrait;
     use CreateAccountSubscription\CreateAccountSubscriptionTrait;
     use CreateActionConnector\CreateActionConnectorTrait;
@@ -27,8 +31,10 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use CreateGroup\CreateGroupTrait;
     use CreateGroupMembership\CreateGroupMembershipTrait;
     use CreateIAMPolicyAssignment\CreateIAMPolicyAssignmentTrait;
+    use CreateInboundConnector\CreateInboundConnectorTrait;
     use CreateIngestion\CreateIngestionTrait;
     use CreateKnowledgeBase\CreateKnowledgeBaseTrait;
+    use CreateKnowledgeBaseRefreshSchedule\CreateKnowledgeBaseRefreshScheduleTrait;
     use CreateLimitsProfile\CreateLimitsProfileTrait;
     use CreateNamespace\CreateNamespaceTrait;
     use CreateOAuthClientApplication\CreateOAuthClientApplicationTrait;
@@ -43,6 +49,8 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use CreateTopicRefreshSchedule\CreateTopicRefreshScheduleTrait;
     use CreateTopicV2\CreateTopicV2Trait;
     use CreateVPCConnection\CreateVPCConnectionTrait;
+    use DeleteAccessControlApplication\DeleteAccessControlApplicationTrait;
+    use DeleteAccessControlApplicationSecret\DeleteAccessControlApplicationSecretTrait;
     use DeleteAccountCustomPermission\DeleteAccountCustomPermissionTrait;
     use DeleteAccountCustomization\DeleteAccountCustomizationTrait;
     use DeleteAccountSubscription\DeleteAccountSubscriptionTrait;
@@ -67,10 +75,13 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DeleteGroupMembership\DeleteGroupMembershipTrait;
     use DeleteIAMPolicyAssignment\DeleteIAMPolicyAssignmentTrait;
     use DeleteIdentityPropagationConfig\DeleteIdentityPropagationConfigTrait;
+    use DeleteInboundConnector\DeleteInboundConnectorTrait;
     use DeleteKnowledgeBase\DeleteKnowledgeBaseTrait;
+    use DeleteKnowledgeBaseRefreshSchedule\DeleteKnowledgeBaseRefreshScheduleTrait;
     use DeleteLimitsProfile\DeleteLimitsProfileTrait;
     use DeleteNamespace\DeleteNamespaceTrait;
     use DeleteOAuthClientApplication\DeleteOAuthClientApplicationTrait;
+    use DeletePolicyAssignment\DeletePolicyAssignmentTrait;
     use DeleteRefreshSchedule\DeleteRefreshScheduleTrait;
     use DeleteRoleCustomPermission\DeleteRoleCustomPermissionTrait;
     use DeleteRoleMembership\DeleteRoleMembershipTrait;
@@ -86,6 +97,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DeleteUserByPrincipalId\DeleteUserByPrincipalIdTrait;
     use DeleteUserCustomPermission\DeleteUserCustomPermissionTrait;
     use DeleteVPCConnection\DeleteVPCConnectionTrait;
+    use DescribeAccessControlApplication\DescribeAccessControlApplicationTrait;
     use DescribeAccountCustomPermission\DescribeAccountCustomPermissionTrait;
     use DescribeAccountCustomization\DescribeAccountCustomizationTrait;
     use DescribeAccountSettings\DescribeAccountSettingsTrait;
@@ -127,11 +139,13 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DescribeGroup\DescribeGroupTrait;
     use DescribeGroupMembership\DescribeGroupMembershipTrait;
     use DescribeIAMPolicyAssignment\DescribeIAMPolicyAssignmentTrait;
+    use DescribeInboundConnector\DescribeInboundConnectorTrait;
     use DescribeIngestion\DescribeIngestionTrait;
     use DescribeIpRestriction\DescribeIpRestrictionTrait;
     use DescribeKeyRegistration\DescribeKeyRegistrationTrait;
     use DescribeKnowledgeBase\DescribeKnowledgeBaseTrait;
     use DescribeKnowledgeBasePermissions\DescribeKnowledgeBasePermissionsTrait;
+    use DescribeKnowledgeBaseRefreshSchedule\DescribeKnowledgeBaseRefreshScheduleTrait;
     use DescribeLimitsProfile\DescribeLimitsProfileTrait;
     use DescribeNamespace\DescribeNamespaceTrait;
     use DescribeOAuthClientApplication\DescribeOAuthClientApplicationTrait;
@@ -165,7 +179,9 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use GetFlowMetadata\GetFlowMetadataTrait;
     use GetFlowPermissions\GetFlowPermissionsTrait;
     use GetIdentityContext\GetIdentityContextTrait;
+    use GetPolicyAssignment\GetPolicyAssignmentTrait;
     use GetSessionEmbedUrl\GetSessionEmbedUrlTrait;
+    use ListAccessControlApplications\ListAccessControlApplicationsTrait;
     use ListActionConnectors\ListActionConnectorsTrait;
     use ListAgents\ListAgentsTrait;
     use ListAnalyses\ListAnalysesTrait;
@@ -189,11 +205,15 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use ListIAMPolicyAssignments\ListIAMPolicyAssignmentsTrait;
     use ListIAMPolicyAssignmentsForUser\ListIAMPolicyAssignmentsForUserTrait;
     use ListIdentityPropagationConfigs\ListIdentityPropagationConfigsTrait;
+    use ListInboundConnectorApplicationAssociations\ListInboundConnectorApplicationAssociationsTrait;
+    use ListInboundConnectors\ListInboundConnectorsTrait;
     use ListIngestions\ListIngestionsTrait;
+    use ListKnowledgeBaseRefreshSchedules\ListKnowledgeBaseRefreshSchedulesTrait;
     use ListKnowledgeBases\ListKnowledgeBasesTrait;
     use ListLimitsProfiles\ListLimitsProfilesTrait;
     use ListNamespaces\ListNamespacesTrait;
     use ListOAuthClientApplications\ListOAuthClientApplicationsTrait;
+    use ListPrincipalsForPolicy\ListPrincipalsForPolicyTrait;
     use ListRefreshSchedules\ListRefreshSchedulesTrait;
     use ListRoleMemberships\ListRoleMembershipsTrait;
     use ListSelfUpgrades\ListSelfUpgradesTrait;
@@ -216,6 +236,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use ListVPCConnections\ListVPCConnectionsTrait;
     use PredictQAResults\PredictQAResultsTrait;
     use PutDataSetRefreshProperties\PutDataSetRefreshPropertiesTrait;
+    use PutPolicyAssignment\PutPolicyAssignmentTrait;
     use RegisterUser\RegisterUserTrait;
     use RestoreAnalysis\RestoreAnalysisTrait;
     use SearchActionConnectors\SearchActionConnectorsTrait;
@@ -239,6 +260,8 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use StartDashboardSnapshotJobSchedule\StartDashboardSnapshotJobScheduleTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateAccessControlApplication\UpdateAccessControlApplicationTrait;
+    use UpdateAccessControlApplicationSecret\UpdateAccessControlApplicationSecretTrait;
     use UpdateAccountCustomPermission\UpdateAccountCustomPermissionTrait;
     use UpdateAccountCustomization\UpdateAccountCustomizationTrait;
     use UpdateAccountSettings\UpdateAccountSettingsTrait;
@@ -273,10 +296,13 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateGroup\UpdateGroupTrait;
     use UpdateIAMPolicyAssignment\UpdateIAMPolicyAssignmentTrait;
     use UpdateIdentityPropagationConfig\UpdateIdentityPropagationConfigTrait;
+    use UpdateInboundConnector\UpdateInboundConnectorTrait;
+    use UpdateInboundConnectorApplicationAssociations\UpdateInboundConnectorApplicationAssociationsTrait;
     use UpdateIpRestriction\UpdateIpRestrictionTrait;
     use UpdateKeyRegistration\UpdateKeyRegistrationTrait;
     use UpdateKnowledgeBase\UpdateKnowledgeBaseTrait;
     use UpdateKnowledgeBasePermissions\UpdateKnowledgeBasePermissionsTrait;
+    use UpdateKnowledgeBaseRefreshSchedule\UpdateKnowledgeBaseRefreshScheduleTrait;
     use UpdateLimitsProfile\UpdateLimitsProfileTrait;
     use UpdateOAuthClientApplication\UpdateOAuthClientApplicationTrait;
     use UpdatePublicSharingSettings\UpdatePublicSharingSettingsTrait;

@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\EnvironmentDeploymentDetails|null $environmentDeploymentDetails
  * @property list<Shapes\EnvironmentConfigurationUserParameter>|null $userParameters
  * @property string|null $projectProfileVersion
+ * @property 'DISASSOCIATE'|null $projectProfileAction
  */
 class UpdateProjectRequest extends Request
 {
@@ -29,7 +30,8 @@ class UpdateProjectRequest extends Request
      *     domainUnitId?: string|null,
      *     environmentDeploymentDetails?: Shapes\EnvironmentDeploymentDetails|null,
      *     userParameters?: list<Shapes\EnvironmentConfigurationUserParameter>|null,
-     *     projectProfileVersion?: string|null
+     *     projectProfileVersion?: string|null,
+     *     projectProfileAction?: 'DISASSOCIATE'|null
      * } $args
      */
     public function __construct(array $args)

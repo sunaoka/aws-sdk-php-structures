@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string|null $displayName
  * @property string|null $description
- * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY' $recordType
+ * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|'WEB_BOT' $recordType
  * @property Shapes\Descriptors $descriptors
  * @property Shapes\RegistryRecordArtifactUpload|null $artifact
  * @property string|null $recordVersion
@@ -26,7 +26,7 @@ class CreateRegistryRecordRequest extends Request
      *     name: string,
      *     displayName?: string|null,
      *     description?: string|null,
-     *     recordType: 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY',
+     *     recordType: 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|'WEB_BOT',
      *     descriptors: Shapes\Descriptors,
      *     artifact?: Shapes\RegistryRecordArtifactUpload|null,
      *     recordVersion?: string|null,

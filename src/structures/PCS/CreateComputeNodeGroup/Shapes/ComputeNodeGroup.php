@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SpotOptions|null $spotOptions
  * @property ComputeNodeGroupSlurmConfiguration|null $slurmConfiguration
  * @property NodeLifecycleActions|null $nodeLifecycleActions
+ * @property InstanceHealthChecks|null $instanceHealthChecks
  * @property list<ErrorInfo>|null $errorInfo
  */
 class ComputeNodeGroup extends Shape
@@ -51,6 +52,7 @@ class ComputeNodeGroup extends Shape
      *     spotOptions?: SpotOptions|null,
      *     slurmConfiguration?: ComputeNodeGroupSlurmConfiguration|null,
      *     nodeLifecycleActions?: NodeLifecycleActions|null,
+     *     instanceHealthChecks?: InstanceHealthChecks|null,
      *     errorInfo?: list<ErrorInfo>|null
      * } $args
      */

@@ -49,6 +49,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\EngineSettings|null $engineSettings
  * @property string|null $sessionPolicy
  * @property 'SERVICE_DEFINED'|'NONE_WITH_OVERWRITE'|null $outputUriPrefixMode
+ * @property bool|null $requesterPaysEnabled
+ * @property string|null $parametersUri
  */
 class GetRunResponse extends Response
 {

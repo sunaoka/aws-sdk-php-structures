@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\PartnerCentralChannel\ListChannelHandshakes\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<'SOLUTION_PROVIDER'|'DISTRIBUTION'|'DISTRIBUTION_SELLER'>|null $programs
+ * @property list<'SOLUTION_PROVIDER'|'DISTRIBUTION'|'DISTRIBUTION_SELLER'|'MANAGED_SERVICES_PROVIDER'>|null $programs
  */
 class ProgramManagementAccountTypeFilters extends Shape
 {
     /**
-     * @param array{programs?: list<'SOLUTION_PROVIDER'|'DISTRIBUTION'|'DISTRIBUTION_SELLER'>|null} $args
+     * @param array{programs?: list<'SOLUTION_PROVIDER'|'DISTRIBUTION'|'DISTRIBUTION_SELLER'|'MANAGED_SERVICES_PROVIDER'>|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'ALL'>|null $additionalOsCapabilities
  * @property Shapes\Hooks|null $hooks
  * @property array<string, string>|null $environmentVariables
+ * @property string|null $kmsKeyIdentifier
  * @property string $name
  * @property array<string, string>|null $tags
  * @property string|null $clientToken
@@ -37,6 +38,7 @@ class CreateMicrovmImageRequest extends Request
      *     additionalOsCapabilities?: list<'ALL'>|null,
      *     hooks?: Shapes\Hooks|null,
      *     environmentVariables?: array<string, string>|null,
+     *     kmsKeyIdentifier?: string|null,
      *     name: string,
      *     tags?: array<string, string>|null,
      *     clientToken?: string|null

@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\FormOutput> $formsOutput
  * @property list<Shapes\FormOutput>|null $readOnlyFormsOutput
  * @property list<Shapes\TimeSeriesDataPointSummaryFormOutput>|null $latestTimeSeriesDataPointFormsOutput
+ * @property Shapes\AssetOwnershipTransfer|null $ownershipTransfer
  */
 class GetAssetResponse extends Response
 {

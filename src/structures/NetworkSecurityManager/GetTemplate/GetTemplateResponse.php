@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $updateToken
  * @property bool|null $isSnapshot
  * @property bool|null $hasPublishedVersion
- * @property 'WAF' $firewallType
+ * @property 'WAF'|'IGW_FIREWALL' $firewallType
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class GetTemplateResponse extends Response

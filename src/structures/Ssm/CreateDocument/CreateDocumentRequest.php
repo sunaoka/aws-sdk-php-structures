@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'YAML'|'JSON'|'TEXT'|null $DocumentFormat
  * @property string|null $TargetType
  * @property list<Shapes\Tag>|null $Tags
+ * @property list<'AWS'|'Azure'|'GCP'>|null $CloudProviders
  */
 class CreateDocumentRequest extends Request
 {
@@ -29,7 +30,8 @@ class CreateDocumentRequest extends Request
      *     DocumentType?: 'Command'|'Policy'|'Automation'|'Session'|'Package'|'ApplicationConfiguration'|'ApplicationConfigurationSchema'|'DeploymentStrategy'|'ChangeCalendar'|'Automation.ChangeTemplate'|'ProblemAnalysis'|'ProblemAnalysisTemplate'|'CloudFormation'|'ConformancePackTemplate'|'QuickSetup'|'ManualApprovalPolicy'|'AutoApprovalPolicy'|null,
      *     DocumentFormat?: 'YAML'|'JSON'|'TEXT'|null,
      *     TargetType?: string|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     CloudProviders?: list<'AWS'|'Azure'|'GCP'>|null
      * } $args
      */
     public function __construct(array $args)

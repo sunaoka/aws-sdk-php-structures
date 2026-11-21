@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $CallerReference
  * @property Shapes\HostedZoneConfig|null $HostedZoneConfig
  * @property string|null $DelegationSetId
+ * @property bool|null $EnablePublicDNSFallback
+ * @property list<Shapes\ChangeGuardrail>|null $ChangeGuardrails
  */
 class CreateHostedZoneRequest extends Request
 {
@@ -19,7 +21,9 @@ class CreateHostedZoneRequest extends Request
      *     VPC?: Shapes\VPC|null,
      *     CallerReference: string,
      *     HostedZoneConfig?: Shapes\HostedZoneConfig|null,
-     *     DelegationSetId?: string|null
+     *     DelegationSetId?: string|null,
+     *     EnablePublicDNSFallback?: bool|null,
+     *     ChangeGuardrails?: list<Shapes\ChangeGuardrail>|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,6 +7,7 @@ class ComputeOptimizerAutomationClient extends \Aws\ComputeOptimizerAutomation\C
     use AssociateAccounts\AssociateAccountsTrait;
     use CreateAutomationRule\CreateAutomationRuleTrait;
     use DeleteAutomationRule\DeleteAutomationRuleTrait;
+    use DeleteOrganizationEnrollmentConfiguration\DeleteOrganizationEnrollmentConfigurationTrait;
     use DisassociateAccounts\DisassociateAccountsTrait;
     use GetAutomationEvent\GetAutomationEventTrait;
     use GetAutomationRule\GetAutomationRuleTrait;
@@ -18,9 +19,12 @@ class ComputeOptimizerAutomationClient extends \Aws\ComputeOptimizerAutomation\C
     use ListAutomationRulePreview\ListAutomationRulePreviewTrait;
     use ListAutomationRulePreviewSummaries\ListAutomationRulePreviewSummariesTrait;
     use ListAutomationRules\ListAutomationRulesTrait;
+    use ListOrganizationEnrollmentConfigurations\ListOrganizationEnrollmentConfigurationsTrait;
+    use ListOrganizationalUnits\ListOrganizationalUnitsTrait;
     use ListRecommendedActionSummaries\ListRecommendedActionSummariesTrait;
     use ListRecommendedActions\ListRecommendedActionsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use PutOrganizationEnrollmentConfiguration\PutOrganizationEnrollmentConfigurationTrait;
     use RollbackAutomationEvent\RollbackAutomationEventTrait;
     use StartAutomationEvent\StartAutomationEventTrait;
     use TagResource\TagResourceTrait;

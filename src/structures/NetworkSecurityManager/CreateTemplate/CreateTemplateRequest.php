@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $templateName
  * @property string|null $templateDescription
  * @property list<Shapes\RuleReference> $associatedRuleList
- * @property 'WAF' $firewallType
+ * @property 'WAF'|'IGW_FIREWALL' $firewallType
  * @property bool|null $isPublished
  * @property array<string, string>|null $tags
  */
@@ -21,7 +21,7 @@ class CreateTemplateRequest extends Request
      *     templateName: string,
      *     templateDescription?: string|null,
      *     associatedRuleList: list<Shapes\RuleReference>,
-     *     firewallType: 'WAF',
+     *     firewallType: 'WAF'|'IGW_FIREWALL',
      *     isPublished?: bool|null,
      *     tags?: array<string, string>|null
      * } $args

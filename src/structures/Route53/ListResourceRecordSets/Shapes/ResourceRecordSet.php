@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TrafficPolicyInstanceId
  * @property CidrRoutingConfig|null $CidrRoutingConfig
  * @property GeoProximityLocation|null $GeoProximityLocation
+ * @property AZAffinity|null $AZAffinity
  */
 class ResourceRecordSet extends Shape
 {
@@ -39,7 +40,8 @@ class ResourceRecordSet extends Shape
      *     HealthCheckId?: string|null,
      *     TrafficPolicyInstanceId?: string|null,
      *     CidrRoutingConfig?: CidrRoutingConfig|null,
-     *     GeoProximityLocation?: GeoProximityLocation|null
+     *     GeoProximityLocation?: GeoProximityLocation|null,
+     *     AZAffinity?: AZAffinity|null
      * } $args
      */
     public function __construct(array $args)

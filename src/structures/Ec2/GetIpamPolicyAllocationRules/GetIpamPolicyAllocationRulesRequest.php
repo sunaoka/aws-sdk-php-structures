@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $IpamPolicyId
  * @property list<Shapes\Filter>|null $Filters
  * @property string|null $Locale
- * @property 'alb'|'eip'|'rds'|'rnat'|null $ResourceType
+ * @property 'alb'|'eip'|'rds'|'rnat'|'lambda-network-connector'|'igw-firewall'|null $ResourceType
  * @property int<5, 1000>|null $MaxResults
  * @property string|null $NextToken
  */
@@ -21,7 +21,7 @@ class GetIpamPolicyAllocationRulesRequest extends Request
      *     IpamPolicyId: string,
      *     Filters?: list<Shapes\Filter>|null,
      *     Locale?: string|null,
-     *     ResourceType?: 'alb'|'eip'|'rds'|'rnat'|null,
+     *     ResourceType?: 'alb'|'eip'|'rds'|'rnat'|'lambda-network-connector'|'igw-firewall'|null,
      *     MaxResults?: int<5, 1000>|null,
      *     NextToken?: string|null
      * } $args

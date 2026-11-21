@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 1000>|null $maxResults
  * @property string|null $nextToken
  * @property 'SYSTEM_DEFINED'|'APPLICATION'|null $typeEquals
+ * @property string|null $projectIdentifier
  */
 class ListInferenceProfilesRequest extends Request
 {
@@ -15,7 +16,8 @@ class ListInferenceProfilesRequest extends Request
      * @param array{
      *     maxResults?: int<1, 1000>|null,
      *     nextToken?: string|null,
-     *     typeEquals?: 'SYSTEM_DEFINED'|'APPLICATION'|null
+     *     typeEquals?: 'SYSTEM_DEFINED'|'APPLICATION'|null,
+     *     projectIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args = [])

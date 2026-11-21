@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $Id
  * @property string|null $Name
- * @property array<string, Shapes\AssetTypeFormReference>|null $Forms
+ * @property array<string, Shapes\AssetTypeFormOutput>|null $Forms
  */
 class GetAssetTypeResponse extends Response
 {

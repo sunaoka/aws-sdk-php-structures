@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AgentRegistryControl\UpdateRegistry\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY' $recordType
+ * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|'WEB_BOT' $recordType
  * @property string $schema
  */
 class RecordTypeSchemaOverride extends Shape
 {
     /**
      * @param array{
-     *     recordType: 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY',
+     *     recordType: 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|'WEB_BOT',
      *     schema: string
      * } $args
      */

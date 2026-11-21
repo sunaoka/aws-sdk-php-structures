@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<DimensionLabel>|null $dimensionLabels
  * @property string $unit
  * @property string $price
+ * @property list<RegionalPrice> $regionalPrices
  */
 class RateCardItem extends Shape
 {
@@ -21,7 +22,8 @@ class RateCardItem extends Shape
      *     description?: string|null,
      *     dimensionLabels?: list<DimensionLabel>|null,
      *     unit: string,
-     *     price: string
+     *     price: string,
+     *     regionalPrices: list<RegionalPrice>
      * } $args
      */
     public function __construct(array $args)

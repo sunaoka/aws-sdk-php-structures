@@ -30,6 +30,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $sessionPolicy
  * @property Shapes\EngineSettings|null $engineSettings
  * @property 'SERVICE_DEFINED'|'NONE_WITH_OVERWRITE'|null $outputUriPrefixMode
+ * @property bool|null $requesterPaysEnabled
+ * @property string|null $parametersUri
  */
 class StartRunRequest extends Request
 {
@@ -59,7 +61,9 @@ class StartRunRequest extends Request
      *     configurationName?: string|null,
      *     sessionPolicy?: string|null,
      *     engineSettings?: Shapes\EngineSettings|null,
-     *     outputUriPrefixMode?: 'SERVICE_DEFINED'|'NONE_WITH_OVERWRITE'|null
+     *     outputUriPrefixMode?: 'SERVICE_DEFINED'|'NONE_WITH_OVERWRITE'|null,
+     *     requesterPaysEnabled?: bool|null,
+     *     parametersUri?: string|null
      * } $args
      */
     public function __construct(array $args)

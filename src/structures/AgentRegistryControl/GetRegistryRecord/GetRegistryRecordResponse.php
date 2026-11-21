@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $name
  * @property string|null $displayName
  * @property string|null $description
- * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY' $recordType
+ * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|'WEB_BOT' $recordType
  * @property Shapes\Descriptors|null $descriptors
  * @property string|null $recordVersion
  * @property 'DRAFT'|'PENDING_APPROVAL'|'APPROVED'|'REJECTED'|'DEPRECATED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED'|'CREATE_PENDING_AUTH'|'UPDATE_PENDING_AUTH' $status

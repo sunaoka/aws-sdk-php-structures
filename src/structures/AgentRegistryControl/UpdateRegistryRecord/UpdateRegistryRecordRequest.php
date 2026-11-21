@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $name
  * @property Shapes\UpdatedDisplayName|null $displayName
  * @property Shapes\UpdatedDescription|null $description
- * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|null $recordType
+ * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|'WEB_BOT'|null $recordType
  * @property Shapes\UpdatedDescriptors|null $descriptors
  * @property Shapes\UpdatedRegistryRecordArtifact|null $artifact
  * @property string|null $recordVersion
@@ -28,7 +28,7 @@ class UpdateRegistryRecordRequest extends Request
      *     name?: string|null,
      *     displayName?: Shapes\UpdatedDisplayName|null,
      *     description?: Shapes\UpdatedDescription|null,
-     *     recordType?: 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|null,
+     *     recordType?: 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|'WEB_BOT'|null,
      *     descriptors?: Shapes\UpdatedDescriptors|null,
      *     artifact?: Shapes\UpdatedRegistryRecordArtifact|null,
      *     recordVersion?: string|null,

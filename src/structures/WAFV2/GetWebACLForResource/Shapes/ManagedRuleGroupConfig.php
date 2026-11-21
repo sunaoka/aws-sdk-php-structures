@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AWSManagedRulesATPRuleSet|null $AWSManagedRulesATPRuleSet
  * @property AWSManagedRulesACFPRuleSet|null $AWSManagedRulesACFPRuleSet
  * @property AWSManagedRulesAntiDDoSRuleSet|null $AWSManagedRulesAntiDDoSRuleSet
+ * @property AWSManagedRulesAISecurityRuleSet|null $AWSManagedRulesAISecurityRuleSet
  */
 class ManagedRuleGroupConfig extends Shape
 {
@@ -25,7 +26,8 @@ class ManagedRuleGroupConfig extends Shape
      *     AWSManagedRulesBotControlRuleSet?: AWSManagedRulesBotControlRuleSet|null,
      *     AWSManagedRulesATPRuleSet?: AWSManagedRulesATPRuleSet|null,
      *     AWSManagedRulesACFPRuleSet?: AWSManagedRulesACFPRuleSet|null,
-     *     AWSManagedRulesAntiDDoSRuleSet?: AWSManagedRulesAntiDDoSRuleSet|null
+     *     AWSManagedRulesAntiDDoSRuleSet?: AWSManagedRulesAntiDDoSRuleSet|null,
+     *     AWSManagedRulesAISecurityRuleSet?: AWSManagedRulesAISecurityRuleSet|null
      * } $args
      */
     public function __construct(array $args = [])

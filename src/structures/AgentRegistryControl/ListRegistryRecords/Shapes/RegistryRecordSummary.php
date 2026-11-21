@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string|null $displayName
  * @property string|null $description
- * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY' $recordType
+ * @property 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|'WEB_BOT' $recordType
  * @property string $recordVersion
  * @property 'DRAFT'|'PENDING_APPROVAL'|'APPROVED'|'REJECTED'|'DEPRECATED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED'|'CREATE_PENDING_AUTH'|'UPDATE_PENDING_AUTH' $status
  * @property \Aws\Api\DateTimeResult $createdAt
@@ -31,7 +31,7 @@ class RegistryRecordSummary extends Shape
      *     name: string,
      *     displayName?: string|null,
      *     description?: string|null,
-     *     recordType: 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY',
+     *     recordType: 'MCP'|'AGENT'|'CUSTOM'|'SKILL'|'GATEWAY'|'WEB_BOT',
      *     recordVersion: string,
      *     status: 'DRAFT'|'PENDING_APPROVAL'|'APPROVED'|'REJECTED'|'DEPRECATED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED'|'CREATE_PENDING_AUTH'|'UPDATE_PENDING_AUTH',
      *     createdAt: \Aws\Api\DateTimeResult,

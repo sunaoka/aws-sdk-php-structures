@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $remediationEnabled
  * @property bool $resourcesCleanUp
  * @property WafConfig|null $wafConfig
+ * @property IgwFirewallConfig|null $igwFirewallConfig
  */
 class PolicyConfiguration extends Shape
 {
@@ -15,7 +16,8 @@ class PolicyConfiguration extends Shape
      * @param array{
      *     remediationEnabled: bool,
      *     resourcesCleanUp: bool,
-     *     wafConfig?: WafConfig|null
+     *     wafConfig?: WafConfig|null,
+     *     igwFirewallConfig?: IgwFirewallConfig|null
      * } $args
      */
     public function __construct(array $args)

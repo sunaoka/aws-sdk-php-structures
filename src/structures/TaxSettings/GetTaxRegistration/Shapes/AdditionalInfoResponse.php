@@ -34,6 +34,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property GermanyAdditionalInfo|null $germanyAdditionalInfo
  * @property MexicoAdditionalInfo|null $mexicoAdditionalInfo
  * @property ColombiaAdditionalInfo|null $colombiaAdditionalInfo
+ * @property UnitedArabEmiratesAdditionalInfo|null $unitedArabEmiratesAdditionalInfo
+ * @property NorwayAdditionalInfo|null $norwayAdditionalInfo
+ * @property NewZealandAdditionalInfo|null $newZealandAdditionalInfo
  */
 class AdditionalInfoResponse extends Shape
 {
@@ -67,7 +70,10 @@ class AdditionalInfoResponse extends Shape
      *     monacoAdditionalInfo?: MonacoAdditionalInfo|null,
      *     germanyAdditionalInfo?: GermanyAdditionalInfo|null,
      *     mexicoAdditionalInfo?: MexicoAdditionalInfo|null,
-     *     colombiaAdditionalInfo?: ColombiaAdditionalInfo|null
+     *     colombiaAdditionalInfo?: ColombiaAdditionalInfo|null,
+     *     unitedArabEmiratesAdditionalInfo?: UnitedArabEmiratesAdditionalInfo|null,
+     *     norwayAdditionalInfo?: NorwayAdditionalInfo|null,
+     *     newZealandAdditionalInfo?: NewZealandAdditionalInfo|null
      * } $args
      */
     public function __construct(array $args = [])

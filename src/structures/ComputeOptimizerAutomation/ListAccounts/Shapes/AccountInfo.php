@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $accountId
  * @property 'Active'|'Inactive'|'Pending'|'Failed' $status
  * @property 'AnyAllowed'|'NoneAllowed' $organizationRuleMode
+ * @property OrganizationRuleModeSource|null $organizationRuleModeSource
  * @property string|null $statusReason
  * @property \Aws\Api\DateTimeResult $lastUpdatedTimestamp
  */
@@ -18,6 +19,7 @@ class AccountInfo extends Shape
      *     accountId: string,
      *     status: 'Active'|'Inactive'|'Pending'|'Failed',
      *     organizationRuleMode: 'AnyAllowed'|'NoneAllowed',
+     *     organizationRuleModeSource?: OrganizationRuleModeSource|null,
      *     statusReason?: string|null,
      *     lastUpdatedTimestamp: \Aws\Api\DateTimeResult
      * } $args

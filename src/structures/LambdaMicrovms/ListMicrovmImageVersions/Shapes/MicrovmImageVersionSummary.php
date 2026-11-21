@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'ALL'>|null $additionalOsCapabilities
  * @property Hooks|null $hooks
  * @property array<string, string>|null $environmentVariables
+ * @property string|null $kmsKeyIdentifier
  * @property string $imageArn
  * @property string $imageVersion
  * @property 'PENDING'|'IN_PROGRESS'|'SUCCESSFUL'|'FAILED'|'DELETING'|'DELETED'|'DELETE_FAILED' $state
@@ -42,6 +43,7 @@ class MicrovmImageVersionSummary extends Shape
      *     additionalOsCapabilities?: list<'ALL'>|null,
      *     hooks?: Hooks|null,
      *     environmentVariables?: array<string, string>|null,
+     *     kmsKeyIdentifier?: string|null,
      *     imageArn: string,
      *     imageVersion: string,
      *     state: 'PENDING'|'IN_PROGRESS'|'SUCCESSFUL'|'FAILED'|'DELETING'|'DELETED'|'DELETE_FAILED',

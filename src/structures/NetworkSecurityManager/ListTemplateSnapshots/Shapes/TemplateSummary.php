@@ -8,10 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $templateId
  * @property string $templateArn
  * @property string $templateName
+ * @property 'CUSTOMER'|'AWS'|null $templateOwner
  * @property 'DRAFT'|'ACTIVE'|'DISABLED'|null $status
  * @property string|null $version
  * @property bool|null $hasPublishedVersion
- * @property 'WAF'|null $firewallType
+ * @property 'WAF'|'IGW_FIREWALL'|null $firewallType
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class TemplateSummary extends Shape
@@ -21,10 +22,11 @@ class TemplateSummary extends Shape
      *     templateId: string,
      *     templateArn: string,
      *     templateName: string,
+     *     templateOwner?: 'CUSTOMER'|'AWS'|null,
      *     status?: 'DRAFT'|'ACTIVE'|'DISABLED'|null,
      *     version?: string|null,
      *     hasPublishedVersion?: bool|null,
-     *     firewallType?: 'WAF'|null,
+     *     firewallType?: 'WAF'|'IGW_FIREWALL'|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */

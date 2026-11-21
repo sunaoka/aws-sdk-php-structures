@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\NetworkSecurityManager\ListResourceSynchronizat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<'WAF'|'SHIELD_ADVANCED', FirewallSyncReason>|null $reasons
+ * @property array<'WAF'|'SHIELD_ADVANCED'|'IGW_FIREWALL', FirewallSyncReason>|null $reasons
  * @property NotVisibleMarker|null $notVisible
  */
 class OutOfSyncReasonsView extends Shape
 {
     /**
      * @param array{
-     *     reasons?: array<'WAF'|'SHIELD_ADVANCED', FirewallSyncReason>|null,
+     *     reasons?: array<'WAF'|'SHIELD_ADVANCED'|'IGW_FIREWALL', FirewallSyncReason>|null,
      *     notVisible?: NotVisibleMarker|null
      * } $args
      */

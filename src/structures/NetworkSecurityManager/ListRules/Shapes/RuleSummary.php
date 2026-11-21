@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ruleId
  * @property string $ruleArn
  * @property string $ruleName
- * @property 'WAF'|null $firewallType
+ * @property 'WAF'|'IGW_FIREWALL'|null $firewallType
  * @property 'CONFIGURATION'|'INSPECTION'|null $ruleType
  * @property 'DRAFT'|'ACTIVE'|'DISABLED'|null $status
  * @property string|null $version
@@ -22,7 +22,7 @@ class RuleSummary extends Shape
      *     ruleId: string,
      *     ruleArn: string,
      *     ruleName: string,
-     *     firewallType?: 'WAF'|null,
+     *     firewallType?: 'WAF'|'IGW_FIREWALL'|null,
      *     ruleType?: 'CONFIGURATION'|'INSPECTION'|null,
      *     status?: 'DRAFT'|'ACTIVE'|'DISABLED'|null,
      *     version?: string|null,

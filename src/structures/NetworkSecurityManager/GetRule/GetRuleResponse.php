@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ruleId
  * @property string $ruleArn
  * @property string $ruleName
- * @property 'WAF' $firewallType
+ * @property 'WAF'|'IGW_FIREWALL' $firewallType
  * @property 'CONFIGURATION'|'INSPECTION'|null $ruleType
  * @property string|null $ruleDescription
  * @property Shapes\JsonDocument $configuration

@@ -13,6 +13,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property StringFilter|null $sourceLayerHash
  * @property StringFilter|null $sourceLambdaLayerArn
  * @property StringFilter|null $filePath
+ * @property RuntimeReachabilityFilter|null $runtimeReachability
+ * @property RuntimeReachabilityReasonFilter|null $runtimeReachabilityReason
+ * @property PurlQualifierFilter|null $purlQualifier
  */
 class PackageFilter extends Shape
 {
@@ -25,7 +28,10 @@ class PackageFilter extends Shape
      *     architecture?: StringFilter|null,
      *     sourceLayerHash?: StringFilter|null,
      *     sourceLambdaLayerArn?: StringFilter|null,
-     *     filePath?: StringFilter|null
+     *     filePath?: StringFilter|null,
+     *     runtimeReachability?: RuntimeReachabilityFilter|null,
+     *     runtimeReachabilityReason?: RuntimeReachabilityReasonFilter|null,
+     *     purlQualifier?: PurlQualifierFilter|null
      * } $args
      */
     public function __construct(array $args = [])

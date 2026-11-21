@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\SellerEngagement> $sellerEngagements
  * @property string $shortDescription
  * @property list<Shapes\UseCaseEntry> $useCases
+ * @property list<Shapes\PurchaseIndicator> $purchaseIndicators
  */
 class GetListingResponse extends Response
 {

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\InferenceConfiguration|null $inferenceConfig
  * @property Shapes\ToolConfiguration|null $toolConfig
  * @property Shapes\GuardrailConfiguration|null $guardrailConfig
+ * @property string|null $projectIdentifier
  * @property Shapes\Document|null $additionalModelRequestFields
  * @property array<string, Shapes\PromptVariableValues>|null $promptVariables
  * @property list<string>|null $additionalModelResponseFieldPaths
@@ -29,6 +30,7 @@ class ConverseRequest extends Request
      *     inferenceConfig?: Shapes\InferenceConfiguration|null,
      *     toolConfig?: Shapes\ToolConfiguration|null,
      *     guardrailConfig?: Shapes\GuardrailConfiguration|null,
+     *     projectIdentifier?: string|null,
      *     additionalModelRequestFields?: Shapes\Document|null,
      *     promptVariables?: array<string, Shapes\PromptVariableValues>|null,
      *     additionalModelResponseFieldPaths?: list<string>|null,

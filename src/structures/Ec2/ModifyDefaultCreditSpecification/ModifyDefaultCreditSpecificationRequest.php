@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property bool|null $DryRun
- * @property 't2'|'t3'|'t3a'|'t4g'|'t8i' $InstanceFamily
+ * @property 't2'|'t3'|'t3a'|'t4g'|'t8i'|'t9g' $InstanceFamily
  * @property string $CpuCredits
  */
 class ModifyDefaultCreditSpecificationRequest extends Request
@@ -14,7 +14,7 @@ class ModifyDefaultCreditSpecificationRequest extends Request
     /**
      * @param array{
      *     DryRun?: bool|null,
-     *     InstanceFamily: 't2'|'t3'|'t3a'|'t4g'|'t8i',
+     *     InstanceFamily: 't2'|'t3'|'t3a'|'t4g'|'t8i'|'t9g',
      *     CpuCredits: string
      * } $args
      */

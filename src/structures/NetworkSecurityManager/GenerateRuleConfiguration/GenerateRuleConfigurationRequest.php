@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $prompt
- * @property 'WAF' $ruleFirewallType
+ * @property 'WAF'|'IGW_FIREWALL' $ruleFirewallType
  * @property 'CONFIGURATION'|'INSPECTION' $ruleType
  * @property 'DefaultAction'|'VisibilityConfig'|'CaptchaConfig'|'ChallengeConfig'|'CustomResponseBodies'|'LoggingConfiguration'|'DataProtectionConfig'|'AssociationConfig'|'OnSourceDDoSProtectionConfig'|'TokenDomains'|null $wafConfigDataType
  * @property string|null $currentConfiguration
@@ -17,7 +17,7 @@ class GenerateRuleConfigurationRequest extends Request
     /**
      * @param array{
      *     prompt: string,
-     *     ruleFirewallType: 'WAF',
+     *     ruleFirewallType: 'WAF'|'IGW_FIREWALL',
      *     ruleType: 'CONFIGURATION'|'INSPECTION',
      *     wafConfigDataType?: 'DefaultAction'|'VisibilityConfig'|'CaptchaConfig'|'ChallengeConfig'|'CustomResponseBodies'|'LoggingConfiguration'|'DataProtectionConfig'|'AssociationConfig'|'OnSourceDDoSProtectionConfig'|'TokenDomains'|null,
      *     currentConfiguration?: string|null,

@@ -31,8 +31,10 @@ class NetworkSecurityManagerClient extends \Aws\NetworkSecurityManager\NetworkSe
     use ListAggregateResourceSynchronizationStatuses\ListAggregateResourceSynchronizationStatusesTrait;
     use ListDeploymentSnapshots\ListDeploymentSnapshotsTrait;
     use ListDeployments\ListDeploymentsTrait;
+    use ListEntityCoverages\ListEntityCoveragesTrait;
     use ListPolicies\ListPoliciesTrait;
     use ListPolicySnapshots\ListPolicySnapshotsTrait;
+    use ListProtectedResourceCoverages\ListProtectedResourceCoveragesTrait;
     use ListResourceAssociations\ListResourceAssociationsTrait;
     use ListResourceSynchronizationStatuses\ListResourceSynchronizationStatusesTrait;
     use ListRuleSnapshots\ListRuleSnapshotsTrait;

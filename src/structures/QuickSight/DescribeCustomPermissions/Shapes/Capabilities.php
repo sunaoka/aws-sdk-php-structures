@@ -202,6 +202,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DENY'|'ALLOW'|null $CreateAndUpdateMCPAction
  * @property 'DENY'|'ALLOW'|null $ShareMCPAction
  * @property 'DENY'|'ALLOW'|null $UseMCPAction
+ * @property 'DENY'|'ALLOW'|null $LocalMCPAction
+ * @property 'DENY'|'ALLOW'|null $CreateAndUpdateLocalMCPAction
+ * @property 'DENY'|'ALLOW'|null $UseLocalMCPAction
  * @property 'DENY'|'ALLOW'|null $OpenAPIAction
  * @property 'DENY'|'ALLOW'|null $CreateAndUpdateOpenAPIAction
  * @property 'DENY'|'ALLOW'|null $ShareOpenAPIAction
@@ -782,6 +785,9 @@ class Capabilities extends Shape
      *     CreateAndUpdateMCPAction?: 'DENY'|'ALLOW'|null,
      *     ShareMCPAction?: 'DENY'|'ALLOW'|null,
      *     UseMCPAction?: 'DENY'|'ALLOW'|null,
+     *     LocalMCPAction?: 'DENY'|'ALLOW'|null,
+     *     CreateAndUpdateLocalMCPAction?: 'DENY'|'ALLOW'|null,
+     *     UseLocalMCPAction?: 'DENY'|'ALLOW'|null,
      *     OpenAPIAction?: 'DENY'|'ALLOW'|null,
      *     CreateAndUpdateOpenAPIAction?: 'DENY'|'ALLOW'|null,
      *     ShareOpenAPIAction?: 'DENY'|'ALLOW'|null,

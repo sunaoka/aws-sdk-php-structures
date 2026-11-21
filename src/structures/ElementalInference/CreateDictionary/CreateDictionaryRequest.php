@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property 'eng'|'fra'|'ita'|'deu'|'spa'|'por' $language
+ * @property 'eng'|'fra'|'ita'|'deu'|'spa'|'por'|'ara' $language
  * @property string|null $entries
  * @property array<string, string>|null $tags
  */
@@ -15,7 +15,7 @@ class CreateDictionaryRequest extends Request
     /**
      * @param array{
      *     name: string,
-     *     language: 'eng'|'fra'|'ita'|'deu'|'spa'|'por',
+     *     language: 'eng'|'fra'|'ita'|'deu'|'spa'|'por'|'ara',
      *     entries?: string|null,
      *     tags?: array<string, string>|null
      * } $args

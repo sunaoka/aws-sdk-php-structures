@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'IGNORE'|'INSERT'|null $ColorMetadata
  * @property Rectangle|null $Crop
  * @property 'DISABLED'|'ENABLED'|null $DropFrameTimecode
+ * @property DynamicMultiviewSettings|null $DynamicMultiviewSettings
  * @property int<0, 15>|null $FixedAfd
  * @property int<32, 8192>|null $Height
  * @property Rectangle|null $Position
@@ -34,6 +35,7 @@ class VideoDescription extends Shape
      *     ColorMetadata?: 'IGNORE'|'INSERT'|null,
      *     Crop?: Rectangle|null,
      *     DropFrameTimecode?: 'DISABLED'|'ENABLED'|null,
+     *     DynamicMultiviewSettings?: DynamicMultiviewSettings|null,
      *     FixedAfd?: int<0, 15>|null,
      *     Height?: int<32, 8192>|null,
      *     Position?: Rectangle|null,

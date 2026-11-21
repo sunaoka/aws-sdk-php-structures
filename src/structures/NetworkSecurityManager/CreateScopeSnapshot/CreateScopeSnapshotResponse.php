@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $scopeName
  * @property string|null $scopeDescription
  * @property Shapes\ScopeConfiguration|null $scopeConfiguration
+ * @property 'IGW_FIREWALL_SUBNET_CONNECTIVITY_OVERRIDE'|null $specializedScopeType
  * @property 'DRAFT'|'ACTIVE'|'DISABLED' $status
  * @property string $version
  * @property string|null $updateToken

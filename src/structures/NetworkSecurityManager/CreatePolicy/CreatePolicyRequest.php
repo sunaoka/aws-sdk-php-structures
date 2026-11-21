@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $policyDescription
  * @property int<1, max> $priority
  * @property list<Shapes\TemplateOrRuleReference>|null $associatedTemplateAndRuleList
- * @property 'WAF'|'SHIELD_ADVANCED' $firewallType
+ * @property 'WAF'|'SHIELD_ADVANCED'|'IGW_FIREWALL' $firewallType
  * @property Shapes\PolicyConfiguration $policyConfiguration
  * @property bool|null $isPublished
  * @property array<string, string>|null $tags
@@ -24,7 +24,7 @@ class CreatePolicyRequest extends Request
      *     policyDescription?: string|null,
      *     priority: int<1, max>,
      *     associatedTemplateAndRuleList?: list<Shapes\TemplateOrRuleReference>|null,
-     *     firewallType: 'WAF'|'SHIELD_ADVANCED',
+     *     firewallType: 'WAF'|'SHIELD_ADVANCED'|'IGW_FIREWALL',
      *     policyConfiguration: Shapes\PolicyConfiguration,
      *     isPublished?: bool|null,
      *     tags?: array<string, string>|null

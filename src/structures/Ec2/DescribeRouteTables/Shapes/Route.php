@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CoreNetworkArn
  * @property string|null $OdbNetworkArn
  * @property string|null $IpAddress
+ * @property IgwFirewall|null $IgwFirewall
  */
 class Route extends Shape
 {
@@ -45,7 +46,8 @@ class Route extends Shape
      *     VpcPeeringConnectionId?: string|null,
      *     CoreNetworkArn?: string|null,
      *     OdbNetworkArn?: string|null,
-     *     IpAddress?: string|null
+     *     IpAddress?: string|null,
+     *     IgwFirewall?: IgwFirewall|null
      * } $args
      */
     public function __construct(array $args = [])

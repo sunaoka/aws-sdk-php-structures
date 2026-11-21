@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $FirewallArn
  * @property string|null $FirewallName
  * @property string $FirewallPolicyArn
+ * @property 'FIREWALL'|'IGW_FIREWALL'|null $FirewallType
  */
 class AssociateFirewallPolicyRequest extends Request
 {
@@ -17,7 +18,8 @@ class AssociateFirewallPolicyRequest extends Request
      *     UpdateToken?: string|null,
      *     FirewallArn?: string|null,
      *     FirewallName?: string|null,
-     *     FirewallPolicyArn: string
+     *     FirewallPolicyArn: string,
+     *     FirewallType?: 'FIREWALL'|'IGW_FIREWALL'|null
      * } $args
      */
     public function __construct(array $args)

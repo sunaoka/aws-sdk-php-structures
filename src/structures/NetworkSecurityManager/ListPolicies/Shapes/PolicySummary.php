@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DRAFT'|'ACTIVE'|'DISABLED'|null $status
  * @property string|null $version
  * @property bool|null $hasPublishedVersion
- * @property 'WAF'|'SHIELD_ADVANCED'|null $firewallType
+ * @property 'WAF'|'SHIELD_ADVANCED'|'IGW_FIREWALL'|null $firewallType
  * @property int<1, max>|null $priority
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
@@ -25,7 +25,7 @@ class PolicySummary extends Shape
      *     status?: 'DRAFT'|'ACTIVE'|'DISABLED'|null,
      *     version?: string|null,
      *     hasPublishedVersion?: bool|null,
-     *     firewallType?: 'WAF'|'SHIELD_ADVANCED'|null,
+     *     firewallType?: 'WAF'|'SHIELD_ADVANCED'|'IGW_FIREWALL'|null,
      *     priority?: int<1, max>|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args

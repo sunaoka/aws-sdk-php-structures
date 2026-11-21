@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property AccountFilter|null $accountFilter
- * @property array<'AWS::ApiGateway::Stage'|'AWS::CloudFront::Distribution'|'AWS::EC2::EIP'|'AWS::ElasticLoadBalancingV2::LoadBalancer::application'|'AWS::ElasticLoadBalancing::LoadBalancer', ResourceScope> $resourceScopes
+ * @property array<'AWS::ApiGateway::Stage'|'AWS::CloudFront::Distribution'|'AWS::EC2::EIP'|'AWS::ElasticLoadBalancingV2::LoadBalancer::application'|'AWS::ElasticLoadBalancing::LoadBalancer'|'AWS::EC2::VPC'|'AWS::EC2::Subnet', ResourceScope> $resourceScopes
  */
 class ScopeConfiguration extends Shape
 {
     /**
      * @param array{
      *     accountFilter?: AccountFilter|null,
-     *     resourceScopes: array<'AWS::ApiGateway::Stage'|'AWS::CloudFront::Distribution'|'AWS::EC2::EIP'|'AWS::ElasticLoadBalancingV2::LoadBalancer::application'|'AWS::ElasticLoadBalancing::LoadBalancer', ResourceScope>
+     *     resourceScopes: array<'AWS::ApiGateway::Stage'|'AWS::CloudFront::Distribution'|'AWS::EC2::EIP'|'AWS::ElasticLoadBalancingV2::LoadBalancer::application'|'AWS::ElasticLoadBalancing::LoadBalancer'|'AWS::EC2::VPC'|'AWS::EC2::Subnet', ResourceScope>
      * } $args
      */
     public function __construct(array $args)

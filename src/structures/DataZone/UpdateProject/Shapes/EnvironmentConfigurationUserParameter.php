@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $environmentId
+ * @property string|null $environmentBlueprintId
  * @property EnvironmentResolvedAccount|null $environmentResolvedAccount
  * @property string|null $environmentConfigurationName
  * @property list<EnvironmentParameter>|null $environmentParameters
@@ -15,6 +16,7 @@ class EnvironmentConfigurationUserParameter extends Shape
     /**
      * @param array{
      *     environmentId?: string|null,
+     *     environmentBlueprintId?: string|null,
      *     environmentResolvedAccount?: EnvironmentResolvedAccount|null,
      *     environmentConfigurationName?: string|null,
      *     environmentParameters?: list<EnvironmentParameter>|null

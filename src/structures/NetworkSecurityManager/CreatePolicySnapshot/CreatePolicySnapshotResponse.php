@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $updateToken
  * @property bool|null $isSnapshot
  * @property bool|null $hasPublishedVersion
- * @property 'WAF'|'SHIELD_ADVANCED' $firewallType
+ * @property 'WAF'|'SHIELD_ADVANCED'|'IGW_FIREWALL' $firewallType
  * @property Shapes\PolicyConfiguration|null $policyConfiguration
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */

@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $Id
  * @property string $Name
  * @property string|null $Description
+ * @property string $AssetTypeId
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property array<string, Shapes\AssetFormEntry>|null $Forms
  */

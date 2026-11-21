@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool|null $allFirewallTypesEnabled
- * @property list<'WAF'|'SHIELD_ADVANCED'>|null $firewallTypes
+ * @property list<'WAF'|'SHIELD_ADVANCED'|'IGW_FIREWALL'>|null $firewallTypes
  */
 class AdminFirewallTypeScope extends Shape
 {
     /**
      * @param array{
      *     allFirewallTypesEnabled?: bool|null,
-     *     firewallTypes?: list<'WAF'|'SHIELD_ADVANCED'>|null
+     *     firewallTypes?: list<'WAF'|'SHIELD_ADVANCED'|'IGW_FIREWALL'>|null
      * } $args
      */
     public function __construct(array $args = [])

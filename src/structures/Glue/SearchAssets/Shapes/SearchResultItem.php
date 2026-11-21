@@ -6,8 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $Id
- * @property string|null $AssetName
- * @property string|null $AssetDescription
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property \Aws\Api\DateTimeResult|null $UpdatedAt
  * @property string|null $AssetTypeId
  */
@@ -16,8 +17,9 @@ class SearchResultItem extends Shape
     /**
      * @param array{
      *     Id?: string|null,
-     *     AssetName?: string|null,
-     *     AssetDescription?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
      *     AssetTypeId?: string|null
      * } $args

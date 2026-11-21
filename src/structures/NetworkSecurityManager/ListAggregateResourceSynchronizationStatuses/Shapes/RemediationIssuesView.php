@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\NetworkSecurityManager\ListAggregateResourceSyn
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<'WAF'|'SHIELD_ADVANCED', RemediationIssueDetails>|null $issues
+ * @property array<'WAF'|'SHIELD_ADVANCED'|'IGW_FIREWALL', RemediationIssueDetails>|null $issues
  * @property NotVisibleMarker|null $notVisible
  */
 class RemediationIssuesView extends Shape
 {
     /**
      * @param array{
-     *     issues?: array<'WAF'|'SHIELD_ADVANCED', RemediationIssueDetails>|null,
+     *     issues?: array<'WAF'|'SHIELD_ADVANCED'|'IGW_FIREWALL', RemediationIssueDetails>|null,
      *     notVisible?: NotVisibleMarker|null
      * } $args
      */

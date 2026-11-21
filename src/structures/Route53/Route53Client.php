@@ -47,6 +47,7 @@ class Route53Client extends \Aws\Route53\Route53Client
     use GetHealthCheckSource\GetHealthCheckSourceTrait;
     use GetHealthCheckStatus\GetHealthCheckStatusTrait;
     use GetHostedZone\GetHostedZoneTrait;
+    use GetHostedZoneChangeBatch\GetHostedZoneChangeBatchTrait;
     use GetHostedZoneCount\GetHostedZoneCountTrait;
     use GetHostedZoneLimit\GetHostedZoneLimitTrait;
     use GetQueryLoggingConfig\GetQueryLoggingConfigTrait;
@@ -62,10 +63,12 @@ class Route53Client extends \Aws\Route53\Route53Client
     use ListHealthCheckSources\ListHealthCheckSourcesTrait;
     use ListHealthChecks\ListHealthChecksTrait;
     use ListHealthChecksBySource\ListHealthChecksBySourceTrait;
+    use ListHostedZoneChangeBatches\ListHostedZoneChangeBatchesTrait;
     use ListHostedZones\ListHostedZonesTrait;
     use ListHostedZonesByName\ListHostedZonesByNameTrait;
     use ListHostedZonesByVPC\ListHostedZonesByVPCTrait;
     use ListQueryLoggingConfigs\ListQueryLoggingConfigsTrait;
+    use ListResourceRecordSetChanges\ListResourceRecordSetChangesTrait;
     use ListResourceRecordSetProtections\ListResourceRecordSetProtectionsTrait;
     use ListResourceRecordSets\ListResourceRecordSetsTrait;
     use ListReusableDelegationSets\ListReusableDelegationSetsTrait;
@@ -81,6 +84,7 @@ class Route53Client extends \Aws\Route53\Route53Client
     use UpdateHealthCheck\UpdateHealthCheckTrait;
     use UpdateHostedZoneComment\UpdateHostedZoneCommentTrait;
     use UpdateHostedZoneFeatures\UpdateHostedZoneFeaturesTrait;
+    use UpdateHostedZoneTier\UpdateHostedZoneTierTrait;
     use UpdateTrafficPolicyComment\UpdateTrafficPolicyCommentTrait;
     use UpdateTrafficPolicyInstance\UpdateTrafficPolicyInstanceTrait;
 }

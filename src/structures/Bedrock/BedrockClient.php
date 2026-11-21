@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\Bedrock;
 
 class BedrockClient extends \Aws\Bedrock\BedrockClient
 {
+    use ArchiveProject\ArchiveProjectTrait;
     use BatchDeleteAdvancedPromptOptimizationJob\BatchDeleteAdvancedPromptOptimizationJobTrait;
     use BatchDeleteEvaluationJob\BatchDeleteEvaluationJobTrait;
     use CancelAutomatedReasoningPolicyBuildWorkflow\CancelAutomatedReasoningPolicyBuildWorkflowTrait;
@@ -23,8 +24,10 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use CreateModelCustomizationJob\CreateModelCustomizationJobTrait;
     use CreateModelImportJob\CreateModelImportJobTrait;
     use CreateModelInvocationJob\CreateModelInvocationJobTrait;
+    use CreateProject\CreateProjectTrait;
     use CreatePromptRouter\CreatePromptRouterTrait;
     use CreateProvisionedModelThroughput\CreateProvisionedModelThroughputTrait;
+    use DeleteAccountDataRetentionStorage\DeleteAccountDataRetentionStorageTrait;
     use DeleteAutomatedReasoningPolicy\DeleteAutomatedReasoningPolicyTrait;
     use DeleteAutomatedReasoningPolicyBuildWorkflow\DeleteAutomatedReasoningPolicyBuildWorkflowTrait;
     use DeleteAutomatedReasoningPolicyTestCase\DeleteAutomatedReasoningPolicyTestCaseTrait;
@@ -37,12 +40,15 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use DeleteInferenceProfile\DeleteInferenceProfileTrait;
     use DeleteMarketplaceModelEndpoint\DeleteMarketplaceModelEndpointTrait;
     use DeleteModelInvocationLoggingConfiguration\DeleteModelInvocationLoggingConfigurationTrait;
+    use DeleteOrganizationDataRetentionStorage\DeleteOrganizationDataRetentionStorageTrait;
+    use DeleteProjectDataRetentionStorage\DeleteProjectDataRetentionStorageTrait;
     use DeletePromptRouter\DeletePromptRouterTrait;
     use DeleteProvisionedModelThroughput\DeleteProvisionedModelThroughputTrait;
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;
     use DeregisterMarketplaceModelEndpoint\DeregisterMarketplaceModelEndpointTrait;
     use ExportAutomatedReasoningPolicyVersion\ExportAutomatedReasoningPolicyVersionTrait;
     use GetAccountDataRetention\GetAccountDataRetentionTrait;
+    use GetAccountDataRetentionStorage\GetAccountDataRetentionStorageTrait;
     use GetAdvancedPromptOptimizationJob\GetAdvancedPromptOptimizationJobTrait;
     use GetAutomatedReasoningPolicy\GetAutomatedReasoningPolicyTrait;
     use GetAutomatedReasoningPolicyAnnotations\GetAutomatedReasoningPolicyAnnotationsTrait;
@@ -65,9 +71,16 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use GetModelImportJob\GetModelImportJobTrait;
     use GetModelInvocationJob\GetModelInvocationJobTrait;
     use GetModelInvocationLoggingConfiguration\GetModelInvocationLoggingConfigurationTrait;
+    use GetOrganizationDataRetentionStorage\GetOrganizationDataRetentionStorageTrait;
+    use GetProject\GetProjectTrait;
+    use GetProjectDataRetentionStorage\GetProjectDataRetentionStorageTrait;
     use GetPromptRouter\GetPromptRouterTrait;
     use GetProvisionedModelThroughput\GetProvisionedModelThroughputTrait;
     use GetResourcePolicy\GetResourcePolicyTrait;
+    use GetTrustedAccessProgram\GetTrustedAccessProgramTrait;
+    use GetTrustedAccessProgramAccountEnrollment\GetTrustedAccessProgramAccountEnrollmentTrait;
+    use GetTrustedAccessProgramOrganizationEnrollment\GetTrustedAccessProgramOrganizationEnrollmentTrait;
+    use GetTrustedAccessProgramProjectEnrollment\GetTrustedAccessProgramProjectEnrollmentTrait;
     use GetUseCaseForModelAccess\GetUseCaseForModelAccessTrait;
     use ListAdvancedPromptOptimizationJobs\ListAdvancedPromptOptimizationJobsTrait;
     use ListAutomatedReasoningPolicies\ListAutomatedReasoningPoliciesTrait;
@@ -88,17 +101,28 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use ListModelCustomizationJobs\ListModelCustomizationJobsTrait;
     use ListModelImportJobs\ListModelImportJobsTrait;
     use ListModelInvocationJobs\ListModelInvocationJobsTrait;
+    use ListProjects\ListProjectsTrait;
     use ListPromptRouters\ListPromptRoutersTrait;
     use ListProvisionedModelThroughputs\ListProvisionedModelThroughputsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use ListTrustedAccessPrograms\ListTrustedAccessProgramsTrait;
     use PutAccountDataRetention\PutAccountDataRetentionTrait;
+    use PutAccountDataRetentionStorage\PutAccountDataRetentionStorageTrait;
     use PutEnforcedGuardrailConfiguration\PutEnforcedGuardrailConfigurationTrait;
     use PutModelInvocationLoggingConfiguration\PutModelInvocationLoggingConfigurationTrait;
+    use PutOrganizationDataRetentionStorage\PutOrganizationDataRetentionStorageTrait;
+    use PutProjectDataRetentionStorage\PutProjectDataRetentionStorageTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;
+    use PutTrustedAccessProgramAccountEnrollment\PutTrustedAccessProgramAccountEnrollmentTrait;
+    use PutTrustedAccessProgramOrganizationEnrollment\PutTrustedAccessProgramOrganizationEnrollmentTrait;
+    use PutTrustedAccessProgramProjectEnrollment\PutTrustedAccessProgramProjectEnrollmentTrait;
     use PutUseCaseForModelAccess\PutUseCaseForModelAccessTrait;
     use RegisterMarketplaceModelEndpoint\RegisterMarketplaceModelEndpointTrait;
     use StartAutomatedReasoningPolicyBuildWorkflow\StartAutomatedReasoningPolicyBuildWorkflowTrait;
     use StartAutomatedReasoningPolicyTestWorkflow\StartAutomatedReasoningPolicyTestWorkflowTrait;
+    use StartTrustedAccessProgramAccountApplication\StartTrustedAccessProgramAccountApplicationTrait;
+    use StartTrustedAccessProgramOrganizationApplication\StartTrustedAccessProgramOrganizationApplicationTrait;
+    use StartTrustedAccessProgramProjectApplication\StartTrustedAccessProgramProjectApplicationTrait;
     use StopAdvancedPromptOptimizationJob\StopAdvancedPromptOptimizationJobTrait;
     use StopEvaluationJob\StopEvaluationJobTrait;
     use StopModelCustomizationJob\StopModelCustomizationJobTrait;
@@ -111,5 +135,6 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use UpdateCustomModelDeployment\UpdateCustomModelDeploymentTrait;
     use UpdateGuardrail\UpdateGuardrailTrait;
     use UpdateMarketplaceModelEndpoint\UpdateMarketplaceModelEndpointTrait;
+    use UpdateProject\UpdateProjectTrait;
     use UpdateProvisionedModelThroughput\UpdateProvisionedModelThroughputTrait;
 }

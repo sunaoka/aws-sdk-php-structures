@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $availableFromTime
  * @property string|null $launchUrl
  * @property 'ENABLED'|'DISABLED' $quickLaunch
+ * @property list<SaasDeploymentTemplate> $deploymentTemplates
  */
 class SaasFulfillmentOption extends Shape
 {
@@ -25,7 +26,8 @@ class SaasFulfillmentOption extends Shape
      *     usageInstructions?: string|null,
      *     availableFromTime?: \Aws\Api\DateTimeResult|null,
      *     launchUrl?: string|null,
-     *     quickLaunch: 'ENABLED'|'DISABLED'
+     *     quickLaunch: 'ENABLED'|'DISABLED',
+     *     deploymentTemplates: list<SaasDeploymentTemplate>
      * } $args
      */
     public function __construct(array $args)

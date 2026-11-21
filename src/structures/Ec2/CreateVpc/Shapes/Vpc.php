@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VpcEncryptionControl|null $EncryptionControl
  * @property list<Tag>|null $Tags
  * @property BlockPublicAccessStates|null $BlockPublicAccessStates
+ * @property list<NetworkFirewallAssociation>|null $NetworkFirewallAssociations
  * @property string|null $VpcId
  * @property 'pending'|'available'|'deleting'|null $State
  * @property string|null $CidrBlock
@@ -30,6 +31,7 @@ class Vpc extends Shape
      *     EncryptionControl?: VpcEncryptionControl|null,
      *     Tags?: list<Tag>|null,
      *     BlockPublicAccessStates?: BlockPublicAccessStates|null,
+     *     NetworkFirewallAssociations?: list<NetworkFirewallAssociation>|null,
      *     VpcId?: string|null,
      *     State?: 'pending'|'available'|'deleting'|null,
      *     CidrBlock?: string|null,

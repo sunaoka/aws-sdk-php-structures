@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'standard'|'optimized'|null $performanceConfigLatency
  * @property 'priority'|'default'|'flex'|'reserved'|null $serviceTier
  * @property string|null $requestMetadata
+ * @property string|null $projectIdentifier
  */
 class InvokeModelRequest extends Request
 {
@@ -29,7 +30,8 @@ class InvokeModelRequest extends Request
      *     guardrailVersion?: string|null,
      *     performanceConfigLatency?: 'standard'|'optimized'|null,
      *     serviceTier?: 'priority'|'default'|'flex'|'reserved'|null,
-     *     requestMetadata?: string|null
+     *     requestMetadata?: string|null,
+     *     projectIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

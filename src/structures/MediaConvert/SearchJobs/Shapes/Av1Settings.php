@@ -5,15 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaConvert\SearchJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'OFF'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX'|null $AdaptiveQuantization
+ * @property 'OFF'|'AUTO'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX'|null $AdaptiveQuantization
  * @property 'BIT_8'|'BIT_10'|null $BitDepth
  * @property int<1000, 1152000000>|null $Bitrate
+ * @property 'DISABLED'|'ENABLED'|null $FastDecode
  * @property 'DISABLED'|'ENABLED'|null $FilmGrainSynthesis
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $FramerateControl
  * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null $FramerateConversionAlgorithm
  * @property int<1, 2147483647>|null $FramerateDenominator
  * @property int<1, 2147483647>|null $FramerateNumerator
  * @property double|null $GopSize
+ * @property 'FRAMES'|'SECONDS'|null $GopSizeUnits
  * @property int<1000, 1152000000>|null $MaxBitrate
  * @property int<0, 15>|null $NumberBFramesBetweenReferenceFrames
  * @property list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'|'SHOT_CHANGE'>|null $PerFrameMetrics
@@ -24,20 +26,23 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1000, 3000>|null $SlidingWindowMs
  * @property int<1000, 1152000000>|null $SlidingWindowPeakBitrate
  * @property 'DISABLED'|'ENABLED'|null $SpatialAdaptiveQuantization
+ * @property 'DISABLED'|'ENABLED'|null $TemporalAdaptiveQuantization
  */
 class Av1Settings extends Shape
 {
     /**
      * @param array{
-     *     AdaptiveQuantization?: 'OFF'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX'|null,
+     *     AdaptiveQuantization?: 'OFF'|'AUTO'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX'|null,
      *     BitDepth?: 'BIT_8'|'BIT_10'|null,
      *     Bitrate?: int<1000, 1152000000>|null,
+     *     FastDecode?: 'DISABLED'|'ENABLED'|null,
      *     FilmGrainSynthesis?: 'DISABLED'|'ENABLED'|null,
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
      *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null,
      *     FramerateDenominator?: int<1, 2147483647>|null,
      *     FramerateNumerator?: int<1, 2147483647>|null,
      *     GopSize?: double|null,
+     *     GopSizeUnits?: 'FRAMES'|'SECONDS'|null,
      *     MaxBitrate?: int<1000, 1152000000>|null,
      *     NumberBFramesBetweenReferenceFrames?: int<0, 15>|null,
      *     PerFrameMetrics?: list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'|'SHOT_CHANGE'>|null,
@@ -47,7 +52,8 @@ class Av1Settings extends Shape
      *     Slices?: int<1, 32>|null,
      *     SlidingWindowMs?: int<1000, 3000>|null,
      *     SlidingWindowPeakBitrate?: int<1000, 1152000000>|null,
-     *     SpatialAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null
+     *     SpatialAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null,
+     *     TemporalAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

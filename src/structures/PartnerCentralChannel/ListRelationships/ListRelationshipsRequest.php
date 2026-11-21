@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $catalog
  * @property int<1, 100>|null $maxResults
  * @property list<string>|null $associatedAccountIds
- * @property list<'DOWNSTREAM_SELLER'|'END_CUSTOMER'|'INTERNAL'>|null $associationTypes
+ * @property list<'DOWNSTREAM_SELLER'|'END_CUSTOMER'|'INTERNAL'|'MANAGED_SERVICES_END_CUSTOMER'>|null $associationTypes
  * @property list<string>|null $displayNames
  * @property list<string>|null $programManagementAccountIdentifiers
  * @property Shapes\ListRelationshipsSortBase|null $sort
@@ -21,7 +21,7 @@ class ListRelationshipsRequest extends Request
      *     catalog: string,
      *     maxResults?: int<1, 100>|null,
      *     associatedAccountIds?: list<string>|null,
-     *     associationTypes?: list<'DOWNSTREAM_SELLER'|'END_CUSTOMER'|'INTERNAL'>|null,
+     *     associationTypes?: list<'DOWNSTREAM_SELLER'|'END_CUSTOMER'|'INTERNAL'|'MANAGED_SERVICES_END_CUSTOMER'>|null,
      *     displayNames?: list<string>|null,
      *     programManagementAccountIdentifiers?: list<string>|null,
      *     sort?: Shapes\ListRelationshipsSortBase|null,

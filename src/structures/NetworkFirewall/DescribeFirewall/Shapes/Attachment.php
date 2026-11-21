@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $SubnetId
  * @property string|null $EndpointId
- * @property 'CREATING'|'DELETING'|'FAILED'|'ERROR'|'SCALING'|'READY'|null $Status
+ * @property 'CREATING'|'DELETING'|'FAILED'|'ERROR'|'SCALING'|'READY'|'STANDBY'|null $Status
  * @property string|null $StatusMessage
  * @property string|null $DnsName
  */
@@ -17,7 +17,7 @@ class Attachment extends Shape
      * @param array{
      *     SubnetId?: string|null,
      *     EndpointId?: string|null,
-     *     Status?: 'CREATING'|'DELETING'|'FAILED'|'ERROR'|'SCALING'|'READY'|null,
+     *     Status?: 'CREATING'|'DELETING'|'FAILED'|'ERROR'|'SCALING'|'READY'|'STANDBY'|null,
      *     StatusMessage?: string|null,
      *     DnsName?: string|null
      * } $args

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DocumentVersion
  * @property 'YAML'|'JSON'|'TEXT'|null $DocumentFormat
  * @property string|null $TargetType
+ * @property list<'AWS'|'Azure'|'GCP'>|null $CloudProviders
  */
 class UpdateDocumentRequest extends Request
 {
@@ -25,7 +26,8 @@ class UpdateDocumentRequest extends Request
      *     VersionName?: string|null,
      *     DocumentVersion?: string|null,
      *     DocumentFormat?: 'YAML'|'JSON'|'TEXT'|null,
-     *     TargetType?: string|null
+     *     TargetType?: string|null,
+     *     CloudProviders?: list<'AWS'|'Azure'|'GCP'>|null
      * } $args
      */
     public function __construct(array $args)

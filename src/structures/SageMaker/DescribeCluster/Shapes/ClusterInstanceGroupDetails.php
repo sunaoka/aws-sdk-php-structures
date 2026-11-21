@@ -32,7 +32,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ClusterKubernetesConfigDetails|null $KubernetesConfig
  * @property ClusterCapacityRequirements|null $CapacityRequirements
  * @property int<0, 6758>|null $TargetStateCount
- * @property 'Pending'|'InProgress'|'Succeeded'|'Failed'|'RollbackInProgress'|'RollbackComplete'|null $SoftwareUpdateStatus
+ * @property 'Pending'|'InProgress'|'Succeeded'|'Failed'|'RollbackInProgress'|'RollbackComplete'|'PartiallySucceeded'|null $SoftwareUpdateStatus
  * @property DeploymentConfiguration|null $ActiveSoftwareUpdateConfig
  * @property ClusterSlurmConfigDetails|null $SlurmConfig
  * @property ClusterNetworkInterfaceDetails|null $NetworkInterface
@@ -68,7 +68,7 @@ class ClusterInstanceGroupDetails extends Shape
      *     KubernetesConfig?: ClusterKubernetesConfigDetails|null,
      *     CapacityRequirements?: ClusterCapacityRequirements|null,
      *     TargetStateCount?: int<0, 6758>|null,
-     *     SoftwareUpdateStatus?: 'Pending'|'InProgress'|'Succeeded'|'Failed'|'RollbackInProgress'|'RollbackComplete'|null,
+     *     SoftwareUpdateStatus?: 'Pending'|'InProgress'|'Succeeded'|'Failed'|'RollbackInProgress'|'RollbackComplete'|'PartiallySucceeded'|null,
      *     ActiveSoftwareUpdateConfig?: DeploymentConfiguration|null,
      *     SlurmConfig?: ClusterSlurmConfigDetails|null,
      *     NetworkInterface?: ClusterNetworkInterfaceDetails|null

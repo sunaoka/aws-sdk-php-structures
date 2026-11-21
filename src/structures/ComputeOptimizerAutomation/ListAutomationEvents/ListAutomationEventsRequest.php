@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\AutomationEventFilter>|null $filters
+ * @property list<string>|null $organizationalUnitIds
  * @property \Aws\Api\DateTimeResult|null $startTimeInclusive
  * @property \Aws\Api\DateTimeResult|null $endTimeExclusive
  * @property int<1, 100>|null $maxResults
@@ -16,6 +17,7 @@ class ListAutomationEventsRequest extends Request
     /**
      * @param array{
      *     filters?: list<Shapes\AutomationEventFilter>|null,
+     *     organizationalUnitIds?: list<string>|null,
      *     startTimeInclusive?: \Aws\Api\DateTimeResult|null,
      *     endTimeExclusive?: \Aws\Api\DateTimeResult|null,
      *     maxResults?: int<1, 100>|null,

@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Creating'|'Active'|'Updating'|'Deleting'|'Failed'|null $Status
  * @property string|null $StatusInformation
  * @property 'APPROVED'|'NOT_REVIEWED'|'PENDING'|'REJECTED'|null $ReviewStatus
+ * @property list<'AWS'|'Azure'|'GCP'>|null $CloudProviders
  */
 class DocumentVersionInfo extends Shape
 {
@@ -29,7 +30,8 @@ class DocumentVersionInfo extends Shape
      *     DocumentFormat?: 'YAML'|'JSON'|'TEXT'|null,
      *     Status?: 'Creating'|'Active'|'Updating'|'Deleting'|'Failed'|null,
      *     StatusInformation?: string|null,
-     *     ReviewStatus?: 'APPROVED'|'NOT_REVIEWED'|'PENDING'|'REJECTED'|null
+     *     ReviewStatus?: 'APPROVED'|'NOT_REVIEWED'|'PENDING'|'REJECTED'|null,
+     *     CloudProviders?: list<'AWS'|'Azure'|'GCP'>|null
      * } $args
      */
     public function __construct(array $args = [])

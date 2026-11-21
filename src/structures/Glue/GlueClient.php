@@ -64,7 +64,6 @@ class GlueClient extends \Aws\Glue\GlueClient
     use CreateUserDefinedFunction\CreateUserDefinedFunctionTrait;
     use CreateWorkflow\CreateWorkflowTrait;
     use DeleteAsset\DeleteAssetTrait;
-    use DeleteAssetType\DeleteAssetTypeTrait;
     use DeleteAttachment\DeleteAttachmentTrait;
     use DeleteBlueprint\DeleteBlueprintTrait;
     use DeleteCatalog\DeleteCatalogTrait;
@@ -240,7 +239,6 @@ class GlueClient extends \Aws\Glue\GlueClient
     use ModifyIntegration\ModifyIntegrationTrait;
     use PublishDataQualityResultV2\PublishDataQualityResultV2Trait;
     use PutAsset\PutAssetTrait;
-    use PutAssetType\PutAssetTypeTrait;
     use PutAttachment\PutAttachmentTrait;
     use PutDataCatalogEncryptionSettings\PutDataCatalogEncryptionSettingsTrait;
     use PutDataCatalogExportConfiguration\PutDataCatalogExportConfigurationTrait;

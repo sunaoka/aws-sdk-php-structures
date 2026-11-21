@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $FirewallArn
  * @property string|null $FirewallName
  * @property list<Shapes\AvailabilityZoneMapping> $AvailabilityZoneMappings
+ * @property 'FIREWALL'|'IGW_FIREWALL'|null $FirewallType
  */
 class AssociateAvailabilityZonesRequest extends Request
 {
@@ -17,7 +18,8 @@ class AssociateAvailabilityZonesRequest extends Request
      *     UpdateToken?: string|null,
      *     FirewallArn?: string|null,
      *     FirewallName?: string|null,
-     *     AvailabilityZoneMappings: list<Shapes\AvailabilityZoneMapping>
+     *     AvailabilityZoneMappings: list<Shapes\AvailabilityZoneMapping>,
+     *     FirewallType?: 'FIREWALL'|'IGW_FIREWALL'|null
      * } $args
      */
     public function __construct(array $args)

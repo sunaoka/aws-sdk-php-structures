@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Glue\ListFormTypes;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 1000>|null $MaxResults
+ * @property int<1, 100>|null $MaxResults
  * @property string|null $NextToken
  */
 class ListFormTypesRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int<1, 1000>|null,
+     *     MaxResults?: int<1, 100>|null,
      *     NextToken?: string|null
      * } $args
      */

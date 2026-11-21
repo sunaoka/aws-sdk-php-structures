@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\GetDefaultCreditSpecification\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 't2'|'t3'|'t3a'|'t4g'|'t8i'|null $InstanceFamily
+ * @property 't2'|'t3'|'t3a'|'t4g'|'t8i'|'t9g'|null $InstanceFamily
  * @property string|null $CpuCredits
  */
 class InstanceFamilyCreditSpecification extends Shape
 {
     /**
      * @param array{
-     *     InstanceFamily?: 't2'|'t3'|'t3a'|'t4g'|'t8i'|null,
+     *     InstanceFamily?: 't2'|'t3'|'t3a'|'t4g'|'t8i'|'t9g'|null,
      *     CpuCredits?: string|null
      * } $args
      */

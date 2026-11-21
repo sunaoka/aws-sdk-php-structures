@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $TransitGatewayId
  * @property list<Shapes\AvailabilityZoneMapping>|null $AvailabilityZoneMappings
  * @property bool|null $AvailabilityZoneChangeProtection
+ * @property Shapes\IgwFirewallConfiguration|null $IgwFirewallConfiguration
  * @property list<Shapes\NatGatewayCreateMapping>|null $NatGatewayCreateMappings
  * @property Shapes\ProxySettings|null $ProxySettings
  * @property Shapes\VpcEndpoint|null $VpcEndpoint
@@ -42,6 +43,7 @@ class CreateFirewallRequest extends Request
      *     TransitGatewayId?: string|null,
      *     AvailabilityZoneMappings?: list<Shapes\AvailabilityZoneMapping>|null,
      *     AvailabilityZoneChangeProtection?: bool|null,
+     *     IgwFirewallConfiguration?: Shapes\IgwFirewallConfiguration|null,
      *     NatGatewayCreateMappings?: list<Shapes\NatGatewayCreateMapping>|null,
      *     ProxySettings?: Shapes\ProxySettings|null,
      *     VpcEndpoint?: Shapes\VpcEndpoint|null,

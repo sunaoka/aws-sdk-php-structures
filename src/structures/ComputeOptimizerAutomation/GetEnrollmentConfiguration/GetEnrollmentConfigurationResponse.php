@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $statusReason
  * @property 'AnyAllowed'|'NoneAllowed'|null $organizationRuleMode
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedTimestamp
+ * @property 'Active'|'Inactive'|null $organizationEnrollmentConfigurationStatus
  */
 class GetEnrollmentConfigurationResponse extends Response
 {

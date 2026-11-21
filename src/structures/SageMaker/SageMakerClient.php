@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker;
 class SageMakerClient extends \Aws\SageMaker\SageMakerClient
 {
     use AddAssociation\AddAssociationTrait;
+    use AddInferenceGateway\AddInferenceGatewayTrait;
     use AddTags\AddTagsTrait;
     use AssociateTrialComponent\AssociateTrialComponentTrait;
     use AttachClusterNodeNetworkInterface\AttachClusterNodeNetworkInterfaceTrait;
@@ -42,6 +43,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use CreateExperiment\CreateExperimentTrait;
     use CreateFeatureGroup\CreateFeatureGroupTrait;
     use CreateFlowDefinition\CreateFlowDefinitionTrait;
+    use CreateGlobalInferenceGateway\CreateGlobalInferenceGatewayTrait;
     use CreateHub\CreateHubTrait;
     use CreateHubContentPresignedUrls\CreateHubContentPresignedUrlsTrait;
     use CreateHubContentReference\CreateHubContentReferenceTrait;
@@ -116,6 +118,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DeleteExperiment\DeleteExperimentTrait;
     use DeleteFeatureGroup\DeleteFeatureGroupTrait;
     use DeleteFlowDefinition\DeleteFlowDefinitionTrait;
+    use DeleteGlobalInferenceGateway\DeleteGlobalInferenceGatewayTrait;
     use DeleteHub\DeleteHubTrait;
     use DeleteHubContent\DeleteHubContentTrait;
     use DeleteHubContentReference\DeleteHubContentReferenceTrait;
@@ -166,6 +169,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DescribeArtifact\DescribeArtifactTrait;
     use DescribeAutoMLJob\DescribeAutoMLJobTrait;
     use DescribeAutoMLJobV2\DescribeAutoMLJobV2Trait;
+    use DescribeCapacityReservation\DescribeCapacityReservationTrait;
     use DescribeCluster\DescribeClusterTrait;
     use DescribeClusterEvent\DescribeClusterEventTrait;
     use DescribeClusterExtension\DescribeClusterExtensionTrait;
@@ -188,6 +192,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DescribeFeatureGroup\DescribeFeatureGroupTrait;
     use DescribeFeatureMetadata\DescribeFeatureMetadataTrait;
     use DescribeFlowDefinition\DescribeFlowDefinitionTrait;
+    use DescribeGlobalInferenceGateway\DescribeGlobalInferenceGatewayTrait;
     use DescribeHub\DescribeHubTrait;
     use DescribeHubContent\DescribeHubContentTrait;
     use DescribeHumanTaskUi\DescribeHumanTaskUiTrait;
@@ -223,6 +228,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DescribeProcessingJob\DescribeProcessingJobTrait;
     use DescribeProject\DescribeProjectTrait;
     use DescribeReservedCapacity\DescribeReservedCapacityTrait;
+    use DescribeResourceAssociations\DescribeResourceAssociationsTrait;
     use DescribeSpace\DescribeSpaceTrait;
     use DescribeStudioLifecycleConfig\DescribeStudioLifecycleConfigTrait;
     use DescribeSubscribedWorkteam\DescribeSubscribedWorkteamTrait;
@@ -241,6 +247,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DisassociateTrialComponent\DisassociateTrialComponentTrait;
     use EnableSagemakerServicecatalogPortfolio\EnableSagemakerServicecatalogPortfolioTrait;
     use ExtendTrainingPlan\ExtendTrainingPlanTrait;
+    use GetCapacityReservationUsage\GetCapacityReservationUsageTrait;
     use GetDeviceFleetReport\GetDeviceFleetReportTrait;
     use GetEndpointPolicy\GetEndpointPolicyTrait;
     use GetLineageGroupPolicy\GetLineageGroupPolicyTrait;
@@ -261,6 +268,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListAssociations\ListAssociationsTrait;
     use ListAutoMLJobs\ListAutoMLJobsTrait;
     use ListCandidatesForAutoMLJob\ListCandidatesForAutoMLJobTrait;
+    use ListCapacityReservations\ListCapacityReservationsTrait;
     use ListClusterEvents\ListClusterEventsTrait;
     use ListClusterExtensionVersions\ListClusterExtensionVersionsTrait;
     use ListClusterExtensions\ListClusterExtensionsTrait;
@@ -283,6 +291,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListExperiments\ListExperimentsTrait;
     use ListFeatureGroups\ListFeatureGroupsTrait;
     use ListFlowDefinitions\ListFlowDefinitionsTrait;
+    use ListGlobalInferenceGateways\ListGlobalInferenceGatewaysTrait;
     use ListHubContentVersions\ListHubContentVersionsTrait;
     use ListHubContents\ListHubContentsTrait;
     use ListHubs\ListHubsTrait;
@@ -292,6 +301,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListImages\ListImagesTrait;
     use ListInferenceComponents\ListInferenceComponentsTrait;
     use ListInferenceExperiments\ListInferenceExperimentsTrait;
+    use ListInferenceGateways\ListInferenceGatewaysTrait;
     use ListInferenceRecommendationsJobSteps\ListInferenceRecommendationsJobStepsTrait;
     use ListInferenceRecommendationsJobs\ListInferenceRecommendationsJobsTrait;
     use ListInferenceRouters\ListInferenceRoutersTrait;
@@ -344,10 +354,12 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListUserProfiles\ListUserProfilesTrait;
     use ListWorkforces\ListWorkforcesTrait;
     use ListWorkteams\ListWorkteamsTrait;
+    use MoveClusterNodes\MoveClusterNodesTrait;
     use PutEndpointPolicy\PutEndpointPolicyTrait;
     use PutModelPackageGroupPolicy\PutModelPackageGroupPolicyTrait;
     use QueryLineage\QueryLineageTrait;
     use RegisterDevices\RegisterDevicesTrait;
+    use RemoveInferenceGateway\RemoveInferenceGatewayTrait;
     use RenderUiTemplate\RenderUiTemplateTrait;
     use RetryPipelineExecution\RetryPipelineExecutionTrait;
     use Search\SearchTrait;
@@ -400,6 +412,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use UpdateExperiment\UpdateExperimentTrait;
     use UpdateFeatureGroup\UpdateFeatureGroupTrait;
     use UpdateFeatureMetadata\UpdateFeatureMetadataTrait;
+    use UpdateGlobalInferenceGateway\UpdateGlobalInferenceGatewayTrait;
     use UpdateHub\UpdateHubTrait;
     use UpdateHubContent\UpdateHubContentTrait;
     use UpdateHubContentReference\UpdateHubContentReferenceTrait;

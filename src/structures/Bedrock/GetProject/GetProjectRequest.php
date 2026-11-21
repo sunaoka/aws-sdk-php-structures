@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Bedrock\GetProject;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property string $projectIdentifier
+ */
+class GetProjectRequest extends Request
+{
+    /**
+     * @param array{projectIdentifier: string} $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

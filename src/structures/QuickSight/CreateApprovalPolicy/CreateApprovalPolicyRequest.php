@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $PolicyId
  * @property string $Name
  * @property string|null $Description
- * @property list<'SHARE'> $Actions
- * @property list<'AGENT'|'SPACE'|'KNOWLEDGE_BASE'> $AssetTypes
+ * @property list<'SHARE'|'PUBLISH'> $Actions
+ * @property list<'AGENT'|'SPACE'|'KNOWLEDGE_BASE'|'FLOW'> $AssetTypes
  * @property Shapes\ApplicableTo $ApplicableTo
  * @property list<string> $ApprovalGroups
  */
@@ -20,8 +20,8 @@ class CreateApprovalPolicyRequest extends Request
      *     PolicyId: string,
      *     Name: string,
      *     Description?: string|null,
-     *     Actions: list<'SHARE'>,
-     *     AssetTypes: list<'AGENT'|'SPACE'|'KNOWLEDGE_BASE'>,
+     *     Actions: list<'SHARE'|'PUBLISH'>,
+     *     AssetTypes: list<'AGENT'|'SPACE'|'KNOWLEDGE_BASE'|'FLOW'>,
      *     ApplicableTo: Shapes\ApplicableTo,
      *     ApprovalGroups: list<string>
      * } $args

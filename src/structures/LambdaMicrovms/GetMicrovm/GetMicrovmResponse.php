@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $startedAt
  * @property \Aws\Api\DateTimeResult|null $terminatedAt
  * @property string|null $stateReason
+ * @property string|null $kmsKeyIdentifier
  * @property list<string>|null $ingressNetworkConnectors
  * @property list<string>|null $egressNetworkConnectors
  */

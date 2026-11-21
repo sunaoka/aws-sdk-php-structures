@@ -16,6 +16,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $fixedInVersion
  * @property string|null $remediation
  * @property string|null $sourceLambdaLayerArn
+ * @property 'REACHABLE'|'NOT_REACHABLE'|'UNKNOWN'|null $runtimeReachability
+ * @property 'PACKAGE_IN_DOCKERFILE_WORKLOAD_PATH'|'PACKAGE_NOT_IN_DOCKERFILE_WORKLOAD_PATH'|'PROCESS_OBSERVED_IN_EC2_RUNTIME'|'PROCESS_NOT_OBSERVED_IN_EC2_RUNTIME'|null $runtimeReachabilityReason
+ * @property string|null $purl
  */
 class VulnerablePackage extends Shape
 {
@@ -31,7 +34,10 @@ class VulnerablePackage extends Shape
      *     filePath?: string|null,
      *     fixedInVersion?: string|null,
      *     remediation?: string|null,
-     *     sourceLambdaLayerArn?: string|null
+     *     sourceLambdaLayerArn?: string|null,
+     *     runtimeReachability?: 'REACHABLE'|'NOT_REACHABLE'|'UNKNOWN'|null,
+     *     runtimeReachabilityReason?: 'PACKAGE_IN_DOCKERFILE_WORKLOAD_PATH'|'PACKAGE_NOT_IN_DOCKERFILE_WORKLOAD_PATH'|'PROCESS_OBSERVED_IN_EC2_RUNTIME'|'PROCESS_NOT_OBSERVED_IN_EC2_RUNTIME'|null,
+     *     purl?: string|null
      * } $args
      */
     public function __construct(array $args)

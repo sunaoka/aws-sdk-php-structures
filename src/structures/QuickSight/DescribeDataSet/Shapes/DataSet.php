@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'RLS_RULES'|null $UseAs
  * @property DataPrepConfiguration|null $DataPrepConfiguration
  * @property SemanticModelConfiguration|null $SemanticModelConfiguration
+ * @property list<UnmaterializedCalculatedColumn>|null $UnmaterializedCalculatedColumns
  */
 class DataSet extends Shape
 {
@@ -51,7 +52,8 @@ class DataSet extends Shape
      *     PerformanceConfiguration?: PerformanceConfiguration|null,
      *     UseAs?: 'RLS_RULES'|null,
      *     DataPrepConfiguration?: DataPrepConfiguration|null,
-     *     SemanticModelConfiguration?: SemanticModelConfiguration|null
+     *     SemanticModelConfiguration?: SemanticModelConfiguration|null,
+     *     UnmaterializedCalculatedColumns?: list<UnmaterializedCalculatedColumn>|null
      * } $args
      */
     public function __construct(array $args = [])

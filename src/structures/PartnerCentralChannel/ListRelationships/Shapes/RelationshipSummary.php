@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $id
  * @property string|null $revision
  * @property string|null $catalog
- * @property 'DOWNSTREAM_SELLER'|'END_CUSTOMER'|'INTERNAL'|null $associationType
+ * @property 'DOWNSTREAM_SELLER'|'END_CUSTOMER'|'INTERNAL'|'MANAGED_SERVICES_END_CUSTOMER'|null $associationType
  * @property string|null $programManagementAccountId
  * @property string|null $associatedAccountId
  * @property string|null $displayName
@@ -26,7 +26,7 @@ class RelationshipSummary extends Shape
      *     id?: string|null,
      *     revision?: string|null,
      *     catalog?: string|null,
-     *     associationType?: 'DOWNSTREAM_SELLER'|'END_CUSTOMER'|'INTERNAL'|null,
+     *     associationType?: 'DOWNSTREAM_SELLER'|'END_CUSTOMER'|'INTERNAL'|'MANAGED_SERVICES_END_CUSTOMER'|null,
      *     programManagementAccountId?: string|null,
      *     associatedAccountId?: string|null,
      *     displayName?: string|null,

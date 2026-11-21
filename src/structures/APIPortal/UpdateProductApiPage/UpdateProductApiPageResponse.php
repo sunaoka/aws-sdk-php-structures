@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\APIPortal\UpdateProductApiPage;
+
+use Sunaoka\Aws\Structures\Response;
+
+/**
+ * @property string $productApiPageId
+ * @property string $productApiPageArn
+ * @property Shapes\ApiId $apiId
+ * @property Shapes\ApiPageDisplayContentResponse $displayContent
+ * @property 'ENABLED'|'DISABLED' $tryItState
+ * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property 'AVAILABLE'|'IN_PROGRESS'|'FAILED' $status
+ * @property Shapes\ProductApiPageStatusException|null $statusException
+ */
+class UpdateProductApiPageResponse extends Response
+{
+}

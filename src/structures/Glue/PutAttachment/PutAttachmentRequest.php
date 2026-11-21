@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ItemIdentifier
  * @property string $AttachmentName
  * @property string $Content
- * @property string $FormTypeId
+ * @property string|null $FormTypeIdentifier
  * @property string|null $ClientToken
  */
 class PutAttachmentRequest extends Request
@@ -22,7 +22,7 @@ class PutAttachmentRequest extends Request
      *     ItemIdentifier?: string|null,
      *     AttachmentName: string,
      *     Content: string,
-     *     FormTypeId: string,
+     *     FormTypeIdentifier?: string|null,
      *     ClientToken?: string|null
      * } $args
      */

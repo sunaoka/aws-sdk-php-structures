@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<DocumentRequires>|null $Requires
  * @property 'APPROVED'|'NOT_REVIEWED'|'PENDING'|'REJECTED'|null $ReviewStatus
  * @property string|null $Author
+ * @property list<'AWS'|'Azure'|'GCP'>|null $CloudProviders
  */
 class DocumentIdentifier extends Shape
 {
@@ -39,7 +40,8 @@ class DocumentIdentifier extends Shape
      *     Tags?: list<Tag>|null,
      *     Requires?: list<DocumentRequires>|null,
      *     ReviewStatus?: 'APPROVED'|'NOT_REVIEWED'|'PENDING'|'REJECTED'|null,
-     *     Author?: string|null
+     *     Author?: string|null,
+     *     CloudProviders?: list<'AWS'|'Azure'|'GCP'>|null
      * } $args
      */
     public function __construct(array $args = [])

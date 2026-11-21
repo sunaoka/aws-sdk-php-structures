@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $computeNodeGroupName
  * @property Shapes\NodeLifecycleActions|null $nodeLifecycleActions
  * @property string|null $schedulerVersion
+ * @property Shapes\InstanceHealthChecks|null $instanceHealthChecks
  */
 class RegisterComputeNodeGroupInstanceResponse extends Response
 {

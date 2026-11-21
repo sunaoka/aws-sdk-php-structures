@@ -10,6 +10,7 @@ class MarketplaceDiscoveryClient extends \Aws\MarketplaceDiscovery\MarketplaceDi
     use GetOfferTerms\GetOfferTermsTrait;
     use GetProduct\GetProductTrait;
     use ListFulfillmentOptions\ListFulfillmentOptionsTrait;
+    use ListListingAttributes\ListListingAttributesTrait;
     use ListPurchaseOptions\ListPurchaseOptionsTrait;
     use SearchFacets\SearchFacetsTrait;
     use SearchListings\SearchListingsTrait;

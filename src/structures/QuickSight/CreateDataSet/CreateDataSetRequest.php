@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'RLS_RULES'|null $UseAs
  * @property Shapes\DataPrepConfiguration|null $DataPrepConfiguration
  * @property Shapes\SemanticModelConfiguration|null $SemanticModelConfiguration
+ * @property list<Shapes\UnmaterializedCalculatedColumn>|null $UnmaterializedCalculatedColumns
  */
 class CreateDataSetRequest extends Request
 {
@@ -49,7 +50,8 @@ class CreateDataSetRequest extends Request
      *     PerformanceConfiguration?: Shapes\PerformanceConfiguration|null,
      *     UseAs?: 'RLS_RULES'|null,
      *     DataPrepConfiguration?: Shapes\DataPrepConfiguration|null,
-     *     SemanticModelConfiguration?: Shapes\SemanticModelConfiguration|null
+     *     SemanticModelConfiguration?: Shapes\SemanticModelConfiguration|null,
+     *     UnmaterializedCalculatedColumns?: list<Shapes\UnmaterializedCalculatedColumn>|null
      * } $args
      */
     public function __construct(array $args)

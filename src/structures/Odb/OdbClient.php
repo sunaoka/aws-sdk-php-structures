@@ -50,6 +50,7 @@ class OdbClient extends \Aws\Odb\OdbClient
     use ListAutonomousDatabaseCharacterSets\ListAutonomousDatabaseCharacterSetsTrait;
     use ListAutonomousDatabaseClones\ListAutonomousDatabaseClonesTrait;
     use ListAutonomousDatabasePeers\ListAutonomousDatabasePeersTrait;
+    use ListAutonomousDatabaseRefreshableClones\ListAutonomousDatabaseRefreshableClonesTrait;
     use ListAutonomousDatabaseVersions\ListAutonomousDatabaseVersionsTrait;
     use ListAutonomousDatabases\ListAutonomousDatabasesTrait;
     use ListAutonomousVirtualMachines\ListAutonomousVirtualMachinesTrait;
@@ -73,6 +74,7 @@ class OdbClient extends \Aws\Odb\OdbClient
     use RestoreAutonomousDatabase\RestoreAutonomousDatabaseTrait;
     use ShrinkAutonomousDatabase\ShrinkAutonomousDatabaseTrait;
     use StartAutonomousDatabase\StartAutonomousDatabaseTrait;
+    use StartAutonomousDatabaseRefresh\StartAutonomousDatabaseRefreshTrait;
     use StartDbNode\StartDbNodeTrait;
     use StopAutonomousDatabase\StopAutonomousDatabaseTrait;
     use StopDbNode\StopDbNodeTrait;

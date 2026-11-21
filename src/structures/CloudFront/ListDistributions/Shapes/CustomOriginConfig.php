@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $OriginKeepaliveTimeout
  * @property 'ipv4'|'ipv6'|'dualstack'|null $IpAddressType
  * @property OriginMtlsConfig|null $OriginMtlsConfig
+ * @property 'http1.1'|'http2'|null $OriginHttpVersion
  */
 class CustomOriginConfig extends Shape
 {
@@ -25,7 +26,8 @@ class CustomOriginConfig extends Shape
      *     OriginReadTimeout?: int|null,
      *     OriginKeepaliveTimeout?: int|null,
      *     IpAddressType?: 'ipv4'|'ipv6'|'dualstack'|null,
-     *     OriginMtlsConfig?: OriginMtlsConfig|null
+     *     OriginMtlsConfig?: OriginMtlsConfig|null,
+     *     OriginHttpVersion?: 'http1.1'|'http2'|null
      * } $args
      */
     public function __construct(array $args)

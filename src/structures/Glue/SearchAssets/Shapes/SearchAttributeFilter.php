@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Attribute
- * @property 'equals'|'greaterThan'|'greaterThanOrEquals'|'lessThan'|'lessThanOrEquals'|'notExists' $Operator
+ * @property 'EQUALS'|'GREATER_THAN'|'GREATER_THAN_OR_EQUALS'|'LESS_THAN'|'LESS_THAN_OR_EQUALS'|'NOT_EXISTS'|null $Comparator
  * @property SearchFilterValue|null $Value
  */
 class SearchAttributeFilter extends Shape
@@ -14,7 +14,7 @@ class SearchAttributeFilter extends Shape
     /**
      * @param array{
      *     Attribute: string,
-     *     Operator: 'equals'|'greaterThan'|'greaterThanOrEquals'|'lessThan'|'lessThanOrEquals'|'notExists',
+     *     Comparator?: 'EQUALS'|'GREATER_THAN'|'GREATER_THAN_OR_EQUALS'|'LESS_THAN'|'LESS_THAN_OR_EQUALS'|'NOT_EXISTS'|null,
      *     Value?: SearchFilterValue|null
      * } $args
      */

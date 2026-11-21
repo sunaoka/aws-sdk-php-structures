@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property Attachment|null $Attachment
  * @property array<string, PerObjectStatus>|null $Config
+ * @property AddressTranslations|null $AddressTranslations
  * @property list<NatGatewayAttachment>|null $NatGatewayAttachments
  */
 class SyncState extends Shape
@@ -15,6 +16,7 @@ class SyncState extends Shape
      * @param array{
      *     Attachment?: Attachment|null,
      *     Config?: array<string, PerObjectStatus>|null,
+     *     AddressTranslations?: AddressTranslations|null,
      *     NatGatewayAttachments?: list<NatGatewayAttachment>|null
      * } $args
      */

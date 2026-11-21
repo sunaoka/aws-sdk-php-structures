@@ -25,6 +25,8 @@ class WAFV2Client extends \Aws\WAFV2\WAFV2Client
     use DisassociateWebACL\DisassociateWebACLTrait;
     use GenerateMobileSdkReleaseUrl\GenerateMobileSdkReleaseUrlTrait;
     use GetDecryptedAPIKey\GetDecryptedAPIKeyTrait;
+    use GetEvent\GetEventTrait;
+    use GetEventActor\GetEventActorTrait;
     use GetIPSet\GetIPSetTrait;
     use GetLoggingConfiguration\GetLoggingConfigurationTrait;
     use GetManagedRuleSet\GetManagedRuleSetTrait;
@@ -43,6 +45,9 @@ class WAFV2Client extends \Aws\WAFV2\WAFV2Client
     use ListAPIKeys\ListAPIKeysTrait;
     use ListAvailableManagedRuleGroupVersions\ListAvailableManagedRuleGroupVersionsTrait;
     use ListAvailableManagedRuleGroups\ListAvailableManagedRuleGroupsTrait;
+    use ListEventActors\ListEventActorsTrait;
+    use ListEvents\ListEventsTrait;
+    use ListEventsByWebACL\ListEventsByWebACLTrait;
     use ListIPSets\ListIPSetsTrait;
     use ListLoggingConfigurations\ListLoggingConfigurationsTrait;
     use ListManagedRuleSets\ListManagedRuleSetsTrait;

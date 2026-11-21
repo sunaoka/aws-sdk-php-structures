@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $clientToken
  * @property string $ruleName
- * @property 'WAF' $firewallType
+ * @property 'WAF'|'IGW_FIREWALL' $firewallType
  * @property 'CONFIGURATION'|'INSPECTION' $ruleType
  * @property string|null $ruleDescription
  * @property Shapes\JsonDocument $configuration
@@ -20,7 +20,7 @@ class CreateRuleRequest extends Request
      * @param array{
      *     clientToken?: string|null,
      *     ruleName: string,
-     *     firewallType: 'WAF',
+     *     firewallType: 'WAF'|'IGW_FIREWALL',
      *     ruleType: 'CONFIGURATION'|'INSPECTION',
      *     ruleDescription?: string|null,
      *     configuration: Shapes\JsonDocument,

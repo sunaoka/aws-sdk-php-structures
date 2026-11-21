@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $scopeId
  * @property string $scopeArn
  * @property string|null $scopeName
+ * @property 'IGW_FIREWALL_SUBNET_CONNECTIVITY_OVERRIDE'|null $specializedScopeType
  * @property 'DRAFT'|'ACTIVE'|'DISABLED'|null $status
  * @property string|null $version
  * @property bool|null $hasPublishedVersion
@@ -20,6 +21,7 @@ class ScopeSummary extends Shape
      *     scopeId: string,
      *     scopeArn: string,
      *     scopeName?: string|null,
+     *     specializedScopeType?: 'IGW_FIREWALL_SUBNET_CONNECTIVITY_OVERRIDE'|null,
      *     status?: 'DRAFT'|'ACTIVE'|'DISABLED'|null,
      *     version?: string|null,
      *     hasPublishedVersion?: bool|null,

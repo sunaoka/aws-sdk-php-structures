@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $modelId
  * @property 'PHONE'|'TABLET'|null $formFactor
  * @property 'ANDROID'|'IOS'|null $platform
+ * @property 'PHYSICAL'|'VIRTUAL'|null $type
  * @property string|null $os
  * @property CPU|null $cpu
  * @property Resolution|null $resolution
@@ -38,6 +39,7 @@ class Device extends Shape
      *     modelId?: string|null,
      *     formFactor?: 'PHONE'|'TABLET'|null,
      *     platform?: 'ANDROID'|'IOS'|null,
+     *     type?: 'PHYSICAL'|'VIRTUAL'|null,
      *     os?: string|null,
      *     cpu?: CPU|null,
      *     resolution?: Resolution|null,

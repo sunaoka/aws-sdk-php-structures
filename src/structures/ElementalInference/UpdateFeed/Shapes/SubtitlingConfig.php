@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElementalInference\UpdateFeed\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'eng'|'eng-au'|'eng-gb'|'eng-us'|'fra'|'ita'|'deu'|'spa'|'por' $language
+ * @property 'eng'|'eng-au'|'eng-gb'|'eng-us'|'fra'|'ita'|'deu'|'spa'|'por'|'ara' $language
  * @property AspectRatio|null $aspectRatio
  * @property string|null $dictionary
  * @property 'DISABLED'|'CENSOR'|'DROP'|null $profanityFilter
@@ -14,7 +14,7 @@ class SubtitlingConfig extends Shape
 {
     /**
      * @param array{
-     *     language: 'eng'|'eng-au'|'eng-gb'|'eng-us'|'fra'|'ita'|'deu'|'spa'|'por',
+     *     language: 'eng'|'eng-au'|'eng-gb'|'eng-us'|'fra'|'ita'|'deu'|'spa'|'por'|'ara',
      *     aspectRatio?: AspectRatio|null,
      *     dictionary?: string|null,
      *     profanityFilter?: 'DISABLED'|'CENSOR'|'DROP'|null

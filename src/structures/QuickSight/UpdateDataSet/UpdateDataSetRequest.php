@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\PerformanceConfiguration|null $PerformanceConfiguration
  * @property Shapes\DataPrepConfiguration|null $DataPrepConfiguration
  * @property Shapes\SemanticModelConfiguration|null $SemanticModelConfiguration
+ * @property list<Shapes\UnmaterializedCalculatedColumn>|null $UnmaterializedCalculatedColumns
  */
 class UpdateDataSetRequest extends Request
 {
@@ -41,7 +42,8 @@ class UpdateDataSetRequest extends Request
      *     DatasetParameters?: list<Shapes\DatasetParameter>|null,
      *     PerformanceConfiguration?: Shapes\PerformanceConfiguration|null,
      *     DataPrepConfiguration?: Shapes\DataPrepConfiguration|null,
-     *     SemanticModelConfiguration?: Shapes\SemanticModelConfiguration|null
+     *     SemanticModelConfiguration?: Shapes\SemanticModelConfiguration|null,
+     *     UnmaterializedCalculatedColumns?: list<Shapes\UnmaterializedCalculatedColumn>|null
      * } $args
      */
     public function __construct(array $args)

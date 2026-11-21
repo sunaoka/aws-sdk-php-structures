@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $PolicyArn
  * @property string $Name
  * @property string|null $Description
- * @property list<'SHARE'> $Actions
- * @property list<'AGENT'|'SPACE'|'KNOWLEDGE_BASE'> $AssetTypes
+ * @property list<'SHARE'|'PUBLISH'> $Actions
+ * @property list<'AGENT'|'SPACE'|'KNOWLEDGE_BASE'|'FLOW'> $AssetTypes
  * @property ApplicableTo $ApplicableTo
  * @property list<string> $ApprovalGroups
  * @property \Aws\Api\DateTimeResult $CreatedAt
@@ -24,8 +24,8 @@ class ApprovalPolicy extends Shape
      *     PolicyArn: string,
      *     Name: string,
      *     Description?: string|null,
-     *     Actions: list<'SHARE'>,
-     *     AssetTypes: list<'AGENT'|'SPACE'|'KNOWLEDGE_BASE'>,
+     *     Actions: list<'SHARE'|'PUBLISH'>,
+     *     AssetTypes: list<'AGENT'|'SPACE'|'KNOWLEDGE_BASE'|'FLOW'>,
      *     ApplicableTo: ApplicableTo,
      *     ApprovalGroups: list<string>,
      *     CreatedAt: \Aws\Api\DateTimeResult,

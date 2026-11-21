@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<'ALL'>|null $additionalOsCapabilities
  * @property Shapes\Hooks|null $hooks
  * @property array<string, string>|null $environmentVariables
+ * @property string|null $kmsKeyIdentifier
  * @property string $imageArn
  * @property string $imageVersion
  * @property 'PENDING'|'IN_PROGRESS'|'SUCCESSFUL'|'FAILED'|'DELETING'|'DELETED'|'DELETE_FAILED' $state

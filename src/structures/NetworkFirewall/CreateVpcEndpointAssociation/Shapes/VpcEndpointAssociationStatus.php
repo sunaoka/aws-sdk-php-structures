@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\CreateVpcEndpointAssociation\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PROVISIONING'|'DELETING'|'READY'|'FAILED' $Status
+ * @property 'PROVISIONING'|'DELETING'|'READY'|'FAILED'|'STANDBY' $Status
  * @property array<string, AZSyncState>|null $AssociationSyncState
  */
 class VpcEndpointAssociationStatus extends Shape
 {
     /**
      * @param array{
-     *     Status: 'PROVISIONING'|'DELETING'|'READY'|'FAILED',
+     *     Status: 'PROVISIONING'|'DELETING'|'READY'|'FAILED'|'STANDBY',
      *     AssociationSyncState?: array<string, AZSyncState>|null
      * } $args
      */
