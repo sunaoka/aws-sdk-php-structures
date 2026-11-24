@@ -10,10 +10,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Name
  * @property string|null $VolumeId
  * @property \Aws\Api\DateTimeResult|null $CreationTime
- * @property 'PENDING'|'CREATING'|'DELETING'|'AVAILABLE'|null $Lifecycle
+ * @property 'PENDING'|'CREATING'|'DELETING'|'AVAILABLE'|'FAILED'|null $Lifecycle
+ * @property 'ONTAP'|'OPENZFS'|null $SnapshotType
  * @property LifecycleTransitionReason|null $LifecycleTransitionReason
  * @property list<Tag>|null $Tags
  * @property list<AdministrativeAction>|null $AdministrativeActions
+ * @property OntapSnapshotConfiguration|null $OntapConfiguration
  */
 class Snapshot extends Shape
 {
@@ -24,10 +26,12 @@ class Snapshot extends Shape
      *     Name?: string|null,
      *     VolumeId?: string|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
-     *     Lifecycle?: 'PENDING'|'CREATING'|'DELETING'|'AVAILABLE'|null,
+     *     Lifecycle?: 'PENDING'|'CREATING'|'DELETING'|'AVAILABLE'|'FAILED'|null,
+     *     SnapshotType?: 'ONTAP'|'OPENZFS'|null,
      *     LifecycleTransitionReason?: LifecycleTransitionReason|null,
      *     Tags?: list<Tag>|null,
-     *     AdministrativeActions?: list<AdministrativeAction>|null
+     *     AdministrativeActions?: list<AdministrativeAction>|null,
+     *     OntapConfiguration?: OntapSnapshotConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

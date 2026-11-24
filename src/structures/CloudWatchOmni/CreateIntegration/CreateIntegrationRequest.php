@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudWatchOmni\CreateIntegration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'AWS_CONFIG_SLREC'|'SLACK'|'EXTERNAL_AGENT'|'AWS_INTEGRATION' $integrationType
+ * @property 'AWS_CONFIG_SLREC'|'AWS_CONFIG_AZURE_SLREC'|'SLACK'|'EXTERNAL_AGENT'|'AWS_INTEGRATION' $integrationType
  * @property string $name
  * @property Shapes\IntegrationCredential|null $credential
  * @property array<string, string>|null $integrationAttributes
@@ -17,7 +17,7 @@ class CreateIntegrationRequest extends Request
 {
     /**
      * @param array{
-     *     integrationType: 'AWS_CONFIG_SLREC'|'SLACK'|'EXTERNAL_AGENT'|'AWS_INTEGRATION',
+     *     integrationType: 'AWS_CONFIG_SLREC'|'AWS_CONFIG_AZURE_SLREC'|'SLACK'|'EXTERNAL_AGENT'|'AWS_INTEGRATION',
      *     name: string,
      *     credential?: Shapes\IntegrationCredential|null,
      *     integrationAttributes?: array<string, string>|null,

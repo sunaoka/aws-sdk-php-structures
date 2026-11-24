@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudWatchOmni\ListIntegrations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'AWS_CONFIG_SLREC'|'SLACK'|'EXTERNAL_AGENT'|'AWS_INTEGRATION'|null $integrationType
+ * @property 'AWS_CONFIG_SLREC'|'AWS_CONFIG_AZURE_SLREC'|'SLACK'|'EXTERNAL_AGENT'|'AWS_INTEGRATION'|null $integrationType
  * @property 'ACTIVE'|'DELETED'|'PENDING'|'PENDING_OAUTH'|'ERROR'|'FAILED'|null $status
  * @property string|null $name
  * @property string|null $nextToken
@@ -15,7 +15,7 @@ class ListIntegrationsRequest extends Request
 {
     /**
      * @param array{
-     *     integrationType?: 'AWS_CONFIG_SLREC'|'SLACK'|'EXTERNAL_AGENT'|'AWS_INTEGRATION'|null,
+     *     integrationType?: 'AWS_CONFIG_SLREC'|'AWS_CONFIG_AZURE_SLREC'|'SLACK'|'EXTERNAL_AGENT'|'AWS_INTEGRATION'|null,
      *     status?: 'ACTIVE'|'DELETED'|'PENDING'|'PENDING_OAUTH'|'ERROR'|'FAILED'|null,
      *     name?: string|null,
      *     nextToken?: string|null,

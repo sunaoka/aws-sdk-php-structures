@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $integrationId
  * @property string|null $integrationArn
- * @property 'AWS_CONFIG_SLREC'|'SLACK'|'EXTERNAL_AGENT'|'AWS_INTEGRATION' $integrationType
+ * @property 'AWS_CONFIG_SLREC'|'AWS_CONFIG_AZURE_SLREC'|'SLACK'|'EXTERNAL_AGENT'|'AWS_INTEGRATION' $integrationType
  * @property string $name
  * @property 'ACTIVE'|'DELETED'|'PENDING'|'PENDING_OAUTH'|'ERROR'|'FAILED' $status
  * @property 'NONE'|'OAUTH2'|'API_KEY'|null $authType
@@ -26,7 +26,7 @@ class Integration extends Shape
      * @param array{
      *     integrationId: string,
      *     integrationArn?: string|null,
-     *     integrationType: 'AWS_CONFIG_SLREC'|'SLACK'|'EXTERNAL_AGENT'|'AWS_INTEGRATION',
+     *     integrationType: 'AWS_CONFIG_SLREC'|'AWS_CONFIG_AZURE_SLREC'|'SLACK'|'EXTERNAL_AGENT'|'AWS_INTEGRATION',
      *     name: string,
      *     status: 'ACTIVE'|'DELETED'|'PENDING'|'PENDING_OAUTH'|'ERROR'|'FAILED',
      *     authType?: 'NONE'|'OAUTH2'|'API_KEY'|null,

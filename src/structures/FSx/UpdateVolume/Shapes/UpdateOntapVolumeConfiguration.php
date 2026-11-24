@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $CopyTagsToBackups
  * @property UpdateSnaplockConfiguration|null $SnaplockConfiguration
  * @property int<0, 22517998000000000>|null $SizeInBytes
+ * @property UpdateCloneConfiguration|null $CloneConfiguration
  */
 class UpdateOntapVolumeConfiguration extends Shape
 {
@@ -27,7 +28,8 @@ class UpdateOntapVolumeConfiguration extends Shape
      *     SnapshotPolicy?: string|null,
      *     CopyTagsToBackups?: bool|null,
      *     SnaplockConfiguration?: UpdateSnaplockConfiguration|null,
-     *     SizeInBytes?: int<0, 22517998000000000>|null
+     *     SizeInBytes?: int<0, 22517998000000000>|null,
+     *     CloneConfiguration?: UpdateCloneConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

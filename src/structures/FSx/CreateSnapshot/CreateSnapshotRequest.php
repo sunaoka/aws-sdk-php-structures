@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $VolumeId
  * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\CreateOntapSnapshotConfiguration|null $OntapConfiguration
  */
 class CreateSnapshotRequest extends Request
 {
@@ -17,7 +18,8 @@ class CreateSnapshotRequest extends Request
      *     ClientRequestToken?: string|null,
      *     Name: string,
      *     VolumeId: string,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     OntapConfiguration?: Shapes\CreateOntapSnapshotConfiguration|null
      * } $args
      */
     public function __construct(array $args)

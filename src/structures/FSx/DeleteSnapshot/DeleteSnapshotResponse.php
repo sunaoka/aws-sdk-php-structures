@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $SnapshotId
- * @property 'PENDING'|'CREATING'|'DELETING'|'AVAILABLE'|null $Lifecycle
+ * @property 'PENDING'|'CREATING'|'DELETING'|'AVAILABLE'|'FAILED'|null $Lifecycle
  */
 class DeleteSnapshotResponse extends Response
 {

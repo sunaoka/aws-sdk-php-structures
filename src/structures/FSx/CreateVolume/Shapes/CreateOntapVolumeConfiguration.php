@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'FLEXVOL'|'FLEXGROUP'|null $VolumeStyle
  * @property CreateAggregateConfiguration|null $AggregateConfiguration
  * @property int<0, 22517998000000000>|null $SizeInBytes
+ * @property CreateCloneConfiguration|null $CloneConfiguration
  */
 class CreateOntapVolumeConfiguration extends Shape
 {
@@ -35,7 +36,8 @@ class CreateOntapVolumeConfiguration extends Shape
      *     SnaplockConfiguration?: CreateSnaplockConfiguration|null,
      *     VolumeStyle?: 'FLEXVOL'|'FLEXGROUP'|null,
      *     AggregateConfiguration?: CreateAggregateConfiguration|null,
-     *     SizeInBytes?: int<0, 22517998000000000>|null
+     *     SizeInBytes?: int<0, 22517998000000000>|null,
+     *     CloneConfiguration?: CreateCloneConfiguration|null
      * } $args
      */
     public function __construct(array $args)
