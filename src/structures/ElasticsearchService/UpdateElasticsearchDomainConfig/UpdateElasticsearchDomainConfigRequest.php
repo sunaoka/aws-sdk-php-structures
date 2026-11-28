@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $AdvancedOptions
  * @property string|null $AccessPolicies
  * @property array<'INDEX_SLOW_LOGS'|'SEARCH_SLOW_LOGS'|'ES_APPLICATION_LOGS'|'AUDIT_LOGS', Shapes\LogPublishingOption>|null $LogPublishingOptions
+ * @property Shapes\CatalogOptions|null $CatalogOptions
  * @property Shapes\DomainEndpointOptions|null $DomainEndpointOptions
  * @property Shapes\AdvancedSecurityOptionsInput|null $AdvancedSecurityOptions
  * @property Shapes\NodeToNodeEncryptionOptions|null $NodeToNodeEncryptionOptions
@@ -38,6 +39,7 @@ class UpdateElasticsearchDomainConfigRequest extends Request
      *     AdvancedOptions?: array<string, string>|null,
      *     AccessPolicies?: string|null,
      *     LogPublishingOptions?: array<'INDEX_SLOW_LOGS'|'SEARCH_SLOW_LOGS'|'ES_APPLICATION_LOGS'|'AUDIT_LOGS', Shapes\LogPublishingOption>|null,
+     *     CatalogOptions?: Shapes\CatalogOptions|null,
      *     DomainEndpointOptions?: Shapes\DomainEndpointOptions|null,
      *     AdvancedSecurityOptions?: Shapes\AdvancedSecurityOptionsInput|null,
      *     NodeToNodeEncryptionOptions?: Shapes\NodeToNodeEncryptionOptions|null,

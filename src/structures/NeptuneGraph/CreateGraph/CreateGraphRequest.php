@@ -12,7 +12,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\VectorSearchConfiguration|null $vectorSearchConfiguration
  * @property int<0, 2>|null $replicaCount
  * @property bool|null $deletionProtection
- * @property int<16, 24576> $provisionedMemory
+ * @property int<1, 24576>|null $provisionedMemory
+ * @property Shapes\ComputeConfiguration|null $computeConfiguration
  */
 class CreateGraphRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateGraphRequest extends Request
      *     vectorSearchConfiguration?: Shapes\VectorSearchConfiguration|null,
      *     replicaCount?: int<0, 2>|null,
      *     deletionProtection?: bool|null,
-     *     provisionedMemory: int<16, 24576>
+     *     provisionedMemory?: int<1, 24576>|null,
+     *     computeConfiguration?: Shapes\ComputeConfiguration|null
      * } $args
      */
     public function __construct(array $args)

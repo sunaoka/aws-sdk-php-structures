@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property NodeToNodeEncryptionOptionsStatus|null $NodeToNodeEncryptionOptions
  * @property AdvancedOptionsStatus|null $AdvancedOptions
  * @property LogPublishingOptionsStatus|null $LogPublishingOptions
+ * @property CatalogOptionsStatus|null $CatalogOptions
  * @property DomainEndpointOptionsStatus|null $DomainEndpointOptions
  * @property AdvancedSecurityOptionsStatus|null $AdvancedSecurityOptions
  * @property IdentityCenterOptionsStatus|null $IdentityCenterOptions
@@ -47,6 +48,7 @@ class DomainConfig extends Shape
      *     NodeToNodeEncryptionOptions?: NodeToNodeEncryptionOptionsStatus|null,
      *     AdvancedOptions?: AdvancedOptionsStatus|null,
      *     LogPublishingOptions?: LogPublishingOptionsStatus|null,
+     *     CatalogOptions?: CatalogOptionsStatus|null,
      *     DomainEndpointOptions?: DomainEndpointOptionsStatus|null,
      *     AdvancedSecurityOptions?: AdvancedSecurityOptionsStatus|null,
      *     IdentityCenterOptions?: IdentityCenterOptionsStatus|null,

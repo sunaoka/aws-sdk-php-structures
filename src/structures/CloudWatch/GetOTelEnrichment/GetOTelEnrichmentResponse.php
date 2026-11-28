@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\OTelEnrichmentMetricSelector>|null $ExcludeFilters
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property \Aws\Api\DateTimeResult|null $UpdatedAt
+ * @property bool|null $EnableTagEnrichment
  */
 class GetOTelEnrichmentResponse extends Response
 {

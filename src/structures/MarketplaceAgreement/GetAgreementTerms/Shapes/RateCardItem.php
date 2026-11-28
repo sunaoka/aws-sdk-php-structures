@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $dimensionKey
  * @property string|null $price
+ * @property list<RegionalPrice>|null $regionalPrices
  */
 class RateCardItem extends Shape
 {
     /**
      * @param array{
      *     dimensionKey?: string|null,
-     *     price?: string|null
+     *     price?: string|null,
+     *     regionalPrices?: list<RegionalPrice>|null
      * } $args
      */
     public function __construct(array $args = [])

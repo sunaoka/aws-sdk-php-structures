@@ -7,7 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $graphIdentifier
  * @property bool|null $publicConnectivity
- * @property int<16, 24576>|null $provisionedMemory
+ * @property int<1, 24576>|null $provisionedMemory
+ * @property Shapes\ComputeConfiguration|null $computeConfiguration
  * @property bool|null $deletionProtection
  */
 class UpdateGraphRequest extends Request
@@ -16,7 +17,8 @@ class UpdateGraphRequest extends Request
      * @param array{
      *     graphIdentifier: string,
      *     publicConnectivity?: bool|null,
-     *     provisionedMemory?: int<16, 24576>|null,
+     *     provisionedMemory?: int<1, 24576>|null,
+     *     computeConfiguration?: Shapes\ComputeConfiguration|null,
      *     deletionProtection?: bool|null
      * } $args
      */

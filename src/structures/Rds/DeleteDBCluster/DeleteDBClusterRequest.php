@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $SkipFinalSnapshot
  * @property string|null $FinalDBSnapshotIdentifier
  * @property bool|null $DeleteAutomatedBackups
+ * @property bool|null $DeleteDBInstances
  */
 class DeleteDBClusterRequest extends Request
 {
@@ -17,7 +18,8 @@ class DeleteDBClusterRequest extends Request
      *     DBClusterIdentifier: string,
      *     SkipFinalSnapshot?: bool|null,
      *     FinalDBSnapshotIdentifier?: string|null,
-     *     DeleteAutomatedBackups?: bool|null
+     *     DeleteAutomatedBackups?: bool|null,
+     *     DeleteDBInstances?: bool|null
      * } $args
      */
     public function __construct(array $args)

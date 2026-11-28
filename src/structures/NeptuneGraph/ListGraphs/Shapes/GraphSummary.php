@@ -9,12 +9,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string $arn
  * @property 'CREATING'|'AVAILABLE'|'DELETING'|'RESETTING'|'UPDATING'|'SNAPSHOTTING'|'FAILED'|'IMPORTING'|'STARTING'|'STOPPING'|'STOPPED'|null $status
- * @property int<16, 24576>|null $provisionedMemory
+ * @property int<1, 24576>|null $provisionedMemory
  * @property bool|null $publicConnectivity
  * @property string|null $endpoint
  * @property int<0, 2>|null $replicaCount
  * @property string|null $kmsKeyIdentifier
  * @property bool|null $deletionProtection
+ * @property ComputeConfiguration|null $computeConfiguration
  */
 class GraphSummary extends Shape
 {
@@ -24,12 +25,13 @@ class GraphSummary extends Shape
      *     name: string,
      *     arn: string,
      *     status?: 'CREATING'|'AVAILABLE'|'DELETING'|'RESETTING'|'UPDATING'|'SNAPSHOTTING'|'FAILED'|'IMPORTING'|'STARTING'|'STOPPING'|'STOPPED'|null,
-     *     provisionedMemory?: int<16, 24576>|null,
+     *     provisionedMemory?: int<1, 24576>|null,
      *     publicConnectivity?: bool|null,
      *     endpoint?: string|null,
      *     replicaCount?: int<0, 2>|null,
      *     kmsKeyIdentifier?: string|null,
-     *     deletionProtection?: bool|null
+     *     deletionProtection?: bool|null,
+     *     computeConfiguration?: ComputeConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property NodeToNodeEncryptionOptions|null $NodeToNodeEncryptionOptions
  * @property array<string, string>|null $AdvancedOptions
  * @property array<'INDEX_SLOW_LOGS'|'SEARCH_SLOW_LOGS'|'ES_APPLICATION_LOGS'|'AUDIT_LOGS', LogPublishingOption>|null $LogPublishingOptions
+ * @property CatalogOptions|null $CatalogOptions
  * @property ServiceSoftwareOptions|null $ServiceSoftwareOptions
  * @property DomainEndpointOptions|null $DomainEndpointOptions
  * @property AdvancedSecurityOptions|null $AdvancedSecurityOptions
@@ -71,6 +72,7 @@ class DomainStatus extends Shape
      *     NodeToNodeEncryptionOptions?: NodeToNodeEncryptionOptions|null,
      *     AdvancedOptions?: array<string, string>|null,
      *     LogPublishingOptions?: array<'INDEX_SLOW_LOGS'|'SEARCH_SLOW_LOGS'|'ES_APPLICATION_LOGS'|'AUDIT_LOGS', LogPublishingOption>|null,
+     *     CatalogOptions?: CatalogOptions|null,
      *     ServiceSoftwareOptions?: ServiceSoftwareOptions|null,
      *     DomainEndpointOptions?: DomainEndpointOptions|null,
      *     AdvancedSecurityOptions?: AdvancedSecurityOptions|null,

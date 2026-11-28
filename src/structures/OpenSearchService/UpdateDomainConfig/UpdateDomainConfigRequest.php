@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $AccessPolicies
  * @property 'ipv4'|'dualstack'|null $IPAddressType
  * @property array<'INDEX_SLOW_LOGS'|'SEARCH_SLOW_LOGS'|'ES_APPLICATION_LOGS'|'AUDIT_LOGS', Shapes\LogPublishingOption>|null $LogPublishingOptions
+ * @property Shapes\CatalogOptions|null $CatalogOptions
  * @property Shapes\EncryptionAtRestOptions|null $EncryptionAtRestOptions
  * @property Shapes\DomainEndpointOptions|null $DomainEndpointOptions
  * @property Shapes\NodeToNodeEncryptionOptions|null $NodeToNodeEncryptionOptions
@@ -46,6 +47,7 @@ class UpdateDomainConfigRequest extends Request
      *     AccessPolicies?: string|null,
      *     IPAddressType?: 'ipv4'|'dualstack'|null,
      *     LogPublishingOptions?: array<'INDEX_SLOW_LOGS'|'SEARCH_SLOW_LOGS'|'ES_APPLICATION_LOGS'|'AUDIT_LOGS', Shapes\LogPublishingOption>|null,
+     *     CatalogOptions?: Shapes\CatalogOptions|null,
      *     EncryptionAtRestOptions?: Shapes\EncryptionAtRestOptions|null,
      *     DomainEndpointOptions?: Shapes\DomainEndpointOptions|null,
      *     NodeToNodeEncryptionOptions?: Shapes\NodeToNodeEncryptionOptions|null,
